@@ -1,19 +1,14 @@
 <div align="center">
-<h1>🌅 Horizon</h1>
+<h1>🛰️ BMTNews</h1>
 
-<p><strong>Enjoy the News itself. Leave others to Horizon</strong></p>
-
-<a href="https://trendshift.io/repositories/22864?utm_source=trendshift-badge&amp;utm_medium=badge&amp;utm_campaign=badge-trendshift-22864" target="_blank" rel="noopener noreferrer"><img src="https://trendshift.io/api/badge/trendshift/repositories/22864/daily" alt="Thysrael%2FHorizon | Trendshift" width="250" height="55"/></a>
-<a href="https://trendshift.io/repositories/22864?utm_source=trendshift-badge&amp;utm_medium=badge&amp;utm_campaign=badge-trendshift-22864" target="_blank" rel="noopener noreferrer"><img src="https://trendshift.io/api/badge/trendshift/repositories/22864/weekly?language=Python" alt="Thysrael%2FHorizon | Trendshift" width="250" height="55"/></a>
-<a href="https://hellogithub.com/repository/Thysrael/Horizon" target="_blank"><img src="https://abroad.hellogithub.com/v1/widgets/recommend.svg?rid=7a4b606e28e4477998d35851cf4fdddf&claim_uid=rtjnLkYT7ziQJUG" alt="Featured｜HelloGitHub" style="width: 250px; height: 54px;" width="250" height="54" /></a>
-<br>
+<p><strong>A focused AI news radar for crypto markets and technology.</strong></p>
 
 [![License](https://img.shields.io/badge/license-MIT-green.svg?style=for-the-badge&logo=opensourceinitiative&logoColor=white)](LICENSE)
 [![Tool uv](https://img.shields.io/badge/Tool-uv-4B275F?style=for-the-badge&logo=uv&logoColor=white)](https://github.com/astral-sh/uv)
-[![Website](https://img.shields.io/badge/Website-Horizon-263238?style=for-the-badge&logo=homepage&logoColor=white)](https://www.horizon1123.top/)
-[![Daily](https://img.shields.io/github/actions/workflow/status/Thysrael/Horizon/deploy-docs.yml?branch=main&label=Daily&style=for-the-badge&logo=date-fns&logoColor=white)](https://thysrael.github.io/Horizon/)
-[![Commit](https://img.shields.io/github/commit-activity/m/Thysrael/Horizon?label=Commit&style=for-the-badge&logo=github&logoColor=white)](https://github.com/Thysrael/Horizon/commits/main)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Thysrael/Horizon/pulls)
+[![Website](https://img.shields.io/badge/Website-BMTNews-263238?style=for-the-badge&logo=homepage&logoColor=white)](https://bmt.news/)
+[![Daily](https://img.shields.io/github/actions/workflow/status/ohxiyu/bmtnews/daily-summary.yml?branch=main&label=Daily&style=for-the-badge&logo=date-fns&logoColor=white)](https://bmt.news/)
+[![Commit](https://img.shields.io/github/commit-activity/m/ohxiyu/bmtnews?label=Commit&style=for-the-badge&logo=github&logoColor=white)](https://github.com/ohxiyu/bmtnews/commits/main)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/ohxiyu/bmtnews/pulls)
 ![Sources Welcome](https://img.shields.io/badge/sources-welcome-f97316?style=for-the-badge&logo=rss&logoColor=white)
 
 ![Claude](https://img.shields.io/badge/Claude-f0daba?style=flat-square&logo=anthropic&logoColor=black)
@@ -27,7 +22,9 @@
 
 📡 Your own AI-powered news radar. Generates daily briefings in English & Chinese. | 构建你专属的 AI 新闻雷达
 
-[📖 Live Demo](https://thysrael.github.io/Horizon/) · [📋 Configuration Guide](https://thysrael.github.io/Horizon/configuration) · [简体中文](README_zh.md) · [日本語](README_ja.md)
+[📖 Live Demo](https://bmt.news/) · [📋 Configuration Guide](project-docs/configuration.md) · [简体中文](README_zh.md) · [日本語](README_ja.md)
+
+Built on the open-source [Horizon](https://github.com/Thysrael/Horizon) project.
 
 </div>
 
@@ -37,11 +34,11 @@
 <tr>
 <td width="50%">
 <p align="center"><strong>Ranked Daily Briefing</strong></p>
-<img src="docs/assets/overview_en.png" alt="Daily Overview" />
+<img src="project-docs/assets/overview_en.png" alt="Daily Overview" />
 </td>
 <td width="50%">
 <p align="center"><strong>Context, Summary & Discussion</strong></p>
-<img src="docs/assets/one_news_en.png" alt="News Detail" />
+<img src="project-docs/assets/one_news_en.png" alt="News Detail" />
 </td>
 </tr>
 </table>
@@ -53,15 +50,15 @@
 <tr>
 <td width="33.33%">
 <p align="center"><strong>Terminal Output</strong></p>
-<img src="docs/assets/terminal_log.png" alt="Terminal Output" />
+<img src="project-docs/assets/terminal_log.png" alt="Terminal Output" />
 </td>
 <td width="33.33%">
 <p align="center"><strong>Feishu Notification</strong></p>
-<img src="docs/assets/feishu_en.png" alt="Feishu Notification" />
+<img src="project-docs/assets/feishu_en.png" alt="Feishu Notification" />
 </td>
 <td width="33.33%">
 <p align="center"><strong>Email Delivery</strong></p>
-<img src="docs/assets/email.png" alt="Email Delivery" />
+<img src="project-docs/assets/email.png" alt="Email Delivery" />
 </td>
 </tr>
 </table>
@@ -175,8 +172,8 @@ flowchart LR
 **Option A: Local Installation**
 
 ```bash
-git clone https://github.com/Thysrael/Horizon.git
-cd Horizon
+git clone https://github.com/ohxiyu/bmtnews.git
+cd bmtnews
 
 # Install with uv (recommended)
 uv sync
@@ -205,8 +202,8 @@ uv pip install --only-binary=:all: openbb openbb-benzinga
 **Option B: Docker**
 
 ```bash
-git clone https://github.com/Thysrael/Horizon.git
-cd Horizon
+git clone https://github.com/ohxiyu/bmtnews.git
+cd bmtnews
 
 # Configure environment
 cp .env.example .env
@@ -308,7 +305,7 @@ For Gemini, use `GOOGLE_API_KEY`:
 
 Any string value in `data/config.json` can reference environment variables with `${VAR_NAME}`. This is useful for values such as `ai.base_url`, private RSS feed URLs, webhook endpoints, or custom header templates.
 
-For the full reference, see the [Configuration Guide](docs/configuration.md).
+For the full reference, see the [Configuration Guide](project-docs/configuration.md).
 
 ### 3. Run
 
@@ -355,24 +352,24 @@ Horizon can publish or deliver the generated briefing in several ways:
 | **Webhook Notification** | Pushes success or failure results to Feishu/Lark, DingTalk, Slack, Discord, or any custom webhook endpoint |
 | **MCP Server** | Exposes Horizon pipeline steps as tools so AI assistants can fetch, score, filter, enrich, summarize, and run the full workflow |
 
-For setup details, see the [Configuration Guide](docs/configuration.md). For MCP tool references and client setup, see [`src/mcp/README.md`](src/mcp/README.md) and [`src/mcp/integration.md`](src/mcp/integration.md).
+For setup details, see the [Configuration Guide](project-docs/configuration.md). For MCP tool references and client setup, see [`src/mcp/README.md`](src/mcp/README.md) and [`src/mcp/integration.md`](src/mcp/integration.md).
 
 ## Supported By
 
-Horizon is an open-source project maintained in spare time. If you'd like to support the project or be listed here, feel free to [open an issue](https://github.com/Thysrael/Horizon/issues/new) or [email me](mailto:thysrael@163.com).
+Horizon is an open-source project maintained in spare time. If you'd like to support BMTNews or be listed here, feel free to [open an issue](https://github.com/ohxiyu/bmtnews/issues/new).
 
 | Supporter | Details |
 |-----------|---------|
-| [<img src="docs/assets/compshare-logo.png" alt="Compshare / 优云智算" width="220" />](https://www.compshare.cn/?ytag=GPU_YY_git_Horizon) | Compshare currently supports Horizon. Compshare is UCloud's AI cloud platform, offering cost-effective monthly and pay-as-you-go domestic model agent plans starting from RMB 49/month, as well as stable officially relayed overseas models. It supports Claude Code, Codex, and API usage, with enterprise-grade high concurrency, 24/7 technical support, and self-service invoicing.<br><br>Register through their [link](https://www.compshare.cn/?ytag=GPU_YY_git_Horizon) to receive a free RMB 5 trial credit. |
+| [<img src="project-docs/assets/compshare-logo.png" alt="Compshare / 优云智算" width="220" />](https://www.compshare.cn/?ytag=GPU_YY_git_Horizon) | Compshare currently supports Horizon. Compshare is UCloud's AI cloud platform, offering cost-effective monthly and pay-as-you-go domestic model agent plans starting from RMB 49/month, as well as stable officially relayed overseas models. It supports Claude Code, Codex, and API usage, with enterprise-grade high concurrency, 24/7 technical support, and self-service invoicing.<br><br>Register through their [link](https://www.compshare.cn/?ytag=GPU_YY_git_Horizon) to receive a free RMB 5 trial credit. |
 
 ## Documentation
 
 | Guide | Description |
 |-------|-------------|
-| [Configuration](docs/configuration.md) | AI providers, sources, filtering, email, webhook, GitHub Pages, and MCP setup |
-| [Scoring](docs/scoring.md) | How Horizon evaluates and ranks news items |
-| [Scrapers](docs/scrapers.md) | Source scraper details and extension notes |
-| [Extractors](docs/extractors.md) | Full article extraction for RSS sources |
+| [Configuration](project-docs/configuration.md) | AI providers, sources, filtering, email, webhook, GitHub Pages, and MCP setup |
+| [Scoring](project-docs/scoring.md) | How Horizon evaluates and ranks news items |
+| [Scrapers](project-docs/scrapers.md) | Source scraper details and extension notes |
+| [Extractors](project-docs/extractors.md) | Full article extraction for RSS sources |
 | [MCP Tools](src/mcp/README.md) | Tool reference for MCP-compatible clients |
 
 ## Project Status

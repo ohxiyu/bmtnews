@@ -255,9 +255,26 @@ class HorizonOrchestrator:
                         "[yellow]No content published in the current local day. Exiting.[/yellow]"
                     )
                     return
+                analyzed_keys = set(daily_state.analyzed_keys)
+                before_incremental_filter = len(merged_items)
+                merged_items = [
+                    item
+                    for item in merged_items
+                    if analyzed_item_key(item) not in analyzed_keys
+                ]
+                skipped_count = before_incremental_filter - len(merged_items)
+                if skipped_count:
+                    self.console.print(
+                        f"⏭️  Skipped {skipped_count} items already analyzed today; "
+                        f"{len(merged_items)} new items remain\n"
+                    )
 
             # 4. Analyze with AI
-            analyzed_items = await self._analyze_content(merged_items)
+            analyzed_items = (
+                await self._analyze_content(merged_items)
+                if merged_items
+                else []
+            )
             self.console.print(f"🤖 Analyzed {len(analyzed_items)} items with AI\n")
 
             # 5. Filter, deduplicate, and balance the digest
@@ -293,6 +310,10 @@ class HorizonOrchestrator:
                     today,
                     daily_timezone,
                 )
+                important_items = self.apply_balanced_digest(
+                    important_items,
+                    log=False,
+                ).items
                 daily_state.items = important_items
                 daily_state.updated_at = run_started_at
                 daily_state.analyzed_keys = sorted(
