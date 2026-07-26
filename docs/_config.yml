@@ -1,8 +1,9 @@
 theme: jekyll-theme-cayman
 title: Horizon Daily
-description: AI-curated daily digest of tech and research news
+description: AI-curated crypto intelligence covering exchanges, markets, security, regulation, and protocols
 baseurl: ""
 url: "https://horizon-ohxiyu.pages.dev"
+repository_url: "https://github.com/ohxiyu/Horizon"
 
 # Build settings
 markdown: kramdown
