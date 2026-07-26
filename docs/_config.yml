@@ -10,15 +10,6 @@ future: true # Allow future posts to be published
 exclude:
   - ".github"
   - "node_modules"
-  - "configuration.md"
-  - "extractors.md"
-  - "horizon-hub-design.md"
-  - "scoring.md"
-  - "scrapers.md"
-  - "twitter-cookies.md"
-  - "assets/horizon-header.svg"
-  - "assets/css/horizon.css"
-  - "assets/js/horizon.js"
 
 defaults:
   - scope:
