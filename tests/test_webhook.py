@@ -853,7 +853,7 @@ class TestSendDailySummary:
             mock_notify.assert_called_once()
             vars = mock_notify.call_args[0][0]
             assert vars["message_kind"] == "summary"
-            assert vars["message_title"] == "Horizon 2026-04-24 Daily"
+            assert vars["message_title"] == "BMTNews 2026-04-24 Daily"
             assert vars["summary"] == summary
             assert vars["important_items"] == 1
             assert vars["all_items"] == 10
@@ -885,7 +885,7 @@ class TestSendDailySummary:
                 )
             )
             vars = mock_notify.call_args[0][0]
-            assert vars["message_title"] == "Horizon 2026-04-24 日报"
+            assert vars["message_title"] == "BMTNews 2026-04-24 日报"
             assert vars["language"] == "zh"
         del os.environ[_TEST_URL_ENV]
 
@@ -922,7 +922,7 @@ class TestSendDailySummary:
             # First call: overview
             overview_vars = mock_notify.call_args_list[0][0][0]
             assert overview_vars["message_kind"] == "overview"
-            assert overview_vars["message_title"] == "Horizon 2026-04-24 Overview"
+            assert overview_vars["message_title"] == "BMTNews 2026-04-24 Overview"
 
             # Second call: first item
             item1_vars = mock_notify.call_args_list[1][0][0]
@@ -979,7 +979,7 @@ class TestSendDailySummary:
             assert second_vars["item_index"] == 1
             assert second_vars["item_url"] == "https://example.com/test"
             assert third_vars["message_kind"] == "overview"
-            assert third_vars["message_title"] == "Horizon 2026-04-24 Overview"
+            assert third_vars["message_title"] == "BMTNews 2026-04-24 Overview"
         del os.environ[_TEST_URL_ENV]
 
     def test_feishu_collapsible_layout_builds_single_card_message(self):
@@ -1163,7 +1163,7 @@ class TestSendDailySummary:
                 )
             )
             overview_vars = mock_notify.call_args_list[0][0][0]
-            assert overview_vars["message_title"] == "Horizon 2026-04-24 总览"
+            assert overview_vars["message_title"] == "BMTNews 2026-04-24 总览"
         del os.environ[_TEST_URL_ENV]
 
 # ── send_failure_notification ──
@@ -1194,7 +1194,7 @@ class TestSendFailureNotification:
             assert vars["important_items"] == 0
             assert vars["all_items"] == 0
             assert vars["message_kind"] == "failure"
-            assert vars["message_title"] == "Horizon generation failed"
+            assert vars["message_title"] == "BMTNews generation failed"
             assert "something went wrong" in vars["summary"]
         del os.environ[_TEST_URL_ENV]
 
