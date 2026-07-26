@@ -1,0 +1,199 @@
+{
+  "version": 1,
+  "date": "2026-07-26",
+  "timezone": "Asia/Shanghai",
+  "updated_at": "2026-07-26T09:49:40.636454Z",
+  "analyzed_keys": [
+    "05c448d0e6da3e5fe5065bcbaf83dbe7bd9c2a6faaefe2d509363c06edd1b2b6",
+    "0ee28ea7d4ea71feb705c4482c8a03e7e26f35a3f6467b989133240625b7d188",
+    "14057a72e363f34d74cb22da50e5acd316ff2a467b6aacf96a97ce1365966c97",
+    "164de731a3ad10c22863f7cd6156e8421b788aeca67cb47fb43ae98e4a3900a0",
+    "1754e59944a1c2df667efaca2c13ce5e82bf753fc9079b4ec2673bf556219206",
+    "1af2328f071472b8209045848dc19178ddfb786bb7e07aadb6af67a5e41c694a",
+    "1baf569632d1b3191e6194f3a2c4bb8117237a94cbecc527695c7c93f4484772",
+    "1bcf7ece32bbae95757389404994131a5fb30e0f0890580d8d4d5a44944bf413",
+    "1e4faffd59f665531b9bb844be89b957bdfe4748044e6677fae5494d9fe6ea1a",
+    "2b853493556cf900cafd9a337cb2fd2d921b4c4efd8d6a2815911cc031d93fff",
+    "332e9e69cfff289605bb4d9166cad7f8cb1281a25073ca511b36d6eba7e51a71",
+    "3525d68bbfc984cf23836c6aaa2b8da5433737805cf86d2782cd1fb72ac8cb6c",
+    "35d7b12c62719de9c320397b4d176f91004286e92d164654f548d10f19782a5e",
+    "38336283d55642d5194905e06e043af57dc3fbe9c662fa066b45b28a75fea4b0",
+    "3a459937048a3afbbde8b45f9857f32fb64bdff125aea117534dc0657bfa6e6f",
+    "3bfe7ccaa3b59c35f6a1c1a6cae807211ab85a8146154d227f6142b362196ae6",
+    "4182bdd00abc26c56674fc365842230a50f63d8593df63a9c844d205801b1750",
+    "476b88355651695ce72d0c3eb37d806460bbd264fc935b10698957e82a4bd958",
+    "4ca86f618e3da493e928127dc22df12ba519a1f1072dd5284cbb65b0b0d15662",
+    "4e0c13cd5182e71466402a01970f025cf0565b09886a2ba4490cd74376860363",
+    "52bcae36b9dc24a849f24b63c5029f5ce7be06f8da150178fedcaabd5abf616b",
+    "642c857e2f70610b1aaabf55b74d213aed74c532123069d9fc8ebe90fc14320e",
+    "672d734ee0b6e55d3864fd5791e1039b5f3270c4e4a20bbbe1c20085822ced56",
+    "68672c1f535a0b39999b58bffeabdb002a7be511ea76b772cf4e289f64708694",
+    "6cf2dd094173fa835413fb59cfe09cb1133e8c8a25a55ac3403990ac353ff580",
+    "7743b3b33cdcca9c81b870953c4abaa34c667627c4bbc1c23abd5ebef6b846db",
+    "7a8bc7eee713bd63180ed9f1c1cbabb708b0362eda77d0b186afd54ba100068c",
+    "9204fbf69303e621e98279711ec21b76686987e266bf4d2ac4edb6cd3931769d",
+    "a498f93bd4dd393c67fee6dc275fa43cc09af35a796b8ded0358792e737a6339",
+    "a6c6e26379b2088bace289d977359cd33afa9a8c164950f2bad320d380b18cde",
+    "a9aa1c12de8cc38c18e1777b4b1bbfcea353c5063014c672a3fa4a686ed0435d",
+    "a9d1d8a951a0f4cd84ee8c0f8bf84717fa479e2c6000016f84da6cc5f2d1768d",
+    "aa016f69b8d16ad771449cf9c9f72442fe10963b2ee02fee2ad9d4df98732089",
+    "ac492c1eba242bbe6201cd11b278b53cbf81a078714571dd566e4ef97171345a",
+    "ac53faf50652ae0dfb5ff891175d124c86d6eac6a7891dabfab84eec31354b39",
+    "b10c682066a1d10f828967634accb7ae541189d5bb3a7719992a9fa8b3d873cf",
+    "b1c8edb8af2f927a6bcdce869fc99f02b2d805e7e6de53a6f09dfc3fbb8deb23",
+    "b4cf1e9d42602d4eac0c812baea193c87ba5dd864e4b6680e63b1b1b84616e58",
+    "bf06273ce57e07f6e0165ae8c474ff8fc2923a8d8a3d1a93b75258520d62f3dd",
+    "c0a3c3384e0cbd8882ff8817369d3b9cde02afd80500f4573b0e60042398262a",
+    "c3e94ac09326ee2be8e2d9bd990bdb4289b23fd53db72fa1c3b88976d8c840f0",
+    "c524950ff75bb5409e9afb99185761f63c502f199c1579668a0c398454e828ca",
+    "c734f476221383f79abe01a78a4aef918e612250cf836fbbed774176f066b0e4",
+    "d1ddc8b42b7124b9d4db62fd00e9edd3997da94d6d7bed11c46a836153aedc65",
+    "d7757ec294d95f55187ace8526f0a343f25584cca078a060b8c547fd3e27eda3",
+    "da329e5fca07525a113e5a2a5574947482087b07c4f6e4de87635fdc58fc7a5f",
+    "dfb719ba98b1dd4c449dcd54ab17b423fe7819f32a1e21252185fd73da31f982",
+    "e01ce3068cbb1dd25c912a1f9608ecfebb41c84a371556d2b75dc06a4f7af940",
+    "e0b22dc9762bbed0d4fdef191445933c34eeebb83ef47e42425334d26a06641a",
+    "e2eaa1a603345cff5a8d37cf1f636181471a02355a8657e8a1b864ebf1a95bfc",
+    "e6b6d736c1decad3222ea68ecf61050804ae0dc44a1aad12a6e779c2713b943b",
+    "f057250923ca026fc006941658b3bb908d116129b617e0646e93b5b6b1e0f231",
+    "f473487b2d8623ede880bef9be8c0308000e21d41df3984e8ba4659ae5a12f40",
+    "f50c0dc8215b2493828ba166c40f68352366c6ec1553450d80df4b44ffdf86b4",
+    "f78f9ae65d257f3acde450e585c1bfdd66ad1d3a576a05da7abd5c3e75a015cd"
+  ],
+  "items": [
+    {
+      "id": "rss:www.coindesk.com_arc_outboundfeeds_rss_:43eaaf54882c3e00",
+      "source_type": "rss",
+      "title": "Crypto exchange BitMart to shut down after nine years, BMX token crashes 58%",
+      "url": "https://www.coindesk.com/markets/2026/07/26/crypto-exchange-bitmart-to-shut-down-after-nine-years-bmx-token-crashes-58",
+      "content": null,
+      "author": "Shaurya Malwa",
+      "published_at": "2026-07-26T06:59:51Z",
+      "fetched_at": "2026-07-26T09:49:41.091012Z",
+      "metadata": {
+        "feed_name": "CoinDesk",
+        "category": "crypto-markets",
+        "title_en": "BitMart exchange to shut down after nine years, BMX token crashes 58%",
+        "detailed_summary_en": "Crypto exchange BitMart announced it will wind down operations, ending trading by August 26, 2026, and fully shutting down in January 2027, amid reports of withdrawal delays and a 58% crash in its BMX token. This closure affects users who may have funds stuck on the platform and signals ongoing challenges for smaller exchanges in a consolidating market, potentially eroding trust in centralized exchanges. BitMart, founded in 2017, supports over 1,700 cryptocurrencies and has offices globally; its BMX token (ERC-20) had a market cap of about $1.24 million before the crash.",
+        "background_en": "BitMart is a global cryptocurrency exchange founded by Sheldon Xia in 2017 and launched in 2018. The BMX token is an ERC-20 token created to support the BitMart ecosystem, with a circulating supply of 2.8 million tokens.",
+        "title_zh": "BitMart交易所九年后关闭，BMX代币暴跌58%",
+        "detailed_summary_zh": "加密货币交易所BitMart宣布将逐步关闭运营，交易将于2026年8月26日停止，并在2027年1月完全关闭，此前出现提现延迟报告，其BMX代币暴跌58%。 此次关闭影响可能被困在平台上的用户，并表明在整合的市场中，小型交易所面临持续挑战，可能削弱对中心化交易所的信任。 BitMart成立于2017年，支持超过1700种加密货币，在全球设有办公室；其BMX代币（ERC-20）在崩盘前市值约为124万美元。",
+        "background_zh": "BitMart是由Sheldon Xia于2017年创立、2018年启动的全球加密货币交易所。BMX代币是一种ERC-20代币，旨在支持BitMart生态系统，流通供应量为280万枚。",
+        "sources": [
+          {
+            "url": "https://www.bitmart.com/",
+            "title": "BitMart Exchange : Buy & Sell Bitcoin, Ethereum & 1700+ Cryptos"
+          },
+          {
+            "url": "https://coinmarketcap.com/exchanges/bitmart/",
+            "title": "BitMart trade volume and market listings | CoinMarketCap"
+          },
+          {
+            "url": "https://www.coingecko.com/en/coins/bmx",
+            "title": "BMX Price: BMX Live Price Chart, Market Cap & News Today | CoinGecko"
+          }
+        ]
+      },
+      "ai_score": 9.0,
+      "ai_reason": null,
+      "ai_summary": "Crypto exchange BitMart is shutting down after nine years, causing its BMX token to drop 58%.",
+      "ai_tags": []
+    },
+    {
+      "id": "google_news:article:798cf39b8ed3c167",
+      "source_type": "google_news",
+      "title": "Brian Armstrong sounds alarm as Coinbase prepares for Bitcoin quantum security - Cryptopolitan",
+      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTFBIVDlwSnJkYUQxUk1JZ3dYTEZyaFduMURUVXNSRW5MYlh2bUVpdXc2UDlUaVR0QjhnZ0ZZa0I3QTE5bTJkSGhiWFBJSVJZeDhISERxTC11QWRNbTlNdGRYbXVlUXRncTBEcDJIY0NEeVRIUktqd3lF?oc=5",
+      "content": null,
+      "author": "Cryptopolitan",
+      "published_at": "2026-07-26T04:06:37Z",
+      "fetched_at": "2026-07-26T09:49:41.237379Z",
+      "metadata": {
+        "category": "exchange-announcements",
+        "title_en": "Coinbase CEO warns of quantum threat to Bitcoin",
+        "detailed_summary_en": "Coinbase CEO Brian Armstrong publicly raised concerns about Bitcoin's vulnerability to quantum computing and announced that Coinbase is preparing for quantum security challenges by investigating post-quantum cryptographic solutions. This warning highlights a long-term existential threat to Bitcoin's security, as quantum computers could break the cryptographic foundations that protect user funds. It pressures the entire cryptocurrency industry to accelerate adoption of quantum-resistant algorithms. Quantum computers could potentially break Elliptic Curve Digital Signature Algorithm (ECDSA) keys and weaken SHA-256, which underpins Bitcoin's proof-of-work and address hashing. Vulnerable addresses include legacy Pay-to-Public-Key (P2PK) scripts and certain multisignature wallets that have exposed public keys.",
+        "background_en": "Bitcoin relies on public-key cryptography (ECDSA) to secure transactions and SHA-256 for mining. A sufficiently powerful quantum computer could reverse a public key to derive the private key, allowing theft of funds. Post-quantum cryptography (e.g., lattice-based, hash-based schemes) is being researched to replace current algorithms before large-scale quantum computers become viable.",
+        "title_zh": "Coinbase CEO警告比特币面临量子威胁",
+        "detailed_summary_zh": "Coinbase首席执行官Brian Armstrong公开对比特币面临量子计算攻击的脆弱性表示担忧，并宣布Coinbase正在研究后量子密码学解决方案，为量子安全挑战做准备。 这一警告突显了比特币安全面临的长期生存威胁——量子计算机可能破解保护用户资金的密码学基础。这迫使整个加密货币行业加快采用抗量子算法。 量子计算机可能破解椭圆曲线数字签名算法（ECDSA）密钥，并削弱支撑比特币工作量证明和地址哈希的SHA-256算法。易受攻击的地址包括遗留的Pay-to-Public-Key（P2PK）脚本以及某些已暴露公钥的多重签名钱包。",
+        "background_zh": "比特币依赖于公钥密码学（ECDSA）来保护交易安全，并使用SHA-256进行挖矿。足够强大的量子计算机可以从公钥反向推导出私钥，从而盗取资金。目前研究人员正在开发后量子密码学（例如基于格、基于哈希的方案），以在大规模量子计算机成为现实之前替换现有算法。",
+        "sources": [
+          {
+            "url": "https://pchojecki.medium.com/quantum-computers-threat-to-bitcoin-e1b57b0da2aa",
+            "title": "Quantum Computers Threat to Bitcoin | by Przemek Chojecki | Medium"
+          },
+          {
+            "url": "https://river.com/learn/will-quantum-computing-break-bitcoin/",
+            "title": "Will quantum computing break Bitcoin? | River Learn - Bitcoin Technology"
+          },
+          {
+            "url": "https://finance.yahoo.com/news/quantum-computing-already-hitting-bitcoin-150000966.html",
+            "title": "Quantum Computing Is Already Hitting Bitcoin—Here’s How"
+          }
+        ]
+      },
+      "ai_score": 7.0,
+      "ai_reason": null,
+      "ai_summary": "Coinbase CEO Brian Armstrong raises concerns about Bitcoin's vulnerability to quantum computing, as the exchange prepares for future quantum security challenges.",
+      "ai_tags": []
+    },
+    {
+      "id": "rss:www.coindesk.com_arc_outboundfeeds_rss_:eabe03696863100d",
+      "source_type": "rss",
+      "title": "Russia’s largest bank Sberbank plans crypto trading infrastructure by December",
+      "url": "https://www.coindesk.com/business/2026/07/25/russia-s-largest-bank-sberbank-plans-crypto-trading-infrastructure-by-december",
+      "content": null,
+      "author": "Francisco Rodrigues",
+      "published_at": "2026-07-25T16:59:36Z",
+      "fetched_at": "2026-07-26T09:49:41.091030Z",
+      "metadata": {
+        "feed_name": "CoinDesk",
+        "category": "crypto-markets",
+        "title_en": "Russia's Sberbank Plans Crypto Trading by December",
+        "detailed_summary_en": "Sberbank, Russia's largest state-owned bank, announced plans to launch a cryptocurrency trading infrastructure by December 2026. This signals significant institutional adoption in a major economy and indicates Russia's evolving regulatory stance toward digital assets, potentially influencing other state-owned banks. The plan is a stated goal rather than an immediate launch, and specific details about the infrastructure, such as supported assets or partnerships, have not been disclosed.",
+        "background_en": "Sberbank is a dominant financial institution in Russia, similar in stature to China's ICBC. Russia has had a complex relationship with cryptocurrencies, with the central bank initially opposing them but later exploring regulation. This move aligns with a global trend of traditional banks entering the crypto space.",
+        "title_zh": "俄罗斯最大银行Sberbank计划年底前推出加密货币交易基础设施",
+        "detailed_summary_zh": "俄罗斯最大的国有银行Sberbank宣布计划在2026年12月之前推出加密货币交易基础设施。 这标志着在一个主要经济体中出现了重大的机构采用，并表明俄罗斯对数字资产的监管立场正在演变，可能影响其他国有银行。 该计划是一个表述的目标而非立即启动，关于基础设施的具体细节（如支持的资产或合作伙伴）尚未披露。",
+        "background_zh": "Sberbank是俄罗斯占主导地位的金融机构，地位类似于中国的工商银行。俄罗斯与加密货币的关系一直很复杂，央行最初持反对态度，但后来开始探索监管。此举符合传统银行进入加密货币领域的全球趋势。"
+      },
+      "ai_score": 7.0,
+      "ai_reason": null,
+      "ai_summary": "Sberbank, Russia's largest bank, plans to launch crypto trading infrastructure by December.",
+      "ai_tags": []
+    },
+    {
+      "id": "reddit:subreddit-rss:t3_1v6cmkj",
+      "source_type": "reddit",
+      "title": "Samsung Wallet Will Add Stablecoin Support, Including USDC",
+      "url": "https://www.reddit.com/r/CryptoCurrency/comments/1v6cmkj/samsung_wallet_will_add_stablecoin_support/",
+      "content": null,
+      "author": "/u/Kitchen_Biscotti_747",
+      "published_at": "2026-07-25T16:20:03Z",
+      "fetched_at": "2026-07-26T09:49:41.877789Z",
+      "metadata": {
+        "subreddit": "CryptoCurrency",
+        "discussion_url": "https://www.reddit.com/r/CryptoCurrency/comments/1v6cmkj/samsung_wallet_will_add_stablecoin_support/",
+        "category": "crypto-markets",
+        "title_en": "Samsung Wallet to Support USDC and Other Stablecoins",
+        "detailed_summary_en": "Samsung Wallet has announced plans to add support for stablecoins, starting with USD Coin (USDC), allowing users to store and manage stablecoins directly on their Samsung devices. This integration represents a major milestone for cryptocurrency adoption, as Samsung is a leading smartphone manufacturer with a massive user base. It brings stablecoins—a key entry point for crypto—directly to millions of users’ everyday devices. The update will likely leverage Samsung's hardware security features such as Knox. While USDC is confirmed, additional stablecoins may be added later, though specific timelines and full list are not yet disclosed.",
+        "background_en": "Stablecoins are cryptocurrencies designed to maintain a stable value by pegging to a reserve asset like the US dollar. USDC is a fully collateralized stablecoin issued by Circle, widely used in decentralized finance (DeFi) and payments. Samsung Wallet already supports select cryptocurrencies and blockchain-based services, making this a natural extension.",
+        "title_zh": "三星钱包将支持USDC等稳定币",
+        "detailed_summary_zh": "三星钱包宣布计划增加对稳定币的支持，首先从USD Coin（USDC）开始，使用户能够直接在三星设备上存储和管理稳定币。 这一整合是加密货币采用的一个重要里程碑，因为三星是拥有庞大用户群的领先智能手机制造商。它直接将稳定币（加密货币的重要入口）带到数百万用户的日常设备中。 该更新可能会利用三星的硬件安全功能（如Knox）。虽然已确认支持USDC，但后续可能添加更多稳定币，具体时间表和完整列表尚未公布。",
+        "background_zh": "稳定币是一种加密货币，通过锚定储备资产（如美元）来保持价值稳定。USDC是由Circle发行的完全抵押的稳定币，广泛用于去中心化金融（DeFi）和支付。三星钱包已经支持部分加密货币和基于区块链的服务，因此这一扩展是顺理成章的。",
+        "sources": [
+          {
+            "url": "https://ethereum.org/stablecoins/",
+            "title": "Stablecoins explained: What are they for? | ethereum.org"
+          },
+          {
+            "url": "https://www.linkedin.com/posts/mananjvora_stablecoins-usdc-onchainfinance-activity-7338060550809042945-7B3_",
+            "title": "USDC dominates stablecoin transfers despite smaller... | LinkedIn"
+          }
+        ]
+      },
+      "ai_score": 7.0,
+      "ai_reason": null,
+      "ai_summary": "Samsung Wallet will support stablecoins like USDC, marking a major adoption milestone.",
+      "ai_tags": []
+    }
+  ]
+}
