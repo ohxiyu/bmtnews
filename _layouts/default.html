@@ -12,7 +12,10 @@
     <meta property="og:url" content="{{ page.url | absolute_url }}">
     {% include head-custom.html %}
   </head>
-  <body class="{% if page.lang %}digest-page{% elsif page.page_type == 'home' %}home-page{% else %}docs-page{% endif %}">
+  <body
+    class="{% if page.lang %}digest-page{% elsif page.page_type == 'home' %}home-page{% else %}docs-page{% endif %}"
+    {% if page.lang %}data-language="{{ page.lang }}" data-date="{{ page.date | date: '%Y-%m-%d' }}"{% endif %}
+  >
     <a class="skip-link" href="#content">跳到正文</a>
 
     <header class="site-header">
@@ -26,8 +29,8 @@
         </a>
 
         <nav class="site-nav" aria-label="主导航">
-          <a href="{{ '/' | relative_url }}">最新</a>
-          <a href="{{ '/#archive' | relative_url }}">归档</a>
+          <a href="{{ '/' | relative_url }}">日报</a>
+          <a href="{{ '/#archive' | relative_url }}">往期</a>
           <a href="{{ '/feed-zh.xml' | relative_url }}">RSS</a>
           <a href="{{ site.repository_url }}" target="_blank" rel="noopener">GitHub</a>
         </nav>
@@ -43,7 +46,7 @@
       <section class="page-intro">
         <div class="page-intro-inner">
           <div>
-            <p class="eyebrow">{% if page.lang == "zh" %}每日加密情报{% else %}DAILY CRYPTO INTELLIGENCE{% endif %}</p>
+            <p class="eyebrow">DAILY CRYPTO INTELLIGENCE</p>
             <h1>{% if page.lang == "zh" %}加密市场日报{% else %}Crypto Market Brief{% endif %}</h1>
           </div>
           <div class="page-intro-meta">

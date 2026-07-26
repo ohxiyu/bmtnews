@@ -95,13 +95,13 @@
     badge.className = 'score-badge';
     badge.dataset.tier = scoreTier(score);
     badge.textContent = score ? score.toFixed(1) : '—';
+    badge.setAttribute('aria-label', score ? 'Score ' + score.toFixed(1) + ' out of 10' : 'No score');
     return badge;
   }
 
   function processScoreBadges(root) {
     var scoreRe = /⭐️?\s*(\d+(?:\.\d+)?)\/10/;
-    var targets = root.querySelectorAll('h2, h3, li');
-    targets.forEach(function (element) {
+    root.querySelectorAll('h2, h3, li').forEach(function (element) {
       if (element.querySelector('.score-badge')) return;
       var match = element.innerHTML.match(scoreRe);
       if (!match) return;
@@ -165,131 +165,6 @@
     host.replaceChildren(filterBar);
   }
 
-  function sectionNodesAfter(heading) {
-    var nodes = [];
-    var node = heading.nextElementSibling;
-    while (node && node.tagName !== 'H2' && node.tagName !== 'HR') {
-      nodes.push(node);
-      node = node.nextElementSibling;
-    }
-    return nodes;
-  }
-
-  function buildHomeCard(heading, index, postUrl, language) {
-    var sectionNodes = sectionNodesAfter(heading);
-    var probe = document.createElement('div');
-    probe.appendChild(heading.cloneNode(true));
-    sectionNodes.forEach(function (node) {
-      probe.appendChild(node.cloneNode(true));
-    });
-
-    var category = inferCategory(probe);
-    var score = readScore(heading);
-    var titleLink = heading.querySelector('a');
-    var title = titleLink ? textOf(titleLink) : textOf(heading).replace(/\d+(?:\.\d+)?\s*$/, '').trim();
-    var summaryNode = sectionNodes.find(function (node) {
-      return node.tagName === 'P' && !node.classList.contains('source-line') && !node.classList.contains('tag-line');
-    });
-    var sourceNode = sectionNodes.find(function (node) {
-      return node.classList.contains('source-line');
-    });
-    var anchorUrl = postUrl ? postUrl + '#item-' + (index + 1) : (titleLink ? titleLink.href : '#');
-
-    var card = document.createElement('article');
-    card.className = 'home-story-card';
-    card.dataset.category = category;
-    card.dataset.score = String(score);
-
-    var top = document.createElement('div');
-    top.className = 'story-card-top';
-    top.appendChild(createCategoryPill(category, language));
-    top.appendChild(createScoreBadge(score));
-
-    var titleElement = document.createElement('h3');
-    var titleAnchor = document.createElement('a');
-    titleAnchor.href = anchorUrl;
-    titleAnchor.textContent = title;
-    titleElement.appendChild(titleAnchor);
-
-    var summary = document.createElement('p');
-    summary.className = 'story-summary';
-    summary.textContent = summaryNode ? textOf(summaryNode) : (language === 'zh' ? '打开日报查看完整内容。' : 'Open the brief for the full story.');
-
-    var foot = document.createElement('div');
-    foot.className = 'story-card-foot';
-    var source = document.createElement('span');
-    source.textContent = sourceNode ? textOf(sourceNode) : (language === 'zh' ? 'Horizon 来源' : 'Horizon source');
-    var more = document.createElement('a');
-    more.href = anchorUrl;
-    more.textContent = language === 'zh' ? '详情 →' : 'Details →';
-    foot.appendChild(source);
-    foot.appendChild(more);
-
-    card.appendChild(top);
-    card.appendChild(titleElement);
-    card.appendChild(summary);
-    card.appendChild(foot);
-    return card;
-  }
-
-  function parseFetchedCount(source) {
-    var quote = source.querySelector('blockquote');
-    var numbers = quote ? textOf(quote).match(/\d+/g) : null;
-    return numbers && numbers.length ? parseInt(numbers[0], 10) : 0;
-  }
-
-  function updateDashboardStats(section, cards, source) {
-    var fetched = parseFetchedCount(source);
-    var critical = cards.filter(function (card) {
-      return parseFloat(card.dataset.score || '0') >= 9;
-    }).length;
-    var sources = new Set();
-    source.querySelectorAll('.source-line').forEach(function (line) {
-      var parts = textOf(line).split('·');
-      sources.add((parts[1] || parts[0] || '').trim());
-    });
-
-    var values = {
-      selected: cards.length,
-      fetched: fetched || '—',
-      critical: critical,
-      sources: sources.size || '—'
-    };
-    Object.keys(values).forEach(function (key) {
-      section.querySelectorAll('[data-stat="' + key + '"]').forEach(function (element) {
-        element.textContent = values[key];
-      });
-    });
-  }
-
-  function buildHomeDashboards() {
-    document.querySelectorAll('.home-dashboard').forEach(function (dashboard) {
-      var source = dashboard.querySelector('.latest-digest-source');
-      var grid = dashboard.querySelector('.home-story-grid');
-      if (!source || !grid) return;
-
-      processScoreBadges(source);
-      markSemanticElements(source);
-      var language = normalizeLanguage(dashboard.dataset.language);
-      var postUrl = dashboard.dataset.postUrl || '';
-      var headings = Array.prototype.slice.call(source.querySelectorAll('h2'));
-      var cards = headings.map(function (heading, index) {
-        return buildHomeCard(heading, index, postUrl, language);
-      });
-
-      cards.sort(function (a, b) {
-        return parseFloat(b.dataset.score || '0') - parseFloat(a.dataset.score || '0');
-      });
-      cards.forEach(function (card) {
-        grid.appendChild(card);
-      });
-
-      var languageSection = dashboard.closest('.lang-section') || dashboard;
-      updateDashboardStats(languageSection, cards, source);
-      setupFilters(dashboard.querySelector('.filter-host'), cards, language);
-    });
-  }
-
   function isExtraStoryNode(node) {
     if (node.tagName === 'DETAILS' || node.classList.contains('tag-line')) return true;
     if (node.tagName !== 'P') return false;
@@ -298,110 +173,251 @@
     return /^(Background|Discussion|背景|社区讨论)$/.test(textOf(strong));
   }
 
-  function wrapDigestItems() {
-    if (!document.body.classList.contains('digest-page')) return;
-    var main = document.querySelector('.main-content');
-    if (!main) return;
+  function parseFetchedCount(root) {
+    var quote = root.querySelector(':scope > blockquote:first-of-type');
+    var numbers = quote ? textOf(quote).match(/\d+/g) : null;
+    return numbers && numbers.length ? parseInt(numbers[0], 10) : 0;
+  }
 
-    processScoreBadges(main);
-    markSemanticElements(main);
-    var language = normalizeLanguage(document.documentElement.lang);
-    var headings = Array.prototype.slice.call(main.children).filter(function (element) {
+  function updateFeedStats(scope, articles, root, fetchedCount) {
+    var critical = articles.filter(function (article) {
+      return parseFloat(article.dataset.score || '0') >= 9;
+    }).length;
+    var sources = new Set();
+    root.querySelectorAll('.source-line').forEach(function (line) {
+      var parts = textOf(line).split('·');
+      sources.add((parts[1] || parts[0] || '').trim());
+    });
+
+    var values = {
+      selected: articles.length,
+      fetched: fetchedCount || '—',
+      critical: critical,
+      sources: sources.size || '—'
+    };
+    Object.keys(values).forEach(function (key) {
+      scope.querySelectorAll('[data-stat="' + key + '"]').forEach(function (element) {
+        element.textContent = values[key];
+      });
+    });
+  }
+
+  function createStoryMore(article, language) {
+    var extras = Array.prototype.slice.call(article.children).filter(isExtraStoryNode);
+    if (!extras.length) return;
+
+    var details = document.createElement('details');
+    details.className = 'story-more';
+    var summary = document.createElement('summary');
+    summary.textContent = language === 'zh' ? '背景、讨论与参考资料' : 'Background, discussion, and references';
+    var content = document.createElement('div');
+    content.className = 'story-more-content';
+    extras.forEach(function (extra) {
+      content.appendChild(extra);
+    });
+    details.appendChild(summary);
+    details.appendChild(content);
+    article.appendChild(details);
+  }
+
+  function createDigestArticle(root, heading, index, language, date) {
+    var anchorParagraph = heading.previousElementSibling;
+    var anchor = anchorParagraph && anchorParagraph.matches('p')
+      ? anchorParagraph.querySelector('a[id^="item-"]')
+      : null;
+    if (!anchor) anchorParagraph = null;
+
+    var article = document.createElement('article');
+    article.className = 'digest-item';
+    root.insertBefore(article, anchorParagraph || heading);
+
+    var rawId = anchor ? anchor.id : 'item-' + (index + 1);
+    var idPrefix = document.body.classList.contains('home-page') ? language + '-' : '';
+    article.id = idPrefix + rawId;
+    if (anchorParagraph) anchorParagraph.remove();
+
+    var node = heading;
+    while (node && node.tagName !== 'HR') {
+      var next = node.nextElementSibling;
+      article.appendChild(node);
+      node = next;
+    }
+    if (node && node.tagName === 'HR') node.remove();
+
+    var category = inferCategory(article);
+    var score = readScore(heading);
+    var headingBadge = heading.querySelector('.score-badge');
+    if (headingBadge) headingBadge.remove();
+    article.dataset.category = category;
+    article.dataset.score = String(score);
+
+    var meta = document.createElement('div');
+    meta.className = 'digest-item-meta';
+    var metaLeft = document.createElement('div');
+    metaLeft.appendChild(createCategoryPill(category, language));
+    meta.appendChild(metaLeft);
+    meta.appendChild(createScoreBadge(score));
+    article.insertBefore(meta, heading);
+
+    createStoryMore(article, language);
+
+    var content = document.createElement('div');
+    content.className = 'digest-item-content';
+    while (article.firstChild) {
+      content.appendChild(article.firstChild);
+    }
+
+    var rail = document.createElement('div');
+    rail.className = 'digest-item-rail';
+    var number = document.createElement('strong');
+    number.textContent = '#' + String(index + 1).padStart(2, '0');
+    var shortDate = document.createElement('time');
+    shortDate.dateTime = date || '';
+    shortDate.textContent = date ? date.slice(5).replace('-', '.') : '';
+    rail.appendChild(number);
+    rail.appendChild(shortDate);
+
+    article.appendChild(rail);
+    article.appendChild(content);
+    return article;
+  }
+
+  function configureHeadlineDisclosure(details) {
+    if (!window.matchMedia) {
+      details.open = true;
+      return;
+    }
+    var wide = window.matchMedia('(min-width: 901px)');
+    var sync = function () {
+      details.open = wide.matches;
+    };
+    sync();
+    if (wide.addEventListener) wide.addEventListener('change', sync);
+    else if (wide.addListener) wide.addListener(sync);
+  }
+
+  function setupActiveHeadline(articles, tocItems) {
+    if (!('IntersectionObserver' in window)) return;
+    var byId = {};
+    tocItems.forEach(function (item) {
+      var link = item.querySelector('a[href^="#"]');
+      if (link) byId[link.getAttribute('href').slice(1)] = item;
+    });
+
+    var observer = new IntersectionObserver(function (entries) {
+      var visible = entries.filter(function (entry) {
+        return entry.isIntersecting && !entry.target.hidden;
+      }).sort(function (a, b) {
+        return a.boundingClientRect.top - b.boundingClientRect.top;
+      });
+      if (!visible.length) return;
+      var active = byId[visible[0].target.id];
+      tocItems.forEach(function (item) {
+        item.classList.toggle('active', item === active);
+      });
+      if (active) active.scrollIntoView({block: 'nearest'});
+    }, {
+      rootMargin: '-16% 0px -70% 0px',
+      threshold: 0
+    });
+
+    articles.forEach(function (article) {
+      observer.observe(article);
+    });
+  }
+
+  function createHeadlineRail(toc, articles, language) {
+    var aside = document.createElement('aside');
+    aside.className = 'headline-rail';
+    aside.setAttribute('aria-label', language === 'zh' ? '当日标题汇总' : 'Daily headline index');
+
+    var details = document.createElement('details');
+    details.className = 'headline-index';
+    var summary = document.createElement('summary');
+    var title = document.createElement('span');
+    title.textContent = language === 'zh' ? '当日标题汇总' : 'Today’s headlines';
+    var count = document.createElement('small');
+    count.textContent = articles.length;
+    summary.appendChild(title);
+    summary.appendChild(count);
+    details.appendChild(summary);
+
+    toc.classList.add('headline-list');
+    details.appendChild(toc);
+    aside.appendChild(details);
+    configureHeadlineDisclosure(details);
+    return aside;
+  }
+
+  function enhanceDigest(root) {
+    if (!root || root.dataset.enhanced === 'true') return;
+    root.dataset.enhanced = 'true';
+    root.classList.add('daily-feed-content');
+
+    var language = normalizeLanguage(root.dataset.language || document.body.dataset.language || document.documentElement.lang);
+    var date = root.dataset.date || document.body.dataset.date || '';
+    processScoreBadges(root);
+    markSemanticElements(root);
+
+    var fetchedCount = parseFetchedCount(root);
+    var quote = root.querySelector(':scope > blockquote:first-of-type');
+    var selectionText = textOf(quote);
+    var toc = root.querySelector(':scope > ol');
+    var headings = Array.prototype.slice.call(root.children).filter(function (element) {
       return element.tagName === 'H2';
     });
-    var articles = [];
+    if (!toc || !headings.length) return;
 
-    headings.forEach(function (heading) {
-      var anchorParagraph = heading.previousElementSibling;
-      if (!anchorParagraph || !anchorParagraph.matches('p') || !anchorParagraph.querySelector('a[id^="item-"]')) {
-        anchorParagraph = null;
-      }
-      var article = document.createElement('article');
-      article.className = 'digest-item';
-      main.insertBefore(article, anchorParagraph || heading);
-      if (anchorParagraph) {
-        article.appendChild(anchorParagraph.querySelector('a[id^="item-"]'));
-        anchorParagraph.remove();
-      }
-
-      var node = heading;
-      while (node && node.tagName !== 'HR') {
-        var next = node.nextElementSibling;
-        article.appendChild(node);
-        node = next;
-      }
-      if (node && node.tagName === 'HR') node.remove();
-
-      var category = inferCategory(article);
-      var score = readScore(heading);
-      var headingBadge = heading.querySelector('.score-badge');
-      if (headingBadge) headingBadge.remove();
-      article.dataset.category = category;
-      article.dataset.score = String(score);
-
-      var meta = document.createElement('div');
-      meta.className = 'digest-item-meta';
-      meta.appendChild(createCategoryPill(category, language));
-      meta.appendChild(createScoreBadge(score));
-      article.insertBefore(meta, heading);
-
-      var extras = Array.prototype.slice.call(article.children).filter(isExtraStoryNode);
-      if (extras.length) {
-        var details = document.createElement('details');
-        details.className = 'story-more';
-        var summary = document.createElement('summary');
-        summary.textContent = language === 'zh' ? '背景、讨论与参考资料' : 'Background, discussion, and references';
-        var content = document.createElement('div');
-        content.className = 'story-more-content';
-        extras.forEach(function (extra) {
-          content.appendChild(extra);
-        });
-        details.appendChild(summary);
-        details.appendChild(content);
-        article.appendChild(details);
-      }
-
-      var summaryParagraph = Array.prototype.slice.call(article.children).find(function (element) {
-        return element.tagName === 'P' &&
-          !element.classList.contains('source-line') &&
-          !element.classList.contains('tag-line') &&
-          !element.querySelector('strong:first-child');
-      });
-      if (summaryParagraph && textOf(summaryParagraph).length > 180) {
-        summaryParagraph.classList.add('story-summary-body');
-        var summaryToggle = document.createElement('button');
-        summaryToggle.type = 'button';
-        summaryToggle.className = 'summary-toggle';
-        summaryToggle.textContent = language === 'zh' ? '展开摘要' : 'Expand summary';
-        summaryToggle.addEventListener('click', function () {
-          var expanded = summaryParagraph.classList.toggle('expanded');
-          summaryToggle.textContent = language === 'zh'
-            ? (expanded ? '收起摘要' : '展开摘要')
-            : (expanded ? 'Collapse summary' : 'Expand summary');
-        });
-        summaryParagraph.insertAdjacentElement('afterend', summaryToggle);
-      }
-
-      articles.push(article);
+    var articles = headings.map(function (heading, index) {
+      return createDigestArticle(root, heading, index, language, date);
     });
-
-    if (!articles.length) return;
-    var toc = main.querySelector(':scope > ol');
-    var tocItems = toc ? Array.prototype.slice.call(toc.querySelectorAll(':scope > li')) : [];
+    var tocItems = Array.prototype.slice.call(toc.querySelectorAll(':scope > li'));
     tocItems.forEach(function (item, index) {
-      if (articles[index]) item.dataset.category = articles[index].dataset.category;
+      if (!articles[index]) return;
+      item.dataset.category = articles[index].dataset.category;
+      var link = item.querySelector('a[href^="#"]');
+      if (link) link.setAttribute('href', '#' + articles[index].id);
     });
 
+    var toolbar = document.createElement('div');
+    toolbar.className = 'feed-toolbar';
+    var note = document.createElement('p');
+    note.className = 'feed-selection-note';
+    note.textContent = selectionText || (language === 'zh'
+      ? '今日重要资讯按影响力排序。'
+      : 'Today’s important stories, ranked by impact.');
     var filterHost = document.createElement('div');
     filterHost.className = 'digest-filter-host';
-    if (toc) toc.insertAdjacentElement('afterend', filterHost);
-    else main.insertBefore(filterHost, articles[0]);
+    toolbar.appendChild(note);
+    toolbar.appendChild(filterHost);
 
+    var layout = document.createElement('div');
+    layout.className = 'daily-feed-layout';
+    var stream = document.createElement('div');
+    stream.className = 'daily-story-stream';
+    articles.forEach(function (article) {
+      stream.appendChild(article);
+    });
+    var aside = createHeadlineRail(toc, articles, language);
+    layout.appendChild(stream);
+    layout.appendChild(aside);
+
+    root.replaceChildren(toolbar, layout);
+    var statsScope = root.closest('.daily-feed') || root;
+    updateFeedStats(statsScope, articles, stream, fetchedCount);
     setupFilters(filterHost, articles, language, function (category) {
       tocItems.forEach(function (item) {
         item.hidden = category !== 'all' && item.dataset.category !== category;
       });
     });
+    setupActiveHeadline(articles, tocItems);
+  }
+
+  function enhanceDailyFeeds() {
+    document.querySelectorAll('.home-page .daily-feed-content').forEach(enhanceDigest);
+    if (document.body.classList.contains('digest-page')) {
+      enhanceDigest(document.querySelector('.main-content'));
+    }
   }
 
   function setupLanguageToggle() {
@@ -431,6 +447,7 @@
     var current = isDigest ? pageLanguage : (saved === 'en' ? 'en' : 'zh');
     var sectionZh = document.getElementById('lang-zh');
     var sectionEn = document.getElementById('lang-en');
+    var archiveLink = document.querySelector('.site-nav a:nth-child(2)');
 
     function update(language) {
       buttonEn.classList.toggle('active', language === 'en');
@@ -439,6 +456,10 @@
         sectionZh.classList.toggle('hidden', language !== 'zh');
         sectionEn.classList.toggle('hidden', language !== 'en');
       }
+      if (archiveLink && !isDigest) {
+        archiveLink.setAttribute('href', language === 'en' ? '#archive-en' : '#archive');
+      }
+      document.documentElement.lang = language === 'en' ? 'en' : 'zh-CN';
     }
 
     function switchDigest(language) {
@@ -517,7 +538,6 @@
   document.addEventListener('DOMContentLoaded', function () {
     setupThemeToggle();
     setupLanguageToggle();
-    buildHomeDashboards();
-    wrapDigestItems();
+    enhanceDailyFeeds();
   });
 })();
