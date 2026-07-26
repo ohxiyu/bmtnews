@@ -1,56 +1,168 @@
 ---
 layout: default
 title: Home
+page_type: home
 ---
 
-# Horizon
+{% assign zh_posts = site.posts | where: "lang", "zh" %}
+{% assign en_posts = site.posts | where: "lang", "en" %}
+{% assign latest_zh = zh_posts | first %}
+{% assign latest_en = en_posts | first %}
 
-<div id="lang-zh" class="lang-section" markdown="1">
+<div id="lang-zh" class="lang-section">
+  <section class="home-hero">
+    <div class="home-hero-copy">
+      <p class="eyebrow">CRYPTO SIGNAL, MINUS THE NOISE</p>
+      <h1>每天一页，看懂加密市场。</h1>
+      <p>聚合交易所公告、安全事件、市场结构、监管变化和协议更新，只保留真正影响资金与决策的信息。</p>
+      {% if latest_zh %}
+        <div class="home-hero-actions">
+          <a class="primary-action" href="{{ latest_zh.url | relative_url }}">阅读完整日报</a>
+          <a class="secondary-action" href="#latest">浏览今日重点</a>
+        </div>
+      {% endif %}
+    </div>
 
-欢迎来到 [Horizon](https://github.com/thysrael/Horizon)，一个 AI 驱动的信息聚合系统。
+    <div class="signal-board" aria-label="今日数据">
+      <div class="signal-board-head">
+        <span>今日情报</span>
+        <span class="live-indicator"><i></i> Daily</span>
+      </div>
+      <div class="signal-stats">
+        <div><strong data-stat="selected">—</strong><span>精选</span></div>
+        <div><strong data-stat="fetched">—</strong><span>已分析</span></div>
+        <div><strong data-stat="critical">—</strong><span>高优先级</span></div>
+        <div><strong data-stat="sources">—</strong><span>来源</span></div>
+      </div>
+      <div class="signal-date">
+        <span>最近更新</span>
+        <strong>{% if latest_zh %}{{ latest_zh.date | date: "%Y-%m-%d" }}{% else %}等待首期日报{% endif %}</strong>
+      </div>
+    </div>
+  </section>
 
-## 文档
+  <section id="latest" class="dashboard-panel home-dashboard" data-language="zh" data-post-url="{% if latest_zh %}{{ latest_zh.url | relative_url }}{% endif %}">
+    <header class="section-heading">
+      <div>
+        <p class="eyebrow">TODAY'S SIGNALS</p>
+        <h2>今日重点</h2>
+      </div>
+      {% if latest_zh %}
+        <a href="{{ latest_zh.url | relative_url }}">完整日报 →</a>
+      {% endif %}
+    </header>
 
-- [配置指南](configuration) — AI 提供商、信息源、过滤规则与环境变量替换
-- [信息源采集器](scrapers) — Horizon 如何从 GitHub、Hacker News、RSS、Reddit 采集内容
-- [评分系统](scoring) — 基于 AI 的内容分析与 0-10 评分体系
+    <div class="filter-host" aria-label="新闻分类"></div>
+    {% if latest_zh %}
+      <div class="latest-digest-source" hidden>{{ latest_zh.content }}</div>
+      <div class="home-story-grid"></div>
+    {% else %}
+      <div class="empty-state">日报生成后，首页会在这里显示高密度新闻卡片。</div>
+    {% endif %}
+  </section>
 
-## 每日速递 <a class="rss-icon" href="{{ '/feed-zh.xml' | relative_url }}" aria-label="订阅中文"><svg viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor" d="M128.081 415.959c0 35.369-28.672 64.041-64.041 64.041S0 451.328 0 415.959s28.672-64.041 64.041-64.041 64.04 28.673 64.04 64.041zm175.66 47.25c-8.354-154.6-132.185-278.587-286.95-286.95C7.656 175.765 0 183.105 0 192.253v48.069c0 8.415 6.49 15.472 14.887 16.018 111.832 7.284 201.473 96.702 208.772 208.772.547 8.397 7.604 14.887 16.018 14.887h48.069c9.149.001 16.489-7.655 15.995-16.79zm144.249.288C439.596 229.677 251.465 40.445 16.503 32.01 7.473 31.686 0 38.981 0 48.016v48.068c0 8.625 6.835 15.645 15.453 15.999 191.179 7.839 344.627 161.316 352.465 352.465.353 8.618 7.373 15.453 15.999 15.453h48.068c9.034-.001 16.329-7.474 16.005-16.504z"/></svg></a>
-
-<ul>
-  {% assign zh_posts = site.posts | where: "lang", "zh" %}
-  {% for post in zh_posts limit:20 %}
-    <li>
-      <a href="{{ post.url | relative_url }}">{{ post.date | date: "%Y-%m-%d" }}</a>
-    </li>
-  {% else %}
-    <li><em>暂无内容</em></li>
-  {% endfor %}
-</ul>
-
+  <section id="archive" class="archive-section">
+    <header class="section-heading">
+      <div>
+        <p class="eyebrow">ARCHIVE</p>
+        <h2>历史日报</h2>
+      </div>
+      <a class="rss-link" href="{{ '/feed-zh.xml' | relative_url }}">订阅 RSS</a>
+    </header>
+    <div class="archive-grid">
+      {% for post in zh_posts limit:24 %}
+        <a href="{{ post.url | relative_url }}">
+          <strong>{{ post.date | date: "%m.%d" }}</strong>
+          <span>{{ post.date | date: "%Y" }}</span>
+        </a>
+      {% else %}
+        <span class="empty-state">暂无历史日报</span>
+      {% endfor %}
+    </div>
+  </section>
 </div>
 
-<div id="lang-en" class="lang-section" markdown="1">
+<div id="lang-en" class="lang-section hidden">
+  <section class="home-hero">
+    <div class="home-hero-copy">
+      <p class="eyebrow">CRYPTO SIGNAL, MINUS THE NOISE</p>
+      <h1>One page for the crypto day.</h1>
+      <p>Exchange alerts, security incidents, market structure, regulation, and protocol updates—filtered for real impact.</p>
+      {% if latest_en %}
+        <div class="home-hero-actions">
+          <a class="primary-action" href="{{ latest_en.url | relative_url }}">Read full brief</a>
+          <a class="secondary-action" href="#latest-en">Browse top signals</a>
+        </div>
+      {% endif %}
+    </div>
 
-Welcome to [Horizon](https://github.com/thysrael/Horizon), an AI-driven information aggregation system.
+    <div class="signal-board" aria-label="Daily metrics">
+      <div class="signal-board-head">
+        <span>Daily intelligence</span>
+        <span class="live-indicator"><i></i> Daily</span>
+      </div>
+      <div class="signal-stats">
+        <div><strong data-stat="selected">—</strong><span>Selected</span></div>
+        <div><strong data-stat="fetched">—</strong><span>Analyzed</span></div>
+        <div><strong data-stat="critical">—</strong><span>High priority</span></div>
+        <div><strong data-stat="sources">—</strong><span>Sources</span></div>
+      </div>
+      <div class="signal-date">
+        <span>Latest update</span>
+        <strong>{% if latest_en %}{{ latest_en.date | date: "%Y-%m-%d" }}{% else %}Waiting for first brief{% endif %}</strong>
+      </div>
+    </div>
+  </section>
 
-## Documentation
+  <section id="latest-en" class="dashboard-panel home-dashboard" data-language="en" data-post-url="{% if latest_en %}{{ latest_en.url | relative_url }}{% endif %}">
+    <header class="section-heading">
+      <div>
+        <p class="eyebrow">TODAY'S SIGNALS</p>
+        <h2>Top stories</h2>
+      </div>
+      {% if latest_en %}
+        <a href="{{ latest_en.url | relative_url }}">Full brief →</a>
+      {% endif %}
+    </header>
 
-- [Configuration Guide](configuration) — AI providers, information sources, filtering, and environment variable substitution
-- [Source Scrapers](scrapers) — How Horizon collects content from GitHub, Hacker News, RSS, and Reddit
-- [Scoring System](scoring) — AI-based content analysis and the 0-10 scoring scale
+    <div class="filter-host" aria-label="Story categories"></div>
+    {% if latest_en %}
+      <div class="latest-digest-source" hidden>{{ latest_en.content }}</div>
+      <div class="home-story-grid"></div>
+    {% else %}
+      <div class="empty-state">Dense story cards will appear here after the first daily brief is generated.</div>
+    {% endif %}
+  </section>
 
-## Daily Digest <a class="rss-icon" href="{{ '/feed-en.xml' | relative_url }}" aria-label="Subscribe English"><svg viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor" d="M128.081 415.959c0 35.369-28.672 64.041-64.041 64.041S0 451.328 0 415.959s28.672-64.041 64.041-64.041 64.04 28.673 64.04 64.041zm175.66 47.25c-8.354-154.6-132.185-278.587-286.95-286.95C7.656 175.765 0 183.105 0 192.253v48.069c0 8.415 6.49 15.472 14.887 16.018 111.832 7.284 201.473 96.702 208.772 208.772.547 8.397 7.604 14.887 16.018 14.887h48.069c9.149.001 16.489-7.655 15.995-16.79zm144.249.288C439.596 229.677 251.465 40.445 16.503 32.01 7.473 31.686 0 38.981 0 48.016v48.068c0 8.625 6.835 15.645 15.453 15.999 191.179 7.839 344.627 161.316 352.465 352.465.353 8.618 7.373 15.453 15.999 15.453h48.068c9.034-.001 16.329-7.474 16.005-16.504z"/></svg></a>
-
-<ul>
-  {% assign en_posts = site.posts | where: "lang", "en" %}
-  {% for post in en_posts limit:20 %}
-    <li>
-      <a href="{{ post.url | relative_url }}">{{ post.date | date: "%Y-%m-%d" }}</a>
-    </li>
-  {% else %}
-    <li><em>No posts yet</em></li>
-  {% endfor %}
-</ul>
-
+  <section class="archive-section">
+    <header class="section-heading">
+      <div>
+        <p class="eyebrow">ARCHIVE</p>
+        <h2>Previous briefs</h2>
+      </div>
+      <a class="rss-link" href="{{ '/feed-en.xml' | relative_url }}">Subscribe via RSS</a>
+    </header>
+    <div class="archive-grid">
+      {% for post in en_posts limit:24 %}
+        <a href="{{ post.url | relative_url }}">
+          <strong>{{ post.date | date: "%m.%d" }}</strong>
+          <span>{{ post.date | date: "%Y" }}</span>
+        </a>
+      {% else %}
+        <span class="empty-state">No previous briefs yet</span>
+      {% endfor %}
+    </div>
+  </section>
 </div>
+
+<section class="utility-section">
+  <div>
+    <p class="eyebrow">HOW IT WORKS</p>
+    <h2>从信息源到每日情报</h2>
+  </div>
+  <div class="utility-grid">
+    <a href="{{ '/scrapers' | relative_url }}"><strong>01</strong><span>信息源</span><small>交易所、媒体、社区与协议更新</small></a>
+    <a href="{{ '/scoring' | relative_url }}"><strong>02</strong><span>AI 评分</span><small>安全性、资金影响与市场重要性</small></a>
+    <a href="{{ '/configuration' | relative_url }}"><strong>03</strong><span>自定义</span><small>来源、阈值、分类与分发方式</small></a>
+  </div>
+</section>

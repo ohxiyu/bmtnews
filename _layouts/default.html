@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: 'zh-CN' }}">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#0b1020">
+    <title>{% if page.title and page.title != "Home" %}{{ page.title }} · {% endif %}{{ site.title }}</title>
+    <meta name="description" content="{{ page.description | default: site.description | escape }}">
+    <meta property="og:title" content="{{ page.title | default: site.title | escape }}">
+    <meta property="og:description" content="{{ page.description | default: site.description | escape }}">
+    <meta property="og:type" content="{% if page.lang %}article{% else %}website{% endif %}">
+    <meta property="og:url" content="{{ page.url | absolute_url }}">
+    {% include head-custom.html %}
+  </head>
+  <body class="{% if page.lang %}digest-page{% elsif page.page_type == 'home' %}home-page{% else %}docs-page{% endif %}">
+    <a class="skip-link" href="#content">跳到正文</a>
+
+    <header class="site-header">
+      <div class="site-header-inner">
+        <a class="site-brand" href="{{ '/' | relative_url }}" aria-label="Horizon 首页">
+          <span class="site-brand-mark" aria-hidden="true">H</span>
+          <span class="site-brand-copy">
+            <strong>Horizon</strong>
+            <small>Crypto Intelligence</small>
+          </span>
+        </a>
+
+        <nav class="site-nav" aria-label="主导航">
+          <a href="{{ '/' | relative_url }}">最新</a>
+          <a href="{{ '/#archive' | relative_url }}">归档</a>
+          <a href="{{ '/feed-zh.xml' | relative_url }}">RSS</a>
+          <a href="{{ site.repository_url }}" target="_blank" rel="noopener">GitHub</a>
+        </nav>
+
+        <div class="site-actions">
+          <div class="lang-toggle-slot" aria-label="语言切换"></div>
+          <button class="theme-toggle" type="button" aria-label="切换深色模式" title="切换深色模式">◐</button>
+        </div>
+      </div>
+    </header>
+
+    {% if page.lang %}
+      <section class="page-intro">
+        <div class="page-intro-inner">
+          <div>
+            <p class="eyebrow">{% if page.lang == "zh" %}每日加密情报{% else %}DAILY CRYPTO INTELLIGENCE{% endif %}</p>
+            <h1>{% if page.lang == "zh" %}加密市场日报{% else %}Crypto Market Brief{% endif %}</h1>
+          </div>
+          <div class="page-intro-meta">
+            <span>{{ page.date | date: "%Y-%m-%d" }}</span>
+            <span>{% if page.lang == "zh" %}交易所 · 市场 · 安全 · 监管 · 协议{% else %}Exchanges · Markets · Security · Regulation · Protocols{% endif %}</span>
+          </div>
+        </div>
+      </section>
+    {% elsif page.page_type != "home" %}
+      <section class="page-intro page-intro-docs">
+        <div class="page-intro-inner">
+          <div>
+            <p class="eyebrow">HORIZON DOCUMENTATION</p>
+            <h1>{{ page.title }}</h1>
+          </div>
+        </div>
+      </section>
+    {% endif %}
+
+    <main id="content" class="main-content" role="main">
+      {{ content }}
+    </main>
+
+    <footer class="site-footer">
+      <div>
+        <strong>Horizon</strong>
+        <span>面向加密市场的每日情报雷达。</span>
+      </div>
+      <div class="site-footer-links">
+        <a href="{{ '/configuration' | relative_url }}">配置</a>
+        <a href="{{ '/scoring' | relative_url }}">评分</a>
+        <a href="{{ site.repository_url }}" target="_blank" rel="noopener">源代码</a>
+      </div>
+    </footer>
+  </body>
+</html>
