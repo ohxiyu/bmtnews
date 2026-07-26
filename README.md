@@ -329,6 +329,13 @@ The generated report will be saved to `data/summaries/`.
 
 Horizon works great as a **GitHub Actions** cron job. See [`.github/workflows/daily-summary.yml`](.github/workflows/daily-summary.yml) for a ready-to-use workflow that generates and deploys your daily briefing to GitHub Pages automatically.
 
+Each native pipeline run also writes `data/run-report.json` with counts for
+fetching, URL deduplication, local-day filtering, AI analysis, thresholding,
+topic deduplication, and final display, plus the status of each top-level
+source. The runtime file is not committed. GitHub Actions renders it into the
+workflow run's Job Summary; partial source failures appear as warnings, while
+an all-source failure still fails the job.
+
 ## Supported Sources
 
 | Source | What it fetches | Comments |

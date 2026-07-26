@@ -60,6 +60,10 @@ jobs:
           HORIZON_WEBHOOK_URL: ${{ secrets.HORIZON_WEBHOOK_URL }}
         run: uv run horizon --hours 24
 
+      - name: Publish run report
+        if: ${{ always() }}
+        run: python -m src.run_report --input data/run-report.json --output "$GITHUB_STEP_SUMMARY"
+
       - name: Set current date as environment variable
         run: echo "DATE=$(date +'%Y-%m-%d')" >> $GITHUB_ENV
 

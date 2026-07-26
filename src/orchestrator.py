@@ -39,6 +39,7 @@ from .daily_feed import (
     merge_daily_items,
     save_daily_feed_state,
 )
+from .run_report import RunReport, save_run_report
 
 
 _TRACKING_QUERY_PARAMETERS = {
@@ -114,6 +115,7 @@ class SourceFetchOutcome:
     source_name: str
     status: Literal["success", "empty", "failure"]
     items: List[ContentItem] = field(default_factory=list)
+    subsource_counts: Dict[str, int] = field(default_factory=dict)
     error: Optional[str] = None
 
     def to_dict(self) -> Dict[str, object]:
@@ -121,6 +123,7 @@ class SourceFetchOutcome:
             "source": self.source_name,
             "status": self.status,
             "item_count": len(self.items),
+            "subsource_counts": dict(self.subsource_counts),
         }
         if self.error is not None:
             result["error"] = self.error
@@ -191,6 +194,7 @@ class HorizonOrchestrator:
             else None
         )
         self.last_fetch_report: Optional[FetchReport] = None
+        self.last_run_report: Optional[RunReport] = None
 
     async def run(self, force_hours: int = None) -> None:
         """Execute the complete workflow.
@@ -200,20 +204,25 @@ class HorizonOrchestrator:
         """
         self.console.print("[bold cyan]🌅 Horizon - Starting aggregation...[/bold cyan]\n")
 
-        # Check email subscriptions if configured
-        if (
-            self.email_manager
-            and self.config.email
-            and self.config.email.enabled
-            and self.config.email.imap_enabled
-        ):
-            self.console.print("📧 Checking for new email subscriptions...")
-            self.email_manager.check_subscriptions(self.storage)
-
         daily_timezone = getattr(self.config.filtering, "daily_timezone", "UTC")
+        run_started_at = datetime.now(timezone.utc)
+        today = local_date_for(run_started_at, daily_timezone)
+        run_report = RunReport.start(
+            date=today,
+            timezone_name=daily_timezone,
+            started_at=run_started_at,
+        )
+        self.last_run_report = run_report
         try:
-            run_started_at = datetime.now(timezone.utc)
-            today = local_date_for(run_started_at, daily_timezone)
+            # Check email subscriptions if configured
+            if (
+                self.email_manager
+                and self.config.email
+                and self.config.email.enabled
+                and self.config.email.imap_enabled
+            ):
+                self.console.print("📧 Checking for new email subscriptions...")
+                self.email_manager.check_subscriptions(self.storage)
 
             # 1. Determine time window
             since = self._determine_time_window(force_hours)
@@ -221,17 +230,29 @@ class HorizonOrchestrator:
 
             # 2. Fetch content from all sources
             all_items = await self.fetch_all_sources(since)
+            run_report.set_metric("fetched_raw", len(all_items))
+            run_report.attach_fetch_report(
+                self.last_fetch_report.to_dict()
+                if self.last_fetch_report is not None
+                else None
+            )
             self.console.print(f"📥 Fetched {len(all_items)} items from all sources\n")
 
             if self.last_fetch_report and self.last_fetch_report.all_failed:
                 raise RuntimeError(self.last_fetch_report.failure_message())
 
             if not all_items:
+                run_report.add_alert(
+                    "info",
+                    "no_new_content",
+                    "本次采集没有返回新内容。",
+                )
                 self.console.print("[yellow]No new content found. Exiting.[/yellow]")
                 return
 
             # 3. Merge cross-source duplicates (same URL from different sources)
             merged_items = self.merge_cross_source_duplicates(all_items)
+            run_report.set_metric("unique_after_url_dedup", len(merged_items))
             if len(merged_items) < len(all_items):
                 self.console.print(
                     f"🔗 Merged {len(all_items) - len(merged_items)} cross-source duplicates "
@@ -247,6 +268,7 @@ class HorizonOrchestrator:
                     today,
                     daily_timezone,
                 )
+                run_report.set_metric("current_day_items", len(merged_items))
                 self.console.print(
                     f"🗓️  Kept {len(merged_items)}/{before_daily_filter} items "
                     f"published on {today} ({daily_timezone})\n"
@@ -264,11 +286,17 @@ class HorizonOrchestrator:
                     if analyzed_item_key(item) not in analyzed_keys
                 ]
                 skipped_count = before_incremental_filter - len(merged_items)
+                run_report.set_metric(
+                    "skipped_already_analyzed",
+                    skipped_count,
+                )
                 if skipped_count:
                     self.console.print(
                         f"⏭️  Skipped {skipped_count} items already analyzed today; "
                         f"{len(merged_items)} new items remain\n"
                     )
+            else:
+                run_report.set_metric("current_day_items", len(merged_items))
 
             # 4. Analyze with AI
             analyzed_items = (
@@ -276,6 +304,7 @@ class HorizonOrchestrator:
                 if merged_items
                 else []
             )
+            run_report.set_metric("analyzed_this_run", len(analyzed_items))
             self.console.print(f"🤖 Analyzed {len(analyzed_items)} items with AI\n")
 
             # 5. Filter, deduplicate, and balance the digest
@@ -289,12 +318,25 @@ class HorizonOrchestrator:
                 ),
             )
             important_items = filtering_result.items
+            run_report.set_metric(
+                "above_threshold",
+                filtering_result.threshold_count,
+            )
+            run_report.set_metric(
+                "topic_duplicates_removed",
+                filtering_result.topic_dedup_removed,
+            )
 
             # 5.5 Optional second-stage Twitter reply expansion + targeted re-analysis
             await self._expand_twitter_discussion(important_items)
 
             # 5.6 Apply digest limits after any targeted re-analysis changes scores.
-            important_items = self.apply_balanced_digest(important_items).items
+            balanced_result = self.apply_balanced_digest(important_items)
+            important_items = balanced_result.items
+            run_report.set_metric(
+                "balanced_digest_removed",
+                filtering_result.topic_dedup_count - len(important_items),
+            )
 
             # Show per-sub-source selection breakdown
             selected_counts: Dict[str, int] = defaultdict(int)
@@ -309,7 +351,11 @@ class HorizonOrchestrator:
             await self._enrich_important_items(important_items)
 
             analyzed_count = len(all_items)
+            existing_display_identities: set[str] = set()
             if daily_state is not None:
+                existing_display_identities = {
+                    item_identity(item) for item in daily_state.items
+                }
                 important_items = merge_daily_items(
                     daily_state.items,
                     important_items,
@@ -333,6 +379,31 @@ class HorizonOrchestrator:
                     f"saved state to {state_path}\n"
                 )
 
+            displayed_identities = {
+                item_identity(item) for item in important_items
+            }
+            run_report.set_metric(
+                "analyzed_today",
+                analyzed_count if daily_state is not None else len(analyzed_items),
+            )
+            run_report.set_metric(
+                "newly_displayed",
+                len(displayed_identities - existing_display_identities),
+            )
+            run_report.set_metric("displayed_today", len(important_items))
+            run_report.set_metric(
+                "high_priority",
+                sum((item.ai_score or 0) >= 9 for item in important_items),
+            )
+            if analyzed_items and not (
+                displayed_identities - existing_display_identities
+            ):
+                run_report.add_alert(
+                    "info",
+                    "no_new_displayed_items",
+                    "本次完成了 AI 分析，但没有新增条目进入页面展示。",
+                )
+
             # 7. Generate and save daily summaries for each configured language
             for lang in self.config.ai.languages:
                 summarizer = DailySummarizer(display_timezone=daily_timezone)
@@ -346,6 +417,7 @@ class HorizonOrchestrator:
                 # Save to data/summaries/
                 summary_path = self.storage.save_daily_summary(today, summary, language=lang)
                 self.console.print(f"💾 Saved {lang.upper()} summary to: {summary_path}\n")
+                run_report.record_summary(lang)
 
                 # Copy to docs/ for GitHub Pages
                 try:
@@ -366,6 +438,14 @@ class HorizonOrchestrator:
                         f"lang: {lang}\n"
                         "---\n\n"
                     )
+                    run_stats = (
+                        '<div class="run-stats" hidden '
+                        f'data-fetched="{run_report.metrics.get("fetched_raw", 0)}" '
+                        f'data-analyzed="{run_report.metrics.get("analyzed_today", 0)}" '
+                        f'data-selected="{run_report.metrics.get("displayed_today", 0)}" '
+                        f'data-critical="{run_report.metrics.get("high_priority", 0)}">'
+                        "</div>\n\n"
+                    )
 
                     # Strip leading H1 header to avoid duplication with Jekyll title
                     summary_content = summary
@@ -376,10 +456,15 @@ class HorizonOrchestrator:
                             summary_content = parts[1].strip()
 
                     with open(dest_path, "w", encoding="utf-8") as f:
-                        f.write(front_matter + summary_content)
+                        f.write(front_matter + run_stats + summary_content)
 
                     self.console.print(f"📄 Copied {lang.upper()} summary to GitHub Pages: {dest_path}\n")
                 except Exception as e:
+                    run_report.add_alert(
+                        "warning",
+                        f"page_summary_copy_failed_{lang}",
+                        f"{lang.upper()} 页面摘要写入失败：{e}",
+                    )
                     self.console.print(f"[yellow]⚠️  Failed to copy {lang.upper()} summary to docs/: {e}[/yellow]\n")
 
                 # Send email if configured
@@ -417,6 +502,7 @@ class HorizonOrchestrator:
                     )
 
         except Exception as e:
+            run_report.fail(e)
             self.console.print(f"[bold red]❌ Error: {e}[/bold red]")
 
             # Send webhook failure notification if configured
@@ -430,6 +516,17 @@ class HorizonOrchestrator:
                 )
 
             raise
+        finally:
+            run_report.finish()
+            try:
+                report_path = save_run_report(run_report)
+                self.console.print(f"\n📊 Saved run report to: {report_path}")
+            except Exception as report_error:
+                self.console.print(
+                    f"[red]❌ Failed to save run report: {report_error}[/red]"
+                )
+                if run_report.status != "failure":
+                    raise
 
     def _determine_time_window(self, force_hours: int = None) -> datetime:
         if force_hours:
@@ -563,6 +660,7 @@ class HorizonOrchestrator:
             source_name=name,
             status="success" if items else "empty",
             items=items,
+            subsource_counts=dict(sorted(sub_counts.items())),
         )
 
     @staticmethod
