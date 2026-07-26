@@ -959,7 +959,7 @@ input {
 }
 
 .story-more[open] > summary::after {
-  content: "−";
+  content: "-";
 }
 
 .story-more-content {
