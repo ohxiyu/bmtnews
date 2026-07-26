@@ -1,9 +1,11 @@
 """Daily summary generation — pure programmatic rendering."""
 
+from datetime import timezone
 import html
 import re
 from typing import Dict, List, Optional
 from urllib.parse import quote, urlsplit
+from zoneinfo import ZoneInfo
 
 from ..models import ContentItem
 
@@ -92,8 +94,8 @@ LABELS = {
 class DailySummarizer:
     """Generates daily Markdown summaries from pre-analyzed content items."""
 
-    def __init__(self):
-        pass
+    def __init__(self, display_timezone: str = "UTC"):
+        self.display_timezone = ZoneInfo(display_timezone)
 
     async def generate_summary(
         self,
@@ -232,14 +234,18 @@ class DailySummarizer:
         else:
             source_parts.append(_escape_markdown(item.author or "unknown"))
         if item.published_at:
+            published_at = item.published_at
+            if published_at.tzinfo is None:
+                published_at = published_at.replace(tzinfo=timezone.utc)
+            published_at = published_at.astimezone(self.display_timezone)
             if language == "zh":
                 source_parts.append(
-                    f"{item.published_at.month}月{item.published_at.day}日 "
-                    f"{item.published_at:%H:%M}"
+                    f"{published_at.month}月{published_at.day}日 "
+                    f"{published_at:%H:%M}"
                 )
             else:
-                day = item.published_at.strftime("%d").lstrip("0")
-                source_parts.append(item.published_at.strftime(f"%b {day}, %H:%M"))
+                day = published_at.strftime("%d").lstrip("0")
+                source_parts.append(published_at.strftime(f"%b {day}, %H:%M"))
         source_line = " \u00b7 ".join(source_parts)  # ·
 
         discussion_url = meta.get("discussion_url")

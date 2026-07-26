@@ -3,6 +3,7 @@ description: Crypto market intelligence covering exchanges, markets, security, r
 baseurl: ""
 url: "https://bmt.news"
 asset_version: "20260726.2"
+timezone: "Asia/Shanghai"
 
 # Build settings
 markdown: kramdown

@@ -250,6 +250,8 @@
   "filtering": {
     "ai_score_threshold": 7.0,
     "time_window_hours": 24,
+    "daily_timezone": "Asia/Shanghai",
+    "preserve_daily_items": true,
     "max_items": 24,
     "category_groups": {
       "exchange": {

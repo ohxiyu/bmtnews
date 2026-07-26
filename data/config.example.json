@@ -131,6 +131,8 @@
   "filtering": {
     "ai_score_threshold": 6.0,
     "time_window_hours": 24,
+    "daily_timezone": "UTC",
+    "preserve_daily_items": false,
     "max_items": null,
     "category_groups": {},
     "default_group": "other",

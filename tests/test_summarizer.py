@@ -124,6 +124,22 @@ def test_generate_summary_zh_uses_localized_selection_header_and_numeric_date():
     assert "Apr 25, 08:00" not in result
 
 
+def test_generate_summary_displays_source_time_in_configured_timezone():
+    item = _make_item(1)
+    item.published_at = datetime(2026, 7, 26, 16, 30, tzinfo=timezone.utc)
+
+    result = _run_async(
+        DailySummarizer(display_timezone="Asia/Shanghai").generate_summary(
+            [item],
+            "2026-07-27",
+            1,
+            language="zh",
+        )
+    )
+
+    assert "7月27日 00:30" in result
+
+
 def test_generate_empty_summary_zh_uses_localized_analyzed_line():
     summarizer = DailySummarizer()
 
