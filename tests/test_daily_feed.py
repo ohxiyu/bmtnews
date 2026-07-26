@@ -12,6 +12,7 @@ from src.daily_feed import (
     DailyFeedState,
     DailyFeedStateError,
     analyzed_item_key,
+    item_identity,
     items_for_local_date,
     load_daily_feed_state,
     local_date_for,
@@ -132,12 +133,19 @@ def test_state_round_trip_keeps_public_fields_only(tmp_path: Path) -> None:
         datetime(2026, 7, 27, 4, 0, tzinfo=timezone.utc),
         8.5,
     )
+    historical_item = make_item(
+        "historical",
+        "https://example.com/historical",
+        datetime(2026, 7, 26, 4, 0, tzinfo=timezone.utc),
+        8.0,
+    )
     state = DailyFeedState(
         date="2026-07-27",
         timezone="Asia/Shanghai",
         updated_at=datetime(2026, 7, 27, 4, 5, tzinfo=timezone.utc),
         analyzed_keys=["key-one", "key-two"],
         items=[item],
+        dedup_history=[historical_item],
     )
 
     save_daily_feed_state(state, path)
@@ -151,6 +159,54 @@ def test_state_round_trip_keeps_public_fields_only(tmp_path: Path) -> None:
         "category": "crypto-markets",
         "detailed_summary_zh": "Summary item",
     }
+    assert loaded.dedup_history[0].content is None
+    assert loaded.dedup_history[0].ai_reason is None
+
+
+def test_previous_day_items_roll_into_dedup_history(tmp_path: Path) -> None:
+    path = tmp_path / "state.json"
+    previous = make_item(
+        "previous",
+        "https://example.com/story?utm_source=first",
+        datetime(2026, 7, 27, 4, 0, tzinfo=timezone.utc),
+        8.5,
+    )
+    state = DailyFeedState(
+        date="2026-07-27",
+        timezone="Asia/Shanghai",
+        updated_at=datetime(2026, 7, 27, 4, 5, tzinfo=timezone.utc),
+        analyzed_keys=["old"],
+        items=[previous],
+    )
+    save_daily_feed_state(state, path)
+
+    loaded = load_daily_feed_state("2026-07-28", "Asia/Shanghai", path)
+
+    assert loaded.date == "2026-07-28"
+    assert loaded.items == []
+    assert loaded.analyzed_keys == []
+    assert [item.id for item in loaded.dedup_history] == ["previous"]
+
+
+def test_dedup_history_drops_items_older_than_two_days(tmp_path: Path) -> None:
+    path = tmp_path / "state.json"
+    old = make_item(
+        "old",
+        "https://example.com/old",
+        datetime(2026, 7, 26, 4, 0, tzinfo=timezone.utc),
+        8.0,
+    )
+    state = DailyFeedState(
+        date="2026-07-28",
+        timezone="Asia/Shanghai",
+        updated_at=datetime(2026, 7, 28, 4, 5, tzinfo=timezone.utc),
+        dedup_history=[old],
+    )
+    save_daily_feed_state(state, path)
+
+    loaded = load_daily_feed_state("2026-07-29", "Asia/Shanghai", path)
+
+    assert loaded.dedup_history == []
 
 
 def test_state_from_previous_day_starts_empty(tmp_path: Path) -> None:
@@ -336,3 +392,97 @@ def test_orchestrator_reapplies_limits_after_merging_daily_state(
         tmp_path / "docs" / "_data" / "bmtnews_state.json",
     )
     assert [item.id for item in state.items] == ["later"]
+
+
+def test_filter_items_drops_published_url_before_semantic_dedup(
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    published = make_item(
+        "published",
+        "https://example.com/story?utm_source=first",
+        datetime(2026, 7, 26, 4, 0, tzinfo=timezone.utc),
+        8.0,
+    )
+    incoming = make_item(
+        "incoming",
+        "https://example.com/story",
+        datetime(2026, 7, 27, 4, 0, tzinfo=timezone.utc),
+        9.0,
+    )
+    config = Config(
+        ai=AIConfig(
+            provider="openai",
+            model="test",
+            api_key_env="TEST_API_KEY",
+            languages=[],
+        ),
+        sources=SourcesConfig(),
+        filtering=FilteringConfig(ai_score_threshold=7.0),
+    )
+    orchestrator = HorizonOrchestrator(config, storage=object())
+
+    async def unexpected_topic_dedup(items, *, log=True):  # type: ignore[no-untyped-def]
+        raise AssertionError("exact published URL should not reach semantic dedup")
+
+    monkeypatch.setattr(
+        orchestrator,
+        "merge_topic_duplicates",
+        unexpected_topic_dedup,
+    )
+
+    result = asyncio.run(
+        orchestrator.filter_items(
+            [incoming],
+            apply_balance=False,
+            dedup_context=[published],
+        )
+    )
+
+    assert item_identity(incoming) == item_identity(published)
+    assert result.items == []
+    assert result.topic_dedup_removed == 1
+
+
+def test_filter_items_drops_semantic_duplicate_from_published_history(
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    published = make_item(
+        "published",
+        "https://first.example/sberbank",
+        datetime(2026, 7, 26, 4, 0, tzinfo=timezone.utc),
+        8.0,
+    )
+    incoming = make_item(
+        "incoming",
+        "https://second.example/sberbank",
+        datetime(2026, 7, 27, 4, 0, tzinfo=timezone.utc),
+        9.0,
+    )
+    config = Config(
+        ai=AIConfig(
+            provider="openai",
+            model="test",
+            api_key_env="TEST_API_KEY",
+            languages=[],
+        ),
+        sources=SourcesConfig(),
+        filtering=FilteringConfig(ai_score_threshold=7.0),
+    )
+    orchestrator = HorizonOrchestrator(config, storage=object())
+
+    async def keep_first(items, *, log=True):  # type: ignore[no-untyped-def]
+        assert [item.id for item in items] == ["published", "incoming"]
+        return items[:1]
+
+    monkeypatch.setattr(orchestrator, "merge_topic_duplicates", keep_first)
+
+    result = asyncio.run(
+        orchestrator.filter_items(
+            [incoming],
+            apply_balance=False,
+            dedup_context=[published],
+        )
+    )
+
+    assert result.items == []
+    assert result.topic_dedup_removed == 1
