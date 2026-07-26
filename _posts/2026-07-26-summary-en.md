@@ -5,279 +5,304 @@ date: 2026-07-26
 lang: en
 ---
 
-> From 79 items, 12 important content pieces were selected
+> From 80 items, 14 important content pieces were selected
 
 ---
 
-1. [Two Ethereum bridges lose $31.7M in hours, third halts staking](#item-1) ⭐️ 9.0/10
-2. [Crypto Payments Firm Triple-A Hit by $9.7 Million Wallet Drain](#item-2) ⭐️ 9.0/10
-3. [Kraken Delists Multiple Assets for UAE Clients](#item-3) ⭐️ 8.0/10
-4. [Kraken Reports ARS Withdrawal Delays Due to PayAmigo Issue](#item-4) ⭐️ 8.0/10
-5. [AI Agent Autonomously Launches Company, Opens Bank Account](#item-5) ⭐️ 8.0/10
-6. [Coinbase CEO warns of quantum threat to Bitcoin, prepares security](#item-6) ⭐️ 8.0/10
-7. [Sberbank Plans Crypto Trading Infrastructure by December](#item-7) ⭐️ 7.0/10
-8. [Robinhood Chain RWAs surge 5x as tokenized stock trades grow](#item-8) ⭐️ 7.0/10
-9. [Fidelity urges Senate passage of CLARITY Act for crypto clarity](#item-9) ⭐️ 7.0/10
-10. [Kraken Announces RAIN Token Delisting](#item-10) ⭐️ 7.0/10
-11. [MicroStrategy Joins BlackRock and Coinbase in Bitcoin Security Consortium](#item-11) ⭐️ 7.0/10
-12. [Coinbase Lobbies Senate for Clarity Act After Police Backing](#item-12) ⭐️ 7.0/10
+1. [Two Ethereum Bridges Exploited for $31.7M, Third Pauses Staking](#item-1) ⭐️ 10.0/10
+2. [Crypto Payments Firm Triple-A Hit by $9.7M Wallet Drain](#item-2) ⭐️ 9.0/10
+3. [New context engineering rules for Claude 5 raise data retention and automemory concerns](#item-3) ⭐️ 8.0/10
+4. [BitMart exchange shuts down after 9 years; BMX token crashes 58%](#item-4) ⭐️ 8.0/10
+5. [Kraken Delists XMR, ZEC, DASH, and Stablecoins for UAE Clients](#item-5) ⭐️ 8.0/10
+6. [Sberbank Plans Crypto Trading by December](#item-6) ⭐️ 7.0/10
+7. [Robinhood Chain RWA Surges Fivefold on Tokenized Stocks](#item-7) ⭐️ 7.0/10
+8. [Fidelity backs CLARITY Act for crypto market structure](#item-8) ⭐️ 7.0/10
+9. [ACX Token Wind-Down: Coinbase to Suspend Trading](#item-9) ⭐️ 7.0/10
+10. [Kraken to Delist RAIN Token with Specific Deadlines](#item-10) ⭐️ 7.0/10
+11. [Kraken ARS Withdrawals Delayed Due to PayAmigo Issue](#item-11) ⭐️ 7.0/10
+12. [Strategy Joins BlackRock, Coinbase in Bitcoin Security Consortium](#item-12) ⭐️ 7.0/10
+13. [Four Coinbase Executives Exit or Shift Roles in Two Weeks](#item-13) ⭐️ 7.0/10
+14. [AI Agent Autonomously Creates Company and Bank Account](#item-14) ⭐️ 7.0/10
 
 ---
 
 <a id="item-1"></a>
-## [Two Ethereum bridges lose $31.7M in hours, third halts staking](https://www.reddit.com/r/CryptoCurrency/comments/1v6940c/two_ethereum_bridges_lose_317m_within_hours_as/) ⭐️ 9.0/10
+## [Two Ethereum Bridges Exploited for $31.7M, Third Pauses Staking](https://www.reddit.com/r/CryptoCurrency/comments/1v6940c/two_ethereum_bridges_lose_317m_within_hours_as/) ⭐️ 10.0/10
 
-Two Ethereum bridges were exploited within hours, resulting in combined losses of $31.7 million, while a third protocol paused staking operations amid security concerns. This incident underscores the persistent vulnerability of cross-chain bridges, which have accounted for roughly 40% of all DeFi hacks since 2022, and highlights the urgent need for more secure bridging solutions. The two bridges lost a total of $31.7 million, with exploits occurring within hours of each other; the third protocol halted staking to prevent further potential losses. Specific bridge names and exploit methods were not disclosed in the report.
+Two Ethereum bridges were exploited within hours, resulting in a combined loss of $31.7 million in user funds. In response, a third protocol halted its staking operations to prevent further risk. This incident underscores the persistent security vulnerabilities in cross-chain bridges, which are critical infrastructure for moving assets between blockchains. The losses directly impact users and may trigger increased scrutiny and calls for better security measures across the DeFi ecosystem. The two exploited bridges are not named in the provided information, but the losses occurred within a short timeframe. The third protocol that paused staking likely did so to protect user funds and assess vulnerabilities.
 
 reddit · r/CryptoCurrency · /u/kirtash93 · Jul 25, 13:57
 
-**Background**: Ethereum bridges are protocols that allow users to transfer assets between different blockchains. They often rely on validators or smart contracts to lock and mint tokens, making them attractive targets for attackers. Since 2022, bridge exploits have caused over $2.8 billion in cumulative losses, representing roughly 40% of all value hacked in Web3.
+**Background**: Blockchain bridges allow users to transfer crypto assets from one blockchain to another, such as moving tokens from Ethereum to a Layer-2 network. They are frequent targets for hackers due to the large amounts of locked value. Staking involves locking up cryptocurrency to support network operations and earn rewards; pausing staking can be a precautionary measure during security incidents.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://ethereum.org/developers/docs/bridges">Bridges | ethereum.org</a></li>
-<li><a href="https://phemex.com/blogs/defi-hacks-2026-bridge-exploits-explained">Every Major DeFi Hack in 2026 So Far | Bridge Exploits Dominate</a></li>
+<li><a href="https://ethereum.org/bridges">Introduction to blockchain bridges | ethereum.org</a></li>
+<li><a href="https://ethereum.org/staking/">Ethereum staking: How does it work? | ethereum.org</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#security`, `#bridge`, `#exploit`, `#ethereum`, `#DeFi`
+**Tags**: `#Security`, `#Bridge`, `#Ethereum`, `#Exploit`, `#Staking`
 
 ---
 
 <a id="item-2"></a>
-## [Crypto Payments Firm Triple-A Hit by $9.7 Million Wallet Drain](https://www.reddit.com/r/CryptoCurrency/comments/1v6aplc/crypto_payments_firm_triplea_hit_by_97_million/) ⭐️ 9.0/10
+## [Crypto Payments Firm Triple-A Hit by $9.7M Wallet Drain](https://www.reddit.com/r/CryptoCurrency/comments/1v6aplc/crypto_payments_firm_triplea_hit_by_97_million/) ⭐️ 9.0/10
 
-Crypto payments firm Triple-A suffered a $9.7 million security breach where attackers drained hot wallets across multiple blockchain networks. This incident undermines trust in crypto payment infrastructure and highlights the ongoing vulnerability of hot wallets, especially for firms handling user funds. The drain involved multi-chain wallets; on-chain analyst Specter first flagged the outflows on X. The attack comes amid a streak of exploits hitting crypto protocols this month.
+Crypto payments firm Triple-A suffered a wallet drain attack resulting in the theft of $9.7 million in digital assets. This incident underscores critical security vulnerabilities in crypto payment infrastructure, potentially eroding trust in such services and highlighting the need for enhanced wallet protection measures. The specific attack vector remains undisclosed, but wallet drain attacks commonly involve phishing or malware to obtain private keys. Triple-A is a regulated crypto payment provider, making this breach particularly concerning for institutional clients.
 
 reddit · r/CryptoCurrency · /u/DustInside6861 · Jul 25, 15:02
 
-**Background**: Wallet drain attacks are a common type of crypto theft where attackers trick users into signing malicious transactions that grant control over assets. Unlike traditional hacks, drainers often exploit permission approvals rather than private key compromise.
+**Background**: A wallet drainer is malicious code that deceives users into surrendering control of their cryptocurrency wallets, enabling attackers to transfer all funds. These attacks often use fake websites or dApps, and because blockchain transactions are irreversible, victims typically cannot recover stolen assets. Crypto payment firms like Triple-A handle large transaction volumes, making them attractive targets.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://finance.yahoo.com/markets/crypto/articles/crypto-payments-firm-triple-hit-074739477.html">Crypto Payments Firm Triple - A Hit by $9.7 Million Wallet Drain</a></li>
-<li><a href="https://www.cryptometer.io/news/crypto-payments-firm-triple-a-suffers-9-7-million-multi-chain-wallet-drain/">Crypto Payments Firm Triple - A Suffers $9.7 Million Multi-Chain...</a></li>
+<li><a href="https://www.group-ib.com/resources/knowledge-hub/crypto-wallet-drainers/">Crypto Wallet Drainers | Group-IB Knowledge Hub</a></li>
+<li><a href="https://adguard.com/en/blog/crypto-wallet-drainer.html">Crypto wallet drainers: how to detect and avoid scams</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#security`, `#hack`, `#payments`, `#wallet drain`, `#incident`
+**Tags**: `#security`, `#hack`, `#crypto payments`, `#wallet drain`, `#incident`
 
 ---
 
 <a id="item-3"></a>
-## [Kraken Delists Multiple Assets for UAE Clients](https://status.kraken.com/incidents/wktgpx1dc3jk) ⭐️ 8.0/10
+## [New context engineering rules for Claude 5 raise data retention and automemory concerns](https://claude.com/blog/the-new-rules-of-context-engineering-for-claude-5-generation-models) ⭐️ 8.0/10
 
-Kraken announced a scheduled delisting of XMR, ZEC, DASH, USDD, DAI, USDS, and USDE for UAE clients, with trading, deposit, and withdrawal deadlines from June to September 2025. This impacts UAE users&\#x27; ability to trade and hold privacy coins and certain stablecoins, potentially forcing liquidation or transfer before deadlines. It reflects increasing regulatory pressure on privacy-focused cryptocurrencies globally. Open margin positions will close on June 15, deposits and trading disabled on June 16, withdrawals disabled on September 14, and remaining balances liquidated between September 15-25. Liquidation proceeds are determined by market conditions and not guaranteed.
+Anthropic published new context engineering guidelines for Claude 5 models, but community feedback reveals significant concerns about automatic deletion of context history and over-reliance on automemory. These guidelines are essential for developers using Claude 5, but the reported issues could undermine trust in the platform and affect adoption, especially for long-term projects requiring persistent context. The default retention for Claude Code context history is only 30–45 days, automatically deleting older data. Automemory is criticized for making unreliable contextual leaps without transparent reasoning, which can lead to unintended decisions.
 
-rss · Kraken Status · Sep 25, 12:00
+hackernews · mellosouls · Jul 25, 20:42 · [Discussion](https://news.ycombinator.com/item?id=49051361)
 
-**Background**: Privacy coins like Monero \(XMR\) and Zcash \(ZEC\) use advanced cryptography to obscure transaction details, making them attractive for private transfers but also raising regulatory concerns. Stablecoins like DAI and USDe are designed to maintain a stable value, but their regulatory status varies. Kraken&\#x27;s delisting follows regular asset reviews, likely driven by UAE regulatory requirements.
+**Background**: Context engineering extends prompt engineering by systematically optimizing all information provided to LLMs at inference time, including instructions, data, and reasoning traces. Automemory allows Claude to store and recall user-specific information across sessions, but its reliability has been questioned. Claude 5 includes new models like Sonnet 5, which offer improved safety and performance in agentic contexts.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://en.wikipedia.org/wiki/Monero">Monero - Wikipedia</a></li>
-<li><a href="https://en.wikipedia.org/wiki/Zcash">Zcash - Wikipedia</a></li>
-<li><a href="https://coinmarketcap.com/currencies/ethena-usde/">Ethena USDe price today, USDe to USD live price, marketcap and chart | CoinMarketCap</a></li>
+<li><a href="https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents">Effective context engineering for AI agents \ Anthropic</a></li>
+<li><a href="https://arxiv.org/abs/2507.13334">[2507.13334] A Survey of Context Engineering for Large ... Effective context engineering for AI agents \ Anthropic LLM Context Engineering: a practical guide - Medium Meirtz/Awesome-Context-Engineering - GitHub Context Engineering Guide | Prompt Engineering Guide What is context engineering? - IBM GitHub - jasontang-ai/Context-Engineering: &quot;Context ...</a></li>
+<li><a href="https://www.anthropic.com/news/claude-sonnet-5">Introducing Claude Sonnet 5 \ Anthropic</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#delisting`, `#Kraken`, `#UAE`, `#regulation`, `#privacy coins`
+**Discussion**: Users expressed frustration over automatic data deletion on local devices, with one calling it &\#x27;nuts&\#x27; \(espeed\). Another criticized automemory&\#x27;s tendency to make huge leaps that don&\#x27;t make sense, while noting its occasional usefulness makes the problem worse for operators \(threecheese\). Some users prefer manual edits over lengthy instructions, arguing for simpler interaction \(firasd\).
+
+**Tags**: `#AI`, `#LLM`, `#context engineering`, `#data privacy`, `#Anthropic`
 
 ---
 
 <a id="item-4"></a>
-## [Kraken Reports ARS Withdrawal Delays Due to PayAmigo Issue](https://status.kraken.com/incidents/rrwjdcsmy2kv) ⭐️ 8.0/10
+## [BitMart exchange shuts down after 9 years; BMX token crashes 58%](https://www.coindesk.com/markets/2026/07/26/crypto-exchange-bitmart-to-shut-down-after-nine-years-bmx-token-crashes-58) ⭐️ 8.0/10
 
-Kraken identified an issue with PayAmigo causing Argentine Peso \(ARS\) withdrawal delays across all its products. A fix is being implemented as of July 26, 2023 UTC. This disruption directly affects Kraken users&\#x27; ability to access their funds in ARS, a fiat currency used in Argentina. It highlights the dependency of cryptocurrency exchanges on third-party payment processors for fiat operations. The issue is specific to ARS withdrawals; all other funding methods remain operational. PayAmigo is a payment enabler focused on emerging markets including Latin America.
+On July 26, 2026, cryptocurrency exchange BitMart announced an orderly wind-down, halting all trading by August 26 and giving users six months to withdraw funds. In response, its native BMX token crashed approximately 58%. BitMart&\#x27;s closure marks another major exchange shutdown, following BitMEX&\#x27;s announcement days earlier, signaling a consolidation trend among mid-tier crypto exchanges. This event affects millions of users and underscores the risks of holding exchange-native tokens, which can lose most of their value upon such announcements. BitMart did not provide a specific reason for the shutdown, though the exchange had suffered a $196 million hack in December 2021. BMX is an ERC-20 token used for trading fee discounts and governance, and its price fell from around $0.22 to below $0.10.
 
-rss · Kraken Status · Jul 26, 02:02
+rss · CoinDesk · Jul 26, 06:59
 
-**Background**: Kraken is a major cryptocurrency exchange that supports fiat currency deposits and withdrawals. PayAmigo provides localized payment solutions for merchants in emerging markets. The delay has been identified and a fix is being implemented.
+**Background**: BitMart is a global cryptocurrency exchange that launched in March 2018, offering trading in over 1,700 cryptocurrencies. It issued the BMX token as a utility and governance token within its ecosystem. The exchange faced a major security breach in 2021, but continued operations until the recently announced wind-down. The closure is part of a broader trend of consolidation in the crypto exchange industry, with several mid-tier platforms shutting down amid increasing regulatory and competitive pressures.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://payamigo.com/">Home - PayAmigo</a></li>
-<li><a href="https://www.linkedin.com/company/payamigopayments">PayAmigo | LinkedIn</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Bitmart">Bitmart - Wikipedia</a></li>
+<li><a href="https://coinmarketcap.com/currencies/bitmart-token/">BitMart Token price today, BMX to USD live price, marketcap ... BitMart announces it is shutting down as BMX token crashes ... BitMart Token (BMX) | The Official Token of the BitMart Ecosystem BitMart to shut down after nine years, exchange token crashes 58% BitMart Price: BMX/USD Live Price Chart, Market Cap &amp; News ... What Is BitMart Token (BMX) And How Does It Work? - CoinMarketCap BMX Token Crashes 46% as BitMart Announces Exchange Wind Down</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#Kraken`, `#Fiat Withdrawals`, `#Operational Issue`, `#Argentina`
+**Tags**: `#exchange closure`, `#BitMart`, `#BMX token`, `#market event`, `#crash`
 
 ---
 
 <a id="item-5"></a>
-## [AI Agent Autonomously Launches Company, Opens Bank Account](https://news.google.com/rss/articles/CBMitAFBVV95cUxPX1lNUW1ydUswdGNabG9sejV6bmVHZ082Q3RYVXlJRkNGWWtFZzkyM1psdU91dWtwb0dfZ281R2lpRkhQMThaOFJkNWpVNkJEOGFodVFPT2ZaVkVrd2RPX2pEM0E2aEYyT2t5YVBJbEV0bk1ER2FmejNFS2V3SjlUUmRfMVFUWlRMMUpzekZaVzZiQ1dkVVQtSDZVNnBhejVNcDltNFpVU1E3Sm1nNE5JUzFnUjI?oc=5) ⭐️ 8.0/10
+## [Kraken Delists XMR, ZEC, DASH, and Stablecoins for UAE Clients](https://status.kraken.com/incidents/wktgpx1dc3jk) ⭐️ 8.0/10
 
-An AI agent has independently incorporated a company and opened a bank account without any human involvement, marking a milestone in autonomous AI operations. This development showcases the growing capability of AI to perform real-world legal and financial actions, potentially transforming business creation and management. It also raises important questions about legal accountability and control of autonomous agents. The AI agent operated on a blockchain platform, likely utilizing smart contracts and decentralized identity to fulfill legal requirements. The specific AI agent, company structure, and banking partner have not been disclosed in the snippet.
+Kraken announced the delisting of XMR, ZEC, DASH, USDD, DAI, USDS, and USDE for UAE clients, starting with margin closure on June 15, 2025, and full liquidation by September 25, 2025. This delisting directly impacts UAE users holding privacy coins and stablecoins, forcing them to exit positions or face automatic liquidation. It reflects growing regulatory scrutiny on anonymous transactions and stablecoin compliance. Key dates: margin closure on June 15, deposit and trading halt on June 16, withdrawal cutoff on September 14, and liquidation from September 15 to 25. Liquidation proceeds depend on market conditions and are not predetermined.
 
-google\_news · CoinMarketCap · Jul 25, 11:15
+rss · Kraken Status · Sep 25, 12:00
 
-**Background**: AI agents are software programs that can perform tasks autonomously, often using machine learning and access to external tools. Decentralized Autonomous Organizations \(DAOs\) are blockchain-based entities that operate via smart contracts, enabling collective management without central authority. This event blurs the line between AI agents and DAOs, as the agent acted as both founder and operator.
+**Background**: Privacy coins like Monero \(XMR\) use advanced cryptography to obscure transaction details, making them targets for regulatory action. Stablecoins such as USDD and USDE are pegged to the US dollar but may face compliance issues. Kraken conducts periodic asset reviews to align with local regulations, leading to delistings in certain jurisdictions.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://ethereum.org/dao/">What is a DAO ? | Decentralized Autonomous Organization</a></li>
-<li><a href="https://twin.so/">Twin is an AI employee that works autonomously across all your apps...</a></li>
-<li><a href="https://agent.ai/">Agent . ai | The #1 Professional Network for AI Agents</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Monero">Monero - Wikipedia</a></li>
+<li><a href="https://coinmarketcap.com/currencies/usdd/">USDD price today, USDD to USD live price, marketcap and chart ...</a></li>
+<li><a href="https://coinmarketcap.com/currencies/ethena-usde/">Ethena USDe price today, USDe to USD live price, marketcap ...</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#AI`, `#blockchain`, `#decentralized autonomous organization`, `#innovation`
+**Tags**: `#exchange`, `#delisting`, `#regulation`, `#UAE`, `#privacy coins`
 
 ---
 
 <a id="item-6"></a>
-## [Coinbase CEO warns of quantum threat to Bitcoin, prepares security](https://news.google.com/rss/articles/CBMid0FVX3lxTFBIVDlwSnJkYUQxUk1JZ3dYTEZyaFduMURUVXNSRW5MYlh2bUVpdXc2UDlUaVR0QjhnZ0ZZa0I3QTE5bTJkSGhiWFBJSVJZeDhISERxTC11QWRNbTlNdGRYbXVlUXRncTBEcDJIY0NEeVRIUktqd3lF?oc=5) ⭐️ 8.0/10
+## [Sberbank Plans Crypto Trading by December](https://www.coindesk.com/business/2026/07/25/russia-s-largest-bank-sberbank-plans-crypto-trading-infrastructure-by-december) ⭐️ 7.0/10
 
-Coinbase CEO Brian Armstrong publicly warned about the risk quantum computing poses to Bitcoin&\#x27;s cryptographic security, announcing that the exchange is proactively preparing to implement quantum-resistant measures to protect user funds. This signals a major industry player taking the long-term quantum threat seriously, which could push other exchanges and the broader crypto ecosystem to accelerate adoption of post-quantum cryptography, ensuring Bitcoin&\#x27;s resilience against future computing advances. The announcement did not specify a timeline for quantum-resistant upgrades, and quantum computers capable of breaking Bitcoin&\#x27;s cryptography are not expected for at least a decade. However, Coinbase has reportedly invested $15 million in quantum security research.
+Sberbank, Russia&\#x27;s largest bank, announced plans to launch cryptocurrency trading infrastructure by December, marking a major step into digital assets for a traditional financial institution. This move signals growing institutional adoption in Russia as the country navigates its regulatory stance on cryptocurrencies, potentially opening up a large new market for digital asset trading. The plan is still in development and subject to regulatory approval, but it reflects Sberbank&\#x27;s ongoing interest in blockchain technology and digital assets.
 
-google\_news · Cryptopolitan · Jul 26, 04:06
+rss · CoinDesk · Jul 25, 16:59
 
-**Background**: Quantum computers, if sufficiently powerful, could run Shor&\#x27;s algorithm to break the elliptic curve cryptography used in Bitcoin&\#x27;s digital signatures, allowing attackers to forge transactions and steal funds. Post-quantum cryptography \(PQC\) aims to design algorithms secure against both classical and quantum attacks. NIST has already released initial PQC standards in 2024, providing a foundation for migration.
-
-<details><summary>References</summary>
-<ul>
-<li><a href="https://en.wikipedia.org/wiki/Post-quantum_cryptography">Post-quantum cryptography</a></li>
-<li><a href="https://en.wikipedia.org/wiki/Shor&#x27;s_algorithm">Shor&#x27;s algorithm</a></li>
-<li><a href="https://www.deloitte.com/nl/en/services/consulting-risk/perspectives/quantum-computers-and-the-bitcoin-blockchain.html">Quantum computers and the Bitcoin blockchain | Deloitte</a></li>
-
-</ul>
-</details>
-
-**Tags**: `#Bitcoin`, `#quantum security`, `#Coinbase`, `#cryptography`
+**Tags**: `#Russia`, `#Sberbank`, `#crypto trading`, `#institutional adoption`, `#regulation`
 
 ---
 
 <a id="item-7"></a>
-## [Sberbank Plans Crypto Trading Infrastructure by December](https://www.coindesk.com/business/2026/07/25/russia-s-largest-bank-sberbank-plans-crypto-trading-infrastructure-by-december) ⭐️ 7.0/10
+## [Robinhood Chain RWA Surges Fivefold on Tokenized Stocks](https://www.coindesk.com/business/2026/07/25/robinhood-chain-s-real-world-assets-jump-fivefold-as-tokenized-stocks-start-trading-in-bigger-size) ⭐️ 7.0/10
 
-Sberbank, Russia&\#x27;s largest bank, announced plans to launch crypto trading infrastructure by December, enabling institutional crypto trading in Russia. This move signals potential institutional adoption and regulatory evolution in Russia, which could influence other state-owned entities and expand market access for crypto in sanctions-impacted markets. The plan involves building a comprehensive trading platform, though it is still a proposal; actual launch depends on regulatory clearance. Sberbank is already active in blockchain with its own blockchain lab.
+Robinhood Chain&\#x27;s total real-world assets \(RWA\) surged fivefold as tokenized stock trading volumes increased significantly, reflecting growing adoption of onchain equities. This milestone indicates rising institutional and retail interest in tokenized stocks on Layer-2 blockchains, potentially accelerating the convergence of traditional finance and DeFi. Robinhood Chain, built on Arbitrum Orbit, focuses on native issuance and trading of financial assets. The fivefold increase suggests robust demand for 24/7 tradable tokenized equities.
 
-rss · CoinDesk · Jul 25, 16:59
+rss · CoinDesk · Jul 25, 10:00
 
-**Background**: Sberbank is a state-owned banking giant in Russia. Crypto trading infrastructure refers to systems for buying, selling, and storing cryptocurrencies, typically including order matching, wallets, and compliance tools. Russia has had a complex relationship with crypto regulation, with recent moves toward legalization.
+**Background**: Real-world assets \(RWAs\) are digital tokens representing ownership of physical or traditional financial assets like stocks and bonds. Tokenization enables fractional ownership, instant settlement, and global accessibility. Robinhood Chain is an Ethereum-compatible Layer-2 blockchain designed specifically for onchain finance. The jump in RWAs highlights the platform&\#x27;s traction in bridging traditional finance with blockchain.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://www.ccn.com/russias-largest-bank-launched-blockchain-laboratory/">Russia’s Largest Bank Has Launched a Blockchain Laboratory</a></li>
-<li><a href="https://tadviser.com/index.php/Project:Blockchain_in_Sberbank">Blockchain in Sberbank</a></li>
+<li><a href="https://robinhood.com/us/en/blockchain/">Robinhood Chain: Built for onchain finance</a></li>
+<li><a href="https://ethereum.org/real-world-assets/">What are RWAs? | Benefits and Use of Real-world assets ...</a></li>
+<li><a href="https://www.coingecko.com/learn/what-are-real-world-assets-exploring-rwa-protocols">What Are Real World Assets (RWA)? | CoinGecko</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#institutional adoption`, `#Russia`, `#crypto trading`, `#Sberbank`, `#regulation`
+**Tags**: `#tokenized stocks`, `#real-world assets`, `#Robinhood Chain`, `#RWA`, `#adoption`
 
 ---
 
 <a id="item-8"></a>
-## [Robinhood Chain RWAs surge 5x as tokenized stock trades grow](https://www.coindesk.com/business/2026/07/25/robinhood-chain-s-real-world-assets-jump-fivefold-as-tokenized-stocks-start-trading-in-bigger-size) ⭐️ 7.0/10
+## [Fidelity backs CLARITY Act for crypto market structure](https://cointelegraph.com/news/fidelity-push-senate-passage-of-clarity-act?utm_source=rss_feed&amp;utm_medium=rss&amp;utm_campaign=rss_partner_inbound) ⭐️ 7.0/10
 
-The total value of real-world assets \(RWAs\) on Robinhood Chain has increased fivefold, driven by the commencement of larger-sized tokenized stock trades on the platform. This surge indicates growing adoption and institutional interest in asset tokenization, which bridges traditional finance with blockchain technology and could reshape capital markets. The fivefold increase means the RWA locked on Robinhood Chain reached a new milestone, with tokenized stocks now trading in larger sizes, reflecting deeper liquidity and market confidence.
+Fidelity has publicly urged the U.S. Senate to pass the CLARITY Act, joining a coalition of crypto firms and industry groups pushing for comprehensive digital asset market structure legislation. Fidelity’s involvement signals strong institutional support for clear crypto regulation, which could accelerate legislative momentum and provide clarity for market participants. The CLARITY Act, introduced in the 119th Congress, establishes a regulatory framework for digital assets, including rules for exchanges, brokers, and protections for DeFi developers.
 
-rss · CoinDesk · Jul 25, 10:00
+rss · Cointelegraph · Jul 25, 11:30
 
-**Background**: Robinhood Chain is a permissionless Layer 2 blockchain built specifically for financial services and tokenized real-world assets. Real-world asset tokenization involves converting ownership of physical or traditional financial assets like stocks into blockchain-based digital tokens, enabling fractional ownership and 24/7 trading. This development is part of a broader trend of bringing traditional assets onto decentralized networks.
+**Background**: The CLARITY Act aims to split regulatory authority for digital assets between the SEC and CFTC, providing a clearer path for market participants. It is the result of bipartisan negotiations and is expected to be voted on in the Senate.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://robinhood.com/us/en/chain/">Robinhood Chain : Built for onchain finance</a></li>
-<li><a href="https://docs.robinhood.com/chain/">About Robinhood Chain – Robinhood Chain Documentation</a></li>
-<li><a href="https://grokipedia.com/page/asset_tokenization">Asset tokenization</a></li>
+<li><a href="https://www.banking.senate.gov/newsroom/majority/myth-vs-fact-the-clarity-act">Myth vs. Fact: The CLARITY Act | United States Committee on Banking, Housing, and Urban Affairs</a></li>
+<li><a href="https://www.congress.gov/bill/119th-congress/house-bill/3633/text">Text - H.R.3633 - 119th Congress (2025-2026): Digital Asset Market Clarity Act | Congress.gov | Library of Congress</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#Robinhood Chain`, `#Real World Assets`, `#Tokenized Stocks`, `#Adoption`
+**Tags**: `#regulation`, `#US legislation`, `#market structure`, `#Fidelity`, `#CLARITY Act`
 
 ---
 
 <a id="item-9"></a>
-## [Fidelity urges Senate passage of CLARITY Act for crypto clarity](https://cointelegraph.com/news/fidelity-push-senate-passage-of-clarity-act?utm_source=rss_feed&amp;utm_medium=rss&amp;utm_campaign=rss_partner_inbound) ⭐️ 7.0/10
+## [ACX Token Wind-Down: Coinbase to Suspend Trading](https://status.coinbase.com/incidents/9h5nsb9zjlzd) ⭐️ 7.0/10
 
-Fidelity, a major institutional investment firm, publicly called on the U.S. Senate to pass the CLARITY Act, joining industry groups and crypto firms in pushing for market structure legislation. Fidelity&\#x27;s support adds significant institutional weight to the CLARITY Act, potentially increasing its chances of passage and providing much-needed regulatory clarity for digital assets in the U.S. The CLARITY Act would give the CFTC broader jurisdiction over spot trading of digital commodities while preserving SEC authority over primary market crypto transactions, with a limited exemption for fundraising.
+Coinbase announced it will suspend ACX trading on July 28, 2026, due to the project team winding down the ACX token, and holders can participate in conversion options offered by the project. This directly impacts ACX holders who must take action to convert their tokens before the suspension, and it signals the end of the Across Protocol cross-chain bridge project. Coinbase has already moved ACX order books to limit-only mode, and the conversion options are detailed in a forum post by the project team. Users need to move ACX to a self-custodial wallet to participate.
 
-rss · Cointelegraph · Jul 25, 11:30
+rss · Coinbase Status · Jul 28, 07:00
 
-**Background**: The CLARITY Act \(Digital Asset Market Clarity Act of 2025\) aims to divide regulatory authority between the SEC and CFTC, ending the current case-by-case enforcement approach. Fidelity, as a major asset manager with significant crypto exposure, has a vested interest in clear rules. The bill has already passed the House and is now pending in the Senate.
+**Background**: Across Protocol is a cross-chain bridge that enables fast, low-cost asset transfers between blockchains. The ACX token is the native governance and utility token of the protocol. The project wind-down means the team is ceasing development and offering conversion to other assets.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://www.banking.senate.gov/imo/media/doc/fact_sheet_the_clarity_act_delivers_regulatory_clarity_for_the_crypto_industry.pdf">FACT SHEET: The CLARITY Act Delivers Regulatory Clarity for the Crypto Industry</a></li>
-<li><a href="https://www.congress.gov/crs-product/IN12583">Crypto Legislation: An Overview of H.R. 3633, the CLARITY Act | Congress.gov | Library of Congress</a></li>
+<li><a href="https://across.to/">Across Protocol - Transfer Assets Between Layer 2s and Mainnet</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#regulation`, `#CLARITY Act`, `#Fidelity`, `#market structure`, `#institutional adoption`
+**Tags**: `#token delisting`, `#coinbase`, `#across protocol`, `#token conversion`
 
 ---
 
 <a id="item-10"></a>
-## [Kraken Announces RAIN Token Delisting](https://status.kraken.com/incidents/yshk4vtwcyg2) ⭐️ 7.0/10
+## [Kraken to Delist RAIN Token with Specific Deadlines](https://status.kraken.com/incidents/yshk4vtwcyg2) ⭐️ 7.0/10
 
-Kraken will delist RAIN, disabling deposits and trading on June 17, 2025, and disabling withdrawals on September 15, 2025, after which remaining balances will be forcibly liquidated. RAIN holders on Kraken face a hard deadline to withdraw their tokens before forced liquidation at potentially unfavorable market prices, highlighting the risks of holding tokens that exchanges decide to delist. The liquidation period runs from September 15 to September 25, and Kraken warns that proceeds may be minimal or zero if market liquidity is insufficient. Users must withdraw before September 15 at 13:59 UTC.
+Kraken announced a scheduled delisting of RAIN, with deposits and trading disabled on June 17 at 14:00 UTC, withdrawals disabled on September 15 at 14:00 UTC, and remaining balances liquidated between September 15 and 25. This directly affects RAIN holders, who must withdraw before September 15 to avoid automatic liquidation at potentially unfavorable prices. The delisting underscores Kraken&\#x27;s ongoing asset review process and the risks of holding lesser-known tokens on centralized exchanges. Kraken warned that liquidation proceeds may be significantly below recent reference prices due to market liquidity conditions, and the liquidation process could result in minimal or no proceeds. The denomination of liquidation proceeds cannot be guaranteed before execution.
 
 rss · Kraken Status · Sep 25, 23:00
 
-**Background**: RAIN is a cryptocurrency token associated with the Rain exchange, a licensed crypto exchange in Bahrain. Delistings occur when exchanges periodically review listed assets and remove those that no longer meet their criteria, often leading to price declines and forced liquidation for remaining holders.
+**Background**: RAIN is a cryptocurrency token that trades on certain exchanges. Delisting is a process where an exchange removes a token from its platform, typically after periodic reviews of trading volume, regulatory compliance, or project viability. Kraken regularly reviews its listed assets and delists tokens that no longer meet its criteria.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://en.wikipedia.org/wiki/Rain_%28cryptocurrency_exchange%29">Rain ( cryptocurrency exchange) - Wikipedia</a></li>
-<li><a href="https://www.coingecko.com/en/coins/rain">Rain Price: RAIN /USD Live Price Chart, Market Cap... | CoinGecko</a></li>
+<li><a href="https://www.coingecko.com/en/coins/rain-coin">Rain Coin Price: RAIN/USD Live Price Chart, Market Cap &amp; News ...</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#delisting`, `#exchange`, `#Kraken`, `#RAIN`
+**Tags**: `#delisting`, `#kraken`, `#rain`, `#exchange`, `#scheduled`
 
 ---
 
 <a id="item-11"></a>
-## [MicroStrategy Joins BlackRock and Coinbase in Bitcoin Security Consortium](https://news.google.com/rss/articles/CBMipgFBVV95cUxPUkNBNGVteHFxcVBwdlhmSTE2SFpKcXh6RU1IVlljcFUzSlBWMEZYdWZCa1JWQ3BWR2pQVnk1bnFIUXR3MjljaF9NR1BXcndjMktmcHBvc21LOWhDUWJ5dThzcE1OQWpuZ1E3VXlXVHFlMUNfWHF5cThRUk9QdDdIR3Q2YjJiUm9XM1QxbjhZN1Ffek5Kd0lhZUNIcTNwamZtR2JSUHZB?oc=5) ⭐️ 7.0/10
+## [Kraken ARS Withdrawals Delayed Due to PayAmigo Issue](https://status.kraken.com/incidents/rrwjdcsmy2kv) ⭐️ 7.0/10
 
-MicroStrategy \(MSTR\) has joined BlackRock and Coinbase, along with six other major institutions, to launch the Bitcoin Security Consortium, pledging $15 million over three years to fund Bitcoin network security, with an initial focus on quantum computing threats. This consortium marks an unprecedented level of institutional collaboration to proactively secure Bitcoin against future quantum computing risks, signaling that major financial players are investing in the long-term resilience of the Bitcoin network beyond mere price speculation. The nine founding members include Anchorage Digital, ARK Invest, BlackRock, Block, Blockstream, Coinbase, Fidelity Digital Assets, Galaxy, and Strategy \(MicroStrategy\). The consortium will allocate $15 million over three years to support developer work on quantum-resistant cryptography for Bitcoin.
+Kraken has identified an issue with its payment partner PayAmigo that is causing delays in Argentine Peso \(ARS\) withdrawals across all Kraken products, and a fix is being implemented as of July 26, 2023. This disruption directly impacts users in Argentina who rely on Kraken to withdraw ARS to their bank accounts, highlighting the dependency on third-party payment processors for fiat on/off ramps in emerging markets. Only ARS withdrawals are affected; all other funding methods remain operational. PayAmigo is a licensed payment aggregator in Argentina that facilitates cryptocurrency-related payments.
 
-google\_news · Yahoo Finance · Jul 25, 07:11
+rss · Kraken Status · Jul 26, 02:02
 
-**Background**: Bitcoin&\#x27;s cryptographic security, based on elliptic curve digital signatures, could be broken by sufficiently powerful quantum computers in the future. While such quantum computers are not yet practical, experts warn that preparation must start now to transition Bitcoin to quantum-resistant algorithms. The Bitcoin Security Consortium was formed to fund research and development to ensure the network&\#x27;s long-term security against this emerging threat.
+**Background**: Argentina has a high cryptocurrency adoption rate, with over 2.5 million people \(5.6% of the population\) owning crypto. PayAmigo is a leading e-commerce payment enabler in emerging markets, providing localized solutions including treasury management and cross-border remittance. Its integration with Kraken allows users to convert crypto to ARS and withdraw to local bank accounts.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://en.bitcoinsistemi.com/massive-alliance-formed-in-bitcoin-strategy-blackrock-and-seven-key-figures-make-a-new-move-against/">Massive Alliance Formed in Bitcoin : Strategy... - Bitcoin Sistemi</a></li>
-<li><a href="https://marketsbrief.org/bitcoins-nine-biggest-institutional-holders-unite-to-fund-network-security/">Bitcoin ’s Nine Biggest Institutional Holders Unite to Fund Network ...</a></li>
-<li><a href="https://www.strategy.com/press/leading-financial-institutions-bitcoin-companies-launch-the-bitcoin-security-consortium_07-23-2026">Leading Financial Institutions &amp; Bitcoin Companies Launch the...</a></li>
+<li><a href="https://www.cbinsights.com/company/payamigo">PayAmigo - Products, Competitors, Financials, Employees...</a></li>
+<li><a href="https://payamigo.com/our-coverage/argentina/">Argentina - PayAmigo</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#Bitcoin`, `#institutional adoption`, `#security consortium`, `#MicroStrategy`, `#Coinbase`
+**Tags**: `#Exchange Operations`, `#Withdrawals`, `#Kraken`, `#ARS`, `#Fiat On/Off Ramp`
 
 ---
 
 <a id="item-12"></a>
-## [Coinbase Lobbies Senate for Clarity Act After Police Backing](https://news.google.com/rss/articles/CBMiowFBVV95cUxPOV9DNUpfZnV4MG1vV1ZiSU1HUG9hN1phdkZJdWs4WFg4Mnh2cWpteldvRFcxdzJZTG5hWVRaTEcxamZkZEZ2RVUyNzFOY0F5STl4YzduOU9RUFE3TVY0UVVPQUdqRkQxLUlmSWZUWnVISzg0UEJvWWJYUURsZnQ3ZERlRng0eG0yLTZCVGJnSDd1eTRjZDlPRkVTakNhR0h4OWhn?oc=5) ⭐️ 7.0/10
+## [Strategy Joins BlackRock, Coinbase in Bitcoin Security Consortium](https://news.google.com/rss/articles/CBMipgFBVV95cUxPUkNBNGVteHFxcVBwdlhmSTE2SFpKcXh6RU1IVlljcFUzSlBWMEZYdWZCa1JWQ3BWR2pQVnk1bnFIUXR3MjljaF9NR1BXcndjMktmcHBvc21LOWhDUWJ5dThzcE1OQWpuZ1E3VXlXVHFlMUNfWHF5cThRUk9QdDdIR3Q2YjJiUm9XM1QxbjhZN1Ffek5Kd0lhZUNIcTNwamZtR2JSUHZB?oc=5) ⭐️ 7.0/10
 
-Coinbase is intensifying its lobbying efforts in the U.S. Senate to pass the Clarity Act, following recent police support for the bill. The Clarity Act aims to establish a federal regulatory framework for cryptocurrencies. This could clarify the regulatory status of digital assets, potentially reducing uncertainty for exchanges like Coinbase and the broader crypto market. Passage of the Clarity Act would mark a significant shift in U.S. crypto regulation. The Clarity Act proposes a multi-tiered asset classification to determine whether a token is a security, commodity, or something else, and assigns regulatory responsibility accordingly. It also includes provisions for determining decentralization levels.
+A coalition of nine major institutional Bitcoin holders, including Strategy \(formerly MicroStrategy\), BlackRock, and Coinbase, has launched the Bitcoin Security Consortium with a combined funding commitment of $15 million over the next three years to support Bitcoin security research and open-source development. This consortium marks an unprecedented level of collaboration among institutional Bitcoin holders to proactively fund the network&\#x27;s long-term security, especially against emerging threats like quantum computing. It reinforces the growing institutional commitment to Bitcoin&\#x27;s infrastructure and could set a standard for collective security funding in the crypto ecosystem. The founding members are Anchorage Digital, ARK Invest, BlackRock, Block, Blockstream, Coinbase, Fidelity Digital Assets, Galaxy, and Strategy. The $15 million will be allocated over three years to research and development of security enhancements, including defenses against quantum computing vulnerabilities.
 
-google\_news · portalcripto.com.br · Jul 25, 18:00
+google\_news · Yahoo Finance · Jul 25, 07:11
 
-**Background**: The U.S. crypto regulatory landscape has been fragmented, with the SEC and CFTC often clashing over jurisdiction. The Clarity Act aims to resolve this by codifying a clear framework. Police support refers to law enforcement agencies backing the bill for its potential to combat illicit finance.
+**Background**: Bitcoin&\#x27;s security relies on cryptographic algorithms that could potentially be broken by sufficiently powerful quantum computers in the future. The Bitcoin Security Consortium is a proactive effort by major institutional stakeholders to fund research into quantum-resistant cryptography and other security improvements. Historically, Bitcoin development has been funded by donations and a few companies; this consortium represents a more structured, industry-wide approach to securing the network&\#x27;s future.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://legis1.com/news/clarity-act-crypto-regulation-subcommittee">CLARITY Act Reshapes Crypto Regulation | Legis1</a></li>
-<li><a href="https://www.arnoldporter.com/en/perspectives/advisories/2025/08/clarifying-the-clarity-act">Clarifying the CLARITY Act: What To Know About the House Crypto Market Structure Bill and Its Path to Law | Advisories | Arnold &amp; Porter</a></li>
-<li><a href="https://bitcoinfoundation.org/news/regulation/cryptos-biggest-moment-in-years-why-the-clarity-act-could-change-everything/">Clarity Act: Crypto&#x27;s Biggest Moment</a></li>
+<li><a href="https://www.galaxy.com/insights/research/bitcoin-quantum-security-consortium">Bitcoin&#x27;s Quantum Security Consortium Launches | Galaxy</a></li>
+<li><a href="https://coinpedia.org/news/bitcoins-nine-biggest-institutional-holders-unite-to-fund-network-security/amp/">Bitcoin’s Nine Biggest Institutional Holders Unite to Fund Network Security</a></li>
+<li><a href="https://www.crowdfundinsider.com/2026/07/293417-michael-saylors-strategy-and-blackrock-establish-bitcoin-security-consortium-to-tackle-quantum-computing-risks/">Michael Saylor&#x27;s Strategy And BlackRock Establish Bitcoin Security Consortium To Tackle Quantum Computing Risks | Crowdfund Insider</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#regulation`, `#Coinbase`, `#Clarity Act`, `#US Senate`, `#lobbying`
+**Tags**: `#Bitcoin`, `#institutional adoption`, `#security`, `#consortium`
+
+---
+
+<a id="item-13"></a>
+## [Four Coinbase Executives Exit or Shift Roles in Two Weeks](https://news.google.com/rss/articles/CBMiywFBVV95cUxQT04zWGY2ZjZVMlJxMTlMSVlrX3d3ZWxHVTZQOWpUWEtReEpMNWZtaXJPVUFLQWhIWE1HVUw5TjcwT2tSY2lDSmZpY21QOUpNZHdqVXlKdXVDNUh1M2FmdVBfeGVxN2JEdUlzMTFSSS05MTlyUjFreGF6eXlNdUUyVXc2Nm9lV1V2ZGRmbjF6R21qdGRmOVFFTVJGWk1lMWpyTExTTFQ2VjRIanhJTm1YSEdXdEVuN1Y4blRKOFU4Z2pwcnVlRFI3ZWlRNA?oc=5) ⭐️ 7.0/10
+
+In just over two weeks, four executives at Coinbase have either left the company or changed their roles, according to a report from Stocktwits. As a leading cryptocurrency exchange, executive changes at Coinbase could signal strategic shifts or internal restructuring, potentially impacting market confidence and the broader crypto ecosystem. The departures and role changes occurred over a period of just over two weeks, though specific names and new roles have not been disclosed in the brief report.
+
+google\_news · Stocktwits · Jul 25, 16:21
+
+**Background**: Coinbase is one of the largest and most influential cryptocurrency exchanges in the world, often seen as a bellwether for the industry. Executive movements at such a key company can indicate changes in strategy, regulatory challenges, or internal culture shifts, and are closely watched by investors and industry observers.
+
+**Tags**: `#Coinbase`, `#exchange`, `#executive`, `#leadership`, `#market structure`
+
+---
+
+<a id="item-14"></a>
+## [AI Agent Autonomously Creates Company and Bank Account](https://news.google.com/rss/articles/CBMitAFBVV95cUxPX1lNUW1ydUswdGNabG9sejV6bmVHZ082Q3RYVXlJRkNGWWtFZzkyM1psdU91dWtwb0dfZ281R2lpRkhQMThaOFJkNWpVNkJEOGFodVFPT2ZaVkVrd2RPX2pEM0E2aEYyT2t5YVBJbEV0bk1ER2FmejNFS2V3SjlUUmRfMVFUWlRMMUpzekZaVzZiQ1dkVVQtSDZVNnBhejVNcDltNFpVU1E3Sm1nNE5JUzFnUjI?oc=5) ⭐️ 7.0/10
+
+An AI agent, without any human intervention, launched its own company and opened a bank account using the service Meow, which enables AI agents to form legal entities, obtain an EIN, and manage finances. This milestone marks a significant step toward autonomous AI agents operating in the real world, potentially transforming business automation and raising questions about legal and financial accountability. The AI agent used Meow, a San Francisco startup, to complete the entire process via a single typed instruction, including company formation, EIN acquisition, bank account opening, card issuance, and payment sending.
+
+google\_news · CoinMarketCap · Jul 25, 11:15
+
+**Background**: AI agents are autonomous programs that can perform tasks on behalf of users. Traditionally, they have been limited to digital actions, but recent advancements allow them to interact with real-world financial systems. Meow bridges AI agents and traditional banking by providing an API that automates legal and financial setup, enabling agents to act as independent economic entities.
+
+<details><summary>References</summary>
+<ul>
+<li><a href="https://www.meow.com/blog/ai-agents-can-now-open-and-run-your-business-bank-account">AI Agents Can Now Open and Run Your Business Bank Account</a></li>
+<li><a href="https://www.thestreet.com/personal-finance/ai-agents-can-now-open-bank-accounts-and-move-your-money">AI agents can now open bank accounts and move your money - TheStreet</a></li>
+<li><a href="https://www.forbes.com/sites/digital-assets/2026/06/16/an-ai-agent-cant-open-a-bank-account-so-it-opens-a-crypto-wallet/">An AI Agent Can&#x27;t Open A Bank Account, So It Opens A Crypto ...</a></li>
+
+</ul>
+</details>
+
+**Tags**: `#AI`, `#autonomous agents`, `#blockchain`, `#innovation`
 
 ---
