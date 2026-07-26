@@ -1,24 +1,28 @@
-## Summary
-
-Describe clearly what this PR changes and why.
-
 ## Scope
 
-- [ ] This PR contains **one feature / one fix / one focused change**
-- [ ] This PR does **not** combine multiple unrelated features
+Describe the single task completed by this pull request.
 
-## Changes
+## User and deployment impact
 
-- 
-- 
-- 
+Explain visible behavior changes, configuration changes, and whether the
+scheduled feed or static-site deployment is affected.
 
-## Notes for Reviewers
+## Validation
 
-Anything reviewers should pay attention to?
+List the exact checks run and their results.
 
-## Checklist
+```text
+uv sync --frozen --extra dev
+uv run pytest
+```
 
-- [ ] I explained the change clearly
-- [ ] I kept the PR focused and easy to review
-- [ ] I tested the change locally when applicable
+## Coordination checklist
+
+- [ ] This pull request contains one task owned by one agent.
+- [ ] The branch was created from `origin/main`.
+- [ ] The latest `origin/main` was merged before final validation.
+- [ ] Relevant tests pass locally and required GitHub checks pass.
+- [ ] No unrelated changes, secrets, `.env` files, or generated daily state are included.
+- [ ] `uv.lock` changed only if dependencies changed.
+- [ ] `gh-pages` was not edited manually.
+- [ ] Deployment and rollback considerations are documented above.
