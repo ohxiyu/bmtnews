@@ -29,6 +29,15 @@ from .ai.analyzer import ContentAnalyzer
 from .ai.summarizer import DailySummarizer
 from .ai.enricher import ContentEnricher
 from .ai.tokens import get_usage_snapshot
+from .daily_feed import (
+    DailyFeedState,
+    analyzed_item_key,
+    items_for_local_date,
+    load_daily_feed_state,
+    local_date_for,
+    merge_daily_items,
+    save_daily_feed_state,
+)
 
 
 _TRACKING_QUERY_PARAMETERS = {
@@ -200,7 +209,11 @@ class HorizonOrchestrator:
             self.console.print("📧 Checking for new email subscriptions...")
             self.email_manager.check_subscriptions(self.storage)
 
+        daily_timezone = getattr(self.config.filtering, "daily_timezone", "UTC")
         try:
+            run_started_at = datetime.now(timezone.utc)
+            today = local_date_for(run_started_at, daily_timezone)
+
             # 1. Determine time window
             since = self._determine_time_window(force_hours)
             self.console.print(f"📅 Fetching content since: {since.strftime('%Y-%m-%d %H:%M:%S')}\n")
@@ -223,6 +236,25 @@ class HorizonOrchestrator:
                     f"🔗 Merged {len(all_items) - len(merged_items)} cross-source duplicates "
                     f"→ {len(merged_items)} unique items\n"
                 )
+
+            daily_state: Optional[DailyFeedState] = None
+            if getattr(self.config.filtering, "preserve_daily_items", False):
+                daily_state = load_daily_feed_state(today, daily_timezone)
+                before_daily_filter = len(merged_items)
+                merged_items = items_for_local_date(
+                    merged_items,
+                    today,
+                    daily_timezone,
+                )
+                self.console.print(
+                    f"🗓️  Kept {len(merged_items)}/{before_daily_filter} items "
+                    f"published on {today} ({daily_timezone})\n"
+                )
+                if not merged_items and not daily_state.items:
+                    self.console.print(
+                        "[yellow]No content published in the current local day. Exiting.[/yellow]"
+                    )
+                    return
 
             # 4. Analyze with AI
             analyzed_items = await self._analyze_content(merged_items)
@@ -253,11 +285,36 @@ class HorizonOrchestrator:
             # 6. Search related stories + enrich with background knowledge (2nd AI pass)
             await self._enrich_important_items(important_items)
 
+            analyzed_count = len(all_items)
+            if daily_state is not None:
+                important_items = merge_daily_items(
+                    daily_state.items,
+                    important_items,
+                    today,
+                    daily_timezone,
+                )
+                daily_state.items = important_items
+                daily_state.updated_at = run_started_at
+                daily_state.analyzed_keys = sorted(
+                    set(daily_state.analyzed_keys)
+                    | {analyzed_item_key(item) for item in analyzed_items}
+                )
+                analyzed_count = len(daily_state.analyzed_keys)
+                state_path = save_daily_feed_state(daily_state)
+                self.console.print(
+                    f"🧩 Retained {len(important_items)} selected items for {today}; "
+                    f"saved state to {state_path}\n"
+                )
+
             # 7. Generate and save daily summaries for each configured language
-            today = datetime.now(timezone.utc).strftime("%Y-%m-%d")
             for lang in self.config.ai.languages:
-                summarizer = DailySummarizer()
-                summary = await summarizer.generate_summary(important_items, today, len(all_items), language=lang)
+                summarizer = DailySummarizer(display_timezone=daily_timezone)
+                summary = await summarizer.generate_summary(
+                    important_items,
+                    today,
+                    analyzed_count,
+                    language=lang,
+                )
 
                 # Save to data/summaries/
                 summary_path = self.storage.save_daily_summary(today, summary, language=lang)
@@ -310,7 +367,7 @@ class HorizonOrchestrator:
                     await self.webhook_notifier.send_daily_summary(
                         summary=summary,
                         important_items=important_items,
-                        all_items_count=len(all_items),
+                        all_items_count=analyzed_count,
                         date=today,
                         lang=lang,
                         summarizer=summarizer,
@@ -338,7 +395,10 @@ class HorizonOrchestrator:
             # Send webhook failure notification if configured
             if self.webhook_notifier:
                 await self.webhook_notifier.send_failure(
-                    date=datetime.now(timezone.utc).strftime("%Y-%m-%d"),
+                    date=local_date_for(
+                        datetime.now(timezone.utc),
+                        daily_timezone,
+                    ),
                     error_message=str(e),
                 )
 
