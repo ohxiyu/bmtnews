@@ -2,15 +2,125 @@
   "version": 1,
   "date": "2026-07-27",
   "timezone": "Asia/Shanghai",
-  "updated_at": "2026-07-26T16:19:28.849266Z",
+  "updated_at": "2026-07-26T21:12:27.718435Z",
   "analyzed_keys": [
+    "0b4d6e2732c30a3ddada1f463983ed21d2a8350ae5a592a59232c21ca1477359",
+    "1abc5adb0f8ed012d47b58be8413ee3f9208c2fe5d48a8bbc924c9aa775140c2",
+    "2f6fed0fe60d112ca3ee51b0220afacd45dabce5a13f01254100400eeedf0662",
     "33f5da33d0bd04b5db3b1c16c96c72164af9b5be5bc53d883aecfb168f4c8fe5",
+    "34e0cdcc5a59ff5e99fcec8f425b7e4562034bb3a7ed14b144ed450d1afb2743",
+    "3828b61caaf197512eefadc8555d9182d1a10ca3f283b83d94e052d56dd3c826",
     "5beb9264b2725b8b944e275b1bfc02a978f3d3ed06f0480dbe77d1df53f23fdc",
     "91b3864b96a14f78cc7f0209b88bbcdeac587c895a4439a7d603401806f5f273",
     "a270a48788e628907d7e654713ea9e9701cb9c96b659da5de5158b0e07abad79",
-    "ca0a73ba526fa4fd2b1646aa7f0163945b8f7fe2bedf35fb5ce970b18ad07c1b"
+    "b3492cd978f9c6c512d8a89b76a156be17c005e9cd459dd008e3a19e2b5c4059",
+    "b39e4d9f09ef6e0e9e59dea0f17b13bb4eea81b938a3321cbc60839644dde35a",
+    "c0a3c3384e0cbd8882ff8817369d3b9cde02afd80500f4573b0e60042398262a",
+    "c2f0e1cd7e58be7302769551d87cf183bab7161cfc6f408ecf6d62baf146ab2c",
+    "ca0a73ba526fa4fd2b1646aa7f0163945b8f7fe2bedf35fb5ce970b18ad07c1b",
+    "db03b6c912c504b68a9f4837d4128446afb4fb9d180929404b0828e59e8bf04e",
+    "e358d358a29457419e250666e5119ca3e2fb993ffa4e1acab0123fb4ef8e8aaf",
+    "fd1b27dc9ad9918f129625db09b5e55843190b6677c472bcba1dcc8119eba35f",
+    "fdc497a49d115b3a1689da4bb53d596199a54e184a998527b6660e3fa5d68a5b"
   ],
   "items": [
+    {
+      "id": "rss:www.coindesk.com_arc_outboundfeeds_rss_:614db931b5e0ef3e",
+      "source_type": "rss",
+      "title": "2 weeks left for Clarity: State of Crypto",
+      "url": "https://www.coindesk.com/policy/2026/07/26/2-weeks-left-for-clarity-state-of-crypto",
+      "content": null,
+      "author": "Nikhilesh De",
+      "published_at": "2026-07-26T18:30:00Z",
+      "fetched_at": "2026-07-26T21:12:28.376193Z",
+      "metadata": {
+        "feed_name": "CoinDesk",
+        "category": "crypto-markets",
+        "title_en": "Two-Week Deadline for Crypto Regulatory Clarity",
+        "detailed_summary_en": "A two-week deadline has been set for achieving regulatory clarity in the crypto industry, as highlighted by a recent Coindesk article. This deadline could significantly impact market structure and access, as clear regulations are essential for institutional adoption and market stability. The article, titled '2 weeks left for Clarity: State of Crypto,' serves as a reminder of the approaching deadline and its potential implications for the crypto ecosystem.",
+        "background_en": "Regulatory clarity refers to clear and consistent rules for digital assets, which the crypto industry has long sought from governments worldwide. A deadline suggests that a decision or announcement on crypto policy is imminent, potentially affecting how cryptocurrencies are classified and traded.",
+        "title_zh": "加密监管清晰度最后两周期限",
+        "detailed_summary_zh": "根据CoinDesk最近的一篇文章，加密行业实现监管清晰度的最后期限为两周。 这一期限可能对市场结构和准入产生重大影响，因为清晰的法规对于机构采用和市场稳定至关重要。 这篇题为《两周倒计时：加密状态》的文章提醒人们注意这一即将到来的截止日期及其对加密生态系统的潜在影响。",
+        "background_zh": "监管清晰度是指针对数字资产的明确且一致的规则，加密行业长期以来一直寻求各国政府提供此类规则。截止日期表明关于加密政策的决定或公告即将到来，可能影响加密货币的分类和交易方式。"
+      },
+      "ai_score": 7.0,
+      "ai_reason": null,
+      "ai_summary": "A reminder of a two-week deadline for achieving regulatory clarity in crypto policy.",
+      "ai_tags": []
+    },
+    {
+      "id": "rss:cointelegraph.com_rss:e085b3d0b89f835e",
+      "source_type": "rss",
+      "title": "CFTC issues second warning to prediction markets on cookie-cutter self-certifications",
+      "url": "https://cointelegraph.com/news/cftc-issues-second-warning-to-prediction-markets-on-cookie-cutter-self-certifications?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "content": null,
+      "author": "Cointelegraph by Robert Lakin",
+      "published_at": "2026-07-26T17:45:05Z",
+      "fetched_at": "2026-07-26T21:12:28.761071Z",
+      "metadata": {
+        "feed_name": "Cointelegraph",
+        "category": "crypto-markets",
+        "title_en": "CFTC Issues Second Warning to Prediction Markets on Self-Certifications",
+        "detailed_summary_en": "On July 24, 2026, the CFTC issued an advisory warning prediction markets against using overly broad, template-style self-certifications for event contracts, marking the second such warning this year. This signals increasing regulatory scrutiny of prediction markets, potentially impacting how platforms like Polymarket and Kalshi list event contracts. Compliance costs may rise, and some contracts may be forced off exchanges. The advisory specifically targets 'cookie-cutter' certifications that bundle multiple contract permutations with different settlement sources or methodologies into a single filing. This follows a broader CFTC proposed rulemaking in May 2024 to clarify which event contracts are contrary to the public interest.",
+        "background_en": "Prediction markets are platforms where users trade contracts based on the outcome of future events. Self-certification allows designated contract markets (DCMs) to list contracts by certifying they comply with the Commodity Exchange Act, without prior CFTC approval. The CFTC has authority under CEA section 5c(c)(5)(C) to prohibit event contracts it deems contrary to the public interest, particularly those involving gaming or illegal activity.",
+        "title_zh": "CFTC 对预测市场发出关于自我认证的第二次警告",
+        "detailed_summary_zh": "2026年7月24日，CFTC 发布了一份建议，警告预测市场不要对事件合约使用过于宽泛、模板式的自我认证，这是今年以来的第二次此类警告。 这表明监管机构对预测市场的审查力度加大，可能影响 Polymarket 和 Kalshi 等平台如何列出事件合约。合规成本可能上升，一些合约可能被迫退出交易所。 该建议特别针对将具有不同结算来源或方法的多种合约排列捆绑到单一备案中的“千篇一律”认证。此前，CFTC 于2024年5月提出了更广泛的规则制定，以澄清哪些事件合约违背公共利益。",
+        "background_zh": "预测市场是用户根据未来事件结果交易合约的平台。自我认证允许指定合约市场（DCM）通过证明合约符合《商品交易法》来列出合约，无需事先获得 CFTC 批准。CFTC 根据 CEA 第5c(c)(5)(C)条有权禁止其认为违背公共利益的 event 合约，尤其是涉及赌博或非法活动的合约。",
+        "sources": [
+          {
+            "url": "https://www.bloomberg.com/news/articles/2026-07-24/cftc-warns-prediction-markets-over-blanket-self-certifications",
+            "title": "CFTC Warns Prediction Markets Over Blanket Self-Certifications"
+          },
+          {
+            "url": "https://www.cftc.gov/PressRoom/PressReleases/8907-24",
+            "title": "CFTC Issues Proposal on Event Contracts | CFTC"
+          },
+          {
+            "url": "https://www.federalregister.gov/documents/2026/06/12/2026-11854/prediction-markets-public-interest-determinations",
+            "title": "Federal Register :: Prediction Markets; Public Interest Determinations"
+          }
+        ]
+      },
+      "ai_score": 7.0,
+      "ai_reason": null,
+      "ai_summary": "CFTC issues second warning to prediction markets against using template-style certifications for event contracts.",
+      "ai_tags": []
+    },
+    {
+      "id": "reddit:subreddit-rss:t3_1v78ns1",
+      "source_type": "reddit",
+      "title": "Sent crypto to Bitmart last night, woke up to hear they are shutting down, amount not visible even though confirmed",
+      "url": "https://www.reddit.com/r/CryptoCurrency/comments/1v78ns1/sent_crypto_to_bitmart_last_night_woke_up_to_hear/",
+      "content": null,
+      "author": "/u/noonkhoshki",
+      "published_at": "2026-07-26T16:30:10Z",
+      "fetched_at": "2026-07-26T21:12:29.497275Z",
+      "metadata": {
+        "subreddit": "CryptoCurrency",
+        "discussion_url": "https://www.reddit.com/r/CryptoCurrency/comments/1v78ns1/sent_crypto_to_bitmart_last_night_woke_up_to_hear/",
+        "category": "crypto-markets",
+        "title_en": "Cryptocurrency deposit missing as BitMart exchange shuts down",
+        "detailed_summary_en": "A Reddit user reports sending cryptocurrency to BitMart last night, but the deposit is not credited after learning the exchange is shutting down, despite the transaction being confirmed on-chain. This incident highlights the risks of centralized exchanges, where users lose control of their funds when the exchange faces insolvency or shutdown. It reinforces the crypto community's principle of 'not your keys, not your coins'. BitMart announced on July 26, 2026, that it would cease operations after nine years, suspending new registrations, deposits, and orders. The BMX token crashed over 55% following the news.",
+        "background_en": "Centralized exchanges hold users' private keys on their behalf, meaning users trust the exchange to manage their funds. The phrase 'not your keys, not your coins' emphasizes that without holding your own private keys, you do not truly own your crypto. Incidents like exchange shutdowns or hacks can result in permanent loss of funds.",
+        "title_zh": "加密货币存入BitMart后无法到账，交易所宣布关闭",
+        "detailed_summary_zh": "一位Reddit用户昨晚向BitMart发送了加密货币，但得知该交易所即将关闭后，存款仍未到账，尽管链上交易已确认。 这一事件凸显了中心化交易所的风险：当交易所面临破产或关闭时，用户将失去对资金的控制。这再次印证了加密货币社区的原则：“不是你的私钥，就不是你的币”。 BitMart于2026年7月26日宣布在运营九年后停止服务，暂停新注册、充值和下单。BMX代币在消息后暴跌超过55%。",
+        "background_zh": "中心化交易所代持用户的私钥，意味着用户信任交易所管理其资金。'不是你的私钥，就不是你的币'这句话强调，如果不持有自己的私钥，你并不真正拥有加密货币。交易所关闭或被黑客攻击等事件可能导致资金永久损失。",
+        "sources": [
+          {
+            "url": "https://www.coindesk.com/markets/2026/07/26/crypto-exchange-bitmart-to-shut-down-after-nine-years-bmx-token-crashes-58",
+            "title": "Crypto exchange BitMart to shut down after nine years, BMX token crashes 58%"
+          },
+          {
+            "url": "https://www.financemagnates.com/cryptocurrency/exchange/bitmart-winds-down-trading-as-exchange-closures-pile-up/",
+            "title": "BitMart Winds Down Trading as Exchange Closures Pile Up"
+          }
+        ]
+      },
+      "ai_score": 7.0,
+      "ai_reason": null,
+      "ai_summary": "User reports BitMart deposit not credited after hearing shutdown rumors, illustrating risks of centralized exchanges.",
+      "ai_tags": []
+    },
     {
       "id": "rss:cointelegraph.com_rss:82bd59d82975edb5",
       "source_type": "rss",
@@ -35,5 +145,6 @@
       "ai_summary": "Russia's largest bank, Sberbank, plans to launch crypto trading infrastructure by December 1, aligning with new Russian crypto regulations.",
       "ai_tags": []
     }
-  ]
+  ],
+  "dedup_history": []
 }
