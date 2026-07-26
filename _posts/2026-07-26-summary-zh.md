@@ -9,79 +9,55 @@ lang: zh
 
 ---
 
-1. [两个以太坊桥数小时内损失 3170 万美元，第三个协议暂停质押](#item-1) ⭐️ 9.0/10
-2. [Kraken 将为阿联酋客户下架多种资产](#item-2) ⭐️ 8.0/10
-3. [加密货币支付公司 Triple-A 遭 970 万美元钱包盗取](#item-3) ⭐️ 8.0/10
-4. [AI 代理 Manfred 自主成立公司并开设银行账户](#item-4) ⭐️ 8.0/10
-5. [在 8 美元微控制器上运行 2890 万参数大模型](#item-5) ⭐️ 7.0/10
-6. [Debian 提出三项 LLM 贡献政策提案](#item-6) ⭐️ 7.0/10
-7. [俄罗斯最大银行 Sberbank 计划 12 月前推出加密货币交易基础设施](#item-7) ⭐️ 7.0/10
-8. [Wise 计划根据 GENIUS 法案重新申请美国银行执照](#item-8) ⭐️ 7.0/10
-9. [朝鲜逮捕国家网络黑客，涉嫌银行黑客和加密货币洗钱](#item-9) ⭐️ 7.0/10
-10. [富达呼吁参议院通过《CLARITY 法案》](#item-10) ⭐️ 7.0/10
-11. [Coinbase 将暂停 ACX 交易，Across Protocol 逐步关停](#item-11) ⭐️ 7.0/10
-12. [币安据报将 ACX、LSK、STX 列入下架风险名单](#item-12) ⭐️ 7.0/10
+1. [两座以太坊桥数小时内损失 3170 万美元，第三座协议暂停质押](#item-1) ⭐️ 9.0/10
+2. [加密支付公司 Triple-A 遭 970 万美元钱包盗取](#item-2) ⭐️ 9.0/10
+3. [Kraken 对阿联酋客户下架多种资产](#item-3) ⭐️ 8.0/10
+4. [Kraken 因 PayAmigo 问题导致阿根廷比索提现延迟](#item-4) ⭐️ 8.0/10
+5. [AI 代理自主创办公司并开设银行账户](#item-5) ⭐️ 8.0/10
+6. [Coinbase CEO 警告量子威胁，为比特币准备安全升级](#item-6) ⭐️ 8.0/10
+7. [俄罗斯最大银行 Sberbank 计划 12 月前建立加密货币交易基础设施](#item-7) ⭐️ 7.0/10
+8. [Robinhood Chain 现实资产激增 5 倍，代币化股票交易规模扩大](#item-8) ⭐️ 7.0/10
+9. [富达敦促参议院通过 CLARITY 法案以明确加密监管](#item-9) ⭐️ 7.0/10
+10. [Kraken 宣布下架 RAIN 代币](#item-10) ⭐️ 7.0/10
+11. [MicroStrategy 加入 BlackRock 和 Coinbase 成立的比特币安全联盟](#item-11) ⭐️ 7.0/10
+12. [Coinbase 在警方支持后游说参议院通过清晰法案](#item-12) ⭐️ 7.0/10
 
 ---
 
 <a id="item-1"></a>
-## [两个以太坊桥数小时内损失 3170 万美元，第三个协议暂停质押](https://www.reddit.com/r/CryptoCurrency/comments/1v6940c/two_ethereum_bridges_lose_317m_within_hours_as/) ⭐️ 9.0/10
+## [两座以太坊桥数小时内损失 3170 万美元，第三座协议暂停质押](https://www.reddit.com/r/CryptoCurrency/comments/1v6940c/two_ethereum_bridges_lose_317m_within_hours_as/) ⭐️ 9.0/10
 
-两个以太坊桥在数小时内遭攻击，共损失 3170 万美元；第三个协议因安全问题暂停了质押活动。 这些事件凸显了跨链桥安全性的持续漏洞，削弱了用户对 DeFi 的信任，并可能引发更广泛的市场抛售。 Verus 以太坊桥再次遭遇漏洞利用，损失 754 万美元，攻击手法与上次相同；另一座桥损失约 2420 万美元；2026 年桥梁黑客攻击总损失已超过 3.28 亿美元。
+两座以太坊桥在数小时内相继遭到攻击，共损失 3170 万美元；同时，第三个协议因安全担忧暂停了质押业务。 此次事件凸显了跨链桥长期存在的脆弱性——自 2022 年以来，桥攻击约占 DeFi 所有黑客攻击的 40%，并突显了对更安全桥接解决方案的迫切需求。 两座桥在数小时内相继遭窃，共计损失 3170 万美元；第三个协议暂停质押以防止进一步潜在损失。报道中未披露具体桥名称和攻击手法。
 
 reddit · r/CryptoCurrency · /u/kirtash93 · 7月25日 13:57
 
-**背景**: 以太坊桥是允许资产在不同区块链之间转移的协议，通常通过在一个链上锁定代币并在另一个链上铸造等价物来实现。由于复杂的智能合约逻辑和庞大的流动性池，它们已成为黑客的主要目标。
+**背景**: 以太坊桥是允许用户在不同区块链之间转移资产的协议。它们通常依赖验证者或智能合约来锁定和铸造代币，因此成为攻击者的主要目标。自 2022 年以来，桥攻击已累计造成超过 28 亿美元损失，约占 Web3 所有被盗资金的 40%。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://www.cryptotimes.io/2026/07/23/verus-ethereum-bridge-exploited-again-for-7-54m-in-repeat-attack/">Verus Ethereum Bridge Exploited Again for $7.54M in Repeat Attack</a></li>
-<li><a href="https://cointelegraph.com/news/verus-ethereum-bridge-reportedly-exploited-for-millions">Verus Ethereum Bridge Reportedly Exploited for $11.58 Million</a></li>
-<li><a href="https://www.cryptotimes.io/2026/05/18/crypto-bridge-hacks-top-328m-in-2026-as-cross-chain-exploits-accelerate/">Crypto Bridge Hacks Top $328M in 2026 as Cross-Chain Exploits ...</a></li>
+<li><a href="https://ethereum.org/developers/docs/bridges">Bridges | ethereum.org</a></li>
+<li><a href="https://phemex.com/blogs/defi-hacks-2026-bridge-exploits-explained">Every Major DeFi Hack in 2026 So Far | Bridge Exploits Dominate</a></li>
 
 </ul>
 </details>
 
-**标签**: `#Ethereum`, `#Bridges`, `#Security`, `#Exploit`, `#Staking`
+**标签**: `#security`, `#bridge`, `#exploit`, `#ethereum`, `#DeFi`
 
 ---
 
 <a id="item-2"></a>
-## [Kraken 将为阿联酋客户下架多种资产](https://status.kraken.com/incidents/wktgpx1dc3jk) ⭐️ 8.0/10
+## [加密支付公司 Triple-A 遭 970 万美元钱包盗取](https://www.reddit.com/r/CryptoCurrency/comments/1v6aplc/crypto_payments_firm_triplea_hit_by_97_million/) ⭐️ 9.0/10
 
-Kraken 宣布将从 2025 年 6 月 15 日起为阿拉伯联合酋长国客户下架 XMR、ZEC、DASH、USDD、DAI、USDS 和 USDE，并于 2025 年 9 月 25 日前完成所有剩余余额的清算。 此次下架反映了 Kraken 对阿联酋当地法规的合规要求，影响了用户对隐私币和部分稳定币的访问，并可能为该地区的其他交易所树立先例。 关键日期包括：6 月 15 日关闭杠杆头寸，6 月 16 日禁用充值、交易和杠杆，9 月 14 日禁用提现，9 月 15 日至 25 日进行清算。清算所得取决于当时的市场条件。
-
-rss · Kraken Status · 9月25日 12:00
-
-**背景**: 隐私币如门罗币 \(XMR\)、零币 \(ZEC\) 和达世币 \(DASH\) 提供增强的匿名功能，因此受到更严格的监管审查。稳定币如 USDD、DAI、USDS 和 USDE 与美元挂钩，用于交易和支付。Kraken 会定期审查上架资产，以确保符合不断变化的监管要求。
-
-<details><summary>参考链接</summary>
-<ul>
-<li><a href="https://usdd.io/">USDD : A fully decentralized stablecoin</a></li>
-<li><a href="https://coinmarketcap.com/currencies/usds/">USDS price today, USDS to USD live price... | CoinMarketCap</a></li>
-<li><a href="https://coinmarketcap.com/currencies/ethena-usde/">Ethena USDe price today, USDe to USD live price, marketcap ...</a></li>
-
-</ul>
-</details>
-
-**标签**: `#delisting`, `#Kraken`, `#UAE`, `#compliance`, `#privacy coins`
-
----
-
-<a id="item-3"></a>
-## [加密货币支付公司 Triple-A 遭 970 万美元钱包盗取](https://www.reddit.com/r/CryptoCurrency/comments/1v6aplc/crypto_payments_firm_triplea_hit_by_97_million/) ⭐️ 8.0/10
-
-加密货币支付网关 Triple-A 遭受 970 万美元钱包盗取，涉及以太坊、Solana、TRON 和 TON 等多个区块链，链上分析师 Specter 发现异常，Peckshield 确认了该事件。 这一事件削弱了用户对加密货币支付服务的信任，并突显了热钱包管理中持续存在的安全漏洞，可能影响依赖 Triple-A 进行法币与加密货币兑换的企业和个人。 被盗金额超过 970 万美元，影响 TRON、以太坊、Polygon、Arbitrum、Solana 和 TON 上的热钱包；本次攻击是本月初以来一系列加密协议漏洞利用事件之一。
+加密支付公司 Triple-A 遭遇安全漏洞，攻击者从其多个区块链网络的热钱包中盗取了超过 970 万美元。 该事件削弱了对加密支付基础设施的信任，并突显了热钱包的持续脆弱性，特别是对于处理用户资金的公司。 此次盗取涉及多链钱包；链上分析师 Specter 首先在 X 上标记了资金流出。该攻击发生在本月一系列加密协议漏洞事件中。
 
 reddit · r/CryptoCurrency · /u/DustInside6861 · 7月25日 15:02
 
-**背景**: Triple-A 是一家获得许可的加密货币支付网关，允许企业接收稳定币和加密货币支付，并实现即时结算。钱包盗取攻击是指攻击者通过非法获取钱包私钥或诱骗用户授权恶意交易，从而从热钱包中窃取资金；热钱包在线连接，比冷钱包更容易受到攻击。
+**背景**: 钱包盗取攻击是加密盗窃的常见类型，攻击者诱骗用户签署恶意交易，从而授予对资产的控制权。与传统黑客攻击不同，盗取者通常利用权限批准而非私钥泄露。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://beincrypto.com/triple-a-exploit-9m-wallet-drain/">Crypto Payments Firm Triple-A Hit by $9.7 Million Wallet Drain</a></li>
-<li><a href="https://coinpedia.org/news/9-7m-drained-across-ethereum-solana-tron-and-ton-in-triple-a-exploit/">$9.7M Drained Ethereum, Solana, TRON, &amp; TON in Triple-A Exploit</a></li>
-<li><a href="https://www.triple-a.io/digital-currency-payments">Stablecoin &amp; Crypto Currency Payment Gateway | Triple-A</a></li>
+<li><a href="https://finance.yahoo.com/markets/crypto/articles/crypto-payments-firm-triple-hit-074739477.html">Crypto Payments Firm Triple - A Hit by $9.7 Million Wallet Drain</a></li>
+<li><a href="https://www.cryptometer.io/news/crypto-payments-firm-triple-a-suffers-9-7-million-multi-chain-wallet-drain/">Crypto Payments Firm Triple - A Suffers $9.7 Million Multi-Chain...</a></li>
 
 </ul>
 </details>
@@ -90,179 +66,218 @@ reddit · r/CryptoCurrency · /u/DustInside6861 · 7月25日 15:02
 
 ---
 
-<a id="item-4"></a>
-## [AI 代理 Manfred 自主成立公司并开设银行账户](https://news.google.com/rss/articles/CBMitAFBVV95cUxPX1lNUW1ydUswdGNabG9sejV6bmVHZ082Q3RYVXlJRkNGWWtFZzkyM1psdU91dWtwb0dfZ281R2lpRkhQMThaOFJkNWpVNkJEOGFodVFPT2ZaVkVrd2RPX2pEM0E2aEYyT2t5YVBJbEV0bk1ER2FmejNFS2V3SjlUUmRfMVFUWlRMMUpzekZaVzZiQ1dkVVQtSDZVNnBhejVNcDltNFpVU1E3Sm1nNE5JUzFnUjI?oc=5) ⭐️ 8.0/10
+<a id="item-3"></a>
+## [Kraken 对阿联酋客户下架多种资产](https://status.kraken.com/incidents/wktgpx1dc3jk) ⭐️ 8.0/10
 
-2026 年 5 月 1 日，ClawBank 的 AI 代理 Manfred 自主完成了一家美国有限责任公司的注册，获得了美国国税局雇主识别号，开设了 FDIC 承保的银行账户，并创建了多加密货币钱包，全程无需人类指导。 这一里程碑表明 AI 代理现在可以独立执行复杂的法律和金融任务，推动了完全自主公司和去中心化运营的可行性。这对加密货币、去中心化金融以及未来的工作模式具有重大影响。 该 AI 代理使用了 ClawBank 的平台完成公司注册和银行开户流程。Manfred 还获得了加密货币钱包，使该公司准备好交易数字资产。
+Kraken 宣布对阿联酋客户计划下架 XMR、ZEC、DASH、USDD、DAI、USDS 和 USDE，交易、存款和取款的截止日期从 2025 年 6 月到 9 月。 这影响了阿联酋用户交易和持有隐私币及某些稳定币的能力，可能迫使他们在此期限前清算或转移资产。这反映了全球对隐私加密货币的监管压力日益增加。 保证金仓位将于 6 月 15 日平仓，6 月 16 日停止存款和交易，9 月 14 日停止提款，剩余余额将在 9 月 15 日至 25 日期间清算。清算收益由市场条件决定，无法保证。
 
-google\_news · CoinMarketCap · 7月25日 11:15
+rss · Kraken Status · 9月25日 12:00
 
-**背景**: 自主公司是一种合法注册的企业，由 AI 员工而非人类处理日常运营。去中心化自治组织（DAO）使用区块链进行治理，但该 AI 代理通过成立有限责任公司和开设银行账户，在传统法律框架内运作。
+**背景**: Monero \(XMR\) 和 Zcash \(ZEC\) 等隐私币使用先进的密码学隐藏交易细节，使其对隐私转账具有吸引力，但也引发监管担忧。DAI 和 USDe 等稳定币旨在维持稳定价值，但其监管地位各异。Kraken 的下架是其定期资产审查的一部分，可能受阿联酋监管要求驱动。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://www.coindesk.com/tech/2026/05/01/ai-agent-forms-its-own-company-gets-ready-to-trade-crypto">AI agent forms its own company, gets ready to trade crypto</a></li>
-<li><a href="https://newclawtimes.com/articles/manfred-ai-autonomous-incorporation-clawbank-legal-entity/">ClawBank&#x27;s Manfred AI Autonomously Incorporates U.S. LLC...</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Monero">Monero - Wikipedia</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Zcash">Zcash - Wikipedia</a></li>
+<li><a href="https://coinmarketcap.com/currencies/ethena-usde/">Ethena USDe price today, USDe to USD live price, marketcap and chart | CoinMarketCap</a></li>
 
 </ul>
 </details>
 
-**标签**: `#AI`, `#autonomous agents`, `#banking`, `#decentralization`, `#innovation`
+**标签**: `#delisting`, `#Kraken`, `#UAE`, `#regulation`, `#privacy coins`
+
+---
+
+<a id="item-4"></a>
+## [Kraken 因 PayAmigo 问题导致阿根廷比索提现延迟](https://status.kraken.com/incidents/rrwjdcsmy2kv) ⭐️ 8.0/10
+
+Kraken 确认了 PayAmigo 的一个问题，导致所有产品的阿根廷比索（ARS）提现延迟。截至 2023 年 7 月 26 日 UTC，修复正在进行中。 这一中断直接影响 Kraken 用户提取 ARS 资金的能力，ARS 是阿根廷使用的法定货币。这凸显了加密货币交易所对第三方支付处理商的依赖，用于法币操作。 该问题仅限于 ARS 提现；所有其他充值方式正常运行。PayAmigo 是一家专注于新兴市场（包括拉丁美洲）的支付服务商。
+
+rss · Kraken Status · 7月26日 02:02
+
+**背景**: Kraken 是一家主要的加密货币交易所，支持法定货币的充值及提现。PayAmigo 为新兴市场的商户提供本地化支付解决方案。目前问题已确认，正在实施修复。
+
+<details><summary>参考链接</summary>
+<ul>
+<li><a href="https://payamigo.com/">Home - PayAmigo</a></li>
+<li><a href="https://www.linkedin.com/company/payamigopayments">PayAmigo | LinkedIn</a></li>
+
+</ul>
+</details>
+
+**标签**: `#Kraken`, `#Fiat Withdrawals`, `#Operational Issue`, `#Argentina`
 
 ---
 
 <a id="item-5"></a>
-## [在 8 美元微控制器上运行 2890 万参数大模型](https://github.com/slvDev/esp32-ai) ⭐️ 7.0/10
+## [AI 代理自主创办公司并开设银行账户](https://news.google.com/rss/articles/CBMitAFBVV95cUxPX1lNUW1ydUswdGNabG9sejV6bmVHZ082Q3RYVXlJRkNGWWtFZzkyM1psdU91dWtwb0dfZ281R2lpRkhQMThaOFJkNWpVNkJEOGFodVFPT2ZaVkVrd2RPX2pEM0E2aEYyT2t5YVBJbEV0bk1ER2FmejNFS2V3SjlUUmRfMVFUWlRMMUpzekZaVzZiQ1dkVVQtSDZVNnBhejVNcDltNFpVU1E3Sm1nNE5JUzFnUjI?oc=5) ⭐️ 8.0/10
 
-一位开发者展示了如何在售价约 8 美元的 ESP32 微控制器上运行一个 2890 万参数的大语言模型，采用了激进的量化和模型剪枝技术。 这一突破表明，即使是超低成本的微控制器也能执行大语言模型，使边缘 AI 部署更加普及，并减少实时推理对云基础设施的依赖。 该模型可能采用了 4 比特量化和逐层嵌入的技巧，以适应 ESP32 仅 520KB 的 SRAM，并且由于芯片没有 FPU，全程使用整数运算。
+一个 AI 代理在没有任何人类参与的情况下独立注册了一家公司并开设了银行账户，标志着自主 AI 操作的里程碑。 这一进展展示了 AI 执行现实世界法律和金融行动的能力不断增强，可能改变企业创建和管理方式。同时也引发了关于自主代理的法律问责和控制的重要问题。 该 AI 代理在区块链平台上运行，可能利用智能合约和去中心化身份来满足法律要求。摘要中未披露具体的 AI 代理、公司结构和合作银行。
 
-hackernews · boveyking · 7月25日 18:59 · [社区讨论](https://news.ycombinator.com/item?id=49050512)
+google\_news · CoinMarketCap · 7月25日 11:15
 
-**背景**: 大语言模型通常需要数 GB 的内存和强大的 GPU。量化技术通过降低模型权重的精度（例如从 32 位降至 4 位），大幅减少内存占用；剪枝则移除冗余连接。边缘 AI 是指在本地设备上直接运行 AI 算法，这能减少延迟并提升隐私性。
+**背景**: AI 代理是可以自主执行任务的软件程序，通常使用机器学习和外部工具。去中心化自治组织（DAO）是基于区块链的实体，通过智能合约运作，无需中央权威即可实现集体管理。这一事件模糊了 AI 代理与 DAO 之间的界限，因为该代理同时扮演了创始人和运营者的角色。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://www.datacamp.com/tutorial/quantization-for-large-language-models">Quantization for Large Language Models (LLMs): Reduce AI Model Sizes Efficiently | DataCamp</a></li>
-<li><a href="https://pub.towardsai.net/bringing-ai-to-edge-devices-running-neural-networks-locally-96713afda00">Bringing AI To Edge Devices. Running Neural Networks... | Towards AI</a></li>
+<li><a href="https://ethereum.org/dao/">What is a DAO ? | Decentralized Autonomous Organization</a></li>
+<li><a href="https://twin.so/">Twin is an AI employee that works autonomously across all your apps...</a></li>
+<li><a href="https://agent.ai/">Agent . ai | The #1 Professional Network for AI Agents</a></li>
 
 </ul>
 </details>
 
-**社区讨论**: 社区成员对如此低的成本和性能表示惊叹，有人指出类似便宜的 Milk-V 开发板拥有更大的内存和 TPU。其他人讨论了潜在应用，如设备端文本转语音，并质疑这种方法能否通过闪存存储扩展到更大的模型。
-
-**标签**: `#edge AI`, `#microcontroller`, `#LLM`, `#hardware`, `#machine learning`
+**标签**: `#AI`, `#blockchain`, `#decentralized autonomous organization`, `#innovation`
 
 ---
 
 <a id="item-6"></a>
-## [Debian 提出三项 LLM 贡献政策提案](https://www.debian.org/vote/2026/vote_002) ⭐️ 7.0/10
+## [Coinbase CEO 警告量子威胁，为比特币准备安全升级](https://news.google.com/rss/articles/CBMid0FVX3lxTFBIVDlwSnJkYUQxUk1JZ3dYTEZyaFduMURUVXNSRW5MYlh2bUVpdXc2UDlUaVR0QjhnZ0ZZa0I3QTE5bTJkSGhiWFBJSVJZeDhISERxTC11QWRNbTlNdGRYbXVlUXRncTBEcDJIY0NEeVRIUktqd3lF?oc=5) ⭐️ 8.0/10
 
-Debian 发布了三项提案供投票决定如何处理使用大型语言模型（LLM）的贡献：完全禁止、有条件允许或除现有政策外无额外限制。 这一决定可能为其他正在应对 AI 生成贡献的开源项目树立先例，平衡创新与质量和法律方面的考量。 提案 A 明确禁止任何 LLM 辅助的贡献；提案 B 在透明度和人工审核等条件下允许；提案 C 不施加新限制，但建议最佳实践。
+Coinbase 首席执行官 Brian Armstrong 公开警告量子计算对比特币密码学安全的风险，并宣布该交易所正主动准备实施抗量子措施以保护用户资金。 这表明一家主要行业参与者认真对待长期的量子威胁，可能推动其他交易所和更广泛的加密生态系统加速采用后量子密码学，确保比特币抵御未来计算进步的能力。 该公告未明确抗量子升级的时间表，且能够破解比特币密码学的量子计算机预计至少十年内不会出现。但据报道，Coinbase 已在量子安全研究上投资 1500 万美元。
 
-hackernews · zdw · 7月25日 19:44 · [社区讨论](https://news.ycombinator.com/item?id=49050859)
+google\_news · Cryptopolitan · 7月26日 04:06
 
-**背景**: Debian 是一个以严格自由软件准则著称的主要 Linux 发行版。大型语言模型（LLM）可以生成代码、文档和翻译，引发了关于版权、质量和可维护性的担忧。这场辩论反映了开源社区关于 AI 在软件开发中作用的更广泛讨论。
+**背景**: 量子计算机如果足够强大，可以运行 Shor 算法来破解比特币数字签名中使用的椭圆曲线密码学，从而使攻击者能够伪造交易并窃取资金。后量子密码学旨在设计能抵御经典和量子攻击的算法。美国 NIST 已于 2024 年发布了首批后量子密码学标准，为迁移提供了基础。
 
-**社区讨论**: 评论者如 simonw 指出这些提案并非最终决定。hkalbasi 质疑将 LLM 仅视为句法组合的描述，并引用强化学习反驳。Meneth 指出 Gentoo 两年前成功禁止了 LLM。其他人建议合并提案或质疑现有贡献是否符合要求。
+<details><summary>参考链接</summary>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Post-quantum_cryptography">Post-quantum cryptography</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Shor&#x27;s_algorithm">Shor&#x27;s algorithm</a></li>
+<li><a href="https://www.deloitte.com/nl/en/services/consulting-risk/perspectives/quantum-computers-and-the-bitcoin-blockchain.html">Quantum computers and the Bitcoin blockchain | Deloitte</a></li>
 
-**标签**: `#Debian`, `#LLM`, `#open source`, `#AI policy`, `#governance`
+</ul>
+</details>
+
+**标签**: `#Bitcoin`, `#quantum security`, `#Coinbase`, `#cryptography`
 
 ---
 
 <a id="item-7"></a>
-## [俄罗斯最大银行 Sberbank 计划 12 月前推出加密货币交易基础设施](https://www.coindesk.com/business/2026/07/25/russia-s-largest-bank-sberbank-plans-crypto-trading-infrastructure-by-december) ⭐️ 7.0/10
+## [俄罗斯最大银行 Sberbank 计划 12 月前建立加密货币交易基础设施](https://www.coindesk.com/business/2026/07/25/russia-s-largest-bank-sberbank-plans-crypto-trading-infrastructure-by-december) ⭐️ 7.0/10
 
-俄罗斯最大的国有银行 Sberbank 宣布计划在 12 月前推出加密货币交易基础设施，标志着其在数字资产领域迈出重要一步。 此举可能加速俄罗斯机构对加密货币的采用，并可能为全球其他国有银行树立先例，考虑到 Sberbank 的规模和政府背景。 时间表定在 12 月，但尚未公布交易对、托管或监管批准的具体细节；该计划仍需遵守俄罗斯加密货币法规。
+俄罗斯最大的银行 Sberbank 宣布计划在 12 月前推出加密货币交易基础设施，从而在俄罗斯实现机构级别的加密货币交易。 此举标志着俄罗斯可能迎来机构级采用和监管演变，可能影响其他国有实体，并扩大受制裁影响市场的加密货币准入。 该计划包括构建一个全面的交易平台，但目前仍处于提议阶段；实际推出取决于监管批准。Sberbank 已经通过自己的区块链实验室活跃于区块链领域。
 
 rss · CoinDesk · 7月25日 16:59
 
-**背景**: Sberbank 是俄罗斯最大的银行，由国家控股。俄罗斯历来对加密货币持谨慎态度，但最近在严格监管下将部分加密活动合法化。这一公告反映了立场的软化以及主流兴趣的增长。
+**背景**: Sberbank 是俄罗斯国有银行巨头。加密货币交易基础设施是指用于买卖和存储加密货币的系统，通常包括订单匹配、钱包和合规工具。俄罗斯与加密货币监管的关系复杂，近期有向合法化迈进的动向。
 
-**标签**: `#cryptocurrency`, `#Russia`, `#Sberbank`, `#adoption`, `#regulation`
+<details><summary>参考链接</summary>
+<ul>
+<li><a href="https://www.ccn.com/russias-largest-bank-launched-blockchain-laboratory/">Russia’s Largest Bank Has Launched a Blockchain Laboratory</a></li>
+<li><a href="https://tadviser.com/index.php/Project:Blockchain_in_Sberbank">Blockchain in Sberbank</a></li>
+
+</ul>
+</details>
+
+**标签**: `#institutional adoption`, `#Russia`, `#crypto trading`, `#Sberbank`, `#regulation`
 
 ---
 
 <a id="item-8"></a>
-## [Wise 计划根据 GENIUS 法案重新申请美国银行执照](https://cointelegraph.com/news/wise-resubmit-occ-charter-application-genius-stablecoins?utm_source=rss_feed&amp;utm_medium=rss&amp;utm_campaign=rss_partner_inbound) ⭐️ 7.0/10
+## [Robinhood Chain 现实资产激增 5 倍，代币化股票交易规模扩大](https://www.coindesk.com/business/2026/07/25/robinhood-chain-s-real-world-assets-jump-fivefold-as-tokenized-stocks-start-trading-in-bigger-size) ⭐️ 7.0/10
 
-美国货币监理署（OCC）以反洗钱/反恐融资风险为由拒绝了 Wise 的国家银行执照申请，但这家金融科技公司计划根据新颁布的《GENIUS 法案》重新提交申请，该法案为稳定币监管提供了框架。 这一决定凸显了监管可能发生转变：金融科技公司和稳定币发行商可能受益于量身定制的联邦框架，从而影响跨境支付和数字资产的市场准入及合规标准。 OCC 在过去一年中曾批准类似数字资产公司的章程，但因反洗钱/反恐融资担忧拒绝了 Wise 的申请。GENIUS 法案要求稳定币完全由美元或同等低风险资产支持。
+Robinhood Chain 上的现实世界资产（RWA）总价值增长了五倍，这是由该平台上更大规模的代币化股票交易启动所推动的。 这一激增表明资产代币化的采用率和机构兴趣在增长，它连接了传统金融与区块链技术，可能重塑资本市场。 五倍的增长意味着 Robinhood Chain 上锁定的 RWA 达到了新的里程碑，代币化股票现在以更大的规模交易，反映出更深的流动性和市场信心。
 
-rss · Cointelegraph · 7月25日 16:05
+rss · CoinDesk · 7月25日 10:00
 
-**背景**: OCC（美国货币监理署）负责颁发和监管美国国家银行执照，偶尔也会向非银行金融科技公司发放特殊目的章程。GENIUS 法案（《引导和建立美国稳定币国家创新法案》）于 2025 年签署成为法律，为支付稳定币建立了全面的监管框架，包括准备金要求和消费者保护。总部位于英国的 Wise 提供低成本国际汇款服务，此前寻求美国银行执照以扩展业务。
+**背景**: Robinhood Chain 是一个专为金融服务和代币化现实世界资产构建的无许可 Layer 2 区块链。现实世界资产代币化涉及将股票等实物或传统金融资产的所有权转换为基于区块链的数字代币，实现部分所有权和全天候交易。这一发展是将传统资产引入去中心化网络的更广泛趋势的一部分。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://en.wikipedia.org/wiki/GENIUS_Act">GENIUS Act</a></li>
-<li><a href="https://www.congress.gov/119/plaws/publ27/PLAW-119publ27.pdf">Public Law 119–27 119th Congress An Act</a></li>
-<li><a href="https://www.csbs.org/sites/default/files/2020-12/Filing+Version+CSBS+v+OCC+Complaint+12_22.pdf">csbs.org/sites/default/files/2020-12/Filing Version CSBS v OCC ...</a></li>
+<li><a href="https://robinhood.com/us/en/chain/">Robinhood Chain : Built for onchain finance</a></li>
+<li><a href="https://docs.robinhood.com/chain/">About Robinhood Chain – Robinhood Chain Documentation</a></li>
+<li><a href="https://grokipedia.com/page/asset_tokenization">Asset tokenization</a></li>
 
 </ul>
 </details>
 
-**标签**: `#regulation`, `#OCC`, `#stablecoins`, `#GENIUS Act`, `#AML/CFT`
+**标签**: `#Robinhood Chain`, `#Real World Assets`, `#Tokenized Stocks`, `#Adoption`
 
 ---
 
 <a id="item-9"></a>
-## [朝鲜逮捕国家网络黑客，涉嫌银行黑客和加密货币洗钱](https://cointelegraph.com/news/north-korea-bank-hacking-ring-crypto-laundering-report?utm_source=rss_feed&amp;utm_medium=rss&amp;utm_campaign=rss_partner_inbound) ⭐️ 7.0/10
+## [富达敦促参议院通过 CLARITY 法案以明确加密监管](https://cointelegraph.com/news/fidelity-push-senate-passage-of-clarity-act?utm_source=rss_feed&amp;utm_medium=rss&amp;utm_campaign=rss_partner_inbound) ⭐️ 7.0/10
 
-据《每日朝鲜》报道，朝鲜逮捕了前国家网络操作人员，他们被指控入侵两家国有银行并通过加密货币洗钱。 此举表明朝鲜国家支持的网络行动内部存在问责机制，并凸显了加密货币在清洗非法资金中的持续使用，影响全球网络安全和反洗钱工作。 被捕者是前国家网络操作人员，黑客攻击目标为两家国有银行，所得资金通过加密货币清洗——这是朝鲜罕见地起诉自己网络操作人员的案例。
+大型机构投资公司富达公开呼吁美国参议院通过 CLARITY 法案，与行业团体和加密公司一道推动市场结构立法。 富达的支持为 CLARITY 法案增添了重要的机构力量，可能提高其通过的可能性，并为美国数字资产提供亟需的监管明确性。 CLARITY 法案将赋予商品期货交易委员会（CFTC）对数字商品现货交易的更广泛管辖权，同时保留证券交易委员会（SEC）对一级市场加密交易的权力，并对筹资活动提供有限豁免。
 
-rss · Cointelegraph · 7月25日 13:14
+rss · Cointelegraph · 7月25日 11:30
 
-**背景**: 朝鲜长期以来被指控进行国家支持的网络攻击，包括入侵银行和加密货币交易所，以获取资金支持其政权。通过加密货币清洗被盗资金通常涉及使用混币器和混合服务等方法来掩盖交易痕迹。
+**背景**: CLARITY 法案（2025 年数字资产市场清晰法案）旨在划分 SEC 和 CFTC 之间的监管权力，结束目前逐案执法的方式。作为持有大量加密资产的资产管理巨头，富达对明确规则有切身利益。该法案已在众议院通过，目前待参议院审议。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://www.kaspersky.com/blog/crypto-laundering-and-ransomware/48186/">The most popular ways to launder cryptocurrency</a></li>
+<li><a href="https://www.banking.senate.gov/imo/media/doc/fact_sheet_the_clarity_act_delivers_regulatory_clarity_for_the_crypto_industry.pdf">FACT SHEET: The CLARITY Act Delivers Regulatory Clarity for the Crypto Industry</a></li>
+<li><a href="https://www.congress.gov/crs-product/IN12583">Crypto Legislation: An Overview of H.R. 3633, the CLARITY Act | Congress.gov | Library of Congress</a></li>
 
 </ul>
 </details>
 
-**标签**: `#North Korea`, `#cybercrime`, `#crypto laundering`, `#state-sponsored hacking`
+**标签**: `#regulation`, `#CLARITY Act`, `#Fidelity`, `#market structure`, `#institutional adoption`
 
 ---
 
 <a id="item-10"></a>
-## [富达呼吁参议院通过《CLARITY 法案》](https://cointelegraph.com/news/fidelity-push-senate-passage-of-clarity-act?utm_source=rss_feed&amp;utm_medium=rss&amp;utm_campaign=rss_partner_inbound) ⭐️ 7.0/10
+## [Kraken 宣布下架 RAIN 代币](https://status.kraken.com/incidents/yshk4vtwcyg2) ⭐️ 7.0/10
 
-富达（Fidelity）公开呼吁美国参议院通过《数字资产市场清晰法案》（CLARITY Act），与行业团体和加密公司共同推动全面的市场结构立法。 这标志着机构对监管清晰度的重大推动，可能降低传统金融进入加密货币的门槛，并为市场参与者制定更明确的规则。 这项由参议员 Tim Scott 和 Cynthia Lummis 领导的两党法案旨在界定 SEC 和 CFTC 对数字资产的监管职责。富达作为管理资产达 4.5 万亿美元的主要资产管理公司，其支持增加了法案的分量。
+Kraken 将于 2025 年 6 月 17 日禁用 RAIN 的充值及交易功能，并于 9 月 15 日禁用提现功能，随后强制清算剩余余额。 在 Kraken 上持有 RAIN 的用户面临硬性截止日期，必须在强制清算前提取代币，而清算价格可能因市场流动性不足而远低于参考价，凸显了交易所下架代币的风险。 清算期从 9 月 15 日持续至 9 月 25 日，Kraken 警告称，如果市场流动性不足，清算所得可能极少甚至为零。用户必须在 9 月 15 日 13:59 UTC 前提现。
 
-rss · Cointelegraph · 7月25日 11:30
+rss · Kraken Status · 9月25日 23:00
 
-**背景**: 《CLARITY 法案》（2025 年数字资产市场清晰法案）是一项拟议的美国法律，旨在为数字资产提供监管框架，明确各机构的监管范围。富达作为传统金融巨头，已越来越多地涉足加密货币服务，包括比特币和以太坊的交易与托管。
+**背景**: RAIN 是一种与 Rain 交易所（巴林持牌加密货币交易所）相关的加密货币代币。交易所会定期审查上架资产，并移除不符合标准的代币，这通常会导致代币价格下跌以及剩余持有者被强制清算。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://www.congress.gov/bill/119th-congress/house-bill/3633/text">Text - H.R.3633 - 119th Congress (2025-2026): Digital Asset Market Clarity Act | Congress.gov | Library of Congress</a></li>
-<li><a href="https://grokipedia.com/page/Digital_Asset_Market_Clarity_Act_of_2025">Digital Asset Market Clarity Act of 2025</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Rain_%28cryptocurrency_exchange%29">Rain ( cryptocurrency exchange) - Wikipedia</a></li>
+<li><a href="https://www.coingecko.com/en/coins/rain">Rain Price: RAIN /USD Live Price Chart, Market Cap... | CoinGecko</a></li>
 
 </ul>
 </details>
 
-**标签**: `#regulatory`, `#institutional adoption`, `#market structure`, `#legislation`
+**标签**: `#delisting`, `#exchange`, `#Kraken`, `#RAIN`
 
 ---
 
 <a id="item-11"></a>
-## [Coinbase 将暂停 ACX 交易，Across Protocol 逐步关停](https://status.coinbase.com/incidents/9h5nsb9zjlzd) ⭐️ 7.0/10
+## [MicroStrategy 加入 BlackRock 和 Coinbase 成立的比特币安全联盟](https://news.google.com/rss/articles/CBMipgFBVV95cUxPUkNBNGVteHFxcVBwdlhmSTE2SFpKcXh6RU1IVlljcFUzSlBWMEZYdWZCa1JWQ3BWR2pQVnk1bnFIUXR3MjljaF9NR1BXcndjMktmcHBvc21LOWhDUWJ5dThzcE1OQWpuZ1E3VXlXVHFlMUNfWHF5cThRUk9QdDdIR3Q2YjJiUm9XM1QxbjhZN1Ffek5Kd0lhZUNIcTNwamZtR2JSUHZB?oc=5) ⭐️ 7.0/10
 
-由于项目团队正在逐步关停 ACX 代币并提供转换选项，Coinbase 已将 ACX 订单簿切换到仅限限价模式，并将于 2026 年 7 月 28 日暂停 ACX 交易。 这直接影响了 Coinbase 上的 ACX 持有者，给出了明确的截止日期，并要求他们如果想转换代币就必须采取行动。这一来自知名跨链桥协议的代币关停事件，凸显了加密生态系统中的风险和生命周期事件。 转换选项的详细信息在 Across Protocol 论坛帖子中；用户必须将 ACX 转移到自托管钱包才能参与。暂停窗口期为 2026 年 7 月 28 日至 2026 年 8 月 3 日。
+MicroStrategy \(MSTR\) 已与 BlackRock、Coinbase 等另外六家主要机构共同成立比特币安全联盟，承诺三年内投入 1500 万美元用于资助比特币网络安全，初期重点应对量子计算威胁。 该联盟标志着机构为主动应对未来量子计算风险而进行的前所未有合作，表明主要金融参与者正在投资比特币网络的长期韧性，而不仅仅是价格投机。 九家创始成员包括 Anchorage Digital、ARK Invest、BlackRock、Block、Blockstream、Coinbase、Fidelity Digital Assets、Galaxy 和 Strategy（MicroStrategy）。该联盟将在三年内拨款 1500 万美元，支持开发者开展比特币抗量子密码学的工作。
 
-rss · Coinbase Status · 7月28日 07:00
+google\_news · Yahoo Finance · 7月25日 07:11
 
-**背景**: Across Protocol 是一个跨链代币桥，利用 UMA 的乐观预言机实现安全转账。ACX 是其治理代币。代币关停发生在项目决定停止运营或迁移到新代币时，通常为持有者提供转换路径。
+**背景**: 比特币基于椭圆曲线数字签名的密码安全性，未来可能被足够强大的量子计算机破解。尽管此类量子计算机尚不实用，但专家警告必须现在开始准备，将比特币过渡到抗量子算法。比特币安全联盟旨在资助研发，以确保网络长期抵御这一新兴威胁。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://coinmarketcap.com/currencies/across-protocol/">Across Protocol price today, ACX to USD live price, marketcap and chart | CoinMarketCap</a></li>
+<li><a href="https://en.bitcoinsistemi.com/massive-alliance-formed-in-bitcoin-strategy-blackrock-and-seven-key-figures-make-a-new-move-against/">Massive Alliance Formed in Bitcoin : Strategy... - Bitcoin Sistemi</a></li>
+<li><a href="https://marketsbrief.org/bitcoins-nine-biggest-institutional-holders-unite-to-fund-network-security/">Bitcoin ’s Nine Biggest Institutional Holders Unite to Fund Network ...</a></li>
+<li><a href="https://www.strategy.com/press/leading-financial-institutions-bitcoin-companies-launch-the-bitcoin-security-consortium_07-23-2026">Leading Financial Institutions &amp; Bitcoin Companies Launch the...</a></li>
 
 </ul>
 </details>
 
-**标签**: `#Coinbase`, `#Delisting`, `#ACX`, `#Across Protocol`, `#Token Wind-Down`
+**标签**: `#Bitcoin`, `#institutional adoption`, `#security consortium`, `#MicroStrategy`, `#Coinbase`
 
 ---
 
 <a id="item-12"></a>
-## [币安据报将 ACX、LSK、STX 列入下架风险名单](https://news.google.com/rss/articles/CBMiekFVX3lxTFBtNXdIUDBhcVVwczk0cW1LbFk1eDBEMlI2VzV1VEtkRkIyUlNuUURET3ZyZHh0ejRmVG1ZY0FZTDl1SkMyVjNzTGdFWDNtYWdFNVBiVU11b2lBalduRVg5aWpqOHJabXI5OEZhMFg4Zk1KWXRxY0VTdnFB?oc=5) ⭐️ 7.0/10
+## [Coinbase 在警方支持后游说参议院通过清晰法案](https://news.google.com/rss/articles/CBMiowFBVV95cUxPOV9DNUpfZnV4MG1vV1ZiSU1HUG9hN1phdkZJdWs4WFg4Mnh2cWpteldvRFcxdzJZTG5hWVRaTEcxamZkZEZ2RVUyNzFOY0F5STl4YzduOU9RUFE3TVY0UVVPQUdqRkQxLUlmSWZUWnVISzg0UEJvWWJYUURsZnQ3ZERlRng0eG0yLTZCVGJnSDd1eTRjZDlPRkVTakNhR0h4OWhn?oc=5) ⭐️ 7.0/10
 
-来自 sekbernews.id 的新闻报道称，币安已将 ACX、LSK 和 STX 列入下架风险名单，可能将这些代币从其交易所移除。 在币安下架可能显著降低流动性并对代币价格产生负面影响，从而影响这些资产的持有者和交易者。 该报道来自 sekbernews.id，而非币安官方渠道，因此其可信度不确定。ACX 是 Across Protocol 的治理代币，LSK 是 Lisk 的原生代币，STX 是 Stacks 区块链的代币。
+在警方近日表示支持后，Coinbase 正在加大游说力度，推动美国参议院通过《清晰法案》。该法案旨在为加密货币建立联邦监管框架。 这可能澄清数字资产的监管地位，从而减少 Coinbase 等交易所及整个加密市场的不确定性。若该法案通过，将标志着美国加密货币监管的重大转变。 《清晰法案》提出多层资产分类机制，以确定代币属于证券、商品或其他类别，并据此分配监管责任。法案还包括判断去中心化程度的具体条款。
 
-google\_news · sekbernews.id · 7月25日 08:13
+google\_news · portalcripto.com.br · 7月25日 18:00
 
-**背景**: 币安作为全球最大的加密货币交易所，会定期审查已上线的代币，并可能下架那些不符合特定标准的代币，例如交易量过低或存在监管问题。ACX 是跨链桥协议 Across Protocol 的治理代币。LSK 是区块链应用平台 Lisk 的原生代币。STX 是比特币智能合约层 Stacks 的代币。不过，本次下架风险报道来自新闻聚合网站 sekbernews.id，尚未得到币安官方渠道的确认。
+**背景**: 美国加密货币监管格局长期碎片化，SEC 和 CFTC 经常在管辖权上争执。清晰法案旨在通过明确框架解决这一争议。警方支持指的是执法机构认可该法案打击非法金融的潜力。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://defillama.com/token/ACX">ACX Price, Market Cap, Supply, Trading Volume &amp; Token Rights</a></li>
-<li><a href="https://coinmarketcap.com/currencies/lisk/">Lisk price today, LSK to USD live price, marketcap and chart | CoinMarketCap</a></li>
-<li><a href="https://www.coingecko.com/en/coins/stacks">Stacks Price: STX/USD Live Price Chart, Market Cap &amp; News ...</a></li>
+<li><a href="https://legis1.com/news/clarity-act-crypto-regulation-subcommittee">CLARITY Act Reshapes Crypto Regulation | Legis1</a></li>
+<li><a href="https://www.arnoldporter.com/en/perspectives/advisories/2025/08/clarifying-the-clarity-act">Clarifying the CLARITY Act: What To Know About the House Crypto Market Structure Bill and Its Path to Law | Advisories | Arnold &amp; Porter</a></li>
+<li><a href="https://bitcoinfoundation.org/news/regulation/cryptos-biggest-moment-in-years-why-the-clarity-act-could-change-everything/">Clarity Act: Crypto&#x27;s Biggest Moment</a></li>
 
 </ul>
 </details>
 
-**标签**: `#Binance`, `#delisting`, `#ACX`, `#LSK`, `#STX`
+**标签**: `#regulation`, `#Coinbase`, `#Clarity Act`, `#US Senate`, `#lobbying`
 
 ---
