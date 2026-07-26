@@ -32,6 +32,7 @@ from .ai.tokens import get_usage_snapshot
 from .daily_feed import (
     DailyFeedState,
     analyzed_item_key,
+    item_identity,
     items_for_local_date,
     load_daily_feed_state,
     local_date_for,
@@ -281,6 +282,11 @@ class HorizonOrchestrator:
             filtering_result = await self.filter_items(
                 analyzed_items,
                 apply_balance=False,
+                dedup_context=(
+                    [*daily_state.dedup_history, *daily_state.items]
+                    if daily_state is not None
+                    else None
+                ),
             )
             important_items = filtering_result.items
 
@@ -721,8 +727,9 @@ class HorizonOrchestrator:
         topic_dedup: bool = True,
         apply_balance: bool = True,
         log: bool = True,
+        dedup_context: Optional[List[ContentItem]] = None,
     ) -> FilteringPipelineResult:
-        """Apply score thresholding, optional topic dedup, and digest balancing."""
+        """Apply score thresholding, published-history dedup, and balancing."""
         effective_threshold = (
             threshold
             if threshold is not None
@@ -742,7 +749,38 @@ class HorizonOrchestrator:
 
         deduped_items = threshold_items
         if topic_dedup and deduped_items:
-            deduped_items = await self.merge_topic_duplicates(deduped_items, log=log)
+            context_items = dedup_context or []
+            if context_items:
+                published_identities = {
+                    item_identity(item) for item in context_items
+                }
+                deduped_items = [
+                    item
+                    for item in deduped_items
+                    if item_identity(item) not in published_identities
+                ]
+
+                if deduped_items:
+                    # Published context comes first so the existing topic
+                    # deduplicator keeps the first publication of an event.
+                    context_copies = [
+                        item.model_copy(update={"ai_score": 11.0}, deep=True)
+                        for item in context_items
+                    ]
+                    combined = [*context_copies, *deduped_items]
+                    merged = await self.merge_topic_duplicates(
+                        combined,
+                        log=log,
+                    )
+                    survivors = {id(item) for item in merged}
+                    deduped_items = [
+                        item for item in deduped_items if id(item) in survivors
+                    ]
+            else:
+                deduped_items = await self.merge_topic_duplicates(
+                    deduped_items,
+                    log=log,
+                )
         topic_dedup_removed = len(threshold_items) - len(deduped_items)
 
         if log and topic_dedup_removed:

@@ -4,7 +4,8 @@ from __future__ import annotations
 
 import hashlib
 import json
-from datetime import datetime, timezone
+from datetime import date as date_type
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from typing import Iterable
 from urllib.parse import parse_qsl, urlencode, urlsplit, urlunsplit
@@ -17,6 +18,7 @@ from .models import ContentItem
 
 
 DAILY_FEED_STATE_PATH = Path("docs/_data/bmtnews_state.json")
+PUBLISHED_HISTORY_DAYS = 2
 _TRACKING_QUERY_PARAMETERS = {
     "_ga",
     "dclid",
@@ -59,6 +61,7 @@ class DailyFeedState(BaseModel):
     updated_at: datetime
     analyzed_keys: list[str] = Field(default_factory=list)
     items: list[ContentItem] = Field(default_factory=list)
+    dedup_history: list[ContentItem] = Field(default_factory=list)
 
 
 def local_date_for(moment: datetime, timezone_name: str) -> str:
@@ -102,7 +105,8 @@ def _canonical_url(url: str) -> str:
     return urlunsplit((scheme, netloc, path, query, ""))
 
 
-def _item_identity(item: ContentItem) -> str:
+def item_identity(item: ContentItem) -> str:
+    """Return the canonical URL identity used for published-item deduplication."""
     canonical_url = _canonical_url(str(item.url))
     return canonical_url or item.id
 
@@ -126,7 +130,7 @@ def sort_daily_items(items: Iterable[ContentItem]) -> list[ContentItem]:
         key=lambda item: (
             -(item.ai_score or 0),
             -_published_timestamp(item),
-            _item_identity(item),
+            item_identity(item),
         ),
     )
 
@@ -140,10 +144,28 @@ def merge_daily_items(
     """Merge selected items without dropping earlier entries from the same day."""
     merged: dict[str, ContentItem] = {}
     for item in items_for_local_date(existing, date, timezone_name):
-        merged[_item_identity(item)] = item
+        merged[item_identity(item)] = item
     for item in items_for_local_date(incoming, date, timezone_name):
-        merged[_item_identity(item)] = item
+        merged[item_identity(item)] = item
     return sort_daily_items(merged.values())
+
+
+def _recent_dedup_history(
+    items: Iterable[ContentItem],
+    date: str,
+    timezone_name: str,
+) -> list[ContentItem]:
+    """Keep canonicalized published items from the preceding history window."""
+    target_date = date_type.fromisoformat(date)
+    earliest_date = target_date - timedelta(days=PUBLISHED_HISTORY_DAYS)
+    recent: dict[str, ContentItem] = {}
+    for item in items:
+        item_date = date_type.fromisoformat(
+            local_date_for(item.published_at, timezone_name)
+        )
+        if earliest_date <= item_date < target_date:
+            recent[item_identity(item)] = item
+    return sort_daily_items(recent.values())
 
 
 def _public_state_item(item: ContentItem) -> ContentItem:
@@ -184,8 +206,20 @@ def load_daily_feed_state(
     except (OSError, ValidationError, ValueError) as exc:
         raise DailyFeedStateError(f"Invalid daily feed state: {path}") from exc
 
-    if state.date != date or state.timezone != timezone_name:
+    if state.timezone != timezone_name:
         return empty
+    if state.date != date:
+        empty.dedup_history = _recent_dedup_history(
+            [*state.dedup_history, *state.items],
+            date,
+            timezone_name,
+        )
+        return empty
+    state.dedup_history = _recent_dedup_history(
+        state.dedup_history,
+        date,
+        timezone_name,
+    )
     return state
 
 
@@ -196,7 +230,12 @@ def save_daily_feed_state(
     """Atomically persist the minimum public fields required for the next merge."""
     path.parent.mkdir(parents=True, exist_ok=True)
     public_state = state.model_copy(
-        update={"items": [_public_state_item(item) for item in state.items]},
+        update={
+            "items": [_public_state_item(item) for item in state.items],
+            "dedup_history": [
+                _public_state_item(item) for item in state.dedup_history
+            ],
+        },
         deep=True,
     )
     payload = json.dumps(
