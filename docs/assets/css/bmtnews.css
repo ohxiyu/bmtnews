@@ -1012,6 +1012,22 @@ input {
   padding-top: 22px;
 }
 
+.continuous-feed .daily-feed-header {
+  grid-template-columns: minmax(0, 1fr);
+}
+
+.brand-domain {
+  flex: 0 0 auto;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--surface) 82%, transparent);
+  color: var(--text-soft);
+  padding: 6px 10px;
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 0.7rem;
+  font-weight: 750;
+}
+
 .daily-feed-header {
   min-height: 164px;
   overflow: hidden;
@@ -1027,6 +1043,114 @@ input {
   align-items: end;
   padding: 28px 30px;
   box-shadow: var(--shadow-soft);
+}
+
+.day-stream {
+  margin-top: 18px;
+}
+
+.daily-day {
+  position: relative;
+  scroll-margin-top: 80px;
+}
+
+.daily-day + .daily-day {
+  margin-top: 34px;
+}
+
+.day-divider {
+  position: sticky;
+  top: 66px;
+  z-index: 40;
+  min-height: 58px;
+  border: 1px solid var(--border);
+  border-radius: 13px;
+  background: color-mix(in srgb, var(--bg) 91%, transparent);
+  backdrop-filter: blur(18px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 10px 13px;
+  box-shadow: 0 7px 20px rgba(30, 41, 59, 0.06);
+}
+
+.day-divider-title {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
+
+.day-divider-title time {
+  color: var(--text);
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 0.88rem;
+  font-weight: 800;
+}
+
+.day-state {
+  border-radius: 6px;
+  background: var(--accent);
+  color: #fff;
+  padding: 5px 8px;
+  font-size: 0.67rem;
+  font-weight: 850;
+}
+
+.day-divider-stats {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.day-divider-stats span {
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--surface);
+  color: var(--text-muted);
+  padding: 6px 8px;
+  font-size: 0.65rem;
+  white-space: nowrap;
+}
+
+.day-divider-stats strong {
+  margin-right: 2px;
+  color: var(--text);
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 0.76rem;
+}
+
+.daily-day .daily-feed-content {
+  margin-top: 10px;
+}
+
+.load-earlier-wrap {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.load-earlier {
+  min-width: 160px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: var(--surface);
+  color: var(--text-soft);
+  cursor: pointer;
+  padding: 10px 18px;
+  font-size: 0.78rem;
+  font-weight: 780;
+  box-shadow: var(--shadow-soft);
+}
+
+.load-earlier:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.load-earlier:disabled {
+  cursor: wait;
+  opacity: 0.65;
 }
 
 .daily-feed-heading {
@@ -1224,6 +1348,14 @@ input {
   position: sticky;
   top: 82px;
   min-width: 0;
+}
+
+.home-page .headline-rail {
+  top: 136px;
+}
+
+.home-page .daily-story-stream .digest-item {
+  scroll-margin-top: 136px;
 }
 
 .headline-index {
@@ -1651,6 +1783,55 @@ input {
     align-items: start;
   }
 
+  .day-stream {
+    margin-top: 13px;
+  }
+
+  .daily-day + .daily-day {
+    margin-top: 25px;
+  }
+
+  .day-divider {
+    top: 58px;
+    min-height: 52px;
+    gap: 10px;
+    padding: 8px 10px;
+  }
+
+  .day-divider-title {
+    gap: 6px;
+  }
+
+  .day-divider-title time {
+    font-size: 0.76rem;
+  }
+
+  .day-state {
+    padding: 4px 6px;
+    font-size: 0.61rem;
+  }
+
+  .day-divider-stats {
+    gap: 4px;
+  }
+
+  .day-divider-stats span {
+    padding: 5px 6px;
+    font-size: 0;
+  }
+
+  .day-divider-stats strong {
+    margin: 0;
+    font-size: 0.68rem;
+  }
+
+  .day-divider-stats span::after {
+    content: attr(data-short);
+    margin-left: 2px;
+    color: var(--text-muted);
+    font-size: 0.55rem;
+  }
+
   .daily-feed-stats {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
@@ -1662,6 +1843,10 @@ input {
   .headline-rail {
     position: static;
     order: -1;
+  }
+
+  .home-page .daily-story-stream .digest-item {
+    scroll-margin-top: 122px;
   }
 
   .headline-list {

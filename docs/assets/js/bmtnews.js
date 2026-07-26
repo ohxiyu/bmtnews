@@ -232,7 +232,9 @@
     root.insertBefore(article, anchorParagraph || heading);
 
     var rawId = anchor ? anchor.id : 'item-' + (index + 1);
-    var idPrefix = document.body.classList.contains('home-page') ? language + '-' : '';
+    var idPrefix = document.body.classList.contains('home-page')
+      ? language + '-' + date + '-'
+      : '';
     article.id = idPrefix + rawId;
     if (anchorParagraph) anchorParagraph.remove();
 
@@ -248,6 +250,7 @@
     var score = readScore(heading);
     var headingBadge = heading.querySelector('.score-badge');
     if (headingBadge) headingBadge.remove();
+    heading.removeAttribute('id');
     article.dataset.category = category;
     article.dataset.score = String(score);
 
@@ -326,7 +329,7 @@
     });
   }
 
-  function createHeadlineRail(toc, articles, language) {
+  function createHeadlineRail(toc, articles, language, date) {
     var aside = document.createElement('aside');
     aside.className = 'headline-rail';
     aside.setAttribute('aria-label', language === 'zh' ? '当日标题汇总' : 'Daily headline index');
@@ -335,7 +338,10 @@
     details.className = 'headline-index';
     var summary = document.createElement('summary');
     var title = document.createElement('span');
-    title.textContent = language === 'zh' ? '当日标题汇总' : 'Today’s headlines';
+    var displayDate = date ? date.replace(/-/g, '.') : '';
+    title.textContent = language === 'zh'
+      ? displayDate + ' 标题汇总'
+      : displayDate + ' headlines';
     var count = document.createElement('small');
     count.textContent = articles.length;
     summary.appendChild(title);
@@ -398,12 +404,12 @@
     articles.forEach(function (article) {
       stream.appendChild(article);
     });
-    var aside = createHeadlineRail(toc, articles, language);
+    var aside = createHeadlineRail(toc, articles, language, date);
     layout.appendChild(stream);
     layout.appendChild(aside);
 
     root.replaceChildren(toolbar, layout);
-    var statsScope = root.closest('.daily-feed') || root;
+    var statsScope = root.closest('.daily-day') || root;
     updateFeedStats(statsScope, articles, stream, fetchedCount);
     setupFilters(filterHost, articles, language, function (category) {
       tocItems.forEach(function (item) {
@@ -415,9 +421,115 @@
 
   function enhanceDailyFeeds() {
     document.querySelectorAll('.home-page .daily-feed-content').forEach(enhanceDigest);
+    document.querySelectorAll('.home-page .continuous-feed').forEach(setupLoadEarlier);
     if (document.body.classList.contains('digest-page')) {
       enhanceDigest(document.querySelector('.main-content'));
     }
+  }
+
+  function createDayStat(key, label, shortLabel) {
+    var stat = document.createElement('span');
+    stat.dataset.short = shortLabel;
+    var value = document.createElement('strong');
+    value.dataset.stat = key;
+    value.textContent = '—';
+    stat.appendChild(value);
+    stat.appendChild(document.createTextNode(' ' + label));
+    return stat;
+  }
+
+  function createLoadedDay(language, date, source) {
+    var section = document.createElement('section');
+    section.className = 'daily-day';
+    section.dataset.language = language;
+    section.dataset.date = date;
+
+    var header = document.createElement('header');
+    header.className = 'day-divider';
+    var heading = document.createElement('div');
+    heading.className = 'day-divider-title';
+    var time = document.createElement('time');
+    time.dateTime = date;
+    time.textContent = date.replace(/-/g, '.');
+    heading.appendChild(time);
+
+    var stats = document.createElement('div');
+    stats.className = 'day-divider-stats';
+    stats.setAttribute('aria-label', date + (language === 'zh' ? ' 日报统计' : ' brief statistics'));
+    stats.appendChild(createDayStat('selected', language === 'zh' ? '条精选' : 'selected', language === 'zh' ? '选' : 'S'));
+    stats.appendChild(createDayStat('fetched', language === 'zh' ? '条分析' : 'analyzed', language === 'zh' ? '析' : 'A'));
+    stats.appendChild(createDayStat('critical', language === 'zh' ? '条高优先级' : 'high priority', language === 'zh' ? '高' : 'H'));
+    header.appendChild(heading);
+    header.appendChild(stats);
+
+    var content = document.createElement('div');
+    content.className = 'daily-feed-content';
+    content.dataset.language = language;
+    content.dataset.date = date;
+    content.innerHTML = source.innerHTML;
+
+    section.appendChild(header);
+    section.appendChild(content);
+    return section;
+  }
+
+  function setupLoadEarlier(feed) {
+    if (!feed || feed.dataset.historyReady === 'true') return;
+    feed.dataset.historyReady = 'true';
+
+    var button = feed.querySelector('.load-earlier');
+    var manifest = feed.querySelector('.feed-history-manifest');
+    var stream = feed.querySelector('.day-stream');
+    if (!button || !manifest || !stream) return;
+
+    var language = normalizeLanguage(feed.dataset.language);
+    var idleLabel = language === 'zh' ? '加载更早' : 'Load earlier';
+    var loadingLabel = language === 'zh' ? '正在加载…' : 'Loading…';
+    var errorLabel = language === 'zh' ? '加载失败，重试' : 'Could not load. Retry';
+
+    button.addEventListener('click', async function () {
+      var entries = Array.prototype.slice.call(manifest.querySelectorAll(':scope > span')).slice(0, 2);
+      if (!entries.length) {
+        button.closest('.load-earlier-wrap').remove();
+        return;
+      }
+
+      button.disabled = true;
+      button.textContent = loadingLabel;
+      try {
+        var loaded = await Promise.all(entries.map(async function (entry) {
+          var url = new URL(entry.dataset.url, window.location.href);
+          if (url.origin !== window.location.origin) {
+            throw new Error('History URL must be same-origin');
+          }
+          var response = await fetch(url.href, {credentials: 'same-origin'});
+          if (!response.ok) throw new Error('History request failed: ' + response.status);
+          var markup = await response.text();
+          var parsed = new DOMParser().parseFromString(markup, 'text/html');
+          var source = parsed.querySelector('.main-content');
+          if (!source) throw new Error('History content was not found');
+          return createLoadedDay(language, entry.dataset.date, source);
+        }));
+
+        loaded.forEach(function (section) {
+          stream.appendChild(section);
+          enhanceDigest(section.querySelector('.daily-feed-content'));
+        });
+        entries.forEach(function (entry) {
+          entry.remove();
+        });
+
+        if (!manifest.querySelector(':scope > span')) {
+          button.closest('.load-earlier-wrap').remove();
+        } else {
+          button.disabled = false;
+          button.textContent = idleLabel;
+        }
+      } catch (error) {
+        button.disabled = false;
+        button.textContent = errorLabel;
+      }
+    });
   }
 
   function setupLanguageToggle() {
@@ -440,14 +552,13 @@
     var pageLanguage = normalizeLanguage(document.documentElement.lang);
     var saved = null;
     try {
-      saved = localStorage.getItem('horizon-lang');
+      saved = localStorage.getItem('bmtnews-lang');
     } catch (error) {
       saved = null;
     }
     var current = isDigest ? pageLanguage : (saved === 'en' ? 'en' : 'zh');
     var sectionZh = document.getElementById('lang-zh');
     var sectionEn = document.getElementById('lang-en');
-    var archiveLink = document.querySelector('.site-nav a:nth-child(2)');
 
     function update(language) {
       buttonEn.classList.toggle('active', language === 'en');
@@ -455,9 +566,6 @@
       if (sectionZh && sectionEn) {
         sectionZh.classList.toggle('hidden', language !== 'zh');
         sectionEn.classList.toggle('hidden', language !== 'en');
-      }
-      if (archiveLink && !isDigest) {
-        archiveLink.setAttribute('href', language === 'en' ? '#archive-en' : '#archive');
       }
       document.documentElement.lang = language === 'en' ? 'en' : 'zh-CN';
     }
@@ -476,7 +584,7 @@
 
     function setLanguage(language) {
       try {
-        localStorage.setItem('horizon-lang', language);
+        localStorage.setItem('bmtnews-lang', language);
       } catch (error) {
         // Storage is an enhancement only.
       }
@@ -517,7 +625,7 @@
       var next = currentDark() ? 'light' : 'dark';
       document.documentElement.dataset.theme = next;
       try {
-        localStorage.setItem('horizon-theme', next);
+        localStorage.setItem('bmtnews-theme', next);
       } catch (error) {
         // Storage is an enhancement only.
       }
@@ -525,7 +633,7 @@
     });
 
     try {
-      var saved = localStorage.getItem('horizon-theme');
+      var saved = localStorage.getItem('bmtnews-theme');
       if (saved === 'light' || saved === 'dark') {
         document.documentElement.dataset.theme = saved;
       }

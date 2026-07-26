@@ -1,20 +1,24 @@
 theme: jekyll-theme-cayman
-title: Horizon Daily
-description: AI-curated crypto intelligence covering exchanges, markets, security, regulation, and protocols
+title: BMTNews
+description: Crypto market intelligence covering exchanges, markets, security, regulation, and protocols
 baseurl: ""
-url: "https://horizon-ohxiyu.pages.dev"
-repository_url: "https://github.com/ohxiyu/Horizon"
+url: "https://bmt.news"
 
 # Build settings
 markdown: kramdown
 future: true # Allow future posts to be published
-plugins:
-  - jekyll-feed
-feed:
-  path: feed.xml
 exclude:
   - ".github"
   - "node_modules"
+  - "configuration.md"
+  - "extractors.md"
+  - "horizon-hub-design.md"
+  - "scoring.md"
+  - "scrapers.md"
+  - "twitter-cookies.md"
+  - "assets/horizon-header.svg"
+  - "assets/css/horizon.css"
+  - "assets/js/horizon.js"
 
 defaults:
   - scope:
