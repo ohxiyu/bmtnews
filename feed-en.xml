@@ -4,7 +4,7 @@ permalink: /feed-en.xml
 ---
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>{{ site.title }} - English Digest</title>
+  <title>BMTNews - English Crypto News</title>
   <link href="{{ '/feed-en.xml' | absolute_url }}" rel="self"/>
   <link href="{{ '/' | absolute_url }}"/>
   <updated>{{ site.time | date_to_xmlschema }}</updated>
@@ -12,7 +12,7 @@ permalink: /feed-en.xml
   {% assign en_posts = site.posts | where: "lang", "en" %}
   {% for post in en_posts limit:7 %}
   <entry>
-    <title>{{ post.title | escape }}</title>
+    <title>BMTNews · {{ post.date | date: "%Y.%m.%d" }}</title>
     <link href="{{ post.url | absolute_url }}"/>
     <updated>{{ post.date | date_to_xmlschema }}</updated>
     <id>{{ post.url | absolute_url }}</id>
