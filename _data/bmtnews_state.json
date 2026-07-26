@@ -2,8 +2,9 @@
   "version": 1,
   "date": "2026-07-26",
   "timezone": "Asia/Shanghai",
-  "updated_at": "2026-07-26T09:49:40.636454Z",
+  "updated_at": "2026-07-26T09:52:55.419696Z",
   "analyzed_keys": [
+    "04a4f101a050a9707be571baa9fa2baf35fbcf127d8c3ee2fd26a18bbc64a98a",
     "05c448d0e6da3e5fe5065bcbaf83dbe7bd9c2a6faaefe2d509363c06edd1b2b6",
     "0ee28ea7d4ea71feb705c4482c8a03e7e26f35a3f6467b989133240625b7d188",
     "14057a72e363f34d74cb22da50e5acd316ff2a467b6aacf96a97ce1365966c97",
@@ -13,11 +14,15 @@
     "1baf569632d1b3191e6194f3a2c4bb8117237a94cbecc527695c7c93f4484772",
     "1bcf7ece32bbae95757389404994131a5fb30e0f0890580d8d4d5a44944bf413",
     "1e4faffd59f665531b9bb844be89b957bdfe4748044e6677fae5494d9fe6ea1a",
+    "214298f7e155753fe66ad541dc730c983c2aacd45d3b959b3fa3187928566aca",
+    "2506ab686dac3b1f3dbc652738ae20134d379f067d52bd46a699230bed93d081",
     "2b853493556cf900cafd9a337cb2fd2d921b4c4efd8d6a2815911cc031d93fff",
     "332e9e69cfff289605bb4d9166cad7f8cb1281a25073ca511b36d6eba7e51a71",
     "3525d68bbfc984cf23836c6aaa2b8da5433737805cf86d2782cd1fb72ac8cb6c",
     "35d7b12c62719de9c320397b4d176f91004286e92d164654f548d10f19782a5e",
     "38336283d55642d5194905e06e043af57dc3fbe9c662fa066b45b28a75fea4b0",
+    "38a55d82712ca8185421ada03b5d9462e2d3a6e2c8c8a84761e3e0b845100eb8",
+    "38cff0dcf07d9ed02e1e5157bf126cab9d95c8c0ffa4bde8c8ee13b029c82c04",
     "3a459937048a3afbbde8b45f9857f32fb64bdff125aea117534dc0657bfa6e6f",
     "3bfe7ccaa3b59c35f6a1c1a6cae807211ab85a8146154d227f6142b362196ae6",
     "4182bdd00abc26c56674fc365842230a50f63d8593df63a9c844d205801b1750",
@@ -25,13 +30,22 @@
     "4ca86f618e3da493e928127dc22df12ba519a1f1072dd5284cbb65b0b0d15662",
     "4e0c13cd5182e71466402a01970f025cf0565b09886a2ba4490cd74376860363",
     "52bcae36b9dc24a849f24b63c5029f5ce7be06f8da150178fedcaabd5abf616b",
+    "52f86158684f2914f0ff8ff548ec27bb1f76b8d88c7662b26ea0d482c448401c",
+    "554770e1d015566d3dc00733afc5d07d9065786d40d9e4e282f16f049d9cf4c1",
+    "5cc87c413622ac9f553026850dacaa8627eca21fb9d7978400a72425ae62a6ce",
+    "60dee1d0825254468673debdf5d873a82b13fc634643c0627c5b0d4f7e3fd79b",
     "642c857e2f70610b1aaabf55b74d213aed74c532123069d9fc8ebe90fc14320e",
+    "66cd2a403e1a35a35c4adcbf8275c284fc5196dae49d418948055cdf40169092",
     "672d734ee0b6e55d3864fd5791e1039b5f3270c4e4a20bbbe1c20085822ced56",
     "68672c1f535a0b39999b58bffeabdb002a7be511ea76b772cf4e289f64708694",
+    "6bdde2ee08bcfe1faaa0e91fb456a781713e8b627e243242c35e7b2388a5b933",
     "6cf2dd094173fa835413fb59cfe09cb1133e8c8a25a55ac3403990ac353ff580",
     "7743b3b33cdcca9c81b870953c4abaa34c667627c4bbc1c23abd5ebef6b846db",
     "7a8bc7eee713bd63180ed9f1c1cbabb708b0362eda77d0b186afd54ba100068c",
+    "7cc1c0487fac6cadc4bcedc4e9b35ed822739d9e0629c915d2c3268de3590ebe",
+    "7e84cdb539cdab45cc2ce0233e7e2ce414b2b74c0cc700161d90abe67edf26ee",
     "9204fbf69303e621e98279711ec21b76686987e266bf4d2ac4edb6cd3931769d",
+    "a115f92798ca1319453645edfe0db69b6d16006af14b890d051844876d5141bd",
     "a498f93bd4dd393c67fee6dc275fa43cc09af35a796b8ded0358792e737a6339",
     "a6c6e26379b2088bace289d977359cd33afa9a8c164950f2bad320d380b18cde",
     "a9aa1c12de8cc38c18e1777b4b1bbfcea353c5063014c672a3fa4a686ed0435d",
@@ -39,26 +53,39 @@
     "aa016f69b8d16ad771449cf9c9f72442fe10963b2ee02fee2ad9d4df98732089",
     "ac492c1eba242bbe6201cd11b278b53cbf81a078714571dd566e4ef97171345a",
     "ac53faf50652ae0dfb5ff891175d124c86d6eac6a7891dabfab84eec31354b39",
+    "b08cca996aac606b4d4bcd097249c7dd0f3375ae15d0a5b4abbbe6e9f264fb18",
     "b10c682066a1d10f828967634accb7ae541189d5bb3a7719992a9fa8b3d873cf",
     "b1c8edb8af2f927a6bcdce869fc99f02b2d805e7e6de53a6f09dfc3fbb8deb23",
     "b4cf1e9d42602d4eac0c812baea193c87ba5dd864e4b6680e63b1b1b84616e58",
+    "b685bfacde89a7f83859c0e259a13f3a66b9700eae1c6f23362721e57d60d923",
     "bf06273ce57e07f6e0165ae8c474ff8fc2923a8d8a3d1a93b75258520d62f3dd",
     "c0a3c3384e0cbd8882ff8817369d3b9cde02afd80500f4573b0e60042398262a",
     "c3e94ac09326ee2be8e2d9bd990bdb4289b23fd53db72fa1c3b88976d8c840f0",
     "c524950ff75bb5409e9afb99185761f63c502f199c1579668a0c398454e828ca",
+    "c691b7fb457db014cf0092885d8d56ee3fa742e7c62a5a2515c63323bd7badae",
     "c734f476221383f79abe01a78a4aef918e612250cf836fbbed774176f066b0e4",
+    "c824b48e0df2f478abccc4ebbaa3bd0cbb872392fde952206b3695c7d18f7bb8",
+    "ca9b9cf63468504c5aedf5174d13c5411b5e3fda7b283d03fcc0b57083f350f7",
+    "cf3cd05f01e22e20ce1b5b251eb1c52c03fbc950910c30ce8b50d785f0e02fbf",
     "d1ddc8b42b7124b9d4db62fd00e9edd3997da94d6d7bed11c46a836153aedc65",
+    "d35c4def64e5ebf71dc17136b05c765788b008dfdfc84277f57fa94542f1d3f0",
     "d7757ec294d95f55187ace8526f0a343f25584cca078a060b8c547fd3e27eda3",
+    "d7f0268ed419caeac1a667f4c743653a074e128b351f34aab8a435011290e01e",
+    "d9dfc0795aaf95c175b3b608e8d22d274171569edd6b5b1fcadb70f5613c428f",
     "da329e5fca07525a113e5a2a5574947482087b07c4f6e4de87635fdc58fc7a5f",
+    "dc2adb4457fa4aebdfc628b6f64772042e602301228ad55b65e58d314f70fd59",
     "dfb719ba98b1dd4c449dcd54ab17b423fe7819f32a1e21252185fd73da31f982",
     "e01ce3068cbb1dd25c912a1f9608ecfebb41c84a371556d2b75dc06a4f7af940",
     "e0b22dc9762bbed0d4fdef191445933c34eeebb83ef47e42425334d26a06641a",
+    "e21a7fc754b8aaf85446442907b383caef46ad79cf327d25bc01e0012f41c46c",
     "e2eaa1a603345cff5a8d37cf1f636181471a02355a8657e8a1b864ebf1a95bfc",
     "e6b6d736c1decad3222ea68ecf61050804ae0dc44a1aad12a6e779c2713b943b",
     "f057250923ca026fc006941658b3bb908d116129b617e0646e93b5b6b1e0f231",
     "f473487b2d8623ede880bef9be8c0308000e21d41df3984e8ba4659ae5a12f40",
     "f50c0dc8215b2493828ba166c40f68352366c6ec1553450d80df4b44ffdf86b4",
-    "f78f9ae65d257f3acde450e585c1bfdd66ad1d3a576a05da7abd5c3e75a015cd"
+    "f78f9ae65d257f3acde450e585c1bfdd66ad1d3a576a05da7abd5c3e75a015cd",
+    "fb3c6fe30cc654d4dcad3e4ee1b1e8ed10969b88ea8b9a428763f4b5ed5d9797",
+    "fbba5151d18efb0658afebd1c2799d5e7c9fa1b2d2b54b36696cfd224e6ef55d"
   ],
   "items": [
     {
@@ -100,6 +127,187 @@
       "ai_tags": []
     },
     {
+      "id": "recovered:7731dd8f1ef1a313d7b22d6b",
+      "source_type": "reddit",
+      "title": "Two Ethereum bridges lose $31.7M in exploit; third halts staking",
+      "url": "https://www.reddit.com/r/CryptoCurrency/comments/1v6940c/two_ethereum_bridges_lose_317m_within_hours_as/",
+      "content": null,
+      "author": "/u/kirtash93",
+      "published_at": "2026-07-26T05:57:00Z",
+      "fetched_at": "2026-07-26T09:52:55.419060Z",
+      "metadata": {
+        "subreddit": "CryptoCurrency",
+        "discussion_url": "https://www.reddit.com/r/CryptoCurrency/comments/1v6940c/two_ethereum_bridges_lose_317m_within_hours_as/",
+        "sources": [
+          {
+            "url": "https://chain.link/article/cross-chain-bridge-hacks",
+            "title": "Understanding Cross-Chain Bridge Hacks | Chainlink"
+          },
+          {
+            "url": "https://chain.link/education-hub/cross-chain-bridge-vulnerabilities",
+            "title": "7 Cross-Chain Bridge Vulnerabilities Explained | Chainlink Cross-Chain Bridge Exploits: Unpacking Security Risks and ... Two Cross-Chain Bridges Hacked in One Day — $31.5M Lost Bridge Security: Cross-Chain Developer Playbook 2026 Crypto Bridge Hacks Top $328M in 2026 as Cross-Chain Exploits ..."
+          },
+          {
+            "url": "https://cloudlogic.dev/2025/04/14/cross-chain-bridge-security-preventing-exploits/",
+            "title": "Cross-Chain Bridge Security: Preventing Multi-Billion Dollar ..."
+          }
+        ],
+        "title_en": "Two Ethereum bridges lose $31.7M in exploit; third halts staking",
+        "detailed_summary_en": "Two Ethereum bridges suffered a combined $31.7 million loss in a security exploit within hours, and a third protocol suspended staking operations to prevent further losses. This incident highlights critical vulnerabilities in cross-chain infrastructure, directly impacting user funds and undermining market confidence in DeFi. The two bridges were exploited via validator mechanism vulnerabilities without sufficient collateral verification, while the third protocol halted staking to prevent a potential exploit.",
+        "background_en": "Blockchain bridges enable asset transfers between different blockchains but are frequent targets for hackers due to security flaws in cross-chain communication. According to Chainlink, bridges account for 40% of all DeFi hack losses by dollar value. In 2026 alone, at least eight major bridge hacks have occurred, totaling $328.6 million in losses.",
+        "title_zh": "两条以太坊桥遭攻击损失 3170 万美元，第三条协议暂停质押",
+        "detailed_summary_zh": "两条以太坊桥在数小时内遭遇安全漏洞，合计损失 3170 万美元，同时第三条协议暂停质押操作以防止进一步损失。 这一事件凸显了跨链基础设施的关键漏洞，直接影响了用户资金，并削弱了市场对 DeFi 的信心。 这两条桥因验证者机制存在漏洞且缺乏足够的抵押品验证而被利用，第三条协议则暂停质押以防范潜在攻击。",
+        "background_zh": "区块链桥允许资产在不同区块链之间转移，但由于跨链通信的安全缺陷，经常成为黑客攻击的目标。根据 Chainlink 的数据，按美元价值计算，桥攻击占所有 DeFi 黑客损失的 40%。仅在 2026 年，就发生了至少八起重大桥攻击事件，总损失达 3.286 亿美元。"
+      },
+      "ai_score": 9.0,
+      "ai_reason": null,
+      "ai_summary": "Two Ethereum bridges suffered a combined $31.7 million loss in a security exploit within hours, and a third protocol suspended staking operations to prevent further losses. This incident highlights critical vulnerabilities in cross-chain infrastructure, directly impacting user funds and undermining market confidence in DeFi. The two bridges were exploited via validator mechanism vulnerabilities without sufficient collateral verification, while the third protocol halted staking to prevent a potential exploit.",
+      "ai_tags": []
+    },
+    {
+      "id": "recovered:4ee895bd1b728846b00d3631",
+      "source_type": "google_news",
+      "title": "AI Agent Autonomously Launches Company and Opens Bank Account",
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPX1lNUW1ydUswdGNabG9sejV6bmVHZ082Q3RYVXlJRkNGWWtFZzkyM1psdU91dWtwb0dfZ281R2lpRkhQMThaOFJkNWpVNkJEOGFodVFPT2ZaVkVrd2RPX2pEM0E2aEYyT2t5YVBJbEV0bk1ER2FmejNFS2V3SjlUUmRfMVFUWlRMMUpzekZaVzZiQ1dkVVQtSDZVNnBhejVNcDltNFpVU1E3Sm1nNE5JUzFnUjI?oc=5",
+      "content": null,
+      "author": "CoinMarketCap",
+      "published_at": "2026-07-26T03:15:00Z",
+      "fetched_at": "2026-07-26T09:52:55.418977Z",
+      "metadata": {
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Autonomous_agent",
+            "title": "Autonomous agent - Wikipedia"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/Decentralized_autonomous_organization",
+            "title": "Decentralized autonomous organization - Wikipedia"
+          },
+          {
+            "url": "https://ethereum.org/dao/",
+            "title": "What is a DAO? | Decentralized Autonomous Organization ..."
+          }
+        ],
+        "title_en": "AI Agent Autonomously Launches Company and Opens Bank Account",
+        "detailed_summary_en": "An autonomous AI agent has incorporated a company and opened a bank account with no human involvement, marking a milestone in AI autonomy. This was accomplished using blockchain-based services and digital identity verification. This demonstrates that AI agents can act as independent economic actors, potentially revolutionizing how businesses are formed and operated. It also raises important questions about legal accountability, regulation, and the future of autonomous economic agents. The agent completed both corporate registration and banking procedures entirely autonomously, likely leveraging smart contracts and decentralized identity systems. The specific legal framework and banking partner used have not been disclosed.",
+        "background_en": "Autonomous AI agents are software programs powered by large language models that can independently plan and execute tasks to achieve user-defined goals, often interacting with external tools and systems. A related concept is the Decentralized Autonomous Organization (DAO), a blockchain-based organization governed by smart contracts and token voting, which can also operate without traditional human management.",
+        "title_zh": "AI 代理自主创办公司并开设银行账户",
+        "detailed_summary_zh": "一个自主 AI 代理在没有人类参与的情况下注册了一家公司并开设了银行账户，标志着 AI 自主性的里程碑。这是通过基于区块链的服务和数字身份验证实现的。 这表明 AI 代理可以充当独立的经济主体，可能彻底改变企业的设立和运营方式。同时也引发了关于法律责任、监管以及自主经济主体未来的重要问题。 该代理完全自主地完成了公司注册和银行开户程序，很可能利用了智能合约和去中心化身份系统。使用的具体法律框架和银行合作伙伴尚未披露。",
+        "background_zh": "自主 AI 代理是由大型语言模型驱动的软件程序，能够独立规划和执行任务以实现用户定义的目标，通常与外部工具和系统交互。一个相关的概念是去中心化自治组织（DAO），这是一种基于区块链的组织，由智能合约和代币投票治理，也可以在传统人类管理之外运作。"
+      },
+      "ai_score": 9.0,
+      "ai_reason": null,
+      "ai_summary": "An autonomous AI agent has incorporated a company and opened a bank account with no human involvement, marking a milestone in AI autonomy. This was accomplished using blockchain-based services and digital identity verification. This demonstrates that AI agents can act as independent economic actors, potentially revolutionizing how businesses are formed and operated. It also raises important questions about legal accountability, regulation, and the future of autonomous economic agents. The agent completed both corporate registration and banking procedures entirely autonomously, likely leveraging smart contracts and decentralized identity systems. The specific legal framework and banking partner used have not been disclosed.",
+      "ai_tags": []
+    },
+    {
+      "id": "recovered:063ce7419e5328a5e04de687",
+      "source_type": "rss",
+      "title": "North Korea Arrests Hackers for Laundering Stolen Bank Funds via Crypto",
+      "url": "https://www.coindesk.com/business/2026/07/25/north-korea-arrests-hackers-accused-of-laundering-stolen-funds-from-country-s-bank-via-crypto",
+      "content": null,
+      "author": "CoinDesk",
+      "published_at": "2026-07-26T07:46:00Z",
+      "fetched_at": "2026-07-26T09:52:55.419022Z",
+      "metadata": {
+        "feed_name": "CoinDesk",
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Cryptocurrency_tumbler",
+            "title": "Cryptocurrency tumbler - Wikipedia"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/Lazarus_Group",
+            "title": "Lazarus Group"
+          },
+          {
+            "url": "https://framework.amltrix.com/techniques/T0003-cryptocurrency-mixing",
+            "title": "AMLTRIX Framework | Cryptocurrency Mixing | AMLTRIX Framework"
+          }
+        ],
+        "title_en": "North Korea Arrests Hackers for Laundering Stolen Bank Funds via Crypto",
+        "detailed_summary_en": "North Korea has arrested a group of hackers accused of laundering stolen funds from a North Korean bank using cryptocurrency mixing services. This marks a rare instance of North Korea publicly arresting cybercriminals, potentially signaling an internal crackdown or a shift in state policy toward cyber operations. It also highlights the growing use of cryptocurrency mixing services by state-sponsored and criminal actors to launder illicit funds. The arrested hackers allegedly used cryptocurrency tumblers or mixing services to obscure the trail of stolen funds from a North Korean bank. The exact identity of the hackers and the amount laundered have not been disclosed.",
+        "background_en": "Cryptocurrency mixing services, also known as tumblers, pool and shuffle funds from multiple users to obscure the transaction trail, making it difficult to trace the source of illicit funds. The Lazarus Group, a state-sponsored hacker group linked to North Korea, has been implicated in numerous cyberattacks and cryptocurrency thefts to evade international sanctions. However, it is unclear if the arrested hackers are affiliated with the Lazarus Group or are independent actors.",
+        "title_zh": "朝鲜逮捕通过加密货币洗劫本国银行资金的网络黑客",
+        "detailed_summary_zh": "朝鲜逮捕了一群被指控使用加密货币混币服务洗劫本国银行被盗资金的网络黑客。 这标志着朝鲜罕见地公开逮捕网络犯罪分子，可能预示着内部打击或国家网络行动政策的转变。同时，这也凸显了国家级黑客和犯罪分子越来越多地使用加密货币混币服务来清洗非法资金。 被逮捕的黑客被指控使用加密货币混币器或混币服务来掩盖从朝鲜银行盗取的资金踪迹。目前尚未披露黑客的具体身份和洗钱金额。",
+        "background_zh": "加密货币混币服务，也称为混币器，通过汇集和混合多个用户的资金来混淆交易记录，使得追踪非法资金来源变得困难。与朝鲜有关的国家级黑客组织 Lazarus Group（拉撒路集团）曾参与多起网络攻击和加密货币盗窃活动，以规避国际制裁。但目前尚不清楚被逮捕的黑客是否与 Lazarus Group 有关联，还是独立行动者。"
+      },
+      "ai_score": 8.0,
+      "ai_reason": null,
+      "ai_summary": "North Korea has arrested a group of hackers accused of laundering stolen funds from a North Korean bank using cryptocurrency mixing services. This marks a rare instance of North Korea publicly arresting cybercriminals, potentially signaling an internal crackdown or a shift in state policy toward cyber operations. It also highlights the growing use of cryptocurrency mixing services by state-sponsored and criminal actors to launder illicit funds. The arrested hackers allegedly used cryptocurrency tumblers or mixing services to obscure the trail of stolen funds from a North Korean bank. The exact identity of the hackers and the amount laundered have not been disclosed.",
+      "ai_tags": []
+    },
+    {
+      "id": "recovered:a5e040f9a85d5341cf1cc1df",
+      "source_type": "reddit",
+      "title": "Triple-A Suffers $9.7M Wallet Drain Security Breach",
+      "url": "https://www.reddit.com/r/CryptoCurrency/comments/1v6aplc/crypto_payments_firm_triplea_hit_by_97_million/",
+      "content": null,
+      "author": "/u/DustInside6861",
+      "published_at": "2026-07-26T07:02:00Z",
+      "fetched_at": "2026-07-26T09:52:55.419071Z",
+      "metadata": {
+        "subreddit": "CryptoCurrency",
+        "discussion_url": "https://www.reddit.com/r/CryptoCurrency/comments/1v6aplc/crypto_payments_firm_triplea_hit_by_97_million/",
+        "sources": [
+          {
+            "url": "https://www.group-ib.com/resources/knowledge-hub/crypto-wallet-drainers/",
+            "title": "Crypto Wallet Drainers | Group-IB Knowledge Hub"
+          },
+          {
+            "url": "https://www.triple-a.io/",
+            "title": "Pay and Get Paid Globally in Stablecoins & Local Currencies | Triple-A"
+          }
+        ],
+        "title_en": "Triple-A Suffers $9.7M Wallet Drain Security Breach",
+        "detailed_summary_en": "Triple-A, a licensed crypto payments firm, experienced a $9.7 million wallet drain security breach, resulting in the loss of user funds. This breach undermines trust in regulated crypto payment services and highlights ongoing security vulnerabilities in digital asset infrastructure. The $9.7 million loss stemmed from a wallet drain attack where unauthorized access was gained to Triple-A's wallets; the exact method has not been disclosed.",
+        "background_en": "Wallet drain attacks are a common crypto theft method where attackers trick users or compromise systems to transfer funds. Triple-A is a regulated crypto payment platform licensed in the US, Europe, and Singapore, offering stablecoin and fiat payment solutions. Such incidents often exploit weak security practices or user errors.",
+        "title_zh": "Triple-A 遭遇 970 万美元钱包盗刷安全漏洞",
+        "detailed_summary_zh": "持牌加密货币支付公司 Triple-A 遭遇一起 970 万美元的钱包盗刷安全事件，导致用户资金被盗。 此次漏洞破坏了人们对受监管加密货币支付服务的信任，并凸显了数字资产基础设施中持续存在的安全风险。 970 万美元的损失源于钱包盗刷攻击，攻击者未经授权访问了 Triple-A 的钱包；具体攻击方式尚未披露。",
+        "background_zh": "钱包盗刷攻击是一种常见的加密货币盗窃手段，攻击者通过诱骗用户或入侵系统来转出资金。Triple-A 是一家在美国、欧洲和新加坡获得许可的受监管加密货币支付平台，提供稳定币和法币支付解决方案。此类事件通常利用薄弱的安全措施或用户失误。"
+      },
+      "ai_score": 8.0,
+      "ai_reason": null,
+      "ai_summary": "Triple-A, a licensed crypto payments firm, experienced a $9.7 million wallet drain security breach, resulting in the loss of user funds. This breach undermines trust in regulated crypto payment services and highlights ongoing security vulnerabilities in digital asset infrastructure. The $9.7 million loss stemmed from a wallet drain attack where unauthorized access was gained to Triple-A's wallets; the exact method has not been disclosed.",
+      "ai_tags": []
+    },
+    {
+      "id": "recovered:e78dff03ebf5bc8a037049ca",
+      "source_type": "google_news",
+      "title": "Coinbase invests $15M to quantum-proof Bitcoin",
+      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQcGl4RGNmZXJwNXB2NF9wOVVnZ2hLQVcwTHRJYVk0M3JuQklZTzJ1WWkxOHlQTTRzcE9BSzI5ajY5SXYzR2VrNl9MRHAzZmhSSmVKRVJYTy13UnRaMjRDTlpva2FaVjRsRUc4SUlpM0VaMFF0aWZUZUN2cHN0VlJZaXFFRTk3M3hKZ29udDZ1QUFJSk1RTmRXSmhFalpfU01ZYTFjSWVxeVRRcDdSUGJ2UQ?oc=5",
+      "content": null,
+      "author": "Pluang",
+      "published_at": "2026-07-25T17:32:00Z",
+      "fetched_at": "2026-07-26T09:52:55.418700Z",
+      "metadata": {
+        "sources": [
+          {
+            "url": "https://bitcoinops.org/en/topics/quantum-resistance/",
+            "title": "Quantum resistance | Bitcoin Optech"
+          },
+          {
+            "url": "https://www.coindesk.com/tech/2026/04/04/bitcoin-s-usd1-3-trillion-security-race-key-initiatives-aimed-at-quantum-proofing-the-world-s-largest-blockchain",
+            "title": "Bitcoin's $1.3 trillion security race: Key initiatives aimed at quantum-proofing the world's largest blockchain"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/Post-quantum_cryptography",
+            "title": "Post-quantum cryptography"
+          }
+        ],
+        "title_en": "Coinbase invests $15M to quantum-proof Bitcoin",
+        "detailed_summary_en": "Coinbase has invested $15 million in quantum-resistant security measures to protect Bitcoin from the potential threat of future quantum computers. This investment aims to develop and implement post-quantum cryptographic solutions for Bitcoin's network. This investment signals major industry preparedness for the systemic long-term threat quantum computing poses to blockchain security. Proactive measures are critical because migrating to quantum-resistant algorithms takes time, and data recorded now could be vulnerable to future decryption. The $15 million investment will focus on integrating post-quantum cryptography, such as hash-based signature schemes like SPHINCS+, which are resistant to Shor's algorithm. Bitcoin's current elliptic curve cryptography (ECDSA) is vulnerable to quantum attacks, and address reuse increases risk.",
+        "background_en": "Quantum computers use principles of quantum mechanics to solve certain problems much faster than classical computers. Shor's algorithm, if run on a sufficiently powerful quantum computer, could break the elliptic curve digital signature algorithm (ECDSA) used by Bitcoin, allowing attackers to forge signatures and steal funds. Post-quantum cryptography (PQC) refers to cryptographic algorithms believed to be secure against quantum attacks; NIST has standardized several PQC algorithms in 2024.",
+        "title_zh": "Coinbase 投资 1500 万美元为比特币进行量子防护",
+        "detailed_summary_zh": "Coinbase 已投资 1500 万美元用于量子安全措施，以保护比特币免受未来量子计算机的潜在威胁。这笔投资旨在开发和实施针对比特币网络的抗量子密码学解决方案。 这项投资标志着行业对未来量子计算对区块链安全构成的系统性长期威胁的重大准备。采取主动措施至关重要，因为迁移到抗量子算法需要时间，而且现在记录的数据未来可能面临被解密的风险。 这 1500 万美元投资将专注于集成抗量子密码学，例如基于哈希的签名方案（如 SPHINCS+），这些方案能够抵抗 Shor 算法。比特币当前的椭圆曲线密码学（ECDSA）容易受到量子攻击，地址重用会增加风险。",
+        "background_zh": "量子计算机利用量子力学原理，能以比经典计算机快得多的速度解决某些问题。Shor 算法如果在足够强大的量子计算机上运行，可能会破解比特币所使用的椭圆曲线数字签名算法（ECDSA），从而使攻击者能够伪造签名并窃取资金。抗量子密码学（PQC）是指被认为能够抵御量子攻击的密码学算法；NIST 已于 2024 年标准化了多种 PQC 算法。"
+      },
+      "ai_score": 8.0,
+      "ai_reason": null,
+      "ai_summary": "Coinbase has invested $15 million in quantum-resistant security measures to protect Bitcoin from the potential threat of future quantum computers. This investment aims to develop and implement post-quantum cryptographic solutions for Bitcoin's network. This investment signals major industry preparedness for the systemic long-term threat quantum computing poses to blockchain security. Proactive measures are critical because migrating to quantum-resistant algorithms takes time, and data recorded now could be vulnerable to future decryption. The $15 million investment will focus on integrating post-quantum cryptography, such as hash-based signature schemes like SPHINCS+, which are resistant to Shor's algorithm. Bitcoin's current elliptic curve cryptography (ECDSA) is vulnerable to quantum attacks, and address reuse increases risk.",
+      "ai_tags": []
+    },
+    {
       "id": "google_news:article:798cf39b8ed3c167",
       "source_type": "google_news",
       "title": "Brian Armstrong sounds alarm as Coinbase prepares for Bitcoin quantum security - Cryptopolitan",
@@ -134,6 +342,133 @@
       "ai_score": 7.0,
       "ai_reason": null,
       "ai_summary": "Coinbase CEO Brian Armstrong raises concerns about Bitcoin's vulnerability to quantum computing, as the exchange prepares for future quantum security challenges.",
+      "ai_tags": []
+    },
+    {
+      "id": "recovered:9cc4f60503cb9c71cf5e17ae",
+      "source_type": "rss",
+      "title": "Kraken Delists Multiple Assets for UAE Clients",
+      "url": "https://status.kraken.com/incidents/wktgpx1dc3jk",
+      "content": null,
+      "author": "Kraken Status",
+      "published_at": "2026-07-26T04:00:00Z",
+      "fetched_at": "2026-07-26T09:52:55.419007Z",
+      "metadata": {
+        "feed_name": "Kraken Status",
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Monero",
+            "title": "Monero - Wikipedia"
+          },
+          {
+            "url": "https://coinmarketcap.com/currencies/usdd/",
+            "title": "USDD price today, USDD to USD live price, marketcap and chart ..."
+          },
+          {
+            "url": "https://coinmarketcap.com/currencies/ethena-usde/",
+            "title": "Ethena USDe price today, USDe to USD live price, marketcap and chart | CoinMarketCap"
+          }
+        ],
+        "title_en": "Kraken Delists Multiple Assets for UAE Clients",
+        "detailed_summary_en": "Kraken will delist XMR, ZEC, DASH, USDD, DAI, USDS, and USDE for UAE clients starting June 15, 2025, with full liquidation by September 25. This delisting reflects increasing regulatory pressure on privacy coins and certain stablecoins in the UAE, potentially limiting user access and forcing portfolio adjustments. Open margin positions close on June 15, trading and deposits stop on June 16, withdrawals remain available until September 14, and remaining balances will be liquidated between September 15-25.",
+        "background_en": "Privacy coins like Monero (XMR), Zcash (ZEC), and Dash (DASH) use advanced cryptography to obscure transaction details, making them attractive for privacy but also raising regulatory concerns. Stablecoins such as USDD, DAI, USDS, and USDe aim to maintain a 1:1 peg to the US dollar but vary in decentralization and backing mechanisms.",
+        "title_zh": "Kraken 为阿联酋客户下架多种资产",
+        "detailed_summary_zh": "Kraken 将从 2025 年 6 月 15 日起为阿联酋客户下架 XMR、ZEC、DASH、USDD、DAI、USDS 和 USDE，并在 9 月 25 日前完成全部清算。 此次下架反映了阿联酋对隐私币和某些稳定币的监管压力日益加大，可能会限制用户访问并迫使调整投资组合。 保证金头寸将于 6 月 15 日平仓，交易和充值于 6 月 16 日停止，提现可用至 9 月 14 日，剩余余额将在 9 月 15 日至 25 日之间清算。",
+        "background_zh": "隐私币如 Monero (XMR)、Zcash (ZEC) 和 Dash (DASH) 使用高级加密技术隐藏交易细节，既保护隐私也引发监管担忧。稳定币如 USDD、DAI、USDS 和 USDe 旨在保持与美元 1:1 的锚定，但在去中心化和抵押机制上有所不同。"
+      },
+      "ai_score": 7.0,
+      "ai_reason": null,
+      "ai_summary": "Kraken will delist XMR, ZEC, DASH, USDD, DAI, USDS, and USDE for UAE clients starting June 15, 2025, with full liquidation by September 25. This delisting reflects increasing regulatory pressure on privacy coins and certain stablecoins in the UAE, potentially limiting user access and forcing portfolio adjustments. Open margin positions close on June 15, trading and deposits stop on June 16, withdrawals remain available until September 14, and remaining balances will be liquidated between September 15-25.",
+      "ai_tags": []
+    },
+    {
+      "id": "recovered:0e2e3266dd62eddfe8dae25a",
+      "source_type": "rss",
+      "title": "Robinhood Chain's RWA Surges 5x as Tokenized Stocks Gain Traction",
+      "url": "https://www.coindesk.com/business/2026/07/25/robinhood-chain-s-real-world-assets-jump-fivefold-as-tokenized-stocks-start-trading-in-bigger-size",
+      "content": null,
+      "author": "CoinDesk",
+      "published_at": "2026-07-26T02:00:00Z",
+      "fetched_at": "2026-07-26T09:52:55.419032Z",
+      "metadata": {
+        "feed_name": "CoinDesk",
+        "sources": [
+          {
+            "url": "https://robinhood.com/us/en/chain/",
+            "title": "Robinhood Chain: Built for onchain finance"
+          },
+          {
+            "url": "https://www.coingecko.com/learn/what-are-real-world-assets-exploring-rwa-protocols",
+            "title": "What Are Real World Assets (RWA)? | CoinGecko"
+          },
+          {
+            "url": "https://www.forbes.com/sites/digital-assets/article/what-are-tokenized-stocks-digital-equities/",
+            "title": "What Are Tokenized Stocks? A Complete Guide In March 2026"
+          }
+        ],
+        "title_en": "Robinhood Chain's RWA Surges 5x as Tokenized Stocks Gain Traction",
+        "detailed_summary_en": "Robinhood Chain's total real-world assets (RWA) have increased fivefold, driven by a significant rise in trading volumes of tokenized stocks on the network. This milestone signals growing institutional adoption of blockchain-based capital markets, as tokenized stocks enable fractional ownership and 24/7 trading of traditional equities like Apple or Netflix. Robinhood Chain is an Ethereum-compatible Layer 2 built on the Arbitrum Orbit stack, focused on native issuance and trading of financial assets. The fivefold jump likely reflects increased liquidity and larger trade sizes for tokenized equities.",
+        "background_en": "Real-world assets (RWAs) are digital tokens on blockchain representing ownership of tangible assets like real estate, stocks, or bonds. Tokenized stocks are a subset of RWAs that track the value of traditional company shares, enabling easier trading and fractional ownership. Robinhood Chain was launched by Robinhood Markets to support onchain financial services.",
+        "title_zh": "Robinhood Chain 真实资产因代币化股票增长飙升五倍",
+        "detailed_summary_zh": "Robinhood Chain 上的真实资产总额增长了五倍，这得益于网络上代币化股票交易量的大幅上升。 这一里程碑标志着基于区块链的资本市场获得越来越多的机构采用，因为代币化股票使得苹果或 Netflix 等传统股票可以分割所有权并实现全天候交易。 Robinhood Chain 是基于 Arbitrum Orbit 技术堆栈构建的兼容以太坊的 Layer 2 区块链，专注于金融资产的发行和交易。五倍的增长可能反映了代币化股票流动性的增加和交易规模的扩大。",
+        "background_zh": "真实资产（RWA）是区块链上代表房地产、股票或债券等有形资产所有权的数字代币。代币化股票是 RWA 的一个子集，追踪传统公司股票的价值，便于交易和分割所有权。Robinhood Chain 由 Robinhood Markets 推出，旨在支持链上金融服务。"
+      },
+      "ai_score": 7.0,
+      "ai_reason": null,
+      "ai_summary": "Robinhood Chain's total real-world assets (RWA) have increased fivefold, driven by a significant rise in trading volumes of tokenized stocks on the network. This milestone signals growing institutional adoption of blockchain-based capital markets, as tokenized stocks enable fractional ownership and 24/7 trading of traditional equities like Apple or Netflix. Robinhood Chain is an Ethereum-compatible Layer 2 built on the Arbitrum Orbit stack, focused on native issuance and trading of financial assets. The fivefold jump likely reflects increased liquidity and larger trade sizes for tokenized equities.",
+      "ai_tags": []
+    },
+    {
+      "id": "recovered:73d6e0ae5813440f888e2f33",
+      "source_type": "google_news",
+      "title": "Bitcoin's Top Nine Holders Unite for Network Security",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOdWNnTF9LTDYwa09MTjMtOHp3WTl3VzJQXzFzNE9pVk5kOFdNbjNtOTJzMTVKX2xLMDMwU3N4ckVIN2VUNkdxeFI0eUw3TzdiTkZZQ1JGX3lJbllkUTJFS1pCWlhKdF96SnlyZjFPQU84UUtXQk9CcVo3MHdsbjV3RmJFN29NU1I0MXdyZmNpTklFZXpKMGh1ZFZIcTVJaFpKWlRVYVVzdC03dFJyNExYajhR?oc=5",
+      "content": null,
+      "author": "CryptoRank",
+      "published_at": "2026-07-25T23:49:00Z",
+      "fetched_at": "2026-07-26T09:52:55.418957Z",
+      "metadata": {
+        "title_en": "Bitcoin's Top Nine Holders Unite for Network Security",
+        "detailed_summary_en": "The nine largest institutional Bitcoin holders have announced a collaborative effort to fund network security initiatives, marking a rare instance of alignment among major players. This cooperation signals strong institutional confidence in Bitcoin's long-term viability and enhances network resilience, potentially boosting broader adoption among traditional finance. The announcement lacks specific details on financial commitments, implementation plans, or the exact nature of security initiatives, leaving the actual impact unclear.",
+        "title_zh": "比特币九大机构持有者联合资助网络安全",
+        "detailed_summary_zh": "九大比特币机构持有者宣布合作，共同资助网络安全计划，这是主要参与者之间罕见的一致行动。 此次合作彰显了机构对比特币长期生存能力的信心，并增强了网络韧性，可能推动传统金融更广泛地采用。 该声明未提供具体的资金承诺、实施计划或安全举措的细节，实际影响尚不明确。"
+      },
+      "ai_score": 7.0,
+      "ai_reason": null,
+      "ai_summary": "The nine largest institutional Bitcoin holders have announced a collaborative effort to fund network security initiatives, marking a rare instance of alignment among major players. This cooperation signals strong institutional confidence in Bitcoin's long-term viability and enhances network resilience, potentially boosting broader adoption among traditional finance. The announcement lacks specific details on financial commitments, implementation plans, or the exact nature of security initiatives, leaving the actual impact unclear.",
+      "ai_tags": []
+    },
+    {
+      "id": "recovered:4bf03ce36363a66cfa265b77",
+      "source_type": "rss",
+      "title": "Coinbase Suspends ACX Trading as Across Protocol Winds Down",
+      "url": "https://status.coinbase.com/incidents/9h5nsb9zjlzd",
+      "content": null,
+      "author": "Coinbase Status",
+      "published_at": "2026-07-25T23:00:00Z",
+      "fetched_at": "2026-07-26T09:52:55.418992Z",
+      "metadata": {
+        "feed_name": "Coinbase Status",
+        "sources": [
+          {
+            "url": "https://coinmarketcap.com/currencies/across-protocol/",
+            "title": "Across Protocol price today, ACX to USD live price, marketcap ... Across Protocol Price: ACX/USD Live Price Chart, Market Cap ... Across's acx rockets 80%, massively beating ... - CoinDesk ACX Token – Official Website Across Protocol Price Today | Live ACX Price, Chart ... - Binance ACX Token Guide: Understanding Across Protocol's Cross-Chain ... Across Protocol Token Price Today | ACX Live Price, Chart ..."
+          },
+          {
+            "url": "https://www.coingecko.com/en/coins/across-protocol",
+            "title": "Across Protocol Price: ACX/USD Live Price Chart, Market Cap ..."
+          }
+        ],
+        "title_en": "Coinbase Suspends ACX Trading as Across Protocol Winds Down",
+        "detailed_summary_en": "Coinbase announced it will suspend trading of ACX tokens on July 28, 2026, due to the project team winding down the ACX token. The team has offered conversion options for holders, detailed on the Across Protocol forum. This directly impacts ACX holders on Coinbase, who must move tokens to a self-custodial wallet before the deadline to participate in conversion options. It highlights the risks of holding tokens tied to projects that may dissolve. Coinbase has already moved ACX order books to limit-only mode. Users wishing to convert must transfer their ACX to a compatible self-custodial wallet and refer to the project's conversion documentation.",
+        "background_en": "Across Protocol is a cross-chain token bridge secured by UMA's optimistic oracle, designed for efficient transfers between Ethereum and Layer 2 networks. ACX is its governance token. The project team published a proposal to dissolve the token structure, leading to the wind-down.",
+        "title_zh": "Coinbase 暂停 ACX 交易，Across Protocol 项目关闭",
+        "detailed_summary_zh": "Coinbase 宣布将于 2026 年 7 月 28 日暂停 ACX 代币交易，原因是项目方正在关闭 ACX 代币。团队为持有者提供了转换选项，详情见 Across Protocol 论坛。 这直接影响 Coinbase 上的 ACX 持有者，他们必须在截止日期前将代币转移至自托管钱包以参与转换选项。这凸显了持有可能解散项目代币的风险。 Coinbase 已将 ACX 订单簿设置为仅限限价模式。希望转换的用户需将 ACX 转移至兼容的自托管钱包，并查阅项目的转换文档。",
+        "background_zh": "Across Protocol 是一个跨链代币桥，由 UMA 的乐观预言机保障安全，旨在实现以太坊与 Layer 2 网络间的高效转账。ACX 是其治理代币。项目团队发布了解散代币结构的提案，导致代币逐步关闭。"
+      },
+      "ai_score": 7.0,
+      "ai_reason": null,
+      "ai_summary": "Coinbase announced it will suspend trading of ACX tokens on July 28, 2026, due to the project team winding down the ACX token. The team has offered conversion options for holders, detailed on the Across Protocol forum. This directly impacts ACX holders on Coinbase, who must move tokens to a self-custodial wallet before the deadline to participate in conversion options. It highlights the risks of holding tokens tied to projects that may dissolve. Coinbase has already moved ACX order books to limit-only mode. Users wishing to convert must transfer their ACX to a compatible self-custodial wallet and refer to the project's conversion documentation.",
       "ai_tags": []
     },
     {
