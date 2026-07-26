@@ -1,21 +1,36 @@
-name: Daily Horizon Summary
+name: BMTNews Feed Update
 
 on:
   schedule:
-    # GitHub scheduled workflows use UTC. 20:00 UTC is 04:00 Asia/Shanghai;
-    # this intentionally runs early to offset the observed schedule delay.
-    - cron: '0 23 * * *'
+    # GitHub schedules use UTC. This runs every four hours, which maps to
+    # 00:00, 04:00, 08:00, 12:00, 16:00, and 20:00 in Asia/Shanghai.
+    - cron: '0 */4 * * *'
   workflow_dispatch:      # Allow manual trigger
+
+concurrency:
+  group: bmtnews-feed-update
+  cancel-in-progress: false
 
 jobs:
   daily-summary:
     runs-on: ubuntu-latest
+    env:
+      TZ: Asia/Shanghai
     permissions:
       contents: write  # Needed to commit changes
 
     steps:
       - name: Checkout code
         uses: actions/checkout@v6
+
+      - name: Restore published daily state
+        shell: bash
+        run: |
+          git fetch --depth=1 origin gh-pages:refs/remotes/origin/gh-pages
+          if git cat-file -e "origin/gh-pages:_data/bmtnews_state.json" 2>/dev/null; then
+            mkdir -p docs/_data
+            git show "origin/gh-pages:_data/bmtnews_state.json" > docs/_data/bmtnews_state.json
+          fi
 
       - name: Set up Python
         uses: actions/setup-python@v5
