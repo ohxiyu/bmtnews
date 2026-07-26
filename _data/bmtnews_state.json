@@ -2,21 +2,29 @@
   "version": 1,
   "date": "2026-07-26",
   "timezone": "Asia/Shanghai",
-  "updated_at": "2026-07-26T09:52:55.419696Z",
+  "updated_at": "2026-07-26T09:53:21.399173Z",
   "analyzed_keys": [
+    "00fa65a209f70f333b67e142ee2c5bead25af2328294c748b6fb04390a3769e0",
     "04a4f101a050a9707be571baa9fa2baf35fbcf127d8c3ee2fd26a18bbc64a98a",
     "05c448d0e6da3e5fe5065bcbaf83dbe7bd9c2a6faaefe2d509363c06edd1b2b6",
     "0ee28ea7d4ea71feb705c4482c8a03e7e26f35a3f6467b989133240625b7d188",
+    "11359d21db72859b3256d4c303e67d1cc4abaa9e098e04e60a44457588520ffc",
+    "12c370fbbfba1a18e773f07a0334b099230630429301ec5e14deb379e15f61ef",
     "14057a72e363f34d74cb22da50e5acd316ff2a467b6aacf96a97ce1365966c97",
+    "159845c1cacd7ac84a78f7bb24303eb890a593a05d7022df9f08471e15e1a0a6",
+    "15c21a3e3bbc61d129955eca7f83b42a373ae7aa79558ff17a272b5ea6ee1f05",
     "164de731a3ad10c22863f7cd6156e8421b788aeca67cb47fb43ae98e4a3900a0",
     "1754e59944a1c2df667efaca2c13ce5e82bf753fc9079b4ec2673bf556219206",
     "1af2328f071472b8209045848dc19178ddfb786bb7e07aadb6af67a5e41c694a",
     "1baf569632d1b3191e6194f3a2c4bb8117237a94cbecc527695c7c93f4484772",
     "1bcf7ece32bbae95757389404994131a5fb30e0f0890580d8d4d5a44944bf413",
     "1e4faffd59f665531b9bb844be89b957bdfe4748044e6677fae5494d9fe6ea1a",
+    "1f10feb1f991e135987b247215c99befa207a406d4eb582d30e6da1d7e1ad51f",
+    "1feeccd18cd7c25877ce46ac6f8276cc1ddd0f63fee1f9e28d4986c95c639bb0",
     "214298f7e155753fe66ad541dc730c983c2aacd45d3b959b3fa3187928566aca",
     "2506ab686dac3b1f3dbc652738ae20134d379f067d52bd46a699230bed93d081",
     "2b853493556cf900cafd9a337cb2fd2d921b4c4efd8d6a2815911cc031d93fff",
+    "2e0e9f99d8c0618c297ab3549f077bd4ed1243d8cb70afacebbb5771478e280b",
     "332e9e69cfff289605bb4d9166cad7f8cb1281a25073ca511b36d6eba7e51a71",
     "3525d68bbfc984cf23836c6aaa2b8da5433737805cf86d2782cd1fb72ac8cb6c",
     "35d7b12c62719de9c320397b4d176f91004286e92d164654f548d10f19782a5e",
@@ -24,11 +32,18 @@
     "38a55d82712ca8185421ada03b5d9462e2d3a6e2c8c8a84761e3e0b845100eb8",
     "38cff0dcf07d9ed02e1e5157bf126cab9d95c8c0ffa4bde8c8ee13b029c82c04",
     "3a459937048a3afbbde8b45f9857f32fb64bdff125aea117534dc0657bfa6e6f",
+    "3bbae992e139304eb42e525b88c6e02eefab45bb71eaa284ea65ec72be6998ff",
     "3bfe7ccaa3b59c35f6a1c1a6cae807211ab85a8146154d227f6142b362196ae6",
+    "3ebb137d8205ac31bdd4484ec5bb7575d85152f57b111f5d27ba3556e01980ec",
+    "3ec45f3fcff5f2db0ac3f3a099b4417182cd5a1951650e56d818882e19eb9256",
     "4182bdd00abc26c56674fc365842230a50f63d8593df63a9c844d205801b1750",
+    "4446222dd6c15994c9c3883867eb73bb9f746bb3386e01297a56207e6c707d0a",
     "476b88355651695ce72d0c3eb37d806460bbd264fc935b10698957e82a4bd958",
+    "49f1324e38ceba1e6c74ee469037427f9f77b806d403ee5d31b603f8a6f766f8",
     "4ca86f618e3da493e928127dc22df12ba519a1f1072dd5284cbb65b0b0d15662",
     "4e0c13cd5182e71466402a01970f025cf0565b09886a2ba4490cd74376860363",
+    "4eec21a1b365cf387a215c981af0d3efec42855ffb1a64dc9d3ad7c712589b9e",
+    "506301519187d34db15313328dbbbeeceb345fc60bd0aee035ab54f7ed010156",
     "52bcae36b9dc24a849f24b63c5029f5ce7be06f8da150178fedcaabd5abf616b",
     "52f86158684f2914f0ff8ff548ec27bb1f76b8d88c7662b26ea0d482c448401c",
     "554770e1d015566d3dc00733afc5d07d9065786d40d9e4e282f16f049d9cf4c1",
@@ -38,19 +53,30 @@
     "66cd2a403e1a35a35c4adcbf8275c284fc5196dae49d418948055cdf40169092",
     "672d734ee0b6e55d3864fd5791e1039b5f3270c4e4a20bbbe1c20085822ced56",
     "68672c1f535a0b39999b58bffeabdb002a7be511ea76b772cf4e289f64708694",
+    "6a21ba3d544d74a4013c39c7c4ef98400c518e4ab1b0763dc1198b45428470bd",
+    "6b3bca2fb5211dabefd41ccbd0e0de7bfed22c4df12134d76475bedbd6be912e",
     "6bdde2ee08bcfe1faaa0e91fb456a781713e8b627e243242c35e7b2388a5b933",
     "6cf2dd094173fa835413fb59cfe09cb1133e8c8a25a55ac3403990ac353ff580",
+    "6dc409151befe6149e5e93d63ecb9dfe9d0e26be1267f95923fffb2f757329b0",
     "7743b3b33cdcca9c81b870953c4abaa34c667627c4bbc1c23abd5ebef6b846db",
+    "782056fd32d7a4fe2e132f732b73bfd52783e60e998f602fe0486beea1f497e7",
     "7a8bc7eee713bd63180ed9f1c1cbabb708b0362eda77d0b186afd54ba100068c",
     "7cc1c0487fac6cadc4bcedc4e9b35ed822739d9e0629c915d2c3268de3590ebe",
     "7e84cdb539cdab45cc2ce0233e7e2ce414b2b74c0cc700161d90abe67edf26ee",
+    "879b69bcc1c3bf9071d3322e9d1224907d46db2e6876f2a6ded60526e28fd0ce",
+    "89d238242f50aab1b2f60c81cc22d5ece51892c6756beb426945b6f4b8880238",
+    "89ed455b0d5830f1284fb73ac90496141b29a5177fcf34d5ac6114b541a1c57c",
+    "8cbfffd61e199301d433e7be776e64ba0c2634ef35165adc2f51351b84fcf142",
     "9204fbf69303e621e98279711ec21b76686987e266bf4d2ac4edb6cd3931769d",
+    "9d2f58a16027bc7ac8a8a0bb79b15591b465fd5e3dcc743b1006f3fd78061e1e",
     "a115f92798ca1319453645edfe0db69b6d16006af14b890d051844876d5141bd",
     "a498f93bd4dd393c67fee6dc275fa43cc09af35a796b8ded0358792e737a6339",
+    "a536c145c55e55a330e5d6b06c1fdc76210a0aaa4f61c9dc20fd2135423a67f4",
     "a6c6e26379b2088bace289d977359cd33afa9a8c164950f2bad320d380b18cde",
     "a9aa1c12de8cc38c18e1777b4b1bbfcea353c5063014c672a3fa4a686ed0435d",
     "a9d1d8a951a0f4cd84ee8c0f8bf84717fa479e2c6000016f84da6cc5f2d1768d",
     "aa016f69b8d16ad771449cf9c9f72442fe10963b2ee02fee2ad9d4df98732089",
+    "ab914916a9e6977657ac5fece0429219e52e6f793093a12f5c955a4b9ac01eb9",
     "ac492c1eba242bbe6201cd11b278b53cbf81a078714571dd566e4ef97171345a",
     "ac53faf50652ae0dfb5ff891175d124c86d6eac6a7891dabfab84eec31354b39",
     "b08cca996aac606b4d4bcd097249c7dd0f3375ae15d0a5b4abbbe6e9f264fb18",
@@ -58,9 +84,13 @@
     "b1c8edb8af2f927a6bcdce869fc99f02b2d805e7e6de53a6f09dfc3fbb8deb23",
     "b4cf1e9d42602d4eac0c812baea193c87ba5dd864e4b6680e63b1b1b84616e58",
     "b685bfacde89a7f83859c0e259a13f3a66b9700eae1c6f23362721e57d60d923",
+    "b73a1c0f2971675e72ebdd4a6f5220cd834b1f38a450e9d7aa39aa64f32d5757",
+    "ba3bd0ecfba03f48a328c18e49d3dc4df1c22ab220060eea5a1cd0b53e78e76f",
     "bf06273ce57e07f6e0165ae8c474ff8fc2923a8d8a3d1a93b75258520d62f3dd",
+    "bfc4da67de1d6b0462e1fa4cc7568204a6adef5e3d8cf6126e907c57b59e34d9",
     "c0a3c3384e0cbd8882ff8817369d3b9cde02afd80500f4573b0e60042398262a",
     "c3e94ac09326ee2be8e2d9bd990bdb4289b23fd53db72fa1c3b88976d8c840f0",
+    "c4d23a723f133d0234166ff53f2958db8bc67f2a92debe0a1b2b8cc9ce875f2b",
     "c524950ff75bb5409e9afb99185761f63c502f199c1579668a0c398454e828ca",
     "c691b7fb457db014cf0092885d8d56ee3fa742e7c62a5a2515c63323bd7badae",
     "c734f476221383f79abe01a78a4aef918e612250cf836fbbed774176f066b0e4",
@@ -79,13 +109,19 @@
     "e0b22dc9762bbed0d4fdef191445933c34eeebb83ef47e42425334d26a06641a",
     "e21a7fc754b8aaf85446442907b383caef46ad79cf327d25bc01e0012f41c46c",
     "e2eaa1a603345cff5a8d37cf1f636181471a02355a8657e8a1b864ebf1a95bfc",
+    "e3f2f1cab86b822878002e7dd3123cb5cbf52329173323f7b17b7fa9f8b6d53e",
     "e6b6d736c1decad3222ea68ecf61050804ae0dc44a1aad12a6e779c2713b943b",
+    "e8aac868016dc63a3462a194dacffdbd2287df383e6f250c902a4f6d6098b007",
+    "edbc18d1d67e746e09a25e8d3baaf42c03373cb75852650aab4d7b73f4114ff8",
     "f057250923ca026fc006941658b3bb908d116129b617e0646e93b5b6b1e0f231",
+    "f1ac9ef6125defb44b33f80e1404b59be266e2a752d976e8c8181902c071f199",
     "f473487b2d8623ede880bef9be8c0308000e21d41df3984e8ba4659ae5a12f40",
     "f50c0dc8215b2493828ba166c40f68352366c6ec1553450d80df4b44ffdf86b4",
     "f78f9ae65d257f3acde450e585c1bfdd66ad1d3a576a05da7abd5c3e75a015cd",
     "fb3c6fe30cc654d4dcad3e4ee1b1e8ed10969b88ea8b9a428763f4b5ed5d9797",
-    "fbba5151d18efb0658afebd1c2799d5e7c9fa1b2d2b54b36696cfd224e6ef55d"
+    "fbba5151d18efb0658afebd1c2799d5e7c9fa1b2d2b54b36696cfd224e6ef55d",
+    "fcf6bc2731c73b2dc2045416683d465d0a06d7640afc50667f9f0eee4754350e",
+    "ffef70a276e4ca2b31c1eed27b05f543f0e6620fe9b875014323dcda16ccd8fc"
   ],
   "items": [
     {
@@ -96,34 +132,30 @@
       "content": null,
       "author": "Shaurya Malwa",
       "published_at": "2026-07-26T06:59:51Z",
-      "fetched_at": "2026-07-26T09:49:41.091012Z",
+      "fetched_at": "2026-07-26T09:53:21.960952Z",
       "metadata": {
         "feed_name": "CoinDesk",
         "category": "crypto-markets",
-        "title_en": "BitMart exchange to shut down after nine years, BMX token crashes 58%",
-        "detailed_summary_en": "Crypto exchange BitMart announced it will wind down operations, ending trading by August 26, 2026, and fully shutting down in January 2027, amid reports of withdrawal delays and a 58% crash in its BMX token. This closure affects users who may have funds stuck on the platform and signals ongoing challenges for smaller exchanges in a consolidating market, potentially eroding trust in centralized exchanges. BitMart, founded in 2017, supports over 1,700 cryptocurrencies and has offices globally; its BMX token (ERC-20) had a market cap of about $1.24 million before the crash.",
-        "background_en": "BitMart is a global cryptocurrency exchange founded by Sheldon Xia in 2017 and launched in 2018. The BMX token is an ERC-20 token created to support the BitMart ecosystem, with a circulating supply of 2.8 million tokens.",
-        "title_zh": "BitMart交易所九年后关闭，BMX代币暴跌58%",
-        "detailed_summary_zh": "加密货币交易所BitMart宣布将逐步关闭运营，交易将于2026年8月26日停止，并在2027年1月完全关闭，此前出现提现延迟报告，其BMX代币暴跌58%。 此次关闭影响可能被困在平台上的用户，并表明在整合的市场中，小型交易所面临持续挑战，可能削弱对中心化交易所的信任。 BitMart成立于2017年，支持超过1700种加密货币，在全球设有办公室；其BMX代币（ERC-20）在崩盘前市值约为124万美元。",
-        "background_zh": "BitMart是由Sheldon Xia于2017年创立、2018年启动的全球加密货币交易所。BMX代币是一种ERC-20代币，旨在支持BitMart生态系统，流通供应量为280万枚。",
+        "title_en": "BitMart exchange shuts down, BMX token crashes 58%",
+        "detailed_summary_en": "BitMart, a cryptocurrency exchange operating for nine years, announced it will wind down operations after users reported withdrawal delays and its BMX token plummeted 58%. Platform operations are set to end in January. The shutdown of a major exchange directly impacts user funds and market confidence, and the 58% crash of its native token underscores the severe market reaction. This event highlights ongoing risks in centralized exchange reliability and the importance of due diligence for platform tokens. BitMart had previously suffered a major security breach in 2021 where two-thirds of its assets were stolen, and it operates from the Cayman Islands. The BMX token is an ERC-20 utility and governance token on Ethereum, and its price crashed 58% following the shutdown announcement.",
+        "background_en": "BitMart is a digital asset trading platform founded in 2017, operated by bachi.tech in the Cayman Islands. It gained notoriety for a 2021 hack that resulted in the theft of over $150 million. The BMX token was launched as an ecosystem token to provide benefits like reduced trading fees and governance rights. Exchange shutdowns often lead to significant losses for token holders and users who may not be able to withdraw funds in time.",
+        "title_zh": "BitMart交易所关闭，BMX代币暴跌58%",
+        "detailed_summary_zh": "运营九年的加密货币交易所BitMart宣布将逐步关闭，此前用户报告提现延迟，其BMX代币暴跌58%。平台运营将于1月结束。 一家主要交易所的关闭直接影响用户资金和市场信心，其原生代币暴跌58%凸显了市场的剧烈反应。这一事件凸显了中心化交易所可靠性的持续风险以及平台代币尽职调查的重要性。 BitMart此前在2021年发生过重大安全漏洞，三分之二的资产被盗，其运营地点在开曼群岛。BMX代币是以太坊上的ERC-20实用和治理代币，在关闭公告后价格暴跌58%。",
+        "background_zh": "BitMart是一家成立于2017年的数字资产交易平台，由开曼群岛的bachi.tech运营。它因2021年一次导致超过1.5亿美元被盗的黑客攻击而闻名。BMX代币作为生态系统代币推出，提供交易费减免和治理权等好处。交易所关闭通常会导致代币持有者遭受重大损失，用户可能无法及时提取资金。",
         "sources": [
           {
-            "url": "https://www.bitmart.com/",
-            "title": "BitMart Exchange : Buy & Sell Bitcoin, Ethereum & 1700+ Cryptos"
+            "url": "https://en.wikipedia.org/wiki/Bitmart",
+            "title": "Bitmart - Wikipedia"
           },
           {
-            "url": "https://coinmarketcap.com/exchanges/bitmart/",
-            "title": "BitMart trade volume and market listings | CoinMarketCap"
-          },
-          {
-            "url": "https://www.coingecko.com/en/coins/bmx",
-            "title": "BMX Price: BMX Live Price Chart, Market Cap & News Today | CoinGecko"
+            "url": "https://www.bitmart.com/en-US/about",
+            "title": "About BitMart - A Secure & Trusted Cryptocurrency Exchange"
           }
         ]
       },
       "ai_score": 9.0,
       "ai_reason": null,
-      "ai_summary": "Crypto exchange BitMart is shutting down after nine years, causing its BMX token to drop 58%.",
+      "ai_summary": "Crypto exchange BitMart announces shutdown after nine years, causing its BMX token to crash 58%.",
       "ai_tags": []
     },
     {
@@ -272,39 +304,43 @@
       "ai_tags": []
     },
     {
-      "id": "recovered:e78dff03ebf5bc8a037049ca",
-      "source_type": "google_news",
-      "title": "Coinbase invests $15M to quantum-proof Bitcoin",
-      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQcGl4RGNmZXJwNXB2NF9wOVVnZ2hLQVcwTHRJYVk0M3JuQklZTzJ1WWkxOHlQTTRzcE9BSzI5ajY5SXYzR2VrNl9MRHAzZmhSSmVKRVJYTy13UnRaMjRDTlpva2FaVjRsRUc4SUlpM0VaMFF0aWZUZUN2cHN0VlJZaXFFRTk3M3hKZ29udDZ1QUFJSk1RTmRXSmhFalpfU01ZYTFjSWVxeVRRcDdSUGJ2UQ?oc=5",
+      "id": "hackernews:story:49052912",
+      "source_type": "hackernews",
+      "title": "DeepSeek pause fundraise after comments on compute gap to US leaked (transcript) [pdf]",
+      "url": "https://github.com/demo-zexuan/liang-wenfeng-investor-meeting-2026-7-22/blob/master/%E6%A2%81%E6%96%87%E9%94%8B%E6%8A%95%E8%B5%84%E8%80%85%E4%BA%A4%E6%B5%81%E4%BC%9A-%E6%96%87%E5%AD%97%E7%A8%BF_1_18_translate_20260723201651.pdf",
       "content": null,
-      "author": "Pluang",
-      "published_at": "2026-07-25T17:32:00Z",
-      "fetched_at": "2026-07-26T09:52:55.418700Z",
+      "author": "oliculipolicula",
+      "published_at": "2026-07-25T23:32:50Z",
+      "fetched_at": "2026-07-26T09:53:22.417328Z",
       "metadata": {
+        "discussion_url": "https://news.ycombinator.com/item?id=49052912",
+        "category": "tech-community",
+        "title_en": "DeepSeek Pauses Fundraising After Comments on Compute Gap Leak",
+        "detailed_summary_en": "DeepSeek has suspended its second fundraising round after leaked remarks from founder Liang Wenfeng about the compute gap between China and the US circulated online, according to Bloomberg. This pause highlights the impact of geopolitical tensions on AI funding and raises questions about China's ability to compete in AI with limited compute resources, despite DeepSeek's earlier cost-efficiency claims. The leaked transcript from an investor meeting reportedly included Liang Wenfeng's assessment that DeepSeek faces a significant compute gap compared to US labs. The repository containing the transcript was force-pushed, but an alternative link remains available.",
+        "background_en": "DeepSeek is a Chinese AI company founded by Liang Wenfeng in 2023, known for developing competitive large language models like DeepSeek-R1 at a fraction of the cost of US counterparts. The company operates under US export controls on advanced chips, which have created a compute bottleneck for Chinese AI firms. The compute gap between China and the US is a central issue in the AI rivalry, with US officials maintaining strict chip export restrictions.",
+        "community_discussion_en": "Community comments clarify that the title may be misleading: the pause is a consequence of the leaked comments about the compute gap, not a pause due to leaked comments being made public. Some readers expressed confusion and sought more context, while others noted the contrast with the rhetoric of US AI leaders.",
+        "title_zh": "DeepSeek因算力差距言论泄露暂停融资",
+        "detailed_summary_zh": "据彭博社报道，在创始人梁文锋关于中美算力差距的言论泄露后，DeepSeek暂停了其第二轮融资。 此次暂停凸显了地缘政治紧张对AI融资的影响，并引发了对中国在算力受限情况下能否在AI领域与美国竞争的质疑，尽管DeepSeek此前宣称其成本效益。 泄露的投资者会议记录据称包含梁文锋对DeepSeek与美国实验室相比面临巨大算力差距的评估。该存储库已被强制推送，但备用链接仍然有效。",
+        "background_zh": "DeepSeek是一家由梁文锋于2023年创立的中国AI公司，以远低于美国同行的成本开发了具有竞争力的DeepSeek-R1等大语言模型。该公司在美国先进芯片出口管制下运营，这给中国AI公司造成了算力瓶颈。中美之间的算力差距是AI竞争的核心问题，美国官员维持着严格的芯片出口限制。",
+        "community_discussion_zh": "社区评论澄清，标题可能具有误导性：暂停是由于关于算力差距的言论泄露所致，而非因泄露的言论被公开而暂停。一些读者表示困惑并寻求更多背景信息，而另一些则注意到与美国AI领导人的言论形成对比。",
         "sources": [
           {
-            "url": "https://bitcoinops.org/en/topics/quantum-resistance/",
-            "title": "Quantum resistance | Bitcoin Optech"
+            "url": "https://en.wikipedia.org/wiki/DeepSeek",
+            "title": "DeepSeek"
           },
           {
-            "url": "https://www.coindesk.com/tech/2026/04/04/bitcoin-s-usd1-3-trillion-security-race-key-initiatives-aimed-at-quantum-proofing-the-world-s-largest-blockchain",
-            "title": "Bitcoin's $1.3 trillion security race: Key initiatives aimed at quantum-proofing the world's largest blockchain"
+            "url": "https://www.politico.com/newsletters/digital-future-daily/2026/03/17/the-compute-gap-shaping-the-us-china-ai-rivalry-00833103",
+            "title": "The compute gap shaping the US - China AI rivalry - POLITICO"
           },
           {
-            "url": "https://en.wikipedia.org/wiki/Post-quantum_cryptography",
-            "title": "Post-quantum cryptography"
+            "url": "https://www.eweek.com/news/china-tempers-ai-expectations/",
+            "title": "China ’s AI Industry Confronts Compute Gap With US"
           }
-        ],
-        "title_en": "Coinbase invests $15M to quantum-proof Bitcoin",
-        "detailed_summary_en": "Coinbase has invested $15 million in quantum-resistant security measures to protect Bitcoin from the potential threat of future quantum computers. This investment aims to develop and implement post-quantum cryptographic solutions for Bitcoin's network. This investment signals major industry preparedness for the systemic long-term threat quantum computing poses to blockchain security. Proactive measures are critical because migrating to quantum-resistant algorithms takes time, and data recorded now could be vulnerable to future decryption. The $15 million investment will focus on integrating post-quantum cryptography, such as hash-based signature schemes like SPHINCS+, which are resistant to Shor's algorithm. Bitcoin's current elliptic curve cryptography (ECDSA) is vulnerable to quantum attacks, and address reuse increases risk.",
-        "background_en": "Quantum computers use principles of quantum mechanics to solve certain problems much faster than classical computers. Shor's algorithm, if run on a sufficiently powerful quantum computer, could break the elliptic curve digital signature algorithm (ECDSA) used by Bitcoin, allowing attackers to forge signatures and steal funds. Post-quantum cryptography (PQC) refers to cryptographic algorithms believed to be secure against quantum attacks; NIST has standardized several PQC algorithms in 2024.",
-        "title_zh": "Coinbase 投资 1500 万美元为比特币进行量子防护",
-        "detailed_summary_zh": "Coinbase 已投资 1500 万美元用于量子安全措施，以保护比特币免受未来量子计算机的潜在威胁。这笔投资旨在开发和实施针对比特币网络的抗量子密码学解决方案。 这项投资标志着行业对未来量子计算对区块链安全构成的系统性长期威胁的重大准备。采取主动措施至关重要，因为迁移到抗量子算法需要时间，而且现在记录的数据未来可能面临被解密的风险。 这 1500 万美元投资将专注于集成抗量子密码学，例如基于哈希的签名方案（如 SPHINCS+），这些方案能够抵抗 Shor 算法。比特币当前的椭圆曲线密码学（ECDSA）容易受到量子攻击，地址重用会增加风险。",
-        "background_zh": "量子计算机利用量子力学原理，能以比经典计算机快得多的速度解决某些问题。Shor 算法如果在足够强大的量子计算机上运行，可能会破解比特币所使用的椭圆曲线数字签名算法（ECDSA），从而使攻击者能够伪造签名并窃取资金。抗量子密码学（PQC）是指被认为能够抵御量子攻击的密码学算法；NIST 已于 2024 年标准化了多种 PQC 算法。"
+        ]
       },
       "ai_score": 8.0,
       "ai_reason": null,
-      "ai_summary": "Coinbase has invested $15 million in quantum-resistant security measures to protect Bitcoin from the potential threat of future quantum computers. This investment aims to develop and implement post-quantum cryptographic solutions for Bitcoin's network. This investment signals major industry preparedness for the systemic long-term threat quantum computing poses to blockchain security. Proactive measures are critical because migrating to quantum-resistant algorithms takes time, and data recorded now could be vulnerable to future decryption. The $15 million investment will focus on integrating post-quantum cryptography, such as hash-based signature schemes like SPHINCS+, which are resistant to Shor's algorithm. Bitcoin's current elliptic curve cryptography (ECDSA) is vulnerable to quantum attacks, and address reuse increases risk.",
+      "ai_summary": "DeepSeek suspends fundraising after leaked comments about compute gap with US.",
       "ai_tags": []
     },
     {
@@ -419,6 +455,43 @@
       "ai_tags": []
     },
     {
+      "id": "google_news:article:917649365f56ae23",
+      "source_type": "google_news",
+      "title": "Coinbase invests $15M to secure Bitcoin against future quantum computing threats. - Pluang",
+      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQcGl4RGNmZXJwNXB2NF9wOVVnZ2hLQVcwTHRJYVk0M3JuQklZTzJ1WWkxOHlQTTRzcE9BSzI5ajY5SXYzR2VrNl9MRHAzZmhSSmVKRVJYTy13UnRaMjRDTlpva2FaVjRsRUc4SUlpM0VaMFF0aWZUZUN2cHN0VlJZaXFFRTk3M3hKZ29udDZ1QUFJSk1RTmRXSmhFalpfU01ZYTFjSWVxeVRRcDdSUGJ2UQ?oc=5",
+      "content": null,
+      "author": "Pluang",
+      "published_at": "2026-07-26T01:32:41Z",
+      "fetched_at": "2026-07-26T09:53:22.057001Z",
+      "metadata": {
+        "category": "exchange-announcements",
+        "title_en": "Coinbase invests $15M to quantum-proof Bitcoin",
+        "detailed_summary_en": "Coinbase, a major cryptocurrency exchange, announced a $15 million investment to develop quantum-resistant cryptography for Bitcoin, aiming to protect the network from potential quantum computing attacks in the future. This proactive move addresses a long-term security risk that could break Bitcoin's cryptographic foundations, potentially affecting all Bitcoin holders and the broader crypto ecosystem. It signals growing recognition of quantum computing as a serious threat to blockchain security. The investment will fund research into post-quantum cryptographic algorithms suitable for Bitcoin, such as hash-based or lattice-based signatures. No specific timeline for implementation has been provided, and the threat is not immediate, as practical quantum computers are still years away.",
+        "background_en": "Bitcoin's security relies on cryptographic algorithms like SHA-256 and ECDSA, which could be broken by sufficiently powerful quantum computers using Shor's algorithm. Post-quantum cryptography aims to develop algorithms resistant to both classical and quantum attacks. This investment reflects the industry's preparation for a future where quantum computing could compromise existing cryptographic protections.",
+        "title_zh": "Coinbase投入1500万美元保护比特币抵御量子计算威胁",
+        "detailed_summary_zh": "主要加密货币交易所Coinbase宣布投资1500万美元，用于开发抗量子计算的加密技术，旨在保护比特币网络免受未来量子计算攻击的潜在威胁。 这一前瞻性举措应对了一项长期安全风险——量子计算可能打破比特币的密码学基础，可能影响所有比特币持有者和更广泛的加密生态系统。这表明业界越来越认识到量子计算对区块链安全的严重威胁。 这笔投资将资助适用于比特币的后量子密码算法研究，例如基于哈希或基于格（lattice-based）的签名。目前尚未提供具体实施时间表，且由于实用量子计算机仍需多年才能实现，该威胁并非迫在眉睫。",
+        "background_zh": "比特币的安全性依赖于SHA-256和ECDSA等密码算法，而足够强大的量子计算机可能利用Shor算法破解这些算法。后量子密码学旨在开发能够抵抗经典和量子攻击的算法。这项投资反映了行业为未来量子计算可能破坏现有密码保护所做的准备。",
+        "sources": [
+          {
+            "url": "https://news.google.com/stories/CAAqNggKIjBDQklTSGpvSmMzUnZjbmt0TXpZd1NoRUtEd2lDaS12d0RCSGdDQ2dES1YtaVB5Z0FQAQ?hl=en-US&gl=US&ceid=US:en",
+            "title": "Google News - Quantum computing threat to Bitcoin - Overview"
+          },
+          {
+            "url": "https://www.fool.com/investing/2025/06/11/the-quantum-computing-threat-to-bitcoin-is-real-an/",
+            "title": "The Quantum Computing Threat to Bitcoin Is Real... | The Motley Fool"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/Post-quantum_cryptography",
+            "title": "Post - quantum cryptography - Wikipedia"
+          }
+        ]
+      },
+      "ai_score": 7.0,
+      "ai_reason": null,
+      "ai_summary": "Coinbase invests $15 million to protect Bitcoin from future quantum computing threats.",
+      "ai_tags": []
+    },
+    {
       "id": "recovered:73d6e0ae5813440f888e2f33",
       "source_type": "google_news",
       "title": "Bitcoin's Top Nine Holders Unite for Network Security",
@@ -472,6 +545,80 @@
       "ai_tags": []
     },
     {
+      "id": "hackernews:story:49052564",
+      "source_type": "hackernews",
+      "title": "Cloudflare's new AI traffic options for customers",
+      "url": "https://blog.cloudflare.com/content-independence-day-ai-options/",
+      "content": null,
+      "author": "alphabetatango",
+      "published_at": "2026-07-25T22:50:49Z",
+      "fetched_at": "2026-07-26T09:53:22.417352Z",
+      "metadata": {
+        "discussion_url": "https://news.ycombinator.com/item?id=49052564",
+        "category": "tech-community",
+        "title_en": "Cloudflare Announces AI Crawler Blocking Options",
+        "detailed_summary_en": "Cloudflare announced new options for customers to block AI crawlers, including Googlebot used for AI training, effective from September 15. New domains will have 'Training' and 'Agent' crawler categories blocked by default on pages displaying ads. This empowers website owners to control how their content is used for AI training, but also sparks debate about internet openness and the potential fragmentation of the web. Cloudflare's position as a major internet infrastructure provider makes this decision influential across the industry. Multi-purpose crawlers like Googlebot that combine search indexing with AI training will be treated based on all their behaviors, allowing blocking for training while keeping search allowed. Cloudflare's move aligns with its call for transparency from AI companies about their crawling practices.",
+        "background_en": "AI crawlers are bots that collect web content at scale to train large language models or power AI assistants, distinct from traditional search engine crawlers that index pages for search results. The rise of AI crawlers has created tension between content creators who want to protect their work and AI companies seeking training data. Cloudflare's new options give website owners more granular control, but also raise questions about the future of an open internet.",
+        "community_discussion_en": "Community members noted that Googlebot will be blocked for AI training from September 15, with some criticizing Cloudflare for playing both sides of the AI arms race. Others suggested alternative approaches like proof-of-work schemes, while some asked whether it is possible to allow specific AI crawlers like Google, OpenAI, and Claude.",
+        "title_zh": "Cloudflare 推出 AI 爬虫拦截选项",
+        "detailed_summary_zh": "Cloudflare 宣布为客户提供拦截 AI 爬虫的新选项，包括用于 AI 训练的 Googlebot，自 9 月 15 日起生效。新域名在展示广告的页面上将默认屏蔽“训练”和“代理”爬虫类别。 这使网站所有者能够控制其内容如何用于 AI 训练，但也引发了关于互联网开放性和网络潜在碎片化的讨论。Cloudflare 作为主要互联网基础设施提供商，其决定对行业具有影响力。 像 Googlebot 这样结合搜索索引和 AI 训练的多用途爬虫将根据其所有行为进行处理，允许屏蔽训练而保留搜索。Cloudflare 此举与其呼吁 AI 公司透明化爬取行为保持一致。",
+        "background_zh": "AI 爬虫是批量收集网络内容以训练大语言模型或驱动 AI 助手的机器人，不同于传统搜索引擎爬虫（后者为搜索结果索引页面）。AI 爬虫的兴起在希望保护自己作品的内容创作者与寻求训练数据的 AI 公司之间制造了紧张关系。Cloudflare 的新选项为网站所有者提供了更精细的控制，但也引发了关于开放互联网未来的问题。",
+        "community_discussion_zh": "社区成员注意到，从 9 月 15 日起 Googlebot 将被屏蔽用于 AI 训练，一些人批评 Cloudflare 在 AI 军备竞赛中两头下注。其他人建议使用工作量证明方案等替代方法，也有人询问是否可以允许特定的 AI 爬虫，如 Google、OpenAI 和 Claude。",
+        "sources": [
+          {
+            "url": "https://www.fastly.com/learning/what-are-ai-crawlers",
+            "title": "What are AI Crawlers? How They Work & What They Do | Fastly"
+          },
+          {
+            "url": "https://www.firecrawl.dev/glossary/web-crawling-apis/ai-web-crawlers",
+            "title": "What are AI web crawlers? | Firecrawl Glossary"
+          },
+          {
+            "url": "https://searchengineland.com/guide/ai-crawlers",
+            "title": "AI crawlers: What are LLM & AI search crawlers and bots?"
+          }
+        ]
+      },
+      "ai_score": 7.0,
+      "ai_reason": null,
+      "ai_summary": "Cloudflare announces new options for customers to block AI crawlers, including Googlebot for training, sparking debate on internet openness.",
+      "ai_tags": []
+    },
+    {
+      "id": "rss:cointelegraph.com_rss:f51ff551255d2140",
+      "source_type": "rss",
+      "title": "Robinhood in talks with Crypto.com over prediction markets: WSJ",
+      "url": "https://cointelegraph.com/news/robinhood-cryptocom-prediction-markets?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "content": null,
+      "author": "Cointelegraph by Turner Wright",
+      "published_at": "2026-07-25T21:01:44Z",
+      "fetched_at": "2026-07-26T09:53:22.502214Z",
+      "metadata": {
+        "feed_name": "Cointelegraph",
+        "category": "crypto-markets",
+        "title_en": "Robinhood in talks with Crypto.com for prediction markets",
+        "detailed_summary_en": "Robinhood is reportedly in talks with Crypto.com to offer prediction markets on its platform, according to the Wall Street Journal. This move would expand Robinhood's services into a controversial and regulated area. If finalized, this partnership could significantly increase retail access to prediction markets, which are currently facing legal battles between state and federal regulators. It may also pressure other major trading platforms to enter the space. Prediction markets allow users to trade on outcomes of events like elections or economic indicators, but they are considered gambling in many jurisdictions and face regulatory uncertainty in the US.",
+        "background_en": "Prediction markets, also known as betting markets or event derivatives, are exchange-traded markets where participants trade contracts whose payoffs depend on future events. They aggregate beliefs through market prices. However, they are banned or restricted in some locations due to gambling concerns. Companies like Polymarket and Kalshi operate in this space, often facing legal challenges.",
+        "title_zh": "Robinhood与Crypto.com洽谈预测市场",
+        "detailed_summary_zh": "据《华尔街日报》报道，Robinhood正在与Crypto.com商谈，计划在其平台上提供预测市场。此举将把Robinhood的服务扩展到一个有争议且受监管的领域。 如果合作达成，将大幅增加散户对预测市场的接入，目前该领域正面临州与联邦监管机构的法律纠纷。这还可能迫使其他主要交易平台进入该领域。 预测市场允许用户就选举或经济指标等事件的结果进行交易，但在许多司法管辖区被视为赌博，在美国面临监管不确定性。",
+        "background_zh": "预测市场，也称为博彩市场或事件衍生品，是交易所交易的市场，参与者交易其收益取决于未来事件的合约。它们通过市场价格聚合信念。然而，由于赌博问题，它们在某些地区被禁止或限制。Polymarket和Kalshi等公司在此领域运营，经常面临法律挑战。",
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Prediction_market",
+            "title": "Prediction market"
+          },
+          {
+            "url": "https://www.investopedia.com/terms/p/prediction-market.asp",
+            "title": "Prediction Markets Explained: Types, Uses, and Real-World ... Polymarket | The World's Largest Prediction Market™ Top Stories Kalshi - Prediction Market for Trading the Future Prediction market - Wikipedia Prediction Markets - CNBC Best Prediction Markets Of 2026 – Forbes Advisor Best Prediction Markets: List of Prediction Market Apps for July"
+          }
+        ]
+      },
+      "ai_score": 7.0,
+      "ai_reason": null,
+      "ai_summary": "Robinhood is in talks with Crypto.com to offer prediction markets, signaling a potential expansion into a legally contentious space.",
+      "ai_tags": []
+    },
+    {
       "id": "rss:www.coindesk.com_arc_outboundfeeds_rss_:eabe03696863100d",
       "source_type": "rss",
       "title": "Russia’s largest bank Sberbank plans crypto trading infrastructure by December",
@@ -479,20 +626,43 @@
       "content": null,
       "author": "Francisco Rodrigues",
       "published_at": "2026-07-25T16:59:36Z",
-      "fetched_at": "2026-07-26T09:49:41.091030Z",
+      "fetched_at": "2026-07-26T09:53:21.960982Z",
       "metadata": {
         "feed_name": "CoinDesk",
         "category": "crypto-markets",
-        "title_en": "Russia's Sberbank Plans Crypto Trading by December",
-        "detailed_summary_en": "Sberbank, Russia's largest state-owned bank, announced plans to launch a cryptocurrency trading infrastructure by December 2026. This signals significant institutional adoption in a major economy and indicates Russia's evolving regulatory stance toward digital assets, potentially influencing other state-owned banks. The plan is a stated goal rather than an immediate launch, and specific details about the infrastructure, such as supported assets or partnerships, have not been disclosed.",
-        "background_en": "Sberbank is a dominant financial institution in Russia, similar in stature to China's ICBC. Russia has had a complex relationship with cryptocurrencies, with the central bank initially opposing them but later exploring regulation. This move aligns with a global trend of traditional banks entering the crypto space.",
-        "title_zh": "俄罗斯最大银行Sberbank计划年底前推出加密货币交易基础设施",
-        "detailed_summary_zh": "俄罗斯最大的国有银行Sberbank宣布计划在2026年12月之前推出加密货币交易基础设施。 这标志着在一个主要经济体中出现了重大的机构采用，并表明俄罗斯对数字资产的监管立场正在演变，可能影响其他国有银行。 该计划是一个表述的目标而非立即启动，关于基础设施的具体细节（如支持的资产或合作伙伴）尚未披露。",
-        "background_zh": "Sberbank是俄罗斯占主导地位的金融机构，地位类似于中国的工商银行。俄罗斯与加密货币的关系一直很复杂，央行最初持反对态度，但后来开始探索监管。此举符合传统银行进入加密货币领域的全球趋势。"
+        "title_en": "Sberbank Plans Crypto Trading Infrastructure by December",
+        "detailed_summary_en": "Sberbank, Russia's largest bank, announced plans to launch crypto trading infrastructure by December, marking a significant step for institutional crypto adoption in Russia. This move signals major institutional adoption in Russia and could pave the way for broader regulatory acceptance and market development in the region. The infrastructure is expected to cater to institutional clients, and the timeline indicates Sberbank is moving quickly to establish a foothold in the crypto trading space.",
+        "background_en": "Sberbank is Russia's largest bank by assets and has been exploring blockchain and crypto solutions. Institutional crypto adoption in Russia has been limited due to regulatory uncertainty, but this announcement suggests a shift.",
+        "title_zh": "俄罗斯最大银行Sberbank计划12月前推出加密交易基础设施",
+        "detailed_summary_zh": "俄罗斯最大的银行Sberbank宣布计划在12月前推出加密交易基础设施，这标志着俄罗斯机构加密货币采用的重要一步。 此举标志着俄罗斯机构的重大采用，可能为该地区更广泛的监管接受和市场发展铺平道路。 该基础设施预计将服务于机构客户，时间表显示Sberbank正在迅速行动以在加密交易领域建立立足点。",
+        "background_zh": "Sberbank是俄罗斯资产规模最大的银行，一直在探索区块链和加密解决方案。由于监管不确定性，俄罗斯的机构加密采用一直有限，但这一公告表明情况正在转变。"
       },
       "ai_score": 7.0,
       "ai_reason": null,
-      "ai_summary": "Sberbank, Russia's largest bank, plans to launch crypto trading infrastructure by December.",
+      "ai_summary": "Sberbank, Russia's largest bank, plans to launch crypto trading infrastructure by December, a major step for institutional crypto adoption in Russia.",
+      "ai_tags": []
+    },
+    {
+      "id": "google_news:article:189cb011dbb10457",
+      "source_type": "google_news",
+      "title": "Four Coinbase Executives Exit Or Shift Roles In Just Over Two Weeks - Stocktwits",
+      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQT04zWGY2ZjZVMlJxMTlMSVlrX3d3ZWxHVTZQOWpUWEtReEpMNWZtaXJPVUFLQWhIWE1HVUw5TjcwT2tSY2lDSmZpY21QOUpNZHdqVXlKdXVDNUh1M2FmdVBfeGVxN2JEdUlzMTFSSS05MTlyUjFreGF6eXlNdUUyVXc2Nm9lV1V2ZGRmbjF6R21qdGRmOVFFTVJGWk1lMWpyTExTTFQ2VjRIanhJTm1YSEdXdEVuN1Y4blRKOFU4Z2pwcnVlRFI3ZWlRNA?oc=5",
+      "content": null,
+      "author": "Stocktwits",
+      "published_at": "2026-07-25T16:21:00Z",
+      "fetched_at": "2026-07-26T09:53:22.057186Z",
+      "metadata": {
+        "category": "exchange-announcements",
+        "title_en": "Four Coinbase Executives Exit or Shift Roles in Two Weeks",
+        "detailed_summary_en": "Four Coinbase executives have either left the company or moved to new roles within just over two weeks, signaling notable turnover at the executive level. Such rapid executive changes at a major cryptocurrency exchange like Coinbase could indicate a strategic pivot, internal restructuring, or underlying tensions, potentially affecting investor confidence and company direction. The departures and role shifts span multiple departments, though specific names and positions were not detailed in the news. The timeframe of just over two weeks suggests a concentrated period of change.",
+        "background_en": "Coinbase is one of the largest cryptocurrency exchanges in the world, known for its compliance-first approach and public listing. Executive departures can signal shifts in corporate strategy or culture, and such movements are closely watched by the crypto community.",
+        "title_zh": "两周内四位Coinbase高管离职或调岗",
+        "detailed_summary_zh": "在短短两周多时间内，Coinbase的四位高管要么离职，要么调任新职位，这表明高管层出现了显著变动。 像Coinbase这样的主要加密货币交易所出现如此快速的高管变动，可能预示着战略调整、内部重组或潜在矛盾，可能影响投资者信心和公司发展方向。 这些离职和调岗涉及多个部门，但新闻中未详细说明具体姓名和职位。短短两周多的时间点表明这是一段集中的变动期。",
+        "background_zh": "Coinbase是全球最大的加密货币交易所之一，以其合规为先的做法和公开上市而闻名。高管离职可能预示着公司战略或文化的转变，此类动向受到加密货币社区的密切关注。"
+      },
+      "ai_score": 7.0,
+      "ai_reason": null,
+      "ai_summary": "Four Coinbase executives have exited or shifted roles in just over two weeks, signaling potential changes at the exchange.",
       "ai_tags": []
     },
     {
