@@ -865,6 +865,8 @@ input {
   background: var(--surface);
   padding: 18px 20px;
   box-shadow: 0 1px 0 rgba(15, 23, 42, 0.02);
+  content-visibility: auto;
+  contain-intrinsic-size: auto 270px;
 }
 
 .digest-item[hidden] {

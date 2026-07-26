@@ -419,9 +419,15 @@
     setupActiveHeadline(articles, tocItems);
   }
 
+  function enhanceHomeSection(section) {
+    if (!section) return;
+    section.querySelectorAll('.daily-feed-content').forEach(enhanceDigest);
+    section.querySelectorAll('.continuous-feed').forEach(setupLoadEarlier);
+  }
+
   function enhanceDailyFeeds() {
-    document.querySelectorAll('.home-page .daily-feed-content').forEach(enhanceDigest);
-    document.querySelectorAll('.home-page .continuous-feed').forEach(setupLoadEarlier);
+    var activeSection = document.querySelector('.home-page .lang-section:not(.hidden)');
+    enhanceHomeSection(activeSection);
     if (document.body.classList.contains('digest-page')) {
       enhanceDigest(document.querySelector('.main-content'));
     }
@@ -566,6 +572,7 @@
       if (sectionZh && sectionEn) {
         sectionZh.classList.toggle('hidden', language !== 'zh');
         sectionEn.classList.toggle('hidden', language !== 'en');
+        enhanceHomeSection(language === 'en' ? sectionEn : sectionZh);
       }
       document.documentElement.lang = language === 'en' ? 'en' : 'zh-CN';
     }
