@@ -27,6 +27,7 @@ from src.ai.summarizer import DailySummarizer
 
 _TEST_URL_ENV = "TEST_WEBHOOK_URL"
 _TEST_URL = "https://example.com/webhook"
+pytestmark = pytest.mark.usefixtures("public_test_dns")
 
 
 # ── Template variable replacement ──
@@ -638,7 +639,7 @@ class TestWebhookNotifier:
             mock_client.__aexit__ = AsyncMock(return_value=False)
             mock_client_cls.return_value = mock_client
 
-            result = _run_async(notifier.notify({"date": "2026-04-24"}))
+            _run_async(notifier.notify({"date": "2026-04-24"}))
             call_kwargs = mock_client.post.call_args[1]
             assert call_kwargs["headers"]["X-Auth"] == "token123"
             assert call_kwargs["headers"]["X-Secret"] == "abc"
@@ -760,7 +761,7 @@ class TestWebhookNotifier:
             mock_client_cls.return_value = mock_client
 
             # Should not raise — error is logged and printed
-            result = _run_async(notifier.notify({"date": "2026-04-24"}))
+            _run_async(notifier.notify({"date": "2026-04-24"}))
         del os.environ[_TEST_URL_ENV]
 
 
@@ -1408,7 +1409,7 @@ class TestHTTPStatusHandling:
             mock_client_cls.return_value = mock_client
 
             notifier.console = mock_console
-            result = _run_async(notifier.notify({"date": "2026-04-24"}))
+            _run_async(notifier.notify({"date": "2026-04-24"}))
 
             printed = " ".join(str(c) for c in mock_console.print.call_args_list)
             assert "errcode=400" in printed

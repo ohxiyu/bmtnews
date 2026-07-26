@@ -210,6 +210,86 @@ def test_orchestrator_retains_selected_items_across_same_day_runs(
         ).astimezone(timezone.utc),
         9.0,
     )
+    batches = [[earlier], [earlier, later], [earlier, later]]
+    analyzed_batches: list[list[str]] = []
+    config = Config(
+        ai=AIConfig(
+            provider="openai",
+            model="test",
+            api_key_env="TEST_API_KEY",
+            languages=[],
+        ),
+        sources=SourcesConfig(),
+        filtering=FilteringConfig(
+            ai_score_threshold=7.0,
+            daily_timezone="Asia/Shanghai",
+            preserve_daily_items=True,
+        ),
+    )
+    orchestrator = HorizonOrchestrator(config, storage=object())
+
+    async def fetch_all_sources(since):  # type: ignore[no-untyped-def]
+        return batches.pop(0)
+
+    async def analyze_content(items):  # type: ignore[no-untyped-def]
+        analyzed_batches.append([item.id for item in items])
+        return items
+
+    async def merge_topic_duplicates(items, *, log=True):  # type: ignore[no-untyped-def]
+        return items
+
+    async def no_op(items):  # type: ignore[no-untyped-def]
+        return None
+
+    monkeypatch.setattr(orchestrator, "fetch_all_sources", fetch_all_sources)
+    monkeypatch.setattr(orchestrator, "_analyze_content", analyze_content)
+    monkeypatch.setattr(orchestrator, "merge_topic_duplicates", merge_topic_duplicates)
+    monkeypatch.setattr(orchestrator, "_expand_twitter_discussion", no_op)
+    monkeypatch.setattr(orchestrator, "_enrich_important_items", no_op)
+    monkeypatch.chdir(tmp_path)
+
+    asyncio.run(orchestrator.run(force_hours=24))
+    asyncio.run(orchestrator.run(force_hours=24))
+    asyncio.run(orchestrator.run(force_hours=24))
+
+    date = local_today.isoformat()
+    state = load_daily_feed_state(
+        date,
+        "Asia/Shanghai",
+        tmp_path / "docs" / "_data" / "bmtnews_state.json",
+    )
+    assert [item.id for item in state.items] == ["later", "earlier"]
+    assert state.analyzed_keys == sorted(
+        [analyzed_item_key(earlier), analyzed_item_key(later)]
+    )
+    assert analyzed_batches == [["earlier"], ["later"]]
+
+
+def test_orchestrator_reapplies_limits_after_merging_daily_state(
+    tmp_path: Path,
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    local_today = datetime.now(ZoneInfo("Asia/Shanghai")).date()
+    earlier = make_item(
+        "earlier",
+        "https://example.com/earlier",
+        datetime.combine(
+            local_today,
+            datetime.min.time().replace(hour=1),
+            tzinfo=ZoneInfo("Asia/Shanghai"),
+        ).astimezone(timezone.utc),
+        8.0,
+    )
+    later = make_item(
+        "later",
+        "https://example.com/later",
+        datetime.combine(
+            local_today,
+            datetime.min.time().replace(hour=2),
+            tzinfo=ZoneInfo("Asia/Shanghai"),
+        ).astimezone(timezone.utc),
+        9.0,
+    )
     batches = [[earlier], [later]]
     config = Config(
         ai=AIConfig(
@@ -221,6 +301,7 @@ def test_orchestrator_retains_selected_items_across_same_day_runs(
         sources=SourcesConfig(),
         filtering=FilteringConfig(
             ai_score_threshold=7.0,
+            max_items=1,
             daily_timezone="Asia/Shanghai",
             preserve_daily_items=True,
         ),
@@ -249,13 +330,9 @@ def test_orchestrator_retains_selected_items_across_same_day_runs(
     asyncio.run(orchestrator.run(force_hours=24))
     asyncio.run(orchestrator.run(force_hours=24))
 
-    date = local_today.isoformat()
     state = load_daily_feed_state(
-        date,
+        local_today.isoformat(),
         "Asia/Shanghai",
         tmp_path / "docs" / "_data" / "bmtnews_state.json",
     )
-    assert [item.id for item in state.items] == ["later", "earlier"]
-    assert state.analyzed_keys == sorted(
-        [analyzed_item_key(earlier), analyzed_item_key(later)]
-    )
+    assert [item.id for item in state.items] == ["later"]

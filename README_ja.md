@@ -1,20 +1,15 @@
 <div align="center">
 
-<h1>🌅 Horizon</h1>
+<h1>🛰️ BMTNews</h1>
 
-<p><strong>ニュースそのものを楽しもう。あとはHorizonにおまかせを</strong></p>
-
-<a href="https://trendshift.io/repositories/22864?utm_source=trendshift-badge&amp;utm_medium=badge&amp;utm_campaign=badge-trendshift-22864" target="_blank" rel="noopener noreferrer"><img src="https://trendshift.io/api/badge/trendshift/repositories/22864/daily" alt="Thysrael%2FHorizon | Trendshift" width="250" height="55"/></a>
-<a href="https://trendshift.io/repositories/22864?utm_source=trendshift-badge&amp;utm_medium=badge&amp;utm_campaign=badge-trendshift-22864" target="_blank" rel="noopener noreferrer"><img src="https://trendshift.io/api/badge/trendshift/repositories/22864/weekly?language=Python" alt="Thysrael%2FHorizon | Trendshift" width="250" height="55"/></a>
-<a href="https://hellogithub.com/repository/Thysrael/Horizon" target="_blank"><img src="https://abroad.hellogithub.com/v1/widgets/recommend.svg?rid=7a4b606e28e4477998d35851cf4fdddf&claim_uid=rtjnLkYT7ziQJUG" alt="Featured｜HelloGitHub" style="width: 250px; height: 54px;" width="250" height="54" /></a>
-<br>
+<p><strong>暗号資産市場とテクノロジーに焦点を当てたAIニュースレーダー。</strong></p>
 
 [![License](https://img.shields.io/badge/license-MIT-green.svg?style=for-the-badge&logo=opensourceinitiative&logoColor=white)](LICENSE)
 [![Tool uv](https://img.shields.io/badge/Tool-uv-4B275F?style=for-the-badge&logo=uv&logoColor=white)](https://github.com/astral-sh/uv)
-[![Website](https://img.shields.io/badge/Website-Horizon-263238?style=for-the-badge&logo=homepage&logoColor=white)](https://www.horizon1123.top/)
-[![Daily](https://img.shields.io/github/actions/workflow/status/Thysrael/Horizon/deploy-docs.yml?branch=main&label=Daily&style=for-the-badge&logo=date-fns&logoColor=white)](https://thysrael.github.io/Horizon/)
-[![Commit](https://img.shields.io/github/commit-activity/m/Thysrael/Horizon?label=Commit&style=for-the-badge&logo=github&logoColor=white)](https://github.com/Thysrael/Horizon/commits/main)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Thysrael/Horizon/pulls)
+[![Website](https://img.shields.io/badge/Website-BMTNews-263238?style=for-the-badge&logo=homepage&logoColor=white)](https://bmt.news/)
+[![Daily](https://img.shields.io/github/actions/workflow/status/ohxiyu/bmtnews/daily-summary.yml?branch=main&label=Daily&style=for-the-badge&logo=date-fns&logoColor=white)](https://bmt.news/)
+[![Commit](https://img.shields.io/github/commit-activity/m/ohxiyu/bmtnews?label=Commit&style=for-the-badge&logo=github&logoColor=white)](https://github.com/ohxiyu/bmtnews/commits/main)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/ohxiyu/bmtnews/pulls)
 ![Sources Welcome](https://img.shields.io/badge/sources-welcome-f97316?style=for-the-badge&logo=rss&logoColor=white)
 
 ![Claude](https://img.shields.io/badge/Claude-f0daba?style=flat-square&logo=anthropic&logoColor=black)
@@ -28,7 +23,9 @@
 
 📡 あなた専用のAI搭載ニュースレーダー。英語と中国語で日次ブリーフィングを生成します。 | 构建你专属的 AI 新闻雷达
 
-[📖 ライブデモ](https://thysrael.github.io/Horizon/) · [📋 設定ガイド](https://thysrael.github.io/Horizon/configuration) · [English](README.md) · [简体中文](README_zh.md)
+[📖 ライブデモ](https://bmt.news/) · [📋 設定ガイド](project-docs/configuration.md) · [English](README.md) · [简体中文](README_zh.md)
+
+オープンソースの [Horizon](https://github.com/Thysrael/Horizon) を基盤に構築しています。
 
 </div>
 
@@ -38,11 +35,11 @@
 <tr>
 <td width="50%">
 <p align="center"><strong>ランク付けされた日次ブリーフィング</strong></p>
-<img src="docs/assets/overview_en.png" alt="Daily Overview" />
+<img src="project-docs/assets/overview_en.png" alt="Daily Overview" />
 </td>
 <td width="50%">
 <p align="center"><strong>背景・要約・ディスカッション</strong></p>
-<img src="docs/assets/one_news_en.png" alt="News Detail" />
+<img src="project-docs/assets/one_news_en.png" alt="News Detail" />
 </td>
 </tr>
 </table>
@@ -54,15 +51,15 @@
 <tr>
 <td width="33.33%">
 <p align="center"><strong>ターミナル出力</strong></p>
-<img src="docs/assets/terminal_log.png" alt="Terminal Output" />
+<img src="project-docs/assets/terminal_log.png" alt="Terminal Output" />
 </td>
 <td width="33.33%">
 <p align="center"><strong>Feishu通知</strong></p>
-<img src="docs/assets/feishu_en.png" alt="Feishu Notification" />
+<img src="project-docs/assets/feishu_en.png" alt="Feishu Notification" />
 </td>
 <td width="33.33%">
 <p align="center"><strong>メール配信</strong></p>
-<img src="docs/assets/email.png" alt="Email Delivery" />
+<img src="project-docs/assets/email.png" alt="Email Delivery" />
 </td>
 </tr>
 </table>
@@ -176,8 +173,8 @@ flowchart LR
 **オプションA: ローカルインストール**
 
 ```bash
-git clone https://github.com/Thysrael/Horizon.git
-cd Horizon
+git clone https://github.com/ohxiyu/bmtnews.git
+cd bmtnews
 
 # uvでインストール（推奨）
 uv sync
@@ -206,8 +203,8 @@ uv pip install --only-binary=:all: openbb openbb-benzinga
 **オプションB: Docker**
 
 ```bash
-git clone https://github.com/Thysrael/Horizon.git
-cd Horizon
+git clone https://github.com/ohxiyu/bmtnews.git
+cd bmtnews
 
 # 環境を設定
 cp .env.example .env
@@ -305,7 +302,7 @@ Geminiの場合は`GOOGLE_API_KEY`を使用します。
 
 `data/config.json`内の任意の文字列値は、`${VAR_NAME}`で環境変数を参照できます。これは`ai.base_url`、非公開のRSSフィードURL、webhookエンドポイント、カスタムヘッダーテンプレートなどの値に便利です。
 
-完全なリファレンスについては、[設定ガイド](docs/configuration.md)を参照してください。
+完全なリファレンスについては、[設定ガイド](project-docs/configuration.md)を参照してください。
 
 ### 3. 実行
 
@@ -352,24 +349,24 @@ Horizonは、生成されたブリーフィングをいくつかの方法で公�
 | **Webhook通知** | 成功または失敗の結果をFeishu/Lark、DingTalk、Slack、Discord、または任意のカスタムWebhookエンドポイントへプッシュします |
 | **MCPサーバー** | Horizonのパイプラインステップをツールとして公開し、AIアシスタントが取得・スコアリング・フィルタリング・エンリッチ・要約・ワークフロー全体の実行を行えるようにします |
 
-セットアップの詳細については、[設定ガイド](docs/configuration.md)を参照してください。MCPツールのリファレンスとクライアントのセットアップについては、[`src/mcp/README.md`](src/mcp/README.md)と[`src/mcp/integration.md`](src/mcp/integration.md)を参照してください。
+セットアップの詳細については、[設定ガイド](project-docs/configuration.md)を参照してください。MCPツールのリファレンスとクライアントのセットアップについては、[`src/mcp/README.md`](src/mcp/README.md)と[`src/mcp/integration.md`](src/mcp/integration.md)を参照してください。
 
 ## サポーター
 
-Horizonは余暇に運営されているオープンソースプロジェクトです。プロジェクトを支援したい、またはここに掲載されたい場合は、お気軽に[issueを開く](https://github.com/Thysrael/Horizon/issues/new)か[メールでご連絡ください](mailto:thysrael@163.com)。
+Horizonは余暇に運営されているオープンソースプロジェクトです。BMTNewsを支援したい場合は、[issueを開いてください](https://github.com/ohxiyu/bmtnews/issues/new)。
 
 | サポーター | 詳細 |
 |-----------|---------|
-| [<img src="docs/assets/compshare-logo.png" alt="Compshare / 优云智算" width="220" />](https://www.compshare.cn/?ytag=GPU_YY_git_Horizon) | Compshareは現在Horizonをサポートしています。CompshareはUCloudのAIクラウドプラットフォームで、月額49人民元から始まるコスト効率の良い月額・従量課金の国内モデルエージェントプランや、安定した公式リレーの海外モデルを提供しています。Claude Code、Codex、APIの利用に対応し、エンタープライズグレードの高同時実行、24時間365日の技術サポート、セルフサービスの請求書発行を備えています。<br><br>彼らの[リンク](https://www.compshare.cn/?ytag=GPU_YY_git_Horizon)から登録すると、無料で5人民元のトライアルクレジットを受け取れます。 |
+| [<img src="project-docs/assets/compshare-logo.png" alt="Compshare / 优云智算" width="220" />](https://www.compshare.cn/?ytag=GPU_YY_git_Horizon) | Compshareは現在Horizonをサポートしています。CompshareはUCloudのAIクラウドプラットフォームで、月額49人民元から始まるコスト効率の良い月額・従量課金の国内モデルエージェントプランや、安定した公式リレーの海外モデルを提供しています。Claude Code、Codex、APIの利用に対応し、エンタープライズグレードの高同時実行、24時間365日の技術サポート、セルフサービスの請求書発行を備えています。<br><br>彼らの[リンク](https://www.compshare.cn/?ytag=GPU_YY_git_Horizon)から登録すると、無料で5人民元のトライアルクレジットを受け取れます。 |
 
 ## ドキュメント
 
 | ガイド | 説明 |
 |-------|-------------|
-| [設定](docs/configuration.md) | AIプロバイダー、情報源、フィルタリング、メール、webhook、GitHub Pages、MCPのセットアップ |
-| [スコアリング](docs/scoring.md) | Horizonがニュース項目を評価・ランク付けする方法 |
-| [スクレイパー](docs/scrapers.md) | 情報源スクレイパーの詳細と拡張に関する注記 |
-| [コンテンツエクストラクター](docs/extractors.md) | RSS情報源の全文抽出 |
+| [設定](project-docs/configuration.md) | AIプロバイダー、情報源、フィルタリング、メール、webhook、GitHub Pages、MCPのセットアップ |
+| [スコアリング](project-docs/scoring.md) | Horizonがニュース項目を評価・ランク付けする方法 |
+| [スクレイパー](project-docs/scrapers.md) | 情報源スクレイパーの詳細と拡張に関する注記 |
+| [コンテンツエクストラクター](project-docs/extractors.md) | RSS情報源の全文抽出 |
 | [MCPツール](src/mcp/README.md) | MCP互換クライアント向けのツールリファレンス |
 
 ## プロジェクトの状況

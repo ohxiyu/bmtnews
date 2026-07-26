@@ -1,20 +1,15 @@
 <div align="center">
 
-<h1>🌅 Horizon</h1>
+<h1>🛰️ BMTNews</h1>
 
-<p><strong>你只需享受新闻，剩下交给 Horizon。</strong></p>
-
-<a href="https://trendshift.io/repositories/22864?utm_source=trendshift-badge&amp;utm_medium=badge&amp;utm_campaign=badge-trendshift-22864" target="_blank" rel="noopener noreferrer"><img src="https://trendshift.io/api/badge/trendshift/repositories/22864/daily" alt="Thysrael%2FHorizon | Trendshift" width="250" height="55"/></a>
-<a href="https://trendshift.io/repositories/22864?utm_source=trendshift-badge&amp;utm_medium=badge&amp;utm_campaign=badge-trendshift-22864" target="_blank" rel="noopener noreferrer"><img src="https://trendshift.io/api/badge/trendshift/repositories/22864/weekly?language=Python" alt="Thysrael%2FHorizon | Trendshift" width="250" height="55"/></a>
-<a href="https://hellogithub.com/repository/Thysrael/Horizon" target="_blank"><img src="https://abroad.hellogithub.com/v1/widgets/recommend.svg?rid=7a4b606e28e4477998d35851cf4fdddf&claim_uid=rtjnLkYT7ziQJUG" alt="Featured｜HelloGitHub" style="width: 250px; height: 54px;" width="250" height="54" /></a>
-<br>
+<p><strong>聚焦加密市场与科技动态的 AI 新闻雷达。</strong></p>
 
 [![License](https://img.shields.io/badge/license-MIT-green.svg?style=for-the-badge&logo=opensourceinitiative&logoColor=white)](LICENSE)
 [![Tool uv](https://img.shields.io/badge/Tool-uv-4B275F?style=for-the-badge&logo=uv&logoColor=white)](https://github.com/astral-sh/uv)
-[![Website](https://img.shields.io/badge/Website-Horizon-263238?style=for-the-badge&logo=homepage&logoColor=white)](https://www.horizon1123.top/)
-[![Daily](https://img.shields.io/github/actions/workflow/status/Thysrael/Horizon/deploy-docs.yml?branch=main&label=Daily&style=for-the-badge&logo=date-fns&logoColor=white)](https://thysrael.github.io/Horizon/)
-[![Commit](https://img.shields.io/github/commit-activity/m/Thysrael/Horizon?label=Commit&style=for-the-badge&logo=github&logoColor=white)](https://github.com/Thysrael/Horizon/commits/main)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Thysrael/Horizon/pulls)
+[![Website](https://img.shields.io/badge/Website-BMTNews-263238?style=for-the-badge&logo=homepage&logoColor=white)](https://bmt.news/)
+[![Daily](https://img.shields.io/github/actions/workflow/status/ohxiyu/bmtnews/daily-summary.yml?branch=main&label=Daily&style=for-the-badge&logo=date-fns&logoColor=white)](https://bmt.news/)
+[![Commit](https://img.shields.io/github/commit-activity/m/ohxiyu/bmtnews?label=Commit&style=for-the-badge&logo=github&logoColor=white)](https://github.com/ohxiyu/bmtnews/commits/main)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/ohxiyu/bmtnews/pulls)
 ![Sources Welcome](https://img.shields.io/badge/sources-welcome-f97316?style=for-the-badge&logo=rss&logoColor=white)
 
 ![Claude](https://img.shields.io/badge/Claude-f0daba?style=flat-square&logo=anthropic&logoColor=black)
@@ -28,7 +23,9 @@
 
 📡 构建你专属的 AI 新闻雷达，生成中英双语日报。 | Your own AI-powered news radar.
 
-[📖 在线演示](https://thysrael.github.io/Horizon/) · [📋 配置指南](https://thysrael.github.io/Horizon/configuration) · [English](README.md) · [日本語](README_ja.md)
+[📖 在线演示](https://bmt.news/) · [📋 配置指南](project-docs/configuration.md) · [English](README.md) · [日本語](README_ja.md)
+
+基于开源项目 [Horizon](https://github.com/Thysrael/Horizon) 构建。
 
 </div>
 
@@ -38,11 +35,11 @@
 <tr>
 <td width="50%">
 <p align="center"><strong>按优先级排序的日报</strong></p>
-<img src="docs/assets/overview_zh.png" alt="日报总览" />
+<img src="project-docs/assets/overview_zh.png" alt="日报总览" />
 </td>
 <td width="50%">
 <p align="center"><strong>背景、总结与评论</strong></p>
-<img src="docs/assets/one_news_zh.png" alt="新闻详情" />
+<img src="project-docs/assets/one_news_zh.png" alt="新闻详情" />
 </td>
 </tr>
 </table>
@@ -54,15 +51,15 @@
 <tr>
 <td width="33.33%">
 <p align="center"><strong>终端输出</strong></p>
-<img src="docs/assets/terminal_log.png" alt="终端输出" />
+<img src="project-docs/assets/terminal_log.png" alt="终端输出" />
 </td>
 <td width="33.33%">
 <p align="center"><strong>飞书通知</strong></p>
-<img src="docs/assets/feishu_zh.png" alt="飞书通知" />
+<img src="project-docs/assets/feishu_zh.png" alt="飞书通知" />
 </td>
 <td width="33.33%">
 <p align="center"><strong>邮件推送</strong></p>
-<img src="docs/assets/email.png" alt="邮件推送" />
+<img src="project-docs/assets/email.png" alt="邮件推送" />
 </td>
 </tr>
 </table>
@@ -171,11 +168,11 @@ flowchart LR
 
 ## 赞助
 
-Horizon 是一个业余时间维护的开源项目。如果你愿意支持这个项目，或希望出现在这里，欢迎[创建一个 Issue](https://github.com/Thysrael/Horizon/issues/new) 或[发邮件](mailto:thysrael@163.com)联系我。
+Horizon 是一个业余时间维护的开源项目。如果你愿意支持 BMTNews，欢迎[创建一个 Issue](https://github.com/ohxiyu/bmtnews/issues/new)。
 
 | 支持方 | 说明 |
 |--------|------|
-| [<img src="docs/assets/compshare-logo.png" alt="Compshare / 优云智算" width="220" />](https://www.compshare.cn/?ytag=GPU_YY_git_Horizon) | 优云智算目前正在支持 Horizon。优云智算是 UCloud 旗下 AI 云平台，主打包月、按次的高性价比国模 Agent Plan 套餐，低至 49 元/月起，同时提供官转稳定海外模型。支持接入 Claude Code、Codex 及 API 调用，支持企业高并发、7*24 技术支持和自助开票。<br><br>通过其[链接](https://www.compshare.cn/?ytag=GPU_YY_git_Horizon)注册，可获得 5 元平台体验金。 |
+| [<img src="project-docs/assets/compshare-logo.png" alt="Compshare / 优云智算" width="220" />](https://www.compshare.cn/?ytag=GPU_YY_git_Horizon) | 优云智算目前正在支持 Horizon。优云智算是 UCloud 旗下 AI 云平台，主打包月、按次的高性价比国模 Agent Plan 套餐，低至 49 元/月起，同时提供官转稳定海外模型。支持接入 Claude Code、Codex 及 API 调用，支持企业高并发、7*24 技术支持和自助开票。<br><br>通过其[链接](https://www.compshare.cn/?ytag=GPU_YY_git_Horizon)注册，可获得 5 元平台体验金。 |
 
 ## 快速开始
 
@@ -184,8 +181,8 @@ Horizon 是一个业余时间维护的开源项目。如果你愿意支持这个
 #### 方式 A：本地安装
 
 ```bash
-git clone https://github.com/Thysrael/Horizon.git
-cd horizon
+git clone https://github.com/ohxiyu/bmtnews.git
+cd bmtnews
 
 # 使用 uv 安装（推荐）
 uv sync
@@ -214,8 +211,8 @@ uv pip install --only-binary=:all: openbb openbb-benzinga
 #### 方式 B：Docker
 
 ```bash
-git clone https://github.com/Thysrael/Horizon.git
-cd horizon
+git clone https://github.com/ohxiyu/bmtnews.git
+cd bmtnews
 
 # 配置环境
 cp .env.example .env
@@ -297,7 +294,7 @@ cp data/config.example.json data/config.json  # 自定义信息源
 
 `data/config.json` 里的任意字符串值都可以通过 `${VAR_NAME}` 引用环境变量。这适合用于 `ai.base_url`、私有 RSS 链接、Webhook 地址或自定义请求头模板等字段。
 
-完整配置参考请查看[配置指南](docs/configuration.md)。
+完整配置参考请查看[配置指南](project-docs/configuration.md)。
 
 ### 3. 运行
 
@@ -344,16 +341,16 @@ Horizon 支持通过多种方式发布和分发生成的日报：
 | **Webhook 通知** | 在成功或失败时将结果推送到飞书、钉钉、Slack、Discord 或任意 Webhook 端点 |
 | **MCP Server** | 将抓取、打分、过滤、富化、摘要和完整 pipeline 暴露为工具，供 AI 助手调用 |
 
-具体配置见[配置指南](docs/configuration.md)。MCP 工具说明和客户端接入见 [`src/mcp/README.md`](src/mcp/README.md) 与 [`src/mcp/integration.md`](src/mcp/integration.md)。
+具体配置见[配置指南](project-docs/configuration.md)。MCP 工具说明和客户端接入见 [`src/mcp/README.md`](src/mcp/README.md) 与 [`src/mcp/integration.md`](src/mcp/integration.md)。
 
 ## 文档
 
 | 文档 | 内容 |
 |------|------|
-| [配置指南](docs/configuration.md) | AI 模型、信息源、过滤、邮件、Webhook、GitHub Pages 和 MCP 配置 |
-| [评分机制](docs/scoring.md) | Horizon 如何评估和排序新闻 |
-| [抓取器](docs/scrapers.md) | 信息源抓取器说明和扩展细节 |
-| [内容提取器](docs/extractors.md) | RSS 信息源的全文提取 |
+| [配置指南](project-docs/configuration.md) | AI 模型、信息源、过滤、邮件、Webhook、GitHub Pages 和 MCP 配置 |
+| [评分机制](project-docs/scoring.md) | Horizon 如何评估和排序新闻 |
+| [抓取器](project-docs/scrapers.md) | 信息源抓取器说明和扩展细节 |
+| [内容提取器](project-docs/extractors.md) | RSS 信息源的全文提取 |
 | [MCP 工具](src/mcp/README.md) | MCP 客户端可调用的工具说明 |
 
 ## 项目状态
