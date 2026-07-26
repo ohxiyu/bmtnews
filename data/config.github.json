@@ -18,97 +18,281 @@
   "sources": {
     "github": [
       {
-        "type": "user_events",
-        "username": "karpathy",
-        "enabled": true
+        "type": "repo_releases",
+        "owner": "bitcoin",
+        "repo": "bitcoin",
+        "enabled": true,
+        "category": "crypto-protocols"
       },
       {
         "type": "repo_releases",
-        "owner": "vllm-project",
-        "repo": "vllm",
-        "enabled": true
+        "owner": "ethereum",
+        "repo": "go-ethereum",
+        "enabled": true,
+        "category": "crypto-protocols"
       },
       {
         "type": "repo_releases",
-        "owner": "sgl-project",
-        "repo": "sglang",
-        "enabled": true
+        "owner": "anza-xyz",
+        "repo": "agave",
+        "enabled": true,
+        "category": "crypto-protocols"
       },
       {
         "type": "repo_releases",
-        "owner": "triton-lang",
-        "repo": "triton",
-        "enabled": true
+        "owner": "lightningnetwork",
+        "repo": "lnd",
+        "enabled": true,
+        "category": "crypto-protocols"
+      },
+      {
+        "type": "repo_releases",
+        "owner": "cosmos",
+        "repo": "cosmos-sdk",
+        "enabled": true,
+        "category": "crypto-protocols"
+      },
+      {
+        "type": "repo_releases",
+        "owner": "ava-labs",
+        "repo": "avalanchego",
+        "enabled": true,
+        "category": "crypto-protocols"
       }
     ],
     "hackernews": {
       "enabled": true,
-      "fetch_top_stories": 30,
-      "min_score": 150
+      "fetch_top_stories": 20,
+      "min_score": 120,
+      "category": "tech-community"
     },
     "rss": [
       {
-        "name": "Simon Willison",
-        "url": "https://simonwillison.net/atom/everything/",
+        "name": "CoinDesk",
+        "url": "https://www.coindesk.com/arc/outboundfeeds/rss/",
         "enabled": true,
-        "category": "ai-tools"
+        "category": "crypto-markets"
+      },
+      {
+        "name": "Decrypt",
+        "url": "https://decrypt.co/feed",
+        "enabled": true,
+        "category": "crypto-markets"
+      },
+      {
+        "name": "Cointelegraph",
+        "url": "https://cointelegraph.com/rss",
+        "enabled": true,
+        "category": "crypto-markets"
+      },
+      {
+        "name": "Bitcoin Magazine",
+        "url": "https://bitcoinmagazine.com/.rss/full/",
+        "enabled": true,
+        "category": "crypto-protocols"
+      },
+      {
+        "name": "Kraken Blog",
+        "url": "https://blog.kraken.com/feed",
+        "enabled": true,
+        "category": "exchange-announcements"
+      },
+      {
+        "name": "Coinbase Status",
+        "url": "https://status.coinbase.com/history.rss",
+        "enabled": true,
+        "category": "exchange-operations"
+      },
+      {
+        "name": "Kraken Status",
+        "url": "https://status.kraken.com/history.rss",
+        "enabled": true,
+        "category": "exchange-operations"
+      },
+      {
+        "name": "Federal Reserve Press Releases",
+        "url": "https://www.federalreserve.gov/feeds/press_all.xml",
+        "enabled": true,
+        "category": "macro-regulation"
+      },
+      {
+        "name": "SEC Press Releases",
+        "url": "https://www.sec.gov/news/pressreleases.rss",
+        "enabled": true,
+        "category": "crypto-regulation"
       },
       {
         "name": "GitHub Trending - Daily",
         "url": "https://mshibanami.github.io/GitHubTrendingRSS/daily/all.xml",
         "enabled": true,
-        "category": "github-trending"
-      },
-      {
-        "name": "Semianalysis",
-        "url": "https://newsletter.semianalysis.com/feed",
-        "enabled": true,
-        "category": "semiconductors"
-      },
-      {
-        "name": "LWN.net",
-        "url": "https://lwn.net/headlines/full_text?key=${LWN_KEY}",
-        "enabled": false,
-        "category": "linux-kernel"
+        "category": "devtools"
       }
     ],
     "reddit": {
       "enabled": true,
       "subreddits": [
         {
-          "subreddit": "MachineLearning",
+          "subreddit": "CryptoCurrency",
           "enabled": true,
           "sort": "hot",
           "time_filter": "day",
-          "fetch_limit": 10,
-          "min_score": 60
+          "fetch_limit": 8,
+          "min_score": 100,
+          "category": "crypto-markets"
         },
         {
-          "subreddit": "LocalLLaMA",
+          "subreddit": "Bitcoin",
           "enabled": true,
           "sort": "hot",
           "time_filter": "day",
-          "fetch_limit": 10,
-          "min_score": 60
+          "fetch_limit": 8,
+          "min_score": 80,
+          "category": "crypto-protocols"
+        },
+        {
+          "subreddit": "ethereum",
+          "enabled": true,
+          "sort": "hot",
+          "time_filter": "day",
+          "fetch_limit": 8,
+          "min_score": 50,
+          "category": "crypto-protocols"
+        },
+        {
+          "subreddit": "defi",
+          "enabled": true,
+          "sort": "hot",
+          "time_filter": "day",
+          "fetch_limit": 8,
+          "min_score": 25,
+          "category": "crypto-protocols"
+        },
+        {
+          "subreddit": "CryptoMarkets",
+          "enabled": true,
+          "sort": "hot",
+          "time_filter": "day",
+          "fetch_limit": 8,
+          "min_score": 25,
+          "category": "crypto-markets"
         }
       ],
       "users": [],
-      "fetch_comments": 10
+      "fetch_comments": 5
     },
     "telegram": {
       "enabled": true,
       "channels": [
         {
-          "channel": "zaihuapd",
+          "channel": "binance_announcements",
           "enabled": true,
-          "fetch_limit": 20
+          "fetch_limit": 12,
+          "category": "exchange-announcements"
+        },
+        {
+          "channel": "OKXAnnouncements",
+          "enabled": true,
+          "fetch_limit": 12,
+          "category": "exchange-announcements"
+        },
+        {
+          "channel": "Bybit_Announcements",
+          "enabled": true,
+          "fetch_limit": 12,
+          "category": "exchange-announcements"
         }
       ]
+    },
+    "ossinsight": {
+      "enabled": true,
+      "period": "past_24_hours",
+      "languages": [
+        "All",
+        "Rust",
+        "Go"
+      ],
+      "keywords": [
+        "bitcoin",
+        "ethereum",
+        "solana",
+        "blockchain",
+        "crypto",
+        "defi",
+        "stablecoin",
+        "wallet",
+        "zero knowledge",
+        "zk"
+      ],
+      "min_stars": 5,
+      "max_items": 15,
+      "category": "crypto-protocols"
+    },
+    "gdelt": {
+      "enabled": true,
+      "query": "(cryptocurrency OR bitcoin OR ethereum OR stablecoin OR blockchain)",
+      "mode": "ArtList",
+      "max_records": 35,
+      "timespan": "24h",
+      "language": "english",
+      "country": null,
+      "category": "crypto-markets"
+    },
+    "google_news": {
+      "enabled": true,
+      "query": "(Binance OR OKX OR Bybit OR Coinbase OR Kraken) (listing OR delisting OR maintenance OR security OR regulation)",
+      "language": "en",
+      "country": "US",
+      "ceid": null,
+      "max_results": 40,
+      "category": "exchange-announcements"
     }
   },
   "filtering": {
-    "ai_score_threshold": 8.0,
-    "time_window_hours": 24
+    "ai_score_threshold": 7.0,
+    "time_window_hours": 24,
+    "max_items": 24,
+    "category_groups": {
+      "exchange": {
+        "name": "Exchange Announcements",
+        "limit": 7,
+        "categories": [
+          "exchange-announcements",
+          "exchange-operations"
+        ]
+      },
+      "markets": {
+        "name": "Crypto Markets",
+        "limit": 6,
+        "categories": [
+          "crypto-markets"
+        ]
+      },
+      "protocols": {
+        "name": "Protocols and On-chain",
+        "limit": 5,
+        "categories": [
+          "crypto-protocols"
+        ]
+      },
+      "regulation": {
+        "name": "Regulation and Macro",
+        "limit": 4,
+        "categories": [
+          "crypto-regulation",
+          "macro-regulation"
+        ]
+      },
+      "technology": {
+        "name": "Technology",
+        "limit": 2,
+        "categories": [
+          "tech-community",
+          "devtools"
+        ]
+      }
+    },
+    "default_group": "other",
+    "default_group_limit": 2
   },
   "webhook": {
     "enabled": false,
