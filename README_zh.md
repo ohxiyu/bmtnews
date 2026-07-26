@@ -318,6 +318,12 @@ docker compose run --rm horizon --hours 48   # 抓取最近 48 小时的内容
 
 Horizon 非常适合作为 **GitHub Actions** 定时任务运行。查看 [`.github/workflows/daily-summary.yml`](.github/workflows/daily-summary.yml) 获取现成的工作流配置，可自动生成日报并部署到 GitHub Pages。
 
+每次原生 pipeline 运行还会生成 `data/run-report.json`，记录采集、URL 去重、
+当日过滤、AI 分析、阈值筛选、主题去重和最终展示数量，以及各顶层来源的
+成功或失败状态。该运行时文件不会提交到仓库；GitHub Actions 会将其渲染为
+当前 workflow run 的 Job Summary。部分来源失败显示为警告，全部来源失败
+仍会使任务失败。
+
 ## 支持的信息源
 
 | 信息源 | 抓取内容 | 评论收集 |

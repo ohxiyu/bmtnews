@@ -179,7 +179,26 @@
     return numbers && numbers.length ? parseInt(numbers[0], 10) : 0;
   }
 
-  function updateFeedStats(scope, articles, root, fetchedCount) {
+  function parseRunStat(value) {
+    var parsed = parseInt(value, 10);
+    return Number.isFinite(parsed) && parsed >= 0 ? parsed : null;
+  }
+
+  function readRunStats(root) {
+    var marker = root.querySelector(':scope > .run-stats');
+    if (!marker) {
+      return {
+        fetched: null,
+        analyzed: parseFetchedCount(root)
+      };
+    }
+    return {
+      fetched: parseRunStat(marker.dataset.fetched),
+      analyzed: parseRunStat(marker.dataset.analyzed)
+    };
+  }
+
+  function updateFeedStats(scope, articles, root, runStats) {
     var critical = articles.filter(function (article) {
       return parseFloat(article.dataset.score || '0') >= 9;
     }).length;
@@ -191,7 +210,8 @@
 
     var values = {
       selected: articles.length,
-      fetched: fetchedCount || '—',
+      fetched: runStats.fetched === null ? '—' : runStats.fetched,
+      analyzed: runStats.analyzed === null ? '—' : runStats.analyzed,
       critical: critical,
       sources: sources.size || '—'
     };
@@ -365,7 +385,7 @@
     processScoreBadges(root);
     markSemanticElements(root);
 
-    var fetchedCount = parseFetchedCount(root);
+    var runStats = readRunStats(root);
     var quote = root.querySelector(':scope > blockquote:first-of-type');
     var selectionText = textOf(quote);
     var toc = root.querySelector(':scope > ol');
@@ -410,7 +430,7 @@
 
     root.replaceChildren(toolbar, layout);
     var statsScope = root.closest('.daily-day') || root;
-    updateFeedStats(statsScope, articles, stream, fetchedCount);
+    updateFeedStats(statsScope, articles, stream, runStats);
     setupFilters(filterHost, articles, language, function (category) {
       tocItems.forEach(function (item) {
         item.hidden = category !== 'all' && item.dataset.category !== category;
@@ -462,8 +482,9 @@
     var stats = document.createElement('div');
     stats.className = 'day-divider-stats';
     stats.setAttribute('aria-label', date + (language === 'zh' ? ' 日报统计' : ' brief statistics'));
-    stats.appendChild(createDayStat('selected', language === 'zh' ? '条精选' : 'selected', language === 'zh' ? '选' : 'S'));
-    stats.appendChild(createDayStat('fetched', language === 'zh' ? '条分析' : 'analyzed', language === 'zh' ? '析' : 'A'));
+    stats.appendChild(createDayStat('fetched', language === 'zh' ? '条采集' : 'fetched', language === 'zh' ? '采' : 'F'));
+    stats.appendChild(createDayStat('analyzed', language === 'zh' ? '条分析' : 'analyzed', language === 'zh' ? '析' : 'A'));
+    stats.appendChild(createDayStat('selected', language === 'zh' ? '条展示' : 'displayed', language === 'zh' ? '展' : 'D'));
     stats.appendChild(createDayStat('critical', language === 'zh' ? '条高优先级' : 'high priority', language === 'zh' ? '高' : 'H'));
     header.appendChild(heading);
     header.appendChild(stats);

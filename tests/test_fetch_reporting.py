@@ -110,10 +110,14 @@ def test_partial_failure_keeps_items_and_source_names(monkeypatch) -> None:
     assert report.failed_count == 1
     source_reports = report.to_dict()["sources"]
     assert isinstance(source_reports, list)
+    assert source_reports[0]["subsource_counts"] == {"tester": 1}
     assert source_reports[1]["error"] == "ValueError: unavailable"
 
 
-def test_native_run_raises_when_every_attempted_source_failed(monkeypatch) -> None:
+def test_native_run_raises_when_every_attempted_source_failed(
+    tmp_path,
+    monkeypatch,
+) -> None:
     orchestrator = make_orchestrator()
     orchestrator.config = SimpleNamespace(  # type: ignore[assignment]
         email=None,
@@ -134,14 +138,20 @@ def test_native_run_raises_when_every_attempted_source_failed(monkeypatch) -> No
         return []
 
     monkeypatch.setattr(orchestrator, "fetch_all_sources", fetch_all_sources)
+    monkeypatch.chdir(tmp_path)
 
     with pytest.raises(RuntimeError, match="All 2 attempted sources failed.*GitHub.*RSS Feeds"):
         asyncio.run(orchestrator.run())
 
     send_failure.assert_awaited_once()
+    payload = (tmp_path / "data" / "run-report.json").read_text(encoding="utf-8")
+    assert '"status": "failure"' in payload
 
 
-def test_native_run_treats_all_success_empty_as_no_content(monkeypatch) -> None:
+def test_native_run_treats_all_success_empty_as_no_content(
+    tmp_path,
+    monkeypatch,
+) -> None:
     orchestrator = make_orchestrator()
     orchestrator.config = SimpleNamespace(  # type: ignore[assignment]
         email=None,
@@ -158,7 +168,11 @@ def test_native_run_treats_all_success_empty_as_no_content(monkeypatch) -> None:
         return []
 
     monkeypatch.setattr(orchestrator, "fetch_all_sources", fetch_all_sources)
+    monkeypatch.chdir(tmp_path)
 
     asyncio.run(orchestrator.run())
 
     send_failure.assert_not_awaited()
+    payload = (tmp_path / "data" / "run-report.json").read_text(encoding="utf-8")
+    assert '"status": "success"' in payload
+    assert '"code": "no_new_content"' in payload
