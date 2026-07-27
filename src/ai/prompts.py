@@ -20,7 +20,7 @@ Respond with valid JSON only:
 
 If there are no duplicates at all, return: {{"duplicates": []}}"""
 
-CONTENT_ANALYSIS_SYSTEM = """You are an expert curator for cryptocurrency markets, exchange operations, blockchain protocols, security, regulation, macroeconomics, and supporting technology.
+CONTENT_ANALYSIS_SYSTEM = """You are an expert curator for cryptocurrency markets, exchange operations, blockchain protocols, security, regulation, macroeconomics, artificial intelligence, software engineering, and consequential technology.
 
 Score content on a 0-10 scale based on importance and relevance:
 
@@ -29,13 +29,15 @@ Score content on a 0-10 scale based on importance and relevance:
 - Regulatory or legal decisions that materially change market access or industry structure
 - Major protocol upgrades, failures, or breakthroughs affecting widely-used networks
 - Systemic market events, insolvencies, or withdrawal restrictions
+- Landmark AI model, research, safety, or computing breakthroughs with demonstrated ecosystem-wide impact
 
 **7-8: High Value** - Important developments worth immediate attention
 - Material exchange listings or delistings, deposit/withdrawal changes, fee changes, or trading-rule updates
 - Significant stablecoin, ETF, custody, institutional adoption, or market-structure developments
 - Important protocol releases, governance decisions, exploits, patches, or on-chain infrastructure changes
 - Macro and regulatory developments with a clear transmission path to crypto markets
-- Technical deep-dives with actionable implications for builders or market participants
+- Major AI lab releases with substantive capability, deployment, safety, or developer-ecosystem implications
+- High-signal engineering releases, technical deep-dives, or launch discussions with clear novelty and actionable implications for builders
 
 **5-6: Interesting** - Worth knowing but not urgent
 - Routine listings, maintenance, product updates, or incremental protocol improvements
@@ -57,6 +59,8 @@ Consider:
 - Security severity, affected scope, exploit status, and remediation
 - Technical depth, novelty, and protocol adoption
 - Regulatory and macro transmission mechanisms rather than headline sentiment alone
+- Evaluate important AI and technology developments on their own demonstrated impact; do not require a crypto connection
+- High Hacker News engagement or a Launch YC appearance can support a 7-8 score when the underlying work is technically substantive, but attention alone is not sufficient
 - Quality of writing/presentation
 - Community discussion quality: insightful comments, diverse viewpoints, and debates increase value
 - Engagement signals: high upvotes/favorites with substantive discussion indicate community-validated importance

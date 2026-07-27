@@ -32,20 +32,28 @@
         "type": "repo_releases",
         "owner": "astral-sh",
         "repo": "uv",
-        "enabled": true
+        "enabled": true,
+        "category": "ai-devtools"
       }
     ],
     "hackernews": {
       "enabled": true,
       "fetch_top_stories": 20,
-      "min_score": 100
+      "min_score": 100,
+      "category": "tech-community"
     },
     "rss": [
+      {
+        "name": "OpenAI Blog",
+        "url": "https://openai.com/blog/rss.xml",
+        "enabled": true,
+        "category": "ai-labs"
+      },
       {
         "name": "Simon Willison",
         "url": "https://simonwillison.net/atom/everything/",
         "enabled": true,
-        "category": "ai-tools"
+        "category": "ai-devtools"
       },
       {
         "name": "LWN.net (subscriber full-text)",
@@ -75,6 +83,17 @@
         }
       ],
       "fetch_comments": 5
+    },
+    "telegram": {
+      "enabled": false,
+      "channels": [
+        {
+          "channel": "binance_announcements",
+          "enabled": true,
+          "fetch_limit": 10,
+          "category": "exchange-announcements"
+        }
+      ]
     },
     "twitter": {
       "enabled": false,
@@ -129,14 +148,55 @@
     }
   },
   "filtering": {
-    "ai_score_threshold": 6.0,
+    "ai_score_threshold": 7.0,
     "time_window_hours": 24,
-    "daily_timezone": "UTC",
+    "daily_timezone": "Asia/Shanghai",
     "preserve_daily_items": false,
-    "max_items": null,
-    "category_groups": {},
+    "max_items": 24,
+    "category_groups": {
+      "exchange": {
+        "name": "Exchange Announcements",
+        "limit": 6,
+        "categories": [
+          "exchange-announcements",
+          "exchange-operations"
+        ]
+      },
+      "markets": {
+        "name": "Crypto Markets",
+        "limit": 3,
+        "categories": [
+          "crypto-markets"
+        ]
+      },
+      "protocols": {
+        "name": "Protocols and On-chain",
+        "limit": 3,
+        "categories": [
+          "crypto-protocols"
+        ]
+      },
+      "regulation": {
+        "name": "Regulation and Macro",
+        "limit": 4,
+        "categories": [
+          "crypto-regulation",
+          "macro-regulation"
+        ]
+      },
+      "technology": {
+        "name": "Technology",
+        "limit": 7,
+        "categories": [
+          "ai-labs",
+          "ai-devtools",
+          "tech-community",
+          "ai-media"
+        ]
+      }
+    },
     "default_group": "other",
-    "default_group_limit": null
+    "default_group_limit": 1
   },
   "webhook": {
     "enabled": false,

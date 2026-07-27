@@ -43,6 +43,16 @@ def test_rss_ids_are_deterministic() -> None:
     assert first == "rss:example.com_feed.xml:5e2d5d1e58e94d76"
 
 
+def test_rss_requests_use_browser_compatible_user_agent() -> None:
+    client = _make_feed_client(_FEED)
+    source = RSSSourceConfig(name="Test", url="https://example.com/feed.xml")
+
+    asyncio.run(RSSScraper([source], client).fetch(_SINCE))
+
+    headers = client.get.await_args.kwargs["headers"]
+    assert headers["User-Agent"].startswith("Mozilla/5.0")
+
+
 def _make_registry(name: str, extractor):
     registry = MagicMock()
     registry.get.side_effect = lambda n: extractor if n == name else None

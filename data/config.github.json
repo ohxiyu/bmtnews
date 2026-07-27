@@ -40,33 +40,64 @@
       },
       {
         "type": "repo_releases",
+        "owner": "paradigmxyz",
+        "repo": "reth",
+        "enabled": true,
+        "category": "crypto-protocols"
+      },
+      {
+        "type": "repo_releases",
         "owner": "lightningnetwork",
         "repo": "lnd",
-        "enabled": true,
+        "enabled": false,
         "category": "crypto-protocols"
       },
       {
         "type": "repo_releases",
         "owner": "cosmos",
         "repo": "cosmos-sdk",
-        "enabled": true,
+        "enabled": false,
         "category": "crypto-protocols"
       },
       {
         "type": "repo_releases",
         "owner": "ava-labs",
         "repo": "avalanchego",
-        "enabled": true,
+        "enabled": false,
         "category": "crypto-protocols"
       }
     ],
     "hackernews": {
       "enabled": true,
       "fetch_top_stories": 20,
-      "min_score": 120,
+      "min_score": 100,
       "category": "tech-community"
     },
     "rss": [
+      {
+        "name": "White House Presidential Actions",
+        "url": "https://www.whitehouse.gov/presidential-actions/feed/",
+        "enabled": true,
+        "category": "macro-regulation"
+      },
+      {
+        "name": "Federal Reserve Press Releases",
+        "url": "https://www.federalreserve.gov/feeds/press_all.xml",
+        "enabled": true,
+        "category": "macro-regulation"
+      },
+      {
+        "name": "SEC Press Releases",
+        "url": "https://www.sec.gov/news/pressreleases.rss",
+        "enabled": true,
+        "category": "crypto-regulation"
+      },
+      {
+        "name": "CFTC Enforcement",
+        "url": "https://www.cftc.gov/RSS/RSSENF/rssenf.xml",
+        "enabled": true,
+        "category": "crypto-regulation"
+      },
       {
         "name": "CoinDesk",
         "url": "https://www.coindesk.com/arc/outboundfeeds/rss/",
@@ -74,22 +105,10 @@
         "category": "crypto-markets"
       },
       {
-        "name": "Decrypt",
-        "url": "https://decrypt.co/feed",
+        "name": "Tether",
+        "url": "https://tether.io/feed",
         "enabled": true,
         "category": "crypto-markets"
-      },
-      {
-        "name": "Cointelegraph",
-        "url": "https://cointelegraph.com/rss",
-        "enabled": true,
-        "category": "crypto-markets"
-      },
-      {
-        "name": "Bitcoin Magazine",
-        "url": "https://bitcoinmagazine.com/.rss/full/",
-        "enabled": true,
-        "category": "crypto-protocols"
       },
       {
         "name": "Kraken Blog",
@@ -106,30 +125,84 @@
       {
         "name": "Kraken Status",
         "url": "https://status.kraken.com/history.rss",
-        "enabled": true,
+        "enabled": false,
         "category": "exchange-operations"
       },
       {
-        "name": "Federal Reserve Press Releases",
-        "url": "https://www.federalreserve.gov/feeds/press_all.xml",
+        "name": "OpenAI Blog",
+        "url": "https://openai.com/blog/rss.xml",
         "enabled": true,
-        "category": "macro-regulation"
+        "category": "ai-labs"
       },
       {
-        "name": "SEC Press Releases",
-        "url": "https://www.sec.gov/news/pressreleases.rss",
+        "name": "Anthropic News",
+        "url": "https://news.google.com/rss/search?q=site:anthropic.com+when:7d&hl=en-US&gl=US&ceid=US:en",
         "enabled": true,
-        "category": "crypto-regulation"
+        "category": "ai-labs"
+      },
+      {
+        "name": "Google AI Blog",
+        "url": "https://blog.google/technology/ai/rss/",
+        "enabled": true,
+        "category": "ai-labs"
+      },
+      {
+        "name": "Hugging Face Blog",
+        "url": "https://huggingface.co/blog/feed.xml",
+        "enabled": true,
+        "category": "ai-labs"
+      },
+      {
+        "name": "Simon Willison",
+        "url": "https://simonwillison.net/atom/everything/",
+        "enabled": true,
+        "category": "ai-devtools"
       },
       {
         "name": "GitHub Trending - Daily",
         "url": "https://mshibanami.github.io/GitHubTrendingRSS/daily/all.xml",
         "enabled": true,
-        "category": "devtools"
+        "category": "ai-devtools"
+      },
+      {
+        "name": "Launch YC",
+        "url": "https://hnrss.org/launches",
+        "enabled": true,
+        "category": "tech-community"
+      },
+      {
+        "name": "QbitAI 量子位",
+        "url": "https://www.qbitai.com/feed",
+        "enabled": true,
+        "category": "ai-media"
+      },
+      {
+        "name": "GitHub Blog",
+        "url": "https://github.blog/feed/",
+        "enabled": false,
+        "category": "ai-devtools"
+      },
+      {
+        "name": "Decrypt",
+        "url": "https://decrypt.co/feed",
+        "enabled": false,
+        "category": "crypto-markets"
+      },
+      {
+        "name": "Cointelegraph",
+        "url": "https://cointelegraph.com/rss",
+        "enabled": false,
+        "category": "crypto-markets"
+      },
+      {
+        "name": "Bitcoin Magazine",
+        "url": "https://bitcoinmagazine.com/.rss/full/",
+        "enabled": false,
+        "category": "crypto-protocols"
       }
     ],
     "reddit": {
-      "enabled": true,
+      "enabled": false,
       "subreddits": [
         {
           "subreddit": "CryptoCurrency",
@@ -186,25 +259,31 @@
         {
           "channel": "binance_announcements",
           "enabled": true,
-          "fetch_limit": 12,
+          "fetch_limit": 10,
           "category": "exchange-announcements"
         },
         {
           "channel": "OKXAnnouncements",
           "enabled": true,
-          "fetch_limit": 12,
+          "fetch_limit": 8,
           "category": "exchange-announcements"
         },
         {
           "channel": "Bybit_Announcements",
           "enabled": true,
-          "fetch_limit": 12,
+          "fetch_limit": 8,
+          "category": "exchange-announcements"
+        },
+        {
+          "channel": "hyperliquid_announcements",
+          "enabled": true,
+          "fetch_limit": 10,
           "category": "exchange-announcements"
         }
       ]
     },
     "ossinsight": {
-      "enabled": true,
+      "enabled": false,
       "period": "past_24_hours",
       "languages": [
         "All",
@@ -228,7 +307,7 @@
       "category": "crypto-protocols"
     },
     "gdelt": {
-      "enabled": true,
+      "enabled": false,
       "query": "(cryptocurrency OR bitcoin OR ethereum OR stablecoin OR blockchain)",
       "mode": "ArtList",
       "max_records": 35,
@@ -238,7 +317,7 @@
       "category": "crypto-markets"
     },
     "google_news": {
-      "enabled": true,
+      "enabled": false,
       "query": "(Binance OR OKX OR Bybit OR Coinbase OR Kraken) (listing OR delisting OR maintenance OR security OR regulation)",
       "language": "en",
       "country": "US",
@@ -256,7 +335,7 @@
     "category_groups": {
       "exchange": {
         "name": "Exchange Announcements",
-        "limit": 7,
+        "limit": 6,
         "categories": [
           "exchange-announcements",
           "exchange-operations"
@@ -264,14 +343,14 @@
       },
       "markets": {
         "name": "Crypto Markets",
-        "limit": 6,
+        "limit": 3,
         "categories": [
           "crypto-markets"
         ]
       },
       "protocols": {
         "name": "Protocols and On-chain",
-        "limit": 5,
+        "limit": 3,
         "categories": [
           "crypto-protocols"
         ]
@@ -286,15 +365,17 @@
       },
       "technology": {
         "name": "Technology",
-        "limit": 2,
+        "limit": 7,
         "categories": [
+          "ai-labs",
+          "ai-devtools",
           "tech-community",
-          "devtools"
+          "ai-media"
         ]
       }
     },
     "default_group": "other",
-    "default_group_limit": 2
+    "default_group_limit": 1
   },
   "webhook": {
     "enabled": false,
