@@ -5,9 +5,9 @@ date: 2026-07-27
 lang: zh
 ---
 
-<div class="run-stats" hidden data-fetched="84" data-analyzed="34" data-selected="7" data-critical="0"></div>
+<div class="run-stats" hidden data-fetched="86" data-analyzed="39" data-selected="7" data-critical="0"></div>
 
-> 从 34 条内容中筛选出 7 条重要资讯。
+> 从 39 条内容中筛选出 7 条重要资讯。
 
 ---
 
@@ -41,8 +41,6 @@ rss · Cointelegraph · 7月27日 09:01
 
 **社区讨论**: 在 Storj 社区论坛上，一些用户此前曾质疑 STORJ 代币的实用性，指出除了用 STORJ 支付可享受 10%折扣外，需求驱动因素有限。破产申请和拟议的股权转换可能重新引发关于代币价值和持有者权利的讨论。
 
-**标签**: `#bankruptcy`, `#storj`, `#decentralized storage`, `#tokenholders`, `#chapter 11`
-
 ---
 
 <a id="item-2"></a>
@@ -63,8 +61,6 @@ rss · Cointelegraph · 7月27日 06:53
 </ul>
 </details>
 
-**标签**: `#security`, `#exploit`, `#WEMIX`, `#cross-chain bridge`, `#DeFi`
-
 ---
 
 <a id="item-3"></a>
@@ -83,8 +79,6 @@ rss · Cointelegraph · 7月27日 09:58
 
 </ul>
 </details>
-
-**标签**: `#security`, `#exploit`, `#defi`, `#finance`
 
 ---
 
@@ -106,8 +100,6 @@ rss · Cointelegraph · 7月27日 08:03
 </ul>
 </details>
 
-**标签**: `#BitMEX`, `#exchange closure`, `#regulation`, `#Clarity Act`, `#crypto consolidation`
-
 ---
 
 <a id="item-5"></a>
@@ -127,8 +119,6 @@ rss · CoinDesk · 7月27日 08:00
 
 </ul>
 </details>
-
-**标签**: `#tokenization`, `#real-world assets`, `#South Korea`, `#enterprise adoption`, `#LG CNS`
 
 ---
 
@@ -151,8 +141,6 @@ hackernews · eecc · 7月27日 06:21 · [社区讨论](https://news.ycombinator
 </details>
 
 **社区讨论**: 评论者指出，虽然胁迫 PIN 码是有用的安全功能，但用户必须意识到在边境可能面临的法律后果。有人建议使用 VeraCrypt 的隐藏卷等诱饵 OS 卷作为不那么极端的替代方案。其他人则认为旅行者应在过境前擦除设备，之后再从备份恢复。
-
-**标签**: `#privacy`, `#border security`, `#grapheneos`, `#duress pin`, `#legal`
 
 ---
 

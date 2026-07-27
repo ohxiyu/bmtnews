@@ -5,9 +5,9 @@ date: 2026-07-27
 lang: en
 ---
 
-<div class="run-stats" hidden data-fetched="84" data-analyzed="34" data-selected="7" data-critical="0"></div>
+<div class="run-stats" hidden data-fetched="86" data-analyzed="39" data-selected="7" data-critical="0"></div>
 
-> From 34 items, 7 important content pieces were selected
+> From 39 items, 7 important content pieces were selected
 
 ---
 
@@ -41,8 +41,6 @@ rss · Cointelegraph · Jul 27, 09:01
 
 **Discussion**: On the Storj community forum, some users had previously questioned the utility of the STORJ token, noting that aside from a 10% discount for paying with STORJ, there was limited demand driver. The bankruptcy filing and proposed equity conversion may reignite debates about token value and holder rights.
 
-**Tags**: `#bankruptcy`, `#storj`, `#decentralized storage`, `#tokenholders`, `#chapter 11`
-
 ---
 
 <a id="item-2"></a>
@@ -63,8 +61,6 @@ rss · Cointelegraph · Jul 27, 06:53
 </ul>
 </details>
 
-**Tags**: `#security`, `#exploit`, `#WEMIX`, `#cross-chain bridge`, `#DeFi`
-
 ---
 
 <a id="item-3"></a>
@@ -83,8 +79,6 @@ rss · Cointelegraph · Jul 27, 09:58
 
 </ul>
 </details>
-
-**Tags**: `#security`, `#exploit`, `#defi`, `#finance`
 
 ---
 
@@ -106,8 +100,6 @@ rss · Cointelegraph · Jul 27, 08:03
 </ul>
 </details>
 
-**Tags**: `#BitMEX`, `#exchange closure`, `#regulation`, `#Clarity Act`, `#crypto consolidation`
-
 ---
 
 <a id="item-5"></a>
@@ -127,8 +119,6 @@ rss · CoinDesk · Jul 27, 08:00
 
 </ul>
 </details>
-
-**Tags**: `#tokenization`, `#real-world assets`, `#South Korea`, `#enterprise adoption`, `#LG CNS`
 
 ---
 
@@ -151,8 +141,6 @@ hackernews · eecc · Jul 27, 06:21 · [Discussion](https://news.ycombinator.com
 </details>
 
 **Discussion**: Commenters noted that while duress PINs are a useful security feature, users must recognize the potential legal consequences at borders. Some suggested using decoy OS volumes like VeraCrypt&\#x27;s hidden volumes as a less extreme alternative. Others argued that travelers should wipe their devices before crossing and restore from backup later.
-
-**Tags**: `#privacy`, `#border security`, `#grapheneos`, `#duress pin`, `#legal`
 
 ---
 
