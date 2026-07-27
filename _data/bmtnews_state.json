@@ -2,28 +2,272 @@
   "version": 1,
   "date": "2026-07-27",
   "timezone": "Asia/Shanghai",
-  "updated_at": "2026-07-26T21:12:27.718435Z",
+  "updated_at": "2026-07-27T02:24:37.829302Z",
   "analyzed_keys": [
     "0b4d6e2732c30a3ddada1f463983ed21d2a8350ae5a592a59232c21ca1477359",
     "1abc5adb0f8ed012d47b58be8413ee3f9208c2fe5d48a8bbc924c9aa775140c2",
+    "222ac421484920dfbb986c11e77cb2cf9ecae58fc7194f073b5d2f8bfc49e041",
+    "2449de925201cf15a19c2bc07210ef4d43a077177e20a035bc7969f1076b5b45",
     "2f6fed0fe60d112ca3ee51b0220afacd45dabce5a13f01254100400eeedf0662",
     "33f5da33d0bd04b5db3b1c16c96c72164af9b5be5bc53d883aecfb168f4c8fe5",
     "34e0cdcc5a59ff5e99fcec8f425b7e4562034bb3a7ed14b144ed450d1afb2743",
     "3828b61caaf197512eefadc8555d9182d1a10ca3f283b83d94e052d56dd3c826",
+    "4906bd8c0dab755c1f78a1d0ae3124eef4d7eb5139fd3f71ff2e1c46bb46c15a",
+    "4b17f70417286720d35196daefb988c3130a4d4314d8d041128739f96c824123",
+    "55193a13cd7927f4241fb8c428982c3044a63dfb95c2ca0df7a09db1ae6db26f",
+    "596258f6f4e0f4f6ffbbf6e2cf0a8b15d4c3412bd0d6dea766f22223c2dad3aa",
     "5beb9264b2725b8b944e275b1bfc02a978f3d3ed06f0480dbe77d1df53f23fdc",
+    "66264c3f39620b0ee059dd8acf6a86a57632323c7b2af331edd55db0aa78d96e",
+    "689d5d27eac704e96e189d7a87e2d7df89bc2798364bdec22ef14cc5fe8294d2",
+    "7513e69e83c322244984f018b4f0e6231398dfee45c22c9adb16a1bca4935851",
+    "7a9d147a3a53c228c252fccb72261db0a4c21824d74014a889eaf435b3c87783",
+    "7d93d02f92c2dd385f1400d99e6c8479cd4c3e638e7e786d739818ef5fa7a741",
     "91b3864b96a14f78cc7f0209b88bbcdeac587c895a4439a7d603401806f5f273",
     "a270a48788e628907d7e654713ea9e9701cb9c96b659da5de5158b0e07abad79",
+    "ad62e55957106a277f0d741d831829c17f30146da3b3786fc0b3fdfd52835227",
     "b3492cd978f9c6c512d8a89b76a156be17c005e9cd459dd008e3a19e2b5c4059",
     "b39e4d9f09ef6e0e9e59dea0f17b13bb4eea81b938a3321cbc60839644dde35a",
+    "be9d2ecdf2fd86467fbee8ed5a34e27d8cd693d7093865faf137be4ae4ab7759",
     "c0a3c3384e0cbd8882ff8817369d3b9cde02afd80500f4573b0e60042398262a",
     "c2f0e1cd7e58be7302769551d87cf183bab7161cfc6f408ecf6d62baf146ab2c",
+    "c644eace8296dcc30ae7fcebad069ae264f9dd21cd8510bf0a992ddace204f88",
     "ca0a73ba526fa4fd2b1646aa7f0163945b8f7fe2bedf35fb5ce970b18ad07c1b",
+    "d9a3149cfcb106b5cbb4c06d68b961d6ad3f590d646e6a8c775118f6a86e6d46",
+    "da15964994b440fd4bcfc204a46ebe754509ae6624f6639a1943e59c093c205e",
     "db03b6c912c504b68a9f4837d4128446afb4fb9d180929404b0828e59e8bf04e",
     "e358d358a29457419e250666e5119ca3e2fb993ffa4e1acab0123fb4ef8e8aaf",
     "fd1b27dc9ad9918f129625db09b5e55843190b6677c472bcba1dcc8119eba35f",
     "fdc497a49d115b3a1689da4bb53d596199a54e184a998527b6660e3fa5d68a5b"
   ],
   "items": [
+    {
+      "id": "rss:cointelegraph.com_rss:134362aad6f7ff6b",
+      "source_type": "rss",
+      "title": "Storj files for bankruptcy, explores equity path for tokenholders",
+      "url": "https://cointelegraph.com/news/storj-chapter-11-bankruptcy-tokenholder-equity?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "content": null,
+      "author": "Cointelegraph by Ezra Reguerra",
+      "published_at": "2026-07-27T01:01:43Z",
+      "fetched_at": "2026-07-27T02:24:38.301415Z",
+      "metadata": {
+        "feed_name": "Cointelegraph",
+        "category": "crypto-markets",
+        "title_en": "Storj files for Chapter 11 bankruptcy, explores equity for tokenholders",
+        "detailed_summary_en": "Decentralized storage provider Storj has filed for Chapter 11 bankruptcy protection, while exploring a court-approved mechanism to offer equity to STORJ tokenholders. The company assures that its network will continue operating during the process. This is a significant event for the decentralized storage sector, as one of its prominent players faces financial distress, potentially impacting user trust and industry confidence. The proposed equity path for tokenholders could set a precedent for how crypto token holders are treated in bankruptcy proceedings. Storj filed for Chapter 11, which allows it to restructure while continuing operations. The specific equity conversion mechanism for STORJ tokens requires court approval and details are not yet disclosed.",
+        "background_en": "Storj is a decentralized cloud storage platform that uses blockchain technology to allow users to rent out unused hard drive space. The STORJ token is used to pay for storage services and reward node operators. Filing for Chapter 11 bankruptcy does not necessarily mean liquidation; it is a reorganization process often used by companies to manage debt while continuing business.",
+        "community_discussion_en": "On the Storj community forum, some users had previously questioned the utility of the STORJ token, noting that aside from a 10% discount for paying with STORJ, there was limited demand driver. The bankruptcy filing and proposed equity conversion may reignite debates about token value and holder rights.",
+        "title_zh": "Storj申请第11章破产，探索代币持有者股权方案",
+        "detailed_summary_zh": "去中心化存储提供商 Storj 已申请第11章破产保护，同时探索法院批准的机制，向 STORJ 代币持有者提供股权。该公司保证其网络在破产程序期间将继续运行。 这对去中心化存储领域来说是一个重大事件，因为该领域的主要参与者面临财务困境，可能会影响用户信任和行业信心。为代币持有者提供股权的提议可能为破产程序中如何对待加密货币代币持有者开创先例。 Storj 申请的是第11章破产，这允许其在重组期间继续运营。STORJ 代币的股权转换机制需要法院批准，具体细节尚未披露。",
+        "background_zh": "Storj 是一个去中心化云存储平台，利用区块链技术让用户出租未使用的硬盘空间。STORJ 代币用于支付存储服务并奖励节点运营商。申请第11章破产并不一定意味着清算；它是一种重组过程，公司常用于管理债务同时继续运营。",
+        "community_discussion_zh": "在 Storj 社区论坛上，一些用户此前曾质疑 STORJ 代币的实用性，指出除了用 STORJ 支付可享受10%折扣外，需求驱动因素有限。破产申请和拟议的股权转换可能重新引发关于代币价值和持有者权利的讨论。",
+        "sources": [
+          {
+            "url": "https://www.gemini.com/cryptopedia/storj-crypto-decentralized-storage",
+            "title": "Storj Crypto: Decentralized Storage Solution | Gemini"
+          },
+          {
+            "url": "https://www.storjtoken.com/",
+            "title": "STORJ token powers distributed cloud storage and AI scalability"
+          },
+          {
+            "url": "https://forum.storj.io/t/the-elephant-in-the-room-where-is-the-storj-token-utility/12452",
+            "title": "The elephant in the room: Where is the Storj token utility? - Ideas & Suggestions - Storj Community Forum (official)"
+          }
+        ]
+      },
+      "ai_score": 8.0,
+      "ai_reason": null,
+      "ai_summary": "Decentralized storage provider Storj files for Chapter 11 bankruptcy, exploring equity for STORJ tokenholders while maintaining network operations.",
+      "ai_tags": []
+    },
+    {
+      "id": "rss:cointelegraph.com_rss:19f271a9c524d577",
+      "source_type": "rss",
+      "title": "WEMIX says attacker moved about $724,000 after contract breach",
+      "url": "https://cointelegraph.com/news/wemix-attacker-moves-724k-contract-breach?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "content": null,
+      "author": "Cointelegraph by Ezra Reguerra",
+      "published_at": "2026-07-26T22:53:55Z",
+      "fetched_at": "2026-07-27T02:24:38.301461Z",
+      "metadata": {
+        "feed_name": "Cointelegraph",
+        "category": "crypto-markets",
+        "title_en": "WEMIX attacker moves $724k after contract breach",
+        "detailed_summary_en": "An attacker compromised a smart contract linked to the WEMIX$ stablecoin and moved approximately 724,198 USDC.e, prompting WEMIX to suspend its bridges, liquidity-pool trading, and several other services. This incident highlights ongoing security risks in cross-chain bridge and DeFi ecosystems, potentially eroding user trust and causing significant operational disruptions for the WEMIX platform. The attacker moved 724,198 USDC.e, which is a bridged version of USDC on other chains, and WEMIX acted swiftly by suspending bridges and liquidity-pool trading to contain the breach.",
+        "background_en": "WEMIX$ is a stablecoin fully collateralized by USDC, running on the WEMIX3.0 mainnet. USDC.e is a bridged representation of USDC on other networks. Cross-chain bridges are often targeted by attackers due to smart contract vulnerabilities, as seen in numerous past exploits.",
+        "title_zh": "WEMIX攻击者在合约漏洞后转走72.4万美元",
+        "detailed_summary_zh": "一名攻击者入侵了与WEMIX$稳定币相关的智能合约，转移了约724,198 USDC.e，导致WEMIX暂停了其跨链桥、流动性池交易及其他多项服务。 此次事件凸显了跨链桥和DeFi生态系统中持续存在的安全风险，可能削弱用户信任并对WEMIX平台造成严重的运营中断。 攻击者转移了724,198 USDC.e（一种在其他链上的桥接版USDC），WEMIX迅速采取行动，暂停了跨链桥和流动性池交易以控制漏洞。",
+        "background_zh": "WEMIX$是一种完全由USDC抵押的稳定币，运行于WEMIX3.0主网。USDC.e是USDC在其他网络上的桥接表示。由于智能合约漏洞，跨链桥经常成为攻击者的目标，过去的多次攻击事件已证明了这一点。",
+        "sources": [
+          {
+            "url": "https://coinmarketcap.com/currencies/wemix/",
+            "title": "WEMIX price today, WEMIX to USD live price, marketcap and chart | CoinMarketCap"
+          },
+          {
+            "url": "https://cryptobriefing.com/wemix-investigates-wemix-dollar-contract-breach/",
+            "title": "WEMIX investigates potential security breach of WEMIX$ stablecoin contract"
+          },
+          {
+            "url": "https://chain.link/education-hub/cross-chain-bridge-vulnerabilities",
+            "title": "7 Cross-Chain Bridge Vulnerabilities Explained | Chainlink"
+          }
+        ]
+      },
+      "ai_score": 8.0,
+      "ai_reason": null,
+      "ai_summary": "WEMIX reports an attacker compromised a WEMIX$-linked contract and moved approximately $724,000, leading to suspension of bridges and services.",
+      "ai_tags": []
+    },
+    {
+      "id": "rss:cointelegraph.com_rss:2858f41c1e12ef9c",
+      "source_type": "rss",
+      "title": "Garden Finance disables app as Blockaid reports $450,000 exploit",
+      "url": "https://cointelegraph.com/news/garden-finance-app-offline-450k-htlc-exploit?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "content": null,
+      "author": "Cointelegraph by Ezra Reguerra",
+      "published_at": "2026-07-27T01:58:54Z",
+      "fetched_at": "2026-07-27T02:24:38.301380Z",
+      "metadata": {
+        "feed_name": "Cointelegraph",
+        "category": "crypto-markets",
+        "title_en": "Garden Finance offline after $450k HTLC exploit",
+        "detailed_summary_en": "Garden Finance disabled its app after an attacker exploited HTLC contracts to drain $450,000 in USDT across Ethereum, Base, Arbitrum, and BNB Smart Chain. This exploit highlights ongoing security risks in DeFi protocols that use HTLCs, affecting user funds across multiple chains. Blockaid reported the exploit, and Garden Finance took its app offline. The attack targeted HTLC contracts, which are designed for atomic swaps but can be vulnerable if not properly secured.",
+        "background_en": "HTLC (Hashed Timelock Contract) is a smart contract used in blockchain transactions to enable trustless atomic swaps with time locks. It is commonly used in Lightning Network and cross-chain swaps. However, if the contract logic has flaws, it can be exploited.",
+        "title_zh": "Garden Finance 因 45 万美元 HTLC 漏洞下线",
+        "detailed_summary_zh": "Garden Finance 在攻击者利用 HTLC 合约从以太坊、Base、Arbitrum 和 BNB 智能链盗取 45 万美元 USDT 后，禁用了其应用程序。 此次漏洞凸显了使用 HTLC 的 DeFi 协议中持续存在的安全风险，影响了多条链上的用户资金。 Blockaid 报告了此次漏洞，Garden Finance 下架了其应用。攻击针对的是 HTLC 合约，该合约设计用于原子交换，但如果未妥善保护则可能存在漏洞。",
+        "background_zh": "HTLC（哈希时间锁定合约）是一种用于区块链交易的智能合约，可以实现带有时间锁的无信任原子交换。它常用于闪电网络和跨链交换。然而，如果合约逻辑存在缺陷，就可能被利用。",
+        "sources": [
+          {
+            "url": "https://www.solulab.com/htlc-smart-contracts-in-crypto-payments/",
+            "title": "How HTLC Smart Contracts Solve Crypto Payment Issues?"
+          },
+          {
+            "url": "https://docs.lightning.engineering/the-lightning-network/multihop-payments/hash-time-lock-contract-htlc",
+            "title": "Hashed Timelock Contract (HTLC) | Builder's Guide"
+          }
+        ]
+      },
+      "ai_score": 7.0,
+      "ai_reason": null,
+      "ai_summary": "Garden Finance disabled its app after an attacker exploited HTLC contracts to drain $450,000 in USDT across four blockchains.",
+      "ai_tags": []
+    },
+    {
+      "id": "rss:cointelegraph.com_rss:9eff56a879bcec2b",
+      "source_type": "rss",
+      "title": "CLARITY hopes fade, BitMEX shuts as lawsuit looms: Hodler’s Digest, July 26",
+      "url": "https://cointelegraph.com/magazine/clarity-hopes-fade-bitmex-shuts-as-lawsuit-looms-hodlers-digest-july-27?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "content": null,
+      "author": "Cointelegraph by Andrew Fenton",
+      "published_at": "2026-07-27T00:03:44Z",
+      "fetched_at": "2026-07-27T02:24:38.301439Z",
+      "metadata": {
+        "feed_name": "Cointelegraph",
+        "category": "crypto-markets",
+        "title_en": "BitMEX Shuts Down Amid Lawsuit; CLARITY Act Hopes Fade",
+        "detailed_summary_en": "BitMEX announced the closure of its exchange amid a looming class action lawsuit alleging theft of 623 Bitcoin and insider trading, while the CLARITY Act, a US crypto regulatory framework, faces dimming prospects despite support from major financial institutions. BitMEX's closure marks a significant consolidation in the crypto exchange space, potentially affecting thousands of users and signaling increased regulatory scrutiny. The fading hopes for the CLARITY Act mean continued uncertainty for the US crypto regulatory landscape, impacting industry participants and investors. The class action lawsuit against BitMEX alleges its system was designed to retain customer collateral and that co-founders engaged in insider trading using private user data during server freezes. The CLARITY Act, while a step forward, would not provide instant regulatory certainty and would require months or years of SEC and CFTC rulemaking.",
+        "background_en": "BitMEX is a long-standing cryptocurrency derivatives exchange known for its leveraged trading products. The CLARITY Act is a proposed US federal bill aimed at clarifying the jurisdictional boundaries between the SEC and CFTC over digital assets. Despite bipartisan support, the bill faces political hurdles and implementation delays.",
+        "title_zh": "BitMEX 关闭，诉讼缠身；CLARITY 法案希望渺茫",
+        "detailed_summary_zh": "BitMEX 宣布关闭交易所，同时面临一桩即将提起的集体诉讼，指控其窃取 623 枚比特币并涉及内幕交易；而美国加密货币监管框架 CLARITY 法案尽管得到大型金融机构的支持，进展前景也变得黯淡。 BitMEX 的关闭标志着加密货币交易所领域的重要整合，可能影响数千用户，并表明监管审查加强。CLARITY 法案希望的破灭意味着美国加密监管环境持续不确定性，影响行业参与者和投资者。 针对 BitMEX 的集体诉讼指控其系统设计用于保留客户抵押品，且联合创始人在服务器冻结期间利用私人用户数据进行内幕交易。CLARITY 法案虽是一项进步，但不会立即提供监管确定性，仍需美国证券交易委员会（SEC）和商品期货交易委员会（CFTC）进行数月甚至数年的规则制定。",
+        "background_zh": "BitMEX 是一家历史悠久的加密货币衍生品交易所，以其杠杆交易产品闻名。CLARITY 法案是一项美国联邦法案提案，旨在明确 SEC 与 CFTC 在数字资产领域的管辖界限。尽管获得两党支持，该法案仍面临政治障碍和实施延迟。",
+        "sources": [
+          {
+            "url": "https://www.coindesk.com/business/2026/07/24/bitmex-faces-proposed-class-action-suit-for-theft-insider-trading-as-crypto-exchange-shuts-down",
+            "title": "Crypto exchange BitMEX sued for 623 bitcoin as it prepares to shut down"
+          },
+          {
+            "url": "https://blog.visiion.io/clarity-act-crypto-regulation-impact/",
+            "title": "CLARITY Act Explained: Market Impact & What It Means - Visiion Blog"
+          },
+          {
+            "url": "https://clsbluesky.law.columbia.edu/2025/09/09/arnold-porter-discusses-the-clarity-act/",
+            "title": "Arnold & Porter Discusses the CLARITY Act | CLS Blue Sky Blog"
+          }
+        ]
+      },
+      "ai_score": 7.0,
+      "ai_reason": null,
+      "ai_summary": "BitMEX announces closure amid lawsuit as hopes for the Clarity Act regulatory framework diminish.",
+      "ai_tags": []
+    },
+    {
+      "id": "rss:www.coindesk.com_arc_outboundfeeds_rss_:2c0fb0f54c8211aa",
+      "source_type": "rss",
+      "title": "South Korea trading giant puts receivables onchain in tokenization test with LG CNS",
+      "url": "https://www.coindesk.com/business/2026/07/26/south-korea-trading-giant-puts-receivables-onchain-in-tokenization-test-with-lg-cns",
+      "content": null,
+      "author": "Krisztian Sandor",
+      "published_at": "2026-07-27T00:00:00Z",
+      "fetched_at": "2026-07-27T02:24:38.158723Z",
+      "metadata": {
+        "feed_name": "CoinDesk",
+        "category": "crypto-markets",
+        "title_en": "South Korea trading giant tokenizes receivables on blockchain with LG CNS",
+        "detailed_summary_en": "South Korea's largest trading company, in collaboration with LG CNS, has launched a pilot project to tokenize trade receivables on a blockchain platform, marking a significant step in real-world asset tokenization for enterprise finance. This test demonstrates the growing interest in tokenizing real-world assets to improve liquidity and transparency in trade finance, potentially reducing costs and settlement times for large corporations. The tokenized receivables represent claims on future payments from trade deals, and the blockchain-based tokens allow for fractional ownership and automated settlement via smart contracts.",
+        "background_en": "Receivables are amounts owed by customers to a company for goods or services delivered but not yet paid. Tokenization converts these rights into digital tokens on a blockchain, enabling easier transfer and investment. This test by a major South Korean firm with LG CNS signals potential for broader adoption in trade finance.",
+        "title_zh": "韩国贸易巨头与LG CNS合作在区块链上对应收账款进行代币化测试",
+        "detailed_summary_zh": "韩国最大的贸易公司与LG CNS合作，启动了一项试点项目，将贸易应收账款在区块链平台上进行代币化，标志着企业金融领域实物资产代币化的重要一步。 这项测试表明，代币化实物资产以改善贸易金融的流动性和透明度的兴趣日益增长，可能为大型企业降低成本和结算时间。 代币化的应收账款代表了对未来贸易付款的索取权，基于区块链的代币允许通过智能合约实现部分所有权和自动结算。",
+        "background_zh": "应收账款是客户因已交付但未付款的商品或服务而欠公司的金额。代币化将这些权利转换为区块链上的数字代币，便于转让和投资。韩国一家大公司与LG CNS进行的这项测试表明，贸易金融领域的更广泛采用可能即将到来。",
+        "sources": [
+          {
+            "url": "https://dictionary.cambridge.org/dictionary/english/receivables",
+            "title": "RECEIVABLES | English meaning - Cambridge Dictionary"
+          },
+          {
+            "url": "https://grokipedia.com/page/asset_tokenization",
+            "title": "Asset tokenization"
+          },
+          {
+            "url": "https://www.britannica.com/money/real-world-asset-tokenization",
+            "title": "Tokenization of real-world assets: Is a digital ..."
+          }
+        ]
+      },
+      "ai_score": 7.0,
+      "ai_reason": null,
+      "ai_summary": "South Korean trading giant tests tokenization of receivables on blockchain with LG CNS.",
+      "ai_tags": []
+    },
+    {
+      "id": "hackernews:story:49063022",
+      "source_type": "hackernews",
+      "title": "US citizen charged after GrapheneOS phone wipes during airport search",
+      "url": "https://www.techspot.com/news/113236-us-prosecutors-charge-atlanta-man-after-grapheneos-phone.html",
+      "content": null,
+      "author": "eecc",
+      "published_at": "2026-07-26T22:21:41Z",
+      "fetched_at": "2026-07-27T02:24:38.784141Z",
+      "metadata": {
+        "discussion_url": "https://news.ycombinator.com/item?id=49063022",
+        "category": "tech-community",
+        "title_en": "US citizen charged after GrapheneOS phone wipe at border",
+        "detailed_summary_en": "A US citizen is facing federal charges after using a duress PIN on his GrapheneOS phone, which automatically wiped the device during a border search at an airport. This marks the first known prosecution involving the use of a duress password at a US border. This case sets a legal precedent for the use of duress PINs and other security features that can automatically destroy data, raising important questions about the balance between individual privacy rights and government authority at borders. It could deter security-conscious users from utilizing such features. The duress PIN on GrapheneOS is designed to wipe the device when entered under coercion, but prosecutors argue the act of wiping constitutes obstruction of justice. The outcome could hinge on whether using a duress PIN is considered an intentional act to destroy evidence.",
+        "background_en": "GrapheneOS is a security-focused Android-based operating system that includes features like duress PINs to protect users' data. A duress PIN is a separate password that, when entered, triggers data deletion instead of unlocking the device. US border authorities have broad search powers, and individuals are generally expected to comply with device searches. This incident highlights the legal risks of using anti-forensic tools at borders.",
+        "community_discussion_en": "Commenters noted that while duress PINs are a useful security feature, users must recognize the potential legal consequences at borders. Some suggested using decoy OS volumes like VeraCrypt's hidden volumes as a less extreme alternative. Others argued that travelers should wipe their devices before crossing and restore from backup later.",
+        "title_zh": "美国公民因在边境使用 GrapheneOS 手机擦除数据被起诉",
+        "detailed_summary_zh": "一名美国公民在机场边境检查中使用 GrapheneOS 手机的胁迫 PIN 码，导致设备自动擦除数据，因此面临联邦指控。这是首例已知的因在美边境使用胁迫密码而引发的起诉案件。 此案为胁迫 PIN 码等可在被胁迫时自动删除数据的安全功能的使用树立了法律先例，引发了关于个人隐私权与边境政府权力平衡的重要问题。可能会阻止注重安全的用户使用此类功能。 GrapheneOS 的胁迫 PIN 码设计用于在胁迫下输入时擦除设备，但检方认为擦除行为构成妨碍司法。结果可能取决于使用胁迫 PIN 码是否被视为故意销毁证据。",
+        "background_zh": "GrapheneOS 是一款注重安全的基于 Android 的操作系统，包含胁迫 PIN 码等功能以保护用户数据。胁迫 PIN 码是一个单独的密码，输入时会触发数据删除而非解锁设备。美国边境当局拥有广泛的搜查权，个人通常需要配合设备检查。此事件凸显了在边境使用反取证工具的法律风险。",
+        "community_discussion_zh": "评论者指出，虽然胁迫 PIN 码是有用的安全功能，但用户必须意识到在边境可能面临的法律后果。有人建议使用 VeraCrypt 的隐藏卷等诱饵 OS 卷作为不那么极端的替代方案。其他人则认为旅行者应在过境前擦除设备，之后再从备份恢复。",
+        "sources": [
+          {
+            "url": "https://www.androidauthority.com/grapheneos-duress-pin-us-prosecution-3691271/",
+            "title": "GrapheneOS duress PIN could land a man in prison - Android Authority"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/Duress_PIN",
+            "title": "Duress PIN"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/GrapheneOS",
+            "title": "GrapheneOS"
+          }
+        ]
+      },
+      "ai_score": 7.0,
+      "ai_reason": null,
+      "ai_summary": "US citizen charged after using duress PIN on GrapheneOS phone that wiped data during airport border search, highlighting legal risks of security features.",
+      "ai_tags": []
+    },
     {
       "id": "rss:www.coindesk.com_arc_outboundfeeds_rss_:614db931b5e0ef3e",
       "source_type": "rss",
@@ -46,103 +290,6 @@
       "ai_score": 7.0,
       "ai_reason": null,
       "ai_summary": "A reminder of a two-week deadline for achieving regulatory clarity in crypto policy.",
-      "ai_tags": []
-    },
-    {
-      "id": "rss:cointelegraph.com_rss:e085b3d0b89f835e",
-      "source_type": "rss",
-      "title": "CFTC issues second warning to prediction markets on cookie-cutter self-certifications",
-      "url": "https://cointelegraph.com/news/cftc-issues-second-warning-to-prediction-markets-on-cookie-cutter-self-certifications?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-      "content": null,
-      "author": "Cointelegraph by Robert Lakin",
-      "published_at": "2026-07-26T17:45:05Z",
-      "fetched_at": "2026-07-26T21:12:28.761071Z",
-      "metadata": {
-        "feed_name": "Cointelegraph",
-        "category": "crypto-markets",
-        "title_en": "CFTC Issues Second Warning to Prediction Markets on Self-Certifications",
-        "detailed_summary_en": "On July 24, 2026, the CFTC issued an advisory warning prediction markets against using overly broad, template-style self-certifications for event contracts, marking the second such warning this year. This signals increasing regulatory scrutiny of prediction markets, potentially impacting how platforms like Polymarket and Kalshi list event contracts. Compliance costs may rise, and some contracts may be forced off exchanges. The advisory specifically targets 'cookie-cutter' certifications that bundle multiple contract permutations with different settlement sources or methodologies into a single filing. This follows a broader CFTC proposed rulemaking in May 2024 to clarify which event contracts are contrary to the public interest.",
-        "background_en": "Prediction markets are platforms where users trade contracts based on the outcome of future events. Self-certification allows designated contract markets (DCMs) to list contracts by certifying they comply with the Commodity Exchange Act, without prior CFTC approval. The CFTC has authority under CEA section 5c(c)(5)(C) to prohibit event contracts it deems contrary to the public interest, particularly those involving gaming or illegal activity.",
-        "title_zh": "CFTC 对预测市场发出关于自我认证的第二次警告",
-        "detailed_summary_zh": "2026年7月24日，CFTC 发布了一份建议，警告预测市场不要对事件合约使用过于宽泛、模板式的自我认证，这是今年以来的第二次此类警告。 这表明监管机构对预测市场的审查力度加大，可能影响 Polymarket 和 Kalshi 等平台如何列出事件合约。合规成本可能上升，一些合约可能被迫退出交易所。 该建议特别针对将具有不同结算来源或方法的多种合约排列捆绑到单一备案中的“千篇一律”认证。此前，CFTC 于2024年5月提出了更广泛的规则制定，以澄清哪些事件合约违背公共利益。",
-        "background_zh": "预测市场是用户根据未来事件结果交易合约的平台。自我认证允许指定合约市场（DCM）通过证明合约符合《商品交易法》来列出合约，无需事先获得 CFTC 批准。CFTC 根据 CEA 第5c(c)(5)(C)条有权禁止其认为违背公共利益的 event 合约，尤其是涉及赌博或非法活动的合约。",
-        "sources": [
-          {
-            "url": "https://www.bloomberg.com/news/articles/2026-07-24/cftc-warns-prediction-markets-over-blanket-self-certifications",
-            "title": "CFTC Warns Prediction Markets Over Blanket Self-Certifications"
-          },
-          {
-            "url": "https://www.cftc.gov/PressRoom/PressReleases/8907-24",
-            "title": "CFTC Issues Proposal on Event Contracts | CFTC"
-          },
-          {
-            "url": "https://www.federalregister.gov/documents/2026/06/12/2026-11854/prediction-markets-public-interest-determinations",
-            "title": "Federal Register :: Prediction Markets; Public Interest Determinations"
-          }
-        ]
-      },
-      "ai_score": 7.0,
-      "ai_reason": null,
-      "ai_summary": "CFTC issues second warning to prediction markets against using template-style certifications for event contracts.",
-      "ai_tags": []
-    },
-    {
-      "id": "reddit:subreddit-rss:t3_1v78ns1",
-      "source_type": "reddit",
-      "title": "Sent crypto to Bitmart last night, woke up to hear they are shutting down, amount not visible even though confirmed",
-      "url": "https://www.reddit.com/r/CryptoCurrency/comments/1v78ns1/sent_crypto_to_bitmart_last_night_woke_up_to_hear/",
-      "content": null,
-      "author": "/u/noonkhoshki",
-      "published_at": "2026-07-26T16:30:10Z",
-      "fetched_at": "2026-07-26T21:12:29.497275Z",
-      "metadata": {
-        "subreddit": "CryptoCurrency",
-        "discussion_url": "https://www.reddit.com/r/CryptoCurrency/comments/1v78ns1/sent_crypto_to_bitmart_last_night_woke_up_to_hear/",
-        "category": "crypto-markets",
-        "title_en": "Cryptocurrency deposit missing as BitMart exchange shuts down",
-        "detailed_summary_en": "A Reddit user reports sending cryptocurrency to BitMart last night, but the deposit is not credited after learning the exchange is shutting down, despite the transaction being confirmed on-chain. This incident highlights the risks of centralized exchanges, where users lose control of their funds when the exchange faces insolvency or shutdown. It reinforces the crypto community's principle of 'not your keys, not your coins'. BitMart announced on July 26, 2026, that it would cease operations after nine years, suspending new registrations, deposits, and orders. The BMX token crashed over 55% following the news.",
-        "background_en": "Centralized exchanges hold users' private keys on their behalf, meaning users trust the exchange to manage their funds. The phrase 'not your keys, not your coins' emphasizes that without holding your own private keys, you do not truly own your crypto. Incidents like exchange shutdowns or hacks can result in permanent loss of funds.",
-        "title_zh": "加密货币存入BitMart后无法到账，交易所宣布关闭",
-        "detailed_summary_zh": "一位Reddit用户昨晚向BitMart发送了加密货币，但得知该交易所即将关闭后，存款仍未到账，尽管链上交易已确认。 这一事件凸显了中心化交易所的风险：当交易所面临破产或关闭时，用户将失去对资金的控制。这再次印证了加密货币社区的原则：“不是你的私钥，就不是你的币”。 BitMart于2026年7月26日宣布在运营九年后停止服务，暂停新注册、充值和下单。BMX代币在消息后暴跌超过55%。",
-        "background_zh": "中心化交易所代持用户的私钥，意味着用户信任交易所管理其资金。'不是你的私钥，就不是你的币'这句话强调，如果不持有自己的私钥，你并不真正拥有加密货币。交易所关闭或被黑客攻击等事件可能导致资金永久损失。",
-        "sources": [
-          {
-            "url": "https://www.coindesk.com/markets/2026/07/26/crypto-exchange-bitmart-to-shut-down-after-nine-years-bmx-token-crashes-58",
-            "title": "Crypto exchange BitMart to shut down after nine years, BMX token crashes 58%"
-          },
-          {
-            "url": "https://www.financemagnates.com/cryptocurrency/exchange/bitmart-winds-down-trading-as-exchange-closures-pile-up/",
-            "title": "BitMart Winds Down Trading as Exchange Closures Pile Up"
-          }
-        ]
-      },
-      "ai_score": 7.0,
-      "ai_reason": null,
-      "ai_summary": "User reports BitMart deposit not credited after hearing shutdown rumors, illustrating risks of centralized exchanges.",
-      "ai_tags": []
-    },
-    {
-      "id": "rss:cointelegraph.com_rss:82bd59d82975edb5",
-      "source_type": "rss",
-      "title": "Russia’s Sberbank to launch crypto trading infrastructure this year",
-      "url": "https://cointelegraph.com/news/russias-sberbank-to-launch-crypto-trading-infrastructure-this-year?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-      "content": null,
-      "author": "Cointelegraph by Robert Lakin",
-      "published_at": "2026-07-26T16:07:11Z",
-      "fetched_at": "2026-07-26T16:19:30.143114Z",
-      "metadata": {
-        "feed_name": "Cointelegraph",
-        "category": "crypto-markets",
-        "title_en": "Sberbank to launch crypto trading infrastructure by December",
-        "detailed_summary_en": "Russia's largest bank, Sberbank, announced plans to launch cryptocurrency trading infrastructure by December 1, coinciding with new Russian crypto regulations that will allow crypto use in foreign trade. This move signals growing institutional adoption in Russia and provides a regulated gateway for crypto trading, potentially boosting the crypto ecosystem in the region. Sberbank is the largest bank in Russia, and the infrastructure is to be operational by December 1, 2023, as Russia establishes market rules and permits crypto for foreign trade.",
-        "background_en": "Sberbank is Russia's largest state-owned bank, with significant influence in the financial sector. The Russian government has been developing regulations for cryptocurrencies, aiming to integrate them into the economy while maintaining control. This year, Russia passed a law allowing crypto for foreign trade, setting the stage for banks like Sberbank to offer trading services.",
-        "title_zh": "俄罗斯联邦储蓄银行计划在12月前推出加密货币交易基础设施",
-        "detailed_summary_zh": "俄罗斯最大的银行俄罗斯联邦储蓄银行宣布计划在12月1日前推出加密货币交易基础设施，这与允许在对外贸易中使用加密货币的新俄罗斯法规同步。 此举标志着俄罗斯机构采用率的提高，并为加密货币交易提供了受监管的渠道，可能促进该地区的加密货币生态系统发展。 俄罗斯联邦储蓄银行是俄罗斯最大的银行，该基础设施计划于2023年12月1日投入运营，届时俄罗斯将制定市场规则并允许加密货币用于对外贸易。",
-        "background_zh": "俄罗斯联邦储蓄银行是俄罗斯最大的国有银行，在金融领域具有重大影响力。俄罗斯政府一直在制定加密货币法规，旨在将其融入经济同时保持控制。今年，俄罗斯通过了一项法律，允许加密货币用于对外贸易，为像俄罗斯联邦储蓄银行这样的银行提供交易服务奠定了基础。"
-      },
-      "ai_score": 7.0,
-      "ai_reason": null,
-      "ai_summary": "Russia's largest bank, Sberbank, plans to launch crypto trading infrastructure by December 1, aligning with new Russian crypto regulations.",
       "ai_tags": []
     }
   ],
