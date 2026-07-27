@@ -2,10 +2,15 @@
   "version": 1,
   "date": "2026-07-28",
   "timezone": "Asia/Shanghai",
-  "updated_at": "2026-07-27T17:56:21.148022Z",
+  "updated_at": "2026-07-27T21:30:36.492575Z",
   "analyzed_keys": [
+    "501fdea92f115c28d69ca9959d95a9a2ecd76a32e94bf1a923de1e5116345cb0",
     "8c4a4417f450a644df2f4a1b6198520698888649a70995d0550a904a5689ead3",
     "96e1acc4d0c4aa7f1918cc7eebff33dcd4fe637975b21f0f49fef3f40ce634b7",
+    "9eb6bd1941beaf42e38e6e276385e3508f61d2eadf880e21e5e4da28dfb98d54",
+    "af08d2d9ac0af10c936205ed0e1865f34fd6d912994c0b5ff3f4269c4a936529",
+    "d0bba0440ebb3e03b2967f0e35a922d1a045d8cc035d6bb9006cd17f6814b44a",
+    "dc62612b976479a15e09e80fb4473b3899b85666fc7471b0a41ea2fc15959d73",
     "f11457e880140054fb9a5d7cc89cb38acf7c4d5a87a67aa833927336458839d6"
   ],
   "items": [
@@ -41,6 +46,110 @@
       "ai_score": 8.0,
       "ai_reason": null,
       "ai_summary": "Coinbase will suspend ACX trading on July 28, 2026, as the project team winds down the token and offers conversion options.",
+      "ai_tags": []
+    },
+    {
+      "id": "hackernews:story:49073513",
+      "source_type": "hackernews",
+      "title": "Judge Rejects Google's Attempt to DMCA Its Way Out of Being Scraped",
+      "url": "https://www.techdirt.com/2026/07/27/judge-rejects-googles-attempt-to-dmca-its-way-out-of-being-scraped/",
+      "content": null,
+      "author": "cdrnsf",
+      "published_at": "2026-07-27T18:15:35Z",
+      "fetched_at": "2026-07-27T21:30:37.372346Z",
+      "metadata": {
+        "discussion_url": "https://news.ycombinator.com/item?id=49073513",
+        "category": "tech-community",
+        "title_en": "Judge Rejects Google's DMCA Claim to Block Scraping",
+        "detailed_summary_en": "A U.S. judge ruled that Google's search results are not protected by copyright under the DMCA, rejecting Google's attempt to use the law to prevent a third-party service from scraping its search results. This decision sets an important legal precedent limiting the use of DMCA against web scraping, which could impact competition and transparency in search markets. It also clarifies that factual data compilations like search results may lack the creative originality needed for copyright protection. The case involved Google suing SerpApi, a company that scrapes Google search results. The judge found that Google's search results are not original enough to qualify for copyright protection under the DMCA, as they are essentially compilations of facts.",
+        "background_en": "The DMCA (Digital Millennium Copyright Act) includes provisions against circumventing measures that protect copyrighted works. However, this ruling distinguishes between copyrightable creative works and non-copyrightable factual compilations. Web scraping is a common practice for gathering data, but its legality often depends on whether the scraped data is copyrighted and whether access violates terms of service or other laws.",
+        "community_discussion_en": "Commenters generally supported the ruling, with some noting that Google's deprecation of its search API leaves scraping as the only alternative. Others pointed out the importance of scrapable search results for exposing scams, and criticized Google's litigation tactics against smaller companies.",
+        "title_zh": "法官驳回谷歌利用DMCA阻止数据抓取的请求",
+        "detailed_summary_zh": "美国一名法官裁定，谷歌的搜索结果不受DMCA版权保护，驳回了谷歌试图利用该法律阻止第三方服务抓取其搜索结果的请求。 这一裁决确立了重要的法律先例，限制DMCA在网页抓取中的使用，可能影响搜索市场的竞争和透明度。它还澄清了诸如搜索结果等事实数据汇编可能缺乏版权保护所需的创造性原创性。 该案涉及谷歌起诉SerpApi，一家抓取谷歌搜索结果的公司。法官认为谷歌的搜索结果缺乏足够的原创性，不符合DMCA下的版权保护条件，因为它们本质上是事实的汇编。",
+        "background_zh": "DMCA（数字千年版权法案）包含针对规避保护版权作品措施的条款。然而，这一裁决区分了具有版权的创造性作品和不具有版权的事实汇编。网页抓取是一种常见的数据收集做法，但其合法性通常取决于被抓取的数据是否受版权保护，以及访问是否违反服务条款或其他法律。",
+        "community_discussion_zh": "评论者普遍支持这一裁决，有人指出谷歌废弃其搜索API使得抓取成为唯一选择。其他人则强调了可抓取的搜索结果对于揭露诈骗的重要性，并批评谷歌针对小公司的诉讼策略。"
+      },
+      "ai_score": 7.0,
+      "ai_reason": null,
+      "ai_summary": "A judge rejected Google's attempt to use DMCA to block scraping of its search results, affirming that search results are not protected by copyright under the DMCA.",
+      "ai_tags": []
+    },
+    {
+      "id": "rss:www.coindesk.com_arc_outboundfeeds_rss_:953b238ac9f96df1",
+      "source_type": "rss",
+      "title": "Crypto’s favorite $90 trillion trading product is coming to Wall Street, but big banks are taking it slow",
+      "url": "https://www.coindesk.com/markets/2026/07/22/crypto-s-favorite-usd90-trillion-trading-product-is-coming-to-wall-street-but-big-banks-are-taking-it-slow",
+      "content": null,
+      "author": "Helene Braun",
+      "published_at": "2026-07-27T18:00:00Z",
+      "fetched_at": "2026-07-27T21:30:37.842765Z",
+      "metadata": {
+        "feed_name": "CoinDesk",
+        "category": "crypto-markets",
+        "title_en": "Crypto's $90 Trillion Repo Market Comes to Wall Street, Slowly",
+        "detailed_summary_en": "Traditional finance's tri-party repo market, valued at $90 trillion, is being adapted for cryptocurrency trading, but major banks are proceeding cautiously. This development signals growing institutional interest in crypto, as the repo market is a critical source of short-term funding and liquidity. However, the slow adoption by big banks indicates that crypto market infrastructure is not yet fully integrated with traditional finance. Tri-party repo involves a third-party agent handling collateral management, reducing operational burden. The adaptation for crypto could involve tokenized collateral and blockchain-based settlement.",
+        "background_en": "The repo market is a short-term secured lending market where one party sells securities to another and agrees to repurchase them later at a higher price. Tri-party repo outsources post-trade processing to a third-party agent, making it more efficient. The crypto adaptation could enable institutions to use digital assets as collateral for cash loans.",
+        "title_zh": "加密货币的90万亿美元回购市场进入华尔街，但进展缓慢",
+        "detailed_summary_zh": "传统金融中价值90万亿美元的三方回购市场正在被改造用于加密货币交易，但大型银行正谨慎推进。 这一发展标志着机构对加密货币的兴趣日益增长，因为回购市场是短期融资和流动性的关键来源。然而，大银行的缓慢采用表明加密市场基础设施尚未完全与传统金融融合。 三方回购涉及第三方代理处理抵押品管理，减少操作负担。针对加密货币的改造可能涉及代币化抵押品和基于区块链的结算。",
+        "background_zh": "回购市场是一个短期担保借贷市场，一方出售证券并同意稍后以更高价格回购。三方回购将交易后处理外包给第三方代理，提高效率。加密货币改造可能使机构能够使用数字资产作为现金贷款的抵押品。",
+        "sources": [
+          {
+            "url": "https://www.brookings.edu/articles/what-is-the-repo-market-and-why-does-it-matter/",
+            "title": "What is the repo market, and why does it matter? | Brookings"
+          },
+          {
+            "url": "https://www.icmagroup.org/market-practice-and-regulatory-policy/repo-and-collateral-markets/icma-ercc-publications/frequently-asked-questions-on-repo/24-what-is-tri-party-repo/",
+            "title": "24. What is tri-party repo? - International Capital Market ..."
+          },
+          {
+            "url": "https://chain.link/article/blockchain-repo-markets",
+            "title": "Blockchain Repo Markets: Tokenization Explained | Chainlink"
+          }
+        ]
+      },
+      "ai_score": 7.0,
+      "ai_reason": null,
+      "ai_summary": "A $90 trillion trading product from traditional finance is being adapted for crypto, but big banks are proceeding slowly.",
+      "ai_tags": []
+    },
+    {
+      "id": "hackernews:story:49072361",
+      "source_type": "hackernews",
+      "title": "MAI-Cyber-1-Flash inside MDASH",
+      "url": "https://microsoft.ai/news/introducing-mai-cyber-1-flash-inside-mdash/",
+      "content": null,
+      "author": "migmartri",
+      "published_at": "2026-07-27T16:52:22Z",
+      "fetched_at": "2026-07-27T21:30:37.372384Z",
+      "metadata": {
+        "discussion_url": "https://news.ycombinator.com/item?id=49072361",
+        "category": "tech-community",
+        "title_en": "Microsoft Launches MAI-Cyber-1-Flash AI Model for Cybersecurity",
+        "detailed_summary_en": "Microsoft announced MAI-Cyber-1-Flash, the first AI model built specifically for cybersecurity, integrated with MDASH, a multi-agent vulnerability identification and remediation system. It claims to find the most challenging vulnerabilities in complex code bases at half the cost of leading models. This marks a significant step in applying AI to cybersecurity, potentially lowering the cost and improving the speed of vulnerability detection. It could change how organizations approach code security, especially leveraging Microsoft's vast data advantage from trillions of daily signals. MAI-Cyber-1-Flash is designed to work with MDASH, which orchestrates over 100 specialized AI agents. The model is part of Project Perception, a broader agentic security offering grounded in real-world signals, and is available through a limited preview.",
+        "background_en": "Cybersecurity traditionally relies on manual code review and static analysis tools. AI-based approaches aim to automate vulnerability discovery. Microsoft's MDASH is an agentic code scanner using multi-model AI to detect vulnerabilities with depth and accuracy beyond traditional static analysis. The DARPA AI Cyber Challenge-winning Team Atlanta contributed to MDASH's development.",
+        "community_discussion_en": "Comments express skepticism about Microsoft's claims of data advantage and ease of use. Some users question whether the model is only effective on Microsoft products due to its training data. Others find the announcement interesting but are frustrated with accessing the product through Microsoft's corporate portal.",
+        "title_zh": "微软推出MAI-Cyber-1-Flash网络安全AI模型",
+        "detailed_summary_zh": "微软宣布推出MAI-Cyber-1-Flash，这是首个专为网络安全构建的AI模型，集成于MDASH——一个多智能体漏洞识别与修复系统。它声称能以领先模型一半的成本，在复杂代码库中发现最具挑战性的漏洞。 这标志着AI在网络安全应用中的重要一步，有望降低漏洞检测的成本并提高速度。它可能改变组织处理代码安全的方式，尤其是借助微软从数万亿日信号中获得的庞大数据优势。 MAI-Cyber-1-Flash设计用于与MDASH协作，后者协调超过100个专门的AI智能体。该模型是Project Perception的一部分，这是一个基于真实世界信号的更广泛的智能体安全产品，目前通过有限预览提供。",
+        "background_zh": "网络安全传统上依赖手动代码审查和静态分析工具。基于AI的方法旨在自动化漏洞发现。微软的MDASH是一种智能体代码扫描器，使用多模型AI以超越传统静态分析的深度和准确性检测漏洞。DARPA AI网络挑战赛冠军团队亚特兰大参与了MDASH的开发。",
+        "community_discussion_zh": "评论对微软关于数据优势和易用性的声明表示怀疑。一些用户质疑该模型是否仅因其训练数据而对微软产品有效。其他人觉得这个公告很有趣，但对通过微软企业门户获取产品感到沮丧。",
+        "sources": [
+          {
+            "url": "https://microsoft.ai/news/introducing-mai-cyber-1-flash-inside-mdash/",
+            "title": "Introducing MAI-Cyber-1-Flash inside MDASH | Microsoft AI"
+          },
+          {
+            "url": "https://x.com/satyanadella/status/2081779755146482153",
+            "title": "Satya Nadella on X: \"Today, we are announcing a series of updates that give customers frontier-grade security at half the cost. MAI-Cyber-1-Flash is our first cybersecurity model, built ground up to find the most challenging vulnerabilities in complex code bases. When combined with MDASH, it delivers world-class performance at 50 percent of the cost of leading models. We are bringing this capability to market through Project Perception, a complete agentic security offering grounded in real-world signals and"
+          },
+          {
+            "url": "https://learn.microsoft.com/en-us/security-exposure-management/ai-code-security-overview",
+            "title": "Codename MDASH Overview - Microsoft Security Exposure Management | Microsoft Learn"
+          }
+        ]
+      },
+      "ai_score": 7.0,
+      "ai_reason": null,
+      "ai_summary": "Microsoft announces MAI-Cyber-1-Flash, a new AI model focused on cybersecurity.",
       "ai_tags": []
     }
   ],
