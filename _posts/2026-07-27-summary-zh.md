@@ -5,24 +5,46 @@ date: 2026-07-27
 lang: zh
 ---
 
-<div class="run-stats" hidden data-fetched="87" data-analyzed="56" data-selected="8" data-critical="0"></div>
+<div class="run-stats" hidden data-fetched="106" data-analyzed="94" data-selected="10" data-critical="1"></div>
 
-> 从 56 条内容中筛选出 8 条重要资讯。
+> 从 94 条内容中筛选出 10 条重要资讯。
 
 ---
 
-1. [Triple-A 确认财库钱包遭入侵，损失 1180 万美元](#item-1) ⭐️ 8.0/10
-2. [BitMart 宣布停运后提款放缓](#item-2) ⭐️ 8.0/10
-3. [Storj 申请第 11 章破产，探索代币持有者股权方案](#item-3) ⭐️ 8.0/10
-4. [WEMIX 攻击者在合约漏洞后转走 72.4 万美元](#item-4) ⭐️ 8.0/10
-5. [Garden Finance 因 45 万美元 HTLC 漏洞下线](#item-5) ⭐️ 7.0/10
-6. [BitMEX 关闭，诉讼缠身；CLARITY 法案希望渺茫](#item-6) ⭐️ 7.0/10
-7. [美国公民因在边境使用 GrapheneOS 手机擦除数据被起诉](#item-7) ⭐️ 7.0/10
-8. [证明自动化借助 LLM 变得实用](#item-8) ⭐️ 7.0/10
+1. [泰国 SEC 指控 Bitkub 隐瞒 4700 万美元黑客攻击](#item-1) ⭐️ 9.0/10
+2. [Triple-A 确认财库钱包遭入侵，损失 1180 万美元](#item-2) ⭐️ 8.0/10
+3. [BitMart 宣布停运后提款放缓](#item-3) ⭐️ 8.0/10
+4. [Storj 申请第 11 章破产，探索代币持有者股权方案](#item-4) ⭐️ 8.0/10
+5. [WEMIX 攻击者在合约漏洞后转走 72.4 万美元](#item-5) ⭐️ 8.0/10
+6. [BNY Mellon 欧洲子公司加入 ESMA 的 MiCA 注册名单](#item-6) ⭐️ 7.0/10
+7. [币安宣布下架 5 种山寨币](#item-7) ⭐️ 7.0/10
+8. [go-ethereum v1.17.5：维护版本，包含 Pebble v2 和 Amsterdam EIP](#item-8) ⭐️ 7.0/10
+9. [美国公民因在边境使用 GrapheneOS 手机擦除数据被起诉](#item-9) ⭐️ 7.0/10
+10. [证明自动化借助 LLM 变得实用](#item-10) ⭐️ 7.0/10
 
 ---
 
 <a id="item-1"></a>
+## [泰国 SEC 指控 Bitkub 隐瞒 4700 万美元黑客攻击](https://decrypt.co/374343/thailands-sec-files-criminal-complaint-against-bitkub-over-undisclosed-47m-hack) ⭐️ 9.0/10
+
+泰国证券交易委员会已对加密货币交易所 Bitkub 及其两名前董事提起刑事诉讼，指控其未能披露 2021 年发生的 4700 万美元黑客攻击。 这是一次重大的监管执法行动，凸显了加密货币行业透明度和诚信的重要性，可能影响用户信任，并为其他交易所树立先例。 SEC 指控 Bitkub 在其文件中遗漏了这起 4700 万美元的盗窃事件，投诉针对公司及两名前董事个人，表明监管层关注个人责任。
+
+rss · Decrypt · 7月27日 17:16
+
+**背景**: Bitkub 是一家成立于 2018 年的泰国加密货币交易所，是 2019 年首批获得泰国 SEC 数字资产牌照的交易所之一。该交易所一直是泰国加密货币市场的主要参与者。SEC 是泰国数字资产的主要监管机构，负责执行证券法律。
+
+<details><summary>参考链接</summary>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Bitkub">Bitkub</a></li>
+
+</ul>
+</details>
+
+**标签**: `#regulation`, `#security`, `#exchange`, `#hack`, `#criminal complaint`
+
+---
+
+<a id="item-2"></a>
 ## [Triple-A 确认财库钱包遭入侵，损失 1180 万美元](https://cointelegraph.com/news/triple-a-treasury-wallet-breach-11-8-million-loss?utm_source=rss_feed&amp;utm_medium=rss&amp;utm_campaign=rss_partner_inbound) ⭐️ 8.0/10
 
 稳定币支付公司 Triple-A 确认其财库钱包遭到入侵，导致 1180 万美元损失。该公司表示客户资金未受影响，财务影响将由公司财库储备承担。 此事件凸显了加密货币支付基础设施中持续存在的安全漏洞，可能影响对基于稳定币的支付系统的信任。然而，客户资金安全的保证可能缓解用户的立即恐慌。 此次入侵专门针对 Triple-A 的财库钱包，而非客户钱包。该公司计划通过自身储备吸收 1180 万美元的损失，显示出一定的财务韧性。
@@ -31,11 +53,9 @@ rss · Cointelegraph · 7月27日 13:15
 
 **背景**: Triple-A 是一家稳定币支付公司，为企业提供加密货币与法定货币之间的交易服务。财库钱包用于公司管理运营资金，与客户资金分开。此次入侵凸显了企业加密货币钱包需要采取强健安全措施的重要性。
 
-**标签**: `#security`, `#breach`, `#stablecoin`, `#treasury`, `#payments`
-
 ---
 
-<a id="item-2"></a>
+<a id="item-3"></a>
 ## [BitMart 宣布停运后提款放缓](https://cointelegraph.com/news/bitmart-withdrawals-slow-exchange-wind-down?utm_source=rss_feed&amp;utm_medium=rss&amp;utm_campaign=rss_partner_inbound) ⭐️ 8.0/10
 
 BitMart 用户正面临提现延迟和冻结通知，该交易所逐步关闭，其钱包余额降至约 6900 万美元，BMX 代币周跌幅扩大至 81.5%。 此事件凸显了中心化交易所的风险以及关闭期间用户资金可能损失的问题，削弱了对加密货币交易所生态系统的信任，并影响可能面临漫长恢复期的用户。 钱包余额从此前水平下降以及 BMX 代币暴跌反映了市场恐慌和流动性减少，目前没有明确的全面提款处理或赔偿时间表。
@@ -52,11 +72,9 @@ rss · Cointelegraph · 7月27日 12:34
 </ul>
 </details>
 
-**标签**: `#exchange`, `#withdrawal`, `#wind-down`, `#security`, `#market event`
-
 ---
 
-<a id="item-3"></a>
+<a id="item-4"></a>
 ## [Storj 申请第 11 章破产，探索代币持有者股权方案](https://cointelegraph.com/news/storj-chapter-11-bankruptcy-tokenholder-equity?utm_source=rss_feed&amp;utm_medium=rss&amp;utm_campaign=rss_partner_inbound) ⭐️ 8.0/10
 
 去中心化存储提供商 Storj 已申请第 11 章破产保护，同时探索法院批准的机制，向 STORJ 代币持有者提供股权。该公司保证其网络在破产程序期间将继续运行。 这对去中心化存储领域来说是一个重大事件，因为该领域的主要参与者面临财务困境，可能会影响用户信任和行业信心。为代币持有者提供股权的提议可能为破产程序中如何对待加密货币代币持有者开创先例。 Storj 申请的是第 11 章破产，这允许其在重组期间继续运营。STORJ 代币的股权转换机制需要法院批准，具体细节尚未披露。
@@ -78,7 +96,7 @@ rss · Cointelegraph · 7月27日 09:01
 
 ---
 
-<a id="item-4"></a>
+<a id="item-5"></a>
 ## [WEMIX 攻击者在合约漏洞后转走 72.4 万美元](https://cointelegraph.com/news/wemix-attacker-moves-724k-contract-breach?utm_source=rss_feed&amp;utm_medium=rss&amp;utm_campaign=rss_partner_inbound) ⭐️ 8.0/10
 
 一名攻击者入侵了与 WEMIX$稳定币相关的智能合约，转移了约 724,198 USDC.e，导致 WEMIX 暂停了其跨链桥、流动性池交易及其他多项服务。 此次事件凸显了跨链桥和 DeFi 生态系统中持续存在的安全风险，可能削弱用户信任并对 WEMIX 平台造成严重的运营中断。 攻击者转移了 724,198 USDC.e（一种在其他链上的桥接版 USDC），WEMIX 迅速采取行动，暂停了跨链桥和流动性池交易以控制漏洞。
@@ -98,46 +116,63 @@ rss · Cointelegraph · 7月27日 06:53
 
 ---
 
-<a id="item-5"></a>
-## [Garden Finance 因 45 万美元 HTLC 漏洞下线](https://cointelegraph.com/news/garden-finance-app-offline-450k-htlc-exploit?utm_source=rss_feed&amp;utm_medium=rss&amp;utm_campaign=rss_partner_inbound) ⭐️ 7.0/10
-
-Garden Finance 在攻击者利用 HTLC 合约从以太坊、Base、Arbitrum 和 BNB 智能链盗取 45 万美元 USDT 后，禁用了其应用程序。 此次漏洞凸显了使用 HTLC 的 DeFi 协议中持续存在的安全风险，影响了多条链上的用户资金。 Blockaid 报告了此次漏洞，Garden Finance 下架了其应用。攻击针对的是 HTLC 合约，该合约设计用于原子交换，但如果未妥善保护则可能存在漏洞。
-
-rss · Cointelegraph · 7月27日 09:58
-
-**背景**: HTLC（哈希时间锁定合约）是一种用于区块链交易的智能合约，可以实现带有时间锁的无信任原子交换。它常用于闪电网络和跨链交换。然而，如果合约逻辑存在缺陷，就可能被利用。
-
-<details><summary>参考链接</summary>
-<ul>
-<li><a href="https://www.solulab.com/htlc-smart-contracts-in-crypto-payments/">How HTLC Smart Contracts Solve Crypto Payment Issues?</a></li>
-<li><a href="https://docs.lightning.engineering/the-lightning-network/multihop-payments/hash-time-lock-contract-htlc">Hashed Timelock Contract (HTLC) | Builder&#x27;s Guide</a></li>
-
-</ul>
-</details>
-
----
-
 <a id="item-6"></a>
-## [BitMEX 关闭，诉讼缠身；CLARITY 法案希望渺茫](https://cointelegraph.com/magazine/clarity-hopes-fade-bitmex-shuts-as-lawsuit-looms-hodlers-digest-july-27?utm_source=rss_feed&amp;utm_medium=rss&amp;utm_campaign=rss_partner_inbound) ⭐️ 7.0/10
+## [BNY Mellon 欧洲子公司加入 ESMA 的 MiCA 注册名单](https://cointelegraph.com/news/mica-register-expands-third-post-deadline-update?utm_source=rss_feed&amp;utm_medium=rss&amp;utm_campaign=rss_partner_inbound) ⭐️ 7.0/10
 
-BitMEX 宣布关闭交易所，同时面临一桩即将提起的集体诉讼，指控其窃取 623 枚比特币并涉及内幕交易；而美国加密货币监管框架 CLARITY 法案尽管得到大型金融机构的支持，进展前景也变得黯淡。 BitMEX 的关闭标志着加密货币交易所领域的重要整合，可能影响数千用户，并表明监管审查加强。CLARITY 法案希望的破灭意味着美国加密监管环境持续不确定性，影响行业参与者和投资者。 针对 BitMEX 的集体诉讼指控其系统设计用于保留客户抵押品，且联合创始人在服务器冻结期间利用私人用户数据进行内幕交易。CLARITY 法案虽是一项进步，但不会立即提供监管确定性，仍需美国证券交易委员会（SEC）和商品期货交易委员会（CFTC）进行数月甚至数年的规则制定。
+ESMA 在其第三次截止后更新中，将 15 家加密资产服务提供商（包括 BNY Mellon 的欧洲子公司）添加到 MiCA 注册名单中。 这标志着重要的机构采用，像 BNY Mellon 这样的主要传统银行在 MiCA 下注册，表明加密服务与受监管金融的融合日益增强。 该更新是 ESMA 临时 MiCA 注册名单的一部分，该名单将定期更新，直到 2026 年中期整合到 ESMA 的 IT 系统中。BNY Mellon 的子公司与其他银行和加密平台一同加入。
 
-rss · Cointelegraph · 7月27日 08:03
+rss · Cointelegraph · 7月27日 18:38
 
-**背景**: BitMEX 是一家历史悠久的加密货币衍生品交易所，以其杠杆交易产品闻名。CLARITY 法案是一项美国联邦法案提案，旨在明确 SEC 与 CFTC 在数字资产领域的管辖界限。尽管获得两党支持，该法案仍面临政治障碍和实施延迟。
+**背景**: MiCA（加密资产市场）是一项自 2024 年 12 月起全面适用的欧盟法规，统一了成员国之间的加密资产规则。包括交易所和托管机构在内的加密资产服务提供商（CASPs）必须在 ESMA 注册才能在欧盟提供服务。该注册名单由 ESMA 使用各国主管机构和欧洲银行管理局的数据维护。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://www.coindesk.com/business/2026/07/24/bitmex-faces-proposed-class-action-suit-for-theft-insider-trading-as-crypto-exchange-shuts-down">Crypto exchange BitMEX sued for 623 bitcoin as it prepares to shut down</a></li>
-<li><a href="https://blog.visiion.io/clarity-act-crypto-regulation-impact/">CLARITY Act Explained: Market Impact &amp; What It Means - Visiion Blog</a></li>
-<li><a href="https://clsbluesky.law.columbia.edu/2025/09/09/arnold-porter-discusses-the-clarity-act/">Arnold &amp; Porter Discusses the CLARITY Act | CLS Blue Sky Blog</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Markets_in_Crypto-Assets">Markets in Crypto-Assets - Wikipedia</a></li>
+<li><a href="https://www.esma.europa.eu/esmas-activities/digital-finance-and-innovation/markets-crypto-assets-regulation-mica">Markets in Crypto-Assets Regulation (MiCA)</a></li>
 
 </ul>
 </details>
+
+**标签**: `#regulation`, `#MiCA`, `#institutional adoption`, `#ESMA`, `#CASP`
 
 ---
 
 <a id="item-7"></a>
+## [币安宣布下架 5 种山寨币](https://news.google.com/rss/articles/CBMijgFBVV95cUxQdVd6YnlDWVF1X3NYYjZUSkNsMkx1bTlVU3RPQllfQl9RSW16RTkxU0lJaHVrMG5oZkx2Wlc5WEFMVmxvM0NNMUVtaFJrVjhJRXRlc0R0eS1VQkRBV3hhdzdCbjAyZTVsN2F3Y0M0ZUltQ3RLVWtMWERqTFJVMk4wX1BFSE5TZ083eG1EYV9n?oc=5) ⭐️ 7.0/10
+
+据 Koin Bülteni 报道，币安宣布将从其平台下架五种山寨币。初始报道中未披露具体代币和退市日期。 作为全球最大的加密货币交易所，币安的下架行为常导致相关代币价格大幅下跌和流动性降低。此举可能影响持有这些山寨币的投资者，并表明币安持续审查上市资产。 Koin Bülteni 的报道缺乏币安的官方确认，也未指明五种山寨币的名称或提供时间表。此类公告通常伴随低交易量或监管担忧等原因。
+
+google\_news · Koin Bülteni · 7月27日 18:14
+
+**背景**: 像币安这样的加密货币交易所会定期下架代币，以维护平台质量、遵守法规或保护用户。被下架的代币将从交易对中移除，用户需在截止日期前提取，否则可能面临无法访问的风险。
+
+**标签**: `#Binance`, `#delisting`, `#exchange`, `#altcoins`
+
+---
+
+<a id="item-8"></a>
+## [go-ethereum v1.17.5：维护版本，包含 Pebble v2 和 Amsterdam EIP](https://github.com/ethereum/go-ethereum/releases/tag/v1.17.5) ⭐️ 7.0/10
+
+go-ethereum 团队发布了 v1.17.5 维护更新，将默认 GOGC 值从 20 改为 50，增加了 Pebble v2 数据库支持，并继续实现 Amsterdam 硬分叉的 EIP。 该版本通过降低垃圾回收开销提升节点性能，并提供更高效的数据库后端，同时推进即将到来的 Amsterdam 硬分叉，该分叉将显著改变以太坊的 gas 模型和合约大小限制。节点运营者强烈建议升级。 Pebble v2 在首次启动新数据库时使用；现有的 Pebble v1 数据库需通过&\#x27;geth db pebble-upgrade&\#x27;手动升级。GOGC 更改调整了垃圾回收触发阈值，以更高内存使用换取更低 CPU 开销。
+
+github · rjl493456442 · 7月27日 16:17
+
+**背景**: GOGC 是 Go 运行时的环境变量，控制垃圾回收器的目标百分比：值越高，GC 运行频率越低，从而减少 CPU 时间但增加峰值内存。Pebble 是一个用 Go 编写的键值存储，最初在 go-ethereum 中作为 LevelDB 的替代方案使用。Amsterdam 硬分叉是计划中的以太坊升级，包含多个 EIP，旨在改进 gas 计算、增加合约大小并引入区块级访问列表，基于先前分叉的变更。
+
+<details><summary>参考链接</summary>
+<ul>
+<li><a href="https://dev.to/jones_charles_ad50858dbc0/tuning-gos-gogc-a-practical-guide-with-real-world-examples-4a00">Tuning Go&#x27;s GOGC: A Practical Guide with Real-World Examples - DEV Community</a></li>
+<li><a href="https://dbdb.io/db/pebble">Info about the Key/Value database management system (Since 2018).</a></li>
+<li><a href="https://eips.ethereum.org/EIPS/eip-2780">EIP-2780: Resource-based intrinsic transaction gas</a></li>
+
+</ul>
+</details>
+
+**标签**: `#ethereum`, `#go-ethereum`, `#maintenance release`, `#Amsterdam hardfork`, `#node software`
+
+---
+
+<a id="item-9"></a>
 ## [美国公民因在边境使用 GrapheneOS 手机擦除数据被起诉](https://www.techspot.com/news/113236-us-prosecutors-charge-atlanta-man-after-grapheneos-phone.html) ⭐️ 7.0/10
 
 一名美国公民在机场边境检查中使用 GrapheneOS 手机的胁迫 PIN 码，导致设备自动擦除数据，因此面临联邦指控。这是首例已知的因在美边境使用胁迫密码而引发的起诉案件。 此案为胁迫 PIN 码等可在被胁迫时自动删除数据的安全功能的使用树立了法律先例，引发了关于个人隐私权与边境政府权力平衡的重要问题。可能会阻止注重安全的用户使用此类功能。 GrapheneOS 的胁迫 PIN 码设计用于在胁迫下输入时擦除设备，但检方认为擦除行为构成妨碍司法。结果可能取决于使用胁迫 PIN 码是否被视为故意销毁证据。
@@ -159,7 +194,7 @@ hackernews · eecc · 7月27日 06:21 · [社区讨论](https://news.ycombinator
 
 ---
 
-<a id="item-8"></a>
+<a id="item-10"></a>
 ## [证明自动化借助 LLM 变得实用](https://www.imperialviolet.org/2026/07/26/zstd-lean.html) ⭐️ 7.0/10
 
 一篇新文章指出，此前比软件开发贵 20 倍的正式验证，如今因证明自动化而变得可负担，并可能与大语言模型（LLM）集成。 这一转变可能通过使正式验证对更广泛的项目在经济上可行，从而彻底改变软件可靠性和安全性，影响开发者、安全行业及最终用户。 作者指出，当前的证明自动化仅实现部分自动化，但与 GPT-4 等 LLM 集成可大幅减少剩余的人工投入。文章还提到，此前发现漏洞的成本也是验证的阻碍因素。
@@ -177,7 +212,5 @@ hackernews · zdw · 7月27日 04:53 · [社区讨论](https://news.ycombinator.
 </details>
 
 **社区讨论**: 社区评论者普遍认同这一论点，有观点认为数学是知识工作自动化的先导，也有人提到 Rust 生态中的 Verus 等工具是一个好的开始。此外还讨论了使用定理证明器与基于 LLM 的 API 成本之间的混淆。
-
-**标签**: `#formal verification`, `#proof automation`, `#programming languages`, `#LLM`, `#software engineering`
 
 ---
