@@ -2,15 +2,19 @@
   "version": 1,
   "date": "2026-07-27",
   "timezone": "Asia/Shanghai",
-  "updated_at": "2026-07-27T11:40:58.583579Z",
+  "updated_at": "2026-07-27T15:14:57.353291Z",
   "analyzed_keys": [
+    "03697f18ec08a71d207cb49c6d5c7a656c949d13818fa175682c195358fcd705",
+    "064464a8523f25884b403576f327467c5283c8acdde033c4333cf57c7531f9d6",
     "07cca6e6d31823a4fd8a7c1a4aea504fa538349538643b084d5084d26217856e",
     "08cea9d87887f2b3c70f634ec508e318e7ced0712a7a581f2d3ed1ab9e5a4a01",
     "0b4d6e2732c30a3ddada1f463983ed21d2a8350ae5a592a59232c21ca1477359",
     "10366d9df4514c666ab9e2ef12169014c03d4d2da0d325dd52ec6f2daee3cc35",
     "1198532e4642c60db272db30017025850fdcbe019842ac62f0b03a24ab331bd6",
+    "11ac607197d6956129564722156e29568dfe75913b3f71f655a16db30d8ef773",
     "12b1a45deff4d38c9c41280b21478abe7904199b8f892483297dfe9e1cc8caf4",
     "12f1b43af5be37174fa2021d74a0de3cfcf705e33036ad3abb1a228492633c90",
+    "154573dd12b4762d5df3078d4b216d19eeb4a0b9d350499cc9dbbffa0a3bb135",
     "163d1bcc9a51d9ed1d16335d72bbd292bfac9d091e41d365d9c6016c198c59a9",
     "172c89b2f61859221f4106c4a2c4cb35c728786f3f64708bb60137198ab812d0",
     "1973e127386d544bb35ca57fb08f461a8cd4298dcb81fb74a3331860490d2f03",
@@ -23,53 +27,77 @@
     "2449de925201cf15a19c2bc07210ef4d43a077177e20a035bc7969f1076b5b45",
     "27daa802598b5d51424fabfd2a9bdf7d8c0eda5d211c455f16998de4c5c32864",
     "2973fc7b8829073f4ebb230ef056c5b3961c8f73c3136823a81513c147f6fb5c",
+    "2c25b506d82f073182515216cd78307b744e5af40769f96758a6399bb6fb2e2e",
     "2d9e067e842b9b1dae6ce1260934b5637077120fe3452798d347890e8ed0fef6",
     "2e05eb101f53e83b47c0750a024f308ed79dfe557fc4d6b2bcac2ce4a5bc0fba",
     "2e296bb3d33089eb3f81616d7a7e0b233ba7b45f6a17fe7969917d2828dcdd75",
     "2f5e4c38711fae3438a948be0f3b7c473b27c6a49a5527de335795d907d3cdf2",
     "2f6fed0fe60d112ca3ee51b0220afacd45dabce5a13f01254100400eeedf0662",
+    "2f742b15d60e51240b341f569f9178f25e278f79e6f9474145e95226e2bc548c",
     "3110236e10f3e461a46462b4cf3b5e5f2f870683a20f73a6e4f8acabbf43f33b",
     "33f5da33d0bd04b5db3b1c16c96c72164af9b5be5bc53d883aecfb168f4c8fe5",
     "34e0cdcc5a59ff5e99fcec8f425b7e4562034bb3a7ed14b144ed450d1afb2743",
     "3828b61caaf197512eefadc8555d9182d1a10ca3f283b83d94e052d56dd3c826",
+    "3ba789388de2ab909abb59ad6ffa213c2658a3f46570e4a100071207486e7b39",
     "3c8907b9cb23c96b4e32c3580eb4a277cad4e9a3bf0a847c5a3e1a96490710ac",
     "3f5d745e4304ef4d83e938546251fd5b4110c5be1e7520e026972f7de0186032",
     "4049e0d5d91c56d87bbcc3457e568114ce313bf733b3793ff3c3170e226fb115",
     "459e36a5f1d07cc99ef591879c8c1111ac4a6a774df8465377f0b084dd1baf8f",
+    "47424eb72b519d668802c6db92de86c4fa1336f96fe526da26f8edf5eb98bacf",
+    "474e2b418470cfe6c07d915dbb793627ab085ada0ecb12a4b6ffa7fa486cbe28",
     "4906bd8c0dab755c1f78a1d0ae3124eef4d7eb5139fd3f71ff2e1c46bb46c15a",
     "4b17f70417286720d35196daefb988c3130a4d4314d8d041128739f96c824123",
     "4d53513d71a5136ef50f57e16251767397a6e54a8732cb5b422f55c547d56c26",
     "4f419e2bf277eab9e6471ed745306e5c357e339cbd5c24af28b9ecd250126c30",
+    "54a939351902b9ba23de4ec88d77f2b42a4e76e31fe3721cdb04e6f89f93cd82",
     "55193a13cd7927f4241fb8c428982c3044a63dfb95c2ca0df7a09db1ae6db26f",
     "586c24dab13e1b9fe2dc3ed446a0815fb1fcd9354f6c5f23ff515584aae7cbc0",
     "596258f6f4e0f4f6ffbbf6e2cf0a8b15d4c3412bd0d6dea766f22223c2dad3aa",
+    "5ae19ce20fefbce8bccd6caace62bfd11e21660ec38c37b7b14b0c7dae8363af",
     "5beb9264b2725b8b944e275b1bfc02a978f3d3ed06f0480dbe77d1df53f23fdc",
+    "6275c9e09b620fbb94b83977585b35947f2ea2d0bd13ebe70b55b7ecdceb2064",
     "66264c3f39620b0ee059dd8acf6a86a57632323c7b2af331edd55db0aa78d96e",
     "689d5d27eac704e96e189d7a87e2d7df89bc2798364bdec22ef14cc5fe8294d2",
     "693561108f133d143555d647d375ddc18492f5c95aa5f7d42f0a3abe0dfca493",
     "6a148b40cbf4421f7bfa7bf58514c4e48af358f801b494da331ca6870c5176f2",
+    "6a7c7117bab969efe131dc48ebd5d4d0df7fce62dbe45b41460afc2e51553c6e",
+    "6b4ce9dcf46547d092c1099387ea646262d371e4eb25407911323a8349743dd7",
     "6dc8549e6b123ead4aec3a68946a624d01f81777f470ebf4592f1aa6d0e2789a",
     "6ff56aac013f17505e57593333447fb50d4ad60fa34e6593465bc288c57c186f",
+    "715a76ce7defc56d6c80c1cacab31b93e5ec6781c60df431055a8226f2f1a31f",
     "7306225e680f47b82126e9a122d8dcfcef46dc9e3a590cf83122a243bafb0f81",
     "7513e69e83c322244984f018b4f0e6231398dfee45c22c9adb16a1bca4935851",
     "765627378240bcbcdaee0c0e4fbf1903f539dda39c834fe59d32812e079bf1fe",
+    "76eef9ed54678ffeddaa7fd9ba8e3f599828e53ee12a225c3949145596dee268",
     "7a9d147a3a53c228c252fccb72261db0a4c21824d74014a889eaf435b3c87783",
+    "7d0d8e266e759bef74e7fd5605c05aed60f80dfbae727bc0f47c22396271dcb5",
     "7d93d02f92c2dd385f1400d99e6c8479cd4c3e638e7e786d739818ef5fa7a741",
+    "826e3349aa65958085466353b13495a61dfe0c8af32e8cef20f964972a256a03",
     "836d736297c038ab4fd0a70f25a9a8b2054b5d9ebda323cfe98c4458492752e1",
     "85af2af222a6733fec160bd252336a444ed5c3cbe74973afff10299243dfe761",
     "88c9cebc99fa52e7a5451f01da536122bd3f22c5ec4c0d06430a451408ffe913",
+    "8bd2fef7579aa9b6914cf3b3c449f9763f8fa18802aedba707ab433db9988f3c",
     "91b3864b96a14f78cc7f0209b88bbcdeac587c895a4439a7d603401806f5f273",
     "92fb60f8009a46c0243eb25c8046162c8e07d3ffec474bdb615d689eef3b60f8",
+    "9367fadc5cc07f7d1375aa00e642e72b06a173b7adcf0e55dc7edc258e26c365",
+    "94ca7c5899dbc60b53b7cef92bbfbc662ae982937a223bb43397a90a3b999adf",
     "95f6eeab0b705880b32f6a114bf01be32b6737c0efbc886943ada56722140a84",
+    "9a08890517c5065ea1136283a342567fd2b2f218e766696ab7da9b34d06cb2d2",
+    "9a4c427061fd6715f76180a3e1d96d939cff8abe8ba6acde14f46e64291c70b5",
+    "9db905043898b91577b65844dfae7babc7d02904d28f2807b3db634ae9021516",
     "9ea4ab7daef1d351534912ef456055c413f3be09ead6e3019c192e04f99b6f12",
+    "9f46799a0e885c6be52eb2d7e30620bd3f1e1285378c2f0de5cc1bedb36b0f66",
     "a0a1d67389a14d8d771ee598c80e0b825ebb280ff9727279dad0fc9d692b80a6",
     "a270a48788e628907d7e654713ea9e9701cb9c96b659da5de5158b0e07abad79",
+    "a41b50e116116dfcff66830cbae2c1520fd415c2f19c0d7243867f042ec2fed2",
     "a494ca9c28daf7731e49c359e2d5fa84eae321e6034503970911f47318b01d4d",
     "ad62e55957106a277f0d741d831829c17f30146da3b3786fc0b3fdfd52835227",
+    "b09de6e71c2c5df0c26fc766d16c880dce9131b847cd1a736268bea6bd9d147e",
     "b2a1a8878fcac466c1179b70927f2fb1e1b4f0c75faac77426083934899ec9ed",
     "b31b08a8cade547bf8c1f6256c145e30421eace4e626f0bd643f515bc95f8c26",
     "b3492cd978f9c6c512d8a89b76a156be17c005e9cd459dd008e3a19e2b5c4059",
     "b39e4d9f09ef6e0e9e59dea0f17b13bb4eea81b938a3321cbc60839644dde35a",
+    "b6c4b33e4a2e3b50bacf9cedf1bac796e5a3d3ce2b2b65f58d321d7d708d395e",
     "b6f8777b7979291fdf2e7106062e92639a6aeb39ad105f8adf118cdc7f6ec1a3",
     "bb8f9eedccad60a42d928d9f5a5b889167075e9243532dc06cb7d0f72726f650",
     "bc1fd680f3800742bc5f08128dee11a4ab5a5475753ffff4ddd201247e4f6bc8",
@@ -78,10 +106,14 @@
     "c0a3c3384e0cbd8882ff8817369d3b9cde02afd80500f4573b0e60042398262a",
     "c2f0e1cd7e58be7302769551d87cf183bab7161cfc6f408ecf6d62baf146ab2c",
     "c644eace8296dcc30ae7fcebad069ae264f9dd21cd8510bf0a992ddace204f88",
+    "c8685381ec4ab69c17f55ce7aa25c7ab81425f5e2777df7ace99fceaedaf3dfe",
+    "c8c398265331ff2aaafb7067b54af26a5fecb55650b8ff752c8d5751b1c9594c",
     "ca0a73ba526fa4fd2b1646aa7f0163945b8f7fe2bedf35fb5ce970b18ad07c1b",
     "cd9510300c986875cca3fb2e4f9d61e9f9c0d2fbeb970999038053006ca6ae3c",
     "cfc8a096fb7b0c5f8783132bb4d6a4d9a34731d78f9f3b6ffe6f5c197ed578aa",
+    "d1b6bb2bbf202f36f4150d5dc7518029f1e568208cebae0dec0e818eb85b299d",
     "d22aae7837c178d781af9c92574e0de9e27a9f6eda1f64d00bf34720795cf852",
+    "d3887b51f13e1e66aaa4e7b101df7eeaad8e37ed229613485f3a01a5e8a79918",
     "d9a3149cfcb106b5cbb4c06d68b961d6ad3f590d646e6a8c775118f6a86e6d46",
     "da15964994b440fd4bcfc204a46ebe754509ae6624f6639a1943e59c093c205e",
     "db03b6c912c504b68a9f4837d4128446afb4fb9d180929404b0828e59e8bf04e",
@@ -95,9 +127,13 @@
     "eaa2e478f8ca52d88a342cb0b3d13734af4ff08df6020a5afd458d6c4c9dab4b",
     "ebe8f1c76e522b034f0e12755ebfa1ec110fd81307cdf2d7773c8817e49bbd5e",
     "f391b05aae792a543f3fcb0797a75c80afcdb779985e21785955b3a1e2791af0",
+    "f89e4216b79a0dcb3bac3192808346bb59ffd442a4bcfb426683307850cc8686",
+    "faf96aaaedec421b4d17e348caa315f88217dba80643c1e5c09d93f43a387df9",
+    "fca6bef299fe613c4d8a790bdf47ee1963c25cab608530bd12a25f5d8be227f2",
     "fd115a6e15852bc7bf36a45e6607889e5c750fa0ce32aa2681c4b0fd827cf32f",
     "fd1b27dc9ad9918f129625db09b5e55843190b6677c472bcba1dcc8119eba35f",
-    "fdc497a49d115b3a1689da4bb53d596199a54e184a998527b6660e3fa5d68a5b"
+    "fdc497a49d115b3a1689da4bb53d596199a54e184a998527b6660e3fa5d68a5b",
+    "fea70625904b1e2daff6a7a792a0accefb48a5de2328db2194079231cd3fc732"
   ],
   "items": [
     {
@@ -128,6 +164,118 @@
       "ai_score": 9.0,
       "ai_reason": null,
       "ai_summary": "Thailand's SEC files criminal charges against Bitkub and two former directors for failing to disclose a $47 million hack in 2021.",
+      "ai_tags": []
+    },
+    {
+      "id": "rss:www.coindesk.com_arc_outboundfeeds_rss_:a5855fb724529412",
+      "source_type": "rss",
+      "title": "Lido begins moving $16.5 billion in staked ether to cut validator count by a third",
+      "url": "https://www.coindesk.com/tech/2026/07/27/lido-begins-moving-usd16-5-billion-in-staked-ether-to-cut-validator-count-by-a-third",
+      "content": null,
+      "author": "Olivier Acuna",
+      "published_at": "2026-07-27T14:00:00Z",
+      "fetched_at": "2026-07-27T15:14:57.866727Z",
+      "metadata": {
+        "feed_name": "CoinDesk",
+        "category": "crypto-markets",
+        "title_en": "Lido Moves $16.5B in Staked ETH to Slash Validators by a Third",
+        "detailed_summary_en": "Lido has begun moving approximately $16.5 billion worth of staked ether (stETH) to consolidate its validator operations, aiming to reduce the total number of validators it runs by about one-third. This move could improve capital efficiency and reduce operational costs for Lido, the largest Ethereum liquid staking protocol, potentially altering staking rewards distribution and affecting decentralization dynamics in Ethereum's staking ecosystem. The consolidation involves merging smaller validator deposits into larger ones, as each Ethereum validator requires a minimum of 32 ETH to activate; reducing validator count may streamline rewards and lower overhead for Lido node operators.",
+        "background_en": "Lido is a liquid staking protocol that allows users to stake any amount of ETH and receive stETH, a tradable token representing their staked position. Ethereum's proof-of-stake consensus requires validators to lock 32 ETH to secure the network and earn rewards. Lido pools user deposits to run validators on their behalf, and this consolidation aims to optimize its validator fleet.",
+        "title_zh": "Lido转移165亿美元质押以太坊，减少三分之一验证者",
+        "detailed_summary_zh": "Lido已开始转移价值约165亿美元的质押以太坊（stETH），以整合其验证者运营，旨在将其运行的验证者总数减少约三分之一。 此举可能提高Lido（最大的以太坊流动性质押协议）的资本效率并降低运营成本，有可能改变质押奖励分配，并影响以太坊质押生态中的去中心化动态。 此次整合涉及将较小的验证者存款合并为较大的存款，因为每个以太坊验证者需要至少32个ETH才能激活；减少验证者数量可能会简化奖励分配并降低Lido节点运营商的间接成本。",
+        "background_zh": "Lido是一个流动性质押协议，允许用户质押任意数量的ETH并获得stETH（一种代表其质押头寸的可交易代币）。以太坊的权益证明共识要求验证者锁定32个ETH来保护网络并获得奖励。Lido汇集用户存款代表他们运行验证者，此次整合旨在优化其验证者队伍。",
+        "sources": [
+          {
+            "url": "https://lido.fi/",
+            "title": "Lido Liquid Staking"
+          },
+          {
+            "url": "https://lido.fi/how-lido-works",
+            "title": "How Lido Works"
+          },
+          {
+            "url": "https://ethereum.org/staking/",
+            "title": "Ethereum staking: How does it work? | ethereum.org"
+          }
+        ]
+      },
+      "ai_score": 8.0,
+      "ai_reason": null,
+      "ai_summary": "Lido begins moving $16.5 billion in staked ether to reduce its validator count by a third.",
+      "ai_tags": []
+    },
+    {
+      "id": "rss:cointelegraph.com_rss:4905984e841e85f4",
+      "source_type": "rss",
+      "title": "USDC issuer Circle to acquire nearly 1,000 IBM blockchain patents",
+      "url": "https://cointelegraph.com/news/circle-to-acquire-nearly-1000-ibm-blockchain-patents?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "content": null,
+      "author": "Cointelegraph by Robert Lakin",
+      "published_at": "2026-07-27T13:08:55Z",
+      "fetched_at": "2026-07-27T15:14:58.110194Z",
+      "metadata": {
+        "feed_name": "Cointelegraph",
+        "category": "crypto-markets",
+        "title_en": "Circle to acquire nearly 1,000 IBM blockchain patents",
+        "detailed_summary_en": "Circle, the issuer of the USDC stablecoin, announced it will acquire nearly 1,000 blockchain patents from IBM, including over 680 patent families. This strategic move strengthens Circle's intellectual property portfolio in blockchain technology. This acquisition positions Circle as a major holder of blockchain patents, potentially creating a competitive moat in the stablecoin and blockchain infrastructure space. It signals long-term consolidation and investment in intellectual property by key industry players, which could shape future standards and licensing. IBM's blockchain portfolio focuses on supply chain applications, with nearly 1,000 issued patents worldwide. The deal's financial terms were not disclosed, and it is subject to regulatory approvals.",
+        "background_en": "Circle is the company behind USDC, a stablecoin pegged 1:1 to the US dollar and backed by reserves of cash and short-term US Treasury bonds. IBM has been a pioneer in enterprise blockchain, developing networks for food safety, shipping, trade finance, and more. Patents are crucial for protecting and monetizing blockchain innovations.",
+        "title_zh": "Circle将收购IBM近1000项区块链专利",
+        "detailed_summary_zh": "USDC稳定币发行商Circle宣布将从IBM收购近1000项区块链专利，其中包括超过680个专利家族。这一战略举措增强了Circle在区块链技术方面的知识产权组合。 此次收购使Circle成为区块链专利的主要持有者，有可能在稳定币和区块链基础设施领域建立竞争护城河。这标志着主要参与者对知识产权的长期整合和投资，可能影响未来的标准和许可业务。 IBM的区块链专利组合专注于供应链应用，在全球拥有近1000项已授权专利。交易的财务条款未披露，且需获得监管批准。",
+        "background_zh": "Circle是USDC背后的公司，USDC是一种与美元1:1挂钩的稳定币，由现金和短期美国国债储备支持。IBM一直是企业区块链的先驱，为食品安全、航运、贸易融资等领域开发网络。专利对于保护和商业化区块链创新至关重要。",
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/USDC_(cryptocurrency)",
+            "title": "USDC (cryptocurrency) - Wikipedia"
+          },
+          {
+            "url": "https://www.circle.com/usdc",
+            "title": "USDC | Powering global finance. Issued by Circle."
+          }
+        ]
+      },
+      "ai_score": 8.0,
+      "ai_reason": null,
+      "ai_summary": "Circle, the issuer of USDC, is acquiring nearly 1,000 blockchain patents from IBM, enhancing its intellectual property position.",
+      "ai_tags": []
+    },
+    {
+      "id": "hackernews:story:49067854",
+      "source_type": "hackernews",
+      "title": "How is the Bun Rewrite in Rust going?",
+      "url": "https://lockwood.dev/ai/2026/07/27/how-is-the-bun-rewrite-in-rust-going.html",
+      "content": null,
+      "author": "tomlockwood",
+      "published_at": "2026-07-27T11:12:26Z",
+      "fetched_at": "2026-07-27T15:14:58.016418Z",
+      "metadata": {
+        "discussion_url": "https://news.ycombinator.com/item?id=49067854",
+        "category": "tech-community",
+        "title_en": "Bun's Rust Rewrite Progresses, Delays v1.4 for Node.js Tests",
+        "detailed_summary_en": "Bun's creator Jarred announced that the Rust rewrite has shipped in Claude Code over a month ago, but the v1.4 release is delayed until a promised number of Node.js compatibility tests pass, with a target of next Tuesday. This update provides transparency on a major technical overhaul of Bun, a popular JavaScript runtime, and highlights the challenges of achieving Node.js compatibility after a full rewrite. The Rust rewrite was already used in Claude Code, but Bun v1.4 is delayed because a specific number of newly passing Node.js tests has not been met; the pull requests are pending and merging is expected soon.",
+        "background_en": "Bun is a high-performance JavaScript runtime that aims to be a drop-in replacement for Node.js, written in Zig. The project announced a rewrite in Rust to improve performance and safety. The rewrite has been shipped in Claude Code, an AI coding tool, but the general release is pending further compatibility improvements.",
+        "community_discussion_en": "Community members expressed mixed feelings: some saw the delay as a normal part of a major refactor, while others questioned the premature claims of success from LLM-assisted translation. There was also curiosity about the incomplete discussion thread.",
+        "title_zh": "Bun 的 Rust 重写进展顺利，v1.4 因 Node.js 测试推迟",
+        "detailed_summary_zh": "Bun 的创建者 Jarred 宣布，Rust 重写版已在一个多月前随 Claude Code 发布，但 v1.4 版本因尚未达到承诺的 Node.js 兼容性测试数量而推迟，目标是在下周二发布。 这一进展透明地展示了流行 JavaScript 运行时 Bun 的重大技术重构，并凸显了在完全重写后实现 Node.js 兼容性所面临的挑战。 Rust 重写版已在 Claude Code 中使用，但 Bun v1.4 因未达到特定数量的新增通过 Node.js 测试而推迟；相关拉取请求正在等待合并，预计很快完成。",
+        "background_zh": "Bun 是一个高性能的 JavaScript 运行时，旨在作为 Node.js 的替代品，最初用 Zig 编写。该项目宣布用 Rust 重写以提升性能和安全性。重写版已随 AI 编码工具 Claude Code 发布，但公开发布仍需进一步提升兼容性。",
+        "community_discussion_zh": "社区成员看法不一：有人认为延迟是大规模重构的正常现象，也有人质疑基于 LLM 辅助翻译的成功宣言为时过早。此外，不完整的讨论也引发了好奇。",
+        "sources": [
+          {
+            "url": "https://bun.sh/",
+            "title": "Bun — A fast all-in-one JavaScript runtime"
+          },
+          {
+            "url": "https://github.com/oven-sh/bun",
+            "title": "GitHub - oven-sh/bun: Incredibly fast JavaScript runtime, bundler..."
+          },
+          {
+            "url": "https://claude.com/product/claude-code",
+            "title": "Claude Code by Anthropic | AI Coding Agent, Terminal, IDE"
+          }
+        ]
+      },
+      "ai_score": 8.0,
+      "ai_reason": null,
+      "ai_summary": "Bun's Rust rewrite is progressing and shipped in Claude Code, but the next release (1.4) is delayed until a promised number of Node.js compatibility tests pass.",
       "ai_tags": []
     },
     {
@@ -229,78 +377,6 @@
       "ai_tags": []
     },
     {
-      "id": "rss:cointelegraph.com_rss:19f271a9c524d577",
-      "source_type": "rss",
-      "title": "WEMIX says attacker moved about $724,000 after contract breach",
-      "url": "https://cointelegraph.com/news/wemix-attacker-moves-724k-contract-breach?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-      "content": null,
-      "author": "Cointelegraph by Ezra Reguerra",
-      "published_at": "2026-07-26T22:53:55Z",
-      "fetched_at": "2026-07-27T02:24:38.301461Z",
-      "metadata": {
-        "feed_name": "Cointelegraph",
-        "category": "crypto-markets",
-        "title_en": "WEMIX attacker moves $724k after contract breach",
-        "detailed_summary_en": "An attacker compromised a smart contract linked to the WEMIX$ stablecoin and moved approximately 724,198 USDC.e, prompting WEMIX to suspend its bridges, liquidity-pool trading, and several other services. This incident highlights ongoing security risks in cross-chain bridge and DeFi ecosystems, potentially eroding user trust and causing significant operational disruptions for the WEMIX platform. The attacker moved 724,198 USDC.e, which is a bridged version of USDC on other chains, and WEMIX acted swiftly by suspending bridges and liquidity-pool trading to contain the breach.",
-        "background_en": "WEMIX$ is a stablecoin fully collateralized by USDC, running on the WEMIX3.0 mainnet. USDC.e is a bridged representation of USDC on other networks. Cross-chain bridges are often targeted by attackers due to smart contract vulnerabilities, as seen in numerous past exploits.",
-        "title_zh": "WEMIX攻击者在合约漏洞后转走72.4万美元",
-        "detailed_summary_zh": "一名攻击者入侵了与WEMIX$稳定币相关的智能合约，转移了约724,198 USDC.e，导致WEMIX暂停了其跨链桥、流动性池交易及其他多项服务。 此次事件凸显了跨链桥和DeFi生态系统中持续存在的安全风险，可能削弱用户信任并对WEMIX平台造成严重的运营中断。 攻击者转移了724,198 USDC.e（一种在其他链上的桥接版USDC），WEMIX迅速采取行动，暂停了跨链桥和流动性池交易以控制漏洞。",
-        "background_zh": "WEMIX$是一种完全由USDC抵押的稳定币，运行于WEMIX3.0主网。USDC.e是USDC在其他网络上的桥接表示。由于智能合约漏洞，跨链桥经常成为攻击者的目标，过去的多次攻击事件已证明了这一点。",
-        "sources": [
-          {
-            "url": "https://coinmarketcap.com/currencies/wemix/",
-            "title": "WEMIX price today, WEMIX to USD live price, marketcap and chart | CoinMarketCap"
-          },
-          {
-            "url": "https://cryptobriefing.com/wemix-investigates-wemix-dollar-contract-breach/",
-            "title": "WEMIX investigates potential security breach of WEMIX$ stablecoin contract"
-          },
-          {
-            "url": "https://chain.link/education-hub/cross-chain-bridge-vulnerabilities",
-            "title": "7 Cross-Chain Bridge Vulnerabilities Explained | Chainlink"
-          }
-        ]
-      },
-      "ai_score": 8.0,
-      "ai_reason": null,
-      "ai_summary": "WEMIX reports an attacker compromised a WEMIX$-linked contract and moved approximately $724,000, leading to suspension of bridges and services.",
-      "ai_tags": []
-    },
-    {
-      "id": "rss:cointelegraph.com_rss:ba4daaf27c4fb4bf",
-      "source_type": "rss",
-      "title": "BNY Mellon unit joins MiCA register as ESMA adds 15 providers",
-      "url": "https://cointelegraph.com/news/mica-register-expands-third-post-deadline-update?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-      "content": null,
-      "author": "Cointelegraph by Helen Partz",
-      "published_at": "2026-07-27T10:38:09Z",
-      "fetched_at": "2026-07-27T11:40:59.591048Z",
-      "metadata": {
-        "feed_name": "Cointelegraph",
-        "category": "crypto-markets",
-        "title_en": "BNY Mellon European unit added to ESMA's MiCA register",
-        "detailed_summary_en": "ESMA added 15 crypto-asset service providers (CASPs), including BNY Mellon's European subsidiary, to the MiCA register in its third post-deadline update. This marks significant institutional adoption, as a major traditional bank like BNY Mellon registers under MiCA, signaling growing integration of crypto services within regulated finance. The update is part of ESMA's interim MiCA register, which will be updated regularly until mid-2026 when it integrates into ESMA's IT systems. BNY Mellon's unit joins other banks and crypto platforms.",
-        "background_en": "MiCA (Markets in Crypto-Assets) is an EU regulation fully applicable since December 2024, harmonizing rules for crypto-assets across member states. CASPs, including exchanges and custodians, must register with ESMA to offer services in the EU. The register is maintained by ESMA using data from national competent authorities and the EBA.",
-        "title_zh": "BNY Mellon欧洲子公司加入ESMA的MiCA注册名单",
-        "detailed_summary_zh": "ESMA在其第三次截止后更新中，将15家加密资产服务提供商（包括BNY Mellon的欧洲子公司）添加到MiCA注册名单中。 这标志着重要的机构采用，像BNY Mellon这样的主要传统银行在MiCA下注册，表明加密服务与受监管金融的融合日益增强。 该更新是ESMA临时MiCA注册名单的一部分，该名单将定期更新，直到2026年中期整合到ESMA的IT系统中。BNY Mellon的子公司与其他银行和加密平台一同加入。",
-        "background_zh": "MiCA（加密资产市场）是一项自2024年12月起全面适用的欧盟法规，统一了成员国之间的加密资产规则。包括交易所和托管机构在内的加密资产服务提供商（CASPs）必须在ESMA注册才能在欧盟提供服务。该注册名单由ESMA使用各国主管机构和欧洲银行管理局的数据维护。",
-        "sources": [
-          {
-            "url": "https://en.wikipedia.org/wiki/Markets_in_Crypto-Assets",
-            "title": "Markets in Crypto-Assets - Wikipedia"
-          },
-          {
-            "url": "https://www.esma.europa.eu/esmas-activities/digital-finance-and-innovation/markets-crypto-assets-regulation-mica",
-            "title": "Markets in Crypto-Assets Regulation (MiCA)"
-          }
-        ]
-      },
-      "ai_score": 7.0,
-      "ai_reason": null,
-      "ai_summary": "BNY Mellon's European subsidiary and 14 other CASPs were added to the MiCA register by ESMA in the third post-deadline update.",
-      "ai_tags": []
-    },
-    {
       "id": "google_news:article:8d905234980d60ec",
       "source_type": "google_news",
       "title": "Binance Announces New Delisting for 5 Altcoins! - Koin Bülteni",
@@ -398,42 +474,6 @@
       "ai_score": 7.0,
       "ai_reason": null,
       "ai_summary": "US citizen charged after using duress PIN on GrapheneOS phone that wiped data during airport border search, highlighting legal risks of security features.",
-      "ai_tags": []
-    },
-    {
-      "id": "hackernews:story:49062291",
-      "source_type": "hackernews",
-      "title": "We have proof automation now",
-      "url": "https://www.imperialviolet.org/2026/07/26/zstd-lean.html",
-      "content": null,
-      "author": "zdw",
-      "published_at": "2026-07-26T20:53:26Z",
-      "fetched_at": "2026-07-27T07:53:30.792515Z",
-      "metadata": {
-        "discussion_url": "https://news.ycombinator.com/item?id=49062291",
-        "category": "tech-community",
-        "title_en": "Proof Automation Becomes Practical with LLMs",
-        "detailed_summary_en": "A new article argues that formal verification, previously 20 times more expensive than software development, is now becoming affordable due to proof automation, with potential integration with large language models (LLMs). This shift could revolutionize software reliability and security by making formal verification economically viable for a wider range of projects, affecting developers, the security industry, and end users. The author notes that current proof automation achieves only partial automation, but integration with LLMs like GPT-4 could significantly reduce remaining human effort. The post also highlights that the cost of finding exploits was previously a disincentive for verification.",
-        "background_en": "Formal verification uses mathematical proofs to confirm software correctness, but has historically been very expensive, often costing 20 times as much as development. Proof automation tools like automated theorem provers assist in generating proofs, and recent advances in LLMs may make these tools more accessible and efficient.",
-        "community_discussion_en": "Community commenters generally agree with the thesis, with some noting that mathematics is a leading indicator for automation in knowledge work, and others highlighting tools like Verus for the Rust ecosystem as a good start. There is also discussion about confusion around using theorem provers versus LLM-based API costs.",
-        "title_zh": "证明自动化借助LLM变得实用",
-        "detailed_summary_zh": "一篇新文章指出，此前比软件开发贵20倍的正式验证，如今因证明自动化而变得可负担，并可能与大语言模型（LLM）集成。 这一转变可能通过使正式验证对更广泛的项目在经济上可行，从而彻底改变软件可靠性和安全性，影响开发者、安全行业及最终用户。 作者指出，当前的证明自动化仅实现部分自动化，但与GPT-4等LLM集成可大幅减少剩余的人工投入。文章还提到，此前发现漏洞的成本也是验证的阻碍因素。",
-        "background_zh": "正式验证使用数学证明来确认软件正确性，但历来成本高昂，通常是开发的20倍。证明自动化工具（如自动定理证明器）辅助生成证明，而LLM的最新进展可能使这些工具更易用、更高效。",
-        "community_discussion_zh": "社区评论者普遍认同这一论点，有观点认为数学是知识工作自动化的先导，也有人提到Rust生态中的Verus等工具是一个好的开始。此外还讨论了使用定理证明器与基于LLM的API成本之间的混淆。",
-        "sources": [
-          {
-            "url": "https://en.wikipedia.org/wiki/Proof_automation",
-            "title": "Proof automation"
-          },
-          {
-            "url": "https://en.wikipedia.org/wiki/Formal_verification",
-            "title": "Formal verification"
-          }
-        ]
-      },
-      "ai_score": 7.0,
-      "ai_reason": null,
-      "ai_summary": "The post and discussion explore the viability of proof automation in software development, highlighting cost reductions and potential integration with LLMs.",
       "ai_tags": []
     }
   ],

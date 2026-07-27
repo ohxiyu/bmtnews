@@ -5,22 +5,22 @@ date: 2026-07-27
 lang: zh
 ---
 
-<div class="run-stats" hidden data-fetched="106" data-analyzed="94" data-selected="10" data-critical="1"></div>
+<div class="run-stats" hidden data-fetched="113" data-analyzed="130" data-selected="10" data-critical="1"></div>
 
-> 从 94 条内容中筛选出 10 条重要资讯。
+> 从 130 条内容中筛选出 10 条重要资讯。
 
 ---
 
 1. [泰国 SEC 指控 Bitkub 隐瞒 4700 万美元黑客攻击](#item-1) ⭐️ 9.0/10
-2. [Triple-A 确认财库钱包遭入侵，损失 1180 万美元](#item-2) ⭐️ 8.0/10
-3. [BitMart 宣布停运后提款放缓](#item-3) ⭐️ 8.0/10
-4. [Storj 申请第 11 章破产，探索代币持有者股权方案](#item-4) ⭐️ 8.0/10
-5. [WEMIX 攻击者在合约漏洞后转走 72.4 万美元](#item-5) ⭐️ 8.0/10
-6. [BNY Mellon 欧洲子公司加入 ESMA 的 MiCA 注册名单](#item-6) ⭐️ 7.0/10
-7. [币安宣布下架 5 种山寨币](#item-7) ⭐️ 7.0/10
-8. [go-ethereum v1.17.5：维护版本，包含 Pebble v2 和 Amsterdam EIP](#item-8) ⭐️ 7.0/10
-9. [美国公民因在边境使用 GrapheneOS 手机擦除数据被起诉](#item-9) ⭐️ 7.0/10
-10. [证明自动化借助 LLM 变得实用](#item-10) ⭐️ 7.0/10
+2. [Lido 转移 165 亿美元质押以太坊，减少三分之一验证者](#item-2) ⭐️ 8.0/10
+3. [Circle 将收购 IBM 近 1000 项区块链专利](#item-3) ⭐️ 8.0/10
+4. [Bun 的 Rust 重写进展顺利，v1.4 因 Node.js 测试推迟](#item-4) ⭐️ 8.0/10
+5. [Triple-A 确认财库钱包遭入侵，损失 1180 万美元](#item-5) ⭐️ 8.0/10
+6. [BitMart 宣布停运后提款放缓](#item-6) ⭐️ 8.0/10
+7. [Storj 申请第 11 章破产，探索代币持有者股权方案](#item-7) ⭐️ 8.0/10
+8. [币安宣布下架 5 种山寨币](#item-8) ⭐️ 7.0/10
+9. [go-ethereum v1.17.5：维护版本，包含 Pebble v2 和 Amsterdam EIP](#item-9) ⭐️ 7.0/10
+10. [美国公民因在边境使用 GrapheneOS 手机擦除数据被起诉](#item-10) ⭐️ 7.0/10
 
 ---
 
@@ -40,11 +40,76 @@ rss · Decrypt · 7月27日 17:16
 </ul>
 </details>
 
-**标签**: `#regulation`, `#security`, `#exchange`, `#hack`, `#criminal complaint`
-
 ---
 
 <a id="item-2"></a>
+## [Lido 转移 165 亿美元质押以太坊，减少三分之一验证者](https://www.coindesk.com/tech/2026/07/27/lido-begins-moving-usd16-5-billion-in-staked-ether-to-cut-validator-count-by-a-third) ⭐️ 8.0/10
+
+Lido 已开始转移价值约 165 亿美元的质押以太坊（stETH），以整合其验证者运营，旨在将其运行的验证者总数减少约三分之一。 此举可能提高 Lido（最大的以太坊流动性质押协议）的资本效率并降低运营成本，有可能改变质押奖励分配，并影响以太坊质押生态中的去中心化动态。 此次整合涉及将较小的验证者存款合并为较大的存款，因为每个以太坊验证者需要至少 32 个 ETH 才能激活；减少验证者数量可能会简化奖励分配并降低 Lido 节点运营商的间接成本。
+
+rss · CoinDesk · 7月27日 22:00
+
+**背景**: Lido 是一个流动性质押协议，允许用户质押任意数量的 ETH 并获得 stETH（一种代表其质押头寸的可交易代币）。以太坊的权益证明共识要求验证者锁定 32 个 ETH 来保护网络并获得奖励。Lido 汇集用户存款代表他们运行验证者，此次整合旨在优化其验证者队伍。
+
+<details><summary>参考链接</summary>
+<ul>
+<li><a href="https://lido.fi/">Lido Liquid Staking</a></li>
+<li><a href="https://lido.fi/how-lido-works">How Lido Works</a></li>
+<li><a href="https://ethereum.org/staking/">Ethereum staking: How does it work? | ethereum.org</a></li>
+
+</ul>
+</details>
+
+**标签**: `#Lido`, `#Ethereum`, `#Staking`, `#DeFi`, `#Protocol Update`
+
+---
+
+<a id="item-3"></a>
+## [Circle 将收购 IBM 近 1000 项区块链专利](https://cointelegraph.com/news/circle-to-acquire-nearly-1000-ibm-blockchain-patents?utm_source=rss_feed&amp;utm_medium=rss&amp;utm_campaign=rss_partner_inbound) ⭐️ 8.0/10
+
+USDC 稳定币发行商 Circle 宣布将从 IBM 收购近 1000 项区块链专利，其中包括超过 680 个专利家族。这一战略举措增强了 Circle 在区块链技术方面的知识产权组合。 此次收购使 Circle 成为区块链专利的主要持有者，有可能在稳定币和区块链基础设施领域建立竞争护城河。这标志着主要参与者对知识产权的长期整合和投资，可能影响未来的标准和许可业务。 IBM 的区块链专利组合专注于供应链应用，在全球拥有近 1000 项已授权专利。交易的财务条款未披露，且需获得监管批准。
+
+rss · Cointelegraph · 7月27日 21:08
+
+**背景**: Circle 是 USDC 背后的公司，USDC 是一种与美元 1:1 挂钩的稳定币，由现金和短期美国国债储备支持。IBM 一直是企业区块链的先驱，为食品安全、航运、贸易融资等领域开发网络。专利对于保护和商业化区块链创新至关重要。
+
+<details><summary>参考链接</summary>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/USDC_%28cryptocurrency%29">USDC (cryptocurrency) - Wikipedia</a></li>
+<li><a href="https://www.circle.com/usdc">USDC | Powering global finance. Issued by Circle.</a></li>
+
+</ul>
+</details>
+
+**标签**: `#Circle`, `#USDC`, `#IBM`, `#patents`, `#blockchain`
+
+---
+
+<a id="item-4"></a>
+## [Bun 的 Rust 重写进展顺利，v1.4 因 Node.js 测试推迟](https://lockwood.dev/ai/2026/07/27/how-is-the-bun-rewrite-in-rust-going.html) ⭐️ 8.0/10
+
+Bun 的创建者 Jarred 宣布，Rust 重写版已在一个多月前随 Claude Code 发布，但 v1.4 版本因尚未达到承诺的 Node.js 兼容性测试数量而推迟，目标是在下周二发布。 这一进展透明地展示了流行 JavaScript 运行时 Bun 的重大技术重构，并凸显了在完全重写后实现 Node.js 兼容性所面临的挑战。 Rust 重写版已在 Claude Code 中使用，但 Bun v1.4 因未达到特定数量的新增通过 Node.js 测试而推迟；相关拉取请求正在等待合并，预计很快完成。
+
+hackernews · tomlockwood · 7月27日 19:12 · [社区讨论](https://news.ycombinator.com/item?id=49067854)
+
+**背景**: Bun 是一个高性能的 JavaScript 运行时，旨在作为 Node.js 的替代品，最初用 Zig 编写。该项目宣布用 Rust 重写以提升性能和安全性。重写版已随 AI 编码工具 Claude Code 发布，但公开发布仍需进一步提升兼容性。
+
+<details><summary>参考链接</summary>
+<ul>
+<li><a href="https://bun.sh/">Bun — A fast all-in-one JavaScript runtime</a></li>
+<li><a href="https://github.com/oven-sh/bun">GitHub - oven-sh/bun: Incredibly fast JavaScript runtime, bundler...</a></li>
+<li><a href="https://claude.com/product/claude-code">Claude Code by Anthropic | AI Coding Agent, Terminal, IDE</a></li>
+
+</ul>
+</details>
+
+**社区讨论**: 社区成员看法不一：有人认为延迟是大规模重构的正常现象，也有人质疑基于 LLM 辅助翻译的成功宣言为时过早。此外，不完整的讨论也引发了好奇。
+
+**标签**: `#bun`, `#rust`, `#javascript-runtime`, `#rewrite`, `#nodejs-compatibility`
+
+---
+
+<a id="item-5"></a>
 ## [Triple-A 确认财库钱包遭入侵，损失 1180 万美元](https://cointelegraph.com/news/triple-a-treasury-wallet-breach-11-8-million-loss?utm_source=rss_feed&amp;utm_medium=rss&amp;utm_campaign=rss_partner_inbound) ⭐️ 8.0/10
 
 稳定币支付公司 Triple-A 确认其财库钱包遭到入侵，导致 1180 万美元损失。该公司表示客户资金未受影响，财务影响将由公司财库储备承担。 此事件凸显了加密货币支付基础设施中持续存在的安全漏洞，可能影响对基于稳定币的支付系统的信任。然而，客户资金安全的保证可能缓解用户的立即恐慌。 此次入侵专门针对 Triple-A 的财库钱包，而非客户钱包。该公司计划通过自身储备吸收 1180 万美元的损失，显示出一定的财务韧性。
@@ -55,7 +120,7 @@ rss · Cointelegraph · 7月27日 13:15
 
 ---
 
-<a id="item-3"></a>
+<a id="item-6"></a>
 ## [BitMart 宣布停运后提款放缓](https://cointelegraph.com/news/bitmart-withdrawals-slow-exchange-wind-down?utm_source=rss_feed&amp;utm_medium=rss&amp;utm_campaign=rss_partner_inbound) ⭐️ 8.0/10
 
 BitMart 用户正面临提现延迟和冻结通知，该交易所逐步关闭，其钱包余额降至约 6900 万美元，BMX 代币周跌幅扩大至 81.5%。 此事件凸显了中心化交易所的风险以及关闭期间用户资金可能损失的问题，削弱了对加密货币交易所生态系统的信任，并影响可能面临漫长恢复期的用户。 钱包余额从此前水平下降以及 BMX 代币暴跌反映了市场恐慌和流动性减少，目前没有明确的全面提款处理或赔偿时间表。
@@ -74,7 +139,7 @@ rss · Cointelegraph · 7月27日 12:34
 
 ---
 
-<a id="item-4"></a>
+<a id="item-7"></a>
 ## [Storj 申请第 11 章破产，探索代币持有者股权方案](https://cointelegraph.com/news/storj-chapter-11-bankruptcy-tokenholder-equity?utm_source=rss_feed&amp;utm_medium=rss&amp;utm_campaign=rss_partner_inbound) ⭐️ 8.0/10
 
 去中心化存储提供商 Storj 已申请第 11 章破产保护，同时探索法院批准的机制，向 STORJ 代币持有者提供股权。该公司保证其网络在破产程序期间将继续运行。 这对去中心化存储领域来说是一个重大事件，因为该领域的主要参与者面临财务困境，可能会影响用户信任和行业信心。为代币持有者提供股权的提议可能为破产程序中如何对待加密货币代币持有者开创先例。 Storj 申请的是第 11 章破产，这允许其在重组期间继续运营。STORJ 代币的股权转换机制需要法院批准，具体细节尚未披露。
@@ -96,48 +161,7 @@ rss · Cointelegraph · 7月27日 09:01
 
 ---
 
-<a id="item-5"></a>
-## [WEMIX 攻击者在合约漏洞后转走 72.4 万美元](https://cointelegraph.com/news/wemix-attacker-moves-724k-contract-breach?utm_source=rss_feed&amp;utm_medium=rss&amp;utm_campaign=rss_partner_inbound) ⭐️ 8.0/10
-
-一名攻击者入侵了与 WEMIX$稳定币相关的智能合约，转移了约 724,198 USDC.e，导致 WEMIX 暂停了其跨链桥、流动性池交易及其他多项服务。 此次事件凸显了跨链桥和 DeFi 生态系统中持续存在的安全风险，可能削弱用户信任并对 WEMIX 平台造成严重的运营中断。 攻击者转移了 724,198 USDC.e（一种在其他链上的桥接版 USDC），WEMIX 迅速采取行动，暂停了跨链桥和流动性池交易以控制漏洞。
-
-rss · Cointelegraph · 7月27日 06:53
-
-**背景**: WEMIX$是一种完全由 USDC 抵押的稳定币，运行于 WEMIX3.0 主网。USDC.e 是 USDC 在其他网络上的桥接表示。由于智能合约漏洞，跨链桥经常成为攻击者的目标，过去的多次攻击事件已证明了这一点。
-
-<details><summary>参考链接</summary>
-<ul>
-<li><a href="https://coinmarketcap.com/currencies/wemix/">WEMIX price today, WEMIX to USD live price, marketcap and chart | CoinMarketCap</a></li>
-<li><a href="https://cryptobriefing.com/wemix-investigates-wemix-dollar-contract-breach/">WEMIX investigates potential security breach of WEMIX$ stablecoin contract</a></li>
-<li><a href="https://chain.link/education-hub/cross-chain-bridge-vulnerabilities">7 Cross-Chain Bridge Vulnerabilities Explained | Chainlink</a></li>
-
-</ul>
-</details>
-
----
-
-<a id="item-6"></a>
-## [BNY Mellon 欧洲子公司加入 ESMA 的 MiCA 注册名单](https://cointelegraph.com/news/mica-register-expands-third-post-deadline-update?utm_source=rss_feed&amp;utm_medium=rss&amp;utm_campaign=rss_partner_inbound) ⭐️ 7.0/10
-
-ESMA 在其第三次截止后更新中，将 15 家加密资产服务提供商（包括 BNY Mellon 的欧洲子公司）添加到 MiCA 注册名单中。 这标志着重要的机构采用，像 BNY Mellon 这样的主要传统银行在 MiCA 下注册，表明加密服务与受监管金融的融合日益增强。 该更新是 ESMA 临时 MiCA 注册名单的一部分，该名单将定期更新，直到 2026 年中期整合到 ESMA 的 IT 系统中。BNY Mellon 的子公司与其他银行和加密平台一同加入。
-
-rss · Cointelegraph · 7月27日 18:38
-
-**背景**: MiCA（加密资产市场）是一项自 2024 年 12 月起全面适用的欧盟法规，统一了成员国之间的加密资产规则。包括交易所和托管机构在内的加密资产服务提供商（CASPs）必须在 ESMA 注册才能在欧盟提供服务。该注册名单由 ESMA 使用各国主管机构和欧洲银行管理局的数据维护。
-
-<details><summary>参考链接</summary>
-<ul>
-<li><a href="https://en.wikipedia.org/wiki/Markets_in_Crypto-Assets">Markets in Crypto-Assets - Wikipedia</a></li>
-<li><a href="https://www.esma.europa.eu/esmas-activities/digital-finance-and-innovation/markets-crypto-assets-regulation-mica">Markets in Crypto-Assets Regulation (MiCA)</a></li>
-
-</ul>
-</details>
-
-**标签**: `#regulation`, `#MiCA`, `#institutional adoption`, `#ESMA`, `#CASP`
-
----
-
-<a id="item-7"></a>
+<a id="item-8"></a>
 ## [币安宣布下架 5 种山寨币](https://news.google.com/rss/articles/CBMijgFBVV95cUxQdVd6YnlDWVF1X3NYYjZUSkNsMkx1bTlVU3RPQllfQl9RSW16RTkxU0lJaHVrMG5oZkx2Wlc5WEFMVmxvM0NNMUVtaFJrVjhJRXRlc0R0eS1VQkRBV3hhdzdCbjAyZTVsN2F3Y0M0ZUltQ3RLVWtMWERqTFJVMk4wX1BFSE5TZ083eG1EYV9n?oc=5) ⭐️ 7.0/10
 
 据 Koin Bülteni 报道，币安宣布将从其平台下架五种山寨币。初始报道中未披露具体代币和退市日期。 作为全球最大的加密货币交易所，币安的下架行为常导致相关代币价格大幅下跌和流动性降低。此举可能影响持有这些山寨币的投资者，并表明币安持续审查上市资产。 Koin Bülteni 的报道缺乏币安的官方确认，也未指明五种山寨币的名称或提供时间表。此类公告通常伴随低交易量或监管担忧等原因。
@@ -146,11 +170,9 @@ google\_news · Koin Bülteni · 7月27日 18:14
 
 **背景**: 像币安这样的加密货币交易所会定期下架代币，以维护平台质量、遵守法规或保护用户。被下架的代币将从交易对中移除，用户需在截止日期前提取，否则可能面临无法访问的风险。
 
-**标签**: `#Binance`, `#delisting`, `#exchange`, `#altcoins`
-
 ---
 
-<a id="item-8"></a>
+<a id="item-9"></a>
 ## [go-ethereum v1.17.5：维护版本，包含 Pebble v2 和 Amsterdam EIP](https://github.com/ethereum/go-ethereum/releases/tag/v1.17.5) ⭐️ 7.0/10
 
 go-ethereum 团队发布了 v1.17.5 维护更新，将默认 GOGC 值从 20 改为 50，增加了 Pebble v2 数据库支持，并继续实现 Amsterdam 硬分叉的 EIP。 该版本通过降低垃圾回收开销提升节点性能，并提供更高效的数据库后端，同时推进即将到来的 Amsterdam 硬分叉，该分叉将显著改变以太坊的 gas 模型和合约大小限制。节点运营者强烈建议升级。 Pebble v2 在首次启动新数据库时使用；现有的 Pebble v1 数据库需通过&\#x27;geth db pebble-upgrade&\#x27;手动升级。GOGC 更改调整了垃圾回收触发阈值，以更高内存使用换取更低 CPU 开销。
@@ -168,11 +190,9 @@ github · rjl493456442 · 7月27日 16:17
 </ul>
 </details>
 
-**标签**: `#ethereum`, `#go-ethereum`, `#maintenance release`, `#Amsterdam hardfork`, `#node software`
-
 ---
 
-<a id="item-9"></a>
+<a id="item-10"></a>
 ## [美国公民因在边境使用 GrapheneOS 手机擦除数据被起诉](https://www.techspot.com/news/113236-us-prosecutors-charge-atlanta-man-after-grapheneos-phone.html) ⭐️ 7.0/10
 
 一名美国公民在机场边境检查中使用 GrapheneOS 手机的胁迫 PIN 码，导致设备自动擦除数据，因此面临联邦指控。这是首例已知的因在美边境使用胁迫密码而引发的起诉案件。 此案为胁迫 PIN 码等可在被胁迫时自动删除数据的安全功能的使用树立了法律先例，引发了关于个人隐私权与边境政府权力平衡的重要问题。可能会阻止注重安全的用户使用此类功能。 GrapheneOS 的胁迫 PIN 码设计用于在胁迫下输入时擦除设备，但检方认为擦除行为构成妨碍司法。结果可能取决于使用胁迫 PIN 码是否被视为故意销毁证据。
@@ -191,26 +211,5 @@ hackernews · eecc · 7月27日 06:21 · [社区讨论](https://news.ycombinator
 </details>
 
 **社区讨论**: 评论者指出，虽然胁迫 PIN 码是有用的安全功能，但用户必须意识到在边境可能面临的法律后果。有人建议使用 VeraCrypt 的隐藏卷等诱饵 OS 卷作为不那么极端的替代方案。其他人则认为旅行者应在过境前擦除设备，之后再从备份恢复。
-
----
-
-<a id="item-10"></a>
-## [证明自动化借助 LLM 变得实用](https://www.imperialviolet.org/2026/07/26/zstd-lean.html) ⭐️ 7.0/10
-
-一篇新文章指出，此前比软件开发贵 20 倍的正式验证，如今因证明自动化而变得可负担，并可能与大语言模型（LLM）集成。 这一转变可能通过使正式验证对更广泛的项目在经济上可行，从而彻底改变软件可靠性和安全性，影响开发者、安全行业及最终用户。 作者指出，当前的证明自动化仅实现部分自动化，但与 GPT-4 等 LLM 集成可大幅减少剩余的人工投入。文章还提到，此前发现漏洞的成本也是验证的阻碍因素。
-
-hackernews · zdw · 7月27日 04:53 · [社区讨论](https://news.ycombinator.com/item?id=49062291)
-
-**背景**: 正式验证使用数学证明来确认软件正确性，但历来成本高昂，通常是开发的 20 倍。证明自动化工具（如自动定理证明器）辅助生成证明，而 LLM 的最新进展可能使这些工具更易用、更高效。
-
-<details><summary>参考链接</summary>
-<ul>
-<li><a href="https://en.wikipedia.org/wiki/Proof_automation">Proof automation</a></li>
-<li><a href="https://en.wikipedia.org/wiki/Formal_verification">Formal verification</a></li>
-
-</ul>
-</details>
-
-**社区讨论**: 社区评论者普遍认同这一论点，有观点认为数学是知识工作自动化的先导，也有人提到 Rust 生态中的 Verus 等工具是一个好的开始。此外还讨论了使用定理证明器与基于 LLM 的 API 成本之间的混淆。
 
 ---
