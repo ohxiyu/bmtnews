@@ -2,11 +2,17 @@
   "version": 1,
   "date": "2026-07-27",
   "timezone": "Asia/Shanghai",
-  "updated_at": "2026-07-27T04:03:35.245363Z",
+  "updated_at": "2026-07-27T07:53:30.099249Z",
   "analyzed_keys": [
     "08cea9d87887f2b3c70f634ec508e318e7ced0712a7a581f2d3ed1ab9e5a4a01",
     "0b4d6e2732c30a3ddada1f463983ed21d2a8350ae5a592a59232c21ca1477359",
+    "10366d9df4514c666ab9e2ef12169014c03d4d2da0d325dd52ec6f2daee3cc35",
+    "163d1bcc9a51d9ed1d16335d72bbd292bfac9d091e41d365d9c6016c198c59a9",
     "1abc5adb0f8ed012d47b58be8413ee3f9208c2fe5d48a8bbc924c9aa775140c2",
+    "1bc76bc9510c242e57b0ffb28303c8487b6835a7563b6db96f09a6cec2e43df2",
+    "1c758e40b963f19ec8b675ad3ad37e083a78549596953b8f3ec2f6bb0f02bb2d",
+    "1e3a60ef5fef3d6ceb70072f114cc435f89449753b7631cdb7e945010bf22447",
+    "1ebe2d4d47c53a73a98f34fe4dffc01b0c549565a9097eeef73df8c1ac15c528",
     "222ac421484920dfbb986c11e77cb2cf9ecae58fc7194f073b5d2f8bfc49e041",
     "2449de925201cf15a19c2bc07210ef4d43a077177e20a035bc7969f1076b5b45",
     "2f5e4c38711fae3438a948be0f3b7c473b27c6a49a5527de335795d907d3cdf2",
@@ -14,6 +20,7 @@
     "33f5da33d0bd04b5db3b1c16c96c72164af9b5be5bc53d883aecfb168f4c8fe5",
     "34e0cdcc5a59ff5e99fcec8f425b7e4562034bb3a7ed14b144ed450d1afb2743",
     "3828b61caaf197512eefadc8555d9182d1a10ca3f283b83d94e052d56dd3c826",
+    "4049e0d5d91c56d87bbcc3457e568114ce313bf733b3793ff3c3170e226fb115",
     "4906bd8c0dab755c1f78a1d0ae3124eef4d7eb5139fd3f71ff2e1c46bb46c15a",
     "4b17f70417286720d35196daefb988c3130a4d4314d8d041128739f96c824123",
     "4d53513d71a5136ef50f57e16251767397a6e54a8732cb5b422f55c547d56c26",
@@ -23,28 +30,96 @@
     "66264c3f39620b0ee059dd8acf6a86a57632323c7b2af331edd55db0aa78d96e",
     "689d5d27eac704e96e189d7a87e2d7df89bc2798364bdec22ef14cc5fe8294d2",
     "7513e69e83c322244984f018b4f0e6231398dfee45c22c9adb16a1bca4935851",
+    "765627378240bcbcdaee0c0e4fbf1903f539dda39c834fe59d32812e079bf1fe",
     "7a9d147a3a53c228c252fccb72261db0a4c21824d74014a889eaf435b3c87783",
     "7d93d02f92c2dd385f1400d99e6c8479cd4c3e638e7e786d739818ef5fa7a741",
+    "85af2af222a6733fec160bd252336a444ed5c3cbe74973afff10299243dfe761",
+    "88c9cebc99fa52e7a5451f01da536122bd3f22c5ec4c0d06430a451408ffe913",
     "91b3864b96a14f78cc7f0209b88bbcdeac587c895a4439a7d603401806f5f273",
+    "92fb60f8009a46c0243eb25c8046162c8e07d3ffec474bdb615d689eef3b60f8",
+    "a0a1d67389a14d8d771ee598c80e0b825ebb280ff9727279dad0fc9d692b80a6",
     "a270a48788e628907d7e654713ea9e9701cb9c96b659da5de5158b0e07abad79",
+    "a494ca9c28daf7731e49c359e2d5fa84eae321e6034503970911f47318b01d4d",
     "ad62e55957106a277f0d741d831829c17f30146da3b3786fc0b3fdfd52835227",
     "b3492cd978f9c6c512d8a89b76a156be17c005e9cd459dd008e3a19e2b5c4059",
     "b39e4d9f09ef6e0e9e59dea0f17b13bb4eea81b938a3321cbc60839644dde35a",
     "bb8f9eedccad60a42d928d9f5a5b889167075e9243532dc06cb7d0f72726f650",
+    "bd47016b5e406cc5222e48b95afb276283e038c1ba33cb40769733456b272b88",
     "be9d2ecdf2fd86467fbee8ed5a34e27d8cd693d7093865faf137be4ae4ab7759",
     "c0a3c3384e0cbd8882ff8817369d3b9cde02afd80500f4573b0e60042398262a",
     "c2f0e1cd7e58be7302769551d87cf183bab7161cfc6f408ecf6d62baf146ab2c",
     "c644eace8296dcc30ae7fcebad069ae264f9dd21cd8510bf0a992ddace204f88",
     "ca0a73ba526fa4fd2b1646aa7f0163945b8f7fe2bedf35fb5ce970b18ad07c1b",
+    "cd9510300c986875cca3fb2e4f9d61e9f9c0d2fbeb970999038053006ca6ae3c",
     "d22aae7837c178d781af9c92574e0de9e27a9f6eda1f64d00bf34720795cf852",
     "d9a3149cfcb106b5cbb4c06d68b961d6ad3f590d646e6a8c775118f6a86e6d46",
     "da15964994b440fd4bcfc204a46ebe754509ae6624f6639a1943e59c093c205e",
     "db03b6c912c504b68a9f4837d4128446afb4fb9d180929404b0828e59e8bf04e",
     "e358d358a29457419e250666e5119ca3e2fb993ffa4e1acab0123fb4ef8e8aaf",
+    "e73d975f65302a3336cb6271c2a734fbf01f1b39d2f88b6a6e9c7f56f3bc3c2a",
+    "ea541605102957edfba374708c1f915686d3f47372b506155cd9b4f90af36021",
     "fd1b27dc9ad9918f129625db09b5e55843190b6677c472bcba1dcc8119eba35f",
     "fdc497a49d115b3a1689da4bb53d596199a54e184a998527b6660e3fa5d68a5b"
   ],
   "items": [
+    {
+      "id": "rss:cointelegraph.com_rss:0dbdf514d69e05c4",
+      "source_type": "rss",
+      "title": "Triple-A confirms treasury-wallet breach after losses reach $11.8M",
+      "url": "https://cointelegraph.com/news/triple-a-treasury-wallet-breach-11-8-million-loss?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "content": null,
+      "author": "Cointelegraph by Ezra Reguerra",
+      "published_at": "2026-07-27T05:15:54Z",
+      "fetched_at": "2026-07-27T07:53:30.883791Z",
+      "metadata": {
+        "feed_name": "Cointelegraph",
+        "category": "crypto-markets",
+        "title_en": "Triple-A confirms treasury-wallet breach, $11.8M loss",
+        "detailed_summary_en": "Triple-A, a stablecoin payments company, confirmed a breach of its treasury wallet resulting in $11.8 million in losses. The company stated that client funds were unaffected and the financial impact will be covered by its treasury reserves. This incident highlights ongoing security vulnerabilities in crypto payment infrastructure, potentially impacting trust in stablecoin-based payment systems. However, the assurance that client funds are safe may mitigate immediate panic among users. The breach specifically targeted Triple-A's treasury wallet, not client wallets. The company plans to absorb the $11.8M loss through its own reserves, indicating a degree of financial resilience.",
+        "background_en": "Triple-A is a stablecoin payments company that facilitates crypto-to-fiat transactions for businesses. Treasury wallets are used by companies to manage operational funds, separate from client funds. This breach underscores the importance of robust security measures for corporate crypto wallets.",
+        "title_zh": "Triple-A确认财库钱包遭入侵，损失1180万美元",
+        "detailed_summary_zh": "稳定币支付公司Triple-A确认其财库钱包遭到入侵，导致1180万美元损失。该公司表示客户资金未受影响，财务影响将由公司财库储备承担。 此事件凸显了加密货币支付基础设施中持续存在的安全漏洞，可能影响对基于稳定币的支付系统的信任。然而，客户资金安全的保证可能缓解用户的立即恐慌。 此次入侵专门针对Triple-A的财库钱包，而非客户钱包。该公司计划通过自身储备吸收1180万美元的损失，显示出一定的财务韧性。",
+        "background_zh": "Triple-A是一家稳定币支付公司，为企业提供加密货币与法定货币之间的交易服务。财库钱包用于公司管理运营资金，与客户资金分开。此次入侵凸显了企业加密货币钱包需要采取强健安全措施的重要性。"
+      },
+      "ai_score": 8.0,
+      "ai_reason": null,
+      "ai_summary": "Triple-A confirms a treasury-wallet breach resulting in $11.8M losses, but client funds remain secure and the financial impact will be covered by reserves.",
+      "ai_tags": []
+    },
+    {
+      "id": "rss:cointelegraph.com_rss:7054fd684a39df2b",
+      "source_type": "rss",
+      "title": "BitMart withdrawals appear to slow following wind-down announcement",
+      "url": "https://cointelegraph.com/news/bitmart-withdrawals-slow-exchange-wind-down?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "content": null,
+      "author": "Cointelegraph by Ezra Reguerra",
+      "published_at": "2026-07-27T04:34:44Z",
+      "fetched_at": "2026-07-27T07:53:30.883823Z",
+      "metadata": {
+        "feed_name": "Cointelegraph",
+        "category": "crypto-markets",
+        "title_en": "BitMart withdrawals slow after wind-down announcement",
+        "detailed_summary_en": "BitMart users are experiencing withdrawal delays and freeze notices as the exchange winds down, with its wallet balances dropping to approximately $69 million and its BMX token extending an 81.5% weekly decline. This event highlights the risks of centralized exchanges and the potential loss of user funds during wind-downs, eroding trust in the crypto exchange ecosystem and impacting users who may face long recovery times. The wallet balance drop from previous levels and the BMX token crash reflect market panic and reduced liquidity, with no clear timeline for full withdrawal processing or compensation.",
+        "background_en": "BitMart is a centralized cryptocurrency exchange that launched its native BMX token as an ERC-20 token to support its ecosystem. A wind-down means the exchange is ceasing operations, often leading to withdrawal halts and asset freezes. Similar events have occurred at other exchanges, causing significant user losses.",
+        "title_zh": "BitMart 宣布停运后提款放缓",
+        "detailed_summary_zh": "BitMart 用户正面临提现延迟和冻结通知，该交易所逐步关闭，其钱包余额降至约 6900 万美元，BMX 代币周跌幅扩大至 81.5%。 此事件凸显了中心化交易所的风险以及关闭期间用户资金可能损失的问题，削弱了对加密货币交易所生态系统的信任，并影响可能面临漫长恢复期的用户。 钱包余额从此前水平下降以及 BMX 代币暴跌反映了市场恐慌和流动性减少，目前没有明确的全面提款处理或赔偿时间表。",
+        "background_zh": "BitMart 是一个中心化加密货币交易所，曾推出其原生代币 BMX（一种 ERC-20 代币）以支持其生态系统。停运意味着交易所停止运营，通常会导致提现暂停和资产冻结。类似事件曾发生在其他交易所，造成用户重大损失。",
+        "sources": [
+          {
+            "url": "https://www.bitmart.com/bmx",
+            "title": "BitMart Token (BMX) | The Official Token of the BitMart Ecosystem"
+          },
+          {
+            "url": "https://www.coinbase.com/price/bitmart-token",
+            "title": "BitMart Token Price, BMX Price, Live Charts, and Marketcap"
+          }
+        ]
+      },
+      "ai_score": 8.0,
+      "ai_reason": null,
+      "ai_summary": "BitMart withdrawals slow as exchange winds down, with wallet balances dropping and BMX token crashing.",
+      "ai_tags": []
+    },
     {
       "id": "rss:cointelegraph.com_rss:134362aad6f7ff6b",
       "source_type": "rss",
@@ -196,44 +271,6 @@
       "ai_tags": []
     },
     {
-      "id": "rss:www.coindesk.com_arc_outboundfeeds_rss_:2c0fb0f54c8211aa",
-      "source_type": "rss",
-      "title": "South Korea trading giant puts receivables onchain in tokenization test with LG CNS",
-      "url": "https://www.coindesk.com/business/2026/07/26/south-korea-trading-giant-puts-receivables-onchain-in-tokenization-test-with-lg-cns",
-      "content": null,
-      "author": "Krisztian Sandor",
-      "published_at": "2026-07-27T00:00:00Z",
-      "fetched_at": "2026-07-27T02:24:38.158723Z",
-      "metadata": {
-        "feed_name": "CoinDesk",
-        "category": "crypto-markets",
-        "title_en": "South Korea trading giant tokenizes receivables on blockchain with LG CNS",
-        "detailed_summary_en": "South Korea's largest trading company, in collaboration with LG CNS, has launched a pilot project to tokenize trade receivables on a blockchain platform, marking a significant step in real-world asset tokenization for enterprise finance. This test demonstrates the growing interest in tokenizing real-world assets to improve liquidity and transparency in trade finance, potentially reducing costs and settlement times for large corporations. The tokenized receivables represent claims on future payments from trade deals, and the blockchain-based tokens allow for fractional ownership and automated settlement via smart contracts.",
-        "background_en": "Receivables are amounts owed by customers to a company for goods or services delivered but not yet paid. Tokenization converts these rights into digital tokens on a blockchain, enabling easier transfer and investment. This test by a major South Korean firm with LG CNS signals potential for broader adoption in trade finance.",
-        "title_zh": "韩国贸易巨头与LG CNS合作在区块链上对应收账款进行代币化测试",
-        "detailed_summary_zh": "韩国最大的贸易公司与LG CNS合作，启动了一项试点项目，将贸易应收账款在区块链平台上进行代币化，标志着企业金融领域实物资产代币化的重要一步。 这项测试表明，代币化实物资产以改善贸易金融的流动性和透明度的兴趣日益增长，可能为大型企业降低成本和结算时间。 代币化的应收账款代表了对未来贸易付款的索取权，基于区块链的代币允许通过智能合约实现部分所有权和自动结算。",
-        "background_zh": "应收账款是客户因已交付但未付款的商品或服务而欠公司的金额。代币化将这些权利转换为区块链上的数字代币，便于转让和投资。韩国一家大公司与LG CNS进行的这项测试表明，贸易金融领域的更广泛采用可能即将到来。",
-        "sources": [
-          {
-            "url": "https://dictionary.cambridge.org/dictionary/english/receivables",
-            "title": "RECEIVABLES | English meaning - Cambridge Dictionary"
-          },
-          {
-            "url": "https://grokipedia.com/page/asset_tokenization",
-            "title": "Asset tokenization"
-          },
-          {
-            "url": "https://www.britannica.com/money/real-world-asset-tokenization",
-            "title": "Tokenization of real-world assets: Is a digital ..."
-          }
-        ]
-      },
-      "ai_score": 7.0,
-      "ai_reason": null,
-      "ai_summary": "South Korean trading giant tests tokenization of receivables on blockchain with LG CNS.",
-      "ai_tags": []
-    },
-    {
       "id": "hackernews:story:49063022",
       "source_type": "hackernews",
       "title": "US citizen charged after GrapheneOS phone wipes during airport search",
@@ -274,27 +311,39 @@
       "ai_tags": []
     },
     {
-      "id": "rss:www.coindesk.com_arc_outboundfeeds_rss_:614db931b5e0ef3e",
-      "source_type": "rss",
-      "title": "2 weeks left for Clarity: State of Crypto",
-      "url": "https://www.coindesk.com/policy/2026/07/26/2-weeks-left-for-clarity-state-of-crypto",
+      "id": "hackernews:story:49062291",
+      "source_type": "hackernews",
+      "title": "We have proof automation now",
+      "url": "https://www.imperialviolet.org/2026/07/26/zstd-lean.html",
       "content": null,
-      "author": "Nikhilesh De",
-      "published_at": "2026-07-26T18:30:00Z",
-      "fetched_at": "2026-07-26T21:12:28.376193Z",
+      "author": "zdw",
+      "published_at": "2026-07-26T20:53:26Z",
+      "fetched_at": "2026-07-27T07:53:30.792515Z",
       "metadata": {
-        "feed_name": "CoinDesk",
-        "category": "crypto-markets",
-        "title_en": "Two-Week Deadline for Crypto Regulatory Clarity",
-        "detailed_summary_en": "A two-week deadline has been set for achieving regulatory clarity in the crypto industry, as highlighted by a recent Coindesk article. This deadline could significantly impact market structure and access, as clear regulations are essential for institutional adoption and market stability. The article, titled '2 weeks left for Clarity: State of Crypto,' serves as a reminder of the approaching deadline and its potential implications for the crypto ecosystem.",
-        "background_en": "Regulatory clarity refers to clear and consistent rules for digital assets, which the crypto industry has long sought from governments worldwide. A deadline suggests that a decision or announcement on crypto policy is imminent, potentially affecting how cryptocurrencies are classified and traded.",
-        "title_zh": "加密监管清晰度最后两周期限",
-        "detailed_summary_zh": "根据CoinDesk最近的一篇文章，加密行业实现监管清晰度的最后期限为两周。 这一期限可能对市场结构和准入产生重大影响，因为清晰的法规对于机构采用和市场稳定至关重要。 这篇题为《两周倒计时：加密状态》的文章提醒人们注意这一即将到来的截止日期及其对加密生态系统的潜在影响。",
-        "background_zh": "监管清晰度是指针对数字资产的明确且一致的规则，加密行业长期以来一直寻求各国政府提供此类规则。截止日期表明关于加密政策的决定或公告即将到来，可能影响加密货币的分类和交易方式。"
+        "discussion_url": "https://news.ycombinator.com/item?id=49062291",
+        "category": "tech-community",
+        "title_en": "Proof Automation Becomes Practical with LLMs",
+        "detailed_summary_en": "A new article argues that formal verification, previously 20 times more expensive than software development, is now becoming affordable due to proof automation, with potential integration with large language models (LLMs). This shift could revolutionize software reliability and security by making formal verification economically viable for a wider range of projects, affecting developers, the security industry, and end users. The author notes that current proof automation achieves only partial automation, but integration with LLMs like GPT-4 could significantly reduce remaining human effort. The post also highlights that the cost of finding exploits was previously a disincentive for verification.",
+        "background_en": "Formal verification uses mathematical proofs to confirm software correctness, but has historically been very expensive, often costing 20 times as much as development. Proof automation tools like automated theorem provers assist in generating proofs, and recent advances in LLMs may make these tools more accessible and efficient.",
+        "community_discussion_en": "Community commenters generally agree with the thesis, with some noting that mathematics is a leading indicator for automation in knowledge work, and others highlighting tools like Verus for the Rust ecosystem as a good start. There is also discussion about confusion around using theorem provers versus LLM-based API costs.",
+        "title_zh": "证明自动化借助LLM变得实用",
+        "detailed_summary_zh": "一篇新文章指出，此前比软件开发贵20倍的正式验证，如今因证明自动化而变得可负担，并可能与大语言模型（LLM）集成。 这一转变可能通过使正式验证对更广泛的项目在经济上可行，从而彻底改变软件可靠性和安全性，影响开发者、安全行业及最终用户。 作者指出，当前的证明自动化仅实现部分自动化，但与GPT-4等LLM集成可大幅减少剩余的人工投入。文章还提到，此前发现漏洞的成本也是验证的阻碍因素。",
+        "background_zh": "正式验证使用数学证明来确认软件正确性，但历来成本高昂，通常是开发的20倍。证明自动化工具（如自动定理证明器）辅助生成证明，而LLM的最新进展可能使这些工具更易用、更高效。",
+        "community_discussion_zh": "社区评论者普遍认同这一论点，有观点认为数学是知识工作自动化的先导，也有人提到Rust生态中的Verus等工具是一个好的开始。此外还讨论了使用定理证明器与基于LLM的API成本之间的混淆。",
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Proof_automation",
+            "title": "Proof automation"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/Formal_verification",
+            "title": "Formal verification"
+          }
+        ]
       },
       "ai_score": 7.0,
       "ai_reason": null,
-      "ai_summary": "A reminder of a two-week deadline for achieving regulatory clarity in crypto policy.",
+      "ai_summary": "The post and discussion explore the viability of proof automation in software development, highlighting cost reductions and potential integration with LLMs.",
       "ai_tags": []
     }
   ],

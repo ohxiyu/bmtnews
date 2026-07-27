@@ -5,23 +5,58 @@ date: 2026-07-27
 lang: zh
 ---
 
-<div class="run-stats" hidden data-fetched="86" data-analyzed="39" data-selected="7" data-critical="0"></div>
+<div class="run-stats" hidden data-fetched="87" data-analyzed="56" data-selected="8" data-critical="0"></div>
 
-> 从 39 条内容中筛选出 7 条重要资讯。
+> 从 56 条内容中筛选出 8 条重要资讯。
 
 ---
 
-1. [Storj 申请第 11 章破产，探索代币持有者股权方案](#item-1) ⭐️ 8.0/10
-2. [WEMIX 攻击者在合约漏洞后转走 72.4 万美元](#item-2) ⭐️ 8.0/10
-3. [Garden Finance 因 45 万美元 HTLC 漏洞下线](#item-3) ⭐️ 7.0/10
-4. [BitMEX 关闭，诉讼缠身；CLARITY 法案希望渺茫](#item-4) ⭐️ 7.0/10
-5. [韩国贸易巨头与 LG CNS 合作在区块链上对应收账款进行代币化测试](#item-5) ⭐️ 7.0/10
-6. [美国公民因在边境使用 GrapheneOS 手机擦除数据被起诉](#item-6) ⭐️ 7.0/10
-7. [加密监管清晰度最后两周期限](#item-7) ⭐️ 7.0/10
+1. [Triple-A 确认财库钱包遭入侵，损失 1180 万美元](#item-1) ⭐️ 8.0/10
+2. [BitMart 宣布停运后提款放缓](#item-2) ⭐️ 8.0/10
+3. [Storj 申请第 11 章破产，探索代币持有者股权方案](#item-3) ⭐️ 8.0/10
+4. [WEMIX 攻击者在合约漏洞后转走 72.4 万美元](#item-4) ⭐️ 8.0/10
+5. [Garden Finance 因 45 万美元 HTLC 漏洞下线](#item-5) ⭐️ 7.0/10
+6. [BitMEX 关闭，诉讼缠身；CLARITY 法案希望渺茫](#item-6) ⭐️ 7.0/10
+7. [美国公民因在边境使用 GrapheneOS 手机擦除数据被起诉](#item-7) ⭐️ 7.0/10
+8. [证明自动化借助 LLM 变得实用](#item-8) ⭐️ 7.0/10
 
 ---
 
 <a id="item-1"></a>
+## [Triple-A 确认财库钱包遭入侵，损失 1180 万美元](https://cointelegraph.com/news/triple-a-treasury-wallet-breach-11-8-million-loss?utm_source=rss_feed&amp;utm_medium=rss&amp;utm_campaign=rss_partner_inbound) ⭐️ 8.0/10
+
+稳定币支付公司 Triple-A 确认其财库钱包遭到入侵，导致 1180 万美元损失。该公司表示客户资金未受影响，财务影响将由公司财库储备承担。 此事件凸显了加密货币支付基础设施中持续存在的安全漏洞，可能影响对基于稳定币的支付系统的信任。然而，客户资金安全的保证可能缓解用户的立即恐慌。 此次入侵专门针对 Triple-A 的财库钱包，而非客户钱包。该公司计划通过自身储备吸收 1180 万美元的损失，显示出一定的财务韧性。
+
+rss · Cointelegraph · 7月27日 13:15
+
+**背景**: Triple-A 是一家稳定币支付公司，为企业提供加密货币与法定货币之间的交易服务。财库钱包用于公司管理运营资金，与客户资金分开。此次入侵凸显了企业加密货币钱包需要采取强健安全措施的重要性。
+
+**标签**: `#security`, `#breach`, `#stablecoin`, `#treasury`, `#payments`
+
+---
+
+<a id="item-2"></a>
+## [BitMart 宣布停运后提款放缓](https://cointelegraph.com/news/bitmart-withdrawals-slow-exchange-wind-down?utm_source=rss_feed&amp;utm_medium=rss&amp;utm_campaign=rss_partner_inbound) ⭐️ 8.0/10
+
+BitMart 用户正面临提现延迟和冻结通知，该交易所逐步关闭，其钱包余额降至约 6900 万美元，BMX 代币周跌幅扩大至 81.5%。 此事件凸显了中心化交易所的风险以及关闭期间用户资金可能损失的问题，削弱了对加密货币交易所生态系统的信任，并影响可能面临漫长恢复期的用户。 钱包余额从此前水平下降以及 BMX 代币暴跌反映了市场恐慌和流动性减少，目前没有明确的全面提款处理或赔偿时间表。
+
+rss · Cointelegraph · 7月27日 12:34
+
+**背景**: BitMart 是一个中心化加密货币交易所，曾推出其原生代币 BMX（一种 ERC-20 代币）以支持其生态系统。停运意味着交易所停止运营，通常会导致提现暂停和资产冻结。类似事件曾发生在其他交易所，造成用户重大损失。
+
+<details><summary>参考链接</summary>
+<ul>
+<li><a href="https://www.bitmart.com/bmx">BitMart Token (BMX) | The Official Token of the BitMart Ecosystem</a></li>
+<li><a href="https://www.coinbase.com/price/bitmart-token">BitMart Token Price, BMX Price, Live Charts, and Marketcap</a></li>
+
+</ul>
+</details>
+
+**标签**: `#exchange`, `#withdrawal`, `#wind-down`, `#security`, `#market event`
+
+---
+
+<a id="item-3"></a>
 ## [Storj 申请第 11 章破产，探索代币持有者股权方案](https://cointelegraph.com/news/storj-chapter-11-bankruptcy-tokenholder-equity?utm_source=rss_feed&amp;utm_medium=rss&amp;utm_campaign=rss_partner_inbound) ⭐️ 8.0/10
 
 去中心化存储提供商 Storj 已申请第 11 章破产保护，同时探索法院批准的机制，向 STORJ 代币持有者提供股权。该公司保证其网络在破产程序期间将继续运行。 这对去中心化存储领域来说是一个重大事件，因为该领域的主要参与者面临财务困境，可能会影响用户信任和行业信心。为代币持有者提供股权的提议可能为破产程序中如何对待加密货币代币持有者开创先例。 Storj 申请的是第 11 章破产，这允许其在重组期间继续运营。STORJ 代币的股权转换机制需要法院批准，具体细节尚未披露。
@@ -43,7 +78,7 @@ rss · Cointelegraph · 7月27日 09:01
 
 ---
 
-<a id="item-2"></a>
+<a id="item-4"></a>
 ## [WEMIX 攻击者在合约漏洞后转走 72.4 万美元](https://cointelegraph.com/news/wemix-attacker-moves-724k-contract-breach?utm_source=rss_feed&amp;utm_medium=rss&amp;utm_campaign=rss_partner_inbound) ⭐️ 8.0/10
 
 一名攻击者入侵了与 WEMIX$稳定币相关的智能合约，转移了约 724,198 USDC.e，导致 WEMIX 暂停了其跨链桥、流动性池交易及其他多项服务。 此次事件凸显了跨链桥和 DeFi 生态系统中持续存在的安全风险，可能削弱用户信任并对 WEMIX 平台造成严重的运营中断。 攻击者转移了 724,198 USDC.e（一种在其他链上的桥接版 USDC），WEMIX 迅速采取行动，暂停了跨链桥和流动性池交易以控制漏洞。
@@ -63,7 +98,7 @@ rss · Cointelegraph · 7月27日 06:53
 
 ---
 
-<a id="item-3"></a>
+<a id="item-5"></a>
 ## [Garden Finance 因 45 万美元 HTLC 漏洞下线](https://cointelegraph.com/news/garden-finance-app-offline-450k-htlc-exploit?utm_source=rss_feed&amp;utm_medium=rss&amp;utm_campaign=rss_partner_inbound) ⭐️ 7.0/10
 
 Garden Finance 在攻击者利用 HTLC 合约从以太坊、Base、Arbitrum 和 BNB 智能链盗取 45 万美元 USDT 后，禁用了其应用程序。 此次漏洞凸显了使用 HTLC 的 DeFi 协议中持续存在的安全风险，影响了多条链上的用户资金。 Blockaid 报告了此次漏洞，Garden Finance 下架了其应用。攻击针对的是 HTLC 合约，该合约设计用于原子交换，但如果未妥善保护则可能存在漏洞。
@@ -82,7 +117,7 @@ rss · Cointelegraph · 7月27日 09:58
 
 ---
 
-<a id="item-4"></a>
+<a id="item-6"></a>
 ## [BitMEX 关闭，诉讼缠身；CLARITY 法案希望渺茫](https://cointelegraph.com/magazine/clarity-hopes-fade-bitmex-shuts-as-lawsuit-looms-hodlers-digest-july-27?utm_source=rss_feed&amp;utm_medium=rss&amp;utm_campaign=rss_partner_inbound) ⭐️ 7.0/10
 
 BitMEX 宣布关闭交易所，同时面临一桩即将提起的集体诉讼，指控其窃取 623 枚比特币并涉及内幕交易；而美国加密货币监管框架 CLARITY 法案尽管得到大型金融机构的支持，进展前景也变得黯淡。 BitMEX 的关闭标志着加密货币交易所领域的重要整合，可能影响数千用户，并表明监管审查加强。CLARITY 法案希望的破灭意味着美国加密监管环境持续不确定性，影响行业参与者和投资者。 针对 BitMEX 的集体诉讼指控其系统设计用于保留客户抵押品，且联合创始人在服务器冻结期间利用私人用户数据进行内幕交易。CLARITY 法案虽是一项进步，但不会立即提供监管确定性，仍需美国证券交易委员会（SEC）和商品期货交易委员会（CFTC）进行数月甚至数年的规则制定。
@@ -102,27 +137,7 @@ rss · Cointelegraph · 7月27日 08:03
 
 ---
 
-<a id="item-5"></a>
-## [韩国贸易巨头与 LG CNS 合作在区块链上对应收账款进行代币化测试](https://www.coindesk.com/business/2026/07/26/south-korea-trading-giant-puts-receivables-onchain-in-tokenization-test-with-lg-cns) ⭐️ 7.0/10
-
-韩国最大的贸易公司与 LG CNS 合作，启动了一项试点项目，将贸易应收账款在区块链平台上进行代币化，标志着企业金融领域实物资产代币化的重要一步。 这项测试表明，代币化实物资产以改善贸易金融的流动性和透明度的兴趣日益增长，可能为大型企业降低成本和结算时间。 代币化的应收账款代表了对未来贸易付款的索取权，基于区块链的代币允许通过智能合约实现部分所有权和自动结算。
-
-rss · CoinDesk · 7月27日 08:00
-
-**背景**: 应收账款是客户因已交付但未付款的商品或服务而欠公司的金额。代币化将这些权利转换为区块链上的数字代币，便于转让和投资。韩国一家大公司与 LG CNS 进行的这项测试表明，贸易金融领域的更广泛采用可能即将到来。
-
-<details><summary>参考链接</summary>
-<ul>
-<li><a href="https://dictionary.cambridge.org/dictionary/english/receivables">RECEIVABLES | English meaning - Cambridge Dictionary</a></li>
-<li><a href="https://grokipedia.com/page/asset_tokenization">Asset tokenization</a></li>
-<li><a href="https://www.britannica.com/money/real-world-asset-tokenization">Tokenization of real-world assets: Is a digital ...</a></li>
-
-</ul>
-</details>
-
----
-
-<a id="item-6"></a>
+<a id="item-7"></a>
 ## [美国公民因在边境使用 GrapheneOS 手机擦除数据被起诉](https://www.techspot.com/news/113236-us-prosecutors-charge-atlanta-man-after-grapheneos-phone.html) ⭐️ 7.0/10
 
 一名美国公民在机场边境检查中使用 GrapheneOS 手机的胁迫 PIN 码，导致设备自动擦除数据，因此面临联邦指控。这是首例已知的因在美边境使用胁迫密码而引发的起诉案件。 此案为胁迫 PIN 码等可在被胁迫时自动删除数据的安全功能的使用树立了法律先例，引发了关于个人隐私权与边境政府权力平衡的重要问题。可能会阻止注重安全的用户使用此类功能。 GrapheneOS 的胁迫 PIN 码设计用于在胁迫下输入时擦除设备，但检方认为擦除行为构成妨碍司法。结果可能取决于使用胁迫 PIN 码是否被视为故意销毁证据。
@@ -144,13 +159,25 @@ hackernews · eecc · 7月27日 06:21 · [社区讨论](https://news.ycombinator
 
 ---
 
-<a id="item-7"></a>
-## [加密监管清晰度最后两周期限](https://www.coindesk.com/policy/2026/07/26/2-weeks-left-for-clarity-state-of-crypto) ⭐️ 7.0/10
+<a id="item-8"></a>
+## [证明自动化借助 LLM 变得实用](https://www.imperialviolet.org/2026/07/26/zstd-lean.html) ⭐️ 7.0/10
 
-根据 CoinDesk 最近的一篇文章，加密行业实现监管清晰度的最后期限为两周。 这一期限可能对市场结构和准入产生重大影响，因为清晰的法规对于机构采用和市场稳定至关重要。 这篇题为《两周倒计时：加密状态》的文章提醒人们注意这一即将到来的截止日期及其对加密生态系统的潜在影响。
+一篇新文章指出，此前比软件开发贵 20 倍的正式验证，如今因证明自动化而变得可负担，并可能与大语言模型（LLM）集成。 这一转变可能通过使正式验证对更广泛的项目在经济上可行，从而彻底改变软件可靠性和安全性，影响开发者、安全行业及最终用户。 作者指出，当前的证明自动化仅实现部分自动化，但与 GPT-4 等 LLM 集成可大幅减少剩余的人工投入。文章还提到，此前发现漏洞的成本也是验证的阻碍因素。
 
-rss · CoinDesk · 7月27日 02:30
+hackernews · zdw · 7月27日 04:53 · [社区讨论](https://news.ycombinator.com/item?id=49062291)
 
-**背景**: 监管清晰度是指针对数字资产的明确且一致的规则，加密行业长期以来一直寻求各国政府提供此类规则。截止日期表明关于加密政策的决定或公告即将到来，可能影响加密货币的分类和交易方式。
+**背景**: 正式验证使用数学证明来确认软件正确性，但历来成本高昂，通常是开发的 20 倍。证明自动化工具（如自动定理证明器）辅助生成证明，而 LLM 的最新进展可能使这些工具更易用、更高效。
+
+<details><summary>参考链接</summary>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Proof_automation">Proof automation</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Formal_verification">Formal verification</a></li>
+
+</ul>
+</details>
+
+**社区讨论**: 社区评论者普遍认同这一论点，有观点认为数学是知识工作自动化的先导，也有人提到 Rust 生态中的 Verus 等工具是一个好的开始。此外还讨论了使用定理证明器与基于 LLM 的 API 成本之间的混淆。
+
+**标签**: `#formal verification`, `#proof automation`, `#programming languages`, `#LLM`, `#software engineering`
 
 ---
