@@ -336,6 +336,13 @@ source. The runtime file is not committed. GitHub Actions renders it into the
 workflow run's Job Summary; partial source failures appear as warnings, while
 an all-source failure still fails the job.
 
+The independent
+[`schedule-watchdog.yml`](.github/workflows/schedule-watchdog.yml) workflow
+checks the successful feed heartbeat hourly. If no successful `main` run has
+completed for more than five hours and no feed run is active, it dispatches
+one recovery run and fails its own job so GitHub can send a workflow failure
+notification. An active feed run suppresses duplicate dispatches.
+
 ## Supported Sources
 
 | Source | What it fetches | Comments |
