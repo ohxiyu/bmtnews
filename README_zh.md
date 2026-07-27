@@ -324,6 +324,12 @@ Horizon 非常适合作为 **GitHub Actions** 定时任务运行。查看 [`.git
 当前 workflow run 的 Job Summary。部分来源失败显示为警告，全部来源失败
 仍会使任务失败。
 
+独立的
+[`schedule-watchdog.yml`](.github/workflows/schedule-watchdog.yml) 工作流每小时
+检查一次成功采集心跳。如果 `main` 超过五小时没有完成成功采集，并且当前没有
+采集正在运行，它会自动触发一次补跑，同时将自身标记为失败，以便 GitHub 发送
+工作流失败通知；已有采集正在运行时不会重复触发。
+
 ## 支持的信息源
 
 | 信息源 | 抓取内容 | 评论收集 |

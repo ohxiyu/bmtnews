@@ -1,0 +1,38 @@
+name: BMTNews Schedule Watchdog
+
+on:
+  schedule:
+    # An hourly second scheduler limits the impact of a dropped feed schedule.
+    - cron: '43 * * * *'
+      timezone: 'Asia/Shanghai'
+  workflow_dispatch:
+
+concurrency:
+  group: bmtnews-schedule-watchdog
+  cancel-in-progress: false
+
+permissions:
+  actions: write
+  contents: read
+
+jobs:
+  watchdog:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v6
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+
+      - name: Check feed workflow heartbeat
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: >-
+          python -m src.schedule_watchdog
+          --repository "${GITHUB_REPOSITORY}"
+          --workflow daily-summary.yml
+          --ref main
+          --threshold-hours 5
