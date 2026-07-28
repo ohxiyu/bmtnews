@@ -1,74 +1,276 @@
 {
   "version": 1,
-  "date": "2026-07-28",
+  "date": "2026-07-29",
   "timezone": "Asia/Shanghai",
-  "updated_at": "2026-07-28T14:39:14.416282Z",
+  "updated_at": "2026-07-28T17:46:03.360967Z",
   "analyzed_keys": [
-    "042ca744c567f5cb385834b3c5c112626f9144a044fd1f716fefd7fa1ac21bbd",
-    "06bec12c18ac9fa1034a336489f911525961ace7b1dcd87c0a5531b707f9a363",
-    "141ebe4b371781d869ee615b126b3fe8e4e36576347b3e311da9f768753f7692",
-    "172cdb679e0ccfc273e92e382d1d2f9f3f471ed5b7925188c5244d059bb12670",
-    "18c36e5886345625de532a99288bc7e9de3b45acad3bc8c8a2d75d085c8de777",
-    "20d81cb707681a5f1032225942a6855e124e04bbbd13974d2befcaf8d1ac20ba",
-    "287311b4d516eb10fd88a1f6aaad6a26c0ecefc3f1dee521958d07e8d631865c",
-    "2af48e1193b91f6f9c5fd145bee8f0b100fd63b60c110dbbb3380c5f1c6c4f66",
-    "316a64dfc2059c83f27095d4c92f701900f43c018d532729c8ae79c7439147d5",
-    "3a4a6f8cbbadda3324c1697b0f93caace5f0d2fa0db2465f13be563b9fa73e2c",
-    "3b36b29bd6a9f434c5a391ea76576ef10d7684ae46c5c3b60848061366326e44",
-    "3d62e9e6a4fdd2a71bfd68a70fba677e83df09019c37d9c5726b0c27d5b9aa16",
-    "3f0230cbd1e30184afe358d52ff27d7961d8bfbbcb6c6953f138edd54f2a50f4",
-    "432f7e51208ac791b73ef73e5df187c6f2d6ea6c6dd2875ec85aca4e98a35684",
-    "4333736f96e8b3ff05da71156efd9b2b908d27bb6a20d2373b238d4a6c280b23",
-    "46dcdbfa580b83a78d1acfe667f76514ecd52412b8445156cb1f6136bcb1c80d",
-    "4facef5e7ef5b50b2eacce63ff082a222482e18319b3be1bec8ed81dfa30a9e2",
-    "501fdea92f115c28d69ca9959d95a9a2ecd76a32e94bf1a923de1e5116345cb0",
-    "5072aba40e66a85d4384845854890ec1810215c9aeb6de2876df7bb650a2cb38",
-    "50be9a64979c4e7c2e2db330df29c1b0b4273cab646b22828147fe54d47926f0",
-    "51fda8070c8c05df9a232f10614a81eceff5c898cc0bc212ef03e9ca16b012e7",
-    "566ea6100fe0ac878d578500fef410c5c3cd8b4c0ee5a7b12a1af3f3799ac587",
-    "637458d8a00733c13ceaee7eda3b79552995f50896494631c8f1d97b4d69c60d",
-    "68d2fe159509c2cf2b716518cc17e855bcdb10961cf0ba1318dc330a820524b0",
-    "69223717e6b75da7a085d9f2e03d2cea376552471744a0e04b0d1b589cabc2f1",
-    "6c2d1e3611d87ec4d164ec3801b0d2f7a7327ac7491387ac74d766e97fabd206",
-    "6d81739d7534621516fc15c4491b42c716705f83f95feeb01faa9cb46d9be496",
-    "7197835e2fac218d02e173b1a2777d3e4e37532775b9372fe48c592a3f5ce405",
-    "720d3cf7632c4d15ab03f3518945a1d92c4efb789f4e90289b34917e6b02bb9c",
-    "725e4521485f94c292c2fcac1728404fbaefa2dfac2a343e061f36cdc7d51457",
-    "741ef9640a44179dee35016c69980e33f4fe119665c96ef2107eaeba2302106f",
-    "7546bb22630bd5166f58ab51988727c7518c332d7345cde776a63636eb0af064",
-    "798bcaa127bd404049c4d45e51bef835befa728f9ba8fe9c4118990dd84384e4",
-    "7a8ee75d51a58d0ec68b230977e46c3ad83f17db204a42198af3090c43166db1",
-    "7b4f8e9588586c733fe25d88ee52eb487a421b7d9aa1a507e3da07889d437d3b",
-    "808dfd8881db25f3108b0f4da8f75ff24e140cd2ccfeadd542ed8334f11eb3da",
-    "845dc3655cfaf95745b377e5ccb0a08ed67714e34be7c3970ced6d5e3f11077a",
-    "870dad86ec7bed904049500b2f301b2444bdf06cb64b60e9b7f5a12a3168db90",
-    "87679a3cef485c824683961d2967b79be026799ea9a13ca74aca70dc31925661",
-    "883fb6f1e610c0c3bfe704381410d1323bc0aa3e729f5ffb68cf332fa37fb0fe",
-    "8c4a4417f450a644df2f4a1b6198520698888649a70995d0550a904a5689ead3",
-    "96e1acc4d0c4aa7f1918cc7eebff33dcd4fe637975b21f0f49fef3f40ce634b7",
-    "97b369c805f80045dad9c8e3d13acd47de94c26337132a42b71d3974d6c4b17c",
-    "9e56f96d699c52deaac1a6a3f4afbea65de148202fb5a18b4b7e8cdf0a31ed50",
-    "9eb6bd1941beaf42e38e6e276385e3508f61d2eadf880e21e5e4da28dfb98d54",
-    "a2a3f3d4dde054aaa61ec651549a1f2490c5ebcfa470bc49cc198fa3ed1715c7",
-    "a3fcb2f1a42d5a5e4e7751f95fa7ac9dd66d1ba2fe69c12b074873f1bdd5b515",
-    "a775d23fbee8d4435cff4f1cb4c6ff523000ebf8d30c56279d91094eddf388dd",
-    "a91ee87660fe877bf606efe095d7c43c10b68fdd22ef2b13563688b342fd7afc",
-    "adced85edec802e62b00362294dabfededc6725ea7fd5a1898ce5c54f102108b",
-    "af08d2d9ac0af10c936205ed0e1865f34fd6d912994c0b5ff3f4269c4a936529",
-    "b80ee2764debf6175f344675bbcc0c91fc9b360b252a96780be4cfd226dc2e91",
-    "b9ec5ff381af8fee70a28d41446d5dcfa95c734e5f2f8ef622fa24af5ac8c84b",
-    "c57aad89f4bf5a87a856154feb5216378c097af1bf0e16382fc00667b3bbdf94",
-    "c75cfe74665c5daeac31847685ef1cc4be89dd81b852c8afcf38e93e41ff4eeb",
-    "d0bba0440ebb3e03b2967f0e35a922d1a045d8cc035d6bb9006cd17f6814b44a",
-    "dc62612b976479a15e09e80fb4473b3899b85666fc7471b0a41ea2fc15959d73",
-    "e2704ce671f00dec3dfa555ae76728458f46eecb8e43e47848c244bcdca3d873",
-    "ea5039c5f142f2ba69fe6e9acd51a29c122916e9642bc554b16b7c661c31178a",
-    "efd5f4bba188cd971f3d4fe3cbd3c86892185c95fbea6cf5b977588a3e5b9f42",
-    "f11457e880140054fb9a5d7cc89cb38acf7c4d5a87a67aa833927336458839d6",
-    "f4a6822acd135ffad56e761dc3c766bf4a48695812d955c4544c01d5c9fe4810",
-    "fdb89a0ca5bf2d8751f67f7d17b94f6fc8c8a720717ccb41e5d493b2439d3d92"
+    "06729b7583194306084c982442d3499af4955ce838d951953e484b2997fbb341",
+    "3a5867fdb83e370b39a308ce62072699390d99ecdcc697e48e38c9a5386f3e36",
+    "446f397b6fc5a6f7d411c486959cbe6f36fd6d423fbda8cfddd291d1987899a3",
+    "503105739b2d3a666fa437cd175b048a7d69d2e4ba85885e642118c325e6a01d",
+    "505640dcffcd641e5652b9795eb150cfd306d36e33d25290c24e04e1f6c6d183",
+    "6a1aa26bf59ee847539cd29edc7da427ecded5436a6d28ec896f1ed063b48a64",
+    "beee1138f93cc7ef5fd86de29a0a9fc3dcbaf99541bc1ba1db929f0837ca3b27",
+    "ca0bb2ed0e1467fb2cb210957977e93fc7cdee5eb7059e4e83b19241e77d0307",
+    "e2c863257e5210236d5625bf9b7e19d4ad2d21b7e9830dce87f52d4c816fc26a",
+    "e6bf7eeaf731822bf560fdeab1363c574f74bb046738ed5cc2b3ed546d496217",
+    "e9a8e7220f7c4b71757c77be901a40b8eaca125c90e05c2990074d4cb78f9261"
   ],
   "items": [
+    {
+      "id": "rss:news.google.com_rss_search?q=site:anthropic.com+when:7d&hl=en-US&gl=US&ceid=US:en:249666495bb76a90",
+      "source_type": "rss",
+      "title": "Discovering cryptographic weaknesses with Claude - Anthropic",
+      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE13elp4eC1EQlJMdmtBdDZYaGQ0UXJoVE9sOGNtSDZIRFRYV3pkU1E4TnlNX3BTai1QVjduNVJUampVZGVySmlKRmVtcUFXcDBlNFVTQVdHN2ZiUUdjSlNtLUhXb3JialVEWGprd0tjdUVZQ2dhSFExaUtoTQ?oc=5",
+      "content": null,
+      "author": "Anthropic News",
+      "published_at": "2026-07-28T17:17:10Z",
+      "fetched_at": "2026-07-28T17:46:06.183879Z",
+      "metadata": {
+        "feed_name": "Anthropic News",
+        "category": "ai-labs",
+        "title_en": "Claude AI Used to Discover Cryptographic Weaknesses",
+        "detailed_summary_en": "Anthropic researchers used Claude Mythos Preview to discover improved methods for attacking cryptographic algorithms, demonstrating advanced AI application in security research. This breakthrough shows that state-of-the-art AI can actively uncover vulnerabilities in foundational security systems, potentially influencing how cryptographic protocols are designed and evaluated. The discovery specifically targets cryptographic weaknesses in algorithms used to protect online data, leveraging Claude's reasoning capabilities to find novel attack vectors.",
+        "background_en": "Claude is a large language model developed by Anthropic, trained using Constitutional AI for safety. Cryptographic algorithms are mathematical methods that encrypt data to ensure privacy and security online. AI-assisted vulnerability discovery is an emerging field where models help identify potential weaknesses in code or protocols.",
+        "title_zh": "Claude AI 用于发现密码学弱点",
+        "detailed_summary_zh": "Anthropic 的研究人员使用 Claude Mythos Preview 发现了攻击密码算法的新方法，展示了 AI 在安全研究中的高级应用。 这一突破表明，最先进的 AI 能够主动发现基础安全系统中的漏洞，可能影响密码协议的设计和评估方式。 该发现专门针对用于保护在线数据的算法中的密码学弱点，利用 Claude 的推理能力寻找新的攻击向量。",
+        "background_zh": "Claude 是 Anthropic 开发的大型语言模型，采用宪法 AI 进行安全训练。密码算法是用于加密数据以确保在线隐私和安全的数学方法。AI 辅助漏洞发现是一个新兴领域，模型帮助识别代码或协议中的潜在弱点。",
+        "sources": [
+          {
+            "url": "https://www.anthropic.com/research/discovering-cryptographic-weaknesses",
+            "title": "Discovering cryptographic weaknesses with Claude \\ Anthropic"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/Claude_(AI)",
+            "title": "Claude (AI)"
+          }
+        ]
+      },
+      "ai_score": 8.0,
+      "ai_reason": null,
+      "ai_summary": "Anthropic's Claude AI model is used to identify cryptographic weaknesses, showcasing advanced AI application in security.",
+      "ai_tags": []
+    },
+    {
+      "id": "rss:huggingface.co_blog_feed.xml:9c980868c23ca002",
+      "source_type": "rss",
+      "title": "The OlmoEarth Platform: Geospatial inference at planetary scale",
+      "url": "https://huggingface.co/blog/allenai/olmoearth-infrastructure",
+      "content": null,
+      "author": "Hugging Face Blog",
+      "published_at": "2026-07-28T16:27:42Z",
+      "fetched_at": "2026-07-28T17:46:06.780540Z",
+      "metadata": {
+        "feed_name": "Hugging Face Blog",
+        "category": "ai-labs",
+        "title_en": "OlmoEarth: Planetary-Scale Geospatial AI Platform",
+        "detailed_summary_en": "Allen AI announced the OlmoEarth platform on November 4, 2025, an open end-to-end system for planetary-scale geospatial inference using frontier foundation models. This platform democratizes access to powerful geospatial AI for non-profits and NGOs, enabling real-time, decision-ready insights from multi-sensor Earth data at an unprecedented scale. OlmoEarth provides an end-to-end solution including data management, fine-tuning, embeddings, and production deployment, with source code, training data, and pre-trained weights openly available.",
+        "background_en": "Geospatial inference applies AI to extract insights from satellite imagery and other Earth observation data. Planetary-scale AI involves coupling large models with global sensing networks to understand and reason about the Earth in real time. OlmoEarth builds on recent foundation models for geospatial tasks, such as the Population Dynamics Foundation Model (PDFM) from Google.",
+        "title_zh": "OlmoEarth：行星级地理空间AI平台",
+        "detailed_summary_zh": "Allen AI于2025年11月4日发布了OlmoEarth平台，这是一个开放的全栈系统，利用前沿基础模型实现行星级地理空间推理。 该平台使非营利组织和非政府组织能够民主化地使用强大的地理空间AI，以前所未有的规模从多传感器地球数据中获取实时、可决策的洞察。 OlmoEarth提供端到端解决方案，包括数据管理、微调、嵌入和生产部署，并且源代码、训练数据和预训练权重均开放可用。",
+        "background_zh": "地理空间推理利用AI从卫星图像和其他地球观测数据中提取洞察。行星级AI将大型模型与全球传感网络结合，以实时理解和推理地球。OlmoEarth基于最近的地理空间基础模型（如Google的人口动态基础模型PDFM）构建。",
+        "sources": [
+          {
+            "url": "https://allenai.org/olmoearth",
+            "title": "OlmoEarth | Ai2"
+          },
+          {
+            "url": "https://allenai.org/blog/olmoearth",
+            "title": "Introducing OlmoEarth Platform: Powerful open infrastructure for planetary insights | Ai2"
+          },
+          {
+            "url": "https://arxiv.org/abs/2511.13655",
+            "title": "[2511.13655] OlmoEarth: Stable Latent Image Modeling for Multimodal Earth Observation"
+          }
+        ]
+      },
+      "ai_score": 8.0,
+      "ai_reason": null,
+      "ai_summary": "Allen AI announces OlmoEarth, a platform for planetary-scale geospatial inference.",
+      "ai_tags": []
+    },
+    {
+      "id": "rss:www.coindesk.com_arc_outboundfeeds_rss_:70c8fc7e9c88bb35",
+      "source_type": "rss",
+      "title": "BlackRock, Fidelity, other Wall Street giants back the Clarity Act",
+      "url": "https://www.coindesk.com/policy/2026/07/28/blackrock-fidelity-other-wall-street-giants-back-the-clarity-act",
+      "content": null,
+      "author": "Helene Braun",
+      "published_at": "2026-07-28T16:08:19Z",
+      "fetched_at": "2026-07-28T17:46:04.257388Z",
+      "metadata": {
+        "feed_name": "CoinDesk",
+        "category": "crypto-markets",
+        "title_en": "Wall Street Giants Endorse the Clarity Act",
+        "detailed_summary_en": "BlackRock, Fidelity, and other major Wall Street firms have publicly endorsed the Clarity Act, a U.S. crypto regulatory bill that aims to define jurisdiction between the SEC and CFTC. This endorsement signals significant institutional support for regulatory clarity, which could accelerate mainstream adoption of digital assets and reduce legal uncertainty for market participants. The Clarity Act, while providing a framework, would still require months or years of rulemaking by the SEC and CFTC before full implementation, meaning immediate certainty is limited.",
+        "background_en": "The Clarity Act is a bipartisan U.S. legislative proposal designed to resolve the jurisdictional dispute between the Securities and Exchange Commission (SEC) and the Commodity Futures Trading Commission (CFTC) over digital assets. It aims to classify cryptocurrencies as either securities or commodities, thereby clarifying regulatory oversight. The bill has gained renewed momentum following a compromise between lawmakers.",
+        "title_zh": "华尔街巨头支持《清晰法案》",
+        "detailed_summary_zh": "贝莱德、富达及其他华尔街巨头公开支持《清晰法案》，该法案旨在明确美国SEC与CFTC对加密货币的监管管辖权。 这一背书标志着机构对监管清晰度的重大支持，可能加速数字资产的主流采用，并减少市场参与者的法律不确定性。 《清晰法案》虽然提供了框架，但仍需SEC和CFTC数月或数年的规则制定才能完全实施，这意味着即时的确定性有限。",
+        "background_zh": "《清晰法案》是一项美国两党立法提案，旨在解决证券交易委员会（SEC）和商品期货交易委员会（CFTC）在数字资产上的管辖权争议。该法案旨在将加密货币分类为证券或商品，从而明确监管职责。该法案在立法者达成妥协后重新获得动力。",
+        "sources": [
+          {
+            "url": "https://blog.visiion.io/clarity-act-crypto-regulation-impact/",
+            "title": "CLARITY Act Explained: Market Impact & What It Means - Visiion Blog"
+          },
+          {
+            "url": "https://clsbluesky.law.columbia.edu/2025/09/09/arnold-porter-discusses-the-clarity-act/",
+            "title": "Arnold & Porter Discusses the CLARITY Act | CLS Blue Sky Blog"
+          },
+          {
+            "url": "https://adbytes.media/blog/clarity-act-would-not-deliver-instant-crypto-regulatory-certainty",
+            "title": "CLARITY Act Would Not Deliver Instant Crypto Regulatory Certainty"
+          }
+        ]
+      },
+      "ai_score": 8.0,
+      "ai_reason": null,
+      "ai_summary": "Wall Street giants endorse the Clarity Act, a US crypto regulatory bill.",
+      "ai_tags": []
+    },
+    {
+      "id": "hackernews:story:49085909",
+      "source_type": "hackernews",
+      "title": "You Could Have Come Up with Kimi Delta Attention",
+      "url": "https://blog.doubleword.ai/you-could-have-come-up-with-kimi-delta-attention",
+      "content": null,
+      "author": "AnhTho_FR",
+      "published_at": "2026-07-28T16:02:07Z",
+      "fetched_at": "2026-07-28T17:46:04.102783Z",
+      "metadata": {
+        "discussion_url": "https://news.ycombinator.com/item?id=49085909",
+        "category": "tech-community",
+        "title_en": "Kimi Delta Attention Explained with Bra-Ket Notation",
+        "detailed_summary_en": "A technical blog post by doubleword.ai explains the Kimi Delta Attention (KDA) mechanism using bra-ket notation, making the complex delta-rule linear attention algorithm more accessible to researchers and practitioners. This explanation lowers the barrier to understanding a state-of-the-art attention mechanism that improves upon architectures like Gated DeltaNet and Mamba, potentially accelerating adoption in efficient long-context AI inference. The blog post uses Dirac notation to illustrate how KDA stores summed outer products in a fixed-size state S_t instead of storing every past key and value, enabling efficient recurrent updates with channel-wise forgetting.",
+        "background_en": "Kimi Delta Attention is a delta-rule linear attention mechanism that combines channel-wise forgetting with efficient chunkwise recurrent updates. It is part of the Kimi Linear architecture, which introduces a hybrid linear attention approach for scalable long-context processing. Bra-ket notation, originally from quantum mechanics, is a compact way to represent vectors and linear operators, and it is used here to simplify the mathematical exposition.",
+        "community_discussion_en": "Community comments express skepticism about the accessibility, with one user noting they could not have come up with KDA despite the explanation. Others appreciate the explicit notation explanation but debate potential LLM authorship of the post.",
+        "title_zh": "用狄拉克符号解释Kimi Delta注意力机制",
+        "detailed_summary_zh": "doubleword.ai的一篇技术博客文章使用狄拉克符号（bra-ket notation）解释了Kimi Delta注意力（KDA）机制，使复杂的delta规则线性注意力算法对研究人员和从业者更易理解。 这种解释降低了理解最先进注意力机制的门槛，该机制改进了Gated DeltaNet和Mamba等架构，可能加速其在高效长上下文AI推理中的采用。 该博客文章使用狄拉克符号说明KDA如何将外积之和存储在固定大小的状态S_t中，而不是存储每个过去的键和值，从而实现具有通道级遗忘的高效循环更新。",
+        "background_zh": "Kimi Delta注意力是一种delta规则线性注意力机制，结合了通道级遗忘和高效的分块循环更新。它是Kimi Linear架构的一部分，该架构引入了一种混合线性注意力方法，用于可扩展的长上下文处理。狄拉克符号最初来自量子力学，是一种紧凑的向量和线性算子表示方式，这里用于简化数学阐述。",
+        "community_discussion_zh": "社区评论对可访问性表示怀疑，一位用户指出即使有解释，他们也想不到KDA。其他人赞赏对符号的明确解释，但争论该文章是否由大语言模型撰写。",
+        "sources": [
+          {
+            "url": "https://www.emergentmind.com/topics/kimi-delta-attention",
+            "title": "Kimi Delta Attention: Delta‐Rule Linear Mechanism"
+          },
+          {
+            "url": "https://jianyuh.github.io/attention/2025/12/13/KDA.html",
+            "title": "Linear Attention: Kimi Delta Attention | Jianyu Huang’s Blog"
+          }
+        ]
+      },
+      "ai_score": 8.0,
+      "ai_reason": null,
+      "ai_summary": "Explains the Kimi Delta Attention mechanism using bra-ket notation, making a complex algorithm more accessible.",
+      "ai_tags": []
+    },
+    {
+      "id": "rss:status.coinbase.com_history.rss:11ba7640e9ff73e9",
+      "source_type": "rss",
+      "title": "Delayed Sends and Receives - STX",
+      "url": "https://status.coinbase.com/incidents/cz15q0p16cgs",
+      "content": null,
+      "author": "Coinbase Status",
+      "published_at": "2026-07-28T17:18:18Z",
+      "fetched_at": "2026-07-28T17:46:05.565841Z",
+      "metadata": {
+        "feed_name": "Coinbase Status",
+        "category": "exchange-operations",
+        "title_en": "Coinbase STX Delayed Sends and Receives",
+        "detailed_summary_en": "Coinbase identified an issue causing delayed sends and receives on the Stacks network for STX cryptocurrency, and a fix is being implemented as of July 28. This directly affects STX users on Coinbase who may experience delays in transferring funds, though buys, sells, and fiat transactions remain unaffected. It highlights ongoing operational challenges in layer-2 blockchain networks. The issue was first investigated at 07:59 PDT and then identified at 10:18 PDT on July 28. Coinbase assured users that funds are safe.",
+        "background_en": "Stacks is a layer-1.5 blockchain that connects to Bitcoin using Proof of Transfer (PoX) consensus and enables smart contracts via the Clarity language. STX is the native cryptocurrency of the Stacks network, used for fees and participation in decentralized applications. Coinbase is a major cryptocurrency exchange where users can buy, sell, and transfer STX.",
+        "title_zh": "Coinbase STX 发送和接收延迟",
+        "detailed_summary_zh": "Coinbase 确认了导致 Stacks 网络上 STX 加密货币发送和接收延迟的问题，并于 7 月 28 日正在实施修复。 这直接影响了 Coinbase 上 STX 用户的资金转账延迟，尽管买入、卖出和法币交易不受影响。这突显了二层区块链网络运营中的持续挑战。 该问题于 7 月 28 日太平洋夏令时间 07:59 开始调查，并于 10:18 确认。Coinbase 向用户保证资金安全。",
+        "background_zh": "Stacks 是一个 1.5 层区块链，通过传输证明（PoX）共识连接到比特币，并使用 Clarity 语言实现智能合约。STX 是 Stacks 网络的原生加密货币，用于支付费用和参与去中心化应用。Coinbase 是一家主要的加密货币交易所，用户可以在其中购买、出售和转移 STX。",
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Stacks_blockchain",
+            "title": "Stacks blockchain - Wikipedia"
+          },
+          {
+            "url": "https://www.okx.com/learn/stacks-ecosystem",
+            "title": "Boosting Bitcoin: the complete guide to the Stacks... | OKX"
+          }
+        ]
+      },
+      "ai_score": 7.0,
+      "ai_reason": null,
+      "ai_summary": "Coinbase reports identified issue causing delayed STX sends and receives; fix being implemented.",
+      "ai_tags": []
+    },
+    {
+      "id": "rss:openai.com_blog_rss.xml:824b5ba22f1e74f5",
+      "source_type": "rss",
+      "title": "Scientific computing in the age of agentic AI",
+      "url": "https://openai.com/index/scientific-computing-agentic-ai",
+      "content": null,
+      "author": "OpenAI Blog",
+      "published_at": "2026-07-28T17:00:00Z",
+      "fetched_at": "2026-07-28T17:46:05.923852Z",
+      "metadata": {
+        "feed_name": "OpenAI Blog",
+        "category": "ai-labs",
+        "title_en": "OpenAI Reports Scientists Use AI Coding Agents in Genomics",
+        "detailed_summary_en": "OpenAI published a field report documenting how scientists are leveraging AI coding agents to modernize scientific computing, significantly accelerating software development and genomic discoveries. This report demonstrates a practical, high-impact application of agentic AI in a critical scientific domain, potentially speeding up research and enabling new discoveries in genomics and other fields. The report highlights the use of AI coding agents to automate and optimize computational workflows, reduce development time, and handle complex data analysis tasks in genomics research.",
+        "background_en": "Agentic AI refers to AI systems that can pursue goals, use tools, and take actions with varying degrees of autonomy. In scientific computing, researchers often write custom code for simulations and data analysis. AI coding agents can assist by generating, debugging, and optimizing code, thereby accelerating the research pipeline.",
+        "title_zh": "OpenAI报告科学家在基因组学中使用AI编码代理",
+        "detailed_summary_zh": "OpenAI发布了一份实地报告，记录了科学家如何利用AI编码代理来现代化科学计算，显著加速了软件开发和基因组发现。 这份报告展示了代理AI在关键科学领域的实际高影响应用，可能加速研究并推动基因组学及其他领域的新发现。 报告强调了使用AI编码代理来自动化和优化计算工作流、减少开发时间以及处理基因组学研究中复杂数据分析任务的能力。",
+        "background_zh": "代理AI指的是能够追求目标、使用工具并以不同程度自主采取行动的AI系统。在科学计算中，研究人员常常编写自定义代码进行模拟和数据分析。AI编码代理可以通过生成、调试和优化代码来协助，从而加速研究流程。",
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Agentic_AI",
+            "title": "Agentic AI"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/AI_agent",
+            "title": "AI agent - Wikipedia"
+          }
+        ]
+      },
+      "ai_score": 7.0,
+      "ai_reason": null,
+      "ai_summary": "OpenAI reports on how scientists are using AI coding agents to modernize scientific computing and accelerate discovery in genomics.",
+      "ai_tags": []
+    },
+    {
+      "id": "rss:blog.google_technology_ai_rss_:55560096859ebe20",
+      "source_type": "rss",
+      "title": "Gemini API Managed Agents: 3.6 Flash, hooks, and more",
+      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/expanding-managed-agents-gemini-api-3-6-flash-hooks/",
+      "content": null,
+      "author": "Mariano Cocirio",
+      "published_at": "2026-07-28T16:00:00Z",
+      "fetched_at": "2026-07-28T17:46:06.525113Z",
+      "metadata": {
+        "feed_name": "Google AI Blog",
+        "category": "ai-labs",
+        "title_en": "Google Expands Gemini API Managed Agents with 3.6 Flash, Hooks, Triggers",
+        "detailed_summary_en": "Google announced new features for Gemini API Managed Agents, including support for the Gemini 3.6 Flash model, hooks, and triggers, enabling more flexible agent behaviors and event-driven integrations. These enhancements significantly improve the capabilities of managed agents, allowing developers to build more autonomous, event-responsive AI applications with lower latency and greater control. Gemini 3.6 Flash is a natively multimodal reasoning model optimized for speed; hooks and triggers allow agents to execute custom code at specific lifecycle points or respond to external events.",
+        "background_en": "Managed Agents in the Gemini API provide a config-driven, REST-first environment for building autonomous agents in a fully managed Linux sandbox. With a single API call, developers can spin up agents that reason, use tools, and execute code in isolated, ephemeral environments. The new features build on this foundation to enable more sophisticated agent workflows.",
+        "title_zh": "Google 扩展 Gemini API Managed Agents，新增 3.6 Flash、Hooks 和 Triggers",
+        "detailed_summary_zh": "Google 宣布为 Gemini API Managed Agents 推出新功能，包括支持 Gemini 3.6 Flash 模型、hooks 和 triggers，从而实现更灵活的代理行为和事件驱动的集成。 这些增强显著提升了托管代理的能力，使开发者能够构建更自主、事件响应的 AI 应用，同时降低延迟并提高控制力。 Gemini 3.6 Flash 是一个原生多模态推理模型，针对速度进行了优化；hooks 和 triggers 允许代理在特定生命周期点执行自定义代码或响应外部事件。",
+        "background_zh": "Gemini API 中的 Managed Agents 提供了一个配置驱动、REST 优先的环境，用于在完全托管的 Linux 沙箱中构建自主代理。通过单个 API 调用，开发者可以启动能够在隔离的临时环境中推理、使用工具和执行代码的代理。新功能在此基础上构建，支持更复杂的代理工作流。",
+        "sources": [
+          {
+            "url": "https://blog.google/innovation-and-ai/technology/developers-tools/expanding-managed-agents-gemini-api-3-6-flash-hooks/",
+            "title": "What’s new in Managed Agents in Gemini API"
+          },
+          {
+            "url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/build/managed-agents",
+            "title": "Managed Agents API on Agent Platform overview | Gemini Enterprise Agent Platform | Google Cloud Documentation"
+          },
+          {
+            "url": "https://deepmind.google/models/model-cards/gemini-3-6-flash/",
+            "title": "Gemini 3.6 Flash - Model Card — Google DeepMind"
+          }
+        ]
+      },
+      "ai_score": 7.0,
+      "ai_reason": null,
+      "ai_summary": "Google announces new features for Gemini API Managed Agents including 3.6 Flash, hooks, and triggers.",
+      "ai_tags": []
+    }
+  ],
+  "dedup_history": [
     {
       "id": "rss:simonwillison.net_atom_everything_:dc5417e61dfc4edb",
       "source_type": "rss",
@@ -101,6 +303,36 @@
       "ai_score": 9.0,
       "ai_reason": null,
       "ai_summary": "Moonshot released weights for their 2.8 trillion parameter Kimi K3 model on Hugging Face.",
+      "ai_tags": []
+    },
+    {
+      "id": "rss:decrypt.co_feed:cb8ddb5e70bdc3b0",
+      "source_type": "rss",
+      "title": "Thailand's SEC Files Criminal Complaint Against Bitkub Over Undisclosed $47M Hack",
+      "url": "https://decrypt.co/374343/thailands-sec-files-criminal-complaint-against-bitkub-over-undisclosed-47m-hack",
+      "content": null,
+      "author": "Decrypt Agent",
+      "published_at": "2026-07-27T09:16:14Z",
+      "fetched_at": "2026-07-27T11:40:59.442677Z",
+      "metadata": {
+        "feed_name": "Decrypt",
+        "category": "crypto-markets",
+        "title_en": "Thailand SEC Files Criminal Charges Against Bitkub Over $47M Hack Cover-Up",
+        "detailed_summary_en": "Thailand's Securities and Exchange Commission has filed a criminal complaint against cryptocurrency exchange Bitkub and two former directors for failing to disclose a $47 million hack that occurred in 2021. This marks a significant regulatory enforcement action that underscores the importance of transparency and honesty in the crypto industry, potentially affecting user trust and setting a precedent for other exchanges. The SEC alleges that Bitkub omitted the $47 million theft from its filings, and the complaint targets both the company and two former directors personally, indicating a focus on individual accountability.",
+        "background_en": "Bitkub is a Thailand-based cryptocurrency exchange founded in 2018, and it was among the first to receive a digital asset license from Thailand's SEC in 2019. The exchange has been a major player in the Thai crypto market. The SEC is the primary regulator for digital assets in Thailand, responsible for enforcing securities laws.",
+        "title_zh": "泰国SEC指控Bitkub隐瞒4700万美元黑客攻击",
+        "detailed_summary_zh": "泰国证券交易委员会已对加密货币交易所Bitkub及其两名前董事提起刑事诉讼，指控其未能披露2021年发生的4700万美元黑客攻击。 这是一次重大的监管执法行动，凸显了加密货币行业透明度和诚信的重要性，可能影响用户信任，并为其他交易所树立先例。 SEC指控Bitkub在其文件中遗漏了这起4700万美元的盗窃事件，投诉针对公司及两名前董事个人，表明监管层关注个人责任。",
+        "background_zh": "Bitkub是一家成立于2018年的泰国加密货币交易所，是2019年首批获得泰国SEC数字资产牌照的交易所之一。该交易所一直是泰国加密货币市场的主要参与者。SEC是泰国数字资产的主要监管机构，负责执行证券法律。",
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Bitkub",
+            "title": "Bitkub"
+          }
+        ]
+      },
+      "ai_score": 9.0,
+      "ai_reason": null,
+      "ai_summary": "Thailand's SEC files criminal charges against Bitkub and two former directors for failing to disclose a $47 million hack in 2021.",
       "ai_tags": []
     },
     {
@@ -426,64 +658,6 @@
       "ai_tags": []
     },
     {
-      "id": "hackernews:story:49081555",
-      "source_type": "hackernews",
-      "title": "About the security content of macOS Tahoe 26.6",
-      "url": "https://support.apple.com/en-us/128067",
-      "content": null,
-      "author": "andor",
-      "published_at": "2026-07-28T09:45:43Z",
-      "fetched_at": "2026-07-28T14:39:15.343075Z",
-      "metadata": {
-        "discussion_url": "https://news.ycombinator.com/item?id=49081555",
-        "category": "tech-community",
-        "title_en": "macOS Tahoe 26.6 Security Content Released",
-        "detailed_summary_en": "Apple released security content for macOS Tahoe 26.6, addressing multiple vulnerabilities including memory handling issues. This update is important for macOS users as it fixes critical vulnerabilities that could lead to sandbox escapes and code execution. It also highlights the ongoing challenge of memory safety in operating systems. The security content includes fixes for path parsing vulnerabilities and other issues, with many patches citing improved bounds checking and memory management.",
-        "background_en": "macOS security updates are released periodically to fix vulnerabilities. Memory safety issues are common in systems programming languages like C and C++, leading to bugs such as buffer overflows. Apple's updates often include improved memory handling to mitigate such risks.",
-        "community_discussion_en": "Commenters noted the high number of memory-related fixes, with some debating the monetary cost of using unsafe languages like C. Others observed a similar update for macOS 15 and questioned the prevalence of path parsing vulnerabilities.",
-        "title_zh": "macOS Tahoe 26.6 安全内容发布",
-        "detailed_summary_zh": "苹果发布了 macOS Tahoe 26.6 的安全内容，修复了包括内存处理问题在内的多个漏洞。 此更新对 macOS 用户很重要，因为它修复了可能导致沙盒逃逸和代码执行的关键漏洞，并凸显了操作系统中持续存在的内存安全问题。 安全内容包括对路径解析漏洞和其他问题的修复，许多补丁提及改进了边界检查和内存管理。",
-        "background_zh": "macOS 安全更新会定期发布以修复漏洞。内存安全问题在 C 和 C++ 等系统编程语言中很常见，会导致缓冲区溢出等错误。苹果的更新通常包括改进内存处理以降低此类风险。",
-        "community_discussion_zh": "评论者注意到大量与内存相关的修复，一些人讨论了使用不安全的语言（如 C）所带来的经济成本。其他人则观察到 macOS 15 也发布了类似更新，并对路径解析漏洞的普遍性提出质疑。"
-      },
-      "ai_score": 7.0,
-      "ai_reason": null,
-      "ai_summary": "Apple released security content for macOS Tahoe 26.6 addressing vulnerabilities including memory handling issues.",
-      "ai_tags": []
-    }
-  ],
-  "dedup_history": [
-    {
-      "id": "rss:decrypt.co_feed:cb8ddb5e70bdc3b0",
-      "source_type": "rss",
-      "title": "Thailand's SEC Files Criminal Complaint Against Bitkub Over Undisclosed $47M Hack",
-      "url": "https://decrypt.co/374343/thailands-sec-files-criminal-complaint-against-bitkub-over-undisclosed-47m-hack",
-      "content": null,
-      "author": "Decrypt Agent",
-      "published_at": "2026-07-27T09:16:14Z",
-      "fetched_at": "2026-07-27T11:40:59.442677Z",
-      "metadata": {
-        "feed_name": "Decrypt",
-        "category": "crypto-markets",
-        "title_en": "Thailand SEC Files Criminal Charges Against Bitkub Over $47M Hack Cover-Up",
-        "detailed_summary_en": "Thailand's Securities and Exchange Commission has filed a criminal complaint against cryptocurrency exchange Bitkub and two former directors for failing to disclose a $47 million hack that occurred in 2021. This marks a significant regulatory enforcement action that underscores the importance of transparency and honesty in the crypto industry, potentially affecting user trust and setting a precedent for other exchanges. The SEC alleges that Bitkub omitted the $47 million theft from its filings, and the complaint targets both the company and two former directors personally, indicating a focus on individual accountability.",
-        "background_en": "Bitkub is a Thailand-based cryptocurrency exchange founded in 2018, and it was among the first to receive a digital asset license from Thailand's SEC in 2019. The exchange has been a major player in the Thai crypto market. The SEC is the primary regulator for digital assets in Thailand, responsible for enforcing securities laws.",
-        "title_zh": "泰国SEC指控Bitkub隐瞒4700万美元黑客攻击",
-        "detailed_summary_zh": "泰国证券交易委员会已对加密货币交易所Bitkub及其两名前董事提起刑事诉讼，指控其未能披露2021年发生的4700万美元黑客攻击。 这是一次重大的监管执法行动，凸显了加密货币行业透明度和诚信的重要性，可能影响用户信任，并为其他交易所树立先例。 SEC指控Bitkub在其文件中遗漏了这起4700万美元的盗窃事件，投诉针对公司及两名前董事个人，表明监管层关注个人责任。",
-        "background_zh": "Bitkub是一家成立于2018年的泰国加密货币交易所，是2019年首批获得泰国SEC数字资产牌照的交易所之一。该交易所一直是泰国加密货币市场的主要参与者。SEC是泰国数字资产的主要监管机构，负责执行证券法律。",
-        "sources": [
-          {
-            "url": "https://en.wikipedia.org/wiki/Bitkub",
-            "title": "Bitkub"
-          }
-        ]
-      },
-      "ai_score": 9.0,
-      "ai_reason": null,
-      "ai_summary": "Thailand's SEC files criminal charges against Bitkub and two former directors for failing to disclose a $47 million hack in 2021.",
-      "ai_tags": []
-    },
-    {
       "id": "rss:www.coindesk.com_arc_outboundfeeds_rss_:a5855fb724529412",
       "source_type": "rss",
       "title": "Lido begins moving $16.5 billion in staked ether to cut validator count by a third",
@@ -691,6 +865,32 @@
       "ai_score": 8.0,
       "ai_reason": null,
       "ai_summary": "Decentralized storage provider Storj files for Chapter 11 bankruptcy, exploring equity for STORJ tokenholders while maintaining network operations.",
+      "ai_tags": []
+    },
+    {
+      "id": "hackernews:story:49081555",
+      "source_type": "hackernews",
+      "title": "About the security content of macOS Tahoe 26.6",
+      "url": "https://support.apple.com/en-us/128067",
+      "content": null,
+      "author": "andor",
+      "published_at": "2026-07-28T09:45:43Z",
+      "fetched_at": "2026-07-28T14:39:15.343075Z",
+      "metadata": {
+        "discussion_url": "https://news.ycombinator.com/item?id=49081555",
+        "category": "tech-community",
+        "title_en": "macOS Tahoe 26.6 Security Content Released",
+        "detailed_summary_en": "Apple released security content for macOS Tahoe 26.6, addressing multiple vulnerabilities including memory handling issues. This update is important for macOS users as it fixes critical vulnerabilities that could lead to sandbox escapes and code execution. It also highlights the ongoing challenge of memory safety in operating systems. The security content includes fixes for path parsing vulnerabilities and other issues, with many patches citing improved bounds checking and memory management.",
+        "background_en": "macOS security updates are released periodically to fix vulnerabilities. Memory safety issues are common in systems programming languages like C and C++, leading to bugs such as buffer overflows. Apple's updates often include improved memory handling to mitigate such risks.",
+        "community_discussion_en": "Commenters noted the high number of memory-related fixes, with some debating the monetary cost of using unsafe languages like C. Others observed a similar update for macOS 15 and questioned the prevalence of path parsing vulnerabilities.",
+        "title_zh": "macOS Tahoe 26.6 安全内容发布",
+        "detailed_summary_zh": "苹果发布了 macOS Tahoe 26.6 的安全内容，修复了包括内存处理问题在内的多个漏洞。 此更新对 macOS 用户很重要，因为它修复了可能导致沙盒逃逸和代码执行的关键漏洞，并凸显了操作系统中持续存在的内存安全问题。 安全内容包括对路径解析漏洞和其他问题的修复，许多补丁提及改进了边界检查和内存管理。",
+        "background_zh": "macOS 安全更新会定期发布以修复漏洞。内存安全问题在 C 和 C++ 等系统编程语言中很常见，会导致缓冲区溢出等错误。苹果的更新通常包括改进内存处理以降低此类风险。",
+        "community_discussion_zh": "评论者注意到大量与内存相关的修复，一些人讨论了使用不安全的语言（如 C）所带来的经济成本。其他人则观察到 macOS 15 也发布了类似更新，并对路径解析漏洞的普遍性提出质疑。"
+      },
+      "ai_score": 7.0,
+      "ai_reason": null,
+      "ai_summary": "Apple released security content for macOS Tahoe 26.6 addressing vulnerabilities including memory handling issues.",
       "ai_tags": []
     },
     {
