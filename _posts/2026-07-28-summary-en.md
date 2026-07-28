@@ -5,34 +5,34 @@ date: 2026-07-28
 lang: en
 ---
 
-<div class="run-stats" hidden data-fetched="64" data-analyzed="48" data-selected="11" data-critical="1"></div>
+<div class="run-stats" hidden data-fetched="60" data-analyzed="63" data-selected="11" data-critical="1"></div>
 
-> From 48 items, 11 important content pieces were selected
+> From 63 items, 11 important content pieces were selected
 
 ---
 
 1. [Moonshot Releases 2.8T Parameter Kimi K3 Open-Weight Model](#item-1) ⭐️ 9.0/10
-2. [BitMEX and BitMart may be first casualties of crypto trading slump](#item-2) ⭐️ 8.0/10
-3. [Hong Kong central bank: Banks&\#x27; quantum preparedness extremely low](#item-3) ⭐️ 8.0/10
-4. [Coinbase to Suspend ACX Trading July 28, 2026](#item-4) ⭐️ 8.0/10
-5. [First Implicit Tactile World Action Model Trained on 500k Hours of Video](#item-5) ⭐️ 8.0/10
-6. [World&\#x27;s First Agentic Diffusion Model with 128K Context](#item-6) ⭐️ 8.0/10
-7. [A $500 RL Fine-Tune of 9B Open Model Beats Frontier Models](#item-7) ⭐️ 8.0/10
-8. [Anthropic Publishes Stance on Open-Weights AI Models](#item-8) ⭐️ 8.0/10
-9. [Documentation for self-contained Python builds](#item-9) ⭐️ 8.0/10
-10. [CME vs CFTC: Onchain Perpetual Futures Battle](#item-10) ⭐️ 7.0/10
-11. [Jensen Huang bets $5 billion on Ilya Sutskever&\#x27;s AI scaling approach](#item-11) ⭐️ 7.0/10
+2. [Morgan Stanley launches ETH, SOL exchange-traded products](#item-2) ⭐️ 8.0/10
+3. [Core Scientific signs AMD AI deal, exits bitcoin mining](#item-3) ⭐️ 8.0/10
+4. [Apple Sued Over Fake Bitcoin Wallet After $875K Theft on App Store](#item-4) ⭐️ 8.0/10
+5. [Coinbase to Suspend ACX Trading July 28, 2026](#item-5) ⭐️ 8.0/10
+6. [First Implicit Tactile World Action Model Trained on 500k Hours of Video](#item-6) ⭐️ 8.0/10
+7. [World's First Agentic Diffusion Model with 128K Context](#item-7) ⭐️ 8.0/10
+8. [A $500 RL Fine-Tune of 9B Open Model Beats Frontier Models](#item-8) ⭐️ 8.0/10
+9. [Anthropic Publishes Stance on Open-Weights AI Models](#item-9) ⭐️ 8.0/10
+10. [Documentation for self-contained Python builds](#item-10) ⭐️ 8.0/10
+11. [macOS Tahoe 26.6 Security Content Released](#item-11) ⭐️ 7.0/10
 
 ---
 
 <a id="item-1"></a>
 ## [Moonshot Releases 2.8T Parameter Kimi K3 Open-Weight Model](https://simonwillison.net/2026/Jul/27/kimi-k3/#atom-everything) ⭐️ 9.0/10
 
-Moonshot has released the weights for their 2.8 trillion parameter Kimi K3 model on Hugging Face, with the 1.56TB checkpoint now available under a new license that restricts commercial use by large Model-as-a-Service providers. OpenRouter already offers K3 from seven providers at the same pricing as Moonshot. This release represents a major milestone in open-weight AI, as a 2.8 trillion parameter model is among the largest ever made publicly available. The shift from a modified MIT license to a more restrictive one for large commercial entities may set a precedent for how future open-weight models balance openness with commercial protection. The new license for K3 requires Model-as-a-Service businesses exceeding $20 million in annual revenue to enter a separate agreement with Moonshot, whereas previous K2 license only required attribution for entities with over 100 million MAUs or $20M monthly revenue. Moonshot consistently uses the term &\#x27;open weight&\#x27; rather than &\#x27;open source&\#x27; to describe this release.
+Moonshot has released the weights for their 2.8 trillion parameter Kimi K3 model on Hugging Face, with the 1.56TB checkpoint now available under a new license that restricts commercial use by large Model-as-a-Service providers. OpenRouter already offers K3 from seven providers at the same pricing as Moonshot. This release represents a major milestone in open-weight AI, as a 2.8 trillion parameter model is among the largest ever made publicly available. The shift from a modified MIT license to a more restrictive one for large commercial entities may set a precedent for how future open-weight models balance openness with commercial protection. The new license for K3 requires Model-as-a-Service businesses exceeding $20 million in annual revenue to enter a separate agreement with Moonshot, whereas previous K2 license only required attribution for entities with over 100 million MAUs or $20M monthly revenue. Moonshot consistently uses the term 'open weight' rather than 'open source' to describe this release.
 
 rss · Simon Willison · Jul 28, 07:39
 
-**Background**: Model weights are the learned parameters that define how an AI model processes inputs to produce outputs, typically resulting from training on large datasets. In large language models, parameters include billions or trillions of adjustable values that encode the model&\#x27;s knowledge and behavior. Open-weight models allow users to download and run the weights locally, but may come with usage restrictions that distinguish them from fully open-source software.
+**Background**: Model weights are the learned parameters that define how an AI model processes inputs to produce outputs, typically resulting from training on large datasets. In large language models, parameters include billions or trillions of adjustable values that encode the model's knowledge and behavior. Open-weight models allow users to download and run the weights locally, but may come with usage restrictions that distinguish them from fully open-source software.
 
 <details><summary>References</summary>
 <ul>
@@ -45,44 +45,74 @@ rss · Simon Willison · Jul 28, 07:39
 ---
 
 <a id="item-2"></a>
-## [BitMEX and BitMart may be first casualties of crypto trading slump](https://www.coindesk.com/business/2026/07/28/bitmex-and-bitmart-may-be-first-casualties-of-crypto-trading-slump) ⭐️ 8.0/10
+## [Morgan Stanley launches ETH, SOL exchange-traded products](https://www.coindesk.com/markets/2026/07/28/morgan-stanley-debuts-ether-and-solana-etps-after-bitcoin-fund-success) ⭐️ 8.0/10
 
-A speculative report identifies BitMEX and BitMart as potential first casualties of the ongoing crypto trading slump, raising concerns about exchange stability. The potential failure of major exchanges like BitMEX and BitMart could directly impact user funds and disrupt market structure, signaling deeper issues in the crypto ecosystem. The report is speculative and not a confirmed event, but it highlights risks from reduced trading volumes and revenue pressures on exchanges.
+Morgan Stanley is launching exchange-traded products \(ETPs\) for ether \(ETH\) and solana \(SOL\), following the success of its earlier bitcoin fund. This marks a significant expansion of its institutional crypto offerings. This move by a major traditional financial institution like Morgan Stanley signals growing institutional acceptance of cryptocurrencies beyond bitcoin. It could increase mainstream investor access and market legitimacy for ETH and SOL. The ETPs will provide exposure to ether and solana, allowing investors to trade them on traditional stock exchanges. The exact structure \(ETF or ETN\) and launch date have not been specified in the provided content.
 
-rss · CoinDesk · Jul 28, 17:36
+rss · CoinDesk · Jul 28, 22:30
 
-**Background**: BitMEX is a long-established cryptocurrency derivatives exchange, while BitMart is a spot trading platform. Both rely heavily on trading fees for revenue. A prolonged trading slump can erode their sustainability.
-
-**Tags**: `#exchange`, `#trading slump`, `#market structure`, `#BitMEX`, `#BitMart`
-
----
-
-<a id="item-3"></a>
-## [Hong Kong central bank: Banks&\#x27; quantum preparedness extremely low](https://www.coindesk.com/markets/2026/07/28/hong-kong-s-central-bank-puts-a-number-on-lenders-quantum-preparedness-it-s-very-low) ⭐️ 8.0/10
-
-Hong Kong&\#x27;s central bank published a report quantifying banks&\#x27; preparedness for quantum computing threats, finding it alarmingly low. The report emphasizes the urgent need for transition to quantum-resistant cryptography. This regulatory signal highlights systemic risk to the financial infrastructure, as quantum computers could break current encryption. It directly impacts crypto markets and all digital finance reliant on cryptographic security. The report likely includes a specific metric or percentage measuring quantum preparedness, though exact figures remain undisclosed. The low preparedness indicates a significant gap between current cryptographic measures and the coming quantum threat.
-
-rss · CoinDesk · Jul 28, 15:55
-
-**Background**: Quantum computers, when sufficiently powerful, could run Shor&\#x27;s algorithm to break widely used public-key encryption, threatening data security. Post-quantum cryptography \(PQC\) aims to develop algorithms resistant to quantum attacks. Central banks and regulators are beginning to assess exposure and urge migration to quantum-safe standards.
+**Background**: Exchange-traded products \(ETPs\) are investment vehicles traded on stock exchanges that track an underlying asset. Morgan Stanley's previous success with a bitcoin fund paved the way for expanding into other cryptocurrencies. Solana is a high-throughput blockchain platform known for fast transactions and low fees, while ether is the native token of the Ethereum network, the leading smart contract platform.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://en.wikipedia.org/wiki/Quantum-safe_cryptography">Quantum-safe cryptography</a></li>
-<li><a href="https://bpi.com/quantum-computing-the-urgent-need-to-transition-to-quantum-resistant-cryptography/">Quantum Computing: The Urgent Need to Transition to Quantum-Resistant Cryptography - Bank Policy Institute</a></li>
-<li><a href="https://www.mckinsey.com/industries/financial-services/our-insights/quantum-communication-and-computing-elevating-the-banking-sector">Quantum communication and computing: Elevating the banking sector</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Solana_%28blockchain_platform%29">Solana (blockchain platform)</a></li>
+<li><a href="https://www.investopedia.com/terms/e/exchange-traded-products-etp.asp">Exchange-Traded Product (ETP): Definition, Types, and Example</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#quantum computing`, `#cybersecurity`, `#Hong Kong`, `#central bank`, `#financial infrastructure`
+**Tags**: `#institutional adoption`, `#ETP`, `#Morgan Stanley`, `#ether`, `#solana`
+
+---
+
+<a id="item-3"></a>
+## [Core Scientific signs AMD AI deal, exits bitcoin mining](https://www.coindesk.com/business/2026/07/28/core-scientific-lands-amd-ai-deal-as-bitcoin-mining-operation-winds-down) ⭐️ 8.0/10
+
+Core Scientific has signed a deal with AMD to provide AI infrastructure, while simultaneously winding down its bitcoin mining operations. This marks a major strategic pivot for one of the largest Bitcoin miners, signaling a broader industry shift from crypto mining to AI compute. The deal involves Core Scientific's data centers being repurposed for AMD GPU-based AI workloads, as the company phases out ASIC-based bitcoin mining.
+
+rss · CoinDesk · Jul 28, 20:46
+
+**Background**: Core Scientific was originally a major player in Bitcoin mining, operating large-scale data centers with specialized ASIC miners. However, the company has been shifting focus to AI and cloud services, leveraging its data center expertise. This deal with AMD solidifies that transition.
+
+<details><summary>References</summary>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Core_Scientific">Core Scientific</a></li>
+<li><a href="https://corescientific.com/news/stealthy-blockchain-startup-core-scientific-raising-100m-could-reel-in-as-much-as-250m/">Stealthy blockchain startup Core Scientific... | Core Scientific DEV</a></li>
+<li><a href="https://www.crunchbase.com/organization/core-scientific/tech_details">Core Scientific - Tech Details</a></li>
+
+</ul>
+</details>
+
+**Tags**: `#bitcoin mining`, `#artificial intelligence`, `#Core Scientific`, `#AMD`, `#industry pivot`
 
 ---
 
 <a id="item-4"></a>
+## [Apple Sued Over Fake Bitcoin Wallet After $875K Theft on App Store](https://www.coindesk.com/business/2026/07/28/apple-kept-fake-bitcoin-wallet-on-app-store-after-usd875-000-theft-report-lawsuit-alleges) ⭐️ 8.0/10
+
+A new lawsuit alleges that Apple kept a fake Bitcoin wallet on the App Store even after being notified of an $875,000 theft from a user. The lawsuit claims Apple was negligent in its app review process. This incident underscores critical security flaws in Apple's App Store vetting for cryptocurrency wallets, directly causing significant financial losses. It raises urgent questions about platform liability and user protection in the crypto space. The fake wallet mimicked legitimate Bitcoin wallet apps and reportedly led to a theft of $875,000. Apple allegedly ignored reports from the victim and continued hosting the app for some time.
+
+rss · CoinDesk · Jul 28, 19:59
+
+**Background**: Fake crypto wallets are malicious apps designed to steal users' cryptocurrency by providing a backdoor to fraudsters. Apple claims to review all apps for security, but this case shows that fraudulent apps can still bypass checks. Users often rely on App Store's reputation for safety, making such incidents particularly damaging.
+
+<details><summary>References</summary>
+<ul>
+<li><a href="https://techcrunch.com/2026/07/27/apple-sued-after-alleged-app-store-crypto-scam-cost-users-1-8m/">Apple sued after alleged App Store crypto scam cost... | TechCrunch</a></li>
+
+</ul>
+</details>
+
+**Discussion**: No community comments were provided in the input.
+
+**Tags**: `#Security`, `#Apple`, `#Fake Wallet`, `#Lawsuit`, `#Bitcoin`
+
+---
+
+<a id="item-5"></a>
 ## [Coinbase to Suspend ACX Trading July 28, 2026](https://status.coinbase.com/incidents/9h5nsb9zjlzd) ⭐️ 8.0/10
 
-Coinbase announced it will suspend trading of the ACX token on July 28, 2026, as the project team is winding down the token and offering conversion options to holders. The exchange has already moved ACX order books to limit-only mode ahead of the suspension. This suspension removes a major trading venue for ACX, affecting liquidity and access for holders who wish to trade or exit their positions. It highlights the risks of token wind-downs and the importance of following project communications for conversion opportunities. Trading on Coinbase will be suspended from July 28 to August 3, 2026, and holders must move their ACX to a self-custodial wallet to participate in the project&\#x27;s conversion options. The ACX token is used for governance, staking, and fee payments within the Across Protocol ecosystem.
+Coinbase announced it will suspend trading of the ACX token on July 28, 2026, as the project team is winding down the token and offering conversion options to holders. The exchange has already moved ACX order books to limit-only mode ahead of the suspension. This suspension removes a major trading venue for ACX, affecting liquidity and access for holders who wish to trade or exit their positions. It highlights the risks of token wind-downs and the importance of following project communications for conversion opportunities. Trading on Coinbase will be suspended from July 28 to August 3, 2026, and holders must move their ACX to a self-custodial wallet to participate in the project's conversion options. The ACX token is used for governance, staking, and fee payments within the Across Protocol ecosystem.
 
 rss · Coinbase Status · Jul 28, 15:00
 
@@ -98,7 +128,7 @@ rss · Coinbase Status · Jul 28, 15:00
 
 ---
 
-<a id="item-5"></a>
+<a id="item-6"></a>
 ## [First Implicit Tactile World Action Model Trained on 500k Hours of Video](https://www.qbitai.com/2026/07/461827.html) ⭐️ 8.0/10
 
 Researchers have trained the first implicit tactile world action model using 500,000 hours of video, enabling AI systems to understand and simulate tactile interactions. This marks a significant step in embodied AI and multimodal learning, allowing robots to manipulate objects and interact with the environment more naturally, with profound implications for automation, healthcare, and home robotics. The model employs implicit representation learning, likely combining world models with tactile sensing data, and was trained on an enormous dataset of 500,000 hours of video. Specific architectural details have not been publicly disclosed, but this is the first attempt to integrate tactile sensing into a world model.
@@ -118,8 +148,8 @@ rss · QbitAI 量子位 · Jul 28, 13:25
 
 ---
 
-<a id="item-6"></a>
-## [World&\#x27;s First Agentic Diffusion Model with 128K Context](https://www.qbitai.com/2026/07/461650.html) ⭐️ 8.0/10
+<a id="item-7"></a>
+## [World's First Agentic Diffusion Model with 128K Context](https://www.qbitai.com/2026/07/461650.html) ⭐️ 8.0/10
 
 Researchers have released the first agentic diffusion model capable of real-time action and error correction, achieving a 128K context length that matches autoregressive models. This breakthrough extends diffusion models to long-horizon agent tasks, potentially enabling more robust and interactive AI agents that can plan and adapt without full retraining. The model supports 128K token context, matching the context window of leading autoregressive models, and incorporates an agentic loop that iteratively refines outputs.
 
@@ -137,7 +167,7 @@ rss · QbitAI 量子位 · Jul 28, 12:18
 
 ---
 
-<a id="item-7"></a>
+<a id="item-8"></a>
 ## [A $500 RL Fine-Tune of 9B Open Model Beats Frontier Models](https://fermisense.com/when-machines-take-the-wheel/) ⭐️ 8.0/10
 
 A team fine-tuned a 9 billion parameter open-weight model using reinforcement learning for under $500, achieving better performance on catalog review tasks than much larger frontier models like GPT-4 or Claude. This demonstrates that small, fine-tuned models can be highly cost-effective for specific tasks, challenging the economic rationale for massive frontier models and the associated infrastructure spending. The fine-tuning process utilized reinforcement learning to optimize the model for catalog review accuracy. The specific model, dataset, and exact training cost breakdown were detailed in the blog post, though the author notes potential overfitting concerns.
@@ -154,14 +184,14 @@ hackernews · ilreb · Jul 28, 10:18 · [Discussion](https://news.ycombinator.co
 </ul>
 </details>
 
-**Discussion**: Commenters largely praised the cost-efficiency demonstration, with some noting that most use cases don&\#x27;t need massive models. However, concerns were raised about overfitting due to lack of held-out test data and that such specialized benchmarks don&\#x27;t accurately compare to frontier models&\#x27; generalized capabilities.
+**Discussion**: Commenters largely praised the cost-efficiency demonstration, with some noting that most use cases don't need massive models. However, concerns were raised about overfitting due to lack of held-out test data and that such specialized benchmarks don't accurately compare to frontier models' generalized capabilities.
 
 ---
 
-<a id="item-8"></a>
+<a id="item-9"></a>
 ## [Anthropic Publishes Stance on Open-Weights AI Models](https://www.anthropic.com/news/position-open-weights-models) ⭐️ 8.0/10
 
-Anthropic published an official statement outlining its position on open-weights AI models, advocating for mandatory safety testing for all sufficiently capable models rather than a blanket ban. The statement clarifies that Anthropic has never called for banning open-weights models but emphasizes the need for regulation as capabilities advance. This statement fuels the ongoing debate between open and closed AI development, as open-weights models lower barriers to access but raise safety concerns. Anthropic&\#x27;s position could influence regulatory policies, especially as governments consider how to balance innovation and risk. Anthropic&\#x27;s CEO Dario Amodei wrote the statement, which also supports banning chip sales to China and cracking down on smuggling of chips to prevent advanced AI capabilities from proliferating. The statement explicitly opposes a ban on open-weights models but supports mandatory safety testing that critics argue could effectively function as a ban.
+Anthropic published an official statement outlining its position on open-weights AI models, advocating for mandatory safety testing for all sufficiently capable models rather than a blanket ban. The statement clarifies that Anthropic has never called for banning open-weights models but emphasizes the need for regulation as capabilities advance. This statement fuels the ongoing debate between open and closed AI development, as open-weights models lower barriers to access but raise safety concerns. Anthropic's position could influence regulatory policies, especially as governments consider how to balance innovation and risk. Anthropic's CEO Dario Amodei wrote the statement, which also supports banning chip sales to China and cracking down on smuggling of chips to prevent advanced AI capabilities from proliferating. The statement explicitly opposes a ban on open-weights models but supports mandatory safety testing that critics argue could effectively function as a ban.
 
 hackernews · surprisetalk · Jul 28, 06:03 · [Discussion](https://news.ycombinator.com/item?id=49076057)
 
@@ -180,7 +210,7 @@ hackernews · surprisetalk · Jul 28, 06:03 · [Discussion](https://news.ycombin
 
 ---
 
-<a id="item-9"></a>
+<a id="item-10"></a>
 ## [Documentation for self-contained Python builds](https://gregoryszorc.com/docs/python-build-standalone/main/) ⭐️ 8.0/10
 
 Documentation for python-build-standalone, a set of self-contained portable Python distributions, has been published, detailing how these builds are used by tools like uv, pipx, and Hatch to provide Python installations without system dependencies. This infrastructure simplifies Python deployment across platforms, enables bundling Python into desktop applications, and reduces friction for users who need a specific Python version without system-level installation. The distributions are maintained by Astral \(the company behind uv\), support many platforms \(Linux, macOS, Windows\), and are available for multiple Python versions. They are designed to be fully relocatable and have no external dependencies.
@@ -201,43 +231,17 @@ hackernews · jcbhmr · Jul 28, 02:43 · [Discussion](https://news.ycombinator.c
 
 ---
 
-<a id="item-10"></a>
-## [CME vs CFTC: Onchain Perpetual Futures Battle](https://www.coindesk.com/policy/2026/07/28/inside-the-cme-and-cftc-s-battle-over-onchain-perpetual-futures) ⭐️ 7.0/10
-
-The CME Group, the largest U.S. derivatives exchange operator, is in an unprecedented conflict with its regulator, the CFTC, over the agency&\#x27;s decision to allow blockchain-based perpetual futures products. This regulatory battle could set a major precedent for how onchain derivatives are treated in the U.S., potentially reshaping market structure and institutional access to crypto derivatives. Onchain perpetual futures are cash-settled, have no expiration date, and are traded transparently on blockchain, eliminating trust issues of centralized platforms. The CME, which traditionally offers regulated futures, opposes the CFTC&\#x27;s approval of these products.
-
-rss · CoinDesk · Jul 28, 16:00
-
-**Background**: Perpetual futures are derivative contracts that allow leveraged speculation on asset prices without an expiry date, popular in crypto. Onchain perpetual futures execute trades and settle on a blockchain, providing transparency and decentralization. The CME Group is a major traditional derivatives exchange, while the CFTC is its primary regulator.
-
-<details><summary>References</summary>
-<ul>
-<li><a href="https://www.coindesk.com/policy/2026/07/28/inside-the-cme-and-cftc-s-battle-over-onchain-perpetual-futures">Inside the CME and CFTC’s battle over onchain perpetual futures</a></li>
-<li><a href="https://en.wikipedia.org/wiki/Perpetual_futures">Perpetual futures</a></li>
-
-</ul>
-</details>
-
-**Tags**: `#CME`, `#CFTC`, `#perpetual futures`, `#regulation`, `#crypto derivatives`
-
----
-
 <a id="item-11"></a>
-## [Jensen Huang bets $5 billion on Ilya Sutskever&\#x27;s AI scaling approach](https://www.qbitai.com/2026/07/461911.html) ⭐️ 7.0/10
+## [macOS Tahoe 26.6 Security Content Released](https://support.apple.com/en-us/128067) ⭐️ 7.0/10
 
-NVIDIA CEO Jensen Huang has invested $5 billion in Ilya Sutskever&\#x27;s AI scaling approach, signaling a major bet on continuing to scale compute for AI models. This investment is significant because it challenges recent skepticism about the limits of scaling and reaffirms the industry&\#x27;s commitment to scaling laws as a path to more capable AI systems. The $5 billion investment is directed at Ilya Sutskever&\#x27;s current venture, Safe Superintelligence Inc., which focuses on safe AI development. Jensen Huang&\#x27;s bet indicates a belief that scaling compute remains crucial for AI progress.
+Apple released security content for macOS Tahoe 26.6, addressing multiple vulnerabilities including memory handling issues. This update is important for macOS users as it fixes critical vulnerabilities that could lead to sandbox escapes and code execution. It also highlights the ongoing challenge of memory safety in operating systems. The security content includes fixes for path parsing vulnerabilities and other issues, with many patches citing improved bounds checking and memory management.
 
-rss · QbitAI 量子位 · Jul 28, 13:46
+hackernews · andor · Jul 28, 17:45 · [Discussion](https://news.ycombinator.com/item?id=49081555)
 
-**Background**: Neural scaling laws describe how neural network performance improves as model size, dataset size, and compute are scaled up. Ilya Sutskever, co-founder of OpenAI, previously suggested that the era of scaling compute alone was ending and that AI research needed to explore new approaches. This investment signals a possible shift back to scaling, or a hybrid strategy.
+**Background**: macOS security updates are released periodically to fix vulnerabilities. Memory safety issues are common in systems programming languages like C and C++, leading to bugs such as buffer overflows. Apple's updates often include improved memory handling to mitigate such risks.
 
-<details><summary>References</summary>
-<ul>
-<li><a href="https://en.wikipedia.org/wiki/AI_scaling_law">AI scaling law</a></li>
-<li><a href="https://en.wikipedia.org/wiki/Neural_scaling_law">Neural scaling law - Wikipedia</a></li>
-<li><a href="https://www.businessinsider.com/openai-cofounder-ilya-sutskever-scaling-ai-age-of-research-dwarkesh-2025-11">OpenAI cofounder says scaling compute is not enough to advance AI: &#x27;It&#x27;s back to the age of research again&#x27;</a></li>
+**Discussion**: Commenters noted the high number of memory-related fixes, with some debating the monetary cost of using unsafe languages like C. Others observed a similar update for macOS 15 and questioned the prevalence of path parsing vulnerabilities.
 
-</ul>
-</details>
+**Tags**: `#security`, `#macOS`, `#Apple`, `#vulnerabilities`, `#memory safety`
 
 ---
