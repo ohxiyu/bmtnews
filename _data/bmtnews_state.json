@@ -2,18 +2,65 @@
   "version": 1,
   "date": "2026-07-28",
   "timezone": "Asia/Shanghai",
-  "updated_at": "2026-07-27T21:30:36.492575Z",
+  "updated_at": "2026-07-28T03:36:58.641262Z",
   "analyzed_keys": [
+    "042ca744c567f5cb385834b3c5c112626f9144a044fd1f716fefd7fa1ac21bbd",
+    "141ebe4b371781d869ee615b126b3fe8e4e36576347b3e311da9f768753f7692",
+    "4facef5e7ef5b50b2eacce63ff082a222482e18319b3be1bec8ed81dfa30a9e2",
     "501fdea92f115c28d69ca9959d95a9a2ecd76a32e94bf1a923de1e5116345cb0",
+    "6d81739d7534621516fc15c4491b42c716705f83f95feeb01faa9cb46d9be496",
+    "7197835e2fac218d02e173b1a2777d3e4e37532775b9372fe48c592a3f5ce405",
+    "720d3cf7632c4d15ab03f3518945a1d92c4efb789f4e90289b34917e6b02bb9c",
+    "725e4521485f94c292c2fcac1728404fbaefa2dfac2a343e061f36cdc7d51457",
+    "798bcaa127bd404049c4d45e51bef835befa728f9ba8fe9c4118990dd84384e4",
+    "7b4f8e9588586c733fe25d88ee52eb487a421b7d9aa1a507e3da07889d437d3b",
+    "870dad86ec7bed904049500b2f301b2444bdf06cb64b60e9b7f5a12a3168db90",
     "8c4a4417f450a644df2f4a1b6198520698888649a70995d0550a904a5689ead3",
     "96e1acc4d0c4aa7f1918cc7eebff33dcd4fe637975b21f0f49fef3f40ce634b7",
+    "9e56f96d699c52deaac1a6a3f4afbea65de148202fb5a18b4b7e8cdf0a31ed50",
     "9eb6bd1941beaf42e38e6e276385e3508f61d2eadf880e21e5e4da28dfb98d54",
+    "a91ee87660fe877bf606efe095d7c43c10b68fdd22ef2b13563688b342fd7afc",
     "af08d2d9ac0af10c936205ed0e1865f34fd6d912994c0b5ff3f4269c4a936529",
+    "b9ec5ff381af8fee70a28d41446d5dcfa95c734e5f2f8ef622fa24af5ac8c84b",
     "d0bba0440ebb3e03b2967f0e35a922d1a045d8cc035d6bb9006cd17f6814b44a",
     "dc62612b976479a15e09e80fb4473b3899b85666fc7471b0a41ea2fc15959d73",
     "f11457e880140054fb9a5d7cc89cb38acf7c4d5a87a67aa833927336458839d6"
   ],
   "items": [
+    {
+      "id": "rss:simonwillison.net_atom_everything_:dc5417e61dfc4edb",
+      "source_type": "rss",
+      "title": "moonshotai/Kimi-K3",
+      "url": "https://simonwillison.net/2026/Jul/27/kimi-k3/#atom-everything",
+      "content": null,
+      "author": "Simon Willison",
+      "published_at": "2026-07-27T23:39:04Z",
+      "fetched_at": "2026-07-28T03:37:01.306829Z",
+      "metadata": {
+        "feed_name": "Simon Willison",
+        "category": "ai-devtools",
+        "title_en": "Moonshot Releases 2.8T Parameter Kimi K3 Open-Weight Model",
+        "detailed_summary_en": "Moonshot has released the weights for their 2.8 trillion parameter Kimi K3 model on Hugging Face, with the 1.56TB checkpoint now available under a new license that restricts commercial use by large Model-as-a-Service providers. OpenRouter already offers K3 from seven providers at the same pricing as Moonshot. This release represents a major milestone in open-weight AI, as a 2.8 trillion parameter model is among the largest ever made publicly available. The shift from a modified MIT license to a more restrictive one for large commercial entities may set a precedent for how future open-weight models balance openness with commercial protection. The new license for K3 requires Model-as-a-Service businesses exceeding $20 million in annual revenue to enter a separate agreement with Moonshot, whereas previous K2 license only required attribution for entities with over 100 million MAUs or $20M monthly revenue. Moonshot consistently uses the term 'open weight' rather than 'open source' to describe this release.",
+        "background_en": "Model weights are the learned parameters that define how an AI model processes inputs to produce outputs, typically resulting from training on large datasets. In large language models, parameters include billions or trillions of adjustable values that encode the model's knowledge and behavior. Open-weight models allow users to download and run the weights locally, but may come with usage restrictions that distinguish them from fully open-source software.",
+        "title_zh": "Moonshot 发布 2.8 万亿参数 Kimi K3 开放权重模型",
+        "detailed_summary_zh": "Moonshot 已在 Hugging Face 上发布了其 2.8 万亿参数的 Kimi K3 模型权重，1.56TB 的检查点现已可用，并附带一项新许可协议，限制大型模型即服务提供商的商业使用。OpenRouter 已从七家提供商处提供 K3，定价与 Moonshot 相同。 此次发布是开放权重 AI 的一个重要里程碑，因为 2.8 万亿参数的模型是公开可用的最大模型之一。从修改版 MIT 许可转向对大型商业实体更严格的许可，可能为未来开放权重模型如何在开放性与商业保护之间取得平衡树立先例。 K3 的新许可要求年收入超过 2000 万美元的模型即服务企业与 Moonshot 签订单独协议，而之前的 K2 许可仅要求月活跃用户超过 1 亿或月收入超过 2000 万美元的实体进行署名。Moonshot 始终使用“开放权重”而非“开源”一词来描述此次发布。",
+        "background_zh": "模型权重是定义 AI 模型如何处理输入以产生输出的学习参数，通常通过对大型数据集的训练获得。在大型语言模型中，参数包括数十亿或数万亿个可调整的值，这些值编码了模型的知识和行为。开放权重模型允许用户下载并在本地运行权重，但可能附带使用限制，这使其与完全开源的软件有所区别。",
+        "sources": [
+          {
+            "url": "https://www.ai21.com/glossary/open-weights-model/",
+            "title": "What is an Open-Weights Model? | AI21"
+          },
+          {
+            "url": "https://www.ibm.com/think/topics/llm-parameters",
+            "title": "What Are LLM Parameters? | IBM"
+          }
+        ]
+      },
+      "ai_score": 9.0,
+      "ai_reason": null,
+      "ai_summary": "Moonshot released weights for their 2.8 trillion parameter Kimi K3 model on Hugging Face.",
+      "ai_tags": []
+    },
     {
       "id": "rss:status.coinbase.com_history.rss:4bf03ce36363a66c",
       "source_type": "rss",
@@ -46,6 +93,160 @@
       "ai_score": 8.0,
       "ai_reason": null,
       "ai_summary": "Coinbase will suspend ACX trading on July 28, 2026, as the project team winds down the token and offers conversion options.",
+      "ai_tags": []
+    },
+    {
+      "id": "hackernews:story:49076057",
+      "source_type": "hackernews",
+      "title": "Our position on open-weights models",
+      "url": "https://www.anthropic.com/news/position-open-weights-models",
+      "content": null,
+      "author": "surprisetalk",
+      "published_at": "2026-07-27T22:03:49Z",
+      "fetched_at": "2026-07-28T03:36:59.437730Z",
+      "metadata": {
+        "discussion_url": "https://news.ycombinator.com/item?id=49076057",
+        "category": "tech-community",
+        "title_en": "Anthropic Publishes Stance on Open-Weights AI Models",
+        "detailed_summary_en": "Anthropic published an official statement outlining its position on open-weights AI models, advocating for mandatory safety testing for all sufficiently capable models rather than a blanket ban. The statement clarifies that Anthropic has never called for banning open-weights models but emphasizes the need for regulation as capabilities advance. This statement fuels the ongoing debate between open and closed AI development, as open-weights models lower barriers to access but raise safety concerns. Anthropic's position could influence regulatory policies, especially as governments consider how to balance innovation and risk. Anthropic's CEO Dario Amodei wrote the statement, which also supports banning chip sales to China and cracking down on smuggling of chips to prevent advanced AI capabilities from proliferating. The statement explicitly opposes a ban on open-weights models but supports mandatory safety testing that critics argue could effectively function as a ban.",
+        "background_en": "Open-weights AI models are neural network models whose trained parameters (weights and biases) are publicly released for anyone to download, modify, and run. This contrasts with closed models where only an API is accessible. The open-weights approach enables wider access and customization but also raises concerns about misuse, as developers cannot control how the model is used after release.",
+        "community_discussion_en": "Commenters largely criticized Anthropic for perceived hypocrisy, pointing out contradictions between supporting chip bans while opposing open-weights bans, and questioning the feasibility of safety testing regimes. Some accused Anthropic of virtue signaling and protecting its commercial interests under the guise of safety concerns.",
+        "title_zh": "Anthropic 发布关于开源权重 AI 模型的立场",
+        "detailed_summary_zh": "Anthropic 发布官方声明，阐明其对开源权重 AI 模型的立场，主张对所有足够强大的模型进行强制性安全测试，而非全面禁止。声明澄清 Anthropic 从未呼吁禁止开源权重模型，但强调随着能力提升，监管是必要的。 这一声明加剧了关于开放与封闭 AI 开发的持续辩论，因为开源权重模型降低了访问门槛但引发了安全担忧。Anthropic 的立场可能影响监管政策，尤其是在各国政府考虑如何平衡创新与风险之际。 Anthropic 的 CEO Dario Amodei 撰写了该声明，其中还支持禁止向中国销售芯片并打击芯片走私，以防止先进 AI 能力扩散。声明明确反对禁止开源权重模型，但支持强制性安全测试，批评者认为这实际上可能等同于禁令。",
+        "background_zh": "开源权重 AI 模型是其训练参数（权重和偏置）公开释出的神经网络模型，任何人都可以下载、修改和运行。这与仅提供 API 访问的封闭模型形成对比。开源权重方法实现了更广泛的访问和定制，但也引发了滥用担忧，因为开发者无法控制发布后模型的使用方式。",
+        "community_discussion_zh": "评论者大多批评 Anthropic 的虚伪，指出其在支持芯片禁令的同时反对开源权重禁令的矛盾，并质疑安全测试制度的可行性。一些人指责 Anthropic 以安全担忧为幌子进行道德表态并保护其商业利益。",
+        "sources": [
+          {
+            "url": "https://hai.stanford.edu/ai-definitions/what-is-an-open-weight-model",
+            "title": "What is an Open-Weight Model? - Stanford HAI"
+          },
+          {
+            "url": "https://www.microsoft.com/en-us/corporate-responsibility/topics/open-weight/",
+            "title": "Open Weights and American AI Leadership"
+          },
+          {
+            "url": "https://opensource.org/ai/open-weights",
+            "title": "Open Weights: not quite what you’ve been told"
+          }
+        ]
+      },
+      "ai_score": 8.0,
+      "ai_reason": null,
+      "ai_summary": "Anthropic publishes its stance on open-weights AI models, sparking heated debate on regulation and hypocrisy.",
+      "ai_tags": []
+    },
+    {
+      "id": "hackernews:story:49073942",
+      "source_type": "hackernews",
+      "title": "Self-contained highly-portable Python distributions",
+      "url": "https://gregoryszorc.com/docs/python-build-standalone/main/",
+      "content": null,
+      "author": "jcbhmr",
+      "published_at": "2026-07-27T18:43:31Z",
+      "fetched_at": "2026-07-28T03:36:59.437826Z",
+      "metadata": {
+        "discussion_url": "https://news.ycombinator.com/item?id=49073942",
+        "category": "tech-community",
+        "title_en": "Documentation for self-contained Python builds",
+        "detailed_summary_en": "Documentation for python-build-standalone, a set of self-contained portable Python distributions, has been published, detailing how these builds are used by tools like uv, pipx, and Hatch to provide Python installations without system dependencies. This infrastructure simplifies Python deployment across platforms, enables bundling Python into desktop applications, and reduces friction for users who need a specific Python version without system-level installation. The distributions are maintained by Astral (the company behind uv), support many platforms (Linux, macOS, Windows), and are available for multiple Python versions. They are designed to be fully relocatable and have no external dependencies.",
+        "background_en": "Standard Python distributions are often tied to a specific operating system or require compiling from source. python-build-standalone provides pre-built, relocatable Python binaries that can be extracted and used anywhere, making them ideal for packaging tools like package managers or embedding in applications. They are produced using a custom build process that strips out system-specific baggage.",
+        "community_discussion_en": "Comments highlight widespread adoption: charliermarsh (uv lead) confirms uv uses these distributions and notes significant engineering effort in keeping up with CPython. simonw praises them as excellent for bundling Python into apps, and zie points out an alternative approach using Cosmopolitan cross-platform binaries. rsyring mentions PyOxy as a sister project that creates single-file executables from these distributions.",
+        "title_zh": "自包含Python构建的文档",
+        "detailed_summary_zh": "python-build-standalone（一组自包含的可移植Python发行版）的文档已发布，详细说明了这些构建如何被uv、pipx和Hatch等工具用于提供无需系统依赖的Python安装。 这一基础设施简化了跨平台的Python部署，使Python能够捆绑到桌面应用程序中，并减少了需要特定Python版本但无需系统级安装的用户的摩擦。 这些发行版由Astral（uv背后的公司）维护，支持多种平台（Linux、macOS、Windows），并提供多个Python版本。它们设计为完全可重定位，且无外部依赖。",
+        "background_zh": "标准的Python发行版通常与特定操作系统绑定或需要从源代码编译。python-build-standalone提供了预构建的、可重定位的Python二进制文件，可以在任何位置解压和使用，非常适合打包工具如包管理器或嵌入到应用程序中。它们通过自定义构建流程生产，去除了系统特定的负担。",
+        "community_discussion_zh": "评论强调了广泛采用：charliermarsh（uv负责人）确认uv使用这些发行版，并指出在跟进CPython上花费了大量工程精力。simonw称赞它们是将Python捆绑到应用程序中的绝佳选择，zie指出了另一种使用Cosmopolitan跨平台二进制的方法。rsyring提到PyOxy作为姊妹项目，可以从这些发行版创建单个可执行文件。",
+        "sources": [
+          {
+            "url": "https://github.com/astral-sh/uv",
+            "title": "GitHub - astral-sh/uv: An extremely fast Python package and project manager, written in Rust. · GitHub"
+          },
+          {
+            "url": "https://astral.sh/blog/uv",
+            "title": "uv: Python packaging in Rust"
+          }
+        ]
+      },
+      "ai_score": 8.0,
+      "ai_reason": null,
+      "ai_summary": "Documentation for self-contained portable Python distributions used by uv and other tools.",
+      "ai_tags": []
+    },
+    {
+      "id": "rss:www.coindesk.com_arc_outboundfeeds_rss_:2c228f82d59dc681",
+      "source_type": "rss",
+      "title": "Kalshi, Polymarket win pause against Minnesota's prediction market ban",
+      "url": "https://www.coindesk.com/policy/2026/07/27/kalshi-polymarket-win-pause-against-minnesota-s-prediction-market-ban",
+      "content": null,
+      "author": "Nikhilesh De",
+      "published_at": "2026-07-27T23:29:38Z",
+      "fetched_at": "2026-07-28T03:36:59.389540Z",
+      "metadata": {
+        "feed_name": "CoinDesk",
+        "category": "crypto-markets",
+        "title_en": "Kalshi, Polymarket win pause against Minnesota prediction market ban",
+        "detailed_summary_en": "A federal judge granted a preliminary injunction pausing enforcement of Minnesota's ban on prediction markets, allowing Kalshi and Polymarket to continue operating in the state while the legal challenge proceeds. This ruling sets a precedent for prediction market regulation in the U.S., potentially influencing other states' approaches and underscoring the legal distinction between prediction markets and gambling. Minnesota had banned prediction markets as unlawful gambling, but the court found the platforms likely to succeed on First Amendment grounds, as prediction markets involve expressive conduct protected under commercial speech.",
+        "background_en": "Kalshi is a regulated prediction market exchange based in New York, while Polymarket is a decentralized platform built on the Polygon blockchain. Prediction markets allow users to trade contracts based on the outcome of future events, such as elections or sports, and are considered by some to be a form of expressive activity rather than gambling.",
+        "title_zh": "Kalshi 和 Polymarket 赢得明尼苏达州预测市场禁令暂停",
+        "detailed_summary_zh": "一位联邦法官授予了初步禁令，暂停执行明尼苏达州对预测市场的禁令，使得 Kalshi 和 Polymarket 在诉讼进行期间可以在该州继续运营。 这一裁决为美国预测市场监管开创了先例，可能影响其他州的处理方式，并强调了预测市场与赌博之间的法律区别。 明尼苏达州曾将预测市场视为非法赌博而禁止，但法院认为这些平台很可能基于第一修正案理由胜诉，因为预测市场涉及受商业言论保护的表达行为。",
+        "background_zh": "Kalshi 是一家总部位于纽约的受监管预测市场交易所，而 Polymarket 是建立在 Polygon 区块链上的去中心化平台。预测市场允许用户根据未来事件（如选举或体育赛事）的结果交易合约，一些人认为这是一种表达性活动而非赌博。",
+        "sources": [
+          {
+            "url": "https://en.m.wikipedia.org/wiki/Kalshi",
+            "title": "Kalshi - Wikipedia"
+          },
+          {
+            "url": "https://polymarket.com/",
+            "title": "Polymarket | The World's Largest Prediction Market"
+          },
+          {
+            "url": "https://www.investopedia.com/terms/p/prediction-market.asp",
+            "title": "investopedia.com/terms/p/prediction-market.asp"
+          }
+        ]
+      },
+      "ai_score": 7.0,
+      "ai_reason": null,
+      "ai_summary": "Kalshi and Polymarket secured a legal pause against Minnesota's ban on prediction markets.",
+      "ai_tags": []
+    },
+    {
+      "id": "hackernews:story:49076391",
+      "source_type": "hackernews",
+      "title": "Benchmarking Opus 5 on SlopCodeBench",
+      "url": "https://github.com/humanlayer/advanced-context-engineering-for-coding-agents/blob/main/benchmarking-opus-5-on-slop-code-bench.md",
+      "content": null,
+      "author": "dhorthy",
+      "published_at": "2026-07-27T22:37:52Z",
+      "fetched_at": "2026-07-28T03:36:59.437766Z",
+      "metadata": {
+        "discussion_url": "https://news.ycombinator.com/item?id=49076391",
+        "category": "tech-community",
+        "title_en": "Opus 5 Shows Incremental Gains on SlopCodeBench",
+        "detailed_summary_en": "A new benchmark, SlopCodeBench, evaluates how coding agents degrade over long-horizon iterative tasks, and Opus 5 demonstrates incremental improvements over prior versions like Opus 4.8. This matters because SlopCodeBench focuses on non-functional and longitudinal requirements—key for production code—and Opus 5's incremental gains indicate the model is improving but not revolutionary, which influences developer tooling choices. SlopCodeBench comprises 36 problems and 196 checkpoints where agents repeatedly extend their own solutions, measuring maintainability and code quality over time. Opus 5 medium matches or outperforms Opus 4.8 xhigh while using fewer tokens.",
+        "background_en": "SlopCodeBench is a community benchmark introduced in a March 2026 paper that evaluates how coding agents degrade when repeatedly extending their own codebase. Unlike point-in-time benchmarks, it simulates real-world software evolution. Opus 5 is Anthropic's latest flagship model, positioned as an everyday workhorse for enterprise tasks, while Fable 5 handles more ambitious projects.",
+        "community_discussion_en": "Community sentiment is mixed: some users confirm Opus 5 is a nice incremental improvement but not revolutionary, with one user switching from Opus 4.8 xhigh to Opus 5 medium for efficiency. Others feel Opus 5 lacks the 'wow factor' of earlier versions like Opus 4 or Fable, and questions remain about the role of system prompts and benchmark cost barriers.",
+        "title_zh": "Opus 5 在 SlopCodeBench 上表现渐进式提升",
+        "detailed_summary_zh": "一项新基准 SlopCodeBench 评估了编码代理在长期迭代任务中的性能退化情况，结果显示 Opus 5 相较于此前版本（如 Opus 4.8）有渐进式改进。 这很重要，因为 SlopCodeBench 关注非功能性和纵向需求——这对生产代码至关重要——而 Opus 5 的渐进式提升表明该模型正在改进但并非革命性，这会影响开发者工具的选型。 SlopCodeBench 包含 36 个问题和 196 个检查点，代理在其中反复扩展自己的解决方案，衡量代码的可维护性和质量随时间的变化。Opus 5 medium 版本在消耗更少 token 的情况下，表现持平或优于 Opus 4.8 xhigh 版本。",
+        "background_zh": "SlopCodeBench 是一项社区基准测试，于 2026 年 3 月在一篇论文中提出，评估编码代理在反复扩展自身代码库时的性能退化情况。与即时基准不同，它模拟了真实世界的软件演化过程。Opus 5 是 Anthropic 最新的旗舰模型，定位为处理企业日常任务的通用模型，而 Fable 5 则负责更宏大的项目。",
+        "community_discussion_zh": "社区看法不一：一些用户确认 Opus 5 是很好的渐进式改进，但并非革命性，有用户从 Opus 4.8 xhigh 切换到 Opus 5 medium 以提高效率。另一些用户则认为 Opus 5 缺乏早期版本（如 Opus 4 或 Fable）的“惊艳感”，并质疑系统提示的作用以及基准测试的成本障碍。",
+        "sources": [
+          {
+            "url": "https://arxiv.org/abs/2603.24755",
+            "title": "[2603.24755] SlopCodeBench: Benchmarking How Coding Agents Degrade Over Long-Horizon Iterative Tasks"
+          },
+          {
+            "url": "https://models.dev/models/anthropic/claude-opus-5/",
+            "title": "Claude Opus 5 pricing, providers, and specs | Models.dev"
+          },
+          {
+            "url": "https://www.theverge.com/ai-artificial-intelligence/970105/claude-opus-5-announced-anthropic-ai-model-release",
+            "title": "Anthropic releases Opus 5 promising Fable 5-like... | The Verge"
+          }
+        ]
+      },
+      "ai_score": 7.0,
+      "ai_reason": null,
+      "ai_summary": "Benchmarking Opus 5 on SlopCodeBench shows incremental improvements over prior versions, with community discussion on model utility and benchmark methodology.",
       "ai_tags": []
     },
     {
