@@ -5,21 +5,22 @@ date: 2026-07-28
 lang: en
 ---
 
-<div class="run-stats" hidden data-fetched="68" data-analyzed="21" data-selected="9" data-critical="1"></div>
+<div class="run-stats" hidden data-fetched="68" data-analyzed="32" data-selected="10" data-critical="1"></div>
 
-> From 21 items, 9 important content pieces were selected
+> From 32 items, 10 important content pieces were selected
 
 ---
 
 1. [Moonshot Releases 2.8T Parameter Kimi K3 Open-Weight Model](#item-1) ⭐️ 9.0/10
 2. [Coinbase to Suspend ACX Trading July 28, 2026](#item-2) ⭐️ 8.0/10
-3. [Anthropic Publishes Stance on Open-Weights AI Models](#item-3) ⭐️ 8.0/10
-4. [Documentation for self-contained Python builds](#item-4) ⭐️ 8.0/10
-5. [Kalshi, Polymarket win pause against Minnesota prediction market ban](#item-5) ⭐️ 7.0/10
-6. [Opus 5 Shows Incremental Gains on SlopCodeBench](#item-6) ⭐️ 7.0/10
-7. [Judge Rejects Google&\#x27;s DMCA Claim to Block Scraping](#item-7) ⭐️ 7.0/10
-8. [Crypto&\#x27;s $90 Trillion Repo Market Comes to Wall Street, Slowly](#item-8) ⭐️ 7.0/10
-9. [Microsoft Launches MAI-Cyber-1-Flash AI Model for Cybersecurity](#item-9) ⭐️ 7.0/10
+3. [First Implicit Tactile World Action Model Trained on 500k Hours of Video](#item-3) ⭐️ 8.0/10
+4. [World&\#x27;s First Agentic Diffusion Model with 128K Context](#item-4) ⭐️ 8.0/10
+5. [A $500 RL Fine-Tune of 9B Open Model Beats Frontier Models](#item-5) ⭐️ 8.0/10
+6. [Anthropic Publishes Stance on Open-Weights AI Models](#item-6) ⭐️ 8.0/10
+7. [Documentation for self-contained Python builds](#item-7) ⭐️ 8.0/10
+8. [Jensen Huang bets $5 billion on Ilya Sutskever&\#x27;s AI scaling approach](#item-8) ⭐️ 7.0/10
+9. [Kalshi, Polymarket win pause against Minnesota prediction market ban](#item-9) ⭐️ 7.0/10
+10. [Crypto&\#x27;s $90 Trillion Repo Market Comes to Wall Street, Slowly](#item-10) ⭐️ 7.0/10
 
 ---
 
@@ -39,8 +40,6 @@ rss · Simon Willison · Jul 28, 07:39
 
 </ul>
 </details>
-
-**Tags**: `#AI`, `#large language model`, `#open source`, `#Kimi K3`, `#Moonshot`
 
 ---
 
@@ -64,6 +63,72 @@ rss · Coinbase Status · Jul 28, 15:00
 ---
 
 <a id="item-3"></a>
+## [First Implicit Tactile World Action Model Trained on 500k Hours of Video](https://www.qbitai.com/2026/07/461827.html) ⭐️ 8.0/10
+
+Researchers have trained the first implicit tactile world action model using 500,000 hours of video, enabling AI systems to understand and simulate tactile interactions. This marks a significant step in embodied AI and multimodal learning, allowing robots to manipulate objects and interact with the environment more naturally, with profound implications for automation, healthcare, and home robotics. The model employs implicit representation learning, likely combining world models with tactile sensing data, and was trained on an enormous dataset of 500,000 hours of video. Specific architectural details have not been publicly disclosed, but this is the first attempt to integrate tactile sensing into a world model.
+
+rss · QbitAI 量子位 · Jul 28, 13:25
+
+**Background**: A world model is an internal simulation of the environment that allows AI to predict consequences of actions. Tactile sensing technology aims to replicate human touch. Previous world models relied primarily on visual and textual inputs, lacking the tactile modality.
+
+<details><summary>References</summary>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/World_model_%28artificial_intelligence%29">World model (artificial intelligence) - Wikipedia</a></li>
+<li><a href="https://www.nvidia.com/en-us/glossary/world-models/">What Is a World Model? | NVIDIA Glossary</a></li>
+<li><a href="https://pressureprofile.com/about/tactile-sensing">Tactile Sensors and Tactile Sensing Technology — PPS</a></li>
+
+</ul>
+</details>
+
+**Tags**: `#AI`, `#robotics`, `#world model`, `#tactile sensing`, `#machine learning`
+
+---
+
+<a id="item-4"></a>
+## [World&\#x27;s First Agentic Diffusion Model with 128K Context](https://www.qbitai.com/2026/07/461650.html) ⭐️ 8.0/10
+
+Researchers have released the first agentic diffusion model capable of real-time action and error correction, achieving a 128K context length that matches autoregressive models. This breakthrough extends diffusion models to long-horizon agent tasks, potentially enabling more robust and interactive AI agents that can plan and adapt without full retraining. The model supports 128K token context, matching the context window of leading autoregressive models, and incorporates an agentic loop that iteratively refines outputs.
+
+rss · QbitAI 量子位 · Jul 28, 12:18
+
+**Background**: Diffusion models traditionally excel at generating high-quality images and audio by gradually denoising random noise. Autoregressive models have dominated long-context tasks like text generation and planning. This work bridges the gap by enabling diffusion models to handle agentic tasks requiring step-by-step decision-making and error correction.
+
+<details><summary>References</summary>
+<ul>
+<li><a href="https://github.com/ruvnet/agentic-difusion">GitHub - ruvnet/agentic-difusion: a comprehensive diffusion-based...</a></li>
+<li><a href="https://deepwiki.com/ruvnet/agentic-difusion">ruvnet/agentic-difusion | DeepWiki</a></li>
+
+</ul>
+</details>
+
+**Tags**: `#扩散模型`, `#Agent`, `#长上下文`, `#AI研究`, `#突破`
+
+---
+
+<a id="item-5"></a>
+## [A $500 RL Fine-Tune of 9B Open Model Beats Frontier Models](https://fermisense.com/when-machines-take-the-wheel/) ⭐️ 8.0/10
+
+A team fine-tuned a 9 billion parameter open-weight model using reinforcement learning for under $500, achieving better performance on catalog review tasks than much larger frontier models like GPT-4 or Claude. This demonstrates that small, fine-tuned models can be highly cost-effective for specific tasks, challenging the economic rationale for massive frontier models and the associated infrastructure spending. The fine-tuning process utilized reinforcement learning to optimize the model for catalog review accuracy. The specific model, dataset, and exact training cost breakdown were detailed in the blog post, though the author notes potential overfitting concerns.
+
+hackernews · ilreb · Jul 28, 10:18 · [Discussion](https://news.ycombinator.com/item?id=49078454)
+
+**Background**: Reinforcement learning fine-tuning \(RLFT\) is a technique where a language model is trained to maximize a reward signal based on its outputs, aligning it with specific goals. Catalog review involves automatically evaluating product descriptions, metadata, or listings for quality and consistency. Frontier models like GPT-4 and Claude are very large, general-purpose models that are expensive to train and run.
+
+<details><summary>References</summary>
+<ul>
+<li><a href="https://developers.openai.com/api/docs/guides/reinforcement-fine-tuning">Reinforcement fine-tuning | OpenAI API</a></li>
+<li><a href="https://aws.amazon.com/blogs/machine-learning/fine-tune-large-language-models-with-reinforcement-learning-from-human-or-ai-feedback/">Fine-tune large language models with reinforcement learning from human or AI feedback | Artificial Intelligence</a></li>
+
+</ul>
+</details>
+
+**Discussion**: Commenters largely praised the cost-efficiency demonstration, with some noting that most use cases don&\#x27;t need massive models. However, concerns were raised about overfitting due to lack of held-out test data and that such specialized benchmarks don&\#x27;t accurately compare to frontier models&\#x27; generalized capabilities.
+
+**Tags**: `#AI`, `#fine-tuning`, `#open-source`, `#cost-efficiency`, `#RL`
+
+---
+
+<a id="item-6"></a>
 ## [Anthropic Publishes Stance on Open-Weights AI Models](https://www.anthropic.com/news/position-open-weights-models) ⭐️ 8.0/10
 
 Anthropic published an official statement outlining its position on open-weights AI models, advocating for mandatory safety testing for all sufficiently capable models rather than a blanket ban. The statement clarifies that Anthropic has never called for banning open-weights models but emphasizes the need for regulation as capabilities advance. This statement fuels the ongoing debate between open and closed AI development, as open-weights models lower barriers to access but raise safety concerns. Anthropic&\#x27;s position could influence regulatory policies, especially as governments consider how to balance innovation and risk. Anthropic&\#x27;s CEO Dario Amodei wrote the statement, which also supports banning chip sales to China and cracking down on smuggling of chips to prevent advanced AI capabilities from proliferating. The statement explicitly opposes a ban on open-weights models but supports mandatory safety testing that critics argue could effectively function as a ban.
@@ -83,11 +148,9 @@ hackernews · surprisetalk · Jul 28, 06:03 · [Discussion](https://news.ycombin
 
 **Discussion**: Commenters largely criticized Anthropic for perceived hypocrisy, pointing out contradictions between supporting chip bans while opposing open-weights bans, and questioning the feasibility of safety testing regimes. Some accused Anthropic of virtue signaling and protecting its commercial interests under the guise of safety concerns.
 
-**Tags**: `#AI`, `#open-weights`, `#regulation`, `#Anthropic`
-
 ---
 
-<a id="item-4"></a>
+<a id="item-7"></a>
 ## [Documentation for self-contained Python builds](https://gregoryszorc.com/docs/python-build-standalone/main/) ⭐️ 8.0/10
 
 Documentation for python-build-standalone, a set of self-contained portable Python distributions, has been published, detailing how these builds are used by tools like uv, pipx, and Hatch to provide Python installations without system dependencies. This infrastructure simplifies Python deployment across platforms, enables bundling Python into desktop applications, and reduces friction for users who need a specific Python version without system-level installation. The distributions are maintained by Astral \(the company behind uv\), support many platforms \(Linux, macOS, Windows\), and are available for multiple Python versions. They are designed to be fully relocatable and have no external dependencies.
@@ -106,11 +169,31 @@ hackernews · jcbhmr · Jul 28, 02:43 · [Discussion](https://news.ycombinator.c
 
 **Discussion**: Comments highlight widespread adoption: charliermarsh \(uv lead\) confirms uv uses these distributions and notes significant engineering effort in keeping up with CPython. simonw praises them as excellent for bundling Python into apps, and zie points out an alternative approach using Cosmopolitan cross-platform binaries. rsyring mentions PyOxy as a sister project that creates single-file executables from these distributions.
 
-**Tags**: `#Python`, `#distribution`, `#tooling`, `#portable`, `#infrastructure`
+---
+
+<a id="item-8"></a>
+## [Jensen Huang bets $5 billion on Ilya Sutskever&\#x27;s AI scaling approach](https://www.qbitai.com/2026/07/461911.html) ⭐️ 7.0/10
+
+NVIDIA CEO Jensen Huang has invested $5 billion in Ilya Sutskever&\#x27;s AI scaling approach, signaling a major bet on continuing to scale compute for AI models. This investment is significant because it challenges recent skepticism about the limits of scaling and reaffirms the industry&\#x27;s commitment to scaling laws as a path to more capable AI systems. The $5 billion investment is directed at Ilya Sutskever&\#x27;s current venture, Safe Superintelligence Inc., which focuses on safe AI development. Jensen Huang&\#x27;s bet indicates a belief that scaling compute remains crucial for AI progress.
+
+rss · QbitAI 量子位 · Jul 28, 13:46
+
+**Background**: Neural scaling laws describe how neural network performance improves as model size, dataset size, and compute are scaled up. Ilya Sutskever, co-founder of OpenAI, previously suggested that the era of scaling compute alone was ending and that AI research needed to explore new approaches. This investment signals a possible shift back to scaling, or a hybrid strategy.
+
+<details><summary>References</summary>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/AI_scaling_law">AI scaling law</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Neural_scaling_law">Neural scaling law - Wikipedia</a></li>
+<li><a href="https://www.businessinsider.com/openai-cofounder-ilya-sutskever-scaling-ai-age-of-research-dwarkesh-2025-11">OpenAI cofounder says scaling compute is not enough to advance AI: &#x27;It&#x27;s back to the age of research again&#x27;</a></li>
+
+</ul>
+</details>
+
+**Tags**: `#AI`, `#Scaling`, `#Investment`, `#Ilya Sutskever`, `#Jensen Huang`
 
 ---
 
-<a id="item-5"></a>
+<a id="item-9"></a>
 ## [Kalshi, Polymarket win pause against Minnesota prediction market ban](https://www.coindesk.com/policy/2026/07/27/kalshi-polymarket-win-pause-against-minnesota-s-prediction-market-ban) ⭐️ 7.0/10
 
 A federal judge granted a preliminary injunction pausing enforcement of Minnesota&\#x27;s ban on prediction markets, allowing Kalshi and Polymarket to continue operating in the state while the legal challenge proceeds. This ruling sets a precedent for prediction market regulation in the U.S., potentially influencing other states&\#x27; approaches and underscoring the legal distinction between prediction markets and gambling. Minnesota had banned prediction markets as unlawful gambling, but the court found the platforms likely to succeed on First Amendment grounds, as prediction markets involve expressive conduct protected under commercial speech.
@@ -128,48 +211,9 @@ rss · CoinDesk · Jul 28, 07:29
 </ul>
 </details>
 
-**Tags**: `#regulation`, `#prediction markets`, `#legal`, `#Kalshi`, `#Polymarket`
-
 ---
 
-<a id="item-6"></a>
-## [Opus 5 Shows Incremental Gains on SlopCodeBench](https://github.com/humanlayer/advanced-context-engineering-for-coding-agents/blob/main/benchmarking-opus-5-on-slop-code-bench.md) ⭐️ 7.0/10
-
-A new benchmark, SlopCodeBench, evaluates how coding agents degrade over long-horizon iterative tasks, and Opus 5 demonstrates incremental improvements over prior versions like Opus 4.8. This matters because SlopCodeBench focuses on non-functional and longitudinal requirements—key for production code—and Opus 5&\#x27;s incremental gains indicate the model is improving but not revolutionary, which influences developer tooling choices. SlopCodeBench comprises 36 problems and 196 checkpoints where agents repeatedly extend their own solutions, measuring maintainability and code quality over time. Opus 5 medium matches or outperforms Opus 4.8 xhigh while using fewer tokens.
-
-hackernews · dhorthy · Jul 28, 06:37 · [Discussion](https://news.ycombinator.com/item?id=49076391)
-
-**Background**: SlopCodeBench is a community benchmark introduced in a March 2026 paper that evaluates how coding agents degrade when repeatedly extending their own codebase. Unlike point-in-time benchmarks, it simulates real-world software evolution. Opus 5 is Anthropic&\#x27;s latest flagship model, positioned as an everyday workhorse for enterprise tasks, while Fable 5 handles more ambitious projects.
-
-<details><summary>References</summary>
-<ul>
-<li><a href="https://arxiv.org/abs/2603.24755">[2603.24755] SlopCodeBench: Benchmarking How Coding Agents Degrade Over Long-Horizon Iterative Tasks</a></li>
-<li><a href="https://models.dev/models/anthropic/claude-opus-5/">Claude Opus 5 pricing, providers, and specs | Models.dev</a></li>
-<li><a href="https://www.theverge.com/ai-artificial-intelligence/970105/claude-opus-5-announced-anthropic-ai-model-release">Anthropic releases Opus 5 promising Fable 5-like... | The Verge</a></li>
-
-</ul>
-</details>
-
-**Discussion**: Community sentiment is mixed: some users confirm Opus 5 is a nice incremental improvement but not revolutionary, with one user switching from Opus 4.8 xhigh to Opus 5 medium for efficiency. Others feel Opus 5 lacks the &\#x27;wow factor&\#x27; of earlier versions like Opus 4 or Fable, and questions remain about the role of system prompts and benchmark cost barriers.
-
-**Tags**: `#AI`, `#benchmarking`, `#Opus`, `#coding`, `#machine learning`
-
----
-
-<a id="item-7"></a>
-## [Judge Rejects Google&\#x27;s DMCA Claim to Block Scraping](https://www.techdirt.com/2026/07/27/judge-rejects-googles-attempt-to-dmca-its-way-out-of-being-scraped/) ⭐️ 7.0/10
-
-A U.S. judge ruled that Google&\#x27;s search results are not protected by copyright under the DMCA, rejecting Google&\#x27;s attempt to use the law to prevent a third-party service from scraping its search results. This decision sets an important legal precedent limiting the use of DMCA against web scraping, which could impact competition and transparency in search markets. It also clarifies that factual data compilations like search results may lack the creative originality needed for copyright protection. The case involved Google suing SerpApi, a company that scrapes Google search results. The judge found that Google&\#x27;s search results are not original enough to qualify for copyright protection under the DMCA, as they are essentially compilations of facts.
-
-hackernews · cdrnsf · Jul 28, 02:15 · [Discussion](https://news.ycombinator.com/item?id=49073513)
-
-**Background**: The DMCA \(Digital Millennium Copyright Act\) includes provisions against circumventing measures that protect copyrighted works. However, this ruling distinguishes between copyrightable creative works and non-copyrightable factual compilations. Web scraping is a common practice for gathering data, but its legality often depends on whether the scraped data is copyrighted and whether access violates terms of service or other laws.
-
-**Discussion**: Commenters generally supported the ruling, with some noting that Google&\#x27;s deprecation of its search API leaves scraping as the only alternative. Others pointed out the importance of scrapable search results for exposing scams, and criticized Google&\#x27;s litigation tactics against smaller companies.
-
----
-
-<a id="item-8"></a>
+<a id="item-10"></a>
 ## [Crypto&\#x27;s $90 Trillion Repo Market Comes to Wall Street, Slowly](https://www.coindesk.com/markets/2026/07/22/crypto-s-favorite-usd90-trillion-trading-product-is-coming-to-wall-street-but-big-banks-are-taking-it-slow) ⭐️ 7.0/10
 
 Traditional finance&\#x27;s tri-party repo market, valued at $90 trillion, is being adapted for cryptocurrency trading, but major banks are proceeding cautiously. This development signals growing institutional interest in crypto, as the repo market is a critical source of short-term funding and liquidity. However, the slow adoption by big banks indicates that crypto market infrastructure is not yet fully integrated with traditional finance. Tri-party repo involves a third-party agent handling collateral management, reducing operational burden. The adaptation for crypto could involve tokenized collateral and blockchain-based settlement.
@@ -186,27 +230,5 @@ rss · CoinDesk · Jul 28, 02:00
 
 </ul>
 </details>
-
----
-
-<a id="item-9"></a>
-## [Microsoft Launches MAI-Cyber-1-Flash AI Model for Cybersecurity](https://microsoft.ai/news/introducing-mai-cyber-1-flash-inside-mdash/) ⭐️ 7.0/10
-
-Microsoft announced MAI-Cyber-1-Flash, the first AI model built specifically for cybersecurity, integrated with MDASH, a multi-agent vulnerability identification and remediation system. It claims to find the most challenging vulnerabilities in complex code bases at half the cost of leading models. This marks a significant step in applying AI to cybersecurity, potentially lowering the cost and improving the speed of vulnerability detection. It could change how organizations approach code security, especially leveraging Microsoft&\#x27;s vast data advantage from trillions of daily signals. MAI-Cyber-1-Flash is designed to work with MDASH, which orchestrates over 100 specialized AI agents. The model is part of Project Perception, a broader agentic security offering grounded in real-world signals, and is available through a limited preview.
-
-hackernews · migmartri · Jul 28, 00:52 · [Discussion](https://news.ycombinator.com/item?id=49072361)
-
-**Background**: Cybersecurity traditionally relies on manual code review and static analysis tools. AI-based approaches aim to automate vulnerability discovery. Microsoft&\#x27;s MDASH is an agentic code scanner using multi-model AI to detect vulnerabilities with depth and accuracy beyond traditional static analysis. The DARPA AI Cyber Challenge-winning Team Atlanta contributed to MDASH&\#x27;s development.
-
-<details><summary>References</summary>
-<ul>
-<li><a href="https://microsoft.ai/news/introducing-mai-cyber-1-flash-inside-mdash/">Introducing MAI-Cyber-1-Flash inside MDASH | Microsoft AI</a></li>
-<li><a href="https://x.com/satyanadella/status/2081779755146482153">Satya Nadella on X: &quot;Today, we are announcing a series of updates that give customers frontier-grade security at half the cost. MAI-Cyber-1-Flash is our first cybersecurity model, built ground up to find the most challenging vulnerabilities in complex code bases. When combined with MDASH, it delivers world-class performance at 50 percent of the cost of leading models. We are bringing this capability to market through Project Perception, a complete agentic security offering grounded in real-world signals and</a></li>
-<li><a href="https://learn.microsoft.com/en-us/security-exposure-management/ai-code-security-overview">Codename MDASH Overview - Microsoft Security Exposure Management | Microsoft Learn</a></li>
-
-</ul>
-</details>
-
-**Discussion**: Comments express skepticism about Microsoft&\#x27;s claims of data advantage and ease of use. Some users question whether the model is only effective on Microsoft products due to its training data. Others find the announcement interesting but are frustrated with accessing the product through Microsoft&\#x27;s corporate portal.
 
 ---

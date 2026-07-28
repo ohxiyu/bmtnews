@@ -2,28 +2,39 @@
   "version": 1,
   "date": "2026-07-28",
   "timezone": "Asia/Shanghai",
-  "updated_at": "2026-07-28T03:36:58.641262Z",
+  "updated_at": "2026-07-28T06:41:44.569531Z",
   "analyzed_keys": [
     "042ca744c567f5cb385834b3c5c112626f9144a044fd1f716fefd7fa1ac21bbd",
     "141ebe4b371781d869ee615b126b3fe8e4e36576347b3e311da9f768753f7692",
+    "172cdb679e0ccfc273e92e382d1d2f9f3f471ed5b7925188c5244d059bb12670",
+    "20d81cb707681a5f1032225942a6855e124e04bbbd13974d2befcaf8d1ac20ba",
     "4facef5e7ef5b50b2eacce63ff082a222482e18319b3be1bec8ed81dfa30a9e2",
     "501fdea92f115c28d69ca9959d95a9a2ecd76a32e94bf1a923de1e5116345cb0",
+    "566ea6100fe0ac878d578500fef410c5c3cd8b4c0ee5a7b12a1af3f3799ac587",
+    "68d2fe159509c2cf2b716518cc17e855bcdb10961cf0ba1318dc330a820524b0",
+    "69223717e6b75da7a085d9f2e03d2cea376552471744a0e04b0d1b589cabc2f1",
     "6d81739d7534621516fc15c4491b42c716705f83f95feeb01faa9cb46d9be496",
     "7197835e2fac218d02e173b1a2777d3e4e37532775b9372fe48c592a3f5ce405",
     "720d3cf7632c4d15ab03f3518945a1d92c4efb789f4e90289b34917e6b02bb9c",
     "725e4521485f94c292c2fcac1728404fbaefa2dfac2a343e061f36cdc7d51457",
+    "7546bb22630bd5166f58ab51988727c7518c332d7345cde776a63636eb0af064",
     "798bcaa127bd404049c4d45e51bef835befa728f9ba8fe9c4118990dd84384e4",
+    "7a8ee75d51a58d0ec68b230977e46c3ad83f17db204a42198af3090c43166db1",
     "7b4f8e9588586c733fe25d88ee52eb487a421b7d9aa1a507e3da07889d437d3b",
     "870dad86ec7bed904049500b2f301b2444bdf06cb64b60e9b7f5a12a3168db90",
+    "883fb6f1e610c0c3bfe704381410d1323bc0aa3e729f5ffb68cf332fa37fb0fe",
     "8c4a4417f450a644df2f4a1b6198520698888649a70995d0550a904a5689ead3",
     "96e1acc4d0c4aa7f1918cc7eebff33dcd4fe637975b21f0f49fef3f40ce634b7",
     "9e56f96d699c52deaac1a6a3f4afbea65de148202fb5a18b4b7e8cdf0a31ed50",
     "9eb6bd1941beaf42e38e6e276385e3508f61d2eadf880e21e5e4da28dfb98d54",
+    "a775d23fbee8d4435cff4f1cb4c6ff523000ebf8d30c56279d91094eddf388dd",
     "a91ee87660fe877bf606efe095d7c43c10b68fdd22ef2b13563688b342fd7afc",
     "af08d2d9ac0af10c936205ed0e1865f34fd6d912994c0b5ff3f4269c4a936529",
     "b9ec5ff381af8fee70a28d41446d5dcfa95c734e5f2f8ef622fa24af5ac8c84b",
+    "c57aad89f4bf5a87a856154feb5216378c097af1bf0e16382fc00667b3bbdf94",
     "d0bba0440ebb3e03b2967f0e35a922d1a045d8cc035d6bb9006cd17f6814b44a",
     "dc62612b976479a15e09e80fb4473b3899b85666fc7471b0a41ea2fc15959d73",
+    "e2704ce671f00dec3dfa555ae76728458f46eecb8e43e47848c244bcdca3d873",
     "f11457e880140054fb9a5d7cc89cb38acf7c4d5a87a67aa833927336458839d6"
   ],
   "items": [
@@ -93,6 +104,114 @@
       "ai_score": 8.0,
       "ai_reason": null,
       "ai_summary": "Coinbase will suspend ACX trading on July 28, 2026, as the project team winds down the token and offers conversion options.",
+      "ai_tags": []
+    },
+    {
+      "id": "rss:www.qbitai.com_feed:a1fced18fac9b25a",
+      "source_type": "rss",
+      "title": "世界模型有触觉了！50万小时视频，训出首个隐式触觉世界动作模型",
+      "url": "https://www.qbitai.com/2026/07/461827.html",
+      "content": null,
+      "author": "henry",
+      "published_at": "2026-07-28T05:25:31Z",
+      "fetched_at": "2026-07-28T06:41:49.878164Z",
+      "metadata": {
+        "feed_name": "QbitAI 量子位",
+        "category": "ai-media",
+        "title_en": "First Implicit Tactile World Action Model Trained on 500k Hours of Video",
+        "detailed_summary_en": "Researchers have trained the first implicit tactile world action model using 500,000 hours of video, enabling AI systems to understand and simulate tactile interactions. This marks a significant step in embodied AI and multimodal learning, allowing robots to manipulate objects and interact with the environment more naturally, with profound implications for automation, healthcare, and home robotics. The model employs implicit representation learning, likely combining world models with tactile sensing data, and was trained on an enormous dataset of 500,000 hours of video. Specific architectural details have not been publicly disclosed, but this is the first attempt to integrate tactile sensing into a world model.",
+        "background_en": "A world model is an internal simulation of the environment that allows AI to predict consequences of actions. Tactile sensing technology aims to replicate human touch. Previous world models relied primarily on visual and textual inputs, lacking the tactile modality.",
+        "title_zh": "首个隐式触觉世界动作模型用50万小时视频训练而成",
+        "detailed_summary_zh": "研究人员首次使用50万小时的视频训练了一个隐式触觉世界动作模型，使AI系统能够理解并模拟触觉交互。 这标志着具身AI和多模态学习的重大进步，使机器人能够更自然地操作物体并与环境交互，对自动化、医疗保健和家庭服务机器人领域有深远影响。 该模型采用隐式表示学习，可能结合了世界模型和触觉传感数据，并在50万小时视频的巨大数据集上训练。具体架构细节尚未公开，但这是首次尝试将触觉感知融入世界模型。",
+        "background_zh": "世界模型是AI系统内部对环境的模拟，使其能预测行动后果。触觉传感技术旨在复制人类触觉。此前世界模型主要依赖视觉和文本信息，缺乏触觉模态。",
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/World_model_(artificial_intelligence)",
+            "title": "World model (artificial intelligence) - Wikipedia"
+          },
+          {
+            "url": "https://www.nvidia.com/en-us/glossary/world-models/",
+            "title": "What Is a World Model? | NVIDIA Glossary"
+          },
+          {
+            "url": "https://pressureprofile.com/about/tactile-sensing",
+            "title": "Tactile Sensors and Tactile Sensing Technology — PPS"
+          }
+        ]
+      },
+      "ai_score": 8.0,
+      "ai_reason": null,
+      "ai_summary": "First implicit tactile world action model trained on 500k hours of video, enabling touch-sensitive AI.",
+      "ai_tags": []
+    },
+    {
+      "id": "rss:www.qbitai.com_feed:dc846ec2f0f44754",
+      "source_type": "rss",
+      "title": "全球首个Agentic扩散模型来了：边行动边纠错，128K上下文追平自回归",
+      "url": "https://www.qbitai.com/2026/07/461650.html",
+      "content": null,
+      "author": "鹭羽",
+      "published_at": "2026-07-28T04:18:15Z",
+      "fetched_at": "2026-07-28T06:41:49.878189Z",
+      "metadata": {
+        "feed_name": "QbitAI 量子位",
+        "category": "ai-media",
+        "title_en": "World's First Agentic Diffusion Model with 128K Context",
+        "detailed_summary_en": "Researchers have released the first agentic diffusion model capable of real-time action and error correction, achieving a 128K context length that matches autoregressive models. This breakthrough extends diffusion models to long-horizon agent tasks, potentially enabling more robust and interactive AI agents that can plan and adapt without full retraining. The model supports 128K token context, matching the context window of leading autoregressive models, and incorporates an agentic loop that iteratively refines outputs.",
+        "background_en": "Diffusion models traditionally excel at generating high-quality images and audio by gradually denoising random noise. Autoregressive models have dominated long-context tasks like text generation and planning. This work bridges the gap by enabling diffusion models to handle agentic tasks requiring step-by-step decision-making and error correction.",
+        "title_zh": "全球首个Agentic扩散模型：128K上下文",
+        "detailed_summary_zh": "研究人员发布了全球首个Agentic扩散模型，能够边行动边纠错，实现了128K的上下文长度，追平自回归模型。 这一突破将扩散模型扩展到长程Agent任务，可能实现更鲁棒且交互性更强的AI智能体，能够无需完全重新训练即可规划和适应。 该模型支持128K token上下文，与领先的自回归模型上下文窗口持平，并包含一个迭代优化输出的Agent循环。",
+        "background_zh": "扩散模型传统上通过逐渐去噪随机噪声，擅长生成高质量图像和音频。自回归模型在文本生成和规划等长上下文任务中占据主导地位。这项工作通过使扩散模型能够处理需要逐步决策和纠错的Agent任务，弥合了差距。",
+        "sources": [
+          {
+            "url": "https://github.com/ruvnet/agentic-difusion",
+            "title": "GitHub - ruvnet/agentic-difusion: a comprehensive diffusion-based..."
+          },
+          {
+            "url": "https://deepwiki.com/ruvnet/agentic-difusion",
+            "title": "ruvnet/agentic-difusion | DeepWiki"
+          }
+        ]
+      },
+      "ai_score": 8.0,
+      "ai_reason": null,
+      "ai_summary": "全球首个Agentic扩散模型发布，实现边行动边纠错，128K上下文追平自回归模型。",
+      "ai_tags": []
+    },
+    {
+      "id": "hackernews:story:49078454",
+      "source_type": "hackernews",
+      "title": "A $500 RL fine-tune of a 9B open model beat frontier models on catalog review",
+      "url": "https://fermisense.com/when-machines-take-the-wheel/",
+      "content": null,
+      "author": "ilreb",
+      "published_at": "2026-07-28T02:18:53Z",
+      "fetched_at": "2026-07-28T06:41:45.578629Z",
+      "metadata": {
+        "discussion_url": "https://news.ycombinator.com/item?id=49078454",
+        "category": "tech-community",
+        "title_en": "A $500 RL Fine-Tune of 9B Open Model Beats Frontier Models",
+        "detailed_summary_en": "A team fine-tuned a 9 billion parameter open-weight model using reinforcement learning for under $500, achieving better performance on catalog review tasks than much larger frontier models like GPT-4 or Claude. This demonstrates that small, fine-tuned models can be highly cost-effective for specific tasks, challenging the economic rationale for massive frontier models and the associated infrastructure spending. The fine-tuning process utilized reinforcement learning to optimize the model for catalog review accuracy. The specific model, dataset, and exact training cost breakdown were detailed in the blog post, though the author notes potential overfitting concerns.",
+        "background_en": "Reinforcement learning fine-tuning (RLFT) is a technique where a language model is trained to maximize a reward signal based on its outputs, aligning it with specific goals. Catalog review involves automatically evaluating product descriptions, metadata, or listings for quality and consistency. Frontier models like GPT-4 and Claude are very large, general-purpose models that are expensive to train and run.",
+        "community_discussion_en": "Commenters largely praised the cost-efficiency demonstration, with some noting that most use cases don't need massive models. However, concerns were raised about overfitting due to lack of held-out test data and that such specialized benchmarks don't accurately compare to frontier models' generalized capabilities.",
+        "title_zh": "仅需500美元的强化学习微调9B开源模型超越前沿模型",
+        "detailed_summary_zh": "一个团队仅花费不到500美元，使用强化学习微调了一个90亿参数的开源权重模型，在目录审核任务上取得了比GPT-4或Claude等更大的前沿模型更好的表现。 这表明，针对特定任务，微调的小型模型可以非常经济高效，挑战了大型前沿模型及其相关基础设施投入的经济合理性。 微调过程利用强化学习优化模型在目录审核任务上的准确性。博客中详细介绍了具体模型、数据集和确切的训练成本明细，但作者也指出了潜在的过拟合问题。",
+        "background_zh": "强化学习微调（RLFT）是一种让语言模型根据其输出最大化奖励信号，从而使其与特定目标对齐的技术。目录审核涉及自动评估产品描述、元数据或列表的质量和一致性。像GPT-4和Claude这样的前沿模型是非常大、通用的模型，训练和运行成本高昂。",
+        "community_discussion_zh": "评论者大多赞扬了这种成本效益的展示，一些人指出大多数用例不需要庞大的模型。然而，也有人担心由于缺乏保留测试数据而导致的过拟合问题，并且认为这种专门化的基准测试并不能准确比较前沿模型的通用能力。",
+        "sources": [
+          {
+            "url": "https://developers.openai.com/api/docs/guides/reinforcement-fine-tuning",
+            "title": "Reinforcement fine-tuning | OpenAI API"
+          },
+          {
+            "url": "https://aws.amazon.com/blogs/machine-learning/fine-tune-large-language-models-with-reinforcement-learning-from-human-or-ai-feedback/",
+            "title": "Fine-tune large language models with reinforcement learning from human or AI feedback | Artificial Intelligence"
+          }
+        ]
+      },
+      "ai_score": 8.0,
+      "ai_reason": null,
+      "ai_summary": "A $500 RL fine-tune of a 9B open model outperforms frontier models on catalog review, highlighting the cost-efficiency of smaller models.",
       "ai_tags": []
     },
     {
@@ -172,6 +291,44 @@
       "ai_tags": []
     },
     {
+      "id": "rss:www.qbitai.com_feed:07d14f3225364451",
+      "source_type": "rss",
+      "title": "Ilya获黄仁勋50亿美元押注：“是时候Scaling了”",
+      "url": "https://www.qbitai.com/2026/07/461911.html",
+      "content": null,
+      "author": "Jay",
+      "published_at": "2026-07-28T05:46:59Z",
+      "fetched_at": "2026-07-28T06:41:49.878128Z",
+      "metadata": {
+        "feed_name": "QbitAI 量子位",
+        "category": "ai-media",
+        "title_en": "Jensen Huang bets $5 billion on Ilya Sutskever's AI scaling approach",
+        "detailed_summary_en": "NVIDIA CEO Jensen Huang has invested $5 billion in Ilya Sutskever's AI scaling approach, signaling a major bet on continuing to scale compute for AI models. This investment is significant because it challenges recent skepticism about the limits of scaling and reaffirms the industry's commitment to scaling laws as a path to more capable AI systems. The $5 billion investment is directed at Ilya Sutskever's current venture, Safe Superintelligence Inc., which focuses on safe AI development. Jensen Huang's bet indicates a belief that scaling compute remains crucial for AI progress.",
+        "background_en": "Neural scaling laws describe how neural network performance improves as model size, dataset size, and compute are scaled up. Ilya Sutskever, co-founder of OpenAI, previously suggested that the era of scaling compute alone was ending and that AI research needed to explore new approaches. This investment signals a possible shift back to scaling, or a hybrid strategy.",
+        "title_zh": "黄仁勋50亿美元押注Ilya的Scaling方法",
+        "detailed_summary_zh": "英伟达CEO黄仁勋向Ilya Sutskever的AI扩展方法投资50亿美元，标志着对继续扩展AI模型计算量的重大押注。 这项投资意义重大，因为它挑战了近期关于扩展极限的质疑，并重申了业界对Scaling Laws作为通往更强大AI系统之路的承诺。 这笔50亿美元的投资用于Ilya Sutskever目前创办的Safe Superintelligence Inc.，该公司专注于安全AI开发。黄仁勋的押注表明他认为扩展算力对AI进步仍然至关重要。",
+        "background_zh": "神经网络的Scaling Laws描述了模型性能随模型规模、数据集大小和计算量增加而提升的规律。OpenAI联合创始人Ilya Sutskever此前曾表示，单纯扩展算力的时代即将结束，AI研究需要探索新方法。这笔投资可能标志着回归扩展策略或采用混合策略。",
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/AI_scaling_law",
+            "title": "AI scaling law"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/Neural_scaling_law",
+            "title": "Neural scaling law - Wikipedia"
+          },
+          {
+            "url": "https://www.businessinsider.com/openai-cofounder-ilya-sutskever-scaling-ai-age-of-research-dwarkesh-2025-11",
+            "title": "OpenAI cofounder says scaling compute is not enough to advance AI: 'It's back to the age of research again'"
+          }
+        ]
+      },
+      "ai_score": 7.0,
+      "ai_reason": null,
+      "ai_summary": "Jensen Huang bets $5 billion on Ilya Sutskever's scaling approach in AI.",
+      "ai_tags": []
+    },
+    {
       "id": "rss:www.coindesk.com_arc_outboundfeeds_rss_:2c228f82d59dc681",
       "source_type": "rss",
       "title": "Kalshi, Polymarket win pause against Minnesota's prediction market ban",
@@ -210,72 +367,6 @@
       "ai_tags": []
     },
     {
-      "id": "hackernews:story:49076391",
-      "source_type": "hackernews",
-      "title": "Benchmarking Opus 5 on SlopCodeBench",
-      "url": "https://github.com/humanlayer/advanced-context-engineering-for-coding-agents/blob/main/benchmarking-opus-5-on-slop-code-bench.md",
-      "content": null,
-      "author": "dhorthy",
-      "published_at": "2026-07-27T22:37:52Z",
-      "fetched_at": "2026-07-28T03:36:59.437766Z",
-      "metadata": {
-        "discussion_url": "https://news.ycombinator.com/item?id=49076391",
-        "category": "tech-community",
-        "title_en": "Opus 5 Shows Incremental Gains on SlopCodeBench",
-        "detailed_summary_en": "A new benchmark, SlopCodeBench, evaluates how coding agents degrade over long-horizon iterative tasks, and Opus 5 demonstrates incremental improvements over prior versions like Opus 4.8. This matters because SlopCodeBench focuses on non-functional and longitudinal requirements—key for production code—and Opus 5's incremental gains indicate the model is improving but not revolutionary, which influences developer tooling choices. SlopCodeBench comprises 36 problems and 196 checkpoints where agents repeatedly extend their own solutions, measuring maintainability and code quality over time. Opus 5 medium matches or outperforms Opus 4.8 xhigh while using fewer tokens.",
-        "background_en": "SlopCodeBench is a community benchmark introduced in a March 2026 paper that evaluates how coding agents degrade when repeatedly extending their own codebase. Unlike point-in-time benchmarks, it simulates real-world software evolution. Opus 5 is Anthropic's latest flagship model, positioned as an everyday workhorse for enterprise tasks, while Fable 5 handles more ambitious projects.",
-        "community_discussion_en": "Community sentiment is mixed: some users confirm Opus 5 is a nice incremental improvement but not revolutionary, with one user switching from Opus 4.8 xhigh to Opus 5 medium for efficiency. Others feel Opus 5 lacks the 'wow factor' of earlier versions like Opus 4 or Fable, and questions remain about the role of system prompts and benchmark cost barriers.",
-        "title_zh": "Opus 5 在 SlopCodeBench 上表现渐进式提升",
-        "detailed_summary_zh": "一项新基准 SlopCodeBench 评估了编码代理在长期迭代任务中的性能退化情况，结果显示 Opus 5 相较于此前版本（如 Opus 4.8）有渐进式改进。 这很重要，因为 SlopCodeBench 关注非功能性和纵向需求——这对生产代码至关重要——而 Opus 5 的渐进式提升表明该模型正在改进但并非革命性，这会影响开发者工具的选型。 SlopCodeBench 包含 36 个问题和 196 个检查点，代理在其中反复扩展自己的解决方案，衡量代码的可维护性和质量随时间的变化。Opus 5 medium 版本在消耗更少 token 的情况下，表现持平或优于 Opus 4.8 xhigh 版本。",
-        "background_zh": "SlopCodeBench 是一项社区基准测试，于 2026 年 3 月在一篇论文中提出，评估编码代理在反复扩展自身代码库时的性能退化情况。与即时基准不同，它模拟了真实世界的软件演化过程。Opus 5 是 Anthropic 最新的旗舰模型，定位为处理企业日常任务的通用模型，而 Fable 5 则负责更宏大的项目。",
-        "community_discussion_zh": "社区看法不一：一些用户确认 Opus 5 是很好的渐进式改进，但并非革命性，有用户从 Opus 4.8 xhigh 切换到 Opus 5 medium 以提高效率。另一些用户则认为 Opus 5 缺乏早期版本（如 Opus 4 或 Fable）的“惊艳感”，并质疑系统提示的作用以及基准测试的成本障碍。",
-        "sources": [
-          {
-            "url": "https://arxiv.org/abs/2603.24755",
-            "title": "[2603.24755] SlopCodeBench: Benchmarking How Coding Agents Degrade Over Long-Horizon Iterative Tasks"
-          },
-          {
-            "url": "https://models.dev/models/anthropic/claude-opus-5/",
-            "title": "Claude Opus 5 pricing, providers, and specs | Models.dev"
-          },
-          {
-            "url": "https://www.theverge.com/ai-artificial-intelligence/970105/claude-opus-5-announced-anthropic-ai-model-release",
-            "title": "Anthropic releases Opus 5 promising Fable 5-like... | The Verge"
-          }
-        ]
-      },
-      "ai_score": 7.0,
-      "ai_reason": null,
-      "ai_summary": "Benchmarking Opus 5 on SlopCodeBench shows incremental improvements over prior versions, with community discussion on model utility and benchmark methodology.",
-      "ai_tags": []
-    },
-    {
-      "id": "hackernews:story:49073513",
-      "source_type": "hackernews",
-      "title": "Judge Rejects Google's Attempt to DMCA Its Way Out of Being Scraped",
-      "url": "https://www.techdirt.com/2026/07/27/judge-rejects-googles-attempt-to-dmca-its-way-out-of-being-scraped/",
-      "content": null,
-      "author": "cdrnsf",
-      "published_at": "2026-07-27T18:15:35Z",
-      "fetched_at": "2026-07-27T21:30:37.372346Z",
-      "metadata": {
-        "discussion_url": "https://news.ycombinator.com/item?id=49073513",
-        "category": "tech-community",
-        "title_en": "Judge Rejects Google's DMCA Claim to Block Scraping",
-        "detailed_summary_en": "A U.S. judge ruled that Google's search results are not protected by copyright under the DMCA, rejecting Google's attempt to use the law to prevent a third-party service from scraping its search results. This decision sets an important legal precedent limiting the use of DMCA against web scraping, which could impact competition and transparency in search markets. It also clarifies that factual data compilations like search results may lack the creative originality needed for copyright protection. The case involved Google suing SerpApi, a company that scrapes Google search results. The judge found that Google's search results are not original enough to qualify for copyright protection under the DMCA, as they are essentially compilations of facts.",
-        "background_en": "The DMCA (Digital Millennium Copyright Act) includes provisions against circumventing measures that protect copyrighted works. However, this ruling distinguishes between copyrightable creative works and non-copyrightable factual compilations. Web scraping is a common practice for gathering data, but its legality often depends on whether the scraped data is copyrighted and whether access violates terms of service or other laws.",
-        "community_discussion_en": "Commenters generally supported the ruling, with some noting that Google's deprecation of its search API leaves scraping as the only alternative. Others pointed out the importance of scrapable search results for exposing scams, and criticized Google's litigation tactics against smaller companies.",
-        "title_zh": "法官驳回谷歌利用DMCA阻止数据抓取的请求",
-        "detailed_summary_zh": "美国一名法官裁定，谷歌的搜索结果不受DMCA版权保护，驳回了谷歌试图利用该法律阻止第三方服务抓取其搜索结果的请求。 这一裁决确立了重要的法律先例，限制DMCA在网页抓取中的使用，可能影响搜索市场的竞争和透明度。它还澄清了诸如搜索结果等事实数据汇编可能缺乏版权保护所需的创造性原创性。 该案涉及谷歌起诉SerpApi，一家抓取谷歌搜索结果的公司。法官认为谷歌的搜索结果缺乏足够的原创性，不符合DMCA下的版权保护条件，因为它们本质上是事实的汇编。",
-        "background_zh": "DMCA（数字千年版权法案）包含针对规避保护版权作品措施的条款。然而，这一裁决区分了具有版权的创造性作品和不具有版权的事实汇编。网页抓取是一种常见的数据收集做法，但其合法性通常取决于被抓取的数据是否受版权保护，以及访问是否违反服务条款或其他法律。",
-        "community_discussion_zh": "评论者普遍支持这一裁决，有人指出谷歌废弃其搜索API使得抓取成为唯一选择。其他人则强调了可抓取的搜索结果对于揭露诈骗的重要性，并批评谷歌针对小公司的诉讼策略。"
-      },
-      "ai_score": 7.0,
-      "ai_reason": null,
-      "ai_summary": "A judge rejected Google's attempt to use DMCA to block scraping of its search results, affirming that search results are not protected by copyright under the DMCA.",
-      "ai_tags": []
-    },
-    {
       "id": "rss:www.coindesk.com_arc_outboundfeeds_rss_:953b238ac9f96df1",
       "source_type": "rss",
       "title": "Crypto’s favorite $90 trillion trading product is coming to Wall Street, but big banks are taking it slow",
@@ -311,46 +402,6 @@
       "ai_score": 7.0,
       "ai_reason": null,
       "ai_summary": "A $90 trillion trading product from traditional finance is being adapted for crypto, but big banks are proceeding slowly.",
-      "ai_tags": []
-    },
-    {
-      "id": "hackernews:story:49072361",
-      "source_type": "hackernews",
-      "title": "MAI-Cyber-1-Flash inside MDASH",
-      "url": "https://microsoft.ai/news/introducing-mai-cyber-1-flash-inside-mdash/",
-      "content": null,
-      "author": "migmartri",
-      "published_at": "2026-07-27T16:52:22Z",
-      "fetched_at": "2026-07-27T21:30:37.372384Z",
-      "metadata": {
-        "discussion_url": "https://news.ycombinator.com/item?id=49072361",
-        "category": "tech-community",
-        "title_en": "Microsoft Launches MAI-Cyber-1-Flash AI Model for Cybersecurity",
-        "detailed_summary_en": "Microsoft announced MAI-Cyber-1-Flash, the first AI model built specifically for cybersecurity, integrated with MDASH, a multi-agent vulnerability identification and remediation system. It claims to find the most challenging vulnerabilities in complex code bases at half the cost of leading models. This marks a significant step in applying AI to cybersecurity, potentially lowering the cost and improving the speed of vulnerability detection. It could change how organizations approach code security, especially leveraging Microsoft's vast data advantage from trillions of daily signals. MAI-Cyber-1-Flash is designed to work with MDASH, which orchestrates over 100 specialized AI agents. The model is part of Project Perception, a broader agentic security offering grounded in real-world signals, and is available through a limited preview.",
-        "background_en": "Cybersecurity traditionally relies on manual code review and static analysis tools. AI-based approaches aim to automate vulnerability discovery. Microsoft's MDASH is an agentic code scanner using multi-model AI to detect vulnerabilities with depth and accuracy beyond traditional static analysis. The DARPA AI Cyber Challenge-winning Team Atlanta contributed to MDASH's development.",
-        "community_discussion_en": "Comments express skepticism about Microsoft's claims of data advantage and ease of use. Some users question whether the model is only effective on Microsoft products due to its training data. Others find the announcement interesting but are frustrated with accessing the product through Microsoft's corporate portal.",
-        "title_zh": "微软推出MAI-Cyber-1-Flash网络安全AI模型",
-        "detailed_summary_zh": "微软宣布推出MAI-Cyber-1-Flash，这是首个专为网络安全构建的AI模型，集成于MDASH——一个多智能体漏洞识别与修复系统。它声称能以领先模型一半的成本，在复杂代码库中发现最具挑战性的漏洞。 这标志着AI在网络安全应用中的重要一步，有望降低漏洞检测的成本并提高速度。它可能改变组织处理代码安全的方式，尤其是借助微软从数万亿日信号中获得的庞大数据优势。 MAI-Cyber-1-Flash设计用于与MDASH协作，后者协调超过100个专门的AI智能体。该模型是Project Perception的一部分，这是一个基于真实世界信号的更广泛的智能体安全产品，目前通过有限预览提供。",
-        "background_zh": "网络安全传统上依赖手动代码审查和静态分析工具。基于AI的方法旨在自动化漏洞发现。微软的MDASH是一种智能体代码扫描器，使用多模型AI以超越传统静态分析的深度和准确性检测漏洞。DARPA AI网络挑战赛冠军团队亚特兰大参与了MDASH的开发。",
-        "community_discussion_zh": "评论对微软关于数据优势和易用性的声明表示怀疑。一些用户质疑该模型是否仅因其训练数据而对微软产品有效。其他人觉得这个公告很有趣，但对通过微软企业门户获取产品感到沮丧。",
-        "sources": [
-          {
-            "url": "https://microsoft.ai/news/introducing-mai-cyber-1-flash-inside-mdash/",
-            "title": "Introducing MAI-Cyber-1-Flash inside MDASH | Microsoft AI"
-          },
-          {
-            "url": "https://x.com/satyanadella/status/2081779755146482153",
-            "title": "Satya Nadella on X: \"Today, we are announcing a series of updates that give customers frontier-grade security at half the cost. MAI-Cyber-1-Flash is our first cybersecurity model, built ground up to find the most challenging vulnerabilities in complex code bases. When combined with MDASH, it delivers world-class performance at 50 percent of the cost of leading models. We are bringing this capability to market through Project Perception, a complete agentic security offering grounded in real-world signals and"
-          },
-          {
-            "url": "https://learn.microsoft.com/en-us/security-exposure-management/ai-code-security-overview",
-            "title": "Codename MDASH Overview - Microsoft Security Exposure Management | Microsoft Learn"
-          }
-        ]
-      },
-      "ai_score": 7.0,
-      "ai_reason": null,
-      "ai_summary": "Microsoft announces MAI-Cyber-1-Flash, a new AI model focused on cybersecurity.",
       "ai_tags": []
     }
   ],
