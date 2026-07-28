@@ -5,22 +5,23 @@ date: 2026-07-28
 lang: en
 ---
 
-<div class="run-stats" hidden data-fetched="68" data-analyzed="32" data-selected="10" data-critical="1"></div>
+<div class="run-stats" hidden data-fetched="64" data-analyzed="48" data-selected="11" data-critical="1"></div>
 
-> From 32 items, 10 important content pieces were selected
+> From 48 items, 11 important content pieces were selected
 
 ---
 
 1. [Moonshot Releases 2.8T Parameter Kimi K3 Open-Weight Model](#item-1) ⭐️ 9.0/10
-2. [Coinbase to Suspend ACX Trading July 28, 2026](#item-2) ⭐️ 8.0/10
-3. [First Implicit Tactile World Action Model Trained on 500k Hours of Video](#item-3) ⭐️ 8.0/10
-4. [World&\#x27;s First Agentic Diffusion Model with 128K Context](#item-4) ⭐️ 8.0/10
-5. [A $500 RL Fine-Tune of 9B Open Model Beats Frontier Models](#item-5) ⭐️ 8.0/10
-6. [Anthropic Publishes Stance on Open-Weights AI Models](#item-6) ⭐️ 8.0/10
-7. [Documentation for self-contained Python builds](#item-7) ⭐️ 8.0/10
-8. [Jensen Huang bets $5 billion on Ilya Sutskever&\#x27;s AI scaling approach](#item-8) ⭐️ 7.0/10
-9. [Kalshi, Polymarket win pause against Minnesota prediction market ban](#item-9) ⭐️ 7.0/10
-10. [Crypto&\#x27;s $90 Trillion Repo Market Comes to Wall Street, Slowly](#item-10) ⭐️ 7.0/10
+2. [BitMEX and BitMart may be first casualties of crypto trading slump](#item-2) ⭐️ 8.0/10
+3. [Hong Kong central bank: Banks&\#x27; quantum preparedness extremely low](#item-3) ⭐️ 8.0/10
+4. [Coinbase to Suspend ACX Trading July 28, 2026](#item-4) ⭐️ 8.0/10
+5. [First Implicit Tactile World Action Model Trained on 500k Hours of Video](#item-5) ⭐️ 8.0/10
+6. [World&\#x27;s First Agentic Diffusion Model with 128K Context](#item-6) ⭐️ 8.0/10
+7. [A $500 RL Fine-Tune of 9B Open Model Beats Frontier Models](#item-7) ⭐️ 8.0/10
+8. [Anthropic Publishes Stance on Open-Weights AI Models](#item-8) ⭐️ 8.0/10
+9. [Documentation for self-contained Python builds](#item-9) ⭐️ 8.0/10
+10. [CME vs CFTC: Onchain Perpetual Futures Battle](#item-10) ⭐️ 7.0/10
+11. [Jensen Huang bets $5 billion on Ilya Sutskever&\#x27;s AI scaling approach](#item-11) ⭐️ 7.0/10
 
 ---
 
@@ -44,6 +45,41 @@ rss · Simon Willison · Jul 28, 07:39
 ---
 
 <a id="item-2"></a>
+## [BitMEX and BitMart may be first casualties of crypto trading slump](https://www.coindesk.com/business/2026/07/28/bitmex-and-bitmart-may-be-first-casualties-of-crypto-trading-slump) ⭐️ 8.0/10
+
+A speculative report identifies BitMEX and BitMart as potential first casualties of the ongoing crypto trading slump, raising concerns about exchange stability. The potential failure of major exchanges like BitMEX and BitMart could directly impact user funds and disrupt market structure, signaling deeper issues in the crypto ecosystem. The report is speculative and not a confirmed event, but it highlights risks from reduced trading volumes and revenue pressures on exchanges.
+
+rss · CoinDesk · Jul 28, 17:36
+
+**Background**: BitMEX is a long-established cryptocurrency derivatives exchange, while BitMart is a spot trading platform. Both rely heavily on trading fees for revenue. A prolonged trading slump can erode their sustainability.
+
+**Tags**: `#exchange`, `#trading slump`, `#market structure`, `#BitMEX`, `#BitMart`
+
+---
+
+<a id="item-3"></a>
+## [Hong Kong central bank: Banks&\#x27; quantum preparedness extremely low](https://www.coindesk.com/markets/2026/07/28/hong-kong-s-central-bank-puts-a-number-on-lenders-quantum-preparedness-it-s-very-low) ⭐️ 8.0/10
+
+Hong Kong&\#x27;s central bank published a report quantifying banks&\#x27; preparedness for quantum computing threats, finding it alarmingly low. The report emphasizes the urgent need for transition to quantum-resistant cryptography. This regulatory signal highlights systemic risk to the financial infrastructure, as quantum computers could break current encryption. It directly impacts crypto markets and all digital finance reliant on cryptographic security. The report likely includes a specific metric or percentage measuring quantum preparedness, though exact figures remain undisclosed. The low preparedness indicates a significant gap between current cryptographic measures and the coming quantum threat.
+
+rss · CoinDesk · Jul 28, 15:55
+
+**Background**: Quantum computers, when sufficiently powerful, could run Shor&\#x27;s algorithm to break widely used public-key encryption, threatening data security. Post-quantum cryptography \(PQC\) aims to develop algorithms resistant to quantum attacks. Central banks and regulators are beginning to assess exposure and urge migration to quantum-safe standards.
+
+<details><summary>References</summary>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Quantum-safe_cryptography">Quantum-safe cryptography</a></li>
+<li><a href="https://bpi.com/quantum-computing-the-urgent-need-to-transition-to-quantum-resistant-cryptography/">Quantum Computing: The Urgent Need to Transition to Quantum-Resistant Cryptography - Bank Policy Institute</a></li>
+<li><a href="https://www.mckinsey.com/industries/financial-services/our-insights/quantum-communication-and-computing-elevating-the-banking-sector">Quantum communication and computing: Elevating the banking sector</a></li>
+
+</ul>
+</details>
+
+**Tags**: `#quantum computing`, `#cybersecurity`, `#Hong Kong`, `#central bank`, `#financial infrastructure`
+
+---
+
+<a id="item-4"></a>
 ## [Coinbase to Suspend ACX Trading July 28, 2026](https://status.coinbase.com/incidents/9h5nsb9zjlzd) ⭐️ 8.0/10
 
 Coinbase announced it will suspend trading of the ACX token on July 28, 2026, as the project team is winding down the token and offering conversion options to holders. The exchange has already moved ACX order books to limit-only mode ahead of the suspension. This suspension removes a major trading venue for ACX, affecting liquidity and access for holders who wish to trade or exit their positions. It highlights the risks of token wind-downs and the importance of following project communications for conversion opportunities. Trading on Coinbase will be suspended from July 28 to August 3, 2026, and holders must move their ACX to a self-custodial wallet to participate in the project&\#x27;s conversion options. The ACX token is used for governance, staking, and fee payments within the Across Protocol ecosystem.
@@ -62,7 +98,7 @@ rss · Coinbase Status · Jul 28, 15:00
 
 ---
 
-<a id="item-3"></a>
+<a id="item-5"></a>
 ## [First Implicit Tactile World Action Model Trained on 500k Hours of Video](https://www.qbitai.com/2026/07/461827.html) ⭐️ 8.0/10
 
 Researchers have trained the first implicit tactile world action model using 500,000 hours of video, enabling AI systems to understand and simulate tactile interactions. This marks a significant step in embodied AI and multimodal learning, allowing robots to manipulate objects and interact with the environment more naturally, with profound implications for automation, healthcare, and home robotics. The model employs implicit representation learning, likely combining world models with tactile sensing data, and was trained on an enormous dataset of 500,000 hours of video. Specific architectural details have not been publicly disclosed, but this is the first attempt to integrate tactile sensing into a world model.
@@ -80,11 +116,9 @@ rss · QbitAI 量子位 · Jul 28, 13:25
 </ul>
 </details>
 
-**Tags**: `#AI`, `#robotics`, `#world model`, `#tactile sensing`, `#machine learning`
-
 ---
 
-<a id="item-4"></a>
+<a id="item-6"></a>
 ## [World&\#x27;s First Agentic Diffusion Model with 128K Context](https://www.qbitai.com/2026/07/461650.html) ⭐️ 8.0/10
 
 Researchers have released the first agentic diffusion model capable of real-time action and error correction, achieving a 128K context length that matches autoregressive models. This breakthrough extends diffusion models to long-horizon agent tasks, potentially enabling more robust and interactive AI agents that can plan and adapt without full retraining. The model supports 128K token context, matching the context window of leading autoregressive models, and incorporates an agentic loop that iteratively refines outputs.
@@ -101,11 +135,9 @@ rss · QbitAI 量子位 · Jul 28, 12:18
 </ul>
 </details>
 
-**Tags**: `#扩散模型`, `#Agent`, `#长上下文`, `#AI研究`, `#突破`
-
 ---
 
-<a id="item-5"></a>
+<a id="item-7"></a>
 ## [A $500 RL Fine-Tune of 9B Open Model Beats Frontier Models](https://fermisense.com/when-machines-take-the-wheel/) ⭐️ 8.0/10
 
 A team fine-tuned a 9 billion parameter open-weight model using reinforcement learning for under $500, achieving better performance on catalog review tasks than much larger frontier models like GPT-4 or Claude. This demonstrates that small, fine-tuned models can be highly cost-effective for specific tasks, challenging the economic rationale for massive frontier models and the associated infrastructure spending. The fine-tuning process utilized reinforcement learning to optimize the model for catalog review accuracy. The specific model, dataset, and exact training cost breakdown were detailed in the blog post, though the author notes potential overfitting concerns.
@@ -124,11 +156,9 @@ hackernews · ilreb · Jul 28, 10:18 · [Discussion](https://news.ycombinator.co
 
 **Discussion**: Commenters largely praised the cost-efficiency demonstration, with some noting that most use cases don&\#x27;t need massive models. However, concerns were raised about overfitting due to lack of held-out test data and that such specialized benchmarks don&\#x27;t accurately compare to frontier models&\#x27; generalized capabilities.
 
-**Tags**: `#AI`, `#fine-tuning`, `#open-source`, `#cost-efficiency`, `#RL`
-
 ---
 
-<a id="item-6"></a>
+<a id="item-8"></a>
 ## [Anthropic Publishes Stance on Open-Weights AI Models](https://www.anthropic.com/news/position-open-weights-models) ⭐️ 8.0/10
 
 Anthropic published an official statement outlining its position on open-weights AI models, advocating for mandatory safety testing for all sufficiently capable models rather than a blanket ban. The statement clarifies that Anthropic has never called for banning open-weights models but emphasizes the need for regulation as capabilities advance. This statement fuels the ongoing debate between open and closed AI development, as open-weights models lower barriers to access but raise safety concerns. Anthropic&\#x27;s position could influence regulatory policies, especially as governments consider how to balance innovation and risk. Anthropic&\#x27;s CEO Dario Amodei wrote the statement, which also supports banning chip sales to China and cracking down on smuggling of chips to prevent advanced AI capabilities from proliferating. The statement explicitly opposes a ban on open-weights models but supports mandatory safety testing that critics argue could effectively function as a ban.
@@ -150,7 +180,7 @@ hackernews · surprisetalk · Jul 28, 06:03 · [Discussion](https://news.ycombin
 
 ---
 
-<a id="item-7"></a>
+<a id="item-9"></a>
 ## [Documentation for self-contained Python builds](https://gregoryszorc.com/docs/python-build-standalone/main/) ⭐️ 8.0/10
 
 Documentation for python-build-standalone, a set of self-contained portable Python distributions, has been published, detailing how these builds are used by tools like uv, pipx, and Hatch to provide Python installations without system dependencies. This infrastructure simplifies Python deployment across platforms, enables bundling Python into desktop applications, and reduces friction for users who need a specific Python version without system-level installation. The distributions are maintained by Astral \(the company behind uv\), support many platforms \(Linux, macOS, Windows\), and are available for multiple Python versions. They are designed to be fully relocatable and have no external dependencies.
@@ -171,7 +201,28 @@ hackernews · jcbhmr · Jul 28, 02:43 · [Discussion](https://news.ycombinator.c
 
 ---
 
-<a id="item-8"></a>
+<a id="item-10"></a>
+## [CME vs CFTC: Onchain Perpetual Futures Battle](https://www.coindesk.com/policy/2026/07/28/inside-the-cme-and-cftc-s-battle-over-onchain-perpetual-futures) ⭐️ 7.0/10
+
+The CME Group, the largest U.S. derivatives exchange operator, is in an unprecedented conflict with its regulator, the CFTC, over the agency&\#x27;s decision to allow blockchain-based perpetual futures products. This regulatory battle could set a major precedent for how onchain derivatives are treated in the U.S., potentially reshaping market structure and institutional access to crypto derivatives. Onchain perpetual futures are cash-settled, have no expiration date, and are traded transparently on blockchain, eliminating trust issues of centralized platforms. The CME, which traditionally offers regulated futures, opposes the CFTC&\#x27;s approval of these products.
+
+rss · CoinDesk · Jul 28, 16:00
+
+**Background**: Perpetual futures are derivative contracts that allow leveraged speculation on asset prices without an expiry date, popular in crypto. Onchain perpetual futures execute trades and settle on a blockchain, providing transparency and decentralization. The CME Group is a major traditional derivatives exchange, while the CFTC is its primary regulator.
+
+<details><summary>References</summary>
+<ul>
+<li><a href="https://www.coindesk.com/policy/2026/07/28/inside-the-cme-and-cftc-s-battle-over-onchain-perpetual-futures">Inside the CME and CFTC’s battle over onchain perpetual futures</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Perpetual_futures">Perpetual futures</a></li>
+
+</ul>
+</details>
+
+**Tags**: `#CME`, `#CFTC`, `#perpetual futures`, `#regulation`, `#crypto derivatives`
+
+---
+
+<a id="item-11"></a>
 ## [Jensen Huang bets $5 billion on Ilya Sutskever&\#x27;s AI scaling approach](https://www.qbitai.com/2026/07/461911.html) ⭐️ 7.0/10
 
 NVIDIA CEO Jensen Huang has invested $5 billion in Ilya Sutskever&\#x27;s AI scaling approach, signaling a major bet on continuing to scale compute for AI models. This investment is significant because it challenges recent skepticism about the limits of scaling and reaffirms the industry&\#x27;s commitment to scaling laws as a path to more capable AI systems. The $5 billion investment is directed at Ilya Sutskever&\#x27;s current venture, Safe Superintelligence Inc., which focuses on safe AI development. Jensen Huang&\#x27;s bet indicates a belief that scaling compute remains crucial for AI progress.
@@ -185,48 +236,6 @@ rss · QbitAI 量子位 · Jul 28, 13:46
 <li><a href="https://en.wikipedia.org/wiki/AI_scaling_law">AI scaling law</a></li>
 <li><a href="https://en.wikipedia.org/wiki/Neural_scaling_law">Neural scaling law - Wikipedia</a></li>
 <li><a href="https://www.businessinsider.com/openai-cofounder-ilya-sutskever-scaling-ai-age-of-research-dwarkesh-2025-11">OpenAI cofounder says scaling compute is not enough to advance AI: &#x27;It&#x27;s back to the age of research again&#x27;</a></li>
-
-</ul>
-</details>
-
-**Tags**: `#AI`, `#Scaling`, `#Investment`, `#Ilya Sutskever`, `#Jensen Huang`
-
----
-
-<a id="item-9"></a>
-## [Kalshi, Polymarket win pause against Minnesota prediction market ban](https://www.coindesk.com/policy/2026/07/27/kalshi-polymarket-win-pause-against-minnesota-s-prediction-market-ban) ⭐️ 7.0/10
-
-A federal judge granted a preliminary injunction pausing enforcement of Minnesota&\#x27;s ban on prediction markets, allowing Kalshi and Polymarket to continue operating in the state while the legal challenge proceeds. This ruling sets a precedent for prediction market regulation in the U.S., potentially influencing other states&\#x27; approaches and underscoring the legal distinction between prediction markets and gambling. Minnesota had banned prediction markets as unlawful gambling, but the court found the platforms likely to succeed on First Amendment grounds, as prediction markets involve expressive conduct protected under commercial speech.
-
-rss · CoinDesk · Jul 28, 07:29
-
-**Background**: Kalshi is a regulated prediction market exchange based in New York, while Polymarket is a decentralized platform built on the Polygon blockchain. Prediction markets allow users to trade contracts based on the outcome of future events, such as elections or sports, and are considered by some to be a form of expressive activity rather than gambling.
-
-<details><summary>References</summary>
-<ul>
-<li><a href="https://en.m.wikipedia.org/wiki/Kalshi">Kalshi - Wikipedia</a></li>
-<li><a href="https://polymarket.com/">Polymarket | The World&#x27;s Largest Prediction Market</a></li>
-<li><a href="https://www.investopedia.com/terms/p/prediction-market.asp">investopedia.com/terms/p/prediction-market.asp</a></li>
-
-</ul>
-</details>
-
----
-
-<a id="item-10"></a>
-## [Crypto&\#x27;s $90 Trillion Repo Market Comes to Wall Street, Slowly](https://www.coindesk.com/markets/2026/07/22/crypto-s-favorite-usd90-trillion-trading-product-is-coming-to-wall-street-but-big-banks-are-taking-it-slow) ⭐️ 7.0/10
-
-Traditional finance&\#x27;s tri-party repo market, valued at $90 trillion, is being adapted for cryptocurrency trading, but major banks are proceeding cautiously. This development signals growing institutional interest in crypto, as the repo market is a critical source of short-term funding and liquidity. However, the slow adoption by big banks indicates that crypto market infrastructure is not yet fully integrated with traditional finance. Tri-party repo involves a third-party agent handling collateral management, reducing operational burden. The adaptation for crypto could involve tokenized collateral and blockchain-based settlement.
-
-rss · CoinDesk · Jul 28, 02:00
-
-**Background**: The repo market is a short-term secured lending market where one party sells securities to another and agrees to repurchase them later at a higher price. Tri-party repo outsources post-trade processing to a third-party agent, making it more efficient. The crypto adaptation could enable institutions to use digital assets as collateral for cash loans.
-
-<details><summary>References</summary>
-<ul>
-<li><a href="https://www.brookings.edu/articles/what-is-the-repo-market-and-why-does-it-matter/">What is the repo market, and why does it matter? | Brookings</a></li>
-<li><a href="https://www.icmagroup.org/market-practice-and-regulatory-policy/repo-and-collateral-markets/icma-ercc-publications/frequently-asked-questions-on-repo/24-what-is-tri-party-repo/">24. What is tri-party repo? - International Capital Market ...</a></li>
-<li><a href="https://chain.link/article/blockchain-repo-markets">Blockchain Repo Markets: Tokenization Explained | Chainlink</a></li>
 
 </ul>
 </details>

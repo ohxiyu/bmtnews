@@ -2,17 +2,24 @@
   "version": 1,
   "date": "2026-07-28",
   "timezone": "Asia/Shanghai",
-  "updated_at": "2026-07-28T06:41:44.569531Z",
+  "updated_at": "2026-07-28T10:45:52.888595Z",
   "analyzed_keys": [
     "042ca744c567f5cb385834b3c5c112626f9144a044fd1f716fefd7fa1ac21bbd",
     "141ebe4b371781d869ee615b126b3fe8e4e36576347b3e311da9f768753f7692",
     "172cdb679e0ccfc273e92e382d1d2f9f3f471ed5b7925188c5244d059bb12670",
+    "18c36e5886345625de532a99288bc7e9de3b45acad3bc8c8a2d75d085c8de777",
     "20d81cb707681a5f1032225942a6855e124e04bbbd13974d2befcaf8d1ac20ba",
+    "3a4a6f8cbbadda3324c1697b0f93caace5f0d2fa0db2465f13be563b9fa73e2c",
+    "3b36b29bd6a9f434c5a391ea76576ef10d7684ae46c5c3b60848061366326e44",
+    "4333736f96e8b3ff05da71156efd9b2b908d27bb6a20d2373b238d4a6c280b23",
+    "46dcdbfa580b83a78d1acfe667f76514ecd52412b8445156cb1f6136bcb1c80d",
     "4facef5e7ef5b50b2eacce63ff082a222482e18319b3be1bec8ed81dfa30a9e2",
     "501fdea92f115c28d69ca9959d95a9a2ecd76a32e94bf1a923de1e5116345cb0",
+    "51fda8070c8c05df9a232f10614a81eceff5c898cc0bc212ef03e9ca16b012e7",
     "566ea6100fe0ac878d578500fef410c5c3cd8b4c0ee5a7b12a1af3f3799ac587",
     "68d2fe159509c2cf2b716518cc17e855bcdb10961cf0ba1318dc330a820524b0",
     "69223717e6b75da7a085d9f2e03d2cea376552471744a0e04b0d1b589cabc2f1",
+    "6c2d1e3611d87ec4d164ec3801b0d2f7a7327ac7491387ac74d766e97fabd206",
     "6d81739d7534621516fc15c4491b42c716705f83f95feeb01faa9cb46d9be496",
     "7197835e2fac218d02e173b1a2777d3e4e37532775b9372fe48c592a3f5ce405",
     "720d3cf7632c4d15ab03f3518945a1d92c4efb789f4e90289b34917e6b02bb9c",
@@ -21,21 +28,30 @@
     "798bcaa127bd404049c4d45e51bef835befa728f9ba8fe9c4118990dd84384e4",
     "7a8ee75d51a58d0ec68b230977e46c3ad83f17db204a42198af3090c43166db1",
     "7b4f8e9588586c733fe25d88ee52eb487a421b7d9aa1a507e3da07889d437d3b",
+    "808dfd8881db25f3108b0f4da8f75ff24e140cd2ccfeadd542ed8334f11eb3da",
+    "845dc3655cfaf95745b377e5ccb0a08ed67714e34be7c3970ced6d5e3f11077a",
     "870dad86ec7bed904049500b2f301b2444bdf06cb64b60e9b7f5a12a3168db90",
     "883fb6f1e610c0c3bfe704381410d1323bc0aa3e729f5ffb68cf332fa37fb0fe",
     "8c4a4417f450a644df2f4a1b6198520698888649a70995d0550a904a5689ead3",
     "96e1acc4d0c4aa7f1918cc7eebff33dcd4fe637975b21f0f49fef3f40ce634b7",
     "9e56f96d699c52deaac1a6a3f4afbea65de148202fb5a18b4b7e8cdf0a31ed50",
     "9eb6bd1941beaf42e38e6e276385e3508f61d2eadf880e21e5e4da28dfb98d54",
+    "a2a3f3d4dde054aaa61ec651549a1f2490c5ebcfa470bc49cc198fa3ed1715c7",
+    "a3fcb2f1a42d5a5e4e7751f95fa7ac9dd66d1ba2fe69c12b074873f1bdd5b515",
     "a775d23fbee8d4435cff4f1cb4c6ff523000ebf8d30c56279d91094eddf388dd",
     "a91ee87660fe877bf606efe095d7c43c10b68fdd22ef2b13563688b342fd7afc",
     "af08d2d9ac0af10c936205ed0e1865f34fd6d912994c0b5ff3f4269c4a936529",
     "b9ec5ff381af8fee70a28d41446d5dcfa95c734e5f2f8ef622fa24af5ac8c84b",
     "c57aad89f4bf5a87a856154feb5216378c097af1bf0e16382fc00667b3bbdf94",
+    "c75cfe74665c5daeac31847685ef1cc4be89dd81b852c8afcf38e93e41ff4eeb",
     "d0bba0440ebb3e03b2967f0e35a922d1a045d8cc035d6bb9006cd17f6814b44a",
     "dc62612b976479a15e09e80fb4473b3899b85666fc7471b0a41ea2fc15959d73",
     "e2704ce671f00dec3dfa555ae76728458f46eecb8e43e47848c244bcdca3d873",
-    "f11457e880140054fb9a5d7cc89cb38acf7c4d5a87a67aa833927336458839d6"
+    "ea5039c5f142f2ba69fe6e9acd51a29c122916e9642bc554b16b7c661c31178a",
+    "efd5f4bba188cd971f3d4fe3cbd3c86892185c95fbea6cf5b977588a3e5b9f42",
+    "f11457e880140054fb9a5d7cc89cb38acf7c4d5a87a67aa833927336458839d6",
+    "f4a6822acd135ffad56e761dc3c766bf4a48695812d955c4544c01d5c9fe4810",
+    "fdb89a0ca5bf2d8751f67f7d17b94f6fc8c8a720717ccb41e5d493b2439d3d92"
   ],
   "items": [
     {
@@ -70,6 +86,68 @@
       "ai_score": 9.0,
       "ai_reason": null,
       "ai_summary": "Moonshot released weights for their 2.8 trillion parameter Kimi K3 model on Hugging Face.",
+      "ai_tags": []
+    },
+    {
+      "id": "rss:www.coindesk.com_arc_outboundfeeds_rss_:b341631eb8df2c03",
+      "source_type": "rss",
+      "title": "BitMEX and BitMart may be first casualties of crypto trading slump",
+      "url": "https://www.coindesk.com/business/2026/07/28/bitmex-and-bitmart-may-be-first-casualties-of-crypto-trading-slump",
+      "content": null,
+      "author": "Olivier Acuna",
+      "published_at": "2026-07-28T09:36:01Z",
+      "fetched_at": "2026-07-28T10:45:54.386312Z",
+      "metadata": {
+        "feed_name": "CoinDesk",
+        "category": "crypto-markets",
+        "title_en": "BitMEX and BitMart may be first casualties of crypto trading slump",
+        "detailed_summary_en": "A speculative report identifies BitMEX and BitMart as potential first casualties of the ongoing crypto trading slump, raising concerns about exchange stability. The potential failure of major exchanges like BitMEX and BitMart could directly impact user funds and disrupt market structure, signaling deeper issues in the crypto ecosystem. The report is speculative and not a confirmed event, but it highlights risks from reduced trading volumes and revenue pressures on exchanges.",
+        "background_en": "BitMEX is a long-established cryptocurrency derivatives exchange, while BitMart is a spot trading platform. Both rely heavily on trading fees for revenue. A prolonged trading slump can erode their sustainability.",
+        "title_zh": "BitMEX和BitMart或为加密交易低迷的首批牺牲品",
+        "detailed_summary_zh": "BitMEX和BitMart等主要交易所的潜在失败可能直接影响用户资金并扰乱市场结构，表明加密生态系统存在更深层次的问题。 该报告具有推测性，并非已确认的事件，但强调了交易量减少和收入压力给交易所带来的风险。",
+        "background_zh": "BitMEX是一家历史悠久的加密货币衍生品交易所，而BitMart是一家现货交易平台。两者都严重依赖交易费用作为收入。长期的交易低迷可能会削弱它们的可持续性。"
+      },
+      "ai_score": 8.0,
+      "ai_reason": null,
+      "ai_summary": "BitMEX and BitMart are identified as potential first casualties of the crypto trading slump, highlighting risks to exchange stability.",
+      "ai_tags": []
+    },
+    {
+      "id": "rss:www.coindesk.com_arc_outboundfeeds_rss_:250c75282503db68",
+      "source_type": "rss",
+      "title": "Hong Kong’s central bank puts a number on lenders' quantum preparedness. It's very low.",
+      "url": "https://www.coindesk.com/markets/2026/07/28/hong-kong-s-central-bank-puts-a-number-on-lenders-quantum-preparedness-it-s-very-low",
+      "content": null,
+      "author": "Omkar Godbole",
+      "published_at": "2026-07-28T07:55:41Z",
+      "fetched_at": "2026-07-28T10:45:54.386343Z",
+      "metadata": {
+        "feed_name": "CoinDesk",
+        "category": "crypto-markets",
+        "title_en": "Hong Kong central bank: Banks' quantum preparedness extremely low",
+        "detailed_summary_en": "Hong Kong's central bank published a report quantifying banks' preparedness for quantum computing threats, finding it alarmingly low. The report emphasizes the urgent need for transition to quantum-resistant cryptography. This regulatory signal highlights systemic risk to the financial infrastructure, as quantum computers could break current encryption. It directly impacts crypto markets and all digital finance reliant on cryptographic security. The report likely includes a specific metric or percentage measuring quantum preparedness, though exact figures remain undisclosed. The low preparedness indicates a significant gap between current cryptographic measures and the coming quantum threat.",
+        "background_en": "Quantum computers, when sufficiently powerful, could run Shor's algorithm to break widely used public-key encryption, threatening data security. Post-quantum cryptography (PQC) aims to develop algorithms resistant to quantum attacks. Central banks and regulators are beginning to assess exposure and urge migration to quantum-safe standards.",
+        "title_zh": "香港央行：银行量子准备程度极低",
+        "detailed_summary_zh": "香港中央银行发布报告，量化了银行对量子计算威胁的准备程度，发现其低得惊人。报告强调亟需转向抗量子密码学。 这一监管信号凸显了金融基础设施的系统性风险，因为量子计算机可能破解现有加密。这直接影响到依赖密码学安全的加密货币市场和所有数字金融。 报告可能包含衡量量子准备程度的具体指标或百分比，但具体数字尚未披露。准备程度低表明当前密码措施与即将到来的量子威胁之间存在巨大差距。",
+        "background_zh": "量子计算机在足够强大时，可运行Shor算法破解广泛使用的公钥加密，威胁数据安全。后量子密码学（PQC）旨在开发能够抵抗量子攻击的算法。各国央行和监管机构已开始评估风险敞口，并推动向量子安全标准迁移。",
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Quantum-safe_cryptography",
+            "title": "Quantum-safe cryptography"
+          },
+          {
+            "url": "https://bpi.com/quantum-computing-the-urgent-need-to-transition-to-quantum-resistant-cryptography/",
+            "title": "Quantum Computing: The Urgent Need to Transition to Quantum-Resistant Cryptography - Bank Policy Institute"
+          },
+          {
+            "url": "https://www.mckinsey.com/industries/financial-services/our-insights/quantum-communication-and-computing-elevating-the-banking-sector",
+            "title": "Quantum communication and computing: Elevating the banking sector"
+          }
+        ]
+      },
+      "ai_score": 8.0,
+      "ai_reason": null,
+      "ai_summary": "Hong Kong central bank report reveals banks' alarmingly low preparedness for quantum computing threats.",
       "ai_tags": []
     },
     {
@@ -291,6 +369,40 @@
       "ai_tags": []
     },
     {
+      "id": "rss:www.coindesk.com_arc_outboundfeeds_rss_:1cd2c628d8972017",
+      "source_type": "rss",
+      "title": "Inside the CME and CFTC’s battle over onchain perpetual futures",
+      "url": "https://www.coindesk.com/policy/2026/07/28/inside-the-cme-and-cftc-s-battle-over-onchain-perpetual-futures",
+      "content": null,
+      "author": "Jesse Hamilton",
+      "published_at": "2026-07-28T08:00:00Z",
+      "fetched_at": "2026-07-28T10:45:54.386328Z",
+      "metadata": {
+        "feed_name": "CoinDesk",
+        "category": "crypto-markets",
+        "title_en": "CME vs CFTC: Onchain Perpetual Futures Battle",
+        "detailed_summary_en": "The CME Group, the largest U.S. derivatives exchange operator, is in an unprecedented conflict with its regulator, the CFTC, over the agency's decision to allow blockchain-based perpetual futures products. This regulatory battle could set a major precedent for how onchain derivatives are treated in the U.S., potentially reshaping market structure and institutional access to crypto derivatives. Onchain perpetual futures are cash-settled, have no expiration date, and are traded transparently on blockchain, eliminating trust issues of centralized platforms. The CME, which traditionally offers regulated futures, opposes the CFTC's approval of these products.",
+        "background_en": "Perpetual futures are derivative contracts that allow leveraged speculation on asset prices without an expiry date, popular in crypto. Onchain perpetual futures execute trades and settle on a blockchain, providing transparency and decentralization. The CME Group is a major traditional derivatives exchange, while the CFTC is its primary regulator.",
+        "title_zh": "CME与CFTC就链上永续合约展开监管之争",
+        "detailed_summary_zh": "美国最大衍生品交易所运营商CME集团正与其监管机构CFTC就后者允许基于区块链的永续合约产品的决定展开前所未有的冲突。 这场监管之争可能为美国如何处理链上衍生品树立重要先例，有可能重塑市场结构和机构对加密衍生品的准入。 链上永续合约以现金结算，没有到期日，并在区块链上透明交易，消除了中心化平台的信任问题。传统上提供受监管期货的CME反对CFTC批准这些产品。",
+        "background_zh": "永续合约是一种衍生品合约，允许对资产价格进行杠杆投机且无到期日，广泛用于加密领域。链上永续合约在区块链上执行交易和结算，提供透明度和去中心化。CME集团是主要的传统衍生品交易所，CFTC是其首要监管机构。",
+        "sources": [
+          {
+            "url": "https://www.coindesk.com/policy/2026/07/28/inside-the-cme-and-cftc-s-battle-over-onchain-perpetual-futures",
+            "title": "Inside the CME and CFTC’s battle over onchain perpetual futures"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/Perpetual_futures",
+            "title": "Perpetual futures"
+          }
+        ]
+      },
+      "ai_score": 7.0,
+      "ai_reason": null,
+      "ai_summary": "CoinDesk reports on the conflict between the CME and CFTC regarding regulation of onchain perpetual futures.",
+      "ai_tags": []
+    },
+    {
       "id": "rss:www.qbitai.com_feed:07d14f3225364451",
       "source_type": "rss",
       "title": "Ilya获黄仁勋50亿美元押注：“是时候Scaling了”",
@@ -326,82 +438,6 @@
       "ai_score": 7.0,
       "ai_reason": null,
       "ai_summary": "Jensen Huang bets $5 billion on Ilya Sutskever's scaling approach in AI.",
-      "ai_tags": []
-    },
-    {
-      "id": "rss:www.coindesk.com_arc_outboundfeeds_rss_:2c228f82d59dc681",
-      "source_type": "rss",
-      "title": "Kalshi, Polymarket win pause against Minnesota's prediction market ban",
-      "url": "https://www.coindesk.com/policy/2026/07/27/kalshi-polymarket-win-pause-against-minnesota-s-prediction-market-ban",
-      "content": null,
-      "author": "Nikhilesh De",
-      "published_at": "2026-07-27T23:29:38Z",
-      "fetched_at": "2026-07-28T03:36:59.389540Z",
-      "metadata": {
-        "feed_name": "CoinDesk",
-        "category": "crypto-markets",
-        "title_en": "Kalshi, Polymarket win pause against Minnesota prediction market ban",
-        "detailed_summary_en": "A federal judge granted a preliminary injunction pausing enforcement of Minnesota's ban on prediction markets, allowing Kalshi and Polymarket to continue operating in the state while the legal challenge proceeds. This ruling sets a precedent for prediction market regulation in the U.S., potentially influencing other states' approaches and underscoring the legal distinction between prediction markets and gambling. Minnesota had banned prediction markets as unlawful gambling, but the court found the platforms likely to succeed on First Amendment grounds, as prediction markets involve expressive conduct protected under commercial speech.",
-        "background_en": "Kalshi is a regulated prediction market exchange based in New York, while Polymarket is a decentralized platform built on the Polygon blockchain. Prediction markets allow users to trade contracts based on the outcome of future events, such as elections or sports, and are considered by some to be a form of expressive activity rather than gambling.",
-        "title_zh": "Kalshi 和 Polymarket 赢得明尼苏达州预测市场禁令暂停",
-        "detailed_summary_zh": "一位联邦法官授予了初步禁令，暂停执行明尼苏达州对预测市场的禁令，使得 Kalshi 和 Polymarket 在诉讼进行期间可以在该州继续运营。 这一裁决为美国预测市场监管开创了先例，可能影响其他州的处理方式，并强调了预测市场与赌博之间的法律区别。 明尼苏达州曾将预测市场视为非法赌博而禁止，但法院认为这些平台很可能基于第一修正案理由胜诉，因为预测市场涉及受商业言论保护的表达行为。",
-        "background_zh": "Kalshi 是一家总部位于纽约的受监管预测市场交易所，而 Polymarket 是建立在 Polygon 区块链上的去中心化平台。预测市场允许用户根据未来事件（如选举或体育赛事）的结果交易合约，一些人认为这是一种表达性活动而非赌博。",
-        "sources": [
-          {
-            "url": "https://en.m.wikipedia.org/wiki/Kalshi",
-            "title": "Kalshi - Wikipedia"
-          },
-          {
-            "url": "https://polymarket.com/",
-            "title": "Polymarket | The World's Largest Prediction Market"
-          },
-          {
-            "url": "https://www.investopedia.com/terms/p/prediction-market.asp",
-            "title": "investopedia.com/terms/p/prediction-market.asp"
-          }
-        ]
-      },
-      "ai_score": 7.0,
-      "ai_reason": null,
-      "ai_summary": "Kalshi and Polymarket secured a legal pause against Minnesota's ban on prediction markets.",
-      "ai_tags": []
-    },
-    {
-      "id": "rss:www.coindesk.com_arc_outboundfeeds_rss_:953b238ac9f96df1",
-      "source_type": "rss",
-      "title": "Crypto’s favorite $90 trillion trading product is coming to Wall Street, but big banks are taking it slow",
-      "url": "https://www.coindesk.com/markets/2026/07/22/crypto-s-favorite-usd90-trillion-trading-product-is-coming-to-wall-street-but-big-banks-are-taking-it-slow",
-      "content": null,
-      "author": "Helene Braun",
-      "published_at": "2026-07-27T18:00:00Z",
-      "fetched_at": "2026-07-27T21:30:37.842765Z",
-      "metadata": {
-        "feed_name": "CoinDesk",
-        "category": "crypto-markets",
-        "title_en": "Crypto's $90 Trillion Repo Market Comes to Wall Street, Slowly",
-        "detailed_summary_en": "Traditional finance's tri-party repo market, valued at $90 trillion, is being adapted for cryptocurrency trading, but major banks are proceeding cautiously. This development signals growing institutional interest in crypto, as the repo market is a critical source of short-term funding and liquidity. However, the slow adoption by big banks indicates that crypto market infrastructure is not yet fully integrated with traditional finance. Tri-party repo involves a third-party agent handling collateral management, reducing operational burden. The adaptation for crypto could involve tokenized collateral and blockchain-based settlement.",
-        "background_en": "The repo market is a short-term secured lending market where one party sells securities to another and agrees to repurchase them later at a higher price. Tri-party repo outsources post-trade processing to a third-party agent, making it more efficient. The crypto adaptation could enable institutions to use digital assets as collateral for cash loans.",
-        "title_zh": "加密货币的90万亿美元回购市场进入华尔街，但进展缓慢",
-        "detailed_summary_zh": "传统金融中价值90万亿美元的三方回购市场正在被改造用于加密货币交易，但大型银行正谨慎推进。 这一发展标志着机构对加密货币的兴趣日益增长，因为回购市场是短期融资和流动性的关键来源。然而，大银行的缓慢采用表明加密市场基础设施尚未完全与传统金融融合。 三方回购涉及第三方代理处理抵押品管理，减少操作负担。针对加密货币的改造可能涉及代币化抵押品和基于区块链的结算。",
-        "background_zh": "回购市场是一个短期担保借贷市场，一方出售证券并同意稍后以更高价格回购。三方回购将交易后处理外包给第三方代理，提高效率。加密货币改造可能使机构能够使用数字资产作为现金贷款的抵押品。",
-        "sources": [
-          {
-            "url": "https://www.brookings.edu/articles/what-is-the-repo-market-and-why-does-it-matter/",
-            "title": "What is the repo market, and why does it matter? | Brookings"
-          },
-          {
-            "url": "https://www.icmagroup.org/market-practice-and-regulatory-policy/repo-and-collateral-markets/icma-ercc-publications/frequently-asked-questions-on-repo/24-what-is-tri-party-repo/",
-            "title": "24. What is tri-party repo? - International Capital Market ..."
-          },
-          {
-            "url": "https://chain.link/article/blockchain-repo-markets",
-            "title": "Blockchain Repo Markets: Tokenization Explained | Chainlink"
-          }
-        ]
-      },
-      "ai_score": 7.0,
-      "ai_reason": null,
-      "ai_summary": "A $90 trillion trading product from traditional finance is being adapted for crypto, but big banks are proceeding slowly.",
       "ai_tags": []
     }
   ],

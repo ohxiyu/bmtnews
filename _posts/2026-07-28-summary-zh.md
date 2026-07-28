@@ -5,22 +5,23 @@ date: 2026-07-28
 lang: zh
 ---
 
-<div class="run-stats" hidden data-fetched="68" data-analyzed="32" data-selected="10" data-critical="1"></div>
+<div class="run-stats" hidden data-fetched="64" data-analyzed="48" data-selected="11" data-critical="1"></div>
 
-> 从 32 条内容中筛选出 10 条重要资讯。
+> 从 48 条内容中筛选出 11 条重要资讯。
 
 ---
 
 1. [Moonshot 发布 2.8 万亿参数 Kimi K3 开放权重模型](#item-1) ⭐️ 9.0/10
-2. [Coinbase 将于 2026 年 7 月 28 日暂停 ACX 交易](#item-2) ⭐️ 8.0/10
-3. [首个隐式触觉世界动作模型用 50 万小时视频训练而成](#item-3) ⭐️ 8.0/10
-4. [全球首个 Agentic 扩散模型：128K 上下文](#item-4) ⭐️ 8.0/10
-5. [仅需 500 美元的强化学习微调 9B 开源模型超越前沿模型](#item-5) ⭐️ 8.0/10
-6. [Anthropic 发布关于开源权重 AI 模型的立场](#item-6) ⭐️ 8.0/10
-7. [自包含 Python 构建的文档](#item-7) ⭐️ 8.0/10
-8. [黄仁勋 50 亿美元押注 Ilya 的 Scaling 方法](#item-8) ⭐️ 7.0/10
-9. [Kalshi 和 Polymarket 赢得明尼苏达州预测市场禁令暂停](#item-9) ⭐️ 7.0/10
-10. [加密货币的 90 万亿美元回购市场进入华尔街，但进展缓慢](#item-10) ⭐️ 7.0/10
+2. [BitMEX 和 BitMart 或为加密交易低迷的首批牺牲品](#item-2) ⭐️ 8.0/10
+3. [香港央行：银行量子准备程度极低](#item-3) ⭐️ 8.0/10
+4. [Coinbase 将于 2026 年 7 月 28 日暂停 ACX 交易](#item-4) ⭐️ 8.0/10
+5. [首个隐式触觉世界动作模型用 50 万小时视频训练而成](#item-5) ⭐️ 8.0/10
+6. [全球首个 Agentic 扩散模型：128K 上下文](#item-6) ⭐️ 8.0/10
+7. [仅需 500 美元的强化学习微调 9B 开源模型超越前沿模型](#item-7) ⭐️ 8.0/10
+8. [Anthropic 发布关于开源权重 AI 模型的立场](#item-8) ⭐️ 8.0/10
+9. [自包含 Python 构建的文档](#item-9) ⭐️ 8.0/10
+10. [CME 与 CFTC 就链上永续合约展开监管之争](#item-10) ⭐️ 7.0/10
+11. [黄仁勋 50 亿美元押注 Ilya 的 Scaling 方法](#item-11) ⭐️ 7.0/10
 
 ---
 
@@ -44,6 +45,41 @@ rss · Simon Willison · 7月28日 07:39
 ---
 
 <a id="item-2"></a>
+## [BitMEX 和 BitMart 或为加密交易低迷的首批牺牲品](https://www.coindesk.com/business/2026/07/28/bitmex-and-bitmart-may-be-first-casualties-of-crypto-trading-slump) ⭐️ 8.0/10
+
+BitMEX 和 BitMart 等主要交易所的潜在失败可能直接影响用户资金并扰乱市场结构，表明加密生态系统存在更深层次的问题。 该报告具有推测性，并非已确认的事件，但强调了交易量减少和收入压力给交易所带来的风险。
+
+rss · CoinDesk · 7月28日 17:36
+
+**背景**: BitMEX 是一家历史悠久的加密货币衍生品交易所，而 BitMart 是一家现货交易平台。两者都严重依赖交易费用作为收入。长期的交易低迷可能会削弱它们的可持续性。
+
+**标签**: `#exchange`, `#trading slump`, `#market structure`, `#BitMEX`, `#BitMart`
+
+---
+
+<a id="item-3"></a>
+## [香港央行：银行量子准备程度极低](https://www.coindesk.com/markets/2026/07/28/hong-kong-s-central-bank-puts-a-number-on-lenders-quantum-preparedness-it-s-very-low) ⭐️ 8.0/10
+
+香港中央银行发布报告，量化了银行对量子计算威胁的准备程度，发现其低得惊人。报告强调亟需转向抗量子密码学。 这一监管信号凸显了金融基础设施的系统性风险，因为量子计算机可能破解现有加密。这直接影响到依赖密码学安全的加密货币市场和所有数字金融。 报告可能包含衡量量子准备程度的具体指标或百分比，但具体数字尚未披露。准备程度低表明当前密码措施与即将到来的量子威胁之间存在巨大差距。
+
+rss · CoinDesk · 7月28日 15:55
+
+**背景**: 量子计算机在足够强大时，可运行 Shor 算法破解广泛使用的公钥加密，威胁数据安全。后量子密码学（PQC）旨在开发能够抵抗量子攻击的算法。各国央行和监管机构已开始评估风险敞口，并推动向量子安全标准迁移。
+
+<details><summary>参考链接</summary>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Quantum-safe_cryptography">Quantum-safe cryptography</a></li>
+<li><a href="https://bpi.com/quantum-computing-the-urgent-need-to-transition-to-quantum-resistant-cryptography/">Quantum Computing: The Urgent Need to Transition to Quantum-Resistant Cryptography - Bank Policy Institute</a></li>
+<li><a href="https://www.mckinsey.com/industries/financial-services/our-insights/quantum-communication-and-computing-elevating-the-banking-sector">Quantum communication and computing: Elevating the banking sector</a></li>
+
+</ul>
+</details>
+
+**标签**: `#quantum computing`, `#cybersecurity`, `#Hong Kong`, `#central bank`, `#financial infrastructure`
+
+---
+
+<a id="item-4"></a>
 ## [Coinbase 将于 2026 年 7 月 28 日暂停 ACX 交易](https://status.coinbase.com/incidents/9h5nsb9zjlzd) ⭐️ 8.0/10
 
 Coinbase 宣布将于 2026 年 7 月 28 日暂停 ACX 代币交易，原因是项目团队正在逐步淘汰该代币，并向持有者提供转换选项。该交易所已提前将 ACX 订单簿切换至仅限限价单模式。 此次暂停移除了 ACX 的主要交易场所，影响持有者的流动性和退出渠道。这凸显了代币淘汰的风险，以及关注项目方转换机会的重要性。 Coinbase 上的交易将于 2026 年 7 月 28 日至 8 月 3 日暂停，持有者必须将 ACX 转入自托管钱包才能参与项目方的转换选项。ACX 代币在 Across Protocol 生态系统中用于治理、质押和支付费用。
@@ -62,7 +98,7 @@ rss · Coinbase Status · 7月28日 15:00
 
 ---
 
-<a id="item-3"></a>
+<a id="item-5"></a>
 ## [首个隐式触觉世界动作模型用 50 万小时视频训练而成](https://www.qbitai.com/2026/07/461827.html) ⭐️ 8.0/10
 
 研究人员首次使用 50 万小时的视频训练了一个隐式触觉世界动作模型，使 AI 系统能够理解并模拟触觉交互。 这标志着具身 AI 和多模态学习的重大进步，使机器人能够更自然地操作物体并与环境交互，对自动化、医疗保健和家庭服务机器人领域有深远影响。 该模型采用隐式表示学习，可能结合了世界模型和触觉传感数据，并在 50 万小时视频的巨大数据集上训练。具体架构细节尚未公开，但这是首次尝试将触觉感知融入世界模型。
@@ -80,11 +116,9 @@ rss · QbitAI 量子位 · 7月28日 13:25
 </ul>
 </details>
 
-**标签**: `#AI`, `#robotics`, `#world model`, `#tactile sensing`, `#machine learning`
-
 ---
 
-<a id="item-4"></a>
+<a id="item-6"></a>
 ## [全球首个 Agentic 扩散模型：128K 上下文](https://www.qbitai.com/2026/07/461650.html) ⭐️ 8.0/10
 
 研究人员发布了全球首个 Agentic 扩散模型，能够边行动边纠错，实现了 128K 的上下文长度，追平自回归模型。 这一突破将扩散模型扩展到长程 Agent 任务，可能实现更鲁棒且交互性更强的 AI 智能体，能够无需完全重新训练即可规划和适应。 该模型支持 128K token 上下文，与领先的自回归模型上下文窗口持平，并包含一个迭代优化输出的 Agent 循环。
@@ -101,11 +135,9 @@ rss · QbitAI 量子位 · 7月28日 12:18
 </ul>
 </details>
 
-**标签**: `#扩散模型`, `#Agent`, `#长上下文`, `#AI研究`, `#突破`
-
 ---
 
-<a id="item-5"></a>
+<a id="item-7"></a>
 ## [仅需 500 美元的强化学习微调 9B 开源模型超越前沿模型](https://fermisense.com/when-machines-take-the-wheel/) ⭐️ 8.0/10
 
 一个团队仅花费不到 500 美元，使用强化学习微调了一个 90 亿参数的开源权重模型，在目录审核任务上取得了比 GPT-4 或 Claude 等更大的前沿模型更好的表现。 这表明，针对特定任务，微调的小型模型可以非常经济高效，挑战了大型前沿模型及其相关基础设施投入的经济合理性。 微调过程利用强化学习优化模型在目录审核任务上的准确性。博客中详细介绍了具体模型、数据集和确切的训练成本明细，但作者也指出了潜在的过拟合问题。
@@ -124,11 +156,9 @@ hackernews · ilreb · 7月28日 10:18 · [社区讨论](https://news.ycombinato
 
 **社区讨论**: 评论者大多赞扬了这种成本效益的展示，一些人指出大多数用例不需要庞大的模型。然而，也有人担心由于缺乏保留测试数据而导致的过拟合问题，并且认为这种专门化的基准测试并不能准确比较前沿模型的通用能力。
 
-**标签**: `#AI`, `#fine-tuning`, `#open-source`, `#cost-efficiency`, `#RL`
-
 ---
 
-<a id="item-6"></a>
+<a id="item-8"></a>
 ## [Anthropic 发布关于开源权重 AI 模型的立场](https://www.anthropic.com/news/position-open-weights-models) ⭐️ 8.0/10
 
 Anthropic 发布官方声明，阐明其对开源权重 AI 模型的立场，主张对所有足够强大的模型进行强制性安全测试，而非全面禁止。声明澄清 Anthropic 从未呼吁禁止开源权重模型，但强调随着能力提升，监管是必要的。 这一声明加剧了关于开放与封闭 AI 开发的持续辩论，因为开源权重模型降低了访问门槛但引发了安全担忧。Anthropic 的立场可能影响监管政策，尤其是在各国政府考虑如何平衡创新与风险之际。 Anthropic 的 CEO Dario Amodei 撰写了该声明，其中还支持禁止向中国销售芯片并打击芯片走私，以防止先进 AI 能力扩散。声明明确反对禁止开源权重模型，但支持强制性安全测试，批评者认为这实际上可能等同于禁令。
@@ -150,7 +180,7 @@ hackernews · surprisetalk · 7月28日 06:03 · [社区讨论](https://news.yco
 
 ---
 
-<a id="item-7"></a>
+<a id="item-9"></a>
 ## [自包含 Python 构建的文档](https://gregoryszorc.com/docs/python-build-standalone/main/) ⭐️ 8.0/10
 
 python-build-standalone（一组自包含的可移植 Python 发行版）的文档已发布，详细说明了这些构建如何被 uv、pipx 和 Hatch 等工具用于提供无需系统依赖的 Python 安装。 这一基础设施简化了跨平台的 Python 部署，使 Python 能够捆绑到桌面应用程序中，并减少了需要特定 Python 版本但无需系统级安装的用户的摩擦。 这些发行版由 Astral（uv 背后的公司）维护，支持多种平台（Linux、macOS、Windows），并提供多个 Python 版本。它们设计为完全可重定位，且无外部依赖。
@@ -171,7 +201,28 @@ hackernews · jcbhmr · 7月28日 02:43 · [社区讨论](https://news.ycombinat
 
 ---
 
-<a id="item-8"></a>
+<a id="item-10"></a>
+## [CME 与 CFTC 就链上永续合约展开监管之争](https://www.coindesk.com/policy/2026/07/28/inside-the-cme-and-cftc-s-battle-over-onchain-perpetual-futures) ⭐️ 7.0/10
+
+美国最大衍生品交易所运营商 CME 集团正与其监管机构 CFTC 就后者允许基于区块链的永续合约产品的决定展开前所未有的冲突。 这场监管之争可能为美国如何处理链上衍生品树立重要先例，有可能重塑市场结构和机构对加密衍生品的准入。 链上永续合约以现金结算，没有到期日，并在区块链上透明交易，消除了中心化平台的信任问题。传统上提供受监管期货的 CME 反对 CFTC 批准这些产品。
+
+rss · CoinDesk · 7月28日 16:00
+
+**背景**: 永续合约是一种衍生品合约，允许对资产价格进行杠杆投机且无到期日，广泛用于加密领域。链上永续合约在区块链上执行交易和结算，提供透明度和去中心化。CME 集团是主要的传统衍生品交易所，CFTC 是其首要监管机构。
+
+<details><summary>参考链接</summary>
+<ul>
+<li><a href="https://www.coindesk.com/policy/2026/07/28/inside-the-cme-and-cftc-s-battle-over-onchain-perpetual-futures">Inside the CME and CFTC’s battle over onchain perpetual futures</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Perpetual_futures">Perpetual futures</a></li>
+
+</ul>
+</details>
+
+**标签**: `#CME`, `#CFTC`, `#perpetual futures`, `#regulation`, `#crypto derivatives`
+
+---
+
+<a id="item-11"></a>
 ## [黄仁勋 50 亿美元押注 Ilya 的 Scaling 方法](https://www.qbitai.com/2026/07/461911.html) ⭐️ 7.0/10
 
 英伟达 CEO 黄仁勋向 Ilya Sutskever 的 AI 扩展方法投资 50 亿美元，标志着对继续扩展 AI 模型计算量的重大押注。 这项投资意义重大，因为它挑战了近期关于扩展极限的质疑，并重申了业界对 Scaling Laws 作为通往更强大 AI 系统之路的承诺。 这笔 50 亿美元的投资用于 Ilya Sutskever 目前创办的 Safe Superintelligence Inc.，该公司专注于安全 AI 开发。黄仁勋的押注表明他认为扩展算力对 AI 进步仍然至关重要。
@@ -185,48 +236,6 @@ rss · QbitAI 量子位 · 7月28日 13:46
 <li><a href="https://en.wikipedia.org/wiki/AI_scaling_law">AI scaling law</a></li>
 <li><a href="https://en.wikipedia.org/wiki/Neural_scaling_law">Neural scaling law - Wikipedia</a></li>
 <li><a href="https://www.businessinsider.com/openai-cofounder-ilya-sutskever-scaling-ai-age-of-research-dwarkesh-2025-11">OpenAI cofounder says scaling compute is not enough to advance AI: &#x27;It&#x27;s back to the age of research again&#x27;</a></li>
-
-</ul>
-</details>
-
-**标签**: `#AI`, `#Scaling`, `#Investment`, `#Ilya Sutskever`, `#Jensen Huang`
-
----
-
-<a id="item-9"></a>
-## [Kalshi 和 Polymarket 赢得明尼苏达州预测市场禁令暂停](https://www.coindesk.com/policy/2026/07/27/kalshi-polymarket-win-pause-against-minnesota-s-prediction-market-ban) ⭐️ 7.0/10
-
-一位联邦法官授予了初步禁令，暂停执行明尼苏达州对预测市场的禁令，使得 Kalshi 和 Polymarket 在诉讼进行期间可以在该州继续运营。 这一裁决为美国预测市场监管开创了先例，可能影响其他州的处理方式，并强调了预测市场与赌博之间的法律区别。 明尼苏达州曾将预测市场视为非法赌博而禁止，但法院认为这些平台很可能基于第一修正案理由胜诉，因为预测市场涉及受商业言论保护的表达行为。
-
-rss · CoinDesk · 7月28日 07:29
-
-**背景**: Kalshi 是一家总部位于纽约的受监管预测市场交易所，而 Polymarket 是建立在 Polygon 区块链上的去中心化平台。预测市场允许用户根据未来事件（如选举或体育赛事）的结果交易合约，一些人认为这是一种表达性活动而非赌博。
-
-<details><summary>参考链接</summary>
-<ul>
-<li><a href="https://en.m.wikipedia.org/wiki/Kalshi">Kalshi - Wikipedia</a></li>
-<li><a href="https://polymarket.com/">Polymarket | The World&#x27;s Largest Prediction Market</a></li>
-<li><a href="https://www.investopedia.com/terms/p/prediction-market.asp">investopedia.com/terms/p/prediction-market.asp</a></li>
-
-</ul>
-</details>
-
----
-
-<a id="item-10"></a>
-## [加密货币的 90 万亿美元回购市场进入华尔街，但进展缓慢](https://www.coindesk.com/markets/2026/07/22/crypto-s-favorite-usd90-trillion-trading-product-is-coming-to-wall-street-but-big-banks-are-taking-it-slow) ⭐️ 7.0/10
-
-传统金融中价值 90 万亿美元的三方回购市场正在被改造用于加密货币交易，但大型银行正谨慎推进。 这一发展标志着机构对加密货币的兴趣日益增长，因为回购市场是短期融资和流动性的关键来源。然而，大银行的缓慢采用表明加密市场基础设施尚未完全与传统金融融合。 三方回购涉及第三方代理处理抵押品管理，减少操作负担。针对加密货币的改造可能涉及代币化抵押品和基于区块链的结算。
-
-rss · CoinDesk · 7月28日 02:00
-
-**背景**: 回购市场是一个短期担保借贷市场，一方出售证券并同意稍后以更高价格回购。三方回购将交易后处理外包给第三方代理，提高效率。加密货币改造可能使机构能够使用数字资产作为现金贷款的抵押品。
-
-<details><summary>参考链接</summary>
-<ul>
-<li><a href="https://www.brookings.edu/articles/what-is-the-repo-market-and-why-does-it-matter/">What is the repo market, and why does it matter? | Brookings</a></li>
-<li><a href="https://www.icmagroup.org/market-practice-and-regulatory-policy/repo-and-collateral-markets/icma-ercc-publications/frequently-asked-questions-on-repo/24-what-is-tri-party-repo/">24. What is tri-party repo? - International Capital Market ...</a></li>
-<li><a href="https://chain.link/article/blockchain-repo-markets">Blockchain Repo Markets: Tokenization Explained | Chainlink</a></li>
 
 </ul>
 </details>
