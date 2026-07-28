@@ -2,21 +2,69 @@
   "version": 1,
   "date": "2026-07-29",
   "timezone": "Asia/Shanghai",
-  "updated_at": "2026-07-28T17:46:03.360967Z",
+  "updated_at": "2026-07-28T21:32:50.905541Z",
   "analyzed_keys": [
     "06729b7583194306084c982442d3499af4955ce838d951953e484b2997fbb341",
+    "07473581557f9ce0cbc9467386f8f8be6f69be6a3a60a0cdacf133b2a5de0bc8",
+    "1696af41b0694d813eecd516a137528cf4a18830f17a93a972e0b91ad368341f",
+    "1b847e361cb7f8582dc2140c32fec4da4ae42e67881f2a5551d3c9d387713ff7",
+    "1e597f7f407e319d6511b4d5756e503cee208828beb67852de796d540c18967f",
     "3a5867fdb83e370b39a308ce62072699390d99ecdcc697e48e38c9a5386f3e36",
     "446f397b6fc5a6f7d411c486959cbe6f36fd6d423fbda8cfddd291d1987899a3",
+    "44c2b0c2bc114c9547eaf96ce9b750f42e04d6b0807348f2e64d3141f49ac74b",
     "503105739b2d3a666fa437cd175b048a7d69d2e4ba85885e642118c325e6a01d",
     "505640dcffcd641e5652b9795eb150cfd306d36e33d25290c24e04e1f6c6d183",
     "6a1aa26bf59ee847539cd29edc7da427ecded5436a6d28ec896f1ed063b48a64",
+    "84e6b130fc4063497c8a918ce4c434d9cfcae5e6621572804388ab7bbe2bdd89",
+    "8a91afe46bc9d0668be236a6405dd5e7b80684996a295d8ede74255a7dd759d1",
+    "a0c162c10322cf0b0e39aaeeeaed1866f5e91e806de1daca02f37b2ea9e407d0",
+    "bdd70956f12da96b0357c93fd42b6b56c7d621c2258c5a0bb205423f4ff78c9e",
     "beee1138f93cc7ef5fd86de29a0a9fc3dcbaf99541bc1ba1db929f0837ca3b27",
     "ca0bb2ed0e1467fb2cb210957977e93fc7cdee5eb7059e4e83b19241e77d0307",
     "e2c863257e5210236d5625bf9b7e19d4ad2d21b7e9830dce87f52d4c816fc26a",
     "e6bf7eeaf731822bf560fdeab1363c574f74bb046738ed5cc2b3ed546d496217",
-    "e9a8e7220f7c4b71757c77be901a40b8eaca125c90e05c2990074d4cb78f9261"
+    "e9a8e7220f7c4b71757c77be901a40b8eaca125c90e05c2990074d4cb78f9261",
+    "f2ba8752b4bb08d5a14d214f1f37e23535ff5026a6b2e4e7d171306e79a6a6a6"
   ],
   "items": [
+    {
+      "id": "rss:news.google.com_rss_search?q=site:anthropic.com+when:7d&hl=en-US&gl=US&ceid=US:en:2d8ee574c3d653ab",
+      "source_type": "rss",
+      "title": "Mythos Preview’s Chain of Thought in Discovering the AES Möbius Bridge - Anthropic",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1uUHh1a3RCVHVnQW1Fam9KZGxHa2x4QkNzM21KSVQxS2Z0eFIySHI0YU9OM01wendvejl4V0hfRG9DLTFiVGxDQ3RVZEE4MEw3UlA3OVl4c2hUdnVMYmI4RUhzeDRpdkU?oc=5",
+      "content": null,
+      "author": "Anthropic News",
+      "published_at": "2026-07-28T17:28:33Z",
+      "fetched_at": "2026-07-28T21:32:54.033445Z",
+      "metadata": {
+        "feed_name": "Anthropic News",
+        "category": "ai-labs",
+        "title_en": "Anthropic's Mythos Preview Discovers AES Möbius Bridge via Chain of Thought",
+        "detailed_summary_en": "Anthropic published a preview showing that Claude Mythos Preview, using chain-of-thought reasoning, autonomously discovered a new cryptographic technique called the AES Möbius Bridge, which accelerates the best known attack on 7-round AES-128 by 200 to 800 times. This breakthrough highlights the growing capability of AI models to perform independent cryptographic research, potentially advancing both AI interpretability and practical cryptography. It also raises important considerations about the security implications of AI-driven vulnerability discovery. The Möbius Bridge technique was discovered by Claude Mythos Preview over approximately three days of autonomous work, using about a billion output tokens and significant API compute. The resulting attack improves upon a previous 2^105 chosen-plaintext and 2^99-time algorithm by Derbez, Fouque, and Jean.",
+        "background_en": "AES (Advanced Encryption Standard) is a widely used symmetric encryption algorithm. The AES S-Box is not a random permutation and has algebraic structure that can be exploited in cryptanalysis. Chain-of-thought reasoning is a technique where AI models break down complex problems into step-by-step intermediate steps, improving their ability to solve novel challenges.",
+        "title_zh": "Anthropic 的 Mythos Preview 通过思维链发现 AES 莫比乌斯桥",
+        "detailed_summary_zh": "Anthropic 发布了一份预览，显示 Claude Mythos Preview 通过思维链推理自主发现了一种名为 AES 莫比乌斯桥的新密码技术，该技术将 7 轮 AES-128 最佳已知攻击的速度提升了 200 到 800 倍。 这一突破凸显了 AI 模型在执行独立密码研究方面日益增强的能力，可能推动 AI 可解释性和实用密码学的发展。同时，它也引发了对 AI 驱动漏洞发现的安全影响的重要思考。 莫比乌斯桥技术由 Claude Mythos Preview 在大约三天的自主工作中发现，使用了约十亿个输出 token 和大量的 API 计算资源。该攻击改进了 Derbez、Fouque 和 Jean 之前提出的 2^105 选择明文和 2^99 时间的算法。",
+        "background_zh": "AES（高级加密标准）是一种广泛使用的对称加密算法。AES 的 S 盒并非随机置换，其代数结构可在密码分析中被利用。思维链推理是一种技术，AI 模型通过将复杂问题分解为逐步的中间步骤，提升其解决新颖挑战的能力。",
+        "sources": [
+          {
+            "url": "https://www-cdn.anthropic.com/c88771e1bf5ee8885349eed05e5484c0e5f7e02b/aes_mobius_bridge.pdf",
+            "title": "Cryptanalysis of 7-Round AES via the Algebraic Structure of its S-box"
+          },
+          {
+            "url": "https://aiweekly.co/alerts/anthropic-says-claude-mythos-found-hawk-7-round-aes-flaws",
+            "title": "Anthropic Says Claude Mythos Found HAWK, 7-Round AES Flaws | AI Weekly"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/Claude_Mythos",
+            "title": "Claude Mythos - Wikipedia"
+          }
+        ]
+      },
+      "ai_score": 8.0,
+      "ai_reason": null,
+      "ai_summary": "Anthropic publishes a preview of a chain-of-thought approach that discovers the AES Möbius Bridge, a potentially significant AI-cryptography finding.",
+      "ai_tags": []
+    },
     {
       "id": "rss:news.google.com_rss_search?q=site:anthropic.com+when:7d&hl=en-US&gl=US&ceid=US:en:249666495bb76a90",
       "source_type": "rss",
@@ -164,6 +212,44 @@
       "ai_tags": []
     },
     {
+      "id": "rss:www.coindesk.com_arc_outboundfeeds_rss_:f21c5caf72a50f83",
+      "source_type": "rss",
+      "title": "Ondo drops tokenized asset blockchain plans for private, high-speed trading network",
+      "url": "https://www.coindesk.com/business/2026/07/28/ondo-drops-tokenized-asset-blockchain-plans-for-private-high-speed-trading-network",
+      "content": null,
+      "author": "Krisztian Sandor",
+      "published_at": "2026-07-28T19:44:26Z",
+      "fetched_at": "2026-07-28T21:32:52.420711Z",
+      "metadata": {
+        "feed_name": "CoinDesk",
+        "category": "crypto-markets",
+        "title_en": "Ondo Abandons Public Blockchain for Private Trading Network",
+        "detailed_summary_en": "Ondo Finance has abandoned its plans to build a public blockchain for tokenized real-world assets, instead opting to develop a private, high-speed trading network aimed at institutional investors. This pivot signals a shift in the tokenization industry toward private, permissioned infrastructure that prioritizes speed and regulatory compliance over decentralization, potentially accelerating institutional adoption of digital assets. The new private network will focus on high-speed trading of tokenized assets, moving away from the public blockchain model that Ondo originally pursued. Details on the technology stack and timeline have not been disclosed.",
+        "background_en": "Ondo Finance is a platform that tokenizes real-world assets (RWAs) such as U.S. Treasuries, offering yield-bearing products like USDY and OUSG. Asset tokenization uses blockchain to represent ownership of physical assets as digital tokens, enabling fractional ownership and automated trading. Many tokenization projects have struggled with public blockchain scalability and regulatory hurdles, leading some to explore private networks.",
+        "title_zh": "Ondo 放弃公链，转向私有高速交易网络",
+        "detailed_summary_zh": "Ondo Finance 放弃了为代币化现实世界资产构建公链的计划，转而开发面向机构投资者的私有高速交易网络。 这一转向表明代币化行业正朝着私有、许可制基础设施发展，优先考虑速度和监管合规而非去中心化，可能加速机构对数字资产的采用。 新的私有网络将专注于代币化资产的高速交易，放弃了 Ondo 最初追求的公链模式。有关技术栈和时间表的细节尚未公布。",
+        "background_zh": "Ondo Finance 是一个将现实世界资产（RWA）如美国国债代币化的平台，提供 USDY 和 OUSG 等带收益产品。资产代币化使用区块链将实物资产的所有权表示为数字代币，实现碎片化所有权和自动交易。许多代币化项目在公链可扩展性和监管障碍上遇到困难，促使一些项目探索私有网络。",
+        "sources": [
+          {
+            "url": "https://ondo.finance/",
+            "title": "Ondo Finance — Institutional-grade finance, delivered onchain"
+          },
+          {
+            "url": "https://grokipedia.com/page/asset_tokenization",
+            "title": "Asset tokenization"
+          },
+          {
+            "url": "https://www.weforum.org/stories/financial-and-monetary-systems/tokenization-assets-transform-future-of-finance/",
+            "title": "How will asset tokenization transform the future of finance? | World Economic Forum"
+          }
+        ]
+      },
+      "ai_score": 7.0,
+      "ai_reason": null,
+      "ai_summary": "Ondo abandons public blockchain plans for tokenized assets in favor of a private, high-speed trading network.",
+      "ai_tags": []
+    },
+    {
       "id": "rss:status.coinbase.com_history.rss:11ba7640e9ff73e9",
       "source_type": "rss",
       "title": "Delayed Sends and Receives - STX",
@@ -195,6 +281,46 @@
       "ai_score": 7.0,
       "ai_reason": null,
       "ai_summary": "Coinbase reports identified issue causing delayed STX sends and receives; fix being implemented.",
+      "ai_tags": []
+    },
+    {
+      "id": "hackernews:story:49086971",
+      "source_type": "hackernews",
+      "title": "Steel Bank Common Lisp version 2.6.7",
+      "url": "https://sbcl.org/all-news.html?2.6.7",
+      "content": null,
+      "author": "tmtvl",
+      "published_at": "2026-07-28T17:11:54Z",
+      "fetched_at": "2026-07-28T21:32:51.944915Z",
+      "metadata": {
+        "discussion_url": "https://news.ycombinator.com/item?id=49086971",
+        "category": "tech-community",
+        "title_en": "SBCL 2.6.7 adds SIMD support for ARM64 and AVX512",
+        "detailed_summary_en": "Steel Bank Common Lisp version 2.6.7 introduces SIMD support for ARM64 via the SB-SIMD contrib and adds AVX512 instruction support on x86-64. These improvements enable vectorized operations for better performance on modern hardware. This update significantly boosts the performance of Common Lisp programs on modern CPUs, making SBCL more competitive for computationally intensive tasks like scientific computing and data processing. It also reflects the continued evolution of Lisp implementations to leverage cutting-edge hardware features. The ARM64 SIMD support was contributed by Sylvia Harrington, while AVX512 support came from Robert Smith and Arthur Miller. Users must explicitly invoke SIMD intrinsics; the release does not mention auto-vectorization, so manual use is required.",
+        "background_en": "Steel Bank Common Lisp (SBCL) is a high-performance, open-source Common Lisp compiler. SIMD (Single Instruction, Multiple Data) allows a single instruction to process multiple data points simultaneously, crucial for performance in numerical and multimedia applications. AVX512 is Intel's advanced 512-bit SIMD extension, offering significant speedups for parallel workloads. The name 'Steel Bank' originates from Carnegie Mellon University, referencing Andrew Carnegie (steel) and Andrew Mellon (banking).",
+        "community_discussion_en": "Community members are excited about the new SIMD features, with some inquiring about usage and whether auto-vectorization is supported. Others discussed historical naming origins and comparisons with other Lisp implementations like Clozure Common Lisp (CCL). One user requested documentation for the memory arena feature.",
+        "title_zh": "SBCL 2.6.7 添加了 ARM64 和 AVX512 的 SIMD 支持",
+        "detailed_summary_zh": "Steel Bank Common Lisp 2.6.7 版本通过 SB-SIMD contrib 引入了对 ARM64 的 SIMD 支持，并在 x86-64 上增加了 AVX512 指令支持。这些改进使得在现代硬件上能够进行向量化运算以获得更好的性能。 这一更新显著提升了 Common Lisp 程序在现代 CPU 上的性能，使 SBCL 在科学计算和数据处理等计算密集型任务中更具竞争力。它也反映了 Lisp 实现利用前沿硬件特性方面的持续演进。 ARM64 SIMD 支持由 Sylvia Harrington 贡献，AVX512 支持由 Robert Smith 和 Arthur Miller 贡献。用户必须显式调用 SIMD 内部函数；该版本未提及自动向量化，因此需要手动使用。",
+        "background_zh": "Steel Bank Common Lisp (SBCL) 是一个高性能的开源 Common Lisp 编译器。SIMD（单指令多数据）允许一条指令同时处理多个数据点，对于数值计算和多媒体应用的性能至关重要。AVX512 是英特尔先进的 512 位 SIMD 扩展，为并行工作负载提供了显著的加速。'Steel Bank' 这个名称源自卡内基梅隆大学，分别指代安德鲁·卡内基（钢铁）和安德鲁·梅隆（银行）。",
+        "community_discussion_zh": "社区成员对新的 SIMD 功能感到兴奋，一些人询问如何使用以及是否支持自动向量化。其他人讨论了名称的历史起源和与其他 Lisp 实现（如 Clozure Common Lisp, CCL）的比较。有一位用户请求为内存区域功能提供文档。",
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Steel_Bank_Common_Lisp",
+            "title": "Steel Bank Common Lisp"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/AVX-512",
+            "title": "AVX-512 - Wikipedia"
+          },
+          {
+            "url": "https://www.intel.com/content/www/us/en/developer/articles/technical/intel-avx-512-instructions.html",
+            "title": "Intel® AVX-512 Instructions"
+          }
+        ]
+      },
+      "ai_score": 7.0,
+      "ai_reason": null,
+      "ai_summary": "SBCL 2.6.7 adds SIMD support for ARM64 and AVX512 instructions, among other improvements.",
       "ai_tags": []
     },
     {
