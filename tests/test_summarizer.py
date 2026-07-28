@@ -223,3 +223,16 @@ def test_generate_summary_preserves_normal_http_links():
     assert "[Important Item 1](https://example.com/items/1)" in result
     assert "[Discussion](https://example.com/discuss?id=1#comments)" in result
     assert 'href="https://docs.example.com/path?q=one&amp;lang=en"' in result
+
+
+def test_generate_summary_preserves_apostrophes_in_english_text():
+    summarizer = DailySummarizer()
+    item = _make_item(1)
+    item.title = "OpenAI's developer update"
+    item.ai_summary = "Developers' tools don't require migration."
+
+    result = _run_async(summarizer.generate_summary([item], "2026-04-25", 1))
+
+    assert "OpenAI's developer update" in result
+    assert "Developers' tools don't require migration." in result
+    assert r"&\#x27;" not in result

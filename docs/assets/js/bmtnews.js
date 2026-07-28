@@ -1,7 +1,8 @@
 (function () {
   'use strict';
 
-  var CATEGORY_ORDER = ['all', 'exchange', 'security', 'market', 'regulation', 'protocol'];
+  var CATEGORY_ORDER = ['all', 'exchange', 'security', 'market', 'regulation', 'protocol', 'technology'];
+  var interfaceLanguage = 'zh';
   var CATEGORY_LABELS = {
     zh: {
       all: '全部',
@@ -9,7 +10,8 @@
       security: '安全',
       market: '市场',
       regulation: '监管',
-      protocol: '协议'
+      protocol: '协议',
+      technology: 'AI / 科技'
     },
     en: {
       all: 'All',
@@ -17,7 +19,8 @@
       security: 'Security',
       market: 'Markets',
       regulation: 'Regulation',
-      protocol: 'Protocols'
+      protocol: 'Protocols',
+      technology: 'AI & Tech'
     }
   };
 
@@ -39,6 +42,12 @@
       'protocol', 'bitcoin', 'ethereum', 'solana', 'arbitrum', 'layer 2', 'layer-2',
       'mainnet', 'testnet', 'upgrade', 'fork', 'defi', 'bridge', 'staking', '协议',
       '比特币', '以太坊', '主网', '升级', '跨链桥', '质押'
+    ],
+    technology: [
+      'artificial intelligence', 'machine learning', 'large language model', 'llm',
+      'openai', 'anthropic', 'hugging face', 'agentic', 'diffusion model', 'developer tool',
+      'github trending', '人工智能', '大模型', '机器学习', '智能体', '扩散模型',
+      '开源权重', '开发工具'
     ]
   };
 
@@ -56,7 +65,7 @@
       node.remove();
     });
     var text = textOf(probe).toLowerCase();
-    var priority = ['security', 'exchange', 'regulation', 'protocol'];
+    var priority = ['security', 'exchange', 'regulation', 'protocol', 'technology'];
     for (var i = 0; i < priority.length; i += 1) {
       var category = priority[i];
       var patterns = CATEGORY_PATTERNS[category];
@@ -97,6 +106,54 @@
     badge.textContent = score ? score.toFixed(1) : '—';
     badge.setAttribute('aria-label', score ? 'Score ' + score.toFixed(1) + ' out of 10' : 'No score');
     return badge;
+  }
+
+  function configureExternalLinks(root) {
+    root.querySelectorAll('a[href]').forEach(function (anchor) {
+      try {
+        var url = new URL(anchor.getAttribute('href'), window.location.href);
+        if (
+          (url.protocol === 'http:' || url.protocol === 'https:') &&
+          url.origin !== window.location.origin
+        ) {
+          anchor.target = '_blank';
+          anchor.rel = 'noopener noreferrer';
+        }
+      } catch (error) {
+        // Invalid links remain inert and are ignored.
+      }
+    });
+  }
+
+  function linkifySourceLine(article) {
+    var titleLink = article.querySelector('h2 a[href]');
+    var sourceLine = article.querySelector('.source-line');
+    if (!titleLink || !sourceLine || sourceLine.querySelector('.source-link')) return;
+
+    var sourceNode = Array.prototype.find.call(sourceLine.childNodes, function (node) {
+      return node.nodeType === Node.TEXT_NODE && node.nodeValue.indexOf('·') !== -1;
+    });
+    if (!sourceNode) return;
+
+    var sourceText = sourceNode.nodeValue;
+    var parts = sourceText.split('·');
+    if (parts.length < 2 || !parts[1].trim()) return;
+
+    var fragment = document.createDocumentFragment();
+    fragment.appendChild(document.createTextNode(parts[0].trim() + ' · '));
+
+    var sourceLink = document.createElement('a');
+    sourceLink.className = 'source-link';
+    sourceLink.href = titleLink.getAttribute('href');
+    sourceLink.textContent = parts[1].trim();
+    fragment.appendChild(sourceLink);
+
+    var tail = parts.slice(2).map(function (part) {
+      return part.trim();
+    }).filter(Boolean).join(' · ');
+    if (tail) fragment.appendChild(document.createTextNode(' · ' + tail));
+    if (/·\s*$/.test(sourceText)) fragment.appendChild(document.createTextNode(' · '));
+    sourceNode.replaceWith(fragment);
   }
 
   function processScoreBadges(root) {
@@ -144,15 +201,21 @@
       button.type = 'button';
       button.dataset.category = category;
       if (category === 'all') button.classList.add('active');
+      button.setAttribute('aria-pressed', category === 'all' ? 'true' : 'false');
       button.appendChild(document.createTextNode(CATEGORY_LABELS[language][category]));
 
       var count = document.createElement('span');
       count.textContent = counts[category] || 0;
       button.appendChild(count);
+      button.setAttribute(
+        'aria-label',
+        CATEGORY_LABELS[language][category] + ': ' + (counts[category] || 0)
+      );
 
       button.addEventListener('click', function () {
         filterBar.querySelectorAll('button').forEach(function (candidate) {
           candidate.classList.toggle('active', candidate === button);
+          candidate.setAttribute('aria-pressed', candidate === button ? 'true' : 'false');
         });
         cards.forEach(function (card) {
           card.hidden = category !== 'all' && card.dataset.category !== category;
@@ -283,6 +346,8 @@
     article.insertBefore(meta, heading);
 
     createStoryMore(article, language);
+    linkifySourceLine(article);
+    configureExternalLinks(article);
 
     var content = document.createElement('div');
     content.className = 'digest-item-content';
@@ -352,7 +417,7 @@
   function createHeadlineRail(toc, articles, language, date) {
     var aside = document.createElement('aside');
     aside.className = 'headline-rail';
-    aside.setAttribute('aria-label', language === 'zh' ? '当日标题汇总' : 'Daily headline index');
+    aside.setAttribute('aria-label', language === 'zh' ? '当日排行榜' : 'Daily ranking');
 
     var details = document.createElement('details');
     details.className = 'headline-index';
@@ -360,8 +425,8 @@
     var title = document.createElement('span');
     var displayDate = date ? date.replace(/-/g, '.') : '';
     title.textContent = language === 'zh'
-      ? displayDate + ' 标题汇总'
-      : displayDate + ' headlines';
+      ? displayDate + ' 排行榜'
+      : displayDate + ' Ranking';
     var count = document.createElement('small');
     count.textContent = articles.length;
     summary.appendChild(title);
@@ -569,6 +634,8 @@
     var buttonZh = document.createElement('button');
     buttonEn.type = 'button';
     buttonZh.type = 'button';
+    buttonEn.setAttribute('aria-label', 'English');
+    buttonZh.setAttribute('aria-label', '中文');
     buttonEn.textContent = 'EN';
     buttonZh.textContent = '中文';
     toggle.appendChild(buttonEn);
@@ -588,14 +655,18 @@
     var sectionEn = document.getElementById('lang-en');
 
     function update(language) {
+      interfaceLanguage = language;
       buttonEn.classList.toggle('active', language === 'en');
       buttonZh.classList.toggle('active', language === 'zh');
+      buttonEn.setAttribute('aria-pressed', language === 'en' ? 'true' : 'false');
+      buttonZh.setAttribute('aria-pressed', language === 'zh' ? 'true' : 'false');
       if (sectionZh && sectionEn) {
         sectionZh.classList.toggle('hidden', language !== 'zh');
         sectionEn.classList.toggle('hidden', language !== 'en');
         enhanceHomeSection(language === 'en' ? sectionEn : sectionZh);
       }
       document.documentElement.lang = language === 'en' ? 'en' : 'zh-CN';
+      applyInterfaceLanguage(language);
     }
 
     function switchDigest(language) {
@@ -629,25 +700,49 @@
     update(current);
   }
 
+  function systemDark() {
+    return window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+  }
+
+  function currentDark() {
+    var explicit = document.documentElement.dataset.theme;
+    return explicit ? explicit === 'dark' : systemDark();
+  }
+
+  function updateThemeButtonLabel() {
+    var button = document.querySelector('.theme-toggle');
+    if (!button) return;
+    var dark = currentDark();
+    var label = interfaceLanguage === 'en'
+      ? (dark ? 'Switch to light mode' : 'Switch to dark mode')
+      : (dark ? '切换浅色模式' : '切换深色模式');
+    button.textContent = dark ? '☀' : '◐';
+    button.setAttribute('aria-label', label);
+    button.title = label;
+  }
+
+  function applyInterfaceLanguage(language) {
+    document.querySelectorAll('[data-i18n-zh][data-i18n-en]').forEach(function (element) {
+      element.textContent = element.dataset['i18n' + (language === 'en' ? 'En' : 'Zh')];
+    });
+    document.querySelectorAll('[data-i18n-aria-zh][data-i18n-aria-en]').forEach(function (element) {
+      element.setAttribute(
+        'aria-label',
+        element.dataset['i18nAria' + (language === 'en' ? 'En' : 'Zh')]
+      );
+    });
+    document.querySelectorAll('[data-i18n-href-zh][data-i18n-href-en]').forEach(function (element) {
+      element.setAttribute(
+        'href',
+        element.dataset['i18nHref' + (language === 'en' ? 'En' : 'Zh')]
+      );
+    });
+    updateThemeButtonLabel();
+  }
+
   function setupThemeToggle() {
     var button = document.querySelector('.theme-toggle');
     if (!button) return;
-
-    function systemDark() {
-      return window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
-    }
-
-    function currentDark() {
-      var explicit = document.documentElement.dataset.theme;
-      return explicit ? explicit === 'dark' : systemDark();
-    }
-
-    function updateLabel() {
-      var dark = currentDark();
-      button.textContent = dark ? '☀' : '◐';
-      button.setAttribute('aria-label', dark ? '切换浅色模式' : '切换深色模式');
-      button.title = button.getAttribute('aria-label');
-    }
 
     button.addEventListener('click', function () {
       var next = currentDark() ? 'light' : 'dark';
@@ -657,7 +752,7 @@
       } catch (error) {
         // Storage is an enhancement only.
       }
-      updateLabel();
+      updateThemeButtonLabel();
     });
 
     try {
@@ -668,7 +763,7 @@
     } catch (error) {
       // Use the system preference.
     }
-    updateLabel();
+    updateThemeButtonLabel();
   }
 
   document.addEventListener('DOMContentLoaded', function () {

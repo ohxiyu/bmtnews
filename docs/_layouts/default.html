@@ -17,11 +17,22 @@
     class="{% if page.lang %}digest-page{% elsif page.page_type == 'home' %}home-page{% else %}docs-page{% endif %}"
     {% if page.lang %}data-language="{{ page.lang }}" data-date="{{ page.date | date: '%Y-%m-%d' }}"{% endif %}
   >
-    <a class="skip-link" href="#content">跳到正文</a>
+    <a
+      class="skip-link"
+      href="#content"
+      data-i18n-zh="跳到正文"
+      data-i18n-en="Skip to content"
+    >跳到正文</a>
 
     <header class="site-header">
       <div class="site-header-inner">
-        <a class="site-brand" href="{{ '/' | relative_url }}" aria-label="BMTNews 首页">
+        <a
+          class="site-brand"
+          href="{{ '/' | relative_url }}"
+          aria-label="BMTNews 首页"
+          data-i18n-aria-zh="BMTNews 首页"
+          data-i18n-aria-en="BMTNews Home"
+        >
           <span class="site-brand-mark" aria-hidden="true">B</span>
           <span class="site-brand-copy">
             <strong>BMTNews</strong>
@@ -29,13 +40,33 @@
           </span>
         </a>
 
-        <nav class="site-nav" aria-label="主导航">
-          <a href="{{ '/' | relative_url }}">信息流</a>
-          <a href="{{ '/feed-zh.xml' | relative_url }}">RSS</a>
+        <nav
+          class="site-nav"
+          aria-label="主导航"
+          data-i18n-aria-zh="主导航"
+          data-i18n-aria-en="Main navigation"
+        >
+          <a
+            href="{{ '/' | relative_url }}"
+            data-i18n-zh="信息流"
+            data-i18n-en="Feed"
+          >信息流</a>
+          <a
+            href="{{ '/feed-zh.xml' | relative_url }}"
+            data-i18n-zh="RSS"
+            data-i18n-en="RSS"
+            data-i18n-href-zh="{{ '/feed-zh.xml' | relative_url }}"
+            data-i18n-href-en="{{ '/feed-en.xml' | relative_url }}"
+          >RSS</a>
         </nav>
 
         <div class="site-actions">
-          <div class="lang-toggle-slot" aria-label="语言切换"></div>
+          <div
+            class="lang-toggle-slot"
+            aria-label="语言切换"
+            data-i18n-aria-zh="语言切换"
+            data-i18n-aria-en="Language switcher"
+          ></div>
           <button class="theme-toggle" type="button" aria-label="切换深色模式" title="切换深色模式">◐</button>
         </div>
       </div>
@@ -72,7 +103,10 @@
     <footer class="site-footer">
       <div>
         <strong>BMTNews</strong>
-        <span>面向加密市场的每日情报雷达。</span>
+        <span
+          data-i18n-zh="面向加密、AI 与宏观市场的每日情报雷达。"
+          data-i18n-en="A daily intelligence radar for crypto, AI, and macro markets."
+        >面向加密、AI 与宏观市场的每日情报雷达。</span>
       </div>
       <span>© {{ site.time | date: "%Y" }} BMTNews</span>
     </footer>
