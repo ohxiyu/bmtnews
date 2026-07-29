@@ -1,0 +1,255 @@
+---
+layout: default
+title: 来源控制台
+description: 查看并维护 BMTNews 当前使用的信息源
+page_type: source_console
+---
+
+<div
+  id="source-console"
+  class="source-console"
+  data-config-url="https://raw.githubusercontent.com/ohxiyu/bmtnews/main/data/config.github.json"
+  data-issue-url="https://github.com/ohxiyu/bmtnews/issues/new"
+  data-issue-template="source_change.yml"
+>
+  <section class="source-console-overview" aria-labelledby="source-console-heading">
+    <div class="source-console-heading">
+      <div>
+        <p class="eyebrow">LIVE SOURCE REGISTRY</p>
+        <h2 id="source-console-heading">生产信息源，一页掌握</h2>
+        <p>
+          这里直接读取 <code>main</code> 上的生产配置。所有写操作都会进入 GitHub
+          审核流程，不会从浏览器直接修改生产环境。
+        </p>
+      </div>
+      <button class="source-primary-action" id="source-add-button" type="button">
+        <span aria-hidden="true">＋</span>
+        添加来源
+      </button>
+    </div>
+
+    <div class="source-metrics" aria-live="polite">
+      <article>
+        <span>全部来源</span>
+        <strong id="source-total-count">—</strong>
+      </article>
+      <article>
+        <span>正在启用</span>
+        <strong id="source-active-count">—</strong>
+      </article>
+      <article>
+        <span>已暂停</span>
+        <strong id="source-paused-count">—</strong>
+      </article>
+      <article data-track="crypto">
+        <span>Crypto</span>
+        <strong id="source-crypto-count">—</strong>
+      </article>
+      <article data-track="technology">
+        <span>AI / 科技</span>
+        <strong id="source-technology-count">—</strong>
+      </article>
+      <article data-track="policy">
+        <span>政策</span>
+        <strong id="source-policy-count">—</strong>
+      </article>
+    </div>
+    <p class="source-metrics-note">
+      这里统计的是信息源数量，不是每日文章条数；日报选稿仍遵守 Crypto 至少 9 条、
+      AI / 科技最多 3 条、政策最多 2 条。
+    </p>
+  </section>
+
+  <section class="source-console-panel" aria-labelledby="source-list-heading">
+    <div class="source-toolbar">
+      <div class="source-search">
+        <label for="source-search-input">搜索来源</label>
+        <input
+          id="source-search-input"
+          type="search"
+          autocomplete="off"
+          placeholder="搜索名称、地址或分类"
+        >
+      </div>
+
+      <div class="source-filter">
+        <label for="source-type-filter">类型</label>
+        <select id="source-type-filter">
+          <option value="all">全部类型</option>
+        </select>
+      </div>
+
+      <div class="source-filter">
+        <label for="source-track-filter">方向</label>
+        <select id="source-track-filter">
+          <option value="all">全部方向</option>
+          <option value="crypto">Crypto</option>
+          <option value="technology">AI / 科技</option>
+          <option value="policy">政策</option>
+          <option value="other">其他</option>
+        </select>
+      </div>
+
+      <div class="source-filter">
+        <label for="source-status-filter">状态</label>
+        <select id="source-status-filter">
+          <option value="all">全部状态</option>
+          <option value="active">启用</option>
+          <option value="paused">暂停</option>
+          <option value="parent-paused">采集器停用</option>
+        </select>
+      </div>
+
+      <button class="source-filter-reset" id="source-filter-reset" type="button">
+        重置
+      </button>
+    </div>
+
+    <div class="source-list-heading">
+      <div>
+        <h2 id="source-list-heading">现有信息源</h2>
+        <p id="source-result-count">正在读取生产配置…</p>
+      </div>
+      <a
+        href="https://github.com/ohxiyu/bmtnews/blob/main/data/config.github.json"
+        target="_blank"
+        rel="noopener noreferrer"
+      >查看原始配置</a>
+    </div>
+
+    <div class="source-table-shell">
+      <table class="source-table">
+        <thead>
+          <tr>
+            <th scope="col">来源</th>
+            <th scope="col">类型</th>
+            <th scope="col">方向</th>
+            <th scope="col">分类</th>
+            <th scope="col">状态</th>
+            <th scope="col">操作</th>
+          </tr>
+        </thead>
+        <tbody id="source-table-body"></tbody>
+      </table>
+
+      <div class="source-loading-state" id="source-loading-state">
+        <span class="source-loading-dot" aria-hidden="true"></span>
+        正在读取最新生产配置
+      </div>
+
+      <div class="source-empty-state" id="source-empty-state" hidden>
+        没有符合当前条件的信息源。
+      </div>
+    </div>
+  </section>
+
+  <aside class="source-console-note">
+    <strong>轻量但可审计</strong>
+    <span>
+      添加、编辑、暂停、恢复和删除都会生成结构化 GitHub 申请；只有维护者批准后，
+      GitHub Actions 才会创建任务分支和配置 PR。
+    </span>
+  </aside>
+
+  <dialog class="source-dialog" id="source-dialog">
+    <form id="source-change-form">
+      <header class="source-dialog-header">
+        <div>
+          <p class="eyebrow" id="source-dialog-eyebrow">SOURCE CHANGE</p>
+          <h2 id="source-dialog-title">添加来源</h2>
+          <p id="source-dialog-description">
+            填写后会打开预填的 GitHub 变更申请。
+          </p>
+        </div>
+        <button
+          class="source-dialog-close"
+          type="button"
+          id="source-dialog-close"
+          aria-label="关闭"
+        >×</button>
+      </header>
+
+      <input id="source-operation" type="hidden" value="add">
+      <input id="source-key" type="hidden" value="new">
+
+      <div class="source-form-grid">
+        <label class="source-form-field">
+          <span>来源类型</span>
+          <select id="source-form-type" required>
+            <option value="rss">RSS</option>
+            <option value="telegram">Telegram</option>
+            <option value="github">GitHub Releases</option>
+            <option value="reddit">Reddit</option>
+          </select>
+        </label>
+
+        <label class="source-form-field">
+          <span>目标状态</span>
+          <select id="source-form-enabled" required>
+            <option value="true">启用</option>
+            <option value="false">暂停</option>
+          </select>
+        </label>
+
+        <label class="source-form-field source-form-wide">
+          <span>名称</span>
+          <input
+            id="source-form-name"
+            type="text"
+            maxlength="120"
+            placeholder="例如 CoinDesk"
+            required
+          >
+        </label>
+
+        <label class="source-form-field source-form-wide">
+          <span id="source-endpoint-label">地址或标识</span>
+          <input
+            id="source-form-endpoint"
+            type="text"
+            maxlength="2048"
+            placeholder="https://example.com/feed.xml"
+            required
+          >
+          <small id="source-endpoint-help">
+            RSS 请填写公开的 HTTP(S) Feed 地址。
+          </small>
+        </label>
+
+        <label class="source-form-field source-form-wide">
+          <span>分类</span>
+          <select id="source-form-category" required></select>
+        </label>
+
+        <label class="source-form-field source-form-wide">
+          <span>调整原因</span>
+          <textarea
+            id="source-form-reason"
+            rows="4"
+            minlength="2"
+            maxlength="1200"
+            placeholder="说明来源价值、重复情况或停用原因"
+            required
+          ></textarea>
+        </label>
+      </div>
+
+      <div class="source-dialog-warning" id="source-dialog-warning" hidden></div>
+
+      <footer class="source-dialog-actions">
+        <button class="source-secondary-action" type="button" id="source-dialog-cancel">
+          取消
+        </button>
+        <button class="source-primary-action" type="submit" id="source-dialog-submit">
+          前往 GitHub 确认
+        </button>
+      </footer>
+    </form>
+  </dialog>
+
+  <noscript>
+    <div class="source-empty-state">
+      来源控制台需要 JavaScript 才能读取和筛选生产信息源。
+    </div>
+  </noscript>
+</div>
