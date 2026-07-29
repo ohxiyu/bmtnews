@@ -99,10 +99,13 @@
   background: var(--accent);
   color: #fff;
   box-shadow: 0 9px 22px rgba(109, 74, 255, 0.22);
+  text-decoration: none;
 }
 
 .source-primary-action:hover {
   background: var(--accent-strong);
+  color: #fff;
+  text-decoration: none;
 }
 
 .source-secondary-action {

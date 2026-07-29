@@ -58,11 +58,18 @@ def main():
         default=20,
         help="Daily edition cutoff hour in filtering.daily_timezone",
     )
+    parser.add_argument(
+        "--force-publish",
+        action="store_true",
+        help="Rebuild an edition even when that fixed window is already published",
+    )
     args = parser.parse_args()
     if args.hours is not None and args.hours <= 0:
         parser.error("--hours must be positive")
     if not 0 <= args.cutoff_hour <= 23:
         parser.error("--cutoff-hour must be between 0 and 23")
+    if args.force_publish and args.mode != "publish":
+        parser.error("--force-publish requires --mode publish")
 
     try:
         # Load environment variables from .env file
@@ -112,6 +119,7 @@ def main():
                     force_hours=args.hours,
                     staging_path=args.staging_path,
                     cutoff_hour=args.cutoff_hour,
+                    force_publish=args.force_publish,
                 )
             )
         else:

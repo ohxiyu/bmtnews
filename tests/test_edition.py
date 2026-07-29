@@ -18,6 +18,7 @@ from src.edition import (
 )
 from src.models import (
     AIConfig,
+    CategoryGroupConfig,
     Config,
     ContentItem,
     FilteringConfig,
@@ -25,6 +26,7 @@ from src.models import (
     SourcesConfig,
 )
 from src.orchestrator import HorizonOrchestrator
+from src.run_report import load_run_report
 from src.storage.manager import StorageManager
 
 
@@ -160,6 +162,15 @@ def test_daily_edition_combines_staging_and_final_fetch(
         filtering=FilteringConfig(
             ai_score_threshold=7.0,
             daily_timezone="Asia/Shanghai",
+            category_groups={
+                "markets": CategoryGroupConfig(
+                    name="Crypto Markets",
+                    limit=4,
+                    categories=["crypto-markets"],
+                )
+            },
+            primary_groups=["markets"],
+            primary_group_min_items=3,
         ),
     )
     orchestrator = HorizonOrchestrator(
@@ -215,6 +226,40 @@ def test_daily_edition_combines_staging_and_final_fetch(
     assert 'window_end: "2026-07-29T20:00:00+08:00"' in post
     assert "fetched_count: 2" in post
     assert "selected_count: 2" in post
+    report = load_run_report(tmp_path / "data" / "run-report.json")
+    assert report["kind"] == "daily_publish"
+    assert report["metrics"]["staging_items_before"] == 1
+    assert report["metrics"]["staging_only_candidates"] == 1
+    assert report["metrics"]["cutoff_lag_minutes"] == 17
+    assert report["window_start"] == "2026-07-28T20:00:00+08:00"
+    assert report["window_end"] == "2026-07-29T20:00:00+08:00"
+    assert report["breakdowns"]["candidate_sources"] == {
+        "rss/unknown": 2
+    }
+    assert report["breakdowns"]["selected_groups"] == {
+        "Crypto Markets": 2
+    }
+    assert report["metrics"]["primary_selected"] == 2
+    assert report["metrics"]["primary_required"] == 3
+    assert any(
+        alert["code"] == "primary_quota_shortfall"
+        for alert in report["alerts"]
+    )
+
+    asyncio.run(
+        orchestrator.run_daily_edition(
+            force_hours=24,
+            staging_path=staging_path,
+            now=datetime(2026, 7, 29, 21, 17, tzinfo=SHANGHAI),
+        )
+    )
+    retry_report = load_run_report(tmp_path / "data" / "run-report.json")
+    assert analyzed_ids == ["fresh", "staged"]
+    assert retry_report["metrics"]["displayed_today"] == 2
+    assert any(
+        alert["code"] == "edition_already_published"
+        for alert in retry_report["alerts"]
+    )
 
 
 def test_workflows_collect_four_times_and_publish_once() -> None:
@@ -229,6 +274,8 @@ def test_workflows_collect_four_times_and_publish_once() -> None:
     assert "cron: '17 2,8,14 * * *'" in collection
     assert "horizon --mode fetch --hours 12" in collection
     assert "cron: '17 20 * * *'" in publication
-    assert "horizon --mode publish --hours 24 --cutoff-hour 20" in publication
+    assert "args=(--mode publish --hours 24 --cutoff-hour 20)" in publication
+    assert "force_publish:" in publication
+    assert "args+=(--force-publish)" in publication
     assert "bmtnews-staging-v1-" in collection
     assert "bmtnews-staging-v1-" in publication

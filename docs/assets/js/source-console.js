@@ -15,30 +15,6 @@
     ossinsight: 'OSS Insight'
   };
 
-  var OPERATION_OPTIONS = {
-    add: 'add — 新增',
-    update: 'update — 编辑',
-    pause: 'pause — 暂停',
-    resume: 'resume — 恢复',
-    remove: 'remove — 删除'
-  };
-
-  var SOURCE_TYPE_OPTIONS = {
-    rss: 'rss — RSS',
-    telegram: 'telegram — Telegram',
-    github: 'github — GitHub Releases',
-    reddit: 'reddit — Reddit',
-    hackernews: 'hackernews — Hacker News',
-    google_news: 'google_news — Google News',
-    gdelt: 'gdelt — GDELT',
-    ossinsight: 'ossinsight — OSS Insight'
-  };
-
-  var STATE_OPTIONS = {
-    true: 'true — 启用',
-    false: 'false — 暂停'
-  };
-
   var TRACK_LABELS = {
     crypto: 'Crypto',
     technology: 'AI / 科技',
@@ -52,31 +28,7 @@
     'parent-paused': '采集器停用'
   };
 
-  var ENDPOINT_HELP = {
-    rss: {
-      label: 'RSS 地址',
-      placeholder: 'https://example.com/feed.xml',
-      help: '请填写不含密钥和登录信息的公开 HTTP(S) Feed 地址。'
-    },
-    telegram: {
-      label: 'Telegram 频道',
-      placeholder: 'OKXAnnouncements',
-      help: '填写公开频道用户名，不需要 @ 或完整 t.me 地址。'
-    },
-    github: {
-      label: 'GitHub 仓库',
-      placeholder: 'bitcoin/bitcoin',
-      help: '使用 owner/repository 格式，当前控制台添加 Release 来源。'
-    },
-    reddit: {
-      label: 'Subreddit',
-      placeholder: 'CryptoCurrency',
-      help: '填写 subreddit 名称，不需要 r/ 前缀。'
-    }
-  };
-
   var elements = {
-    addButton: document.getElementById('source-add-button'),
     totalCount: document.getElementById('source-total-count'),
     activeCount: document.getElementById('source-active-count'),
     pausedCount: document.getElementById('source-paused-count'),
@@ -91,31 +43,11 @@
     resultCount: document.getElementById('source-result-count'),
     tableBody: document.getElementById('source-table-body'),
     loading: document.getElementById('source-loading-state'),
-    empty: document.getElementById('source-empty-state'),
-    dialog: document.getElementById('source-dialog'),
-    dialogClose: document.getElementById('source-dialog-close'),
-    dialogCancel: document.getElementById('source-dialog-cancel'),
-    dialogTitle: document.getElementById('source-dialog-title'),
-    dialogDescription: document.getElementById('source-dialog-description'),
-    dialogWarning: document.getElementById('source-dialog-warning'),
-    dialogSubmit: document.getElementById('source-dialog-submit'),
-    form: document.getElementById('source-change-form'),
-    operation: document.getElementById('source-operation'),
-    sourceKey: document.getElementById('source-key'),
-    formType: document.getElementById('source-form-type'),
-    formEnabled: document.getElementById('source-form-enabled'),
-    formName: document.getElementById('source-form-name'),
-    formEndpoint: document.getElementById('source-form-endpoint'),
-    formCategory: document.getElementById('source-form-category'),
-    formReason: document.getElementById('source-form-reason'),
-    endpointLabel: document.getElementById('source-endpoint-label'),
-    endpointHelp: document.getElementById('source-endpoint-help')
+    empty: document.getElementById('source-empty-state')
   };
 
   var state = {
-    config: null,
-    records: [],
-    categories: []
+    records: []
   };
 
   function normalizedUrl(value) {
@@ -169,15 +101,7 @@
     if (matchedGroup && primary.indexOf(matchedGroup) !== -1) return 'crypto';
     if (matchedGroup === 'technology') return 'technology';
     if (matchedGroup === 'regulation') return 'policy';
-    if (/^(exchange|crypto)-/.test(category || '')) return 'crypto';
-    if (/^(ai-|tech-)/.test(category || '')) return 'technology';
-    if (/regulation/.test(category || '')) return 'policy';
     return 'other';
-  }
-
-  function statusFor(itemEnabled, parentEnabled) {
-    if (!parentEnabled && itemEnabled) return 'parent-paused';
-    return itemEnabled ? 'active' : 'paused';
   }
 
   function createRecord(config, values) {
@@ -191,11 +115,9 @@
       viewUrl: values.viewUrl || '',
       category: values.category || 'other',
       track: categoryTrack(values.category || '', config),
-      enabled: itemEnabled,
-      parentEnabled: parentEnabled,
-      status: statusFor(itemEnabled, parentEnabled),
-      editable: values.editable !== false,
-      removable: values.removable === true
+      status: !parentEnabled && itemEnabled
+        ? 'parent-paused'
+        : itemEnabled ? 'active' : 'paused'
     };
   }
 
@@ -211,8 +133,7 @@
         endpoint: source.url,
         viewUrl: source.url,
         category: source.category,
-        enabled: source.enabled,
-        removable: true
+        enabled: source.enabled
       }));
     });
 
@@ -227,8 +148,7 @@
         endpoint: identity,
         viewUrl: 'https://github.com/' + identity,
         category: source.category,
-        enabled: source.enabled,
-        removable: true
+        enabled: source.enabled
       }));
     });
 
@@ -243,8 +163,7 @@
         viewUrl: 'https://t.me/' + channel,
         category: source.category,
         enabled: source.enabled,
-        parentEnabled: telegram.enabled,
-        removable: true
+        parentEnabled: telegram.enabled
       }));
     });
 
@@ -259,60 +178,30 @@
         viewUrl: 'https://www.reddit.com/r/' + subreddit + '/',
         category: source.category,
         enabled: source.enabled,
-        parentEnabled: reddit.enabled,
-        removable: true
+        parentEnabled: reddit.enabled
       }));
     });
 
-    if (sources.hackernews) {
+    [
+      ['hackernews', 'Hacker News', 'https://news.ycombinator.com/'],
+      ['google_news', 'Google News Search', ''],
+      ['gdelt', 'GDELT Search', ''],
+      ['ossinsight', 'OSS Insight Trending', 'https://ossinsight.io/']
+    ].forEach(function (definition) {
+      var type = definition[0];
+      var source = sources[type];
+      if (!source) return;
+      var endpoint = source.query || (source.keywords || []).join(', ') || 'main';
       records.push(createRecord(config, {
-        key: sourceKey('hackernews', sources.hackernews),
-        name: 'Hacker News',
-        type: 'hackernews',
-        endpoint: 'Top stories · min score ' + sources.hackernews.min_score,
-        viewUrl: 'https://news.ycombinator.com/',
-        category: sources.hackernews.category,
-        enabled: sources.hackernews.enabled,
-        editable: false
+        key: sourceKey(type, source),
+        name: definition[1],
+        type: type,
+        endpoint: endpoint,
+        viewUrl: definition[2],
+        category: source.category,
+        enabled: source.enabled
       }));
-    }
-
-    if (sources.google_news) {
-      records.push(createRecord(config, {
-        key: sourceKey('google_news', sources.google_news),
-        name: 'Google News Search',
-        type: 'google_news',
-        endpoint: sources.google_news.query,
-        category: sources.google_news.category,
-        enabled: sources.google_news.enabled,
-        editable: false
-      }));
-    }
-
-    if (sources.gdelt) {
-      records.push(createRecord(config, {
-        key: sourceKey('gdelt', sources.gdelt),
-        name: 'GDELT Search',
-        type: 'gdelt',
-        endpoint: sources.gdelt.query,
-        category: sources.gdelt.category,
-        enabled: sources.gdelt.enabled,
-        editable: false
-      }));
-    }
-
-    if (sources.ossinsight) {
-      records.push(createRecord(config, {
-        key: sourceKey('ossinsight', sources.ossinsight),
-        name: 'OSS Insight Trending',
-        type: 'ossinsight',
-        endpoint: (sources.ossinsight.keywords || []).join(', '),
-        viewUrl: 'https://ossinsight.io/',
-        category: sources.ossinsight.category,
-        enabled: sources.ossinsight.enabled,
-        editable: false
-      }));
-    }
+    });
 
     var trackOrder = {crypto: 0, policy: 1, technology: 2, other: 3};
     records.sort(function (left, right) {
@@ -324,23 +213,6 @@
       return left.name.localeCompare(right.name, 'zh-CN');
     });
     return records;
-  }
-
-  function configuredCategories(config) {
-    var groups = (config.filtering || {}).category_groups || {};
-    var seen = {};
-    var categories = [];
-    Object.keys(groups).forEach(function (groupName) {
-      (groups[groupName].categories || []).forEach(function (category) {
-        if (seen[category]) return;
-        seen[category] = true;
-        categories.push({
-          value: category,
-          group: groups[groupName].name || groupName
-        });
-      });
-    });
-    return categories;
   }
 
   function setText(element, value) {
@@ -388,19 +260,8 @@
     return link;
   }
 
-  function actionButton(action, label, key) {
-    var button = document.createElement('button');
-    button.type = 'button';
-    button.className = 'source-row-action';
-    button.dataset.action = action;
-    button.dataset.key = key;
-    button.textContent = label;
-    return button;
-  }
-
   function buildRow(record) {
     var row = document.createElement('tr');
-    row.dataset.key = record.key;
 
     var main = addCell(row, '来源', 'source-main-cell');
     var name = document.createElement('strong');
@@ -418,79 +279,61 @@
     var trackPill = document.createElement('span');
     trackPill.className = 'source-track-pill';
     trackPill.dataset.track = record.track;
-    trackPill.textContent = TRACK_LABELS[record.track];
+    trackPill.textContent = TRACK_LABELS[record.track] || record.track;
     track.appendChild(trackPill);
 
     var category = addCell(row, '分类');
-    var categoryValue = document.createElement('span');
-    categoryValue.className = 'source-category';
-    categoryValue.textContent = record.category;
-    categoryValue.title = record.category;
-    category.appendChild(categoryValue);
+    category.textContent = record.category;
 
     var status = addCell(row, '状态');
     var statusPill = document.createElement('span');
     statusPill.className = 'source-status-pill';
     statusPill.dataset.status = record.status;
-    statusPill.textContent = STATUS_LABELS[record.status];
+    statusPill.textContent = STATUS_LABELS[record.status] || record.status;
     status.appendChild(statusPill);
 
     var actions = addCell(row, '操作', 'source-row-actions');
-    if (record.editable) {
-      actions.appendChild(actionButton('update', '编辑', record.key));
-    }
-    actions.appendChild(actionButton(
-      record.enabled ? 'pause' : 'resume',
-      record.enabled ? '暂停' : '恢复',
-      record.key
-    ));
-    if (record.removable) {
-      actions.appendChild(actionButton('remove', '删除', record.key));
-    }
+    var copy = document.createElement('button');
+    copy.type = 'button';
+    copy.className = 'source-row-action';
+    copy.dataset.copyKey = record.key;
+    copy.textContent = '复制来源键';
+    actions.appendChild(copy);
+
     return row;
   }
 
-  function currentFilters() {
-    return {
-      search: elements.search.value.trim().toLowerCase(),
-      type: elements.typeFilter.value,
-      track: elements.trackFilter.value,
-      status: elements.statusFilter.value
-    };
-  }
+  function filteredRecords() {
+    var query = (elements.search.value || '').trim().toLowerCase();
+    var type = elements.typeFilter.value;
+    var track = elements.trackFilter.value;
+    var status = elements.statusFilter.value;
 
-  function matchingRecords() {
-    var filters = currentFilters();
     return state.records.filter(function (record) {
-      var searchable = [
+      var haystack = [
         record.name,
         record.endpoint,
         record.category,
-        record.type
+        record.key
       ].join(' ').toLowerCase();
-      if (filters.search && searchable.indexOf(filters.search) === -1) return false;
-      if (filters.type !== 'all' && record.type !== filters.type) return false;
-      if (filters.track !== 'all' && record.track !== filters.track) return false;
-      if (filters.status !== 'all' && record.status !== filters.status) return false;
-      return true;
+      return (!query || haystack.indexOf(query) !== -1) &&
+        (type === 'all' || record.type === type) &&
+        (track === 'all' || record.track === track) &&
+        (status === 'all' || record.status === status);
     });
   }
 
-  function renderTable() {
-    var records = matchingRecords();
-    var fragment = document.createDocumentFragment();
+  function render() {
+    var records = filteredRecords();
+    elements.tableBody.textContent = '';
     records.forEach(function (record) {
-      fragment.appendChild(buildRow(record));
+      elements.tableBody.appendChild(buildRow(record));
     });
-    elements.tableBody.replaceChildren(fragment);
     elements.empty.hidden = records.length !== 0;
-    setText(
-      elements.resultCount,
-      '显示 ' + records.length + ' / ' + state.records.length + ' 个来源'
-    );
+    setText(elements.resultCount, '显示 ' + records.length + ' / ' + state.records.length + ' 个来源');
   }
 
-  function populateFilters(records) {
+  function populateTypes(records) {
     var types = {};
     records.forEach(function (record) {
       types[record.type] = true;
@@ -503,265 +346,74 @@
     });
   }
 
-  function populateCategorySelect(categories) {
-    elements.formCategory.replaceChildren();
-    categories.forEach(function (category) {
-      var option = document.createElement('option');
-      option.value = category.value;
-      option.textContent = category.value + ' · ' + category.group;
-      elements.formCategory.appendChild(option);
-    });
-  }
+  function copySourceKey(button) {
+    var key = button.dataset.copyKey;
+    if (!key) return;
 
-  function updateEndpointHelp() {
-    var help = ENDPOINT_HELP[elements.formType.value] || {
-      label: '地址或标识',
-      placeholder: '当前来源标识',
-      help: '该来源只支持暂停或恢复。'
-    };
-    setText(elements.endpointLabel, help.label);
-    elements.formEndpoint.placeholder = help.placeholder;
-    setText(elements.endpointHelp, help.help);
-  }
-
-  function ensureTypeOption(type) {
-    var option = Array.prototype.find.call(elements.formType.options, function (item) {
-      return item.value === type;
-    });
-    if (option) return;
-    option = document.createElement('option');
-    option.value = type;
-    option.textContent = TYPE_LABELS[type] || type;
-    elements.formType.appendChild(option);
-  }
-
-  function setDialogFieldState(readOnly) {
-    elements.formType.disabled = readOnly;
-    elements.formName.disabled = readOnly;
-    elements.formEndpoint.disabled = readOnly;
-    elements.formCategory.disabled = readOnly;
-    elements.formEnabled.disabled = readOnly;
-  }
-
-  function dialogCopy(operation, record) {
-    if (operation === 'add') {
-      return {
-        title: '添加信息源',
-        description: '填写后会打开预填的 GitHub 变更申请。',
-        submit: '前往 GitHub 确认',
-        warning: '',
-        level: ''
-      };
-    }
-    if (operation === 'update') {
-      return {
-        title: '编辑 ' + record.name,
-        description: '修改内容将在独立配置 PR 中审核。',
-        submit: '提交编辑申请',
-        warning: '',
-        level: ''
-      };
-    }
-    if (operation === 'pause') {
-      return {
-        title: '暂停 ' + record.name,
-        description: '来源会保留在配置中，合并后停止采集。',
-        submit: '提交暂停申请',
-        warning: record.status === 'parent-paused'
-          ? '该来源的上层采集器当前已经停用；本次申请会同时记录单项暂停状态。'
-          : '建议优先暂停而不是删除，以便保留配置和恢复路径。',
-        level: ''
-      };
-    }
-    if (operation === 'resume') {
-      return {
-        title: '恢复 ' + record.name,
-        description: 'PR 合并后的下一次采集将使用该来源。',
-        submit: '提交恢复申请',
-        warning: record.parentEnabled
-          ? ''
-          : '该来源的上层采集器仍处于停用状态；恢复单项后不会立即产生内容。',
-        level: ''
-      };
-    }
-    return {
-      title: '删除 ' + record.name,
-      description: '来源会从生产配置中移除，但历史新闻不会被删除。',
-      submit: '提交删除申请',
-      warning: '永久删除前请确认暂停无法满足需求。Git 历史仍可用于恢复配置。',
-      level: 'danger'
-    };
-  }
-
-  function openDialog(operation, record) {
-    elements.form.reset();
-    elements.operation.value = operation;
-    elements.formReason.value = '';
-
-    if (operation === 'add') {
-      elements.sourceKey.value = 'new';
-      elements.formType.value = 'rss';
-      elements.formEnabled.value = 'true';
-      elements.formName.value = '';
-      elements.formEndpoint.value = '';
-      if (state.categories.length) {
-        elements.formCategory.value = state.categories[0].value;
-      }
-      setDialogFieldState(false);
-    } else {
-      ensureTypeOption(record.type);
-      elements.sourceKey.value = record.key;
-      elements.formType.value = record.type;
-      elements.formEnabled.value = operation === 'resume'
-        ? 'true'
-        : operation === 'pause'
-          ? 'false'
-          : String(record.enabled);
-      elements.formName.value = record.name;
-      elements.formEndpoint.value = record.endpoint;
-      elements.formCategory.value = record.category;
-      setDialogFieldState(operation !== 'update');
+    function showCopied() {
+      var original = button.textContent;
+      button.textContent = '已复制';
+      window.setTimeout(function () {
+        button.textContent = original;
+      }, 1600);
     }
 
-    updateEndpointHelp();
-    var copy = dialogCopy(operation, record || {});
-    setText(elements.dialogTitle, copy.title);
-    setText(elements.dialogDescription, copy.description);
-    setText(elements.dialogSubmit, copy.submit);
-    elements.dialogWarning.hidden = !copy.warning;
-    elements.dialogWarning.dataset.level = copy.level;
-    setText(elements.dialogWarning, copy.warning);
-
-    if (typeof elements.dialog.showModal === 'function') {
-      elements.dialog.showModal();
-    } else {
-      elements.dialog.setAttribute('open', '');
+    if (navigator.clipboard && window.isSecureContext) {
+      navigator.clipboard.writeText(key).then(showCopied);
+      return;
     }
-    if (operation === 'add') {
-      elements.formName.focus();
-    } else {
-      elements.formReason.focus();
-    }
-  }
 
-  function closeDialog() {
-    if (typeof elements.dialog.close === 'function') {
-      elements.dialog.close();
-    } else {
-      elements.dialog.removeAttribute('open');
-    }
-  }
-
-  function findRecord(key) {
-    return state.records.find(function (record) {
-      return record.key === key;
-    });
-  }
-
-  function issueTitle(operation, name) {
-    var labels = {
-      add: 'Add',
-      update: 'Update',
-      pause: 'Pause',
-      resume: 'Resume',
-      remove: 'Remove'
-    };
-    return '[Source ' + labels[operation] + '] ' + name;
-  }
-
-  function buildIssueUrl() {
-    var operation = elements.operation.value;
-    var enabled = elements.formEnabled.value;
-    if (operation === 'pause') enabled = 'false';
-    if (operation === 'resume') enabled = 'true';
-
-    var url = new URL(root.dataset.issueUrl);
-    url.searchParams.set('template', root.dataset.issueTemplate);
-    url.searchParams.set('title', issueTitle(operation, elements.formName.value.trim()));
-    url.searchParams.set('operation', OPERATION_OPTIONS[operation]);
-    url.searchParams.set('source-type', SOURCE_TYPE_OPTIONS[elements.formType.value]);
-    url.searchParams.set('source-key', elements.sourceKey.value);
-    url.searchParams.set('source-name', elements.formName.value.trim());
-    url.searchParams.set('endpoint', elements.formEndpoint.value.trim());
-    url.searchParams.set('category', elements.formCategory.value);
-    url.searchParams.set('target-state', STATE_OPTIONS[enabled]);
-    url.searchParams.set('reason', elements.formReason.value.trim());
-    return url;
-  }
-
-  function resetFilters() {
-    elements.search.value = '';
-    elements.typeFilter.value = 'all';
-    elements.trackFilter.value = 'all';
-    elements.statusFilter.value = 'all';
-    renderTable();
+    var input = document.createElement('textarea');
+    input.value = key;
+    input.setAttribute('readonly', '');
+    input.style.position = 'fixed';
+    input.style.opacity = '0';
+    document.body.appendChild(input);
+    input.select();
+    document.execCommand('copy');
+    input.remove();
+    showCopied();
   }
 
   function bindEvents() {
-    elements.addButton.addEventListener('click', function () {
-      openDialog('add', null);
+    [elements.search, elements.typeFilter, elements.trackFilter, elements.statusFilter]
+      .forEach(function (element) {
+        element.addEventListener(element.tagName === 'INPUT' ? 'input' : 'change', render);
+      });
+
+    elements.reset.addEventListener('click', function () {
+      elements.search.value = '';
+      elements.typeFilter.value = 'all';
+      elements.trackFilter.value = 'all';
+      elements.statusFilter.value = 'all';
+      render();
     });
-    elements.search.addEventListener('input', renderTable);
-    elements.typeFilter.addEventListener('change', renderTable);
-    elements.trackFilter.addEventListener('change', renderTable);
-    elements.statusFilter.addEventListener('change', renderTable);
-    elements.reset.addEventListener('click', resetFilters);
-    elements.formType.addEventListener('change', updateEndpointHelp);
-    elements.dialogClose.addEventListener('click', closeDialog);
-    elements.dialogCancel.addEventListener('click', closeDialog);
 
     elements.tableBody.addEventListener('click', function (event) {
-      var button = event.target.closest('button[data-action][data-key]');
-      if (!button) return;
-      var record = findRecord(button.dataset.key);
-      if (record) openDialog(button.dataset.action, record);
-    });
-
-    elements.dialog.addEventListener('click', function (event) {
-      if (event.target === elements.dialog) closeDialog();
-    });
-
-    elements.form.addEventListener('submit', function (event) {
-      event.preventDefault();
-      if (!elements.form.reportValidity()) return;
-      var issueUrl = buildIssueUrl();
-      window.open(issueUrl.toString(), '_blank', 'noopener,noreferrer');
-      closeDialog();
+      var button = event.target.closest('[data-copy-key]');
+      if (button) copySourceKey(button);
     });
   }
 
-  async function loadConfig() {
-    try {
-      var response = await fetch(root.dataset.configUrl, {
-        cache: 'no-store',
-        credentials: 'omit'
-      });
-      if (!response.ok) {
-        throw new Error('Configuration request failed: ' + response.status);
-      }
-      var config = await response.json();
-      if (!config.sources || !config.filtering) {
-        throw new Error('Production configuration is incomplete');
-      }
+  function showLoadError() {
+    elements.loading.hidden = true;
+    elements.empty.hidden = false;
+    elements.empty.textContent = '暂时无法读取生产配置，请稍后重试或查看原始配置。';
+    setText(elements.resultCount, '读取失败');
+  }
 
-      state.config = config;
-      state.categories = configuredCategories(config);
+  fetch(root.dataset.configUrl, {cache: 'no-store'})
+    .then(function (response) {
+      if (!response.ok) throw new Error('Config request failed');
+      return response.json();
+    })
+    .then(function (config) {
       state.records = flattenSources(config);
-      populateCategorySelect(state.categories);
-      populateFilters(state.records);
       updateMetrics(state.records);
+      populateTypes(state.records);
+      bindEvents();
       elements.loading.hidden = true;
-      renderTable();
-    } catch (error) {
-      elements.loading.hidden = true;
-      elements.empty.hidden = false;
-      elements.empty.textContent =
-        '暂时无法读取生产配置，请稍后刷新或前往 GitHub 查看原始配置。';
-      elements.addButton.disabled = true;
-      setText(elements.resultCount, '生产配置读取失败');
-    }
-  }
-
-  bindEvents();
-  loadConfig();
+      render();
+    })
+    .catch(showLoadError);
 })();

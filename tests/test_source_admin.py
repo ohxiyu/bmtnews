@@ -11,7 +11,7 @@ from src.source_admin import (
     SourceChangeRequest,
     _source_pointers,
     apply_source_change,
-    parse_issue_form,
+    parse_workflow_dispatch,
 )
 
 
@@ -48,50 +48,25 @@ def request(
     )
 
 
-def test_parses_issue_form_body():
-    body = """\
-### 操作类型 / Operation
-
-add — 新增
-
-### 来源类型 / Source type
-
-rss — RSS
-
-### 来源键 / Source key
-
-new
-
-### 名称 / Name
-
-Example Crypto
-
-### 地址或标识 / Endpoint
-
-https://example.com/feed.xml
-
-### 分类 / Category
-
-crypto-markets
-
-### 目标状态 / Target state
-
-true — 启用
-
-### 调整原因 / Reason
-
-补充加密市场覆盖。
-
-### 提交确认 / Confirmation
-
-- [x] 我确认信息中不包含密钥、凭据、私有地址或生产状态文件。
-"""
-
-    parsed = parse_issue_form(body)
+def test_parses_workflow_dispatch_inputs():
+    parsed = parse_workflow_dispatch(
+        {
+            "inputs": {
+                "operation": "add",
+                "source_type": "rss",
+                "source_key": "",
+                "name": "Example Crypto",
+                "endpoint": "https://example.com/feed.xml",
+                "category": "crypto-markets",
+                "enabled": "true",
+                "reason": "补充加密市场覆盖。",
+            }
+        }
+    )
 
     assert parsed.operation == "add"
     assert parsed.source_type == "rss"
-    assert parsed.source_key == "new"
+    assert parsed.source_key == ""
     assert parsed.enabled is True
     assert parsed.category == "crypto-markets"
 
@@ -190,6 +165,55 @@ def test_updates_telegram_channel_without_losing_limits(production_config):
     assert updated["fetch_limit"] == 8
 
 
+def test_partial_update_preserves_unspecified_fields(production_config):
+    config = deepcopy(production_config)
+    key = "telegram|okxannouncements"
+    before = deepcopy(_source_pointers(config)[key].item)
+
+    result = apply_source_change(
+        config,
+        request(
+            operation="update",
+            source_type="telegram",
+            source_key=key,
+            name="",
+            endpoint="",
+            category="crypto-markets",
+            enabled=None,
+            reason="Move this source into the primary crypto track.",
+        ),
+        validate_network=False,
+    )
+
+    updated = _source_pointers(config)[result["source_key"]].item
+    assert updated["channel"] == before["channel"]
+    assert updated["fetch_limit"] == before["fetch_limit"]
+    assert updated["enabled"] == before["enabled"]
+    assert updated["category"] == "crypto-markets"
+
+
+def test_pause_only_requires_key_and_reason(production_config):
+    config = deepcopy(production_config)
+    key = "telegram|okxannouncements"
+
+    apply_source_change(
+        config,
+        request(
+            operation="pause",
+            source_type="telegram",
+            source_key=key,
+            name="",
+            endpoint="",
+            category="",
+            enabled=None,
+            reason="Pause while the source is being reviewed.",
+        ),
+        validate_network=False,
+    )
+
+    assert _source_pointers(config)[key].item["enabled"] is False
+
+
 def test_rejects_unknown_category(production_config):
     with pytest.raises(SourceChangeError, match="Unknown category"):
         apply_source_change(
@@ -248,3 +272,22 @@ def test_singleton_source_can_pause_but_not_remove(production_config):
             ),
             validate_network=False,
         )
+
+
+def test_source_registry_is_read_only_and_workflow_is_maintainer_only():
+    workflow = (
+        REPO_ROOT / ".github" / "workflows" / "source-change.yml"
+    ).read_text(encoding="utf-8")
+    page = (REPO_ROOT / "docs" / "sources" / "index.html").read_text(
+        encoding="utf-8"
+    )
+
+    assert "workflow_dispatch:" in workflow
+    assert "issues:" not in workflow
+    assert "Verify requestor has write access" in workflow
+    assert "pull-requests: write" in workflow
+    assert "gh pr create" in workflow
+    assert "--draft" in workflow
+    assert "data-workflow-url=" in page
+    assert "source-change-form" not in page
+    assert "source-dialog" not in page

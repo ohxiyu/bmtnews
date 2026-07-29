@@ -6,84 +6,105 @@ from pathlib import Path
 from src import schedule_watchdog
 
 
-NOW = datetime(2026, 7, 27, 4, 0, tzinfo=timezone.utc)
+# 20:43 in Asia/Shanghai: the 20:00 edition is 13 minutes past its grace period.
+NOW = datetime(2026, 7, 27, 12, 43, tzinfo=timezone.utc)
 
 
 def _run(
     *,
     status: str = "completed",
     conclusion: str | None = "success",
-    updated_at: datetime,
+    started_at: datetime,
     branch: str = "main",
     run_id: int = 1,
 ) -> dict[str, object]:
+    completed_at = started_at + timedelta(minutes=5)
     return {
         "id": run_id,
         "status": status,
         "conclusion": conclusion,
         "head_branch": branch,
-        "created_at": updated_at.isoformat(),
-        "updated_at": updated_at.isoformat(),
+        "created_at": started_at.isoformat(),
+        "run_started_at": started_at.isoformat(),
+        "updated_at": completed_at.isoformat(),
         "html_url": f"https://github.com/ohxiyu/bmtnews/actions/runs/{run_id}",
     }
 
 
-def test_recent_success_is_healthy() -> None:
+def test_success_after_current_cutoff_is_healthy() -> None:
     decision = schedule_watchdog.evaluate_workflow_runs(
-        [_run(updated_at=NOW - timedelta(hours=4, minutes=59))],
+        [_run(started_at=NOW - timedelta(minutes=20))],
         now=NOW,
-        threshold=timedelta(hours=5),
         ref="main",
     )
 
     assert decision.state == "healthy"
     assert decision.should_dispatch is False
-    assert decision.age(NOW) == timedelta(hours=4, minutes=59)
+    assert decision.edition_cutoff.isoformat() == "2026-07-27T20:00:00+08:00"
 
 
-def test_stale_success_requests_recovery_dispatch() -> None:
+def test_previous_edition_success_requests_recovery_dispatch() -> None:
     decision = schedule_watchdog.evaluate_workflow_runs(
-        [_run(updated_at=NOW - timedelta(hours=5, seconds=1))],
+        [_run(started_at=NOW - timedelta(hours=23))],
         now=NOW,
-        threshold=timedelta(hours=5),
         ref="main",
     )
 
-    assert decision.state == "stale"
+    assert decision.state == "missing"
     assert decision.should_dispatch is True
 
 
-def test_stale_success_does_not_duplicate_active_run() -> None:
+def test_missing_success_does_not_duplicate_current_active_run() -> None:
     decision = schedule_watchdog.evaluate_workflow_runs(
         [
-            _run(updated_at=NOW - timedelta(hours=6)),
+            _run(started_at=NOW - timedelta(hours=23)),
             _run(
                 status="in_progress",
                 conclusion=None,
-                updated_at=NOW - timedelta(minutes=2),
+                started_at=NOW - timedelta(minutes=2),
                 run_id=2,
             ),
         ],
         now=NOW,
-        threshold=timedelta(hours=5),
         ref="main",
     )
 
-    assert decision.state == "stale_with_active_run"
+    assert decision.state == "missing_with_active_run"
     assert decision.should_dispatch is False
     assert decision.active_run_url is not None
 
 
-def test_runs_from_other_branches_do_not_reset_main_heartbeat() -> None:
+def test_runs_from_other_branches_do_not_satisfy_main() -> None:
     decision = schedule_watchdog.evaluate_workflow_runs(
-        [_run(updated_at=NOW - timedelta(minutes=1), branch="agent/example")],
+        [
+            _run(
+                started_at=NOW - timedelta(minutes=20),
+                branch="agent/example",
+            )
+        ],
         now=NOW,
-        threshold=timedelta(hours=5),
         ref="main",
     )
 
-    assert decision.state == "stale"
+    assert decision.state == "missing"
     assert decision.latest_success_at is None
+
+
+def test_before_grace_period_still_checks_previous_edition() -> None:
+    before_grace = datetime(
+        2026, 7, 27, 12, 20, tzinfo=timezone.utc
+    )
+    previous_success = datetime(
+        2026, 7, 26, 13, 0, tzinfo=timezone.utc
+    )
+    decision = schedule_watchdog.evaluate_workflow_runs(
+        [_run(started_at=previous_success)],
+        now=before_grace,
+        ref="main",
+    )
+
+    assert decision.state == "healthy"
+    assert decision.edition_cutoff.isoformat() == "2026-07-26T20:00:00+08:00"
 
 
 def test_main_dispatches_recovery_and_fails_for_notification(
@@ -99,9 +120,7 @@ def test_main_dispatches_recovery_and_fails_for_notification(
     monkeypatch.setattr(
         schedule_watchdog,
         "fetch_workflow_runs",
-        lambda **kwargs: [
-            _run(updated_at=datetime.now(timezone.utc) - timedelta(hours=26))
-        ],
+        lambda **kwargs: [],
     )
     monkeypatch.setattr(
         schedule_watchdog,
@@ -123,10 +142,11 @@ def test_main_dispatches_recovery_and_fails_for_notification(
     assert "已触发一次 `workflow_dispatch` 补跑" in summary.read_text(
         encoding="utf-8"
     )
+    assert "日报发布心跳" in summary.read_text(encoding="utf-8")
     assert "::error title=BMTNews schedule watchdog::" in capsys.readouterr().out
 
 
-def test_watchdog_workflow_has_required_schedule_and_permissions() -> None:
+def test_watchdog_workflow_has_schedule_aware_arguments() -> None:
     workflow = (
         Path(__file__).parents[1]
         / ".github"
@@ -136,4 +156,7 @@ def test_watchdog_workflow_has_required_schedule_and_permissions() -> None:
 
     assert "cron: '43 * * * *'" in workflow
     assert "actions: write" in workflow
-    assert "--threshold-hours 25" in workflow
+    assert "--timezone Asia/Shanghai" in workflow
+    assert "--cutoff-hour 20" in workflow
+    assert "--grace-minutes 30" in workflow
+    assert "--threshold-hours" not in workflow

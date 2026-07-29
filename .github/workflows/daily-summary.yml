@@ -6,6 +6,12 @@ on:
     - cron: '17 20 * * *'
       timezone: 'Asia/Shanghai'
   workflow_dispatch:
+    inputs:
+      force_publish:
+        description: Rebuild an already published fixed window
+        type: boolean
+        required: false
+        default: false
 
 concurrency:
   group: bmtnews-feed-update
@@ -66,7 +72,13 @@ jobs:
           LWN_KEY: ${{ secrets.LWN_KEY }}
           DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
           HORIZON_WEBHOOK_URL: ${{ secrets.HORIZON_WEBHOOK_URL }}
-        run: uv run horizon --mode publish --hours 24 --cutoff-hour 20
+        shell: bash
+        run: |
+          args=(--mode publish --hours 24 --cutoff-hour 20)
+          if [ "${{ inputs.force_publish }}" = "true" ]; then
+            args+=(--force-publish)
+          fi
+          uv run horizon "${args[@]}"
 
       - name: Publish run report
         if: ${{ always() }}
