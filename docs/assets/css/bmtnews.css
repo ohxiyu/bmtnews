@@ -1108,6 +1108,13 @@ input {
   font-weight: 800;
 }
 
+.day-window {
+  color: var(--text-muted);
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 0.64rem;
+  white-space: nowrap;
+}
+
 .day-state {
   border-radius: 6px;
   background: var(--accent);
@@ -1829,6 +1836,10 @@ input {
   .day-state {
     padding: 4px 6px;
     font-size: 0.61rem;
+  }
+
+  .day-window {
+    display: none;
   }
 
   .day-divider-stats {

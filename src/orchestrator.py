@@ -4,12 +4,14 @@ import asyncio
 from collections import defaultdict
 from dataclasses import dataclass, field
 from datetime import datetime, timedelta, timezone
+from pathlib import Path
 from typing import Dict, List, Literal, Optional
 from urllib.parse import unquote_plus, urlsplit
 import httpx
 from rich.console import Console
 
 from .models import Config, ContentItem
+from ._file_utils import _atomic_write_text
 from .storage.manager import StorageManager, safe_output_path
 from .services.email import EmailManager
 from .services.webhook import WebhookNotifier
@@ -38,6 +40,14 @@ from .daily_feed import (
     local_date_for,
     merge_daily_items,
     save_daily_feed_state,
+)
+from .edition import (
+    DEFAULT_STAGING_PATH,
+    edition_window_for,
+    items_in_edition_window,
+    load_staging_state,
+    merge_staged_items,
+    save_staging_state,
 )
 from .run_report import RunReport, save_run_report
 
@@ -405,85 +415,13 @@ class HorizonOrchestrator:
                 )
 
             # 7. Generate and save daily summaries for each configured language
-            for lang in self.config.ai.languages:
-                summarizer = DailySummarizer(display_timezone=daily_timezone)
-                summary = await summarizer.generate_summary(
-                    important_items,
-                    today,
-                    analyzed_count,
-                    language=lang,
-                )
-
-                # Save to data/summaries/
-                summary_path = self.storage.save_daily_summary(today, summary, language=lang)
-                self.console.print(f"💾 Saved {lang.upper()} summary to: {summary_path}\n")
-                run_report.record_summary(lang)
-
-                # Copy to docs/ for GitHub Pages
-                try:
-                    from pathlib import Path
-
-                    post_filename = f"{today}-summary-{lang}.md"
-                    posts_dir = Path("docs/_posts")
-                    posts_dir.mkdir(parents=True, exist_ok=True)
-
-                    dest_path = safe_output_path(posts_dir, post_filename)
-
-                    # Add Jekyll front matter
-                    front_matter = (
-                        "---\n"
-                        "layout: default\n"
-                        f"title: \"BMTNews: {today} ({lang.upper()})\"\n"
-                        f"date: {today}\n"
-                        f"lang: {lang}\n"
-                        "---\n\n"
-                    )
-                    run_stats = (
-                        '<div class="run-stats" hidden '
-                        f'data-fetched="{run_report.metrics.get("fetched_raw", 0)}" '
-                        f'data-analyzed="{run_report.metrics.get("analyzed_today", 0)}" '
-                        f'data-selected="{run_report.metrics.get("displayed_today", 0)}" '
-                        f'data-critical="{run_report.metrics.get("high_priority", 0)}">'
-                        "</div>\n\n"
-                    )
-
-                    # Strip leading H1 header to avoid duplication with Jekyll title
-                    summary_content = summary
-                    first_line = summary_content.strip().split("\n")[0]
-                    if first_line.startswith("# "):
-                        parts = summary_content.split("\n", 1)
-                        if len(parts) > 1:
-                            summary_content = parts[1].strip()
-
-                    with open(dest_path, "w", encoding="utf-8") as f:
-                        f.write(front_matter + run_stats + summary_content)
-
-                    self.console.print(f"📄 Copied {lang.upper()} summary to GitHub Pages: {dest_path}\n")
-                except Exception as e:
-                    run_report.add_alert(
-                        "warning",
-                        f"page_summary_copy_failed_{lang}",
-                        f"{lang.upper()} 页面摘要写入失败：{e}",
-                    )
-                    self.console.print(f"[yellow]⚠️  Failed to copy {lang.upper()} summary to docs/: {e}[/yellow]\n")
-
-                # Send email if configured
-                if self.email_manager and self.config.email and self.config.email.enabled:
-                    self.console.print(f"📧 Sending {lang.upper()} email summary...")
-                    subscribers = self.storage.load_subscribers()
-                    subject = f"BMTNews ({lang.upper()}) - {today}"
-                    self.email_manager.send_daily_summary(summary, subject, subscribers)
-
-                # Send webhook notification if configured
-                if self.webhook_notifier:
-                    await self.webhook_notifier.send_daily_summary(
-                        summary=summary,
-                        important_items=important_items,
-                        all_items_count=analyzed_count,
-                        date=today,
-                        lang=lang,
-                        summarizer=summarizer,
-                    )
+            await self._publish_outputs(
+                important_items,
+                date=today,
+                total_candidates=analyzed_count,
+                timezone_name=daily_timezone,
+                run_report=run_report,
+            )
 
             self.console.print("[bold green]✅ Horizon completed successfully![/bold green]")
             usage = get_usage_snapshot()
@@ -527,6 +465,381 @@ class HorizonOrchestrator:
                 )
                 if run_report.status != "failure":
                     raise
+
+    async def fetch_to_staging(
+        self,
+        force_hours: int | None = None,
+        *,
+        staging_path: Path = DEFAULT_STAGING_PATH,
+        now: datetime | None = None,
+    ) -> None:
+        """Fetch raw source items and persist them without running AI."""
+        timezone_name = self.config.filtering.daily_timezone
+        run_started_at = now or datetime.now(timezone.utc)
+        run_report = RunReport.start(
+            date=local_date_for(run_started_at, timezone_name),
+            timezone_name=timezone_name,
+            started_at=run_started_at,
+        )
+        self.last_run_report = run_report
+        self.console.print(
+            "[bold cyan]📥 BMTNews - Collecting items for the daily edition...[/bold cyan]\n"
+        )
+
+        try:
+            hours = force_hours or self.config.filtering.time_window_hours
+            since = run_started_at - timedelta(hours=hours)
+            all_items = await self.fetch_all_sources(since)
+            run_report.set_metric("fetched_raw", len(all_items))
+            run_report.attach_fetch_report(
+                self.last_fetch_report.to_dict()
+                if self.last_fetch_report is not None
+                else None
+            )
+            if self.last_fetch_report and self.last_fetch_report.all_failed:
+                raise RuntimeError(self.last_fetch_report.failure_message())
+
+            merged_items = self.merge_cross_source_duplicates(all_items)
+            run_report.set_metric("unique_after_url_dedup", len(merged_items))
+            staging_state = load_staging_state(staging_path)
+            staged_items = merge_staged_items(
+                staging_state.items,
+                merged_items,
+                now=run_started_at,
+            )
+            save_staging_state(
+                staged_items,
+                staging_path,
+                updated_at=run_started_at,
+            )
+            run_report.set_metric("staged_total", len(staged_items))
+            self.console.print(
+                f"✅ Added {len(merged_items)} unique items; "
+                f"{len(staged_items)} retained in {staging_path}"
+            )
+        except Exception as exc:
+            run_report.fail(exc)
+            self.console.print(f"[bold red]❌ Collection failed: {exc}[/bold red]")
+            raise
+        finally:
+            run_report.finish()
+            save_run_report(run_report)
+
+    async def run_daily_edition(
+        self,
+        force_hours: int | None = None,
+        *,
+        staging_path: Path = DEFAULT_STAGING_PATH,
+        cutoff_hour: int = 20,
+        now: datetime | None = None,
+    ) -> None:
+        """Build one edition from the latest completed fixed cutoff window."""
+        timezone_name = self.config.filtering.daily_timezone
+        run_started_at = now or datetime.now(timezone.utc)
+        window = edition_window_for(
+            run_started_at,
+            timezone_name,
+            cutoff_hour,
+        )
+        run_report = RunReport.start(
+            date=window.date,
+            timezone_name=timezone_name,
+            started_at=run_started_at,
+        )
+        self.last_run_report = run_report
+        self.console.print(
+            "[bold cyan]🗞️ BMTNews - Building the daily edition...[/bold cyan]\n"
+        )
+        self.console.print(
+            f"🕗 Edition window: {window.start.isoformat()} "
+            f"→ {window.end.isoformat()} (end exclusive)\n"
+        )
+
+        try:
+            staging_state = load_staging_state(staging_path)
+            hours = force_hours or self.config.filtering.time_window_hours
+            since = run_started_at - timedelta(hours=hours)
+            fresh_items = await self.fetch_all_sources(since)
+            run_report.set_metric("fetched_raw", len(fresh_items))
+            run_report.attach_fetch_report(
+                self.last_fetch_report.to_dict()
+                if self.last_fetch_report is not None
+                else None
+            )
+            fresh_items = self.merge_cross_source_duplicates(fresh_items)
+            run_report.set_metric(
+                "unique_after_url_dedup",
+                len(fresh_items),
+            )
+            staged_items = merge_staged_items(
+                staging_state.items,
+                fresh_items,
+                now=run_started_at,
+            )
+            save_staging_state(
+                staged_items,
+                staging_path,
+                updated_at=run_started_at,
+            )
+            run_report.set_metric("staged_total", len(staged_items))
+
+            candidates = self.merge_cross_source_duplicates(
+                items_in_edition_window(staged_items, window)
+            )
+            run_report.set_metric("edition_candidates", len(candidates))
+            run_report.set_metric("current_day_items", len(candidates))
+            self.console.print(
+                f"📚 {len(candidates)} unique candidates fall inside this edition\n"
+            )
+
+            daily_state = load_daily_feed_state(
+                window.date,
+                timezone_name,
+            )
+            final_fetch_failed = bool(
+                self.last_fetch_report
+                and self.last_fetch_report.all_failed
+            )
+            if final_fetch_failed and not candidates:
+                if daily_state.items:
+                    run_report.add_alert(
+                        "warning",
+                        "edition_retry_preserved",
+                        "最终采集失败且无可用候选，保留已发布的本期内容。",
+                    )
+                    self.console.print(
+                        "[yellow]No recoverable candidates; preserving the "
+                        "already-published edition.[/yellow]"
+                    )
+                    return
+                raise RuntimeError(self.last_fetch_report.failure_message())
+            if final_fetch_failed:
+                run_report.add_alert(
+                    "warning",
+                    "final_fetch_failed_using_staging",
+                    "最终采集全部失败，已使用当日早前暂存内容继续出刊。",
+                )
+            if not candidates and daily_state.items:
+                run_report.add_alert(
+                    "info",
+                    "edition_retry_preserved",
+                    "本次没有恢复到候选内容，保留已发布的本期内容。",
+                )
+                self.console.print(
+                    "[yellow]No candidates recovered; preserving the "
+                    "already-published edition.[/yellow]"
+                )
+                return
+
+            published_identities = {
+                item_identity(item) for item in daily_state.dedup_history
+            }
+            before_history_filter = len(candidates)
+            candidates = [
+                item
+                for item in candidates
+                if item_identity(item) not in published_identities
+            ]
+            run_report.set_metric(
+                "skipped_published_history",
+                before_history_filter - len(candidates),
+            )
+
+            analyzed_items = (
+                await self._analyze_content(candidates)
+                if candidates
+                else []
+            )
+            run_report.set_metric("analyzed_this_run", len(analyzed_items))
+            run_report.set_metric("analyzed_today", len(analyzed_items))
+
+            filtering_result = await self.filter_items(
+                analyzed_items,
+                apply_balance=False,
+                dedup_context=daily_state.dedup_history,
+            )
+            important_items = filtering_result.items
+            run_report.set_metric(
+                "above_threshold",
+                filtering_result.threshold_count,
+            )
+            run_report.set_metric(
+                "topic_duplicates_removed",
+                filtering_result.topic_dedup_removed,
+            )
+
+            await self._expand_twitter_discussion(important_items)
+            balanced_result = self.apply_balanced_digest(important_items)
+            important_items = balanced_result.items
+            run_report.set_metric(
+                "balanced_digest_removed",
+                filtering_result.topic_dedup_count - len(important_items),
+            )
+            await self._enrich_important_items(important_items)
+
+            existing_display_identities = {
+                item_identity(item) for item in daily_state.items
+            }
+            daily_state.items = important_items
+            daily_state.updated_at = run_started_at
+            daily_state.analyzed_keys = sorted(
+                analyzed_item_key(item) for item in analyzed_items
+            )
+            state_path = save_daily_feed_state(daily_state)
+            self.console.print(
+                f"🧩 Saved {len(important_items)} selected items to {state_path}\n"
+            )
+
+            displayed_identities = {
+                item_identity(item) for item in important_items
+            }
+            run_report.set_metric(
+                "newly_displayed",
+                len(displayed_identities - existing_display_identities),
+            )
+            run_report.set_metric("displayed_today", len(important_items))
+            run_report.set_metric(
+                "high_priority",
+                sum((item.ai_score or 0) >= 9 for item in important_items),
+            )
+
+            await self._publish_outputs(
+                important_items,
+                date=window.date,
+                total_candidates=before_history_filter,
+                timezone_name=timezone_name,
+                run_report=run_report,
+                window_start=window.start,
+                window_end=window.end,
+            )
+            self.console.print(
+                "[bold green]✅ Daily edition completed successfully![/bold green]"
+            )
+        except Exception as exc:
+            run_report.fail(exc)
+            self.console.print(f"[bold red]❌ Edition failed: {exc}[/bold red]")
+            if self.webhook_notifier:
+                await self.webhook_notifier.send_failure(
+                    date=window.date,
+                    error_message=str(exc),
+                )
+            raise
+        finally:
+            run_report.finish()
+            save_run_report(run_report)
+
+    async def _publish_outputs(
+        self,
+        items: List[ContentItem],
+        *,
+        date: str,
+        total_candidates: int,
+        timezone_name: str,
+        run_report: RunReport,
+        window_start: datetime | None = None,
+        window_end: datetime | None = None,
+    ) -> None:
+        """Render configured languages and publish static-site artifacts."""
+        fetched_count = run_report.metrics.get(
+            "edition_candidates",
+            run_report.metrics.get("fetched_raw", 0),
+        )
+        for lang in self.config.ai.languages:
+            summarizer = DailySummarizer(display_timezone=timezone_name)
+            summary = await summarizer.generate_summary(
+                items,
+                date,
+                total_candidates,
+                language=lang,
+            )
+            summary_path = self.storage.save_daily_summary(
+                date,
+                summary,
+                language=lang,
+            )
+            self.console.print(
+                f"💾 Saved {lang.upper()} summary to: {summary_path}\n"
+            )
+            run_report.record_summary(lang)
+
+            try:
+                post_filename = f"{date}-summary-{lang}.md"
+                posts_dir = Path("docs/_posts")
+                posts_dir.mkdir(parents=True, exist_ok=True)
+                dest_path = safe_output_path(posts_dir, post_filename)
+
+                window_front_matter = ""
+                if window_start is not None and window_end is not None:
+                    window_front_matter = (
+                        f'window_start: "{window_start.isoformat()}"\n'
+                        f'window_end: "{window_end.isoformat()}"\n'
+                    )
+                front_matter = (
+                    "---\n"
+                    "layout: default\n"
+                    f"title: \"BMTNews: {date} ({lang.upper()})\"\n"
+                    f"date: {date}\n"
+                    f"lang: {lang}\n"
+                    f"fetched_count: {fetched_count}\n"
+                    f'analyzed_count: {run_report.metrics.get("analyzed_today", 0)}\n'
+                    f'selected_count: {run_report.metrics.get("displayed_today", 0)}\n'
+                    f'critical_count: {run_report.metrics.get("high_priority", 0)}\n'
+                    f"{window_front_matter}"
+                    "---\n\n"
+                )
+                run_stats = (
+                    '<div class="run-stats" hidden '
+                    f'data-fetched="{fetched_count}" '
+                    f'data-analyzed="{run_report.metrics.get("analyzed_today", 0)}" '
+                    f'data-selected="{run_report.metrics.get("displayed_today", 0)}" '
+                    f'data-critical="{run_report.metrics.get("high_priority", 0)}">'
+                    "</div>\n\n"
+                )
+
+                summary_content = summary
+                first_line = summary_content.strip().split("\n")[0]
+                if first_line.startswith("# "):
+                    parts = summary_content.split("\n", 1)
+                    if len(parts) > 1:
+                        summary_content = parts[1].strip()
+                _atomic_write_text(
+                    dest_path,
+                    front_matter + run_stats + summary_content,
+                )
+                self.console.print(
+                    f"📄 Copied {lang.upper()} summary to GitHub Pages: "
+                    f"{dest_path}\n"
+                )
+            except Exception as exc:
+                run_report.add_alert(
+                    "warning",
+                    f"page_summary_copy_failed_{lang}",
+                    f"{lang.upper()} 页面摘要写入失败：{exc}",
+                )
+                self.console.print(
+                    f"[yellow]⚠️  Failed to copy {lang.upper()} summary "
+                    f"to docs/: {exc}[/yellow]\n"
+                )
+
+            if self.email_manager and self.config.email and self.config.email.enabled:
+                self.console.print(f"📧 Sending {lang.upper()} email summary...")
+                subscribers = self.storage.load_subscribers()
+                subject = f"BMTNews ({lang.upper()}) - {date}"
+                self.email_manager.send_daily_summary(
+                    summary,
+                    subject,
+                    subscribers,
+                )
+
+            if self.webhook_notifier:
+                await self.webhook_notifier.send_daily_summary(
+                    summary=summary,
+                    important_items=items,
+                    all_items_count=total_candidates,
+                    date=date,
+                    lang=lang,
+                    summarizer=summarizer,
+                )
 
     def _determine_time_window(self, force_hours: int = None) -> datetime:
         if force_hours:
@@ -944,30 +1257,57 @@ class HorizonOrchestrator:
                 )
 
         selected: List[tuple[ContentItem, str]] = []
+        selected_object_ids: set[int] = set()
         group_counts: Dict[str, int] = defaultdict(int)
         default_group = filtering.default_group
 
-        for item in sorted_items:
+        def group_for(item: ContentItem) -> str:
             category = item.metadata.get("category")
-            group_key = (
+            return (
                 category_to_group.get(category, default_group)
                 if isinstance(category, str)
                 else default_group
             )
 
+        def select(item: ContentItem, group_key: str) -> bool:
+            if id(item) in selected_object_ids:
+                return False
+            if max_items is not None and len(selected) >= max_items:
+                return False
             if group_key in groups:
                 limit = groups[group_key].limit
             else:
                 limit = filtering.default_group_limit
 
             if limit is not None and group_counts[group_key] >= limit:
-                continue
+                return False
 
             selected.append((item, group_key))
+            selected_object_ids.add(id(item))
             group_counts[group_key] += 1
+            return True
 
-        if max_items is not None:
-            selected = selected[:max_items]
+        primary_groups = set(filtering.primary_groups)
+        primary_minimum = filtering.primary_group_min_items or 0
+        if primary_groups and primary_minimum:
+            for item in sorted_items:
+                group_key = group_for(item)
+                if group_key not in primary_groups:
+                    continue
+                select(item, group_key)
+                selected_primary = sum(
+                    group_counts[group] for group in primary_groups
+                )
+                if selected_primary >= primary_minimum:
+                    break
+
+        for item in sorted_items:
+            select(item, group_for(item))
+
+        selected.sort(
+            key=lambda pair: pair[0].ai_score or 0,
+            reverse=True,
+        )
 
         final_counts: Dict[str, int] = defaultdict(int)
         for _, group_key in selected:

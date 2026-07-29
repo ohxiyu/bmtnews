@@ -45,6 +45,7 @@ data/mcp.secrets.json
 data/mcp-secrets.json
 data/mcp-runs/
 data/run-report.json
+data/staging-items.json
 data/x_cookies_*.json
 
 docs/_posts/*.md

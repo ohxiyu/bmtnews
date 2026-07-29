@@ -476,7 +476,9 @@ Content is scored 0-10:
       }
     },
     "default_group": "other",
-    "default_group_limit": 3
+    "default_group_limit": 3,
+    "primary_groups": ["finance"],
+    "primary_group_min_items": 5
   }
 }
 ```
@@ -492,6 +494,11 @@ Content is scored 0-10:
   configured group. Default is `other`.
 - `default_group_limit`: Optional positive limit for unmatched items. If omitted,
   unmatched items are unlimited except for `max_items`.
+- `primary_groups`: Optional list of configured group keys that form the digest's
+  main topic.
+- `primary_group_min_items`: Optional positive reservation for qualified items
+  across `primary_groups`. It cannot exceed `max_items` or the combined primary
+  group capacity. The reservation never bypasses the AI threshold or group caps.
 
 Balanced digest filtering runs after AI score threshold filtering and topic
 deduplication, but before enrichment. This reduces enrichment calls to only the

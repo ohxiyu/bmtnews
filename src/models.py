@@ -5,7 +5,7 @@ from enum import Enum
 import re
 from typing import Annotated, Literal, Optional, List, Dict, Any, NamedTuple, Union
 from zoneinfo import ZoneInfo, ZoneInfoNotFoundError
-from pydantic import BaseModel, HttpUrl, Field, field_validator
+from pydantic import BaseModel, HttpUrl, Field, field_validator, model_validator
 
 
 class SourceType(str, Enum):
@@ -490,6 +490,8 @@ class FilteringConfig(BaseModel):
     category_groups: Dict[str, CategoryGroupConfig] = Field(default_factory=dict)
     default_group: str = "other"
     default_group_limit: Optional[int] = Field(default=None, gt=0)
+    primary_groups: List[str] = Field(default_factory=list)
+    primary_group_min_items: Optional[int] = Field(default=None, gt=0)
 
     @field_validator("daily_timezone")
     @classmethod
@@ -499,6 +501,37 @@ class FilteringConfig(BaseModel):
         except (ZoneInfoNotFoundError, ValueError) as exc:
             raise ValueError(f"Unknown IANA timezone: {value}") from exc
         return value
+
+    @model_validator(mode="after")
+    def validate_primary_group(self) -> "FilteringConfig":
+        if self.primary_group_min_items is None:
+            return self
+        if not self.primary_groups:
+            raise ValueError(
+                "primary_groups is required when primary_group_min_items is set"
+            )
+        missing = [
+            group
+            for group in self.primary_groups
+            if group not in self.category_groups
+        ]
+        if missing:
+            raise ValueError(
+                "primary_groups must name configured category groups"
+            )
+        capacity = sum(
+            self.category_groups[group].limit for group in self.primary_groups
+        )
+        if self.primary_group_min_items > capacity:
+            raise ValueError(
+                "primary_group_min_items cannot exceed primary group capacity"
+            )
+        if (
+            self.max_items is not None
+            and self.primary_group_min_items > self.max_items
+        ):
+            raise ValueError("primary_group_min_items cannot exceed max_items")
+        return self
 
 
 class Config(BaseModel):

@@ -104,6 +104,59 @@ def test_max_items_works_without_category_groups() -> None:
     assert [item.id for item in result.items] == ["higher"]
 
 
+def test_primary_groups_reserve_crypto_slots_before_side_topics() -> None:
+    filtering = FilteringConfig(
+        max_items=12,
+        category_groups={
+            "exchange": CategoryGroupConfig(
+                limit=5,
+                categories=["exchange"],
+            ),
+            "markets": CategoryGroupConfig(limit=4, categories=["markets"]),
+            "protocols": CategoryGroupConfig(limit=4, categories=["protocols"]),
+            "technology": CategoryGroupConfig(limit=3, categories=["ai"]),
+            "policy": CategoryGroupConfig(limit=2, categories=["policy"]),
+        },
+        primary_groups=["exchange", "markets", "protocols"],
+        primary_group_min_items=9,
+    )
+    crypto_categories = [
+        "exchange",
+        "exchange",
+        "exchange",
+        "markets",
+        "markets",
+        "markets",
+        "protocols",
+        "protocols",
+        "protocols",
+        "protocols",
+    ]
+    items = [
+        make_item(f"crypto-{index}", 8.0 - index / 100, category)
+        for index, category in enumerate(crypto_categories)
+    ]
+    items += [
+        make_item(f"ai-{index}", 10.0 - index / 100, "ai")
+        for index in range(5)
+    ]
+    items += [
+        make_item(f"policy-{index}", 9.0 - index / 100, "policy")
+        for index in range(3)
+    ]
+
+    result = make_orchestrator(filtering).apply_balanced_digest(items)
+
+    categories = [item.metadata["category"] for item in result.items]
+    assert len(result.items) == 12
+    assert sum(
+        category in {"exchange", "markets", "protocols"}
+        for category in categories
+    ) >= 9
+    assert categories.count("ai") <= 3
+    assert categories.count("policy") <= 2
+
+
 def test_duplicate_category_warns_and_first_group_wins() -> None:
     filtering = FilteringConfig(
         category_groups={
@@ -129,6 +182,17 @@ def test_duplicate_category_warns_and_first_group_wins() -> None:
         {"default_group_limit": 0},
         {"category_groups": {"ai": {"limit": 0, "categories": ["ai"]}}},
         {"category_groups": {"ai": {"limit": 1, "categories": []}}},
+        {
+            "primary_groups": ["missing"],
+            "primary_group_min_items": 1,
+        },
+        {
+            "category_groups": {
+                "primary": {"limit": 1, "categories": ["main"]}
+            },
+            "primary_groups": ["primary"],
+            "primary_group_min_items": 2,
+        },
     ],
 )
 def test_balanced_digest_config_rejects_non_positive_or_empty_limits(kwargs) -> None:

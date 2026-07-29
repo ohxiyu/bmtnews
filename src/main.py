@@ -37,7 +37,32 @@ def main():
 
     parser = argparse.ArgumentParser(description="Horizon - AI-Driven Information Aggregation System")
     parser.add_argument("--hours", type=int, help="Force fetch from last N hours")
+    parser.add_argument(
+        "--mode",
+        choices=("full", "fetch", "publish"),
+        default="full",
+        help=(
+            "full runs the legacy pipeline; fetch only updates the staging cache; "
+            "publish builds one fixed-window daily edition"
+        ),
+    )
+    parser.add_argument(
+        "--staging-path",
+        type=Path,
+        default=Path("data/staging-items.json"),
+        help="Cross-run raw item staging file",
+    )
+    parser.add_argument(
+        "--cutoff-hour",
+        type=int,
+        default=20,
+        help="Daily edition cutoff hour in filtering.daily_timezone",
+    )
     args = parser.parse_args()
+    if args.hours is not None and args.hours <= 0:
+        parser.error("--hours must be positive")
+    if not 0 <= args.cutoff_hour <= 23:
+        parser.error("--cutoff-hour must be between 0 and 23")
 
     try:
         # Load environment variables from .env file
@@ -74,7 +99,23 @@ def main():
 
         # Create and run orchestrator
         orchestrator = HorizonOrchestrator(config, storage)
-        asyncio.run(orchestrator.run(force_hours=args.hours))
+        if args.mode == "fetch":
+            asyncio.run(
+                orchestrator.fetch_to_staging(
+                    force_hours=args.hours,
+                    staging_path=args.staging_path,
+                )
+            )
+        elif args.mode == "publish":
+            asyncio.run(
+                orchestrator.run_daily_edition(
+                    force_hours=args.hours,
+                    staging_path=args.staging_path,
+                    cutoff_hour=args.cutoff_hour,
+                )
+            )
+        else:
+            asyncio.run(orchestrator.run(force_hours=args.hours))
 
     except KeyboardInterrupt:
         console.print("\n[yellow]⚠️  Interrupted by user[/yellow]")
@@ -128,7 +169,9 @@ def print_config_template():
     "max_items": null,
     "category_groups": {},
     "default_group": "other",
-    "default_group_limit": null
+    "default_group_limit": null,
+    "primary_groups": [],
+    "primary_group_min_items": null
   }
 }
 
