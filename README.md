@@ -341,19 +341,31 @@ final fetch at 20:17, analyzes the fixed `[previous day 20:00, current day
 20:00)` window once, and deploys one daily edition to GitHub Pages. The staging
 cache is only a coverage aid; the final 24-hour fetch remains a fallback.
 
-Each native pipeline run also writes `data/run-report.json` with counts for
-fetching, URL deduplication, local-day filtering, AI analysis, thresholding,
-topic deduplication, and final display, plus the status of each top-level
-source. The runtime file is not committed. GitHub Actions renders it into the
-workflow run's Job Summary; partial source failures appear as warnings, while
-an all-source failure still fails the job.
+Each workflow writes `data/run-report.json`, but the report now matches the
+actual run type. Staging runs show collection, URL deduplication, newly staged
+items, retained cache size, and per-source fetch status. The daily publication
+report adds the fixed edition window, cutoff delay, staging-cache age, items
+recovered only from staging, source candidate/selection contributions, AI
+filtering, category quotas, and the Crypto-primary minimum. Missing quotas and
+late or stale inputs are explicit warnings; the selector never lowers the AI
+threshold merely to fill a quota.
+
+The runtime JSON is temporary and is not committed. GitHub Actions renders each
+copy into that workflow run's Job Summary. Existing top-level source status
+remains available, with per-feed/channel/repository counts expanded under it.
+Partial source failures appear as warnings, while an all-source failure still
+fails the job.
 
 The independent
 [`schedule-watchdog.yml`](.github/workflows/schedule-watchdog.yml) workflow
 checks the successful daily-edition heartbeat hourly. If no successful `main`
-edition has completed for more than 25 hours and no edition run is active, it
+run exists for the latest due 20:00 edition after the 20:30 grace period, it
 dispatches one recovery run and fails its own job so GitHub can send a workflow
-failure notification. An active edition run suppresses duplicate dispatches.
+failure notification. A current edition run suppresses duplicate dispatches.
+If a delayed scheduled event starts after a recovery already published the same
+fixed window, publication mode exits before fetching or calling AI. A
+maintainer can deliberately rebuild it from **Run workflow** by enabling
+`force_publish`.
 
 ## Supported Sources
 
@@ -393,7 +405,7 @@ Horizon is an open-source project maintained in spare time. If you'd like to sup
 | Guide | Description |
 |-------|-------------|
 | [Configuration](project-docs/configuration.md) | AI providers, sources, filtering, email, webhook, GitHub Pages, and MCP setup |
-| [Source Console](project-docs/source-console.md) | Online source registry, request workflow, validation, and approval controls |
+| [Source Registry](project-docs/source-console.md) | Read-only online registry and maintainer-only Actions workflow |
 | [Scoring](project-docs/scoring.md) | How Horizon evaluates and ranks news items |
 | [Scrapers](project-docs/scrapers.md) | Source scraper details and extension notes |
 | [Extractors](project-docs/extractors.md) | Full article extraction for RSS sources |

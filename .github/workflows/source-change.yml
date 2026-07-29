@@ -1,47 +1,106 @@
-name: BMTNews Source Change
+name: BMTNews Source Management
 
 on:
-  issues:
-    types:
-      - labeled
+  workflow_dispatch:
+    inputs:
+      operation:
+        description: 操作
+        type: choice
+        required: true
+        options:
+          - add
+          - update
+          - pause
+          - resume
+          - remove
+      source_type:
+        description: 来源类型
+        type: choice
+        required: true
+        options:
+          - rss
+          - telegram
+          - github
+          - reddit
+          - hackernews
+          - google_news
+          - gdelt
+          - ossinsight
+      source_key:
+        description: 现有来源键（新增时留空，可从 /sources/ 复制）
+        type: string
+        required: false
+      name:
+        description: 名称（新增 RSS 必填；编辑时留空代表不变）
+        type: string
+        required: false
+      endpoint:
+        description: 公开地址或标识（新增必填；编辑时留空代表不变）
+        type: string
+        required: false
+      category:
+        description: 分类（新增必选；其他操作选择 unchanged 可保持不变）
+        type: choice
+        required: true
+        default: unchanged
+        options:
+          - unchanged
+          - exchange-announcements
+          - exchange-operations
+          - crypto-markets
+          - crypto-protocols
+          - crypto-regulation
+          - macro-regulation
+          - ai-labs
+          - ai-devtools
+          - tech-community
+          - ai-media
+      enabled:
+        description: 状态（新增请选择 true；编辑可保持 unchanged）
+        type: choice
+        required: true
+        default: unchanged
+        options:
+          - unchanged
+          - "true"
+          - "false"
+      reason:
+        description: 调整原因（不要填写密钥、凭据、私有地址或生产状态）
+        type: string
+        required: true
 
 concurrency:
-  group: source-change-${{ github.event.issue.number }}
+  group: source-management-${{ github.run_id }}-${{ github.run_attempt }}
   cancel-in-progress: false
 
 permissions:
   contents: write
-  issues: write
   pull-requests: write
 
 jobs:
   apply:
-    if: ${{ github.event.label.name == 'source-approved' }}
     runs-on: ubuntu-latest
     env:
       GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      ISSUE_NUMBER: ${{ github.event.issue.number }}
-      APPROVER: ${{ github.actor }}
       REPOSITORY: ${{ github.repository }}
+      REQUESTOR: ${{ github.actor }}
       EVENT_PATH: ${{ github.event_path }}
       FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 
     steps:
-      - name: Verify approving actor
+      - name: Verify requestor has write access
         shell: bash
         run: |
           permission="$(
             gh api \
-              "repos/${REPOSITORY}/collaborators/${APPROVER}/permission" \
+              "repos/${REPOSITORY}/collaborators/${REQUESTOR}/permission" \
               --jq '.permission'
           )"
           case "$permission" in
             admin|maintain|write)
               ;;
             *)
-              gh issue comment "$ISSUE_NUMBER" \
-                --repo "$REPOSITORY" \
-                --body "来源变更未执行：批准标签必须由具有写权限的维护者添加。"
+              echo "::error::Only repository maintainers can manage production sources."
               exit 1
               ;;
           esac
@@ -67,7 +126,7 @@ jobs:
         run: uv sync --frozen --extra dev
 
       - name: Apply and validate request
-        id: apply_request
+        id: apply
         shell: bash
         run: |
           set +e
@@ -76,101 +135,81 @@ jobs:
             --config data/config.github.json \
             --result "$RUNNER_TEMP/source-change-result.json" \
             2>"$RUNNER_TEMP/source-change-error.txt"
-          exit_code="$?"
+          status="$?"
           set -e
-          echo "exit_code=$exit_code" >> "$GITHUB_OUTPUT"
 
-      - name: Report rejected request
-        if: ${{ steps.apply_request.outputs.exit_code != '0' }}
-        shell: bash
-        run: |
-          {
-            echo "来源变更校验失败，生产配置未修改。"
-            echo
-            echo '```text'
-            sed -n '1,40p' "$RUNNER_TEMP/source-change-error.txt"
-            echo '```'
-          } > "$RUNNER_TEMP/source-change-comment.md"
-          gh issue comment "$ISSUE_NUMBER" \
-            --repo "$REPOSITORY" \
-            --body-file "$RUNNER_TEMP/source-change-comment.md"
-          gh issue edit "$ISSUE_NUMBER" \
-            --repo "$REPOSITORY" \
-            --remove-label source-approved
-          exit 1
+          if [ "$status" -ne 0 ]; then
+            {
+              echo "## 来源维护"
+              echo
+              echo "❌ 请求校验失败，生产配置未修改。"
+              echo
+              echo '```text'
+              sed -n '1,40p' "$RUNNER_TEMP/source-change-error.txt"
+              echo '```'
+            } >> "$GITHUB_STEP_SUMMARY"
+            exit "$status"
+          fi
 
-      - name: Reject no-op request
-        if: ${{ steps.apply_request.outputs.exit_code == '0' }}
+      - name: Reject an unchanged request
         shell: bash
         run: |
           if git diff --quiet -- data/config.github.json; then
-            gh issue comment "$ISSUE_NUMBER" \
-              --repo "$REPOSITORY" \
-              --body "来源变更未执行：当前生产配置已经是申请的目标状态。"
-            gh issue edit "$ISSUE_NUMBER" \
-              --repo "$REPOSITORY" \
-              --remove-label source-approved
+            echo "## 来源维护" >> "$GITHUB_STEP_SUMMARY"
+            echo >> "$GITHUB_STEP_SUMMARY"
+            echo "ℹ️ 当前生产配置已经是申请的目标状态，没有创建分支或 PR。" \
+              >> "$GITHUB_STEP_SUMMARY"
             exit 1
           fi
 
-      - name: Run source change tests
-        if: ${{ steps.apply_request.outputs.exit_code == '0' }}
+      - name: Run source management tests
         run: uv run pytest tests/test_source_admin.py
 
-      - name: Create task branch
-        if: ${{ steps.apply_request.outputs.exit_code == '0' }}
+      - name: Create and push task branch
         id: branch
         shell: bash
         run: |
-          branch="agent/source-issue-${ISSUE_NUMBER}"
+          branch="agent/source-run-${GITHUB_RUN_ID}-${GITHUB_RUN_ATTEMPT}"
           echo "name=$branch" >> "$GITHUB_OUTPUT"
-
-          if git ls-remote --exit-code origin "refs/heads/$branch" >/dev/null 2>&1; then
-            compare_url="https://github.com/${REPOSITORY}/compare/main...${branch}?expand=1"
-            gh issue comment "$ISSUE_NUMBER" \
-              --repo "$REPOSITORY" \
-              --body "来源变更分支已经存在：${compare_url}"
-            echo "exists=true" >> "$GITHUB_OUTPUT"
-            exit 0
-          fi
-
           git switch -c "$branch"
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add data/config.github.json
-          git commit -m "Manage source from issue #${ISSUE_NUMBER}"
+          git commit -m "Manage production source"
           git push --set-upstream origin "$branch"
-          echo "exists=false" >> "$GITHUB_OUTPUT"
 
       - name: Open draft pull request
-        if: >-
-          ${{ steps.apply_request.outputs.exit_code == '0' &&
-              steps.branch.outputs.exists == 'false' }}
+        id: pull_request
         shell: bash
         env:
           BRANCH_NAME: ${{ steps.branch.outputs.name }}
         run: |
-          issue_url="https://github.com/${REPOSITORY}/issues/${ISSUE_NUMBER}"
+          operation="$(jq -r '.operation' "$RUNNER_TEMP/source-change-result.json")"
+          source_type="$(jq -r '.source_type' "$RUNNER_TEMP/source-change-result.json")"
+          source_key="$(jq -r '.source_key' "$RUNNER_TEMP/source-change-result.json")"
+          reason="$(jq -r '.reason' "$RUNNER_TEMP/source-change-result.json")"
+
           {
             echo "## What changed"
             echo
-            echo "Applies the approved information-source change from #${ISSUE_NUMBER}."
+            echo "Applies a maintainer-dispatched production source change."
+            echo
+            echo "- Operation: \`${operation}\`"
+            echo "- Source type: \`${source_type}\`"
+            echo "- Source key: \`${source_key}\`"
+            echo "- Reason: ${reason}"
             echo
             echo "## User impact"
             echo
-            echo "The production source configuration changes only after this PR is reviewed, tested, and merged."
-            echo
-            echo "## Deployment impact"
-            echo
-            echo "The next scheduled collection after merge will use the updated source configuration."
+            echo "The source registry changes only after this PR is reviewed, tested, and merged."
             echo
             echo "## Validation"
             echo
-            echo "- Source request schema and public URL checks"
+            echo "- Workflow input and public URL validation"
             echo "- Pydantic production config validation"
             echo "- \`uv run pytest tests/test_source_admin.py\`"
             echo
-            echo "Request: ${issue_url}"
+            echo "> If GitHub pauses the PR checks, a maintainer must click **Approve workflows to run** before merging."
           } > "$RUNNER_TEMP/source-change-pr.md"
 
           set +e
@@ -180,22 +219,38 @@ jobs:
               --base main \
               --head "$BRANCH_NAME" \
               --draft \
-              --title "Manage source from issue #${ISSUE_NUMBER}" \
+              --title "Manage ${source_type} source: ${operation}" \
               --body-file "$RUNNER_TEMP/source-change-pr.md" \
               2>"$RUNNER_TEMP/source-change-pr-error.txt"
           )"
-          pr_status="$?"
+          status="$?"
           set -e
 
-          if [ "$pr_status" -eq 0 ]; then
-            gh issue comment "$ISSUE_NUMBER" \
-              --repo "$REPOSITORY" \
-              --body "来源变更已生成 Draft PR：${pr_url}"
-            exit 0
+          if [ "$status" -ne 0 ]; then
+            compare_url="https://github.com/${REPOSITORY}/compare/main...${BRANCH_NAME}?expand=1"
+            {
+              echo "## 来源维护"
+              echo
+              echo "⚠️ 配置分支已经推送，但 GitHub 未允许 Actions 自动创建 PR。"
+              echo
+              echo "请从比较页创建 Draft PR：${compare_url}"
+            } >> "$GITHUB_STEP_SUMMARY"
+            echo "::warning::Source branch was pushed, but the Draft PR could not be created."
+            exit 1
           fi
 
-          compare_url="https://github.com/${REPOSITORY}/compare/main...${BRANCH_NAME}?expand=1"
-          gh issue comment "$ISSUE_NUMBER" \
-            --repo "$REPOSITORY" \
-            --body "来源变更分支已经创建。当前仓库未允许 Actions 自动创建 PR，请使用此链接完成 Draft PR：${compare_url}"
-          echo "::warning::Draft PR creation was unavailable; a compare link was posted to the issue."
+          echo "url=$pr_url" >> "$GITHUB_OUTPUT"
+
+      - name: Publish request summary
+        if: ${{ success() }}
+        shell: bash
+        run: |
+          {
+            echo "## 来源维护"
+            echo
+            echo "✅ 请求已校验，并创建独立配置 Draft PR。"
+            echo
+            echo "- 操作人：\`${REQUESTOR}\`"
+            echo "- PR：${{ steps.pull_request.outputs.url }}"
+            echo "- 合并门槛：\`test\` 与 \`analyze\` 均通过"
+          } >> "$GITHUB_STEP_SUMMARY"

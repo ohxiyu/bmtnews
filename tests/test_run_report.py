@@ -100,6 +100,60 @@ def test_failed_report_preserves_safe_error_and_renders_markdown() -> None:
     ]
 
 
+def test_daily_report_renders_window_quotas_and_source_contribution() -> None:
+    report = RunReport.start(
+        date="2026-07-29",
+        timezone_name="Asia/Shanghai",
+        started_at=STARTED_AT,
+        kind="daily_publish",
+        window_start=datetime(
+            2026, 7, 28, 12, 0, tzinfo=timezone.utc
+        ),
+        window_end=datetime(
+            2026, 7, 29, 12, 0, tzinfo=timezone.utc
+        ),
+    )
+    report.set_metric("fetched_raw", 19)
+    report.set_metric("edition_candidates", 51)
+    report.set_metric("displayed_today", 7)
+    report.set_metric("primary_selected", 4)
+    report.set_metric("primary_required", 9)
+    report.set_breakdown(
+        "selected_groups",
+        {"Crypto Markets": 4, "Technology": 3},
+    )
+    report.set_breakdown(
+        "group_limits",
+        {"Crypto Markets": 4, "Technology": 3},
+    )
+    report.set_breakdown(
+        "candidate_sources",
+        {"rss/CoinDesk": 12},
+    )
+    report.set_breakdown(
+        "selected_sources",
+        {"rss/CoinDesk": 2},
+    )
+    report.add_alert(
+        "warning",
+        "primary_quota_shortfall",
+        "Crypto 主轨只有 4/9 条合格内容。",
+    )
+    report.finish(STARTED_AT + timedelta(seconds=10))
+
+    payload = report.to_dict()
+    markdown = render_markdown_report(payload)
+
+    assert payload["version"] == 2
+    assert payload["kind"] == "daily_publish"
+    assert "## BMTNews 晚间日报发布报告" in markdown
+    assert "| 固定窗口候选 | 51 |" in markdown
+    assert "| Crypto Markets | 4 | 4 |" in markdown
+    assert "Crypto 主轨：**4 / 9**" in markdown
+    assert "| rss/CoinDesk | 12 | 2 |" in markdown
+    assert "| URL 去重后 | 0 |" not in markdown
+
+
 def test_sanitize_diagnostic_removes_url_credentials_and_query() -> None:
     sanitized = sanitize_diagnostic(
         "GET https://user:pass@example.test/private?signature=secret#fragment failed"

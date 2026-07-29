@@ -2,7 +2,7 @@ name: BMTNews Schedule Watchdog
 
 on:
   schedule:
-    # An hourly second scheduler limits the impact of a dropped feed schedule.
+    # After the 20:30 grace period, require a success for the 20:00 edition.
     - cron: '43 * * * *'
       timezone: 'Asia/Shanghai'
   workflow_dispatch:
@@ -35,4 +35,6 @@ jobs:
           --repository "${GITHUB_REPOSITORY}"
           --workflow daily-summary.yml
           --ref main
-          --threshold-hours 25
+          --timezone Asia/Shanghai
+          --cutoff-hour 20
+          --grace-minutes 30

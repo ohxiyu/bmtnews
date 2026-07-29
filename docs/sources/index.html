@@ -1,7 +1,7 @@
 ---
 layout: default
-title: 来源控制台
-description: 查看并维护 BMTNews 当前使用的信息源
+title: 来源目录
+description: 查看 BMTNews 当前使用的信息源
 page_type: source_console
 ---
 
@@ -9,8 +9,7 @@ page_type: source_console
   id="source-console"
   class="source-console"
   data-config-url="https://raw.githubusercontent.com/ohxiyu/bmtnews/main/data/config.github.json"
-  data-issue-url="https://github.com/ohxiyu/bmtnews/issues/new"
-  data-issue-template="source_change.yml"
+  data-workflow-url="https://github.com/ohxiyu/bmtnews/actions/workflows/source-change.yml"
 >
   <section class="source-console-overview" aria-labelledby="source-console-heading">
     <div class="source-console-heading">
@@ -18,14 +17,16 @@ page_type: source_console
         <p class="eyebrow">LIVE SOURCE REGISTRY</p>
         <h2 id="source-console-heading">生产信息源，一页掌握</h2>
         <p>
-          这里直接读取 <code>main</code> 上的生产配置。所有写操作都会进入 GitHub
-          审核流程，不会从浏览器直接修改生产环境。
+          这里直接读取 <code>main</code> 上的生产配置，仅用于公开查看和筛选。
+          来源变更由仓库维护者在 GitHub Actions 中发起，并经过独立 PR 审核。
         </p>
       </div>
-      <button class="source-primary-action" id="source-add-button" type="button">
-        <span aria-hidden="true">＋</span>
-        添加来源
-      </button>
+      <a
+        class="source-primary-action"
+        href="https://github.com/ohxiyu/bmtnews/actions/workflows/source-change.yml"
+        target="_blank"
+        rel="noopener noreferrer"
+      >维护者操作</a>
     </div>
 
     <div class="source-metrics" aria-live="polite">
@@ -144,112 +145,16 @@ page_type: source_console
   </section>
 
   <aside class="source-console-note">
-    <strong>轻量但可审计</strong>
+    <strong>公开可读，维护受控</strong>
     <span>
-      添加、编辑、暂停、恢复和删除都会生成结构化 GitHub 申请；只有维护者批准后，
-      GitHub Actions 才会创建任务分支和配置 PR。
+      任何人都可以查看来源目录，但只有拥有仓库写权限的维护者可以运行来源管理
+      Action。每次变更都会创建独立分支和 Draft PR，不能从本页直接写入生产配置。
     </span>
   </aside>
 
-  <dialog class="source-dialog" id="source-dialog">
-    <form id="source-change-form">
-      <header class="source-dialog-header">
-        <div>
-          <p class="eyebrow" id="source-dialog-eyebrow">SOURCE CHANGE</p>
-          <h2 id="source-dialog-title">添加来源</h2>
-          <p id="source-dialog-description">
-            填写后会打开预填的 GitHub 变更申请。
-          </p>
-        </div>
-        <button
-          class="source-dialog-close"
-          type="button"
-          id="source-dialog-close"
-          aria-label="关闭"
-        >×</button>
-      </header>
-
-      <input id="source-operation" type="hidden" value="add">
-      <input id="source-key" type="hidden" value="new">
-
-      <div class="source-form-grid">
-        <label class="source-form-field">
-          <span>来源类型</span>
-          <select id="source-form-type" required>
-            <option value="rss">RSS</option>
-            <option value="telegram">Telegram</option>
-            <option value="github">GitHub Releases</option>
-            <option value="reddit">Reddit</option>
-          </select>
-        </label>
-
-        <label class="source-form-field">
-          <span>目标状态</span>
-          <select id="source-form-enabled" required>
-            <option value="true">启用</option>
-            <option value="false">暂停</option>
-          </select>
-        </label>
-
-        <label class="source-form-field source-form-wide">
-          <span>名称</span>
-          <input
-            id="source-form-name"
-            type="text"
-            maxlength="120"
-            placeholder="例如 CoinDesk"
-            required
-          >
-        </label>
-
-        <label class="source-form-field source-form-wide">
-          <span id="source-endpoint-label">地址或标识</span>
-          <input
-            id="source-form-endpoint"
-            type="text"
-            maxlength="2048"
-            placeholder="https://example.com/feed.xml"
-            required
-          >
-          <small id="source-endpoint-help">
-            RSS 请填写公开的 HTTP(S) Feed 地址。
-          </small>
-        </label>
-
-        <label class="source-form-field source-form-wide">
-          <span>分类</span>
-          <select id="source-form-category" required></select>
-        </label>
-
-        <label class="source-form-field source-form-wide">
-          <span>调整原因</span>
-          <textarea
-            id="source-form-reason"
-            rows="4"
-            minlength="2"
-            maxlength="1200"
-            placeholder="说明来源价值、重复情况或停用原因"
-            required
-          ></textarea>
-        </label>
-      </div>
-
-      <div class="source-dialog-warning" id="source-dialog-warning" hidden></div>
-
-      <footer class="source-dialog-actions">
-        <button class="source-secondary-action" type="button" id="source-dialog-cancel">
-          取消
-        </button>
-        <button class="source-primary-action" type="submit" id="source-dialog-submit">
-          前往 GitHub 确认
-        </button>
-      </footer>
-    </form>
-  </dialog>
-
   <noscript>
     <div class="source-empty-state">
-      来源控制台需要 JavaScript 才能读取和筛选生产信息源。
+      来源目录需要 JavaScript 才能读取和筛选生产信息源。
     </div>
   </noscript>
 </div>

@@ -17,6 +17,7 @@ from ._file_utils import _atomic_write_text
 
 DEFAULT_RUN_REPORT_PATH = Path("data/run-report.json")
 AlertSeverity = Literal["info", "warning", "failure"]
+RunKind = Literal["legacy_full", "staging_fetch", "daily_publish"]
 
 _SECRET_ASSIGNMENT = re.compile(
     r"(?i)\b(api[-_]?key|authorization|cookie|credential|password|secret|signature|token)"
@@ -24,7 +25,7 @@ _SECRET_ASSIGNMENT = re.compile(
 )
 _HTTP_URL = re.compile(r"https?://[^\s<>'\"]+")
 
-_METRIC_LABELS = (
+_LEGACY_METRIC_LABELS = (
     ("fetched_raw", "本次采集"),
     ("unique_after_url_dedup", "URL 去重后"),
     ("staged_total", "暂存累计"),
@@ -41,6 +42,41 @@ _METRIC_LABELS = (
     ("displayed_today", "今日页面展示"),
     ("high_priority", "高优先级"),
 )
+
+_STAGING_METRIC_LABELS = (
+    ("fetched_raw", "本次采集"),
+    ("unique_after_url_dedup", "URL 去重后"),
+    ("staged_added", "新增暂存"),
+    ("staged_total", "暂存累计"),
+)
+
+_DAILY_METRIC_LABELS = (
+    ("fetched_raw", "最终补采"),
+    ("unique_after_url_dedup", "补采 URL 去重后"),
+    ("staging_items_before", "出刊前暂存"),
+    ("staging_only_candidates", "仅由日内暂存补回"),
+    ("staged_total", "合并后暂存"),
+    ("edition_candidates", "固定窗口候选"),
+    ("skipped_published_history", "跳过历史发布"),
+    ("analyzed_this_run", "本次 AI 分析"),
+    ("above_threshold", "分数达标"),
+    ("topic_duplicates_removed", "主题去重删除"),
+    ("balanced_digest_removed", "配额筛选删除"),
+    ("displayed_today", "本期最终展示"),
+    ("high_priority", "高优先级"),
+)
+
+_REPORT_TITLES = {
+    "legacy_full": "BMTNews 采集运行报告",
+    "staging_fetch": "BMTNews 日内采集报告",
+    "daily_publish": "BMTNews 晚间日报发布报告",
+}
+
+_METRICS_BY_KIND = {
+    "legacy_full": _LEGACY_METRIC_LABELS,
+    "staging_fetch": _STAGING_METRIC_LABELS,
+    "daily_publish": _DAILY_METRIC_LABELS,
+}
 
 
 def _utc_now() -> datetime:
@@ -127,12 +163,16 @@ class RunReport:
     date: str
     timezone_name: str
     started_at: datetime
+    kind: RunKind = "legacy_full"
+    window_start: datetime | None = None
+    window_end: datetime | None = None
     status: Literal["running", "success", "warning", "failure"] = "running"
     finished_at: datetime | None = None
     duration_seconds: float | None = None
     metrics: dict[str, int] = field(default_factory=dict)
     fetch_report: dict[str, Any] | None = None
     summaries: list[str] = field(default_factory=list)
+    breakdowns: dict[str, dict[str, int]] = field(default_factory=dict)
     alerts: list[RunAlert] = field(default_factory=list)
     error: str | None = None
 
@@ -143,6 +183,9 @@ class RunReport:
         date: str,
         timezone_name: str,
         started_at: datetime | None = None,
+        kind: RunKind = "legacy_full",
+        window_start: datetime | None = None,
+        window_end: datetime | None = None,
     ) -> "RunReport":
         moment = started_at or _utc_now()
         if moment.tzinfo is None:
@@ -153,10 +196,19 @@ class RunReport:
             date=date,
             timezone_name=timezone_name,
             started_at=moment,
+            kind=kind,
+            window_start=window_start,
+            window_end=window_end,
         )
 
     def set_metric(self, name: str, value: int) -> None:
         self.metrics[name] = max(0, int(value))
+
+    def set_breakdown(self, name: str, values: dict[str, int]) -> None:
+        self.breakdowns[name] = {
+            sanitize_diagnostic(key, limit=160): max(0, int(value))
+            for key, value in values.items()
+        }
 
     def attach_fetch_report(self, payload: dict[str, Any] | None) -> None:
         if payload is None:
@@ -208,8 +260,9 @@ class RunReport:
 
     def to_dict(self) -> dict[str, Any]:
         return {
-            "version": 1,
+            "version": 2,
             "run_id": self.run_id,
+            "kind": self.kind,
             "date": self.date,
             "timezone": self.timezone_name,
             "status": self.status,
@@ -218,9 +271,23 @@ class RunReport:
                 self.finished_at.isoformat() if self.finished_at is not None else None
             ),
             "duration_seconds": self.duration_seconds,
+            "window_start": (
+                self.window_start.isoformat()
+                if self.window_start is not None
+                else None
+            ),
+            "window_end": (
+                self.window_end.isoformat()
+                if self.window_end is not None
+                else None
+            ),
             "metrics": dict(self.metrics),
             "fetch_report": self.fetch_report,
             "summaries": list(self.summaries),
+            "breakdowns": {
+                name: dict(values)
+                for name, values in self.breakdowns.items()
+            },
             "alerts": [alert.to_dict() for alert in self.alerts],
             "error": self.error,
         }
@@ -247,6 +314,9 @@ def _markdown_cell(value: object) -> str:
 def render_markdown_report(payload: dict[str, Any]) -> str:
     """Render a compact GitHub Actions job summary."""
     status = str(payload.get("status", "unknown"))
+    kind = str(payload.get("kind") or "legacy_full")
+    title = _REPORT_TITLES.get(kind, _REPORT_TITLES["legacy_full"])
+    metric_labels = _METRICS_BY_KIND.get(kind, _LEGACY_METRIC_LABELS)
     icons = {
         "success": "✅",
         "warning": "⚠️",
@@ -254,7 +324,7 @@ def render_markdown_report(payload: dict[str, Any]) -> str:
         "running": "⏳",
     }
     lines = [
-        "## BMTNews 采集运行报告",
+        f"## {title}",
         "",
         f"{icons.get(status, 'ℹ️')} **状态：{status}**",
         "",
@@ -262,15 +332,79 @@ def render_markdown_report(payload: dict[str, Any]) -> str:
         f"- 日期：{_markdown_cell(payload.get('date', '—'))} "
         f"({_markdown_cell(payload.get('timezone', '—'))})",
         f"- 耗时：{_markdown_cell(payload.get('duration_seconds', '—'))} 秒",
-        "",
-        "### 处理漏斗",
-        "",
-        "| 阶段 | 数量 |",
-        "| --- | ---: |",
     ]
     metrics = payload.get("metrics") or {}
-    for key, label in _METRIC_LABELS:
-        lines.append(f"| {label} | {int(metrics.get(key, 0))} |")
+    if payload.get("window_start") and payload.get("window_end"):
+        lines += [
+            f"- 固定窗口：`{_markdown_cell(payload['window_start'])}` → "
+            f"`{_markdown_cell(payload['window_end'])}`（结束时间不包含）",
+        ]
+    if "cutoff_lag_minutes" in metrics:
+        lines.append(f"- 截止后启动：{int(metrics['cutoff_lag_minutes'])} 分钟")
+    if "staging_age_minutes" in metrics:
+        lines.append(f"- 日内暂存年龄：{int(metrics['staging_age_minutes'])} 分钟")
+
+    present_metrics = [
+        (key, label)
+        for key, label in metric_labels
+        if key in metrics
+    ]
+    if present_metrics:
+        lines += [
+            "",
+            "### 处理漏斗",
+            "",
+            "| 阶段 | 数量 |",
+            "| --- | ---: |",
+        ]
+        for key, label in present_metrics:
+            lines.append(f"| {label} | {int(metrics[key])} |")
+
+    breakdowns = payload.get("breakdowns") or {}
+    selected_groups = breakdowns.get("selected_groups") or {}
+    group_limits = breakdowns.get("group_limits") or {}
+    if selected_groups or group_limits:
+        group_keys = list(dict.fromkeys([*group_limits, *selected_groups]))
+        lines += [
+            "",
+            "### 内容配额",
+            "",
+            "| 分组 | 选中 | 上限 |",
+            "| --- | ---: | ---: |",
+        ]
+        for group in group_keys:
+            limit = group_limits.get(group)
+            lines.append(
+                f"| {_markdown_cell(group)} | "
+                f"{int(selected_groups.get(group, 0))} | "
+                f"{int(limit) if limit is not None else '不限'} |"
+            )
+        if "primary_selected" in metrics and "primary_required" in metrics:
+            lines += [
+                "",
+                f"Crypto 主轨：**{int(metrics['primary_selected'])} / "
+                f"{int(metrics['primary_required'])}**（最低目标）",
+            ]
+
+    candidate_sources = breakdowns.get("candidate_sources") or {}
+    selected_sources = breakdowns.get("selected_sources") or {}
+    if candidate_sources or selected_sources:
+        source_keys = list(
+            dict.fromkeys([*candidate_sources, *selected_sources])
+        )
+        lines += [
+            "",
+            "### 来源贡献",
+            "",
+            "| 细分来源 | 固定窗口候选 | 最终入选 |",
+            "| --- | ---: | ---: |",
+        ]
+        for source in source_keys:
+            lines.append(
+                f"| {_markdown_cell(source)} | "
+                f"{int(candidate_sources.get(source, 0))} | "
+                f"{int(selected_sources.get(source, 0))} |"
+            )
 
     fetch_report = payload.get("fetch_report") or {}
     sources = fetch_report.get("sources") or []
@@ -295,6 +429,13 @@ def render_markdown_report(payload: dict[str, Any]) -> str:
                 )
                 + " |"
             )
+            for subsource, count in (
+                source.get("subsource_counts") or {}
+            ).items():
+                lines.append(
+                    f"| ↳ {_markdown_cell(subsource)} | — | "
+                    f"{int(count)} | — |"
+                )
 
     alerts = payload.get("alerts") or []
     if alerts:
@@ -352,8 +493,9 @@ def main() -> int:
         payload = load_run_report(args.input)
         markdown = render_markdown_report(payload)
     else:
+        missing_title = _REPORT_TITLES["legacy_full"]
         markdown = (
-            "## BMTNews 采集运行报告\n\n"
+            f"## {missing_title}\n\n"
             "⚠️ 本次任务没有生成结构化运行报告，请检查初始化或依赖安装步骤。\n"
         )
 

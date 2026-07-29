@@ -476,10 +476,13 @@ class HorizonOrchestrator:
         """Fetch raw source items and persist them without running AI."""
         timezone_name = self.config.filtering.daily_timezone
         run_started_at = now or datetime.now(timezone.utc)
+        if run_started_at.tzinfo is None:
+            run_started_at = run_started_at.replace(tzinfo=timezone.utc)
         run_report = RunReport.start(
             date=local_date_for(run_started_at, timezone_name),
             timezone_name=timezone_name,
             started_at=run_started_at,
+            kind="staging_fetch",
         )
         self.last_run_report = run_report
         self.console.print(
@@ -502,6 +505,9 @@ class HorizonOrchestrator:
             merged_items = self.merge_cross_source_duplicates(all_items)
             run_report.set_metric("unique_after_url_dedup", len(merged_items))
             staging_state = load_staging_state(staging_path)
+            existing_identities = {
+                item_identity(item) for item in staging_state.items
+            }
             staged_items = merge_staged_items(
                 staging_state.items,
                 merged_items,
@@ -512,9 +518,17 @@ class HorizonOrchestrator:
                 staging_path,
                 updated_at=run_started_at,
             )
+            staged_identities = {
+                item_identity(item) for item in staged_items
+            }
+            staged_added = len(staged_identities - existing_identities)
+            run_report.set_metric(
+                "staged_added",
+                staged_added,
+            )
             run_report.set_metric("staged_total", len(staged_items))
             self.console.print(
-                f"✅ Added {len(merged_items)} unique items; "
+                f"✅ Added {staged_added} new unique items; "
                 f"{len(staged_items)} retained in {staging_path}"
             )
         except Exception as exc:
@@ -532,10 +546,13 @@ class HorizonOrchestrator:
         staging_path: Path = DEFAULT_STAGING_PATH,
         cutoff_hour: int = 20,
         now: datetime | None = None,
+        force_publish: bool = False,
     ) -> None:
         """Build one edition from the latest completed fixed cutoff window."""
         timezone_name = self.config.filtering.daily_timezone
         run_started_at = now or datetime.now(timezone.utc)
+        if run_started_at.tzinfo is None:
+            run_started_at = run_started_at.replace(tzinfo=timezone.utc)
         window = edition_window_for(
             run_started_at,
             timezone_name,
@@ -545,7 +562,27 @@ class HorizonOrchestrator:
             date=window.date,
             timezone_name=timezone_name,
             started_at=run_started_at,
+            kind="daily_publish",
+            window_start=window.start,
+            window_end=window.end,
         )
+        cutoff_lag_minutes = max(
+            0,
+            int(
+                (
+                    run_started_at.astimezone(timezone.utc)
+                    - window.end.astimezone(timezone.utc)
+                ).total_seconds()
+                // 60
+            ),
+        )
+        run_report.set_metric("cutoff_lag_minutes", cutoff_lag_minutes)
+        if cutoff_lag_minutes > 60:
+            run_report.add_alert(
+                "warning",
+                "edition_started_late",
+                f"日报在固定截止时间后 {cutoff_lag_minutes} 分钟才开始运行。",
+            )
         self.last_run_report = run_report
         self.console.print(
             "[bold cyan]🗞️ BMTNews - Building the daily edition...[/bold cyan]\n"
@@ -556,7 +593,64 @@ class HorizonOrchestrator:
         )
 
         try:
+            daily_state = load_daily_feed_state(
+                window.date,
+                timezone_name,
+            )
+            already_published = (
+                daily_state.items
+                and daily_state.updated_at.astimezone(timezone.utc)
+                >= window.end.astimezone(timezone.utc)
+            )
+            if already_published and not force_publish:
+                run_report.set_metric(
+                    "displayed_today",
+                    len(daily_state.items),
+                )
+                run_report.add_alert(
+                    "info",
+                    "edition_already_published",
+                    "本期日报已经发布；跳过重复采集、AI 分析和页面生成。",
+                )
+                self.console.print(
+                    "[green]This edition is already published; "
+                    "skipping the duplicate run.[/green]"
+                )
+                return
+
+            staging_exists = staging_path.exists()
             staging_state = load_staging_state(staging_path)
+            run_report.set_metric(
+                "staging_items_before",
+                len(staging_state.items),
+            )
+            if not staging_exists:
+                run_report.add_alert(
+                    "warning",
+                    "staging_cache_missing",
+                    "未找到日内暂存缓存，日报将只使用最终补采结果。",
+                )
+            else:
+                staging_age_minutes = max(
+                    0,
+                    int(
+                        (
+                            run_started_at.astimezone(timezone.utc)
+                            - staging_state.updated_at.astimezone(timezone.utc)
+                        ).total_seconds()
+                        // 60
+                    ),
+                )
+                run_report.set_metric(
+                    "staging_age_minutes",
+                    staging_age_minutes,
+                )
+                if staging_age_minutes > 14 * 60:
+                    run_report.add_alert(
+                        "warning",
+                        "staging_cache_stale",
+                        f"日内暂存缓存已 {staging_age_minutes} 分钟未更新。",
+                    )
             hours = force_hours or self.config.filtering.time_window_hours
             since = run_started_at - timedelta(hours=hours)
             fresh_items = await self.fetch_all_sources(since)
@@ -567,6 +661,9 @@ class HorizonOrchestrator:
                 else None
             )
             fresh_items = self.merge_cross_source_duplicates(fresh_items)
+            fresh_identities = {
+                item_identity(item) for item in fresh_items
+            }
             run_report.set_metric(
                 "unique_after_url_dedup",
                 len(fresh_items),
@@ -586,16 +683,30 @@ class HorizonOrchestrator:
             candidates = self.merge_cross_source_duplicates(
                 items_in_edition_window(staged_items, window)
             )
+            run_report.set_metric(
+                "staging_only_candidates",
+                sum(
+                    item_identity(item) not in fresh_identities
+                    for item in candidates
+                ),
+            )
             run_report.set_metric("edition_candidates", len(candidates))
             run_report.set_metric("current_day_items", len(candidates))
+            candidate_source_counts: Dict[str, int] = defaultdict(int)
+            for item in candidates:
+                source_key = (
+                    f"{item.source_type.value}/"
+                    f"{self._sub_source_label(item)}"
+                )
+                candidate_source_counts[source_key] += 1
+            run_report.set_breakdown(
+                "candidate_sources",
+                dict(sorted(candidate_source_counts.items())),
+            )
             self.console.print(
                 f"📚 {len(candidates)} unique candidates fall inside this edition\n"
             )
 
-            daily_state = load_daily_feed_state(
-                window.date,
-                timezone_name,
-            )
             final_fetch_failed = bool(
                 self.last_fetch_report
                 and self.last_fetch_report.all_failed
@@ -674,6 +785,52 @@ class HorizonOrchestrator:
             run_report.set_metric(
                 "balanced_digest_removed",
                 filtering_result.topic_dedup_count - len(important_items),
+            )
+            group_labels = {
+                key: group.name or key
+                for key, group in self.config.filtering.category_groups.items()
+            }
+            selected_groups = {
+                group_labels.get(key, key): count
+                for key, count in balanced_result.group_counts.items()
+            }
+            group_limits = {
+                group_labels.get(key, key): limit
+                for key, limit in balanced_result.group_limits.items()
+                if limit is not None
+            }
+            run_report.set_breakdown("selected_groups", selected_groups)
+            run_report.set_breakdown("group_limits", group_limits)
+
+            primary_groups = set(self.config.filtering.primary_groups)
+            primary_selected = sum(
+                balanced_result.group_counts.get(group, 0)
+                for group in primary_groups
+            )
+            primary_required = (
+                self.config.filtering.primary_group_min_items or 0
+            )
+            run_report.set_metric("primary_selected", primary_selected)
+            run_report.set_metric("primary_required", primary_required)
+            if primary_selected < primary_required:
+                run_report.add_alert(
+                    "warning",
+                    "primary_quota_shortfall",
+                    "Crypto 主轨只有 "
+                    f"{primary_selected}/{primary_required} 条合格内容；"
+                    "未用低分内容强行补足。",
+                )
+
+            selected_source_counts: Dict[str, int] = defaultdict(int)
+            for item in important_items:
+                source_key = (
+                    f"{item.source_type.value}/"
+                    f"{self._sub_source_label(item)}"
+                )
+                selected_source_counts[source_key] += 1
+            run_report.set_breakdown(
+                "selected_sources",
+                dict(sorted(selected_source_counts.items())),
             )
             await self._enrich_important_items(important_items)
 

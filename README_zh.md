@@ -289,8 +289,11 @@ cp data/config.example.json data/config.json  # 自定义信息源
 }
 ```
 
-分组限额在 AI 分数过滤之后、内容补充之前执行。未配置
-`category_groups` 和 `max_items` 时，筛选行为保持不变。
+分组限额在 AI 分数过滤之后、内容补充之前执行。`primary_groups` 可以在
+合格内容足够时优先保留主轨条目；例如本项目用它表达 Crypto 最低 9 条的目标。
+该目标不会绕过 AI 分数阈值或各分组上限，因此候选不足时日报会如实少于 9 条，
+并在运行报告中预警。未配置 `category_groups` 和 `max_items` 时，筛选行为
+保持不变。
 
 `data/config.json` 里的任意字符串值都可以通过 `${VAR_NAME}` 引用环境变量。这适合用于 `ai.base_url`、私有 RSS 链接、Webhook 地址或自定义请求头模板等字段。
 
@@ -303,6 +306,8 @@ cp data/config.example.json data/config.json  # 自定义信息源
 ```bash
 uv run horizon              # 使用默认 24 小时窗口
 uv run horizon --hours 48   # 抓取最近 48 小时的内容
+uv run horizon --mode fetch --hours 12  # 只采集并暂存，不调用 AI
+uv run horizon --mode publish --hours 24 --cutoff-hour 20  # 发布一期日报
 ```
 
 #### 使用 Docker
@@ -316,19 +321,35 @@ docker compose run --rm horizon --hours 48   # 抓取最近 48 小时的内容
 
 ### 4. 自动化（可选）
 
-Horizon 非常适合作为 **GitHub Actions** 定时任务运行。查看 [`.github/workflows/daily-summary.yml`](.github/workflows/daily-summary.yml) 获取现成的工作流配置，可自动生成日报并部署到 GitHub Pages。
+Horizon 非常适合作为 **GitHub Actions** 定时任务运行。本项目通过
+[`feed-collection.yml`](.github/workflows/feed-collection.yml) 在上海时间
+02:17、08:17 和 14:17 只采集并暂存原始内容，不调用 AI；
+[`daily-summary.yml`](.github/workflows/daily-summary.yml) 在 20:17 最终补采，
+只分析固定的 `[前一天 20:00，当天 20:00)` 窗口，并向 GitHub Pages 发布
+唯一一期晚间日报。日内暂存用于提高覆盖率，最终 24 小时补采仍是兜底。
 
-每次原生 pipeline 运行还会生成 `data/run-report.json`，记录采集、URL 去重、
-当日过滤、AI 分析、阈值筛选、主题去重和最终展示数量，以及各顶层来源的
-成功或失败状态。该运行时文件不会提交到仓库；GitHub Actions 会将其渲染为
-当前 workflow run 的 Job Summary。部分来源失败显示为警告，全部来源失败
-仍会使任务失败。
+每个 workflow 都会生成 `data/run-report.json`，但报告会按照运行类型展示
+真正相关的指标。日内采集报告包含采集、URL 去重、新增暂存、缓存累计和各来源
+状态；晚间发布报告另外包含固定窗口、截止后延迟、暂存年龄、仅由暂存补回的
+候选、各细分来源的候选/入选贡献、AI 筛选漏斗、类别上限，以及 Crypto 主轨
+最低目标。配额不足、启动过晚或暂存过旧都会明确显示为 warning，系统不会为了
+凑数而降低 AI 分数阈值。
+
+该 JSON 是临时运行文件，不会提交到仓库；GitHub Actions 会将每次报告渲染到
+对应 workflow run 的 Job Summary，历史报告仍可逐次查看。原有顶层来源状态
+继续保留，并展开 Feed、频道或仓库级计数。部分来源失败显示为警告，全部来源
+失败仍会使任务失败。
 
 独立的
 [`schedule-watchdog.yml`](.github/workflows/schedule-watchdog.yml) 工作流每小时
-检查一次成功采集心跳。如果 `main` 超过五小时没有完成成功采集，并且当前没有
-采集正在运行，它会自动触发一次补跑，同时将自身标记为失败，以便 GitHub 发送
-工作流失败通知；已有采集正在运行时不会重复触发。
+检查一次日报发布心跳。每天 20:00 截止并经过 20:30 宽限后，如果 `main`
+仍没有当期成功发布记录且当前没有发布任务运行，它会自动触发一次补跑，同时
+将自身标记为失败，以便 GitHub 发送工作流失败通知；已有当期发布正在运行时
+不会重复触发。
+
+如果延迟的原定任务在补跑已经发布同一固定窗口后才启动，发布模式会在采集和
+调用 AI 前直接退出，避免重复成本。维护者确实需要重建当期日报时，可以在
+**Run workflow** 中启用 `force_publish`。
 
 ## 支持的信息源
 
@@ -360,7 +381,7 @@ Horizon 支持通过多种方式发布和分发生成的日报：
 | 文档 | 内容 |
 |------|------|
 | [配置指南](project-docs/configuration.md) | AI 模型、信息源、过滤、邮件、Webhook、GitHub Pages 和 MCP 配置 |
-| [来源控制台](project-docs/source-console.md) | 在线来源清单、变更申请、校验与审批流程 |
+| [来源目录](project-docs/source-console.md) | 公开只读来源清单与维护者专用 Actions 流程 |
 | [评分机制](project-docs/scoring.md) | Horizon 如何评估和排序新闻 |
 | [抓取器](project-docs/scrapers.md) | 信息源抓取器说明和扩展细节 |
 | [内容提取器](project-docs/extractors.md) | RSS 信息源的全文提取 |
