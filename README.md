@@ -393,6 +393,7 @@ Horizon is an open-source project maintained in spare time. If you'd like to sup
 | Guide | Description |
 |-------|-------------|
 | [Configuration](project-docs/configuration.md) | AI providers, sources, filtering, email, webhook, GitHub Pages, and MCP setup |
+| [Source Console](project-docs/source-console.md) | Online source registry, request workflow, validation, and approval controls |
 | [Scoring](project-docs/scoring.md) | How Horizon evaluates and ranks news items |
 | [Scrapers](project-docs/scrapers.md) | Source scraper details and extension notes |
 | [Extractors](project-docs/extractors.md) | Full article extraction for RSS sources |

@@ -14,7 +14,7 @@
     {% include head-custom.html %}
   </head>
   <body
-    class="{% if page.lang %}digest-page{% elsif page.page_type == 'home' %}home-page{% else %}docs-page{% endif %}"
+    class="{% if page.lang %}digest-page{% elsif page.page_type == 'home' %}home-page{% elsif page.page_type == 'source_console' %}source-console-page{% else %}docs-page{% endif %}"
     {% if page.lang %}data-language="{{ page.lang }}" data-date="{{ page.date | date: '%Y-%m-%d' }}"{% endif %}
   >
     <a
@@ -52,6 +52,11 @@
             data-i18n-en="Feed"
           >信息流</a>
           <a
+            href="{{ '/sources/' | relative_url }}"
+            data-i18n-zh="来源"
+            data-i18n-en="Sources"
+          >来源</a>
+          <a
             href="{{ '/feed-zh.xml' | relative_url }}"
             data-i18n-zh="RSS"
             data-i18n-en="RSS"
@@ -61,12 +66,14 @@
         </nav>
 
         <div class="site-actions">
-          <div
-            class="lang-toggle-slot"
-            aria-label="语言切换"
-            data-i18n-aria-zh="语言切换"
-            data-i18n-aria-en="Language switcher"
-          ></div>
+          {% unless page.page_type == "source_console" %}
+            <div
+              class="lang-toggle-slot"
+              aria-label="语言切换"
+              data-i18n-aria-zh="语言切换"
+              data-i18n-aria-en="Language switcher"
+            ></div>
+          {% endunless %}
           <button class="theme-toggle" type="button" aria-label="切换深色模式" title="切换深色模式">◐</button>
         </div>
       </div>
@@ -82,6 +89,19 @@
           <div class="page-intro-meta">
             <span>{{ page.date | date: "%Y-%m-%d" }}</span>
             <span>{% if page.lang == "zh" %}交易所 · 市场 · 安全 · 监管 · 协议{% else %}Exchanges · Markets · Security · Regulation · Protocols{% endif %}</span>
+          </div>
+        </div>
+      </section>
+    {% elsif page.page_type == "source_console" %}
+      <section class="page-intro page-intro-docs">
+        <div class="page-intro-inner">
+          <div>
+            <p class="eyebrow">SOURCE OPERATIONS</p>
+            <h1>{{ page.title }}</h1>
+          </div>
+          <div class="page-intro-meta">
+            <span>LIVE · MAIN</span>
+            <span>查看 · 筛选 · 申请变更</span>
           </div>
         </div>
       </section>

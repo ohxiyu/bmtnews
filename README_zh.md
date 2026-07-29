@@ -360,6 +360,7 @@ Horizon 支持通过多种方式发布和分发生成的日报：
 | 文档 | 内容 |
 |------|------|
 | [配置指南](project-docs/configuration.md) | AI 模型、信息源、过滤、邮件、Webhook、GitHub Pages 和 MCP 配置 |
+| [来源控制台](project-docs/source-console.md) | 在线来源清单、变更申请、校验与审批流程 |
 | [评分机制](project-docs/scoring.md) | Horizon 如何评估和排序新闻 |
 | [抓取器](project-docs/scrapers.md) | 信息源抓取器说明和扩展细节 |
 | [内容提取器](project-docs/extractors.md) | RSS 信息源的全文提取 |
