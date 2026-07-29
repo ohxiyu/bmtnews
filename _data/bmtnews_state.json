@@ -2,139 +2,117 @@
   "version": 1,
   "date": "2026-07-29",
   "timezone": "Asia/Shanghai",
-  "updated_at": "2026-07-28T21:32:50.905541Z",
+  "updated_at": "2026-07-29T14:34:00.587687Z",
   "analyzed_keys": [
+    "032a12373ac1cba330bb6a629b8ee6e946f3b94494e3ef6bcec7cba0c95d2628",
+    "03f2982c856683b5a7718f888758ca0d6a5f770faaf2ec5642605182756860c9",
     "06729b7583194306084c982442d3499af4955ce838d951953e484b2997fbb341",
-    "07473581557f9ce0cbc9467386f8f8be6f69be6a3a60a0cdacf133b2a5de0bc8",
-    "1696af41b0694d813eecd516a137528cf4a18830f17a93a972e0b91ad368341f",
+    "0a61c2a5a5d9cf6f7233c9dd798d7833e55bd1c87d6f816fc56e2aa59f6a18b1",
+    "192aafaa7ff5985b5931d7cfc384a37083e8ac723d584652d8dd43f18f118967",
+    "1b13095b08fcb41487a3f387f89da3205b1493a5ae3e8c69e44b9eade9b2ed5a",
     "1b847e361cb7f8582dc2140c32fec4da4ae42e67881f2a5551d3c9d387713ff7",
-    "1e597f7f407e319d6511b4d5756e503cee208828beb67852de796d540c18967f",
+    "1cdfe66e1d92b02cfac8613a7c904947011593162afa9304cfad244d21c7d622",
+    "1e052f8483262233081ee564d2229df821c3fd877611f8deb54e82d8c990688a",
+    "1e30fc7454dd7e0da22cb37a228c945fe06930d92cab0ed5de63e07f4fa86a26",
+    "2af48e1193b91f6f9c5fd145bee8f0b100fd63b60c110dbbb3380c5f1c6c4f66",
+    "2fcb70b2ff272354f9ee75fa5c5593b9040498a3d346e52db77cedcd89194289",
+    "396d1963064793ffefa47576ab05ad4a65388bc2cee0257599cbe97a952e74fc",
     "3a5867fdb83e370b39a308ce62072699390d99ecdcc697e48e38c9a5386f3e36",
+    "3e243832becbd314da69941eb6eb9ddc816dc8bba664359b42142c66f461c44b",
     "446f397b6fc5a6f7d411c486959cbe6f36fd6d423fbda8cfddd291d1987899a3",
     "44c2b0c2bc114c9547eaf96ce9b750f42e04d6b0807348f2e64d3141f49ac74b",
+    "460096578c5f5a5c15a9b8bf4c6c8f3768d82e1d1ab801f8dae16a2f7169da57",
+    "4e1e3f6546a882c9532b68373a273ef410e4de0aa26533c164cc4c8f83449cf7",
     "503105739b2d3a666fa437cd175b048a7d69d2e4ba85885e642118c325e6a01d",
-    "505640dcffcd641e5652b9795eb150cfd306d36e33d25290c24e04e1f6c6d183",
+    "5f418c4d71b311622417daa071443db4512cda9d48828fd6cf98242cdc6a38f5",
+    "667489340f6e61028a4ea1b7e6eaec40d62b464e0957a2d42da7ff84162d077a",
+    "66c8bc1ed0a323949bae0713d7adaace22cf8d643c6bc32709847b6b27cb2a5b",
     "6a1aa26bf59ee847539cd29edc7da427ecded5436a6d28ec896f1ed063b48a64",
+    "7f23dd2326410c2019849c0c4cc30649c99436da7f84075c14a9c07634b054ce",
+    "8235d92e4b76154459eecfcaa48e984a6b9a90665a342d7971c3ea25e9a7a59b",
+    "83cf51d32256601417e5b1f3ada6234e0cc352689c110dd583394fcbeab0232b",
     "84e6b130fc4063497c8a918ce4c434d9cfcae5e6621572804388ab7bbe2bdd89",
-    "8a91afe46bc9d0668be236a6405dd5e7b80684996a295d8ede74255a7dd759d1",
-    "a0c162c10322cf0b0e39aaeeeaed1866f5e91e806de1daca02f37b2ea9e407d0",
+    "86693f608de818a22809b0f63c153f49e49881f9d2272a631b725bd21a1dafa9",
+    "8913e19bf1e6a9a622694b8037e6d16c53ce819175c6862adff9e5ee7ed2f728",
+    "8ce90d33b30aef2011c9c1272ed833abab389cc414ebb953cc0c0e92691760f6",
+    "a4cecb0dbbbf4cededa6749d79d0a51c2851eb1b1993b35e419dbd01301e0fc8",
+    "a95eda39b9802adeceffddc7004d450407b737579e1cb247cee5ab2ef2e76bc6",
+    "ab2fb5a64b8b730965301333f6ce9994dff0c28ec85351699bf04f4e981214bf",
+    "b589e04a1a9203fe00d507ff59d6b34cb86f9bfd50aa5dbe7563da64450aef52",
+    "b789a0530d11c756f49714220a90dcbe22a6db646ca6df35aa7df57e50ef7ee9",
+    "ba20e0cd3f543f77a927191498230d9e7d8233bd55b9b3dfea304a9b00c0fd16",
     "bdd70956f12da96b0357c93fd42b6b56c7d621c2258c5a0bb205423f4ff78c9e",
     "beee1138f93cc7ef5fd86de29a0a9fc3dcbaf99541bc1ba1db929f0837ca3b27",
+    "c397cd9cf32e34e396a95e82c4dd698a93fc638100fb388d765065cef557a08f",
     "ca0bb2ed0e1467fb2cb210957977e93fc7cdee5eb7059e4e83b19241e77d0307",
+    "d6f19a7813584700fdfa8893524969f16ae30d7a3cc6e910594e078dd9715c80",
     "e2c863257e5210236d5625bf9b7e19d4ad2d21b7e9830dce87f52d4c816fc26a",
+    "e665c7188d20449e854fcbaafeb202fcc0dea84867e08e4a04455491439e718b",
     "e6bf7eeaf731822bf560fdeab1363c574f74bb046738ed5cc2b3ed546d496217",
     "e9a8e7220f7c4b71757c77be901a40b8eaca125c90e05c2990074d4cb78f9261",
-    "f2ba8752b4bb08d5a14d214f1f37e23535ff5026a6b2e4e7d171306e79a6a6a6"
+    "efbc93a81829505324808fd5aeca022257ca91ae73a56f396ba26fa042e415d4",
+    "f2ba8752b4bb08d5a14d214f1f37e23535ff5026a6b2e4e7d171306e79a6a6a6",
+    "f6189ec4fa562958583d1d6b58b31ba48eb42e4eb5669182ab82f76a93543a78",
+    "f7e8aa15fa69392d1a5e80e03648bb9648558295ff3239c25c3637a4e896bd25",
+    "fe79bd143e0edf1e882eba4bc545f8b2905f79705faf8aca25efa471879142c6"
   ],
   "items": [
     {
-      "id": "rss:news.google.com_rss_search?q=site:anthropic.com+when:7d&hl=en-US&gl=US&ceid=US:en:2d8ee574c3d653ab",
+      "id": "rss:www.coindesk.com_arc_outboundfeeds_rss_:2cd87ac375ce84e4",
       "source_type": "rss",
-      "title": "Mythos Preview’s Chain of Thought in Discovering the AES Möbius Bridge - Anthropic",
-      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1uUHh1a3RCVHVnQW1Fam9KZGxHa2x4QkNzM21KSVQxS2Z0eFIySHI0YU9OM01wendvejl4V0hfRG9DLTFiVGxDQ3RVZEE4MEw3UlA3OVl4c2hUdnVMYmI4RUhzeDRpdkU?oc=5",
+      "title": "Russia charges Telegram founder Pavel Durov with aiding terrorism",
+      "url": "https://www.coindesk.com/policy/2026/07/29/russia-charges-telegram-founder-pavel-durov-with-aiding-terrorism",
       "content": null,
-      "author": "Anthropic News",
-      "published_at": "2026-07-28T17:28:33Z",
-      "fetched_at": "2026-07-28T21:32:54.033445Z",
+      "author": "Francisco Rodrigues",
+      "published_at": "2026-07-29T09:10:54Z",
+      "fetched_at": "2026-07-29T14:34:01.356978Z",
       "metadata": {
-        "feed_name": "Anthropic News",
-        "category": "ai-labs",
-        "title_en": "Anthropic's Mythos Preview Discovers AES Möbius Bridge via Chain of Thought",
-        "detailed_summary_en": "Anthropic published a preview showing that Claude Mythos Preview, using chain-of-thought reasoning, autonomously discovered a new cryptographic technique called the AES Möbius Bridge, which accelerates the best known attack on 7-round AES-128 by 200 to 800 times. This breakthrough highlights the growing capability of AI models to perform independent cryptographic research, potentially advancing both AI interpretability and practical cryptography. It also raises important considerations about the security implications of AI-driven vulnerability discovery. The Möbius Bridge technique was discovered by Claude Mythos Preview over approximately three days of autonomous work, using about a billion output tokens and significant API compute. The resulting attack improves upon a previous 2^105 chosen-plaintext and 2^99-time algorithm by Derbez, Fouque, and Jean.",
-        "background_en": "AES (Advanced Encryption Standard) is a widely used symmetric encryption algorithm. The AES S-Box is not a random permutation and has algebraic structure that can be exploited in cryptanalysis. Chain-of-thought reasoning is a technique where AI models break down complex problems into step-by-step intermediate steps, improving their ability to solve novel challenges.",
-        "title_zh": "Anthropic 的 Mythos Preview 通过思维链发现 AES 莫比乌斯桥",
-        "detailed_summary_zh": "Anthropic 发布了一份预览，显示 Claude Mythos Preview 通过思维链推理自主发现了一种名为 AES 莫比乌斯桥的新密码技术，该技术将 7 轮 AES-128 最佳已知攻击的速度提升了 200 到 800 倍。 这一突破凸显了 AI 模型在执行独立密码研究方面日益增强的能力，可能推动 AI 可解释性和实用密码学的发展。同时，它也引发了对 AI 驱动漏洞发现的安全影响的重要思考。 莫比乌斯桥技术由 Claude Mythos Preview 在大约三天的自主工作中发现，使用了约十亿个输出 token 和大量的 API 计算资源。该攻击改进了 Derbez、Fouque 和 Jean 之前提出的 2^105 选择明文和 2^99 时间的算法。",
-        "background_zh": "AES（高级加密标准）是一种广泛使用的对称加密算法。AES 的 S 盒并非随机置换，其代数结构可在密码分析中被利用。思维链推理是一种技术，AI 模型通过将复杂问题分解为逐步的中间步骤，提升其解决新颖挑战的能力。",
-        "sources": [
-          {
-            "url": "https://www-cdn.anthropic.com/c88771e1bf5ee8885349eed05e5484c0e5f7e02b/aes_mobius_bridge.pdf",
-            "title": "Cryptanalysis of 7-Round AES via the Algebraic Structure of its S-box"
-          },
-          {
-            "url": "https://aiweekly.co/alerts/anthropic-says-claude-mythos-found-hawk-7-round-aes-flaws",
-            "title": "Anthropic Says Claude Mythos Found HAWK, 7-Round AES Flaws | AI Weekly"
-          },
-          {
-            "url": "https://en.wikipedia.org/wiki/Claude_Mythos",
-            "title": "Claude Mythos - Wikipedia"
-          }
-        ]
+        "feed_name": "CoinDesk",
+        "category": "crypto-markets",
+        "title_en": "Russia charges Telegram founder Pavel Durov with aiding terrorism",
+        "detailed_summary_en": "Russia has formally filed terrorism-related charges against Telegram founder Pavel Durov, alleging that the platform facilitated terrorist activities. This legal action could severely impact Telegram's operations in Russia and potentially worldwide, affecting millions of users who rely on the platform for private communications and cryptocurrency-related activities. The charges specifically cite aiding terrorism and could lead to significant penalties including imprisonment, potentially forcing changes in Telegram's privacy policies or its presence in Russia.",
+        "background_en": "Telegram is a widely-used encrypted messaging app known for its strong privacy features, and it is particularly popular among cryptocurrency communities for enabling secure communications and hosting crypto-related channels. Pavel Durov, the founder, has been a vocal advocate for digital privacy and has resisted government pressure to grant backdoor access to user data.",
+        "title_zh": "俄罗斯指控Telegram创始人帕维尔·杜罗夫协助恐怖主义",
+        "detailed_summary_zh": "俄罗斯正式对Telegram创始人帕维尔·杜罗夫提出与恐怖主义相关的指控，指控该平台协助了恐怖活动。 这一法律行动可能严重影响Telegram在俄罗斯乃至全球的运营，影响数百万依赖该平台进行私密通信和加密货币相关活动的用户。 指控具体涉及协助恐怖主义，可能导致包括监禁在内的重大处罚，可能迫使Telegram修改其隐私政策或撤出俄罗斯市场。",
+        "background_zh": "Telegram是一款广泛使用的加密消息应用，以其强大的隐私功能而闻名，尤其在加密货币社区中因其能够提供安全通信和托管加密货币相关频道而备受青睐。创始人帕维尔·杜罗夫一直是数字隐私的积极倡导者，并曾顶住政府压力，拒绝提供用户数据后门访问权限。"
       },
-      "ai_score": 8.0,
+      "ai_score": 9.0,
       "ai_reason": null,
-      "ai_summary": "Anthropic publishes a preview of a chain-of-thought approach that discovers the AES Möbius Bridge, a potentially significant AI-cryptography finding.",
+      "ai_summary": "Russia files terrorism-related charges against Telegram founder Pavel Durov, potentially impacting the platform's operations and crypto-dependent communities.",
       "ai_tags": []
     },
     {
-      "id": "rss:news.google.com_rss_search?q=site:anthropic.com+when:7d&hl=en-US&gl=US&ceid=US:en:249666495bb76a90",
+      "id": "rss:www.coindesk.com_arc_outboundfeeds_rss_:cdbf8d02a73b736e",
       "source_type": "rss",
-      "title": "Discovering cryptographic weaknesses with Claude - Anthropic",
-      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE13elp4eC1EQlJMdmtBdDZYaGQ0UXJoVE9sOGNtSDZIRFRYV3pkU1E4TnlNX3BTai1QVjduNVJUampVZGVySmlKRmVtcUFXcDBlNFVTQVdHN2ZiUUdjSlNtLUhXb3JialVEWGprd0tjdUVZQ2dhSFExaUtoTQ?oc=5",
+      "title": "Company behind AI trade that caused $60 million crypto liquidations to cover all losses",
+      "url": "https://www.coindesk.com/markets/2026/07/29/company-behind-ai-trade-that-caused-usd60-million-crypto-liquidations-to-cover-all-losses",
       "content": null,
-      "author": "Anthropic News",
-      "published_at": "2026-07-28T17:17:10Z",
-      "fetched_at": "2026-07-28T17:46:06.183879Z",
+      "author": "Shaurya Malwa",
+      "published_at": "2026-07-29T06:03:28Z",
+      "fetched_at": "2026-07-29T14:34:01.357021Z",
       "metadata": {
-        "feed_name": "Anthropic News",
-        "category": "ai-labs",
-        "title_en": "Claude AI Used to Discover Cryptographic Weaknesses",
-        "detailed_summary_en": "Anthropic researchers used Claude Mythos Preview to discover improved methods for attacking cryptographic algorithms, demonstrating advanced AI application in security research. This breakthrough shows that state-of-the-art AI can actively uncover vulnerabilities in foundational security systems, potentially influencing how cryptographic protocols are designed and evaluated. The discovery specifically targets cryptographic weaknesses in algorithms used to protect online data, leveraging Claude's reasoning capabilities to find novel attack vectors.",
-        "background_en": "Claude is a large language model developed by Anthropic, trained using Constitutional AI for safety. Cryptographic algorithms are mathematical methods that encrypt data to ensure privacy and security online. AI-assisted vulnerability discovery is an emerging field where models help identify potential weaknesses in code or protocols.",
-        "title_zh": "Claude AI 用于发现密码学弱点",
-        "detailed_summary_zh": "Anthropic 的研究人员使用 Claude Mythos Preview 发现了攻击密码算法的新方法，展示了 AI 在安全研究中的高级应用。 这一突破表明，最先进的 AI 能够主动发现基础安全系统中的漏洞，可能影响密码协议的设计和评估方式。 该发现专门针对用于保护在线数据的算法中的密码学弱点，利用 Claude 的推理能力寻找新的攻击向量。",
-        "background_zh": "Claude 是 Anthropic 开发的大型语言模型，采用宪法 AI 进行安全训练。密码算法是用于加密数据以确保在线隐私和安全的数学方法。AI 辅助漏洞发现是一个新兴领域，模型帮助识别代码或协议中的潜在弱点。",
+        "feed_name": "CoinDesk",
+        "category": "crypto-markets",
+        "title_en": "Firm covering $60M crypto losses from AI trade",
+        "detailed_summary_en": "A company that executed an AI-driven trade causing $60 million in cryptocurrency liquidations has announced it will fully compensate all affected users. This incident highlights the risks of AI-powered trading in volatile crypto markets, and the company's decision to cover losses sets a precedent for accountability in automated trading. The trade reportedly triggered cascading liquidations across multiple exchanges, affecting leveraged positions in major cryptocurrencies like Bitcoin and Ethereum.",
+        "background_en": "In cryptocurrency trading, liquidation occurs when a leveraged position is force-closed due to insufficient margin, often during rapid price movements. AI trading bots use algorithms to execute trades autonomously, analyzing market data and generating signals. While they can enhance efficiency, they also carry risks of unintended large-scale impacts, especially in illiquid markets.",
+        "title_zh": "公司赔偿AI交易导致6000万美元加密货币损失",
+        "detailed_summary_zh": "一家公司因执行人工智能交易导致6000万美元的加密货币清算，现已宣布将全额赔偿所有受影响的用户。 这一事件凸显了在波动性大的加密货币市场中AI交易的风险，而公司决定承担损失为自动化交易的责任追究树立了先例。 据报道，该交易在多个交易所引发连锁清算，影响了比特币、以太坊等主要加密货币的杠杆仓位。",
+        "background_zh": "在加密货币交易中，当杠杆仓位因保证金不足而在价格快速变动时被强制平仓，即发生清算。AI交易机器人利用算法自主执行交易，分析市场数据并生成信号。虽然它们可以提高效率，但也存在意外大规模影响的风险，尤其是在流动性较差的市场中。",
         "sources": [
           {
-            "url": "https://www.anthropic.com/research/discovering-cryptographic-weaknesses",
-            "title": "Discovering cryptographic weaknesses with Claude \\ Anthropic"
+            "url": "https://www.litefinance.org/blog/for-beginners/how-to-trade-crypto/liquidation-in-crypto/",
+            "title": "What Is Liquidation in Crypto Trading? | LiteFinance"
           },
           {
-            "url": "https://en.wikipedia.org/wiki/Claude_(AI)",
-            "title": "Claude (AI)"
+            "url": "https://www.finder.com/stock-trading/ai-trading-bot",
+            "title": "Best AI Trading Bots in 2026: Compare Top Platforms for Stocks and Forex"
           }
         ]
       },
-      "ai_score": 8.0,
+      "ai_score": 9.0,
       "ai_reason": null,
-      "ai_summary": "Anthropic's Claude AI model is used to identify cryptographic weaknesses, showcasing advanced AI application in security.",
-      "ai_tags": []
-    },
-    {
-      "id": "rss:huggingface.co_blog_feed.xml:9c980868c23ca002",
-      "source_type": "rss",
-      "title": "The OlmoEarth Platform: Geospatial inference at planetary scale",
-      "url": "https://huggingface.co/blog/allenai/olmoearth-infrastructure",
-      "content": null,
-      "author": "Hugging Face Blog",
-      "published_at": "2026-07-28T16:27:42Z",
-      "fetched_at": "2026-07-28T17:46:06.780540Z",
-      "metadata": {
-        "feed_name": "Hugging Face Blog",
-        "category": "ai-labs",
-        "title_en": "OlmoEarth: Planetary-Scale Geospatial AI Platform",
-        "detailed_summary_en": "Allen AI announced the OlmoEarth platform on November 4, 2025, an open end-to-end system for planetary-scale geospatial inference using frontier foundation models. This platform democratizes access to powerful geospatial AI for non-profits and NGOs, enabling real-time, decision-ready insights from multi-sensor Earth data at an unprecedented scale. OlmoEarth provides an end-to-end solution including data management, fine-tuning, embeddings, and production deployment, with source code, training data, and pre-trained weights openly available.",
-        "background_en": "Geospatial inference applies AI to extract insights from satellite imagery and other Earth observation data. Planetary-scale AI involves coupling large models with global sensing networks to understand and reason about the Earth in real time. OlmoEarth builds on recent foundation models for geospatial tasks, such as the Population Dynamics Foundation Model (PDFM) from Google.",
-        "title_zh": "OlmoEarth：行星级地理空间AI平台",
-        "detailed_summary_zh": "Allen AI于2025年11月4日发布了OlmoEarth平台，这是一个开放的全栈系统，利用前沿基础模型实现行星级地理空间推理。 该平台使非营利组织和非政府组织能够民主化地使用强大的地理空间AI，以前所未有的规模从多传感器地球数据中获取实时、可决策的洞察。 OlmoEarth提供端到端解决方案，包括数据管理、微调、嵌入和生产部署，并且源代码、训练数据和预训练权重均开放可用。",
-        "background_zh": "地理空间推理利用AI从卫星图像和其他地球观测数据中提取洞察。行星级AI将大型模型与全球传感网络结合，以实时理解和推理地球。OlmoEarth基于最近的地理空间基础模型（如Google的人口动态基础模型PDFM）构建。",
-        "sources": [
-          {
-            "url": "https://allenai.org/olmoearth",
-            "title": "OlmoEarth | Ai2"
-          },
-          {
-            "url": "https://allenai.org/blog/olmoearth",
-            "title": "Introducing OlmoEarth Platform: Powerful open infrastructure for planetary insights | Ai2"
-          },
-          {
-            "url": "https://arxiv.org/abs/2511.13655",
-            "title": "[2511.13655] OlmoEarth: Stable Latent Image Modeling for Multimodal Earth Observation"
-          }
-        ]
-      },
-      "ai_score": 8.0,
-      "ai_reason": null,
-      "ai_summary": "Allen AI announces OlmoEarth, a platform for planetary-scale geospatial inference.",
+      "ai_summary": "A company responsible for an AI trade that caused $60 million in crypto liquidations announces it will cover all losses.",
       "ai_tags": []
     },
     {
@@ -145,182 +123,34 @@
       "content": null,
       "author": "Helene Braun",
       "published_at": "2026-07-28T16:08:19Z",
-      "fetched_at": "2026-07-28T17:46:04.257388Z",
+      "fetched_at": "2026-07-29T14:34:01.358258Z",
       "metadata": {
         "feed_name": "CoinDesk",
         "category": "crypto-markets",
-        "title_en": "Wall Street Giants Endorse the Clarity Act",
-        "detailed_summary_en": "BlackRock, Fidelity, and other major Wall Street firms have publicly endorsed the Clarity Act, a U.S. crypto regulatory bill that aims to define jurisdiction between the SEC and CFTC. This endorsement signals significant institutional support for regulatory clarity, which could accelerate mainstream adoption of digital assets and reduce legal uncertainty for market participants. The Clarity Act, while providing a framework, would still require months or years of rulemaking by the SEC and CFTC before full implementation, meaning immediate certainty is limited.",
-        "background_en": "The Clarity Act is a bipartisan U.S. legislative proposal designed to resolve the jurisdictional dispute between the Securities and Exchange Commission (SEC) and the Commodity Futures Trading Commission (CFTC) over digital assets. It aims to classify cryptocurrencies as either securities or commodities, thereby clarifying regulatory oversight. The bill has gained renewed momentum following a compromise between lawmakers.",
+        "title_en": "Wall Street Giants Back Clarity Act",
+        "detailed_summary_en": "BlackRock, Fidelity, and other major Wall Street firms have publicly endorsed the Clarity Act, a U.S. bill that aims to establish a unified regulatory framework for digital assets. This endorsement signals strong institutional support for regulatory clarity, which could accelerate crypto adoption by traditional finance and reduce legal uncertainty for market participants. The Clarity Act (Digital Asset Market Clarity Act of 2025) is intended to delineate jurisdiction between the SEC and CFTC over the digital asset market, but it remains stalled in the Senate.",
+        "background_en": "Currently, U.S. crypto regulations are fragmented, with no clear boundary between SEC and CFTC authority. The Clarity Act seeks to resolve this by creating a transparent and predictable regulatory framework, which would allow businesses to build compliance programs with confidence.",
         "title_zh": "华尔街巨头支持《清晰法案》",
-        "detailed_summary_zh": "贝莱德、富达及其他华尔街巨头公开支持《清晰法案》，该法案旨在明确美国SEC与CFTC对加密货币的监管管辖权。 这一背书标志着机构对监管清晰度的重大支持，可能加速数字资产的主流采用，并减少市场参与者的法律不确定性。 《清晰法案》虽然提供了框架，但仍需SEC和CFTC数月或数年的规则制定才能完全实施，这意味着即时的确定性有限。",
-        "background_zh": "《清晰法案》是一项美国两党立法提案，旨在解决证券交易委员会（SEC）和商品期货交易委员会（CFTC）在数字资产上的管辖权争议。该法案旨在将加密货币分类为证券或商品，从而明确监管职责。该法案在立法者达成妥协后重新获得动力。",
+        "detailed_summary_zh": "贝莱德、富达及其他华尔街巨头公开支持《清晰法案》，该法案旨在为数字资产建立统一的监管框架。 这一背书表明机构对监管清晰度的强烈支持，可能加速传统金融对加密货币的采用，并减少市场参与者的法律不确定性。 《清晰法案》（2025年数字资产市场清晰法案）旨在划定SEC和CFTC对数字资产市场的管辖权，但目前仍在参议院停滞不前。",
+        "background_zh": "目前，美国加密货币监管支离破碎，SEC与CFTC的权限边界模糊。《清晰法案》试图通过建立透明、可预测的监管框架来解决这一问题，使企业能够有信心地建立合规计划。",
         "sources": [
           {
-            "url": "https://blog.visiion.io/clarity-act-crypto-regulation-impact/",
-            "title": "CLARITY Act Explained: Market Impact & What It Means - Visiion Blog"
+            "url": "https://www.forbes.com/sites/tonyaevans/2026/07/16/the-clarity-act-delay-is-now-a-compliance-problem-not-just-a-political-one/",
+            "title": "CLARITY Act Delay Is Now A Compliance Problem, Not Just..."
           },
           {
-            "url": "https://clsbluesky.law.columbia.edu/2025/09/09/arnold-porter-discusses-the-clarity-act/",
-            "title": "Arnold & Porter Discusses the CLARITY Act | CLS Blue Sky Blog"
+            "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6717280",
+            "title": "The CLARITY Act in Motion: What the Senate Debate... :: SSRN"
           },
           {
-            "url": "https://adbytes.media/blog/clarity-act-would-not-deliver-instant-crypto-regulatory-certainty",
-            "title": "CLARITY Act Would Not Deliver Instant Crypto Regulatory Certainty"
+            "url": "https://bitok.org/blog/clarity-act-explained",
+            "title": "What to Expect From the CLARITY Act in 2026"
           }
         ]
       },
       "ai_score": 8.0,
       "ai_reason": null,
-      "ai_summary": "Wall Street giants endorse the Clarity Act, a US crypto regulatory bill.",
-      "ai_tags": []
-    },
-    {
-      "id": "hackernews:story:49085909",
-      "source_type": "hackernews",
-      "title": "You Could Have Come Up with Kimi Delta Attention",
-      "url": "https://blog.doubleword.ai/you-could-have-come-up-with-kimi-delta-attention",
-      "content": null,
-      "author": "AnhTho_FR",
-      "published_at": "2026-07-28T16:02:07Z",
-      "fetched_at": "2026-07-28T17:46:04.102783Z",
-      "metadata": {
-        "discussion_url": "https://news.ycombinator.com/item?id=49085909",
-        "category": "tech-community",
-        "title_en": "Kimi Delta Attention Explained with Bra-Ket Notation",
-        "detailed_summary_en": "A technical blog post by doubleword.ai explains the Kimi Delta Attention (KDA) mechanism using bra-ket notation, making the complex delta-rule linear attention algorithm more accessible to researchers and practitioners. This explanation lowers the barrier to understanding a state-of-the-art attention mechanism that improves upon architectures like Gated DeltaNet and Mamba, potentially accelerating adoption in efficient long-context AI inference. The blog post uses Dirac notation to illustrate how KDA stores summed outer products in a fixed-size state S_t instead of storing every past key and value, enabling efficient recurrent updates with channel-wise forgetting.",
-        "background_en": "Kimi Delta Attention is a delta-rule linear attention mechanism that combines channel-wise forgetting with efficient chunkwise recurrent updates. It is part of the Kimi Linear architecture, which introduces a hybrid linear attention approach for scalable long-context processing. Bra-ket notation, originally from quantum mechanics, is a compact way to represent vectors and linear operators, and it is used here to simplify the mathematical exposition.",
-        "community_discussion_en": "Community comments express skepticism about the accessibility, with one user noting they could not have come up with KDA despite the explanation. Others appreciate the explicit notation explanation but debate potential LLM authorship of the post.",
-        "title_zh": "用狄拉克符号解释Kimi Delta注意力机制",
-        "detailed_summary_zh": "doubleword.ai的一篇技术博客文章使用狄拉克符号（bra-ket notation）解释了Kimi Delta注意力（KDA）机制，使复杂的delta规则线性注意力算法对研究人员和从业者更易理解。 这种解释降低了理解最先进注意力机制的门槛，该机制改进了Gated DeltaNet和Mamba等架构，可能加速其在高效长上下文AI推理中的采用。 该博客文章使用狄拉克符号说明KDA如何将外积之和存储在固定大小的状态S_t中，而不是存储每个过去的键和值，从而实现具有通道级遗忘的高效循环更新。",
-        "background_zh": "Kimi Delta注意力是一种delta规则线性注意力机制，结合了通道级遗忘和高效的分块循环更新。它是Kimi Linear架构的一部分，该架构引入了一种混合线性注意力方法，用于可扩展的长上下文处理。狄拉克符号最初来自量子力学，是一种紧凑的向量和线性算子表示方式，这里用于简化数学阐述。",
-        "community_discussion_zh": "社区评论对可访问性表示怀疑，一位用户指出即使有解释，他们也想不到KDA。其他人赞赏对符号的明确解释，但争论该文章是否由大语言模型撰写。",
-        "sources": [
-          {
-            "url": "https://www.emergentmind.com/topics/kimi-delta-attention",
-            "title": "Kimi Delta Attention: Delta‐Rule Linear Mechanism"
-          },
-          {
-            "url": "https://jianyuh.github.io/attention/2025/12/13/KDA.html",
-            "title": "Linear Attention: Kimi Delta Attention | Jianyu Huang’s Blog"
-          }
-        ]
-      },
-      "ai_score": 8.0,
-      "ai_reason": null,
-      "ai_summary": "Explains the Kimi Delta Attention mechanism using bra-ket notation, making a complex algorithm more accessible.",
-      "ai_tags": []
-    },
-    {
-      "id": "rss:www.coindesk.com_arc_outboundfeeds_rss_:f21c5caf72a50f83",
-      "source_type": "rss",
-      "title": "Ondo drops tokenized asset blockchain plans for private, high-speed trading network",
-      "url": "https://www.coindesk.com/business/2026/07/28/ondo-drops-tokenized-asset-blockchain-plans-for-private-high-speed-trading-network",
-      "content": null,
-      "author": "Krisztian Sandor",
-      "published_at": "2026-07-28T19:44:26Z",
-      "fetched_at": "2026-07-28T21:32:52.420711Z",
-      "metadata": {
-        "feed_name": "CoinDesk",
-        "category": "crypto-markets",
-        "title_en": "Ondo Abandons Public Blockchain for Private Trading Network",
-        "detailed_summary_en": "Ondo Finance has abandoned its plans to build a public blockchain for tokenized real-world assets, instead opting to develop a private, high-speed trading network aimed at institutional investors. This pivot signals a shift in the tokenization industry toward private, permissioned infrastructure that prioritizes speed and regulatory compliance over decentralization, potentially accelerating institutional adoption of digital assets. The new private network will focus on high-speed trading of tokenized assets, moving away from the public blockchain model that Ondo originally pursued. Details on the technology stack and timeline have not been disclosed.",
-        "background_en": "Ondo Finance is a platform that tokenizes real-world assets (RWAs) such as U.S. Treasuries, offering yield-bearing products like USDY and OUSG. Asset tokenization uses blockchain to represent ownership of physical assets as digital tokens, enabling fractional ownership and automated trading. Many tokenization projects have struggled with public blockchain scalability and regulatory hurdles, leading some to explore private networks.",
-        "title_zh": "Ondo 放弃公链，转向私有高速交易网络",
-        "detailed_summary_zh": "Ondo Finance 放弃了为代币化现实世界资产构建公链的计划，转而开发面向机构投资者的私有高速交易网络。 这一转向表明代币化行业正朝着私有、许可制基础设施发展，优先考虑速度和监管合规而非去中心化，可能加速机构对数字资产的采用。 新的私有网络将专注于代币化资产的高速交易，放弃了 Ondo 最初追求的公链模式。有关技术栈和时间表的细节尚未公布。",
-        "background_zh": "Ondo Finance 是一个将现实世界资产（RWA）如美国国债代币化的平台，提供 USDY 和 OUSG 等带收益产品。资产代币化使用区块链将实物资产的所有权表示为数字代币，实现碎片化所有权和自动交易。许多代币化项目在公链可扩展性和监管障碍上遇到困难，促使一些项目探索私有网络。",
-        "sources": [
-          {
-            "url": "https://ondo.finance/",
-            "title": "Ondo Finance — Institutional-grade finance, delivered onchain"
-          },
-          {
-            "url": "https://grokipedia.com/page/asset_tokenization",
-            "title": "Asset tokenization"
-          },
-          {
-            "url": "https://www.weforum.org/stories/financial-and-monetary-systems/tokenization-assets-transform-future-of-finance/",
-            "title": "How will asset tokenization transform the future of finance? | World Economic Forum"
-          }
-        ]
-      },
-      "ai_score": 7.0,
-      "ai_reason": null,
-      "ai_summary": "Ondo abandons public blockchain plans for tokenized assets in favor of a private, high-speed trading network.",
-      "ai_tags": []
-    },
-    {
-      "id": "rss:status.coinbase.com_history.rss:11ba7640e9ff73e9",
-      "source_type": "rss",
-      "title": "Delayed Sends and Receives - STX",
-      "url": "https://status.coinbase.com/incidents/cz15q0p16cgs",
-      "content": null,
-      "author": "Coinbase Status",
-      "published_at": "2026-07-28T17:18:18Z",
-      "fetched_at": "2026-07-28T17:46:05.565841Z",
-      "metadata": {
-        "feed_name": "Coinbase Status",
-        "category": "exchange-operations",
-        "title_en": "Coinbase STX Delayed Sends and Receives",
-        "detailed_summary_en": "Coinbase identified an issue causing delayed sends and receives on the Stacks network for STX cryptocurrency, and a fix is being implemented as of July 28. This directly affects STX users on Coinbase who may experience delays in transferring funds, though buys, sells, and fiat transactions remain unaffected. It highlights ongoing operational challenges in layer-2 blockchain networks. The issue was first investigated at 07:59 PDT and then identified at 10:18 PDT on July 28. Coinbase assured users that funds are safe.",
-        "background_en": "Stacks is a layer-1.5 blockchain that connects to Bitcoin using Proof of Transfer (PoX) consensus and enables smart contracts via the Clarity language. STX is the native cryptocurrency of the Stacks network, used for fees and participation in decentralized applications. Coinbase is a major cryptocurrency exchange where users can buy, sell, and transfer STX.",
-        "title_zh": "Coinbase STX 发送和接收延迟",
-        "detailed_summary_zh": "Coinbase 确认了导致 Stacks 网络上 STX 加密货币发送和接收延迟的问题，并于 7 月 28 日正在实施修复。 这直接影响了 Coinbase 上 STX 用户的资金转账延迟，尽管买入、卖出和法币交易不受影响。这突显了二层区块链网络运营中的持续挑战。 该问题于 7 月 28 日太平洋夏令时间 07:59 开始调查，并于 10:18 确认。Coinbase 向用户保证资金安全。",
-        "background_zh": "Stacks 是一个 1.5 层区块链，通过传输证明（PoX）共识连接到比特币，并使用 Clarity 语言实现智能合约。STX 是 Stacks 网络的原生加密货币，用于支付费用和参与去中心化应用。Coinbase 是一家主要的加密货币交易所，用户可以在其中购买、出售和转移 STX。",
-        "sources": [
-          {
-            "url": "https://en.wikipedia.org/wiki/Stacks_blockchain",
-            "title": "Stacks blockchain - Wikipedia"
-          },
-          {
-            "url": "https://www.okx.com/learn/stacks-ecosystem",
-            "title": "Boosting Bitcoin: the complete guide to the Stacks... | OKX"
-          }
-        ]
-      },
-      "ai_score": 7.0,
-      "ai_reason": null,
-      "ai_summary": "Coinbase reports identified issue causing delayed STX sends and receives; fix being implemented.",
-      "ai_tags": []
-    },
-    {
-      "id": "hackernews:story:49086971",
-      "source_type": "hackernews",
-      "title": "Steel Bank Common Lisp version 2.6.7",
-      "url": "https://sbcl.org/all-news.html?2.6.7",
-      "content": null,
-      "author": "tmtvl",
-      "published_at": "2026-07-28T17:11:54Z",
-      "fetched_at": "2026-07-28T21:32:51.944915Z",
-      "metadata": {
-        "discussion_url": "https://news.ycombinator.com/item?id=49086971",
-        "category": "tech-community",
-        "title_en": "SBCL 2.6.7 adds SIMD support for ARM64 and AVX512",
-        "detailed_summary_en": "Steel Bank Common Lisp version 2.6.7 introduces SIMD support for ARM64 via the SB-SIMD contrib and adds AVX512 instruction support on x86-64. These improvements enable vectorized operations for better performance on modern hardware. This update significantly boosts the performance of Common Lisp programs on modern CPUs, making SBCL more competitive for computationally intensive tasks like scientific computing and data processing. It also reflects the continued evolution of Lisp implementations to leverage cutting-edge hardware features. The ARM64 SIMD support was contributed by Sylvia Harrington, while AVX512 support came from Robert Smith and Arthur Miller. Users must explicitly invoke SIMD intrinsics; the release does not mention auto-vectorization, so manual use is required.",
-        "background_en": "Steel Bank Common Lisp (SBCL) is a high-performance, open-source Common Lisp compiler. SIMD (Single Instruction, Multiple Data) allows a single instruction to process multiple data points simultaneously, crucial for performance in numerical and multimedia applications. AVX512 is Intel's advanced 512-bit SIMD extension, offering significant speedups for parallel workloads. The name 'Steel Bank' originates from Carnegie Mellon University, referencing Andrew Carnegie (steel) and Andrew Mellon (banking).",
-        "community_discussion_en": "Community members are excited about the new SIMD features, with some inquiring about usage and whether auto-vectorization is supported. Others discussed historical naming origins and comparisons with other Lisp implementations like Clozure Common Lisp (CCL). One user requested documentation for the memory arena feature.",
-        "title_zh": "SBCL 2.6.7 添加了 ARM64 和 AVX512 的 SIMD 支持",
-        "detailed_summary_zh": "Steel Bank Common Lisp 2.6.7 版本通过 SB-SIMD contrib 引入了对 ARM64 的 SIMD 支持，并在 x86-64 上增加了 AVX512 指令支持。这些改进使得在现代硬件上能够进行向量化运算以获得更好的性能。 这一更新显著提升了 Common Lisp 程序在现代 CPU 上的性能，使 SBCL 在科学计算和数据处理等计算密集型任务中更具竞争力。它也反映了 Lisp 实现利用前沿硬件特性方面的持续演进。 ARM64 SIMD 支持由 Sylvia Harrington 贡献，AVX512 支持由 Robert Smith 和 Arthur Miller 贡献。用户必须显式调用 SIMD 内部函数；该版本未提及自动向量化，因此需要手动使用。",
-        "background_zh": "Steel Bank Common Lisp (SBCL) 是一个高性能的开源 Common Lisp 编译器。SIMD（单指令多数据）允许一条指令同时处理多个数据点，对于数值计算和多媒体应用的性能至关重要。AVX512 是英特尔先进的 512 位 SIMD 扩展，为并行工作负载提供了显著的加速。'Steel Bank' 这个名称源自卡内基梅隆大学，分别指代安德鲁·卡内基（钢铁）和安德鲁·梅隆（银行）。",
-        "community_discussion_zh": "社区成员对新的 SIMD 功能感到兴奋，一些人询问如何使用以及是否支持自动向量化。其他人讨论了名称的历史起源和与其他 Lisp 实现（如 Clozure Common Lisp, CCL）的比较。有一位用户请求为内存区域功能提供文档。",
-        "sources": [
-          {
-            "url": "https://en.wikipedia.org/wiki/Steel_Bank_Common_Lisp",
-            "title": "Steel Bank Common Lisp"
-          },
-          {
-            "url": "https://en.wikipedia.org/wiki/AVX-512",
-            "title": "AVX-512 - Wikipedia"
-          },
-          {
-            "url": "https://www.intel.com/content/www/us/en/developer/articles/technical/intel-avx-512-instructions.html",
-            "title": "Intel® AVX-512 Instructions"
-          }
-        ]
-      },
-      "ai_score": 7.0,
-      "ai_reason": null,
-      "ai_summary": "SBCL 2.6.7 adds SIMD support for ARM64 and AVX512 instructions, among other improvements.",
+      "ai_summary": "Wall Street giants BlackRock, Fidelity, and others endorse the Clarity Act, a bill aimed at providing regulatory clarity for digital assets.",
       "ai_tags": []
     },
     {
@@ -331,16 +161,16 @@
       "content": null,
       "author": "OpenAI Blog",
       "published_at": "2026-07-28T17:00:00Z",
-      "fetched_at": "2026-07-28T17:46:05.923852Z",
+      "fetched_at": "2026-07-29T14:34:02.505273Z",
       "metadata": {
         "feed_name": "OpenAI Blog",
         "category": "ai-labs",
-        "title_en": "OpenAI Reports Scientists Use AI Coding Agents in Genomics",
-        "detailed_summary_en": "OpenAI published a field report documenting how scientists are leveraging AI coding agents to modernize scientific computing, significantly accelerating software development and genomic discoveries. This report demonstrates a practical, high-impact application of agentic AI in a critical scientific domain, potentially speeding up research and enabling new discoveries in genomics and other fields. The report highlights the use of AI coding agents to automate and optimize computational workflows, reduce development time, and handle complex data analysis tasks in genomics research.",
-        "background_en": "Agentic AI refers to AI systems that can pursue goals, use tools, and take actions with varying degrees of autonomy. In scientific computing, researchers often write custom code for simulations and data analysis. AI coding agents can assist by generating, debugging, and optimizing code, thereby accelerating the research pipeline.",
-        "title_zh": "OpenAI报告科学家在基因组学中使用AI编码代理",
-        "detailed_summary_zh": "OpenAI发布了一份实地报告，记录了科学家如何利用AI编码代理来现代化科学计算，显著加速了软件开发和基因组发现。 这份报告展示了代理AI在关键科学领域的实际高影响应用，可能加速研究并推动基因组学及其他领域的新发现。 报告强调了使用AI编码代理来自动化和优化计算工作流、减少开发时间以及处理基因组学研究中复杂数据分析任务的能力。",
-        "background_zh": "代理AI指的是能够追求目标、使用工具并以不同程度自主采取行动的AI系统。在科学计算中，研究人员常常编写自定义代码进行模拟和数据分析。AI编码代理可以通过生成、调试和优化代码来协助，从而加速研究流程。",
+        "title_en": "OpenAI Report: AI Agents Accelerate Scientific Computing",
+        "detailed_summary_en": "OpenAI published a field report showing how scientists are using AI coding agents to modernize scientific computing, significantly speeding up software development and discovery in genomics and other fields. This demonstrates a practical, high-impact application of agentic AI beyond chatbots, potentially transforming how scientific research is conducted by automating complex coding tasks. The report focuses on real-world use cases in genomics, where AI agents handle tasks like pipeline development and data analysis, reducing development time from months to days.",
+        "background_en": "Agentic AI refers to AI systems that can autonomously pursue goals, use tools, and take actions within defined constraints. AI coding agents are a specific type that can write, debug, and optimize code, enabling researchers to focus on higher-level scientific questions rather than routine programming.",
+        "title_zh": "OpenAI报告：AI代理加速科学计算",
+        "detailed_summary_zh": "OpenAI发布了一份现场报告，展示了科学家如何利用AI编码代理来现代化科学计算，显著加速了基因组学等领域的软件开发和发现。 这表明了代理AI在聊天机器人之外的实际高影响应用，可能通过自动化复杂的编码任务来改变科学研究的进行方式。 该报告聚焦于基因组学中的实际用例，AI代理处理诸如流程开发和数据分析等任务，将开发时间从数月缩短到数天。",
+        "background_zh": "代理AI指的是能够在定义约束内自主追求目标、使用工具并采取行动的AI系统。AI编码代理是一种特定类型，能够编写、调试和优化代码，使研究人员能够专注于更高层次的科学问题，而非日常编程。",
         "sources": [
           {
             "url": "https://en.wikipedia.org/wiki/Agentic_AI",
@@ -352,47 +182,111 @@
           }
         ]
       },
-      "ai_score": 7.0,
+      "ai_score": 8.0,
       "ai_reason": null,
-      "ai_summary": "OpenAI reports on how scientists are using AI coding agents to modernize scientific computing and accelerate discovery in genomics.",
+      "ai_summary": "Report on how scientists leverage AI coding agents to accelerate scientific computing and discovery.",
       "ai_tags": []
     },
     {
-      "id": "rss:blog.google_technology_ai_rss_:55560096859ebe20",
+      "id": "rss:www.coindesk.com_arc_outboundfeeds_rss_:35dc9ced42be01df",
       "source_type": "rss",
-      "title": "Gemini API Managed Agents: 3.6 Flash, hooks, and more",
-      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/expanding-managed-agents-gemini-api-3-6-flash-hooks/",
+      "title": "Ionic Digital jumps 26% in Nasdaq debut, giving Celsius Network claimholders an exit route",
+      "url": "https://www.coindesk.com/business/2026/07/29/ionic-digital-jumps-26-in-nasdaq-debut-giving-celsius-network-claimholders-an-exit-route",
       "content": null,
-      "author": "Mariano Cocirio",
-      "published_at": "2026-07-28T16:00:00Z",
-      "fetched_at": "2026-07-28T17:46:06.525113Z",
+      "author": "Francisco Rodrigues",
+      "published_at": "2026-07-29T09:22:24Z",
+      "fetched_at": "2026-07-29T14:34:01.356962Z",
       "metadata": {
-        "feed_name": "Google AI Blog",
-        "category": "ai-labs",
-        "title_en": "Google Expands Gemini API Managed Agents with 3.6 Flash, Hooks, Triggers",
-        "detailed_summary_en": "Google announced new features for Gemini API Managed Agents, including support for the Gemini 3.6 Flash model, hooks, and triggers, enabling more flexible agent behaviors and event-driven integrations. These enhancements significantly improve the capabilities of managed agents, allowing developers to build more autonomous, event-responsive AI applications with lower latency and greater control. Gemini 3.6 Flash is a natively multimodal reasoning model optimized for speed; hooks and triggers allow agents to execute custom code at specific lifecycle points or respond to external events.",
-        "background_en": "Managed Agents in the Gemini API provide a config-driven, REST-first environment for building autonomous agents in a fully managed Linux sandbox. With a single API call, developers can spin up agents that reason, use tools, and execute code in isolated, ephemeral environments. The new features build on this foundation to enable more sophisticated agent workflows.",
-        "title_zh": "Google 扩展 Gemini API Managed Agents，新增 3.6 Flash、Hooks 和 Triggers",
-        "detailed_summary_zh": "Google 宣布为 Gemini API Managed Agents 推出新功能，包括支持 Gemini 3.6 Flash 模型、hooks 和 triggers，从而实现更灵活的代理行为和事件驱动的集成。 这些增强显著提升了托管代理的能力，使开发者能够构建更自主、事件响应的 AI 应用，同时降低延迟并提高控制力。 Gemini 3.6 Flash 是一个原生多模态推理模型，针对速度进行了优化；hooks 和 triggers 允许代理在特定生命周期点执行自定义代码或响应外部事件。",
-        "background_zh": "Gemini API 中的 Managed Agents 提供了一个配置驱动、REST 优先的环境，用于在完全托管的 Linux 沙箱中构建自主代理。通过单个 API 调用，开发者可以启动能够在隔离的临时环境中推理、使用工具和执行代码的代理。新功能在此基础上构建，支持更复杂的代理工作流。",
+        "feed_name": "CoinDesk",
+        "category": "crypto-markets",
+        "title_en": "Ionic Digital surges 26% on Nasdaq debut",
+        "detailed_summary_en": "Ionic Digital, a bitcoin miner formed from Celsius Mining assets, began trading on the Nasdaq via a direct listing on July 28, 2026, under ticker IOND, and its shares jumped 26% on the first day. This provides Celsius Network claimholders with a liquid exit route to sell shares they received as part of the bankruptcy settlement, potentially recovering value from their claims. The reference price was set at $53, and the stock opened at $66.80, giving Ionic Digital a market capitalization of approximately $2.5 billion. The company was created from Celsius Mining, a subsidiary of the bankrupt Celsius Network.",
+        "background_en": "Celsius Network filed for bankruptcy in July 2022 after freezing customer withdrawals. As part of its restructuring plan, Celsius Mining assets were spun off into Ionic Digital, and shares were distributed to claimholders. Ionic Digital's direct listing on Nasdaq allows those shares to be traded publicly, providing a means for creditors to exit.",
+        "title_zh": "Ionic Digital 纳斯达克首日上涨26%",
+        "detailed_summary_zh": "Ionic Digital 是一家由 Celsius Mining 资产组建的比特币矿商，于2026年7月28日通过直接上市在纳斯达克开始交易，股票代码为 IOND，首日股价上涨26%。 这为 Celsius Network 的债权人提供了一条流动性退出路径，他们可以出售在破产和解中获得的股票，从而可能从他们的债权中回收价值。 参考价定为53美元，开盘价为66.80美元，使 Ionic Digital 的市值达到约25亿美元。该公司由破产的 Celsius Network 子公司 Celsius Mining 创建。",
+        "background_zh": "Celsius Network 在2022年7月冻结客户提款后申请破产。作为重组计划的一部分，Celsius Mining 资产被剥离成立 Ionic Digital，并将股份分配给债权人。Ionic Digital 在纳斯达克直接上市使得这些股份可以公开交易，为债权人提供了退出途径。",
         "sources": [
           {
-            "url": "https://blog.google/innovation-and-ai/technology/developers-tools/expanding-managed-agents-gemini-api-3-6-flash-hooks/",
-            "title": "What’s new in Managed Agents in Gemini API"
+            "url": "https://www.renaissancecapital.com/IPO-Center/News/120742/Cloud-infrastructure-company-Ionic-Digitals-Nasdaq-reference-price-is-set-a",
+            "title": "IOND IPO News - Cloud infrastructure company Ionic Digital's Nasdaq reference price is set at $53 ahead of Tuesday direct listing"
           },
           {
-            "url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/build/managed-agents",
-            "title": "Managed Agents API on Agent Platform overview | Gemini Enterprise Agent Platform | Google Cloud Documentation"
-          },
-          {
-            "url": "https://deepmind.google/models/model-cards/gemini-3-6-flash/",
-            "title": "Gemini 3.6 Flash - Model Card — Google DeepMind"
+            "url": "https://www.renaissancecapital.com/IPO-Center/News/120140/Bitcoin-miner-Ionic-Digital-files-for-a-direct-listing-on-the-Nasdaq",
+            "title": "IOND IPO News - Bitcoin miner Ionic Digital files for a direct listing on the Nasdaq"
           }
         ]
       },
       "ai_score": 7.0,
       "ai_reason": null,
-      "ai_summary": "Google announces new features for Gemini API Managed Agents including 3.6 Flash, hooks, and triggers.",
+      "ai_summary": "Ionic Digital shares rose 26% on Nasdaq debut, offering Celsius Network claimholders a way to exit their positions.",
+      "ai_tags": []
+    },
+    {
+      "id": "rss:news.google.com_rss_search?q=site:anthropic.com+when:7d&hl=en-US&gl=US&ceid=US:en:94023959d5ce21bb",
+      "source_type": "rss",
+      "title": "Mythos Preview’s Chain of Thought in Discovering the AES Möbius Bridge - Anthropic",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE0tY2k4b2JFT1FDZDdydEdSb0pXVG12STJJLXRHSnlOSUpIeGdNUzMtdU5hek1DaHdWNlRLMG5WZlh6LVF2cnZGejdfTDlxb3BIRngyVDNlZDBWNVFyWHBFWTFWQ2dodzR5YS1sMA?oc=5",
+      "content": null,
+      "author": "Anthropic News",
+      "published_at": "2026-07-28T17:28:34Z",
+      "fetched_at": "2026-07-29T14:34:02.711780Z",
+      "metadata": {
+        "feed_name": "Anthropic News",
+        "category": "ai-labs",
+        "title_en": "Mythos Preview Uses Chain-of-Thought to Discover AES Möbius Bridge",
+        "detailed_summary_en": "Anthropic revealed that its Mythos Preview model employed chain-of-thought reasoning to uncover the AES Möbius Bridge, a novel algebraic structure in the AES S-box that enables faster cryptanalysis. The discovery led to up to 800x speedup in 7-round AES-128 meet-in-the-middle attacks. This demonstrates that advanced AI models can autonomously discover complex mathematical structures, advancing both AI reasoning and cryptographic analysis. It could lead to stronger defenses or improved attacks on AES. The AES Möbius Bridge is an invariant fingerprint that exploits the algebraic structure of the AES S-box, eliminating a 256-way guessing step. Mythos Preview's chain-of-thought process allowed it to derive this bridge without human guidance.",
+        "background_en": "The Advanced Encryption Standard (AES) is a widely used symmetric encryption algorithm whose security depends on the S-box, a nonlinear substitution component. Chain-of-thought reasoning is a technique where AI models break down complex problems into step-by-step reasoning, enhancing their problem-solving abilities. The Möbius Bridge refers to a mathematical structure that reveals weaknesses in AES's algebraic design.",
+        "title_zh": "Mythos Preview 用思维链发现 AES Möbius Bridge",
+        "detailed_summary_zh": "Anthropic 披露，其 Mythos Preview 模型通过思维链推理发现了 AES Möbius Bridge——一种 AES S-box 中新颖的代数结构，能够加速密码分析。该发现使得 7 轮 AES-128 中间相遇攻击提速高达 800 倍。 这表明先进 AI 模型能自主发现复杂数学结构，推动 AI 推理与密码分析的发展。它可能带来更强的防御或更优的 AES 攻击方法。 AES Möbius Bridge 是一种利用 AES S-box 代数结构的不变量指纹，消除了 256 路猜测步骤。Mythos Preview 的思维链过程使其无需人类指导即可推导出该桥梁。",
+        "background_zh": "高级加密标准 (AES) 是一种广泛使用的对称加密算法，其安全性依赖于 S-box（非线性替换组件）。思维链推理是一种让 AI 模型将复杂问题分解为逐步推理的技术，能增强其问题解决能力。Möbius Bridge 指一种揭示 AES 代数设计弱点的数学结构。",
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Claude_Mythos",
+            "title": "Claude Mythos - Wikipedia"
+          },
+          {
+            "url": "https://www-cdn.anthropic.com/c88771e1bf5ee8885349eed05e5484c0e5f7e02b/aes_mobius_bridge.pdf",
+            "title": "Cryptanalysis of 7-Round AES via the Algebraic Structure of its S-box"
+          },
+          {
+            "url": "https://blog.ogwilliam.com/post/claude-mythos-ai-cryptanalysis-hawk-aes",
+            "title": "How Claude Mythos Breaks Mathematical Cryptography • William OGOU Cybersecurity Blog"
+          }
+        ]
+      },
+      "ai_score": 7.0,
+      "ai_reason": null,
+      "ai_summary": "Anthropic details how its Mythos Preview model uses chain-of-thought reasoning to uncover the AES Möbius Bridge, a cryptographic structure.",
+      "ai_tags": []
+    },
+    {
+      "id": "rss:news.google.com_rss_search?q=site:anthropic.com+when:7d&hl=en-US&gl=US&ceid=US:en:249666495bb76a90",
+      "source_type": "rss",
+      "title": "Discovering cryptographic weaknesses with Claude - Anthropic",
+      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE13elp4eC1EQlJMdmtBdDZYaGQ0UXJoVE9sOGNtSDZIRFRYV3pkU1E4TnlNX3BTai1QVjduNVJUampVZGVySmlKRmVtcUFXcDBlNFVTQVdHN2ZiUUdjSlNtLUhXb3JialVEWGprd0tjdUVZQ2dhSFExaUtoTQ?oc=5",
+      "content": null,
+      "author": "Anthropic News",
+      "published_at": "2026-07-28T17:17:10Z",
+      "fetched_at": "2026-07-29T14:34:02.711722Z",
+      "metadata": {
+        "feed_name": "Anthropic News",
+        "category": "ai-labs",
+        "title_en": "Claude AI identifies cryptographic weaknesses",
+        "detailed_summary_en": "Anthropic has announced that its AI model Claude successfully identified novel attacks against cryptographic schemes submitted to international standardization efforts. The findings were reviewed and validated by human experts. This demonstrates that frontier AI systems can assist in discovering previously unknown cryptographic vulnerabilities, potentially accelerating security research and improving encryption standards. It highlights AI's role in augmenting human expertise rather than replacing it. Claude identified attacks on cryptographic schemes that were part of international standardization efforts, not just trivial weaknesses. The research was conducted by Anthropic and the results were validated by human cryptographers.",
+        "background_en": "Anthropic's Claude is a large language model trained to be helpful, honest, and harmless. Cryptographic weaknesses are flaws in encryption algorithms that could be exploited by attackers. Traditionally, finding such weaknesses requires deep expertise and manual analysis. This research shows AI can assist in that process.",
+        "title_zh": "Claude AI发现加密算法弱点",
+        "detailed_summary_zh": "Anthropic宣布，其AI模型Claude成功识别出提交给国际标准化工作的加密方案中的新型攻击方式，相关发现已由人类专家审查并验证。 这表明前沿AI系统能够协助发现此前未知的密码学漏洞，可能加速安全研究并改进加密标准。这凸显了AI在增强而非替代人类专家方面的作用。 Claude识别的是参与国际标准化的加密方案中的攻击方式，而非普通弱点。该研究由Anthropic进行，结果由人类密码学家验证。",
+        "background_zh": "Anthropic的Claude是一个大型语言模型，经过训练以提供有帮助、诚实且无害的回应。密码学弱点是指加密算法中可能被攻击者利用的缺陷。传统上，发现这些弱点需要深厚的专业知识和人工分析。这项研究表明AI可以协助这一过程。",
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Claude_(AI)",
+            "title": "Claude (AI) - Wikipedia"
+          }
+        ]
+      },
+      "ai_score": 7.0,
+      "ai_reason": null,
+      "ai_summary": "Anthropic demonstrates how their AI model Claude can identify cryptographic weaknesses, highlighting AI's potential in security analysis.",
       "ai_tags": []
     }
   ],

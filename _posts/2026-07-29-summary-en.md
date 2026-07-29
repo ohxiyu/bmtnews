@@ -3,202 +3,94 @@ layout: default
 title: "BMTNews: 2026-07-29 (EN)"
 date: 2026-07-29
 lang: en
+fetched_count: 51
+analyzed_count: 51
+selected_count: 7
+critical_count: 2
+window_start: "2026-07-28T20:00:00+08:00"
+window_end: "2026-07-29T20:00:00+08:00"
 ---
 
-<div class="run-stats" hidden data-fetched="76" data-analyzed="21" data-selected="10" data-critical="0"></div>
+<div class="run-stats" hidden data-fetched="51" data-analyzed="51" data-selected="7" data-critical="2"></div>
 
-> From 21 items, 10 important content pieces were selected
+> From 51 items, 7 important content pieces were selected
 
 ---
 
-1. [Anthropic's Mythos Preview Discovers AES Möbius Bridge via Chain of Thought](#item-1) ⭐️ 8.0/10
-2. [Claude AI Used to Discover Cryptographic Weaknesses](#item-2) ⭐️ 8.0/10
-3. [OlmoEarth: Planetary-Scale Geospatial AI Platform](#item-3) ⭐️ 8.0/10
-4. [Wall Street Giants Endorse the Clarity Act](#item-4) ⭐️ 8.0/10
-5. [Kimi Delta Attention Explained with Bra-Ket Notation](#item-5) ⭐️ 8.0/10
-6. [Ondo Abandons Public Blockchain for Private Trading Network](#item-6) ⭐️ 7.0/10
-7. [Coinbase STX Delayed Sends and Receives](#item-7) ⭐️ 7.0/10
-8. [SBCL 2.6.7 adds SIMD support for ARM64 and AVX512](#item-8) ⭐️ 7.0/10
-9. [OpenAI Reports Scientists Use AI Coding Agents in Genomics](#item-9) ⭐️ 7.0/10
-10. [Google Expands Gemini API Managed Agents with 3.6 Flash, Hooks, Triggers](#item-10) ⭐️ 7.0/10
+1. [Russia charges Telegram founder Pavel Durov with aiding terrorism](#item-1) ⭐️ 9.0/10
+2. [Firm covering $60M crypto losses from AI trade](#item-2) ⭐️ 9.0/10
+3. [Wall Street Giants Back Clarity Act](#item-3) ⭐️ 8.0/10
+4. [OpenAI Report: AI Agents Accelerate Scientific Computing](#item-4) ⭐️ 8.0/10
+5. [Ionic Digital surges 26% on Nasdaq debut](#item-5) ⭐️ 7.0/10
+6. [Mythos Preview Uses Chain-of-Thought to Discover AES Möbius Bridge](#item-6) ⭐️ 7.0/10
+7. [Claude AI identifies cryptographic weaknesses](#item-7) ⭐️ 7.0/10
 
 ---
 
 <a id="item-1"></a>
-## [Anthropic's Mythos Preview Discovers AES Möbius Bridge via Chain of Thought](https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1uUHh1a3RCVHVnQW1Fam9KZGxHa2x4QkNzM21KSVQxS2Z0eFIySHI0YU9OM01wendvejl4V0hfRG9DLTFiVGxDQ3RVZEE4MEw3UlA3OVl4c2hUdnVMYmI4RUhzeDRpdkU?oc=5) ⭐️ 8.0/10
+## [Russia charges Telegram founder Pavel Durov with aiding terrorism](https://www.coindesk.com/policy/2026/07/29/russia-charges-telegram-founder-pavel-durov-with-aiding-terrorism) ⭐️ 9.0/10
 
-Anthropic published a preview showing that Claude Mythos Preview, using chain-of-thought reasoning, autonomously discovered a new cryptographic technique called the AES Möbius Bridge, which accelerates the best known attack on 7-round AES-128 by 200 to 800 times. This breakthrough highlights the growing capability of AI models to perform independent cryptographic research, potentially advancing both AI interpretability and practical cryptography. It also raises important considerations about the security implications of AI-driven vulnerability discovery. The Möbius Bridge technique was discovered by Claude Mythos Preview over approximately three days of autonomous work, using about a billion output tokens and significant API compute. The resulting attack improves upon a previous 2^105 chosen-plaintext and 2^99-time algorithm by Derbez, Fouque, and Jean.
+Russia has formally filed terrorism-related charges against Telegram founder Pavel Durov, alleging that the platform facilitated terrorist activities. This legal action could severely impact Telegram's operations in Russia and potentially worldwide, affecting millions of users who rely on the platform for private communications and cryptocurrency-related activities. The charges specifically cite aiding terrorism and could lead to significant penalties including imprisonment, potentially forcing changes in Telegram's privacy policies or its presence in Russia.
 
-rss · Anthropic News · Jul 29, 01:28
+rss · CoinDesk · Jul 29, 17:10
 
-**Background**: AES \(Advanced Encryption Standard\) is a widely used symmetric encryption algorithm. The AES S-Box is not a random permutation and has algebraic structure that can be exploited in cryptanalysis. Chain-of-thought reasoning is a technique where AI models break down complex problems into step-by-step intermediate steps, improving their ability to solve novel challenges.
+**Background**: Telegram is a widely-used encrypted messaging app known for its strong privacy features, and it is particularly popular among cryptocurrency communities for enabling secure communications and hosting crypto-related channels. Pavel Durov, the founder, has been a vocal advocate for digital privacy and has resisted government pressure to grant backdoor access to user data.
 
-<details><summary>References</summary>
-<ul>
-<li><a href="https://www-cdn.anthropic.com/c88771e1bf5ee8885349eed05e5484c0e5f7e02b/aes_mobius_bridge.pdf">Cryptanalysis of 7-Round AES via the Algebraic Structure of its S-box</a></li>
-<li><a href="https://aiweekly.co/alerts/anthropic-says-claude-mythos-found-hawk-7-round-aes-flaws">Anthropic Says Claude Mythos Found HAWK, 7-Round AES Flaws | AI Weekly</a></li>
-<li><a href="https://en.wikipedia.org/wiki/Claude_Mythos">Claude Mythos - Wikipedia</a></li>
-
-</ul>
-</details>
-
-**Tags**: `#AI`, `#research`, `#cryptography`, `#chain-of-thought`, `#Anthropic`
+**Tags**: `#regulation`, `#privacy`, `#security`, `#geopolitics`, `#crypto`
 
 ---
 
 <a id="item-2"></a>
-## [Claude AI Used to Discover Cryptographic Weaknesses](https://news.google.com/rss/articles/CBMie0FVX3lxTE13elp4eC1EQlJMdmtBdDZYaGQ0UXJoVE9sOGNtSDZIRFRYV3pkU1E4TnlNX3BTai1QVjduNVJUampVZGVySmlKRmVtcUFXcDBlNFVTQVdHN2ZiUUdjSlNtLUhXb3JialVEWGprd0tjdUVZQ2dhSFExaUtoTQ?oc=5) ⭐️ 8.0/10
+## [Firm covering $60M crypto losses from AI trade](https://www.coindesk.com/markets/2026/07/29/company-behind-ai-trade-that-caused-usd60-million-crypto-liquidations-to-cover-all-losses) ⭐️ 9.0/10
 
-Anthropic researchers used Claude Mythos Preview to discover improved methods for attacking cryptographic algorithms, demonstrating advanced AI application in security research. This breakthrough shows that state-of-the-art AI can actively uncover vulnerabilities in foundational security systems, potentially influencing how cryptographic protocols are designed and evaluated. The discovery specifically targets cryptographic weaknesses in algorithms used to protect online data, leveraging Claude's reasoning capabilities to find novel attack vectors.
+A company that executed an AI-driven trade causing $60 million in cryptocurrency liquidations has announced it will fully compensate all affected users. This incident highlights the risks of AI-powered trading in volatile crypto markets, and the company's decision to cover losses sets a precedent for accountability in automated trading. The trade reportedly triggered cascading liquidations across multiple exchanges, affecting leveraged positions in major cryptocurrencies like Bitcoin and Ethereum.
 
-rss · Anthropic News · Jul 29, 01:17
+rss · CoinDesk · Jul 29, 14:03
 
-**Background**: Claude is a large language model developed by Anthropic, trained using Constitutional AI for safety. Cryptographic algorithms are mathematical methods that encrypt data to ensure privacy and security online. AI-assisted vulnerability discovery is an emerging field where models help identify potential weaknesses in code or protocols.
+**Background**: In cryptocurrency trading, liquidation occurs when a leveraged position is force-closed due to insufficient margin, often during rapid price movements. AI trading bots use algorithms to execute trades autonomously, analyzing market data and generating signals. While they can enhance efficiency, they also carry risks of unintended large-scale impacts, especially in illiquid markets.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://www.anthropic.com/research/discovering-cryptographic-weaknesses">Discovering cryptographic weaknesses with Claude \ Anthropic</a></li>
-<li><a href="https://en.wikipedia.org/wiki/Claude_%28AI%29">Claude (AI)</a></li>
+<li><a href="https://www.litefinance.org/blog/for-beginners/how-to-trade-crypto/liquidation-in-crypto/">What Is Liquidation in Crypto Trading? | LiteFinance</a></li>
+<li><a href="https://www.finder.com/stock-trading/ai-trading-bot">Best AI Trading Bots in 2026: Compare Top Platforms for Stocks and Forex</a></li>
 
 </ul>
 </details>
+
+**Tags**: `#AI`, `#crypto liquidations`, `#trading`, `#risk management`
 
 ---
 
 <a id="item-3"></a>
-## [OlmoEarth: Planetary-Scale Geospatial AI Platform](https://huggingface.co/blog/allenai/olmoearth-infrastructure) ⭐️ 8.0/10
+## [Wall Street Giants Back Clarity Act](https://www.coindesk.com/policy/2026/07/28/blackrock-fidelity-other-wall-street-giants-back-the-clarity-act) ⭐️ 8.0/10
 
-Allen AI announced the OlmoEarth platform on November 4, 2025, an open end-to-end system for planetary-scale geospatial inference using frontier foundation models. This platform democratizes access to powerful geospatial AI for non-profits and NGOs, enabling real-time, decision-ready insights from multi-sensor Earth data at an unprecedented scale. OlmoEarth provides an end-to-end solution including data management, fine-tuning, embeddings, and production deployment, with source code, training data, and pre-trained weights openly available.
+BlackRock, Fidelity, and other major Wall Street firms have publicly endorsed the Clarity Act, a U.S. bill that aims to establish a unified regulatory framework for digital assets. This endorsement signals strong institutional support for regulatory clarity, which could accelerate crypto adoption by traditional finance and reduce legal uncertainty for market participants. The Clarity Act \(Digital Asset Market Clarity Act of 2025\) is intended to delineate jurisdiction between the SEC and CFTC over the digital asset market, but it remains stalled in the Senate.
 
-rss · Hugging Face Blog · Jul 29, 00:27
+rss · CoinDesk · Jul 29, 00:08
 
-**Background**: Geospatial inference applies AI to extract insights from satellite imagery and other Earth observation data. Planetary-scale AI involves coupling large models with global sensing networks to understand and reason about the Earth in real time. OlmoEarth builds on recent foundation models for geospatial tasks, such as the Population Dynamics Foundation Model \(PDFM\) from Google.
+**Background**: Currently, U.S. crypto regulations are fragmented, with no clear boundary between SEC and CFTC authority. The Clarity Act seeks to resolve this by creating a transparent and predictable regulatory framework, which would allow businesses to build compliance programs with confidence.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://allenai.org/olmoearth">OlmoEarth | Ai2</a></li>
-<li><a href="https://allenai.org/blog/olmoearth">Introducing OlmoEarth Platform: Powerful open infrastructure for planetary insights | Ai2</a></li>
-<li><a href="https://arxiv.org/abs/2511.13655">[2511.13655] OlmoEarth: Stable Latent Image Modeling for Multimodal Earth Observation</a></li>
+<li><a href="https://www.forbes.com/sites/tonyaevans/2026/07/16/the-clarity-act-delay-is-now-a-compliance-problem-not-just-a-political-one/">CLARITY Act Delay Is Now A Compliance Problem, Not Just...</a></li>
+<li><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6717280">The CLARITY Act in Motion: What the Senate Debate... :: SSRN</a></li>
+<li><a href="https://bitok.org/blog/clarity-act-explained">What to Expect From the CLARITY Act in 2026</a></li>
 
 </ul>
 </details>
+
+**Tags**: `#regulation`, `#institutional adoption`, `#policy`, `#Clarity Act`
 
 ---
 
 <a id="item-4"></a>
-## [Wall Street Giants Endorse the Clarity Act](https://www.coindesk.com/policy/2026/07/28/blackrock-fidelity-other-wall-street-giants-back-the-clarity-act) ⭐️ 8.0/10
+## [OpenAI Report: AI Agents Accelerate Scientific Computing](https://openai.com/index/scientific-computing-agentic-ai) ⭐️ 8.0/10
 
-BlackRock, Fidelity, and other major Wall Street firms have publicly endorsed the Clarity Act, a U.S. crypto regulatory bill that aims to define jurisdiction between the SEC and CFTC. This endorsement signals significant institutional support for regulatory clarity, which could accelerate mainstream adoption of digital assets and reduce legal uncertainty for market participants. The Clarity Act, while providing a framework, would still require months or years of rulemaking by the SEC and CFTC before full implementation, meaning immediate certainty is limited.
-
-rss · CoinDesk · Jul 29, 00:08
-
-**Background**: The Clarity Act is a bipartisan U.S. legislative proposal designed to resolve the jurisdictional dispute between the Securities and Exchange Commission \(SEC\) and the Commodity Futures Trading Commission \(CFTC\) over digital assets. It aims to classify cryptocurrencies as either securities or commodities, thereby clarifying regulatory oversight. The bill has gained renewed momentum following a compromise between lawmakers.
-
-<details><summary>References</summary>
-<ul>
-<li><a href="https://blog.visiion.io/clarity-act-crypto-regulation-impact/">CLARITY Act Explained: Market Impact &amp; What It Means - Visiion Blog</a></li>
-<li><a href="https://clsbluesky.law.columbia.edu/2025/09/09/arnold-porter-discusses-the-clarity-act/">Arnold &amp; Porter Discusses the CLARITY Act | CLS Blue Sky Blog</a></li>
-<li><a href="https://adbytes.media/blog/clarity-act-would-not-deliver-instant-crypto-regulatory-certainty">CLARITY Act Would Not Deliver Instant Crypto Regulatory Certainty</a></li>
-
-</ul>
-</details>
-
----
-
-<a id="item-5"></a>
-## [Kimi Delta Attention Explained with Bra-Ket Notation](https://blog.doubleword.ai/you-could-have-come-up-with-kimi-delta-attention) ⭐️ 8.0/10
-
-A technical blog post by doubleword.ai explains the Kimi Delta Attention \(KDA\) mechanism using bra-ket notation, making the complex delta-rule linear attention algorithm more accessible to researchers and practitioners. This explanation lowers the barrier to understanding a state-of-the-art attention mechanism that improves upon architectures like Gated DeltaNet and Mamba, potentially accelerating adoption in efficient long-context AI inference. The blog post uses Dirac notation to illustrate how KDA stores summed outer products in a fixed-size state S\_t instead of storing every past key and value, enabling efficient recurrent updates with channel-wise forgetting.
-
-hackernews · AnhTho\_FR · Jul 29, 00:02 · [Discussion](https://news.ycombinator.com/item?id=49085909)
-
-**Background**: Kimi Delta Attention is a delta-rule linear attention mechanism that combines channel-wise forgetting with efficient chunkwise recurrent updates. It is part of the Kimi Linear architecture, which introduces a hybrid linear attention approach for scalable long-context processing. Bra-ket notation, originally from quantum mechanics, is a compact way to represent vectors and linear operators, and it is used here to simplify the mathematical exposition.
-
-<details><summary>References</summary>
-<ul>
-<li><a href="https://www.emergentmind.com/topics/kimi-delta-attention">Kimi Delta Attention: Delta‐Rule Linear Mechanism</a></li>
-<li><a href="https://jianyuh.github.io/attention/2025/12/13/KDA.html">Linear Attention: Kimi Delta Attention | Jianyu Huang’s Blog</a></li>
-
-</ul>
-</details>
-
-**Discussion**: Community comments express skepticism about the accessibility, with one user noting they could not have come up with KDA despite the explanation. Others appreciate the explicit notation explanation but debate potential LLM authorship of the post.
-
----
-
-<a id="item-6"></a>
-## [Ondo Abandons Public Blockchain for Private Trading Network](https://www.coindesk.com/business/2026/07/28/ondo-drops-tokenized-asset-blockchain-plans-for-private-high-speed-trading-network) ⭐️ 7.0/10
-
-Ondo Finance has abandoned its plans to build a public blockchain for tokenized real-world assets, instead opting to develop a private, high-speed trading network aimed at institutional investors. This pivot signals a shift in the tokenization industry toward private, permissioned infrastructure that prioritizes speed and regulatory compliance over decentralization, potentially accelerating institutional adoption of digital assets. The new private network will focus on high-speed trading of tokenized assets, moving away from the public blockchain model that Ondo originally pursued. Details on the technology stack and timeline have not been disclosed.
-
-rss · CoinDesk · Jul 29, 03:44
-
-**Background**: Ondo Finance is a platform that tokenizes real-world assets \(RWAs\) such as U.S. Treasuries, offering yield-bearing products like USDY and OUSG. Asset tokenization uses blockchain to represent ownership of physical assets as digital tokens, enabling fractional ownership and automated trading. Many tokenization projects have struggled with public blockchain scalability and regulatory hurdles, leading some to explore private networks.
-
-<details><summary>References</summary>
-<ul>
-<li><a href="https://ondo.finance/">Ondo Finance — Institutional-grade finance, delivered onchain</a></li>
-<li><a href="https://grokipedia.com/page/asset_tokenization">Asset tokenization</a></li>
-<li><a href="https://www.weforum.org/stories/financial-and-monetary-systems/tokenization-assets-transform-future-of-finance/">How will asset tokenization transform the future of finance? | World Economic Forum</a></li>
-
-</ul>
-</details>
-
-**Tags**: `#tokenization`, `#Ondo`, `#blockchain`, `#institutional adoption`, `#trading network`
-
----
-
-<a id="item-7"></a>
-## [Coinbase STX Delayed Sends and Receives](https://status.coinbase.com/incidents/cz15q0p16cgs) ⭐️ 7.0/10
-
-Coinbase identified an issue causing delayed sends and receives on the Stacks network for STX cryptocurrency, and a fix is being implemented as of July 28. This directly affects STX users on Coinbase who may experience delays in transferring funds, though buys, sells, and fiat transactions remain unaffected. It highlights ongoing operational challenges in layer-2 blockchain networks. The issue was first investigated at 07:59 PDT and then identified at 10:18 PDT on July 28. Coinbase assured users that funds are safe.
-
-rss · Coinbase Status · Jul 29, 01:18
-
-**Background**: Stacks is a layer-1.5 blockchain that connects to Bitcoin using Proof of Transfer \(PoX\) consensus and enables smart contracts via the Clarity language. STX is the native cryptocurrency of the Stacks network, used for fees and participation in decentralized applications. Coinbase is a major cryptocurrency exchange where users can buy, sell, and transfer STX.
-
-<details><summary>References</summary>
-<ul>
-<li><a href="https://en.wikipedia.org/wiki/Stacks_blockchain">Stacks blockchain - Wikipedia</a></li>
-<li><a href="https://www.okx.com/learn/stacks-ecosystem">Boosting Bitcoin: the complete guide to the Stacks... | OKX</a></li>
-
-</ul>
-</details>
-
----
-
-<a id="item-8"></a>
-## [SBCL 2.6.7 adds SIMD support for ARM64 and AVX512](https://sbcl.org/all-news.html?2.6.7) ⭐️ 7.0/10
-
-Steel Bank Common Lisp version 2.6.7 introduces SIMD support for ARM64 via the SB-SIMD contrib and adds AVX512 instruction support on x86-64. These improvements enable vectorized operations for better performance on modern hardware. This update significantly boosts the performance of Common Lisp programs on modern CPUs, making SBCL more competitive for computationally intensive tasks like scientific computing and data processing. It also reflects the continued evolution of Lisp implementations to leverage cutting-edge hardware features. The ARM64 SIMD support was contributed by Sylvia Harrington, while AVX512 support came from Robert Smith and Arthur Miller. Users must explicitly invoke SIMD intrinsics; the release does not mention auto-vectorization, so manual use is required.
-
-hackernews · tmtvl · Jul 29, 01:11 · [Discussion](https://news.ycombinator.com/item?id=49086971)
-
-**Background**: Steel Bank Common Lisp \(SBCL\) is a high-performance, open-source Common Lisp compiler. SIMD \(Single Instruction, Multiple Data\) allows a single instruction to process multiple data points simultaneously, crucial for performance in numerical and multimedia applications. AVX512 is Intel's advanced 512-bit SIMD extension, offering significant speedups for parallel workloads. The name 'Steel Bank' originates from Carnegie Mellon University, referencing Andrew Carnegie \(steel\) and Andrew Mellon \(banking\).
-
-<details><summary>References</summary>
-<ul>
-<li><a href="https://en.wikipedia.org/wiki/Steel_Bank_Common_Lisp">Steel Bank Common Lisp</a></li>
-<li><a href="https://en.wikipedia.org/wiki/AVX-512">AVX-512 - Wikipedia</a></li>
-<li><a href="https://www.intel.com/content/www/us/en/developer/articles/technical/intel-avx-512-instructions.html">Intel® AVX-512 Instructions</a></li>
-
-</ul>
-</details>
-
-**Discussion**: Community members are excited about the new SIMD features, with some inquiring about usage and whether auto-vectorization is supported. Others discussed historical naming origins and comparisons with other Lisp implementations like Clozure Common Lisp \(CCL\). One user requested documentation for the memory arena feature.
-
-**Tags**: `#Common Lisp`, `#SBCL`, `#SIMD`, `#Programming Languages`, `#Performance`
-
----
-
-<a id="item-9"></a>
-## [OpenAI Reports Scientists Use AI Coding Agents in Genomics](https://openai.com/index/scientific-computing-agentic-ai) ⭐️ 7.0/10
-
-OpenAI published a field report documenting how scientists are leveraging AI coding agents to modernize scientific computing, significantly accelerating software development and genomic discoveries. This report demonstrates a practical, high-impact application of agentic AI in a critical scientific domain, potentially speeding up research and enabling new discoveries in genomics and other fields. The report highlights the use of AI coding agents to automate and optimize computational workflows, reduce development time, and handle complex data analysis tasks in genomics research.
+OpenAI published a field report showing how scientists are using AI coding agents to modernize scientific computing, significantly speeding up software development and discovery in genomics and other fields. This demonstrates a practical, high-impact application of agentic AI beyond chatbots, potentially transforming how scientific research is conducted by automating complex coding tasks. The report focuses on real-world use cases in genomics, where AI agents handle tasks like pipeline development and data analysis, reducing development time from months to days.
 
 rss · OpenAI Blog · Jul 29, 01:00
 
-**Background**: Agentic AI refers to AI systems that can pursue goals, use tools, and take actions with varying degrees of autonomy. In scientific computing, researchers often write custom code for simulations and data analysis. AI coding agents can assist by generating, debugging, and optimizing code, thereby accelerating the research pipeline.
+**Background**: Agentic AI refers to AI systems that can autonomously pursue goals, use tools, and take actions within defined constraints. AI coding agents are a specific type that can write, debug, and optimize code, enabling researchers to focus on higher-level scientific questions rather than routine programming.
 
 <details><summary>References</summary>
 <ul>
@@ -208,24 +100,69 @@ rss · OpenAI Blog · Jul 29, 01:00
 </ul>
 </details>
 
+**Tags**: `#AI`, `#scientific computing`, `#agentic AI`, `#genomics`, `#OpenAI`
+
 ---
 
-<a id="item-10"></a>
-## [Google Expands Gemini API Managed Agents with 3.6 Flash, Hooks, Triggers](https://blog.google/innovation-and-ai/technology/developers-tools/expanding-managed-agents-gemini-api-3-6-flash-hooks/) ⭐️ 7.0/10
+<a id="item-5"></a>
+## [Ionic Digital surges 26% on Nasdaq debut](https://www.coindesk.com/business/2026/07/29/ionic-digital-jumps-26-in-nasdaq-debut-giving-celsius-network-claimholders-an-exit-route) ⭐️ 7.0/10
 
-Google announced new features for Gemini API Managed Agents, including support for the Gemini 3.6 Flash model, hooks, and triggers, enabling more flexible agent behaviors and event-driven integrations. These enhancements significantly improve the capabilities of managed agents, allowing developers to build more autonomous, event-responsive AI applications with lower latency and greater control. Gemini 3.6 Flash is a natively multimodal reasoning model optimized for speed; hooks and triggers allow agents to execute custom code at specific lifecycle points or respond to external events.
+Ionic Digital, a bitcoin miner formed from Celsius Mining assets, began trading on the Nasdaq via a direct listing on July 28, 2026, under ticker IOND, and its shares jumped 26% on the first day. This provides Celsius Network claimholders with a liquid exit route to sell shares they received as part of the bankruptcy settlement, potentially recovering value from their claims. The reference price was set at $53, and the stock opened at $66.80, giving Ionic Digital a market capitalization of approximately $2.5 billion. The company was created from Celsius Mining, a subsidiary of the bankrupt Celsius Network.
 
-rss · Google AI Blog · Jul 29, 00:00
+rss · CoinDesk · Jul 29, 17:22
 
-**Background**: Managed Agents in the Gemini API provide a config-driven, REST-first environment for building autonomous agents in a fully managed Linux sandbox. With a single API call, developers can spin up agents that reason, use tools, and execute code in isolated, ephemeral environments. The new features build on this foundation to enable more sophisticated agent workflows.
+**Background**: Celsius Network filed for bankruptcy in July 2022 after freezing customer withdrawals. As part of its restructuring plan, Celsius Mining assets were spun off into Ionic Digital, and shares were distributed to claimholders. Ionic Digital's direct listing on Nasdaq allows those shares to be traded publicly, providing a means for creditors to exit.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://blog.google/innovation-and-ai/technology/developers-tools/expanding-managed-agents-gemini-api-3-6-flash-hooks/">What’s new in Managed Agents in Gemini API</a></li>
-<li><a href="https://docs.cloud.google.com/gemini-enterprise-agent-platform/build/managed-agents">Managed Agents API on Agent Platform overview | Gemini Enterprise Agent Platform | Google Cloud Documentation</a></li>
-<li><a href="https://deepmind.google/models/model-cards/gemini-3-6-flash/">Gemini 3.6 Flash - Model Card — Google DeepMind</a></li>
+<li><a href="https://www.renaissancecapital.com/IPO-Center/News/120742/Cloud-infrastructure-company-Ionic-Digitals-Nasdaq-reference-price-is-set-a">IOND IPO News - Cloud infrastructure company Ionic Digital&#x27;s Nasdaq reference price is set at $53 ahead of Tuesday direct listing</a></li>
+<li><a href="https://www.renaissancecapital.com/IPO-Center/News/120140/Bitcoin-miner-Ionic-Digital-files-for-a-direct-listing-on-the-Nasdaq">IOND IPO News - Bitcoin miner Ionic Digital files for a direct listing on the Nasdaq</a></li>
 
 </ul>
 </details>
+
+**Tags**: `#Celsius`, `#Ionic Digital`, `#IPO`, `#Nasdaq`, `#Crypto Mining`
+
+---
+
+<a id="item-6"></a>
+## [Mythos Preview Uses Chain-of-Thought to Discover AES Möbius Bridge](https://news.google.com/rss/articles/CBMibEFVX3lxTE0tY2k4b2JFT1FDZDdydEdSb0pXVG12STJJLXRHSnlOSUpIeGdNUzMtdU5hek1DaHdWNlRLMG5WZlh6LVF2cnZGejdfTDlxb3BIRngyVDNlZDBWNVFyWHBFWTFWQ2dodzR5YS1sMA?oc=5) ⭐️ 7.0/10
+
+Anthropic revealed that its Mythos Preview model employed chain-of-thought reasoning to uncover the AES Möbius Bridge, a novel algebraic structure in the AES S-box that enables faster cryptanalysis. The discovery led to up to 800x speedup in 7-round AES-128 meet-in-the-middle attacks. This demonstrates that advanced AI models can autonomously discover complex mathematical structures, advancing both AI reasoning and cryptographic analysis. It could lead to stronger defenses or improved attacks on AES. The AES Möbius Bridge is an invariant fingerprint that exploits the algebraic structure of the AES S-box, eliminating a 256-way guessing step. Mythos Preview's chain-of-thought process allowed it to derive this bridge without human guidance.
+
+rss · Anthropic News · Jul 29, 01:28
+
+**Background**: The Advanced Encryption Standard \(AES\) is a widely used symmetric encryption algorithm whose security depends on the S-box, a nonlinear substitution component. Chain-of-thought reasoning is a technique where AI models break down complex problems into step-by-step reasoning, enhancing their problem-solving abilities. The Möbius Bridge refers to a mathematical structure that reveals weaknesses in AES's algebraic design.
+
+<details><summary>References</summary>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Claude_Mythos">Claude Mythos - Wikipedia</a></li>
+<li><a href="https://www-cdn.anthropic.com/c88771e1bf5ee8885349eed05e5484c0e5f7e02b/aes_mobius_bridge.pdf">Cryptanalysis of 7-Round AES via the Algebraic Structure of its S-box</a></li>
+<li><a href="https://blog.ogwilliam.com/post/claude-mythos-ai-cryptanalysis-hawk-aes">How Claude Mythos Breaks Mathematical Cryptography • William OGOU Cybersecurity Blog</a></li>
+
+</ul>
+</details>
+
+**Tags**: `#AI`, `#cryptography`, `#chain-of-thought`, `#Anthropic`, `#research`
+
+---
+
+<a id="item-7"></a>
+## [Claude AI identifies cryptographic weaknesses](https://news.google.com/rss/articles/CBMie0FVX3lxTE13elp4eC1EQlJMdmtBdDZYaGQ0UXJoVE9sOGNtSDZIRFRYV3pkU1E4TnlNX3BTai1QVjduNVJUampVZGVySmlKRmVtcUFXcDBlNFVTQVdHN2ZiUUdjSlNtLUhXb3JialVEWGprd0tjdUVZQ2dhSFExaUtoTQ?oc=5) ⭐️ 7.0/10
+
+Anthropic has announced that its AI model Claude successfully identified novel attacks against cryptographic schemes submitted to international standardization efforts. The findings were reviewed and validated by human experts. This demonstrates that frontier AI systems can assist in discovering previously unknown cryptographic vulnerabilities, potentially accelerating security research and improving encryption standards. It highlights AI's role in augmenting human expertise rather than replacing it. Claude identified attacks on cryptographic schemes that were part of international standardization efforts, not just trivial weaknesses. The research was conducted by Anthropic and the results were validated by human cryptographers.
+
+rss · Anthropic News · Jul 29, 01:17
+
+**Background**: Anthropic's Claude is a large language model trained to be helpful, honest, and harmless. Cryptographic weaknesses are flaws in encryption algorithms that could be exploited by attackers. Traditionally, finding such weaknesses requires deep expertise and manual analysis. This research shows AI can assist in that process.
+
+<details><summary>References</summary>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Claude_%28AI%29">Claude (AI) - Wikipedia</a></li>
+
+</ul>
+</details>
+
+**Tags**: `#AI Safety`, `#Cryptography`, `#Claude`, `#Security`
 
 ---
