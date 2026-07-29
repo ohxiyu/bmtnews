@@ -1603,7 +1603,6 @@ input {
   }
 
   .site-brand-copy small,
-  .site-nav a:nth-child(3),
   .site-nav a:nth-child(4) {
     display: none;
   }

@@ -1,0 +1,201 @@
+name: BMTNews Source Change
+
+on:
+  issues:
+    types:
+      - labeled
+
+concurrency:
+  group: source-change-${{ github.event.issue.number }}
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+  issues: write
+  pull-requests: write
+
+jobs:
+  apply:
+    if: ${{ github.event.label.name == 'source-approved' }}
+    runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      ISSUE_NUMBER: ${{ github.event.issue.number }}
+      APPROVER: ${{ github.actor }}
+      REPOSITORY: ${{ github.repository }}
+      EVENT_PATH: ${{ github.event_path }}
+      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
+    steps:
+      - name: Verify approving actor
+        shell: bash
+        run: |
+          permission="$(
+            gh api \
+              "repos/${REPOSITORY}/collaborators/${APPROVER}/permission" \
+              --jq '.permission'
+          )"
+          case "$permission" in
+            admin|maintain|write)
+              ;;
+            *)
+              gh issue comment "$ISSUE_NUMBER" \
+                --repo "$REPOSITORY" \
+                --body "来源变更未执行：批准标签必须由具有写权限的维护者添加。"
+              exit 1
+              ;;
+          esac
+
+      - name: Checkout latest main
+        uses: actions/checkout@v6
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@v7
+        with:
+          version: "0.11.32"
+          enable-cache: true
+
+      - name: Install dependencies
+        run: uv sync --frozen --extra dev
+
+      - name: Apply and validate request
+        id: apply_request
+        shell: bash
+        run: |
+          set +e
+          uv run python -m src.source_admin apply \
+            --event "$EVENT_PATH" \
+            --config data/config.github.json \
+            --result "$RUNNER_TEMP/source-change-result.json" \
+            2>"$RUNNER_TEMP/source-change-error.txt"
+          exit_code="$?"
+          set -e
+          echo "exit_code=$exit_code" >> "$GITHUB_OUTPUT"
+
+      - name: Report rejected request
+        if: ${{ steps.apply_request.outputs.exit_code != '0' }}
+        shell: bash
+        run: |
+          {
+            echo "来源变更校验失败，生产配置未修改。"
+            echo
+            echo '```text'
+            sed -n '1,40p' "$RUNNER_TEMP/source-change-error.txt"
+            echo '```'
+          } > "$RUNNER_TEMP/source-change-comment.md"
+          gh issue comment "$ISSUE_NUMBER" \
+            --repo "$REPOSITORY" \
+            --body-file "$RUNNER_TEMP/source-change-comment.md"
+          gh issue edit "$ISSUE_NUMBER" \
+            --repo "$REPOSITORY" \
+            --remove-label source-approved
+          exit 1
+
+      - name: Reject no-op request
+        if: ${{ steps.apply_request.outputs.exit_code == '0' }}
+        shell: bash
+        run: |
+          if git diff --quiet -- data/config.github.json; then
+            gh issue comment "$ISSUE_NUMBER" \
+              --repo "$REPOSITORY" \
+              --body "来源变更未执行：当前生产配置已经是申请的目标状态。"
+            gh issue edit "$ISSUE_NUMBER" \
+              --repo "$REPOSITORY" \
+              --remove-label source-approved
+            exit 1
+          fi
+
+      - name: Run source change tests
+        if: ${{ steps.apply_request.outputs.exit_code == '0' }}
+        run: uv run pytest tests/test_source_admin.py
+
+      - name: Create task branch
+        if: ${{ steps.apply_request.outputs.exit_code == '0' }}
+        id: branch
+        shell: bash
+        run: |
+          branch="agent/source-issue-${ISSUE_NUMBER}"
+          echo "name=$branch" >> "$GITHUB_OUTPUT"
+
+          if git ls-remote --exit-code origin "refs/heads/$branch" >/dev/null 2>&1; then
+            compare_url="https://github.com/${REPOSITORY}/compare/main...${branch}?expand=1"
+            gh issue comment "$ISSUE_NUMBER" \
+              --repo "$REPOSITORY" \
+              --body "来源变更分支已经存在：${compare_url}"
+            echo "exists=true" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+
+          git switch -c "$branch"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/config.github.json
+          git commit -m "Manage source from issue #${ISSUE_NUMBER}"
+          git push --set-upstream origin "$branch"
+          echo "exists=false" >> "$GITHUB_OUTPUT"
+
+      - name: Open draft pull request
+        if: >-
+          ${{ steps.apply_request.outputs.exit_code == '0' &&
+              steps.branch.outputs.exists == 'false' }}
+        shell: bash
+        env:
+          BRANCH_NAME: ${{ steps.branch.outputs.name }}
+        run: |
+          issue_url="https://github.com/${REPOSITORY}/issues/${ISSUE_NUMBER}"
+          {
+            echo "## What changed"
+            echo
+            echo "Applies the approved information-source change from #${ISSUE_NUMBER}."
+            echo
+            echo "## User impact"
+            echo
+            echo "The production source configuration changes only after this PR is reviewed, tested, and merged."
+            echo
+            echo "## Deployment impact"
+            echo
+            echo "The next scheduled collection after merge will use the updated source configuration."
+            echo
+            echo "## Validation"
+            echo
+            echo "- Source request schema and public URL checks"
+            echo "- Pydantic production config validation"
+            echo "- \`uv run pytest tests/test_source_admin.py\`"
+            echo
+            echo "Request: ${issue_url}"
+          } > "$RUNNER_TEMP/source-change-pr.md"
+
+          set +e
+          pr_url="$(
+            gh pr create \
+              --repo "$REPOSITORY" \
+              --base main \
+              --head "$BRANCH_NAME" \
+              --draft \
+              --title "Manage source from issue #${ISSUE_NUMBER}" \
+              --body-file "$RUNNER_TEMP/source-change-pr.md" \
+              2>"$RUNNER_TEMP/source-change-pr-error.txt"
+          )"
+          pr_status="$?"
+          set -e
+
+          if [ "$pr_status" -eq 0 ]; then
+            gh issue comment "$ISSUE_NUMBER" \
+              --repo "$REPOSITORY" \
+              --body "来源变更已生成 Draft PR：${pr_url}"
+            exit 0
+          fi
+
+          compare_url="https://github.com/${REPOSITORY}/compare/main...${BRANCH_NAME}?expand=1"
+          gh issue comment "$ISSUE_NUMBER" \
+            --repo "$REPOSITORY" \
+            --body "来源变更分支已经创建。当前仓库未允许 Actions 自动创建 PR，请使用此链接完成 Draft PR：${compare_url}"
+          echo "::warning::Draft PR creation was unavailable; a compare link was posted to the issue."
