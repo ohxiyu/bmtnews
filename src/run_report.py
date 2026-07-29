@@ -27,7 +27,10 @@ _HTTP_URL = re.compile(r"https?://[^\s<>'\"]+")
 _METRIC_LABELS = (
     ("fetched_raw", "本次采集"),
     ("unique_after_url_dedup", "URL 去重后"),
+    ("staged_total", "暂存累计"),
+    ("edition_candidates", "本期候选"),
     ("current_day_items", "属于当日"),
+    ("skipped_published_history", "跳过历史发布"),
     ("skipped_already_analyzed", "跳过已分析"),
     ("analyzed_this_run", "本次分析"),
     ("analyzed_today", "今日累计分析"),

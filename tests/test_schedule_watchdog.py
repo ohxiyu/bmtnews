@@ -99,7 +99,9 @@ def test_main_dispatches_recovery_and_fails_for_notification(
     monkeypatch.setattr(
         schedule_watchdog,
         "fetch_workflow_runs",
-        lambda **kwargs: [_run(updated_at=datetime.now(timezone.utc) - timedelta(hours=6))],
+        lambda **kwargs: [
+            _run(updated_at=datetime.now(timezone.utc) - timedelta(hours=26))
+        ],
     )
     monkeypatch.setattr(
         schedule_watchdog,
@@ -134,4 +136,4 @@ def test_watchdog_workflow_has_required_schedule_and_permissions() -> None:
 
     assert "cron: '43 * * * *'" in workflow
     assert "actions: write" in workflow
-    assert "--threshold-hours 5" in workflow
+    assert "--threshold-hours 25" in workflow

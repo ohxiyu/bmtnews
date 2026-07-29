@@ -68,7 +68,7 @@
       }
     ],
     "hackernews": {
-      "enabled": true,
+      "enabled": false,
       "fetch_top_stories": 20,
       "min_score": 100,
       "category": "tech-community"
@@ -155,25 +155,25 @@
       {
         "name": "Simon Willison",
         "url": "https://simonwillison.net/atom/everything/",
-        "enabled": true,
+        "enabled": false,
         "category": "ai-devtools"
       },
       {
         "name": "GitHub Trending - Daily",
         "url": "https://mshibanami.github.io/GitHubTrendingRSS/daily/all.xml",
-        "enabled": true,
+        "enabled": false,
         "category": "ai-devtools"
       },
       {
         "name": "Launch YC",
         "url": "https://hnrss.org/launches",
-        "enabled": true,
+        "enabled": false,
         "category": "tech-community"
       },
       {
         "name": "QbitAI 量子位",
         "url": "https://www.qbitai.com/feed",
-        "enabled": true,
+        "enabled": false,
         "category": "ai-media"
       },
       {
@@ -331,11 +331,11 @@
     "time_window_hours": 24,
     "daily_timezone": "Asia/Shanghai",
     "preserve_daily_items": true,
-    "max_items": 24,
+    "max_items": 12,
     "category_groups": {
       "exchange": {
         "name": "Exchange Announcements",
-        "limit": 6,
+        "limit": 5,
         "categories": [
           "exchange-announcements",
           "exchange-operations"
@@ -343,21 +343,21 @@
       },
       "markets": {
         "name": "Crypto Markets",
-        "limit": 3,
+        "limit": 4,
         "categories": [
           "crypto-markets"
         ]
       },
       "protocols": {
         "name": "Protocols and On-chain",
-        "limit": 3,
+        "limit": 4,
         "categories": [
           "crypto-protocols"
         ]
       },
       "regulation": {
         "name": "Regulation and Macro",
-        "limit": 4,
+        "limit": 2,
         "categories": [
           "crypto-regulation",
           "macro-regulation"
@@ -365,7 +365,7 @@
       },
       "technology": {
         "name": "Technology",
-        "limit": 7,
+        "limit": 3,
         "categories": [
           "ai-labs",
           "ai-devtools",
@@ -375,7 +375,13 @@
       }
     },
     "default_group": "other",
-    "default_group_limit": 1
+    "default_group_limit": 1,
+    "primary_groups": [
+      "exchange",
+      "markets",
+      "protocols"
+    ],
+    "primary_group_min_items": 9
   },
   "webhook": {
     "enabled": false,

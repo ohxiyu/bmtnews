@@ -276,12 +276,16 @@ results. Categories come from source configuration such as
       }
     },
     "default_group": "other",
-    "default_group_limit": 3
+    "default_group_limit": 3,
+    "primary_groups": ["finance"],
+    "primary_group_min_items": 5
   }
 }
 ```
 
-Group limits are applied after AI score filtering and before enrichment. If
+Group limits are applied after AI score filtering and before enrichment.
+`primary_groups` can reserve up to `primary_group_min_items` slots when enough
+qualified items exist; it never bypasses the AI threshold or group caps. If
 `category_groups` and `max_items` are omitted, filtering behaves as before.
 
 `api_key_env` must be the name of an environment variable, not the API key
@@ -314,6 +318,8 @@ For the full reference, see the [Configuration Guide](project-docs/configuration
 ```bash
 uv run horizon           # Run with default 24h window
 uv run horizon --hours 48  # Fetch from last 48 hours
+uv run horizon --mode fetch --hours 12  # Stage raw items without AI
+uv run horizon --mode publish --hours 24 --cutoff-hour 20  # Publish one edition
 ```
 
 #### With Docker
@@ -327,7 +333,13 @@ The generated report will be saved to `data/summaries/`.
 
 ### 4. Automate (Optional)
 
-Horizon works great as a **GitHub Actions** cron job. See [`.github/workflows/daily-summary.yml`](.github/workflows/daily-summary.yml) for a ready-to-use workflow that generates and deploys your daily briefing to GitHub Pages automatically.
+Horizon works great as a **GitHub Actions** cron job. BMTNews uses
+[`feed-collection.yml`](.github/workflows/feed-collection.yml) to stage raw
+items at 02:17, 08:17, and 14:17 Asia/Shanghai without calling AI. The
+[`daily-summary.yml`](.github/workflows/daily-summary.yml) workflow performs a
+final fetch at 20:17, analyzes the fixed `[previous day 20:00, current day
+20:00)` window once, and deploys one daily edition to GitHub Pages. The staging
+cache is only a coverage aid; the final 24-hour fetch remains a fallback.
 
 Each native pipeline run also writes `data/run-report.json` with counts for
 fetching, URL deduplication, local-day filtering, AI analysis, thresholding,
@@ -338,10 +350,10 @@ an all-source failure still fails the job.
 
 The independent
 [`schedule-watchdog.yml`](.github/workflows/schedule-watchdog.yml) workflow
-checks the successful feed heartbeat hourly. If no successful `main` run has
-completed for more than five hours and no feed run is active, it dispatches
-one recovery run and fails its own job so GitHub can send a workflow failure
-notification. An active feed run suppresses duplicate dispatches.
+checks the successful daily-edition heartbeat hourly. If no successful `main`
+edition has completed for more than 25 hours and no edition run is active, it
+dispatches one recovery run and fails its own job so GitHub can send a workflow
+failure notification. An active edition run suppresses duplicate dispatches.
 
 ## Supported Sources
 

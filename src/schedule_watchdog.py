@@ -16,7 +16,7 @@ from urllib.request import Request, urlopen
 
 DEFAULT_WORKFLOW = "daily-summary.yml"
 DEFAULT_REF = "main"
-DEFAULT_THRESHOLD_HOURS = 5.0
+DEFAULT_THRESHOLD_HOURS = 25.0
 ACTIVE_STATUSES = frozenset(
     {"queued", "in_progress", "waiting", "pending", "requested"}
 )

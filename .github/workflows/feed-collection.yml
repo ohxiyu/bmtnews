@@ -1,9 +1,9 @@
-name: BMTNews Daily Edition
+name: BMTNews Feed Collection
 
 on:
   schedule:
-    # Fixed 20:00 cutoff; the 17-minute buffer allows late source updates.
-    - cron: '17 20 * * *'
+    # Three staging-only runs plus the final fetch in daily-summary.yml.
+    - cron: '17 2,8,14 * * *'
       timezone: 'Asia/Shanghai'
   workflow_dispatch:
 
@@ -11,26 +11,18 @@ concurrency:
   group: bmtnews-feed-update
   cancel-in-progress: false
 
+permissions:
+  contents: read
+
 jobs:
-  daily-summary:
+  collect:
     runs-on: ubuntu-latest
     env:
       TZ: Asia/Shanghai
-    permissions:
-      contents: write  # Needed to commit changes
 
     steps:
       - name: Checkout code
         uses: actions/checkout@v6
-
-      - name: Restore published daily state
-        shell: bash
-        run: |
-          git fetch --depth=1 origin gh-pages:refs/remotes/origin/gh-pages
-          if git cat-file -e "origin/gh-pages:_data/bmtnews_state.json" 2>/dev/null; then
-            mkdir -p docs/_data
-            git show "origin/gh-pages:_data/bmtnews_state.json" > docs/_data/bmtnews_state.json
-          fi
 
       - name: Restore staged source items
         uses: actions/cache@v5
@@ -56,31 +48,15 @@ jobs:
       - name: Prepare GitHub Actions config
         run: cp data/config.github.json data/config.json
 
-      - name: Run Horizon
+      - name: Collect source items without AI analysis
         env:
-          # Map secrets to environment variables expected by config.json
-          # Modify these based on your data/config.github.json provider settings
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
           LWN_KEY: ${{ secrets.LWN_KEY }}
           DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
-          HORIZON_WEBHOOK_URL: ${{ secrets.HORIZON_WEBHOOK_URL }}
-        run: uv run horizon --mode publish --hours 24 --cutoff-hour 20
+        run: uv run horizon --mode fetch --hours 12
 
       - name: Publish run report
         if: ${{ always() }}
         run: python -m src.run_report --input data/run-report.json --output "$GITHUB_STEP_SUMMARY"
-
-      - name: Set current date as environment variable
-        run: echo "DATE=$(date +'%Y-%m-%d')" >> $GITHUB_ENV
-
-      - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v4
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./docs
-          keep_files: true  # Keep existing summaries on gh-pages branch
-          commit_message: "📝 Daily Summary: ${{ env.DATE }}"
-          publish_branch: gh-pages
-          enable_jekyll: true

@@ -27,7 +27,7 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Check feed workflow heartbeat
+      - name: Check daily edition heartbeat
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: >-
@@ -35,4 +35,4 @@ jobs:
           --repository "${GITHUB_REPOSITORY}"
           --workflow daily-summary.yml
           --ref main
-          --threshold-hours 5
+          --threshold-hours 25
