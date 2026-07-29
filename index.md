@@ -34,12 +34,17 @@ page_type: home
                   <span class="day-state">{% if post_key == today_key %}今日{% else %}最新{% endif %}</span>
                 {% endif %}
                 <time datetime="{{ post_key }}">{{ post.date | date: "%Y.%m.%d" }}</time>
+                {% if post.window_start and post.window_end %}
+                  <span class="day-window">
+                    {{ post.window_start | date: "%m.%d %H:%M" }}–{{ post.window_end | date: "%m.%d %H:%M" }}
+                  </span>
+                {% endif %}
               </div>
               <div class="day-divider-stats" aria-label="{{ post_key }} 日报统计">
-                <span data-short="采"><strong data-stat="fetched">—</strong> 条采集</span>
-                <span data-short="析"><strong data-stat="analyzed">—</strong> 条分析</span>
-                <span data-short="展"><strong data-stat="selected">—</strong> 条展示</span>
-                <span data-short="高"><strong data-stat="critical">—</strong> 条高优先级</span>
+                <span data-short="采"><strong data-stat="fetched">{{ post.fetched_count | default: "—" }}</strong> 条采集</span>
+                <span data-short="析"><strong data-stat="analyzed">{{ post.analyzed_count | default: "—" }}</strong> 条分析</span>
+                <span data-short="展"><strong data-stat="selected">{{ post.selected_count | default: "—" }}</strong> 条展示</span>
+                <span data-short="高"><strong data-stat="critical">{{ post.critical_count | default: "—" }}</strong> 条高优先级</span>
               </div>
             </header>
             <div class="daily-feed-content" data-language="zh" data-date="{{ post_key }}">
@@ -89,12 +94,17 @@ page_type: home
                   <span class="day-state">{% if post_key == today_key %}Today{% else %}Latest{% endif %}</span>
                 {% endif %}
                 <time datetime="{{ post_key }}">{{ post.date | date: "%Y.%m.%d" }}</time>
+                {% if post.window_start and post.window_end %}
+                  <span class="day-window">
+                    {{ post.window_start | date: "%m.%d %H:%M" }}–{{ post.window_end | date: "%m.%d %H:%M" }}
+                  </span>
+                {% endif %}
               </div>
               <div class="day-divider-stats" aria-label="{{ post_key }} brief statistics">
-                <span data-short="F"><strong data-stat="fetched">—</strong> fetched</span>
-                <span data-short="A"><strong data-stat="analyzed">—</strong> analyzed</span>
-                <span data-short="D"><strong data-stat="selected">—</strong> displayed</span>
-                <span data-short="H"><strong data-stat="critical">—</strong> high priority</span>
+                <span data-short="F"><strong data-stat="fetched">{{ post.fetched_count | default: "—" }}</strong> fetched</span>
+                <span data-short="A"><strong data-stat="analyzed">{{ post.analyzed_count | default: "—" }}</strong> analyzed</span>
+                <span data-short="D"><strong data-stat="selected">{{ post.selected_count | default: "—" }}</strong> displayed</span>
+                <span data-short="H"><strong data-stat="critical">{{ post.critical_count | default: "—" }}</strong> high priority</span>
               </div>
             </header>
             <div class="daily-feed-content" data-language="en" data-date="{{ post_key }}">
