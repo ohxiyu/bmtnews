@@ -1,62 +1,288 @@
 {
   "version": 1,
-  "date": "2026-07-29",
+  "date": "2026-07-30",
   "timezone": "Asia/Shanghai",
-  "updated_at": "2026-07-29T14:34:00.587687Z",
+  "updated_at": "2026-07-30T14:35:05.836573Z",
   "analyzed_keys": [
-    "032a12373ac1cba330bb6a629b8ee6e946f3b94494e3ef6bcec7cba0c95d2628",
-    "03f2982c856683b5a7718f888758ca0d6a5f770faaf2ec5642605182756860c9",
-    "06729b7583194306084c982442d3499af4955ce838d951953e484b2997fbb341",
-    "0a61c2a5a5d9cf6f7233c9dd798d7833e55bd1c87d6f816fc56e2aa59f6a18b1",
-    "192aafaa7ff5985b5931d7cfc384a37083e8ac723d584652d8dd43f18f118967",
-    "1b13095b08fcb41487a3f387f89da3205b1493a5ae3e8c69e44b9eade9b2ed5a",
-    "1b847e361cb7f8582dc2140c32fec4da4ae42e67881f2a5551d3c9d387713ff7",
-    "1cdfe66e1d92b02cfac8613a7c904947011593162afa9304cfad244d21c7d622",
-    "1e052f8483262233081ee564d2229df821c3fd877611f8deb54e82d8c990688a",
-    "1e30fc7454dd7e0da22cb37a228c945fe06930d92cab0ed5de63e07f4fa86a26",
-    "2af48e1193b91f6f9c5fd145bee8f0b100fd63b60c110dbbb3380c5f1c6c4f66",
-    "2fcb70b2ff272354f9ee75fa5c5593b9040498a3d346e52db77cedcd89194289",
-    "396d1963064793ffefa47576ab05ad4a65388bc2cee0257599cbe97a952e74fc",
-    "3a5867fdb83e370b39a308ce62072699390d99ecdcc697e48e38c9a5386f3e36",
-    "3e243832becbd314da69941eb6eb9ddc816dc8bba664359b42142c66f461c44b",
-    "446f397b6fc5a6f7d411c486959cbe6f36fd6d423fbda8cfddd291d1987899a3",
-    "44c2b0c2bc114c9547eaf96ce9b750f42e04d6b0807348f2e64d3141f49ac74b",
-    "460096578c5f5a5c15a9b8bf4c6c8f3768d82e1d1ab801f8dae16a2f7169da57",
-    "4e1e3f6546a882c9532b68373a273ef410e4de0aa26533c164cc4c8f83449cf7",
-    "503105739b2d3a666fa437cd175b048a7d69d2e4ba85885e642118c325e6a01d",
-    "5f418c4d71b311622417daa071443db4512cda9d48828fd6cf98242cdc6a38f5",
-    "667489340f6e61028a4ea1b7e6eaec40d62b464e0957a2d42da7ff84162d077a",
-    "66c8bc1ed0a323949bae0713d7adaace22cf8d643c6bc32709847b6b27cb2a5b",
-    "6a1aa26bf59ee847539cd29edc7da427ecded5436a6d28ec896f1ed063b48a64",
-    "7f23dd2326410c2019849c0c4cc30649c99436da7f84075c14a9c07634b054ce",
-    "8235d92e4b76154459eecfcaa48e984a6b9a90665a342d7971c3ea25e9a7a59b",
-    "83cf51d32256601417e5b1f3ada6234e0cc352689c110dd583394fcbeab0232b",
-    "84e6b130fc4063497c8a918ce4c434d9cfcae5e6621572804388ab7bbe2bdd89",
-    "86693f608de818a22809b0f63c153f49e49881f9d2272a631b725bd21a1dafa9",
-    "8913e19bf1e6a9a622694b8037e6d16c53ce819175c6862adff9e5ee7ed2f728",
-    "8ce90d33b30aef2011c9c1272ed833abab389cc414ebb953cc0c0e92691760f6",
-    "a4cecb0dbbbf4cededa6749d79d0a51c2851eb1b1993b35e419dbd01301e0fc8",
-    "a95eda39b9802adeceffddc7004d450407b737579e1cb247cee5ab2ef2e76bc6",
-    "ab2fb5a64b8b730965301333f6ce9994dff0c28ec85351699bf04f4e981214bf",
-    "b589e04a1a9203fe00d507ff59d6b34cb86f9bfd50aa5dbe7563da64450aef52",
-    "b789a0530d11c756f49714220a90dcbe22a6db646ca6df35aa7df57e50ef7ee9",
-    "ba20e0cd3f543f77a927191498230d9e7d8233bd55b9b3dfea304a9b00c0fd16",
-    "bdd70956f12da96b0357c93fd42b6b56c7d621c2258c5a0bb205423f4ff78c9e",
-    "beee1138f93cc7ef5fd86de29a0a9fc3dcbaf99541bc1ba1db929f0837ca3b27",
-    "c397cd9cf32e34e396a95e82c4dd698a93fc638100fb388d765065cef557a08f",
-    "ca0bb2ed0e1467fb2cb210957977e93fc7cdee5eb7059e4e83b19241e77d0307",
-    "d6f19a7813584700fdfa8893524969f16ae30d7a3cc6e910594e078dd9715c80",
-    "e2c863257e5210236d5625bf9b7e19d4ad2d21b7e9830dce87f52d4c816fc26a",
-    "e665c7188d20449e854fcbaafeb202fcc0dea84867e08e4a04455491439e718b",
-    "e6bf7eeaf731822bf560fdeab1363c574f74bb046738ed5cc2b3ed546d496217",
-    "e9a8e7220f7c4b71757c77be901a40b8eaca125c90e05c2990074d4cb78f9261",
-    "efbc93a81829505324808fd5aeca022257ca91ae73a56f396ba26fa042e415d4",
-    "f2ba8752b4bb08d5a14d214f1f37e23535ff5026a6b2e4e7d171306e79a6a6a6",
-    "f6189ec4fa562958583d1d6b58b31ba48eb42e4eb5669182ab82f76a93543a78",
-    "f7e8aa15fa69392d1a5e80e03648bb9648558295ff3239c25c3637a4e896bd25",
-    "fe79bd143e0edf1e882eba4bc545f8b2905f79705faf8aca25efa471879142c6"
+    "035a9ac684a8e129483249b5b83af1353c89d6113b6fa727fe407bd545004667",
+    "07481a3ff11788bf12233685fe911362a109fcab121ee0a7a9dae928e2e04227",
+    "0c9f21ebf8ca425741030b0fb804ab08ba671d248b5de58984b7675c59b39761",
+    "13caf6b29d660242c51d0a5d29e08cb87f2d5f57b791ca1d111545cb87b393bf",
+    "2a774c5cbad5121bbdff92aa66a445a587c69faed5e11d6ed6302c7f75e374ca",
+    "391439f519aa7f9201354530b8fbeb2bfc93d3563a28ec4eb78d62a894f4271b",
+    "3bdd3e66584fb5732504a366c7705fa42a04da1d49a5206a75ee355fd528f7bb",
+    "3fcf0aa9a8d6368d3f8cac87e9e62b2dc15bc80c4936f1b6591fc54c85216dbf",
+    "44d336ece48e78fae7278753ce62375f348a5ece52414a033abe142408c475b0",
+    "47b4550477496e0e255b4aba53b66380cc7fe52f334a620fafca59c779795e70",
+    "4b9cf5e309a9800d0a0c32937942a1dd42018ad207bbac7ccb25242013e83609",
+    "4ec774d7dda27371d9a850bb0860f6fa6d785bbc9b77822fdbc0cde996db9d26",
+    "53306820330ddf5347720d4c23b671ad3b7ffd0c26012384b660c61cb7d2f5f5",
+    "5bd62830c7a7670b588116d4e77e75f2ad1370d2cd07e3dc3320abb5e134bcee",
+    "5beb9264b2725b8b944e275b1bfc02a978f3d3ed06f0480dbe77d1df53f23fdc",
+    "5dadb21eb4b54e16806be1ebb277059929eb1003f3271367678506f157063fa3",
+    "6184f2ec6457c300164c7a0e976e293892e0ccacb61ca80814e5c556cf1f5c7b",
+    "61c73b43b8a3e83be26019b9732209c41fcf416beae4383165c4646399ca2e31",
+    "6f971fa9806bccc1590a47e517ec6bdc935d291171e324f0aae99f82aec4e65f",
+    "7438df01c1cabacfa56da8b98f29bb1b270953fa42358915bbb7bd904d1d193d",
+    "7b9d4b9233a2f43bc44f59ea4ce1c36ef7d6b959d88337c97176ab6c007cb71f",
+    "7ed2d51368c6f5760bfb12c3492d580e04cda919211836339aced26881321276",
+    "8a4d00d57975000b2c26a154278037772ff2e46900071e27d74df8c44aea94bf",
+    "9150232c7ab041fdee80787e028c7e0b880f2da0cff42e011c95425e6688f1b3",
+    "926f5c4739d8cb4093acc739170af10e7ef7cf212265643ee5616296012f2646",
+    "992585badac9f2fb6c3fa09fb619300abbdf607e833ce5d9d5da5f2726e49b94",
+    "9ae41dd011a334a171ef910885f55e3455626e30557acb8d2d1df46b773debeb",
+    "9f5b90ab94a1e94566064c97fc258dbdb7f0108e9ae5ba24ea3877a4bd062cc4",
+    "a0bc15e7dfc32a437bb44e58b003a558912ab8b3c8a92966d874cc790f761f79",
+    "a66cb3f290fd9e19562b7ddf240009cd28b10cf613b5cd249c6262ac0f0063ab",
+    "a8d7a966f0967ae5677f615f4e1ffca77a7fbb917dfda6e3cdac6e9a7dbf2a46",
+    "ac997fdbb7bb1e7dbcf9c7add0ee457c4d64aeea54fbfe6d63e5bdae6a173b96",
+    "ae6d5ba2a92f16079598ac6d0573a43e5a5f2a51cfa59057a19fa82d3daba4b3",
+    "ae811c45e343e8a99b3f0aba6710d9ddaad71f968de277425958a2db85531868",
+    "b1fcb3145cbe89cdf733929197495446074fc78fe68541f6820913a3f67fafa8",
+    "b8e915144da22399e5cee14e3f60a148e1ddf12a7ca0fb70a67a19d59fd341ed",
+    "c534a4cfc1efd3f3b1c20d44c12feff14731de4df2e01bda7cbf4448fd6b49c4",
+    "c8a9f14fe5b7432efc539948e3f21a59a77b0e0590eea051b09583e79cb7250a",
+    "cb1ff47c33184695a686af73a1c1853f18523a4a839321e15a3cba6f88788162",
+    "cdbfdbe641cea97aae3fdf5e6b8aae8e7b10b7e86a88e3bff2d3b6986a5a0105",
+    "cf895047d852d1763fded35e533f3cd5ff33906ed4d6398b7fc5af5e5d92c29e",
+    "de404735e13808858823b3d10bbe0a94b0ba89fa8d508aba8ef69a171c3c2e8f",
+    "e14f9fd1db1a5e91d480adc9d84d4fd2c8af79ba9c61808d1adf8eb854f78658",
+    "e3394909b78e13d117b0ec21c307eec7c7c9d0823230a006f1333f0a46de3a27",
+    "e48b11740a215d801b1060affcce3e0f1f752cc76b5ffc6c32ee271a6f1ed73a",
+    "e5dc1aeb19604669610c9b37a4807a457259783b2183f7f9381764b9b3decd2a",
+    "ea630667343f15482563c8810279cf23d70bb6be4a1a0af61e50410fd0a556d9",
+    "ed978cca28ed5df0e5043477e5f5d6a4b75870fe29acfdd2f13ebf526eec8848",
+    "ee9d2a162993e232a14ee67871cd96d2ce325ead37f269627e3d827d5c05bdf9",
+    "f2ba8752b4bb08d5a14d214f1f37e23535ff5026a6b2e4e7d171306e79a6a6a6"
   ],
   "items": [
+    {
+      "id": "rss:www.federalreserve.gov_feeds_press_all.xml:e290aabba3caad80",
+      "source_type": "rss",
+      "title": "Federal Reserve issues FOMC statement",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260729a.htm",
+      "content": null,
+      "author": "Federal Reserve Press Releases",
+      "published_at": "2026-07-29T18:00:00Z",
+      "fetched_at": "2026-07-30T14:35:07.137431Z",
+      "metadata": {
+        "feed_name": "Federal Reserve Press Releases",
+        "category": "macro-regulation",
+        "title_en": "Fed Releases FOMC Statement on Monetary Policy",
+        "detailed_summary_en": "The Federal Reserve issued its latest FOMC statement on July 29, 2026, outlining its decision on interest rates and assessment of economic conditions. This FOMC statement directly influences global financial markets, including cryptocurrencies, by signaling changes in interest rates and liquidity conditions that affect risk sentiment and asset valuations. The statement typically includes the federal funds rate target, forward guidance, and the Fed's outlook on inflation, employment, and economic growth. However, the specific details of the July 2026 statement are not provided here.",
+        "background_en": "The Federal Open Market Committee (FOMC) is the branch of the Federal Reserve that sets monetary policy, including interest rates. Its statements are closely watched by investors worldwide as they provide insights into the central bank's policy trajectory, impacting borrowing costs, investment flows, and market volatility. For crypto markets, Fed policy shifts can alter the appeal of risk-on assets versus traditional safe havens.",
+        "title_zh": "美联储发布FOMC货币政策声明",
+        "detailed_summary_zh": "美联储于2026年7月29日发布了最新的FOMC声明，概述了其利率决策和对经济状况的评估。 这份FOMC声明通过暗示利率和流动性状况的变化，直接影响包括加密货币在内的全球金融市场，从而影响风险情绪和资产估值。 声明通常包括联邦基金利率目标、前瞻性指引以及美联储对通胀、就业和经济增长的展望。但此处未提供2026年7月声明的具体细节。",
+        "background_zh": "联邦公开市场委员会（FOMC）是美联储制定货币政策（包括利率）的分支机构。其声明受到全球投资者的密切关注，因为它提供了对央行政策路径的洞察，影响借贷成本、投资流动和市场波动。对于加密货币市场，美联储政策转向可能改变风险资产与传统避风港之间的吸引力。"
+      },
+      "ai_score": 9.0,
+      "ai_reason": null,
+      "ai_summary": "The Federal Reserve released its latest FOMC statement detailing monetary policy decisions and economic outlook.",
+      "ai_tags": []
+    },
+    {
+      "id": "rss:openai.com_blog_rss.xml:265c6a0134aba9b6",
+      "source_type": "rss",
+      "title": "How enabling two settings tripled our scores on the ARC-AGI-3 benchmark",
+      "url": "https://openai.com/index/how-two-settings-tripled-our-arc-agi-3-scores",
+      "content": null,
+      "author": "OpenAI Blog",
+      "published_at": "2026-07-29T15:00:00Z",
+      "fetched_at": "2026-07-30T14:35:09.362408Z",
+      "metadata": {
+        "feed_name": "OpenAI Blog",
+        "category": "ai-labs",
+        "title_en": "Two Settings Triple OpenAI's ARC-AGI-3 Benchmark Scores",
+        "detailed_summary_en": "OpenAI enabled two API settings—retaining reasoning and enabling compaction—on GPT-5.6, tripling its scores on the ARC-AGI-3 benchmark. This simple configuration change dramatically boosts AI reasoning performance on a key AGI benchmark, suggesting that large efficiency gains are possible without model retraining, which could accelerate progress toward general intelligence. The two settings are 'retain reasoning' (which preserves chain-of-thought during context compaction) and 'enable compaction' (which lossily compresses the conversation history). GPT-5.6 Sol, the most capable variant, was used; the exact score improvement was not disclosed beyond 'tripling'.",
+        "background_en": "ARC-AGI-3 is an interactive reasoning benchmark that measures an AI agent's ability to explore novel environments, infer goals, and plan actions—skills considered essential for artificial general intelligence. GPT-5.6 is OpenAI's latest large language model, released in July 2026 in three variants (Luna, Terra, Sol). 'Compaction' refers to lossy compression of the model's context window, which normally degrades reasoning performance; OpenAI's finding shows that retaining reasoning traces during compaction can actually improve scores.",
+        "title_zh": "两项设置让OpenAI的ARC-AGI-3得分翻三倍",
+        "detailed_summary_zh": "OpenAI在GPT-5.6上启用了两项API设置——保留推理能力和启用上下文压缩——使得其在ARC-AGI-3基准测试中的得分提升了三倍。 这一简单的配置更改大幅提升了AI在关键AGI基准上的推理性能，表明无需重新训练模型即可实现大幅效率提升，可能加速通用智能的进展。 这两项设置分别是‘保留推理’（在上下文压缩期间保留思维链）和‘启用压缩’（有损压缩对话历史）。使用的是最强大的GPT-5.6 Sol变体；具体得分提升幅度仅披露为‘三倍’。",
+        "background_zh": "ARC-AGI-3是一种交互式推理基准测试，用于衡量AI智能体探索新环境、推断目标和规划行动的能力——这些技能被认为是通用人工智能的关键。GPT-5.6是OpenAI于2026年7月发布的最新大型语言模型，提供三个变体（Luna、Terra、Sol）。‘压缩’指的是对模型上下文窗口的有损压缩，通常会降低推理性能；OpenAI的发现表明，在压缩过程中保留推理轨迹反而能提高得分。",
+        "sources": [
+          {
+            "url": "https://arcprize.org/arc-agi/3",
+            "title": "ARC-AGI-3"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/GPT-5.6",
+            "title": "GPT-5.6"
+          },
+          {
+            "url": "https://www.linkedin.com/posts/aarmanroy_trick-i-learnt-late-run-many-sub-agents-activity-7427006007723315200-jZjH",
+            "title": "Prevent AI Model Compaction with Sub-Agents | Aarman... | LinkedIn"
+          }
+        ]
+      },
+      "ai_score": 9.0,
+      "ai_reason": null,
+      "ai_summary": "OpenAI tripled ARC-AGI-3 benchmark scores by enabling two API settings on GPT-5.6, boosting reasoning and efficiency.",
+      "ai_tags": []
+    },
+    {
+      "id": "rss:www.coindesk.com_arc_outboundfeeds_rss_:fcb7de802fb6e2bb",
+      "source_type": "rss",
+      "title": "About $80 million ZEC crosses into Zcash's new Ironwood pool in the first day",
+      "url": "https://www.coindesk.com/tech/2026/07/29/about-usd80-million-zec-crosses-into-zcash-s-new-ironwood-pool-in-the-first-day",
+      "content": null,
+      "author": "Shaurya Malwa",
+      "published_at": "2026-07-29T13:32:37Z",
+      "fetched_at": "2026-07-29T19:44:07.756413Z",
+      "metadata": {
+        "feed_name": "CoinDesk",
+        "category": "crypto-markets",
+        "title_en": "$80M ZEC migrates to Zcash's new Ironwood pool on day one",
+        "detailed_summary_en": "On July 29, 2026, approximately $80 million worth of ZEC (Zcash) was transferred into the new Ironwood shielded pool within the first 24 hours of its activation. The massive migration signals strong community trust and adoption of the Ironwood upgrade, which is crucial for restoring confidence in Zcash's privacy features and circulating supply integrity after the Orchard vulnerability. The Ironwood upgrade replaces the Orchard shielded pool with a new formally verified pool to patch a bug that allowed fake ZEC to be minted. Over 1.5 million ZEC (roughly $80M at current prices) moved on day one, representing about 8% of the circulating supply.",
+        "background_en": "Zcash is a privacy-focused cryptocurrency that uses shielded pools to hide transaction details. In early 2026, a vulnerability in the Orchard pool was discovered that could allow inflation of the ZEC supply. The Ironwood upgrade, activated on July 28, introduces a new formally verified shielded pool to address this bug and restore user confidence.",
+        "title_zh": "首日约8000万美元ZEC迁移至Zcash新Ironwood池",
+        "detailed_summary_zh": "2026年7月29日，约8000万美元的ZEC（Zcash）在Ironwood屏蔽池激活后的首24小时内被转入该池。 大规模迁移表明社区对Ironwood升级的强烈信任和采纳，这对于在Orchard漏洞后恢复对Zcash隐私功能和流通供应完整性的信心至关重要。 Ironwood升级用一个新的经过形式验证的池取代了Orchard屏蔽池，以修补允许伪造ZEC铸造的漏洞。首日超过150万ZEC（约8000万美元）迁移，约占流通供应量的8%。",
+        "background_zh": "Zcash是一种注重隐私的加密货币，使用屏蔽池隐藏交易细节。2026年初，Orchard池中发现了一个可能导致ZEC供应膨胀的漏洞。Ironwood升级于7月28日激活，引入了一个新的经过形式验证的屏蔽池来修复此漏洞并恢复用户信心。",
+        "sources": [
+          {
+            "url": "https://www.bitrue.com/blog/zcash-zec-ironwood-upgrade",
+            "title": "Zcash Ironwood Upgrade: What ZEC Holders Need to Know?"
+          },
+          {
+            "url": "https://crypto.news/zcash-ironwood-upgrade-whats-changed-after-the-orchard-bug/",
+            "title": "Zcash Ironwood upgrade: What's changed after the Orchard bug?"
+          }
+        ]
+      },
+      "ai_score": 8.0,
+      "ai_reason": null,
+      "ai_summary": "Zcash's new Ironwood pool saw approximately $80 million worth of ZEC transferred on the first day, highlighting significant engagement with the upgrade.",
+      "ai_tags": []
+    },
+    {
+      "id": "rss:www.coindesk.com_arc_outboundfeeds_rss_:713b421b4c1d62b1",
+      "source_type": "rss",
+      "title": "BNY targets $8.6 trillion transfer agency market on blockchain rails",
+      "url": "https://www.coindesk.com/business/2026/07/29/bny-targets-usd8-6-trillion-transfer-agency-market-on-blockchain-rails",
+      "content": null,
+      "author": "Olivier Acuna",
+      "published_at": "2026-07-29T12:18:58Z",
+      "fetched_at": "2026-07-29T19:44:07.756455Z",
+      "metadata": {
+        "feed_name": "CoinDesk",
+        "category": "crypto-markets",
+        "title_en": "BNY Targets $8.6 Trillion Transfer Agency Market on Blockchain",
+        "detailed_summary_en": "BNY Mellon, the world's largest custodian bank, announced plans to deploy blockchain technology for the $8.6 trillion transfer agency market, adding a digital ownership record for tokenized funds while maintaining its existing system. This marks a major milestone for institutional adoption of blockchain, demonstrating that a top-tier custodian bank sees blockchain as viable for core financial infrastructure. It could significantly increase credibility and accelerate tokenization in traditional finance. BNY will operate a hybrid system, keeping its existing transfer agency system while adding a blockchain-based digital ownership record. The solution aims to handle tokenized funds, requiring blockchain connectivity, on-chain/off-chain reconciliation, and smart contract design.",
+        "background_en": "Transfer agents maintain records of registered shareholders for publicly traded companies and facilitate transactions like stock transfers. The global transfer agency market is estimated at $8.6 trillion. BNY Mellon's move could transform how fund shares are recorded and transferred, leveraging blockchain for efficiency and transparency.",
+        "title_zh": "BNY 瞄准 8.6 万亿美元转账代理市场，基于区块链",
+        "detailed_summary_zh": "全球最大托管银行 BNY Mellon 宣布计划将区块链技术应用于 8.6 万亿美元的转账代理市场，在为代币化基金添加数字所有权记录的同时保留其现有系统。 这标志着机构采用区块链的一个重要里程碑，表明顶级托管银行认为区块链可用于核心金融基础设施。这可能会显著提高可信度，并加速传统金融中的代币化进程。 BNY 将运营一个混合系统，保留现有的转账代理系统，同时添加基于区块链的数字所有权记录。该解决方案旨在处理代币化基金，需要区块链连接、链上/链下对账以及智能合约设计。",
+        "background_zh": "转账代理为上市公司维护注册股东记录，并促进股票转让等交易。全球转账代理市场估计为 8.6 万亿美元。BNY Mellon 此举可能改变基金份额的记录和转移方式，利用区块链提高效率和透明度。",
+        "sources": [
+          {
+            "url": "https://www.coindesk.com/business/2026/07/29/bny-targets-usd8-6-trillion-transfer-agency-market-on-blockchain-rails",
+            "title": "BNY builds blockchain system for $8.6 trillion fund business"
+          },
+          {
+            "url": "https://www.bny.com/corporate/global/en/insights/the-next-generation-of-transfer-agency.html",
+            "title": "The Next Generation of Transfer Agency | BNY"
+          },
+          {
+            "url": "https://cointelegraph.com/news/bny-transfer-agency-records-blockchain",
+            "title": "BNY Launches Blockchain Transfer Agency Platform - Cointelegraph"
+          }
+        ]
+      },
+      "ai_score": 8.0,
+      "ai_reason": null,
+      "ai_summary": "BNY Mellon aims to use blockchain for the $8.6 trillion transfer agency market, marking a major institutional adoption move.",
+      "ai_tags": []
+    },
+    {
+      "id": "rss:www.coindesk.com_arc_outboundfeeds_rss_:55a10f5a6200badf",
+      "source_type": "rss",
+      "title": "South Korea plans to tax crypto gains over $1,740 as political battle moves to parliament",
+      "url": "https://www.coindesk.com/policy/2026/07/30/south-korea-s-long-delayed-crypto-tax-set-to-start-in-2027",
+      "content": null,
+      "author": "Francisco Rodrigues",
+      "published_at": "2026-07-30T11:17:56Z",
+      "fetched_at": "2026-07-30T14:35:07.484411Z",
+      "metadata": {
+        "feed_name": "CoinDesk",
+        "category": "crypto-markets",
+        "title_en": "South Korea Plans Crypto Tax Over $1,740 Starting 2027",
+        "detailed_summary_en": "South Korea is advancing a long-delayed crypto taxation bill that imposes a 20% tax on gains exceeding approximately $1,740 (2.5 million won), with enforcement now set for January 2027 after parliamentary debate. This tax policy could significantly alter trading behavior in one of the world's largest crypto markets, potentially reducing speculation and increasing regulatory clarity for investors and exchanges. The tax rate is 20% on gains above the threshold, and the bill has faced multiple delays due to political disagreements; it now moves to parliament for final approval.",
+        "background_en": "South Korea has been debating a crypto tax since 2020, initially planning to implement it in 2022, but political pushback and market volatility caused repeated postponements. The current proposal aims to tax capital gains from crypto trading similarly to stock market gains.",
+        "title_zh": "韩国计划从2027年起对超过1740美元的加密收益征税",
+        "detailed_summary_zh": "韩国正在推进一项长期延期的加密货币征税法案，对超过约1740美元（250万韩元）的收益征收20%的税，执行时间定于2027年1月，此前已通过议会辩论。 这项税收政策可能会显著改变全球最大加密货币市场之一的交易行为，可能减少投机活动，并为投资者和交易所增加监管透明度。 税率为超出阈值的收益的20%，该法案因政治分歧多次推迟，现已提交议会等待最终批准。",
+        "background_zh": "韩国自2020年以来一直在讨论加密货币税收，最初计划在2022年实施，但因政治阻力以及市场波动多次推迟。当前的提案旨在对加密货币交易的资本收益征税，类似于股票市场收益。"
+      },
+      "ai_score": 7.0,
+      "ai_reason": null,
+      "ai_summary": "South Korea is moving to implement a tax on crypto gains over $1,740 starting in 2027, advancing through parliament after delays.",
+      "ai_tags": []
+    },
+    {
+      "id": "rss:www.coindesk.com_arc_outboundfeeds_rss_:94fb0ed7fee22c91",
+      "source_type": "rss",
+      "title": "Bitcoin's quantum plan assumes some algorithms break. AI just weakened one in 60 hours",
+      "url": "https://www.coindesk.com/tech/2026/07/29/bitcoin-s-quantum-plan-assumes-some-algorithms-break-ai-just-weakened-one-in-60-hours",
+      "content": null,
+      "author": "Shaurya Malwa",
+      "published_at": "2026-07-30T04:16:30Z",
+      "fetched_at": "2026-07-30T14:35:07.484677Z",
+      "metadata": {
+        "feed_name": "CoinDesk",
+        "category": "crypto-markets",
+        "title_en": "AI Weakens Crypto Algorithm in 60 Hours, Threatening Bitcoin's Quantum Plan",
+        "detailed_summary_en": "An AI model, Claude Mythos Preview from Anthropic, discovered vulnerabilities in a cryptographic algorithm within 60 hours, leading to the removal of a third-round post-quantum cryptography (PQC) algorithm candidate from standardization. This directly challenges the assumptions underpinning Bitcoin's quantum security plan. This event shows that AI can break cryptographic assumptions earlier than anticipated, potentially accelerating the need for quantum-resistant upgrades in Bitcoin and other cryptocurrencies. It underscores the urgency to reassess security timelines and adopt post-quantum cryptography proactively. The vulnerable algorithm was a candidate for the U.S. post-quantum cryptography standard, and its flaw was discovered by an AI model designed for security research. The attack, which took only 60 hours, highlights the growing power of AI in cryptanalysis.",
+        "background_en": "Bitcoin's security currently depends on elliptic curve digital signature algorithm (ECDSA) and SHA-256, which are vulnerable to quantum attacks using Shor's algorithm. To prepare, the Bitcoin community has proposed a multi-phase migration to quantum-resistant address types, assuming traditional cryptographic algorithms would remain secure in the near term. The emergence of AI-driven cryptanalysis introduces a new threat that could shorten the timeline for these upgrades.",
+        "title_zh": "AI在60小时内削弱密码算法，威胁比特币量子计划",
+        "detailed_summary_zh": "Anthropic的AI模型Claude Mythos Preview在60小时内发现了密码算法中的漏洞，导致一个第三轮后量子密码学(PQC)候选算法被排除出标准化进程。这直接挑战了比特币量子安全计划所依赖的假设。 这一事件表明，AI能够比预期更早地打破密码学假设，可能加速比特币及其他加密货币对量子安全升级的需求。它凸显了重新评估安全时间线并主动采用后量子密码学的紧迫性。 受影响的算法曾是美国后量子密码学标准的候选方案，其漏洞由专为安全研究设计的AI模型发现。这次攻击仅耗时60小时，凸显了AI在密码分析领域日益增强的能力。",
+        "background_zh": "比特币的安全性目前依赖于椭圆曲线数字签名算法(ECDSA)和SHA-256，这些算法面临使用Shor算法的量子攻击的威胁。为此，比特币社区提出了多阶段迁移至量子安全地址类型的计划，并假设传统密码算法在短期内仍然安全。AI驱动的密码分析的出现引入了一种新威胁，可能缩短这些升级的时间窗口。",
+        "sources": [
+          {
+            "url": "https://arstechnica.com/security/2026/07/mythos-uncovers-crypto-weaknesses-that-went-unknown-for-years/",
+            "title": "Mythos attack on 3rd-round PQC algorithm candidate puts it out of ..."
+          },
+          {
+            "url": "https://thequantuminsider.com/2026/07/29/growing-quantum-security-challenge-bitcoin-digital-assets/",
+            "title": "The Growing Quantum Security Challenge Facing Bitcoin and Digital Assets"
+          }
+        ]
+      },
+      "ai_score": 7.0,
+      "ai_reason": null,
+      "ai_summary": "AI reportedly weakened a cryptographic algorithm in 60 hours, challenging assumptions in Bitcoin's quantum security plan.",
+      "ai_tags": []
+    },
+    {
+      "id": "telegram:binance_announcements:8789",
+      "source_type": "telegram",
+      "title": "Notice Regarding the Removal of AEUR and Conversion of AEUR to EUR",
+      "url": "https://www.binance.com/en/support/announcement/detail/40f303353b5f4789aba90dd972990f7e?utm_source=EnglishTelegram&amp;utm_medium=GlobalCommunity&amp;utm_campaign=AnnouncementBot",
+      "content": null,
+      "author": "binance_announcements",
+      "published_at": "2026-07-30T02:14:31Z",
+      "fetched_at": "2026-07-30T14:35:06.956568Z",
+      "metadata": {
+        "category": "exchange-announcements",
+        "title_en": "Binance to Remove AEUR Stablecoin, Convert to EUR by 2026",
+        "detailed_summary_en": "Binance announced it will cease support for AEUR tokens on July 31, 2026, and convert all user AEUR holdings to EUR. The issuer, Anchored Coins AG, has stopped issuing new tokens but continues to process redemptions. This move directly affects holders of the AEUR stablecoin, forcing conversion to fiat EUR by mid-2026. It reflects the impact of MiCA regulations on non-EU stablecoin issuers and highlights the ongoing regulatory pressure on euro-pegged tokens. The conversion deadline is July 31, 2026, providing a long transition period. Anchored Coins AG emphasizes that the entire circulating supply of AEUR remains fully backed 1:1 by euro-denominated reserves.",
+        "background_en": "AEUR is a euro-backed stablecoin issued by Anchored Coins AG, a Swiss company, operating on Ethereum and BNB Chain. Under the EU's Markets in Crypto-Assets (MiCA) regulation, stablecoin issuers must be licensed within the EU. As a Swiss entity, Anchored Coins AG cannot comply and has decided to cease issuance and wind down operations, leading to the delisting by Binance.",
+        "title_zh": "币安将下架 AEUR 稳定币，于 2026 年转换为欧元",
+        "detailed_summary_zh": "币安宣布将于 2026 年 7 月 31 日停止支持 AEUR 代币，并将用户持有的 AEUR 全部转换为欧元。发行方 Anchored Coins AG 已停止发行新代币，但继续处理赎回。 此举直接影响 AEUR 稳定币的持有者，要求其在 2026 年中前强制转换为法定欧元。这反映了 MiCA 法规对非欧盟稳定币发行方的影响，并凸显了欧元挂钩代币面临的持续监管压力。 转换截止日期为 2026 年 7 月 31 日，过渡期较长。Anchored Coins AG 强调，AEUR 的整个流通供应仍由欧元计价储备金 1:1 全额支持。",
+        "background_zh": "AEUR 是由瑞士公司 Anchored Coins AG 发行的欧元支持的稳定币，运行在以太坊和 BNB 链上。根据欧盟的《加密资产市场法规》（MiCA），稳定币发行方必须在欧盟内获得许可。作为瑞士实体，Anchored Coins AG 无法合规，因此决定停止发行并有序退出业务，导致币安将其下架。",
+        "sources": [
+          {
+            "url": "https://www.binance.com/en/academy/articles/an-introduction-to-anchored-euro-aeur",
+            "title": "An Introduction to Anchored Euro (AEUR) - Binance"
+          },
+          {
+            "url": "https://www.anchoredcoins.com/en/landing",
+            "title": "Anchored Coins"
+          }
+        ]
+      },
+      "ai_score": 7.0,
+      "ai_reason": null,
+      "ai_summary": "Binance will cease support for AEUR tokens and convert them to EUR by July 31, 2026, with the issuer continuing redemptions.",
+      "ai_tags": []
+    }
+  ],
+  "dedup_history": [
     {
       "id": "rss:www.coindesk.com_arc_outboundfeeds_rss_:2cd87ac375ce84e4",
       "source_type": "rss",
@@ -116,41 +342,37 @@
       "ai_tags": []
     },
     {
-      "id": "rss:www.coindesk.com_arc_outboundfeeds_rss_:70c8fc7e9c88bb35",
+      "id": "rss:simonwillison.net_atom_everything_:dc5417e61dfc4edb",
       "source_type": "rss",
-      "title": "BlackRock, Fidelity, other Wall Street giants back the Clarity Act",
-      "url": "https://www.coindesk.com/policy/2026/07/28/blackrock-fidelity-other-wall-street-giants-back-the-clarity-act",
+      "title": "moonshotai/Kimi-K3",
+      "url": "https://simonwillison.net/2026/Jul/27/kimi-k3/#atom-everything",
       "content": null,
-      "author": "Helene Braun",
-      "published_at": "2026-07-28T16:08:19Z",
-      "fetched_at": "2026-07-29T14:34:01.358258Z",
+      "author": "Simon Willison",
+      "published_at": "2026-07-27T23:39:04Z",
+      "fetched_at": "2026-07-28T03:37:01.306829Z",
       "metadata": {
-        "feed_name": "CoinDesk",
-        "category": "crypto-markets",
-        "title_en": "Wall Street Giants Back Clarity Act",
-        "detailed_summary_en": "BlackRock, Fidelity, and other major Wall Street firms have publicly endorsed the Clarity Act, a U.S. bill that aims to establish a unified regulatory framework for digital assets. This endorsement signals strong institutional support for regulatory clarity, which could accelerate crypto adoption by traditional finance and reduce legal uncertainty for market participants. The Clarity Act (Digital Asset Market Clarity Act of 2025) is intended to delineate jurisdiction between the SEC and CFTC over the digital asset market, but it remains stalled in the Senate.",
-        "background_en": "Currently, U.S. crypto regulations are fragmented, with no clear boundary between SEC and CFTC authority. The Clarity Act seeks to resolve this by creating a transparent and predictable regulatory framework, which would allow businesses to build compliance programs with confidence.",
-        "title_zh": "华尔街巨头支持《清晰法案》",
-        "detailed_summary_zh": "贝莱德、富达及其他华尔街巨头公开支持《清晰法案》，该法案旨在为数字资产建立统一的监管框架。 这一背书表明机构对监管清晰度的强烈支持，可能加速传统金融对加密货币的采用，并减少市场参与者的法律不确定性。 《清晰法案》（2025年数字资产市场清晰法案）旨在划定SEC和CFTC对数字资产市场的管辖权，但目前仍在参议院停滞不前。",
-        "background_zh": "目前，美国加密货币监管支离破碎，SEC与CFTC的权限边界模糊。《清晰法案》试图通过建立透明、可预测的监管框架来解决这一问题，使企业能够有信心地建立合规计划。",
+        "feed_name": "Simon Willison",
+        "category": "ai-devtools",
+        "title_en": "Moonshot Releases 2.8T Parameter Kimi K3 Open-Weight Model",
+        "detailed_summary_en": "Moonshot has released the weights for their 2.8 trillion parameter Kimi K3 model on Hugging Face, with the 1.56TB checkpoint now available under a new license that restricts commercial use by large Model-as-a-Service providers. OpenRouter already offers K3 from seven providers at the same pricing as Moonshot. This release represents a major milestone in open-weight AI, as a 2.8 trillion parameter model is among the largest ever made publicly available. The shift from a modified MIT license to a more restrictive one for large commercial entities may set a precedent for how future open-weight models balance openness with commercial protection. The new license for K3 requires Model-as-a-Service businesses exceeding $20 million in annual revenue to enter a separate agreement with Moonshot, whereas previous K2 license only required attribution for entities with over 100 million MAUs or $20M monthly revenue. Moonshot consistently uses the term 'open weight' rather than 'open source' to describe this release.",
+        "background_en": "Model weights are the learned parameters that define how an AI model processes inputs to produce outputs, typically resulting from training on large datasets. In large language models, parameters include billions or trillions of adjustable values that encode the model's knowledge and behavior. Open-weight models allow users to download and run the weights locally, but may come with usage restrictions that distinguish them from fully open-source software.",
+        "title_zh": "Moonshot 发布 2.8 万亿参数 Kimi K3 开放权重模型",
+        "detailed_summary_zh": "Moonshot 已在 Hugging Face 上发布了其 2.8 万亿参数的 Kimi K3 模型权重，1.56TB 的检查点现已可用，并附带一项新许可协议，限制大型模型即服务提供商的商业使用。OpenRouter 已从七家提供商处提供 K3，定价与 Moonshot 相同。 此次发布是开放权重 AI 的一个重要里程碑，因为 2.8 万亿参数的模型是公开可用的最大模型之一。从修改版 MIT 许可转向对大型商业实体更严格的许可，可能为未来开放权重模型如何在开放性与商业保护之间取得平衡树立先例。 K3 的新许可要求年收入超过 2000 万美元的模型即服务企业与 Moonshot 签订单独协议，而之前的 K2 许可仅要求月活跃用户超过 1 亿或月收入超过 2000 万美元的实体进行署名。Moonshot 始终使用“开放权重”而非“开源”一词来描述此次发布。",
+        "background_zh": "模型权重是定义 AI 模型如何处理输入以产生输出的学习参数，通常通过对大型数据集的训练获得。在大型语言模型中，参数包括数十亿或数万亿个可调整的值，这些值编码了模型的知识和行为。开放权重模型允许用户下载并在本地运行权重，但可能附带使用限制，这使其与完全开源的软件有所区别。",
         "sources": [
           {
-            "url": "https://www.forbes.com/sites/tonyaevans/2026/07/16/the-clarity-act-delay-is-now-a-compliance-problem-not-just-a-political-one/",
-            "title": "CLARITY Act Delay Is Now A Compliance Problem, Not Just..."
+            "url": "https://www.ai21.com/glossary/open-weights-model/",
+            "title": "What is an Open-Weights Model? | AI21"
           },
           {
-            "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6717280",
-            "title": "The CLARITY Act in Motion: What the Senate Debate... :: SSRN"
-          },
-          {
-            "url": "https://bitok.org/blog/clarity-act-explained",
-            "title": "What to Expect From the CLARITY Act in 2026"
+            "url": "https://www.ibm.com/think/topics/llm-parameters",
+            "title": "What Are LLM Parameters? | IBM"
           }
         ]
       },
-      "ai_score": 8.0,
+      "ai_score": 9.0,
       "ai_reason": null,
-      "ai_summary": "Wall Street giants BlackRock, Fidelity, and others endorse the Clarity Act, a bill aimed at providing regulatory clarity for digital assets.",
+      "ai_summary": "Moonshot released weights for their 2.8 trillion parameter Kimi K3 model on Hugging Face.",
       "ai_tags": []
     },
     {
@@ -188,171 +410,41 @@
       "ai_tags": []
     },
     {
-      "id": "rss:www.coindesk.com_arc_outboundfeeds_rss_:35dc9ced42be01df",
+      "id": "rss:www.coindesk.com_arc_outboundfeeds_rss_:70c8fc7e9c88bb35",
       "source_type": "rss",
-      "title": "Ionic Digital jumps 26% in Nasdaq debut, giving Celsius Network claimholders an exit route",
-      "url": "https://www.coindesk.com/business/2026/07/29/ionic-digital-jumps-26-in-nasdaq-debut-giving-celsius-network-claimholders-an-exit-route",
+      "title": "BlackRock, Fidelity, other Wall Street giants back the Clarity Act",
+      "url": "https://www.coindesk.com/policy/2026/07/28/blackrock-fidelity-other-wall-street-giants-back-the-clarity-act",
       "content": null,
-      "author": "Francisco Rodrigues",
-      "published_at": "2026-07-29T09:22:24Z",
-      "fetched_at": "2026-07-29T14:34:01.356962Z",
+      "author": "Helene Braun",
+      "published_at": "2026-07-28T16:08:19Z",
+      "fetched_at": "2026-07-29T14:34:01.358258Z",
       "metadata": {
         "feed_name": "CoinDesk",
         "category": "crypto-markets",
-        "title_en": "Ionic Digital surges 26% on Nasdaq debut",
-        "detailed_summary_en": "Ionic Digital, a bitcoin miner formed from Celsius Mining assets, began trading on the Nasdaq via a direct listing on July 28, 2026, under ticker IOND, and its shares jumped 26% on the first day. This provides Celsius Network claimholders with a liquid exit route to sell shares they received as part of the bankruptcy settlement, potentially recovering value from their claims. The reference price was set at $53, and the stock opened at $66.80, giving Ionic Digital a market capitalization of approximately $2.5 billion. The company was created from Celsius Mining, a subsidiary of the bankrupt Celsius Network.",
-        "background_en": "Celsius Network filed for bankruptcy in July 2022 after freezing customer withdrawals. As part of its restructuring plan, Celsius Mining assets were spun off into Ionic Digital, and shares were distributed to claimholders. Ionic Digital's direct listing on Nasdaq allows those shares to be traded publicly, providing a means for creditors to exit.",
-        "title_zh": "Ionic Digital 纳斯达克首日上涨26%",
-        "detailed_summary_zh": "Ionic Digital 是一家由 Celsius Mining 资产组建的比特币矿商，于2026年7月28日通过直接上市在纳斯达克开始交易，股票代码为 IOND，首日股价上涨26%。 这为 Celsius Network 的债权人提供了一条流动性退出路径，他们可以出售在破产和解中获得的股票，从而可能从他们的债权中回收价值。 参考价定为53美元，开盘价为66.80美元，使 Ionic Digital 的市值达到约25亿美元。该公司由破产的 Celsius Network 子公司 Celsius Mining 创建。",
-        "background_zh": "Celsius Network 在2022年7月冻结客户提款后申请破产。作为重组计划的一部分，Celsius Mining 资产被剥离成立 Ionic Digital，并将股份分配给债权人。Ionic Digital 在纳斯达克直接上市使得这些股份可以公开交易，为债权人提供了退出途径。",
+        "title_en": "Wall Street Giants Back Clarity Act",
+        "detailed_summary_en": "BlackRock, Fidelity, and other major Wall Street firms have publicly endorsed the Clarity Act, a U.S. bill that aims to establish a unified regulatory framework for digital assets. This endorsement signals strong institutional support for regulatory clarity, which could accelerate crypto adoption by traditional finance and reduce legal uncertainty for market participants. The Clarity Act (Digital Asset Market Clarity Act of 2025) is intended to delineate jurisdiction between the SEC and CFTC over the digital asset market, but it remains stalled in the Senate.",
+        "background_en": "Currently, U.S. crypto regulations are fragmented, with no clear boundary between SEC and CFTC authority. The Clarity Act seeks to resolve this by creating a transparent and predictable regulatory framework, which would allow businesses to build compliance programs with confidence.",
+        "title_zh": "华尔街巨头支持《清晰法案》",
+        "detailed_summary_zh": "贝莱德、富达及其他华尔街巨头公开支持《清晰法案》，该法案旨在为数字资产建立统一的监管框架。 这一背书表明机构对监管清晰度的强烈支持，可能加速传统金融对加密货币的采用，并减少市场参与者的法律不确定性。 《清晰法案》（2025年数字资产市场清晰法案）旨在划定SEC和CFTC对数字资产市场的管辖权，但目前仍在参议院停滞不前。",
+        "background_zh": "目前，美国加密货币监管支离破碎，SEC与CFTC的权限边界模糊。《清晰法案》试图通过建立透明、可预测的监管框架来解决这一问题，使企业能够有信心地建立合规计划。",
         "sources": [
           {
-            "url": "https://www.renaissancecapital.com/IPO-Center/News/120742/Cloud-infrastructure-company-Ionic-Digitals-Nasdaq-reference-price-is-set-a",
-            "title": "IOND IPO News - Cloud infrastructure company Ionic Digital's Nasdaq reference price is set at $53 ahead of Tuesday direct listing"
+            "url": "https://www.forbes.com/sites/tonyaevans/2026/07/16/the-clarity-act-delay-is-now-a-compliance-problem-not-just-a-political-one/",
+            "title": "CLARITY Act Delay Is Now A Compliance Problem, Not Just..."
           },
           {
-            "url": "https://www.renaissancecapital.com/IPO-Center/News/120140/Bitcoin-miner-Ionic-Digital-files-for-a-direct-listing-on-the-Nasdaq",
-            "title": "IOND IPO News - Bitcoin miner Ionic Digital files for a direct listing on the Nasdaq"
-          }
-        ]
-      },
-      "ai_score": 7.0,
-      "ai_reason": null,
-      "ai_summary": "Ionic Digital shares rose 26% on Nasdaq debut, offering Celsius Network claimholders a way to exit their positions.",
-      "ai_tags": []
-    },
-    {
-      "id": "rss:news.google.com_rss_search?q=site:anthropic.com+when:7d&hl=en-US&gl=US&ceid=US:en:94023959d5ce21bb",
-      "source_type": "rss",
-      "title": "Mythos Preview’s Chain of Thought in Discovering the AES Möbius Bridge - Anthropic",
-      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE0tY2k4b2JFT1FDZDdydEdSb0pXVG12STJJLXRHSnlOSUpIeGdNUzMtdU5hek1DaHdWNlRLMG5WZlh6LVF2cnZGejdfTDlxb3BIRngyVDNlZDBWNVFyWHBFWTFWQ2dodzR5YS1sMA?oc=5",
-      "content": null,
-      "author": "Anthropic News",
-      "published_at": "2026-07-28T17:28:34Z",
-      "fetched_at": "2026-07-29T14:34:02.711780Z",
-      "metadata": {
-        "feed_name": "Anthropic News",
-        "category": "ai-labs",
-        "title_en": "Mythos Preview Uses Chain-of-Thought to Discover AES Möbius Bridge",
-        "detailed_summary_en": "Anthropic revealed that its Mythos Preview model employed chain-of-thought reasoning to uncover the AES Möbius Bridge, a novel algebraic structure in the AES S-box that enables faster cryptanalysis. The discovery led to up to 800x speedup in 7-round AES-128 meet-in-the-middle attacks. This demonstrates that advanced AI models can autonomously discover complex mathematical structures, advancing both AI reasoning and cryptographic analysis. It could lead to stronger defenses or improved attacks on AES. The AES Möbius Bridge is an invariant fingerprint that exploits the algebraic structure of the AES S-box, eliminating a 256-way guessing step. Mythos Preview's chain-of-thought process allowed it to derive this bridge without human guidance.",
-        "background_en": "The Advanced Encryption Standard (AES) is a widely used symmetric encryption algorithm whose security depends on the S-box, a nonlinear substitution component. Chain-of-thought reasoning is a technique where AI models break down complex problems into step-by-step reasoning, enhancing their problem-solving abilities. The Möbius Bridge refers to a mathematical structure that reveals weaknesses in AES's algebraic design.",
-        "title_zh": "Mythos Preview 用思维链发现 AES Möbius Bridge",
-        "detailed_summary_zh": "Anthropic 披露，其 Mythos Preview 模型通过思维链推理发现了 AES Möbius Bridge——一种 AES S-box 中新颖的代数结构，能够加速密码分析。该发现使得 7 轮 AES-128 中间相遇攻击提速高达 800 倍。 这表明先进 AI 模型能自主发现复杂数学结构，推动 AI 推理与密码分析的发展。它可能带来更强的防御或更优的 AES 攻击方法。 AES Möbius Bridge 是一种利用 AES S-box 代数结构的不变量指纹，消除了 256 路猜测步骤。Mythos Preview 的思维链过程使其无需人类指导即可推导出该桥梁。",
-        "background_zh": "高级加密标准 (AES) 是一种广泛使用的对称加密算法，其安全性依赖于 S-box（非线性替换组件）。思维链推理是一种让 AI 模型将复杂问题分解为逐步推理的技术，能增强其问题解决能力。Möbius Bridge 指一种揭示 AES 代数设计弱点的数学结构。",
-        "sources": [
-          {
-            "url": "https://en.wikipedia.org/wiki/Claude_Mythos",
-            "title": "Claude Mythos - Wikipedia"
+            "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6717280",
+            "title": "The CLARITY Act in Motion: What the Senate Debate... :: SSRN"
           },
           {
-            "url": "https://www-cdn.anthropic.com/c88771e1bf5ee8885349eed05e5484c0e5f7e02b/aes_mobius_bridge.pdf",
-            "title": "Cryptanalysis of 7-Round AES via the Algebraic Structure of its S-box"
-          },
-          {
-            "url": "https://blog.ogwilliam.com/post/claude-mythos-ai-cryptanalysis-hawk-aes",
-            "title": "How Claude Mythos Breaks Mathematical Cryptography • William OGOU Cybersecurity Blog"
+            "url": "https://bitok.org/blog/clarity-act-explained",
+            "title": "What to Expect From the CLARITY Act in 2026"
           }
         ]
       },
-      "ai_score": 7.0,
+      "ai_score": 8.0,
       "ai_reason": null,
-      "ai_summary": "Anthropic details how its Mythos Preview model uses chain-of-thought reasoning to uncover the AES Möbius Bridge, a cryptographic structure.",
-      "ai_tags": []
-    },
-    {
-      "id": "rss:news.google.com_rss_search?q=site:anthropic.com+when:7d&hl=en-US&gl=US&ceid=US:en:249666495bb76a90",
-      "source_type": "rss",
-      "title": "Discovering cryptographic weaknesses with Claude - Anthropic",
-      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE13elp4eC1EQlJMdmtBdDZYaGQ0UXJoVE9sOGNtSDZIRFRYV3pkU1E4TnlNX3BTai1QVjduNVJUampVZGVySmlKRmVtcUFXcDBlNFVTQVdHN2ZiUUdjSlNtLUhXb3JialVEWGprd0tjdUVZQ2dhSFExaUtoTQ?oc=5",
-      "content": null,
-      "author": "Anthropic News",
-      "published_at": "2026-07-28T17:17:10Z",
-      "fetched_at": "2026-07-29T14:34:02.711722Z",
-      "metadata": {
-        "feed_name": "Anthropic News",
-        "category": "ai-labs",
-        "title_en": "Claude AI identifies cryptographic weaknesses",
-        "detailed_summary_en": "Anthropic has announced that its AI model Claude successfully identified novel attacks against cryptographic schemes submitted to international standardization efforts. The findings were reviewed and validated by human experts. This demonstrates that frontier AI systems can assist in discovering previously unknown cryptographic vulnerabilities, potentially accelerating security research and improving encryption standards. It highlights AI's role in augmenting human expertise rather than replacing it. Claude identified attacks on cryptographic schemes that were part of international standardization efforts, not just trivial weaknesses. The research was conducted by Anthropic and the results were validated by human cryptographers.",
-        "background_en": "Anthropic's Claude is a large language model trained to be helpful, honest, and harmless. Cryptographic weaknesses are flaws in encryption algorithms that could be exploited by attackers. Traditionally, finding such weaknesses requires deep expertise and manual analysis. This research shows AI can assist in that process.",
-        "title_zh": "Claude AI发现加密算法弱点",
-        "detailed_summary_zh": "Anthropic宣布，其AI模型Claude成功识别出提交给国际标准化工作的加密方案中的新型攻击方式，相关发现已由人类专家审查并验证。 这表明前沿AI系统能够协助发现此前未知的密码学漏洞，可能加速安全研究并改进加密标准。这凸显了AI在增强而非替代人类专家方面的作用。 Claude识别的是参与国际标准化的加密方案中的攻击方式，而非普通弱点。该研究由Anthropic进行，结果由人类密码学家验证。",
-        "background_zh": "Anthropic的Claude是一个大型语言模型，经过训练以提供有帮助、诚实且无害的回应。密码学弱点是指加密算法中可能被攻击者利用的缺陷。传统上，发现这些弱点需要深厚的专业知识和人工分析。这项研究表明AI可以协助这一过程。",
-        "sources": [
-          {
-            "url": "https://en.wikipedia.org/wiki/Claude_(AI)",
-            "title": "Claude (AI) - Wikipedia"
-          }
-        ]
-      },
-      "ai_score": 7.0,
-      "ai_reason": null,
-      "ai_summary": "Anthropic demonstrates how their AI model Claude can identify cryptographic weaknesses, highlighting AI's potential in security analysis.",
-      "ai_tags": []
-    }
-  ],
-  "dedup_history": [
-    {
-      "id": "rss:simonwillison.net_atom_everything_:dc5417e61dfc4edb",
-      "source_type": "rss",
-      "title": "moonshotai/Kimi-K3",
-      "url": "https://simonwillison.net/2026/Jul/27/kimi-k3/#atom-everything",
-      "content": null,
-      "author": "Simon Willison",
-      "published_at": "2026-07-27T23:39:04Z",
-      "fetched_at": "2026-07-28T03:37:01.306829Z",
-      "metadata": {
-        "feed_name": "Simon Willison",
-        "category": "ai-devtools",
-        "title_en": "Moonshot Releases 2.8T Parameter Kimi K3 Open-Weight Model",
-        "detailed_summary_en": "Moonshot has released the weights for their 2.8 trillion parameter Kimi K3 model on Hugging Face, with the 1.56TB checkpoint now available under a new license that restricts commercial use by large Model-as-a-Service providers. OpenRouter already offers K3 from seven providers at the same pricing as Moonshot. This release represents a major milestone in open-weight AI, as a 2.8 trillion parameter model is among the largest ever made publicly available. The shift from a modified MIT license to a more restrictive one for large commercial entities may set a precedent for how future open-weight models balance openness with commercial protection. The new license for K3 requires Model-as-a-Service businesses exceeding $20 million in annual revenue to enter a separate agreement with Moonshot, whereas previous K2 license only required attribution for entities with over 100 million MAUs or $20M monthly revenue. Moonshot consistently uses the term 'open weight' rather than 'open source' to describe this release.",
-        "background_en": "Model weights are the learned parameters that define how an AI model processes inputs to produce outputs, typically resulting from training on large datasets. In large language models, parameters include billions or trillions of adjustable values that encode the model's knowledge and behavior. Open-weight models allow users to download and run the weights locally, but may come with usage restrictions that distinguish them from fully open-source software.",
-        "title_zh": "Moonshot 发布 2.8 万亿参数 Kimi K3 开放权重模型",
-        "detailed_summary_zh": "Moonshot 已在 Hugging Face 上发布了其 2.8 万亿参数的 Kimi K3 模型权重，1.56TB 的检查点现已可用，并附带一项新许可协议，限制大型模型即服务提供商的商业使用。OpenRouter 已从七家提供商处提供 K3，定价与 Moonshot 相同。 此次发布是开放权重 AI 的一个重要里程碑，因为 2.8 万亿参数的模型是公开可用的最大模型之一。从修改版 MIT 许可转向对大型商业实体更严格的许可，可能为未来开放权重模型如何在开放性与商业保护之间取得平衡树立先例。 K3 的新许可要求年收入超过 2000 万美元的模型即服务企业与 Moonshot 签订单独协议，而之前的 K2 许可仅要求月活跃用户超过 1 亿或月收入超过 2000 万美元的实体进行署名。Moonshot 始终使用“开放权重”而非“开源”一词来描述此次发布。",
-        "background_zh": "模型权重是定义 AI 模型如何处理输入以产生输出的学习参数，通常通过对大型数据集的训练获得。在大型语言模型中，参数包括数十亿或数万亿个可调整的值，这些值编码了模型的知识和行为。开放权重模型允许用户下载并在本地运行权重，但可能附带使用限制，这使其与完全开源的软件有所区别。",
-        "sources": [
-          {
-            "url": "https://www.ai21.com/glossary/open-weights-model/",
-            "title": "What is an Open-Weights Model? | AI21"
-          },
-          {
-            "url": "https://www.ibm.com/think/topics/llm-parameters",
-            "title": "What Are LLM Parameters? | IBM"
-          }
-        ]
-      },
-      "ai_score": 9.0,
-      "ai_reason": null,
-      "ai_summary": "Moonshot released weights for their 2.8 trillion parameter Kimi K3 model on Hugging Face.",
-      "ai_tags": []
-    },
-    {
-      "id": "rss:decrypt.co_feed:cb8ddb5e70bdc3b0",
-      "source_type": "rss",
-      "title": "Thailand's SEC Files Criminal Complaint Against Bitkub Over Undisclosed $47M Hack",
-      "url": "https://decrypt.co/374343/thailands-sec-files-criminal-complaint-against-bitkub-over-undisclosed-47m-hack",
-      "content": null,
-      "author": "Decrypt Agent",
-      "published_at": "2026-07-27T09:16:14Z",
-      "fetched_at": "2026-07-27T11:40:59.442677Z",
-      "metadata": {
-        "feed_name": "Decrypt",
-        "category": "crypto-markets",
-        "title_en": "Thailand SEC Files Criminal Charges Against Bitkub Over $47M Hack Cover-Up",
-        "detailed_summary_en": "Thailand's Securities and Exchange Commission has filed a criminal complaint against cryptocurrency exchange Bitkub and two former directors for failing to disclose a $47 million hack that occurred in 2021. This marks a significant regulatory enforcement action that underscores the importance of transparency and honesty in the crypto industry, potentially affecting user trust and setting a precedent for other exchanges. The SEC alleges that Bitkub omitted the $47 million theft from its filings, and the complaint targets both the company and two former directors personally, indicating a focus on individual accountability.",
-        "background_en": "Bitkub is a Thailand-based cryptocurrency exchange founded in 2018, and it was among the first to receive a digital asset license from Thailand's SEC in 2019. The exchange has been a major player in the Thai crypto market. The SEC is the primary regulator for digital assets in Thailand, responsible for enforcing securities laws.",
-        "title_zh": "泰国SEC指控Bitkub隐瞒4700万美元黑客攻击",
-        "detailed_summary_zh": "泰国证券交易委员会已对加密货币交易所Bitkub及其两名前董事提起刑事诉讼，指控其未能披露2021年发生的4700万美元黑客攻击。 这是一次重大的监管执法行动，凸显了加密货币行业透明度和诚信的重要性，可能影响用户信任，并为其他交易所树立先例。 SEC指控Bitkub在其文件中遗漏了这起4700万美元的盗窃事件，投诉针对公司及两名前董事个人，表明监管层关注个人责任。",
-        "background_zh": "Bitkub是一家成立于2018年的泰国加密货币交易所，是2019年首批获得泰国SEC数字资产牌照的交易所之一。该交易所一直是泰国加密货币市场的主要参与者。SEC是泰国数字资产的主要监管机构，负责执行证券法律。",
-        "sources": [
-          {
-            "url": "https://en.wikipedia.org/wiki/Bitkub",
-            "title": "Bitkub"
-          }
-        ]
-      },
-      "ai_score": 9.0,
-      "ai_reason": null,
-      "ai_summary": "Thailand's SEC files criminal charges against Bitkub and two former directors for failing to disclose a $47 million hack in 2021.",
+      "ai_summary": "Wall Street giants BlackRock, Fidelity, and others endorse the Clarity Act, a bill aimed at providing regulatory clarity for digital assets.",
       "ai_tags": []
     },
     {
@@ -678,213 +770,105 @@
       "ai_tags": []
     },
     {
-      "id": "rss:www.coindesk.com_arc_outboundfeeds_rss_:a5855fb724529412",
+      "id": "rss:www.coindesk.com_arc_outboundfeeds_rss_:35dc9ced42be01df",
       "source_type": "rss",
-      "title": "Lido begins moving $16.5 billion in staked ether to cut validator count by a third",
-      "url": "https://www.coindesk.com/tech/2026/07/27/lido-begins-moving-usd16-5-billion-in-staked-ether-to-cut-validator-count-by-a-third",
+      "title": "Ionic Digital jumps 26% in Nasdaq debut, giving Celsius Network claimholders an exit route",
+      "url": "https://www.coindesk.com/business/2026/07/29/ionic-digital-jumps-26-in-nasdaq-debut-giving-celsius-network-claimholders-an-exit-route",
       "content": null,
-      "author": "Olivier Acuna",
-      "published_at": "2026-07-27T14:00:00Z",
-      "fetched_at": "2026-07-27T15:14:57.866727Z",
+      "author": "Francisco Rodrigues",
+      "published_at": "2026-07-29T09:22:24Z",
+      "fetched_at": "2026-07-29T14:34:01.356962Z",
       "metadata": {
         "feed_name": "CoinDesk",
         "category": "crypto-markets",
-        "title_en": "Lido Moves $16.5B in Staked ETH to Slash Validators by a Third",
-        "detailed_summary_en": "Lido has begun moving approximately $16.5 billion worth of staked ether (stETH) to consolidate its validator operations, aiming to reduce the total number of validators it runs by about one-third. This move could improve capital efficiency and reduce operational costs for Lido, the largest Ethereum liquid staking protocol, potentially altering staking rewards distribution and affecting decentralization dynamics in Ethereum's staking ecosystem. The consolidation involves merging smaller validator deposits into larger ones, as each Ethereum validator requires a minimum of 32 ETH to activate; reducing validator count may streamline rewards and lower overhead for Lido node operators.",
-        "background_en": "Lido is a liquid staking protocol that allows users to stake any amount of ETH and receive stETH, a tradable token representing their staked position. Ethereum's proof-of-stake consensus requires validators to lock 32 ETH to secure the network and earn rewards. Lido pools user deposits to run validators on their behalf, and this consolidation aims to optimize its validator fleet.",
-        "title_zh": "Lido转移165亿美元质押以太坊，减少三分之一验证者",
-        "detailed_summary_zh": "Lido已开始转移价值约165亿美元的质押以太坊（stETH），以整合其验证者运营，旨在将其运行的验证者总数减少约三分之一。 此举可能提高Lido（最大的以太坊流动性质押协议）的资本效率并降低运营成本，有可能改变质押奖励分配，并影响以太坊质押生态中的去中心化动态。 此次整合涉及将较小的验证者存款合并为较大的存款，因为每个以太坊验证者需要至少32个ETH才能激活；减少验证者数量可能会简化奖励分配并降低Lido节点运营商的间接成本。",
-        "background_zh": "Lido是一个流动性质押协议，允许用户质押任意数量的ETH并获得stETH（一种代表其质押头寸的可交易代币）。以太坊的权益证明共识要求验证者锁定32个ETH来保护网络并获得奖励。Lido汇集用户存款代表他们运行验证者，此次整合旨在优化其验证者队伍。",
+        "title_en": "Ionic Digital surges 26% on Nasdaq debut",
+        "detailed_summary_en": "Ionic Digital, a bitcoin miner formed from Celsius Mining assets, began trading on the Nasdaq via a direct listing on July 28, 2026, under ticker IOND, and its shares jumped 26% on the first day. This provides Celsius Network claimholders with a liquid exit route to sell shares they received as part of the bankruptcy settlement, potentially recovering value from their claims. The reference price was set at $53, and the stock opened at $66.80, giving Ionic Digital a market capitalization of approximately $2.5 billion. The company was created from Celsius Mining, a subsidiary of the bankrupt Celsius Network.",
+        "background_en": "Celsius Network filed for bankruptcy in July 2022 after freezing customer withdrawals. As part of its restructuring plan, Celsius Mining assets were spun off into Ionic Digital, and shares were distributed to claimholders. Ionic Digital's direct listing on Nasdaq allows those shares to be traded publicly, providing a means for creditors to exit.",
+        "title_zh": "Ionic Digital 纳斯达克首日上涨26%",
+        "detailed_summary_zh": "Ionic Digital 是一家由 Celsius Mining 资产组建的比特币矿商，于2026年7月28日通过直接上市在纳斯达克开始交易，股票代码为 IOND，首日股价上涨26%。 这为 Celsius Network 的债权人提供了一条流动性退出路径，他们可以出售在破产和解中获得的股票，从而可能从他们的债权中回收价值。 参考价定为53美元，开盘价为66.80美元，使 Ionic Digital 的市值达到约25亿美元。该公司由破产的 Celsius Network 子公司 Celsius Mining 创建。",
+        "background_zh": "Celsius Network 在2022年7月冻结客户提款后申请破产。作为重组计划的一部分，Celsius Mining 资产被剥离成立 Ionic Digital，并将股份分配给债权人。Ionic Digital 在纳斯达克直接上市使得这些股份可以公开交易，为债权人提供了退出途径。",
         "sources": [
           {
-            "url": "https://lido.fi/",
-            "title": "Lido Liquid Staking"
+            "url": "https://www.renaissancecapital.com/IPO-Center/News/120742/Cloud-infrastructure-company-Ionic-Digitals-Nasdaq-reference-price-is-set-a",
+            "title": "IOND IPO News - Cloud infrastructure company Ionic Digital's Nasdaq reference price is set at $53 ahead of Tuesday direct listing"
           },
           {
-            "url": "https://lido.fi/how-lido-works",
-            "title": "How Lido Works"
-          },
-          {
-            "url": "https://ethereum.org/staking/",
-            "title": "Ethereum staking: How does it work? | ethereum.org"
+            "url": "https://www.renaissancecapital.com/IPO-Center/News/120140/Bitcoin-miner-Ionic-Digital-files-for-a-direct-listing-on-the-Nasdaq",
+            "title": "IOND IPO News - Bitcoin miner Ionic Digital files for a direct listing on the Nasdaq"
           }
         ]
       },
-      "ai_score": 8.0,
+      "ai_score": 7.0,
       "ai_reason": null,
-      "ai_summary": "Lido begins moving $16.5 billion in staked ether to reduce its validator count by a third.",
+      "ai_summary": "Ionic Digital shares rose 26% on Nasdaq debut, offering Celsius Network claimholders a way to exit their positions.",
       "ai_tags": []
     },
     {
-      "id": "rss:cointelegraph.com_rss:4905984e841e85f4",
+      "id": "rss:news.google.com_rss_search?q=site:anthropic.com+when:7d&hl=en-US&gl=US&ceid=US:en:94023959d5ce21bb",
       "source_type": "rss",
-      "title": "USDC issuer Circle to acquire nearly 1,000 IBM blockchain patents",
-      "url": "https://cointelegraph.com/news/circle-to-acquire-nearly-1000-ibm-blockchain-patents?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "title": "Mythos Preview’s Chain of Thought in Discovering the AES Möbius Bridge - Anthropic",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE0tY2k4b2JFT1FDZDdydEdSb0pXVG12STJJLXRHSnlOSUpIeGdNUzMtdU5hek1DaHdWNlRLMG5WZlh6LVF2cnZGejdfTDlxb3BIRngyVDNlZDBWNVFyWHBFWTFWQ2dodzR5YS1sMA?oc=5",
       "content": null,
-      "author": "Cointelegraph by Robert Lakin",
-      "published_at": "2026-07-27T13:08:55Z",
-      "fetched_at": "2026-07-27T15:14:58.110194Z",
+      "author": "Anthropic News",
+      "published_at": "2026-07-28T17:28:34Z",
+      "fetched_at": "2026-07-29T14:34:02.711780Z",
       "metadata": {
-        "feed_name": "Cointelegraph",
-        "category": "crypto-markets",
-        "title_en": "Circle to acquire nearly 1,000 IBM blockchain patents",
-        "detailed_summary_en": "Circle, the issuer of the USDC stablecoin, announced it will acquire nearly 1,000 blockchain patents from IBM, including over 680 patent families. This strategic move strengthens Circle's intellectual property portfolio in blockchain technology. This acquisition positions Circle as a major holder of blockchain patents, potentially creating a competitive moat in the stablecoin and blockchain infrastructure space. It signals long-term consolidation and investment in intellectual property by key industry players, which could shape future standards and licensing. IBM's blockchain portfolio focuses on supply chain applications, with nearly 1,000 issued patents worldwide. The deal's financial terms were not disclosed, and it is subject to regulatory approvals.",
-        "background_en": "Circle is the company behind USDC, a stablecoin pegged 1:1 to the US dollar and backed by reserves of cash and short-term US Treasury bonds. IBM has been a pioneer in enterprise blockchain, developing networks for food safety, shipping, trade finance, and more. Patents are crucial for protecting and monetizing blockchain innovations.",
-        "title_zh": "Circle将收购IBM近1000项区块链专利",
-        "detailed_summary_zh": "USDC稳定币发行商Circle宣布将从IBM收购近1000项区块链专利，其中包括超过680个专利家族。这一战略举措增强了Circle在区块链技术方面的知识产权组合。 此次收购使Circle成为区块链专利的主要持有者，有可能在稳定币和区块链基础设施领域建立竞争护城河。这标志着主要参与者对知识产权的长期整合和投资，可能影响未来的标准和许可业务。 IBM的区块链专利组合专注于供应链应用，在全球拥有近1000项已授权专利。交易的财务条款未披露，且需获得监管批准。",
-        "background_zh": "Circle是USDC背后的公司，USDC是一种与美元1:1挂钩的稳定币，由现金和短期美国国债储备支持。IBM一直是企业区块链的先驱，为食品安全、航运、贸易融资等领域开发网络。专利对于保护和商业化区块链创新至关重要。",
+        "feed_name": "Anthropic News",
+        "category": "ai-labs",
+        "title_en": "Mythos Preview Uses Chain-of-Thought to Discover AES Möbius Bridge",
+        "detailed_summary_en": "Anthropic revealed that its Mythos Preview model employed chain-of-thought reasoning to uncover the AES Möbius Bridge, a novel algebraic structure in the AES S-box that enables faster cryptanalysis. The discovery led to up to 800x speedup in 7-round AES-128 meet-in-the-middle attacks. This demonstrates that advanced AI models can autonomously discover complex mathematical structures, advancing both AI reasoning and cryptographic analysis. It could lead to stronger defenses or improved attacks on AES. The AES Möbius Bridge is an invariant fingerprint that exploits the algebraic structure of the AES S-box, eliminating a 256-way guessing step. Mythos Preview's chain-of-thought process allowed it to derive this bridge without human guidance.",
+        "background_en": "The Advanced Encryption Standard (AES) is a widely used symmetric encryption algorithm whose security depends on the S-box, a nonlinear substitution component. Chain-of-thought reasoning is a technique where AI models break down complex problems into step-by-step reasoning, enhancing their problem-solving abilities. The Möbius Bridge refers to a mathematical structure that reveals weaknesses in AES's algebraic design.",
+        "title_zh": "Mythos Preview 用思维链发现 AES Möbius Bridge",
+        "detailed_summary_zh": "Anthropic 披露，其 Mythos Preview 模型通过思维链推理发现了 AES Möbius Bridge——一种 AES S-box 中新颖的代数结构，能够加速密码分析。该发现使得 7 轮 AES-128 中间相遇攻击提速高达 800 倍。 这表明先进 AI 模型能自主发现复杂数学结构，推动 AI 推理与密码分析的发展。它可能带来更强的防御或更优的 AES 攻击方法。 AES Möbius Bridge 是一种利用 AES S-box 代数结构的不变量指纹，消除了 256 路猜测步骤。Mythos Preview 的思维链过程使其无需人类指导即可推导出该桥梁。",
+        "background_zh": "高级加密标准 (AES) 是一种广泛使用的对称加密算法，其安全性依赖于 S-box（非线性替换组件）。思维链推理是一种让 AI 模型将复杂问题分解为逐步推理的技术，能增强其问题解决能力。Möbius Bridge 指一种揭示 AES 代数设计弱点的数学结构。",
         "sources": [
           {
-            "url": "https://en.wikipedia.org/wiki/USDC_(cryptocurrency)",
-            "title": "USDC (cryptocurrency) - Wikipedia"
+            "url": "https://en.wikipedia.org/wiki/Claude_Mythos",
+            "title": "Claude Mythos - Wikipedia"
           },
           {
-            "url": "https://www.circle.com/usdc",
-            "title": "USDC | Powering global finance. Issued by Circle."
+            "url": "https://www-cdn.anthropic.com/c88771e1bf5ee8885349eed05e5484c0e5f7e02b/aes_mobius_bridge.pdf",
+            "title": "Cryptanalysis of 7-Round AES via the Algebraic Structure of its S-box"
+          },
+          {
+            "url": "https://blog.ogwilliam.com/post/claude-mythos-ai-cryptanalysis-hawk-aes",
+            "title": "How Claude Mythos Breaks Mathematical Cryptography • William OGOU Cybersecurity Blog"
           }
         ]
       },
-      "ai_score": 8.0,
+      "ai_score": 7.0,
       "ai_reason": null,
-      "ai_summary": "Circle, the issuer of USDC, is acquiring nearly 1,000 blockchain patents from IBM, enhancing its intellectual property position.",
+      "ai_summary": "Anthropic details how its Mythos Preview model uses chain-of-thought reasoning to uncover the AES Möbius Bridge, a cryptographic structure.",
       "ai_tags": []
     },
     {
-      "id": "hackernews:story:49067854",
-      "source_type": "hackernews",
-      "title": "How is the Bun Rewrite in Rust going?",
-      "url": "https://lockwood.dev/ai/2026/07/27/how-is-the-bun-rewrite-in-rust-going.html",
-      "content": null,
-      "author": "tomlockwood",
-      "published_at": "2026-07-27T11:12:26Z",
-      "fetched_at": "2026-07-27T15:14:58.016418Z",
-      "metadata": {
-        "discussion_url": "https://news.ycombinator.com/item?id=49067854",
-        "category": "tech-community",
-        "title_en": "Bun's Rust Rewrite Progresses, Delays v1.4 for Node.js Tests",
-        "detailed_summary_en": "Bun's creator Jarred announced that the Rust rewrite has shipped in Claude Code over a month ago, but the v1.4 release is delayed until a promised number of Node.js compatibility tests pass, with a target of next Tuesday. This update provides transparency on a major technical overhaul of Bun, a popular JavaScript runtime, and highlights the challenges of achieving Node.js compatibility after a full rewrite. The Rust rewrite was already used in Claude Code, but Bun v1.4 is delayed because a specific number of newly passing Node.js tests has not been met; the pull requests are pending and merging is expected soon.",
-        "background_en": "Bun is a high-performance JavaScript runtime that aims to be a drop-in replacement for Node.js, written in Zig. The project announced a rewrite in Rust to improve performance and safety. The rewrite has been shipped in Claude Code, an AI coding tool, but the general release is pending further compatibility improvements.",
-        "community_discussion_en": "Community members expressed mixed feelings: some saw the delay as a normal part of a major refactor, while others questioned the premature claims of success from LLM-assisted translation. There was also curiosity about the incomplete discussion thread.",
-        "title_zh": "Bun 的 Rust 重写进展顺利，v1.4 因 Node.js 测试推迟",
-        "detailed_summary_zh": "Bun 的创建者 Jarred 宣布，Rust 重写版已在一个多月前随 Claude Code 发布，但 v1.4 版本因尚未达到承诺的 Node.js 兼容性测试数量而推迟，目标是在下周二发布。 这一进展透明地展示了流行 JavaScript 运行时 Bun 的重大技术重构，并凸显了在完全重写后实现 Node.js 兼容性所面临的挑战。 Rust 重写版已在 Claude Code 中使用，但 Bun v1.4 因未达到特定数量的新增通过 Node.js 测试而推迟；相关拉取请求正在等待合并，预计很快完成。",
-        "background_zh": "Bun 是一个高性能的 JavaScript 运行时，旨在作为 Node.js 的替代品，最初用 Zig 编写。该项目宣布用 Rust 重写以提升性能和安全性。重写版已随 AI 编码工具 Claude Code 发布，但公开发布仍需进一步提升兼容性。",
-        "community_discussion_zh": "社区成员看法不一：有人认为延迟是大规模重构的正常现象，也有人质疑基于 LLM 辅助翻译的成功宣言为时过早。此外，不完整的讨论也引发了好奇。",
-        "sources": [
-          {
-            "url": "https://bun.sh/",
-            "title": "Bun — A fast all-in-one JavaScript runtime"
-          },
-          {
-            "url": "https://github.com/oven-sh/bun",
-            "title": "GitHub - oven-sh/bun: Incredibly fast JavaScript runtime, bundler..."
-          },
-          {
-            "url": "https://claude.com/product/claude-code",
-            "title": "Claude Code by Anthropic | AI Coding Agent, Terminal, IDE"
-          }
-        ]
-      },
-      "ai_score": 8.0,
-      "ai_reason": null,
-      "ai_summary": "Bun's Rust rewrite is progressing and shipped in Claude Code, but the next release (1.4) is delayed until a promised number of Node.js compatibility tests pass.",
-      "ai_tags": []
-    },
-    {
-      "id": "rss:cointelegraph.com_rss:0dbdf514d69e05c4",
+      "id": "rss:news.google.com_rss_search?q=site:anthropic.com+when:7d&hl=en-US&gl=US&ceid=US:en:249666495bb76a90",
       "source_type": "rss",
-      "title": "Triple-A confirms treasury-wallet breach after losses reach $11.8M",
-      "url": "https://cointelegraph.com/news/triple-a-treasury-wallet-breach-11-8-million-loss?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "title": "Discovering cryptographic weaknesses with Claude - Anthropic",
+      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE13elp4eC1EQlJMdmtBdDZYaGQ0UXJoVE9sOGNtSDZIRFRYV3pkU1E4TnlNX3BTai1QVjduNVJUampVZGVySmlKRmVtcUFXcDBlNFVTQVdHN2ZiUUdjSlNtLUhXb3JialVEWGprd0tjdUVZQ2dhSFExaUtoTQ?oc=5",
       "content": null,
-      "author": "Cointelegraph by Ezra Reguerra",
-      "published_at": "2026-07-27T05:15:54Z",
-      "fetched_at": "2026-07-27T07:53:30.883791Z",
+      "author": "Anthropic News",
+      "published_at": "2026-07-28T17:17:10Z",
+      "fetched_at": "2026-07-29T14:34:02.711722Z",
       "metadata": {
-        "feed_name": "Cointelegraph",
-        "category": "crypto-markets",
-        "title_en": "Triple-A confirms treasury-wallet breach, $11.8M loss",
-        "detailed_summary_en": "Triple-A, a stablecoin payments company, confirmed a breach of its treasury wallet resulting in $11.8 million in losses. The company stated that client funds were unaffected and the financial impact will be covered by its treasury reserves. This incident highlights ongoing security vulnerabilities in crypto payment infrastructure, potentially impacting trust in stablecoin-based payment systems. However, the assurance that client funds are safe may mitigate immediate panic among users. The breach specifically targeted Triple-A's treasury wallet, not client wallets. The company plans to absorb the $11.8M loss through its own reserves, indicating a degree of financial resilience.",
-        "background_en": "Triple-A is a stablecoin payments company that facilitates crypto-to-fiat transactions for businesses. Treasury wallets are used by companies to manage operational funds, separate from client funds. This breach underscores the importance of robust security measures for corporate crypto wallets.",
-        "title_zh": "Triple-A确认财库钱包遭入侵，损失1180万美元",
-        "detailed_summary_zh": "稳定币支付公司Triple-A确认其财库钱包遭到入侵，导致1180万美元损失。该公司表示客户资金未受影响，财务影响将由公司财库储备承担。 此事件凸显了加密货币支付基础设施中持续存在的安全漏洞，可能影响对基于稳定币的支付系统的信任。然而，客户资金安全的保证可能缓解用户的立即恐慌。 此次入侵专门针对Triple-A的财库钱包，而非客户钱包。该公司计划通过自身储备吸收1180万美元的损失，显示出一定的财务韧性。",
-        "background_zh": "Triple-A是一家稳定币支付公司，为企业提供加密货币与法定货币之间的交易服务。财库钱包用于公司管理运营资金，与客户资金分开。此次入侵凸显了企业加密货币钱包需要采取强健安全措施的重要性。"
-      },
-      "ai_score": 8.0,
-      "ai_reason": null,
-      "ai_summary": "Triple-A confirms a treasury-wallet breach resulting in $11.8M losses, but client funds remain secure and the financial impact will be covered by reserves.",
-      "ai_tags": []
-    },
-    {
-      "id": "rss:cointelegraph.com_rss:7054fd684a39df2b",
-      "source_type": "rss",
-      "title": "BitMart withdrawals appear to slow following wind-down announcement",
-      "url": "https://cointelegraph.com/news/bitmart-withdrawals-slow-exchange-wind-down?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-      "content": null,
-      "author": "Cointelegraph by Ezra Reguerra",
-      "published_at": "2026-07-27T04:34:44Z",
-      "fetched_at": "2026-07-27T07:53:30.883823Z",
-      "metadata": {
-        "feed_name": "Cointelegraph",
-        "category": "crypto-markets",
-        "title_en": "BitMart withdrawals slow after wind-down announcement",
-        "detailed_summary_en": "BitMart users are experiencing withdrawal delays and freeze notices as the exchange winds down, with its wallet balances dropping to approximately $69 million and its BMX token extending an 81.5% weekly decline. This event highlights the risks of centralized exchanges and the potential loss of user funds during wind-downs, eroding trust in the crypto exchange ecosystem and impacting users who may face long recovery times. The wallet balance drop from previous levels and the BMX token crash reflect market panic and reduced liquidity, with no clear timeline for full withdrawal processing or compensation.",
-        "background_en": "BitMart is a centralized cryptocurrency exchange that launched its native BMX token as an ERC-20 token to support its ecosystem. A wind-down means the exchange is ceasing operations, often leading to withdrawal halts and asset freezes. Similar events have occurred at other exchanges, causing significant user losses.",
-        "title_zh": "BitMart 宣布停运后提款放缓",
-        "detailed_summary_zh": "BitMart 用户正面临提现延迟和冻结通知，该交易所逐步关闭，其钱包余额降至约 6900 万美元，BMX 代币周跌幅扩大至 81.5%。 此事件凸显了中心化交易所的风险以及关闭期间用户资金可能损失的问题，削弱了对加密货币交易所生态系统的信任，并影响可能面临漫长恢复期的用户。 钱包余额从此前水平下降以及 BMX 代币暴跌反映了市场恐慌和流动性减少，目前没有明确的全面提款处理或赔偿时间表。",
-        "background_zh": "BitMart 是一个中心化加密货币交易所，曾推出其原生代币 BMX（一种 ERC-20 代币）以支持其生态系统。停运意味着交易所停止运营，通常会导致提现暂停和资产冻结。类似事件曾发生在其他交易所，造成用户重大损失。",
+        "feed_name": "Anthropic News",
+        "category": "ai-labs",
+        "title_en": "Claude AI identifies cryptographic weaknesses",
+        "detailed_summary_en": "Anthropic has announced that its AI model Claude successfully identified novel attacks against cryptographic schemes submitted to international standardization efforts. The findings were reviewed and validated by human experts. This demonstrates that frontier AI systems can assist in discovering previously unknown cryptographic vulnerabilities, potentially accelerating security research and improving encryption standards. It highlights AI's role in augmenting human expertise rather than replacing it. Claude identified attacks on cryptographic schemes that were part of international standardization efforts, not just trivial weaknesses. The research was conducted by Anthropic and the results were validated by human cryptographers.",
+        "background_en": "Anthropic's Claude is a large language model trained to be helpful, honest, and harmless. Cryptographic weaknesses are flaws in encryption algorithms that could be exploited by attackers. Traditionally, finding such weaknesses requires deep expertise and manual analysis. This research shows AI can assist in that process.",
+        "title_zh": "Claude AI发现加密算法弱点",
+        "detailed_summary_zh": "Anthropic宣布，其AI模型Claude成功识别出提交给国际标准化工作的加密方案中的新型攻击方式，相关发现已由人类专家审查并验证。 这表明前沿AI系统能够协助发现此前未知的密码学漏洞，可能加速安全研究并改进加密标准。这凸显了AI在增强而非替代人类专家方面的作用。 Claude识别的是参与国际标准化的加密方案中的攻击方式，而非普通弱点。该研究由Anthropic进行，结果由人类密码学家验证。",
+        "background_zh": "Anthropic的Claude是一个大型语言模型，经过训练以提供有帮助、诚实且无害的回应。密码学弱点是指加密算法中可能被攻击者利用的缺陷。传统上，发现这些弱点需要深厚的专业知识和人工分析。这项研究表明AI可以协助这一过程。",
         "sources": [
           {
-            "url": "https://www.bitmart.com/bmx",
-            "title": "BitMart Token (BMX) | The Official Token of the BitMart Ecosystem"
-          },
-          {
-            "url": "https://www.coinbase.com/price/bitmart-token",
-            "title": "BitMart Token Price, BMX Price, Live Charts, and Marketcap"
+            "url": "https://en.wikipedia.org/wiki/Claude_(AI)",
+            "title": "Claude (AI) - Wikipedia"
           }
         ]
       },
-      "ai_score": 8.0,
+      "ai_score": 7.0,
       "ai_reason": null,
-      "ai_summary": "BitMart withdrawals slow as exchange winds down, with wallet balances dropping and BMX token crashing.",
-      "ai_tags": []
-    },
-    {
-      "id": "rss:cointelegraph.com_rss:134362aad6f7ff6b",
-      "source_type": "rss",
-      "title": "Storj files for bankruptcy, explores equity path for tokenholders",
-      "url": "https://cointelegraph.com/news/storj-chapter-11-bankruptcy-tokenholder-equity?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-      "content": null,
-      "author": "Cointelegraph by Ezra Reguerra",
-      "published_at": "2026-07-27T01:01:43Z",
-      "fetched_at": "2026-07-27T02:24:38.301415Z",
-      "metadata": {
-        "feed_name": "Cointelegraph",
-        "category": "crypto-markets",
-        "title_en": "Storj files for Chapter 11 bankruptcy, explores equity for tokenholders",
-        "detailed_summary_en": "Decentralized storage provider Storj has filed for Chapter 11 bankruptcy protection, while exploring a court-approved mechanism to offer equity to STORJ tokenholders. The company assures that its network will continue operating during the process. This is a significant event for the decentralized storage sector, as one of its prominent players faces financial distress, potentially impacting user trust and industry confidence. The proposed equity path for tokenholders could set a precedent for how crypto token holders are treated in bankruptcy proceedings. Storj filed for Chapter 11, which allows it to restructure while continuing operations. The specific equity conversion mechanism for STORJ tokens requires court approval and details are not yet disclosed.",
-        "background_en": "Storj is a decentralized cloud storage platform that uses blockchain technology to allow users to rent out unused hard drive space. The STORJ token is used to pay for storage services and reward node operators. Filing for Chapter 11 bankruptcy does not necessarily mean liquidation; it is a reorganization process often used by companies to manage debt while continuing business.",
-        "community_discussion_en": "On the Storj community forum, some users had previously questioned the utility of the STORJ token, noting that aside from a 10% discount for paying with STORJ, there was limited demand driver. The bankruptcy filing and proposed equity conversion may reignite debates about token value and holder rights.",
-        "title_zh": "Storj申请第11章破产，探索代币持有者股权方案",
-        "detailed_summary_zh": "去中心化存储提供商 Storj 已申请第11章破产保护，同时探索法院批准的机制，向 STORJ 代币持有者提供股权。该公司保证其网络在破产程序期间将继续运行。 这对去中心化存储领域来说是一个重大事件，因为该领域的主要参与者面临财务困境，可能会影响用户信任和行业信心。为代币持有者提供股权的提议可能为破产程序中如何对待加密货币代币持有者开创先例。 Storj 申请的是第11章破产，这允许其在重组期间继续运营。STORJ 代币的股权转换机制需要法院批准，具体细节尚未披露。",
-        "background_zh": "Storj 是一个去中心化云存储平台，利用区块链技术让用户出租未使用的硬盘空间。STORJ 代币用于支付存储服务并奖励节点运营商。申请第11章破产并不一定意味着清算；它是一种重组过程，公司常用于管理债务同时继续运营。",
-        "community_discussion_zh": "在 Storj 社区论坛上，一些用户此前曾质疑 STORJ 代币的实用性，指出除了用 STORJ 支付可享受10%折扣外，需求驱动因素有限。破产申请和拟议的股权转换可能重新引发关于代币价值和持有者权利的讨论。",
-        "sources": [
-          {
-            "url": "https://www.gemini.com/cryptopedia/storj-crypto-decentralized-storage",
-            "title": "Storj Crypto: Decentralized Storage Solution | Gemini"
-          },
-          {
-            "url": "https://www.storjtoken.com/",
-            "title": "STORJ token powers distributed cloud storage and AI scalability"
-          },
-          {
-            "url": "https://forum.storj.io/t/the-elephant-in-the-room-where-is-the-storj-token-utility/12452",
-            "title": "The elephant in the room: Where is the Storj token utility? - Ideas & Suggestions - Storj Community Forum (official)"
-          }
-        ]
-      },
-      "ai_score": 8.0,
-      "ai_reason": null,
-      "ai_summary": "Decentralized storage provider Storj files for Chapter 11 bankruptcy, exploring equity for STORJ tokenholders while maintaining network operations.",
+      "ai_summary": "Anthropic demonstrates how their AI model Claude can identify cryptographic weaknesses, highlighting AI's potential in security analysis.",
       "ai_tags": []
     },
     {
@@ -911,106 +895,6 @@
       "ai_score": 7.0,
       "ai_reason": null,
       "ai_summary": "Apple released security content for macOS Tahoe 26.6 addressing vulnerabilities including memory handling issues.",
-      "ai_tags": []
-    },
-    {
-      "id": "google_news:article:8d905234980d60ec",
-      "source_type": "google_news",
-      "title": "Binance Announces New Delisting for 5 Altcoins! - Koin Bülteni",
-      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQdVd6YnlDWVF1X3NYYjZUSkNsMkx1bTlVU3RPQllfQl9RSW16RTkxU0lJaHVrMG5oZkx2Wlc5WEFMVmxvM0NNMUVtaFJrVjhJRXRlc0R0eS1VQkRBV3hhdzdCbjAyZTVsN2F3Y0M0ZUltQ3RLVWtMWERqTFJVMk4wX1BFSE5TZ083eG1EYV9n?oc=5",
-      "content": null,
-      "author": "Koin Bülteni",
-      "published_at": "2026-07-27T10:14:22Z",
-      "fetched_at": "2026-07-27T11:40:59.378677Z",
-      "metadata": {
-        "category": "exchange-announcements",
-        "title_en": "Binance Announces Delisting of 5 Altcoins",
-        "detailed_summary_en": "Binance has announced it will delist five altcoins from its platform, as reported by Koin Bülteni. The specific tokens and delisting date have not been disclosed in the initial report. Delistings by Binance, the world's largest cryptocurrency exchange, often lead to significant price drops and reduced liquidity for affected tokens. This move could impact investors holding these altcoins and signal Binance's ongoing review of listed assets. The report from Koin Bülteni lacks official confirmation from Binance and does not name the five altcoins or provide a timeline. Such announcements are typically accompanied by reasons like low trading volume or regulatory concerns.",
-        "background_en": "Cryptocurrency exchanges like Binance periodically delist tokens to maintain platform quality, comply with regulations, or protect users. Delisted tokens are removed from trading pairs, and users must withdraw them before a deadline or risk losing access.",
-        "title_zh": "币安宣布下架5种山寨币",
-        "detailed_summary_zh": "据Koin Bülteni报道，币安宣布将从其平台下架五种山寨币。初始报道中未披露具体代币和退市日期。 作为全球最大的加密货币交易所，币安的下架行为常导致相关代币价格大幅下跌和流动性降低。此举可能影响持有这些山寨币的投资者，并表明币安持续审查上市资产。 Koin Bülteni的报道缺乏币安的官方确认，也未指明五种山寨币的名称或提供时间表。此类公告通常伴随低交易量或监管担忧等原因。",
-        "background_zh": "像币安这样的加密货币交易所会定期下架代币，以维护平台质量、遵守法规或保护用户。被下架的代币将从交易对中移除，用户需在截止日期前提取，否则可能面临无法访问的风险。"
-      },
-      "ai_score": 7.0,
-      "ai_reason": null,
-      "ai_summary": "Binance announces delisting of 5 altcoins.",
-      "ai_tags": []
-    },
-    {
-      "id": "github:release:359133713",
-      "source_type": "github",
-      "title": "ethereum/go-ethereum released v1.17.5",
-      "url": "https://github.com/ethereum/go-ethereum/releases/tag/v1.17.5",
-      "content": null,
-      "author": "rjl493456442",
-      "published_at": "2026-07-27T08:17:40Z",
-      "fetched_at": "2026-07-27T11:40:59.495474Z",
-      "metadata": {
-        "category": "crypto-protocols",
-        "title_en": "go-ethereum v1.17.5: Maintenance Release with Pebble v2 and Amsterdam EIPs",
-        "detailed_summary_en": "The go-ethereum team released v1.17.5, a maintenance update that changes the default GOGC value from 20 to 50, adds Pebble v2 database support, and continues implementing Amsterdam hardfork EIPs. This release improves node performance by reducing garbage collection overhead and offers a more efficient database backend, while advancing the upcoming Amsterdam hardfork, which will significantly alter Ethereum's gas model and contract size limits. Node operators are strongly recommended to upgrade. Pebble v2 is used when bootstrapping a new database; existing Pebble v1 databases must be manually upgraded via 'geth db pebble-upgrade'. The GOGC change adjusts the garbage collector trigger threshold, trading higher memory usage for lower CPU overhead.",
-        "background_en": "GOGC is a Go runtime environment variable that controls the garbage collector's target percentage: a higher value means the GC runs less frequently, reducing CPU time but increasing peak memory. Pebble is a key-value store written in Go, initially used in go-ethereum as an alternative to LevelDB. The Amsterdam hardfork is a planned Ethereum upgrade that includes multiple EIPs to improve gas accounting, increase contract size, and introduce block-level access lists, building on changes from earlier forks.",
-        "title_zh": "go-ethereum v1.17.5：维护版本，包含Pebble v2和Amsterdam EIP",
-        "detailed_summary_zh": "go-ethereum团队发布了v1.17.5维护更新，将默认GOGC值从20改为50，增加了Pebble v2数据库支持，并继续实现Amsterdam硬分叉的EIP。 该版本通过降低垃圾回收开销提升节点性能，并提供更高效的数据库后端，同时推进即将到来的Amsterdam硬分叉，该分叉将显著改变以太坊的gas模型和合约大小限制。节点运营者强烈建议升级。 Pebble v2在首次启动新数据库时使用；现有的Pebble v1数据库需通过'geth db pebble-upgrade'手动升级。GOGC更改调整了垃圾回收触发阈值，以更高内存使用换取更低CPU开销。",
-        "background_zh": "GOGC是Go运行时的环境变量，控制垃圾回收器的目标百分比：值越高，GC运行频率越低，从而减少CPU时间但增加峰值内存。Pebble是一个用Go编写的键值存储，最初在go-ethereum中作为LevelDB的替代方案使用。Amsterdam硬分叉是计划中的以太坊升级，包含多个EIP，旨在改进gas计算、增加合约大小并引入区块级访问列表，基于先前分叉的变更。",
-        "sources": [
-          {
-            "url": "https://dev.to/jones_charles_ad50858dbc0/tuning-gos-gogc-a-practical-guide-with-real-world-examples-4a00",
-            "title": "Tuning Go's GOGC: A Practical Guide with Real-World Examples - DEV Community"
-          },
-          {
-            "url": "https://dbdb.io/db/pebble",
-            "title": "Info about the Key/Value database management system (Since 2018)."
-          },
-          {
-            "url": "https://eips.ethereum.org/EIPS/eip-2780",
-            "title": "EIP-2780: Resource-based intrinsic transaction gas"
-          }
-        ]
-      },
-      "ai_score": 7.0,
-      "ai_reason": null,
-      "ai_summary": "go-ethereum v1.17.5 is a maintenance release with bug fixes, a default GOGC change, Pebble v2 database support, and continued implementation of Amsterdam hardfork EIPs.",
-      "ai_tags": []
-    },
-    {
-      "id": "hackernews:story:49063022",
-      "source_type": "hackernews",
-      "title": "US citizen charged after GrapheneOS phone wipes during airport search",
-      "url": "https://www.techspot.com/news/113236-us-prosecutors-charge-atlanta-man-after-grapheneos-phone.html",
-      "content": null,
-      "author": "eecc",
-      "published_at": "2026-07-26T22:21:41Z",
-      "fetched_at": "2026-07-27T02:24:38.784141Z",
-      "metadata": {
-        "discussion_url": "https://news.ycombinator.com/item?id=49063022",
-        "category": "tech-community",
-        "title_en": "US citizen charged after GrapheneOS phone wipe at border",
-        "detailed_summary_en": "A US citizen is facing federal charges after using a duress PIN on his GrapheneOS phone, which automatically wiped the device during a border search at an airport. This marks the first known prosecution involving the use of a duress password at a US border. This case sets a legal precedent for the use of duress PINs and other security features that can automatically destroy data, raising important questions about the balance between individual privacy rights and government authority at borders. It could deter security-conscious users from utilizing such features. The duress PIN on GrapheneOS is designed to wipe the device when entered under coercion, but prosecutors argue the act of wiping constitutes obstruction of justice. The outcome could hinge on whether using a duress PIN is considered an intentional act to destroy evidence.",
-        "background_en": "GrapheneOS is a security-focused Android-based operating system that includes features like duress PINs to protect users' data. A duress PIN is a separate password that, when entered, triggers data deletion instead of unlocking the device. US border authorities have broad search powers, and individuals are generally expected to comply with device searches. This incident highlights the legal risks of using anti-forensic tools at borders.",
-        "community_discussion_en": "Commenters noted that while duress PINs are a useful security feature, users must recognize the potential legal consequences at borders. Some suggested using decoy OS volumes like VeraCrypt's hidden volumes as a less extreme alternative. Others argued that travelers should wipe their devices before crossing and restore from backup later.",
-        "title_zh": "美国公民因在边境使用 GrapheneOS 手机擦除数据被起诉",
-        "detailed_summary_zh": "一名美国公民在机场边境检查中使用 GrapheneOS 手机的胁迫 PIN 码，导致设备自动擦除数据，因此面临联邦指控。这是首例已知的因在美边境使用胁迫密码而引发的起诉案件。 此案为胁迫 PIN 码等可在被胁迫时自动删除数据的安全功能的使用树立了法律先例，引发了关于个人隐私权与边境政府权力平衡的重要问题。可能会阻止注重安全的用户使用此类功能。 GrapheneOS 的胁迫 PIN 码设计用于在胁迫下输入时擦除设备，但检方认为擦除行为构成妨碍司法。结果可能取决于使用胁迫 PIN 码是否被视为故意销毁证据。",
-        "background_zh": "GrapheneOS 是一款注重安全的基于 Android 的操作系统，包含胁迫 PIN 码等功能以保护用户数据。胁迫 PIN 码是一个单独的密码，输入时会触发数据删除而非解锁设备。美国边境当局拥有广泛的搜查权，个人通常需要配合设备检查。此事件凸显了在边境使用反取证工具的法律风险。",
-        "community_discussion_zh": "评论者指出，虽然胁迫 PIN 码是有用的安全功能，但用户必须意识到在边境可能面临的法律后果。有人建议使用 VeraCrypt 的隐藏卷等诱饵 OS 卷作为不那么极端的替代方案。其他人则认为旅行者应在过境前擦除设备，之后再从备份恢复。",
-        "sources": [
-          {
-            "url": "https://www.androidauthority.com/grapheneos-duress-pin-us-prosecution-3691271/",
-            "title": "GrapheneOS duress PIN could land a man in prison - Android Authority"
-          },
-          {
-            "url": "https://en.wikipedia.org/wiki/Duress_PIN",
-            "title": "Duress PIN"
-          },
-          {
-            "url": "https://en.wikipedia.org/wiki/GrapheneOS",
-            "title": "GrapheneOS"
-          }
-        ]
-      },
-      "ai_score": 7.0,
-      "ai_reason": null,
-      "ai_summary": "US citizen charged after using duress PIN on GrapheneOS phone that wiped data during airport border search, highlighting legal risks of security features.",
       "ai_tags": []
     }
   ]
