@@ -154,8 +154,11 @@ def test_watchdog_workflow_has_schedule_aware_arguments() -> None:
         / "schedule-watchdog.yml"
     ).read_text(encoding="utf-8")
 
-    assert "cron: '43 * * * *'" in workflow
+    assert "cron: '47 20 * * *'" in workflow
+    assert "43 * * * *" not in workflow
     assert "actions: write" in workflow
+    assert "timeout-minutes: 5" in workflow
+    assert "actions/setup-python" not in workflow
     assert "--timezone Asia/Shanghai" in workflow
     assert "--cutoff-hour 20" in workflow
     assert "--grace-minutes 30" in workflow

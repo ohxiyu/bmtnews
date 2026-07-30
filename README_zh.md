@@ -323,7 +323,7 @@ docker compose run --rm horizon --hours 48   # 抓取最近 48 小时的内容
 
 Horizon 非常适合作为 **GitHub Actions** 定时任务运行。本项目通过
 [`feed-collection.yml`](.github/workflows/feed-collection.yml) 在上海时间
-02:17、08:17 和 14:17 只采集并暂存原始内容，不调用 AI；
+08:17 和 14:17 只采集并暂存原始内容，不调用 AI；
 [`daily-summary.yml`](.github/workflows/daily-summary.yml) 在 20:17 最终补采，
 只分析固定的 `[前一天 20:00，当天 20:00)` 窗口，并向 GitHub Pages 发布
 唯一一期晚间日报。日内暂存用于提高覆盖率，最终 24 小时补采仍是兜底。
@@ -341,15 +341,22 @@ Horizon 非常适合作为 **GitHub Actions** 定时任务运行。本项目通�
 失败仍会使任务失败。
 
 独立的
-[`schedule-watchdog.yml`](.github/workflows/schedule-watchdog.yml) 工作流每小时
-检查一次日报发布心跳。每天 20:00 截止并经过 20:30 宽限后，如果 `main`
-仍没有当期成功发布记录且当前没有发布任务运行，它会自动触发一次补跑，同时
-将自身标记为失败，以便 GitHub 发送工作流失败通知；已有当期发布正在运行时
-不会重复触发。
+[`schedule-watchdog.yml`](.github/workflows/schedule-watchdog.yml) 工作流每天
+20:47 检查一次日报发布心跳。每天 20:00 截止并经过 20:30 宽限后，如果
+`main` 仍没有当期成功发布记录且当前没有发布任务运行，它会自动触发一次补跑，
+同时将自身标记为失败，以便 GitHub 发送工作流失败通知；已有当期发布正在运行
+时不会重复触发。
 
 如果延迟的原定任务在补跑已经发布同一固定窗口后才启动，发布模式会在采集和
 调用 AI 前直接退出，避免重复成本。维护者确实需要重建当期日报时，可以在
 **Run workflow** 中启用 `force_publish`。
+
+这套节省额度的配置每天固定运行 4 次（2 次暂存、1 次发布、1 次心跳），按
+30 天计算约 120 次；相比每小时心跳时约 840 次减少约 86%。同一 PR 的旧检查
+会自动取消，受保护的 `main` 合并提交不会再次重复运行 CI/CodeQL，每个托管
+job 也设置了超时上限。GitHub 标准托管 runner 对
+[公开仓库免费](https://docs.github.com/billing/concepts/product-billing/github-actions)，
+但该配置也为以后改成私有仓库预留了更多免费额度。
 
 ## 支持的信息源
 

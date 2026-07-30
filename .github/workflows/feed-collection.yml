@@ -2,8 +2,8 @@ name: BMTNews Feed Collection
 
 on:
   schedule:
-    # Three staging-only runs plus the final fetch in daily-summary.yml.
-    - cron: '17 2,8,14 * * *'
+    # Two coverage runs plus the final fetch in daily-summary.yml.
+    - cron: '17 8,14 * * *'
       timezone: 'Asia/Shanghai'
   workflow_dispatch:
 
@@ -17,6 +17,7 @@ permissions:
 jobs:
   collect:
     runs-on: ubuntu-latest
+    timeout-minutes: 15
     env:
       TZ: Asia/Shanghai
 

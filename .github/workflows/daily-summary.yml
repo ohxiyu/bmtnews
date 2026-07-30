@@ -20,6 +20,7 @@ concurrency:
 jobs:
   daily-summary:
     runs-on: ubuntu-latest
+    timeout-minutes: 30
     env:
       TZ: Asia/Shanghai
     permissions:

@@ -262,7 +262,7 @@ def test_daily_edition_combines_staging_and_final_fetch(
     )
 
 
-def test_workflows_collect_four_times_and_publish_once() -> None:
+def test_workflows_stage_twice_and_publish_once() -> None:
     root = Path(__file__).parents[1]
     collection = (
         root / ".github" / "workflows" / "feed-collection.yml"
@@ -271,7 +271,8 @@ def test_workflows_collect_four_times_and_publish_once() -> None:
         root / ".github" / "workflows" / "daily-summary.yml"
     ).read_text(encoding="utf-8")
 
-    assert "cron: '17 2,8,14 * * *'" in collection
+    assert "cron: '17 8,14 * * *'" in collection
+    assert "17 2,8,14" not in collection
     assert "horizon --mode fetch --hours 12" in collection
     assert "cron: '17 20 * * *'" in publication
     assert "args=(--mode publish --hours 24 --cutoff-hour 20)" in publication
@@ -279,3 +280,5 @@ def test_workflows_collect_four_times_and_publish_once() -> None:
     assert "args+=(--force-publish)" in publication
     assert "bmtnews-staging-v1-" in collection
     assert "bmtnews-staging-v1-" in publication
+    assert "timeout-minutes: 15" in collection
+    assert "timeout-minutes: 30" in publication

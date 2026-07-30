@@ -335,7 +335,7 @@ The generated report will be saved to `data/summaries/`.
 
 Horizon works great as a **GitHub Actions** cron job. BMTNews uses
 [`feed-collection.yml`](.github/workflows/feed-collection.yml) to stage raw
-items at 02:17, 08:17, and 14:17 Asia/Shanghai without calling AI. The
+items at 08:17 and 14:17 Asia/Shanghai without calling AI. The
 [`daily-summary.yml`](.github/workflows/daily-summary.yml) workflow performs a
 final fetch at 20:17, analyzes the fixed `[previous day 20:00, current day
 20:00)` window once, and deploys one daily edition to GitHub Pages. The staging
@@ -358,14 +358,24 @@ fails the job.
 
 The independent
 [`schedule-watchdog.yml`](.github/workflows/schedule-watchdog.yml) workflow
-checks the successful daily-edition heartbeat hourly. If no successful `main`
-run exists for the latest due 20:00 edition after the 20:30 grace period, it
-dispatches one recovery run and fails its own job so GitHub can send a workflow
-failure notification. A current edition run suppresses duplicate dispatches.
+checks the successful daily-edition heartbeat once at 20:47. If no successful
+`main` run exists for the latest due 20:00 edition after the 20:30 grace
+period, it dispatches one recovery run and fails its own job so GitHub can send
+a workflow failure notification. A current edition run suppresses duplicate
+dispatches.
 If a delayed scheduled event starts after a recovery already published the same
 fixed window, publication mode exits before fetching or calling AI. A
 maintainer can deliberately rebuild it from **Run workflow** by enabling
 `force_publish`.
+
+This budget-conscious profile uses four scheduled workflow runs per day
+(two staging runs, one publication, and one watchdog), or about 120 per
+30-day month instead of 840 with an hourly watchdog. PR checks cancel obsolete
+runs and do not repeat on the protected `main` push; every hosted job also has
+a timeout. Standard GitHub-hosted runners are
+[free for public repositories](https://docs.github.com/billing/concepts/product-billing/github-actions),
+but the reduced profile also fits much more comfortably if the repository is
+made private later.
 
 ## Supported Sources
 
