@@ -69,7 +69,7 @@ _DAILY_METRIC_LABELS = (
 _REPORT_TITLES = {
     "legacy_full": "BMTNews 采集运行报告",
     "staging_fetch": "BMTNews 日内采集报告",
-    "daily_publish": "BMTNews 晚间日报发布报告",
+    "daily_publish": "BMTNews 早间日报发布报告",
 }
 
 _METRICS_BY_KIND = {

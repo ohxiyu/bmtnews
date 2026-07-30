@@ -307,7 +307,7 @@ cp data/config.example.json data/config.json  # 自定义信息源
 uv run horizon              # 使用默认 24 小时窗口
 uv run horizon --hours 48   # 抓取最近 48 小时的内容
 uv run horizon --mode fetch --hours 12  # 只采集并暂存，不调用 AI
-uv run horizon --mode publish --hours 24 --cutoff-hour 20  # 发布一期日报
+uv run horizon --mode publish --hours 24 --cutoff-hour 8 --edition-date 2026-07-31
 ```
 
 #### 使用 Docker
@@ -321,16 +321,17 @@ docker compose run --rm horizon --hours 48   # 抓取最近 48 小时的内容
 
 ### 4. 自动化（可选）
 
-Horizon 非常适合作为 **GitHub Actions** 定时任务运行。本项目通过
+Horizon 非常适合自动定时运行。本项目通过
 [`feed-collection.yml`](.github/workflows/feed-collection.yml) 在上海时间
-02:17、08:17 和 14:17 只采集并暂存原始内容，不调用 AI；
-[`daily-summary.yml`](.github/workflows/daily-summary.yml) 在 20:17 最终补采，
-只分析固定的 `[前一天 20:00，当天 20:00)` 窗口，并向 GitHub Pages 发布
-唯一一期晚间日报。日内暂存用于提高覆盖率，最终 24 小时补采仍是兜底。
+00:30 和 16:30 只采集并暂存原始内容，不调用 AI；独立的
+[Cloudflare Cron 调度器](project-docs/daily-dispatcher.md) 在 08:30 携带明确
+期号触发 [`daily-summary.yml`](.github/workflows/daily-summary.yml)。日报最终
+补采后只分析固定的 `[前一天 08:00，当天 08:00)` 窗口，并向 GitHub Pages
+发布唯一一期早间日报。日内暂存用于提高覆盖率，最终 24 小时补采仍是兜底。
 
 每个 workflow 都会生成 `data/run-report.json`，但报告会按照运行类型展示
 真正相关的指标。日内采集报告包含采集、URL 去重、新增暂存、缓存累计和各来源
-状态；晚间发布报告另外包含固定窗口、截止后延迟、暂存年龄、仅由暂存补回的
+状态；早间发布报告另外包含固定窗口、截止后延迟、暂存年龄、仅由暂存补回的
 候选、各细分来源的候选/入选贡献、AI 筛选漏斗、类别上限，以及 Crypto 主轨
 最低目标。配额不足、启动过晚或暂存过旧都会明确显示为 warning，系统不会为了
 凑数而降低 AI 分数阈值。
@@ -340,16 +341,24 @@ Horizon 非常适合作为 **GitHub Actions** 定时任务运行。本项目通�
 继续保留，并展开 Feed、频道或仓库级计数。部分来源失败显示为警告，全部来源
 失败仍会使任务失败。
 
-独立的
-[`schedule-watchdog.yml`](.github/workflows/schedule-watchdog.yml) 工作流每小时
-检查一次日报发布心跳。每天 20:00 截止并经过 20:30 宽限后，如果 `main`
-仍没有当期成功发布记录且当前没有发布任务运行，它会自动触发一次补跑，同时
-将自身标记为失败，以便 GitHub 发送工作流失败通知；已有当期发布正在运行时
-不会重复触发。
+Cloudflare 会在 08:40、08:55 和 09:10 复查，并分别识别 `gh-pages` 已生成和
+Pages 已渲染两个阶段。独立的
+[`schedule-watchdog.yml`](.github/workflows/schedule-watchdog.yml) 工作流还会
+在 08:47 检查日报发布心跳。每天 08:00 截止后，如果 `main` 仍没有当期成功
+发布记录且当前没有发布任务运行，它会携带同一期号自动触发一次补跑，同时将
+自身标记为失败，以便 GitHub 发送工作流失败通知；已有当期发布正在运行时不会
+重复触发。
 
 如果延迟的原定任务在补跑已经发布同一固定窗口后才启动，发布模式会在采集和
 调用 AI 前直接退出，避免重复成本。维护者确实需要重建当期日报时，可以在
 **Run workflow** 中启用 `force_publish`。
+
+这套节省额度的配置每天固定运行 3 次 GitHub 定时任务（2 次暂存、1 次独立
+心跳），日报由 Cloudflare 按需 dispatch。同一 PR 的旧检查会自动取消，受保护
+的 `main` 合并提交不会再次重复运行 CI/CodeQL，每个托管 job 也设置了超时
+上限。GitHub 标准托管 runner 对
+[公开仓库免费](https://docs.github.com/billing/concepts/product-billing/github-actions)，
+但该配置也为以后改成私有仓库预留了更多免费额度。
 
 ## 支持的信息源
 
