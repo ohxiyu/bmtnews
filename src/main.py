@@ -3,16 +3,26 @@
 import argparse
 import asyncio
 import sys
+from datetime import date as date_type
 from pathlib import Path
 
 from dotenv import load_dotenv
 from rich.console import Console
 
-from .storage.manager import ConfigError, StorageManager
 from .orchestrator import HorizonOrchestrator
+from .storage.manager import ConfigError, StorageManager
 
 
 console = Console()
+
+
+def _edition_date(value: str) -> date_type:
+    try:
+        return date_type.fromisoformat(value)
+    except ValueError as exc:
+        raise argparse.ArgumentTypeError(
+            "edition date must use YYYY-MM-DD"
+        ) from exc
 
 
 def print_banner():
@@ -55,8 +65,17 @@ def main():
     parser.add_argument(
         "--cutoff-hour",
         type=int,
-        default=20,
+        default=8,
         help="Daily edition cutoff hour in filtering.daily_timezone",
+    )
+    parser.add_argument(
+        "--edition-date",
+        type=_edition_date,
+        default=None,
+        help=(
+            "Explicit local date whose fixed edition window should be built; "
+            "only valid with --mode publish"
+        ),
     )
     parser.add_argument(
         "--force-publish",
@@ -70,6 +89,8 @@ def main():
         parser.error("--cutoff-hour must be between 0 and 23")
     if args.force_publish and args.mode != "publish":
         parser.error("--force-publish requires --mode publish")
+    if args.edition_date is not None and args.mode != "publish":
+        parser.error("--edition-date requires --mode publish")
 
     try:
         # Load environment variables from .env file
@@ -119,6 +140,7 @@ def main():
                     force_hours=args.hours,
                     staging_path=args.staging_path,
                     cutoff_hour=args.cutoff_hour,
+                    edition_date=args.edition_date,
                     force_publish=args.force_publish,
                 )
             )

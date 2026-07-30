@@ -18,8 +18,8 @@ from zoneinfo import ZoneInfo
 DEFAULT_WORKFLOW = "daily-summary.yml"
 DEFAULT_REF = "main"
 DEFAULT_TIMEZONE = "Asia/Shanghai"
-DEFAULT_CUTOFF_HOUR = 20
-DEFAULT_GRACE_MINUTES = 30
+DEFAULT_CUTOFF_HOUR = 8
+DEFAULT_GRACE_MINUTES = 47
 ACTIVE_STATUSES = frozenset(
     {"queued", "in_progress", "waiting", "pending", "requested"}
 )
@@ -250,6 +250,8 @@ def dispatch_workflow(
     repository: str,
     workflow: str,
     ref: str,
+    edition_date: str,
+    trigger_source: str = "github-watchdog",
 ) -> None:
     repository = _validate_repository(repository)
     workflow_id = quote(workflow, safe="")
@@ -257,7 +259,13 @@ def dispatch_workflow(
         "POST",
         f"/repos/{repository}/actions/workflows/{workflow_id}/dispatches",
         token=token,
-        payload={"ref": ref},
+        payload={
+            "ref": ref,
+            "inputs": {
+                "edition_date": edition_date,
+                "trigger_source": trigger_source,
+            },
+        },
     )
 
 
@@ -383,6 +391,7 @@ def main(argv: Sequence[str] | None = None) -> int:
                 repository=args.repository,
                 workflow=args.workflow,
                 ref=args.ref,
+                edition_date=decision.edition_cutoff.strftime("%Y-%m-%d"),
             )
             recovery_dispatched = True
         _append_summary(

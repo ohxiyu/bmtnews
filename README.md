@@ -319,7 +319,7 @@ For the full reference, see the [Configuration Guide](project-docs/configuration
 uv run horizon           # Run with default 24h window
 uv run horizon --hours 48  # Fetch from last 48 hours
 uv run horizon --mode fetch --hours 12  # Stage raw items without AI
-uv run horizon --mode publish --hours 24 --cutoff-hour 20  # Publish one edition
+uv run horizon --mode publish --hours 24 --cutoff-hour 8 --edition-date 2026-07-31
 ```
 
 #### With Docker
@@ -333,13 +333,15 @@ The generated report will be saved to `data/summaries/`.
 
 ### 4. Automate (Optional)
 
-Horizon works great as a **GitHub Actions** cron job. BMTNews uses
+Horizon works well with scheduled automation. BMTNews uses
 [`feed-collection.yml`](.github/workflows/feed-collection.yml) to stage raw
-items at 08:17 and 14:17 Asia/Shanghai without calling AI. The
-[`daily-summary.yml`](.github/workflows/daily-summary.yml) workflow performs a
-final fetch at 20:17, analyzes the fixed `[previous day 20:00, current day
-20:00)` window once, and deploys one daily edition to GitHub Pages. The staging
-cache is only a coverage aid; the final 24-hour fetch remains a fallback.
+items at 00:30 and 16:30 Asia/Shanghai without calling AI. An independent
+[Cloudflare Cron dispatcher](project-docs/daily-dispatcher.md) triggers
+[`daily-summary.yml`](.github/workflows/daily-summary.yml) at 08:30 with an
+explicit edition date. The workflow performs a final fetch, analyzes the fixed
+`[previous day 08:00, current day 08:00)` window once, and deploys one morning
+edition to GitHub Pages. The staging cache is only a coverage aid; the final
+24-hour fetch remains a fallback.
 
 Each workflow writes `data/run-report.json`, but the report now matches the
 actual run type. Staging runs show collection, URL deduplication, newly staged
@@ -356,23 +358,23 @@ remains available, with per-feed/channel/repository counts expanded under it.
 Partial source failures appear as warnings, while an all-source failure still
 fails the job.
 
-The independent
+Cloudflare rechecks publication at 08:40, 08:55, and 09:10, distinguishing a
+generated `gh-pages` post from a rendered Pages URL. The independent
 [`schedule-watchdog.yml`](.github/workflows/schedule-watchdog.yml) workflow
-checks the successful daily-edition heartbeat once at 20:47. If no successful
-`main` run exists for the latest due 20:00 edition after the 20:30 grace
-period, it dispatches one recovery run and fails its own job so GitHub can send
-a workflow failure notification. A current edition run suppresses duplicate
-dispatches.
+also checks the successful daily-edition heartbeat at 08:47. If no successful
+`main` run exists for the latest due 08:00 edition, it dispatches one recovery
+run with the same explicit edition date and fails its own job so GitHub can
+send a workflow failure notification. A current edition run suppresses
+duplicate dispatches.
 If a delayed scheduled event starts after a recovery already published the same
 fixed window, publication mode exits before fetching or calling AI. A
 maintainer can deliberately rebuild it from **Run workflow** by enabling
 `force_publish`.
 
-This budget-conscious profile uses four scheduled workflow runs per day
-(two staging runs, one publication, and one watchdog), or about 120 per
-30-day month instead of 840 with an hourly watchdog. PR checks cancel obsolete
-runs and do not repeat on the protected `main` push; every hosted job also has
-a timeout. Standard GitHub-hosted runners are
+This budget-conscious profile uses three scheduled GitHub workflow runs per
+day (two staging runs and one independent watchdog), plus the dispatched
+publication. PR checks cancel obsolete runs and do not repeat on the protected
+`main` push; every hosted job also has a timeout. Standard GitHub-hosted runners are
 [free for public repositories](https://docs.github.com/billing/concepts/product-billing/github-actions),
 but the reduced profile also fits much more comfortably if the repository is
 made private later.

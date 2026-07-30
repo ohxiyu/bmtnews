@@ -3,7 +3,7 @@ name: BMTNews Feed Collection
 on:
   schedule:
     # Two coverage runs plus the final fetch in daily-summary.yml.
-    - cron: '17 8,14 * * *'
+    - cron: '30 0,16 * * *'
       timezone: 'Asia/Shanghai'
   workflow_dispatch:
 

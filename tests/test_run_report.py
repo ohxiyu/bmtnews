@@ -146,7 +146,7 @@ def test_daily_report_renders_window_quotas_and_source_contribution() -> None:
 
     assert payload["version"] == 2
     assert payload["kind"] == "daily_publish"
-    assert "## BMTNews 晚间日报发布报告" in markdown
+    assert "## BMTNews 早间日报发布报告" in markdown
     assert "| 固定窗口候选 | 51 |" in markdown
     assert "| Crypto Markets | 4 | 4 |" in markdown
     assert "Crypto 主轨：**4 / 9**" in markdown

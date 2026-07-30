@@ -1,7 +1,7 @@
 from __future__ import annotations
 
 import asyncio
-from datetime import datetime, timezone
+from datetime import date, datetime, timezone
 from pathlib import Path
 from zoneinfo import ZoneInfo
 
@@ -11,6 +11,7 @@ from src.daily_feed import load_daily_feed_state
 from src.edition import (
     StagingStateError,
     edition_window_for,
+    edition_window_for_date,
     items_in_edition_window,
     load_staging_state,
     merge_staged_items,
@@ -65,6 +66,18 @@ def test_edition_window_uses_latest_completed_fixed_cutoff() -> None:
     assert current.end == datetime(2026, 7, 29, 20, 0, tzinfo=SHANGHAI)
     assert previous.date == "2026-07-28"
     assert previous.end == datetime(2026, 7, 28, 20, 0, tzinfo=SHANGHAI)
+
+
+def test_explicit_edition_date_targets_morning_window() -> None:
+    window = edition_window_for_date(
+        date(2026, 7, 31),
+        "Asia/Shanghai",
+        8,
+    )
+
+    assert window.date == "2026-07-31"
+    assert window.start == datetime(2026, 7, 30, 8, 0, tzinfo=SHANGHAI)
+    assert window.end == datetime(2026, 7, 31, 8, 0, tzinfo=SHANGHAI)
 
 
 def test_edition_window_is_start_inclusive_and_end_exclusive() -> None:
@@ -133,20 +146,20 @@ def test_daily_edition_combines_staging_and_final_fetch(
     tmp_path: Path,
     monkeypatch: pytest.MonkeyPatch,
 ) -> None:
-    now = datetime(2026, 7, 29, 20, 17, tzinfo=SHANGHAI)
+    now = datetime(2026, 7, 29, 8, 30, tzinfo=SHANGHAI)
     staged = make_item(
         "staged",
-        datetime(2026, 7, 29, 3, 0, tzinfo=SHANGHAI),
+        datetime(2026, 7, 28, 12, 0, tzinfo=SHANGHAI),
         score=8.0,
     )
     fresh = make_item(
         "fresh",
-        datetime(2026, 7, 29, 19, 0, tzinfo=SHANGHAI),
+        datetime(2026, 7, 29, 7, 0, tzinfo=SHANGHAI),
         score=9.0,
     )
     next_edition = make_item(
         "next",
-        datetime(2026, 7, 29, 20, 5, tzinfo=SHANGHAI),
+        datetime(2026, 7, 29, 8, 5, tzinfo=SHANGHAI),
         score=10.0,
     )
     staging_path = tmp_path / "data" / "staging-items.json"
@@ -222,17 +235,17 @@ def test_daily_edition_combines_staging_and_final_fetch(
     post = (
         tmp_path / "docs" / "_posts" / "2026-07-29-summary-zh.md"
     ).read_text(encoding="utf-8")
-    assert 'window_start: "2026-07-28T20:00:00+08:00"' in post
-    assert 'window_end: "2026-07-29T20:00:00+08:00"' in post
+    assert 'window_start: "2026-07-28T08:00:00+08:00"' in post
+    assert 'window_end: "2026-07-29T08:00:00+08:00"' in post
     assert "fetched_count: 2" in post
     assert "selected_count: 2" in post
     report = load_run_report(tmp_path / "data" / "run-report.json")
     assert report["kind"] == "daily_publish"
     assert report["metrics"]["staging_items_before"] == 1
     assert report["metrics"]["staging_only_candidates"] == 1
-    assert report["metrics"]["cutoff_lag_minutes"] == 17
-    assert report["window_start"] == "2026-07-28T20:00:00+08:00"
-    assert report["window_end"] == "2026-07-29T20:00:00+08:00"
+    assert report["metrics"]["cutoff_lag_minutes"] == 30
+    assert report["window_start"] == "2026-07-28T08:00:00+08:00"
+    assert report["window_end"] == "2026-07-29T08:00:00+08:00"
     assert report["breakdowns"]["candidate_sources"] == {
         "rss/unknown": 2
     }
@@ -250,7 +263,7 @@ def test_daily_edition_combines_staging_and_final_fetch(
         orchestrator.run_daily_edition(
             force_hours=24,
             staging_path=staging_path,
-            now=datetime(2026, 7, 29, 21, 17, tzinfo=SHANGHAI),
+            now=datetime(2026, 7, 29, 9, 17, tzinfo=SHANGHAI),
         )
     )
     retry_report = load_run_report(tmp_path / "data" / "run-report.json")
@@ -271,11 +284,13 @@ def test_workflows_stage_twice_and_publish_once() -> None:
         root / ".github" / "workflows" / "daily-summary.yml"
     ).read_text(encoding="utf-8")
 
-    assert "cron: '17 8,14 * * *'" in collection
+    assert "cron: '30 0,16 * * *'" in collection
     assert "17 2,8,14" not in collection
     assert "horizon --mode fetch --hours 12" in collection
-    assert "cron: '17 20 * * *'" in publication
-    assert "args=(--mode publish --hours 24 --cutoff-hour 20)" in publication
+    assert "\n  schedule:" not in publication
+    assert "args=(--mode publish --hours 24 --cutoff-hour 8)" in publication
+    assert "edition_date:" in publication
+    assert 'args+=(--edition-date "${{ inputs.edition_date }}")' in publication
     assert "force_publish:" in publication
     assert "args+=(--force-publish)" in publication
     assert "bmtnews-staging-v1-" in collection

@@ -4,7 +4,7 @@ from __future__ import annotations
 
 import json
 from dataclasses import dataclass
-from datetime import datetime, timedelta, timezone
+from datetime import date as date_type, datetime, timedelta, timezone
 from pathlib import Path
 from typing import Iterable
 from zoneinfo import ZoneInfo
@@ -45,7 +45,7 @@ class EditionWindow:
 def edition_window_for(
     moment: datetime,
     timezone_name: str,
-    cutoff_hour: int = 20,
+    cutoff_hour: int = 8,
 ) -> EditionWindow:
     """Return the latest completed ``[previous cutoff, cutoff)`` window."""
     if not 0 <= cutoff_hour <= 23:
@@ -54,19 +54,39 @@ def edition_window_for(
         moment = moment.replace(tzinfo=timezone.utc)
 
     local_now = moment.astimezone(ZoneInfo(timezone_name))
-    end = local_now.replace(
-        hour=cutoff_hour,
-        minute=0,
-        second=0,
-        microsecond=0,
+    edition_date = local_now.date()
+    if local_now.hour < cutoff_hour:
+        edition_date -= timedelta(days=1)
+    return edition_window_for_date(
+        edition_date,
+        timezone_name,
+        cutoff_hour,
     )
-    if local_now < end:
-        end -= timedelta(days=1)
+
+
+def edition_window_for_date(
+    edition_date: date_type | str,
+    timezone_name: str,
+    cutoff_hour: int = 8,
+) -> EditionWindow:
+    """Return the fixed window ending on an explicit local edition date."""
+    if not 0 <= cutoff_hour <= 23:
+        raise ValueError("cutoff_hour must be between 0 and 23")
+    if isinstance(edition_date, str):
+        edition_date = date_type.fromisoformat(edition_date)
+
+    end = datetime(
+        edition_date.year,
+        edition_date.month,
+        edition_date.day,
+        cutoff_hour,
+        tzinfo=ZoneInfo(timezone_name),
+    )
     start = end - timedelta(days=1)
     return EditionWindow(
         start=start,
         end=end,
-        date=end.strftime("%Y-%m-%d"),
+        date=edition_date.isoformat(),
         timezone=timezone_name,
     )
 

@@ -3,7 +3,7 @@
 import asyncio
 from collections import defaultdict
 from dataclasses import dataclass, field
-from datetime import datetime, timedelta, timezone
+from datetime import date as date_type, datetime, timedelta, timezone
 from pathlib import Path
 from typing import Dict, List, Literal, Optional
 from urllib.parse import unquote_plus, urlsplit
@@ -44,6 +44,7 @@ from .daily_feed import (
 from .edition import (
     DEFAULT_STAGING_PATH,
     edition_window_for,
+    edition_window_for_date,
     items_in_edition_window,
     load_staging_state,
     merge_staged_items,
@@ -544,7 +545,8 @@ class HorizonOrchestrator:
         force_hours: int | None = None,
         *,
         staging_path: Path = DEFAULT_STAGING_PATH,
-        cutoff_hour: int = 20,
+        cutoff_hour: int = 8,
+        edition_date: date_type | None = None,
         now: datetime | None = None,
         force_publish: bool = False,
     ) -> None:
@@ -553,11 +555,27 @@ class HorizonOrchestrator:
         run_started_at = now or datetime.now(timezone.utc)
         if run_started_at.tzinfo is None:
             run_started_at = run_started_at.replace(tzinfo=timezone.utc)
-        window = edition_window_for(
-            run_started_at,
-            timezone_name,
-            cutoff_hour,
+        window = (
+            edition_window_for_date(
+                edition_date,
+                timezone_name,
+                cutoff_hour,
+            )
+            if edition_date is not None
+            else edition_window_for(
+                run_started_at,
+                timezone_name,
+                cutoff_hour,
+            )
         )
+        if (
+            edition_date is not None
+            and window.end.astimezone(timezone.utc)
+            > run_started_at.astimezone(timezone.utc)
+        ):
+            raise ValueError(
+                "edition_date cutoff has not completed in the configured timezone"
+            )
         run_report = RunReport.start(
             date=window.date,
             timezone_name=timezone_name,
@@ -652,7 +670,10 @@ class HorizonOrchestrator:
                         f"日内暂存缓存已 {staging_age_minutes} 分钟未更新。",
                     )
             hours = force_hours or self.config.filtering.time_window_hours
-            since = run_started_at - timedelta(hours=hours)
+            since = min(
+                run_started_at - timedelta(hours=hours),
+                window.start.astimezone(timezone.utc),
+            )
             fresh_items = await self.fetch_all_sources(since)
             run_report.set_metric("fetched_raw", len(fresh_items))
             run_report.attach_fetch_report(
