@@ -51,6 +51,7 @@ from .edition import (
     save_staging_state,
 )
 from .run_report import RunReport, save_run_report
+from .web_feed import render_web_feed
 
 
 _TRACKING_QUERY_PARAMETERS = {
@@ -945,6 +946,10 @@ class HorizonOrchestrator:
                 posts_dir = Path("docs/_posts")
                 posts_dir.mkdir(parents=True, exist_ok=True)
                 dest_path = safe_output_path(posts_dir, post_filename)
+                fragment_dir = Path("docs/editions") / date
+                fragment_dir.mkdir(parents=True, exist_ok=True)
+                fragment_path = safe_output_path(fragment_dir, f"{lang}.html")
+                fragment_url = f"/editions/{date}/{lang}.html"
 
                 window_front_matter = ""
                 if window_start is not None and window_end is not None:
@@ -962,6 +967,7 @@ class HorizonOrchestrator:
                     f'analyzed_count: {run_report.metrics.get("analyzed_today", 0)}\n'
                     f'selected_count: {run_report.metrics.get("displayed_today", 0)}\n'
                     f'critical_count: {run_report.metrics.get("high_priority", 0)}\n'
+                    f'fragment_url: "{fragment_url}"\n'
                     f"{window_front_matter}"
                     "---\n\n"
                 )
@@ -973,20 +979,29 @@ class HorizonOrchestrator:
                     f'data-critical="{run_report.metrics.get("high_priority", 0)}">'
                     "</div>\n\n"
                 )
-
-                summary_content = summary
-                first_line = summary_content.strip().split("\n")[0]
-                if first_line.startswith("# "):
-                    parts = summary_content.split("\n", 1)
-                    if len(parts) > 1:
-                        summary_content = parts[1].strip()
+                web_content = render_web_feed(
+                    items,
+                    date=date,
+                    total_fetched=total_candidates,
+                    language=lang,
+                    display_timezone=timezone_name,
+                )
                 _atomic_write_text(
                     dest_path,
-                    front_matter + run_stats + summary_content,
+                    front_matter + run_stats + web_content,
+                )
+                _atomic_write_text(
+                    fragment_path,
+                    (
+                        '<div class="daily-feed-content" '
+                        'data-feed-fragment="2" '
+                        f'data-language="{lang}" data-date="{date}">'
+                        f"{run_stats}{web_content}</div>\n"
+                    ),
                 )
                 self.console.print(
                     f"📄 Copied {lang.upper()} summary to GitHub Pages: "
-                    f"{dest_path}\n"
+                    f"{dest_path} and {fragment_path}\n"
                 )
             except Exception as exc:
                 run_report.add_alert(

@@ -1,11 +1,16 @@
 (function () {
   'use strict';
 
-  var CATEGORY_ORDER = ['all', 'exchange', 'security', 'market', 'regulation', 'protocol', 'technology'];
+  var CATEGORY_ORDER = [
+    'all', 'crypto', 'technology', 'policy',
+    'exchange', 'security', 'market', 'regulation', 'protocol'
+  ];
   var interfaceLanguage = 'zh';
   var CATEGORY_LABELS = {
     zh: {
       all: '全部',
+      crypto: 'Crypto',
+      policy: '政策',
       exchange: '交易所',
       security: '安全',
       market: '市场',
@@ -15,6 +20,8 @@
     },
     en: {
       all: 'All',
+      crypto: 'Crypto',
+      policy: 'Policy',
       exchange: 'Exchanges',
       security: 'Security',
       market: 'Markets',
@@ -226,6 +233,28 @@
     });
 
     host.replaceChildren(filterBar);
+  }
+
+  function bindStaticFilters(root, cards, tocItems) {
+    var filterBar = root.querySelector('[data-static-filters]');
+    if (!filterBar || filterBar.dataset.bound === 'true') return;
+    filterBar.dataset.bound = 'true';
+
+    filterBar.querySelectorAll('button[data-category]').forEach(function (button) {
+      button.addEventListener('click', function () {
+        var category = button.dataset.category || 'all';
+        filterBar.querySelectorAll('button[data-category]').forEach(function (candidate) {
+          candidate.classList.toggle('active', candidate === button);
+          candidate.setAttribute('aria-pressed', candidate === button ? 'true' : 'false');
+        });
+        cards.forEach(function (card) {
+          card.hidden = category !== 'all' && card.dataset.category !== category;
+        });
+        tocItems.forEach(function (item) {
+          item.hidden = category !== 'all' && item.dataset.category !== category;
+        });
+      });
+    });
   }
 
   function isExtraStoryNode(node) {
@@ -447,6 +476,27 @@
 
     var language = normalizeLanguage(root.dataset.language || document.body.dataset.language || document.documentElement.lang);
     var date = root.dataset.date || document.body.dataset.date || '';
+    if (root.querySelector('.feed-rendered-static')) {
+      var staticArticles = Array.prototype.slice.call(root.querySelectorAll('.digest-item'));
+      var staticTocItems = Array.prototype.slice.call(root.querySelectorAll('.headline-list > li'));
+      var staticStream = root.querySelector('.daily-story-stream') || root;
+      var staticDetails = root.querySelector('.headline-index');
+      var staticStats = readRunStats(root);
+      var staticStatsScope = root.closest('.daily-day') || root;
+
+      updateFeedStats(
+        staticStatsScope,
+        staticArticles,
+        staticStream,
+        staticStats
+      );
+      bindStaticFilters(root, staticArticles, staticTocItems);
+      if (staticDetails) configureHeadlineDisclosure(staticDetails);
+      setupActiveHeadline(staticArticles, staticTocItems);
+      configureExternalLinks(root);
+      return;
+    }
+
     processScoreBadges(root);
     markSemanticElements(root);
 
@@ -511,8 +561,9 @@
   }
 
   function enhanceDailyFeeds() {
-    var activeSection = document.querySelector('.home-page .lang-section:not(.hidden)');
-    enhanceHomeSection(activeSection);
+    if (document.body.classList.contains('home-page')) {
+      enhanceHomeSection(document.body);
+    }
     if (document.body.classList.contains('digest-page')) {
       enhanceDigest(document.querySelector('.main-content'));
     }
@@ -598,7 +649,10 @@
           if (!response.ok) throw new Error('History request failed: ' + response.status);
           var markup = await response.text();
           var parsed = new DOMParser().parseFromString(markup, 'text/html');
-          var source = parsed.querySelector('.main-content');
+          var source = (
+            parsed.querySelector('[data-feed-fragment]') ||
+            parsed.querySelector('.main-content')
+          );
           if (!source) throw new Error('History content was not found');
           return createLoadedDay(language, entry.dataset.date, source);
         }));
@@ -624,80 +678,9 @@
     });
   }
 
-  function setupLanguageToggle() {
-    var slot = document.querySelector('.lang-toggle-slot');
-    if (!slot) return;
-
-    var toggle = document.createElement('div');
-    toggle.className = 'lang-toggle';
-    var buttonEn = document.createElement('button');
-    var buttonZh = document.createElement('button');
-    buttonEn.type = 'button';
-    buttonZh.type = 'button';
-    buttonEn.setAttribute('aria-label', 'English');
-    buttonZh.setAttribute('aria-label', '中文');
-    buttonEn.textContent = 'EN';
-    buttonZh.textContent = '中文';
-    toggle.appendChild(buttonEn);
-    toggle.appendChild(buttonZh);
-    slot.appendChild(toggle);
-
-    var isDigest = document.body.classList.contains('digest-page');
-    var pageLanguage = normalizeLanguage(document.documentElement.lang);
-    var saved = null;
-    try {
-      saved = localStorage.getItem('bmtnews-lang');
-    } catch (error) {
-      saved = null;
-    }
-    var current = isDigest ? pageLanguage : (saved === 'en' ? 'en' : 'zh');
-    var sectionZh = document.getElementById('lang-zh');
-    var sectionEn = document.getElementById('lang-en');
-
-    function update(language) {
-      interfaceLanguage = language;
-      buttonEn.classList.toggle('active', language === 'en');
-      buttonZh.classList.toggle('active', language === 'zh');
-      buttonEn.setAttribute('aria-pressed', language === 'en' ? 'true' : 'false');
-      buttonZh.setAttribute('aria-pressed', language === 'zh' ? 'true' : 'false');
-      if (sectionZh && sectionEn) {
-        sectionZh.classList.toggle('hidden', language !== 'zh');
-        sectionEn.classList.toggle('hidden', language !== 'en');
-        enhanceHomeSection(language === 'en' ? sectionEn : sectionZh);
-      }
-      document.documentElement.lang = language === 'en' ? 'en' : 'zh-CN';
-      applyInterfaceLanguage(language);
-    }
-
-    function switchDigest(language) {
-      var path = window.location.pathname.replace(/\/$/, '');
-      var target = null;
-      if (language === 'en' && /-zh(?:\.html)?$/.test(path)) {
-        target = path.replace(/-zh(\.html)?$/, '-en$1');
-      }
-      if (language === 'zh' && /-en(?:\.html)?$/.test(path)) {
-        target = path.replace(/-en(\.html)?$/, '-zh$1');
-      }
-      if (target) window.location.href = target;
-    }
-
-    function setLanguage(language) {
-      try {
-        localStorage.setItem('bmtnews-lang', language);
-      } catch (error) {
-        // Storage is an enhancement only.
-      }
-      if (isDigest) switchDigest(language);
-      else update(language);
-    }
-
-    buttonEn.addEventListener('click', function () {
-      setLanguage('en');
-    });
-    buttonZh.addEventListener('click', function () {
-      setLanguage('zh');
-    });
-    update(current);
+  function setupInterfaceLanguage() {
+    interfaceLanguage = normalizeLanguage(document.documentElement.lang);
+    applyInterfaceLanguage(interfaceLanguage);
   }
 
   function systemDark() {
@@ -755,20 +738,13 @@
       updateThemeButtonLabel();
     });
 
-    try {
-      var saved = localStorage.getItem('bmtnews-theme');
-      if (saved === 'light' || saved === 'dark') {
-        document.documentElement.dataset.theme = saved;
-      }
-    } catch (error) {
-      // Use the system preference.
-    }
     updateThemeButtonLabel();
   }
 
   document.addEventListener('DOMContentLoaded', function () {
     setupThemeToggle();
-    setupLanguageToggle();
+    setupInterfaceLanguage();
     enhanceDailyFeeds();
+    document.documentElement.classList.add('feed-ready');
   });
 })();

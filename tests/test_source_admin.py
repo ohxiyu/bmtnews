@@ -278,9 +278,15 @@ def test_source_registry_is_read_only_and_workflow_is_maintainer_only():
     workflow = (
         REPO_ROOT / ".github" / "workflows" / "source-change.yml"
     ).read_text(encoding="utf-8")
-    page = (REPO_ROOT / "docs" / "sources" / "index.html").read_text(
+    page = (REPO_ROOT / "docs" / "s" / "index.html").read_text(
         encoding="utf-8"
     )
+    legacy_page = (
+        REPO_ROOT / "docs" / "sources" / "index.html"
+    ).read_text(encoding="utf-8")
+    layout = (
+        REPO_ROOT / "docs" / "_layouts" / "default.html"
+    ).read_text(encoding="utf-8")
 
     assert "workflow_dispatch:" in workflow
     assert "issues:" not in workflow
@@ -291,3 +297,8 @@ def test_source_registry_is_read_only_and_workflow_is_maintainer_only():
     assert "data-workflow-url=" in page
     assert "source-change-form" not in page
     assert "source-dialog" not in page
+    assert "permalink: /s/" in page
+    assert "noindex: true" in page
+    assert "/sources/" not in layout
+    assert "source-console" not in legacy_page
+    assert "url={{ '/' | relative_url }}" in legacy_page
