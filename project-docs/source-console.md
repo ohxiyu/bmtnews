@@ -1,8 +1,8 @@
 # Source Registry and Management
 
 BMTNews exposes a lightweight, read-only source registry at
-[`https://bmt.news/sources/`](https://bmt.news/sources/). It is a static
-GitHub Pages view of the production source configuration on `main`.
+[`https://bmt.news/s`](https://bmt.news/s). It is an unlisted static GitHub
+Pages view of the production source configuration on `main`.
 
 The page intentionally has no database, custom authentication, or long-running
 service:
@@ -14,14 +14,16 @@ service:
 - lets maintainers copy the exact source key needed for an update;
 - never stores a GitHub token or writes production configuration.
 
-Anyone can view the registry because the repository and configuration are
-public. Write access is handled separately by GitHub, not by the public page.
+Anyone who knows the address can view the registry because the repository and
+configuration are public. The address is not linked from the public navigation
+and is marked `noindex`; write access is handled separately by GitHub, not by
+the public page.
 
 ## Maintainer workflow
 
 1. Open **Actions → BMTNews Source Management → Run workflow**.
 2. Choose `add`, `update`, `pause`, `resume`, or `remove`.
-3. For an existing source, copy its stable source key from `/sources/`.
+3. For an existing source, copy its stable source key from `/s/`.
 4. Fill only the fields needed for the operation:
    - `add`: type, endpoint, category, state, reason, and an RSS name;
    - `update`: source key and any fields that should change;

@@ -27,7 +27,7 @@ on:
           - gdelt
           - ossinsight
       source_key:
-        description: 现有来源键（新增时留空，可从 /sources/ 复制）
+        description: 现有来源键（新增时留空，可从 /s/ 复制）
         type: string
         required: false
       name:
