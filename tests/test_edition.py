@@ -239,6 +239,13 @@ def test_daily_edition_combines_staging_and_final_fetch(
     assert 'window_end: "2026-07-29T08:00:00+08:00"' in post
     assert "fetched_count: 2" in post
     assert "selected_count: 2" in post
+    assert 'fragment_url: "/editions/2026-07-29/zh.html"' in post
+    assert 'class="feed-toolbar feed-rendered-static"' in post
+    fragment = (
+        tmp_path / "docs" / "editions" / "2026-07-29" / "zh.html"
+    ).read_text(encoding="utf-8")
+    assert 'data-feed-fragment="2"' in fragment
+    assert 'id="zh-2026-07-29-item-1"' in fragment
     report = load_run_report(tmp_path / "data" / "run-report.json")
     assert report["kind"] == "daily_publish"
     assert report["metrics"]["staging_items_before"] == 1
