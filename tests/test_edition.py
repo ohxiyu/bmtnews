@@ -297,3 +297,5 @@ def test_workflows_stage_twice_and_publish_once() -> None:
     assert "bmtnews-staging-v1-" in publication
     assert "timeout-minutes: 15" in collection
     assert "timeout-minutes: 30" in publication
+    assert "GITHUB_TOKEN: ${{ github.token }}" in collection
+    assert "GITHUB_TOKEN: ${{ github.token }}" in publication
