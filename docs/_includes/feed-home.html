@@ -1,0 +1,87 @@
+{% assign feed_posts = site.posts | where: "lang", include.language %}
+{% assign latest_post = feed_posts | first %}
+{% assign today_key = site.time | date: "%Y-%m-%d" %}
+
+<section class="continuous-feed" data-language="{{ include.language }}">
+  <header class="daily-feed-header">
+    <div class="daily-feed-heading">
+      <p class="eyebrow">CRYPTO MARKET INTELLIGENCE</p>
+      <div class="daily-title-row">
+        <h1>BMTNews</h1>
+        <span class="brand-domain">bmt.news</span>
+      </div>
+      {% if include.language == "zh" %}
+        <p>每日一期加密市场情报，兼顾 AI 科技与政策变化；最近两期连续展示。</p>
+      {% else %}
+        <p>A daily crypto intelligence edition with selected AI, technology, and policy coverage. The latest two editions stay visible.</p>
+      {% endif %}
+    </div>
+  </header>
+
+  {% if latest_post %}
+    <div class="day-stream">
+      {% for post in feed_posts limit:2 %}
+        {% assign post_key = post.date | date: "%Y-%m-%d" %}
+        <section class="daily-day" data-language="{{ include.language }}" data-date="{{ post_key }}">
+          <header class="day-divider">
+            <div class="day-divider-title">
+              {% if forloop.first %}
+                <span class="day-state">
+                  {% if include.language == "zh" %}
+                    {% if post_key == today_key %}今日{% else %}最新{% endif %}
+                  {% else %}
+                    {% if post_key == today_key %}Today{% else %}Latest{% endif %}
+                  {% endif %}
+                </span>
+              {% endif %}
+              <time datetime="{{ post_key }}">{{ post.date | date: "%Y.%m.%d" }}</time>
+              {% if post.window_start and post.window_end %}
+                <span class="day-window">
+                  {{ post.window_start | date: "%m.%d %H:%M" }}–{{ post.window_end | date: "%m.%d %H:%M" }}
+                </span>
+              {% endif %}
+            </div>
+            <div class="day-divider-stats" aria-label="{{ post_key }} {% if include.language == "zh" %}日报统计{% else %}edition statistics{% endif %}">
+              {% if include.language == "zh" %}
+                <span data-short="采"><strong data-stat="fetched">{{ post.fetched_count | default: "—" }}</strong> 条采集</span>
+                <span data-short="析"><strong data-stat="analyzed">{{ post.analyzed_count | default: "—" }}</strong> 条分析</span>
+                <span data-short="展"><strong data-stat="selected">{{ post.selected_count | default: "—" }}</strong> 条展示</span>
+                <span data-short="高"><strong data-stat="critical">{{ post.critical_count | default: "—" }}</strong> 条高优先级</span>
+              {% else %}
+                <span data-short="F"><strong data-stat="fetched">{{ post.fetched_count | default: "—" }}</strong> fetched</span>
+                <span data-short="A"><strong data-stat="analyzed">{{ post.analyzed_count | default: "—" }}</strong> analyzed</span>
+                <span data-short="D"><strong data-stat="selected">{{ post.selected_count | default: "—" }}</strong> displayed</span>
+                <span data-short="H"><strong data-stat="critical">{{ post.critical_count | default: "—" }}</strong> high priority</span>
+              {% endif %}
+            </div>
+          </header>
+          <div class="daily-feed-content" data-language="{{ include.language }}" data-date="{{ post_key }}">
+            {{ post.content }}
+          </div>
+        </section>
+      {% endfor %}
+    </div>
+
+    <div class="feed-history-manifest" hidden aria-hidden="true">
+      {% for post in feed_posts offset:2 %}
+        {% assign history_url = post.fragment_url | default: post.url %}
+        <span data-url="{{ history_url | relative_url }}" data-date="{{ post.date | date: '%Y-%m-%d' }}"></span>
+      {% endfor %}
+    </div>
+    {% if feed_posts.size > 2 %}
+      <div class="load-earlier-wrap">
+        <button class="load-earlier" type="button">
+          {% if include.language == "zh" %}加载更早{% else %}Load earlier{% endif %}
+        </button>
+      </div>
+    {% endif %}
+  {% else %}
+    <div class="empty-state">
+      {% if include.language == "zh" %}
+        首期日报生成后，完整信息流会直接显示在首页。
+      {% else %}
+        The complete feed will appear here after the first daily edition.
+      {% endif %}
+    </div>
+  {% endif %}
+</section>
