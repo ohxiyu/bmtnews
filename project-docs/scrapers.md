@@ -72,7 +72,10 @@ Two source types are supported:
 
 - `category` — optional tag for balanced digest grouping; set per source entry
 
-**Authentication**: Set `GITHUB_TOKEN` in your environment for higher rate limits (5000 req/hr vs 60 without).
+**Authentication**: Set `GITHUB_TOKEN` in your environment for higher rate
+limits (5000 req/hr vs 60 without). The BMTNews collection and publication
+workflows pass their automatically generated, repository-scoped Actions token
+to the scraper; no personal token or additional repository secret is required.
 
 ## RSS
 
