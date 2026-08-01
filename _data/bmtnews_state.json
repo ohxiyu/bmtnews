@@ -1,67 +1,245 @@
 {
   "version": 1,
-  "date": "2026-07-31",
+  "date": "2026-08-01",
   "timezone": "Asia/Shanghai",
-  "updated_at": "2026-07-31T00:30:43.456497Z",
+  "updated_at": "2026-08-01T00:30:55.217646Z",
   "analyzed_keys": [
-    "021233f2daea3975f4c6f00d47a5eafffd25e30c60cc43b58fa1ac0bed526d3d",
-    "13caf6b29d660242c51d0a5d29e08cb87f2d5f57b791ca1d111545cb87b393bf",
-    "219fab27d9fb42b607275bc21dde9d76b390e197a8cf5c395673ebaa2ead27b9",
-    "26a3c4fc553041b8c9f839adec0da05b7457799bf56b6bb2ac7c69271d395568",
-    "2c10ea446470940a5a8029c5b40da02d0a03553460f8eb890dacfb5c2e504518",
-    "3bdd3e66584fb5732504a366c7705fa42a04da1d49a5206a75ee355fd528f7bb",
-    "3fcf0aa9a8d6368d3f8cac87e9e62b2dc15bc80c4936f1b6591fc54c85216dbf",
-    "43db397b67a20d17c397773bdc10392ad63ef0360342a2f6eb5d9bb8e14e5b4f",
-    "44d336ece48e78fae7278753ce62375f348a5ece52414a033abe142408c475b0",
-    "4b9cf5e309a9800d0a0c32937942a1dd42018ad207bbac7ccb25242013e83609",
-    "4e264f93ef98d7a058b902232cbe290d555a503d62e7b438b601a43c70982cf1",
-    "52258b4e4e9103c5f6fd8c78978f0ed3b543c92cc499dbcd9c7606c9b5680eaa",
-    "5bd62830c7a7670b588116d4e77e75f2ad1370d2cd07e3dc3320abb5e134bcee",
-    "5c03725fec90f2d8d7030f60842fd8bf9d3b577825a983c30fe98e75a5126ab5",
-    "5c03725fec90f2d8d7030f60842fd8bf9d3b577825a983c30fe98e75a5126ab5",
-    "5cf7fa73ab7e48f982ef4990b672bf1a1b1c663d6b3ef38f4bcdffeaf7832984",
-    "633d736475bfb2f9aaffc517aaf3c549ee424d63fd59869ab35606a6fd7119a4",
-    "64924d0074c4dac4d39707e1f753c648bede0d8335903db383c45b7cb2d41620",
-    "65ff6e2ac762710e62b417034577e407bb335bfb23292cf28810eb250b9eb6e1",
-    "687b6e720052a525d49e9f2115e2034e7f3c254cbcdfea200abf3102953a9188",
-    "6daccb02506268615e0bd36aedca22c5ce77ebed54d376e0c0edfecc14fb11a8",
-    "6f217e4762fbe1b521665025a0261ca34b16e7dc29c7118a5828bcb4eb20de52",
-    "7b9d4b9233a2f43bc44f59ea4ce1c36ef7d6b959d88337c97176ab6c007cb71f",
-    "7ed2d51368c6f5760bfb12c3492d580e04cda919211836339aced26881321276",
-    "7f78cca500fc3cd5e877180bd42ab5cd14671ddbd6852e4eb39c07f23f1c5b95",
-    "8a4d00d57975000b2c26a154278037772ff2e46900071e27d74df8c44aea94bf",
-    "8a889ace4b586ac735828dc5a1a5b0c17ab3f0322afccf54cb1309839b4815e5",
-    "8c4a4417f450a644df2f4a1b6198520698888649a70995d0550a904a5689ead3",
-    "9150232c7ab041fdee80787e028c7e0b880f2da0cff42e011c95425e6688f1b3",
-    "926f5c4739d8cb4093acc739170af10e7ef7cf212265643ee5616296012f2646",
-    "93b7de0a2cc9bb27ac68ffaa1cfbb67f2937825700ba7c2c9df729e2356c908b",
-    "9ae41dd011a334a171ef910885f55e3455626e30557acb8d2d1df46b773debeb",
-    "9c2bac6a238720b3e0150a33be8c38a17f1191242241951f44aa5dbc089c129a",
-    "9e895ade7938821cfc1cb793d3b975bd150a29bcd2bebebf225f41cb99f764e4",
-    "a66cb3f290fd9e19562b7ddf240009cd28b10cf613b5cd249c6262ac0f0063ab",
-    "a8d7a966f0967ae5677f615f4e1ffca77a7fbb917dfda6e3cdac6e9a7dbf2a46",
-    "ae6d5ba2a92f16079598ac6d0573a43e5a5f2a51cfa59057a19fa82d3daba4b3",
-    "bccfba559fe5923eaa3e2ed24129f9bae64f98af76106d5db55464637990ff24",
-    "c6c028d31473b043356c7cf3d7105673966699029ba8918ecf0c107f590481c7",
-    "c7410a33dc4971e9e2744b06094cc867e6850a0664e875f40e1965da3b592072",
-    "c8a9f14fe5b7432efc539948e3f21a59a77b0e0590eea051b09583e79cb7250a",
-    "cb1ff47c33184695a686af73a1c1853f18523a4a839321e15a3cba6f88788162",
-    "cdbfdbe641cea97aae3fdf5e6b8aae8e7b10b7e86a88e3bff2d3b6986a5a0105",
-    "d24b44ca6c8c363ecbc56d60fccd1513deca18c15cd0078819508e77959f735f",
-    "de404735e13808858823b3d10bbe0a94b0ba89fa8d508aba8ef69a171c3c2e8f",
-    "e14f9fd1db1a5e91d480adc9d84d4fd2c8af79ba9c61808d1adf8eb854f78658",
-    "e3394909b78e13d117b0ec21c307eec7c7c9d0823230a006f1333f0a46de3a27",
-    "e499b964c1302a0d7449bfec90456df7fb2f85d50476dad6eb41957ae76e9258",
-    "e5dc1aeb19604669610c9b37a4807a457259783b2183f7f9381764b9b3decd2a",
-    "ea630667343f15482563c8810279cf23d70bb6be4a1a0af61e50410fd0a556d9",
-    "eb5665bbef874f58c729a9aa1562a505c95cc06908fddb2a4a6952f5c8406074",
-    "ecb225e296efd35a5d65605e792d882165318c57eb615344de3ec847e86a78a3",
-    "ed978cca28ed5df0e5043477e5f5d6a4b75870fe29acfdd2f13ebf526eec8848",
-    "ee9d2a162993e232a14ee67871cd96d2ce325ead37f269627e3d827d5c05bdf9",
-    "f38ba5c8b81443c2ff7a3741f224406374db268b7405a8d3fb10c6a93a687c05",
-    "fc043067189c6ebc63b3963c8d3ee63dd5d176bca306db8fbe0112bccd5676f6"
+    "04b2903ed2503463606e2d89bd7ad186f5da847152ac2b5f206b36af955a0b15",
+    "0a172402909e2416fe2fa568b92f57b5451161cb6d1534f27b6dea96e69f4dc0",
+    "0d6f73e31ae69d8bc312424ca7814ac3cd5f77a2b1c640b80bd617e75b2d0aba",
+    "1340bf4641f5f8e8cb2ff7023366c13007aaf2ef60cba37fabf69baeb41f1192",
+    "1ca19316fbf5daf6e1f50b9e819bc55ba14254c3b85f04b93595c00751834335",
+    "1cbfe7e9d16ed46aaba62768a1500bc7d08a8dc010a2ea7f8db3d5cefe1504ab",
+    "1eac23c36e9745123d977c73e1474060e69577ee814e9e64f977cddb1dfc5afe",
+    "223787ba9f6b9c1b28beffbb10773b4263153435350fdc02d7404be732a077af",
+    "239b96a6503df0116888c3a4cf53a5e0f9b1f37be4ce2d280b499ff6579dcdec",
+    "23e4c0142253308225b526f7189a3bc917508e74be592f7cdbd95fa6b66d2f65",
+    "243e4bfe5354382aa4e5464d4d89c1db9eae2716cd9539a2f17d7d7c1b39fa63",
+    "2eb291b367883622cb08acae270115631978be2942836dffbef043937bda2202",
+    "2fce8e2aa279edf724c82347186b95030bb94e753a508fac156e6b9fdd062d90",
+    "414741190a924c9dbcbea53c3797346276ccd6af48bd18ef345a0fd2b5ea8b6f",
+    "440e4201834c9345186d97b38f81f5059784ae4f144d8e0fd88d506782b4d9f8",
+    "4fb420554d511726637418edd881b0cb915fdfcf3e8346aa4c6a74a343d0313f",
+    "53cfa243a1d529fe37405df82dacfcc43779a396c82d6ad16f0e1e0e9dca6b41",
+    "56bb9f21a9222ff566a88715ababd1438ea1c0fa013ede25c3d50ac433dc7c5b",
+    "6748dd279f3bc090f607f7c0665358a3a96156e63ef346e2a16d1fe3053be51c",
+    "6f8a99a2c8b4546b92c5dc547c201373dd2e3f00d06e7de8090dad9c40324716",
+    "761349167208c0021910c1b8283bcf797fe75564b39c38637248a9d72667a66c",
+    "7fa1314ce758be4797fdb80e628dcfdb3efd1b43b577fd397b090fc2a51a1ae6",
+    "87944a31f5ac30032f3a5165c2dd5b977c07180b9d3448e717beaadffabc9702",
+    "89314911d27c04ede90f36eda23076a94e6486293f8f0b49230092fae677dac2",
+    "9108e9740acb3772a29d21f90c5b323e167172df51d0a07ac71e9a5f6d42bcf4",
+    "916aa627d2ef08774f6e81385778a5ca79b9c965b6009dd39d18259395280e5b",
+    "91d5162334472b5f62e88c6f74c1af2960abbda7e27fa83aa8bc512174dcb7d6",
+    "9299fe65e4664f0826fd88b083678913104aa48b887ea43c7c0858c7d56f2f50",
+    "930e4c07b5db895165ffe869a521ba3916418b0bc70660fe231d1063481378c5",
+    "93e14f3eb4d5cb1b3f0e01f1efb9791132f74eed7f3992a36e7c090de8dd8e1a",
+    "9486e584af45d96f687989d563abd945853d2e383fd5e29dda96870f4bd1ac2a",
+    "a0519917c38ecfc11ce4d4bfedca5753292cb8e6e87ce294905fb59f019cd530",
+    "a719ab0b1db1fb29a67d0bbef787dc7f043a31bf93f7b84dce12adfc853a67f1",
+    "b40f00feab2fe10dc1dd3e24ff326199902172d71f20d32d84db8570dfb243f6",
+    "b470dd3642fd66e663e1bdc121be5e4a0fdfeda859cadf2fe624c3d59db4d2e7",
+    "b90c28b849a7ee6b90bfcb168d4b90ef6de7bbc19de5789769ec628760447783",
+    "b9ff899f1281991a17485bc4dc13102b48503e4b90d9451c7b27cac6fe2a4624",
+    "bc146e0174d67d2416e71387fb76e3be216cdf4243e2091e49d38c44385118a9",
+    "bdfbf4f8ef85780fbe8e13773c5ef5f3f4063682ca2ce5368cf6c38d93895b65",
+    "c3b8af6cf484d1e0a94dfefd00e8b829fdae2354d025bf03d5fa68d1d0e4f644",
+    "c66dd89b7e457287ba3dada3cfd99c3da6cb9af915939afb2e5a41894aa3b17c",
+    "cb09165de863114c6764114ee7d0a095583aaab44d57d336ece320ed0aaeaea1",
+    "cc98b6b5cecc7f189f1aef31acf984bc8775d9ba15a1d87051e6df2426933d12",
+    "d0863e6368cc934e4f456bf776a99046336262dfd68c97147ac54f28abff1769",
+    "d85a4184b02822e5f666b3f78ec8393658b5fb93ef732ea2628e5337b7b58fdf",
+    "d8d276c690aa43e2e2d78e1420fe8c88a1e19f8a38171ac4c88412cf8634ba83",
+    "e36d31f6cfa3c1a3e8ecbe5b5c95507eb2dfab0fa75dcc3f7e9852f95e0b5666",
+    "eb05f2ee52c6b73904d2fbe99e2919043510d64765692748ae77a35649feea0d",
+    "ece40b85424eb372f874165006b028de262544c220083a0ba3c3eb277a094966",
+    "ee785fe7feaea813d2e64ab1165627f8731164164736725f8ba4d124e71d9e47"
   ],
   "items": [
+    {
+      "id": "rss:www.coindesk.com_arc_outboundfeeds_rss_:a02f560bef7e5719",
+      "source_type": "rss",
+      "title": "Coldcard's $38 million (so far) exploit shakes faith in self-custody, may push investors to ETFs",
+      "url": "https://www.coindesk.com/business/2026/07/31/coldcard-s-usd38-million-so-far-exploit-shakes-faith-in-self-custody-may-push-investors-to-etfs",
+      "content": null,
+      "author": "Krisztian Sandor",
+      "published_at": "2026-07-31T17:07:30Z",
+      "fetched_at": "2026-08-01T00:30:56.161118Z",
+      "metadata": {
+        "feed_name": "CoinDesk",
+        "category": "crypto-markets",
+        "title_en": "Coldcard's $38M Exploit Shakes Self-Custody Trust, May Push Investors to ETFs",
+        "detailed_summary_en": "Coldcard disclosed a critical firmware bug that silently bypassed the hardware random number generator (RNG) for five years, allowing an attacker to drain roughly 594 BTC (about $38 million) from around 500 wallets in a 25-minute sweep on July 31, 2026. This is one of the largest hardware wallet exploits in Bitcoin's history. This incident undermines the core promise of hardware wallets — that private keys never leave secure hardware — and could erode confidence in self-custody among Bitcoin holders. If investors lose faith in self-custody solutions, they may shift funds to regulated products like spot ETFs, potentially reshaping the custody landscape. The vulnerability affected Coldcard Mk2 and Mk3 devices where seeds were generated on firmware v4.0.0 through v5.0.3; the attacker swept funds from roughly 500 wallets between 01:31 and 01:56 UTC. Coldcard has urged all affected users to move their funds immediately, but the full extent of exposed seeds remains unknown.",
+        "background_en": "Self-custody means holding your own crypto assets in a wallet you control, rather than trusting an exchange or third party. Hardware wallets like Coldcard are considered among the most secure self-custody tools because they keep private keys offline in a dedicated chip. This exploit, however, shows that even hardware wallets are not immune to firmware-level vulnerabilities, raising questions about the long-term reliability of the 'not your keys, not your coins' ethos.",
+        "title_zh": "Coldcard遭3800万美元攻击，动摇自托管信心，或推动投资者转向ETF",
+        "detailed_summary_zh": "Coldcard披露了一个严重固件漏洞，该漏洞在过去五年里静默绕过了硬件随机数生成器（RNG），使攻击者在2026年7月31日的一次25分钟扫荡中从约500个钱包中盗走约594 BTC（约3800万美元）。这是比特币历史上规模最大的硬件钱包攻击事件之一。 这一事件动摇了硬件钱包的核心承诺——私钥永不离开安全硬件——并可能削弱比特币持有者对自托管的信心。如果投资者对自托管解决方案失去信任，他们可能会将资金转向现货ETF等受监管产品，从而可能重塑托管格局。 该漏洞影响的是在固件v4.0.0至v5.0.3上生成种子的Coldcard Mk2和Mk3设备；攻击者在01:31至01:56 UTC之间从约500个钱包中扫走了资金。Coldcard已敦促所有受影响用户立即转移资金，但暴露种子的全部范围仍不清楚。",
+        "background_zh": "自托管意味着将你的加密资产保存在自己控制的钱包中，而不是信任交易所或第三方。Coldcard等硬件钱包被视为最安全的自托管工具之一，因为它们将私钥离线保存在专用芯片中。然而，此次攻击表明，即使是硬件钱包也无法免受固件级漏洞的影响，这引发了对“不掌握私钥，就不拥有币”这一理念长期可靠性的质疑。",
+        "sources": [
+          {
+            "url": "https://www.coindesk.com/tech/2026/07/31/major-bitcoin-wallet-flaw-drains-594-btc-in-25-minute-sweep",
+            "title": "Major bitcoin wallet flaw drains 594 BTC in 25-minute sweep"
+          },
+          {
+            "url": "https://www.techtimes.com/articles/322392/20260731/coldcard-hardware-wallet-hacked-via-firmware-bug-that-bypassed-rng-five-years.htm",
+            "title": "Coldcard Hardware Wallet Hacked via Firmware Bug That Bypassed RNG for Five Years"
+          },
+          {
+            "url": "https://www.ledger.com/academy/topics/security/what-is-self-custody-in-crypto",
+            "title": "What Is Self-Custody in Crypto? | Ledger"
+          }
+        ]
+      },
+      "ai_score": 9.0,
+      "ai_reason": null,
+      "ai_summary": "Coldcard has suffered a $38 million exploit, undermining confidence in self-custody and possibly driving investors toward ETFs.",
+      "ai_tags": []
+    },
+    {
+      "id": "rss:www.coindesk.com_arc_outboundfeeds_rss_:c2e9afdfeb3cae7f",
+      "source_type": "rss",
+      "title": "Tether posts $1.5 billion operating profit in Q2 as reserve buffer falls by half",
+      "url": "https://www.coindesk.com/business/2026/07/31/tether-posts-usd1-5-billion-operating-profit-in-q2-as-reserve-buffer-falls-by-half",
+      "content": null,
+      "author": "Olivier Acuna",
+      "published_at": "2026-07-31T18:24:55Z",
+      "fetched_at": "2026-08-01T00:30:56.161069Z",
+      "metadata": {
+        "feed_name": "CoinDesk",
+        "category": "crypto-markets",
+        "title_en": "Tether Q2 profit $1.5B as reserve buffer halves",
+        "detailed_summary_en": "Tether reported $1.5 billion in operating profit for the second quarter of 2026, while its excess reserve buffer declined by half from the prior quarter's record $8.23 billion. The announcement comes from its latest financial attestation. The reserve buffer is a key measure of Tether's financial resilience and directly affects user confidence in USDT, the world's largest stablecoin. A 50% reduction could raise concerns about backing strength, though the continued profitability may mitigate potential fallout. Excess reserves function as a loss-absorbing layer above the per-token collateral backing Tether's issued tokens. The Q1 buffer of $8.23 billion had been supported by profitability and a reserve base concentrated in short-duration, high-quality liquid instruments.",
+        "background_en": "Stablecoins like USDT are designed to maintain a 1:1 peg with fiat currency, so issuers hold reserves of assets such as Treasuries, gold, and other instruments. 'Excess reserves' are the surplus assets beyond what is needed to back all tokens, serving as a cushion against losses. Independent attestations and audits verify these holdings, though the quality and liquidity of the reserve mix are important for institutional confidence.",
+        "title_zh": "Tether 第二季度营业利润15亿美元，储备缓冲减半",
+        "detailed_summary_zh": "Tether 公布其 2026 年第二季度营业利润为 15 亿美元，同时其超额储备缓冲比上季度创纪录的 82.3 亿美元减少了一半。该消息来自其最新的财务证明报告。 储备缓冲是衡量 Tether 财务韧性的关键指标，直接影响用户对全球最大稳定币 USDT 的信心。缓冲减半可能引发人们对资产支撑强度的担忧，但持续的盈利能力或许会减轻潜在影响。 超额储备充当 Tether 已发行代币每枚代币抵押支持之上的损失吸收层。第一季度的 82.3 亿美元缓冲得益于盈利能力以及集中于短期、高质量流动性工具的储备基础。",
+        "background_zh": "USDT 等稳定币旨在与法定货币保持 1:1 锚定，因此发行方持有包括美国国债、黄金和其他工具在内的储备资产。“超额储备”是指超出支撑所有代币所需之外的剩余资产，充当应对损失的缓冲垫。独立证明和审计会核实这些持有资产，但储备组合的质量和流动性对机构信心同样重要。",
+        "sources": [
+          {
+            "url": "https://www.coindesk.com/business/2026/05/01/tether-posts-usd1-04-billion-q1-profit-reaches-usd8-23-billion-reserve-buffer",
+            "title": "Tether posts $1.04 billion in first-quarter profit, reaches $8.23 billion reserve buffer"
+          },
+          {
+            "url": "https://eco.com/support/en/articles/14796320-inside-tether-usdt-reserves-explained",
+            "title": "Inside Tether: USDT Reserves Explained | Support - Eco"
+          },
+          {
+            "url": "https://www.bitgo.com/resources/blog/stablecoin-reserves-audits-attestations-token-backing/",
+            "title": "How Stablecoin Reserves Work: Audits, Attestations, and... | BitGo"
+          }
+        ]
+      },
+      "ai_score": 8.0,
+      "ai_reason": null,
+      "ai_summary": "Tether reported $1.5 billion Q2 operating profit while its reserve buffer halved, signaling potential changes in its financial backing strength.",
+      "ai_tags": []
+    },
+    {
+      "id": "rss:www.coindesk.com_arc_outboundfeeds_rss_:4abae2b986de1a1e",
+      "source_type": "rss",
+      "title": "Circle secures New York trust charter as crypto regulatory push accelerates",
+      "url": "https://www.coindesk.com/policy/2026/07/31/circle-secures-new-york-trust-charter-as-crypto-regulatory-push-accelerates",
+      "content": null,
+      "author": "Olivier Acuna",
+      "published_at": "2026-07-31T13:35:17Z",
+      "fetched_at": "2026-08-01T00:30:56.161184Z",
+      "metadata": {
+        "feed_name": "CoinDesk",
+        "category": "crypto-markets",
+        "title_en": "Circle Secures New York Trust Charter Amid Crypto Regulation Push",
+        "detailed_summary_en": "Circle has been granted a New York trust charter by the New York State Department of Financial Services (NYDFS), an official state banking authorization that permits the company to provide fiduciary, custody, and asset-management services under the New York Banking Law. This marks a significant regulatory milestone for the stablecoin issuer and strengthens its standing in the evolving crypto regulatory landscape. This milestone boosts Circle's credibility and market access as a leading USDC issuer, potentially accelerating institutional adoption of the stablecoin. It also comes amid a broader regulatory push to formalize oversight of digital assets, signaling that compliant players are gaining a competitive edge in the market. The trust charter is a limited-purpose trust company authorization under New York law, meaning Circle cannot take deposits or make loans like a full commercial bank. The charter enables it to offer custody and fiduciary services, which are critical for managing stablecoin reserves and digital asset custody.",
+        "background_en": "A trust charter from the NYDFS is a state-level license required to operate a trust company in New York, allowing the holder to legally provide fiduciary and custody services. NYDFS is a key financial regulator in the United States, known for enforcing rigorous standards such as the BitLicense for crypto firms. This charter gives Circle clear legal authority to operate in New York, a major financial hub, while aligning with its broader strategy to comply with evolving stablecoin regulations.",
+        "title_zh": "Circle获纽约信托牌照，加密监管加速推进",
+        "detailed_summary_zh": "Circle已获得纽约州金融服务部（NYDFS）颁发的纽约信托牌照，这是一项正式的州级银行授权，允许该公司根据纽约银行法提供受托、托管和资产管理服务。这标志着这家稳定币发行方在监管方面取得重大里程碑，并强化了其在不断演变的加密监管格局中的地位。 这一里程碑提升了Circle作为领先USDC发行方的信誉和市场准入能力，可能加速机构对稳定币的采用。此举正值监管机构推动数字资产监管规范化的更广泛浪潮中，表明合规参与者正获得市场竞争优势。 该信托牌照是纽约法律下的有限目的信托公司授权，意味着Circle不能像全面商业银行那样吸收存款或发放贷款。该牌照使其能够提供托管和受托服务，这对于管理稳定币储备和数字资产托管至关重要。",
+        "background_zh": "NYDFS颁发的信托牌照是在纽约运营信托公司所需的州级许可证，允许持有者合法提供受托和托管服务。NYDFS是美国重要的金融监管机构，以对加密公司实施严格的BitLicense等标准而闻名。该牌照赋予Circle在纽约这一主要金融中心运营的明确法律授权，同时与其遵守不断演变的稳定币监管规则的更广泛战略相一致。",
+        "sources": [
+          {
+            "url": "https://www.coindesk.com/policy/2026/07/31/circle-secures-new-york-trust-charter-as-crypto-regulatory-push-accelerates",
+            "title": "Circle secures New York trust charter as crypto regulatory push accelerates"
+          },
+          {
+            "url": "https://www.dfs.ny.gov/apps_and_licensing/banks_and_trusts/procedure_certificate_merit_trust_comp",
+            "title": "Procedure and Certificate of Merit - Trust Companies | Department of Financial Services"
+          }
+        ]
+      },
+      "ai_score": 8.0,
+      "ai_reason": null,
+      "ai_summary": "Circle secures a New York trust charter, marking a significant step in its regulatory standing amid a broader crypto regulatory push.",
+      "ai_tags": []
+    },
+    {
+      "id": "rss:www.coindesk.com_arc_outboundfeeds_rss_:ee7dc547db10c178",
+      "source_type": "rss",
+      "title": "Dubai-based crypto exchange tied to $4 billion Iran sanctioned-evasion network",
+      "url": "https://www.coindesk.com/business/2026/07/31/dubai-based-crypto-exchange-tied-to-usd4-billion-iran-sanctioned-evasion-network-reuters",
+      "content": null,
+      "author": "Olivier Acuna",
+      "published_at": "2026-07-31T12:28:02Z",
+      "fetched_at": "2026-08-01T00:30:56.161246Z",
+      "metadata": {
+        "feed_name": "CoinDesk",
+        "category": "crypto-markets",
+        "title_en": "Dubai Crypto Exchange Linked to $4B Iran Sanctions Evasion Network",
+        "detailed_summary_en": "A Dubai-based cryptocurrency exchange has been reportedly connected to a $4 billion network used to evade U.S. sanctions against Iran, according to Reuters via CoinDesk. The report raises immediate concerns about the exchange's compliance practices and potential enforcement actions. This development underscores how crypto exchanges can become channels for illicit finance and sanctions evasion, putting global regulators on high alert. It could trigger investigations, enforcement actions, and stricter know-your-customer (KYC) and anti-money laundering (AML) requirements across the industry. The alleged network reportedly moved billions of dollars using digital assets, and the exchange is said to have handled a portion of those funds. Neither the exchange nor the U.S. authorities have yet confirmed the details, and the report cites unnamed sources familiar with the matter.",
+        "background_en": "Sanctions are economic penalties imposed by governments to pressure countries like Iran over activities such as nuclear proliferation or support for terrorism. Crypto exchanges are under growing scrutiny because the pseudonymous nature of digital assets can make sanctions evasion harder to trace, prompting regulators to demand robust compliance programs. The U.S. Office of Foreign Assets Control (OFAC) has previously sanctioned individuals and entities involved in virtual currency-based sanctions evasion.",
+        "title_zh": "迪拜加密货币交易所卷入40亿美元伊朗制裁规避网络",
+        "detailed_summary_zh": "据CoinDesk援引路透社报道，一家总部位于迪拜的加密货币交易所被曝与一个用于规避美国对伊朗制裁的40亿美元网络存在关联。该报道立即引发对该交易所合规做法及潜在执法行动的担忧。 这一事件凸显了加密货币交易所可能成为非法金融和制裁规避渠道的风险，使全球监管机构高度警惕。它可能引发调查、执法行动，以及整个行业更严格的了解你的客户（KYC）和反洗钱（AML）要求。 据报道，该网络利用数字资产转移了数十亿美元资金，而该交易所被指处理了其中一部分资金。目前该交易所和美国官方均未证实相关细节，报道援引了熟悉此事的匿名消息人士的说法。",
+        "background_zh": "制裁是政府为向伊朗等国家施压而实施的经济惩罚措施，原因包括核扩散或支持恐怖主义等活动。由于数字资产的匿名性使得制裁规避更难以追踪，加密货币交易所正受到越来越多的审视，监管机构因此要求其建立强有力的合规体系。美国财政部海外资产控制办公室（OFAC）此前已制裁过参与虚拟货币制裁规避的个人和实体。"
+      },
+      "ai_score": 8.0,
+      "ai_reason": null,
+      "ai_summary": "Dubai-based crypto exchange is reportedly connected to a $4 billion Iran sanctions-evasion network, raising serious regulatory and compliance concerns.",
+      "ai_tags": []
+    },
+    {
+      "id": "rss:openai.com_blog_rss.xml:ff7c1653ce2eb767",
+      "source_type": "rss",
+      "title": "Disrupting a Criminal Scam Operation",
+      "url": "https://openai.com/index/disrupting-malicious-uses-of-ai-criminal-scam-operation",
+      "content": null,
+      "author": "OpenAI Blog",
+      "published_at": "2026-07-31T00:00:00Z",
+      "fetched_at": "2026-08-01T00:30:57.625461Z",
+      "metadata": {
+        "feed_name": "OpenAI Blog",
+        "category": "ai-labs",
+        "title_en": "OpenAI Disrupts Cambodia-Based Scam Operation Abusing ChatGPT",
+        "detailed_summary_en": "OpenAI announced that it disrupted a Cambodia-based criminal operation that used ChatGPT to assist in investment, romance, gambling, and impersonation scams. The action is part of OpenAI's ongoing efforts to combat malicious uses of AI. This shows that AI developers are actively enforcing safety policies and taking real-world action against cybercriminals. It highlights the growing role of AI-safety teams in preventing fraud and protecting users from AI-enabled criminal schemes. The scam operation reportedly used ChatGPT to craft convincing messages for romance and impersonation fraud, as well as to support fake investment opportunities and gambling platforms. OpenAI did not disclose the exact scale of the operation or the specific methods used to identify it.",
+        "background_en": "AI models like ChatGPT can be exploited by bad actors to generate fraudulent content at scale. OpenAI has usage policies that prohibit illegal or harmful activity, and it uses automated detection systems and investigations to find and disrupt such abuse. This disruption is part of a broader industry trend where AI labs are increasingly cooperating with security researchers and law enforcement.",
+        "title_zh": "OpenAI 捣毁利用 ChatGPT 的柬埔寨诈骗团伙",
+        "detailed_summary_zh": "OpenAI 宣布已捣毁一个位于柬埔寨的犯罪团伙，该团伙利用 ChatGPT 协助实施投资、婚恋、赌博和冒充诈骗。此次行动是 OpenAI 持续打击 AI 滥用行为的一部分。 这表明 AI 开发者正在积极执行安全政策，并对网络犯罪分子采取实际行动。这也凸显了 AI 安全团队在预防欺诈和保护用户免受 AI 驱动的犯罪活动侵害方面的作用日益重要。 据报道，该诈骗团伙利用 ChatGPT 编写有说服力的信息，用于婚恋诈骗和冒充他人，以及支持虚假投资机会和赌博平台。OpenAI 未披露该行动的具体规模或识别方法。",
+        "background_zh": "像 ChatGPT 这样的 AI 模型可能被不法分子利用，大规模生成欺诈内容。OpenAI 制定了对非法或有害活动零容忍的使用政策，并通过自动检测系统和调查来发现并阻止此类滥用。此次行动反映了 AI 实验室与安全研究人员和执法机构加强合作这一更广泛的行业趋势。"
+      },
+      "ai_score": 7.0,
+      "ai_reason": null,
+      "ai_summary": "OpenAI disrupted a Cambodia-based scam operation that used ChatGPT to support investment, romance, gambling, and impersonation fraud schemes.",
+      "ai_tags": []
+    }
+  ],
+  "dedup_history": [
+    {
+      "id": "rss:www.federalreserve.gov_feeds_press_all.xml:e290aabba3caad80",
+      "source_type": "rss",
+      "title": "Federal Reserve issues FOMC statement",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260729a.htm",
+      "content": null,
+      "author": "Federal Reserve Press Releases",
+      "published_at": "2026-07-29T18:00:00Z",
+      "fetched_at": "2026-07-30T14:35:07.137431Z",
+      "metadata": {
+        "feed_name": "Federal Reserve Press Releases",
+        "category": "macro-regulation",
+        "title_en": "Fed Releases FOMC Statement on Monetary Policy",
+        "detailed_summary_en": "The Federal Reserve issued its latest FOMC statement on July 29, 2026, outlining its decision on interest rates and assessment of economic conditions. This FOMC statement directly influences global financial markets, including cryptocurrencies, by signaling changes in interest rates and liquidity conditions that affect risk sentiment and asset valuations. The statement typically includes the federal funds rate target, forward guidance, and the Fed's outlook on inflation, employment, and economic growth. However, the specific details of the July 2026 statement are not provided here.",
+        "background_en": "The Federal Open Market Committee (FOMC) is the branch of the Federal Reserve that sets monetary policy, including interest rates. Its statements are closely watched by investors worldwide as they provide insights into the central bank's policy trajectory, impacting borrowing costs, investment flows, and market volatility. For crypto markets, Fed policy shifts can alter the appeal of risk-on assets versus traditional safe havens.",
+        "title_zh": "美联储发布FOMC货币政策声明",
+        "detailed_summary_zh": "美联储于2026年7月29日发布了最新的FOMC声明，概述了其利率决策和对经济状况的评估。 这份FOMC声明通过暗示利率和流动性状况的变化，直接影响包括加密货币在内的全球金融市场，从而影响风险情绪和资产估值。 声明通常包括联邦基金利率目标、前瞻性指引以及美联储对通胀、就业和经济增长的展望。但此处未提供2026年7月声明的具体细节。",
+        "background_zh": "联邦公开市场委员会（FOMC）是美联储制定货币政策（包括利率）的分支机构。其声明受到全球投资者的密切关注，因为它提供了对央行政策路径的洞察，影响借贷成本、投资流动和市场波动。对于加密货币市场，美联储政策转向可能改变风险资产与传统避风港之间的吸引力。"
+      },
+      "ai_score": 9.0,
+      "ai_reason": null,
+      "ai_summary": "The Federal Reserve released its latest FOMC statement detailing monetary policy decisions and economic outlook.",
+      "ai_tags": []
+    },
     {
       "id": "rss:www.coindesk.com_arc_outboundfeeds_rss_:25a1209e8c374cba",
       "source_type": "rss",
@@ -197,70 +375,6 @@
       "ai_tags": []
     },
     {
-      "id": "rss:www.coindesk.com_arc_outboundfeeds_rss_:4a88f7931c5c78da",
-      "source_type": "rss",
-      "title": "Strategy books $8.2 billion Q2 loss on bitcoin price decline",
-      "url": "https://www.coindesk.com/markets/2026/07/30/strategy-books-usd8-2-billion-second-quarter-loss-on-bitcoin-price-decline",
-      "content": null,
-      "author": "Krisztian Sandor",
-      "published_at": "2026-07-30T20:32:13Z",
-      "fetched_at": "2026-07-31T00:30:44.395904Z",
-      "metadata": {
-        "feed_name": "CoinDesk",
-        "category": "crypto-markets",
-        "title_en": "Strategy reports $8.2B Q2 loss on Bitcoin price drop",
-        "detailed_summary_en": "Strategy (formerly MicroStrategy) reported an $8.2 billion loss in the second quarter of 2026, primarily due to impairment charges on its Bitcoin holdings as the cryptocurrency's price declined. This highlights the significant financial risk for companies holding large amounts of Bitcoin under current accounting rules that require impairment charges when prices fall. It could affect market sentiment and the narrative around institutional adoption of Bitcoin. The loss is largely non-cash impairment charges, but it impacts reported earnings. Strategy's substantial Bitcoin holdings make it highly sensitive to price volatility under U.S. GAAP accounting for intangible assets.",
-        "background_en": "MicroStrategy, now rebranded as Strategy, has been a major corporate Bitcoin holder since 2020, using its cash reserves to purchase the cryptocurrency. Under U.S. GAAP, Bitcoin is classified as an indefinite-lived intangible asset and must be tested for impairment. When the market price falls below the purchase price, an impairment loss is recognized on the income statement, even if the asset is not sold. This accounting treatment can lead to large reported losses during Bitcoin downturns.",
-        "title_zh": "Strategy因比特币价格下跌录得82亿美元Q2亏损",
-        "detailed_summary_zh": "Strategy（前身为MicroStrategy）报告2026年第二季度亏损82亿美元，主要因其比特币持仓的减值费用，因为加密货币价格下跌。 这凸显了在当前会计准则下，持有大量比特币的公司面临的重大财务风险，因为价格下跌时必须确认减值费用。这可能影响市场情绪以及机构采纳比特币的叙事。 亏损主要是非现金减值费用，但影响报告盈余。Strategy持有大量比特币，根据美国GAAP对无形资产的会计处理，其业绩对价格波动高度敏感。",
-        "background_zh": "MicroStrategy（现已更名为Strategy）自2020年以来一直是主要的公司比特币持有者，使用现金储备购买该加密货币。根据美国GAAP，比特币被归类为无限期无形资产，必须进行减值测试。当市场价格低于购买价时，即使未出售资产，也需在利润表中确认减值损失。这种会计处理方式可能导致比特币下跌期间出现巨额报告亏损。",
-        "sources": [
-          {
-            "url": "https://decrypt.co/106573/microstrategy-reports-917m-bitcoin-impairment-as-saylor-steps-aside",
-            "title": "MicroStrategy Reports $917M Bitcoin Impairment Charge... - Decrypt"
-          },
-          {
-            "url": "https://www.ibtimes.com/microstrategy-reveals-727000-impairment-losses-bitcoin-holdings-3631422",
-            "title": "MicroStrategy Reveals $727,000 In Impairment Losses On Bitcoin..."
-          }
-        ]
-      },
-      "ai_score": 7.0,
-      "ai_reason": null,
-      "ai_summary": "Strategy reports an $8.2 billion Q2 loss attributed to the decline in Bitcoin's price.",
-      "ai_tags": []
-    },
-    {
-      "id": "rss:status.coinbase.com_history.rss:4bf03ce36363a66c",
-      "source_type": "rss",
-      "title": "Across Protocol (ACX) Token Changes",
-      "url": "https://status.coinbase.com/incidents/9h5nsb9zjlzd",
-      "content": null,
-      "author": "Coinbase Status",
-      "published_at": "2026-07-30T19:34:05Z",
-      "fetched_at": "2026-07-31T00:30:44.773463Z",
-      "metadata": {
-        "feed_name": "Coinbase Status",
-        "category": "exchange-operations",
-        "title_en": "Coinbase to Suspend ACX Trading as Project Winds Down",
-        "detailed_summary_en": "Coinbase has moved ACX order books to limit-only mode and will suspend trading of the ACX token on July 28, 2026, because the project team is winding down the token and offering conversion options. This matters for ACX holders as they must move their tokens to a self-custodial wallet by the deadline to participate in conversion options, otherwise they may lose access. It also highlights the risks of investing in tokens tied to specific protocols that may cease operations. The ACX token is the governance token of Across Protocol, a cross-chain bridge. Coinbase's suspension is due to the project's wind-down, and holders are directed to the forum at forum.across.to for conversion details.",
-        "background_en": "Across Protocol is a cross-chain bridge that enables fast and secure asset transfers between Ethereum and Layer 2 networks like Arbitrum, Optimism, and Polygon. ACX is its governance token, used for protocol decisions and incentives. Token wind-downs occur when a project decides to stop operations, often offering holders a way to convert their tokens to other assets or redeem them.",
-        "title_zh": "Coinbase 将因项目终止暂停 ACX 交易",
-        "detailed_summary_zh": "Coinbase 已将 ACX 订单簿设置为仅限限价模式，并将于 2026 年 7 月 28 日暂停 ACX 代币的交易，原因是项目团队正在终止该代币并提供转换选项。 这对 ACX 持有者很重要，因为他们必须在截止日期前将代币转入自托管钱包以参与转换选项，否则可能失去访问权限。这也凸显了投资于可能停止运营的特定协议代币的风险。 ACX 代币是跨链桥 Across Protocol 的治理代币。Coinbase 暂停交易是由于项目终止，持有者可访问 forum.across.to 论坛了解转换详情。",
-        "background_zh": "Across Protocol 是一个跨链桥，可在以太坊与 Arbitrum、Optimism、Polygon 等 Layer 2 网络之间实现快速安全的资产转移。ACX 是其治理代币，用于协议决策和激励。项目终止代币时，通常会为持有者提供将其代币转换为其他资产或赎回的方式。",
-        "sources": [
-          {
-            "url": "https://coinmarketcap.com/currencies/across-protocol/",
-            "title": "Across Protocol price today, ACX to USD live price, marketcap ...Across Protocol Price: ACX/USD Live Price Chart, Market Cap ...ACX Token – Official WebsiteAcross Protocol Token Price Today | ACX Live Price, Chart ...ACX Token Guide: Understanding Across Protocol's Cross-Chain ...ACX - ACXAcross Protocol Price Today | Live ACX Price, Chart ... - Binance"
-          }
-        ]
-      },
-      "ai_score": 7.0,
-      "ai_reason": null,
-      "ai_summary": "Coinbase will suspend ACX trading on July 28, 2026, due to the token being wound down by the project team, offering conversion options.",
-      "ai_tags": []
-    },
-    {
       "id": "rss:news.google.com_rss_search?q=site:anthropic.com+when:7d&hl=en-US&gl=US&ceid=US:en:46223e7fc9e072c0",
       "source_type": "rss",
       "title": "Investigating three real-world incidents in our cybersecurity evaluations - Anthropic",
@@ -327,271 +441,69 @@
       "ai_reason": null,
       "ai_summary": "The White House issued a Presidential Determination under the Defense Production Act to address inadequate supply of recoverable critical minerals and materials for national defense.",
       "ai_tags": []
-    }
-  ],
-  "dedup_history": [
-    {
-      "id": "rss:www.federalreserve.gov_feeds_press_all.xml:e290aabba3caad80",
-      "source_type": "rss",
-      "title": "Federal Reserve issues FOMC statement",
-      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260729a.htm",
-      "content": null,
-      "author": "Federal Reserve Press Releases",
-      "published_at": "2026-07-29T18:00:00Z",
-      "fetched_at": "2026-07-30T14:35:07.137431Z",
-      "metadata": {
-        "feed_name": "Federal Reserve Press Releases",
-        "category": "macro-regulation",
-        "title_en": "Fed Releases FOMC Statement on Monetary Policy",
-        "detailed_summary_en": "The Federal Reserve issued its latest FOMC statement on July 29, 2026, outlining its decision on interest rates and assessment of economic conditions. This FOMC statement directly influences global financial markets, including cryptocurrencies, by signaling changes in interest rates and liquidity conditions that affect risk sentiment and asset valuations. The statement typically includes the federal funds rate target, forward guidance, and the Fed's outlook on inflation, employment, and economic growth. However, the specific details of the July 2026 statement are not provided here.",
-        "background_en": "The Federal Open Market Committee (FOMC) is the branch of the Federal Reserve that sets monetary policy, including interest rates. Its statements are closely watched by investors worldwide as they provide insights into the central bank's policy trajectory, impacting borrowing costs, investment flows, and market volatility. For crypto markets, Fed policy shifts can alter the appeal of risk-on assets versus traditional safe havens.",
-        "title_zh": "美联储发布FOMC货币政策声明",
-        "detailed_summary_zh": "美联储于2026年7月29日发布了最新的FOMC声明，概述了其利率决策和对经济状况的评估。 这份FOMC声明通过暗示利率和流动性状况的变化，直接影响包括加密货币在内的全球金融市场，从而影响风险情绪和资产估值。 声明通常包括联邦基金利率目标、前瞻性指引以及美联储对通胀、就业和经济增长的展望。但此处未提供2026年7月声明的具体细节。",
-        "background_zh": "联邦公开市场委员会（FOMC）是美联储制定货币政策（包括利率）的分支机构。其声明受到全球投资者的密切关注，因为它提供了对央行政策路径的洞察，影响借贷成本、投资流动和市场波动。对于加密货币市场，美联储政策转向可能改变风险资产与传统避风港之间的吸引力。"
-      },
-      "ai_score": 9.0,
-      "ai_reason": null,
-      "ai_summary": "The Federal Reserve released its latest FOMC statement detailing monetary policy decisions and economic outlook.",
-      "ai_tags": []
     },
     {
-      "id": "rss:openai.com_blog_rss.xml:265c6a0134aba9b6",
+      "id": "rss:www.coindesk.com_arc_outboundfeeds_rss_:4a88f7931c5c78da",
       "source_type": "rss",
-      "title": "How enabling two settings tripled our scores on the ARC-AGI-3 benchmark",
-      "url": "https://openai.com/index/how-two-settings-tripled-our-arc-agi-3-scores",
+      "title": "Strategy books $8.2 billion Q2 loss on bitcoin price decline",
+      "url": "https://www.coindesk.com/markets/2026/07/30/strategy-books-usd8-2-billion-second-quarter-loss-on-bitcoin-price-decline",
       "content": null,
-      "author": "OpenAI Blog",
-      "published_at": "2026-07-29T15:00:00Z",
-      "fetched_at": "2026-07-30T14:35:09.362408Z",
-      "metadata": {
-        "feed_name": "OpenAI Blog",
-        "category": "ai-labs",
-        "title_en": "Two Settings Triple OpenAI's ARC-AGI-3 Benchmark Scores",
-        "detailed_summary_en": "OpenAI enabled two API settings—retaining reasoning and enabling compaction—on GPT-5.6, tripling its scores on the ARC-AGI-3 benchmark. This simple configuration change dramatically boosts AI reasoning performance on a key AGI benchmark, suggesting that large efficiency gains are possible without model retraining, which could accelerate progress toward general intelligence. The two settings are 'retain reasoning' (which preserves chain-of-thought during context compaction) and 'enable compaction' (which lossily compresses the conversation history). GPT-5.6 Sol, the most capable variant, was used; the exact score improvement was not disclosed beyond 'tripling'.",
-        "background_en": "ARC-AGI-3 is an interactive reasoning benchmark that measures an AI agent's ability to explore novel environments, infer goals, and plan actions—skills considered essential for artificial general intelligence. GPT-5.6 is OpenAI's latest large language model, released in July 2026 in three variants (Luna, Terra, Sol). 'Compaction' refers to lossy compression of the model's context window, which normally degrades reasoning performance; OpenAI's finding shows that retaining reasoning traces during compaction can actually improve scores.",
-        "title_zh": "两项设置让OpenAI的ARC-AGI-3得分翻三倍",
-        "detailed_summary_zh": "OpenAI在GPT-5.6上启用了两项API设置——保留推理能力和启用上下文压缩——使得其在ARC-AGI-3基准测试中的得分提升了三倍。 这一简单的配置更改大幅提升了AI在关键AGI基准上的推理性能，表明无需重新训练模型即可实现大幅效率提升，可能加速通用智能的进展。 这两项设置分别是‘保留推理’（在上下文压缩期间保留思维链）和‘启用压缩’（有损压缩对话历史）。使用的是最强大的GPT-5.6 Sol变体；具体得分提升幅度仅披露为‘三倍’。",
-        "background_zh": "ARC-AGI-3是一种交互式推理基准测试，用于衡量AI智能体探索新环境、推断目标和规划行动的能力——这些技能被认为是通用人工智能的关键。GPT-5.6是OpenAI于2026年7月发布的最新大型语言模型，提供三个变体（Luna、Terra、Sol）。‘压缩’指的是对模型上下文窗口的有损压缩，通常会降低推理性能；OpenAI的发现表明，在压缩过程中保留推理轨迹反而能提高得分。",
-        "sources": [
-          {
-            "url": "https://arcprize.org/arc-agi/3",
-            "title": "ARC-AGI-3"
-          },
-          {
-            "url": "https://en.wikipedia.org/wiki/GPT-5.6",
-            "title": "GPT-5.6"
-          },
-          {
-            "url": "https://www.linkedin.com/posts/aarmanroy_trick-i-learnt-late-run-many-sub-agents-activity-7427006007723315200-jZjH",
-            "title": "Prevent AI Model Compaction with Sub-Agents | Aarman... | LinkedIn"
-          }
-        ]
-      },
-      "ai_score": 9.0,
-      "ai_reason": null,
-      "ai_summary": "OpenAI tripled ARC-AGI-3 benchmark scores by enabling two API settings on GPT-5.6, boosting reasoning and efficiency.",
-      "ai_tags": []
-    },
-    {
-      "id": "rss:www.coindesk.com_arc_outboundfeeds_rss_:2cd87ac375ce84e4",
-      "source_type": "rss",
-      "title": "Russia charges Telegram founder Pavel Durov with aiding terrorism",
-      "url": "https://www.coindesk.com/policy/2026/07/29/russia-charges-telegram-founder-pavel-durov-with-aiding-terrorism",
-      "content": null,
-      "author": "Francisco Rodrigues",
-      "published_at": "2026-07-29T09:10:54Z",
-      "fetched_at": "2026-07-29T14:34:01.356978Z",
+      "author": "Krisztian Sandor",
+      "published_at": "2026-07-30T20:32:13Z",
+      "fetched_at": "2026-07-31T00:30:44.395904Z",
       "metadata": {
         "feed_name": "CoinDesk",
         "category": "crypto-markets",
-        "title_en": "Russia charges Telegram founder Pavel Durov with aiding terrorism",
-        "detailed_summary_en": "Russia has formally filed terrorism-related charges against Telegram founder Pavel Durov, alleging that the platform facilitated terrorist activities. This legal action could severely impact Telegram's operations in Russia and potentially worldwide, affecting millions of users who rely on the platform for private communications and cryptocurrency-related activities. The charges specifically cite aiding terrorism and could lead to significant penalties including imprisonment, potentially forcing changes in Telegram's privacy policies or its presence in Russia.",
-        "background_en": "Telegram is a widely-used encrypted messaging app known for its strong privacy features, and it is particularly popular among cryptocurrency communities for enabling secure communications and hosting crypto-related channels. Pavel Durov, the founder, has been a vocal advocate for digital privacy and has resisted government pressure to grant backdoor access to user data.",
-        "title_zh": "俄罗斯指控Telegram创始人帕维尔·杜罗夫协助恐怖主义",
-        "detailed_summary_zh": "俄罗斯正式对Telegram创始人帕维尔·杜罗夫提出与恐怖主义相关的指控，指控该平台协助了恐怖活动。 这一法律行动可能严重影响Telegram在俄罗斯乃至全球的运营，影响数百万依赖该平台进行私密通信和加密货币相关活动的用户。 指控具体涉及协助恐怖主义，可能导致包括监禁在内的重大处罚，可能迫使Telegram修改其隐私政策或撤出俄罗斯市场。",
-        "background_zh": "Telegram是一款广泛使用的加密消息应用，以其强大的隐私功能而闻名，尤其在加密货币社区中因其能够提供安全通信和托管加密货币相关频道而备受青睐。创始人帕维尔·杜罗夫一直是数字隐私的积极倡导者，并曾顶住政府压力，拒绝提供用户数据后门访问权限。"
-      },
-      "ai_score": 9.0,
-      "ai_reason": null,
-      "ai_summary": "Russia files terrorism-related charges against Telegram founder Pavel Durov, potentially impacting the platform's operations and crypto-dependent communities.",
-      "ai_tags": []
-    },
-    {
-      "id": "rss:www.coindesk.com_arc_outboundfeeds_rss_:cdbf8d02a73b736e",
-      "source_type": "rss",
-      "title": "Company behind AI trade that caused $60 million crypto liquidations to cover all losses",
-      "url": "https://www.coindesk.com/markets/2026/07/29/company-behind-ai-trade-that-caused-usd60-million-crypto-liquidations-to-cover-all-losses",
-      "content": null,
-      "author": "Shaurya Malwa",
-      "published_at": "2026-07-29T06:03:28Z",
-      "fetched_at": "2026-07-29T14:34:01.357021Z",
-      "metadata": {
-        "feed_name": "CoinDesk",
-        "category": "crypto-markets",
-        "title_en": "Firm covering $60M crypto losses from AI trade",
-        "detailed_summary_en": "A company that executed an AI-driven trade causing $60 million in cryptocurrency liquidations has announced it will fully compensate all affected users. This incident highlights the risks of AI-powered trading in volatile crypto markets, and the company's decision to cover losses sets a precedent for accountability in automated trading. The trade reportedly triggered cascading liquidations across multiple exchanges, affecting leveraged positions in major cryptocurrencies like Bitcoin and Ethereum.",
-        "background_en": "In cryptocurrency trading, liquidation occurs when a leveraged position is force-closed due to insufficient margin, often during rapid price movements. AI trading bots use algorithms to execute trades autonomously, analyzing market data and generating signals. While they can enhance efficiency, they also carry risks of unintended large-scale impacts, especially in illiquid markets.",
-        "title_zh": "公司赔偿AI交易导致6000万美元加密货币损失",
-        "detailed_summary_zh": "一家公司因执行人工智能交易导致6000万美元的加密货币清算，现已宣布将全额赔偿所有受影响的用户。 这一事件凸显了在波动性大的加密货币市场中AI交易的风险，而公司决定承担损失为自动化交易的责任追究树立了先例。 据报道，该交易在多个交易所引发连锁清算，影响了比特币、以太坊等主要加密货币的杠杆仓位。",
-        "background_zh": "在加密货币交易中，当杠杆仓位因保证金不足而在价格快速变动时被强制平仓，即发生清算。AI交易机器人利用算法自主执行交易，分析市场数据并生成信号。虽然它们可以提高效率，但也存在意外大规模影响的风险，尤其是在流动性较差的市场中。",
+        "title_en": "Strategy reports $8.2B Q2 loss on Bitcoin price drop",
+        "detailed_summary_en": "Strategy (formerly MicroStrategy) reported an $8.2 billion loss in the second quarter of 2026, primarily due to impairment charges on its Bitcoin holdings as the cryptocurrency's price declined. This highlights the significant financial risk for companies holding large amounts of Bitcoin under current accounting rules that require impairment charges when prices fall. It could affect market sentiment and the narrative around institutional adoption of Bitcoin. The loss is largely non-cash impairment charges, but it impacts reported earnings. Strategy's substantial Bitcoin holdings make it highly sensitive to price volatility under U.S. GAAP accounting for intangible assets.",
+        "background_en": "MicroStrategy, now rebranded as Strategy, has been a major corporate Bitcoin holder since 2020, using its cash reserves to purchase the cryptocurrency. Under U.S. GAAP, Bitcoin is classified as an indefinite-lived intangible asset and must be tested for impairment. When the market price falls below the purchase price, an impairment loss is recognized on the income statement, even if the asset is not sold. This accounting treatment can lead to large reported losses during Bitcoin downturns.",
+        "title_zh": "Strategy因比特币价格下跌录得82亿美元Q2亏损",
+        "detailed_summary_zh": "Strategy（前身为MicroStrategy）报告2026年第二季度亏损82亿美元，主要因其比特币持仓的减值费用，因为加密货币价格下跌。 这凸显了在当前会计准则下，持有大量比特币的公司面临的重大财务风险，因为价格下跌时必须确认减值费用。这可能影响市场情绪以及机构采纳比特币的叙事。 亏损主要是非现金减值费用，但影响报告盈余。Strategy持有大量比特币，根据美国GAAP对无形资产的会计处理，其业绩对价格波动高度敏感。",
+        "background_zh": "MicroStrategy（现已更名为Strategy）自2020年以来一直是主要的公司比特币持有者，使用现金储备购买该加密货币。根据美国GAAP，比特币被归类为无限期无形资产，必须进行减值测试。当市场价格低于购买价时，即使未出售资产，也需在利润表中确认减值损失。这种会计处理方式可能导致比特币下跌期间出现巨额报告亏损。",
         "sources": [
           {
-            "url": "https://www.litefinance.org/blog/for-beginners/how-to-trade-crypto/liquidation-in-crypto/",
-            "title": "What Is Liquidation in Crypto Trading? | LiteFinance"
+            "url": "https://decrypt.co/106573/microstrategy-reports-917m-bitcoin-impairment-as-saylor-steps-aside",
+            "title": "MicroStrategy Reports $917M Bitcoin Impairment Charge... - Decrypt"
           },
           {
-            "url": "https://www.finder.com/stock-trading/ai-trading-bot",
-            "title": "Best AI Trading Bots in 2026: Compare Top Platforms for Stocks and Forex"
+            "url": "https://www.ibtimes.com/microstrategy-reveals-727000-impairment-losses-bitcoin-holdings-3631422",
+            "title": "MicroStrategy Reveals $727,000 In Impairment Losses On Bitcoin..."
           }
         ]
       },
-      "ai_score": 9.0,
+      "ai_score": 7.0,
       "ai_reason": null,
-      "ai_summary": "A company responsible for an AI trade that caused $60 million in crypto liquidations announces it will cover all losses.",
+      "ai_summary": "Strategy reports an $8.2 billion Q2 loss attributed to the decline in Bitcoin's price.",
       "ai_tags": []
     },
     {
-      "id": "rss:www.coindesk.com_arc_outboundfeeds_rss_:fcb7de802fb6e2bb",
+      "id": "rss:status.coinbase.com_history.rss:4bf03ce36363a66c",
       "source_type": "rss",
-      "title": "About $80 million ZEC crosses into Zcash's new Ironwood pool in the first day",
-      "url": "https://www.coindesk.com/tech/2026/07/29/about-usd80-million-zec-crosses-into-zcash-s-new-ironwood-pool-in-the-first-day",
+      "title": "Across Protocol (ACX) Token Changes",
+      "url": "https://status.coinbase.com/incidents/9h5nsb9zjlzd",
       "content": null,
-      "author": "Shaurya Malwa",
-      "published_at": "2026-07-29T13:32:37Z",
-      "fetched_at": "2026-07-29T19:44:07.756413Z",
+      "author": "Coinbase Status",
+      "published_at": "2026-07-30T19:34:05Z",
+      "fetched_at": "2026-07-31T00:30:44.773463Z",
       "metadata": {
-        "feed_name": "CoinDesk",
-        "category": "crypto-markets",
-        "title_en": "$80M ZEC migrates to Zcash's new Ironwood pool on day one",
-        "detailed_summary_en": "On July 29, 2026, approximately $80 million worth of ZEC (Zcash) was transferred into the new Ironwood shielded pool within the first 24 hours of its activation. The massive migration signals strong community trust and adoption of the Ironwood upgrade, which is crucial for restoring confidence in Zcash's privacy features and circulating supply integrity after the Orchard vulnerability. The Ironwood upgrade replaces the Orchard shielded pool with a new formally verified pool to patch a bug that allowed fake ZEC to be minted. Over 1.5 million ZEC (roughly $80M at current prices) moved on day one, representing about 8% of the circulating supply.",
-        "background_en": "Zcash is a privacy-focused cryptocurrency that uses shielded pools to hide transaction details. In early 2026, a vulnerability in the Orchard pool was discovered that could allow inflation of the ZEC supply. The Ironwood upgrade, activated on July 28, introduces a new formally verified shielded pool to address this bug and restore user confidence.",
-        "title_zh": "首日约8000万美元ZEC迁移至Zcash新Ironwood池",
-        "detailed_summary_zh": "2026年7月29日，约8000万美元的ZEC（Zcash）在Ironwood屏蔽池激活后的首24小时内被转入该池。 大规模迁移表明社区对Ironwood升级的强烈信任和采纳，这对于在Orchard漏洞后恢复对Zcash隐私功能和流通供应完整性的信心至关重要。 Ironwood升级用一个新的经过形式验证的池取代了Orchard屏蔽池，以修补允许伪造ZEC铸造的漏洞。首日超过150万ZEC（约8000万美元）迁移，约占流通供应量的8%。",
-        "background_zh": "Zcash是一种注重隐私的加密货币，使用屏蔽池隐藏交易细节。2026年初，Orchard池中发现了一个可能导致ZEC供应膨胀的漏洞。Ironwood升级于7月28日激活，引入了一个新的经过形式验证的屏蔽池来修复此漏洞并恢复用户信心。",
+        "feed_name": "Coinbase Status",
+        "category": "exchange-operations",
+        "title_en": "Coinbase to Suspend ACX Trading as Project Winds Down",
+        "detailed_summary_en": "Coinbase has moved ACX order books to limit-only mode and will suspend trading of the ACX token on July 28, 2026, because the project team is winding down the token and offering conversion options. This matters for ACX holders as they must move their tokens to a self-custodial wallet by the deadline to participate in conversion options, otherwise they may lose access. It also highlights the risks of investing in tokens tied to specific protocols that may cease operations. The ACX token is the governance token of Across Protocol, a cross-chain bridge. Coinbase's suspension is due to the project's wind-down, and holders are directed to the forum at forum.across.to for conversion details.",
+        "background_en": "Across Protocol is a cross-chain bridge that enables fast and secure asset transfers between Ethereum and Layer 2 networks like Arbitrum, Optimism, and Polygon. ACX is its governance token, used for protocol decisions and incentives. Token wind-downs occur when a project decides to stop operations, often offering holders a way to convert their tokens to other assets or redeem them.",
+        "title_zh": "Coinbase 将因项目终止暂停 ACX 交易",
+        "detailed_summary_zh": "Coinbase 已将 ACX 订单簿设置为仅限限价模式，并将于 2026 年 7 月 28 日暂停 ACX 代币的交易，原因是项目团队正在终止该代币并提供转换选项。 这对 ACX 持有者很重要，因为他们必须在截止日期前将代币转入自托管钱包以参与转换选项，否则可能失去访问权限。这也凸显了投资于可能停止运营的特定协议代币的风险。 ACX 代币是跨链桥 Across Protocol 的治理代币。Coinbase 暂停交易是由于项目终止，持有者可访问 forum.across.to 论坛了解转换详情。",
+        "background_zh": "Across Protocol 是一个跨链桥，可在以太坊与 Arbitrum、Optimism、Polygon 等 Layer 2 网络之间实现快速安全的资产转移。ACX 是其治理代币，用于协议决策和激励。项目终止代币时，通常会为持有者提供将其代币转换为其他资产或赎回的方式。",
         "sources": [
           {
-            "url": "https://www.bitrue.com/blog/zcash-zec-ironwood-upgrade",
-            "title": "Zcash Ironwood Upgrade: What ZEC Holders Need to Know?"
-          },
-          {
-            "url": "https://crypto.news/zcash-ironwood-upgrade-whats-changed-after-the-orchard-bug/",
-            "title": "Zcash Ironwood upgrade: What's changed after the Orchard bug?"
+            "url": "https://coinmarketcap.com/currencies/across-protocol/",
+            "title": "Across Protocol price today, ACX to USD live price, marketcap ...Across Protocol Price: ACX/USD Live Price Chart, Market Cap ...ACX Token – Official WebsiteAcross Protocol Token Price Today | ACX Live Price, Chart ...ACX Token Guide: Understanding Across Protocol's Cross-Chain ...ACX - ACXAcross Protocol Price Today | Live ACX Price, Chart ... - Binance"
           }
         ]
       },
-      "ai_score": 8.0,
+      "ai_score": 7.0,
       "ai_reason": null,
-      "ai_summary": "Zcash's new Ironwood pool saw approximately $80 million worth of ZEC transferred on the first day, highlighting significant engagement with the upgrade.",
-      "ai_tags": []
-    },
-    {
-      "id": "rss:www.coindesk.com_arc_outboundfeeds_rss_:713b421b4c1d62b1",
-      "source_type": "rss",
-      "title": "BNY targets $8.6 trillion transfer agency market on blockchain rails",
-      "url": "https://www.coindesk.com/business/2026/07/29/bny-targets-usd8-6-trillion-transfer-agency-market-on-blockchain-rails",
-      "content": null,
-      "author": "Olivier Acuna",
-      "published_at": "2026-07-29T12:18:58Z",
-      "fetched_at": "2026-07-29T19:44:07.756455Z",
-      "metadata": {
-        "feed_name": "CoinDesk",
-        "category": "crypto-markets",
-        "title_en": "BNY Targets $8.6 Trillion Transfer Agency Market on Blockchain",
-        "detailed_summary_en": "BNY Mellon, the world's largest custodian bank, announced plans to deploy blockchain technology for the $8.6 trillion transfer agency market, adding a digital ownership record for tokenized funds while maintaining its existing system. This marks a major milestone for institutional adoption of blockchain, demonstrating that a top-tier custodian bank sees blockchain as viable for core financial infrastructure. It could significantly increase credibility and accelerate tokenization in traditional finance. BNY will operate a hybrid system, keeping its existing transfer agency system while adding a blockchain-based digital ownership record. The solution aims to handle tokenized funds, requiring blockchain connectivity, on-chain/off-chain reconciliation, and smart contract design.",
-        "background_en": "Transfer agents maintain records of registered shareholders for publicly traded companies and facilitate transactions like stock transfers. The global transfer agency market is estimated at $8.6 trillion. BNY Mellon's move could transform how fund shares are recorded and transferred, leveraging blockchain for efficiency and transparency.",
-        "title_zh": "BNY 瞄准 8.6 万亿美元转账代理市场，基于区块链",
-        "detailed_summary_zh": "全球最大托管银行 BNY Mellon 宣布计划将区块链技术应用于 8.6 万亿美元的转账代理市场，在为代币化基金添加数字所有权记录的同时保留其现有系统。 这标志着机构采用区块链的一个重要里程碑，表明顶级托管银行认为区块链可用于核心金融基础设施。这可能会显著提高可信度，并加速传统金融中的代币化进程。 BNY 将运营一个混合系统，保留现有的转账代理系统，同时添加基于区块链的数字所有权记录。该解决方案旨在处理代币化基金，需要区块链连接、链上/链下对账以及智能合约设计。",
-        "background_zh": "转账代理为上市公司维护注册股东记录，并促进股票转让等交易。全球转账代理市场估计为 8.6 万亿美元。BNY Mellon 此举可能改变基金份额的记录和转移方式，利用区块链提高效率和透明度。",
-        "sources": [
-          {
-            "url": "https://www.coindesk.com/business/2026/07/29/bny-targets-usd8-6-trillion-transfer-agency-market-on-blockchain-rails",
-            "title": "BNY builds blockchain system for $8.6 trillion fund business"
-          },
-          {
-            "url": "https://www.bny.com/corporate/global/en/insights/the-next-generation-of-transfer-agency.html",
-            "title": "The Next Generation of Transfer Agency | BNY"
-          },
-          {
-            "url": "https://cointelegraph.com/news/bny-transfer-agency-records-blockchain",
-            "title": "BNY Launches Blockchain Transfer Agency Platform - Cointelegraph"
-          }
-        ]
-      },
-      "ai_score": 8.0,
-      "ai_reason": null,
-      "ai_summary": "BNY Mellon aims to use blockchain for the $8.6 trillion transfer agency market, marking a major institutional adoption move.",
-      "ai_tags": []
-    },
-    {
-      "id": "rss:openai.com_blog_rss.xml:824b5ba22f1e74f5",
-      "source_type": "rss",
-      "title": "Scientific computing in the age of agentic AI",
-      "url": "https://openai.com/index/scientific-computing-agentic-ai",
-      "content": null,
-      "author": "OpenAI Blog",
-      "published_at": "2026-07-28T17:00:00Z",
-      "fetched_at": "2026-07-29T14:34:02.505273Z",
-      "metadata": {
-        "feed_name": "OpenAI Blog",
-        "category": "ai-labs",
-        "title_en": "OpenAI Report: AI Agents Accelerate Scientific Computing",
-        "detailed_summary_en": "OpenAI published a field report showing how scientists are using AI coding agents to modernize scientific computing, significantly speeding up software development and discovery in genomics and other fields. This demonstrates a practical, high-impact application of agentic AI beyond chatbots, potentially transforming how scientific research is conducted by automating complex coding tasks. The report focuses on real-world use cases in genomics, where AI agents handle tasks like pipeline development and data analysis, reducing development time from months to days.",
-        "background_en": "Agentic AI refers to AI systems that can autonomously pursue goals, use tools, and take actions within defined constraints. AI coding agents are a specific type that can write, debug, and optimize code, enabling researchers to focus on higher-level scientific questions rather than routine programming.",
-        "title_zh": "OpenAI报告：AI代理加速科学计算",
-        "detailed_summary_zh": "OpenAI发布了一份现场报告，展示了科学家如何利用AI编码代理来现代化科学计算，显著加速了基因组学等领域的软件开发和发现。 这表明了代理AI在聊天机器人之外的实际高影响应用，可能通过自动化复杂的编码任务来改变科学研究的进行方式。 该报告聚焦于基因组学中的实际用例，AI代理处理诸如流程开发和数据分析等任务，将开发时间从数月缩短到数天。",
-        "background_zh": "代理AI指的是能够在定义约束内自主追求目标、使用工具并采取行动的AI系统。AI编码代理是一种特定类型，能够编写、调试和优化代码，使研究人员能够专注于更高层次的科学问题，而非日常编程。",
-        "sources": [
-          {
-            "url": "https://en.wikipedia.org/wiki/Agentic_AI",
-            "title": "Agentic AI"
-          },
-          {
-            "url": "https://en.wikipedia.org/wiki/AI_agent",
-            "title": "AI agent - Wikipedia"
-          }
-        ]
-      },
-      "ai_score": 8.0,
-      "ai_reason": null,
-      "ai_summary": "Report on how scientists leverage AI coding agents to accelerate scientific computing and discovery.",
-      "ai_tags": []
-    },
-    {
-      "id": "rss:www.coindesk.com_arc_outboundfeeds_rss_:70c8fc7e9c88bb35",
-      "source_type": "rss",
-      "title": "BlackRock, Fidelity, other Wall Street giants back the Clarity Act",
-      "url": "https://www.coindesk.com/policy/2026/07/28/blackrock-fidelity-other-wall-street-giants-back-the-clarity-act",
-      "content": null,
-      "author": "Helene Braun",
-      "published_at": "2026-07-28T16:08:19Z",
-      "fetched_at": "2026-07-29T14:34:01.358258Z",
-      "metadata": {
-        "feed_name": "CoinDesk",
-        "category": "crypto-markets",
-        "title_en": "Wall Street Giants Back Clarity Act",
-        "detailed_summary_en": "BlackRock, Fidelity, and other major Wall Street firms have publicly endorsed the Clarity Act, a U.S. bill that aims to establish a unified regulatory framework for digital assets. This endorsement signals strong institutional support for regulatory clarity, which could accelerate crypto adoption by traditional finance and reduce legal uncertainty for market participants. The Clarity Act (Digital Asset Market Clarity Act of 2025) is intended to delineate jurisdiction between the SEC and CFTC over the digital asset market, but it remains stalled in the Senate.",
-        "background_en": "Currently, U.S. crypto regulations are fragmented, with no clear boundary between SEC and CFTC authority. The Clarity Act seeks to resolve this by creating a transparent and predictable regulatory framework, which would allow businesses to build compliance programs with confidence.",
-        "title_zh": "华尔街巨头支持《清晰法案》",
-        "detailed_summary_zh": "贝莱德、富达及其他华尔街巨头公开支持《清晰法案》，该法案旨在为数字资产建立统一的监管框架。 这一背书表明机构对监管清晰度的强烈支持，可能加速传统金融对加密货币的采用，并减少市场参与者的法律不确定性。 《清晰法案》（2025年数字资产市场清晰法案）旨在划定SEC和CFTC对数字资产市场的管辖权，但目前仍在参议院停滞不前。",
-        "background_zh": "目前，美国加密货币监管支离破碎，SEC与CFTC的权限边界模糊。《清晰法案》试图通过建立透明、可预测的监管框架来解决这一问题，使企业能够有信心地建立合规计划。",
-        "sources": [
-          {
-            "url": "https://www.forbes.com/sites/tonyaevans/2026/07/16/the-clarity-act-delay-is-now-a-compliance-problem-not-just-a-political-one/",
-            "title": "CLARITY Act Delay Is Now A Compliance Problem, Not Just..."
-          },
-          {
-            "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6717280",
-            "title": "The CLARITY Act in Motion: What the Senate Debate... :: SSRN"
-          },
-          {
-            "url": "https://bitok.org/blog/clarity-act-explained",
-            "title": "What to Expect From the CLARITY Act in 2026"
-          }
-        ]
-      },
-      "ai_score": 8.0,
-      "ai_reason": null,
-      "ai_summary": "Wall Street giants BlackRock, Fidelity, and others endorse the Clarity Act, a bill aimed at providing regulatory clarity for digital assets.",
+      "ai_summary": "Coinbase will suspend ACX trading on July 28, 2026, due to the token being wound down by the project team, offering conversion options.",
       "ai_tags": []
     },
     {
@@ -683,108 +595,6 @@
       "ai_score": 7.0,
       "ai_reason": null,
       "ai_summary": "Binance will cease support for AEUR tokens and convert them to EUR by July 31, 2026, with the issuer continuing redemptions.",
-      "ai_tags": []
-    },
-    {
-      "id": "rss:www.coindesk.com_arc_outboundfeeds_rss_:35dc9ced42be01df",
-      "source_type": "rss",
-      "title": "Ionic Digital jumps 26% in Nasdaq debut, giving Celsius Network claimholders an exit route",
-      "url": "https://www.coindesk.com/business/2026/07/29/ionic-digital-jumps-26-in-nasdaq-debut-giving-celsius-network-claimholders-an-exit-route",
-      "content": null,
-      "author": "Francisco Rodrigues",
-      "published_at": "2026-07-29T09:22:24Z",
-      "fetched_at": "2026-07-29T14:34:01.356962Z",
-      "metadata": {
-        "feed_name": "CoinDesk",
-        "category": "crypto-markets",
-        "title_en": "Ionic Digital surges 26% on Nasdaq debut",
-        "detailed_summary_en": "Ionic Digital, a bitcoin miner formed from Celsius Mining assets, began trading on the Nasdaq via a direct listing on July 28, 2026, under ticker IOND, and its shares jumped 26% on the first day. This provides Celsius Network claimholders with a liquid exit route to sell shares they received as part of the bankruptcy settlement, potentially recovering value from their claims. The reference price was set at $53, and the stock opened at $66.80, giving Ionic Digital a market capitalization of approximately $2.5 billion. The company was created from Celsius Mining, a subsidiary of the bankrupt Celsius Network.",
-        "background_en": "Celsius Network filed for bankruptcy in July 2022 after freezing customer withdrawals. As part of its restructuring plan, Celsius Mining assets were spun off into Ionic Digital, and shares were distributed to claimholders. Ionic Digital's direct listing on Nasdaq allows those shares to be traded publicly, providing a means for creditors to exit.",
-        "title_zh": "Ionic Digital 纳斯达克首日上涨26%",
-        "detailed_summary_zh": "Ionic Digital 是一家由 Celsius Mining 资产组建的比特币矿商，于2026年7月28日通过直接上市在纳斯达克开始交易，股票代码为 IOND，首日股价上涨26%。 这为 Celsius Network 的债权人提供了一条流动性退出路径，他们可以出售在破产和解中获得的股票，从而可能从他们的债权中回收价值。 参考价定为53美元，开盘价为66.80美元，使 Ionic Digital 的市值达到约25亿美元。该公司由破产的 Celsius Network 子公司 Celsius Mining 创建。",
-        "background_zh": "Celsius Network 在2022年7月冻结客户提款后申请破产。作为重组计划的一部分，Celsius Mining 资产被剥离成立 Ionic Digital，并将股份分配给债权人。Ionic Digital 在纳斯达克直接上市使得这些股份可以公开交易，为债权人提供了退出途径。",
-        "sources": [
-          {
-            "url": "https://www.renaissancecapital.com/IPO-Center/News/120742/Cloud-infrastructure-company-Ionic-Digitals-Nasdaq-reference-price-is-set-a",
-            "title": "IOND IPO News - Cloud infrastructure company Ionic Digital's Nasdaq reference price is set at $53 ahead of Tuesday direct listing"
-          },
-          {
-            "url": "https://www.renaissancecapital.com/IPO-Center/News/120140/Bitcoin-miner-Ionic-Digital-files-for-a-direct-listing-on-the-Nasdaq",
-            "title": "IOND IPO News - Bitcoin miner Ionic Digital files for a direct listing on the Nasdaq"
-          }
-        ]
-      },
-      "ai_score": 7.0,
-      "ai_reason": null,
-      "ai_summary": "Ionic Digital shares rose 26% on Nasdaq debut, offering Celsius Network claimholders a way to exit their positions.",
-      "ai_tags": []
-    },
-    {
-      "id": "rss:news.google.com_rss_search?q=site:anthropic.com+when:7d&hl=en-US&gl=US&ceid=US:en:94023959d5ce21bb",
-      "source_type": "rss",
-      "title": "Mythos Preview’s Chain of Thought in Discovering the AES Möbius Bridge - Anthropic",
-      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE0tY2k4b2JFT1FDZDdydEdSb0pXVG12STJJLXRHSnlOSUpIeGdNUzMtdU5hek1DaHdWNlRLMG5WZlh6LVF2cnZGejdfTDlxb3BIRngyVDNlZDBWNVFyWHBFWTFWQ2dodzR5YS1sMA?oc=5",
-      "content": null,
-      "author": "Anthropic News",
-      "published_at": "2026-07-28T17:28:34Z",
-      "fetched_at": "2026-07-29T14:34:02.711780Z",
-      "metadata": {
-        "feed_name": "Anthropic News",
-        "category": "ai-labs",
-        "title_en": "Mythos Preview Uses Chain-of-Thought to Discover AES Möbius Bridge",
-        "detailed_summary_en": "Anthropic revealed that its Mythos Preview model employed chain-of-thought reasoning to uncover the AES Möbius Bridge, a novel algebraic structure in the AES S-box that enables faster cryptanalysis. The discovery led to up to 800x speedup in 7-round AES-128 meet-in-the-middle attacks. This demonstrates that advanced AI models can autonomously discover complex mathematical structures, advancing both AI reasoning and cryptographic analysis. It could lead to stronger defenses or improved attacks on AES. The AES Möbius Bridge is an invariant fingerprint that exploits the algebraic structure of the AES S-box, eliminating a 256-way guessing step. Mythos Preview's chain-of-thought process allowed it to derive this bridge without human guidance.",
-        "background_en": "The Advanced Encryption Standard (AES) is a widely used symmetric encryption algorithm whose security depends on the S-box, a nonlinear substitution component. Chain-of-thought reasoning is a technique where AI models break down complex problems into step-by-step reasoning, enhancing their problem-solving abilities. The Möbius Bridge refers to a mathematical structure that reveals weaknesses in AES's algebraic design.",
-        "title_zh": "Mythos Preview 用思维链发现 AES Möbius Bridge",
-        "detailed_summary_zh": "Anthropic 披露，其 Mythos Preview 模型通过思维链推理发现了 AES Möbius Bridge——一种 AES S-box 中新颖的代数结构，能够加速密码分析。该发现使得 7 轮 AES-128 中间相遇攻击提速高达 800 倍。 这表明先进 AI 模型能自主发现复杂数学结构，推动 AI 推理与密码分析的发展。它可能带来更强的防御或更优的 AES 攻击方法。 AES Möbius Bridge 是一种利用 AES S-box 代数结构的不变量指纹，消除了 256 路猜测步骤。Mythos Preview 的思维链过程使其无需人类指导即可推导出该桥梁。",
-        "background_zh": "高级加密标准 (AES) 是一种广泛使用的对称加密算法，其安全性依赖于 S-box（非线性替换组件）。思维链推理是一种让 AI 模型将复杂问题分解为逐步推理的技术，能增强其问题解决能力。Möbius Bridge 指一种揭示 AES 代数设计弱点的数学结构。",
-        "sources": [
-          {
-            "url": "https://en.wikipedia.org/wiki/Claude_Mythos",
-            "title": "Claude Mythos - Wikipedia"
-          },
-          {
-            "url": "https://www-cdn.anthropic.com/c88771e1bf5ee8885349eed05e5484c0e5f7e02b/aes_mobius_bridge.pdf",
-            "title": "Cryptanalysis of 7-Round AES via the Algebraic Structure of its S-box"
-          },
-          {
-            "url": "https://blog.ogwilliam.com/post/claude-mythos-ai-cryptanalysis-hawk-aes",
-            "title": "How Claude Mythos Breaks Mathematical Cryptography • William OGOU Cybersecurity Blog"
-          }
-        ]
-      },
-      "ai_score": 7.0,
-      "ai_reason": null,
-      "ai_summary": "Anthropic details how its Mythos Preview model uses chain-of-thought reasoning to uncover the AES Möbius Bridge, a cryptographic structure.",
-      "ai_tags": []
-    },
-    {
-      "id": "rss:news.google.com_rss_search?q=site:anthropic.com+when:7d&hl=en-US&gl=US&ceid=US:en:249666495bb76a90",
-      "source_type": "rss",
-      "title": "Discovering cryptographic weaknesses with Claude - Anthropic",
-      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE13elp4eC1EQlJMdmtBdDZYaGQ0UXJoVE9sOGNtSDZIRFRYV3pkU1E4TnlNX3BTai1QVjduNVJUampVZGVySmlKRmVtcUFXcDBlNFVTQVdHN2ZiUUdjSlNtLUhXb3JialVEWGprd0tjdUVZQ2dhSFExaUtoTQ?oc=5",
-      "content": null,
-      "author": "Anthropic News",
-      "published_at": "2026-07-28T17:17:10Z",
-      "fetched_at": "2026-07-29T14:34:02.711722Z",
-      "metadata": {
-        "feed_name": "Anthropic News",
-        "category": "ai-labs",
-        "title_en": "Claude AI identifies cryptographic weaknesses",
-        "detailed_summary_en": "Anthropic has announced that its AI model Claude successfully identified novel attacks against cryptographic schemes submitted to international standardization efforts. The findings were reviewed and validated by human experts. This demonstrates that frontier AI systems can assist in discovering previously unknown cryptographic vulnerabilities, potentially accelerating security research and improving encryption standards. It highlights AI's role in augmenting human expertise rather than replacing it. Claude identified attacks on cryptographic schemes that were part of international standardization efforts, not just trivial weaknesses. The research was conducted by Anthropic and the results were validated by human cryptographers.",
-        "background_en": "Anthropic's Claude is a large language model trained to be helpful, honest, and harmless. Cryptographic weaknesses are flaws in encryption algorithms that could be exploited by attackers. Traditionally, finding such weaknesses requires deep expertise and manual analysis. This research shows AI can assist in that process.",
-        "title_zh": "Claude AI发现加密算法弱点",
-        "detailed_summary_zh": "Anthropic宣布，其AI模型Claude成功识别出提交给国际标准化工作的加密方案中的新型攻击方式，相关发现已由人类专家审查并验证。 这表明前沿AI系统能够协助发现此前未知的密码学漏洞，可能加速安全研究并改进加密标准。这凸显了AI在增强而非替代人类专家方面的作用。 Claude识别的是参与国际标准化的加密方案中的攻击方式，而非普通弱点。该研究由Anthropic进行，结果由人类密码学家验证。",
-        "background_zh": "Anthropic的Claude是一个大型语言模型，经过训练以提供有帮助、诚实且无害的回应。密码学弱点是指加密算法中可能被攻击者利用的缺陷。传统上，发现这些弱点需要深厚的专业知识和人工分析。这项研究表明AI可以协助这一过程。",
-        "sources": [
-          {
-            "url": "https://en.wikipedia.org/wiki/Claude_(AI)",
-            "title": "Claude (AI) - Wikipedia"
-          }
-        ]
-      },
-      "ai_score": 7.0,
-      "ai_reason": null,
-      "ai_summary": "Anthropic demonstrates how their AI model Claude can identify cryptographic weaknesses, highlighting AI's potential in security analysis.",
       "ai_tags": []
     }
   ]
