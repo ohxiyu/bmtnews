@@ -1,61 +1,147 @@
 {
   "version": 1,
-  "date": "2026-08-01",
+  "date": "2026-08-02",
   "timezone": "Asia/Shanghai",
-  "updated_at": "2026-08-01T00:30:55.217646Z",
+  "updated_at": "2026-08-02T00:30:44.631890Z",
   "analyzed_keys": [
-    "04b2903ed2503463606e2d89bd7ad186f5da847152ac2b5f206b36af955a0b15",
-    "0a172402909e2416fe2fa568b92f57b5451161cb6d1534f27b6dea96e69f4dc0",
-    "0d6f73e31ae69d8bc312424ca7814ac3cd5f77a2b1c640b80bd617e75b2d0aba",
-    "1340bf4641f5f8e8cb2ff7023366c13007aaf2ef60cba37fabf69baeb41f1192",
-    "1ca19316fbf5daf6e1f50b9e819bc55ba14254c3b85f04b93595c00751834335",
-    "1cbfe7e9d16ed46aaba62768a1500bc7d08a8dc010a2ea7f8db3d5cefe1504ab",
-    "1eac23c36e9745123d977c73e1474060e69577ee814e9e64f977cddb1dfc5afe",
-    "223787ba9f6b9c1b28beffbb10773b4263153435350fdc02d7404be732a077af",
-    "239b96a6503df0116888c3a4cf53a5e0f9b1f37be4ce2d280b499ff6579dcdec",
-    "23e4c0142253308225b526f7189a3bc917508e74be592f7cdbd95fa6b66d2f65",
-    "243e4bfe5354382aa4e5464d4d89c1db9eae2716cd9539a2f17d7d7c1b39fa63",
-    "2eb291b367883622cb08acae270115631978be2942836dffbef043937bda2202",
-    "2fce8e2aa279edf724c82347186b95030bb94e753a508fac156e6b9fdd062d90",
-    "414741190a924c9dbcbea53c3797346276ccd6af48bd18ef345a0fd2b5ea8b6f",
-    "440e4201834c9345186d97b38f81f5059784ae4f144d8e0fd88d506782b4d9f8",
-    "4fb420554d511726637418edd881b0cb915fdfcf3e8346aa4c6a74a343d0313f",
-    "53cfa243a1d529fe37405df82dacfcc43779a396c82d6ad16f0e1e0e9dca6b41",
-    "56bb9f21a9222ff566a88715ababd1438ea1c0fa013ede25c3d50ac433dc7c5b",
-    "6748dd279f3bc090f607f7c0665358a3a96156e63ef346e2a16d1fe3053be51c",
-    "6f8a99a2c8b4546b92c5dc547c201373dd2e3f00d06e7de8090dad9c40324716",
-    "761349167208c0021910c1b8283bcf797fe75564b39c38637248a9d72667a66c",
-    "7fa1314ce758be4797fdb80e628dcfdb3efd1b43b577fd397b090fc2a51a1ae6",
-    "87944a31f5ac30032f3a5165c2dd5b977c07180b9d3448e717beaadffabc9702",
-    "89314911d27c04ede90f36eda23076a94e6486293f8f0b49230092fae677dac2",
-    "9108e9740acb3772a29d21f90c5b323e167172df51d0a07ac71e9a5f6d42bcf4",
-    "916aa627d2ef08774f6e81385778a5ca79b9c965b6009dd39d18259395280e5b",
-    "91d5162334472b5f62e88c6f74c1af2960abbda7e27fa83aa8bc512174dcb7d6",
-    "9299fe65e4664f0826fd88b083678913104aa48b887ea43c7c0858c7d56f2f50",
-    "930e4c07b5db895165ffe869a521ba3916418b0bc70660fe231d1063481378c5",
-    "93e14f3eb4d5cb1b3f0e01f1efb9791132f74eed7f3992a36e7c090de8dd8e1a",
-    "9486e584af45d96f687989d563abd945853d2e383fd5e29dda96870f4bd1ac2a",
-    "a0519917c38ecfc11ce4d4bfedca5753292cb8e6e87ce294905fb59f019cd530",
-    "a719ab0b1db1fb29a67d0bbef787dc7f043a31bf93f7b84dce12adfc853a67f1",
-    "b40f00feab2fe10dc1dd3e24ff326199902172d71f20d32d84db8570dfb243f6",
-    "b470dd3642fd66e663e1bdc121be5e4a0fdfeda859cadf2fe624c3d59db4d2e7",
-    "b90c28b849a7ee6b90bfcb168d4b90ef6de7bbc19de5789769ec628760447783",
-    "b9ff899f1281991a17485bc4dc13102b48503e4b90d9451c7b27cac6fe2a4624",
-    "bc146e0174d67d2416e71387fb76e3be216cdf4243e2091e49d38c44385118a9",
-    "bdfbf4f8ef85780fbe8e13773c5ef5f3f4063682ca2ce5368cf6c38d93895b65",
-    "c3b8af6cf484d1e0a94dfefd00e8b829fdae2354d025bf03d5fa68d1d0e4f644",
-    "c66dd89b7e457287ba3dada3cfd99c3da6cb9af915939afb2e5a41894aa3b17c",
-    "cb09165de863114c6764114ee7d0a095583aaab44d57d336ece320ed0aaeaea1",
-    "cc98b6b5cecc7f189f1aef31acf984bc8775d9ba15a1d87051e6df2426933d12",
-    "d0863e6368cc934e4f456bf776a99046336262dfd68c97147ac54f28abff1769",
-    "d85a4184b02822e5f666b3f78ec8393658b5fb93ef732ea2628e5337b7b58fdf",
-    "d8d276c690aa43e2e2d78e1420fe8c88a1e19f8a38171ac4c88412cf8634ba83",
-    "e36d31f6cfa3c1a3e8ecbe5b5c95507eb2dfab0fa75dcc3f7e9852f95e0b5666",
-    "eb05f2ee52c6b73904d2fbe99e2919043510d64765692748ae77a35649feea0d",
-    "ece40b85424eb372f874165006b028de262544c220083a0ba3c3eb277a094966",
-    "ee785fe7feaea813d2e64ab1165627f8731164164736725f8ba4d124e71d9e47"
+    "09adab9889a0aacc5dcfe5ffcef0dd388e3fcd8a58e1342bb51a79c2077c182a",
+    "0b50e4f21c930fdc862dbfe60b311b560777cc8f48c21647157b2b85fc3819d7",
+    "16528f26a4170a7435e2a7a0fb0303202141ac892b3702547b8fb3b557050ccc",
+    "264d37ace8d1712f01038015a8a5c6320648774e986acbab33f8c7c2f5d3e866",
+    "3a1939b6b1b79b1f44ab1bae5c4236d0e0ccb14980cd0f9a8f99b179eecacd2e",
+    "4de9241a50b8d84e24c8f2062473f36cfd3520105343a28ef5d0f49c5e7cf1e2",
+    "5b110950c8f12fcdb57e3dbeb7c2426ba252511f1c6a2f8874ce9488313fb6e1",
+    "8c91d4cd50fc21fee1d810f9c46f6898978280dea10e35bbe317d9bdd41462ff",
+    "96e5917592bbcd733e2395084eecdacdc3a537fe3f39e8dbef7f63c3f1ae146f",
+    "bd1d3ddc54718fc8f0bcb2c05ef5183bb8aa2b7163f5ba6581597573eca3d3b3",
+    "bdf2ffdaa290af88045becf1db5077530f2ad4411dd64f861e5597f7a5915730",
+    "e4dfbff038b9bbf741cb765de7cdd3579500f20c2bf228b5b9091f868ba6f301",
+    "ec43ac47c2ae3643d3f2cf2d6b124fe99cb0173d5cd6487eded2a31207f01a24",
+    "f0c2d9748715e682ef67f05e24aafb05b96366c62bd00406729b154a603bdb38"
   ],
   "items": [
+    {
+      "id": "rss:openai.com_blog_rss.xml:e299630b866e2d7e",
+      "source_type": "rss",
+      "title": "Ten advances in mathematics and theoretical computer science",
+      "url": "https://openai.com/index/ten-advances-in-mathematics",
+      "content": null,
+      "author": "OpenAI Blog",
+      "published_at": "2026-08-01T00:00:00Z",
+      "fetched_at": "2026-08-02T00:30:47.234465Z",
+      "metadata": {
+        "feed_name": "OpenAI Blog",
+        "category": "ai-labs",
+        "title_en": "OpenAI Publishes Ten New Results in Math and Theoretical CS",
+        "detailed_summary_en": "OpenAI announced ten new research results addressing long-standing open problems in mathematics and theoretical computer science, with advances in geometry, cryptography, and complexity. The official announcement did not provide detailed descriptions of each result. This signals that AI and large language models can contribute substantively to pure mathematics and theoretical computer science, beyond applied tasks. If the results hold up, they could stimulate cross-domain research and change how mathematicians use AI as a research tool. The news covers results in at least three broad fields: geometry, cryptography, and computational complexity. Specific problem names, proof techniques, and author credits were not included in the available summary.",
+        "background_en": "A long-standing open problem in mathematics is a question that has resisted solution for decades or longer, such as the Riemann hypothesis or the P versus NP problem. Theoretical computer science studies the fundamental capabilities and limits of computation, and cryptography relies on problems believed to be hard to solve. In recent years, researchers have used AI models to generate conjectures and assist in finding proofs, making AI-assisted mathematical discovery an active area of exploration.",
+        "title_zh": "OpenAI公布数学与理论计算机科学十项新进展",
+        "detailed_summary_zh": "OpenAI宣布了十项针对数学与理论计算机科学中长期未解决问题的新研究成果，涉及几何、密码学和复杂性理论方面的进展。官方公告并未详细说明每项成果的具体内容。 这表明AI和大语言模型可以为纯数学与理论计算机科学做出实质性贡献，而不仅仅局限于应用任务。如果这些结果经得起检验，可能推动跨领域研究，并改变数学家将AI作为研究工具的方式。 该消息涵盖至少三个领域的成果：几何、密码学和计算复杂性。可获得的摘要中未包含具体问题名称、证明技术或作者署名。",
+        "background_zh": "数学中的长期未解决问题是指数十年来一直未被解决的问题，例如黎曼猜想或P与NP问题。理论计算机科学研究计算的基本能力与极限，而密码学则依赖于被认为难以求解的问题。近年来，研究人员使用AI模型生成猜想并辅助寻找证明，使AI辅助数学发现成为一个活跃的探索领域。"
+      },
+      "ai_score": 8.0,
+      "ai_reason": null,
+      "ai_summary": "OpenAI shares ten new results on long-standing open problems in mathematics and theoretical computer science, including advances in geometry, cryptography, and complexity.",
+      "ai_tags": []
+    },
+    {
+      "id": "rss:www.coindesk.com_arc_outboundfeeds_rss_:ede3b3bfabcdde3a",
+      "source_type": "rss",
+      "title": "Bitcoin mining difficulty shrinks 14% from this year's high as plunging revenues force operators to pivot",
+      "url": "https://www.coindesk.com/business/2026/08/01/bitcoin-mining-difficulty-shrinks-14-from-this-year-s-high-as-plunging-revenues-force-operators-to-pivot",
+      "content": null,
+      "author": "Francisco Rodrigues",
+      "published_at": "2026-08-01T15:51:10Z",
+      "fetched_at": "2026-08-02T00:30:45.604581Z",
+      "metadata": {
+        "feed_name": "CoinDesk",
+        "category": "crypto-markets",
+        "title_en": "Bitcoin Mining Difficulty Drops 14% as Revenues Plunge",
+        "detailed_summary_en": "Bitcoin mining difficulty has fallen 14% from its 2026 high, according to CoinDesk, as plunging revenues force mining operators to pivot. The sharp decline reflects a significant reduction in network hash rate triggered by miner capitulation. This difficulty drop signals miner stress and reduced network security, but it can also improve profitability for remaining miners and reshape the mining industry. The development highlights the economic realities of Bitcoin mining and may influence market sentiment and infrastructure decisions. The difficulty adjustment occurs automatically every 2,016 blocks, roughly every two weeks, to keep block times near 10 minutes. A 14% decrease means a substantial number of miners likely shut off unprofitable machines or redirected power to other ventures, such as AI computing.",
+        "background_en": "Bitcoin mining difficulty is an automatic measure of how hard it is to find a valid block hash; it adjusts after every 2,016 blocks based on the average time taken. When miners leave, the hash rate falls, and the network automatically lowers difficulty to make mining easier for those who remain. Miner revenues depend on Bitcoin price, transaction fees, and energy costs, so low revenue periods often force operators to pivot or exit. This mechanism is a key element of Bitcoin's design to maintain consistent block production.",
+        "title_zh": "比特币挖矿难度下降14%，矿工收入锐减",
+        "detailed_summary_zh": "据CoinDesk报道，比特币挖矿难度已从2026年高点回落14%，原因是收入暴跌迫使矿工转向其他业务。这一大幅下降反映了哈希率显著减少，源于矿工退出或转型。 此次难度下降表明矿工承压和网络安全防护力减弱，但也可能提升留守矿工的盈利能力，并重塑矿业格局。这一进展突显了比特币挖矿的经济现实，可能影响市场情绪和基础设施投资决策。 难度每2016个区块（约两周）自动调整一次，以维持约10分钟的区块产出时间。14%的降幅意味着大量矿工可能关闭了不盈利的矿机，或将电力转向人工智能计算等其他业务。",
+        "background_zh": "比特币挖矿难度是一个自动调整的指标，表示找到一个有效区块哈希的困难程度；它每2016个区块（约两周）根据平均出块时间调整一次。当矿工退出时，哈希率下降，网络会自动降低难度，使留守矿工更容易挖到区块。矿工收入取决于比特币价格、交易手续费和能源成本，因此收入低迷时期常迫使矿工转型或退出。该机制是比特币设计的关键部分，旨在维持稳定的出块速率。",
+        "sources": [
+          {
+            "url": "https://bitcoinops.org/en/topics/difficulty-adjustment-algorithms/",
+            "title": "Difficulty adjustment algorithms | Bitcoin Optech"
+          },
+          {
+            "url": "https://en.bitcoin.it/wiki/Difficulty",
+            "title": "Difficulty - Bitcoin WikiDifficulty adjustment – OnrampAn Economic Analysis of Difficulty Adjustment Algorithms in ...Difficulty Adjustment Algorithm - Bitcoin WikiWhat is the difficulty adjustment? - btc.network"
+          }
+        ]
+      },
+      "ai_score": 7.0,
+      "ai_reason": null,
+      "ai_summary": "Bitcoin mining difficulty has dropped 14% from its 2026 high as plunging revenues force miners to pivot, highlighting industry stress.",
+      "ai_tags": []
+    },
+    {
+      "id": "rss:www.coindesk.com_arc_outboundfeeds_rss_:ce7b877c3ebceaf4",
+      "source_type": "rss",
+      "title": "SEC to review Nasdaq bitcoin options approval after CME challenge",
+      "url": "https://www.coindesk.com/policy/2026/08/01/sec-to-review-nasdaq-bitcoin-options-approval-after-cme-challenge",
+      "content": null,
+      "author": "Francisco Rodrigues",
+      "published_at": "2026-08-01T15:48:27Z",
+      "fetched_at": "2026-08-02T00:30:45.604602Z",
+      "metadata": {
+        "feed_name": "CoinDesk",
+        "category": "crypto-markets",
+        "title_en": "SEC Reviews Nasdaq Bitcoin Options Approval After CME Challenge",
+        "detailed_summary_en": "The U.S. Securities and Exchange Commission is reviewing Nasdaq's approval to list bitcoin options after CME Group filed a challenge. The review could overturn or uphold the approval. This matters because it could affect competition and market access in the crypto derivatives space. The outcome will set a precedent for how exchanges list bitcoin options and how regulatory disputes between exchanges are resolved. The SEC's review follows a CME challenge, indicating potential concerns about market impact or unfair competition. No specific timeline or details on the challenge have been publicly disclosed.",
+        "background_en": "Bitcoin options are derivative contracts that give the holder the right to buy or sell bitcoin at a set price by a certain date. In the U.S., exchanges like Nasdaq and CME need regulatory approval from the SEC to list such products. The SEC's review process allows it to reconsider approvals when challenged, which is part of its oversight role.",
+        "title_zh": "SEC在芝商所挑战后审查纳斯达克比特币期权批准",
+        "detailed_summary_zh": "美国证券交易委员会（SEC）正在复审纳斯达克的比特币期权上市批准，此前芝商所（CME）对此提出挑战。此次复审可能推翻或维持该批准。 此事意义重大，因为它可能影响加密衍生品领域的竞争与市场准入。复审结果将为交易所上市比特币期权以及交易所之间监管纠纷的解决树立先例。 SEC的复审是在芝商所提出挑战之后进行的，表明可能存在对市场影响或不公平竞争的担忧。目前尚未公开披露挑战的具体时间表或细节。",
+        "background_zh": "比特币期权是一种衍生品合约，赋予持有者在特定日期前以约定价格买入或卖出比特币的权利。在美国，纳斯达克和芝商所等交易所需要获得SEC的批准才能上市此类产品。SEC的复审程序允许其在面临挑战时重新考虑已批准的申请，这是其监管职责的一部分。"
+      },
+      "ai_score": 7.0,
+      "ai_reason": null,
+      "ai_summary": "The SEC is reviewing Nasdaq's bitcoin options approval after CME filed a challenge.",
+      "ai_tags": []
+    },
+    {
+      "id": "rss:www.coindesk.com_arc_outboundfeeds_rss_:4c46de02c453033b",
+      "source_type": "rss",
+      "title": "XRP Ledger upgrade brings back features once pulled over critical bugs",
+      "url": "https://www.coindesk.com/tech/2026/08/01/xrp-ledger-upgrade-brings-back-features-once-pulled-over-critical-bugs",
+      "content": null,
+      "author": "Shaurya Malwa",
+      "published_at": "2026-08-01T06:09:51Z",
+      "fetched_at": "2026-08-02T00:30:45.604683Z",
+      "metadata": {
+        "feed_name": "CoinDesk",
+        "category": "crypto-markets",
+        "title_en": "XRP Ledger Upgrade Restores Features Previously Disabled by Critical Bugs",
+        "detailed_summary_en": "The XRP Ledger is rolling out a protocol upgrade that re-enables features that had been pulled after critical bugs were discovered. RippleX has urged validators to upgrade to XRPL v2.3.0, with nearly 80% of servers already updated. This matters because XRP Ledger is a widely-used blockchain, and restoring these features expands its functionality and may improve network capabilities. The upgrade also demonstrates ongoing protocol maintenance and community coordination, affecting developers, validators, and XRP holders. The upgrade relies on XRP Ledger's amendment mechanism, where amendments are activated only after sufficient validator approval. Once the first v2.3.0 amendment is adopted, the remaining features will be enabled automatically by the protocol.",
+        "background_en": "The XRP Ledger is a blockchain platform launched in 2012 by Ripple Labs, using the native cryptocurrency XRP and supporting tokens representing various units of value. Protocol upgrades on XRPL are introduced through amendments, which validators vote on and then apply automatically. RippleX, the developer ecosystem arm, coordinates upgrades such as the current v2.3.0 rollout.",
+        "title_zh": "XRP Ledger升级重新启用此前因严重缺陷被移除的功能",
+        "detailed_summary_zh": "XRP Ledger正在推行一次协议升级，重新启用此前因严重缺陷而被移除的功能。RippleX已呼吁验证者升级至XRPL v2.3.0，目前已有近80%的服务器完成升级。 这意义重大，因为XRP Ledger是一个广泛使用的区块链，恢复这些功能将扩展其能力并可能提升网络性能。该升级也体现了持续的协议维护和社区协作，对开发者、验证者和XRP持有者都有影响。 此次升级依赖XRP Ledger的修订（amendment）机制，修订只有在获得足够验证者支持后才会激活。一旦第一个v2.3.0修订被采纳，其余功能将由协议自动启用。",
+        "background_zh": "XRP Ledger是Ripple Labs于2012年推出的区块链平台，使用原生加密货币XRP，并支持代表多种价值单位的代币。XRPL的协议升级通过修订机制引入，由验证者投票后在链上自动生效。RippleX是负责协调此类升级的开发者生态部门，目前正在推动v2.3.0版本的上线。",
+        "sources": [
+          {
+            "url": "https://bitcoinist.com/xrp-ledger-major-overhaul-8-amendments/",
+            "title": "XRP Ledger Set For A Major Overhaul With 8 Amendments"
+          },
+          {
+            "url": "https://xrpl.org/resources/known-amendments",
+            "title": "List of all known amendments to the XRP Ledger protocol and their..."
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/XRP_Ledger",
+            "title": "XRP Ledger - Wikipedia"
+          }
+        ]
+      },
+      "ai_score": 7.0,
+      "ai_reason": null,
+      "ai_summary": "The XRP Ledger is undergoing an upgrade that re-enables features that were previously removed due to critical bugs.",
+      "ai_tags": []
+    }
+  ],
+  "dedup_history": [
     {
       "id": "rss:www.coindesk.com_arc_outboundfeeds_rss_:a02f560bef7e5719",
       "source_type": "rss",
@@ -191,56 +277,6 @@
       "ai_tags": []
     },
     {
-      "id": "rss:openai.com_blog_rss.xml:ff7c1653ce2eb767",
-      "source_type": "rss",
-      "title": "Disrupting a Criminal Scam Operation",
-      "url": "https://openai.com/index/disrupting-malicious-uses-of-ai-criminal-scam-operation",
-      "content": null,
-      "author": "OpenAI Blog",
-      "published_at": "2026-07-31T00:00:00Z",
-      "fetched_at": "2026-08-01T00:30:57.625461Z",
-      "metadata": {
-        "feed_name": "OpenAI Blog",
-        "category": "ai-labs",
-        "title_en": "OpenAI Disrupts Cambodia-Based Scam Operation Abusing ChatGPT",
-        "detailed_summary_en": "OpenAI announced that it disrupted a Cambodia-based criminal operation that used ChatGPT to assist in investment, romance, gambling, and impersonation scams. The action is part of OpenAI's ongoing efforts to combat malicious uses of AI. This shows that AI developers are actively enforcing safety policies and taking real-world action against cybercriminals. It highlights the growing role of AI-safety teams in preventing fraud and protecting users from AI-enabled criminal schemes. The scam operation reportedly used ChatGPT to craft convincing messages for romance and impersonation fraud, as well as to support fake investment opportunities and gambling platforms. OpenAI did not disclose the exact scale of the operation or the specific methods used to identify it.",
-        "background_en": "AI models like ChatGPT can be exploited by bad actors to generate fraudulent content at scale. OpenAI has usage policies that prohibit illegal or harmful activity, and it uses automated detection systems and investigations to find and disrupt such abuse. This disruption is part of a broader industry trend where AI labs are increasingly cooperating with security researchers and law enforcement.",
-        "title_zh": "OpenAI 捣毁利用 ChatGPT 的柬埔寨诈骗团伙",
-        "detailed_summary_zh": "OpenAI 宣布已捣毁一个位于柬埔寨的犯罪团伙，该团伙利用 ChatGPT 协助实施投资、婚恋、赌博和冒充诈骗。此次行动是 OpenAI 持续打击 AI 滥用行为的一部分。 这表明 AI 开发者正在积极执行安全政策，并对网络犯罪分子采取实际行动。这也凸显了 AI 安全团队在预防欺诈和保护用户免受 AI 驱动的犯罪活动侵害方面的作用日益重要。 据报道，该诈骗团伙利用 ChatGPT 编写有说服力的信息，用于婚恋诈骗和冒充他人，以及支持虚假投资机会和赌博平台。OpenAI 未披露该行动的具体规模或识别方法。",
-        "background_zh": "像 ChatGPT 这样的 AI 模型可能被不法分子利用，大规模生成欺诈内容。OpenAI 制定了对非法或有害活动零容忍的使用政策，并通过自动检测系统和调查来发现并阻止此类滥用。此次行动反映了 AI 实验室与安全研究人员和执法机构加强合作这一更广泛的行业趋势。"
-      },
-      "ai_score": 7.0,
-      "ai_reason": null,
-      "ai_summary": "OpenAI disrupted a Cambodia-based scam operation that used ChatGPT to support investment, romance, gambling, and impersonation fraud schemes.",
-      "ai_tags": []
-    }
-  ],
-  "dedup_history": [
-    {
-      "id": "rss:www.federalreserve.gov_feeds_press_all.xml:e290aabba3caad80",
-      "source_type": "rss",
-      "title": "Federal Reserve issues FOMC statement",
-      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260729a.htm",
-      "content": null,
-      "author": "Federal Reserve Press Releases",
-      "published_at": "2026-07-29T18:00:00Z",
-      "fetched_at": "2026-07-30T14:35:07.137431Z",
-      "metadata": {
-        "feed_name": "Federal Reserve Press Releases",
-        "category": "macro-regulation",
-        "title_en": "Fed Releases FOMC Statement on Monetary Policy",
-        "detailed_summary_en": "The Federal Reserve issued its latest FOMC statement on July 29, 2026, outlining its decision on interest rates and assessment of economic conditions. This FOMC statement directly influences global financial markets, including cryptocurrencies, by signaling changes in interest rates and liquidity conditions that affect risk sentiment and asset valuations. The statement typically includes the federal funds rate target, forward guidance, and the Fed's outlook on inflation, employment, and economic growth. However, the specific details of the July 2026 statement are not provided here.",
-        "background_en": "The Federal Open Market Committee (FOMC) is the branch of the Federal Reserve that sets monetary policy, including interest rates. Its statements are closely watched by investors worldwide as they provide insights into the central bank's policy trajectory, impacting borrowing costs, investment flows, and market volatility. For crypto markets, Fed policy shifts can alter the appeal of risk-on assets versus traditional safe havens.",
-        "title_zh": "美联储发布FOMC货币政策声明",
-        "detailed_summary_zh": "美联储于2026年7月29日发布了最新的FOMC声明，概述了其利率决策和对经济状况的评估。 这份FOMC声明通过暗示利率和流动性状况的变化，直接影响包括加密货币在内的全球金融市场，从而影响风险情绪和资产估值。 声明通常包括联邦基金利率目标、前瞻性指引以及美联储对通胀、就业和经济增长的展望。但此处未提供2026年7月声明的具体细节。",
-        "background_zh": "联邦公开市场委员会（FOMC）是美联储制定货币政策（包括利率）的分支机构。其声明受到全球投资者的密切关注，因为它提供了对央行政策路径的洞察，影响借贷成本、投资流动和市场波动。对于加密货币市场，美联储政策转向可能改变风险资产与传统避风港之间的吸引力。"
-      },
-      "ai_score": 9.0,
-      "ai_reason": null,
-      "ai_summary": "The Federal Reserve released its latest FOMC statement detailing monetary policy decisions and economic outlook.",
-      "ai_tags": []
-    },
-    {
       "id": "rss:www.coindesk.com_arc_outboundfeeds_rss_:25a1209e8c374cba",
       "source_type": "rss",
       "title": "Coinbase sinks 5% after missing second quarter revenue estimates",
@@ -303,75 +339,27 @@
       "ai_tags": []
     },
     {
-      "id": "rss:www.coindesk.com_arc_outboundfeeds_rss_:2bc9c61bce7c5aaa",
+      "id": "rss:openai.com_blog_rss.xml:ff7c1653ce2eb767",
       "source_type": "rss",
-      "title": "Fake staking site drains $8.5 million in XRP from dozens of investors promising easy yield",
-      "url": "https://www.coindesk.com/business/2026/07/30/fake-staking-site-drains-usd8-5-million-in-xrp-from-dozens-of-investors-promising-easy-yield",
-      "content": null,
-      "author": "Olivier Acuna",
-      "published_at": "2026-07-30T13:35:51Z",
-      "fetched_at": "2026-07-31T00:30:44.396113Z",
-      "metadata": {
-        "feed_name": "CoinDesk",
-        "category": "crypto-markets",
-        "title_en": "Fake XRP staking site steals $8.5 million from investors",
-        "detailed_summary_en": "A fraudulent staking website tricked dozens of investors into depositing XRP with promises of easy yields, then drained approximately $8.5 million worth of the cryptocurrency. This incident underscores the ongoing risk of scams in the crypto staking space, where high returns are used to lure unsuspecting investors. It highlights the critical need for investor education and stricter platform vetting. The scam targeted XRP holders and exploited the popularity of staking rewards by mimicking legitimate staking platforms. The stolen amount of $8.5 million represents a significant loss for the affected individuals.",
-        "background_en": "Staking is a process in proof-of-stake (PoS) blockchains where users lock up tokens to help validate transactions and earn rewards. Scammers often create fake staking sites, promising high yields to attract deposits, and then abscond with the funds. Such schemes have become increasingly common as staking gains mainstream attention.",
-        "title_zh": "虚假XRP质押网站骗取850万美元",
-        "detailed_summary_zh": "一个虚假的质押网站以轻松收益为诱饵，欺骗数十名投资者存入XRP，随后盗取了价值约850万美元的加密货币。 这一事件凸显了加密货币质押领域持续存在的诈骗风险，不法分子利用高收益吸引毫无戒心的投资者。它强调了投资者教育和更严格的平台审查至关重要。 该骗局针对XRP持有者，通过模仿合法质押平台利用质押奖励的流行性。被盗的850万美元对受害者来说是一笔巨大损失。",
-        "background_zh": "质押是权益证明（PoS）区块链中的一种过程，用户锁定代币以帮助验证交易并赚取奖励。诈骗者经常创建虚假质押网站，承诺高收益吸引存款，然后卷款潜逃。随着质押获得主流关注，此类骗局变得越来越常见。",
-        "sources": [
-          {
-            "url": "https://grokipedia.com/page/Staking_cryptocurrency",
-            "title": "Staking (cryptocurrency)"
-          },
-          {
-            "url": "https://www.fidelity.com/learning-center/trading-investing/crypto/crypto-staking",
-            "title": "Crypto Staking Explained | Fidelity"
-          }
-        ]
-      },
-      "ai_score": 8.0,
-      "ai_reason": null,
-      "ai_summary": "A fake staking site stole $8.5 million in XRP from dozens of investors promising easy yield.",
-      "ai_tags": []
-    },
-    {
-      "id": "rss:openai.com_blog_rss.xml:dca7adc62d79fe1c",
-      "source_type": "rss",
-      "title": "Advancing the price-performance frontier with GPT-5.6",
-      "url": "https://openai.com/index/advancing-the-price-performance-frontier-with-gpt-5-6",
+      "title": "Disrupting a Criminal Scam Operation",
+      "url": "https://openai.com/index/disrupting-malicious-uses-of-ai-criminal-scam-operation",
       "content": null,
       "author": "OpenAI Blog",
-      "published_at": "2026-07-30T10:00:00Z",
-      "fetched_at": "2026-07-31T00:30:45.288517Z",
+      "published_at": "2026-07-31T00:00:00Z",
+      "fetched_at": "2026-08-01T00:30:57.625461Z",
       "metadata": {
         "feed_name": "OpenAI Blog",
         "category": "ai-labs",
-        "title_en": "OpenAI cuts GPT-5.6 Luna and Terra prices, boosts efficiency",
-        "detailed_summary_en": "OpenAI announced price reductions for GPT-5.6 Luna by 80% and Terra by 20%, while keeping Sol pricing unchanged, effective July 9, 2026. These price cuts improve the price-performance ratio for enterprise AI workflows, making advanced reasoning and coding models more accessible for large-scale deployment. GPT-5.6 Terra now costs $2 per million input tokens and $12 per million output tokens; the GPT-5.6 family includes three tiers: Sol (flagship), Terra (mid-range), and Luna (budget).",
-        "background_en": "GPT-5.6 is OpenAI's latest model family, launched on July 9, 2026, designed for complex reasoning, coding, and agentic workflows. The three tiers (Sol, Terra, Luna) differ in capability and pricing, allowing enterprises to choose based on task complexity and budget. The price cuts aim to deliver more intelligence per dollar by reducing token usage through more efficient inference paths.",
-        "title_zh": "OpenAI下调GPT-5.6 Luna和Terra价格，提升效率",
-        "detailed_summary_zh": "OpenAI宣布将GPT-5.6 Luna的价格降低80%，Terra降低20%，而Sol价格保持不变，自2026年7月9日起生效。 这些降价改善了企业AI工作流的性价比，使高级推理和编码模型更易用于大规模部署。 GPT-5.6 Terra现在每百万输入令牌收费2美元，每百万输出令牌收费12美元；GPT-5.6系列包括三个层级：Sol（旗舰）、Terra（中端）和Luna（经济型）。",
-        "background_zh": "GPT-5.6是OpenAI于2026年7月9日发布的最新模型系列，专为复杂推理、编码和智能体工作流设计。三个层级（Sol、Terra、Luna）在能力和价格上有所不同，使企业能够根据任务复杂性和预算进行选择。降价旨在通过更高效的推理路径减少令牌使用量，从而提供每美元更多的智能。",
-        "sources": [
-          {
-            "url": "https://openrouter.ai/openai/gpt-5.6-sol",
-            "title": "GPT-5.6 Sol - API Pricing & Benchmarks | OpenRouter"
-          },
-          {
-            "url": "https://www.vellum.ai/blog/gpt-5-6-benchmarks-explained",
-            "title": "GPT-5.6 Sol vs Terra vs Luna: Which Tier Should You Actually Use?"
-          },
-          {
-            "url": "https://www.axios.com/2026/07/30/openai-cuts-prices-gpt-terra-luna5",
-            "title": "OpenAI discounts GPT-5.6 Luna and Terra, but not Luna"
-          }
-        ]
+        "title_en": "OpenAI Disrupts Cambodia-Based Scam Operation Abusing ChatGPT",
+        "detailed_summary_en": "OpenAI announced that it disrupted a Cambodia-based criminal operation that used ChatGPT to assist in investment, romance, gambling, and impersonation scams. The action is part of OpenAI's ongoing efforts to combat malicious uses of AI. This shows that AI developers are actively enforcing safety policies and taking real-world action against cybercriminals. It highlights the growing role of AI-safety teams in preventing fraud and protecting users from AI-enabled criminal schemes. The scam operation reportedly used ChatGPT to craft convincing messages for romance and impersonation fraud, as well as to support fake investment opportunities and gambling platforms. OpenAI did not disclose the exact scale of the operation or the specific methods used to identify it.",
+        "background_en": "AI models like ChatGPT can be exploited by bad actors to generate fraudulent content at scale. OpenAI has usage policies that prohibit illegal or harmful activity, and it uses automated detection systems and investigations to find and disrupt such abuse. This disruption is part of a broader industry trend where AI labs are increasingly cooperating with security researchers and law enforcement.",
+        "title_zh": "OpenAI 捣毁利用 ChatGPT 的柬埔寨诈骗团伙",
+        "detailed_summary_zh": "OpenAI 宣布已捣毁一个位于柬埔寨的犯罪团伙，该团伙利用 ChatGPT 协助实施投资、婚恋、赌博和冒充诈骗。此次行动是 OpenAI 持续打击 AI 滥用行为的一部分。 这表明 AI 开发者正在积极执行安全政策，并对网络犯罪分子采取实际行动。这也凸显了 AI 安全团队在预防欺诈和保护用户免受 AI 驱动的犯罪活动侵害方面的作用日益重要。 据报道，该诈骗团伙利用 ChatGPT 编写有说服力的信息，用于婚恋诈骗和冒充他人，以及支持虚假投资机会和赌博平台。OpenAI 未披露该行动的具体规模或识别方法。",
+        "background_zh": "像 ChatGPT 这样的 AI 模型可能被不法分子利用，大规模生成欺诈内容。OpenAI 制定了对非法或有害活动零容忍的使用政策，并通过自动检测系统和调查来发现并阻止此类滥用。此次行动反映了 AI 实验室与安全研究人员和执法机构加强合作这一更广泛的行业趋势。"
       },
-      "ai_score": 8.0,
+      "ai_score": 7.0,
       "ai_reason": null,
-      "ai_summary": "OpenAI announces GPT-5.6 with lower pricing for Luna and Terra to improve price-performance for enterprise AI workflows.",
+      "ai_summary": "OpenAI disrupted a Cambodia-based scam operation that used ChatGPT to support investment, romance, gambling, and impersonation fraud schemes.",
       "ai_tags": []
     },
     {
@@ -504,97 +492,6 @@
       "ai_score": 7.0,
       "ai_reason": null,
       "ai_summary": "Coinbase will suspend ACX trading on July 28, 2026, due to the token being wound down by the project team, offering conversion options.",
-      "ai_tags": []
-    },
-    {
-      "id": "rss:www.coindesk.com_arc_outboundfeeds_rss_:55a10f5a6200badf",
-      "source_type": "rss",
-      "title": "South Korea plans to tax crypto gains over $1,740 as political battle moves to parliament",
-      "url": "https://www.coindesk.com/policy/2026/07/30/south-korea-s-long-delayed-crypto-tax-set-to-start-in-2027",
-      "content": null,
-      "author": "Francisco Rodrigues",
-      "published_at": "2026-07-30T11:17:56Z",
-      "fetched_at": "2026-07-30T14:35:07.484411Z",
-      "metadata": {
-        "feed_name": "CoinDesk",
-        "category": "crypto-markets",
-        "title_en": "South Korea Plans Crypto Tax Over $1,740 Starting 2027",
-        "detailed_summary_en": "South Korea is advancing a long-delayed crypto taxation bill that imposes a 20% tax on gains exceeding approximately $1,740 (2.5 million won), with enforcement now set for January 2027 after parliamentary debate. This tax policy could significantly alter trading behavior in one of the world's largest crypto markets, potentially reducing speculation and increasing regulatory clarity for investors and exchanges. The tax rate is 20% on gains above the threshold, and the bill has faced multiple delays due to political disagreements; it now moves to parliament for final approval.",
-        "background_en": "South Korea has been debating a crypto tax since 2020, initially planning to implement it in 2022, but political pushback and market volatility caused repeated postponements. The current proposal aims to tax capital gains from crypto trading similarly to stock market gains.",
-        "title_zh": "韩国计划从2027年起对超过1740美元的加密收益征税",
-        "detailed_summary_zh": "韩国正在推进一项长期延期的加密货币征税法案，对超过约1740美元（250万韩元）的收益征收20%的税，执行时间定于2027年1月，此前已通过议会辩论。 这项税收政策可能会显著改变全球最大加密货币市场之一的交易行为，可能减少投机活动，并为投资者和交易所增加监管透明度。 税率为超出阈值的收益的20%，该法案因政治分歧多次推迟，现已提交议会等待最终批准。",
-        "background_zh": "韩国自2020年以来一直在讨论加密货币税收，最初计划在2022年实施，但因政治阻力以及市场波动多次推迟。当前的提案旨在对加密货币交易的资本收益征税，类似于股票市场收益。"
-      },
-      "ai_score": 7.0,
-      "ai_reason": null,
-      "ai_summary": "South Korea is moving to implement a tax on crypto gains over $1,740 starting in 2027, advancing through parliament after delays.",
-      "ai_tags": []
-    },
-    {
-      "id": "rss:www.coindesk.com_arc_outboundfeeds_rss_:94fb0ed7fee22c91",
-      "source_type": "rss",
-      "title": "Bitcoin's quantum plan assumes some algorithms break. AI just weakened one in 60 hours",
-      "url": "https://www.coindesk.com/tech/2026/07/29/bitcoin-s-quantum-plan-assumes-some-algorithms-break-ai-just-weakened-one-in-60-hours",
-      "content": null,
-      "author": "Shaurya Malwa",
-      "published_at": "2026-07-30T04:16:30Z",
-      "fetched_at": "2026-07-30T14:35:07.484677Z",
-      "metadata": {
-        "feed_name": "CoinDesk",
-        "category": "crypto-markets",
-        "title_en": "AI Weakens Crypto Algorithm in 60 Hours, Threatening Bitcoin's Quantum Plan",
-        "detailed_summary_en": "An AI model, Claude Mythos Preview from Anthropic, discovered vulnerabilities in a cryptographic algorithm within 60 hours, leading to the removal of a third-round post-quantum cryptography (PQC) algorithm candidate from standardization. This directly challenges the assumptions underpinning Bitcoin's quantum security plan. This event shows that AI can break cryptographic assumptions earlier than anticipated, potentially accelerating the need for quantum-resistant upgrades in Bitcoin and other cryptocurrencies. It underscores the urgency to reassess security timelines and adopt post-quantum cryptography proactively. The vulnerable algorithm was a candidate for the U.S. post-quantum cryptography standard, and its flaw was discovered by an AI model designed for security research. The attack, which took only 60 hours, highlights the growing power of AI in cryptanalysis.",
-        "background_en": "Bitcoin's security currently depends on elliptic curve digital signature algorithm (ECDSA) and SHA-256, which are vulnerable to quantum attacks using Shor's algorithm. To prepare, the Bitcoin community has proposed a multi-phase migration to quantum-resistant address types, assuming traditional cryptographic algorithms would remain secure in the near term. The emergence of AI-driven cryptanalysis introduces a new threat that could shorten the timeline for these upgrades.",
-        "title_zh": "AI在60小时内削弱密码算法，威胁比特币量子计划",
-        "detailed_summary_zh": "Anthropic的AI模型Claude Mythos Preview在60小时内发现了密码算法中的漏洞，导致一个第三轮后量子密码学(PQC)候选算法被排除出标准化进程。这直接挑战了比特币量子安全计划所依赖的假设。 这一事件表明，AI能够比预期更早地打破密码学假设，可能加速比特币及其他加密货币对量子安全升级的需求。它凸显了重新评估安全时间线并主动采用后量子密码学的紧迫性。 受影响的算法曾是美国后量子密码学标准的候选方案，其漏洞由专为安全研究设计的AI模型发现。这次攻击仅耗时60小时，凸显了AI在密码分析领域日益增强的能力。",
-        "background_zh": "比特币的安全性目前依赖于椭圆曲线数字签名算法(ECDSA)和SHA-256，这些算法面临使用Shor算法的量子攻击的威胁。为此，比特币社区提出了多阶段迁移至量子安全地址类型的计划，并假设传统密码算法在短期内仍然安全。AI驱动的密码分析的出现引入了一种新威胁，可能缩短这些升级的时间窗口。",
-        "sources": [
-          {
-            "url": "https://arstechnica.com/security/2026/07/mythos-uncovers-crypto-weaknesses-that-went-unknown-for-years/",
-            "title": "Mythos attack on 3rd-round PQC algorithm candidate puts it out of ..."
-          },
-          {
-            "url": "https://thequantuminsider.com/2026/07/29/growing-quantum-security-challenge-bitcoin-digital-assets/",
-            "title": "The Growing Quantum Security Challenge Facing Bitcoin and Digital Assets"
-          }
-        ]
-      },
-      "ai_score": 7.0,
-      "ai_reason": null,
-      "ai_summary": "AI reportedly weakened a cryptographic algorithm in 60 hours, challenging assumptions in Bitcoin's quantum security plan.",
-      "ai_tags": []
-    },
-    {
-      "id": "telegram:binance_announcements:8789",
-      "source_type": "telegram",
-      "title": "Notice Regarding the Removal of AEUR and Conversion of AEUR to EUR",
-      "url": "https://www.binance.com/en/support/announcement/detail/40f303353b5f4789aba90dd972990f7e?utm_source=EnglishTelegram&amp;utm_medium=GlobalCommunity&amp;utm_campaign=AnnouncementBot",
-      "content": null,
-      "author": "binance_announcements",
-      "published_at": "2026-07-30T02:14:31Z",
-      "fetched_at": "2026-07-30T14:35:06.956568Z",
-      "metadata": {
-        "category": "exchange-announcements",
-        "title_en": "Binance to Remove AEUR Stablecoin, Convert to EUR by 2026",
-        "detailed_summary_en": "Binance announced it will cease support for AEUR tokens on July 31, 2026, and convert all user AEUR holdings to EUR. The issuer, Anchored Coins AG, has stopped issuing new tokens but continues to process redemptions. This move directly affects holders of the AEUR stablecoin, forcing conversion to fiat EUR by mid-2026. It reflects the impact of MiCA regulations on non-EU stablecoin issuers and highlights the ongoing regulatory pressure on euro-pegged tokens. The conversion deadline is July 31, 2026, providing a long transition period. Anchored Coins AG emphasizes that the entire circulating supply of AEUR remains fully backed 1:1 by euro-denominated reserves.",
-        "background_en": "AEUR is a euro-backed stablecoin issued by Anchored Coins AG, a Swiss company, operating on Ethereum and BNB Chain. Under the EU's Markets in Crypto-Assets (MiCA) regulation, stablecoin issuers must be licensed within the EU. As a Swiss entity, Anchored Coins AG cannot comply and has decided to cease issuance and wind down operations, leading to the delisting by Binance.",
-        "title_zh": "币安将下架 AEUR 稳定币，于 2026 年转换为欧元",
-        "detailed_summary_zh": "币安宣布将于 2026 年 7 月 31 日停止支持 AEUR 代币，并将用户持有的 AEUR 全部转换为欧元。发行方 Anchored Coins AG 已停止发行新代币，但继续处理赎回。 此举直接影响 AEUR 稳定币的持有者，要求其在 2026 年中前强制转换为法定欧元。这反映了 MiCA 法规对非欧盟稳定币发行方的影响，并凸显了欧元挂钩代币面临的持续监管压力。 转换截止日期为 2026 年 7 月 31 日，过渡期较长。Anchored Coins AG 强调，AEUR 的整个流通供应仍由欧元计价储备金 1:1 全额支持。",
-        "background_zh": "AEUR 是由瑞士公司 Anchored Coins AG 发行的欧元支持的稳定币，运行在以太坊和 BNB 链上。根据欧盟的《加密资产市场法规》（MiCA），稳定币发行方必须在欧盟内获得许可。作为瑞士实体，Anchored Coins AG 无法合规，因此决定停止发行并有序退出业务，导致币安将其下架。",
-        "sources": [
-          {
-            "url": "https://www.binance.com/en/academy/articles/an-introduction-to-anchored-euro-aeur",
-            "title": "An Introduction to Anchored Euro (AEUR) - Binance"
-          },
-          {
-            "url": "https://www.anchoredcoins.com/en/landing",
-            "title": "Anchored Coins"
-          }
-        ]
-      },
-      "ai_score": 7.0,
-      "ai_reason": null,
-      "ai_summary": "Binance will cease support for AEUR tokens and convert them to EUR by July 31, 2026, with the issuer continuing redemptions.",
       "ai_tags": []
     }
   ]
