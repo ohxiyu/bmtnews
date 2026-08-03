@@ -18,8 +18,16 @@ from src.models import (
 from src.orchestrator import HorizonOrchestrator
 
 
-def make_item(item_id: str, score: float, category: str | None) -> ContentItem:
+def make_item(
+    item_id: str,
+    score: float,
+    category: str | None,
+    *,
+    feed_name: str | None = None,
+) -> ContentItem:
     metadata = {"category": category} if category is not None else {}
+    if feed_name is not None:
+        metadata["feed_name"] = feed_name
     return ContentItem(
         id=item_id,
         source_type=SourceType.RSS,
@@ -157,6 +165,59 @@ def test_primary_groups_reserve_crypto_slots_before_side_topics() -> None:
     assert categories.count("policy") <= 2
 
 
+def test_primary_groups_borrow_unused_capacity_without_relaxing_side_caps() -> None:
+    filtering = FilteringConfig(
+        max_items=12,
+        category_groups={
+            "markets": CategoryGroupConfig(limit=4, categories=["markets"]),
+            "technology": CategoryGroupConfig(limit=3, categories=["ai"]),
+            "policy": CategoryGroupConfig(limit=2, categories=["policy"]),
+        },
+        primary_groups=["markets"],
+        primary_group_min_items=4,
+        primary_group_borrow_limit=6,
+        max_items_per_source=3,
+    )
+    items = [
+        make_item(
+            f"market-a-{index}",
+            10 - index / 10,
+            "markets",
+            feed_name="a",
+        )
+        for index in range(5)
+    ]
+    items += [
+        make_item(
+            f"market-b-{index}",
+            9 - index / 10,
+            "markets",
+            feed_name="b",
+        )
+        for index in range(2)
+    ]
+    items += [
+        make_item(f"ai-{index}", 8 - index / 10, "ai", feed_name="ai")
+        for index in range(4)
+    ]
+    items += [
+        make_item(f"policy-{index}", 7.5 - index / 10, "policy", feed_name="policy")
+        for index in range(3)
+    ]
+
+    result = make_orchestrator(filtering).apply_balanced_digest(
+        items,
+        allow_primary_borrowing=True,
+    )
+
+    categories = [item.metadata["category"] for item in result.items]
+    assert categories.count("markets") == 6
+    assert categories.count("ai") <= 3
+    assert categories.count("policy") <= 2
+    assert result.borrowed_count == 2
+    assert result.group_limits["markets"] == 6
+
+
 def test_duplicate_category_warns_and_first_group_wins() -> None:
     filtering = FilteringConfig(
         category_groups={
@@ -193,6 +254,9 @@ def test_duplicate_category_warns_and_first_group_wins() -> None:
             "primary_groups": ["primary"],
             "primary_group_min_items": 2,
         },
+        {"minimum_display_items": 3, "max_items": 2},
+        {"time_window_hours": 24, "fallback_window_hours": 24},
+        {"primary_group_borrow_limit": 6},
     ],
 )
 def test_balanced_digest_config_rejects_non_positive_or_empty_limits(kwargs) -> None:

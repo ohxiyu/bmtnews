@@ -1640,6 +1640,39 @@ html.js:not(.feed-ready)
   text-align: center;
 }
 
+.today-edition-status {
+  margin: 0 0 22px;
+  border: 1px solid color-mix(in srgb, var(--accent) 38%, var(--border));
+  border-radius: 12px;
+  background: color-mix(in srgb, var(--accent) 7%, var(--surface));
+  padding: 18px 20px;
+}
+
+.today-edition-status[hidden] {
+  display: none;
+}
+
+.today-edition-status__date {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--text-muted);
+  font-size: 0.74rem;
+  font-variant-numeric: tabular-nums;
+}
+
+.today-edition-status h2 {
+  margin: 10px 0 5px;
+  font-size: 1rem;
+}
+
+.today-edition-status p {
+  margin: 0;
+  color: var(--text-muted);
+  font-size: 0.84rem;
+  line-height: 1.65;
+}
+
 .site-footer {
   width: min(calc(100% - 40px), var(--content));
   margin: 0 auto;

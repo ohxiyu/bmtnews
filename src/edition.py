@@ -111,6 +111,31 @@ def items_in_edition_window(
     ]
 
 
+def items_in_supplemental_window(
+    items: Iterable[ContentItem],
+    window: EditionWindow,
+    lookback_hours: int,
+) -> list[ContentItem]:
+    """Return older items added by an extended lookback window.
+
+    The normal edition remains a fixed 24-hour interval. This helper returns
+    only the preceding supplemental segment, so callers cannot accidentally
+    count the regular candidates twice.
+    """
+    edition_hours = (
+        _aware_utc(window.end) - _aware_utc(window.start)
+    ).total_seconds() / 3600
+    if lookback_hours <= edition_hours:
+        raise ValueError("lookback_hours must exceed the edition window")
+    start = _aware_utc(window.end) - timedelta(hours=lookback_hours)
+    normal_start = _aware_utc(window.start)
+    return [
+        item
+        for item in items
+        if start <= _aware_utc(item.published_at) < normal_start
+    ]
+
+
 def load_staging_state(
     path: Path = DEFAULT_STAGING_PATH,
 ) -> StagingState:

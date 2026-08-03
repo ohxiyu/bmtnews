@@ -332,6 +332,12 @@
     "daily_timezone": "Asia/Shanghai",
     "preserve_daily_items": true,
     "max_items": 12,
+    "minimum_candidate_items": 20,
+    "minimum_qualified_items": 7,
+    "minimum_display_items": 5,
+    "fallback_window_hours": 36,
+    "primary_group_borrow_limit": 6,
+    "max_items_per_source": 3,
     "category_groups": {
       "exchange": {
         "name": "Exchange Announcements",
