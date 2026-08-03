@@ -1,25 +1,61 @@
 {
   "version": 1,
-  "date": "2026-08-02",
+  "date": "2026-08-03",
   "timezone": "Asia/Shanghai",
-  "updated_at": "2026-08-02T00:30:44.631890Z",
+  "updated_at": "2026-08-03T00:30:53.908798Z",
   "analyzed_keys": [
-    "09adab9889a0aacc5dcfe5ffcef0dd388e3fcd8a58e1342bb51a79c2077c182a",
-    "0b50e4f21c930fdc862dbfe60b311b560777cc8f48c21647157b2b85fc3819d7",
-    "16528f26a4170a7435e2a7a0fb0303202141ac892b3702547b8fb3b557050ccc",
-    "264d37ace8d1712f01038015a8a5c6320648774e986acbab33f8c7c2f5d3e866",
-    "3a1939b6b1b79b1f44ab1bae5c4236d0e0ccb14980cd0f9a8f99b179eecacd2e",
-    "4de9241a50b8d84e24c8f2062473f36cfd3520105343a28ef5d0f49c5e7cf1e2",
-    "5b110950c8f12fcdb57e3dbeb7c2426ba252511f1c6a2f8874ce9488313fb6e1",
-    "8c91d4cd50fc21fee1d810f9c46f6898978280dea10e35bbe317d9bdd41462ff",
-    "96e5917592bbcd733e2395084eecdacdc3a537fe3f39e8dbef7f63c3f1ae146f",
-    "bd1d3ddc54718fc8f0bcb2c05ef5183bb8aa2b7163f5ba6581597573eca3d3b3",
-    "bdf2ffdaa290af88045becf1db5077530f2ad4411dd64f861e5597f7a5915730",
-    "e4dfbff038b9bbf741cb765de7cdd3579500f20c2bf228b5b9091f868ba6f301",
-    "ec43ac47c2ae3643d3f2cf2d6b124fe99cb0173d5cd6487eded2a31207f01a24",
-    "f0c2d9748715e682ef67f05e24aafb05b96366c62bd00406729b154a603bdb38"
+    "1046fd6a56808dd1cdf7f4f9105e7641896008bc954c90007db183edfc11dbff",
+    "27a1d3d0d4f205ff90ecbcd6abcb7d821d959ca987d81e7b958d58b433e79cb8",
+    "4a079d06d00209140d96895b291505ff9c6ef786d92ad484a7810e8dab52d2fa",
+    "50894fa2e538c8a7c3117dd520e656f2830bce86e4e8c4c48b0ced61dfba622e",
+    "7cc51325ca4ab1ec3042f4ce3e54c137c2140da2523162af25ef350863040b5e",
+    "83a8ec48b92171cc772ca24b94578f3f9d4d141a04cb9d77b047b95d3c7faf9f",
+    "85e0afbe2f41e654ecfbd8428c7be1521f221b8b931b54817ec3ee4ceb2c5457",
+    "93e14f3eb4d5cb1b3f0e01f1efb9791132f74eed7f3992a36e7c090de8dd8e1a",
+    "ea6fdd688aa50c0e0b80fb82ced033f08b3981232a629542c1f9fdb2c5b2ce9c",
+    "f2df7bf438bc90ff9d7fd503d0b2ddeb2a365ceea24867201efe216d4222d0b8",
+    "fb13f6efeed8432df75744798a12f6a00614a1f535f04eaaf6a2c3acb6f442ad"
   ],
-  "items": [
+  "items": [],
+  "dedup_history": [
+    {
+      "id": "rss:www.coindesk.com_arc_outboundfeeds_rss_:a02f560bef7e5719",
+      "source_type": "rss",
+      "title": "Coldcard's $38 million (so far) exploit shakes faith in self-custody, may push investors to ETFs",
+      "url": "https://www.coindesk.com/business/2026/07/31/coldcard-s-usd38-million-so-far-exploit-shakes-faith-in-self-custody-may-push-investors-to-etfs",
+      "content": null,
+      "author": "Krisztian Sandor",
+      "published_at": "2026-07-31T17:07:30Z",
+      "fetched_at": "2026-08-01T00:30:56.161118Z",
+      "metadata": {
+        "feed_name": "CoinDesk",
+        "category": "crypto-markets",
+        "title_en": "Coldcard's $38M Exploit Shakes Self-Custody Trust, May Push Investors to ETFs",
+        "detailed_summary_en": "Coldcard disclosed a critical firmware bug that silently bypassed the hardware random number generator (RNG) for five years, allowing an attacker to drain roughly 594 BTC (about $38 million) from around 500 wallets in a 25-minute sweep on July 31, 2026. This is one of the largest hardware wallet exploits in Bitcoin's history. This incident undermines the core promise of hardware wallets — that private keys never leave secure hardware — and could erode confidence in self-custody among Bitcoin holders. If investors lose faith in self-custody solutions, they may shift funds to regulated products like spot ETFs, potentially reshaping the custody landscape. The vulnerability affected Coldcard Mk2 and Mk3 devices where seeds were generated on firmware v4.0.0 through v5.0.3; the attacker swept funds from roughly 500 wallets between 01:31 and 01:56 UTC. Coldcard has urged all affected users to move their funds immediately, but the full extent of exposed seeds remains unknown.",
+        "background_en": "Self-custody means holding your own crypto assets in a wallet you control, rather than trusting an exchange or third party. Hardware wallets like Coldcard are considered among the most secure self-custody tools because they keep private keys offline in a dedicated chip. This exploit, however, shows that even hardware wallets are not immune to firmware-level vulnerabilities, raising questions about the long-term reliability of the 'not your keys, not your coins' ethos.",
+        "title_zh": "Coldcard遭3800万美元攻击，动摇自托管信心，或推动投资者转向ETF",
+        "detailed_summary_zh": "Coldcard披露了一个严重固件漏洞，该漏洞在过去五年里静默绕过了硬件随机数生成器（RNG），使攻击者在2026年7月31日的一次25分钟扫荡中从约500个钱包中盗走约594 BTC（约3800万美元）。这是比特币历史上规模最大的硬件钱包攻击事件之一。 这一事件动摇了硬件钱包的核心承诺——私钥永不离开安全硬件——并可能削弱比特币持有者对自托管的信心。如果投资者对自托管解决方案失去信任，他们可能会将资金转向现货ETF等受监管产品，从而可能重塑托管格局。 该漏洞影响的是在固件v4.0.0至v5.0.3上生成种子的Coldcard Mk2和Mk3设备；攻击者在01:31至01:56 UTC之间从约500个钱包中扫走了资金。Coldcard已敦促所有受影响用户立即转移资金，但暴露种子的全部范围仍不清楚。",
+        "background_zh": "自托管意味着将你的加密资产保存在自己控制的钱包中，而不是信任交易所或第三方。Coldcard等硬件钱包被视为最安全的自托管工具之一，因为它们将私钥离线保存在专用芯片中。然而，此次攻击表明，即使是硬件钱包也无法免受固件级漏洞的影响，这引发了对“不掌握私钥，就不拥有币”这一理念长期可靠性的质疑。",
+        "sources": [
+          {
+            "url": "https://www.coindesk.com/tech/2026/07/31/major-bitcoin-wallet-flaw-drains-594-btc-in-25-minute-sweep",
+            "title": "Major bitcoin wallet flaw drains 594 BTC in 25-minute sweep"
+          },
+          {
+            "url": "https://www.techtimes.com/articles/322392/20260731/coldcard-hardware-wallet-hacked-via-firmware-bug-that-bypassed-rng-five-years.htm",
+            "title": "Coldcard Hardware Wallet Hacked via Firmware Bug That Bypassed RNG for Five Years"
+          },
+          {
+            "url": "https://www.ledger.com/academy/topics/security/what-is-self-custody-in-crypto",
+            "title": "What Is Self-Custody in Crypto? | Ledger"
+          }
+        ]
+      },
+      "ai_score": 9.0,
+      "ai_reason": null,
+      "ai_summary": "Coldcard has suffered a $38 million exploit, undermining confidence in self-custody and possibly driving investors toward ETFs.",
+      "ai_tags": []
+    },
     {
       "id": "rss:openai.com_blog_rss.xml:e299630b866e2d7e",
       "source_type": "rss",
@@ -42,6 +78,44 @@
       "ai_score": 8.0,
       "ai_reason": null,
       "ai_summary": "OpenAI shares ten new results on long-standing open problems in mathematics and theoretical computer science, including advances in geometry, cryptography, and complexity.",
+      "ai_tags": []
+    },
+    {
+      "id": "rss:www.coindesk.com_arc_outboundfeeds_rss_:c2e9afdfeb3cae7f",
+      "source_type": "rss",
+      "title": "Tether posts $1.5 billion operating profit in Q2 as reserve buffer falls by half",
+      "url": "https://www.coindesk.com/business/2026/07/31/tether-posts-usd1-5-billion-operating-profit-in-q2-as-reserve-buffer-falls-by-half",
+      "content": null,
+      "author": "Olivier Acuna",
+      "published_at": "2026-07-31T18:24:55Z",
+      "fetched_at": "2026-08-01T00:30:56.161069Z",
+      "metadata": {
+        "feed_name": "CoinDesk",
+        "category": "crypto-markets",
+        "title_en": "Tether Q2 profit $1.5B as reserve buffer halves",
+        "detailed_summary_en": "Tether reported $1.5 billion in operating profit for the second quarter of 2026, while its excess reserve buffer declined by half from the prior quarter's record $8.23 billion. The announcement comes from its latest financial attestation. The reserve buffer is a key measure of Tether's financial resilience and directly affects user confidence in USDT, the world's largest stablecoin. A 50% reduction could raise concerns about backing strength, though the continued profitability may mitigate potential fallout. Excess reserves function as a loss-absorbing layer above the per-token collateral backing Tether's issued tokens. The Q1 buffer of $8.23 billion had been supported by profitability and a reserve base concentrated in short-duration, high-quality liquid instruments.",
+        "background_en": "Stablecoins like USDT are designed to maintain a 1:1 peg with fiat currency, so issuers hold reserves of assets such as Treasuries, gold, and other instruments. 'Excess reserves' are the surplus assets beyond what is needed to back all tokens, serving as a cushion against losses. Independent attestations and audits verify these holdings, though the quality and liquidity of the reserve mix are important for institutional confidence.",
+        "title_zh": "Tether 第二季度营业利润15亿美元，储备缓冲减半",
+        "detailed_summary_zh": "Tether 公布其 2026 年第二季度营业利润为 15 亿美元，同时其超额储备缓冲比上季度创纪录的 82.3 亿美元减少了一半。该消息来自其最新的财务证明报告。 储备缓冲是衡量 Tether 财务韧性的关键指标，直接影响用户对全球最大稳定币 USDT 的信心。缓冲减半可能引发人们对资产支撑强度的担忧，但持续的盈利能力或许会减轻潜在影响。 超额储备充当 Tether 已发行代币每枚代币抵押支持之上的损失吸收层。第一季度的 82.3 亿美元缓冲得益于盈利能力以及集中于短期、高质量流动性工具的储备基础。",
+        "background_zh": "USDT 等稳定币旨在与法定货币保持 1:1 锚定，因此发行方持有包括美国国债、黄金和其他工具在内的储备资产。“超额储备”是指超出支撑所有代币所需之外的剩余资产，充当应对损失的缓冲垫。独立证明和审计会核实这些持有资产，但储备组合的质量和流动性对机构信心同样重要。",
+        "sources": [
+          {
+            "url": "https://www.coindesk.com/business/2026/05/01/tether-posts-usd1-04-billion-q1-profit-reaches-usd8-23-billion-reserve-buffer",
+            "title": "Tether posts $1.04 billion in first-quarter profit, reaches $8.23 billion reserve buffer"
+          },
+          {
+            "url": "https://eco.com/support/en/articles/14796320-inside-tether-usdt-reserves-explained",
+            "title": "Inside Tether: USDT Reserves Explained | Support - Eco"
+          },
+          {
+            "url": "https://www.bitgo.com/resources/blog/stablecoin-reserves-audits-attestations-token-backing/",
+            "title": "How Stablecoin Reserves Work: Audits, Attestations, and... | BitGo"
+          }
+        ]
+      },
+      "ai_score": 8.0,
+      "ai_reason": null,
+      "ai_summary": "Tether reported $1.5 billion Q2 operating profit while its reserve buffer halved, signaling potential changes in its financial backing strength.",
       "ai_tags": []
     },
     {
@@ -138,360 +212,6 @@
       "ai_score": 7.0,
       "ai_reason": null,
       "ai_summary": "The XRP Ledger is undergoing an upgrade that re-enables features that were previously removed due to critical bugs.",
-      "ai_tags": []
-    }
-  ],
-  "dedup_history": [
-    {
-      "id": "rss:www.coindesk.com_arc_outboundfeeds_rss_:a02f560bef7e5719",
-      "source_type": "rss",
-      "title": "Coldcard's $38 million (so far) exploit shakes faith in self-custody, may push investors to ETFs",
-      "url": "https://www.coindesk.com/business/2026/07/31/coldcard-s-usd38-million-so-far-exploit-shakes-faith-in-self-custody-may-push-investors-to-etfs",
-      "content": null,
-      "author": "Krisztian Sandor",
-      "published_at": "2026-07-31T17:07:30Z",
-      "fetched_at": "2026-08-01T00:30:56.161118Z",
-      "metadata": {
-        "feed_name": "CoinDesk",
-        "category": "crypto-markets",
-        "title_en": "Coldcard's $38M Exploit Shakes Self-Custody Trust, May Push Investors to ETFs",
-        "detailed_summary_en": "Coldcard disclosed a critical firmware bug that silently bypassed the hardware random number generator (RNG) for five years, allowing an attacker to drain roughly 594 BTC (about $38 million) from around 500 wallets in a 25-minute sweep on July 31, 2026. This is one of the largest hardware wallet exploits in Bitcoin's history. This incident undermines the core promise of hardware wallets — that private keys never leave secure hardware — and could erode confidence in self-custody among Bitcoin holders. If investors lose faith in self-custody solutions, they may shift funds to regulated products like spot ETFs, potentially reshaping the custody landscape. The vulnerability affected Coldcard Mk2 and Mk3 devices where seeds were generated on firmware v4.0.0 through v5.0.3; the attacker swept funds from roughly 500 wallets between 01:31 and 01:56 UTC. Coldcard has urged all affected users to move their funds immediately, but the full extent of exposed seeds remains unknown.",
-        "background_en": "Self-custody means holding your own crypto assets in a wallet you control, rather than trusting an exchange or third party. Hardware wallets like Coldcard are considered among the most secure self-custody tools because they keep private keys offline in a dedicated chip. This exploit, however, shows that even hardware wallets are not immune to firmware-level vulnerabilities, raising questions about the long-term reliability of the 'not your keys, not your coins' ethos.",
-        "title_zh": "Coldcard遭3800万美元攻击，动摇自托管信心，或推动投资者转向ETF",
-        "detailed_summary_zh": "Coldcard披露了一个严重固件漏洞，该漏洞在过去五年里静默绕过了硬件随机数生成器（RNG），使攻击者在2026年7月31日的一次25分钟扫荡中从约500个钱包中盗走约594 BTC（约3800万美元）。这是比特币历史上规模最大的硬件钱包攻击事件之一。 这一事件动摇了硬件钱包的核心承诺——私钥永不离开安全硬件——并可能削弱比特币持有者对自托管的信心。如果投资者对自托管解决方案失去信任，他们可能会将资金转向现货ETF等受监管产品，从而可能重塑托管格局。 该漏洞影响的是在固件v4.0.0至v5.0.3上生成种子的Coldcard Mk2和Mk3设备；攻击者在01:31至01:56 UTC之间从约500个钱包中扫走了资金。Coldcard已敦促所有受影响用户立即转移资金，但暴露种子的全部范围仍不清楚。",
-        "background_zh": "自托管意味着将你的加密资产保存在自己控制的钱包中，而不是信任交易所或第三方。Coldcard等硬件钱包被视为最安全的自托管工具之一，因为它们将私钥离线保存在专用芯片中。然而，此次攻击表明，即使是硬件钱包也无法免受固件级漏洞的影响，这引发了对“不掌握私钥，就不拥有币”这一理念长期可靠性的质疑。",
-        "sources": [
-          {
-            "url": "https://www.coindesk.com/tech/2026/07/31/major-bitcoin-wallet-flaw-drains-594-btc-in-25-minute-sweep",
-            "title": "Major bitcoin wallet flaw drains 594 BTC in 25-minute sweep"
-          },
-          {
-            "url": "https://www.techtimes.com/articles/322392/20260731/coldcard-hardware-wallet-hacked-via-firmware-bug-that-bypassed-rng-five-years.htm",
-            "title": "Coldcard Hardware Wallet Hacked via Firmware Bug That Bypassed RNG for Five Years"
-          },
-          {
-            "url": "https://www.ledger.com/academy/topics/security/what-is-self-custody-in-crypto",
-            "title": "What Is Self-Custody in Crypto? | Ledger"
-          }
-        ]
-      },
-      "ai_score": 9.0,
-      "ai_reason": null,
-      "ai_summary": "Coldcard has suffered a $38 million exploit, undermining confidence in self-custody and possibly driving investors toward ETFs.",
-      "ai_tags": []
-    },
-    {
-      "id": "rss:www.coindesk.com_arc_outboundfeeds_rss_:c2e9afdfeb3cae7f",
-      "source_type": "rss",
-      "title": "Tether posts $1.5 billion operating profit in Q2 as reserve buffer falls by half",
-      "url": "https://www.coindesk.com/business/2026/07/31/tether-posts-usd1-5-billion-operating-profit-in-q2-as-reserve-buffer-falls-by-half",
-      "content": null,
-      "author": "Olivier Acuna",
-      "published_at": "2026-07-31T18:24:55Z",
-      "fetched_at": "2026-08-01T00:30:56.161069Z",
-      "metadata": {
-        "feed_name": "CoinDesk",
-        "category": "crypto-markets",
-        "title_en": "Tether Q2 profit $1.5B as reserve buffer halves",
-        "detailed_summary_en": "Tether reported $1.5 billion in operating profit for the second quarter of 2026, while its excess reserve buffer declined by half from the prior quarter's record $8.23 billion. The announcement comes from its latest financial attestation. The reserve buffer is a key measure of Tether's financial resilience and directly affects user confidence in USDT, the world's largest stablecoin. A 50% reduction could raise concerns about backing strength, though the continued profitability may mitigate potential fallout. Excess reserves function as a loss-absorbing layer above the per-token collateral backing Tether's issued tokens. The Q1 buffer of $8.23 billion had been supported by profitability and a reserve base concentrated in short-duration, high-quality liquid instruments.",
-        "background_en": "Stablecoins like USDT are designed to maintain a 1:1 peg with fiat currency, so issuers hold reserves of assets such as Treasuries, gold, and other instruments. 'Excess reserves' are the surplus assets beyond what is needed to back all tokens, serving as a cushion against losses. Independent attestations and audits verify these holdings, though the quality and liquidity of the reserve mix are important for institutional confidence.",
-        "title_zh": "Tether 第二季度营业利润15亿美元，储备缓冲减半",
-        "detailed_summary_zh": "Tether 公布其 2026 年第二季度营业利润为 15 亿美元，同时其超额储备缓冲比上季度创纪录的 82.3 亿美元减少了一半。该消息来自其最新的财务证明报告。 储备缓冲是衡量 Tether 财务韧性的关键指标，直接影响用户对全球最大稳定币 USDT 的信心。缓冲减半可能引发人们对资产支撑强度的担忧，但持续的盈利能力或许会减轻潜在影响。 超额储备充当 Tether 已发行代币每枚代币抵押支持之上的损失吸收层。第一季度的 82.3 亿美元缓冲得益于盈利能力以及集中于短期、高质量流动性工具的储备基础。",
-        "background_zh": "USDT 等稳定币旨在与法定货币保持 1:1 锚定，因此发行方持有包括美国国债、黄金和其他工具在内的储备资产。“超额储备”是指超出支撑所有代币所需之外的剩余资产，充当应对损失的缓冲垫。独立证明和审计会核实这些持有资产，但储备组合的质量和流动性对机构信心同样重要。",
-        "sources": [
-          {
-            "url": "https://www.coindesk.com/business/2026/05/01/tether-posts-usd1-04-billion-q1-profit-reaches-usd8-23-billion-reserve-buffer",
-            "title": "Tether posts $1.04 billion in first-quarter profit, reaches $8.23 billion reserve buffer"
-          },
-          {
-            "url": "https://eco.com/support/en/articles/14796320-inside-tether-usdt-reserves-explained",
-            "title": "Inside Tether: USDT Reserves Explained | Support - Eco"
-          },
-          {
-            "url": "https://www.bitgo.com/resources/blog/stablecoin-reserves-audits-attestations-token-backing/",
-            "title": "How Stablecoin Reserves Work: Audits, Attestations, and... | BitGo"
-          }
-        ]
-      },
-      "ai_score": 8.0,
-      "ai_reason": null,
-      "ai_summary": "Tether reported $1.5 billion Q2 operating profit while its reserve buffer halved, signaling potential changes in its financial backing strength.",
-      "ai_tags": []
-    },
-    {
-      "id": "rss:www.coindesk.com_arc_outboundfeeds_rss_:4abae2b986de1a1e",
-      "source_type": "rss",
-      "title": "Circle secures New York trust charter as crypto regulatory push accelerates",
-      "url": "https://www.coindesk.com/policy/2026/07/31/circle-secures-new-york-trust-charter-as-crypto-regulatory-push-accelerates",
-      "content": null,
-      "author": "Olivier Acuna",
-      "published_at": "2026-07-31T13:35:17Z",
-      "fetched_at": "2026-08-01T00:30:56.161184Z",
-      "metadata": {
-        "feed_name": "CoinDesk",
-        "category": "crypto-markets",
-        "title_en": "Circle Secures New York Trust Charter Amid Crypto Regulation Push",
-        "detailed_summary_en": "Circle has been granted a New York trust charter by the New York State Department of Financial Services (NYDFS), an official state banking authorization that permits the company to provide fiduciary, custody, and asset-management services under the New York Banking Law. This marks a significant regulatory milestone for the stablecoin issuer and strengthens its standing in the evolving crypto regulatory landscape. This milestone boosts Circle's credibility and market access as a leading USDC issuer, potentially accelerating institutional adoption of the stablecoin. It also comes amid a broader regulatory push to formalize oversight of digital assets, signaling that compliant players are gaining a competitive edge in the market. The trust charter is a limited-purpose trust company authorization under New York law, meaning Circle cannot take deposits or make loans like a full commercial bank. The charter enables it to offer custody and fiduciary services, which are critical for managing stablecoin reserves and digital asset custody.",
-        "background_en": "A trust charter from the NYDFS is a state-level license required to operate a trust company in New York, allowing the holder to legally provide fiduciary and custody services. NYDFS is a key financial regulator in the United States, known for enforcing rigorous standards such as the BitLicense for crypto firms. This charter gives Circle clear legal authority to operate in New York, a major financial hub, while aligning with its broader strategy to comply with evolving stablecoin regulations.",
-        "title_zh": "Circle获纽约信托牌照，加密监管加速推进",
-        "detailed_summary_zh": "Circle已获得纽约州金融服务部（NYDFS）颁发的纽约信托牌照，这是一项正式的州级银行授权，允许该公司根据纽约银行法提供受托、托管和资产管理服务。这标志着这家稳定币发行方在监管方面取得重大里程碑，并强化了其在不断演变的加密监管格局中的地位。 这一里程碑提升了Circle作为领先USDC发行方的信誉和市场准入能力，可能加速机构对稳定币的采用。此举正值监管机构推动数字资产监管规范化的更广泛浪潮中，表明合规参与者正获得市场竞争优势。 该信托牌照是纽约法律下的有限目的信托公司授权，意味着Circle不能像全面商业银行那样吸收存款或发放贷款。该牌照使其能够提供托管和受托服务，这对于管理稳定币储备和数字资产托管至关重要。",
-        "background_zh": "NYDFS颁发的信托牌照是在纽约运营信托公司所需的州级许可证，允许持有者合法提供受托和托管服务。NYDFS是美国重要的金融监管机构，以对加密公司实施严格的BitLicense等标准而闻名。该牌照赋予Circle在纽约这一主要金融中心运营的明确法律授权，同时与其遵守不断演变的稳定币监管规则的更广泛战略相一致。",
-        "sources": [
-          {
-            "url": "https://www.coindesk.com/policy/2026/07/31/circle-secures-new-york-trust-charter-as-crypto-regulatory-push-accelerates",
-            "title": "Circle secures New York trust charter as crypto regulatory push accelerates"
-          },
-          {
-            "url": "https://www.dfs.ny.gov/apps_and_licensing/banks_and_trusts/procedure_certificate_merit_trust_comp",
-            "title": "Procedure and Certificate of Merit - Trust Companies | Department of Financial Services"
-          }
-        ]
-      },
-      "ai_score": 8.0,
-      "ai_reason": null,
-      "ai_summary": "Circle secures a New York trust charter, marking a significant step in its regulatory standing amid a broader crypto regulatory push.",
-      "ai_tags": []
-    },
-    {
-      "id": "rss:www.coindesk.com_arc_outboundfeeds_rss_:ee7dc547db10c178",
-      "source_type": "rss",
-      "title": "Dubai-based crypto exchange tied to $4 billion Iran sanctioned-evasion network",
-      "url": "https://www.coindesk.com/business/2026/07/31/dubai-based-crypto-exchange-tied-to-usd4-billion-iran-sanctioned-evasion-network-reuters",
-      "content": null,
-      "author": "Olivier Acuna",
-      "published_at": "2026-07-31T12:28:02Z",
-      "fetched_at": "2026-08-01T00:30:56.161246Z",
-      "metadata": {
-        "feed_name": "CoinDesk",
-        "category": "crypto-markets",
-        "title_en": "Dubai Crypto Exchange Linked to $4B Iran Sanctions Evasion Network",
-        "detailed_summary_en": "A Dubai-based cryptocurrency exchange has been reportedly connected to a $4 billion network used to evade U.S. sanctions against Iran, according to Reuters via CoinDesk. The report raises immediate concerns about the exchange's compliance practices and potential enforcement actions. This development underscores how crypto exchanges can become channels for illicit finance and sanctions evasion, putting global regulators on high alert. It could trigger investigations, enforcement actions, and stricter know-your-customer (KYC) and anti-money laundering (AML) requirements across the industry. The alleged network reportedly moved billions of dollars using digital assets, and the exchange is said to have handled a portion of those funds. Neither the exchange nor the U.S. authorities have yet confirmed the details, and the report cites unnamed sources familiar with the matter.",
-        "background_en": "Sanctions are economic penalties imposed by governments to pressure countries like Iran over activities such as nuclear proliferation or support for terrorism. Crypto exchanges are under growing scrutiny because the pseudonymous nature of digital assets can make sanctions evasion harder to trace, prompting regulators to demand robust compliance programs. The U.S. Office of Foreign Assets Control (OFAC) has previously sanctioned individuals and entities involved in virtual currency-based sanctions evasion.",
-        "title_zh": "迪拜加密货币交易所卷入40亿美元伊朗制裁规避网络",
-        "detailed_summary_zh": "据CoinDesk援引路透社报道，一家总部位于迪拜的加密货币交易所被曝与一个用于规避美国对伊朗制裁的40亿美元网络存在关联。该报道立即引发对该交易所合规做法及潜在执法行动的担忧。 这一事件凸显了加密货币交易所可能成为非法金融和制裁规避渠道的风险，使全球监管机构高度警惕。它可能引发调查、执法行动，以及整个行业更严格的了解你的客户（KYC）和反洗钱（AML）要求。 据报道，该网络利用数字资产转移了数十亿美元资金，而该交易所被指处理了其中一部分资金。目前该交易所和美国官方均未证实相关细节，报道援引了熟悉此事的匿名消息人士的说法。",
-        "background_zh": "制裁是政府为向伊朗等国家施压而实施的经济惩罚措施，原因包括核扩散或支持恐怖主义等活动。由于数字资产的匿名性使得制裁规避更难以追踪，加密货币交易所正受到越来越多的审视，监管机构因此要求其建立强有力的合规体系。美国财政部海外资产控制办公室（OFAC）此前已制裁过参与虚拟货币制裁规避的个人和实体。"
-      },
-      "ai_score": 8.0,
-      "ai_reason": null,
-      "ai_summary": "Dubai-based crypto exchange is reportedly connected to a $4 billion Iran sanctions-evasion network, raising serious regulatory and compliance concerns.",
-      "ai_tags": []
-    },
-    {
-      "id": "rss:www.coindesk.com_arc_outboundfeeds_rss_:25a1209e8c374cba",
-      "source_type": "rss",
-      "title": "Coinbase sinks 5% after missing second quarter revenue estimates",
-      "url": "https://www.coindesk.com/markets/2026/07/30/coinbase-sinks-5-after-missing-q2-revenue-estimates",
-      "content": null,
-      "author": "Helene Braun",
-      "published_at": "2026-07-30T20:18:33Z",
-      "fetched_at": "2026-07-31T00:30:44.395940Z",
-      "metadata": {
-        "feed_name": "CoinDesk",
-        "category": "crypto-markets",
-        "title_en": "Coinbase stock falls 5% on Q2 revenue miss",
-        "detailed_summary_en": "Coinbase reported second-quarter revenue that fell short of analyst expectations, causing its stock to drop 5% in after-hours trading. As the largest US crypto exchange, Coinbase's financial performance is a bellwether for the broader cryptocurrency industry, and this miss may dampen investor sentiment. The revenue miss occurred for the quarter ending June 30, 2026, though exact figures were not provided in the snippet.",
-        "background_en": "Coinbase is a leading cryptocurrency exchange platform that allows users to buy, sell, and store digital assets. Quarterly revenue estimates are projections made by financial analysts, and missing them often leads to stock price declines.",
-        "title_zh": "Coinbase股价因Q2营收未达预期下跌5%",
-        "detailed_summary_zh": "Coinbase公布的第二季度营收低于分析师预期，导致其股价在盘后交易中下跌5%。 作为美国最大的加密货币交易所，Coinbase的财务表现是更广泛加密货币行业的风向标，此次营收未达预期可能打压投资者情绪。 营收未达预期发生在截至2026年6月30日的季度，但摘要中未提供具体数字。",
-        "background_zh": "Coinbase是一家领先的加密货币交易平台，允许用户购买、出售和存储数字资产。季度营收估算是金融分析师的预测，未达预期通常会导致股价下跌。"
-      },
-      "ai_score": 8.0,
-      "ai_reason": null,
-      "ai_summary": "Coinbase shares dropped 5% after reporting second-quarter revenue below analyst expectations.",
-      "ai_tags": []
-    },
-    {
-      "id": "rss:www.coindesk.com_arc_outboundfeeds_rss_:fe9284311a7a89ad",
-      "source_type": "rss",
-      "title": "Global banks test tokenized money for cross-border payments in $1 million BIS pilot",
-      "url": "https://www.coindesk.com/business/2026/07/30/global-banks-test-tokenized-money-for-cross-border-payments-in-usd1-million-bis-pilot",
-      "content": null,
-      "author": "Krisztian Sandor",
-      "published_at": "2026-07-30T17:34:03Z",
-      "fetched_at": "2026-07-31T00:30:44.395963Z",
-      "metadata": {
-        "feed_name": "CoinDesk",
-        "category": "crypto-markets",
-        "title_en": "Global banks test tokenized payments in $1M BIS pilot",
-        "detailed_summary_en": "The Bank for International Settlements (BIS) launched a pilot with 28 global banks, including JPMorgan, Citi, and UBS, to test tokenized money for cross-border payments on a shared ledger. This pilot marks a major step in institutional blockchain adoption, potentially transforming the slow and costly correspondent banking system by enabling near-instant, transparent cross-border transactions. The BIS pilot placed tokenized money on a shared ledger, allowing banks to share a single record of ownership and payment status, and also tested foreign exchange payments. The project, named Project Agorá, involved a live test of $1 million.",
-        "background_en": "Tokenized money is a digital representation of fiat currency issued on a blockchain or shared ledger. The BIS is often called the central bank for central banks and has been exploring central bank digital currencies (CBDCs). Cross-border payments traditionally rely on a network of correspondent banks, which can be slow, expensive, and opaque. This pilot explores whether tokenization can modernize that infrastructure.",
-        "title_zh": "全球银行在BIS百万美元试点中测试代币化支付",
-        "detailed_summary_zh": "国际清算银行（BIS）启动了与28家全球银行（包括摩根大通、花旗和瑞银）的试点，在共享账本上测试代币化货币用于跨境支付。 这一试点标志着机构区块链采用的重要一步，通过实现近乎即时、透明的跨境交易，可能改变缓慢且昂贵的代理银行体系。 BIS试点将代币化货币放在共享账本上，使银行能够共享单一的所有权和支付状态记录，并测试了外汇支付。该项目名为“Project Agorá”，涉及100万美元的实时测试。",
-        "background_zh": "代币化货币是在区块链或共享账本上发行的法定货币的数字表示。BIS常被称为“央行的央行”，一直在探索央行数字货币（CBDC）。跨境支付传统上依赖代理银行网络，可能缓慢、昂贵且不透明。该试点探索代币化能否使该基础设施现代化。",
-        "sources": [
-          {
-            "url": "https://www.coindesk.com/business/2026/07/30/global-banks-test-tokenized-money-for-cross-border-payments-in-usd1-million-bis-pilot",
-            "title": "JPMorgan, Citi, UBS test tokenized cross-border payments in BIS pilot"
-          },
-          {
-            "url": "https://www.binance.com/en/square/post/07-30-2026-global-banks-test-tokenized-money-in-1-million-bis-pilot-350379258344802",
-            "title": "Global banks test tokenized money in $1 million BIS pilot"
-          },
-          {
-            "url": "https://www.ccn.com/education/crypto/tokenized-monetary-policy-blockchain-central-banking/",
-            "title": "What Is Tokenized Monetary Policy and How Does It Work?"
-          }
-        ]
-      },
-      "ai_score": 8.0,
-      "ai_reason": null,
-      "ai_summary": "The Bank for International Settlements launches a pilot with global banks to test tokenized money for cross-border payments, marking a major step in institutional blockchain adoption.",
-      "ai_tags": []
-    },
-    {
-      "id": "rss:openai.com_blog_rss.xml:ff7c1653ce2eb767",
-      "source_type": "rss",
-      "title": "Disrupting a Criminal Scam Operation",
-      "url": "https://openai.com/index/disrupting-malicious-uses-of-ai-criminal-scam-operation",
-      "content": null,
-      "author": "OpenAI Blog",
-      "published_at": "2026-07-31T00:00:00Z",
-      "fetched_at": "2026-08-01T00:30:57.625461Z",
-      "metadata": {
-        "feed_name": "OpenAI Blog",
-        "category": "ai-labs",
-        "title_en": "OpenAI Disrupts Cambodia-Based Scam Operation Abusing ChatGPT",
-        "detailed_summary_en": "OpenAI announced that it disrupted a Cambodia-based criminal operation that used ChatGPT to assist in investment, romance, gambling, and impersonation scams. The action is part of OpenAI's ongoing efforts to combat malicious uses of AI. This shows that AI developers are actively enforcing safety policies and taking real-world action against cybercriminals. It highlights the growing role of AI-safety teams in preventing fraud and protecting users from AI-enabled criminal schemes. The scam operation reportedly used ChatGPT to craft convincing messages for romance and impersonation fraud, as well as to support fake investment opportunities and gambling platforms. OpenAI did not disclose the exact scale of the operation or the specific methods used to identify it.",
-        "background_en": "AI models like ChatGPT can be exploited by bad actors to generate fraudulent content at scale. OpenAI has usage policies that prohibit illegal or harmful activity, and it uses automated detection systems and investigations to find and disrupt such abuse. This disruption is part of a broader industry trend where AI labs are increasingly cooperating with security researchers and law enforcement.",
-        "title_zh": "OpenAI 捣毁利用 ChatGPT 的柬埔寨诈骗团伙",
-        "detailed_summary_zh": "OpenAI 宣布已捣毁一个位于柬埔寨的犯罪团伙，该团伙利用 ChatGPT 协助实施投资、婚恋、赌博和冒充诈骗。此次行动是 OpenAI 持续打击 AI 滥用行为的一部分。 这表明 AI 开发者正在积极执行安全政策，并对网络犯罪分子采取实际行动。这也凸显了 AI 安全团队在预防欺诈和保护用户免受 AI 驱动的犯罪活动侵害方面的作用日益重要。 据报道，该诈骗团伙利用 ChatGPT 编写有说服力的信息，用于婚恋诈骗和冒充他人，以及支持虚假投资机会和赌博平台。OpenAI 未披露该行动的具体规模或识别方法。",
-        "background_zh": "像 ChatGPT 这样的 AI 模型可能被不法分子利用，大规模生成欺诈内容。OpenAI 制定了对非法或有害活动零容忍的使用政策，并通过自动检测系统和调查来发现并阻止此类滥用。此次行动反映了 AI 实验室与安全研究人员和执法机构加强合作这一更广泛的行业趋势。"
-      },
-      "ai_score": 7.0,
-      "ai_reason": null,
-      "ai_summary": "OpenAI disrupted a Cambodia-based scam operation that used ChatGPT to support investment, romance, gambling, and impersonation fraud schemes.",
-      "ai_tags": []
-    },
-    {
-      "id": "rss:news.google.com_rss_search?q=site:anthropic.com+when:7d&hl=en-US&gl=US&ceid=US:en:46223e7fc9e072c0",
-      "source_type": "rss",
-      "title": "Investigating three real-world incidents in our cybersecurity evaluations - Anthropic",
-      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE4zdnpHN3VXRHJaYjZ1T01TOUZqaXJHa1VoZC1TTUZaRkk4dnhfdkhHT2xpTUpwVXZfYTFSZHE4Vk5icGh2RmF5aHhKcDlicWJ5Sy1SalVLOGhXVlhVcFJGbFBqSG4xSG5KaWh5dnlWQTQ1NUR4THQxM05nanBUVTg?oc=5",
-      "content": null,
-      "author": "Anthropic News",
-      "published_at": "2026-07-30T23:03:16Z",
-      "fetched_at": "2026-07-31T00:30:45.526524Z",
-      "metadata": {
-        "feed_name": "Anthropic News",
-        "category": "ai-labs",
-        "title_en": "Anthropic Details Real-World Cybersecurity Incidents in AI Evaluations",
-        "detailed_summary_en": "Anthropic published an analysis of three real-world cybersecurity incidents that they used in their AI safety evaluations to test and improve their models' robustness against attacks. This provides concrete, real-world context for AI red teaming and safety evaluations, helping builders and researchers understand how to design more secure AI systems and anticipate attack vectors. The three incidents span different attack types — including credential theft, phishing, and network intrusion — and demonstrate how adversarial techniques can be adapted to target AI systems.",
-        "background_en": "Red teaming involves simulating attacks to uncover vulnerabilities in systems. AI safety evaluations aim to measure risks from AI systems, such as misuse or adversarial manipulation. Anthropic's work combines these practices to assess how well their models resist real-world threats.",
-        "title_zh": "Anthropic 详述 AI 评估中的真实网络安全事件",
-        "detailed_summary_zh": "Anthropic 发布了对三起真实网络安全事件的分析，这些事件被用于其 AI 安全评估中，以测试和改进模型对抗攻击的鲁棒性。 这为 AI 红队测试和安全评估提供了具体的现实背景，帮助构建者和研究人员了解如何设计更安全的 AI 系统并预判攻击途径。 这三起事件涉及不同的攻击类型——包括凭证窃取、钓鱼攻击和网络入侵——展示了对抗技术如何被调整用于针对 AI 系统。",
-        "background_zh": "红队测试涉及模拟攻击以发现系统漏洞。AI 安全评估旨在衡量 AI 系统带来的风险，如误用或对抗性操纵。Anthropic 的工作结合了这些实践来评估其模型抵御现实威胁的能力。",
-        "sources": [
-          {
-            "url": "https://en.wikipedia.org/wiki/Red_team",
-            "title": "Red team - Wikipedia"
-          },
-          {
-            "url": "https://en.wikipedia.org/wiki/AI_safety_evaluation",
-            "title": "AI safety evaluation"
-          }
-        ]
-      },
-      "ai_score": 7.0,
-      "ai_reason": null,
-      "ai_summary": "Anthropic shares findings from three real-world cybersecurity incidents used in their AI safety evaluations.",
-      "ai_tags": []
-    },
-    {
-      "id": "rss:www.whitehouse.gov_presidential-actions_feed_:ece1620ffa01d539",
-      "source_type": "rss",
-      "title": "Presidential Determination Pursuant to Section 101 of the Defense Production Act of 1950, as Amended, on Recoverable Critical Minerals and Materials",
-      "url": "https://www.whitehouse.gov/presidential-actions/2026/07/presidential-determination-pursuant-to-section-101-of-the-defense-production-act-of-1950-as-amended-on-recoverable-critical-minerals-and-materials/",
-      "content": null,
-      "author": "The White House",
-      "published_at": "2026-07-30T20:33:26Z",
-      "fetched_at": "2026-07-31T00:30:43.989602Z",
-      "metadata": {
-        "feed_name": "White House Presidential Actions",
-        "category": "macro-regulation",
-        "title_en": "Presidential Determination on Critical Minerals for National Defense",
-        "detailed_summary_en": "The White House issued a Presidential Determination under Section 101 of the Defense Production Act to address the inadequate supply of recoverable critical minerals and materials for national defense. This action signals strong government prioritization of domestic critical mineral supply chains, potentially accelerating investments in mining, recycling, and processing of materials essential for defense and technology sectors. The determination covers 'recoverable critical minerals and materials' but does not specify which minerals or concrete actions; it directs the Secretary of Commerce to take steps to expand domestic production capability.",
-        "background_en": "The Defense Production Act of 1950 grants the President broad authority to influence domestic industry to support national defense. Critical minerals are non-fuel minerals essential to economic or national security with vulnerable supply chains. This determination is part of a broader U.S. effort to reduce reliance on foreign sources for materials like rare earth elements.",
-        "title_zh": "总统关于关键矿产的国家安全决定",
-        "detailed_summary_zh": "白宫根据《国防生产法》第101条发布了一项总统决定，以解决可回收关键矿产和材料供应不足的问题，这些资源对国防至关重要。 此举标志着美国政府高度重视国内关键矿产供应链，可能加速对国防和科技领域所需材料的开采、回收和加工的投资。 该决定涵盖“可回收关键矿产和材料”，但未具体说明涉及哪些矿产或具体行动；它指示商务部长采取措施扩大国内生产能力。",
-        "background_zh": "1950年的《国防生产法》赋予总统广泛权力以影响国内产业支持国防。关键矿产是对经济或国家安全至关重要且供应链脆弱的非燃料矿物。该决定是美国减少对稀土等材料外国依赖的广泛努力的一部分。",
-        "sources": [
-          {
-            "url": "https://en.wikipedia.org/wiki/Defense_Production_Act_of_1950",
-            "title": "Defense Production Act of 1950"
-          },
-          {
-            "url": "https://www.usgs.gov/faqs/what-a-critical-mineral",
-            "title": "What is a critical mineral? | U.S. Geological Survey"
-          }
-        ]
-      },
-      "ai_score": 7.0,
-      "ai_reason": null,
-      "ai_summary": "The White House issued a Presidential Determination under the Defense Production Act to address inadequate supply of recoverable critical minerals and materials for national defense.",
-      "ai_tags": []
-    },
-    {
-      "id": "rss:www.coindesk.com_arc_outboundfeeds_rss_:4a88f7931c5c78da",
-      "source_type": "rss",
-      "title": "Strategy books $8.2 billion Q2 loss on bitcoin price decline",
-      "url": "https://www.coindesk.com/markets/2026/07/30/strategy-books-usd8-2-billion-second-quarter-loss-on-bitcoin-price-decline",
-      "content": null,
-      "author": "Krisztian Sandor",
-      "published_at": "2026-07-30T20:32:13Z",
-      "fetched_at": "2026-07-31T00:30:44.395904Z",
-      "metadata": {
-        "feed_name": "CoinDesk",
-        "category": "crypto-markets",
-        "title_en": "Strategy reports $8.2B Q2 loss on Bitcoin price drop",
-        "detailed_summary_en": "Strategy (formerly MicroStrategy) reported an $8.2 billion loss in the second quarter of 2026, primarily due to impairment charges on its Bitcoin holdings as the cryptocurrency's price declined. This highlights the significant financial risk for companies holding large amounts of Bitcoin under current accounting rules that require impairment charges when prices fall. It could affect market sentiment and the narrative around institutional adoption of Bitcoin. The loss is largely non-cash impairment charges, but it impacts reported earnings. Strategy's substantial Bitcoin holdings make it highly sensitive to price volatility under U.S. GAAP accounting for intangible assets.",
-        "background_en": "MicroStrategy, now rebranded as Strategy, has been a major corporate Bitcoin holder since 2020, using its cash reserves to purchase the cryptocurrency. Under U.S. GAAP, Bitcoin is classified as an indefinite-lived intangible asset and must be tested for impairment. When the market price falls below the purchase price, an impairment loss is recognized on the income statement, even if the asset is not sold. This accounting treatment can lead to large reported losses during Bitcoin downturns.",
-        "title_zh": "Strategy因比特币价格下跌录得82亿美元Q2亏损",
-        "detailed_summary_zh": "Strategy（前身为MicroStrategy）报告2026年第二季度亏损82亿美元，主要因其比特币持仓的减值费用，因为加密货币价格下跌。 这凸显了在当前会计准则下，持有大量比特币的公司面临的重大财务风险，因为价格下跌时必须确认减值费用。这可能影响市场情绪以及机构采纳比特币的叙事。 亏损主要是非现金减值费用，但影响报告盈余。Strategy持有大量比特币，根据美国GAAP对无形资产的会计处理，其业绩对价格波动高度敏感。",
-        "background_zh": "MicroStrategy（现已更名为Strategy）自2020年以来一直是主要的公司比特币持有者，使用现金储备购买该加密货币。根据美国GAAP，比特币被归类为无限期无形资产，必须进行减值测试。当市场价格低于购买价时，即使未出售资产，也需在利润表中确认减值损失。这种会计处理方式可能导致比特币下跌期间出现巨额报告亏损。",
-        "sources": [
-          {
-            "url": "https://decrypt.co/106573/microstrategy-reports-917m-bitcoin-impairment-as-saylor-steps-aside",
-            "title": "MicroStrategy Reports $917M Bitcoin Impairment Charge... - Decrypt"
-          },
-          {
-            "url": "https://www.ibtimes.com/microstrategy-reveals-727000-impairment-losses-bitcoin-holdings-3631422",
-            "title": "MicroStrategy Reveals $727,000 In Impairment Losses On Bitcoin..."
-          }
-        ]
-      },
-      "ai_score": 7.0,
-      "ai_reason": null,
-      "ai_summary": "Strategy reports an $8.2 billion Q2 loss attributed to the decline in Bitcoin's price.",
-      "ai_tags": []
-    },
-    {
-      "id": "rss:status.coinbase.com_history.rss:4bf03ce36363a66c",
-      "source_type": "rss",
-      "title": "Across Protocol (ACX) Token Changes",
-      "url": "https://status.coinbase.com/incidents/9h5nsb9zjlzd",
-      "content": null,
-      "author": "Coinbase Status",
-      "published_at": "2026-07-30T19:34:05Z",
-      "fetched_at": "2026-07-31T00:30:44.773463Z",
-      "metadata": {
-        "feed_name": "Coinbase Status",
-        "category": "exchange-operations",
-        "title_en": "Coinbase to Suspend ACX Trading as Project Winds Down",
-        "detailed_summary_en": "Coinbase has moved ACX order books to limit-only mode and will suspend trading of the ACX token on July 28, 2026, because the project team is winding down the token and offering conversion options. This matters for ACX holders as they must move their tokens to a self-custodial wallet by the deadline to participate in conversion options, otherwise they may lose access. It also highlights the risks of investing in tokens tied to specific protocols that may cease operations. The ACX token is the governance token of Across Protocol, a cross-chain bridge. Coinbase's suspension is due to the project's wind-down, and holders are directed to the forum at forum.across.to for conversion details.",
-        "background_en": "Across Protocol is a cross-chain bridge that enables fast and secure asset transfers between Ethereum and Layer 2 networks like Arbitrum, Optimism, and Polygon. ACX is its governance token, used for protocol decisions and incentives. Token wind-downs occur when a project decides to stop operations, often offering holders a way to convert their tokens to other assets or redeem them.",
-        "title_zh": "Coinbase 将因项目终止暂停 ACX 交易",
-        "detailed_summary_zh": "Coinbase 已将 ACX 订单簿设置为仅限限价模式，并将于 2026 年 7 月 28 日暂停 ACX 代币的交易，原因是项目团队正在终止该代币并提供转换选项。 这对 ACX 持有者很重要，因为他们必须在截止日期前将代币转入自托管钱包以参与转换选项，否则可能失去访问权限。这也凸显了投资于可能停止运营的特定协议代币的风险。 ACX 代币是跨链桥 Across Protocol 的治理代币。Coinbase 暂停交易是由于项目终止，持有者可访问 forum.across.to 论坛了解转换详情。",
-        "background_zh": "Across Protocol 是一个跨链桥，可在以太坊与 Arbitrum、Optimism、Polygon 等 Layer 2 网络之间实现快速安全的资产转移。ACX 是其治理代币，用于协议决策和激励。项目终止代币时，通常会为持有者提供将其代币转换为其他资产或赎回的方式。",
-        "sources": [
-          {
-            "url": "https://coinmarketcap.com/currencies/across-protocol/",
-            "title": "Across Protocol price today, ACX to USD live price, marketcap ...Across Protocol Price: ACX/USD Live Price Chart, Market Cap ...ACX Token – Official WebsiteAcross Protocol Token Price Today | ACX Live Price, Chart ...ACX Token Guide: Understanding Across Protocol's Cross-Chain ...ACX - ACXAcross Protocol Price Today | Live ACX Price, Chart ... - Binance"
-          }
-        ]
-      },
-      "ai_score": 7.0,
-      "ai_reason": null,
-      "ai_summary": "Coinbase will suspend ACX trading on July 28, 2026, due to the token being wound down by the project team, offering conversion options.",
       "ai_tags": []
     }
   ]
