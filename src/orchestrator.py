@@ -46,6 +46,7 @@ from .edition import (
     edition_window_for,
     edition_window_for_date,
     items_in_edition_window,
+    items_in_supplemental_window,
     load_staging_state,
     merge_staged_items,
     save_staging_state,
@@ -107,6 +108,7 @@ class BalancedDigestResult:
     group_counts: Dict[str, int] = field(default_factory=dict)
     group_limits: Dict[str, Optional[int]] = field(default_factory=dict)
     duplicate_categories: List[str] = field(default_factory=list)
+    borrowed_count: int = 0
 
 
 @dataclass
@@ -670,10 +672,19 @@ class HorizonOrchestrator:
                         "staging_cache_stale",
                         f"日内暂存缓存已 {staging_age_minutes} 分钟未更新。",
                     )
-            hours = force_hours or self.config.filtering.time_window_hours
+            filtering_config = self.config.filtering
+            hours = force_hours or filtering_config.time_window_hours
+            fallback_hours = filtering_config.fallback_window_hours
+            fetch_hours = max(hours, fallback_hours or hours)
+            fallback_start = (
+                window.end.astimezone(timezone.utc)
+                - timedelta(hours=fallback_hours)
+                if fallback_hours is not None
+                else window.start.astimezone(timezone.utc)
+            )
             since = min(
-                run_started_at - timedelta(hours=hours),
-                window.start.astimezone(timezone.utc),
+                run_started_at - timedelta(hours=fetch_hours),
+                fallback_start,
             )
             fresh_items = await self.fetch_all_sources(since)
             run_report.set_metric("fetched_raw", len(fresh_items))
@@ -725,15 +736,42 @@ class HorizonOrchestrator:
                 "candidate_sources",
                 dict(sorted(candidate_source_counts.items())),
             )
+            minimum_candidates = filtering_config.minimum_candidate_items
+            if (
+                minimum_candidates is not None
+                and len(candidates) < minimum_candidates
+            ):
+                run_report.add_alert(
+                    "warning",
+                    "candidate_shortage",
+                    f"固定 24 小时候选只有 {len(candidates)}/"
+                    f"{minimum_candidates} 条，已记录来源供给不足。",
+                )
             self.console.print(
                 f"📚 {len(candidates)} unique candidates fall inside this edition\n"
+            )
+
+            supplemental_candidates = (
+                self.merge_cross_source_duplicates(
+                    items_in_supplemental_window(
+                        staged_items,
+                        window,
+                        fallback_hours,
+                    )
+                )
+                if fallback_hours is not None
+                else []
             )
 
             final_fetch_failed = bool(
                 self.last_fetch_report
                 and self.last_fetch_report.all_failed
             )
-            if final_fetch_failed and not candidates:
+            if (
+                final_fetch_failed
+                and not candidates
+                and not supplemental_candidates
+            ):
                 if daily_state.items:
                     run_report.add_alert(
                         "warning",
@@ -752,7 +790,7 @@ class HorizonOrchestrator:
                     "final_fetch_failed_using_staging",
                     "最终采集全部失败，已使用当日早前暂存内容继续出刊。",
                 )
-            if not candidates and daily_state.items:
+            if not candidates and not supplemental_candidates and daily_state.items:
                 run_report.add_alert(
                     "info",
                     "edition_retry_preserved",
@@ -778,36 +816,148 @@ class HorizonOrchestrator:
                 before_history_filter - len(candidates),
             )
 
+            total_candidates_considered = before_history_filter
             analyzed_items = (
                 await self._analyze_content(candidates)
                 if candidates
                 else []
             )
-            run_report.set_metric("analyzed_this_run", len(analyzed_items))
-            run_report.set_metric("analyzed_today", len(analyzed_items))
 
             filtering_result = await self.filter_items(
                 analyzed_items,
                 apply_balance=False,
                 dedup_context=daily_state.dedup_history,
             )
-            important_items = filtering_result.items
-            run_report.set_metric(
-                "above_threshold",
-                filtering_result.threshold_count,
+            qualified_items = filtering_result.items
+            threshold_count = filtering_result.threshold_count
+            topic_duplicates_removed = filtering_result.topic_dedup_removed
+
+            await self._expand_twitter_discussion(qualified_items)
+            balanced_result = self.apply_balanced_digest(
+                qualified_items,
+                log=False,
             )
+            minimum_display = filtering_config.minimum_display_items
+            if (
+                minimum_display is not None
+                and len(balanced_result.items) < minimum_display
+            ):
+                balanced_result = self.apply_balanced_digest(
+                    qualified_items,
+                    allow_primary_borrowing=True,
+                )
+
+            fallback_used = bool(
+                fallback_hours is not None
+                and minimum_display is not None
+                and len(balanced_result.items) < minimum_display
+            )
+            if fallback_used:
+                total_candidates_considered += len(supplemental_candidates)
+                run_report.set_metric(
+                    "fallback_candidates",
+                    len(supplemental_candidates),
+                )
+                fallback_source_counts: Dict[str, int] = defaultdict(int)
+                for item in supplemental_candidates:
+                    source_key = (
+                        f"{item.source_type.value}/"
+                        f"{self._sub_source_label(item)}"
+                    )
+                    fallback_source_counts[source_key] += 1
+                run_report.set_breakdown(
+                    "fallback_candidate_sources",
+                    dict(sorted(fallback_source_counts.items())),
+                )
+                normal_identities = {
+                    item_identity(item) for item in candidates
+                }
+                fallback_before_history = len(supplemental_candidates)
+                supplemental_candidates = [
+                    item
+                    for item in supplemental_candidates
+                    if item_identity(item) not in published_identities
+                    and item_identity(item) not in normal_identities
+                ]
+                run_report.set_metric(
+                    "skipped_published_history",
+                    run_report.metrics.get("skipped_published_history", 0)
+                    + fallback_before_history
+                    - len(supplemental_candidates),
+                )
+                fallback_analyzed = (
+                    await self._analyze_content(supplemental_candidates)
+                    if supplemental_candidates
+                    else []
+                )
+                analyzed_items.extend(fallback_analyzed)
+                run_report.set_metric(
+                    "fallback_analyzed",
+                    len(fallback_analyzed),
+                )
+                fallback_filtering = await self.filter_items(
+                    fallback_analyzed,
+                    apply_balance=False,
+                    dedup_context=[
+                        *daily_state.dedup_history,
+                        *qualified_items,
+                    ],
+                )
+                threshold_count += fallback_filtering.threshold_count
+                topic_duplicates_removed += (
+                    fallback_filtering.topic_dedup_removed
+                )
+                fallback_qualified = fallback_filtering.items
+                await self._expand_twitter_discussion(fallback_qualified)
+                qualified_items = [*qualified_items, *fallback_qualified]
+                balanced_result = self.apply_balanced_digest(
+                    qualified_items,
+                    allow_primary_borrowing=True,
+                )
+                run_report.add_alert(
+                    "info",
+                    "fallback_window_used",
+                    f"固定窗口内容不足，已启用 {fallback_hours} 小时未发布内容保底；"
+                    "评分阈值和历史去重保持不变。",
+                )
+
+            important_items = balanced_result.items
+            run_report.set_metric("analyzed_this_run", len(analyzed_items))
+            run_report.set_metric("analyzed_today", len(analyzed_items))
+            run_report.set_metric("above_threshold", threshold_count)
             run_report.set_metric(
                 "topic_duplicates_removed",
-                filtering_result.topic_dedup_removed,
+                topic_duplicates_removed,
             )
-
-            await self._expand_twitter_discussion(important_items)
-            balanced_result = self.apply_balanced_digest(important_items)
-            important_items = balanced_result.items
+            run_report.set_metric(
+                "quota_borrowed",
+                balanced_result.borrowed_count,
+            )
             run_report.set_metric(
                 "balanced_digest_removed",
-                filtering_result.topic_dedup_count - len(important_items),
+                len(qualified_items) - len(important_items),
             )
+            minimum_qualified = filtering_config.minimum_qualified_items
+            if (
+                minimum_qualified is not None
+                and threshold_count < minimum_qualified
+            ):
+                run_report.add_alert(
+                    "warning",
+                    "qualified_content_shortage",
+                    f"达到 {filtering_config.ai_score_threshold:g} 分的内容只有 "
+                    f"{threshold_count}/{minimum_qualified} 条；未降低评分阈值。",
+                )
+            if (
+                minimum_display is not None
+                and len(important_items) < minimum_display
+            ):
+                run_report.add_alert(
+                    "warning",
+                    "short_edition",
+                    f"本期最终只有 {len(important_items)}/{minimum_display} 条；"
+                    "已发布短版，未复用历史内容或降低评分阈值。",
+                )
             group_labels = {
                 key: group.name or key
                 for key, group in self.config.filtering.category_groups.items()
@@ -885,7 +1035,7 @@ class HorizonOrchestrator:
             await self._publish_outputs(
                 important_items,
                 date=window.date,
-                total_candidates=before_history_filter,
+                total_candidates=total_candidates_considered,
                 timezone_name=timezone_name,
                 run_report=run_report,
                 window_start=window.start,
@@ -1411,6 +1561,7 @@ class HorizonOrchestrator:
         items: List[ContentItem],
         *,
         log: bool = True,
+        allow_primary_borrowing: bool = False,
     ) -> BalancedDigestResult:
         """Apply configured category quotas and the final item cap.
 
@@ -1480,6 +1631,12 @@ class HorizonOrchestrator:
             group_counts[group_key] += 1
             return True
 
+        def source_for(item: ContentItem) -> str:
+            return (
+                f"{item.source_type.value}/"
+                f"{self._sub_source_label(item)}"
+            )
+
         primary_groups = set(filtering.primary_groups)
         primary_minimum = filtering.primary_group_min_items or 0
         if primary_groups and primary_minimum:
@@ -1497,6 +1654,36 @@ class HorizonOrchestrator:
         for item in sorted_items:
             select(item, group_for(item))
 
+        borrowed_count = 0
+        borrow_limit = filtering.primary_group_borrow_limit
+        if allow_primary_borrowing and primary_groups and borrow_limit is not None:
+            source_counts: Dict[str, int] = defaultdict(int)
+            for selected_item, _ in selected:
+                source_counts[source_for(selected_item)] += 1
+            source_limit = filtering.max_items_per_source
+            for item in sorted_items:
+                if id(item) in selected_object_ids:
+                    continue
+                if max_items is not None and len(selected) >= max_items:
+                    break
+                group_key = group_for(item)
+                if group_key not in primary_groups:
+                    continue
+                effective_limit = max(groups[group_key].limit, borrow_limit)
+                if group_counts[group_key] >= effective_limit:
+                    continue
+                source_key = source_for(item)
+                if (
+                    source_limit is not None
+                    and source_counts[source_key] >= source_limit
+                ):
+                    continue
+                selected.append((item, group_key))
+                selected_object_ids.add(id(item))
+                group_counts[group_key] += 1
+                source_counts[source_key] += 1
+                borrowed_count += 1
+
         selected.sort(
             key=lambda pair: pair[0].ai_score or 0,
             reverse=True,
@@ -1509,6 +1696,12 @@ class HorizonOrchestrator:
         group_limits: Dict[str, Optional[int]] = {
             group_key: group.limit for group_key, group in groups.items()
         }
+        if allow_primary_borrowing and borrow_limit is not None:
+            for group_key in primary_groups:
+                group_limits[group_key] = max(
+                    groups[group_key].limit,
+                    borrow_limit,
+                )
         group_limits.setdefault(default_group, filtering.default_group_limit)
 
         if log:
@@ -1517,8 +1710,10 @@ class HorizonOrchestrator:
             )
             for group_key, group in groups.items():
                 label = group.name or group_key
+                effective_limit = group_limits[group_key]
                 self.console.print(
-                    f"      • {label}: {final_counts.get(group_key, 0)}/{group.limit}"
+                    f"      • {label}: "
+                    f"{final_counts.get(group_key, 0)}/{effective_limit}"
                 )
             if (
                 final_counts.get(default_group, 0)
@@ -1541,6 +1736,7 @@ class HorizonOrchestrator:
             group_counts=dict(final_counts),
             group_limits=group_limits,
             duplicate_categories=sorted(set(duplicate_categories)),
+            borrowed_count=borrowed_count,
         )
 
     async def _expand_twitter_discussion(self, items: List[ContentItem]) -> None:

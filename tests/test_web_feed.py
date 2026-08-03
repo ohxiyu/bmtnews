@@ -126,6 +126,11 @@ def test_home_templates_keep_two_editions_and_split_languages() -> None:
     )
 
     assert "for post in feed_posts limit:2" in include
+    assert "data-today-edition-status" in include
+    assert "Asia/Shanghai" in include
+    assert "今日版准备中" in include
+    assert "今日版延迟，正在恢复" in include
+    assert "08:30" in include
     assert "post.fragment_url | default: post.url" in include
     assert 'feed-home.html language="zh"' in zh_home
     assert 'feed-home.html language="en"' in en_home

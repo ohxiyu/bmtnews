@@ -57,11 +57,14 @@ _DAILY_METRIC_LABELS = (
     ("staging_only_candidates", "仅由日内暂存补回"),
     ("staged_total", "合并后暂存"),
     ("edition_candidates", "固定窗口候选"),
+    ("fallback_candidates", "36 小时保底候选"),
     ("skipped_published_history", "跳过历史发布"),
     ("analyzed_this_run", "本次 AI 分析"),
+    ("fallback_analyzed", "保底补充分析"),
     ("above_threshold", "分数达标"),
     ("topic_duplicates_removed", "主题去重删除"),
     ("balanced_digest_removed", "配额筛选删除"),
+    ("quota_borrowed", "Crypto 软借用"),
     ("displayed_today", "本期最终展示"),
     ("high_priority", "高优先级"),
 )
@@ -387,22 +390,26 @@ def render_markdown_report(payload: dict[str, Any]) -> str:
             ]
 
     candidate_sources = breakdowns.get("candidate_sources") or {}
+    fallback_sources = breakdowns.get("fallback_candidate_sources") or {}
     selected_sources = breakdowns.get("selected_sources") or {}
-    if candidate_sources or selected_sources:
+    if candidate_sources or fallback_sources or selected_sources:
         source_keys = list(
-            dict.fromkeys([*candidate_sources, *selected_sources])
+            dict.fromkeys(
+                [*candidate_sources, *fallback_sources, *selected_sources]
+            )
         )
         lines += [
             "",
             "### 来源贡献",
             "",
-            "| 细分来源 | 固定窗口候选 | 最终入选 |",
-            "| --- | ---: | ---: |",
+            "| 细分来源 | 固定窗口候选 | 保底候选 | 最终入选 |",
+            "| --- | ---: | ---: | ---: |",
         ]
         for source in source_keys:
             lines.append(
                 f"| {_markdown_cell(source)} | "
                 f"{int(candidate_sources.get(source, 0))} | "
+                f"{int(fallback_sources.get(source, 0))} | "
                 f"{int(selected_sources.get(source, 0))} |"
             )
 

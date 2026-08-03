@@ -478,7 +478,13 @@ Content is scored 0-10:
     "default_group": "other",
     "default_group_limit": 3,
     "primary_groups": ["finance"],
-    "primary_group_min_items": 5
+    "primary_group_min_items": 5,
+    "minimum_candidate_items": 20,
+    "minimum_qualified_items": 7,
+    "minimum_display_items": 5,
+    "fallback_window_hours": 36,
+    "primary_group_borrow_limit": 6,
+    "max_items_per_source": 3
   }
 }
 ```
@@ -499,6 +505,28 @@ Content is scored 0-10:
 - `primary_group_min_items`: Optional positive reservation for qualified items
   across `primary_groups`. It cannot exceed `max_items` or the combined primary
   group capacity. The reservation never bypasses the AI threshold or group caps.
+- `minimum_candidate_items`: Optional warning threshold for raw candidates in
+  the fixed 24-hour edition window.
+- `minimum_qualified_items`: Optional warning threshold for items that retain
+  the configured AI score after analysis.
+- `minimum_display_items`: Optional short-edition threshold. When selection is
+  below it, the resilience rules below are activated.
+- `fallback_window_hours`: Optional extended lookback used only when the normal
+  edition is short. It must exceed both the fixed 24-hour edition window and
+  `time_window_hours`; previously published items remain excluded and the AI
+  score threshold is unchanged.
+- `primary_group_borrow_limit`: Optional soft per-group limit for unused primary
+  topic capacity. Side-topic caps remain hard.
+- `max_items_per_source`: Optional source cap applied only to items added by
+  primary-topic quota borrowing. It does not remove items from the normal
+  quota selection.
+
+When resilience is configured, Horizon first selects the normal fixed-window
+edition. If it is short, primary groups may borrow unused capacity. Only if the
+edition is still short does Horizon analyze the older supplemental segment.
+Historical identity and semantic-topic deduplication both run before those
+items can be selected. A short edition is still published with an explicit run
+warning; Horizon never reuses a published story or lowers the score threshold.
 
 Balanced digest filtering runs after AI score threshold filtering and topic
 deduplication, but before enrichment. This reduces enrichment calls to only the

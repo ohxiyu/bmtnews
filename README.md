@@ -287,6 +287,11 @@ Group limits are applied after AI score filtering and before enrichment.
 `primary_groups` can reserve up to `primary_group_min_items` slots when enough
 qualified items exist; it never bypasses the AI threshold or group caps. If
 `category_groups` and `max_items` are omitted, filtering behaves as before.
+Optional daily-edition resilience settings can warn on low candidate volume,
+borrow unused capacity between primary groups, and extend the lookback only
+when the normal edition is short. See
+[Filtering](project-docs/configuration.md#filtering) for the full configuration;
+these rules never lower the AI threshold or reuse previously published items.
 
 `api_key_env` must be the name of an environment variable, not the API key
 itself. Put the real secret in `.env`:

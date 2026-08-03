@@ -492,6 +492,12 @@ class FilteringConfig(BaseModel):
     default_group_limit: Optional[int] = Field(default=None, gt=0)
     primary_groups: List[str] = Field(default_factory=list)
     primary_group_min_items: Optional[int] = Field(default=None, gt=0)
+    minimum_candidate_items: Optional[int] = Field(default=None, gt=0)
+    minimum_qualified_items: Optional[int] = Field(default=None, gt=0)
+    minimum_display_items: Optional[int] = Field(default=None, gt=0)
+    fallback_window_hours: Optional[int] = Field(default=None, gt=0)
+    primary_group_borrow_limit: Optional[int] = Field(default=None, gt=0)
+    max_items_per_source: Optional[int] = Field(default=None, gt=0)
 
     @field_validator("daily_timezone")
     @classmethod
@@ -504,11 +510,13 @@ class FilteringConfig(BaseModel):
 
     @model_validator(mode="after")
     def validate_primary_group(self) -> "FilteringConfig":
-        if self.primary_group_min_items is None:
-            return self
-        if not self.primary_groups:
+        if (
+            self.primary_group_min_items is not None
+            or self.primary_group_borrow_limit is not None
+        ) and not self.primary_groups:
             raise ValueError(
-                "primary_groups is required when primary_group_min_items is set"
+                "primary_groups is required when a primary group target or "
+                "borrow limit is set"
             )
         missing = [
             group
@@ -519,18 +527,34 @@ class FilteringConfig(BaseModel):
             raise ValueError(
                 "primary_groups must name configured category groups"
             )
-        capacity = sum(
-            self.category_groups[group].limit for group in self.primary_groups
-        )
-        if self.primary_group_min_items > capacity:
-            raise ValueError(
-                "primary_group_min_items cannot exceed primary group capacity"
+        if self.primary_group_min_items is not None:
+            capacity = sum(
+                self.category_groups[group].limit
+                for group in self.primary_groups
             )
+            if self.primary_group_min_items > capacity:
+                raise ValueError(
+                    "primary_group_min_items cannot exceed primary group capacity"
+                )
+            if (
+                self.max_items is not None
+                and self.primary_group_min_items > self.max_items
+            ):
+                raise ValueError("primary_group_min_items cannot exceed max_items")
         if (
-            self.max_items is not None
-            and self.primary_group_min_items > self.max_items
+            self.minimum_display_items is not None
+            and self.max_items is not None
+            and self.minimum_display_items > self.max_items
         ):
-            raise ValueError("primary_group_min_items cannot exceed max_items")
+            raise ValueError("minimum_display_items cannot exceed max_items")
+        if (
+            self.fallback_window_hours is not None
+            and self.fallback_window_hours <= max(24, self.time_window_hours)
+        ):
+            raise ValueError(
+                "fallback_window_hours must exceed the 24-hour edition window "
+                "and time_window_hours"
+            )
         return self
 
 

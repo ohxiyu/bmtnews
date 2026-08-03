@@ -7,12 +7,17 @@ from zoneinfo import ZoneInfo
 
 import pytest
 
-from src.daily_feed import load_daily_feed_state
+from src.daily_feed import (
+    DailyFeedState,
+    load_daily_feed_state,
+    save_daily_feed_state,
+)
 from src.edition import (
     StagingStateError,
     edition_window_for,
     edition_window_for_date,
     items_in_edition_window,
+    items_in_supplemental_window,
     load_staging_state,
     merge_staged_items,
     save_staging_state,
@@ -95,6 +100,19 @@ def test_edition_window_is_start_inclusive_and_end_exclusive() -> None:
     assert [
         item.id for item in items_in_edition_window(items, window)
     ] == ["start", "inside"]
+
+
+def test_supplemental_window_only_returns_preceding_segment() -> None:
+    window = edition_window_for_date("2026-07-29", "Asia/Shanghai", 8)
+    items = [
+        make_item("too-old", datetime(2026, 7, 27, 19, 59, tzinfo=SHANGHAI)),
+        make_item("supplemental", datetime(2026, 7, 28, 2, 0, tzinfo=SHANGHAI)),
+        make_item("normal", datetime(2026, 7, 28, 8, 0, tzinfo=SHANGHAI)),
+    ]
+
+    assert [
+        item.id for item in items_in_supplemental_window(items, window, 36)
+    ] == ["supplemental"]
 
 
 def test_staging_merge_deduplicates_urls_and_bounds_retention() -> None:
@@ -280,6 +298,131 @@ def test_daily_edition_combines_staging_and_final_fetch(
         alert["code"] == "edition_already_published"
         for alert in retry_report["alerts"]
     )
+
+
+def test_daily_edition_uses_unpublished_36_hour_fallback_when_short(
+    tmp_path: Path,
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    now = datetime(2026, 7, 29, 8, 30, tzinfo=SHANGHAI)
+    normal = make_item(
+        "normal",
+        datetime(2026, 7, 29, 7, 0, tzinfo=SHANGHAI),
+        score=8.0,
+    )
+    supplemental = make_item(
+        "supplemental",
+        datetime(2026, 7, 28, 2, 0, tzinfo=SHANGHAI),
+        score=8.5,
+    )
+    already_published = make_item(
+        "published-again",
+        datetime(2026, 7, 28, 3, 0, tzinfo=SHANGHAI),
+        url="https://example.com/published",
+        score=9.0,
+    )
+    staging_path = tmp_path / "data" / "staging-items.json"
+    save_staging_state(
+        [supplemental, already_published],
+        staging_path,
+        updated_at=now,
+    )
+    save_daily_feed_state(
+        DailyFeedState(
+            date="2026-07-28",
+            timezone="Asia/Shanghai",
+            updated_at=datetime(2026, 7, 28, 8, 30, tzinfo=SHANGHAI),
+            items=[already_published],
+        ),
+        tmp_path / "docs" / "_data" / "bmtnews_state.json",
+    )
+    config = Config(
+        ai=AIConfig(
+            provider="openai",
+            model="test",
+            api_key_env="TEST_API_KEY",
+            languages=[],
+        ),
+        sources=SourcesConfig(),
+        filtering=FilteringConfig(
+            ai_score_threshold=7.0,
+            time_window_hours=24,
+            daily_timezone="Asia/Shanghai",
+            max_items=4,
+            minimum_candidate_items=3,
+            minimum_qualified_items=3,
+            minimum_display_items=2,
+            fallback_window_hours=36,
+            primary_group_borrow_limit=6,
+            max_items_per_source=3,
+            category_groups={
+                "markets": CategoryGroupConfig(
+                    name="Crypto Markets",
+                    limit=4,
+                    categories=["crypto-markets"],
+                )
+            },
+            primary_groups=["markets"],
+            primary_group_min_items=2,
+        ),
+    )
+    orchestrator = HorizonOrchestrator(
+        config,
+        storage=StorageManager(data_dir=str(tmp_path / "data")),
+    )
+    analyzed_ids: list[str] = []
+    requested_since: list[datetime] = []
+
+    async def fetch_all_sources(since):  # type: ignore[no-untyped-def]
+        requested_since.append(since)
+        return [normal]
+
+    async def analyze_content(items):  # type: ignore[no-untyped-def]
+        analyzed_ids.extend(item.id for item in items)
+        return items
+
+    async def no_topic_duplicates(items, *, log=True):  # type: ignore[no-untyped-def]
+        return items
+
+    async def no_op(items):  # type: ignore[no-untyped-def]
+        return None
+
+    monkeypatch.setattr(orchestrator, "fetch_all_sources", fetch_all_sources)
+    monkeypatch.setattr(orchestrator, "_analyze_content", analyze_content)
+    monkeypatch.setattr(
+        orchestrator,
+        "merge_topic_duplicates",
+        no_topic_duplicates,
+    )
+    monkeypatch.setattr(orchestrator, "_expand_twitter_discussion", no_op)
+    monkeypatch.setattr(orchestrator, "_enrich_important_items", no_op)
+    monkeypatch.chdir(tmp_path)
+
+    asyncio.run(
+        orchestrator.run_daily_edition(
+            staging_path=staging_path,
+            now=now,
+        )
+    )
+
+    state = load_daily_feed_state(
+        "2026-07-29",
+        "Asia/Shanghai",
+        tmp_path / "docs" / "_data" / "bmtnews_state.json",
+    )
+    report = load_run_report(tmp_path / "data" / "run-report.json")
+    assert requested_since == [datetime(2026, 7, 27, 12, 0, tzinfo=timezone.utc)]
+    assert analyzed_ids == ["normal", "supplemental"]
+    assert [item.id for item in state.items] == ["supplemental", "normal"]
+    assert report["metrics"]["edition_candidates"] == 1
+    assert report["metrics"]["fallback_candidates"] == 2
+    assert report["metrics"]["fallback_analyzed"] == 1
+    assert report["metrics"]["skipped_published_history"] == 1
+    assert {alert["code"] for alert in report["alerts"]} >= {
+        "candidate_shortage",
+        "qualified_content_shortage",
+        "fallback_window_used",
+    }
 
 
 def test_workflows_stage_twice_and_publish_once() -> None:

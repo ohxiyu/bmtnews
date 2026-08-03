@@ -134,6 +134,10 @@ def test_daily_report_renders_window_quotas_and_source_contribution() -> None:
         "selected_sources",
         {"rss/CoinDesk": 2},
     )
+    report.set_breakdown(
+        "fallback_candidate_sources",
+        {"rss/CoinDesk": 3},
+    )
     report.add_alert(
         "warning",
         "primary_quota_shortfall",
@@ -150,7 +154,7 @@ def test_daily_report_renders_window_quotas_and_source_contribution() -> None:
     assert "| 固定窗口候选 | 51 |" in markdown
     assert "| Crypto Markets | 4 | 4 |" in markdown
     assert "Crypto 主轨：**4 / 9**" in markdown
-    assert "| rss/CoinDesk | 12 | 2 |" in markdown
+    assert "| rss/CoinDesk | 12 | 3 | 2 |" in markdown
     assert "| URL 去重后 | 0 |" not in markdown
 
 
