@@ -348,6 +348,10 @@ explicit edition date. The workflow performs a final fetch, analyzes the fixed
 edition to GitHub Pages. The staging cache is only a coverage aid; the final
 24-hour fetch remains a fallback.
 
+When `TELEGRAM_BOT_TOKEN` and `TELEGRAM_CHANNEL_ID` are configured as GitHub
+Actions secrets, the same publication run also sends one compact Chinese
+edition to the Telegram channel. No bot credential is stored in the repository.
+
 Each workflow writes `data/run-report.json`, but the report now matches the
 actual run type. Staging runs show collection, URL deduplication, newly staged
 items, retained cache size, and per-source fetch status. The daily publication
@@ -404,6 +408,7 @@ Horizon can publish or deliver the generated briefing in several ways:
 |---------|--------------|
 | **GitHub Pages Daily Site** | Copies generated Markdown into `docs/` so GitHub Pages can publish a daily-updated briefing site |
 | **Email Subscription** | Sends the daily briefing to subscribers and handles subscribe/unsubscribe requests through SMTP/IMAP |
+| **Telegram Channel** | Sends one compact Chinese daily edition through the Telegram Bot API, with a link to the complete site |
 | **Webhook Notification** | Pushes success or failure results to Feishu/Lark, DingTalk, Slack, Discord, or any custom webhook endpoint |
 | **MCP Server** | Exposes Horizon pipeline steps as tools so AI assistants can fetch, score, filter, enrich, summarize, and run the full workflow |
 

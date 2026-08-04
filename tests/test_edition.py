@@ -30,9 +30,14 @@ from src.models import (
     FilteringConfig,
     SourceType,
     SourcesConfig,
+    TelegramDeliveryConfig,
 )
 from src.orchestrator import HorizonOrchestrator
 from src.run_report import load_run_report
+from src.services.telegram_delivery import (
+    TelegramDeliveryResult,
+    TelegramDeliveryStatus,
+)
 from src.storage.manager import StorageManager
 
 
@@ -203,12 +208,14 @@ def test_daily_edition_combines_staging_and_final_fetch(
             primary_groups=["markets"],
             primary_group_min_items=3,
         ),
+        telegram_delivery=TelegramDeliveryConfig(enabled=True),
     )
     orchestrator = HorizonOrchestrator(
         config,
         storage=StorageManager(data_dir=str(tmp_path / "data")),
     )
     analyzed_ids: list[str] = []
+    telegram_calls: list[tuple[str, int, str]] = []
 
     async def fetch_all_sources(since):  # type: ignore[no-untyped-def]
         return [fresh, next_edition]
@@ -223,6 +230,17 @@ def test_daily_edition_combines_staging_and_final_fetch(
     async def no_op(items):  # type: ignore[no-untyped-def]
         return None
 
+    async def send_telegram(
+        items, *, date, total_candidates, language
+    ):  # type: ignore[no-untyped-def]
+        if language != "zh":
+            return TelegramDeliveryResult(TelegramDeliveryStatus.SKIPPED)
+        telegram_calls.append((date, total_candidates, language))
+        return TelegramDeliveryResult(
+            TelegramDeliveryStatus.SUCCESS,
+            message_length=1234,
+        )
+
     monkeypatch.setattr(orchestrator, "fetch_all_sources", fetch_all_sources)
     monkeypatch.setattr(orchestrator, "_analyze_content", analyze_content)
     monkeypatch.setattr(
@@ -232,6 +250,11 @@ def test_daily_edition_combines_staging_and_final_fetch(
     )
     monkeypatch.setattr(orchestrator, "_expand_twitter_discussion", no_op)
     monkeypatch.setattr(orchestrator, "_enrich_important_items", no_op)
+    monkeypatch.setattr(
+        orchestrator.telegram_publisher,
+        "send_daily_edition",
+        send_telegram,
+    )
     monkeypatch.chdir(tmp_path)
 
     asyncio.run(
@@ -279,6 +302,9 @@ def test_daily_edition_combines_staging_and_final_fetch(
     }
     assert report["metrics"]["primary_selected"] == 2
     assert report["metrics"]["primary_required"] == 3
+    assert report["metrics"]["telegram_messages_sent"] == 1
+    assert report["metrics"]["telegram_message_chars"] == 1234
+    assert telegram_calls == [("2026-07-29", 2, "zh")]
     assert any(
         alert["code"] == "primary_quota_shortfall"
         for alert in report["alerts"]
@@ -293,6 +319,7 @@ def test_daily_edition_combines_staging_and_final_fetch(
     )
     retry_report = load_run_report(tmp_path / "data" / "run-report.json")
     assert analyzed_ids == ["fresh", "staged"]
+    assert telegram_calls == [("2026-07-29", 2, "zh")]
     assert retry_report["metrics"]["displayed_today"] == 2
     assert any(
         alert["code"] == "edition_already_published"
@@ -449,3 +476,5 @@ def test_workflows_stage_twice_and_publish_once() -> None:
     assert "timeout-minutes: 30" in publication
     assert "GITHUB_TOKEN: ${{ github.token }}" in collection
     assert "GITHUB_TOKEN: ${{ github.token }}" in publication
+    assert "TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}" in publication
+    assert "TELEGRAM_CHANNEL_ID: ${{ secrets.TELEGRAM_CHANNEL_ID }}" in publication

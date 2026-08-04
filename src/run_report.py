@@ -67,6 +67,8 @@ _DAILY_METRIC_LABELS = (
     ("quota_borrowed", "Crypto 软借用"),
     ("displayed_today", "本期最终展示"),
     ("high_priority", "高优先级"),
+    ("telegram_messages_sent", "Telegram 推送"),
+    ("telegram_message_chars", "Telegram 消息字符"),
 )
 
 _REPORT_TITLES = {
