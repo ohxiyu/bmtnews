@@ -14,6 +14,10 @@ from .models import Config, ContentItem
 from ._file_utils import _atomic_write_text
 from .storage.manager import StorageManager, safe_output_path
 from .services.email import EmailManager
+from .services.telegram_delivery import (
+    TelegramDeliveryStatus,
+    TelegramEditionPublisher,
+)
 from .services.webhook import WebhookNotifier
 from .scrapers.github import GitHubScraper
 from .scrapers.hackernews import HackerNewsScraper
@@ -205,6 +209,14 @@ class HorizonOrchestrator:
         self.webhook_notifier = (
             WebhookNotifier(config.webhook, console=self.console)
             if config.webhook and config.webhook.enabled
+            else None
+        )
+        self.telegram_publisher = (
+            TelegramEditionPublisher(
+                config.telegram_delivery,
+                console=self.console,
+            )
+            if config.telegram_delivery and config.telegram_delivery.enabled
             else None
         )
         self.last_fetch_report: Optional[FetchReport] = None
@@ -1183,6 +1195,64 @@ class HorizonOrchestrator:
                     lang=lang,
                     summarizer=summarizer,
                 )
+
+        await self._deliver_telegram_editions(
+            items,
+            date=date,
+            total_candidates=total_candidates,
+            run_report=run_report,
+        )
+
+    async def _deliver_telegram_editions(
+        self,
+        items: List[ContentItem],
+        *,
+        date: str,
+        total_candidates: int,
+        run_report: RunReport,
+    ) -> None:
+        """Deliver configured languages after every local output is ready."""
+        telegram_publisher = getattr(self, "telegram_publisher", None)
+        if not telegram_publisher:
+            return
+
+        telegram_config = self.config.telegram_delivery
+        for language in self.config.ai.languages:
+            telegram_result = await telegram_publisher.send_daily_edition(
+                items,
+                date=date,
+                total_candidates=total_candidates,
+                language=language,
+            )
+            if telegram_result.status == TelegramDeliveryStatus.SUCCESS:
+                run_report.set_metric(
+                    "telegram_messages_sent",
+                    run_report.metrics.get("telegram_messages_sent", 0) + 1,
+                )
+                run_report.set_metric(
+                    "telegram_message_chars",
+                    run_report.metrics.get("telegram_message_chars", 0)
+                    + telegram_result.message_length,
+                )
+            elif (
+                telegram_result.status == TelegramDeliveryStatus.SKIPPED
+                and telegram_result.detail
+            ):
+                run_report.add_alert(
+                    "info",
+                    "telegram_delivery_skipped",
+                    f"Telegram 日报未发送：{telegram_result.detail}",
+                )
+                if telegram_config and telegram_config.required:
+                    raise RuntimeError(telegram_result.detail)
+            elif telegram_result.status == TelegramDeliveryStatus.FAILURE:
+                run_report.add_alert(
+                    "warning",
+                    "telegram_delivery_failed",
+                    telegram_result.detail,
+                )
+                if telegram_config and telegram_config.required:
+                    raise RuntimeError(telegram_result.detail)
 
     def _determine_time_window(self, force_hours: int = None) -> datetime:
         if force_hours:

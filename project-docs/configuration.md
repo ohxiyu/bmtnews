@@ -630,6 +630,56 @@ Resend SMTP example:
 
 Set `RESEND_API_KEY` in `.env`. Recipients are loaded from `data/subscribers.json`.
 
+## Telegram Daily Edition Delivery
+
+Telegram delivery uses the official Bot API to publish one compact edition to
+a channel after the daily summary is generated. It is separate from
+`sources.telegram`, which only collects posts from public channels.
+
+```json
+{
+  "telegram_delivery": {
+    "enabled": true,
+    "bot_token_env": "TELEGRAM_BOT_TOKEN",
+    "channel_id_env": "TELEGRAM_CHANNEL_ID",
+    "languages": ["zh"],
+    "site_url": "https://bmt.news/",
+    "required": false,
+    "max_message_chars": 3900
+  }
+}
+```
+
+- `enabled`: Enables delivery after an edition is generated.
+- `bot_token_env`: Environment variable containing the BotFather token.
+- `channel_id_env`: Environment variable containing a public channel username
+  such as `@channelname`, or the channel's numeric ID.
+- `languages`: Languages to publish. BMTNews uses `["zh"]` so the bilingual
+  generation loop sends only one channel message per day.
+- `site_url`: Link appended to the message for the complete edition.
+- `required`: When `true`, a missing credential or failed Telegram request
+  fails the publication run. When `false`, the website continues publishing
+  and the run report records the skipped or failed delivery.
+- `max_message_chars`: Maximum rendered message size. Keep this at or below
+  Telegram's 4096-character `sendMessage` limit. The renderer keeps whole HTML
+  blocks and links instead of cutting through markup.
+
+Online setup requires no local service:
+
+1. Create a bot with [@BotFather](https://t.me/BotFather).
+2. Add the bot to the destination channel as an administrator with permission
+   to post messages.
+3. In GitHub, open **Settings → Secrets and variables → Actions** and create
+   `TELEGRAM_BOT_TOKEN` and `TELEGRAM_CHANNEL_ID` repository secrets.
+4. Run **BMTNews Daily Edition** manually with `force_publish` enabled to verify
+   the first channel message. Normal 08:30 publications send automatically.
+
+The token is used only to call the official
+[`sendMessage`](https://core.telegram.org/bots/api#sendmessage) endpoint and is
+never included in saved summaries, run reports, or logs. The checked-in GitHub
+configuration is safe when Secrets are absent: delivery is skipped and the
+site still publishes.
+
 ## Webhook Notification
 
 Webhook notification is optional and disabled unless `webhook.enabled` is `true`. Horizon can call Feishu/Lark, DingTalk, Slack, Discord, or any custom webhook endpoint when the pipeline succeeds or fails.

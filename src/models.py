@@ -4,6 +4,7 @@ from datetime import datetime, timezone
 from enum import Enum
 import re
 from typing import Annotated, Literal, Optional, List, Dict, Any, NamedTuple, Union
+from urllib.parse import urlparse
 from zoneinfo import ZoneInfo, ZoneInfoNotFoundError
 from pydantic import BaseModel, HttpUrl, Field, field_validator, model_validator
 
@@ -471,6 +472,26 @@ class EmailConfig(BaseModel):
     enabled: bool = False
 
 
+class TelegramDeliveryConfig(BaseModel):
+    """Telegram Bot API delivery configuration for published editions."""
+
+    enabled: bool = False
+    bot_token_env: str = "TELEGRAM_BOT_TOKEN"
+    channel_id_env: str = "TELEGRAM_CHANNEL_ID"
+    languages: List[str] = Field(default_factory=lambda: ["zh"])
+    site_url: str = "https://bmt.news/"
+    required: bool = False
+    max_message_chars: int = Field(default=3900, ge=512, le=4096)
+
+    @field_validator("site_url")
+    @classmethod
+    def validate_site_url(cls, value: str) -> str:
+        parsed = urlparse(value)
+        if parsed.scheme not in {"http", "https"} or not parsed.netloc:
+            raise ValueError("telegram_delivery.site_url must be an HTTP(S) URL")
+        return value
+
+
 class CategoryGroupConfig(BaseModel):
     """A quota group containing one or more source categories."""
 
@@ -568,3 +589,4 @@ class Config(BaseModel):
     extractors: Dict[str, ExtractorConfig] = Field(default_factory=dict)
     email: Optional[EmailConfig] = None
     webhook: Optional[WebhookConfig] = None
+    telegram_delivery: Optional[TelegramDeliveryConfig] = None

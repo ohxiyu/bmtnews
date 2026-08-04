@@ -425,5 +425,16 @@
       }
     },
     "headers": ""
+  },
+  "telegram_delivery": {
+    "enabled": true,
+    "bot_token_env": "TELEGRAM_BOT_TOKEN",
+    "channel_id_env": "TELEGRAM_CHANNEL_ID",
+    "languages": [
+      "zh"
+    ],
+    "site_url": "https://bmt.news/",
+    "required": false,
+    "max_message_chars": 3900
   }
 }
