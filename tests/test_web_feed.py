@@ -114,6 +114,15 @@ def test_render_web_feed_empty_state_is_static() -> None:
     assert "digest-item" not in markup
 
 
+def test_story_summaries_are_not_visually_truncated() -> None:
+    root = Path(__file__).parents[1]
+    stylesheet = (root / "docs" / "assets" / "css" / "bmtnews.css").read_text(
+        encoding="utf-8"
+    )
+
+    assert ".story-summary-body:not(.expanded)" not in stylesheet
+
+
 def test_home_templates_keep_two_editions_and_split_languages() -> None:
     root = Path(__file__).parents[1]
     include = (root / "docs" / "_includes" / "feed-home.html").read_text(
