@@ -1,218 +1,346 @@
 {
   "version": 1,
-  "date": "2026-08-03",
+  "date": "2026-08-04",
   "timezone": "Asia/Shanghai",
-  "updated_at": "2026-08-03T00:30:53.908798Z",
+  "updated_at": "2026-08-04T00:31:11.016608Z",
   "analyzed_keys": [
-    "1046fd6a56808dd1cdf7f4f9105e7641896008bc954c90007db183edfc11dbff",
-    "27a1d3d0d4f205ff90ecbcd6abcb7d821d959ca987d81e7b958d58b433e79cb8",
-    "4a079d06d00209140d96895b291505ff9c6ef786d92ad484a7810e8dab52d2fa",
-    "50894fa2e538c8a7c3117dd520e656f2830bce86e4e8c4c48b0ced61dfba622e",
-    "7cc51325ca4ab1ec3042f4ce3e54c137c2140da2523162af25ef350863040b5e",
-    "83a8ec48b92171cc772ca24b94578f3f9d4d141a04cb9d77b047b95d3c7faf9f",
-    "85e0afbe2f41e654ecfbd8428c7be1521f221b8b931b54817ec3ee4ceb2c5457",
+    "0393f3368707ad277c842b65d3ea3c6f0c1eaa9143efe64af89ce1f30a3c014a",
+    "0d8b377c0a35b75a97a6d2cf8e9847e76ba5431b63f74f6dbdce7f4b3432c44c",
+    "13f15d3511972669fbec2bd6d9ccc979fe8a8813e516d7d01638b54c7b40efc8",
+    "14ce4dcc46f75a5e29cd07037c6d57409286f536772ce536f0d62d5e0fc26ca4",
+    "17677f75dfff63afb2378b5a1a7b272b0f81d6e2ea39a61a19390b37f38d0dd6",
+    "190e7cda77b95dbbe5a1456043ff040d571e23094ea21c0bd1c0405f704994a1",
+    "360d29f9751ceef2785c01f639fe0b951f588383cc5d3e7d149c84b7dc818cea",
+    "365c4b7ca1e46713be5aae6ed777e5912d62f479c9b25bde2b41ce3bf6015ac1",
+    "39e5f901c68cbf5079f29b11517075140d32c32d8ae4191f42135207ef950c21",
+    "3fddabdba63d35c5ad37118fa5250c1ad8fd44bde955926407a9d20abac1d7c0",
+    "420de136e2c285774c66db2ea92b265606ef039745314c63a8e28f42ddfa0d7f",
+    "4fb10a8e065e7ac33538b11c80f9a8ed8abab88b9c28e0aa08115456f30bd8a4",
+    "548053831572e51afdcc0166758e58b5df2e08198c8ef0668c7c921e985e820d",
+    "563f829959064931110ac04818e733b022f741437a5cc4054dd2e9f2b627996b",
+    "5f9950360505ed26053c6262d3456118d47fde7f3c28169e9391836ba02e9944",
+    "6200498d77690191f1add792d8e9ac0d41dc27cf92d937e5ac273629e8a4363f",
+    "64aab3b207df32f9e3e7ef25cb03c83657a4ad6477f315ba90d0eb2ba8b92a20",
+    "6c04726df5a4e70c009e9eb13a2c01afcce7296e358d63c36aa2e3d03d68331e",
+    "6e15a672384f5737a4de699f410ce33e5e2e1ebad65fbfb9392a88aee5650685",
+    "7193840187b5c8c30e5840f9a22bb5d9df7cbf35da3c64fa03a86d118bc0cca0",
+    "832be825257bdaa173015283613e94628680038a4fa05270f009a9d3231eb7e2",
+    "879a7b396fc6403a4dc225b0793d32c4fc10ca6aeaaab562d10c4855e3445c2b",
+    "92e47022a83fe1c19801ea95a29cfaf2f423e7ea6b9b9693c27617de10745831",
     "93e14f3eb4d5cb1b3f0e01f1efb9791132f74eed7f3992a36e7c090de8dd8e1a",
-    "ea6fdd688aa50c0e0b80fb82ced033f08b3981232a629542c1f9fdb2c5b2ce9c",
-    "f2df7bf438bc90ff9d7fd503d0b2ddeb2a365ceea24867201efe216d4222d0b8",
-    "fb13f6efeed8432df75744798a12f6a00614a1f535f04eaaf6a2c3acb6f442ad"
+    "960d5c73c3edbf7a28e3a74957d0b43c10195c9f92a42b7e656d6530be51c517",
+    "9b603166ed9086a4640175db721035664dad5d721df18e91039ace3530f5bfba",
+    "9f106ab12179de5eed7e7eeda675e963c6101f1cf5da0bcf7009f377822167c0",
+    "a634544358c376853e802c9b8f07262a4d6d780c2aa7fb65f4167838cbee1d54",
+    "b0198d05d647b5b3a385aa67dab0a8e5e7b2fd3a2b88dc6d73f15857c5d0746b",
+    "b0377d55594cec871de9f323e486f3cac99f810420765d33db98452480888b1d",
+    "b8ee74f88b83b9da14739a95f477dd0d90f01bf9008308fdc1fec98eeace84e6",
+    "b8f1d2d15fd4c306672d44bfddf735834997dada8dea44d3edff1d762489ac92",
+    "b994f3b7d92a40710cf95abc37a5299facdfecf87fcbe489b0bd1fe845b94a55",
+    "bf2cb4af9a7152f9d2a0e8f517b0d1898074ab0d37c502c66a0005f9c9079884",
+    "c0b14a42c3d2325a23c049b083bbbdd08a8f37de69072509a78a5c8efc17b30a",
+    "c415192b9a2ab6f7d0153bfa31d876442745c55fd6f2f0959716d48dd5575604",
+    "c743c9b831bd61aa306f2c1fb1638759b3fe6272373cb24f9ddbc26cb646528a",
+    "cb53187a25c6ea93f7c4db06b0d4d35ecf257ed31a2996def5d9bc19c63da21d",
+    "ccb489f5c87eae36909235a19346a9eac98930d6f37559afdca3c08a94207dba",
+    "ce116b433f4ec8d7cb8b2a2ff03a88058a1040b7390b255cb83ef629937f97f4",
+    "d2514a6dd2f91f14a7cd143b5ba973f259535a58f2a7db461ddb66005a35e41b",
+    "dd81ca6c2744dabe52a4287e4ed109c3c6f77d177e8d6ee1983f88fb4d473e9b",
+    "de8d5d2fb93bc315d593315fda6c02e2be9fca371ccc314de0d526e0eb76a8de",
+    "e6bb9f7f2013b342e08809df28ff842b880c4337219afc001521fdd8a76d1d24",
+    "ed48c719fa8222197316fd2161ba4b4a22dc0c69aeee97bfb09fdb8b194dff61",
+    "ef69dc0256794ea2f712b96a7efa4ffcbf5dd61acf5d455d236a0c77c8cae745",
+    "f476f710d0e728f7d0d1684f801972376fa79ca96a1d259bd4da79ebe2196406",
+    "f4c69f3e043fd3cea3416e17343a1b31126a6e97842d26c31e21925a76bd708d",
+    "f578f0400c057fd2c9a66cd267d065b7b60b2e9d04dd77ea5538fd46b48c3ac7",
+    "f83ec3e8ec4cff4a5774e1b6180d220d30e11e13c61aeed7b665db07997955b8"
   ],
-  "items": [],
-  "dedup_history": [
+  "items": [
     {
-      "id": "rss:www.coindesk.com_arc_outboundfeeds_rss_:a02f560bef7e5719",
+      "id": "rss:www.coindesk.com_arc_outboundfeeds_rss_:89b30bd0af0306e7",
       "source_type": "rss",
-      "title": "Coldcard's $38 million (so far) exploit shakes faith in self-custody, may push investors to ETFs",
-      "url": "https://www.coindesk.com/business/2026/07/31/coldcard-s-usd38-million-so-far-exploit-shakes-faith-in-self-custody-may-push-investors-to-etfs",
+      "title": "Bitcoin, ether decline as Coldcard exploit enters a fifth day",
+      "url": "https://www.coindesk.com/markets/2026/08/03/bitcoin-ether-decline-as-coldcard-exploit-enters-a-fifth-day",
       "content": null,
-      "author": "Krisztian Sandor",
-      "published_at": "2026-07-31T17:07:30Z",
-      "fetched_at": "2026-08-01T00:30:56.161118Z",
+      "author": "Shaurya Malwa",
+      "published_at": "2026-08-03T10:51:37Z",
+      "fetched_at": "2026-08-04T00:31:11.885865Z",
       "metadata": {
         "feed_name": "CoinDesk",
         "category": "crypto-markets",
-        "title_en": "Coldcard's $38M Exploit Shakes Self-Custody Trust, May Push Investors to ETFs",
-        "detailed_summary_en": "Coldcard disclosed a critical firmware bug that silently bypassed the hardware random number generator (RNG) for five years, allowing an attacker to drain roughly 594 BTC (about $38 million) from around 500 wallets in a 25-minute sweep on July 31, 2026. This is one of the largest hardware wallet exploits in Bitcoin's history. This incident undermines the core promise of hardware wallets — that private keys never leave secure hardware — and could erode confidence in self-custody among Bitcoin holders. If investors lose faith in self-custody solutions, they may shift funds to regulated products like spot ETFs, potentially reshaping the custody landscape. The vulnerability affected Coldcard Mk2 and Mk3 devices where seeds were generated on firmware v4.0.0 through v5.0.3; the attacker swept funds from roughly 500 wallets between 01:31 and 01:56 UTC. Coldcard has urged all affected users to move their funds immediately, but the full extent of exposed seeds remains unknown.",
-        "background_en": "Self-custody means holding your own crypto assets in a wallet you control, rather than trusting an exchange or third party. Hardware wallets like Coldcard are considered among the most secure self-custody tools because they keep private keys offline in a dedicated chip. This exploit, however, shows that even hardware wallets are not immune to firmware-level vulnerabilities, raising questions about the long-term reliability of the 'not your keys, not your coins' ethos.",
-        "title_zh": "Coldcard遭3800万美元攻击，动摇自托管信心，或推动投资者转向ETF",
-        "detailed_summary_zh": "Coldcard披露了一个严重固件漏洞，该漏洞在过去五年里静默绕过了硬件随机数生成器（RNG），使攻击者在2026年7月31日的一次25分钟扫荡中从约500个钱包中盗走约594 BTC（约3800万美元）。这是比特币历史上规模最大的硬件钱包攻击事件之一。 这一事件动摇了硬件钱包的核心承诺——私钥永不离开安全硬件——并可能削弱比特币持有者对自托管的信心。如果投资者对自托管解决方案失去信任，他们可能会将资金转向现货ETF等受监管产品，从而可能重塑托管格局。 该漏洞影响的是在固件v4.0.0至v5.0.3上生成种子的Coldcard Mk2和Mk3设备；攻击者在01:31至01:56 UTC之间从约500个钱包中扫走了资金。Coldcard已敦促所有受影响用户立即转移资金，但暴露种子的全部范围仍不清楚。",
-        "background_zh": "自托管意味着将你的加密资产保存在自己控制的钱包中，而不是信任交易所或第三方。Coldcard等硬件钱包被视为最安全的自托管工具之一，因为它们将私钥离线保存在专用芯片中。然而，此次攻击表明，即使是硬件钱包也无法免受固件级漏洞的影响，这引发了对“不掌握私钥，就不拥有币”这一理念长期可靠性的质疑。",
+        "title_en": "Bitcoin, Ether Decline as Coldcard Exploit Enters Fifth Day",
+        "detailed_summary_en": "Bitcoin and ether prices have declined as an exploit targeting Coldcard hardware wallets continues for a fifth day. As of August 3, 2026, the security incident remains unresolved, coinciding with a drop in the two largest cryptocurrencies. This situation matters because hardware wallets like Coldcard are widely considered the most secure way to store cryptocurrency, so a prolonged exploit undermines user trust. The associated market decline shows how security incidents can ripple into broader crypto market sentiment. Coldcard is a Bitcoin-only hardware wallet produced by Coinkite since 2017, storing private keys in a dedicated security chip. Specific technical details of the ongoing exploit have not been disclosed in the available material, but hardware wallets can be compromised through supply-chain tampering, malicious firmware, phishing, or physical extraction.",
+        "background_en": "Hardware wallets are physical devices that keep cryptocurrency private keys offline to protect against remote hacks. Coldcard emphasizes verifiable source code and features like encrypted microSD backups, making it popular among Bitcoin enthusiasts. An exploit that persists for multiple days is rare and concerning because these devices are designed to minimize attack surface.",
+        "title_zh": "比特币和以太坊下跌，Coldcard 漏洞攻击进入第五天",
+        "detailed_summary_zh": "随着针对 Coldcard 硬件钱包的漏洞攻击进入第五天，比特币和以太坊的价格出现下跌。截至 2026 年 8 月 3 日，这一安全事件仍未解决，并伴随着这两大加密货币的下跌。 这一事件意义重大，因为像 Coldcard 这样的硬件钱包被广泛认为是存储加密货币的最安全方式，持续的攻击会削弱用户信任。相关的市场下跌表明，安全事件可能波及整个加密货币市场的情绪。 Coldcard 是 Coinkite 自 2017 年起生产的仅支持比特币的硬件钱包，其私钥存储在专用安全芯片中。尽管现有资料未披露这一持续漏洞的具体技术细节，但硬件钱包可能通过供应链篡改、恶意固件、钓鱼攻击或物理提取等方式被攻破。",
+        "background_zh": "硬件钱包是一种物理设备，通过离线保存加密货币私钥来防范远程攻击。Coldcard 强调可验证的源代码和加密 microSD 备份等功能，因此在比特币爱好者中广受欢迎。持续多日的漏洞攻击实属罕见且令人担忧，因为这些设备的设计初衷就是尽量减小攻击面。",
         "sources": [
           {
-            "url": "https://www.coindesk.com/tech/2026/07/31/major-bitcoin-wallet-flaw-drains-594-btc-in-25-minute-sweep",
-            "title": "Major bitcoin wallet flaw drains 594 BTC in 25-minute sweep"
+            "url": "https://coldcard.com/",
+            "title": "COLDCARD - Bitcoin-Only Hardware Wallet"
           },
           {
-            "url": "https://www.techtimes.com/articles/322392/20260731/coldcard-hardware-wallet-hacked-via-firmware-bug-that-bypassed-rng-five-years.htm",
-            "title": "Coldcard Hardware Wallet Hacked via Firmware Bug That Bypassed RNG for Five Years"
+            "url": "https://bitcoin.org/en/wallets/hardware/coldcard/",
+            "title": "Coldcard - Hardware - Choose your wallet - Bitcoin"
           },
           {
-            "url": "https://www.ledger.com/academy/topics/security/what-is-self-custody-in-crypto",
-            "title": "What Is Self-Custody in Crypto? | Ledger"
+            "url": "https://medium.com/@truongnt87/can-hardware-wallets-be-hacked-or-compromised-crypture-org-b79b6ae96061",
+            "title": "Can Hardware Wallets Be Hacked or Compromised? — Crypture.org | by Crypture.org | Medium"
           }
         ]
       },
       "ai_score": 9.0,
       "ai_reason": null,
-      "ai_summary": "Coldcard has suffered a $38 million exploit, undermining confidence in self-custody and possibly driving investors toward ETFs.",
+      "ai_summary": "Bitcoin and ether prices decline as an exploit targeting Coldcard hardware wallets continues for a fifth day.",
       "ai_tags": []
     },
     {
-      "id": "rss:openai.com_blog_rss.xml:e299630b866e2d7e",
+      "id": "rss:news.google.com_rss_search?q=site:anthropic.com+when:7d&hl=en-US&gl=US&ceid=US:en:83caacac4599243b",
       "source_type": "rss",
-      "title": "Ten advances in mathematics and theoretical computer science",
-      "url": "https://openai.com/index/ten-advances-in-mathematics",
+      "title": "A super-cubic lower bound for the formula size of the permanent - www-cdn.anthropic.com",
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxONzhQcWNYSFVCbnNMM2FHMHl5U3pJY0pwR1NGaTNFZHZnVW1mZDVsT3BNSTdyTFVfUUd6NmlzWWtldDIyZ180UU5sdnhWRk1MWElHanJNSEF4WHdtYmxEYlNYSzZra05JTFRzakcyQmN2YmhIaDYtRWNscUpnckNsTS1OSWZTcjNRamh4OERkLVd3NDVFN19JbDlUdW0zdw?oc=5",
+      "content": null,
+      "author": "Anthropic News",
+      "published_at": "2026-08-03T02:29:22Z",
+      "fetched_at": "2026-08-04T00:31:14.177131Z",
+      "metadata": {
+        "feed_name": "Anthropic News",
+        "category": "ai-labs",
+        "title_en": "Anthropic proves super-cubic lower bound for permanent's formula size",
+        "detailed_summary_en": "Anthropic has released a preprint proving that the permanent requires super-cubic formula size, meaning any formula computing it has size growing faster than n^3. This is a landmark result in computational complexity theory. The result addresses a long-standing open problem about the permanent, a fundamental #P-complete function in complexity theory. The proof techniques could influence future lower-bound arguments for other explicit hard functions. The result concerns formula size, a complexity measure based on tree-like circuits rather than general directed acyclic graphs. The new theorem gives a super-cubic lower bound, significantly improving the known lower bound for the permanent's formula size.",
+        "background_en": "The permanent of a matrix is a polynomial that sums the products of one entry from each row and column, similar to the determinant but with all positive signs. Computing the permanent of a 0-1 matrix is #P-complete, a result due to Valiant, so it is believed to require super-polynomial time. Formula size measures the minimum number of leaf nodes in a formula (a tree-like circuit) that computes a given function. Super-polynomial lower bounds for explicit functions like the permanent are a central open problem in complexity theory.",
+        "title_zh": "Anthropic 证明积和式公式大小的超三次下界",
+        "detailed_summary_zh": "Anthropic 发布了一篇预印本，证明积和式需要超三次大小的公式，即任何计算它的公式大小增长快于 n^3。这是计算复杂性理论中的一项里程碑式成果。 这项成果解决了关于积和式的一个长期未决问题，而积和式是复杂度理论中一个基本的 #P 完全函数。这一证明技术可能影响未来对其它显式困难函数的下界论证。 该结果关注公式大小这一复杂度度量，它基于树状电路而非一般的有向无环图。新定理给出了超三次下界，显著提升了积和式公式大小的已知下界。",
+        "background_zh": "矩阵的积和式（permanent）是每行每列各取一个元素的乘积之和，与行列式类似，但所有项都带正号。计算 0-1 矩阵的积和式是 #P 完全问题（Valiant 定理），因此通常被认为需要超多项式时间。公式大小衡量计算一个函数的公式（树状电路）中叶节点的最少数量。为积和式这样的显式函数证明超多项式下界是复杂度理论的核心开问题。",
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Computing_the_permanent",
+            "title": "Computing the permanent - Wikipedia"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/♯P-completeness_of_01-permanent",
+            "title": "♯P-completeness of 01-permanent - Wikipedia"
+          }
+        ]
+      },
+      "ai_score": 9.0,
+      "ai_reason": null,
+      "ai_summary": "Anthropic announces a super-cubic lower bound for the formula size of the permanent, a landmark result in computational complexity.",
+      "ai_tags": []
+    },
+    {
+      "id": "rss:news.google.com_rss_search?q=site:anthropic.com+when:7d&hl=en-US&gl=US&ceid=US:en:140fa7383e3ec94a",
+      "source_type": "rss",
+      "title": "NP-Hardness of Approximating the Closest Vector Problem within a Polynomial Factor - www-cdn.anthropic.com",
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQYzFJSjFRYll2YVotbHpuYll2R1FNblV4WTFjU0JTQnJJbVNONzNaNUFaV3lYSFVINUo2U3FlY2h5SDNiTzliMnVzUE4xSFJ6WXFQOVU2Qjh0bExqNEE0SnZzcGw4VVgzeVR5X19TbEU1RmI3cVhrSmN0QV9DeXlnc1lmSi1jQ3NJR1RfbC1ZUmpoQlpfbjNSX3d1MmFjZw?oc=5",
+      "content": null,
+      "author": "Anthropic News",
+      "published_at": "2026-08-03T02:29:22Z",
+      "fetched_at": "2026-08-04T00:31:14.177034Z",
+      "metadata": {
+        "feed_name": "Anthropic News",
+        "category": "ai-labs",
+        "title_en": "Anthropic Proves Approximating Closest Vector Problem Is NP-Hard",
+        "detailed_summary_en": "Anthropic has published a proof showing that approximating the Closest Vector Problem (CVP) within a polynomial factor is NP-hard. This is a significant theoretical result in computational complexity. The result strengthens the security foundations of lattice-based cryptography, which underpins many post-quantum cryptographic systems. It could influence future research in cryptography and optimization algorithms. CVP is a generalization of the Shortest Vector Problem (SVP), and its conjectured intractability is central to lattice-based cryptosystems. The proof concerns worst-case hardness, showing that even approximating the problem within any polynomial factor remains NP-hard.",
+        "background_en": "Lattice problems are optimization problems involving mathematical objects called lattices, and their difficulty is used to construct secure cryptographic schemes. The Closest Vector Problem asks for the lattice point closest to a given target vector. NP-hardness means that no efficient algorithm can solve the problem exactly or approximately unless P=NP, which is widely believed to be impossible. Lattice-based cryptography is a leading approach for post-quantum security because these problems appear hard even for quantum computers.",
+        "title_zh": "Anthropic 证明近似最近向量问题具有 NP 难度",
+        "detailed_summary_zh": "Anthropic 发表了一项证明，表明在多项式因子内近似最近向量问题（CVP）是 NP 难的。这是计算复杂性领域的一项重大理论成果。 该结果加强了格基密码学的安全基础，而格基密码学支撑着许多后量子密码系统。它可能影响密码学和优化算法的未来研究。 CVP 是最短向量问题（SVP）的推广，其公认的难解性是格基密码系统的核心。该证明涉及最坏情况下的难解性，表明即使在任意多项式因子内近似该问题仍然是 NP 难的。",
+        "background_zh": "格问题是一类涉及数学对象“格”的优化问题，其难解性被用于构造安全的密码方案。最近向量问题要求找到距离给定目标向量最近的格点。NP 难意味着除非 P=NP（人们普遍认为不可能），否则不存在高效算法能精确或近似解决该问题。格基密码学是后量子安全的主要途径，因为这些问题即使对量子计算机也显得很难。",
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Closest_vector_problem",
+            "title": "Closest vector problem"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/Lattice-based_cryptography",
+            "title": "Lattice-based cryptography"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/NP-hardness",
+            "title": "NP-hardness - Wikipedia"
+          }
+        ]
+      },
+      "ai_score": 9.0,
+      "ai_reason": null,
+      "ai_summary": "Anthropic publishes a proof that approximating the Closest Vector Problem within a polynomial factor is NP-hard, a major result for lattice-based cryptography.",
+      "ai_tags": []
+    },
+    {
+      "id": "rss:openai.com_blog_rss.xml:deec56a13e2b9b57",
+      "source_type": "rss",
+      "title": "How we built a realtime system for responsive voice AI in six months",
+      "url": "https://openai.com/index/continuous-voice-interaction-with-gpt-live",
       "content": null,
       "author": "OpenAI Blog",
-      "published_at": "2026-08-01T00:00:00Z",
-      "fetched_at": "2026-08-02T00:30:47.234465Z",
+      "published_at": "2026-08-03T07:00:00Z",
+      "fetched_at": "2026-08-04T00:31:13.964112Z",
       "metadata": {
         "feed_name": "OpenAI Blog",
         "category": "ai-labs",
-        "title_en": "OpenAI Publishes Ten New Results in Math and Theoretical CS",
-        "detailed_summary_en": "OpenAI announced ten new research results addressing long-standing open problems in mathematics and theoretical computer science, with advances in geometry, cryptography, and complexity. The official announcement did not provide detailed descriptions of each result. This signals that AI and large language models can contribute substantively to pure mathematics and theoretical computer science, beyond applied tasks. If the results hold up, they could stimulate cross-domain research and change how mathematicians use AI as a research tool. The news covers results in at least three broad fields: geometry, cryptography, and computational complexity. Specific problem names, proof techniques, and author credits were not included in the available summary.",
-        "background_en": "A long-standing open problem in mathematics is a question that has resisted solution for decades or longer, such as the Riemann hypothesis or the P versus NP problem. Theoretical computer science studies the fundamental capabilities and limits of computation, and cryptography relies on problems believed to be hard to solve. In recent years, researchers have used AI models to generate conjectures and assist in finding proofs, making AI-assisted mathematical discovery an active area of exploration.",
-        "title_zh": "OpenAI公布数学与理论计算机科学十项新进展",
-        "detailed_summary_zh": "OpenAI宣布了十项针对数学与理论计算机科学中长期未解决问题的新研究成果，涉及几何、密码学和复杂性理论方面的进展。官方公告并未详细说明每项成果的具体内容。 这表明AI和大语言模型可以为纯数学与理论计算机科学做出实质性贡献，而不仅仅局限于应用任务。如果这些结果经得起检验，可能推动跨领域研究，并改变数学家将AI作为研究工具的方式。 该消息涵盖至少三个领域的成果：几何、密码学和计算复杂性。可获得的摘要中未包含具体问题名称、证明技术或作者署名。",
-        "background_zh": "数学中的长期未解决问题是指数十年来一直未被解决的问题，例如黎曼猜想或P与NP问题。理论计算机科学研究计算的基本能力与极限，而密码学则依赖于被认为难以求解的问题。近年来，研究人员使用AI模型生成猜想并辅助寻找证明，使AI辅助数学发现成为一个活跃的探索领域。"
+        "title_en": "OpenAI's GPT-Live Enables Continuous Real-Time Voice AI",
+        "detailed_summary_en": "OpenAI has unveiled GPT-Live, a turnless speech model that enables continuous, low-latency voice conversations with AI. The system is described in an official blog post and represents a shift away from traditional turn-based voice interaction. This development matters because it moves voice AI toward natural, real-time conversations, potentially transforming how developers build voice applications and how users experience AI assistants. It builds on OpenAI's ongoing efforts to deliver low-latency voice AI at global scale. GPT-Live uses a turnless speech model with a low-latency architecture, enabling faster and more natural interactions. This likely leverages OpenAI's earlier work on rebuilding its WebRTC stack with a relay-transceiver design for cloud scalability.",
+        "background_en": "Traditional voice AI systems are turn-based, requiring users to signal the start and end of each utterance. GPT-Live aims to eliminate this by enabling continuous speech interaction. OpenAI has previously detailed how it adapted WebRTC for low-latency voice AI at scale, which likely underpins GPT-Live's architecture.",
+        "title_zh": "OpenAI推出GPT-Live 实现连续实时语音交互",
+        "detailed_summary_zh": "OpenAI发布了GPT-Live，这是一种无轮次语音模型，能够实现与AI的连续、低延迟语音对话。该系统在官方博客文章中介绍，代表了从传统轮次语音交互的转变。 这一进展意义重大，因为它推动语音AI走向自然、实时的对话，可能改变开发者构建语音应用的方式以及用户体验AI助手的感受。它建立在OpenAI在全球范围内提供低延迟语音AI的持续努力之上。 GPT-Live采用无轮次语音模型和低延迟架构，从而实现更快、更自然的交互。这可能利用了OpenAI早前在重建WebRTC堆栈方面的工作，采用适用于云端可扩展性的中继-收发器设计。",
+        "background_zh": "传统的语音AI系统是轮次式的，要求用户明确指示每次话语的开始和结束。GPT-Live旨在通过实现连续语音交互来消除这一限制。OpenAI此前曾详细介绍如何改造WebRTC以支持大规模低延迟语音AI，这可能构成了GPT-Live架构的基础。",
+        "sources": [
+          {
+            "url": "https://openai.com/index/delivering-low-latency-voice-ai-at-scale/",
+            "title": "How OpenAI delivers low-latency voice AI at scale | OpenAI"
+          },
+          {
+            "url": "https://www.infoq.com/news/2026/05/openai-voice-ai-scale/",
+            "title": "OpenAI Outlines WebRTC Architecture for Low-Latency Voice AI at Scale - InfoQ"
+          },
+          {
+            "url": "https://www.twilio.com/en-us/blog/developers/best-practices/guide-core-latency-ai-voice-agents",
+            "title": "Core Latency in AI Voice Agents | Twilio"
+          }
+        ]
       },
       "ai_score": 8.0,
       "ai_reason": null,
-      "ai_summary": "OpenAI shares ten new results on long-standing open problems in mathematics and theoretical computer science, including advances in geometry, cryptography, and complexity.",
+      "ai_summary": "OpenAI unveils GPT-Live, a turnless speech model enabling continuous, low-latency voice conversations.",
       "ai_tags": []
     },
     {
-      "id": "rss:www.coindesk.com_arc_outboundfeeds_rss_:c2e9afdfeb3cae7f",
+      "id": "rss:www.coindesk.com_arc_outboundfeeds_rss_:7abe74d4883b503d",
       "source_type": "rss",
-      "title": "Tether posts $1.5 billion operating profit in Q2 as reserve buffer falls by half",
-      "url": "https://www.coindesk.com/business/2026/07/31/tether-posts-usd1-5-billion-operating-profit-in-q2-as-reserve-buffer-falls-by-half",
+      "title": "U.S.-Japan intervention revives yen carry trade fears for bitcoin",
+      "url": "https://www.coindesk.com/markets/2026/08/03/u-s-japan-intervention-revives-yen-carry-trade-fears-for-bitcoin",
+      "content": null,
+      "author": "James Van Straten",
+      "published_at": "2026-08-03T14:46:08Z",
+      "fetched_at": "2026-08-04T00:31:11.885685Z",
+      "metadata": {
+        "feed_name": "CoinDesk",
+        "category": "crypto-markets",
+        "title_en": "U.S.-Japan Intervention Revives Yen Carry Trade Fears for Bitcoin",
+        "detailed_summary_en": "The article reports that intervention by the U.S. and Japan in currency markets has revived concerns that an unwinding of the yen carry trade could spill over into risk assets, including bitcoin. This macro event creates an additional transmission channel for potential crypto sell-offs. Historically, sharp yen carry trade unwinds have triggered global risk-asset sell-offs, and bitcoin, as a high-beta risk asset, tends to suffer in such liquidity squeezes. This matters because it could drive short-term volatility and downside pressure across crypto markets even without crypto-specific news. The yen carry trade involves borrowing yen at ultra-low interest rates to invest in higher-yielding assets; intervention that strengthens the yen raises funding costs and can force rapid deleveraging. The article notes this is a macro-driven story with a clear transmission path to crypto, but it provides limited detail beyond the headline.",
+        "background_en": "The yen carry trade is a popular strategy where investors borrow cheaply in yen and invest in higher-yielding assets abroad. When the yen appreciates sharply—often due to official intervention or central bank policy shifts—borrowers face larger repayment costs and may unwind positions, causing global risk assets to fall. Bitcoin, despite being called digital gold, has traded as a risk asset and is sensitive to global liquidity conditions, so carry trade unwinds can trigger sell-offs. U.S.-Japan intervention typically refers to coordinated currency-market action to support or weaken the yen.",
+        "title_zh": "美日干预重燃日元套息交易对比特币的担忧",
+        "detailed_summary_zh": "文章称，美国和日本对汇市的干预重新引发了市场对日元套息交易平仓的担忧，这种平仓可能波及包括比特币在内的风险资产。这一宏观事件为加密货币抛售提供了新的传导渠道。 从历史看，日元套息交易大幅平仓曾引发全球风险资产抛售，而比特币作为高贝塔风险资产，往往在流动性收紧时承压。这意味着即便没有加密行业自身利空，该事件也可能在短期内给整个加密市场带来波动和下探压力。 日元套息交易是指以极低利率借入日元，再投资于收益率更高的资产；而推升日元的干预会抬高融资成本，可能迫使交易者快速去杠杆。文章指出这是一条传导路径清晰的宏观驱动逻辑，但除了标题之外，正文提供的细节有限。",
+        "background_zh": "日元套息交易是投资者以较低利率借入日元、再投向海外高收益资产的一种常见策略。当日元大幅升值——通常由官方干预或央行政策转向引发——借款人的还款成本上升，可能被迫平仓，进而拖累全球风险资产下跌。比特币虽然被称为“数字黄金”，但市场上它更常作为风险资产交易，对全球流动性状况敏感，因此套息交易平仓可能引发其抛售。美日干预通常指两国协调在汇市采取行动以支撑或压低日元。"
+      },
+      "ai_score": 7.0,
+      "ai_reason": null,
+      "ai_summary": "Article discusses how U.S.-Japan intervention revives concerns about yen carry trade unwinding and its potential impact on bitcoin.",
+      "ai_tags": []
+    },
+    {
+      "id": "rss:www.coindesk.com_arc_outboundfeeds_rss_:c83254d31660818d",
+      "source_type": "rss",
+      "title": "BlackRock expands tokenized cash with new blockchain-based money market offerings",
+      "url": "https://www.coindesk.com/business/2026/08/03/blackrock-expands-tokenized-cash-with-new-blockchain-based-money-market-offerings",
+      "content": null,
+      "author": "Ian Allison",
+      "published_at": "2026-08-03T13:15:46Z",
+      "fetched_at": "2026-08-04T00:31:11.885755Z",
+      "metadata": {
+        "feed_name": "CoinDesk",
+        "category": "crypto-markets",
+        "title_en": "BlackRock Expands Tokenized Cash With New Blockchain Money Market Funds",
+        "detailed_summary_en": "On August 3, 2026, BlackRock announced an expansion of its tokenized cash suite with new blockchain-based money market fund offerings, building on its BUIDL fund launched in 2024 with Securitize. This move underscores continued mainstream institutional adoption of blockchain-based financial products, bridging traditional finance and crypto. It could accelerate the tokenization of real-world assets and reshape market infrastructure. The new offerings are tokenized money market funds issued on blockchain, designed to speed up settlement, enable round-the-clock trading, and improve transparency. They complement BlackRock's existing BUIDL fund and operate within regulatory frameworks for digital asset securities.",
+        "background_en": "Tokenized cash brings fiat currency onto blockchain networks, offering faster settlement and lower costs compared to traditional infrastructure. Money market funds are low-risk, short-term investments; their tokenized versions issue fund shares as digital tokens recorded on a distributed ledger. The tokenized money market fund segment grew from roughly $1 billion in 2024 to over $31 billion by mid-2026, driven by asset manager launches and regulatory developments like the GENIUS Act.",
+        "title_zh": "贝莱德扩展代币化现金，推出新区块链货币市场基金",
+        "detailed_summary_zh": "2026年8月3日，贝莱德宣布扩展其代币化现金产品线，推出新的基于区块链的货币市场基金，这是继2024年与Securitize合作推出BUIDL基金之后的又一举措。 此举凸显了传统金融机构对基于区块链的金融产品持续的主流采用，架起了传统金融与加密货币之间的桥梁。这可能加速现实世界资产的代币化，并重塑市场基础设施。 新产品是在区块链上发行的代币化货币市场基金，旨在加快结算、实现全天候交易并提高透明度。它们补充了贝莱德现有的BUIDL基金，并在数字资产证券的监管框架内运营。",
+        "background_zh": "代币化现金将法定货币引入区块链网络，与传统基础设施相比提供更快的结算和更低的成本。货币市场基金是低风险的短期投资工具；其代币化版本将基金份额作为数字代币发行并记录在分布式账本上。代币化货币市场基金板块从2024年约10亿美元增长到2026年年中超过310亿美元，这得益于资产管理公司的发行和GENIUS Act等监管进展。",
+        "sources": [
+          {
+            "url": "https://www.coindesk.com/business/2026/08/03/blackrock-expands-tokenized-cash-with-new-blockchain-based-money-market-offerings",
+            "title": "BlackRock expands tokenized cash with new blockchain-based money market offerings"
+          },
+          {
+            "url": "https://everstake.one/resources/blog/blockchain-based-funds-tokenized-money-market-index",
+            "title": "Blockchain-Based Funds: Tokenized Money Market Funds in 2026 | Everstake"
+          },
+          {
+            "url": "https://chain.link/article/tokenized-cash",
+            "title": "What Is Tokenized Cash? | Chainlink"
+          }
+        ]
+      },
+      "ai_score": 7.0,
+      "ai_reason": null,
+      "ai_summary": "BlackRock expands its tokenized cash suite with new blockchain-based money market fund offerings.",
+      "ai_tags": []
+    },
+    {
+      "id": "rss:www.coindesk.com_arc_outboundfeeds_rss_:d7b61ce9094d02c7",
+      "source_type": "rss",
+      "title": "Bitget set to exit Japan, close all remaining positions by year-end",
+      "url": "https://www.coindesk.com/policy/2026/08/03/bitget-set-to-exit-japan-close-all-remaining-positions-by-year-end",
       "content": null,
       "author": "Olivier Acuna",
-      "published_at": "2026-07-31T18:24:55Z",
-      "fetched_at": "2026-08-01T00:30:56.161069Z",
+      "published_at": "2026-08-03T12:03:41Z",
+      "fetched_at": "2026-08-04T00:31:11.885822Z",
       "metadata": {
         "feed_name": "CoinDesk",
         "category": "crypto-markets",
-        "title_en": "Tether Q2 profit $1.5B as reserve buffer halves",
-        "detailed_summary_en": "Tether reported $1.5 billion in operating profit for the second quarter of 2026, while its excess reserve buffer declined by half from the prior quarter's record $8.23 billion. The announcement comes from its latest financial attestation. The reserve buffer is a key measure of Tether's financial resilience and directly affects user confidence in USDT, the world's largest stablecoin. A 50% reduction could raise concerns about backing strength, though the continued profitability may mitigate potential fallout. Excess reserves function as a loss-absorbing layer above the per-token collateral backing Tether's issued tokens. The Q1 buffer of $8.23 billion had been supported by profitability and a reserve base concentrated in short-duration, high-quality liquid instruments.",
-        "background_en": "Stablecoins like USDT are designed to maintain a 1:1 peg with fiat currency, so issuers hold reserves of assets such as Treasuries, gold, and other instruments. 'Excess reserves' are the surplus assets beyond what is needed to back all tokens, serving as a cushion against losses. Independent attestations and audits verify these holdings, though the quality and liquidity of the reserve mix are important for institutional confidence.",
-        "title_zh": "Tether 第二季度营业利润15亿美元，储备缓冲减半",
-        "detailed_summary_zh": "Tether 公布其 2026 年第二季度营业利润为 15 亿美元，同时其超额储备缓冲比上季度创纪录的 82.3 亿美元减少了一半。该消息来自其最新的财务证明报告。 储备缓冲是衡量 Tether 财务韧性的关键指标，直接影响用户对全球最大稳定币 USDT 的信心。缓冲减半可能引发人们对资产支撑强度的担忧，但持续的盈利能力或许会减轻潜在影响。 超额储备充当 Tether 已发行代币每枚代币抵押支持之上的损失吸收层。第一季度的 82.3 亿美元缓冲得益于盈利能力以及集中于短期、高质量流动性工具的储备基础。",
-        "background_zh": "USDT 等稳定币旨在与法定货币保持 1:1 锚定，因此发行方持有包括美国国债、黄金和其他工具在内的储备资产。“超额储备”是指超出支撑所有代币所需之外的剩余资产，充当应对损失的缓冲垫。独立证明和审计会核实这些持有资产，但储备组合的质量和流动性对机构信心同样重要。",
+        "title_en": "Bitget to Exit Japan, Close All Remaining Positions by Year-End",
+        "detailed_summary_en": "Bitget, a centralized cryptocurrency exchange, has announced its exit from the Japanese market and will close all remaining positions by the end of the year. Affected users in Japan must close their positions and withdraw funds before the deadline. This development directly affects Bitget users in Japan and highlights the challenges of operating in a strictly regulated market under Japan's Payment Services Act. It also reflects the broader trend of crypto exchanges reassessing their geographic footprint amid regulatory pressure. Bitget, founded in 2018, serves over 150 million users globally, but has not disclosed the specific reasons for leaving Japan. Japan requires crypto exchanges to register under the Payment Services Act and comply with the Cabinet Office Order on Virtual Currency Exchange Service Providers, and the exit process involves closing positions and returning customer funds.",
+        "background_en": "Bitget is a centralized cryptocurrency exchange established in 2018, offering trading in cryptocurrencies, tokenized stocks, ETFs, and commodities. Japan's regulatory framework, including the Payment Services Act and related orders, defines virtual currency exchange services and requires providers to be registered to operate legally. Registered exchanges must follow strict compliance rules, which can be burdensome for global platforms.",
+        "title_zh": "Bitget 将退出日本，年底前清算所有剩余头寸",
+        "detailed_summary_zh": "中心化加密货币交易所 Bitget 宣布退出日本市场，并将在今年年底前清算所有剩余头寸。日本的受影响用户必须在截止日期前平仓并提取资金。 这一事件直接影响 Bitget 在日本的用户，并凸显了在日本《支付服务法》严格监管下运营的挑战。它也反映了加密货币交易所在监管压力下重新评估其地理布局的广泛趋势。 Bitget 成立于 2018 年，服务全球超过 1.5 亿用户，但未披露退出日本的具体原因。日本要求加密货币交易所根据《支付服务法》注册，并遵守《虚拟货币兑换服务提供商内阁府令》，退出流程包括平仓和返还客户资金。",
+        "background_zh": "Bitget 是一家成立于 2018 年的中心化加密货币交易所，提供加密货币、代币化股票、ETF 和大宗商品交易。日本的法律框架，包括《支付服务法》及相关内阁府令，定义了虚拟货币兑换服务，并要求服务提供商必须注册才能合法运营。注册交易所必须遵守严格的合规规则，这对全球平台而言可能负担较重。",
         "sources": [
           {
-            "url": "https://www.coindesk.com/business/2026/05/01/tether-posts-usd1-04-billion-q1-profit-reaches-usd8-23-billion-reserve-buffer",
-            "title": "Tether posts $1.04 billion in first-quarter profit, reaches $8.23 billion reserve buffer"
+            "url": "https://en.wikipedia.org/wiki/Bitget",
+            "title": "Bitget - Wikipedia"
           },
           {
-            "url": "https://eco.com/support/en/articles/14796320-inside-tether-usdt-reserves-explained",
-            "title": "Inside Tether: USDT Reserves Explained | Support - Eco"
+            "url": "https://www.japaneselawtranslation.go.jp/en/laws/view/3078/en",
+            "title": "Payment Services Act - English - Japanese Law Translation"
           },
           {
-            "url": "https://www.bitgo.com/resources/blog/stablecoin-reserves-audits-attestations-token-backing/",
-            "title": "How Stablecoin Reserves Work: Audits, Attestations, and... | BitGo"
-          }
-        ]
-      },
-      "ai_score": 8.0,
-      "ai_reason": null,
-      "ai_summary": "Tether reported $1.5 billion Q2 operating profit while its reserve buffer halved, signaling potential changes in its financial backing strength.",
-      "ai_tags": []
-    },
-    {
-      "id": "rss:www.coindesk.com_arc_outboundfeeds_rss_:ede3b3bfabcdde3a",
-      "source_type": "rss",
-      "title": "Bitcoin mining difficulty shrinks 14% from this year's high as plunging revenues force operators to pivot",
-      "url": "https://www.coindesk.com/business/2026/08/01/bitcoin-mining-difficulty-shrinks-14-from-this-year-s-high-as-plunging-revenues-force-operators-to-pivot",
-      "content": null,
-      "author": "Francisco Rodrigues",
-      "published_at": "2026-08-01T15:51:10Z",
-      "fetched_at": "2026-08-02T00:30:45.604581Z",
-      "metadata": {
-        "feed_name": "CoinDesk",
-        "category": "crypto-markets",
-        "title_en": "Bitcoin Mining Difficulty Drops 14% as Revenues Plunge",
-        "detailed_summary_en": "Bitcoin mining difficulty has fallen 14% from its 2026 high, according to CoinDesk, as plunging revenues force mining operators to pivot. The sharp decline reflects a significant reduction in network hash rate triggered by miner capitulation. This difficulty drop signals miner stress and reduced network security, but it can also improve profitability for remaining miners and reshape the mining industry. The development highlights the economic realities of Bitcoin mining and may influence market sentiment and infrastructure decisions. The difficulty adjustment occurs automatically every 2,016 blocks, roughly every two weeks, to keep block times near 10 minutes. A 14% decrease means a substantial number of miners likely shut off unprofitable machines or redirected power to other ventures, such as AI computing.",
-        "background_en": "Bitcoin mining difficulty is an automatic measure of how hard it is to find a valid block hash; it adjusts after every 2,016 blocks based on the average time taken. When miners leave, the hash rate falls, and the network automatically lowers difficulty to make mining easier for those who remain. Miner revenues depend on Bitcoin price, transaction fees, and energy costs, so low revenue periods often force operators to pivot or exit. This mechanism is a key element of Bitcoin's design to maintain consistent block production.",
-        "title_zh": "比特币挖矿难度下降14%，矿工收入锐减",
-        "detailed_summary_zh": "据CoinDesk报道，比特币挖矿难度已从2026年高点回落14%，原因是收入暴跌迫使矿工转向其他业务。这一大幅下降反映了哈希率显著减少，源于矿工退出或转型。 此次难度下降表明矿工承压和网络安全防护力减弱，但也可能提升留守矿工的盈利能力，并重塑矿业格局。这一进展突显了比特币挖矿的经济现实，可能影响市场情绪和基础设施投资决策。 难度每2016个区块（约两周）自动调整一次，以维持约10分钟的区块产出时间。14%的降幅意味着大量矿工可能关闭了不盈利的矿机，或将电力转向人工智能计算等其他业务。",
-        "background_zh": "比特币挖矿难度是一个自动调整的指标，表示找到一个有效区块哈希的困难程度；它每2016个区块（约两周）根据平均出块时间调整一次。当矿工退出时，哈希率下降，网络会自动降低难度，使留守矿工更容易挖到区块。矿工收入取决于比特币价格、交易手续费和能源成本，因此收入低迷时期常迫使矿工转型或退出。该机制是比特币设计的关键部分，旨在维持稳定的出块速率。",
-        "sources": [
-          {
-            "url": "https://bitcoinops.org/en/topics/difficulty-adjustment-algorithms/",
-            "title": "Difficulty adjustment algorithms | Bitcoin Optech"
-          },
-          {
-            "url": "https://en.bitcoin.it/wiki/Difficulty",
-            "title": "Difficulty - Bitcoin WikiDifficulty adjustment – OnrampAn Economic Analysis of Difficulty Adjustment Algorithms in ...Difficulty Adjustment Algorithm - Bitcoin WikiWhat is the difficulty adjustment? - btc.network"
+            "url": "https://bitflyer.com/en-jp/virtual-currency-act",
+            "title": "The Virtual Currency Act explained | Bitcoin Marketplace| bitFlyer"
           }
         ]
       },
       "ai_score": 7.0,
       "ai_reason": null,
-      "ai_summary": "Bitcoin mining difficulty has dropped 14% from its 2026 high as plunging revenues force miners to pivot, highlighting industry stress.",
+      "ai_summary": "Bitget is leaving Japan and will close all remaining positions by the end of the year.",
       "ai_tags": []
     },
     {
-      "id": "rss:www.coindesk.com_arc_outboundfeeds_rss_:ce7b877c3ebceaf4",
-      "source_type": "rss",
-      "title": "SEC to review Nasdaq bitcoin options approval after CME challenge",
-      "url": "https://www.coindesk.com/policy/2026/08/01/sec-to-review-nasdaq-bitcoin-options-approval-after-cme-challenge",
+      "id": "telegram:binance_announcements:8801",
+      "source_type": "telegram",
+      "title": "Binance Will Delist ACX, HFT, PIVX, PYR, VANRY, VIC on 2026-08-17",
+      "url": "https://www.binance.com/en/support/announcement/detail/64cf7544b98e4f2ca7f54ba11fd72d9d?utm_source=EnglishTelegram&amp;utm_medium=GlobalCommunity&amp;utm_campaign=AnnouncementBot",
       "content": null,
-      "author": "Francisco Rodrigues",
-      "published_at": "2026-08-01T15:48:27Z",
-      "fetched_at": "2026-08-02T00:30:45.604602Z",
+      "author": "binance_announcements",
+      "published_at": "2026-08-03T03:36:37Z",
+      "fetched_at": "2026-08-04T00:31:12.258804Z",
       "metadata": {
-        "feed_name": "CoinDesk",
-        "category": "crypto-markets",
-        "title_en": "SEC Reviews Nasdaq Bitcoin Options Approval After CME Challenge",
-        "detailed_summary_en": "The U.S. Securities and Exchange Commission is reviewing Nasdaq's approval to list bitcoin options after CME Group filed a challenge. The review could overturn or uphold the approval. This matters because it could affect competition and market access in the crypto derivatives space. The outcome will set a precedent for how exchanges list bitcoin options and how regulatory disputes between exchanges are resolved. The SEC's review follows a CME challenge, indicating potential concerns about market impact or unfair competition. No specific timeline or details on the challenge have been publicly disclosed.",
-        "background_en": "Bitcoin options are derivative contracts that give the holder the right to buy or sell bitcoin at a set price by a certain date. In the U.S., exchanges like Nasdaq and CME need regulatory approval from the SEC to list such products. The SEC's review process allows it to reconsider approvals when challenged, which is part of its oversight role.",
-        "title_zh": "SEC在芝商所挑战后审查纳斯达克比特币期权批准",
-        "detailed_summary_zh": "美国证券交易委员会（SEC）正在复审纳斯达克的比特币期权上市批准，此前芝商所（CME）对此提出挑战。此次复审可能推翻或维持该批准。 此事意义重大，因为它可能影响加密衍生品领域的竞争与市场准入。复审结果将为交易所上市比特币期权以及交易所之间监管纠纷的解决树立先例。 SEC的复审是在芝商所提出挑战之后进行的，表明可能存在对市场影响或不公平竞争的担忧。目前尚未公开披露挑战的具体时间表或细节。",
-        "background_zh": "比特币期权是一种衍生品合约，赋予持有者在特定日期前以约定价格买入或卖出比特币的权利。在美国，纳斯达克和芝商所等交易所需要获得SEC的批准才能上市此类产品。SEC的复审程序允许其在面临挑战时重新考虑已批准的申请，这是其监管职责的一部分。"
-      },
-      "ai_score": 7.0,
-      "ai_reason": null,
-      "ai_summary": "The SEC is reviewing Nasdaq's bitcoin options approval after CME filed a challenge.",
-      "ai_tags": []
-    },
-    {
-      "id": "rss:www.coindesk.com_arc_outboundfeeds_rss_:4c46de02c453033b",
-      "source_type": "rss",
-      "title": "XRP Ledger upgrade brings back features once pulled over critical bugs",
-      "url": "https://www.coindesk.com/tech/2026/08/01/xrp-ledger-upgrade-brings-back-features-once-pulled-over-critical-bugs",
-      "content": null,
-      "author": "Shaurya Malwa",
-      "published_at": "2026-08-01T06:09:51Z",
-      "fetched_at": "2026-08-02T00:30:45.604683Z",
-      "metadata": {
-        "feed_name": "CoinDesk",
-        "category": "crypto-markets",
-        "title_en": "XRP Ledger Upgrade Restores Features Previously Disabled by Critical Bugs",
-        "detailed_summary_en": "The XRP Ledger is rolling out a protocol upgrade that re-enables features that had been pulled after critical bugs were discovered. RippleX has urged validators to upgrade to XRPL v2.3.0, with nearly 80% of servers already updated. This matters because XRP Ledger is a widely-used blockchain, and restoring these features expands its functionality and may improve network capabilities. The upgrade also demonstrates ongoing protocol maintenance and community coordination, affecting developers, validators, and XRP holders. The upgrade relies on XRP Ledger's amendment mechanism, where amendments are activated only after sufficient validator approval. Once the first v2.3.0 amendment is adopted, the remaining features will be enabled automatically by the protocol.",
-        "background_en": "The XRP Ledger is a blockchain platform launched in 2012 by Ripple Labs, using the native cryptocurrency XRP and supporting tokens representing various units of value. Protocol upgrades on XRPL are introduced through amendments, which validators vote on and then apply automatically. RippleX, the developer ecosystem arm, coordinates upgrades such as the current v2.3.0 rollout.",
-        "title_zh": "XRP Ledger升级重新启用此前因严重缺陷被移除的功能",
-        "detailed_summary_zh": "XRP Ledger正在推行一次协议升级，重新启用此前因严重缺陷而被移除的功能。RippleX已呼吁验证者升级至XRPL v2.3.0，目前已有近80%的服务器完成升级。 这意义重大，因为XRP Ledger是一个广泛使用的区块链，恢复这些功能将扩展其能力并可能提升网络性能。该升级也体现了持续的协议维护和社区协作，对开发者、验证者和XRP持有者都有影响。 此次升级依赖XRP Ledger的修订（amendment）机制，修订只有在获得足够验证者支持后才会激活。一旦第一个v2.3.0修订被采纳，其余功能将由协议自动启用。",
-        "background_zh": "XRP Ledger是Ripple Labs于2012年推出的区块链平台，使用原生加密货币XRP，并支持代表多种价值单位的代币。XRPL的协议升级通过修订机制引入，由验证者投票后在链上自动生效。RippleX是负责协调此类升级的开发者生态部门，目前正在推动v2.3.0版本的上线。",
+        "category": "exchange-announcements",
+        "title_en": "Binance to Delist Six Tokens on 2026-08-17",
+        "detailed_summary_en": "Binance announced it will delist six tokens — ACX, HFT, PIVX, PYR, VANRY, and VIC — from all spot trading pairs on 2026-08-17 at 03:00 UTC. The move affects all spot trading pairs for these tokens. This is a material exchange event that affects traders holding these assets, who must close positions or withdraw tokens before the deadline. Delistings often reduce liquidity and price stability, and may signal concerns about the projects' viability or compliance. The delisting date is 2026-08-17 at 03:00 (UTC), and all spot trading pairs for the six tokens will cease. Users should manage their positions and withdrawals before this deadline.",
+        "background_en": "Delisting is a process where an exchange removes a token from its trading platform, often due to low trading volume, liquidity issues, compliance concerns, or project development problems. The affected tokens include Vanar (VANRY), a carbon-neutral Layer-1 blockchain; Viction (VIC), a global Layer-1 EVM blockchain; and Vulcan Forged PYR, a web3 gaming ecosystem token. When a delisting is announced, users typically have a grace period to withdraw or trade their assets before trading ceases.",
+        "title_zh": "币安将于2026年8月17日下架六种代币",
+        "detailed_summary_zh": "币安宣布将于2026年8月17日03:00（UTC）下架ACX、HFT、PIVX、PYR、VANRY和VIC这六种代币的全部现货交易对。此举影响这些代币的所有现货交易对。 这是重要的交易所事件，影响持有这些资产的交易者——他们必须在截止日期前平仓或提取代币。下架通常会导致流动性和价格稳定性下降，并可能暗示市场对这些项目的发展前景或合规性存在担忧。 下架时间为2026年8月17日03:00（UTC），届时六种代币的所有现货交易对将停止交易。用户应在该截止日期前妥善处理持仓和提现。",
+        "background_zh": "下架是指交易所将某种代币从其交易平台移除的过程，常见原因包括交易量低、流动性不足、合规问题或项目发展停滞。本次涉及的代币包括Vanar（VANRY）——一个碳中和的Layer-1区块链；Viction（VIC）——一个全球Layer-1 EVM区块链；以及Vulcan Forged PYR——一个web3游戏生态代币。当交易所宣布下架时，用户通常有一段宽限期，可以在交易停止前提取或交易其资产。",
         "sources": [
           {
-            "url": "https://bitcoinist.com/xrp-ledger-major-overhaul-8-amendments/",
-            "title": "XRP Ledger Set For A Major Overhaul With 8 Amendments"
+            "url": "https://cdn.vanarchain.com/vanarchain/vanar_whitepaper.pdf",
+            "title": "VANAR Chain - Whitepaper"
           },
           {
-            "url": "https://xrpl.org/resources/known-amendments",
-            "title": "List of all known amendments to the XRP Ledger protocol and their..."
+            "url": "https://markets.coinpedia.org/blockchain/tomochain/",
+            "title": "Viction | Coinpedia Blockchain Overview"
           },
           {
-            "url": "https://en.wikipedia.org/wiki/XRP_Ledger",
-            "title": "XRP Ledger - Wikipedia"
+            "url": "https://main.d34szcsfxnagyb.amplifyapp.com/gamefi/vulcan-forged-pyr/",
+            "title": "Vulcan Forged (PYR): The expanding universe of web3 gaming and..."
           }
         ]
       },
       "ai_score": 7.0,
       "ai_reason": null,
-      "ai_summary": "The XRP Ledger is undergoing an upgrade that re-enables features that were previously removed due to critical bugs.",
+      "ai_summary": "Binance will delist six tokens (ACX, HFT, PIVX, PYR, VANRY, VIC) from all spot trading pairs on 2026-08-17.",
       "ai_tags": []
     }
-  ]
+  ],
+  "dedup_history": []
 }
