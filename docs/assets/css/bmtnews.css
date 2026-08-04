@@ -935,14 +935,6 @@ input {
   line-height: 1.72;
 }
 
-.story-summary-body:not(.expanded) {
-  display: -webkit-box;
-  max-height: calc(1.72em * 2);
-  overflow: hidden;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 2;
-}
-
 .summary-toggle {
   border: 0;
   background: transparent;
@@ -1901,11 +1893,6 @@ html.js:not(.feed-ready)
 
   .digest-item > p:not(.source-line):not(.tag-line) {
     font-size: 0.86rem;
-  }
-
-  .story-summary-body:not(.expanded) {
-    max-height: calc(1.72em * 4);
-    -webkit-line-clamp: 4;
   }
 
   .docs-page .main-content {
