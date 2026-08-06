@@ -123,6 +123,18 @@ def test_daily_report_renders_window_quotas_and_source_contribution() -> None:
         {"Crypto Markets": 4, "Technology": 3},
     )
     report.set_breakdown(
+        "candidate_groups",
+        {"Crypto Markets": 12, "Technology": 4},
+    )
+    report.set_breakdown(
+        "fallback_candidate_groups",
+        {"Crypto Markets": 3},
+    )
+    report.set_breakdown(
+        "qualified_groups",
+        {"Crypto Markets": 6, "Technology": 3},
+    )
+    report.set_breakdown(
         "group_limits",
         {"Crypto Markets": 4, "Technology": 3},
     )
@@ -133,6 +145,10 @@ def test_daily_report_renders_window_quotas_and_source_contribution() -> None:
     report.set_breakdown(
         "selected_sources",
         {"rss/CoinDesk": 2},
+    )
+    report.set_breakdown(
+        "qualified_sources",
+        {"rss/CoinDesk": 5},
     )
     report.set_breakdown(
         "fallback_candidate_sources",
@@ -152,9 +168,9 @@ def test_daily_report_renders_window_quotas_and_source_contribution() -> None:
     assert payload["kind"] == "daily_publish"
     assert "## BMTNews 早间日报发布报告" in markdown
     assert "| 固定窗口候选 | 51 |" in markdown
-    assert "| Crypto Markets | 4 | 4 |" in markdown
+    assert "| Crypto Markets | 12 | 3 | 6 | 4 | 4 |" in markdown
     assert "Crypto 主轨：**4 / 9**" in markdown
-    assert "| rss/CoinDesk | 12 | 3 | 2 |" in markdown
+    assert "| rss/CoinDesk | 12 | 3 | 5 | 2 |" in markdown
     assert "| URL 去重后 | 0 |" not in markdown
 
 

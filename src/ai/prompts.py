@@ -72,12 +72,15 @@ CONTENT_ANALYSIS_USER = """Analyze the following content and provide a JSON resp
 - reason: Brief explanation for the score (mention discussion quality if comments are provided)
 - summary: One-sentence summary of the content
 - tags: Relevant topic tags (3-5 tags)
+- category: Best content category from the configured taxonomy, or null when none is configured
 
 Content:
 Title: {title}
 Source: {source}
 Author: {author}
 URL: {url}
+Source default category: {source_category}
+Category instruction: {category_instruction}
 {content_section}
 {discussion_section}
 
@@ -86,7 +89,8 @@ Respond with valid JSON only:
   "score": <number>,
   "reason": "<explanation>",
   "summary": "<one-sentence-summary>",
-  "tags": ["<tag1>", "<tag2>", ...]
+  "tags": ["<tag1>", "<tag2>", ...],
+  "category": "<configured-category-or-null>"
 }}"""
 
 CONCEPT_EXTRACTION_SYSTEM = """You identify technical concepts in news that a reader might not know.

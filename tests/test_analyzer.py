@@ -121,6 +121,62 @@ def test_analyze_item_accepts_valid_result():
     assert item.ai_tags == ["ai", "research"]
 
 
+def test_analyze_item_reclassifies_article_from_allowed_category() -> None:
+    captured_user_prompt = ""
+
+    async def complete(**kwargs):
+        nonlocal captured_user_prompt
+        captured_user_prompt = kwargs["user"]
+        return json.dumps(
+            {
+                "score": 8.5,
+                "reason": "Policy impact",
+                "summary": "A useful update",
+                "tags": ["policy"],
+                "category": "policy-regulation",
+            }
+        )
+
+    item = _make_item("rss:test:category")
+    item.metadata["category"] = "crypto-markets"
+    analyzer = ContentAnalyzer(
+        SimpleNamespace(complete=complete),
+        allowed_categories=["crypto-markets", "policy-regulation"],
+    )
+
+    asyncio.run(analyzer._analyze_item(item))
+
+    assert item.metadata["category"] == "policy-regulation"
+    assert item.metadata["source_category"] == "crypto-markets"
+    assert '"policy-regulation"' in captured_user_prompt
+    assert "article itself" in captured_user_prompt
+
+
+def test_analyze_item_ignores_unconfigured_category() -> None:
+    async def complete(**kwargs):
+        return json.dumps(
+            {
+                "score": 8.5,
+                "reason": "Relevant",
+                "summary": "A useful update",
+                "tags": [],
+                "category": "not-configured",
+            }
+        )
+
+    item = _make_item("rss:test:invalid-category")
+    item.metadata["category"] = "crypto-markets"
+
+    asyncio.run(
+        ContentAnalyzer(
+            SimpleNamespace(complete=complete),
+            allowed_categories=["crypto-markets", "policy-regulation"],
+        )._analyze_item(item)
+    )
+
+    assert item.metadata == {"category": "crypto-markets"}
+
+
 @pytest.mark.parametrize(
     "result",
     [
