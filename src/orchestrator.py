@@ -113,6 +113,9 @@ class BalancedDigestResult:
     group_limits: Dict[str, Optional[int]] = field(default_factory=dict)
     duplicate_categories: List[str] = field(default_factory=list)
     borrowed_count: int = 0
+    category_limit_deferred: int = 0
+    source_limit_deferred: int = 0
+    minimum_fill_count: int = 0
 
 
 @dataclass
@@ -748,6 +751,10 @@ class HorizonOrchestrator:
                 "candidate_sources",
                 dict(sorted(candidate_source_counts.items())),
             )
+            run_report.set_breakdown(
+                "candidate_groups",
+                self._group_breakdown(candidates),
+            )
             minimum_candidates = filtering_config.minimum_candidate_items
             if (
                 minimum_candidates is not None
@@ -881,6 +888,10 @@ class HorizonOrchestrator:
                     "fallback_candidate_sources",
                     dict(sorted(fallback_source_counts.items())),
                 )
+                run_report.set_breakdown(
+                    "fallback_candidate_groups",
+                    self._group_breakdown(supplemental_candidates),
+                )
                 normal_identities = {
                     item_identity(item) for item in candidates
                 }
@@ -925,6 +936,7 @@ class HorizonOrchestrator:
                 balanced_result = self.apply_balanced_digest(
                     qualified_items,
                     allow_primary_borrowing=True,
+                    fill_to_minimum=True,
                 )
                 run_report.add_alert(
                     "info",
@@ -932,18 +944,56 @@ class HorizonOrchestrator:
                     f"固定窗口内容不足，已启用 {fallback_hours} 小时未发布内容保底；"
                     "评分阈值和历史去重保持不变。",
                 )
+            elif (
+                minimum_display is not None
+                and len(balanced_result.items) < minimum_display
+            ):
+                balanced_result = self.apply_balanced_digest(
+                    qualified_items,
+                    allow_primary_borrowing=True,
+                    fill_to_minimum=True,
+                )
 
             important_items = balanced_result.items
             run_report.set_metric("analyzed_this_run", len(analyzed_items))
             run_report.set_metric("analyzed_today", len(analyzed_items))
             run_report.set_metric("above_threshold", threshold_count)
             run_report.set_metric(
+                "below_threshold",
+                len(analyzed_items) - threshold_count,
+            )
+            run_report.set_metric(
                 "topic_duplicates_removed",
                 topic_duplicates_removed,
             )
             run_report.set_metric(
+                "qualified_after_topic_dedup",
+                len(qualified_items),
+            )
+            run_report.set_metric(
+                "category_reclassified",
+                sum(
+                    item.metadata.get("source_category")
+                    != item.metadata.get("category")
+                    for item in analyzed_items
+                    if "source_category" in item.metadata
+                ),
+            )
+            run_report.set_metric(
                 "quota_borrowed",
                 balanced_result.borrowed_count,
+            )
+            run_report.set_metric(
+                "category_limit_deferred",
+                balanced_result.category_limit_deferred,
+            )
+            run_report.set_metric(
+                "source_limit_deferred",
+                balanced_result.source_limit_deferred,
+            )
+            run_report.set_metric(
+                "minimum_fill_added",
+                balanced_result.minimum_fill_count,
             )
             run_report.set_metric(
                 "balanced_digest_removed",
@@ -985,6 +1035,10 @@ class HorizonOrchestrator:
             }
             run_report.set_breakdown("selected_groups", selected_groups)
             run_report.set_breakdown("group_limits", group_limits)
+            run_report.set_breakdown(
+                "qualified_groups",
+                self._group_breakdown(qualified_items),
+            )
 
             primary_groups = set(self.config.filtering.primary_groups)
             primary_selected = sum(
@@ -1015,6 +1069,10 @@ class HorizonOrchestrator:
             run_report.set_breakdown(
                 "selected_sources",
                 dict(sorted(selected_source_counts.items())),
+            )
+            run_report.set_breakdown(
+                "qualified_sources",
+                self._source_breakdown(qualified_items),
             )
             await self._enrich_important_items(important_items)
 
@@ -1413,6 +1471,37 @@ class HorizonOrchestrator:
             return meta["domain"]
         return item.author or "unknown"
 
+    def _source_breakdown(self, items: List[ContentItem]) -> Dict[str, int]:
+        """Count items by the source key used by digest diversity limits."""
+        counts: Dict[str, int] = defaultdict(int)
+        for item in items:
+            counts[
+                f"{item.source_type.value}/{self._sub_source_label(item)}"
+            ] += 1
+        return dict(sorted(counts.items()))
+
+    def _group_breakdown(self, items: List[ContentItem]) -> Dict[str, int]:
+        """Count items by configured quota group using display labels."""
+        groups = self.config.filtering.category_groups
+        category_to_group: Dict[str, str] = {}
+        for group_key, group in groups.items():
+            for category in group.categories:
+                category_to_group.setdefault(category, group_key)
+
+        counts: Dict[str, int] = defaultdict(int)
+        default_group = self.config.filtering.default_group
+        for item in items:
+            category = item.metadata.get("category")
+            group_key = (
+                category_to_group.get(category, default_group)
+                if isinstance(category, str)
+                else default_group
+            )
+            group = groups.get(group_key)
+            label = group.name or group_key if group is not None else group_key
+            counts[label] += 1
+        return dict(sorted(counts.items()))
+
     def merge_cross_source_duplicates(self, items: List[ContentItem]) -> List[ContentItem]:
         """Merge items that point to the same URL from different sources.
 
@@ -1632,6 +1721,7 @@ class HorizonOrchestrator:
         *,
         log: bool = True,
         allow_primary_borrowing: bool = False,
+        fill_to_minimum: bool = False,
     ) -> BalancedDigestResult:
         """Apply configured category quotas and the final item cap.
 
@@ -1673,6 +1763,9 @@ class HorizonOrchestrator:
         selected: List[tuple[ContentItem, str]] = []
         selected_object_ids: set[int] = set()
         group_counts: Dict[str, int] = defaultdict(int)
+        source_counts: Dict[str, int] = defaultdict(int)
+        category_deferred_ids: set[int] = set()
+        source_deferred_ids: set[int] = set()
         default_group = filtering.default_group
 
         def group_for(item: ContentItem) -> str:
@@ -1683,29 +1776,51 @@ class HorizonOrchestrator:
                 else default_group
             )
 
-        def select(item: ContentItem, group_key: str) -> bool:
-            if id(item) in selected_object_ids:
-                return False
-            if max_items is not None and len(selected) >= max_items:
-                return False
-            if group_key in groups:
-                limit = groups[group_key].limit
-            else:
-                limit = filtering.default_group_limit
-
-            if limit is not None and group_counts[group_key] >= limit:
-                return False
-
-            selected.append((item, group_key))
-            selected_object_ids.add(id(item))
-            group_counts[group_key] += 1
-            return True
-
         def source_for(item: ContentItem) -> str:
             return (
                 f"{item.source_type.value}/"
                 f"{self._sub_source_label(item)}"
             )
+
+        def select(
+            item: ContentItem,
+            group_key: str,
+            *,
+            group_limit: Optional[int] = None,
+            enforce_group_limit: bool = True,
+            enforce_source_limit: bool = True,
+        ) -> bool:
+            if id(item) in selected_object_ids:
+                return False
+            if max_items is not None and len(selected) >= max_items:
+                return False
+            if enforce_group_limit:
+                limit = group_limit
+                if limit is None:
+                    if group_key in groups:
+                        limit = groups[group_key].limit
+                    else:
+                        limit = filtering.default_group_limit
+
+                if limit is not None and group_counts[group_key] >= limit:
+                    category_deferred_ids.add(id(item))
+                    return False
+
+            source_key = source_for(item)
+            source_limit = filtering.max_items_per_source
+            if (
+                enforce_source_limit
+                and source_limit is not None
+                and source_counts[source_key] >= source_limit
+            ):
+                source_deferred_ids.add(id(item))
+                return False
+
+            selected.append((item, group_key))
+            selected_object_ids.add(id(item))
+            group_counts[group_key] += 1
+            source_counts[source_key] += 1
+            return True
 
         primary_groups = set(filtering.primary_groups)
         primary_minimum = filtering.primary_group_min_items or 0
@@ -1727,10 +1842,6 @@ class HorizonOrchestrator:
         borrowed_count = 0
         borrow_limit = filtering.primary_group_borrow_limit
         if allow_primary_borrowing and primary_groups and borrow_limit is not None:
-            source_counts: Dict[str, int] = defaultdict(int)
-            for selected_item, _ in selected:
-                source_counts[source_for(selected_item)] += 1
-            source_limit = filtering.max_items_per_source
             for item in sorted_items:
                 if id(item) in selected_object_ids:
                     continue
@@ -1740,19 +1851,47 @@ class HorizonOrchestrator:
                 if group_key not in primary_groups:
                     continue
                 effective_limit = max(groups[group_key].limit, borrow_limit)
-                if group_counts[group_key] >= effective_limit:
+                if select(item, group_key, group_limit=effective_limit):
+                    borrowed_count += 1
+
+        minimum_fill_count = 0
+        minimum_display = filtering.minimum_display_items
+        if fill_to_minimum and minimum_display is not None:
+            fill_target = (
+                min(minimum_display, max_items)
+                if max_items is not None
+                else minimum_display
+            )
+            for item in sorted_items:
+                if len(selected) >= fill_target:
+                    break
+                if id(item) in selected_object_ids:
                     continue
-                source_key = source_for(item)
-                if (
-                    source_limit is not None
-                    and source_counts[source_key] >= source_limit
+                group_key = group_for(item)
+                # AI and policy caps are hard limits. Only the Crypto primary
+                # track may exceed its normal/borrowed cap to avoid a short
+                # edition, and every recovery item has already cleared score
+                # and topic/history deduplication.
+                recovery_limit: Optional[int] = None
+                if group_key not in primary_groups:
+                    if group_key in groups:
+                        recovery_limit = groups[group_key].limit
+                    else:
+                        recovery_limit = filtering.default_group_limit
+                    if (
+                        recovery_limit is not None
+                        and group_counts[group_key] >= recovery_limit
+                    ):
+                        category_deferred_ids.add(id(item))
+                        continue
+                if select(
+                    item,
+                    group_key,
+                    group_limit=recovery_limit,
+                    enforce_group_limit=group_key not in primary_groups,
+                    enforce_source_limit=False,
                 ):
-                    continue
-                selected.append((item, group_key))
-                selected_object_ids.add(id(item))
-                group_counts[group_key] += 1
-                source_counts[source_key] += 1
-                borrowed_count += 1
+                    minimum_fill_count += 1
 
         selected.sort(
             key=lambda pair: pair[0].ai_score or 0,
@@ -1807,6 +1946,9 @@ class HorizonOrchestrator:
             group_limits=group_limits,
             duplicate_categories=sorted(set(duplicate_categories)),
             borrowed_count=borrowed_count,
+            category_limit_deferred=len(category_deferred_ids),
+            source_limit_deferred=len(source_deferred_ids),
+            minimum_fill_count=minimum_fill_count,
         )
 
     async def _expand_twitter_discussion(self, items: List[ContentItem]) -> None:
@@ -1861,7 +2003,10 @@ class HorizonOrchestrator:
             f"   Re-analyzing {len(expanded)} Twitter items with reply context...\n"
         )
         ai_client = create_ai_client(self.config.ai)
-        analyzer = ContentAnalyzer(ai_client)
+        analyzer = ContentAnalyzer(
+            ai_client,
+            allowed_categories=self._analysis_categories(),
+        )
         await analyzer.analyze_batch(expanded)
 
     async def _enrich_important_items(self, items: List[ContentItem]) -> None:
@@ -1894,9 +2039,22 @@ class HorizonOrchestrator:
         self.console.print("🤖 Analyzing content with AI...")
 
         ai_client = create_ai_client(self.config.ai)
-        analyzer = ContentAnalyzer(ai_client)
+        analyzer = ContentAnalyzer(
+            ai_client,
+            allowed_categories=self._analysis_categories(),
+        )
 
         return await analyzer.analyze_batch(items)
+
+    def _analysis_categories(self) -> List[str]:
+        """Return the configured leaf categories accepted from AI analysis."""
+        return sorted(
+            {
+                category
+                for group in self.config.filtering.category_groups.values()
+                for category in group.categories
+            }
+        )
 
     async def _generate_summary(
         self,

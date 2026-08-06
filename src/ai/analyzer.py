@@ -3,7 +3,7 @@
 import asyncio
 import json
 import re
-from typing import List, Optional
+from typing import Iterable, List, Optional
 from pydantic import BaseModel, Field, ValidationError
 from tenacity import retry, stop_after_attempt, wait_exponential
 from rich.progress import Progress, SpinnerColumn, BarColumn, TextColumn, MofNCompleteColumn
@@ -23,13 +23,27 @@ class AnalysisResult(BaseModel):
     reason: str
     summary: str
     tags: list[str]
+    category: Optional[str] = None
 
 
 class ContentAnalyzer:
     """Analyzes content items using AI to determine importance."""
 
-    def __init__(self, ai_client: AIClient):
+    def __init__(
+        self,
+        ai_client: AIClient,
+        *,
+        allowed_categories: Optional[Iterable[str]] = None,
+    ):
         self.client = ai_client
+        self.allowed_categories = tuple(
+            dict.fromkeys(
+                category.strip()
+                for category in (allowed_categories or [])
+                if category.strip()
+            )
+        )
+        self._allowed_category_set = set(self.allowed_categories)
 
     @staticmethod
     def _parse_json_response(response: str) -> Optional[dict]:
@@ -140,11 +154,23 @@ class ContentAnalyzer:
         discussion_section = "\n".join(discussion_parts) if discussion_parts else ""
 
         # Generate user prompt
+        if self.allowed_categories:
+            category_instruction = (
+                "Choose the single best content category from this exact JSON list: "
+                f"{json.dumps(self.allowed_categories)}. Classify the article itself, "
+                "not the publisher or feed."
+            )
+        else:
+            category_instruction = (
+                "No content-category taxonomy is configured; return null for category."
+            )
         user_prompt = CONTENT_ANALYSIS_USER.format(
             title=item.title,
             source=f"{item.source_type.value}",
             author=item.author or "Unknown",
             url=str(item.url),
+            source_category=item.metadata.get("category") or "Unclassified",
+            category_instruction=category_instruction,
             content_section=content_section,
             discussion_section=discussion_section
         )
@@ -174,3 +200,8 @@ class ContentAnalyzer:
         item.ai_reason = result.reason
         item.ai_summary = result.summary
         item.ai_tags = result.tags
+        if result.category in self._allowed_category_set:
+            source_category = item.metadata.get("category")
+            if source_category != result.category:
+                item.metadata.setdefault("source_category", source_category)
+                item.metadata["category"] = result.category

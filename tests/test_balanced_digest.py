@@ -196,6 +196,9 @@ def test_primary_groups_borrow_unused_capacity_without_relaxing_side_caps() -> N
         )
         for index in range(2)
     ]
+    items.append(
+        make_item("market-c", 8.7, "markets", feed_name="c")
+    )
     items += [
         make_item(f"ai-{index}", 8 - index / 10, "ai", feed_name="ai")
         for index in range(4)
@@ -216,6 +219,114 @@ def test_primary_groups_borrow_unused_capacity_without_relaxing_side_caps() -> N
     assert categories.count("policy") <= 2
     assert result.borrowed_count == 2
     assert result.group_limits["markets"] == 6
+
+
+def test_source_limit_applies_before_category_limit() -> None:
+    filtering = FilteringConfig(
+        category_groups={
+            "markets": CategoryGroupConfig(limit=4, categories=["markets"]),
+        },
+        max_items_per_source=3,
+    )
+    items = [
+        make_item(
+            f"market-{index}",
+            10 - index / 10,
+            "markets",
+            feed_name="CoinDesk",
+        )
+        for index in range(6)
+    ]
+
+    result = make_orchestrator(filtering).apply_balanced_digest(items)
+
+    assert len(result.items) == 3
+    assert result.source_limit_deferred == 3
+
+
+def test_minimum_fill_recovers_qualified_crypto_from_one_source() -> None:
+    filtering = FilteringConfig(
+        max_items=12,
+        minimum_display_items=7,
+        category_groups={
+            "markets": CategoryGroupConfig(limit=4, categories=["markets"]),
+            "technology": CategoryGroupConfig(limit=3, categories=["ai"]),
+            "policy": CategoryGroupConfig(limit=2, categories=["policy"]),
+        },
+        primary_groups=["markets"],
+        primary_group_min_items=4,
+        primary_group_borrow_limit=6,
+        max_items_per_source=3,
+    )
+    items = [
+        make_item(
+            f"market-{index}",
+            10 - index / 10,
+            "markets",
+            feed_name="CoinDesk",
+        )
+        for index in range(9)
+    ]
+    result = make_orchestrator(filtering).apply_balanced_digest(
+        items,
+        allow_primary_borrowing=True,
+        fill_to_minimum=True,
+    )
+
+    categories = [item.metadata["category"] for item in result.items]
+    assert len(result.items) == 7
+    assert categories.count("markets") == 7
+    assert result.minimum_fill_count == 4
+
+
+def test_minimum_fill_does_not_relax_ai_or_policy_caps() -> None:
+    filtering = FilteringConfig(
+        max_items=12,
+        minimum_display_items=12,
+        category_groups={
+            "markets": CategoryGroupConfig(limit=4, categories=["markets"]),
+            "technology": CategoryGroupConfig(limit=3, categories=["ai"]),
+            "policy": CategoryGroupConfig(limit=2, categories=["policy"]),
+        },
+        primary_groups=["markets"],
+        primary_group_min_items=4,
+        primary_group_borrow_limit=6,
+        max_items_per_source=3,
+    )
+    items = [
+        make_item(
+            f"market-{index}",
+            10 - index / 100,
+            "markets",
+            feed_name="CoinDesk",
+        )
+        for index in range(9)
+    ]
+    items += [
+        make_item(f"ai-{index}", 8 - index / 100, "ai", feed_name="AI")
+        for index in range(5)
+    ]
+    items += [
+        make_item(
+            f"policy-{index}",
+            7.5 - index / 100,
+            "policy",
+            feed_name="Policy",
+        )
+        for index in range(4)
+    ]
+
+    result = make_orchestrator(filtering).apply_balanced_digest(
+        items,
+        allow_primary_borrowing=True,
+        fill_to_minimum=True,
+    )
+
+    categories = [item.metadata["category"] for item in result.items]
+    assert len(result.items) == 12
+    assert categories.count("markets") == 7
+    assert categories.count("ai") == 3
+    assert categories.count("policy") == 2
 
 
 def test_duplicate_category_warns_and_first_group_wins() -> None:
