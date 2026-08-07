@@ -1,79 +1,280 @@
 {
   "version": 1,
-  "date": "2026-08-06",
+  "date": "2026-08-07",
   "timezone": "Asia/Shanghai",
-  "updated_at": "2026-08-06T00:31:09.742277Z",
+  "updated_at": "2026-08-07T00:30:47.886346Z",
   "analyzed_keys": [
-    "017f9029a25fdb07ee97110a7f078481c131b18382d0727496d760a84220091d",
-    "062c0a72191d85b0761921482a408d683e4792246d8212f28b69e43799252c62",
-    "0d0801b5859a0c359cd902a7c7d3f5085e92001e5165df4e60183172df632707",
-    "12afa4d7299b8a2ec294afa8326b94046ed91d03c2ae479027a6dd4448e8cf94",
-    "16b3e9346f8a7c7f3ed66d248ea00c9eea658050b5bc52eebc2eb29f9e7591c8",
+    "0003c0a66e890ce0d9cf7402c356bd6a12b5e4d5066514dc709c418945bd3c54",
+    "00f58a47af9b1749fcbcb72ad263a812a44b160f58b2b3563cb4bb85e796ea7d",
+    "078a06b5ec34c2b5bc2417b7e2a472c9b779d25c426935784b9faaa167ebe68f",
+    "07ff413bbfc542b88074c99371d4c52cb880ccd2882ed015a32644d39578973e",
+    "0d4af3af46f17b31b3d5f3a10833ed284ecc7276081895db734ca8c070b8d508",
+    "109f5db1cec22908961370018124d0ae19e5ff2bc8eb5b68fc604382081266d3",
+    "136cb52cd268f201474c9a9cd33bac953c6476285a69aaddd1f72424e9f08b7f",
+    "13c5c406bc20fe2410d52914d71221d534104e43ba94a71c3ef1597672383914",
     "174048d4e19e7aa9d93f9bee7112e206b32ac4bf8d96fb2d34b3caa4ad4f7a6d",
     "1b98c53650054d861284bc857664fb42acf2fab480d1a75161ceca675f23a97a",
+    "21f3e564735131f6dfa9b0c7095ca6487393de6e83714d5360e133397f67597b",
+    "252bd2d41123d13e989d9846be7476a49fe6bfbaede4735f96e882543ca5e258",
+    "2cfefe0fdb03b7b0e363e4c6259f9ba4316711c5a7947a0bb369c8060a285903",
     "2e1bd47771a0cdab082cf2c179f0d7acbd51e334698b4bf76a52782aec4203bb",
-    "2eddc838132d425a2c10a55a7a87465a9e19f3ad4e241abd9ead2acb3db32040",
+    "2ee630801cd955006e2a1c6f045f9c9cc1d4c2f76fd175c80d7ea504c0efe091",
+    "3402404d0ea7ad4796084cc3edf5cfc6d373e0f5c7cd3f85bffaf904f64cdd0f",
+    "34bf27413195567408f65ffd03b7a4016fccc48f1b1a6dd372d32bc82fa74cdb",
+    "3aa9b070682bd488dd8f80e7ccc9d92b29984b546ebb1b87cc0d2e571cafb680",
     "3b05e128a4b9d0cd36674ca9c11e018f896d5a6bade29631328356ade53e5d1f",
-    "3ea1b28b6ce98df1d15c2f9af73e9688af70ff427f3a4781f6466421a5a83f0d",
-    "3f5eb2507cfbc02cf73daa7036293f98894662d504d0279cc05a856ff952790f",
+    "3c60b44a5bee4a15b4b456a97b2d1a8ee5e4e19d88198f1b8ac2e4f0c6177f59",
+    "3c7790a475520a2b9dd22af3c019dc20c04f229238f75647e82263dbd0de36a6",
     "406589a8a6e827fd0bde3fa4249e71e1c61e6edde4d207a9be584a29f552ea6a",
-    "483f3641d469ef9603e890f1834e43d6cb2f7038b14fdce0dc673122baa26343",
-    "48d15ae2fa7df8acae0a3cf83dcd3a3dc1dbbf23487c61168b25f3d2ffa16981",
-    "58c62626851efbfbe353b452bd9900685fef7df1c353f034fd70f8948d1747a0",
-    "5f85f89da6d64f1dc0de5dc89bc4a1bfe75432e416571fc1b188245c212b698a",
-    "6b855e361d44f79364b4de07ca88d7461d8c5ed106b171042d87d41291c76440",
-    "6f506248b9284547dc9575677de20fb327c20683e0b62cd9a2682106e4a8ba86",
-    "741f66e9564358abb3a28e7ba801f1f53aaa299c6dacc52e0e389a2e8aea9ba0",
+    "41ab70c24a123bbf7ff157ba73ec3b64ba12782e02d38171f1082bd56426b4b9",
+    "426f59d87655fb2ac26d4110d02141a753f204e3c250c1dd2d209b1ba7ac6424",
+    "435d9d7dab035071451016d038ed52feba512b6ca5f6cebb30062cff1de77780",
+    "49f803e33e0f668a6b8e58d5f55fa3ff18032fa99a58da40667461f328142030",
+    "591a8c3f8c4cdbc47bd2b52134ea5a3b8bb3dd0c081486866acb70816e75e450",
+    "598579db9f488a73c4af82769dae9b9d706d86f4ad3c7ab536d1e2d5dcd0cb8b",
+    "5efcba88dc9a5aa74819e9e420119d8f903f9e2b95266b98ac54702caedc265c",
+    "5fbfaf5adb71501298d7dace4b40efdba84573d4c2df865a550c6404f93209f5",
+    "6118099e2e5b1b09de110ed8593c150a3b911f67cf271461c61944b12ea7c8c9",
+    "68595735a2038bda20dd8e61498eee419c247e0b74402188d2a053c861b3c31a",
+    "6ada9869c6f92c5d387505d85545ace98d8aefe8dd104846a5ff0721ba300a90",
+    "6bef6709ae4eef37efd694c50b645fc44313cf8e545b13e9cd3daf55214518a8",
+    "6c300ba72ad4832b45eff44fbd9ab7f4e6c62c13a4b44d086235c771c586d45f",
     "743ffda329f12cb79bfed7afd8577531ddca7cdc5b14803bab572df9ead5991a",
     "769de7f002eb7dd1d1aff61bf78ab2a38601386aac22781a47776e312a029230",
-    "78eacd02a424b1d0c05a5b6c0fbd9fc4644b9f44fd291fc73e294dec8b6486cc",
+    "76a76148d71ffc4f0c8111a15965bf7978a660d3a8561616b3888007e301f60b",
     "7bfbb4c1d532b37ca576a606d6d1a03c54675fc417ce2d3969d21c095446488b",
-    "7c206f95ec9ccfcbf1d959cd25ef124dc32082db229ec14a87963cbef0ca9fcf",
-    "8064e9e9ddf817589331fc3f96785d20192c8ad10065f6f7ff7f17f21325c6c3",
-    "83df15204100b7a809f59ee6432f5d7a67a0780a08c58dd9a0904bea0ca427bf",
-    "8535cece2fde126205468cb17abfd6626c0deb1e42af87f3b9c54bd2e3afa290",
-    "8e7fa3e9f256ef0fe512ff87ab1efd9d286a53c719f7cb739551cf3e9bf53c74",
+    "7c275d38b19fb0ed8f7656780fd24259b20ba1dc526f557281b274327d7ac501",
+    "868595dfe2c0092329922f6a4c1db669f65707420cf13d00f50c3ed1387d363d",
+    "87544623d2b6e12e7e9920f5eb7087ad9990022ffbba1bcdd26389bbc565d1da",
+    "8a00e4ce848b244bbc6f010146b35d75d6a35285fafe394c9dd85fbd15d06937",
     "93e14f3eb4d5cb1b3f0e01f1efb9791132f74eed7f3992a36e7c090de8dd8e1a",
-    "94ffb1fe298cdc1e71670d43aa41ddac4d6ec54fc41567d8e92261369b4ee7c3",
-    "95b3359700e9efb8d07409f2987b689b384b2f681d10f21e135f28bfe9b377d6",
     "9616a7ed47281569fcfb2b5f56b410f128bd754c65568f15925cb874a310f933",
-    "966a590784aa1c23b81adca02e800f0783b9a8e5eeec1d6a932fb313feff574b",
-    "9c45f13c9b1154eba8cc0d260ac1d36e3529ed8af03f1b8e18f5a46304b80307",
-    "9daadff58eb9fcebaf9eceee5edfe36885394f87c7117957ecf73bcf0ed85390",
-    "9ee730f51a785b5915283fe63f4aaa894cca117d23883fd5feee66918b7220de",
-    "9f4cbc32f4e958ceb0472827239f2142fa8a5f38a01a69b106596765e034af5f",
-    "a2f4efc25a44b6b75817f460e95d7433bb300cf3ccda1a930d1734ec057397f4",
-    "a31c1a27a3a7f55ba88f5f601a124ad688f1c838d864a0cc1315015da37db574",
+    "97f2d2a1bfe4543fd9145b1917b85f7a905bc98ec3a72c40accab407887f31b5",
+    "9bc0401cc127726304ea1bedfbc933c6aa09e4413c4f46467b2eb3aecb09d3f1",
+    "a0079df82d6ebd51535817a8f5b517ff001db635b659fdcd4ba9d723df4852d5",
     "a403e0e29ccc29eb313cdb95826e1e5a1e9a13317a22cd04f41aaa3c6abff0aa",
-    "a51de2055e13dc432f7131ffee5221c16e5feda7acc3c852ec7212b61c5200c1",
-    "a65f3762304444c7e6a08947d640d709c595755c4fe282b8829f9d7f341582c2",
-    "a79b2ccd8b8d1fb6e88b9a0644dcd18d6a59e586a2c0cd88ccb592f8babce5d4",
-    "ae20f34efa9aef53874deee3aa456cb788b3e7b9ce9415a7e0c6a2c1a5ba0add",
-    "b04b7772226b46031afcaa01c41f4d94df4f280aad52de2aae10ebca70503354",
+    "a4a473e105f98930d9ca9571c8fa53b26d1840e1a3a014077a115e1daa4ea65a",
+    "a5f28e0d5a6ed894f9dae6917aeb5d22f769137a44ee2de03328f904d978e84b",
+    "a926164ce4e7ef069954affa7bdb9a86be47a0c25136a7dca07723ab6fc150d2",
+    "aa0aa8f52932581b7d2ff808f0957a35db44e43bed08bc0efb97bbb2220abaa0",
+    "ab1c50627f010317cc02c9f25f8a4ec4867efe85ee6de03d86b5ef2d290d63eb",
     "b0b5448b30a1a41ffd5862e1a8e07153c8ef1e19b782a373528dd3d4f5d6f2e6",
-    "b2bcb7fe20eacf2452411367401e97db7f40aa4804a556fe37efa6431b12bb16",
+    "b1b728c2f50617710f4730972e72f2d9d95df916c9a4de39cb56076c340dba92",
+    "b518fe6f64e251c78619f2d1c1256d55faa3694829517e8ffb52fcc8a3914299",
     "b5695240f4626872eb92c2a828056d4d62e972e3f6ccc2c6e6e1b0cdce5a2774",
-    "b6784e891e67ac02a2e163eb65e7a823badd7168eb8dcc5885e158ae82bd660c",
-    "b7354aab33ddc8ee3ec718597479f16f2708d5a9418b122a95c7c4119b9e976d",
+    "b6350acf21ffe291a3f0fa410118effb2ec05a1eb11de7b72fa082de0d8b352a",
+    "b9631aef2bc70da265bd4f25554e39b8674253fce242063514ec12b8adaaaf8d",
     "bfdc84ecb127b24b5588134698812e01d837001d551df4ca272afa8009462c73",
     "c0bc2bbfb9ad1d594e2a80a5f9ddb0647b873b930d2932356c4f73d61dd92482",
-    "c3a529511b6ec63e7f6ceccfc3a870a4364da1dc6524cc6a8e6c9480beffc4cb",
-    "c725a6180920cca0e7ab341ca746463a4398156baf6bce543b86ad5858032ada",
+    "c383f0c7e52392a69d3083eb1e973337722eef0a8f72e76240039dbcca3a0243",
+    "cf4ff9c289187376e8f9d65b81a6ee91da1919b4cb1845f7aa1c346e7b3af065",
     "d172995cc35269fae779c880028f98e43edf907a1e23421610c9ad99ba60c6a8",
-    "d6abb7af44f9c8eb7cd32f99af84125aaed844b7bf82b513abc0b3ee8b440123",
+    "d74e5ae40265ea6670af99cceaa0e888bc5f1c6962faae132d27d53cd2e98275",
+    "d7d55f295f2f4db912dd3771f88627da24d0931e68b47c36772e8ec906966b4b",
     "d8c25c3ba7f48bdf143ab5534be35a932a996e08dc21c11cde8218424a91b3e3",
-    "ddd3a2fb70c6476b0521b3c9b6d224b1d36ea3d3cf4419eb52d9361007df0c3b",
+    "da86e8c9da680cb3bed4535f06e44127b63975bb4017dcc7ad806f6b1bc4719a",
+    "dd5f1f7217b97c36ff809a90ac3e2c002fe036137aba7bfcdb194daa892a8bc3",
     "e05a9e67eb26a50975c4577d6d6b776eee8fbac25740c46f593941a73127aa71",
-    "e1353f7fe70a6178bda20f3dce5e7f07cd3a370f7ea14cf7d312beaad662a085",
+    "e4f002d411abc49c2de236e4d042ab2e548c0ff8ac57c41f4d56e6ad26ddd22f",
+    "e52798ad71734a7a4928a9377a9e9875c86da44c438f67646ae665d799f258ba",
+    "e94a813bf62bfdfa5e1977b5c2e8db5ab027dbf2efa482ee256e7b9e37515d11",
     "e989283cb1b49898dfb7fa4fdc604a173d866f42bc9d0d7becce99a115691b62",
-    "ea0ef9042ff4c578a8b553b48ce5882141939a69518548efb0f3a64a66f5bf16",
-    "f07b8d69547c30818f0ee0790cf32c84bd8ce93572f2c4a5f3f9e45a1c9822e2",
-    "f47495938e71b24f0cffdb0066f2dc7776b55342048033687a635033da172004",
-    "f6b2285c9d8c2dc1b7dfd37f0b4f0e6e3a46b0e07de8eb820aa0917505808a73",
-    "f89de0636fd9ab39d473138774e5683475aa6868c6a0d3c3fe0ab90e804bb2bc",
-    "fcaea39a439f08b0ba43966bc55f54c153f33b94748fc137eeb87eea3342076e"
+    "ec68195153b8397cfe3439f200aab6b4a13af6c50eb95f608a48358a6bbc83f4",
+    "f2fd9fc88e8a719bb9c6399ae77300f2f530ded497626f8f898a79ef4d339b90"
   ],
   "items": [
+    {
+      "id": "rss:www.coindesk.com_arc_outboundfeeds_rss_:2c867059a573db68",
+      "source_type": "rss",
+      "title": "Bitcoin developers flag 85 critical bugs in an \"extremely bad\" situation",
+      "url": "https://www.coindesk.com/tech/2026/08/06/bitcoin-developers-flag-85-critical-bugs-in-an-extremely-bad-situation",
+      "content": null,
+      "author": "Shaurya Malwa",
+      "published_at": "2026-08-06T07:14:11Z",
+      "fetched_at": "2026-08-07T00:30:49.551326Z",
+      "metadata": {
+        "feed_name": "CoinDesk",
+        "category": "crypto-protocols",
+        "title_en": "Bitcoin Developers Flag 85 Critical Bugs in 'Extremely Bad' Situation",
+        "detailed_summary_en": "On August 6, 2026, CoinDesk reported that Bitcoin developers have flagged 85 critical bugs, describing the situation as 'extremely bad.' This raises serious security concerns for the Bitcoin network, although specific technical details have not yet been disclosed. If confirmed, this large batch of critical bugs could represent a severe security threat to the Bitcoin protocol, potentially affecting the entire network and its users. The unprecedented scale of 85 critical issues would have major implications for Bitcoin's stability and user trust. The article's headline and summary do not provide specifics about the nature of the bugs, affected components, or whether patches are already available. Historical Bitcoin Core security advisories and CVE databases show that while past critical vulnerabilities exist, a batch of 85 at once would be unprecedented. Notably, a November 2025 public audit of Bitcoin Core by Quarkslab found no critical, high, or medium-severity issues.",
+        "background_en": "Bitcoin Core is the reference implementation of the Bitcoin protocol, and vulnerabilities in it are taken extremely seriously because they could allow attackers to disrupt the network or steal funds. Bitcoin's security model relies on the integrity of software running on nodes; even a single critical bug could be exploited to cause double-spending or denial-of-service. The Bitcoin project generally follows a responsible disclosure policy, with security advisories published after fixes are deployed.",
+        "title_zh": "比特币开发者标记85个严重漏洞，局势“极其糟糕”",
+        "detailed_summary_zh": "据CoinDesk于2026年8月6日报道，比特币开发者标记了85个严重漏洞，并将其描述为“极其糟糕”的状况。这引发了对比特币网络安全的严重担忧，但具体技术细节尚未披露。 如果这些漏洞得到证实，这一大批严重漏洞可能对比特币协议构成严重安全威胁，甚至影响整个网络及其用户。一次性出现85个严重问题在规模上前所未有，将对比特币的稳定性和用户信任产生重大影响。 文章的标题和摘要没有提供这些漏洞的具体性质、受影响组件或是否已有修复补丁等细节。比特币Core的历史安全公告和CVE数据库显示，虽然过去确实存在严重漏洞，但一次出现85个将是前所未有的。值得注意的是，2025年11月Quarkslab对Bitcoin Core的首次公开第三方审计未发现严重、高危或中危问题。",
+        "background_zh": "Bitcoin Core是比特币协议的参考实现，其漏洞受到高度重视，因为攻击者可能利用这些漏洞破坏网络或窃取资金。比特币的安全模型依赖于节点上运行的软件完整性，即使单个严重漏洞也可能被利用来实施双花或拒绝服务攻击。比特币项目通常遵循负责任披露政策，在修复部署后发布安全公告。",
+        "sources": [
+          {
+            "url": "https://bitcoincore.org/en/security-advisories/",
+            "title": "Security Advisories - Bitcoin Core"
+          },
+          {
+            "url": "https://app.opencve.io/cve/?vendor=bitcoin",
+            "title": "Bitcoin CVEs and Security Vulnerabilities - OpenCVE"
+          },
+          {
+            "url": "https://www.theblock.co/post/379656/bitcoin-core-audit",
+            "title": "Bitcoin Core's first public third-party audit finds no major ..."
+          }
+        ]
+      },
+      "ai_score": 9.0,
+      "ai_reason": null,
+      "ai_summary": "Bitcoin developers have flagged 85 critical bugs in an 'extremely bad' situation, raising serious security concerns for the network.",
+      "ai_tags": []
+    },
+    {
+      "id": "rss:www.coindesk.com_arc_outboundfeeds_rss_:4e9dd922a35b1c7e",
+      "source_type": "rss",
+      "title": "Power struggle erupts at Ondo Finance after founder’s death",
+      "url": "https://www.coindesk.com/policy/2026/08/06/power-struggle-erupts-at-ondo-finance-after-founder-s-death",
+      "content": null,
+      "author": "AI Boost",
+      "published_at": "2026-08-06T21:59:33Z",
+      "fetched_at": "2026-08-07T00:30:49.551163Z",
+      "metadata": {
+        "feed_name": "CoinDesk",
+        "category": "crypto-protocols",
+        "title_en": "Governance Power Struggle Hits DeFi Protocol Ondo Finance",
+        "detailed_summary_en": "A leadership and governance power struggle has erupted at Ondo Finance following the sudden death of its founder, creating uncertainty about the protocol's future strategic direction and leadership structure. The conflict involves competing factions within the governance community seeking to control the platform. This matters because Ondo Finance is a prominent player in the tokenized real-world asset sector, and instability at the leadership level could undermine user trust and slow institutional adoption. The outcome may set a precedent for how DeFi protocols handle founder succession and governance crises. Ondo Finance manages tokenized Treasury products such as OUSG and USDY, which are subject to governance decision-making by token holders. The power struggle likely involves questions over control of the protocol's treasury, developer hiring, and whether to alter the existing governance framework.",
+        "background_en": "DeFi protocols typically rely on governance tokens that give holders voting power over key protocol decisions, such as upgrading smart contracts or allocating funds. When a centralized founding figure dies or departs, the protocol may face a power vacuum if proper succession mechanisms are not in place. Ondo Finance focuses on tokenizing real-world assets like U.S. Treasuries, aiming to bring institutional-grade finance onchain.",
+        "title_zh": "Ondo Finance创始人去世后爆发治理权争夺战",
+        "detailed_summary_zh": "在创始人突然去世后，Ondo Finance内部爆发了一场领导层和治理权争夺战，给该协议未来的战略方向和领导结构带来了不确定性。冲突涉及治理社区内争夺平台控制权的不同派系。 这很重要，因为Ondo Finance是代币化现实世界资产领域的知名参与者，领导层的不稳定可能削弱用户信任并减缓机构采用。其结局可能为DeFi协议如何应对创始人继任和治理危机开创先例。 Ondo Finance管理着OUSG和USDY等代币化国债产品，这些产品由代币持有者通过治理决策进行管理。这场权力争夺很可能涉及对协议资金库的控制、开发者聘用以及是否修改现有治理框架等问题。",
+        "background_zh": "DeFi协议通常依赖治理代币，让持有者对升级智能合约、分配资金等关键协议决策拥有投票权。当一位集权式的创始人物去世或离任时，如果缺乏适当的继任机制，协议可能面临权力真空。Ondo Finance专注于将美国国债等现实世界资产代币化，旨在将机构级金融带上链。",
+        "sources": [
+          {
+            "url": "https://grokipedia.com/page/Ondo_Finance",
+            "title": "Ondo Finance"
+          },
+          {
+            "url": "https://www.gemini.com/cryptopedia/defi-solutions-decentralized-governance-meaning",
+            "title": "DeFi Solutions: Decentralized Governance Protocols | Gemini"
+          },
+          {
+            "url": "https://ondo.finance/",
+            "title": "Ondo Finance — Institutional-grade finance, delivered onchain"
+          }
+        ]
+      },
+      "ai_score": 8.0,
+      "ai_reason": null,
+      "ai_summary": "A leadership and governance power struggle has erupted at Ondo Finance following the death of its founder, raising questions about the protocol's future direction and stability.",
+      "ai_tags": []
+    },
+    {
+      "id": "rss:www.whitehouse.gov_presidential-actions_feed_:52dead3bf578d59f",
+      "source_type": "rss",
+      "title": "Adjusting Imports of Polysilicon and its Derivatives into the United States",
+      "url": "https://www.whitehouse.gov/presidential-actions/2026/08/adjusting-imports-of-polysilicon-and-its-derivatives-into-the-united-states/",
+      "content": null,
+      "author": "The White House",
+      "published_at": "2026-08-06T21:03:35Z",
+      "fetched_at": "2026-08-07T00:30:48.536957Z",
+      "metadata": {
+        "feed_name": "White House Presidential Actions",
+        "category": "macro-regulation",
+        "title_en": "White House Moves to Curb Polysilicon Imports to Protect US Producers",
+        "detailed_summary_en": "The White House issued a presidential proclamation in August 2026 adjusting imports of polysilicon and its derivatives into the United States. The action aims to protect domestic polysilicon producers, which the administration says have been weakened by foreign competition for decades. Polysilicon is the base material for both semiconductor chips and solar panels, making this trade action significant for U.S. supply chain security in technology and clean energy. The move could raise costs for downstream manufacturers while boosting domestic producers, with potential macroeconomic effects. The proclamation specifically covers polysilicon and its derivatives, which include products used in solar photovoltaic manufacturing. The administration frames the action as addressing economic and national security risks from long-standing foreign competition that eroded U.S. producers.",
+        "background_en": "Polysilicon is a high-purity, polycrystalline form of silicon used as raw material by the solar photovoltaic and electronics industries. It is essential for fabricating integrated circuits and making solar cells, and its production requires significant energy and advanced chemical purification processes such as the Siemens method.",
+        "title_zh": "白宫调整多晶硅及其衍生物进口以保护美国生产商",
+        "detailed_summary_zh": "2026年8月，白宫发布总统公告，调整进入美国的多晶硅及其衍生物的进口。此举旨在保护国内多晶硅生产商，政府称这些生产商数十年来一直因外国竞争而受到削弱。 多晶硅是半导体芯片和太阳能电池板的基础材料，因此这项贸易举措对美国技术和清洁能源领域的供应链安全具有重要意义。此举可能提高下游制造商的成本，同时提振国内生产商，并可能产生宏观经济影响。 该公告特别涵盖多晶硅及其衍生物，包括用于太阳能光伏制造的产品。政府将此行动定性为应对长期外国竞争侵蚀美国生产商所带来的经济与国家安全风险。",
+        "background_zh": "多晶硅是硅的一种高纯度多晶形态，是太阳能光伏和电子工业的原材料。它对于制造集成电路和太阳能电池至关重要，其生产需要大量能源以及西门子法等先进的化学提纯工艺。",
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Polycrystalline_silicon",
+            "title": "Polycrystalline silicon - Wikipedia"
+          },
+          {
+            "url": "https://waferpro.com/what-is-polysilicon-and-what-is-it-used-for/",
+            "title": "What Is Polysilicon and What Is It Used For? | WaferPro"
+          },
+          {
+            "url": "https://ratedpower.com/glossary/polysilicon/",
+            "title": "What is polysilicon and how is it made? — RatedPower"
+          }
+        ]
+      },
+      "ai_score": 7.0,
+      "ai_reason": null,
+      "ai_summary": "The White House issued a presidential proclamation adjusting U.S. imports of polysilicon and derivatives to protect domestic producers.",
+      "ai_tags": []
+    },
+    {
+      "id": "rss:openai.com_blog_rss.xml:b1c9322e571fec76",
+      "source_type": "rss",
+      "title": "Improving GPT‑5.6 Sol in ChatGPT—and expanding access to GPT-5.6 Luna for free users",
+      "url": "https://openai.com/index/improving-gpt-5-6-sol-in-chatgpt",
+      "content": null,
+      "author": "OpenAI Blog",
+      "published_at": "2026-08-06T10:00:00Z",
+      "fetched_at": "2026-08-07T00:30:51.978872Z",
+      "metadata": {
+        "feed_name": "OpenAI Blog",
+        "category": "ai-labs",
+        "title_en": "OpenAI Improves GPT-5.6 Sol, Expands Free Access to Luna",
+        "detailed_summary_en": "OpenAI announced an improved GPT-5.6 Sol in ChatGPT with better accuracy and consistency, plus expanded access for free users to GPT-5.6 Luna for unlimited everyday chats. This update builds on the GPT-5.6 family launch about a month ago. This update delivers frontier-level AI capabilities to a broader user base, especially free users, while improving the flagship model's reliability. It signals OpenAI's strategy to differentiate tiers (Sol for complex work, Luna for cost-efficient everyday use) and compete on both intelligence and accessibility. GPT-5.6 Sol is designed for complex work across coding, knowledge work, cybersecurity, science, and design, with a higher-capability Pro option. Luna, the cost-efficient model, offers a 1,050,000-token context window and a maximum output of 128,000 tokens, priced at $0.10 per million input tokens and $0.60 per million output tokens on the API.",
+        "background_en": "GPT-5.6 is a family of frontier models from OpenAI, launched about a month ago, including Sol as the flagship, Terra for balanced everyday work, and Luna as the most cost-efficient option. The model family claims state-of-the-art results in coding, knowledge work, cybersecurity, and science while using fewer tokens, and now OpenAI is iterating on these models within ChatGPT.",
+        "title_zh": "OpenAI改进GPT-5.6 Sol，并扩大免费用户的Luna访问权限",
+        "detailed_summary_zh": "OpenAI宣布ChatGPT中的GPT-5.6 Sol模型得到改进，准确性和一致性更好，同时免费用户对GPT-5.6 Luna的访问权限扩大，可在日常聊天中无限使用。此次更新基于约一个月前发布的GPT-5.6系列。 此次更新将前沿AI能力带给更广泛的用户群体，尤其是免费用户，同时提高了旗舰模型的可靠性。这体现了OpenAI差异化分层策略（Sol面向复杂工作，Luna面向高性价比日常使用），在智能与易用性两方面展开竞争。 GPT-5.6 Sol面向编码、知识工作、网络安全、科学和设计等复杂任务，并提供能力更强的Pro版本。Luna作为高性价比模型，拥有105万token的上下文窗口和12.8万token的最大输出，API价格为每百万输入token 0.10美元、每百万输出token 0.60美元。",
+        "background_zh": "GPT-5.6是OpenAI约一个月前推出的前沿模型系列，包括旗舰款Sol、均衡日常款Terra以及最具成本效益的Luna。该系列声称在编码、知识工作、网络安全和科学等领域取得领先结果且消耗更少token，目前OpenAI正针对ChatGPT中的模型进行迭代优化。",
+        "sources": [
+          {
+            "url": "https://openai.com/index/gpt-5-6/",
+            "title": "GPT-5.6: Frontier intelligence that scales with your ambition | OpenAI"
+          },
+          {
+            "url": "https://help.openai.com/en/articles/20001325-a-preview-of-gpt-56-sol-terra-and-luna",
+            "title": "GPT-5.6 in ChatGPT | OpenAI Help Center"
+          },
+          {
+            "url": "https://openrouter.ai/openai/gpt-5.6-luna",
+            "title": "GPT-5.6 Luna - API Pricing & Benchmarks | OpenRouter"
+          }
+        ]
+      },
+      "ai_score": 7.0,
+      "ai_reason": null,
+      "ai_summary": "OpenAI announces improved GPT-5.6 Sol in ChatGPT and broader free access to GPT-5.6 Luna for everyday chats.",
+      "ai_tags": []
+    },
+    {
+      "id": "rss:www.coindesk.com_arc_outboundfeeds_rss_:6e73b80d4e2ac063",
+      "source_type": "rss",
+      "title": "Here are the possible outcomes for Clarity right now",
+      "url": "https://www.coindesk.com/policy/2026/08/05/here-are-the-possible-outcomes-for-clarity-right-now",
+      "content": null,
+      "author": "Nikhilesh De",
+      "published_at": "2026-08-06T03:49:04Z",
+      "fetched_at": "2026-08-07T00:30:49.551388Z",
+      "metadata": {
+        "feed_name": "CoinDesk",
+        "category": "crypto-regulation",
+        "title_en": "Possible Outcomes for Clarity in Crypto Regulation",
+        "detailed_summary_en": "CoinDesk published an analysis outlining the potential regulatory outcomes for the Clarity initiative, a legislative effort to clarify digital asset classification. The piece examines scenarios including passage of the CLARITY Act, amendments, or failure, and their implications for crypto markets. The outcome of Clarity would determine whether digital tokens are treated as securities or commodities, affecting market access and industry structure. With the $2.6 trillion crypto market and $317 billion stablecoin sector at stake, the analysis carries material weight for investors and firms awaiting regulatory certainty. The Clarity for Digital Tokens Act, introduced by Rep. McHenry, builds on SEC Commissioner Hester Peirce's safe harbor framework. The CLARITY Act passed the House 294-134 and is heading to Senate markup, with outstanding questions around stablecoin oversight and decentralization thresholds.",
+        "background_en": "The Clarity initiative aims to resolve the long-standing regulatory turf war between the SEC and CFTC over whether digital assets are securities or commodities. Under the proposed framework, centralized projects with promised returns would fall under SEC jurisdiction, while sufficiently decentralized networks with functional use would be treated as commodities under CFTC oversight. This legislative push follows years of enforcement-driven ambiguity and seeks to provide legal certainty for blockchain innovators.",
+        "title_zh": "Clarity倡议在加密监管中的可能结果",
+        "detailed_summary_zh": "CoinDesk发布分析文章，梳理了旨在厘清数字资产分类的“Clarity”立法倡议可能出现的几种监管结果。文章探讨了CLARITY法案通过、修改或失败等情景及其对加密市场的影响。 Clarity法案的结局将决定数字代币被视为证券还是商品，从而影响市场准入和行业结构。鉴于2.6万亿美元的加密市场与3170亿美元稳定币行业正处于关键时刻，该分析对等待监管明确性的投资者和企业具有重要参考意义。 由McHenry议员提出的《Clarity for Digital Tokens Act》建立在SEC委员Hester Peirce的安全港框架之上。CLARITY法案已在众议院以294票对134票通过，目前正进入参议院审议阶段，围绕稳定币监管和去中心化标准的界定仍有待解决。",
+        "background_zh": "Clarity倡议旨在解决SEC与CFTC之间长期存在的监管地盘之争，即数字资产究竟是证券还是商品。根据拟议框架，承诺回报的中心化项目将归SEC管辖，而足够去中心化且具有实际功能用途的网络将作为商品由CFTC监管。此次立法推动源于多年执法驱动的不确定性，旨在为区块链创新者提供法律确定性。",
+        "sources": [
+          {
+            "url": "https://tech-insider.org/clarity-act-crypto-regulation-senate-stablecoin-2026/",
+            "title": "CLARITY Act Crypto 2026: $317B Stablecoin Battle and Senate Vote"
+          },
+          {
+            "url": "https://www.arnoldporter.com/en/perspectives/advisories/2025/08/clarifying-the-clarity-act",
+            "title": "Clarifying the CLARITY Act: What To Know About the House ..."
+          },
+          {
+            "url": "https://digitalchamber.org/digital-tokens-act-of-2021/",
+            "title": "Chamber Statement on Clarity for Digital Tokens Act of 2021..."
+          }
+        ]
+      },
+      "ai_score": 7.0,
+      "ai_reason": null,
+      "ai_summary": "CoinDesk outlines the possible regulatory outcomes for the 'Clarity' initiative, with implications for the crypto industry.",
+      "ai_tags": []
+    }
+  ],
+  "dedup_history": [
     {
       "id": "rss:www.coindesk.com_arc_outboundfeeds_rss_:d83ec0bf4fe4ebae",
       "source_type": "rss",
@@ -207,70 +408,6 @@
       "ai_reason": null,
       "ai_summary": "Nomura's Laser Digital backs ZIGChain to advance onchain private credit in the UAE.",
       "ai_tags": []
-    }
-  ],
-  "dedup_history": [
-    {
-      "id": "rss:www.coindesk.com_arc_outboundfeeds_rss_:5ce09cdab7fc3398",
-      "source_type": "rss",
-      "title": "BitGo’s WBTC move pushes LayerZero-to-Chainlink tally near $15 billion",
-      "url": "https://www.coindesk.com/business/2026/08/04/bitgo-s-wbtc-move-pushes-layerzero-to-chainlink-tally-near-usd15-billion",
-      "content": null,
-      "author": "Francisco Rodrigues",
-      "published_at": "2026-08-04T13:00:00Z",
-      "fetched_at": "2026-08-05T00:31:09.724610Z",
-      "metadata": {
-        "feed_name": "CoinDesk",
-        "category": "crypto-markets",
-        "title_en": "BitGo's WBTC Integration with LayerZero and Chainlink Nears $15B",
-        "detailed_summary_en": "BitGo has moved its WBTC integration onto LayerZero and Chainlink, bringing the total value of secured transactions through this infrastructure to nearly $15 billion. This marks a significant milestone in cross-chain interoperability for the major wrapped asset. This integration strengthens WBTC's cross-chain functionality and security model, which is critical for DeFi because WBTC is one of the most widely used Bitcoin representations on Ethereum and other chains. It also demonstrates the growing adoption of omnichain messaging protocols and decentralized oracle networks in high-value asset flows. LayerZero provides omnichain messaging that allows WBTC to move seamlessly across supported blockchains, while Chainlink supplies oracle services that help verify and secure data in these transfers. The $15 billion tally refers to the cumulative value of transactions secured or enabled by this combined infrastructure.",
-        "background_en": "WBTC is a token that represents Bitcoin at a 1:1 ratio, backed by actual Bitcoin reserves held by custodians such as BitGo. It was created to enable Bitcoin to be used in decentralized finance applications. LayerZero is an omnichain messaging protocol that lets applications move assets or data across multiple blockchains, and Chainlink is a decentralized oracle network that supplies trusted off-chain data to smart contracts.",
-        "title_zh": "BitGo 将 WBTC 集成至 LayerZero 与 Chainlink，涉近150亿美元",
-        "detailed_summary_zh": "BitGo 已将其 WBTC 集成迁移到 LayerZero 和 Chainlink 上，使通过该基础设施保障的交易总额接近 150 亿美元。这标志着这一主要封装资产在跨链互操作性方面的一个重要里程碑。 此次集成增强了 WBTC 的跨链功能和安全性，这对 DeFi 至关重要，因为 WBTC 是以太坊及其他链上使用最广泛的比特币代表之一。这也表明全链消息协议和去中心化预言机网络在高价值资产流动中的应用日益普及。 LayerZero 提供全链消息传递，使 WBTC 能在支持的区块链之间无缝移动，而 Chainlink 提供预言机服务，协助验证和保护这些转移中的数据。150 亿美元的交易总额指的是通过这一组合基础设施保障或实现的累计交易价值。",
-        "background_zh": "WBTC 是一种按 1:1 比例代表比特币的代币，由 BitGo 等托管机构持有的实际比特币储备支持，旨在让比特币用于去中心化金融应用。LayerZero 是一种全链消息协议，允许应用在多个区块链之间移动资产或数据；Chainlink 是去中心化预言机网络，为智能合约提供可信的链外数据。",
-        "sources": [
-          {
-            "url": "https://www.binance.com/en/academy/articles/what-is-wrapped-bitcoin-wbtc",
-            "title": "What Is Wrapped Bitcoin (WBTC)? - Binance"
-          },
-          {
-            "url": "https://docs.layerzero.network/v2/concepts/getting-started/what-is-layerzero",
-            "title": "What is LayerZero? - LayerZero"
-          },
-          {
-            "url": "https://chain.link/",
-            "title": "Chainlink: The Industry-Standard Oracle Platform"
-          }
-        ]
-      },
-      "ai_score": 8.0,
-      "ai_reason": null,
-      "ai_summary": "BitGo's WBTC integration with LayerZero and Chainlink brings the secured transaction tally to almost $15 billion, marking a significant cross-chain infrastructure milestone.",
-      "ai_tags": []
-    },
-    {
-      "id": "rss:www.coindesk.com_arc_outboundfeeds_rss_:d64e6d12e17d47f4",
-      "source_type": "rss",
-      "title": "First U.S. spot bitcoin ETF to close as inflows dwindle, investors chase AI returns",
-      "url": "https://www.coindesk.com/business/2026/08/04/first-u-s-spot-bitcoin-etf-to-close-as-inflows-dwindle-investors-chase-ai-returns",
-      "content": null,
-      "author": "Francisco Rodrigues",
-      "published_at": "2026-08-04T09:54:02Z",
-      "fetched_at": "2026-08-05T00:31:09.724749Z",
-      "metadata": {
-        "feed_name": "CoinDesk",
-        "category": "crypto-markets",
-        "title_en": "First U.S. Spot Bitcoin ETF to Close as Inflows Dwindle",
-        "detailed_summary_en": "The first U.S. spot bitcoin exchange-traded fund (ETF) is closing as investor inflows dry up. Market participants are shifting capital toward artificial-intelligence-driven returns, leaving the crypto product struggling to attract assets. This marks the first closure of a U.S. spot bitcoin ETF, a notable reversal after the products' widely watched launch. It signals weakening demand for crypto exposure and a clear rotation toward AI investments, which could weigh on sentiment and shape the outlook for future crypto ETF offerings. The closure follows a sustained period of dwindling inflows, with investors reportedly preferring AI-related assets. The exact identity of the ETF and the precise closure date are not specified in the announcement, but the event is positioned as the first such closure in the U.S. spot bitcoin ETF category.",
-        "background_en": "Spot bitcoin ETFs hold actual bitcoin and aim to track its price, giving investors exposure through traditional stock exchanges rather than holding the cryptocurrency directly. The first U.S. spot bitcoin ETFs launched in early 2024 after years of regulatory debate. This closure represents a reversal of that earlier momentum and highlights how the investment landscape has shifted as artificial intelligence has emerged as a dominant theme.",
-        "title_zh": "美国首只现货比特币ETF因资金流入枯竭而关闭",
-        "detailed_summary_zh": "美国首只现货比特币交易所交易基金（ETF）即将关闭，原因是投资者资金流入枯竭。市场参与者正将资金转向AI驱动型回报，使这一加密产品难以吸引资产。 这标志着美国首只现货比特币ETF的关闭，是这类产品在广受关注的推出后出现的一次显著逆转。它表明对加密资产敞口的需求减弱，资金明显转向AI投资，可能打压市场情绪并影响未来加密ETF发行的前景。 该ETF此前经历了一段时间的资金流入持续减少，据称投资者更青睐AI相关资产。公告未说明该ETF的具体名称和确切关闭日期，但此事件被定位为美国现货比特币ETF类别中的首例关闭。",
-        "background_zh": "现货比特币ETF持有实际比特币并追踪其价格，让投资者无需直接持有加密货币，就能通过传统证券交易所获得敞口。美国首批现货比特币ETF经过多年监管争议后于2024年初推出。本次关闭意味着此前势头的逆转，也凸显了随着人工智能成为市场主导主题，投资格局已发生转变。"
-      },
-      "ai_score": 8.0,
-      "ai_reason": null,
-      "ai_summary": "The first U.S. spot bitcoin ETF is closing as inflows dry up and investors shift toward AI-driven returns.",
-      "ai_tags": []
     },
     {
       "id": "rss:openai.com_blog_rss.xml:c99ec862b4e71599",
@@ -384,44 +521,6 @@
       "ai_score": 7.0,
       "ai_reason": null,
       "ai_summary": "Analysts suggest Samsung is poised to become a dominant stablecoin distributor, potentially reshaping stablecoin market access and adoption.",
-      "ai_tags": []
-    },
-    {
-      "id": "rss:huggingface.co_blog_feed.xml:aa21db80f8b7b766",
-      "source_type": "rss",
-      "title": "Deploy local agents everywhere with LFM2.5-2.6B",
-      "url": "https://huggingface.co/blog/LiquidAI/lfm2-5-2-6b",
-      "content": null,
-      "author": "Hugging Face Blog",
-      "published_at": "2026-08-04T13:58:29Z",
-      "fetched_at": "2026-08-05T00:31:11.803261Z",
-      "metadata": {
-        "feed_name": "Hugging Face Blog",
-        "category": "ai-labs",
-        "title_en": "LiquidAI Debuts LFM2.5-2.6B for Local Agent Deployment",
-        "detailed_summary_en": "LiquidAI has released LFM2.5-2.6B, an open-weight 2.6B dense model purpose-built for agentic workflows. It achieves nearly 15K output tokens per second at high concurrency and runs at 220 tokens per second on-device in under 2.5GB. This model makes local deployment of AI agents practical for edge and privacy-sensitive applications, reducing reliance on cloud infrastructure. Developers can now run planning, tool-calling, and multi-step agent tasks directly on user devices with lower latency and cost. LFM2.5-2.6B features a 128K context window, native tool calling, and compatibility with agent harnesses like Hermes Agent, OpenClaw, and Pi. It requires transformers>=5.0.0 and is available in GGUF, MLX, and ONNX formats.",
-        "background_en": "Liquid AI is an MIT-spun-off startup that pioneered liquid neural networks, a class of brain-inspired systems that remain adaptable after training. The company builds device-native foundation models using liquid neural networks, state-space models, and novel training recipes. LFM2.5-2.6B is their compact on-device agentic model, designed to bring agent capabilities to edge hardware without sacrificing efficiency.",
-        "title_zh": "LiquidAI 发布 LFM2.5-2.6B，赋能本地智能体部署",
-        "detailed_summary_zh": "LiquidAI 发布了 LFM2.5-2.6B，这是一个专为智能体工作流设计的 2.6B 稠密模型，开放权重。它在高并发下每秒可输出近 15K 个 token，在设备端以 2.5GB 以内占用实现每秒 220 token 的推理速度。 该模型使 AI 智能体在边缘和隐私敏感场景中的本地部署变得更加可行，降低了对云端基础设施的依赖。开发者现在可以直接在用户设备上以更低的延迟和成本运行规划、工具调用和多步骤智能体任务。 LFM2.5-2.6B 拥有 128K 上下文窗口、原生工具调用能力，并兼容 Hermes Agent、OpenClaw 和 Pi 等智能体框架。它需要 transformers>=5.0.0，并提供 GGUF、MLX 和 ONNX 格式。",
-        "background_zh": "Liquid AI 是一家从 MIT 孵化的初创公司，开创了液态神经网络——一类受大脑启发的系统，在训练后仍能保持适应性。该公司利用液态神经网络、状态空间模型和新型训练方法构建设备原生的基础模型。LFM2.5-2.6B 是他们面向设备端的紧凑型智能体模型，旨在不牺牲效率的前提下将智能体能力带到边缘硬件上。",
-        "sources": [
-          {
-            "url": "https://huggingface.co/blog/LiquidAI/lfm2-5-2-6b",
-            "title": "Deploy local agents everywhere with LFM2.5-2.6B - Hugging Face"
-          },
-          {
-            "url": "https://www.liquid.ai/blog/lfm2-5-2-6b",
-            "title": "LFM2.5-2.6B: Deploy Agents Everywhere — Blog — Liquid AI"
-          },
-          {
-            "url": "https://docs.liquid.ai/lfm/models/lfm25-2.6b",
-            "title": "LFM2.5-2.6B - Liquid Docs"
-          }
-        ]
-      },
-      "ai_score": 7.0,
-      "ai_reason": null,
-      "ai_summary": "LiquidAI's LFM2.5-2.6B enables efficient local deployment of AI agents, offering a lightweight alternative for edge and privacy-sensitive applications.",
       "ai_tags": []
     }
   ]
