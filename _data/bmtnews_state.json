@@ -2,73 +2,188 @@
   "version": 1,
   "date": "2026-08-08",
   "timezone": "Asia/Shanghai",
-  "updated_at": "2026-08-08T00:30:57.648090Z",
+  "updated_at": "2026-08-08T15:33:58.047538Z",
   "analyzed_keys": [
+    "01775b0002d58691f6a947b4e92bd632f179b5fe5df198ba1c9751ce77d16cb1",
+    "01c47d0c741eb2a45b830454955a21bb45bf9c7714b1857192888eee49f224a9",
     "0266d4c19e6cb1fa96326c6b5fa82d4a4a808a6cefb60fb89c414fdfea9ce656",
-    "078a06b5ec34c2b5bc2417b7e2a472c9b779d25c426935784b9faaa167ebe68f",
+    "02ddeddc72af64394a3054119f2937289298541e8fac1c0fcd61b178e5bae7ac",
+    "04797adb57b52987a38c9a56a920c5d509902ebd3b8afa75435ce20ee7c8cd3b",
+    "0575d2032b401b8aca2cff53e13901a596dcdd6f0e6f630d99f72a2efb76d710",
+    "067b78872105625b7f6e0e5e59a77f458ac19af7e0ace21ff4bee589d472f880",
     "0aafbd9227b67b4b4efcf342035657393f41842ef5b6552ced1847ce6a85a807",
+    "0bb53613f11ad7f831764851d99d0b11115f1dd6cb00eaa1d01e821e1a374db7",
     "0bbdcbf52bc559461d73786b05c3e33a9ba7d15db3e91588cd611c08b41f0fd7",
+    "0cc2de56c74f40b5ac58a3d469a2cbe8b07a78f6805660e88c784195e1c98dc6",
     "0ccc0427b0a0a4affd7fc065ea96369357ee34c282348de602b1ca268e19349e",
     "0ccc3ca45cd86d4ec2d547b867116bc466c7cade638768a80093aff8ce61ede1",
     "0cf047ac1f2a6d848c7b2e4503f97a7ff32d41d78b277147063c419d8538ceb1",
     "1095b2b87e1f1af9abc35afa83eb8509bafbcb047a33396cd0d5e4c99c40afb8",
     "12544c4d04e9f5d7ef87eae1819ce5bcc21c528bb5b657e16e89215815d36161",
+    "13d11f11b0b5eaef3bf37355d1042e832f800b6ad9a87f8fef284e12493adc1a",
+    "1474153b87ecbcecdb189530be707991d5f17de852573b5d09f6f44e1bd931b1",
+    "15ea064bfddec9478dbcf6cbac7a9e0f08cef64a3b068bdee0c1418c8e329a89",
+    "175cda30b6f84b4944428f08411cb57ed21070bfd3430356dea4ac4f6f03a038",
+    "18d32dc961e9da0ecc43020ea93ac7f469c629104952776aada34d5a1bf24091",
     "1ae92da8ef125ae6be2406a897773871c8532961e18990cd1d210884a41fa712",
-    "252bd2d41123d13e989d9846be7476a49fe6bfbaede4735f96e882543ca5e258",
+    "1e754a01ce0668bdc9f4340248946f0caa7692ecade3cfd4840163ec376c9695",
+    "1eb53e2cbea33223c94e3338278790e50f65334b1f7da828b320e2355469bfc2",
     "25370754607361830cd7682cf8daf972d89217d5224a0634e255b29c10952362",
-    "2cfefe0fdb03b7b0e363e4c6259f9ba4316711c5a7947a0bb369c8060a285903",
+    "2545211d75014e45a7c312e0be704139613e32a1d7696738d710a9ed3af15d7c",
+    "285103a6c08c2dd21b26a40dc6035e0eb1548eed89211a46eb267c14405d9724",
+    "2d2207dea6c028cdd45cee02b7b0e1b04f39cc1fd15a0a5db782b81e4a6d240b",
     "2deb2f30ca2fcd84a040b279a785cc65f43c9b7fccca1923d6242bf490598b43",
     "2ee6ec5a9819b1bab25cffe0d0ffa66d0fe1fe0e3e965f0317e33075b5fbdee1",
-    "3402404d0ea7ad4796084cc3edf5cfc6d373e0f5c7cd3f85bffaf904f64cdd0f",
-    "34bf27413195567408f65ffd03b7a4016fccc48f1b1a6dd372d32bc82fa74cdb",
+    "35e8efa28e670241839895b55af316443ef577c6d92fd3110e7bab6bcc5c5aab",
     "37565f4ec4b8e25e5e257123f701b0ada1893b7a24a57a5946497bb794113d1f",
+    "377be41c2c112394f2a3bee4201573af0c3da0a94e0a7b676a43fea40212d9fd",
+    "3788d45357581b1e73d1c2cb12903ea6891bf54e43d74562b4bed74536628b1f",
+    "37d544f89ebfe29846b09cd8c10b776b2c6f83e6037965d6858d6d0c727a4395",
+    "37dea42235f3151233db4c442777bd4bedff7893039eccd90557f4c5df0f9e34",
+    "384e80f9a03c5b934737067132de660771e40fe9036a2c1cfe669f6643649370",
+    "39c8a3b2ccabd27f9256bac7c51bcadadbac2e0f2a751f10dca67cf8258cf38a",
     "3b52a50b9cdd460c88fed556cb50e74fcec904de81486a1119f78d52dda0d858",
-    "3c60b44a5bee4a15b4b456a97b2d1a8ee5e4e19d88198f1b8ac2e4f0c6177f59",
-    "41ab70c24a123bbf7ff157ba73ec3b64ba12782e02d38171f1082bd56426b4b9",
+    "3cb5da4c186d9f515dfde84934ab444c3c3911636f9cd8e889fa68681b5c025c",
+    "3e28d9d90170ddbb160eed20deee2495704154b4ee40b6db5a80c559f672c0f0",
     "48061f5044f7a6f789543644ac7c85db5eb0d6247ad6433a116dd7478a645325",
+    "4963d9acb53d4a635418a5e38910d08612db1beadf0dd896fa1feedc7241e694",
+    "499257d52d91dbdebc276f3aa931fb193decf90932fd0591888e463f277f5b6f",
+    "4a99c2dd96f93204442e8c65780176df6b731061d9b142832f3e5c9d3d37bbb1",
+    "4b048d19866b7408456d0a4292c3eaecc2108b56b2b322117157802ff2741b42",
     "4f39e88e5e71af21827802c666a03946723c95e8011dff3c8b3f17d379d55313",
+    "511c476a0fe5f2d2f3da5a59a10d1cc8b4e97892e1a17b4ec23b3b6e1c4a5665",
+    "530632f18c54bcbaa59902521bd610f086304c9229b67a1a83e461e70421a17f",
     "557edd82c3d59baa18bd591854d80e8bd66dc5064ea16e7db6253e3b58480ad2",
+    "5631ab60a87266f5df82f8714206102bdcf6d195dec5ac447d7b3d7a15e4c766",
     "5663918b10ac53dd1edbad0896b389cd93fbe9f85ca36391276cb0c1f04925a2",
-    "6118099e2e5b1b09de110ed8593c150a3b911f67cf271461c61944b12ea7c8c9",
+    "570acb8390f496e2bcca28cdaa6eaf9ab029ace81c9e6e1e24671be7fe3019fb",
+    "594a9ce1188a62e0350e66651a6715ecae7b2b648e89d7d8cf6c1767da51f3cf",
+    "59508a6c384a4bbf184020e41871729d0441128b9529145c8b645cc3ba90ce42",
+    "5a8485fb79cbd93a0812c4c739029d8a04f2f17cae668e15d156afa00656012e",
+    "5b975012239a862ea9e5af9a7d4f8a3bf2125b71e98a3b37b214f1630093037e",
     "61cfb6b811e6de7ed5793509767ae2d41dae8e5d10841db1bd4dd444d99c92e2",
+    "664f6101c40f39fd42bbdb00130b5480863a1a6a84130fd5392c04afac7df5d8",
     "66952e7415da72bd7fe6047b669cd41cbc4a0293bae68bee2fe392a6f238c37c",
-    "6ada9869c6f92c5d387505d85545ace98d8aefe8dd104846a5ff0721ba300a90",
+    "66e8b0c2050f1dcddc757e90ea5d647de6df9787fab5930227e0b8a52b41db84",
+    "67b27b42deb167eb59939fc154c49ac1ad63dc4e5a66a644ebc49004a1b10846",
+    "68703edb9ad2546efaa95c529a2ceb29594770e5f059925defeb7497036b88c6",
+    "6bb9183a6e6272f6c549ecb0af4c8baddbffffd94bb77abb1d464cf4dfcb75c6",
     "6c86ecd41b8d70828b362b43b9df625a7d8a531b809bdc84f308758c6a117cd8",
     "6dab4acfe873610cad16687cdb786b769113efdf5540b8e5795fc1ccee6c2675",
+    "706477a5d98964bb645259a1af7a0657c09f8f14db4d20ecd1480a19d74d17c8",
+    "708025fd67589411e1ebd5386218aa7822a924ad1fca51c128cefd0dcf817cbb",
+    "708cc112955c23742c49badef4a5b742f35f46b413429e6e6346cc1ef9713ccf",
+    "72b1a1355ffbd66cf4d3d1bbba3a2439b0dd682cbd41eea36f56511e4ccc11db",
+    "742a067b5ecc8006d41e526de551cf07f7c9dee399c470bfd3856c22d3dcf46c",
+    "7616ff7a7ce1a3ece8f4bfdf8051a83691ec942aa6d7ac2028263d2a721101cb",
     "77d4c52a01b90484354fc362aa64a892f9219ffdb64351d5d2a13c9af90517fe",
     "7e4d2455d1a79e55f5399f4f85593fdeb923cb539f87cfd185cc085ef655c5a9",
+    "7f3ab4e2b66f4dba435202cc89b819dcc97c3e3671e22e775352e62053d57ddb",
+    "826f8430c5e7034cc7db05e36a9038f6ea945eb1b5c09230048bf6f9b136931b",
     "82a9c19076f82b616b3f5606e0f4594c7348bd26392afa7d9d3866612f97ef38",
+    "83ce47ac5775bd8b8b4e7ea96c5046b3e72c17cf68f1662d589c0f41942d90ab",
     "83ec304b291e98cd87576f386b3e028836fe61a0872f80277115441f315534a6",
     "846d007fe2893afe3483de7c4ddc80de58dfdbc1aa5e57aa528849d767cf1c7d",
-    "868595dfe2c0092329922f6a4c1db669f65707420cf13d00f50c3ed1387d363d",
-    "8a00e4ce848b244bbc6f010146b35d75d6a35285fafe394c9dd85fbd15d06937",
+    "89f5d7f1dc67fca66c0c8c98aa45fa52cb04f17400dad81f2633d0e1d5d61600",
+    "8a09c0abe9a2b5702cadab429853b8dc29f857ddc1b6ab28ca97ae3d6ef50e85",
+    "8c66d76fdb0fb6f9c26c1a2d2b69fbcaa89c8794c8dd63961706a868a0462f2a",
     "902874a91e3b9f1a91c6087a3fbf13f5f6331a5fbea653543a1fb0cfc4124340",
-    "a0079df82d6ebd51535817a8f5b517ff001db635b659fdcd4ba9d723df4852d5",
+    "9316ddc01f43487e32647dc9f9be6c75d99fa04e8a9ff56bcdc692bdba813d89",
+    "94ecfd80ecaf73a980ae4c530aa89eab665fe10453c6019148a397a21911c810",
+    "961ba0aaa4aca75f0b078e111fcc3a24f8ad3b76ad0f0e2627e0237acc8de441",
+    "99418d8f1747e494a6a28ea8dad3c48c6c9d04355ec6a2350028b7b516fa160a",
+    "a308c368e547e1e31bef00336b9722bda9f943509441bdfe55282445425b10cb",
     "a442c575cb47b3f5d7e2ef7a09a02e236c670f9cdb10bc7907a80a3213b24f7f",
     "a54a06c3dbd9113670400c20e82fdfffadcae1d0ae2fe2631850943a3fb9a3fd",
-    "a5f28e0d5a6ed894f9dae6917aeb5d22f769137a44ee2de03328f904d978e84b",
+    "a58144345290beaeaf6243cf3f5d40eda7daf0880eadba6601a72ad4c4d5203d",
+    "a7620b463e9eba2ba3b6fc19d94a5fc0a8cc768b5491a575fc1c6a60a7939e5b",
     "a83adca8fa12981e6bdcfcc0732ec6610c13f361c51c286c0df69860b8674914",
-    "a926164ce4e7ef069954affa7bdb9a86be47a0c25136a7dca07723ab6fc150d2",
-    "ab1c50627f010317cc02c9f25f8a4ec4867efe85ee6de03d86b5ef2d290d63eb",
+    "a8a82a6c4f882dc9411b7537cfab6fd273f7f2118dd067df0325e6647a132abd",
+    "ab8d0c92e002bb153d098de36956a581056bff015a56718eb73023045906a9c1",
+    "ac61710e5774879517422d65c8653a4c404ebc222b4b49d43fb7e64b026664cb",
+    "ad55099ecdf5abb1cfd730d5bc21ec4bae18c0e351b4630acc47d2e4f2beb1bf",
     "adc95feaea03a954544c91f800376221bbe9a38e999b19bd10a15c2c5179b14b",
-    "b1b728c2f50617710f4730972e72f2d9d95df916c9a4de39cb56076c340dba92",
-    "b6350acf21ffe291a3f0fa410118effb2ec05a1eb11de7b72fa082de0d8b352a",
+    "b0ba2358fe7440d526c1aaf5c34303d72f732730321ac7773e78c858d826ee30",
+    "b1cf082b9f33a2d3f0e1b4a3976b2f9648faec5bb7d46d73bd65a25742edc4ae",
+    "b21da46271e12d6797752c076df9847eb716d0e61b9a73769bcdaa7594ca6bb4",
+    "b9b0e791515527b367e8151d3c18099ba9d49b875da5477e593716e035ef9adc",
+    "b9e2d825b488c2a429dd9249b98e362b7f877a5f78819ef418443275f5da49ca",
+    "bc89a7e2cc03c5f3cffb35defff8c44749e2fa3c35588155eb9eb0a81e61eaff",
+    "c176d27fac38ea4f3756cddb0873765f98e23c338ff714e3f87183cfcf906408",
     "c39b464638e01ff87291a9b23c40fa75f355d5a68ca403fd50ae50f79411b936",
+    "c56432759c2f6283f3303b82ecc72ddf7c6655b9d692e7138c84674c81752bfb",
+    "c6867f221335a89df9bf6471fbb495bc2474e26d60251b314d6d6b57ebafbc43",
+    "c9a33a78c5c7b78fff6dfe0b0e4b2618c25b0e0f715e3e68d78bf3a1cc8307d9",
+    "ca3b54127dea8fe890a47a81971e0f61bda51c974b886b1373d8bedd8066cced",
+    "ca5ebceeb404a406dc51ac6c3fa24d820a669ea76f3c92b61136c2007bd62b77",
+    "cb1d26fb03d9e99bb97b5ae234e05e328b075799f2fc18739282dacb2f258491",
     "cb5e095259c09be1a445828df6faa810c171b70a66c7c001568c84916640a673",
+    "d0ea0ae7a8741fce2c360f44116682de40183e445aba44ec5019d3856310037d",
     "d51b62a94dd7e7250b12eef8c1e936d1325a64df88e89c5b0138796b6d2ab8e4",
-    "d74e5ae40265ea6670af99cceaa0e888bc5f1c6962faae132d27d53cd2e98275",
+    "d6bb26986790a440a91b9ba52572de64564f460aa1358a80df1dbefa9311c0b3",
     "d9db45b22d4aadb9a882ad0075b36c3cc75a42fe4013f3d7acc49ab6536bfcd4",
-    "da86e8c9da680cb3bed4535f06e44127b63975bb4017dcc7ad806f6b1bc4719a",
+    "da15964994b440fd4bcfc204a46ebe754509ae6624f6639a1943e59c093c205e",
+    "da1f946f3b709b5dc0055ec814a47f09b69624594224e891821fcb1e08e5c718",
+    "daf5a07d66836f9bc7803575a40700574819b5f52d76595279042cbb8b537db2",
+    "dd673081e934fa0d14d2d705525b8d7ad078f631e98890fe63b52657c2df9570",
+    "de6e5848b410e9e736447fa812caee1209e6ede208cc7190c5cd0d9791c6f0a5",
+    "de937c25e1af28e682b7d1232a54364df8058efd227d4991833126d6f3dbc576",
+    "e1156b2d540baa7c775e96f849c860379ca7b48dfc1625c561d8ce84cb1dc125",
+    "e11f3f1c554835d0e3b41671d32b567374ea8fbd82c52a5ca11b28b8f28442d1",
     "e137912795c2948ebc0d5fbde67feb0c568ce4cba8a8b910f4efa04a4f987bc6",
+    "e19a597f548b1e4194b4900f2f8dd5aa79292a3802861bd4586afd780d7d5b9f",
     "e33982affdd5abd1e606866e7a8ba00095edb194a70a1e813d53d13ca7e1e4e2",
     "e40d7d80ee6f31e9ded9adfe10c3a80c84cfe6c7fedab43521ba7449882625dc",
-    "e94a813bf62bfdfa5e1977b5c2e8db5ab027dbf2efa482ee256e7b9e37515d11",
+    "e43f0189dd692c3c45cc4eddf7c019ff7234d2c0fe8d130f515bef497b4db687",
+    "e7f3295fc1c7fb36ad06f312d334c4338f7e8d7008a9aa7d6a98396d7e986b7c",
     "ecc3e068a3c3b6bc2c4bfd567063fd0fd589712eb0374b15e58598ef3bfe27f3",
     "f637ff774954bd873ef7897c7a7deae5dc3bdf12f694a596e5a66003b4487ad7",
+    "f65d8aca12b512aa1f8782122ae9e982705149ab7d7ab1803859d05d399c9e6b",
+    "f7b93c1746262327bdb52d583eb2f0c6fa11fc854fe22b6842aaa04990ec44c5",
     "f7c5272933e0dddc014b5f72fcf3b8595682cb5cb82e38d8d7d7be14e67531df",
+    "fa8b218d227ebc92ccb6f5d344c7085699d532a3704b53ad5f99217e75005ea7",
+    "fbeca2f559e226e905caf31f637418e3c7e53a05856a88541665e615c644f98d",
+    "fe0ef5610d44fdb44435141811a48857fb32a99755e2bfff44925c5714a226c5",
+    "fe9782e1c5536f6eeb6f67c7f9cf2d3593f9e125ffab12d2f1aa5fd14d07a1e4",
     "ffe53169b12ffdebf0e14e407e7a10461c673496e909334de8a76db81b605f1a"
   ],
   "items": [
+    {
+      "id": "rss:protos.com_feed_:16d92ae421b56921",
+      "source_type": "rss",
+      "title": "Coldcard co-founder is deleting X posts as losses top $130M",
+      "url": "https://protos.com/coldcard-co-founder-is-deleting-x-posts-as-losses-top-130m/",
+      "content": null,
+      "author": "Aaron Wise",
+      "published_at": "2026-08-07T11:52:46Z",
+      "fetched_at": "2026-08-08T15:34:18.999067Z",
+      "metadata": {
+        "feed_name": "Protos",
+        "category": "crypto-protocols",
+        "title_en": "Coldcard co-founder deletes posts as $130M bitcoin thefts mount",
+        "detailed_summary_en": "Rodolfo Novak (NVK), co-founder of Coldcard maker Coinkite, is deleting his X posts and possibly website content as a five-year vulnerability in Coldcard hardware wallets has let hackers steal over $130 million in bitcoin. The deletions were noticed by Bitcoin developer Peter Todd and others, while a volunteer archive is trying to preserve evidence. This is a major security incident affecting hardware wallet users, exposing a fundamental flaw in private key generation that persisted for years. The deletions raise transparency concerns about the company's response, potentially eroding trust in the Bitcoin ecosystem and hardware wallet security. The vulnerability stems from insufficient entropy in private key generation for over five years, allowing attackers to brute-force insecure private keys. NVK has not wiped his entire timeline but has selectively pruned posts, while his pinned apology remains, and Coldcard has denied inappropriately deleting website disclosures.",
+        "background_en": "Coldcard is a Bitcoin-only hardware wallet made by Coinkite since 2017, designed to protect private keys offline. A hardware wallet's security depends on generating private keys with sufficient randomness (entropy); if entropy is flawed, keys become predictable and can be cracked by brute-force computation. Recent reports link the flaw to a $70.2 million sweep across 1,196 addresses, although this news reports total losses exceeding $130 million.",
+        "community_discussion_en": "Community reactions include skepticism and accusations, such as Peter Todd screenshotting the deletion and Alex Waltz saying 'NVK is deleting tweets as we speak.' Some skeptics claim 'Every accusation is a confession,' while Zach Herbert of competitor Foundation points out the strange asymmetry in which posts remain. The overall sentiment is distrust, with calls to preserve evidence via archives.",
+        "title_zh": "Coldcard联创删帖之际比特币被盗超1.3亿美元",
+        "detailed_summary_zh": "Coldcard制造商Coinkite联合创始人Rodolfo Novak（NVK）正在删除其X平台帖子，并可能删除网站内容；此前Coldcard硬件钱包五年来存在的漏洞已让黑客盗走超过1.3亿美元比特币。比特币开发者Peter Todd等人注意到了这些删除行为，志愿者也在努力保留证据。 这是一起影响硬件钱包用户的重大安全事件，暴露了私钥生成环节存在多年的根本性缺陷。删除行为引发了对公司应对方式的透明性质疑，可能损害比特币生态系统和硬件钱包安全的信任。 该漏洞源于五年多来私钥生成时的熵不足，攻击者可暴力破解不安全的私钥。NVK并未完全清空个人时间线，而是选择性删除帖子，其置顶道歉仍保留；Coinkite公司则否认不当删除网站披露内容。",
+        "background_zh": "Coldcard是Coinkite自2017年以来生产的比特币专用硬件钱包，旨在离线保护私钥。硬件钱包的安全性取决于生成私钥时是否有足够的随机性（熵）；如果熵存在缺陷，私钥就会变得可预测，并可能被暴力计算破解。近期报道将这一漏洞与1196个地址中被盗的7020万美元相关联，而本新闻称总损失已超过1.3亿美元。",
+        "community_discussion_zh": "社区反应以质疑和指责为主，例如Peter Todd截图记录删除行为，Alex Waltz称“NVK正在删推”。一些怀疑者认为“每一次指控都是招供”，竞争对手Foundation的Zach Herbert则指出未被删除的帖子存在奇怪的不对称性。整体氛围是不信任，并呼吁通过存档保留证据。",
+        "sources": [
+          {
+            "url": "https://coldcard.com/",
+            "title": "COLDCARD - Bitcoin-Only Hardware Wallet"
+          },
+          {
+            "url": "https://thehackernews.com/2026/08/coldcard-hardware-wallet-flaw-linked-to.html",
+            "title": "Coldcard Hardware Wallet Flaw Linked to $70 Million Bitcoin ..."
+          }
+        ]
+      },
+      "ai_score": 9.0,
+      "ai_reason": null,
+      "ai_summary": "Coldcard co-founder NVK is deleting social media posts as a five-year vulnerability in Coldcard hardware wallets leads to over $130M in bitcoin thefts from customers.",
+      "ai_tags": []
+    },
     {
       "id": "rss:www.coindesk.com_arc_outboundfeeds_rss_:1205c29df33d1588",
       "source_type": "rss",
@@ -77,72 +192,331 @@
       "content": null,
       "author": "Ian Allison",
       "published_at": "2026-08-07T16:32:41Z",
-      "fetched_at": "2026-08-08T00:30:58.567250Z",
+      "fetched_at": "2026-08-08T15:34:04.271827Z",
       "metadata": {
         "feed_name": "CoinDesk",
         "category": "crypto-regulation",
-        "title_en": "Bybit sues North Korea and Lazarus Group over $1.5B hack, freezes assets",
-        "detailed_summary_en": "Bybit has filed a lawsuit against North Korea and the Lazarus Group in connection with the $1.5 billion hack, and has obtained an asset freeze order. This legal action escalates the exchange's response to one of the largest crypto thefts in history. This marks a significant legal escalation against state-sponsored crypto theft and could set a precedent for how exchanges and governments pursue recovery of stolen digital assets. It also reinforces the Lazarus Group's role as a major threat to the crypto industry and may increase pressure on jurisdictions to cooperate on such cases. The lawsuit and asset freeze target the Lazarus Group, a state-sponsored hacking group widely attributed to North Korea. The $1.5 billion theft is among the largest ever suffered by a cryptocurrency exchange, and the legal outcome may depend on international cooperation in tracing and freezing assets across multiple jurisdictions.",
-        "background_en": "The Lazarus Group is a state-sponsored hacking group that security researchers believe is run by the North Korean government. It has been linked to major cyberattacks including the WannaCry ransomware outbreak and numerous cryptocurrency exchange heists, which help fund North Korean state programs. Bybit, a major cryptocurrency exchange, fell victim to a large-scale hack that resulted in the theft of around $1.5 billion in digital assets, prompting this unprecedented legal response.",
-        "title_zh": "Bybit 就 15 亿美元被盗事件起诉朝鲜及 Lazarus Group 并冻结资产",
-        "detailed_summary_zh": "Bybit 已就 15 亿美元被盗事件对朝鲜及 Lazarus Group 提起诉讼，并成功获得资产冻结令。这一法律行动标志着该交易所在应对史上最大加密货币盗窃案之一时采取了更进一步的升级手段。 这代表着针对国家支持型加密货币盗窃的法律行动显著升级，并可能为交易所和政府追回被盗数字资产开创先例。该事件也再次凸显 Lazarus Group 对加密行业的主要威胁，并可能促使更多司法管辖区在此类案件上加强合作。 这起诉讼和资产冻结针对的是 Lazarus Group——一个被普遍认为由朝鲜操控的国家支持型黑客组织。15 亿美元被盗案是加密货币交易所有史以来遭受的最大攻击之一，最终结果可能取决于多个司法管辖区在追踪和冻结资产方面的国际合作。",
-        "background_zh": "Lazarus Group 是一个国家支持型黑客组织，安全研究人员普遍认为其由朝鲜政府操控。该组织曾与 WannaCry 勒索软件攻击以及多起大型加密货币交易所窃案有关，这些非法所得被用于资助朝鲜的政府项目。作为主要加密货币交易所，Bybit 遭受大规模黑客攻击，约 15 亿美元数字资产被盗，这起事件促成了此次前所未有的法律回应。",
+        "title_en": "Bybit sues North Korea and Lazarus Group over $1.5B hack, secures asset freeze",
+        "detailed_summary_en": "Bybit has filed a lawsuit against North Korea and the Lazarus Group over the $1.5 billion Bybit hack, and has secured a preliminary injunction freezing stolen assets. This action marks an unprecedented legal move by a crypto exchange against a state-sponsored hacking group. This landmark lawsuit could set a legal precedent for holding state-sponsored hackers accountable and recovering stolen crypto assets. It also signals a new avenue for exchanges to seek justice beyond blockchain tracing, with potential implications for national security and international law. The preliminary injunction freezes assets allegedly stolen by the Lazarus Group, though specific case details and jurisdiction have not been disclosed. The Lazarus Group is a North Korean state-sponsored hacking syndicate linked to over $3 billion in crypto theft, including the $620 million Ronin bridge exploit.",
+        "background_en": "The Lazarus Group is a North Korean state-sponsored cybercrime group that has been active for more than a decade, responsible for notable attacks such as the 2014 Sony Pictures hack and the 2017 WannaCry ransomware. It has increasingly targeted cryptocurrency exchanges and bridges, stealing billions in digital assets. The Bybit hack, the largest crypto exchange heist in history, was widely attributed to this group. This lawsuit is among the first attempts to use civil legal action to recover funds from a state-linked hacker group.",
+        "title_zh": "Bybit起诉朝鲜和Lazarus集团，就15亿美元黑客案获得资产冻结",
+        "detailed_summary_zh": "Bybit已就15亿美元的黑客攻击事件对朝鲜和Lazarus集团提起诉讼，并获得了冻结被盗资产的初步禁令。此举是加密货币交易所针对国家支持的黑客组织采取的前所未有的法律行动。 这起具有里程碑意义的诉讼可能为追究国家支持的黑客责任和追回被盗加密资产开创法律先例。它也表明交易所可以在链上追踪之外寻求法律途径，对国家安全和国际法都具有潜在影响。 初步禁令冻结了据称由Lazarus集团盗取的资产，但案件具体细节和管辖法院尚未公开。Lazarus集团是朝鲜国家支持的黑客组织，涉嫌盗取超过30亿美元的加密货币，其中包括6.2亿美元的Ronin桥接攻击。",
+        "background_zh": "Lazarus集团是一个朝鲜国家支持的网络犯罪组织，活跃了十多年，曾制造2014年索尼影业攻击和2017年WannaCry勒索软件等重大事件。该集团越来越多地以加密货币交易所和桥接为目标，盗取了数十亿美元的数字资产。Bybit黑客攻击是历史上最大的加密货币交易所盗窃案，普遍被认为由该组织所为。这起诉讼是首批尝试通过民事诉讼从国家关联黑客组织追回资金的案件之一。",
         "sources": [
           {
-            "url": "https://en.wikipedia.org/wiki/Lazarus_Group",
-            "title": "Lazarus Group - Wikipedia"
+            "url": "https://www.nccgroup.com/the-lazarus-group-north-korean-scourge-for-plus10-years/",
+            "title": "The Lazarus group: North Korean scourge for +10 years | NCC Group"
           },
           {
-            "url": "https://terrazone.io/lazarus-group-north-korea-cyber-threat/",
-            "title": "Lazarus Group: The Complete Guide to North Korea's Dangerous ..."
-          },
-          {
-            "url": "https://brandefense.io/blog/lazarus-group/",
-            "title": "The Lazarus Group: Espionage, Sabotage, and Cybercrime Under ..."
+            "url": "https://news.bitcoin.com/debridge-finance-suspects-north-korean-hacking-syndicate-lazarus-group-attacked-the-protocols-team/",
+            "title": "Debridge Finance Suspects North Korean Hacking Syndicate..."
           }
         ]
       },
       "ai_score": 9.0,
       "ai_reason": null,
-      "ai_summary": "Bybit is suing North Korea and the Lazarus Group over the $1.5 billion hack and has secured an asset freeze, marking a significant legal escalation against state-sponsored crypto theft.",
+      "ai_summary": "Bybit is suing North Korea and the Lazarus Group over the $1.5 billion hack and has secured a preliminary injunction freezing stolen assets.",
       "ai_tags": []
     },
     {
-      "id": "rss:www.coindesk.com_arc_outboundfeeds_rss_:d16f9fe1a114e34d",
+      "id": "rss:thedefiant.io_api_feed:904ffd555077d241",
       "source_type": "rss",
-      "title": "How a five-second trick let traders drain millions from Polymarket",
-      "url": "https://www.coindesk.com/business/2026/08/07/how-a-five-second-trick-let-traders-drain-millions-from-polymarket",
+      "title": "Lightning Nodes Drained As BTCPay Server Users Race To Patch",
+      "url": "https://thedefiant.io/news/hacks/btcpay-server-tells-operators-to-update-or-shut-down-over-actively-exploited-flaw",
       "content": null,
-      "author": "Olivier Acuna",
-      "published_at": "2026-08-07T15:09:07Z",
-      "fetched_at": "2026-08-08T00:30:58.567296Z",
+      "author": "The Defiant Team",
+      "published_at": "2026-08-07T20:20:36Z",
+      "fetched_at": "2026-08-08T15:34:16.630901Z",
       "metadata": {
-        "feed_name": "CoinDesk",
+        "feed_name": "The Defiant",
         "category": "crypto-protocols",
-        "title_en": "Five-Second Trick Lets Traders Drain Millions from Polymarket",
-        "detailed_summary_en": "A report describes how traders exploited a five-second trick to drain millions of dollars from Polymarket, a leading crypto-based prediction market. The incident exposes a serious vulnerability in the platform's trading mechanics. This matters because Polymarket handles significant user funds and is one of the largest prediction markets, so a drain of this scale could undermine user trust and draw stricter regulatory scrutiny. Traders and platform operators need to quickly understand and patch such trading-level vulnerabilities. The available content does not spell out the exact mechanism of the five-second trick, and the full article would provide those specifics. Earlier Polymarket security incidents include a $600,000 exploit of its UMA CTF Adapter smart contract and a $3.1 million frontend vendor supply-chain attack.",
-        "background_en": "Polymarket is a cryptocurrency-based prediction market where users bet on real-world outcomes using USDC on the Polygon network, with prices supplied by the UMA oracle. Because traders commit real money, any flaw in order execution, pricing, or settlement can be exploited for profit. The platform has already faced multiple attacks and regulatory scrutiny, including a CFTC investigation, making security a central concern.",
-        "title_zh": "五秒技巧让交易者从Polymarket卷走数百万美元",
-        "detailed_summary_zh": "一份报告描述了交易者如何利用一个五秒技巧从领先的加密货币预测市场Polymarket卷走数百万美元。该事件暴露了该平台交易机制中的严重漏洞。 此事意义重大，因为Polymarket管理着大量用户资金且是全球最大的预测市场之一，如此规模的资金流失可能削弱用户信任并招致更严格的监管审查。交易者和平台运营方需要迅速理解并修复此类交易层面的漏洞。 现有内容未详细说明这一五秒技巧的具体机制，文章全文应包含相关细节。此前Polymarket发生的安全事件包括针对其UMA CTF Adapter智能合约的60万美元漏洞利用，以及310万美元的前端供应商供应链攻击。",
-        "background_zh": "Polymarket是一个基于加密货币的预测市场，用户使用Polygon网络上的USDC对现实世界事件的结果下注，价格数据来自UMA预言机。由于交易者投入的是真金白银，订单执行、定价或结算环节的任何缺陷都可能被利用牟利。该平台已多次遭受攻击并受到监管关注，包括CFTC的调查，因此安全性是核心问题。",
+        "title_en": "BTCPay Server Flaw Drains Lightning Nodes; Users Urged to Patch",
+        "detailed_summary_en": "An actively exploited vulnerability in BTCPay Server has drained Lightning Network nodes, with hardware wallet maker Foundation and Bitcoin zine Citadel21 reporting fund losses. The project states the flaw under attack is not the one listed in its disclosed changelog. This is a significant infrastructure security incident affecting the self-hosted Bitcoin payment ecosystem and Lightning Network, resulting in real fund losses. It underscores the critical need for operators to promptly apply patches, as open-source payment infrastructure carries direct user financial risk. The exploit targets Lightning nodes specifically, and BTCPay Server is advising operators to update or shut down. Notably, the actively exploited vulnerability differs from the one disclosed in the project's changelog, suggesting an additional unknown or unannounced flaw.",
+        "background_en": "BTCPay Server is a free, open-source, self-hosted Bitcoin payment processor created in 2017 by Nicolas Dorier as an alternative to BitPay. It allows merchants to accept bitcoin directly to their own wallets and supports both on-chain Bitcoin and Lightning Network payments. The Lightning Network is a layer-2 payment protocol built on Bitcoin that enables fast, low-cost transactions through payment channels, and running a Lightning node typically involves holding funds in a hot wallet, making nodes attractive targets for attackers.",
+        "title_zh": "BTCPay Server漏洞致闪电节点资金被盗，用户紧急修补",
+        "detailed_summary_zh": "BTCPay Server中一个正被积极利用的漏洞已导致闪电网络节点资金被洗劫，硬件钱包制造商Foundation和比特币杂志Citadel21均报告了资金损失。该项目表示，遭到攻击的漏洞并非其公开变更日志中所列的那个漏洞。 这是一起影响自托管比特币支付生态系统和闪电网络的重大基础设施安全事件，已造成真实资金损失。它凸显了运营者及时应用补丁的至关重要性，因为开源支付基础设施直接承载用户的资金风险。 该漏洞专门针对闪电节点，BTCPay Server正建议运营者更新或关闭服务。值得注意的是，被积极利用的漏洞与该项目变更日志中披露的漏洞不同，这意味着存在一个额外未知或未公布的漏洞。",
+        "background_zh": "BTCPay Server是一款免费、开源、自托管的比特币支付处理器，由Nicolas Dorier于2017年创建，旨在替代BitPay。它允许商家直接向自己的钱包接受比特币，并同时支持比特币链上支付和闪电网络支付。闪电网络是构建在比特币之上的二层支付协议，通过支付通道实现快速、低成本的交易，而运行闪电节点通常涉及在热钱包中持有资金，这使节点成为攻击者的目标。",
         "sources": [
           {
-            "url": "https://en.wikipedia.org/wiki/Polymarket",
-            "title": "Polymarket - Wikipedia"
+            "url": "https://en.wikipedia.org/wiki/BTCPay_Server",
+            "title": "BTCPay Server"
           },
           {
-            "url": "https://cryptonews.com/news/polymarket-520k-smart-contract-exploit-breakdown/",
-            "title": "Polymarket Exploit: 5,000 POL Drained every 30 Seconds"
+            "url": "https://en.wikipedia.org/wiki/Lightning_Network",
+            "title": "Lightning Network - Wikipedia"
           },
           {
-            "url": "https://www.techtimes.com/articles/319200/20260628/polymarket-loses-31m-frontend-vendor-hack-while-cftc-investigation-deepens.htm",
-            "title": "Polymarket Loses $3.1M To Frontend Vendor Hack While CFTC ..."
+            "url": "https://lightning.network/",
+            "title": "Lightning Network"
           }
         ]
       },
-      "ai_score": 8.0,
+      "ai_score": 8.5,
       "ai_reason": null,
-      "ai_summary": "Traders exploited a five-second trick to drain millions from Polymarket, highlighting a serious vulnerability in the platform.",
+      "ai_summary": "An actively exploited flaw in BTCPay Server has drained Lightning nodes, with Foundation and Citadel21 reporting losses, while the project says the exploited vulnerability differs from its disclosed changelog.",
+      "ai_tags": []
+    },
+    {
+      "id": "rss:www.theblock.co_rss.xml:fb47965ee234d7b3",
+      "source_type": "rss",
+      "title": "BTCPay warns of actively exploited vulnerability that could drain funds",
+      "url": "https://www.theblock.co/news/ecosystems/2026-08-07-btcpay-warns-actively-exploited-vulnerability-could-drain-funds-411170?utm_source=rss&utm_medium=rss",
+      "content": null,
+      "author": "Daniel Kuhn",
+      "published_at": "2026-08-07T17:03:20Z",
+      "fetched_at": "2026-08-08T15:34:08.563940Z",
+      "metadata": {
+        "feed_name": "The Block",
+        "category": "crypto-protocols",
+        "title_en": "BTCPay Server Warns of Actively Exploited Vulnerability; Update to 2.4.2",
+        "detailed_summary_en": "The BTCPay Server project has issued an urgent warning about an actively exploited vulnerability that could drain funds from servers, urging all users to update to version 2.4.2 immediately. This is a critical security incident because BTCPay Server is a widely used open-source Bitcoin payment processor; if exploited, merchants could lose funds directly from their own wallets. Immediate patching is essential to protect users in the cryptocurrency ecosystem. The advisory directs users to version 2.4.2 as the necessary update for affected servers. Since the vulnerability is actively exploited, prompt action is required to prevent fund loss.",
+        "background_en": "BTCPay Server is a free and open-source, self-hosted Bitcoin payment processor created in 2017 by Nicolas Dorier. It allows merchants to accept bitcoin payments directly to their own wallets rather than through a centralized processor, and supports both on-chain Bitcoin and Lightning Network payments. It was developed as an alternative to BitPay during the SegWit2x dispute in the Bitcoin community, aiming to provide a secure, private, and censorship-resistant solution.",
+        "title_zh": "BTCPay Server 警告存在已被利用的漏洞，请更新到 2.4.2",
+        "detailed_summary_zh": "BTCPay Server 项目发布了紧急警告，称存在一个已被积极利用、可能导致服务器资金被盗的漏洞，并敦促所有用户立即更新到 2.4.2 版本。 这是一起严重的安全事件，因为 BTCPay Server 是一个被广泛使用的开源比特币支付处理器；若被利用，商家可能会直接从自家钱包中损失资金。立即修补对于保护加密货币生态中的用户至关重要。 公告指示用户将受影响的服务器更新到 2.4.2 版本。由于该漏洞已被积极利用，需要立即采取行动以防止资金损失。",
+        "background_zh": "BTCPay Server 是一款免费开源的自托管比特币支付处理器，由 Nicolas Dorier 于 2017 年创建。它允许商家直接将比特币支付接收到自己的钱包，而不是通过中心化处理商，并同时支持链上比特币和闪电网络支付。它是在比特币社区 SegWit2x 争议期间作为 BitPay 的替代方案开发的，旨在提供安全、隐私且抗审查的解决方案。",
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/BTCPay_Server",
+            "title": "BTCPay Server"
+          },
+          {
+            "url": "https://grokipedia.com/page/BTCPay_Server",
+            "title": "BTCPay Server"
+          }
+        ]
+      },
+      "ai_score": 8.5,
+      "ai_reason": null,
+      "ai_summary": "BTCPay warns users of an actively exploited vulnerability that could drain funds and urges an update to version 2.4.2.",
+      "ai_tags": []
+    },
+    {
+      "id": "rss:cointelegraph.com_rss:59417382c973b386",
+      "source_type": "rss",
+      "title": "Bitcoiners turn to dice throws as self-custody setups are re-evaluated",
+      "url": "https://cointelegraph.com/features/bitcoiners-turn-to-dice-throws-as-self-custody-setups-are-re-evaluated?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "content": null,
+      "author": "Cointelegraph by Charles Bennett",
+      "published_at": "2026-08-07T13:00:01Z",
+      "fetched_at": "2026-08-08T15:34:28.602062Z",
+      "metadata": {
+        "feed_name": "Cointelegraph",
+        "category": "crypto-protocols",
+        "title_en": "Bitcoiners Turn to Dice Throws After Coldcard Entropy Bug",
+        "detailed_summary_en": "A critical firmware vulnerability in Coldcard hardware wallets, introduced in version 4.0.1, caused seed generation to use the weak Yasmarang PRNG instead of the STM32 hardware TRNG, leading to Bitcoin thefts beginning July 30. In response, Bitcoiners are increasingly relying on physical dice throws to generate seed entropy and re-evaluating their self-custody setups. This incident undermines trust in hardware wallets and shows that even widely used devices can harbor opaque, catastrophic bugs. It has pushed the community toward 'don't trust, verify' practices such as dice entropy and cross-checking derived addresses. Coinkite estimates that Mk2 and Mk3 devices produced only about 40 bits of entropy, while Mk4, Mk5, and Q devices reached about 70 bits — well below the 128 bits required for a secure 12-word seed phrase. The vulnerability was introduced when a firmware rewrite moved from a GPL model to a read-only model and began using MicroPython's Yasmarang PRNG.",
+        "background_en": "Hardware wallets generate private keys from a seed phrase, and their security depends on true randomness. A TRNG uses physical processes such as electronic noise to produce unguessable numbers, while a PRNG is deterministic and can be predicted if its seed is known. Physical methods like dice throws provide auditable entropy that does not rely on the wallet's internal random number generator.",
+        "title_zh": "Coldcard漏洞后比特币用户转向掷骰子生成熵",
+        "detailed_summary_zh": "Coldcard硬件钱包固件4.0.1版本中引入的严重漏洞导致助记词生成使用Yasmarang PRNG而非STM32硬件真随机数生成器，从7月30日起引发了比特币被盗。作为回应，比特币用户越来越多地使用物理掷骰子来生成种子熵，并重新评估自托管方案。 此事件削弱了用户对硬件钱包的信任，表明即使是被广泛使用的设备也可能存在隐蔽且灾难性的漏洞。它推动了社区采用“不要信任，要验证”的做法，如骰子熵和交叉检查派生地址。 Coinkite估计Mk2/Mk3设备仅生成约40比特熵，Mk4/Mk5/Q设备约70比特，远低于安全12词助记词所需的128比特。漏洞是在固件从GPL自由软件模式改为只读模式时引入的，设备开始使用MicroPython的Yasmarang PRNG而非STM32硬件TRNG。",
+        "background_zh": "硬件钱包从助记词生成私钥，其安全性完全依赖于真正的随机性。真随机数生成器（TRNG）利用物理过程（如电子噪声）产生不可猜测的随机数，而伪随机数生成器（PRNG）是确定性的，若种子已知则可被预测。掷硬币或掷骰子等物理方法可提供可审计的熵，不依赖钱包内部的随机数生成器。",
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Pseudorandom_number_generator",
+            "title": "Pseudorandom number generator - Wikipedia"
+          },
+          {
+            "url": "https://learn.heyapollo.com/p/the-art-and-science-of-bitcoin-wallet-seed-generation-randomness-is-everything",
+            "title": "The Art and Science of Bitcoin Wallet Seed Generation"
+          },
+          {
+            "url": "https://cybersecuritynews.com/coldcard-hardware-wallet-rng-flaw-bitcoin-theft/",
+            "title": "Coldcard Hardware Wallet RNG Flaw Linked to $88.6 Million ..."
+          }
+        ]
+      },
+      "ai_score": 8.5,
+      "ai_reason": null,
+      "ai_summary": "Bitcoiners are turning to dice throws for entropy generation after a critical Coldcard firmware vulnerability used a weak pseudorandom generator, leading to stolen funds.",
+      "ai_tags": []
+    },
+    {
+      "id": "rss:decrypt.co_feed:5ae1417549ff66fd",
+      "source_type": "rss",
+      "title": "Treasury Sanctions Crypto Exchanges It Says Laundered Millions for Iran",
+      "url": "https://decrypt.co/375163/treasury-sanctions-crypto-exchanges-laundered-millions-iran",
+      "content": null,
+      "author": "Jose Antonio Lanz",
+      "published_at": "2026-08-07T20:28:33Z",
+      "fetched_at": "2026-08-08T15:34:23.794088Z",
+      "metadata": {
+        "feed_name": "Decrypt",
+        "category": "crypto-regulation",
+        "title_en": "Treasury Sanctions Two Crypto Exchanges for Laundering Millions for Iran",
+        "detailed_summary_en": "On August 7, OFAC designated Shelbit Exchange and Aban Tether under the 'Economic Fury' campaign, accusing them of laundering millions for Iran's Islamic Revolutionary Guard Corps (IRGC). The action also targeted operator Siavash Kayvanpour and several related companies in Georgia, Poland, and the UAE. This marks a major regulatory escalation by OFAC against crypto exchanges enabling sanctioned regimes, showing that digital asset platforms can face secondary sanctions for processing Iran-linked funds. It reinforces the pressure on Iran's crypto reliance and warns the broader industry about compliance with sanctions screening. Treasury says Iran-linked wallets sent over $1 million to Shelbit, which returned more than $2 million to Iranian wallets and another $2 million to the already-sanctioned exchange Nobitex. The State Department's Rewards for Justice program is offering up to $15 million for information disrupting the IRGC's financial mechanisms.",
+        "background_en": "OFAC is the U.S. Treasury agency that administers and enforces economic sanctions. The Specially Designated Nationals (SDN) List blocks designated individuals and entities from the U.S. financial system, freezing their U.S.-touching assets and exposing foreign firms that deal with them to secondary sanctions. The 'Economic Fury' campaign is a U.S. pressure campaign against Iran's financial networks, and Treasury Secretary Scott Bessent has touted seizures of roughly $1 billion in Iranian crypto since it began.",
+        "title_zh": "美国财政部制裁两家为伊朗洗钱的加密货币交易所",
+        "detailed_summary_zh": "8月7日，美国财政部外国资产控制办公室（OFAC）在“经济狂怒”（Economic Fury）行动下将 Shelbit Exchange 和 Aban Tether 列为制裁对象，指控它们为伊朗伊斯兰革命卫队洗钱数百万美元。此次行动还针对运营者 Siavash Kayvanpour 及其在格鲁吉亚、波兰和阿联酋的多家关联公司。 此举标志着 OFAC 针对为受制裁政权提供服务的加密货币交易所的监管升级，表明数字资产平台若处理与伊朗有关的资金可能面临二级制裁。这也进一步加大对伊朗依赖加密货币的压力，并警示整个行业在制裁筛查方面加强合规。 美国财政部称，与伊朗有关的钱包向 Shelbit 发送了超过100万美元，而 Shelbit 向伊朗钱包返还了超过200万美元，并向已被制裁的交易所 Nobitex 支付了另外200万美元。国务院“正义奖励”项目悬赏最高1500万美元，征集能够扰乱革命卫队金融机制的信息。",
+        "background_zh": "OFAC 是美国财政部负责管理和执行经济制裁的机构。“特别指定国民”（SDN）名单将被指定的个人和实体排除在美国金融体系之外，冻结其涉美资产，并使得与之交易的外国企业面临二级制裁。“经济狂怒”行动是美国针对伊朗金融网络的施压运动，财政部长斯科特·贝森特称，自行动开始以来已扣押约10亿美元的伊朗加密货币。",
+        "sources": [
+          {
+            "url": "https://shafaq.com/en/World/US-sanctions-crypto-exchanges-over-IRGC-transactions",
+            "title": "US sanctions crypto exchanges over IRGC transactions"
+          },
+          {
+            "url": "https://www.lbkmlaw.com/news-events-us-sanctions-iran-comprehensive-review.html",
+            "title": "US Sanctions on Iran: the economic fury campaign in review: Lewis Baach Kaufmann Middlemiss PLLC"
+          },
+          {
+            "url": "https://sanctionsnews.bakermckenzie.com/ofac-continues-economic-fury-campaign-against-iran/",
+            "title": "OFAC Continues \"Economic Fury\" Campaign Against Iran - Global Sanctions and Export Controls Blog"
+          }
+        ]
+      },
+      "ai_score": 8.5,
+      "ai_reason": null,
+      "ai_summary": "The U.S. Treasury sanctioned two crypto exchanges, Shelbit Exchange and Aban Tether, for laundering millions for Iran's Revolutionary Guard.",
+      "ai_tags": []
+    },
+    {
+      "id": "rss:cryptoslate.com_feed_:cce8494df15651dc",
+      "source_type": "rss",
+      "title": "Inside the uncollateralized deal that locked up 6 million SUI until 2028 while SUI Group trades at a 25% NAV discount",
+      "url": "https://cryptoslate.com/inside-the-uncollateralized-deal-that-locked-up-6-million-sui-until-2028-while-sui-group-trades-at-a-25-nav-discount/",
+      "content": null,
+      "author": "Liam 'Akiba' Wright",
+      "published_at": "2026-08-07T21:55:14Z",
+      "fetched_at": "2026-08-08T15:34:18.415036Z",
+      "metadata": {
+        "feed_name": "CryptoSlate",
+        "category": "crypto-markets",
+        "title_en": "SUI Group's uncollateralized 6M SUI loan to Bluefin locks tokens until 2028",
+        "detailed_summary_en": "SUI Group disclosed that it lent 6 million SUI to Bluefin Markets without collateral under an amended agreement, increasing its fee to 11% of qualifying revenue and locking the tokens until September 30, 2028. An August 6 sensitivity analysis implies the company's market value trades at a 24.5% discount to its net asset value. This uncollateralized arrangement exposes SUI Group to significant counterparty and liquidity risks, potentially undermining investor confidence in its treasury management. The persistent NAV discount suggests the market already prices in these risks, which could also affect SUI token liquidity and broader DeFi confidence in uncollateralized lending. The amended loan increased from 2 million to 6 million SUI and the fee from 5% to 11%, while Bluefin can rehypothecate, sell, or lend the tokens. SUI Group recorded $14 million in realized digital-asset losses tied to the additional transfer, which it described as noncash, and had $7.53 million in current assets versus $12.14 million in current liabilities as of June 30.",
+        "background_en": "Sui is a Layer-1 blockchain designed for high-speed smart contracts and scalable decentralized applications, and Bluefin is a decentralized exchange built on Sui that has become one of its largest protocols by volume. Uncollateralized lending in DeFi is relatively rare compared to overcollateralized loans, as it introduces significant credit risk. SUI Group is a Nasdaq-listed treasury company holding SUI tokens, and its NAV discount indicates that its market capitalization is below the net asset value calculated by the company itself.",
+        "title_zh": "SUI Group 无抵押借出 600 万 SUI 给 Bluefin，代币锁定至 2028 年",
+        "detailed_summary_zh": "SUI Group 披露称，其依据修订协议向 Bluefin Markets 无抵押借出 600 万枚 SUI，费用提升至合格收入的 11%，相关代币锁定至 2028 年 9 月 30 日。8 月 6 日的敏感性分析显示，公司市值较其资产净值存在约 24.5% 的折价。 这一无抵押安排使 SUI Group 面临重大的交易对手风险和流动性风险，可能削弱投资者对其资金管理能力的信心。持续存在的资产净值折价表明市场已将这些风险计入定价，并可能影响 SUI 代币的流动性以及 DeFi 市场对无抵押借贷的整体信心。 修订后的贷款规模从 200 万枚增至 600 万枚 SUI，费用比例从 5% 升至 11%，Bluefin 可对代币进行再抵押、出售或出借。SUI Group 因追加转账录得 1400 万美元的已实现数字资产损失，并称其为非现金损失；截至 6 月 30 日，公司流动资产为 753 万美元，流动负债为 1214 万美元。",
+        "background_zh": "Sui 是一条第一层区块链，旨在支持高速智能合约和可扩展的去中心化应用；Bluefin 是构建在 Sui 上的去中心化交易所，已成为 Sui 生态中交易量最大的协议之一。与超额抵押贷款相比，DeFi 中的无抵押借贷较为少见，因为它引入了显著的信用风险。SUI Group 是一家在纳斯达克上市的持有 SUI 代币的财务公司，其资产净值折价意味着其市值低于公司自行计算的净资产价值。",
+        "sources": [
+          {
+            "url": "https://coinmarketcap.com/currencies/sui/",
+            "title": "Sui price today, SUI to USD live price, marketcap and... | CoinMarketCap"
+          },
+          {
+            "url": "https://bluefin.io/",
+            "title": "Bluefin | Decentralized Financial Ecosystem"
+          },
+          {
+            "url": "https://medium.com/clearpool-finance/how-to-earn-high-yields-in-defi-guide-to-uncollateralized-lending-ea1d7a4c5e98",
+            "title": "How to Earn High Yields in DeFi: Guide to Uncollateralized Lending"
+          }
+        ]
+      },
+      "ai_score": 7.5,
+      "ai_reason": null,
+      "ai_summary": "SUI Group's uncollateralized 6 million SUI loan to Bluefin Markets locks up tokens until 2028 while its trading NAV discount highlights counterparty and liquidity risks.",
+      "ai_tags": []
+    },
+    {
+      "id": "rss:decrypt.co_feed:835b85bf58a82fd6",
+      "source_type": "rss",
+      "title": "Flock Wanted to Turn 350,000 Uber Drivers Into a Nationwide Plate-Scanning Fleet",
+      "url": "https://decrypt.co/375149/flock-cameras-uber-drivers-nationwide-plate-scanning-fleet",
+      "content": null,
+      "author": "Jose Antonio Lanz",
+      "published_at": "2026-08-07T19:18:41Z",
+      "fetched_at": "2026-08-08T15:34:23.981340Z",
+      "metadata": {
+        "feed_name": "Decrypt",
+        "category": "crypto-markets",
+        "title_en": "Flock Wanted to Turn 350,000 Uber Drivers Into a Nationwide Plate-Scanning Fleet",
+        "detailed_summary_en": "A leaked Flock Safety presentation reveals the company planned to partner with Nexar to use roughly 350,000 rideshare and delivery dashcams to scan license plates on the move. Flock says the deal was never executed, and it is unclear whether drivers or the apps were aware of the plan. The proposal would have turned civilian vehicles into a massive mobile surveillance network, filling gaps between fixed ALPR cameras and enabling region-wide vehicle tracking in real time. It highlights how surveillance vendors are pushing beyond fixed infrastructure despite growing privacy backlash and legislative crackdowns. Flock's stationary cameras already cover more than 5,000 U.S. communities, and the company reached an $8.4 billion valuation in April. The expanded plan faced headwinds: the LAPD let its Flock contract expire in July, CNN documented at least two dozen officer-abuse cases, and EPIC has urged Congress to ban ALPR outright.",
+        "background_en": "Flock Safety sells automated license plate recognition (ALPR) cameras that log every vehicle's plate, color, make, and model, creating a searchable map of vehicle movements. Nexar operates a network of consumer dashcams that aggregate driver footage. Similar mobile ALPR systems exist from Axon and Motorola's DRN, but typically for police cruisers and repossession agents rather than civilian rideshare fleets.",
+        "community_discussion_en": "Congressman Thomas Massie criticized the plan on X, saying he would sponsor a bill to withhold federal money from municipalities and police departments that deploy Flock or similar cameras to surveil law-abiding citizens. His comment reflects broader concerns about civil liberties, which are also echoed in the Norfolk lawsuit alleging Fourth Amendment violations.",
+        "title_zh": "Flock 曾计划将35万名Uber司机变成全国车牌扫描车队",
+        "detailed_summary_zh": "一份泄露的Flock Safety演示文稿显示，该公司曾计划与Nexar合作，利用约35万个网约车和送货行车记录仪在行驶中扫描车牌。Flock表示该交易从未执行，并且尚不清楚司机或相关应用是否知晓该计划。 该提议本会将民用车辆变成庞大的移动监控网络，填补固定ALPR摄像头之间的空白，并实现全区域实时车辆追踪。它凸显了在隐私抵制和立法打击日益加强的背景下，监控供应商仍在向固定基础设施之外扩张。 Flock的固定摄像头已覆盖美国5000多个社区，公司于4月达到84亿美元估值。这一扩展计划面临阻力：洛杉矶警察局7月未续签Flock合同，CNN记录了至少两打警察滥用系统案件，EPIC已敦促国会彻底禁止ALPR。",
+        "background_zh": "Flock Safety销售自动车牌识别（ALPR）摄像头，记录每辆车的车牌、颜色、品牌和型号，创建可搜索的车辆移动地图。Nexar运营一个消费级行车记录仪网络，聚合司机的视频数据。Axon和Motorola的DRN也提供类似的移动ALPR系统，但通常用于警车和收车代理人，而非民用网约车队。",
+        "community_discussion_zh": "众议员Thomas Massie在X上批评该计划，称他将提出一项法案，扣留部署Flock或类似摄像头监视守法公民的市镇和警察部门的联邦资金。他的评论反映了对公民自由的广泛担忧，诺福克诉讼中指控违反第四修正案的主张也体现了这一点。",
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Flock_Safety",
+            "title": "Flock Safety - Wikipedia"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/Nexar",
+            "title": "Nexar - Wikipedia"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/Automated_license_plate_recognition",
+            "title": "Automated license plate recognition"
+          }
+        ]
+      },
+      "ai_score": 7.5,
+      "ai_reason": null,
+      "ai_summary": "A leaked Flock Safety presentation reveals the company planned to partner with Nexar to turn hundreds of thousands of rideshare and delivery dashcams into a mobile license-plate scanning network, a deal that never launched but underscores surveillance industry ambitions.",
+      "ai_tags": []
+    },
+    {
+      "id": "rss:protos.com_feed_:dd0d2f0d9385a048",
+      "source_type": "rss",
+      "title": "Is Justin Sun mixing HTX’s reserves with Poloniex?",
+      "url": "https://protos.com/is-justin-sun-mixing-htxs-reserves-with-poloniex/",
+      "content": null,
+      "author": "Bennett Tomlin",
+      "published_at": "2026-08-07T18:37:29Z",
+      "fetched_at": "2026-08-08T15:34:18.889118Z",
+      "metadata": {
+        "feed_name": "Protos",
+        "category": "exchange-operations",
+        "title_en": "Protos Finds Justin Sun Likely Mixing HTX Reserves with Poloniex",
+        "detailed_summary_en": "Protos traced 71,853.22 stETH (about $135 million) from HTX's May 1 proof-of-reserves address through a rapid series of transfers into addresses labeled on Etherscan as Poloniex 7, 10, and 9, suggesting commingling of reserves. HTX also changed its proof-of-reserves reporting to a vague ThirdParty custody category after EU/UK sanctions, without disclosing the custodian's identity. If HTX is commingling customer assets with Poloniex's reserves, it undermines the core premise of proof-of-reserves and exposes users to contagion risk if either exchange fails. The timing — right after EU/UK sanctions — raises questions about whether HTX is deliberately obscuring its holdings to evade scrutiny. The transfers moved stETH from 0x18709e89bd403f470088abdacebe86cc60dda12e through 0x7C103bbAE0DA51AE929dE97A98633668ddE80d04 and 0x8fCA4adE3a517133fF23ca55CdAea29C78C990b8 (Poloniex 7) to 0x29065a4C1f2F20d1E263930088890d6F49Fe715a (Poloniex 10), ending at 0x176F3DAb24a159341c0509bB36B833E7fdd0a132 (Poloniex 9), which was previously labeled Justin Sun 4. HTX previously held a large portion of its BTC in tokenized form supposedly stored at Poloniex, and Poloniex refused to disclose the relevant addresses.",
+        "background_en": "Proof of reserves (PoR) is an auditing process used by centralized crypto exchanges to show they hold enough assets to back customer deposits, often using cryptographic tools like Merkle trees. stETH is a token representing staked ETH in the Lido protocol, entitling holders to a share of staking rewards. Rapidly rotating on-chain addresses is sometimes used for privacy, but can also be a tactic to hinder external verification of a company's balances, as TRM Labs noted.",
+        "title_zh": "Protos 调查发现 Justin Sun 疑似将 HTX 储备与 Poloniex 混合",
+        "detailed_summary_zh": "Protos 追踪了 71,853.22 stETH（约 1.35 亿美元）从 HTX 5 月 1 日储备证明地址，经一系列快速转账进入 Etherscan 标记为 Poloniex 7、10 和 9 的地址，表明储备资金可能被混用。在欧盟与英国制裁后，HTX 还将储备证明报告改为模糊的 ThirdParty 类别，且未披露托管方身份。 如果 HTX 将客户资产与 Poloniex 储备混用，将破坏储备证明的核心前提，并在一家交易平台倒闭时使用户面临风险传染。在欧盟与英国制裁后发生此事，令人怀疑 HTX 是否在故意隐瞒持仓以规避审查。 转账将 stETH 从 0x18709e89bd403f470088abdacebe86cc60dda12e 经由 0x7C103bbAE0DA51AE929dE97A98633668ddE80d04 和 0x8fCA4adE3a517133fF23ca55CdAea29C78C990b8（Poloniex 7）、0x29065a4C1f2F20d1E263930088890d6F49Fe715a（Poloniex 10），最终到达 0x176F3DAb24a159341c0509bB36B833E7fdd0a132（Poloniex 9，此前被标记为 Justin Sun 4）。HTX 此前还以代币化形式将大量 BTC 存放在 Poloniex，而 Poloniex 拒绝披露相关地址。",
+        "background_zh": "储备证明（Proof of Reserves，PoR）是中心化交易平台用来证明其持有足够资产以支撑用户存款的审计流程，常使用默克尔树等密码学工具。stETH 是 Lido 协议中代表质押 ETH 的代币，持有者可获得质押奖励的对应份额。TRM Labs 指出，快速轮换链上地址有时被用于隐私保护，但也可能是一种阻碍外部核查公司余额的手段。",
+        "sources": [
+          {
+            "url": "https://revenuebot.io/blog/2023/01/11/proof-of-reserves-of-cryptocurrency-exchanges/",
+            "title": "Proof of reserves of cryptocurrency exchanges – What gives the..."
+          },
+          {
+            "url": "https://cryptorobotics.ai/news/analysis/proof-of-reserves-cryptocurrency-transparency/",
+            "title": "Understanding Proof of Reserves: Enhancing... - CryptoRobotics"
+          },
+          {
+            "url": "https://www.coindesk.com/price/steth",
+            "title": "Lido Staked Ether price today, STETH to USD live price ..."
+          }
+        ]
+      },
+      "ai_score": 7.5,
+      "ai_reason": null,
+      "ai_summary": "Protos investigates whether Justin Sun is commingling HTX reserves with Poloniex, citing obscured proof-of-reserves, rapid address rotation, and recent EU/UK sanctions.",
+      "ai_tags": []
+    },
+    {
+      "id": "google_news:article:defb70759e54cb5b",
+      "source_type": "google_news",
+      "title": "Coinbase is pulling Loopring trading today - finding a safe place to sell LRC tokens is getting complicated - CryptoSlate",
+      "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQZHNhR1UzTGZBSWZET2pNd3VPbWpiaHJ6Zjd2bGxSb0o4Q0tfdDdOcGNSenFSejdYbTR3eTQ4Qzdyd0ZSS19BTHV2TnU1SFNHLUVrNUtEQzdQbks0d3dldkpTdWJHbHlySkgtcWFlUTRRRXQyWGFnSE9hcFBXSUszay1QSkMxbU9YMmFubC1JRTlhWF8xLVQzeHJQRHFZMjFXUWttNFJFQU5XZmF5cEdHSFljNFY5cXFuMHVPQTFXRW5PZHBpTkpjWGxESEJJLVU?oc=5",
+      "content": null,
+      "author": "CryptoSlate",
+      "published_at": "2026-08-07T16:20:21Z",
+      "fetched_at": "2026-08-08T15:33:58.931928Z",
+      "metadata": {
+        "category": "exchange-announcements",
+        "title_en": "Coinbase Delists Loopring (LRC), Complicating Token Sales",
+        "detailed_summary_en": "Coinbase is delisting Loopring (LRC) trading today, removing one of the most accessible venues for holders to sell their tokens. The delisting forces LRC holders to seek alternative, often less liquid, platforms. This exchange action removes a major on-ramp for LRC liquidity and affects token holders who rely on Coinbase's trusted fiat-to-crypto gateway. It signals continued regulatory and listing pressure on smaller altcoins in the U.S. market. LRC is the Ethereum-based cryptocurrency token of Loopring, an open protocol for building decentralized exchanges. The delisting removes a direct fiat and major USD trading pair for LRC, leaving smaller exchanges and decentralized venues as the primary options.",
+        "background_en": "Loopring is an open protocol that uses zero-knowledge rollups (zkRollups) to build high-throughput decentralized exchanges on Ethereum. LRC is its native token, used for paying fees, staking, and governance within the protocol. Coinbase is one of the largest U.S. crypto exchanges, and its listing decisions significantly affect a token's accessibility and liquidity.",
+        "title_zh": "Coinbase 下架 Loopring (LRC)，使代币出售变得复杂",
+        "detailed_summary_zh": "Coinbase 今天下架 Loopring（LRC）交易，移除了持有者出售代币最便利的渠道之一。下架迫使 LRC 持币者转向其他流动性往往较差的平台。 此次交易所下架移除了 LRC 流动性的重要入口，影响了依赖 Coinbase 可信法币通道的持币者。这也表明美国市场对小型山寨币的监管与上架压力仍在持续。 LRC 是基于以太坊的加密货币代币，属于 Loopring 这个用于构建去中心化交易所的开放协议。此次下架移除了 LRC 的直接法币及主要美元交易对，使小型交易所和去中心化场所成为主要选择。",
+        "background_zh": "Loopring 是一个开放协议，利用零知识卷叠（zkRollups）技术在以太坊上构建高吞吐量的去中心化交易所。LRC 是协议的原生代币，用于支付费用、质押和治理。Coinbase 是美国最大的加密货币交易所之一，其上架决定对代币的可访问性和流动性影响重大。",
+        "sources": [
+          {
+            "url": "https://www.okx.com/en-gb/learn/what-is-loopring-token",
+            "title": "What is Loopring (LRC) and How It Works | OKX"
+          },
+          {
+            "url": "https://coinmarketcap.com/currencies/loopring/",
+            "title": "Loopring price today, LRC to USD live price, marketcap and ..."
+          },
+          {
+            "url": "https://chain.link/education-hub/zero-knowledge-rollup",
+            "title": "What Are ZK Rollups? | ChainlinkZero-knowledge rollups - ethereum.orgWhat Are Zk-Rollups? The Layer-2 Scalability Technique - BinanceWhat are Zk-Rollups? Layer 2 Scalability TechnologyWhat Is zk-Rollup Technology? - princewill.ioZK Rollups Explained: How Zero-Knowledge Proofs Scale ...ZK Rollups Explained: Enhancing Blockchain Scalability ..."
+          }
+        ]
+      },
+      "ai_score": 7.5,
+      "ai_reason": null,
+      "ai_summary": "Coinbase is delisting Loopring (LRC) today, making it harder for holders to find a safe venue to sell their tokens.",
       "ai_tags": []
     },
     {
@@ -153,16 +527,16 @@
       "content": null,
       "author": "James Van Straten",
       "published_at": "2026-08-07T09:24:00Z",
-      "fetched_at": "2026-08-08T00:30:58.567464Z",
+      "fetched_at": "2026-08-08T15:34:06.855959Z",
       "metadata": {
         "feed_name": "CoinDesk",
         "category": "crypto-markets",
-        "title_en": "Coldcard Fallout: 210,000 Bitcoin Moved Onchain From Old Wallets",
-        "detailed_summary_en": "Onchain data shows that over 210,000 bitcoin have been moved out of old wallets following the Coldcard firmware vulnerability, revealing the scale of user response to the security incident. This mass migration comes as security researchers link a $70.2 million theft to the flaw, with total reported losses exceeding $130 million. This mass movement highlights the real-world impact of hardware wallet vulnerabilities and the importance of onchain transparency in assessing security events. It could signal a broader shift in user trust and prompt other wallet manufacturers to scrutinize their seed generation processes. The Coldcard flaw weakens wallet seed generation across five models, and Galaxy Research linked a specific 1,196-address sweep worth $70.2 million to the bug. The 210,000 bitcoin migration observed onchain likely includes both precautionary user transfers and potentially maliciously drained funds.",
-        "background_en": "Coldcard is a bitcoin-only hardware wallet produced by Coinkite, known for air-gapped signing, dual secure elements, and verifiable open-source firmware. Onchain analysis examines blockchain transaction data to track asset movements and network health, providing visible evidence of market reactions to security events. This recent incident underscores how a seemingly offline device can still be vulnerable if its random number generation is compromised.",
-        "title_zh": "Coldcard事件后续：21万比特币从旧钱包转出",
-        "detailed_summary_zh": "链上数据显示，在 Coldcard 固件漏洞曝光后，超过21万枚比特币已从旧钱包转出，反映出用户对此次安全事件的反应规模。安全研究人员将该漏洞与一笔7020万美元的盗窃案关联，报告的总损失已超过1.3亿美元。 这一大规模转移凸显了硬件钱包漏洞对现实世界的影响，以及链上透明度在评估安全事件中的重要性。这可能标志着用户信任的转变，并促使其他钱包制造商审视自己的种子生成流程。 Coldcard 的漏洞削弱了五种型号的钱包种子生成安全性，Galaxy Research 将一笔涉及1196个地址、价值7020万美元的归集交易与此次漏洞关联。链上观察到的21万枚比特币流出可能既包括用户预防性转移，也可能包括被恶意盗取的资金。",
-        "background_zh": "Coldcard 是由 Coinkite 生产的仅支持比特币的硬件钱包，以气隙签名、双安全元件和可验证的开源固件著称。链上分析通过检查区块链交易数据来追踪资产流动和网络健康状况，为市场对安全事件的反应提供了可见的证据。此次事件表明，即使看似离线的设备，如果其随机数生成过程受到破坏，仍可能变得脆弱。",
+        "title_en": "Coldcard Fallout: 210,000 Bitcoin Leaves Long-Term Holder Wallets",
+        "detailed_summary_en": "According to Glassnode data, roughly 210,000 BTC moved out of long-term holder wallets in the past week, the largest decline since December 2024. The movement is linked to the Coldcard security incident and appears to reflect a custody shift rather than selling. This suggests the Coldcard breach is prompting a broad migration in how bitcoin is stored, from self-custody to new wallets or regulated custodians/ETFs. Unlike historical LTH distribution at market peaks, this is happening near lows, indicating a shift in custody rather than loss of conviction. Long-term holder supply fell from just under 15 million BTC to approximately 14.7 million BTC, with bitcoin trading around $64,000, roughly 50% below its all-time high. The flaw stemmed from weak randomness in Coldcard firmware, allowing attackers to reconstruct wallet recovery phrases; estimated losses reached up to $114 million.",
+        "background_en": "Coldcard is a Bitcoin-only hardware wallet that protects private keys offline. Glassnode is an on-chain analytics platform that classifies long-term holders as entities whose coins have remained dormant for about 155 days. Historically, heavy LTH spending coincided with market peaks, but this time the movement occurs near price lows.",
+        "title_zh": "Coldcard事件余波：21万比特币流出长期持有者钱包",
+        "detailed_summary_zh": "根据Glassnode数据，过去一周约有21万枚比特币从长期持有者钱包流出，创下2024年12月以来的最大降幅。这一动向与Coldcard安全事件相关，似乎反映的是托管方式转变而非卖出。 这表明Coldcard安全事件正促使比特币存储方式发生大规模迁移，从自我托管转向新钱包或受监管托管机构/ETF。与历史上长期持有者在市场高位分布不同，此次发生在接近低位时，说明是托管方式转变而非信心丧失。 长期持有者供应量从接近1500万枚比特币降至约1470万枚，比特币交易价格约64,000美元，较历史高点下跌约50%。漏洞源于Coldcard固件中的弱随机性，攻击者可重建部分用户的钱包恢复助记词，估计损失高达1.14亿美元。",
+        "background_zh": "Coldcard是一款仅支持比特币的硬件钱包，离线保护私钥。Glassnode是一个链上分析平台，将长期持有者定义为代币休眠约155天的实体。历史上，长期持有者的大笔支出往往出现在市场顶部，而此次资金流动发生在价格低位附近。",
         "sources": [
           {
             "url": "https://coldcard.com/",
@@ -170,168 +544,137 @@
           },
           {
             "url": "https://thehackernews.com/2026/08/coldcard-hardware-wallet-flaw-linked-to.html",
-            "title": "Coldcard Hardware Wallet Flaw Linked to $70 Million Bitcoin Theft in 41 ..."
+            "title": "Coldcard Hardware Wallet Flaw Linked to $70 Million Bitcoin ..."
           },
           {
-            "url": "https://techcrunch.com/2026/08/04/hackers-steal-over-130-million-by-exploiting-bug-in-offline-hardware-wallets/",
-            "title": "Hackers steal over $130M by exploiting bug in offline hardware wallets"
+            "url": "https://glassnode.com/",
+            "title": "Glassnode - Digital Asset Market Intelligence"
           }
         ]
       },
-      "ai_score": 8.0,
+      "ai_score": 7.5,
       "ai_reason": null,
-      "ai_summary": "Over 210,000 bitcoin left old wallets as onchain data reveals the scale of the Coldcard fallout.",
+      "ai_summary": "Roughly 210,000 bitcoin moved from long-term holder wallets following the Coldcard security incident, suggesting a custody shift rather than conventional selling.",
       "ai_tags": []
     },
     {
-      "id": "telegram:OKXAnnouncements:7088",
-      "source_type": "telegram",
-      "title": "Native USDC is officially live on X Layer.",
-      "url": "https://web3.okx.com/learn/usdc-cctp-on-xlayer?channelid=ACE505900",
+      "id": "hackernews:story:49216946",
+      "source_type": "hackernews",
+      "title": "U.S. Department of Energy Launches the Genesis Open Models Initiative",
+      "url": "https://genesisopenmodels.anl.gov/",
       "content": null,
-      "author": "OKXAnnouncements",
-      "published_at": "2026-08-07T13:00:13Z",
-      "fetched_at": "2026-08-08T00:30:59.181033Z",
+      "author": "moelf",
+      "published_at": "2026-08-07T22:24:27Z",
+      "fetched_at": "2026-08-08T15:33:59.203659Z",
       "metadata": {
-        "category": "exchange-announcements",
-        "title_en": "Native USDC Launches on OKX's X Layer, Replacing Bridged USDC",
-        "detailed_summary_en": "OKX announced that native USDC is now live on its Layer 2 network, X Layer. This replaces the previous bridged USDC_Bridged with Circle-issued, MiCA-compliant USDC for all deposits and withdrawals on the exchange's X Layer. This upgrade brings canonical, fully reserved USDC directly onto X Layer, eliminating bridge risk for users and improving compliance with EU stablecoin regulation. It is a material market-structure improvement for OKX's L2 ecosystem and its users. The integration automatically routes exchange deposits and withdrawals on X Layer to settle in native USDC, which is 1:1 redeemable for USD and MiCA-compliant. The previous bridged version, USDC_Bridged, is no longer used for these flows.",
-        "background_en": "Native USDC is issued directly by Circle and is backed 1:1 by US dollars, whereas bridged USDC is a representation created on another blockchain via a bridge contract, which introduces additional smart-contract risk. X Layer is an EVM-compatible Layer 2 network built by OKX using the Polygon CDK and AggLayer technology. MiCA is the European Union's comprehensive regulatory framework for crypto-assets, which includes specific requirements for stablecoin issuers.",
-        "title_zh": "OKX X Layer正式上线原生USDC，取代桥接USDC",
-        "detailed_summary_zh": "OKX宣布原生USDC现已在其二层网络X Layer正式上线。此举以Circle发行、符合MiCA的USDC取代了此前桥接的USDC_Bridged，用于X Layer上的充值及提现。 此次升级将Circle直接发行、全额储备的原生USDC引入X Layer，消除了桥接风险，并提升了对欧盟稳定币监管的合规性。这是OKX二层生态及用户在交易基础设施方面的重要结构性改进。 集成后，X Layer上的交易所充值与提现将自动以原生USDC结算，该USDC可按1:1兑换美元并符合MiCA要求。先前使用的桥接版USDC_Bridged将不再用于这些流程。",
-        "background_zh": "原生USDC由Circle直接发行，并以1:1美元支持；而桥接USDC则是通过跨链桥合约在另一区块链上生成的代表资产，这引入了额外的智能合约风险。X Layer是OKX基于Polygon CDK和AggLayer技术打造的兼容以太坊虚拟机（EVM）的二层网络。MiCA是欧盟针对加密资产制定的全面监管框架，其中包含对稳定币发行人的具体要求。",
-        "sources": [
-          {
-            "url": "https://www.usdc.com/learn/whats-the-difference-between-usdc-and-usdce",
-            "title": "USDC vs USDC.e: Key Differences Between Native and Bridged..."
-          },
-          {
-            "url": "https://www.quicknode.com/builders-guide/tools/x-layer-by-okx",
-            "title": "X Layer by OKX | Quicknode"
-          },
-          {
-            "url": "https://fintechobserve.com/mica-eu-crypto-regulation-guide/",
-            "title": "What Is MiCA? EU’s New Crypto Rules Explained (2026 Guide)"
-          }
-        ]
-      },
-      "ai_score": 7.0,
-      "ai_reason": null,
-      "ai_summary": "OKX announces that native USDC is now live on X Layer, replacing bridged USDC with Circle-issued, MiCA-compliant USDC for deposits and withdrawals.",
-      "ai_tags": []
-    },
-    {
-      "id": "rss:www.coindesk.com_arc_outboundfeeds_rss_:53e6ed862ba28b56",
-      "source_type": "rss",
-      "title": "Ethereum staking token weETH splits from restaking as rewards debate heats up",
-      "url": "https://www.coindesk.com/tech/2026/08/07/ethereum-staking-token-weeth-splits-from-restaking-as-rewards-debate-heats-up",
-      "content": null,
-      "author": "Shaurya Malwa",
-      "published_at": "2026-08-07T08:01:28Z",
-      "fetched_at": "2026-08-08T00:30:58.567511Z",
-      "metadata": {
-        "feed_name": "CoinDesk",
-        "category": "crypto-protocols",
-        "title_en": "Ethereum Staking Token weETH Splits from Restaking Amid Rewards Debate",
-        "detailed_summary_en": "Ethereum liquid staking token weETH is separating from restaking, according to a CoinDesk report dated August 7, 2026. The move comes as the community debates how restaking rewards should be distributed. Because weETH is one of the most widely used liquid staking tokens, this split could reshape how stakers earn yields and how restaking protocols attract liquidity. It may also set a precedent for other liquid staking tokens reconsidering their relationship with restaking. weETH is the wrapped, non-rebasing version of ether.fi's eETH, designed to integrate seamlessly with DeFi while earning staking rewards. The split means weETH holders will no longer automatically be exposed to restaking-related rewards and risks, though the exact technical mechanism of the separation was not detailed in the article.",
-        "background_en": "Liquid staking tokens (LSTs) let Ethereum holders deposit ETH and receive a tradable token that earns staking rewards while remaining usable in DeFi. Restaking extends this by allowing the same staked assets to also secure other protocols in exchange for extra rewards, which introduces additional slashing risks.",
-        "title_zh": "以太坊质押代币weETH与再质押分离，奖励之争升温",
-        "detailed_summary_zh": "据CoinDesk 2026年8月7日报道，以太坊流动性质押代币weETH正在与再质押（restaking）分离。此举正值社区就再质押奖励如何分配展开激烈争论之际。 由于weETH是最广泛使用的流动性质押代币之一，此次分离可能重塑质押者的收益方式以及再质押协议吸引流动性的模式。这也可能为其他流动性质押代币重新考虑与再质押的关系开创先例。 weETH是ether.fi旗下eETH的封装、非变基（non-rebasing）版本，旨在与DeFi无缝集成并赚取质押奖励。此次分离意味着weETH持有者将不再自动接触与再质押相关的奖励和风险，不过文章未详细说明分离的具体技术机制。",
-        "background_zh": "流动性质押代币（LST）允许以太坊持有者存入ETH并获得一种可交易代币，该代币既能赚取质押奖励，又能在DeFi中使用。再质押则进一步允许同一笔质押资产同时为其他协议提供安全保障，以换取额外奖励，但这也引入了额外的罚没（slashing）风险。",
-        "sources": [
-          {
-            "url": "https://etherscan.io/token/0xcd5fe23c85820f7b72d0926fc9b05b43e359b7ee",
-            "title": "Wrapped eETH (weETH) | ERC-20 | Address: 0xcd5fe23c...3e359b7ee | Etherscan"
-          },
-          {
-            "url": "https://www.coingecko.com/en/coins/wrapped-eeth",
-            "title": "Wrapped eETH Price: WEETH/USD Live Price Chart, Market Cap & News Today | CoinGecko"
-          },
-          {
-            "url": "https://www.coingecko.com/learn/what-is-restaking-crypto",
-            "title": "What Is Restaking in Crypto? A Beginner’s Guide (2025) | CoinGecko"
-          }
-        ]
-      },
-      "ai_score": 7.0,
-      "ai_reason": null,
-      "ai_summary": "Ethereum liquid staking token weETH is splitting from restaking as debates over reward distribution intensify.",
-      "ai_tags": []
-    },
-    {
-      "id": "rss:blog.kraken.com_feed:999891a90b37f1d6",
-      "source_type": "rss",
-      "title": "War games: how we built Kraken to handle 10x the load",
-      "url": "https://blog.kraken.com/product/engineering/10x-the-load",
-      "content": null,
-      "author": "KrakenFX",
-      "published_at": "2026-08-06T13:02:26Z",
-      "fetched_at": "2026-08-08T00:30:58.842416Z",
-      "metadata": {
-        "feed_name": "Kraken Blog",
-        "category": "exchange-operations",
-        "title_en": "Kraken Details War-Game Stress Testing to Handle 10x Load",
-        "detailed_summary_en": "Kraken's engineering team published a blog post describing how they built and stress-tested their platform to handle 10 times normal load, emphasizing platform stability as the core product. The post serves as a teaser for a deeper technical look at their load-testing and scalability efforts. For a cryptocurrency exchange, surviving extreme traffic spikes is critical to user trust and operational continuity. This insight into Kraken's preparation shows how a major exchange institutionalizes resilience testing, offering a reference for other platforms facing similar scalability challenges. The blog post is currently a brief announcement, with the full technical deep-dive likely covering war-gaming methodology and load scenarios. No specific performance numbers or tools are mentioned in the teaser itself.",
-        "background_en": "In software engineering, 'war games' borrow from military exercises, where teams deliberately attack a system with parallel, adversarial test scenarios to uncover weaknesses. Load testing for cryptocurrency exchanges typically simulates high transaction volumes and API traffic to prevent downtime during periods of extreme activity, such as market volatility or major product launches.",
-        "title_zh": "Kraken 详述如何通过作战演练应对10倍负载",
-        "detailed_summary_zh": "Kraken 工程团队发布了一篇博文，介绍他们如何构建并压力测试平台以处理10倍于正常水平的负载，并强调平台稳定性就是核心产品。该文是一个预告，预示后续将更深入地介绍其负载测试和扩展性工作。 对加密货币交易所而言，在极端流量激增下保持运行对用户信任和业务连续性至关重要。 Kraken 的准备工作展示了一家主流交易所如何将韧性测试制度化，为面临类似扩展挑战的其他平台提供了参考。 该博文目前只是一个简短预告，完整的技术细节可能涵盖作战演练方法和负载场景。预告本身没有提及具体的性能数字或工具。",
-        "background_zh": "在软件工程中，“作战演练”借鉴了军事演习的做法，即团队以并行、对抗性的测试场景刻意攻击系统以发现弱点。加密货币交易所的负载测试通常模拟高交易量和 API 流量，以防止在市场剧烈波动或重大产品发布等极端活动期间出现停机。",
-        "sources": [
-          {
-            "url": "https://www.conf42.com/Chaos_Engineering_2024_Gabor_Gerencser_war_games",
-            "title": "Chaos engineering war games - prepare for the unexpected | Conf42"
-          },
-          {
-            "url": "https://loadfocus.com/blog/2017/12/how-to-load-test-your-cryptocurrency-exchange-service",
-            "title": "How to Load Test your Cryptocurrency Exchange Service"
-          },
-          {
-            "url": "https://www.devlane.com/blog/war-games-method-software-testing",
-            "title": "War Games Method in Software Testing - Devlane"
-          }
-        ]
-      },
-      "ai_score": 7.0,
-      "ai_reason": null,
-      "ai_summary": "Kraken's engineering team describes how they stress-tested and scaled their platform to handle 10x normal load, emphasizing stability as the core product.",
-      "ai_tags": []
-    },
-    {
-      "id": "rss:news.google.com_rss_search?q=site:anthropic.com+when:7d&hl=en-US&gl=US&ceid=US:en:2045ff6ee7371c23",
-      "source_type": "rss",
-      "title": "Improving Fable 5's biology safeguards - Anthropic",
-      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE95RXUtcVFIR1hIbmVDRk5sRDZEVWZSRTlXNXRMU1RXQk1JdE1kRzBMR3RuOGhzOVRZdEs2bGRIX3JIa1ZZbjlCbGx5RzlZRGdQZ3RwLXVidjZyZUpXeU1sM0hYeTQ2QW0zOXlCWnJQenFhZ0dEUFNFUA?oc=5",
-      "content": null,
-      "author": "Anthropic News",
-      "published_at": "2026-08-07T02:22:29Z",
-      "fetched_at": "2026-08-08T00:30:59.869495Z",
-      "metadata": {
-        "feed_name": "Anthropic News",
+        "discussion_url": "https://news.ycombinator.com/item?id=49216946",
         "category": "ai-labs",
-        "title_en": "Anthropic Cuts Fable 5 Biology False Positives by 85%",
-        "detailed_summary_en": "Anthropic announced updates to Fable 5's biology safeguards that sharply reduce false-positive safety triggers. In internal testing, biology-related model fallbacks dropped by about 85%, so users will encounter fewer switches to a less capable model after biology queries. This update shows how AI labs are balancing safety restrictions against usability for legitimate research. By reducing false positives, Anthropic makes advanced AI more practical for scientists and developers while still blocking high-risk dual-use content. The 85% reduction was reported from Anthropic's internal testing, and the company still bars sensitive dual-use areas such as virology and toxicology. The change specifically addresses 'fallbacks,' where the system switches to a less capable model after a biology-related query.",
-        "background_en": "AI safety safeguards often include filters that prevent models from giving harmful biological instructions. Overly strict filters can cause false positives, leading to 'fallbacks' that degrade the user experience. The AI-biology safety field includes both training-time guardrails that modify how models learn, and inference-time guardrails that filter outputs during generation. Anthropic's update reflects this broader effort to reduce misuse risks while preserving useful capabilities.",
-        "title_zh": "Anthropic 将 Fable 5 的生物学安全防护误报降低 85%",
-        "detailed_summary_zh": "Anthropic 宣布对 Fable 5 的生物学安全防护进行更新，大幅减少误报。内部测试中，与生物学相关的模型回退（fallback）减少了约85%，用户在进行生物学相关查询后，遇到切换至能力较弱的模型的情况会显著减少。 这一更新体现了 AI 实验室如何在安全限制与合法研究的可用性之间取得平衡。通过减少误报，Anthropic 使先进 AI 对科学家和开发者更加实用，同时仍然阻止高风险的通用（dual-use）内容。 据 Anthropic 内部测试数据，误报减少了85%，而公司仍限制病毒学、毒理学等敏感的通用（dual-use）领域。此次更新主要针对“回退”（fallback）现象，即系统在用户提出生物学相关查询后切换到能力较弱的模型。",
-        "background_zh": "AI 安全防护通常包含过滤器，防止模型提供有害的生物学指引。过于严格的过滤器会引发误报，导致“回退”现象，从而降低用户体验。AI 生物安全领域既包括在训练阶段改变模型学习方式的防护机制，也包括在生成时过滤输出的防护机制。Anthropic 的更新反映了这一更广泛的努力——在降低滥用风险的同时保留有用能力。",
+        "title_en": "US DOE Launches Genesis Open Models Initiative for Scientific Discovery",
+        "detailed_summary_en": "The U.S. Department of Energy launched the Genesis Open Models Initiative on August 7, 2026, to create open-weight foundation models for scientific research. In partnership with Arcee, it also unveiled the first model, Genesis-Science-1, and is requesting input from potential contributors. This is a significant move by the U.S. government into the open foundation model space, which has been dominated by industry labs and international players. It could accelerate scientific discovery by giving researchers access to transparent, open-weight AI models while reshaping the open-model ecosystem in the United States. The initiative is part of DOE's broader Genesis Mission and focuses on foundation models, which includes but is not limited to large language models. The first release, Genesis-Science-1, is an open-weight model for scientific research, though specific capabilities and benchmarks have not yet been disclosed.",
+        "background_en": "Open foundation models are AI models with publicly available weights that allow researchers to use, study, and fine-tune them. They offer benefits such as transparency, reduced market concentration, and accelerated innovation, and have become a focus of policy discussions. DOE's initiative aims to apply this approach to scientific research, leveraging the department's supercomputing resources and partnerships with vendors like Arcee.",
+        "community_discussion_en": "Commenters noted the lack of prominent American open-weight models in the current landscape and questioned why DOE is taking on this role. Some highlighted that the initiative may emphasize non-LLM foundation models, and discussed the challenges of competing with international open-weight models, especially given restrictions on Chinese models at DOE labs.",
+        "title_zh": "美国能源部启动Genesis开放模型计划以加速科学发现",
+        "detailed_summary_zh": "美国能源部于2026年8月7日启动了Genesis开放模型计划，旨在为科学研究创建开放权重的基础模型。该部门还与Arcee合作发布了首个模型Genesis-Science-1，并正在征求潜在贡献者的意见。 这是美国政府进入开放基础模型领域的重要举措，该领域此前主要由行业实验室和国际参与者主导。此举可能通过为研究人员提供透明、开放权重的AI模型来加速科学发现，并重塑美国的开放模型生态。 该计划是能源部更广泛Genesis任务的一部分，聚焦于基础模型（包含但不限于大语言模型）。首个发布的Genesis-Science-1是一个面向科学研究的开放权重模型，但具体能力和基准尚未公布。",
+        "background_zh": "开放基础模型是权重公开可用的AI模型，使研究人员能够使用、研究并微调它们。它们具有透明度高、降低市场集中度和加速创新等优势，已成为政策讨论的焦点。能源部的计划旨在将这种方法应用于科学研究，利用该部门的超级计算资源以及与Arcee等供应商的合作关系。",
+        "community_discussion_zh": "评论者指出当前美国缺乏突出的开放权重模型，并质疑能源部为何承担这一角色。一些人强调该计划可能侧重非大语言模型的基础模型，并讨论了与国际开放权重模型竞争的挑战，尤其是在能源部实验室对中国模型实施限制的背景下。",
         "sources": [
           {
-            "url": "https://www.anthropic.com/news/improving-fable-5-s-biology-safeguards",
-            "title": "Improving Fable 5 Safeguards \\ Anthropic"
+            "url": "https://www.energy.gov/undersecretaryforscience/articles/us-department-energy-launches-genesis-open-models-initiative",
+            "title": "U.S. Department of Energy Launches the Genesis Open Models..."
           },
           {
-            "url": "https://thenextweb.com/news/anthropic-claude-fable-5-biology-safeguards-fallbacks-dual-use",
-            "title": "Anthropic loosens Claude Fable 5's biology safeguards"
+            "url": "https://explainx.ai/blog/doe-genesis-open-models-arcee-trinity-science-ai-august-2026",
+            "title": "DOE Genesis Open Models: Government Enters... | explainx.ai"
           },
           {
-            "url": "https://www.frontiersin.org/journals/microbiology/articles/10.3389/fmicb.2025.1734561/full",
-            "title": "Frontiers | Without safeguards, AI-Biology integration risks accelerating future pandemics"
+            "url": "https://korshunov.ai/en/article/17154-u-s-department-of-energy-launches-genesis-open-models-initiative-and-unveils-1/",
+            "title": "U.S. Department of Energy launches Genesis Open Models Initiative..."
           }
         ]
       },
-      "ai_score": 7.0,
+      "ai_score": 7.5,
       "ai_reason": null,
-      "ai_summary": "Anthropic announces improvements to Fable 5's biology safeguards, focusing on reducing misuse risks.",
+      "ai_summary": "The U.S. Department of Energy launched the Genesis Open Models Initiative to develop open foundation models.",
+      "ai_tags": []
+    },
+    {
+      "id": "hackernews:story:49214098",
+      "source_type": "hackernews",
+      "title": "Assembly Hall of Shame",
+      "url": "https://github.com/xoreaxeaxeax/asm-hall-of-shame",
+      "content": null,
+      "author": "piotrgrabowski",
+      "published_at": "2026-08-07T18:01:30Z",
+      "fetched_at": "2026-08-08T15:33:59.203713Z",
+      "metadata": {
+        "discussion_url": "https://news.ycombinator.com/item?id=49214098",
+        "category": "tech-community",
+        "title_en": "Assembly Hall of Shame Showcases Bizarre x86 Instruction-Timing Tricks",
+        "detailed_summary_en": "Security researcher xoreaxeaxeax has published the Assembly Hall of Shame, a GitHub repository collecting bizarre and extreme x86 instruction-timing measurements and low-level timing tricks. The project quickly gained traction on Hacker News with 383 points and 94 comments. This work shines light on obscure x86 behaviors that matter for low-level programmers, OS developers, and security researchers. Understanding such timing anomalies can help in side-channel research, firmware security, and hardening against SMI-related latency attacks. The repository includes leaderboard-style timing results, with a current notable entry being a ~12 ms write to an ACPI I/O port that may actually be trapping into System Management Mode (SMM). The project rules exclude timing the handler of trapped, emulated, or virtualized instructions, so the true SMI overhead remains a disputed edge case.",
+        "background_en": "SMI (System Management Interrupt) is a special CPU interrupt that switches the processor into System Management Mode, a privileged firmware environment typically used for power management, hardware emulation, and system control. Because the OS cannot predict or control when an SMI arrives or how long SMM handling takes, SMIs can cause irregular latency spikes in real-time systems. Instruction-timing variations on x86 are also known to enable microarchitectural side-channel attacks, making projects like this useful for security research.",
+        "community_discussion_en": "Commenters point to related work such as smiiiiiiiiiiiiiiii, which uses slow instructions to break SMI, and note that old CPUs like the MC68000 could lock up forever waiting for a missing bus acknowledgement. Several users suspect the 12 ms ACPI I/O port write is really trapping to SMM, while others highlight the author’s other projects and the idea of Turing-complete x86 page-table tricks via trapcc.",
+        "title_zh": "Assembly Hall of Shame 展示古怪的 x86 指令计时技巧",
+        "detailed_summary_zh": "安全研究员 xoreaxeaxeax 发布了 Assembly Hall of Shame，这是一个收集各种古怪而极端的 x86 指令计时测量结果与底层时间技巧的 GitHub 仓库。该项目在 Hacker News 上迅速获得关注，获得 383 分和 94 条评论。 这项工作揭示了 x86 架构中一些容易被忽视的古怪行为，对底层程序员、操作系统开发者和安全研究人员都有价值。理解这类计时异常有助于侧信道研究、固件安全，以及针对 SMI 相关延迟攻击的加固。 该仓库以排行榜形式展示计时结果，其中引人注目的条目包括对 ACPI I/O 端口进行约 12 毫秒的写入，这实际上可能陷入系统管理模式（SMM）。项目规则要求被捕获、模拟或虚拟化的指令只能计时陷阱本身而不能计时处理程序，因此真正的 SMI 开销仍是一个有争议的边缘情况。",
+        "background_zh": "SMI（系统管理中断）是一种特殊的 CPU 中断，它使处理器进入系统管理模式（SMM），这是一种通常用于电源管理、硬件仿真和系统控制的高特权固件环境。由于操作系统无法预测或控制 SMI 何时到来，也无法控制 SMM 处理过程持续多久，SMI 会导致实时系统中出现不规则的延迟尖峰。x86 上的指令计时差异还被认为可被用于微架构侧信道攻击，因此这类项目对安全研究很有价值。",
+        "community_discussion_zh": "评论者提到了相关项目，例如用慢速指令破坏 SMI 的 smiiiiiiiiiiiiiiii，并指出 MC68000 等老 CPU 可能因等待不会到来的总线应答而永久锁死。有用户怀疑约 12 毫秒的 ACPI I/O 端口写入实际上是在陷入 SMM，还有人提到作者的其他项目，以及通过 trapcc 实现 x86 页表技巧达到图灵完备的想法。",
+        "sources": [
+          {
+            "url": "https://www.computerhope.com/jargon/s/smi.htm",
+            "title": "What Is SMI? | Computer Hope"
+          },
+          {
+            "url": "https://wiki.linuxfoundation.org/_export/xhtml/realtime/documentation/howto/debugging/smi-latency/start",
+            "title": "realtime:documentation:howto:debugging:smi-latency:start"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/Timing_attack",
+            "title": "Timing attack - Wikipedia"
+          }
+        ]
+      },
+      "ai_score": 7.5,
+      "ai_reason": null,
+      "ai_summary": "Assembly Hall of Shame showcases bizarre and clever x86 instruction-timing tricks, including attempts to break SMI and other low-level abuses.",
+      "ai_tags": []
+    },
+    {
+      "id": "hackernews:story:49214008",
+      "source_type": "hackernews",
+      "title": "DeepSeek V4 Flash 0731",
+      "url": "https://arcprize.org/results/deepseek-v4-flash-0731",
+      "content": null,
+      "author": "tosh",
+      "published_at": "2026-08-07T17:56:20Z",
+      "fetched_at": "2026-08-08T15:33:59.203637Z",
+      "metadata": {
+        "discussion_url": "https://news.ycombinator.com/item?id=49214008",
+        "category": "ai-labs",
+        "title_en": "DeepSeek Releases V4 Flash 0731: Fast, Cheap, and Strong at Coding",
+        "detailed_summary_en": "DeepSeek released the V4 Flash 0731 model on July 31, an update to its fast, low-cost lineup. Users report strong performance for coding, debugging, and data analysis, and Hugging Face benchmarks show it outperforms DeepSeek-V4-Pro (Preview) despite a far smaller activated parameter count. This release matters because it brings near-top-tier model performance at very low cost, making AI-assisted development accessible to individuals and small teams. It also intensifies price competition among AI labs and could further erode the pricing power of proprietary models like Claude and GPT. The model is available on Hugging Face, ModelScope, and providers such as OpenRouter, Fireworks AI, and the Pi coding agent, with cached-token pricing as low as 20% of uncached on some platforms. Community benchmarks report roughly 8k tokens/s prefill and 250 tokens/s on a single stream on dual RTX Pro 6000 Blackwell GPUs, and the model can also run locally on a single RTX 4060 with INT4 quantization.",
+        "background_en": "DeepSeek is a Chinese AI lab known for open-weight models built on a Mixture-of-Experts (MoE) architecture that activates only a fraction of parameters per token. V4 Flash is a cost-optimized variant designed for speed and low inference cost, while V4 Pro targets higher peak performance. The 0731 release is a fast-follow update to the earlier V4 preview, improving real-world usefulness for coding, debugging, and document analysis.",
+        "community_discussion_en": "Commenters were largely enthusiastic: one user said the model is 'good enough to use for almost everything' and cheap enough that costs are irrelevant, while another called the speed 'the killer feature' after a week of local use. Others highlighted caching-driven cost savings on providers like Fireworks AI, though at least one user complained that recent GitHub Copilot versions are poor by comparison and noted that third-party harnesses like Cline are needed in VS Code.",
+        "title_zh": "DeepSeek 发布 V4 Flash 0731：快速、便宜且擅长编程的模型",
+        "detailed_summary_zh": "DeepSeek 于 7 月 31 日发布了 V4 Flash 0731 模型，这是其快速、低成本模型系列的一次更新。用户反馈它在编程、调试和数据分析方面表现强劲，Hugging Face 基准测试显示，尽管激活参数量远小于 V4-Pro（预览版），它仍然在多项基准上超越后者。 此次发布意义重大，因为它以极低的成本带来了接近顶级模型的性能，让个人和小团队也能轻松使用 AI 辅助开发。它还会加剧各大 AI 实验室之间的价格竞争，并可能进一步削弱 Claude、GPT 等闭源模型的定价能力。 该模型已在 Hugging Face、ModelScope 以及 OpenRouter、Fireworks AI 和 Pi 编程代理等平台上线，部分平台的缓存命中定价低至未缓存价格的 20%。社区基准测试显示，在双 RTX Pro 6000 Blackwell GPU 上，预填充速度约为 8k token/s，单流生成约 250 token/s；该模型还能通过 INT4 量化在单张 RTX 4060 上本地运行。",
+        "background_zh": "DeepSeek 是一家以开放权重模型闻名的中国 AI 实验室，其模型基于混合专家（MoE）架构，每个 token 只激活一小部分参数。V4 Flash 是为速度和低成本推理而优化的版本，而 V4 Pro 则追求更高的峰值性能。0731 版本是对此前 V4 预览版的快速跟进更新，提升了编程、调试和文档分析等实际场景中的实用性。",
+        "community_discussion_zh": "评论区整体反馈热烈：有用户表示该模型“几乎什么任务都够用”，而且便宜到“成本可以忽略不计”；另一位用户在使用一周后称“速度是杀手级特性”。还有人强调 Fireworks AI 等平台上缓存机制大幅降低成本；不过也有用户抱怨相比之下新版 GitHub Copilot 表现不佳，并指出在 VS Code 中需要使用 Cline 等第三方工具。",
+        "sources": [
+          {
+            "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731",
+            "title": "deepseek-ai/DeepSeek-V4-Flash-0731 · Hugging Face"
+          },
+          {
+            "url": "https://openrouter.ai/deepseek/deepseek-v4-flash",
+            "title": "DeepSeek V4 Flash - API Pricing & Benchmarks | OpenRouter"
+          },
+          {
+            "url": "https://openmodelmap.com/model/unsloth/DeepSeek-V4-Flash",
+            "title": "DeepSeek-V4-Flash | Benchmarks | OpenModelMap"
+          }
+        ]
+      },
+      "ai_score": 7.5,
+      "ai_reason": null,
+      "ai_summary": "DeepSeek released V4 Flash 0731, an updated fast and cheap AI model, with users reporting strong performance for coding, debugging, and data analysis at minimal cost.",
       "ai_tags": []
     }
   ],
