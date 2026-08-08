@@ -17,7 +17,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#0b1020">
+    <meta name="theme-color" content="#111214">
     {% if page.noindex %}
     <meta name="robots" content="noindex, nofollow">
     {% endif %}
@@ -50,11 +50,10 @@
           data-i18n-aria-zh="BMTNews 首页"
           data-i18n-aria-en="BMTNews Home"
         >
-          <span class="site-brand-mark" aria-hidden="true">B</span>
           <span class="site-brand-copy">
             <strong>BMTNews</strong>
-            <small>Crypto Market News</small>
           </span>
+          <span class="site-brand-domain" aria-hidden="true">bmt.news</span>
         </a>
 
         <nav
@@ -106,15 +105,13 @@
     </header>
 
     {% if page.lang %}
-      <section class="page-intro">
+      <section class="page-intro page-intro-edition">
         <div class="page-intro-inner">
           <div>
-            <p class="eyebrow">DAILY CRYPTO INTELLIGENCE</p>
-            <h1>BMTNews</h1>
+            <h1>{{ page.date | date: "%Y.%m.%d" }}</h1>
           </div>
           <div class="page-intro-meta">
-            <span>{{ page.date | date: "%Y-%m-%d" }}</span>
-            <span>{% if page.lang == "zh" %}交易所 · 市场 · 安全 · 监管 · 协议{% else %}Exchanges · Markets · Security · Regulation · Protocols{% endif %}</span>
+            <span>{% if page.lang == "zh" %}日报存档{% else %}Edition archive{% endif %}</span>
           </div>
         </div>
       </section>

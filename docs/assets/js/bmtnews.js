@@ -741,10 +741,95 @@
     updateThemeButtonLabel();
   }
 
+  /* Scrollspy: highlight the ranking-rail entry for the story being read. */
+  var scrollspyObserver = null;
+  var observedArticles = typeof WeakSet === 'function' ? new WeakSet() : null;
+
+  function setActiveHeadline(articleId) {
+    if (!articleId) return;
+    document.querySelectorAll('.headline-list > li').forEach(function (item) {
+      var anchor = item.querySelector('a[href^="#"]');
+      var matches = anchor && anchor.getAttribute('href') === '#' + articleId;
+      item.classList.toggle('active', Boolean(matches));
+    });
+  }
+
+  function observeArticles(root) {
+    if (!('IntersectionObserver' in window)) return;
+    if (!scrollspyObserver) {
+      scrollspyObserver = new IntersectionObserver(function (entries) {
+        var best = null;
+        entries.forEach(function (entry) {
+          if (!entry.isIntersecting) return;
+          if (!best || entry.intersectionRatio > best.intersectionRatio) {
+            best = entry;
+          }
+        });
+        if (best) setActiveHeadline(best.target.id);
+      }, { rootMargin: '-15% 0px -65% 0px', threshold: [0, 0.25, 0.5, 1] });
+    }
+    (root || document).querySelectorAll('.digest-item[id]').forEach(function (article) {
+      if (observedArticles) {
+        if (observedArticles.has(article)) return;
+        observedArticles.add(article);
+      }
+      scrollspyObserver.observe(article);
+    });
+  }
+
+  function setupScrollspy() {
+    observeArticles(document);
+    var stream = document.querySelector('.day-stream');
+    if (stream && 'MutationObserver' in window) {
+      new MutationObserver(function () {
+        observeArticles(stream);
+      }).observe(stream, { childList: true, subtree: true });
+    }
+  }
+
+  /* Keyboard navigation: j/k jump between stories, respecting filters. */
+  function setupKeyboardNav() {
+    document.addEventListener('keydown', function (event) {
+      if (event.defaultPrevented || event.altKey || event.ctrlKey || event.metaKey) return;
+      if (event.key !== 'j' && event.key !== 'k') return;
+      var target = event.target;
+      if (
+        target &&
+        (target.tagName === 'INPUT' ||
+          target.tagName === 'TEXTAREA' ||
+          target.isContentEditable)
+      ) {
+        return;
+      }
+      var articles = Array.prototype.filter.call(
+        document.querySelectorAll('.digest-item[id]'),
+        function (article) {
+          return !article.hidden && article.offsetParent !== null;
+        }
+      );
+      if (!articles.length) return;
+      var line = 70;
+      var current = -1;
+      for (var i = 0; i < articles.length; i++) {
+        if (articles[i].getBoundingClientRect().top <= line + 1) {
+          current = i;
+        } else {
+          break;
+        }
+      }
+      var next = event.key === 'j'
+        ? Math.min(current + 1, articles.length - 1)
+        : Math.max(current - 1, 0);
+      articles[next].scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
+  }
+
   document.addEventListener('DOMContentLoaded', function () {
     setupThemeToggle();
     setupInterfaceLanguage();
     enhanceDailyFeeds();
+    setupScrollspy();
+    setupKeyboardNav();
     document.documentElement.classList.add('feed-ready');
   });
 })();
