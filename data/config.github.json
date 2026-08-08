@@ -102,6 +102,27 @@
         "name": "CoinDesk",
         "url": "https://www.coindesk.com/arc/outboundfeeds/rss/",
         "enabled": true,
+        "category": "crypto-markets",
+        "content_extractor": "trafilatura"
+      },
+      {
+        "name": "The Block",
+        "url": "https://www.theblock.co/rss.xml",
+        "enabled": true,
+        "category": "crypto-markets",
+        "content_extractor": "trafilatura"
+      },
+      {
+        "name": "Blockworks",
+        "url": "https://blockworks.co/feed",
+        "enabled": true,
+        "category": "crypto-markets",
+        "content_extractor": "trafilatura"
+      },
+      {
+        "name": "Wu Blockchain",
+        "url": "https://wublock.substack.com/feed",
+        "enabled": true,
         "category": "crypto-markets"
       },
       {
@@ -185,20 +206,23 @@
       {
         "name": "Decrypt",
         "url": "https://decrypt.co/feed",
-        "enabled": false,
-        "category": "crypto-markets"
+        "enabled": true,
+        "category": "crypto-markets",
+        "content_extractor": "trafilatura"
       },
       {
         "name": "Cointelegraph",
         "url": "https://cointelegraph.com/rss",
-        "enabled": false,
-        "category": "crypto-markets"
+        "enabled": true,
+        "category": "crypto-markets",
+        "content_extractor": "trafilatura"
       },
       {
         "name": "Bitcoin Magazine",
         "url": "https://bitcoinmagazine.com/.rss/full/",
-        "enabled": false,
-        "category": "crypto-protocols"
+        "enabled": true,
+        "category": "crypto-protocols",
+        "content_extractor": "trafilatura"
       }
     ],
     "reddit": {
@@ -259,25 +283,25 @@
         {
           "channel": "binance_announcements",
           "enabled": true,
-          "fetch_limit": 10,
+          "fetch_limit": 20,
           "category": "exchange-announcements"
         },
         {
           "channel": "OKXAnnouncements",
           "enabled": true,
-          "fetch_limit": 8,
+          "fetch_limit": 15,
           "category": "exchange-announcements"
         },
         {
           "channel": "Bybit_Announcements",
           "enabled": true,
-          "fetch_limit": 8,
+          "fetch_limit": 15,
           "category": "exchange-announcements"
         },
         {
           "channel": "hyperliquid_announcements",
           "enabled": true,
-          "fetch_limit": 10,
+          "fetch_limit": 20,
           "category": "exchange-announcements"
         }
       ]
@@ -307,7 +331,7 @@
       "category": "crypto-protocols"
     },
     "gdelt": {
-      "enabled": false,
+      "enabled": true,
       "query": "(cryptocurrency OR bitcoin OR ethereum OR stablecoin OR blockchain)",
       "mode": "ArtList",
       "max_records": 35,
@@ -317,7 +341,7 @@
       "category": "crypto-markets"
     },
     "google_news": {
-      "enabled": false,
+      "enabled": true,
       "query": "(Binance OR OKX OR Bybit OR Coinbase OR Kraken) (listing OR delisting OR maintenance OR security OR regulation)",
       "language": "en",
       "country": "US",
@@ -335,6 +359,7 @@
     "minimum_candidate_items": 20,
     "minimum_qualified_items": 7,
     "minimum_display_items": 7,
+    "low_signal_minimum_items": 5,
     "fallback_window_hours": 36,
     "primary_group_borrow_limit": 6,
     "max_items_per_source": 3,

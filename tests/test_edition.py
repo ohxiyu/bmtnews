@@ -461,8 +461,10 @@ def test_workflows_stage_twice_and_publish_once() -> None:
         root / ".github" / "workflows" / "daily-summary.yml"
     ).read_text(encoding="utf-8")
 
-    assert "cron: '30 0,16 * * *'" in collection
+    assert "cron: '30 0,4,12,16,20 * * *'" in collection
     assert "17 2,8,14" not in collection
+    assert "staging-cache" in collection
+    assert "staging-cache" in publication
     assert "horizon --mode fetch --hours 12" in collection
     assert "\n  schedule:" not in publication
     assert "args=(--mode publish --hours 24 --cutoff-hour 8)" in publication

@@ -516,6 +516,7 @@ class FilteringConfig(BaseModel):
     minimum_candidate_items: Optional[int] = Field(default=None, gt=0)
     minimum_qualified_items: Optional[int] = Field(default=None, gt=0)
     minimum_display_items: Optional[int] = Field(default=None, gt=0)
+    low_signal_minimum_items: Optional[int] = Field(default=None, gt=0)
     fallback_window_hours: Optional[int] = Field(default=None, gt=0)
     primary_group_borrow_limit: Optional[int] = Field(default=None, gt=0)
     max_items_per_source: Optional[int] = Field(default=None, gt=0)
@@ -568,6 +569,12 @@ class FilteringConfig(BaseModel):
             and self.minimum_display_items > self.max_items
         ):
             raise ValueError("minimum_display_items cannot exceed max_items")
+        if (
+            self.low_signal_minimum_items is not None
+            and self.max_items is not None
+            and self.low_signal_minimum_items > self.max_items
+        ):
+            raise ValueError("low_signal_minimum_items cannot exceed max_items")
         if (
             self.fallback_window_hours is not None
             and self.fallback_window_hours <= max(24, self.time_window_hours)

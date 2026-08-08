@@ -162,7 +162,7 @@ def test_updates_telegram_channel_without_losing_limits(production_config):
 
     updated = _source_pointers(config)[result["source_key"]].item
     assert updated["channel"] == "OKX_Announcements"
-    assert updated["fetch_limit"] == 8
+    assert updated["fetch_limit"] == 15
 
 
 def test_partial_update_preserves_unspecified_fields(production_config):

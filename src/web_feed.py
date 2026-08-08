@@ -8,6 +8,7 @@ from typing import Iterable
 from urllib.parse import quote, urlsplit
 from zoneinfo import ZoneInfo
 
+from .market_snapshot import MarketSnapshot
 from .models import ContentItem
 
 
@@ -293,6 +294,46 @@ def _render_article(
     return article, headline
 
 
+def _market_snapshot_html(
+    market: MarketSnapshot | None,
+    language: str,
+) -> str:
+    if market is None:
+        return ""
+
+    def _asset(symbol: str, price: float, change: float | None) -> str:
+        change_html = ""
+        if change is not None:
+            direction = "up" if change >= 0 else "down"
+            change_html = (
+                f' <span class="market-change" data-direction="{direction}">'
+                f"{change:+.1f}%</span>"
+            )
+        return (
+            '<span class="market-asset">'
+            f"<strong>{symbol}</strong> ${price:,.0f}{change_html}</span>"
+        )
+
+    parts = [
+        _asset("BTC", market.btc_price, market.btc_change_24h),
+        _asset("ETH", market.eth_price, market.eth_change_24h),
+    ]
+    if market.fear_greed_value is not None:
+        fg_name = "恐惧贪婪" if language == "zh" else "Fear & Greed"
+        label = market.fear_greed_label_for(language)
+        label_html = f" {_escape(label)}" if label else ""
+        parts.append(
+            '<span class="market-asset">'
+            f"<strong>{fg_name}</strong> {market.fear_greed_value}"
+            f"{label_html}</span>"
+        )
+    return (
+        '<div class="market-snapshot" role="note">'
+        + "".join(parts)
+        + "</div>"
+    )
+
+
 def render_web_feed(
     items: Iterable[ContentItem],
     *,
@@ -300,6 +341,8 @@ def render_web_feed(
     total_fetched: int,
     language: str,
     display_timezone: str,
+    overview: str | None = None,
+    market: MarketSnapshot | None = None,
 ) -> str:
     """Render the final feed markup so browsers do not rebuild the DOM."""
     normalized_language = "en" if language.lower().startswith("en") else "zh"
@@ -356,9 +399,14 @@ def render_web_feed(
             f"{total_fetched} candidates."
         )
     display_date = date.replace("-", ".")
+    overview_html = (
+        f'<p class="feed-overview">{_escape(overview)}</p>' if overview else ""
+    )
     return (
         '<div class="feed-toolbar feed-rendered-static" '
         'data-feed-render-version="2">'
+        f"{_market_snapshot_html(market, normalized_language)}"
+        f"{overview_html}"
         f'<p class="feed-selection-note">{_escape(selection_note)}</p>'
         '<div class="digest-filter-host">'
         '<div class="category-filters" data-static-filters>'

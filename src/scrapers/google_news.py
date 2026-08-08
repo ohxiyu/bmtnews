@@ -38,6 +38,7 @@ import feedparser
 import httpx
 
 from .base import BaseScraper
+from .google_news_url import canonicalize_entry_link
 from ..models import ContentItem, GoogleNewsConfig, SourceType
 
 logger = logging.getLogger(__name__)
@@ -141,6 +142,7 @@ class GoogleNewsScraper(BaseScraper):
             link = (entry.get("link") or "").strip()
             if not link:
                 return None
+            link = canonicalize_entry_link(link)
 
             published = self._parse_date(entry)
             if published is None:
