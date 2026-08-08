@@ -32,6 +32,10 @@ _LABELS = {
         "empty": "今日暂无达到展示阈值的重要资讯。",
         "editorial": "编辑精选",
         "sponsored": "广告",
+        "thread_day": "事件线 · 第 {day} 天",
+        "sources_confirmed": "{count} 源确认",
+        "single_source": "单一来源",
+        "market_impact": "市场影响",
     },
     "en": {
         "all": "All",
@@ -49,6 +53,10 @@ _LABELS = {
         "empty": "No stories met today’s publication threshold.",
         "editorial": "Editor's Pick",
         "sponsored": "Sponsored",
+        "thread_day": "Thread · day {day}",
+        "sources_confirmed": "{count} sources",
+        "single_source": "Single source",
+        "market_impact": "Market impact",
     },
 }
 
@@ -201,11 +209,45 @@ def _references_html(item: ContentItem, language: str) -> str:
     )
 
 
+def _provenance_html(item: ContentItem, language: str) -> str:
+    """Show how many independent sources carried the same story."""
+    labels = _LABELS[language]
+    merged = item.metadata.get("merged_sources")
+    count = len(merged) if isinstance(merged, list) else 1
+    if count > 1:
+        text = labels["sources_confirmed"].format(count=count)
+        return f'<span class="provenance is-confirmed">{_escape(text)}</span>'
+    return (
+        f'<span class="provenance">{_escape(labels["single_source"])}</span>'
+    )
+
+
+def _thread_html(item: ContentItem, language: str) -> str:
+    """Link a continuing story to its thread page."""
+    thread_id = item.metadata.get("thread_id")
+    day = item.metadata.get("thread_day") or 1
+    if not thread_id or not isinstance(day, int) or day < 2:
+        return ""
+    labels = _LABELS[language]
+    prefix = "" if language == "zh" else "/en"
+    text = labels["thread_day"].format(day=day)
+    return (
+        f'<a class="thread-pill" href="{prefix}/threads/{_escape(thread_id)}/">'
+        f"{_escape(text)}</a>"
+    )
+
+
 def _details_html(item: ContentItem, language: str) -> str:
     labels = _LABELS[language]
     sections: list[str] = []
     background = _localized_text(item, "background", language)
     discussion = _localized_text(item, "community_discussion", language)
+    market_impact = _localized_text(item, "market_impact", language)
+    if market_impact:
+        sections.append(
+            f'<section><h3>{labels["market_impact"]}</h3>'
+            f"<p>{_escape(market_impact)}</p></section>"
+        )
     if background:
         sections.append(
             f'<section><h3>{labels["background"]}</h3>'
@@ -284,13 +326,16 @@ def _render_article(
         '<div class="digest-item-content">'
         '<div class="digest-item-meta"><div>'
         f'<span class="category-pill" data-category="{category}">'
-        f"{labels[category]}</span>{priority}</div>"
+        f"{labels[category]}</span>{priority}"
+        f"{_thread_html(item, language)}</div>"
         f'<span class="score-badge" data-tier="{_score_tier(score)}" '
         f'aria-label="Score {score_label} out of 10">{score_label}</span>'
         "</div>"
         f"<h2>{title_html}</h2>"
         f'<p class="story-summary-body">{_escape(summary)}</p>'
-        f'<p class="source-line">{_source_html(item, language=language, display_timezone=display_timezone)}</p>'
+        f'<p class="source-line">'
+        f"{_source_html(item, language=language, display_timezone=display_timezone)}"
+        f" · {_provenance_html(item, language)}</p>"
         f"{_details_html(item, language)}"
         "</div>"
         "</article>"

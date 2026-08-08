@@ -39,7 +39,7 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v6
 
-      - name: Restore published daily state
+      - name: Restore published daily state and archive
         shell: bash
         run: |
           git fetch --depth=1 origin gh-pages:refs/remotes/origin/gh-pages
@@ -47,6 +47,11 @@ jobs:
             mkdir -p docs/_data
             git show "origin/gh-pages:_data/bmtnews_state.json" > docs/_data/bmtnews_state.json
           fi
+          # The cross-day archive powers threads, entity pages, and the API.
+          mkdir -p docs/_data/archive
+          for path in $(git ls-tree -r --name-only origin/gh-pages -- _data/archive 2>/dev/null); do
+            git show "origin/gh-pages:${path}" > "docs/${path}"
+          done
 
       - name: Restore staged source items
         uses: actions/cache@v5
@@ -96,6 +101,11 @@ jobs:
           HORIZON_WEBHOOK_URL: ${{ secrets.HORIZON_WEBHOOK_URL }}
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHANNEL_ID: ${{ secrets.TELEGRAM_CHANNEL_ID }}
+          # Only used when x_delivery.enabled is true in the config.
+          X_CONSUMER_KEY: ${{ secrets.X_CONSUMER_KEY }}
+          X_CONSUMER_SECRET: ${{ secrets.X_CONSUMER_SECRET }}
+          X_ACCESS_TOKEN: ${{ secrets.X_ACCESS_TOKEN }}
+          X_ACCESS_SECRET: ${{ secrets.X_ACCESS_SECRET }}
         shell: bash
         run: |
           args=(--mode publish --hours 24 --cutoff-hour 8)

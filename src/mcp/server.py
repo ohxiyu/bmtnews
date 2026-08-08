@@ -8,6 +8,7 @@ from typing import Any, Awaitable, Callable
 
 from mcp.server.fastmcp import FastMCP
 
+from . import archive_tools
 from .errors import HorizonMcpError
 from .service import HorizonPipelineService
 
@@ -374,6 +375,90 @@ def hz_get_run_summary(run_id: str, language: str = "zh") -> dict[str, Any]:
             error_code=payload["error"]["code"],
         )
         return payload
+
+
+def _archive_tool(tool: str, runner: Callable[[], dict[str, Any]]) -> dict[str, Any]:
+    """Run one read-only archive query with the shared metrics wrapper."""
+    started = perf_counter()
+    try:
+        data = runner()
+        elapsed_ms = (perf_counter() - started) * 1000
+        _record_metrics(tool, ok=True, duration_ms=elapsed_ms)
+        return _ok(tool, data, duration_ms=elapsed_ms)
+    except Exception as exc:
+        elapsed_ms = (perf_counter() - started) * 1000
+        payload = _err(tool, exc, duration_ms=elapsed_ms)
+        _record_metrics(
+            tool,
+            ok=False,
+            duration_ms=elapsed_ms,
+            error_code=payload["error"]["code"],
+        )
+        return payload
+
+
+@mcp.tool()
+def hz_search_archive(
+    query: str = "",
+    since: str | None = None,
+    until: str | None = None,
+    category: str | None = None,
+    min_score: float | None = None,
+    limit: int = 20,
+) -> dict[str, Any]:
+    """Search published editions by text, date range, category, or score."""
+
+    return _archive_tool(
+        "hz_search_archive",
+        lambda: archive_tools.search_archive(
+            query,
+            since=since,
+            until=until,
+            category=category,
+            min_score=min_score,
+            limit=limit,
+        ),
+    )
+
+
+@mcp.tool()
+def hz_get_thread(thread_id: str) -> dict[str, Any]:
+    """Read the full cross-day timeline of one story thread."""
+
+    return _archive_tool(
+        "hz_get_thread",
+        lambda: archive_tools.get_thread(thread_id),
+    )
+
+
+@mcp.tool()
+def hz_list_threads(days: int = 30, limit: int = 20) -> dict[str, Any]:
+    """List recent multi-day story threads."""
+
+    return _archive_tool(
+        "hz_list_threads",
+        lambda: archive_tools.list_threads(days=days, limit=limit),
+    )
+
+
+@mcp.tool()
+def hz_get_entity(name: str, limit: int = 30) -> dict[str, Any]:
+    """Read archived coverage for one entity (company, protocol, regulator)."""
+
+    return _archive_tool(
+        "hz_get_entity",
+        lambda: archive_tools.get_entity(name, limit=limit),
+    )
+
+
+@mcp.tool()
+def hz_list_entities(days: int = 60, limit: int = 40) -> dict[str, Any]:
+    """List recurring entities in the recent archive."""
+
+    return _archive_tool(
+        "hz_list_entities",
+        lambda: archive_tools.list_entities(days=days, limit=limit),
+    )
 
 
 @mcp.tool()

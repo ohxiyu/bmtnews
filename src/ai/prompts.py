@@ -119,6 +119,60 @@ Ranked stories:
 
 Respond with the paragraph only — no JSON, no quotes, no markdown."""
 
+WEEKLY_DIGEST_SYSTEM = """You write the weekly review for a crypto-market intelligence briefing.
+
+You are given every story published in the past week, ranked by day and by importance score, plus the multi-day threads that developed. Write a review that a reader who skipped the week could read in two minutes and understand what actually mattered.
+
+Structure (use these section headings exactly, in the requested language):
+1. 本周主线 / The Week's Throughline — one paragraph: the single most consequential development and why
+2. 持续追踪 / Continuing Threads — 2-4 bullets on the multi-day threads, each naming what changed
+3. 值得记住 / Worth Remembering — 2-4 bullets on stories whose importance may only become clear later
+
+Rules:
+- Markdown only: headings as `## `, bullets as `- `. No tables, no HTML, no emoji
+- Be concrete: name entities, amounts, outcomes. No filler like "many developments occurred"
+- This is analysis of what happened, not investment advice: no buy/sell/hold recommendations, no price predictions
+- No meta commentary about the source material or about being an AI
+- Write entirely in the requested language"""
+
+WEEKLY_DIGEST_USER = """Write the weekly review in {language_name} for the week ending {date}.
+
+Stories published this week (date, score, title, summary):
+{items}
+
+Multi-day threads:
+{threads}
+
+Respond with the Markdown body only — no front matter, no code fences."""
+
+SCORE_CALIBRATION_SYSTEM = """You audit the scoring accuracy of an automated news curator.
+
+You are given stories the curator scored highly and stories it scored low, plus which of them later turned into multi-day threads (a proxy for real-world importance: a story that kept generating coverage usually mattered).
+
+Produce a short, concrete calibration review for the human maintainer:
+- Which high-scored stories look overrated in hindsight (scored high, no follow-up, routine in character)
+- Which low-scored stories look underrated (scored low but developed into threads)
+- 2-4 specific, actionable adjustments to the scoring rubric, each phrased as a rule the curator could apply next week
+
+Rules:
+- Markdown only: `## ` headings, `- ` bullets
+- Cite specific story titles as evidence for every claim
+- If the evidence is too thin for a conclusion, say so plainly instead of inventing patterns
+- No investment advice, no price commentary"""
+
+SCORE_CALIBRATION_USER = """Audit the scoring for the week ending {date}.
+
+High-scored stories (score >= {high_threshold}):
+{high_items}
+
+Low-scored stories (score < {high_threshold}):
+{low_items}
+
+Stories that became multi-day threads:
+{threads}
+
+Respond with the Markdown review only."""
+
 CONCEPT_EXTRACTION_SYSTEM = """You identify technical concepts in news that a reader might not know.
 Given a news item, return 1-3 search queries for concepts that need explanation.
 Focus on: specific technologies, protocols, algorithms, tools, or projects that are not widely known.
@@ -148,6 +202,7 @@ Provide EACH text field in BOTH English and Chinese. Use the following key namin
 - key_details_en / key_details_zh
 - background_en / background_zh
 - community_discussion_en / community_discussion_zh
+- market_impact_en / market_impact_zh
 
 Field definitions:
 0. **title** (one short phrase, ≤15 words): A clear, accurate headline for the news item.
@@ -161,6 +216,8 @@ Field definitions:
 4. **background** (2-4 sentences): Brief background knowledge that helps a reader without deep domain expertise understand the news. Explain key concepts, technologies, or context that the news assumes the reader already knows.
 
 5. **community_discussion** (1-3 sentences): If community comments are provided, summarize the overall sentiment and key viewpoints from the discussion — agreements, disagreements, concerns, additional insights, or notable counterarguments. If no comments are provided, return an empty string.
+
+6. **market_impact** (1-2 sentences): Explain the transmission mechanism to crypto markets — which assets, venues, or market segments are exposed, through what channel (liquidity, custody, regulation, supply, sentiment), and on what horizon. This is analysis of what happened, NOT investment advice: never recommend buying, selling, or holding, never predict prices or state directional targets, and never imply certainty about future moves. When a story has no plausible market transmission path (e.g. a pure developer-tooling release), return an empty string rather than inventing one.
 
 **CRITICAL — Language rules (MUST follow):**
 - All *_en fields MUST be written in English.
@@ -207,5 +264,7 @@ Respond with valid JSON only. Each _en field must be in English; each _zh field 
   "background_zh": "<用中文写2-4句话，或空字符串>",
   "community_discussion_en": "<1-3 sentences in English, or empty string>",
   "community_discussion_zh": "<用中文写1-3句话，或空字符串>",
+  "market_impact_en": "<1-2 sentences of market transmission analysis in English, or empty string>",
+  "market_impact_zh": "<用中文写1-2句市场影响传导分析，或空字符串>",
   "sources": ["<url from search results>", "..."]
 }}"""
