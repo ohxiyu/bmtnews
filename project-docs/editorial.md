@@ -15,8 +15,12 @@
 1. GitHub → Settings → Developer settings → **Fine-grained tokens** → Generate new token
 2. Repository access 选 **Only select repositories** → `ohxiyu/bmtnews`
 3. Permissions → Repository permissions → **Contents: Read and write**（其余保持 No access）
-4. 生成后复制，在 /admin/ 登录界面选择 token 登录方式粘贴即可（浏览器本地保存，
-   不经过任何第三方服务器）
+4. 生成后复制，在 /admin/ 登录界面点 **「Sign In with Token」按钮**（不是
+   "Sign In with GitHub"）粘贴即可（浏览器本地保存，不经过任何第三方服务器）
+
+> ⚠️ 登录界面上的 **"Sign In with GitHub"** 按钮走 OAuth 流程，在完成下面的
+> 「一键 GitHub 授权登录」配置之前点它会得到 Not Found —— 请用
+> **"Sign In with Token"**。
 
 ### 可选：一键 GitHub 授权登录（免 token）
 
