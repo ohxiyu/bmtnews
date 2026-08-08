@@ -2,12 +2,64 @@
 
 from datetime import timezone
 import html
+import logging
 import re
 from typing import Dict, List, Optional
 from urllib.parse import quote, urlsplit
 from zoneinfo import ZoneInfo
 
 from ..models import ContentItem
+
+logger = logging.getLogger(__name__)
+
+_OVERVIEW_MAX_CHARS = 1200
+
+
+async def generate_edition_overview(
+    ai_client,
+    items: List[ContentItem],
+    *,
+    date: str,
+    language: str,
+) -> Optional[str]:
+    """Generate the one-paragraph lede shown above the daily edition.
+
+    Best-effort: returns None on any failure or implausible output so the
+    page simply omits the lede.
+    """
+    if not items:
+        return None
+    from .prompts import EDITION_OVERVIEW_SYSTEM, EDITION_OVERVIEW_USER
+
+    lines = []
+    for index, item in enumerate(items, start=1):
+        title = item.metadata.get(f"title_{language}") or item.title
+        summary = (
+            item.metadata.get(f"whats_new_{language}")
+            or item.ai_summary
+            or ""
+        )
+        score = f"{item.ai_score:.1f}" if item.ai_score is not None else "?"
+        lines.append(f"{index}. [{score}/10] {title} — {summary}")
+
+    language_name = "Simplified Chinese (简体中文)" if language == "zh" else "English"
+    try:
+        response = await ai_client.complete(
+            system=EDITION_OVERVIEW_SYSTEM,
+            user=EDITION_OVERVIEW_USER.format(
+                date=date,
+                language_name=language_name,
+                items="\n".join(lines),
+            ),
+        )
+    except Exception as exc:
+        logger.warning("Edition overview generation failed: %s", exc)
+        return None
+
+    text = " ".join(str(response or "").split()).strip().strip('"')
+    if not text or len(text) > _OVERVIEW_MAX_CHARS:
+        return None
+    return text
 
 
 _CJK = r"[\u4e00-\u9fff\u3400-\u4dbf]"

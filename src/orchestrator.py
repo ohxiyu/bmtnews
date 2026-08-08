@@ -32,7 +32,7 @@ from .scrapers.gdelt import GDELTScraper
 from .scrapers.google_news import GoogleNewsScraper
 from .ai.client import create_ai_client
 from .ai.analyzer import ContentAnalyzer
-from .ai.summarizer import DailySummarizer
+from .ai.summarizer import DailySummarizer, generate_edition_overview
 from .ai.enricher import ContentEnricher
 from .ai.tokens import get_usage_snapshot
 from .daily_feed import (
@@ -55,6 +55,7 @@ from .edition import (
     merge_staged_items,
     save_staging_state,
 )
+from .market_snapshot import fetch_market_snapshot
 from .run_report import RunReport, save_run_report
 from .web_feed import render_web_feed
 
@@ -955,6 +956,32 @@ class HorizonOrchestrator:
                 )
 
             important_items = balanced_result.items
+            low_signal_minimum = filtering_config.low_signal_minimum_items
+            if (
+                not important_items
+                and analyzed_items
+                and low_signal_minimum is not None
+            ):
+                important_items = self._rescue_low_signal_items(
+                    analyzed_items,
+                    limit=low_signal_minimum,
+                )
+                if important_items:
+                    run_report.set_metric(
+                        "low_signal_rescued",
+                        len(important_items),
+                    )
+                    run_report.add_alert(
+                        "warning",
+                        "low_signal_edition",
+                        f"没有内容达到 {filtering_config.ai_score_threshold:g} 分阈值；"
+                        f"已按分数保底选取 {len(important_items)} 条发布，避免出空刊。",
+                    )
+                    self.console.print(
+                        "[yellow]⚠️  Low-signal day: publishing the "
+                        f"{len(important_items)} highest-scored items instead "
+                        "of an empty edition.[/yellow]"
+                    )
             run_report.set_metric("analyzed_this_run", len(analyzed_items))
             run_report.set_metric("analyzed_today", len(analyzed_items))
             run_report.set_metric("above_threshold", threshold_count)
@@ -1139,10 +1166,32 @@ class HorizonOrchestrator:
         window_end: datetime | None = None,
     ) -> None:
         """Render configured languages and publish static-site artifacts."""
-        fetched_count = run_report.metrics.get(
-            "edition_candidates",
-            run_report.metrics.get("fetched_raw", 0),
-        )
+        # Keep every reader-visible statistic on the same basis: the total
+        # number of unique candidates considered for this edition.
+        fetched_count = total_candidates
+
+        market_snapshot = None
+        overview_client = None
+        if items:
+            try:
+                market_snapshot = await fetch_market_snapshot()
+            except Exception as exc:
+                self.console.print(
+                    f"[yellow]⚠️  Market snapshot unavailable: {exc}[/yellow]"
+                )
+            if market_snapshot is None:
+                run_report.add_alert(
+                    "info",
+                    "market_snapshot_unavailable",
+                    "行情快照获取失败，本期页面省略行情条。",
+                )
+            try:
+                overview_client = create_ai_client(self.config.ai)
+            except Exception as exc:
+                self.console.print(
+                    f"[yellow]⚠️  Overview client unavailable: {exc}[/yellow]"
+                )
+
         for lang in self.config.ai.languages:
             summarizer = DailySummarizer(display_timezone=timezone_name)
             summary = await summarizer.generate_summary(
@@ -1199,12 +1248,28 @@ class HorizonOrchestrator:
                     f'data-critical="{run_report.metrics.get("high_priority", 0)}">'
                     "</div>\n\n"
                 )
+                overview = None
+                if overview_client is not None:
+                    overview = await generate_edition_overview(
+                        overview_client,
+                        items,
+                        date=date,
+                        language=lang,
+                    )
+                    if overview is None:
+                        run_report.add_alert(
+                            "info",
+                            f"edition_overview_missing_{lang}",
+                            f"{lang.upper()} 版导语生成失败，页面省略导语。",
+                        )
                 web_content = render_web_feed(
                     items,
                     date=date,
                     total_fetched=total_candidates,
                     language=lang,
                     display_timezone=timezone_name,
+                    overview=overview,
+                    market=market_snapshot,
                 )
                 _atomic_write_text(
                     dest_path,
@@ -1470,6 +1535,38 @@ class HorizonOrchestrator:
         if meta.get("domain"):
             return meta["domain"]
         return item.author or "unknown"
+
+    def _rescue_low_signal_items(
+        self,
+        items: List[ContentItem],
+        *,
+        limit: int,
+        max_per_source: int = 2,
+    ) -> List[ContentItem]:
+        """Pick the highest-scored analyzed items for a low-signal edition.
+
+        Used only when nothing reached the score threshold, so the edition
+        publishes a short ranked digest instead of an empty page. Diversity
+        is kept with a small per-source cap.
+        """
+        scored = sorted(
+            (item for item in items if item.ai_score is not None),
+            key=lambda item: item.ai_score or 0,
+            reverse=True,
+        )
+        rescued: List[ContentItem] = []
+        per_source: Dict[str, int] = defaultdict(int)
+        for item in scored:
+            source_key = (
+                f"{item.source_type.value}/{self._sub_source_label(item)}"
+            )
+            if per_source[source_key] >= max_per_source:
+                continue
+            rescued.append(item)
+            per_source[source_key] += 1
+            if len(rescued) >= limit:
+                break
+        return rescued
 
     def _source_breakdown(self, items: List[ContentItem]) -> Dict[str, int]:
         """Count items by the source key used by digest diversity limits."""

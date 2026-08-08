@@ -56,6 +56,17 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-bmtnews-staging-v1-
 
+      - name: Restore staging from persistent branch on cache miss
+        shell: bash
+        run: |
+          if [ -f data/staging-items.json ]; then
+            exit 0
+          fi
+          if git fetch --depth=1 origin staging-cache 2>/dev/null; then
+            mkdir -p data
+            git show FETCH_HEAD:data/staging-items.json > data/staging-items.json 2>/dev/null || rm -f data/staging-items.json
+          fi
+
       - name: Set up Python
         uses: actions/setup-python@v6
         with:
@@ -67,7 +78,7 @@ jobs:
           version: "0.11.32"
 
       - name: Install dependencies
-        run: uv sync --frozen
+        run: uv sync --frozen --extra trafilatura
 
       - name: Prepare GitHub Actions config
         run: cp data/config.github.json data/config.json

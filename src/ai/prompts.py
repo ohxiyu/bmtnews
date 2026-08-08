@@ -65,6 +65,15 @@ Consider:
 - Community discussion quality: insightful comments, diverse viewpoints, and debates increase value
 - Engagement signals: high upvotes/favorites with substantive discussion indicate community-validated importance
 - Treat marketing claims and exchange promotions skeptically; official provenance does not make promotional content important
+
+Scoring granularity and calibration:
+- Score in 0.5-point increments (6.5, 7.5, 8.5, ...); do not round everything to whole numbers
+- Spread scores across the range so items can be meaningfully ranked; two items should only tie when they are genuinely equal in importance
+- Calibration anchors: a routine listing of a mid-cap asset on one exchange ≈ 6.5; a top exchange changing platform-wide fees or listing a top-20 asset ≈ 7.5; a confirmed exploit with >$50M in losses ≈ 8.5-9.0; a systemic event (major exchange insolvency, >$500M theft, landmark regulation reshaping market access) ≈ 9.5-10
+
+Summary style:
+- The summary must describe the substance of the news itself
+- NEVER include meta commentary about the provided text, such as "the article does not specify", "details were not provided", or "文章未说明" — if a detail is unknown, simply omit it
 """
 
 CONTENT_ANALYSIS_USER = """Analyze the following content and provide a JSON response with:
@@ -92,6 +101,23 @@ Respond with valid JSON only:
   "tags": ["<tag1>", "<tag2>", ...],
   "category": "<configured-category-or-null>"
 }}"""
+
+EDITION_OVERVIEW_SYSTEM = """You write the lede paragraph for a daily crypto-market intelligence briefing.
+
+Given today's ranked stories, write ONE compact paragraph (2-3 sentences, no more than 80 words / 150 Chinese characters) that tells a busy reader what mattered today and why. Lead with the single most consequential development, then weave in one or two other notable threads.
+
+Rules:
+- Plain text only: no markdown, no lists, no headings, no emoji
+- Be concrete (names, amounts, outcomes); never vague filler like "several developments occurred"
+- No meta commentary about the briefing itself or the source material
+- Write in the requested language only"""
+
+EDITION_OVERVIEW_USER = """Today is {date}. Write the lede paragraph in {language_name} for this edition.
+
+Ranked stories:
+{items}
+
+Respond with the paragraph only — no JSON, no quotes, no markdown."""
 
 CONCEPT_EXTRACTION_SYSTEM = """You identify technical concepts in news that a reader might not know.
 Given a news item, return 1-3 search queries for concepts that need explanation.
@@ -147,6 +173,7 @@ Guidelines:
 - Use the web search results to ensure accuracy, especially for recent projects, tools, or events
 - If the news is self-explanatory and needs no background, return an empty string for both background fields
 - For **sources**: pick 1-3 URLs from the Web Search Results that you actually relied on for the background fields. Only use URLs that appear verbatim in the search results above — do not invent or modify URLs.
+- NEVER include meta commentary about the provided material in any field — phrases like "the article does not specify", "details were not provided", "the full article should contain details", or "文章未说明" are forbidden; when a detail is unavailable, omit it and write about what IS known
 """
 
 CONTENT_ENRICHMENT_USER = """Provide a structured bilingual analysis for the following news item.

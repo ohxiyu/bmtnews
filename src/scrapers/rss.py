@@ -12,6 +12,7 @@ import httpx
 import feedparser
 
 from .base import BaseScraper
+from .google_news_url import canonicalize_entry_link
 from ..extractors import ExtractorRegistry
 from ..models import ContentItem, SourceType, RSSSourceConfig
 
@@ -111,23 +112,27 @@ class RSSScraper(BaseScraper):
                     :16
                 ]
 
+                # Resolve Google News redirect links to the publisher URL so
+                # readers get the real article and URL dedup can merge it.
+                entry_link = canonicalize_entry_link(
+                    str(entry.get("link", "") or "")
+                )
+
                 # Extract content
                 content = self._extract_content(entry)
 
                 if source.content_extractor and self._extractors:
                     extractor = self._extractors.get(source.content_extractor)
-                    if extractor:
-                        url = entry.get("link", "")
-                        if url:
-                            full = await extractor.extract(url, self.client)
-                            if full:
-                                content = full
+                    if extractor and entry_link:
+                        full = await extractor.extract(entry_link, self.client)
+                        if full:
+                            content = full
 
                 item = ContentItem(
                     id=self._generate_id("rss", feed_id, entry_hash),
                     source_type=SourceType.RSS,
                     title=entry.get("title", "Untitled"),
-                    url=entry.get("link", str(source.url)),
+                    url=entry_link or str(source.url),
                     content=content,
                     author=entry.get("author", source.name),
                     published_at=published_at,

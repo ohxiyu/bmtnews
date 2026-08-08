@@ -511,6 +511,11 @@ Content is scored 0-10:
   the configured AI score after analysis.
 - `minimum_display_items`: Optional short-edition threshold. When selection is
   below it, the resilience rules below are activated.
+- `low_signal_minimum_items`: Optional empty-edition guard. When nothing
+  reaches `ai_score_threshold`, the highest-scored analyzed items (capped at
+  two per source) are published instead of an empty edition, up to this
+  count, and a `low_signal_edition` alert is recorded. It cannot exceed
+  `max_items`.
 - `fallback_window_hours`: Optional extended lookback used only when the normal
   edition is short. It must exceed both the fixed 24-hour edition window and
   `time_window_hours`; previously published items remain excluded and the AI

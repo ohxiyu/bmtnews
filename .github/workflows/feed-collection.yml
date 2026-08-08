@@ -2,8 +2,10 @@ name: BMTNews Feed Collection
 
 on:
   schedule:
-    # Two coverage runs plus the final fetch in daily-summary.yml.
-    - cron: '30 0,16 * * *'
+    # Coverage runs roughly every four hours; the final fetch happens in
+    # daily-summary.yml at the 08:30 cutoff. High-churn sources (exchange
+    # Telegram channels) overflow their fetch limits with fewer runs.
+    - cron: '30 0,4,12,16,20 * * *'
       timezone: 'Asia/Shanghai'
   workflow_dispatch:
 
@@ -12,7 +14,7 @@ concurrency:
   cancel-in-progress: false
 
 permissions:
-  contents: read
+  contents: write  # Persists the staging cache to the staging-cache branch
 
 jobs:
   collect:
@@ -33,6 +35,17 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-bmtnews-staging-v1-
 
+      - name: Restore staging from persistent branch on cache miss
+        shell: bash
+        run: |
+          if [ -f data/staging-items.json ]; then
+            exit 0
+          fi
+          if git fetch --depth=1 origin staging-cache 2>/dev/null; then
+            mkdir -p data
+            git show FETCH_HEAD:data/staging-items.json > data/staging-items.json 2>/dev/null || rm -f data/staging-items.json
+          fi
+
       - name: Set up Python
         uses: actions/setup-python@v6
         with:
@@ -44,7 +57,7 @@ jobs:
           version: "0.11.32"
 
       - name: Install dependencies
-        run: uv sync --frozen
+        run: uv sync --frozen --extra trafilatura
 
       - name: Prepare GitHub Actions config
         run: cp data/config.github.json data/config.json
@@ -62,3 +75,21 @@ jobs:
       - name: Publish run report
         if: ${{ always() }}
         run: python -m src.run_report --input data/run-report.json --output "$GITHUB_STEP_SUMMARY"
+
+      - name: Persist staging cache to branch
+        if: ${{ always() }}
+        shell: bash
+        run: |
+          if [ ! -f data/staging-items.json ]; then
+            echo "No staging file to persist"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git checkout -B staging-cache
+          git add -f data/staging-items.json
+          if git commit -m "chore: update staging cache"; then
+            git push -f origin staging-cache
+          else
+            echo "Staging cache unchanged"
+          fi
