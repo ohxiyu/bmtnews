@@ -4,6 +4,8 @@
 /admin/*
   Cache-Control: no-store
   X-Robots-Tag: noindex
+  Content-Security-Policy: default-src 'self'; script-src 'self' https://unpkg.com blob:; worker-src blob:; style-src 'self' 'unsafe-inline'; font-src 'self' data:; img-src 'self' data: blob: https://*.githubusercontent.com; connect-src 'self' https://api.github.com https://github.com https://raw.githubusercontent.com https://unpkg.com https://*.workers.dev; frame-ancestors 'none'; base-uri 'none'; form-action 'none'
+  Referrer-Policy: no-referrer
 
 /
   Cache-Control: public, max-age=300, stale-while-revalidate=60

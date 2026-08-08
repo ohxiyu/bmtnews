@@ -18,9 +18,36 @@
 4. 生成后复制，在 /admin/ 登录界面选择 token 登录方式粘贴即可（浏览器本地保存，
    不经过任何第三方服务器）
 
-如果以后想要"点一下 GitHub 授权"的登录方式（免 token），可以在现有的
-Cloudflare Worker（daily-dispatcher）上加一个 OAuth 中转路由；目前的
-token 方式零基础设施，个人使用足够。
+### 可选：一键 GitHub 授权登录（免 token）
+
+daily-dispatcher Worker 已内置 OAuth 中转路由（`/oauth/auth`、
+`/oauth/callback`），默认关闭（未配置 secrets 时返回 503）。启用步骤：
+
+1. GitHub → Settings → Developer settings → **OAuth Apps** → New OAuth App，
+   Authorization callback URL 填 `https://<worker域名>/oauth/callback`
+2. 在 `ops/daily-dispatcher` 下执行
+   `wrangler secret put GITHUB_OAUTH_CLIENT_ID` 和
+   `wrangler secret put GITHUB_OAUTH_CLIENT_SECRET`，重新部署 Worker
+3. 取消 `docs/admin/config.yml` 里 `base_url` / `auth_endpoint` 的注释并填入
+   Worker 域名
+
+注意取舍：OAuth App 的授权范围是 `public_repo`（所有公开仓库的写权限），
+比只授权单个仓库的 fine-grained token **更宽**；胜在方便。个人使用推荐
+继续用 fine-grained token。
+
+### 安全边界（务必了解）
+
+- `/admin/` 页面本身是公开的静态外壳，任何人都能打开，但**没有你的凭证
+  就写不了任何东西**；仓库本来就是公开的，不存在数据泄露面
+- token/OAuth 凭证只保存在你自己浏览器的 localStorage，不经过任何第三方
+  服务器；换电脑要重新登录，怀疑泄露时去 GitHub 撤销即可
+- fine-grained token 的实际权限 = 向本仓库推送内容。它**改不了 GitHub
+  Actions workflow 文件**（需要单独的 workflow 权限），但能改 `src/` 代码
+  和页面内容，所以 token 要当密码保管，建议设 90 天有效期定期轮换
+- CMS 脚本从 unpkg 加载并**钉死版本号**，升级需手动改版本（防止上游被
+  投毒时自动带入）；`/admin/*` 配置了 CSP，只允许连接 GitHub API 等
+  白名单域名，限制恶意脚本外传凭证的通道（CSP 头由 Cloudflare 生效）
+- 所有写入都是 git commit：任何误操作都可以从提交历史一键回滚
 
 ## 使用方式二：直接改文件
 

@@ -182,16 +182,103 @@ describe("dispatcher behavior", () => {
   it("exposes only a read-only health endpoint", async () => {
     const health = await worker.fetch(
       new Request("https://dispatcher.example/health"),
+      ENV,
     );
     const notFound = await worker.fetch(
       new Request("https://dispatcher.example/run", { method: "POST" }),
+      ENV,
     );
 
     expect(health.status).toBe(200);
     await expect(health.json()).resolves.toMatchObject({
       service: "bmtnews-daily-dispatcher",
       status: "ok",
+      admin_oauth: "not_configured",
     });
     expect(notFound.status).toBe(404);
+  });
+});
+
+describe("admin OAuth relay", () => {
+  const OAUTH_ENV = {
+    ...ENV,
+    GITHUB_OAUTH_CLIENT_ID: "client-id",
+    GITHUB_OAUTH_CLIENT_SECRET: "client-secret",
+  } as Env;
+
+  it("returns 503 while OAuth secrets are unset", async () => {
+    const auth = await worker.fetch(
+      new Request("https://dispatcher.example/oauth/auth"),
+      ENV,
+    );
+    const callback = await worker.fetch(
+      new Request("https://dispatcher.example/oauth/callback?code=x&state=y"),
+      ENV,
+    );
+    expect(auth.status).toBe(503);
+    expect(callback.status).toBe(503);
+  });
+
+  it("redirects to GitHub with a narrow scope and a state cookie", async () => {
+    const response = await worker.fetch(
+      new Request("https://dispatcher.example/oauth/auth"),
+      OAUTH_ENV,
+    );
+
+    expect(response.status).toBe(302);
+    const location = new URL(response.headers.get("Location") ?? "");
+    expect(location.origin).toBe("https://github.com");
+    expect(location.pathname).toBe("/login/oauth/authorize");
+    expect(location.searchParams.get("client_id")).toBe("client-id");
+    expect(location.searchParams.get("scope")).toBe("public_repo");
+    const state = location.searchParams.get("state");
+    expect(state).toBeTruthy();
+    expect(response.headers.get("Set-Cookie")).toContain(
+      `bmtnews_oauth_state=${state}`,
+    );
+    expect(response.headers.get("Set-Cookie")).toContain("HttpOnly");
+  });
+
+  it("rejects a callback whose state does not match the cookie", async () => {
+    const fetchSpy = vi.fn();
+    vi.stubGlobal("fetch", fetchSpy);
+
+    const response = await worker.fetch(
+      new Request(
+        "https://dispatcher.example/oauth/callback?code=abc&state=forged",
+        { headers: { Cookie: "bmtnews_oauth_state=expected" } },
+      ),
+      OAUTH_ENV,
+    );
+
+    const body = await response.text();
+    expect(body).toContain("authorization:github:error");
+    expect(body).not.toContain("authorization:github:success");
+    expect(fetchSpy).not.toHaveBeenCalled();
+  });
+
+  it("exchanges the code and hands the token to the admin origin only", async () => {
+    vi.stubGlobal(
+      "fetch",
+      vi.fn(async () =>
+        Response.json({ access_token: "gho_test_token", token_type: "bearer" }),
+      ),
+    );
+
+    const response = await worker.fetch(
+      new Request(
+        "https://dispatcher.example/oauth/callback?code=abc&state=expected",
+        { headers: { Cookie: "bmtnews_oauth_state=expected" } },
+      ),
+      OAUTH_ENV,
+    );
+
+    const body = await response.text();
+    expect(response.headers.get("Cache-Control")).toBe("no-store");
+    expect(body).toContain("authorization:github:success");
+    expect(body).toContain("gho_test_token");
+    expect(body).toContain('"https://bmt.news"');
+    // The state cookie is cleared after one use.
+    expect(response.headers.get("Set-Cookie")).toContain("Max-Age=0");
   });
 });
