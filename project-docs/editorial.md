@@ -4,7 +4,25 @@
 `editorial-rebuild` workflow 会自动以 `force_publish` 重刊当天日报，
 几分钟后网页更新。不需要任何服务器或后台系统；git 历史就是审计日志。
 
-## 使用方式
+## 使用方式一：网页后台（推荐）
+
+访问 **https://bmt.news/admin/**（Sveltia CMS，一个静态页面，无服务器）。
+所有字段都是表单：类型下拉选择、日期用日历选择器、URL 有格式校验，
+写不出坏 JSON。点「保存」即自动 commit 到 `main` 并触发重刊。
+
+首次登录需要一个 GitHub Personal Access Token：
+
+1. GitHub → Settings → Developer settings → **Fine-grained tokens** → Generate new token
+2. Repository access 选 **Only select repositories** → `ohxiyu/bmtnews`
+3. Permissions → Repository permissions → **Contents: Read and write**（其余保持 No access）
+4. 生成后复制，在 /admin/ 登录界面选择 token 登录方式粘贴即可（浏览器本地保存，
+   不经过任何第三方服务器）
+
+如果以后想要"点一下 GitHub 授权"的登录方式（免 token），可以在现有的
+Cloudflare Worker（daily-dispatcher）上加一个 OAuth 中转路由；目前的
+token 方式零基础设施，个人使用足够。
+
+## 使用方式二：直接改文件
 
 在 GitHub 网页端（或手机 App）直接编辑 `data/editorial.json`，把条目加进
 `items` 数组并 commit 到 `main` 即可。`enabled: false` 的条目会被忽略，
