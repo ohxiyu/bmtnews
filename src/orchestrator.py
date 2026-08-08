@@ -55,6 +55,11 @@ from .edition import (
     merge_staged_items,
     save_staging_state,
 )
+from .editorial import (
+    EditorialEntry,
+    editorial_content_item,
+    load_editorial_plan,
+)
 from .market_snapshot import fetch_market_snapshot
 from .run_report import RunReport, save_run_report
 from .web_feed import render_web_feed
@@ -729,9 +734,30 @@ class HorizonOrchestrator:
             )
             run_report.set_metric("staged_total", len(staged_items))
 
+            editorial_plan = load_editorial_plan(
+                date_type.fromisoformat(window.date)
+            )
+            suppressed_keys = {
+                _deduplication_url_key(url)
+                for url in editorial_plan.suppressed_urls
+            }
+
             candidates = self.merge_cross_source_duplicates(
                 items_in_edition_window(staged_items, window)
             )
+            if suppressed_keys:
+                before_suppress = len(candidates)
+                candidates = [
+                    item
+                    for item in candidates
+                    if _deduplication_url_key(str(item.url))
+                    not in suppressed_keys
+                ]
+                if before_suppress != len(candidates):
+                    run_report.set_metric(
+                        "suppressed_manual",
+                        before_suppress - len(candidates),
+                    )
             run_report.set_metric(
                 "staging_only_candidates",
                 sum(
@@ -782,6 +808,13 @@ class HorizonOrchestrator:
                 if fallback_hours is not None
                 else []
             )
+            if suppressed_keys:
+                supplemental_candidates = [
+                    item
+                    for item in supplemental_candidates
+                    if _deduplication_url_key(str(item.url))
+                    not in suppressed_keys
+                ]
 
             final_fetch_failed = bool(
                 self.last_fetch_report
@@ -1103,6 +1136,43 @@ class HorizonOrchestrator:
             )
             await self._enrich_important_items(important_items)
 
+            # Manual editor's picks are pinned ahead of the ranked stories.
+            if editorial_plan.editorial:
+                existing_urls = {
+                    _deduplication_url_key(str(item.url))
+                    for item in important_items
+                }
+                picks = []
+                for entry in editorial_plan.editorial:
+                    try:
+                        pick = editorial_content_item(
+                            entry,
+                            date_type.fromisoformat(window.date),
+                        )
+                    except Exception as exc:
+                        run_report.add_alert(
+                            "warning",
+                            "editorial_item_invalid",
+                            f"编辑条目无效，已跳过：{exc}",
+                        )
+                        continue
+                    if _deduplication_url_key(str(pick.url)) in existing_urls:
+                        continue
+                    picks.append(pick)
+                if picks:
+                    important_items = [*picks, *important_items]
+                    run_report.set_metric("editorial_items", len(picks))
+                    run_report.add_alert(
+                        "info",
+                        "editorial_items_added",
+                        f"人工插入 {len(picks)} 条编辑精选。",
+                    )
+            if editorial_plan.sponsored:
+                run_report.set_metric(
+                    "sponsored_slots",
+                    min(1, len(editorial_plan.sponsored)),
+                )
+
             existing_display_identities = {
                 item_identity(item) for item in daily_state.items
             }
@@ -1137,6 +1207,7 @@ class HorizonOrchestrator:
                 run_report=run_report,
                 window_start=window.start,
                 window_end=window.end,
+                sponsored=editorial_plan.sponsored,
             )
             self.console.print(
                 "[bold green]✅ Daily edition completed successfully![/bold green]"
@@ -1164,6 +1235,7 @@ class HorizonOrchestrator:
         run_report: RunReport,
         window_start: datetime | None = None,
         window_end: datetime | None = None,
+        sponsored: List[EditorialEntry] | None = None,
     ) -> None:
         """Render configured languages and publish static-site artifacts."""
         # Keep every reader-visible statistic on the same basis: the total
@@ -1270,6 +1342,7 @@ class HorizonOrchestrator:
                     display_timezone=timezone_name,
                     overview=overview,
                     market=market_snapshot,
+                    sponsored=sponsored,
                 )
                 _atomic_write_text(
                     dest_path,

@@ -762,6 +762,64 @@ time,
   color: var(--tier-high);
 }
 
+.editorial-pill {
+  font-size: var(--fs-xs);
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+/* clearly-labeled ad slot; outside the ranking, ignored by filters */
+.sponsored-slot {
+  display: flex;
+  gap: 14px;
+  align-items: baseline;
+  margin: 0;
+  padding: 14px 16px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--surface-soft);
+}
+
+.sponsored-label {
+  flex: 0 0 auto;
+  font-size: var(--fs-xs);
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  border: 1px solid var(--border-strong);
+  border-radius: var(--radius);
+  padding: 1px 6px;
+}
+
+.sponsored-body {
+  min-width: 0;
+}
+
+.sponsored-body h2 {
+  margin: 0;
+  font-size: var(--fs-m);
+  font-weight: 650;
+  line-height: 1.5;
+}
+
+.sponsored-body h2 a {
+  color: var(--text-soft);
+}
+
+.sponsored-body h2 a:hover {
+  color: var(--accent);
+}
+
+.sponsored-summary {
+  margin: 4px 0 0;
+  color: var(--text-muted);
+  font-size: var(--fs-s);
+  line-height: 1.6;
+}
+
 /* expandable background/discussion */
 .story-more {
   margin-top: 8px;

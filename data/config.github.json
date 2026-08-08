@@ -68,9 +68,9 @@
       }
     ],
     "hackernews": {
-      "enabled": false,
+      "enabled": true,
       "fetch_top_stories": 20,
-      "min_score": 100,
+      "min_score": 120,
       "category": "tech-community"
     },
     "rss": [
@@ -122,6 +122,40 @@
       {
         "name": "Wu Blockchain",
         "url": "https://wublock.substack.com/feed",
+        "enabled": true,
+        "category": "crypto-markets"
+      },
+      {
+        "name": "The Defiant",
+        "url": "https://thedefiant.io/api/feed",
+        "enabled": true,
+        "category": "crypto-protocols",
+        "content_extractor": "trafilatura"
+      },
+      {
+        "name": "DL News",
+        "url": "https://www.dlnews.com/arc/outboundfeeds/rss/",
+        "enabled": true,
+        "category": "crypto-markets",
+        "content_extractor": "trafilatura"
+      },
+      {
+        "name": "CryptoSlate",
+        "url": "https://cryptoslate.com/feed/",
+        "enabled": true,
+        "category": "crypto-markets",
+        "content_extractor": "trafilatura"
+      },
+      {
+        "name": "Protos",
+        "url": "https://protos.com/feed/",
+        "enabled": true,
+        "category": "crypto-markets",
+        "content_extractor": "trafilatura"
+      },
+      {
+        "name": "Glassnode Insights",
+        "url": "https://insights.glassnode.com/rss/",
         "enabled": true,
         "category": "crypto-markets"
       },
@@ -355,7 +389,7 @@
     "time_window_hours": 24,
     "daily_timezone": "Asia/Shanghai",
     "preserve_daily_items": true,
-    "max_items": 12,
+    "max_items": 14,
     "minimum_candidate_items": 20,
     "minimum_qualified_items": 7,
     "minimum_display_items": 7,
@@ -374,7 +408,7 @@
       },
       "markets": {
         "name": "Crypto Markets",
-        "limit": 4,
+        "limit": 5,
         "categories": [
           "crypto-markets"
         ]
