@@ -112,7 +112,10 @@ def test_apply_source_filter_handles_twitter_and_openbb() -> None:
 
 
 def test_mcp_source_registry_covers_model_source_types() -> None:
-    assert set(SOURCE_REGISTRY) == {source.value for source in SourceType}
+    # EDITORIAL marks manually inserted items; it has no scraper or config
+    # section, so it is intentionally absent from the fetchable-source registry.
+    fetchable = {source.value for source in SourceType} - {SourceType.EDITORIAL.value}
+    assert set(SOURCE_REGISTRY) == fetchable
 
 
 def test_mcp_filter_and_reporting_support_every_registered_source() -> None:

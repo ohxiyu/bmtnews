@@ -8,6 +8,7 @@ from typing import Iterable
 from urllib.parse import quote, urlsplit
 from zoneinfo import ZoneInfo
 
+from .editorial import EditorialEntry
 from .market_snapshot import MarketSnapshot
 from .models import ContentItem
 
@@ -29,6 +30,8 @@ _LABELS = {
         "references": "参考链接",
         "tags": "标签",
         "empty": "今日暂无达到展示阈值的重要资讯。",
+        "editorial": "编辑精选",
+        "sponsored": "广告",
     },
     "en": {
         "all": "All",
@@ -44,6 +47,8 @@ _LABELS = {
         "references": "References",
         "tags": "Tags",
         "empty": "No stories met today’s publication threshold.",
+        "editorial": "Editor's Pick",
+        "sponsored": "Sponsored",
     },
 }
 
@@ -260,7 +265,12 @@ def _render_article(
     article_id = f"{language}-{date}-item-{index}"
     priority = ""
     priority_class = ""
-    if index <= 3:
+    if item.metadata.get("editorial"):
+        priority = (
+            f'<span class="editorial-pill">{labels["editorial"]}</span>'
+        )
+        priority_class = " is-priority"
+    elif index <= 3:
         priority = f'<span class="priority-pill">{labels["priority"]}</span>'
         priority_class = " is-priority"
 
@@ -334,6 +344,31 @@ def _market_snapshot_html(
     )
 
 
+def _render_sponsored(entry: EditorialEntry, language: str) -> str:
+    """Render one clearly-labeled ad slot outside the ranking."""
+    labels = _LABELS[language]
+    title = _escape(entry.best_title(language))
+    summary = entry.best_summary(language)
+    url = _safe_url(entry.url)
+    title_html = title
+    if url:
+        title_html = (
+            f'<a href="{url}" target="_blank" '
+            f'rel="noopener noreferrer sponsored">{title}</a>'
+        )
+    summary_html = (
+        f'<p class="sponsored-summary">{_escape(summary)}</p>' if summary else ""
+    )
+    return (
+        f'<aside class="sponsored-slot" aria-label="{labels["sponsored"]}">'
+        f'<span class="sponsored-label">{labels["sponsored"]}</span>'
+        '<div class="sponsored-body">'
+        f"<h2>{title_html}</h2>"
+        f"{summary_html}"
+        "</div></aside>"
+    )
+
+
 def render_web_feed(
     items: Iterable[ContentItem],
     *,
@@ -343,6 +378,7 @@ def render_web_feed(
     display_timezone: str,
     overview: str | None = None,
     market: MarketSnapshot | None = None,
+    sponsored: Iterable[EditorialEntry] | None = None,
 ) -> str:
     """Render the final feed markup so browsers do not rebuild the DOM."""
     normalized_language = "en" if language.lower().startswith("en") else "zh"
@@ -389,6 +425,13 @@ def render_web_feed(
         )
         articles.append(article)
         headlines.append(headline)
+
+    # At most one labeled ad slot, outside the ranking and the filters.
+    sponsored_entries = list(sponsored or [])[:1]
+    for entry in sponsored_entries:
+        slot_html = _render_sponsored(entry, normalized_language)
+        position = entry.position if entry.position and entry.position > 0 else 4
+        articles.insert(min(position - 1, len(articles)), slot_html)
 
     selection_note = labels["selection"]
     if normalized_language == "zh":

@@ -22,6 +22,7 @@ class SourceType(str, Enum):
     OSSINSIGHT = "ossinsight"
     GDELT = "gdelt"
     GOOGLE_NEWS = "google_news"
+    EDITORIAL = "editorial"
 
 
 class SourceDefinition(NamedTuple):
