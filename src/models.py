@@ -493,6 +493,33 @@ class TelegramDeliveryConfig(BaseModel):
         return value
 
 
+class XDeliveryConfig(BaseModel):
+    """X (Twitter) distribution for published editions.
+
+    Disabled by default. Posting also requires all four OAuth 1.0a
+    credentials in the environment, so enabling the flag alone never
+    results in an outward-facing post.
+    """
+
+    enabled: bool = False
+    consumer_key_env: str = "X_CONSUMER_KEY"
+    consumer_secret_env: str = "X_CONSUMER_SECRET"
+    access_token_env: str = "X_ACCESS_TOKEN"
+    access_secret_env: str = "X_ACCESS_SECRET"
+    languages: List[str] = Field(default_factory=lambda: ["zh"])
+    site_url: str = "https://bmt.news/"
+    max_items: int = Field(default=3, ge=1, le=5)
+    required: bool = False
+
+    @field_validator("site_url")
+    @classmethod
+    def validate_site_url(cls, value: str) -> str:
+        parsed = urlparse(value)
+        if parsed.scheme not in {"http", "https"} or not parsed.netloc:
+            raise ValueError("x_delivery.site_url must be an HTTP(S) URL")
+        return value
+
+
 class CategoryGroupConfig(BaseModel):
     """A quota group containing one or more source categories."""
 
@@ -598,3 +625,4 @@ class Config(BaseModel):
     email: Optional[EmailConfig] = None
     webhook: Optional[WebhookConfig] = None
     telegram_delivery: Optional[TelegramDeliveryConfig] = None
+    x_delivery: Optional[XDeliveryConfig] = None

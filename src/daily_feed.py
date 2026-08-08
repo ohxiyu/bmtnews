@@ -36,14 +36,19 @@ _TRACKING_QUERY_PARAMETERS = {
 _PERSISTED_METADATA_KEYS = {
     "category",
     "discussion_url",
+    "editorial",
     "feed_name",
+    "merged_sources",
     "sources",
     "subreddit",
+    "thread_day",
+    "thread_id",
 }
 _PERSISTED_METADATA_PREFIXES = (
     "background_",
     "community_discussion_",
     "detailed_summary_",
+    "market_impact_",
     "title_",
 )
 

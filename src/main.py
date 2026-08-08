@@ -49,11 +49,12 @@ def main():
     parser.add_argument("--hours", type=int, help="Force fetch from last N hours")
     parser.add_argument(
         "--mode",
-        choices=("full", "fetch", "publish"),
+        choices=("full", "fetch", "publish", "weekly"),
         default="full",
         help=(
             "full runs the legacy pipeline; fetch only updates the staging cache; "
-            "publish builds one fixed-window daily edition"
+            "publish builds one fixed-window daily edition; "
+            "weekly builds the weekly review from the archive"
         ),
     )
     parser.add_argument(
@@ -89,8 +90,8 @@ def main():
         parser.error("--cutoff-hour must be between 0 and 23")
     if args.force_publish and args.mode != "publish":
         parser.error("--force-publish requires --mode publish")
-    if args.edition_date is not None and args.mode != "publish":
-        parser.error("--edition-date requires --mode publish")
+    if args.edition_date is not None and args.mode not in {"publish", "weekly"}:
+        parser.error("--edition-date requires --mode publish or --mode weekly")
 
     try:
         # Load environment variables from .env file
@@ -133,6 +134,10 @@ def main():
                     force_hours=args.hours,
                     staging_path=args.staging_path,
                 )
+            )
+        elif args.mode == "weekly":
+            asyncio.run(
+                orchestrator.run_weekly_review(end_date=args.edition_date)
             )
         elif args.mode == "publish":
             asyncio.run(
