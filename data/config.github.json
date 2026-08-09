@@ -486,7 +486,7 @@
     "headers": ""
   },
   "x_delivery": {
-    "enabled": false,
+    "enabled": true,
     "consumer_key_env": "X_CONSUMER_KEY",
     "consumer_secret_env": "X_CONSUMER_SECRET",
     "access_token_env": "X_ACCESS_TOKEN",
