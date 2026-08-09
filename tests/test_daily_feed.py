@@ -27,7 +27,7 @@ from src.models import (
     SourceType,
     SourcesConfig,
 )
-from src.orchestrator import HorizonOrchestrator
+from src.orchestrator import BMTNewsOrchestrator
 
 
 def make_item(
@@ -282,7 +282,7 @@ def test_orchestrator_retains_selected_items_across_same_day_runs(
             preserve_daily_items=True,
         ),
     )
-    orchestrator = HorizonOrchestrator(config, storage=object())
+    orchestrator = BMTNewsOrchestrator(config, storage=object())
 
     async def fetch_all_sources(since):  # type: ignore[no-untyped-def]
         return batches.pop(0)
@@ -362,7 +362,7 @@ def test_orchestrator_reapplies_limits_after_merging_daily_state(
             preserve_daily_items=True,
         ),
     )
-    orchestrator = HorizonOrchestrator(config, storage=object())
+    orchestrator = BMTNewsOrchestrator(config, storage=object())
 
     async def fetch_all_sources(since):  # type: ignore[no-untyped-def]
         return batches.pop(0)
@@ -419,7 +419,7 @@ def test_filter_items_drops_published_url_before_semantic_dedup(
         sources=SourcesConfig(),
         filtering=FilteringConfig(ai_score_threshold=7.0),
     )
-    orchestrator = HorizonOrchestrator(config, storage=object())
+    orchestrator = BMTNewsOrchestrator(config, storage=object())
 
     async def unexpected_topic_dedup(items, *, log=True):  # type: ignore[no-untyped-def]
         raise AssertionError("exact published URL should not reach semantic dedup")
@@ -468,7 +468,7 @@ def test_filter_items_drops_semantic_duplicate_from_published_history(
         sources=SourcesConfig(),
         filtering=FilteringConfig(ai_score_threshold=7.0),
     )
-    orchestrator = HorizonOrchestrator(config, storage=object())
+    orchestrator = BMTNewsOrchestrator(config, storage=object())
 
     async def keep_first(items, *, log=True):  # type: ignore[no-untyped-def]
         assert [item.id for item in items] == ["published", "incoming"]

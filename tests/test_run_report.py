@@ -12,7 +12,7 @@ from src.models import (
     SourceType,
     SourcesConfig,
 )
-from src.orchestrator import HorizonOrchestrator
+from src.orchestrator import BMTNewsOrchestrator
 from src.run_report import (
     RunReport,
     load_run_report,
@@ -223,7 +223,7 @@ def test_native_pipeline_writes_funnel_and_frontend_stats(
         ),
     )
     storage = StorageManager(data_dir=str(tmp_path / "data"))
-    orchestrator = HorizonOrchestrator(config, storage)
+    orchestrator = BMTNewsOrchestrator(config, storage)
 
     async def fetch_all_sources(since):  # type: ignore[no-untyped-def]
         return items

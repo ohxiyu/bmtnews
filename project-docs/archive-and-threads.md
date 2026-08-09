@@ -55,7 +55,7 @@
 
 ## 周报与评分校准
 
-`uv run horizon --mode weekly`（每周一 09:30 自动触发，也可手动 dispatch）：
+`uv run bmtnews --mode weekly`（每周一 09:30 自动触发，也可手动 dispatch）：
 
 - **周报**：从归档取过去 7 天，AI 按「本周主线 / 持续追踪 / 值得记住」
   三段成文，发布到 `/weekly/<date>/`
@@ -86,8 +86,8 @@
 
 MCP server 新增只读工具，可以直接问历史问题：
 
-- `hz_search_archive(query, since, until, category, min_score, limit)`
-- `hz_get_thread(thread_id)` / `hz_list_threads(days, limit)`
-- `hz_get_entity(name, limit)` / `hz_list_entities(days, limit)`
+- `bmt_search_archive(query, since, until, category, min_score, limit)`
+- `bmt_get_thread(thread_id)` / `bmt_list_threads(days, limit)`
+- `bmt_get_entity(name, limit)` / `bmt_list_entities(days, limit)`
 
 这些工具只读归档，不抓取、不调用 AI、不写任何文件。

@@ -5,7 +5,7 @@ title: Configuration Guide
 
 # Configuration Guide
 
-Horizon is configured through two files: a `.env` file for API keys and a `data/config.json` file for sources, AI provider, and filtering options.
+BMTNews is configured through two files: a `.env` file for API keys and a `data/config.json` file for sources, AI provider, and filtering options.
 
 ## AI Providers
 
@@ -20,9 +20,9 @@ OPENAI_API_KEY=sk-your-key
 GOOGLE_API_KEY=your-gemini-key
 ```
 
-When Horizon starts, environment variables have priority because
+When BMTNews starts, environment variables have priority because
 `data/config.json` does not store the secret. For local VS Code runs, create
-`.env` in the repository root and launch Horizon from that same root directory.
+`.env` in the repository root and launch BMTNews from that same root directory.
 
 Common API key variable names:
 
@@ -120,7 +120,7 @@ Use the endpoint for your account region and preferred compatible API:
 | China | `https://api.minimaxi.com/v1` | `https://api.minimaxi.com/anthropic` |
 
 For the Anthropic-compatible API, keep `provider` set to `minimax` and pass
-the base URL directly without adding `/v1`. Horizon selects its Anthropic
+the base URL directly without adding `/v1`. BMTNews selects its Anthropic
 client for this endpoint, and the SDK appends `/v1/messages` when sending a
 request:
 
@@ -167,8 +167,8 @@ Use the [DashScope compatible-mode](https://help.aliyun.com/zh/dashscope/develop
 
 Omit `base_url` to use the default `http://localhost:11434/v1`.
 For remote Ollama servers, set `ai.base_url` in `data/config.json` or set
-`HORIZON_OLLAMA_BASE_URL` in `.env`. `OLLAMA_BASE_URL` and `OLLAMA_HOST` are
-also recognized. If the value omits `/v1`, Horizon appends it automatically
+`BMTNEWS_OLLAMA_BASE_URL` in `.env`. `OLLAMA_BASE_URL` and `OLLAMA_HOST` are
+also recognized. If the value omits `/v1`, BMTNews appends it automatically
 for Ollama's OpenAI-compatible endpoint.
 
 ### AI throttling
@@ -219,7 +219,7 @@ By default, AI scoring and enrichment run one item at a time. If your API endpoi
 }
 ```
 
-For OpenAI-compatible gateways, Horizon sends `temperature` by default. If a newer reasoning-style model rejects that parameter with an error such as `temperature is deprecated for this model`, Horizon retries once without it and remembers that capability for later requests.
+For OpenAI-compatible gateways, BMTNews sends `temperature` by default. If a newer reasoning-style model rejects that parameter with an error such as `temperature is deprecated for this model`, BMTNews retries once without it and remembers that capability for later requests.
 
 ## Information Sources
 
@@ -410,13 +410,13 @@ uv pip install --only-binary=:all: openbb openbb-benzinga
 
 - `enabled` — enable or disable the OpenBB source globally
 - `watchlists` — list of named ticker groups; each watchlist becomes one `news.company()` call per run
-- `name` — label shown in Horizon metadata and selection breakdowns
+- `name` — label shown in BMTNews metadata and selection breakdowns
 - `provider` — OpenBB provider name such as `yfinance` or `benzinga`
 - `fetch_limit` — maximum news rows requested for that watchlist
 - `category` — optional tag stored on fetched items
 - `symbols` — ticker symbols to fetch together; group symbols by provider to keep requests efficient
 
-OpenBB provider credentials are handled by the OpenBB SDK itself, using its own environment variables or user settings. Horizon does not pass those secrets through `data/config.json`.
+OpenBB provider credentials are handled by the OpenBB SDK itself, using its own environment variables or user settings. BMTNews does not pass those secrets through `data/config.json`.
 
 ### OSS Insight (Trending GitHub Repos)
 
@@ -526,12 +526,12 @@ Content is scored 0-10:
   primary-topic quota borrowing. It does not remove items from the normal
   quota selection.
 
-When resilience is configured, Horizon first selects the normal fixed-window
+When resilience is configured, BMTNews first selects the normal fixed-window
 edition. If it is short, primary groups may borrow unused capacity. Only if the
-edition is still short does Horizon analyze the older supplemental segment.
+edition is still short does BMTNews analyze the older supplemental segment.
 Historical identity and semantic-topic deduplication both run before those
 items can be selected. A short edition is still published with an explicit run
-warning; Horizon never reuses a published story or lowers the score threshold.
+warning; BMTNews never reuses a published story or lowers the score threshold.
 
 Balanced digest filtering runs after AI score threshold filtering and topic
 deduplication, but before enrichment. This reduces enrichment calls to only the
@@ -546,7 +546,7 @@ All source types support a `category` field: `sources.rss[].category`,
 `sources.gdelt.category`, and `sources.google_news.category`.
 Sources without a category set enter the default group.
 
-If the same category appears in multiple groups, Horizon logs a warning and uses
+If the same category appears in multiple groups, BMTNews logs a warning and uses
 the first group in configuration order. Omitting both `category_groups` and
 `max_items` preserves the previous filtering behavior.
 
@@ -559,7 +559,7 @@ Example:
 ```json
 {
   "ai": {
-    "base_url": "${HORIZON_AI_BASE_URL}"
+    "base_url": "${BMTNEWS_AI_BASE_URL}"
   },
   "sources": {
     "rss": [
@@ -571,19 +571,19 @@ Example:
     ]
   },
   "webhook": {
-    "url_env": "HORIZON_WEBHOOK_URL",
-    "headers": "Authorization: Bearer ${HORIZON_WEBHOOK_TOKEN}"
+    "url_env": "BMTNEWS_WEBHOOK_URL",
+    "headers": "Authorization: Bearer ${BMTNEWS_WEBHOOK_TOKEN}"
   }
 }
 ```
 
-- `${NAME}` is replaced only when `NAME` is a valid identifier like `LWN_KEY` or `HORIZON_AI_BASE_URL`.
+- `${NAME}` is replaced only when `NAME` is a valid identifier like `LWN_KEY` or `BMTNEWS_AI_BASE_URL`.
 - Unset variables are left as `${NAME}` instead of becoming an empty string, so configuration mistakes fail loudly downstream.
 - Expansion is recursive through dicts, lists, and tuples; non-string values are left unchanged.
 
 ## Email Subscription
 
-Email delivery is optional and disabled unless `email.enabled` is `true`. Horizon uses SMTP to send daily summaries and IMAP to check subscribe/unsubscribe requests.
+Email delivery is optional and disabled unless `email.enabled` is `true`. BMTNews uses SMTP to send daily summaries and IMAP to check subscribe/unsubscribe requests.
 
 ```json
 {
@@ -597,7 +597,7 @@ Email delivery is optional and disabled unless `email.enabled` is `true`. Horizo
     "imap_port": 993,
     "email_address": "xxx@qq.com",
     "password_env": "EMAIL_PASSWORD",
-    "sender_name": "Horizon Daily",
+    "sender_name": "BMTNews Daily",
     "subscribe_keyword": "SUBSCRIBE",
     "unsubscribe_keyword": "UNSUBSCRIBE"
   }
@@ -606,13 +606,13 @@ Email delivery is optional and disabled unless `email.enabled` is `true`. Horizo
 
 - `enabled`: Turns email subscription handling and daily email delivery on or off.
 - `smtp_server` / `smtp_port`: SMTP server used to send emails.
-- `smtp_username`: Optional SMTP login username. If omitted, Horizon uses `email_address`.
+- `smtp_username`: Optional SMTP login username. If omitted, BMTNews uses `email_address`.
 - `imap_enabled`: Turns IMAP subscribe/unsubscribe checks on or off. Set it to `false` for send-only SMTP providers.
 - `imap_server` / `imap_port`: IMAP server used to scan incoming subscription requests when `imap_enabled` is `true`.
 - `email_address`: Sender account and mailbox checked for subscription requests.
 - `password_env`: Environment variable containing the email password or app password. Defaults to `EMAIL_PASSWORD`.
 - `sender_name`: Display name shown in sent emails.
-- `subscribe_keyword` / `unsubscribe_keyword`: Keywords Horizon looks for in incoming email subjects.
+- `subscribe_keyword` / `unsubscribe_keyword`: Keywords BMTNews looks for in incoming email subjects.
 
 Resend SMTP example:
 
@@ -628,7 +628,7 @@ Resend SMTP example:
     "imap_server": "",
     "imap_port": 993,
     "email_address": "noreply@example.com",
-    "sender_name": "Horizon Daily"
+    "sender_name": "BMTNews Daily"
   }
 }
 ```
@@ -687,13 +687,13 @@ site still publishes.
 
 ## Webhook Notification
 
-Webhook notification is optional and disabled unless `webhook.enabled` is `true`. Horizon can call Feishu/Lark, DingTalk, Slack, Discord, or any custom webhook endpoint when the pipeline succeeds or fails.
+Webhook notification is optional and disabled unless `webhook.enabled` is `true`. BMTNews can call Feishu/Lark, DingTalk, Slack, Discord, or any custom webhook endpoint when the pipeline succeeds or fails.
 
 ```json
 {
   "webhook": {
     "enabled": true,
-    "url_env": "HORIZON_WEBHOOK_URL",
+    "url_env": "BMTNEWS_WEBHOOK_URL",
     "delivery": "summary",
     "overview_position": "first",
     "platform": "generic",
@@ -709,21 +709,21 @@ Webhook notification is optional and disabled unless `webhook.enabled` is `true`
 ```
 
 - `enabled`: Turns webhook delivery on or off. The default is `false`.
-- `url_env`: Environment variable that contains the webhook URL. For example, set `HORIZON_WEBHOOK_URL=https://...` in `.env`.
+- `url_env`: Environment variable that contains the webhook URL. For example, set `BMTNEWS_WEBHOOK_URL=https://...` in `.env`.
 - `delivery`: Controls how messages are sent. Use `summary` for one full message, or `summary_and_items` for one overview message followed by one message per selected item.
 - `overview_position`: Controls where the overview is sent in `summary_and_items` mode. Use `first` for the traditional order, or `last` to send item details in reverse and keep the overview as the newest chat message.
 - `platform`: Optional webhook platform hint. Use `generic` by default, or `feishu` / `lark` to enable platform-specific card rendering.
 - `layout`: Controls the message layout. Use `markdown` for templated Markdown delivery, or `collapsible` with `platform: "feishu"` / `"lark"` for a single Feishu Card JSON 2.0 message with each item in a collapsed panel.
 - `fallback_layout`: Reserved fallback layout for unsupported platform/layout combinations. The current safe fallback is `markdown`.
 - `languages`: Optional webhook-only language filter. Use `["zh"]` or `["en"]` to send only selected languages; use `null` or omit it to send all configured `ai.languages`.
-- `request_body`: Optional request body. If empty, Horizon sends a `GET` request. If provided, Horizon sends a `POST` request.
+- `request_body`: Optional request body. If empty, BMTNews sends a `GET` request. If provided, BMTNews sends a `POST` request.
 - `headers`: Optional custom headers, one `Key: Value` pair per line.
 
-When `request_body` is a JSON object or array, Horizon renders placeholders and serializes it as JSON. When it is a string, Horizon renders it directly and detects JSON if the rendered string is valid JSON.
+When `request_body` is a JSON object or array, BMTNews renders placeholders and serializes it as JSON. When it is a string, BMTNews renders it directly and detects JSON if the rendered string is valid JSON.
 
 ### Delivery Modes And Layouts
 
-`delivery` controls how many webhook messages Horizon sends:
+`delivery` controls how many webhook messages BMTNews sends:
 
 - `summary`: Sends one message containing the full daily summary. This is simple, but some chat platforms may reject long messages.
 - `summary_and_items`: Sends one overview message plus one message per selected item. In each item message, `#{summary}` contains only that item's Markdown body. This is useful for platforms that reject or truncate long messages.
@@ -731,7 +731,7 @@ When `request_body` is a JSON object or array, Horizon renders placeholders and 
 `layout` controls how each message is rendered:
 
 - `markdown`: Uses your `request_body` template for each message. This is the default and works with generic webhooks, DingTalk, Slack, Discord, Feishu, and Lark.
-- `collapsible`: Currently supported for `platform: "feishu"` or `"lark"`. Horizon ignores `request_body` and builds one Feishu/Lark Card JSON 2.0 message with each item in a collapsed panel.
+- `collapsible`: Currently supported for `platform: "feishu"` or `"lark"`. BMTNews ignores `request_body` and builds one Feishu/Lark Card JSON 2.0 message with each item in a collapsed panel.
 
 For platforms without a platform-specific layout, keep `layout: "markdown"` and choose the message count with `delivery`.
 
@@ -741,7 +741,7 @@ Example `summary_and_items` Markdown delivery config:
 {
   "webhook": {
     "enabled": true,
-    "url_env": "HORIZON_WEBHOOK_URL",
+    "url_env": "BMTNEWS_WEBHOOK_URL",
     "delivery": "summary_and_items",
     "overview_position": "last",
     "platform": "generic",
@@ -753,7 +753,7 @@ Example `summary_and_items` Markdown delivery config:
 }
 ```
 
-With `summary_and_items`, Horizon sends one overview plus one message per selected item. `overview_position: "last"` sends item messages first and keeps the overview as the newest chat message; omit it or set `"first"` to send the overview first.
+With `summary_and_items`, BMTNews sends one overview plus one message per selected item. `overview_position: "last"` sends item messages first and keeps the overview as the newest chat message; omit it or set `"first"` to send the overview first.
 
 ### Webhook Templates
 
@@ -781,7 +781,7 @@ When `delivery` is `summary_and_items`, item messages also include:
 | `#{item_url}` | Current item URL |
 | `#{item_score}` | Current item AI score |
 
-For webhook delivery, Horizon flattens HTML disclosure blocks such as `<details><summary>...</summary>` in `#{summary}` into plain Markdown link lists. This makes the generated summary easier to render in chat products. Saved Markdown files, GitHub Pages, and email content are unchanged.
+For webhook delivery, BMTNews flattens HTML disclosure blocks such as `<details><summary>...</summary>` in `#{summary}` into plain Markdown link lists. This makes the generated summary easier to render in chat products. Saved Markdown files, GitHub Pages, and email content are unchanged.
 
 Use `#{key?limit=N&split=DELIM}` to truncate long values by splitting on `DELIM` and keeping segments until the total character count reaches `N`.
 
@@ -791,21 +791,21 @@ Use `#{key?limit=N&split=DELIM}` to truncate long values by splitting on `DELIM`
 
 ### DingTalk
 
-In DingTalk, create a custom group robot and use a custom keyword such as `Horizon`. The keyword must appear in the body content.
+In DingTalk, create a custom group robot and use a custom keyword such as `BMTNews`. The keyword must appear in the body content.
 
 ```json
 {
   "msgtype": "markdown",
   "markdown": {
-    "title": "Horizon #{date} Daily",
-    "text": "Horizon result: #{result}\n\nHorizon important items: #{important_items}/#{all_items}\n\n#{summary}"
+    "title": "BMTNews #{date} Daily",
+    "text": "BMTNews result: #{result}\n\nBMTNews important items: #{important_items}/#{all_items}\n\n#{summary}"
   }
 }
 ```
 
 ### Feishu / Lark
 
-In Feishu or Lark, create a custom group robot and use a custom keyword such as `Horizon`. The keyword must appear in the body content.
+In Feishu or Lark, create a custom group robot and use a custom keyword such as `BMTNews`. The keyword must appear in the body content.
 
 Use Card JSON 2.0 for Markdown rendering. The card must include `"schema": "2.0"` and put rich-text Markdown components under `card.body.elements`.
 
@@ -815,7 +815,7 @@ To keep the group chat compact while still allowing readers to browse the full b
 {
   "webhook": {
     "enabled": true,
-    "url_env": "HORIZON_WEBHOOK_URL",
+    "url_env": "BMTNEWS_WEBHOOK_URL",
     "platform": "feishu",
     "layout": "collapsible",
     "fallback_layout": "markdown",
@@ -824,7 +824,7 @@ To keep the group chat compact while still allowing readers to browse the full b
 }
 ```
 
-With this layout, Horizon sends one interactive card containing the overview and one collapsed panel per selected item. Each panel can be expanded in Feishu to read the full item detail. The regular `request_body` template is ignored for this rendered card.
+With this layout, BMTNews sends one interactive card containing the overview and one collapsed panel per selected item. Each panel can be expanded in Feishu to read the full item detail. The regular `request_body` template is ignored for this rendered card.
 
 ```json
 {
@@ -845,7 +845,7 @@ With this layout, Horizon sends one interactive card containing the overview and
       "elements": [
         {
           "tag": "markdown",
-          "content": "Horizon result: #{result}\nHorizon important items: #{important_items}/#{all_items}"
+          "content": "BMTNews result: #{result}\nBMTNews important items: #{important_items}/#{all_items}"
         },
         {
           "tag": "hr"
@@ -862,18 +862,18 @@ With this layout, Horizon sends one interactive card containing the overview and
 
 ## Static Site
 
-Horizon writes generated summaries to `data/summaries/` and copies publishable Markdown into `docs/` for the GitHub Pages site. The repository includes a ready-to-use workflow at `.github/workflows/daily-summary.yml`.
+BMTNews writes generated summaries to `data/summaries/` and copies publishable Markdown into `docs/` for the GitHub Pages site. The repository includes a ready-to-use workflow at `.github/workflows/daily-summary.yml`.
 
 To use GitHub Pages, enable Pages for the repository and run the scheduled workflow or trigger it manually. The generated site is built from the `docs/` directory.
 
 ## MCP Server
 
-Horizon includes an MCP server for AI assistants and MCP-compatible clients.
+BMTNews includes an MCP server for AI assistants and MCP-compatible clients.
 
 ```bash
-uv run horizon-mcp
+uv run bmtnews-mcp
 ```
 
-Available tools include `hz_validate_config`, `hz_fetch_items`, `hz_score_items`, `hz_filter_items`, `hz_enrich_items`, `hz_generate_summary`, and `hz_run_pipeline`.
+Available tools include `bmt_validate_config`, `bmt_fetch_items`, `bmt_score_items`, `bmt_filter_items`, `bmt_enrich_items`, `bmt_generate_summary`, and `bmt_run_pipeline`.
 
 See [`src/mcp/README.md`](../src/mcp/README.md) for the full tool reference and [`src/mcp/integration.md`](../src/mcp/integration.md) for client setup.

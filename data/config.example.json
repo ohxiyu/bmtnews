@@ -200,7 +200,7 @@
   },
   "webhook": {
     "enabled": false,
-    "url_env": "HORIZON_WEBHOOK_URL",
+    "url_env": "BMTNEWS_WEBHOOK_URL",
     "delivery": "summary",
     "overview_position": "first",
     "platform": "generic",

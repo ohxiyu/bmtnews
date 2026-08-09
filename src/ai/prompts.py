@@ -217,7 +217,7 @@ Field definitions:
 
 5. **community_discussion** (1-3 sentences): If community comments are provided, summarize the overall sentiment and key viewpoints from the discussion — agreements, disagreements, concerns, additional insights, or notable counterarguments. If no comments are provided, return an empty string.
 
-6. **market_impact** (1-2 sentences): Explain the transmission mechanism to crypto markets — which assets, venues, or market segments are exposed, through what channel (liquidity, custody, regulation, supply, sentiment), and on what horizon. This is analysis of what happened, NOT investment advice: never recommend buying, selling, or holding, never predict prices or state directional targets, and never imply certainty about future moves. When a story has no plausible market transmission path (e.g. a pure developer-tooling release), return an empty string rather than inventing one.
+6. **market_impact** (1-2 sentences): Explain the transmission mechanism to crypto markets — which assets, venues, or market segments are exposed, through what channel (liquidity, custody, regulation, supply, sentiment), and on what bmtnews. This is analysis of what happened, NOT investment advice: never recommend buying, selling, or holding, never predict prices or state directional targets, and never imply certainty about future moves. When a story has no plausible market transmission path (e.g. a pure developer-tooling release), return an empty string rather than inventing one.
 
 **CRITICAL — Language rules (MUST follow):**
 - All *_en fields MUST be written in English.

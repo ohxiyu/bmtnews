@@ -1,4 +1,4 @@
-"""Structured reporting for one native Horizon pipeline run."""
+"""Structured reporting for one native BMTNews pipeline run."""
 
 from __future__ import annotations
 
@@ -520,7 +520,7 @@ def render_github_annotations(payload: dict[str, Any]) -> list[str]:
 
 
 def main() -> int:
-    parser = argparse.ArgumentParser(description="Render a Horizon run report")
+    parser = argparse.ArgumentParser(description="Render a BMTNews run report")
     parser.add_argument(
         "--input",
         type=Path,

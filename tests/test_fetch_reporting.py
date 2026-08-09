@@ -10,7 +10,7 @@ import pytest
 from rich.console import Console
 
 from src.models import ContentItem, SourceType
-from src.orchestrator import FetchReport, HorizonOrchestrator, SourceFetchOutcome
+from src.orchestrator import FetchReport, BMTNewsOrchestrator, SourceFetchOutcome
 
 
 SINCE = datetime(2026, 1, 1, tzinfo=timezone.utc)
@@ -28,8 +28,8 @@ def make_item(item_id: str) -> ContentItem:
     )
 
 
-def make_orchestrator() -> HorizonOrchestrator:
-    orchestrator = object.__new__(HorizonOrchestrator)
+def make_orchestrator() -> BMTNewsOrchestrator:
+    orchestrator = object.__new__(BMTNewsOrchestrator)
     orchestrator.console = Console(file=StringIO())
     orchestrator.last_fetch_report = None
     return orchestrator

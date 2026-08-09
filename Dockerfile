@@ -17,16 +17,16 @@ COPY .env.example .env.example
 RUN uv sync --frozen --no-dev
 
 # Runtime data is mounted here; keep the image and process unprivileged.
-RUN useradd --create-home --uid 10001 horizon \
-    && chown -R horizon:horizon /app
+RUN useradd --create-home --uid 10001 bmtnews \
+    && chown -R bmtnews:bmtnews /app
 
 # Create volume mount points
 VOLUME ["/app/data"]
 
 # Set environment variables
 ENV PYTHONUNBUFFERED=1
-USER horizon
+USER bmtnews
 
 # Run the application
-ENTRYPOINT ["uv", "run", "horizon"]
+ENTRYPOINT ["uv", "run", "bmtnews"]
 CMD []

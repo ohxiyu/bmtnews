@@ -1,6 +1,6 @@
-# Contributing to Horizon
+# Contributing to BMTNews
 
-Thanks for your interest in contributing to Horizon.
+Thanks for your interest in contributing to BMTNews.
 
 ## Ways to Contribute
 
@@ -23,9 +23,9 @@ Please keep pull requests focused and easy to review.
 
 ## Share Sources
 
-Horizon also welcomes **source contributions**, not just code.
+BMTNews also welcomes **source contributions**, not just code.
 
-If you discover high-quality sources worth sharing with other users, please submit them via **[horizon1123.top](https://horizon1123.top)**.
+If you discover high-quality sources worth sharing with other users, please submit them via **[bmtnews1123.top](https://bmtnews1123.top)**.
 
 Good examples include:
 
@@ -39,7 +39,7 @@ Good examples include:
 
 Please make sure your contribution is:
 
-- relevant to Horizon users
+- relevant to BMTNews users
 - clear and well-described
 - respectful of copyright and platform rules
 

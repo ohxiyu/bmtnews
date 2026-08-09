@@ -32,7 +32,7 @@ from src.models import (
     SourcesConfig,
     TelegramDeliveryConfig,
 )
-from src.orchestrator import HorizonOrchestrator
+from src.orchestrator import BMTNewsOrchestrator
 from src.run_report import load_run_report
 from src.services.telegram_delivery import (
     TelegramDeliveryResult,
@@ -210,7 +210,7 @@ def test_daily_edition_combines_staging_and_final_fetch(
         ),
         telegram_delivery=TelegramDeliveryConfig(enabled=True),
     )
-    orchestrator = HorizonOrchestrator(
+    orchestrator = BMTNewsOrchestrator(
         config,
         storage=StorageManager(data_dir=str(tmp_path / "data")),
     )
@@ -393,7 +393,7 @@ def test_daily_edition_uses_unpublished_36_hour_fallback_when_short(
             primary_group_min_items=2,
         ),
     )
-    orchestrator = HorizonOrchestrator(
+    orchestrator = BMTNewsOrchestrator(
         config,
         storage=StorageManager(data_dir=str(tmp_path / "data")),
     )
@@ -465,7 +465,7 @@ def test_workflows_stage_twice_and_publish_once() -> None:
     assert "17 2,8,14" not in collection
     assert "staging-cache" in collection
     assert "staging-cache" in publication
-    assert "horizon --mode fetch --hours 12" in collection
+    assert "bmtnews --mode fetch --hours 12" in collection
     assert "\n  schedule:" not in publication
     assert "args=(--mode publish --hours 24 --cutoff-hour 8)" in publication
     assert "edition_date:" in publication

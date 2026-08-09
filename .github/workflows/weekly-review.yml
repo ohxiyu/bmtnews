@@ -71,7 +71,7 @@ jobs:
           if [ -n "${{ inputs.end_date }}" ]; then
             args+=(--edition-date "${{ inputs.end_date }}")
           fi
-          uv run horizon "${args[@]}"
+          uv run bmtnews "${args[@]}"
 
       - name: Publish run report
         if: ${{ always() }}

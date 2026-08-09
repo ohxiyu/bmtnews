@@ -270,6 +270,70 @@ wheels = [
 ]
 
 [[package]]
+name = "bmtnews"
+version = "0.2.0"
+source = { editable = "." }
+dependencies = [
+    { name = "anthropic" },
+    { name = "beautifulsoup4" },
+    { name = "ddgs" },
+    { name = "feedparser" },
+    { name = "google-genai" },
+    { name = "httpx" },
+    { name = "markdown" },
+    { name = "mcp" },
+    { name = "openai" },
+    { name = "pydantic" },
+    { name = "python-dateutil" },
+    { name = "python-dotenv" },
+    { name = "rich" },
+    { name = "tenacity" },
+]
+
+[package.optional-dependencies]
+dev = [
+    { name = "pytest" },
+    { name = "pytest-cov" },
+]
+openbb = [
+    { name = "openbb" },
+    { name = "openbb-benzinga" },
+]
+trafilatura = [
+    { name = "trafilatura" },
+]
+twitter = [
+    { name = "playwright" },
+    { name = "playwright-stealth" },
+]
+
+[package.metadata]
+requires-dist = [
+    { name = "anthropic", specifier = ">=0.39.0" },
+    { name = "beautifulsoup4", specifier = ">=4.12.0" },
+    { name = "ddgs", specifier = ">=7.0.0" },
+    { name = "feedparser", specifier = ">=6.0.11" },
+    { name = "google-genai", specifier = ">=0.3.0" },
+    { name = "httpx", specifier = ">=0.27.0" },
+    { name = "markdown", specifier = ">=3.10.2" },
+    { name = "mcp", specifier = ">=1.0.0" },
+    { name = "openai", specifier = ">=1.54.0" },
+    { name = "openbb", marker = "extra == 'openbb'", specifier = ">=4.4.0" },
+    { name = "openbb-benzinga", marker = "extra == 'openbb'", specifier = ">=1.6.0" },
+    { name = "playwright", marker = "extra == 'twitter'", specifier = ">=1.40.0" },
+    { name = "playwright-stealth", marker = "extra == 'twitter'", specifier = ">=1.0.0" },
+    { name = "pydantic", specifier = ">=2.9.0" },
+    { name = "pytest", marker = "extra == 'dev'", specifier = ">=8.0.0" },
+    { name = "pytest-cov", marker = "extra == 'dev'", specifier = ">=5.0.0" },
+    { name = "python-dateutil", specifier = ">=2.9.0" },
+    { name = "python-dotenv", specifier = ">=1.0.0" },
+    { name = "rich", specifier = ">=13.9.0" },
+    { name = "tenacity", specifier = ">=9.0.0" },
+    { name = "trafilatura", marker = "extra == 'trafilatura'", specifier = ">=2.1.0" },
+]
+provides-extras = ["dev", "openbb", "twitter", "trafilatura"]
+
+[[package]]
 name = "brotli"
 version = "1.2.0"
 source = { registry = "https://pypi.org/simple" }
@@ -1213,70 +1277,6 @@ sdist = { url = "https://files.pythonhosted.org/packages/e7/85/7c366e69d84c17bb7
 wheels = [
     { url = "https://files.pythonhosted.org/packages/7e/22/e85faf23bd72a92d1921e37d674ca56eb298a3c8be31fdecef0ff2b3aaac/h2-4.4.1-py3-none-any.whl", hash = "sha256:0e25f1462b23c9cb82d9eb02e28bc706dac2a68cb457c6a0d74d63c8a2a5d0e6", size = 62636, upload-time = "2026-08-03T11:44:59.164Z" },
 ]
-
-[[package]]
-name = "horizon"
-version = "0.2.0"
-source = { editable = "." }
-dependencies = [
-    { name = "anthropic" },
-    { name = "beautifulsoup4" },
-    { name = "ddgs" },
-    { name = "feedparser" },
-    { name = "google-genai" },
-    { name = "httpx" },
-    { name = "markdown" },
-    { name = "mcp" },
-    { name = "openai" },
-    { name = "pydantic" },
-    { name = "python-dateutil" },
-    { name = "python-dotenv" },
-    { name = "rich" },
-    { name = "tenacity" },
-]
-
-[package.optional-dependencies]
-dev = [
-    { name = "pytest" },
-    { name = "pytest-cov" },
-]
-openbb = [
-    { name = "openbb" },
-    { name = "openbb-benzinga" },
-]
-trafilatura = [
-    { name = "trafilatura" },
-]
-twitter = [
-    { name = "playwright" },
-    { name = "playwright-stealth" },
-]
-
-[package.metadata]
-requires-dist = [
-    { name = "anthropic", specifier = ">=0.39.0" },
-    { name = "beautifulsoup4", specifier = ">=4.12.0" },
-    { name = "ddgs", specifier = ">=7.0.0" },
-    { name = "feedparser", specifier = ">=6.0.11" },
-    { name = "google-genai", specifier = ">=0.3.0" },
-    { name = "httpx", specifier = ">=0.27.0" },
-    { name = "markdown", specifier = ">=3.10.2" },
-    { name = "mcp", specifier = ">=1.0.0" },
-    { name = "openai", specifier = ">=1.54.0" },
-    { name = "openbb", marker = "extra == 'openbb'", specifier = ">=4.4.0" },
-    { name = "openbb-benzinga", marker = "extra == 'openbb'", specifier = ">=1.6.0" },
-    { name = "playwright", marker = "extra == 'twitter'", specifier = ">=1.40.0" },
-    { name = "playwright-stealth", marker = "extra == 'twitter'", specifier = ">=1.0.0" },
-    { name = "pydantic", specifier = ">=2.9.0" },
-    { name = "pytest", marker = "extra == 'dev'", specifier = ">=8.0.0" },
-    { name = "pytest-cov", marker = "extra == 'dev'", specifier = ">=5.0.0" },
-    { name = "python-dateutil", specifier = ">=2.9.0" },
-    { name = "python-dotenv", specifier = ">=1.0.0" },
-    { name = "rich", specifier = ">=13.9.0" },
-    { name = "tenacity", specifier = ">=9.0.0" },
-    { name = "trafilatura", marker = "extra == 'trafilatura'", specifier = ">=2.1.0" },
-]
-provides-extras = ["dev", "openbb", "twitter", "trafilatura"]
 
 [[package]]
 name = "hpack"

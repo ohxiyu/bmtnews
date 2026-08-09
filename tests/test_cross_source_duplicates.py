@@ -1,7 +1,7 @@
 from datetime import datetime, timezone
 
 from src.models import ContentItem, SourceType
-from src.orchestrator import HorizonOrchestrator
+from src.orchestrator import BMTNewsOrchestrator
 
 
 NOW = datetime(2026, 1, 1, tzinfo=timezone.utc)
@@ -27,7 +27,7 @@ def item(
 
 
 def merge(items: list[ContentItem]) -> list[ContentItem]:
-    orchestrator = object.__new__(HorizonOrchestrator)
+    orchestrator = object.__new__(BMTNewsOrchestrator)
     return orchestrator.merge_cross_source_duplicates(items)
 
 
@@ -145,9 +145,9 @@ def test_topic_dedup_records_confirming_outlets() -> None:
     import asyncio
     from types import SimpleNamespace
     from rich.console import Console
-    from src.orchestrator import HorizonOrchestrator
+    from src.orchestrator import BMTNewsOrchestrator
 
-    orchestrator = HorizonOrchestrator.__new__(HorizonOrchestrator)
+    orchestrator = BMTNewsOrchestrator.__new__(BMTNewsOrchestrator)
     orchestrator.console = Console(record=True)
 
     def item(name: str, feed: str, score: float) -> ContentItem:

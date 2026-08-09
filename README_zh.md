@@ -1,428 +1,111 @@
 <div align="center">
-
 <h1>🛰️ BMTNews</h1>
 
-<p><strong>聚焦加密市场与科技动态的 AI 新闻雷达。</strong></p>
+<p><strong>AI 策划的每日情报简报：加密市场、AI 与政策。</strong></p>
 
 [![License](https://img.shields.io/badge/license-MIT-green.svg?style=for-the-badge&logo=opensourceinitiative&logoColor=white)](LICENSE)
 [![Tool uv](https://img.shields.io/badge/Tool-uv-4B275F?style=for-the-badge&logo=uv&logoColor=white)](https://github.com/astral-sh/uv)
-[![Website](https://img.shields.io/badge/Website-BMTNews-263238?style=for-the-badge&logo=homepage&logoColor=white)](https://bmt.news/)
+[![Website](https://img.shields.io/badge/Website-bmt.news-263238?style=for-the-badge&logo=homepage&logoColor=white)](https://bmt.news/)
 [![Daily](https://img.shields.io/github/actions/workflow/status/ohxiyu/bmtnews/daily-summary.yml?branch=main&label=Daily&style=for-the-badge&logo=date-fns&logoColor=white)](https://bmt.news/)
 [![Commit](https://img.shields.io/github/commit-activity/m/ohxiyu/bmtnews?label=Commit&style=for-the-badge&logo=github&logoColor=white)](https://github.com/ohxiyu/bmtnews/commits/main)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/ohxiyu/bmtnews/pulls)
-![Sources Welcome](https://img.shields.io/badge/sources-welcome-f97316?style=for-the-badge&logo=rss&logoColor=white)
 
-![Claude](https://img.shields.io/badge/Claude-f0daba?style=flat-square&logo=anthropic&logoColor=black)
-![GPT](https://img.shields.io/badge/GPT-10A37F?style=flat-square&logo=data:image/svg%2bxml;base64,PHN2ZyByb2xlPSJpbWciIHZpZXdCb3g9IjAgMCAyNCAyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBmaWxsPSJ3aGl0ZSIgZD0iTTIyLjI4MTkgOS44MjExYTUuOTg0NyA1Ljk4NDcgMCAwIDAtLjUxNTctNC45MTA4IDYuMDQ2MiA2LjA0NjIgMCAwIDAtNi41MDk4LTIuOUE2LjA2NTEgNi4wNjUxIDAgMCAwIDQuOTgwNyA0LjE4MThhNS45ODQ3IDUuOTg0NyAwIDAgMC0zLjk5NzcgMi45IDYuMDQ2MiA2LjA0NjIgMCAwIDAgLjc0MjcgNy4wOTY2IDUuOTggNS45OCAwIDAgMCAuNTExIDQuOTEwNyA2LjA1MSA2LjA1MSAwIDAgMCA2LjUxNDYgMi45MDAxQTUuOTg0NyA1Ljk4NDcgMCAwIDAgMTMuMjU5OSAyNGE2LjA1NTcgNi4wNTU3IDAgMCAwIDUuNzcxOC00LjIwNTggNS45ODk0IDUuOTg5NCAwIDAgMCAzLjk5NzctMi45MDAxIDYuMDU1NyA2LjA1NTcgMCAwIDAtLjc0NzUtNy4wNzI5em0tOS4wMjIgMTIuNjA4MWE0LjQ3NTUgNC40NzU1IDAgMCAxLTIuODc2NC0xLjA0MDhsLjE0MTktLjA4MDQgNC43NzgzLTIuNzU4MmEuNzk0OC43OTQ4IDAgMCAwIC4zOTI3LS42ODEzdi02LjczNjlsMi4wMiAxLjE2ODZhLjA3MS4wNzEgMCAwIDEgLjAzOC4wNTJ2NS41ODI2YTQuNTA0IDQuNTA0IDAgMCAxLTQuNDk0NSA0LjQ5NDR6bS05LjY2MDctNC4xMjU0YTQuNDcwOCA0LjQ3MDggMCAwIDEtLjUzNDYtMy4wMTM3bC4xNDIuMDg1MiA0Ljc4MyAyLjc1ODJhLjc3MTIuNzcxMiAwIDAgMCAuNzgwNiAwbDUuODQyOC0zLjM2ODV2Mi4zMzI0YS4wODA0LjA4MDQgMCAwIDEtLjAzMzIuMDYxNUw5Ljc0IDE5Ljk1MDJhNC40OTkyIDQuNDk5MiAwIDAgMS02LjE0MDgtMS42NDY0ek0yLjM0MDggNy44OTU2YTQuNDg1IDQuNDg1IDAgMCAxIDIuMzY1NS0xLjk3MjhWMTEuNmEuNzY2NC43NjY0IDAgMCAwIC4zODc5LjY3NjVsNS44MTQ0IDMuMzU0My0yLjAyMDEgMS4xNjg1YS4wNzU3LjA3NTcgMCAwIDEtLjA3MSAwbC00LjgzMDMtMi43ODY1QTQuNTA0IDQuNTA0IDAgMCAxIDIuMzQwOCA3Ljg3MnptMTYuNTk2MyAzLjg1NThMMTMuMTAzOCA4LjM2NCAxNS4xMTkyIDcuMmEuMDc1Ny4wNzU3IDAgMCAxIC4wNzEgMGw0LjgzMDMgMi43OTEzYTQuNDk0NCA0LjQ5NDQgMCAwIDEtLjY3NjUgOC4xMDQydi01LjY3NzJhLjc5Ljc5IDAgMCAwLS40MDctLjY2N3ptMi4wMTA3LTMuMDIzMWwtLjE0Mi0uMDg1Mi00Ljc3MzUtMi43ODE4YS43NzU5Ljc3NTkgMCAwIDAtLjc4NTQgMEw5LjQwOSA5LjIyOTdWNi44OTc0YS4wNjYyLjA2NjIgMCAwIDEgLjAyODQtLjA2MTVsNC44MzAzLTIuNzg2NmE0LjQ5OTIgNC40OTkyIDAgMCAxIDYuNjgwMiA0LjY2ek04LjMwNjUgMTIuODYzbC0yLjAyLTEuMTYzOGEuMDgwNC4wODA0IDAgMCAxLS4wMzgtLjA1NjdWNi4wNzQyYTQuNDk5MiA0LjQ5OTIgMCAwIDEgNy4zNzU3LTMuNDUzN2wtLjE0Mi4wODA1TDguNzA0IDUuNDU5YS43OTQ4Ljc5NDggMCAwIDAtLjM5MjcuNjgxM3ptMS4wOTc2LTIuMzY1NGwyLjYwMi0xLjQ5OTggMi42MDY5IDEuNDk5OHYyLjk5OTRsLTIuNTk3NCAxLjQ5OTctMi42MDY3LTEuNDk5N1oiLz48L3N2Zz4=)
-![Gemini](https://img.shields.io/badge/Gemini-8E75B2?style=flat-square&logo=googlegemini&logoColor=white)
-![DeepSeek](https://img.shields.io/badge/DeepSeek-0A6DC2?style=flat-square&logo=deepseek&logoColor=white)
-![Doubao](https://img.shields.io/badge/Doubao-00D6C2?style=flat-square&logo=bytedance&logoColor=white)
-![MiniMax](https://img.shields.io/badge/MiniMax-FF6F00?style=flat-square&logo=minimax&logoColor=white)
-![OpenClaw](https://img.shields.io/badge/OpenClaw-C83232?style=flat-square&logo=data:image/svg%2bxml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2NCIgaGVpZ2h0PSI2NCIgdmlld0JveD0iMCAwIDE2IDE2IiBhcmlhLWxhYmVsPSJQaXhlbCBsb2JzdGVyIj4KICA8cmVjdCB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIGZpbGw9Im5vbmUiLz4KICAKICA8ZyBmaWxsPSIjM2EwYTBkIj4KICAgIDxyZWN0IHg9IjEiIHk9IjUiIHdpZHRoPSIxIiBoZWlnaHQ9IjMiLz4KICAgIDxyZWN0IHg9IjIiIHk9IjQiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiLz4KICAgIDxyZWN0IHg9IjIiIHk9IjgiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiLz4KICAgIDxyZWN0IHg9IjMiIHk9IjMiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiLz4KICAgIDxyZWN0IHg9IjMiIHk9IjkiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiLz4KICAgIDxyZWN0IHg9IjQiIHk9IjIiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiLz4KICAgIDxyZWN0IHg9IjQiIHk9IjEwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIi8+CiAgICA8cmVjdCB4PSI1IiB5PSIyIiB3aWR0aD0iNiIgaGVpZ2h0PSIxIi8+CiAgICA8cmVjdCB4PSIxMSIgeT0iMiIgd2lkdGg9IjEiIGhlaWdodD0iMSIvPgogICAgPHJlY3QgeD0iMTIiIHk9IjMiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiLz4KICAgIDxyZWN0IHg9IjEyIiB5PSI5IiB3aWR0aD0iMSIgaGVpZ2h0PSIxIi8+CiAgICA8cmVjdCB4PSIxMyIgeT0iNCIgd2lkdGg9IjEiIGhlaWdodD0iMSIvPgogICAgPHJlY3QgeD0iMTMiIHk9IjgiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiLz4KICAgIDxyZWN0IHg9IjE0IiB5PSI1IiB3aWR0aD0iMSIgaGVpZ2h0PSIzIi8+CiAgICA8cmVjdCB4PSI1IiB5PSIxMSIgd2lkdGg9IjYiIGhlaWdodD0iMSIvPgogICAgPHJlY3QgeD0iNCIgeT0iMTIiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiLz4KICAgIDxyZWN0IHg9IjExIiB5PSIxMiIgd2lkdGg9IjEiIGhlaWdodD0iMSIvPgogICAgPHJlY3QgeD0iMyIgeT0iMTMiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiLz4KICAgIDxyZWN0IHg9IjEyIiB5PSIxMyIgd2lkdGg9IjEiIGhlaWdodD0iMSIvPgogICAgPHJlY3QgeD0iNSIgeT0iMTQiIHdpZHRoPSI2IiBoZWlnaHQ9IjEiLz4KICA8L2c+CgogIAogIDxnIGZpbGw9IiNmZjRmNDAiPgogICAgPHJlY3QgeD0iNSIgeT0iMyIgd2lkdGg9IjYiIGhlaWdodD0iMSIvPgogICAgPHJlY3QgeD0iNCIgeT0iNCIgd2lkdGg9IjgiIGhlaWdodD0iMSIvPgogICAgPHJlY3QgeD0iMyIgeT0iNSIgd2lkdGg9IjEwIiBoZWlnaHQ9IjEiLz4KICAgIDxyZWN0IHg9IjMiIHk9IjYiIHdpZHRoPSIxMCIgaGVpZ2h0PSIxIi8+CiAgICA8cmVjdCB4PSIzIiB5PSI3IiB3aWR0aD0iMTAiIGhlaWdodD0iMSIvPgogICAgPHJlY3QgeD0iNCIgeT0iOCIgd2lkdGg9IjgiIGhlaWdodD0iMSIvPgogICAgPHJlY3QgeD0iNSIgeT0iOSIgd2lkdGg9IjYiIGhlaWdodD0iMSIvPgogICAgPHJlY3QgeD0iNSIgeT0iMTIiIHdpZHRoPSI2IiBoZWlnaHQ9IjEiLz4KICAgIDxyZWN0IHg9IjYiIHk9IjEzIiB3aWR0aD0iNCIgaGVpZ2h0PSIxIi8+CiAgPC9nPgoKICAKICA8ZyBmaWxsPSIjZmY3NzVmIj4KICAgIDxyZWN0IHg9IjEiIHk9IjYiIHdpZHRoPSIyIiBoZWlnaHQ9IjEiLz4KICAgIDxyZWN0IHg9IjIiIHk9IjUiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiLz4KICAgIDxyZWN0IHg9IjIiIHk9IjciIHdpZHRoPSIxIiBoZWlnaHQ9IjEiLz4KICAgIDxyZWN0IHg9IjEzIiB5PSI2IiB3aWR0aD0iMiIgaGVpZ2h0PSIxIi8+CiAgICA8cmVjdCB4PSIxMyIgeT0iNSIgd2lkdGg9IjEiIGhlaWdodD0iMSIvPgogICAgPHJlY3QgeD0iMTMiIHk9IjciIHdpZHRoPSIxIiBoZWlnaHQ9IjEiLz4KICA8L2c+CgogIAogIDxnIGZpbGw9IiMwODEwMTYiPgogICAgPHJlY3QgeD0iNiIgeT0iNSIgd2lkdGg9IjEiIGhlaWdodD0iMSIvPgogICAgPHJlY3QgeD0iOSIgeT0iNSIgd2lkdGg9IjEiIGhlaWdodD0iMSIvPgogIDwvZz4KICA8ZyBmaWxsPSIjZjVmYmZmIj4KICAgIDxyZWN0IHg9IjYiIHk9IjQiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiLz4KICAgIDxyZWN0IHg9IjkiIHk9IjQiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiLz4KICA8L2c+Cjwvc3ZnPgoK)
-![Ollama](https://img.shields.io/badge/Ollama-FFFFFF?style=flat-square&logo=Ollama&logoColor=black)
+📡 每天一期，中英双语 · [**在线阅读 →**](https://bmt.news/)
 
-📡 构建你专属的 AI 新闻雷达，生成中英双语日报。 | Your own AI-powered news radar.
-
-[📖 在线演示](https://bmt.news/) · [📋 配置指南](project-docs/configuration.md) · [English](README.md) · [日本語](README_ja.md)
-
-基于开源项目 [Horizon](https://github.com/Thysrael/Horizon) 构建。
+[📖 在线站点](https://bmt.news/) · [📋 配置说明](project-docs/configuration.md) · [🧵 归档与事件线](project-docs/archive-and-threads.md) · [✍️ 编辑层](project-docs/editorial.md) · [English](README.md) · [日本語](README_ja.md)
 
 </div>
 
-## 截图
+## BMTNews 是什么
 
-<table>
-<tr>
-<td width="50%">
-<p align="center"><strong>按优先级排序的日报</strong></p>
-<img src="project-docs/assets/overview_zh.png" alt="日报总览" />
-</td>
-<td width="50%">
-<p align="center"><strong>背景、总结与评论</strong></p>
-<img src="project-docs/assets/one_news_zh.png" alt="新闻详情" />
-</td>
-</tr>
-</table>
+加密行业的信息量早已超过任何人的阅读能力。BMTNews 持续监听交易所公告频道、
+协议发布、监管机构、加密与 AI 媒体，每天早上 **08:30（东八区）出一期排好序的
+日报**——通常 7 到 14 条真正重要的内容，每条附带背景、市场影响分析和来源链接。
 
-<details>
-<summary><strong>More Screenshots</strong></summary>
-<br>
-<table>
-<tr>
-<td width="33.33%">
-<p align="center"><strong>终端输出</strong></p>
-<img src="project-docs/assets/terminal_log.png" alt="终端输出" />
-</td>
-<td width="33.33%">
-<p align="center"><strong>飞书通知</strong></p>
-<img src="project-docs/assets/feishu_zh.png" alt="飞书通知" />
-</td>
-<td width="33.33%">
-<p align="center"><strong>邮件推送</strong></p>
-<img src="project-docs/assets/email.png" alt="邮件推送" />
-</td>
-</tr>
-</table>
-</details>
+整个系统跑在 GitHub Actions 和 GitHub Pages 上：**没有服务器、没有数据库、
+没有需要维护的常驻服务**。git 就是存储层，所有产物都是静态文件。
 
-## 为什么需要 Horizon？
+## 一期日报是怎么来的
 
-好新闻分散在各处，坏信息却源源不断。Horizon 为你先完成第一轮筛选：从 Hacker News、Reddit、Telegram、RSS、Twitter/X、GitHub 和 OpenBB 抓取内容，合并重复新闻，用 AI 打分过滤，并为重要内容补充背景解释和社区讨论。
-
-但 Horizon 不只是又一个摘要工具。AI 很擅长降低噪声，但新闻仍然需要人的品味：你信任哪些信息源，哪些评论改变了你对事件的理解，哪些小众来源值得被更多人看见。Horizon 通过可定制的信息源、筛选标准、模型、语言、分发方式、评论摘要和社区信息源官网，把这层“人味”保留下来。
-
-## 功能特性
-
-- **📡 关注你的信息源** — 将 Hacker News、RSS、Reddit、Telegram、Twitter/X、GitHub Release / 用户动态，以及 OpenBB 金融新闻观察列表纳入同一条 pipeline
-- **🤖 把噪声变成阅读清单** — 使用 Claude、GPT、Gemini、DeepSeek、豆包、MiniMax 或任意 OpenAI 兼容 API，为每条内容评分 0-10
-- **🔗 合并重复新闻** — 在生成日报前自动合并来自不同平台的相同故事
-- **🔍 补全背景知识** — 为陌生概念、公司、项目和技术术语补充网络搜索得到的背景解释
-- **💬 读到社区声音** — 收集并总结 Hacker News、Reddit 等来源的评论讨论
-- **🌐 生成双语日报** — 基于同一组信息源生成英文和中文日报
-- **📝 发布日报站点** — 将生成的 Markdown 发布为 GitHub Pages 静态日报站点
-- **📧 邮件分发** — 运行自托管 SMTP/IMAP 邮件列表，自动处理订阅与退订
-- **🔔 推送到聊天和自动化工具** — 将模板化结果发送到飞书、钉钉、Slack、Discord 或自定义 Webhook
-- **🧙 从兴趣开始配置** — 通过交互式向导根据你的兴趣生成个性化信息源配置
-- **⚙️ 调校你的新闻雷达** — 在单个 JSON 配置中定制信息源、阈值、模型、语言和分发方式
-
-## 工作原理
-
-```mermaid
-%%{init: {
-  "theme": "base",
-  "themeVariables": {
-    "fontFamily": "ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif",
-    "fontSize": "18px",
-    "primaryTextColor": "#2d2a3e",
-    "primaryBorderColor": "#e0dbd3",
-    "lineColor": "#7c7891",
-    "tertiaryColor": "#faf8f5",
-    "clusterBkg": "#f3f0eb",
-    "clusterBorder": "#e0dbd3"
-  }
-}}%%
-flowchart LR
-    classDef config fill:#fbbf24,stroke:#d4a017,color:#2d2a3e,stroke-width:1.5px;
-    classDef source fill:#ede7fb,stroke:#6d4aaa,color:#2d2a3e,stroke-width:1.5px;
-    classDef process fill:#ffe8db,stroke:#e0652e,color:#2d2a3e,stroke-width:1.5px;
-    classDef output fill:#f9d7e5,stroke:#be185d,color:#2d2a3e,stroke-width:1.5px;
-
-    config["⚙️ 配置<br/>信息源、阈值、模型、输出方式"]
-
-     subgraph sources["已配置的信息源"]
-         rss["📡 RSS"]
-         hn["📰 Hacker News"]
-         reddit["💬 Reddit"]
-         telegram["✈️ Telegram"]
-         twitter["🐦 Twitter / X"]
-         github["🐙 GitHub"]
-         openbb["💹 OpenBB"]
-      end
-
-    fetch["📥 抓取"]
-    dedup["🧹 新闻去重"]
-    score["🤖 AI 打分与过滤"]
-    enrich["🔎 内容丰富"]
-    summary["📝 总结生成"]
-
-    subgraph outputs["输出形式"]
-        direction TB
-        site["🌐 Pages"]
-        email["📧 邮件"]
-        webhook["🔔 Webhook"]
-        mcp["🧩 MCP"]
-    end
-
-     config --> fetch
-     rss --> fetch
-     hn --> fetch
-     reddit --> fetch
-      telegram --> fetch
-      twitter --> fetch
-      github --> fetch
-      openbb --> fetch
-
-    fetch --> dedup --> score --> enrich --> summary
-    config --> score
-    config --> summary
-    config --> outputs
-
-    summary --> site
-    summary --> email
-    summary --> webhook
-    summary --> mcp
-
-    class config config
-    class rss,hn,reddit,telegram,twitter,github,openbb source
-    class fetch,dedup,score,enrich,summary process
-    class site,email,webhook,mcp output
+```
+每 4 小时采集 ─► 固定 24 小时窗口 ─► AI 评分 ─► 去重 ─► 配额平衡
+                                                          │
+                    归档 ◄── 发布 ◄── 背景补充 ◄──────────┘
+                     │        │
+     事件线 · 实体页 · JSON API · 分类订阅 · 周报
 ```
 
-1. **定义** — 用一个 JSON 配置好信息源、阈值、模型、语言和分发方式。
-2. **抓取** — 并发拉取所有已配置信息源的最新内容。
-3. **去重** — 合并来自不同平台、指向同一故事或 URL 的内容。
-4. **打分与过滤** — 用 AI 对内容排序，只保留超过阈值的条目。
-5. **丰富** — 为重要内容补充搜索得到的背景信息和社区讨论。
-6. **总结** — 生成结构化的 Markdown 日报，包含摘要、标签和参考链接。
-7. **分发** — 将结果发布到 GitHub Pages、邮件、飞书等 webhook、MCP 或本地文件。
+- **固定窗口**：每期严格覆盖当地时间 08:00→08:00，不重不漏
+- **评分而非堆量**：每条 0-10 分，有校准锚点，达标才发
+- **两道去重**：先合并相同链接，再由 AI 合并「同一事件、不同媒体」，
+  并记录有几家媒体报道过
+- **配额平衡**：分类和来源都有上限，单一交易所或媒体刷不了屏
+- **绝不空刊**：无内容达标时，改发标注为「低信号日」的精选短刊
 
-## 赞助
+## 功能
 
-Horizon 是一个业余时间维护的开源项目。如果你愿意支持 BMTNews，欢迎[创建一个 Issue](https://github.com/ohxiyu/bmtnews/issues/new)。
-
-| 支持方 | 说明 |
-|--------|------|
-| [<img src="project-docs/assets/compshare-logo.png" alt="Compshare / 优云智算" width="220" />](https://www.compshare.cn/?ytag=GPU_YY_git_Horizon) | 优云智算目前正在支持 Horizon。优云智算是 UCloud 旗下 AI 云平台，主打包月、按次的高性价比国模 Agent Plan 套餐，低至 49 元/月起，同时提供官转稳定海外模型。支持接入 Claude Code、Codex 及 API 调用，支持企业高并发、7*24 技术支持和自助开票。<br><br>通过其[链接](https://www.compshare.cn/?ytag=GPU_YY_git_Horizon)注册，可获得 5 元平台体验金。 |
+- **📡 冗余化的信息源** — 交易所 Telegram 公告、协议 GitHub 发布、监管机构
+  （SEC / CFTC / 美联储）、加密媒体、AI 实验室、Hacker News、GDELT、Google News
+- **📄 全文阅读** — 主力信息源抓取全文，而不是只读 RSS 摘要
+- **🧵 事件线** — 跨天串联持续事件，事故与后续读起来是一条时间线
+- **🏷️ 实体页** — 按公司、协议、监管机构聚合全部历史报道
+- **🔍 背景与市场影响** — 每条附带经检索的背景，以及影响传导路径分析
+  （只做分析，不构成投资建议）
+- **✍️ 编辑层** — 表单化后台插入自定义新闻、投放带标识的广告位、压掉误判内容
+- **🌐 中英双语** — 同一套源产出两种语言
+- **🔌 机器可读** — 每期 `edition.json`、`latest.json`、分类 Atom 订阅
+- **📬 多渠道分发** — 站点、Telegram、邮件、Webhook，以及按高峰时段分时投放的 X
 
 ## 快速开始
 
-### 1. 安装
-
-#### 方式 A：本地安装
-
 ```bash
-git clone https://github.com/ohxiyu/bmtnews.git
-cd bmtnews
+# 1. 安装（推荐 uv）
+uv sync --extra trafilatura
 
-# 使用 uv 安装（推荐）
-uv sync
-
-# 需要测试/开发依赖时
-uv sync --extra dev
-
-# 或使用 pip
-pip install -e .
-```
-
-当前 `dev` 在 `pyproject.toml` 中定义为 optional extra，因此安装 `pytest` 等开发依赖时应使用 `uv sync --extra dev`。
-
-如果你要启用可选的 OpenBB 金融新闻源，还需要安装对应 extra：
-
-```bash
-uv sync --extra openbb
-```
-
-如果 `openbb` 在你的机器上会拉到缺少 wheel 的依赖，建议改用只安装二进制包：
-
-```bash
-uv pip install --only-binary=:all: openbb openbb-benzinga
-```
-
-#### 方式 B：Docker
-
-```bash
-git clone https://github.com/ohxiyu/bmtnews.git
-cd bmtnews
-
-# 配置环境
-cp .env.example .env
+# 2. 配置
 cp data/config.example.json data/config.json
-# 编辑 .env 和 data/config.json，填入你的 API 密钥和偏好设置
+cp .env.example .env          # 填入 AI 服务商 API Key
+uv run bmtnews-wizard         # 或直接编辑 data/config.json
 
-# 使用 Docker Compose 运行
-docker compose run --rm horizon
-
-# 或自定义时间窗口
-docker compose run --rm horizon --hours 48
+# 3. 出一期
+uv run bmtnews --mode publish --hours 24 --cutoff-hour 8
 ```
 
-### 2. 配置
+其他模式：
 
-**方式 A：交互式向导（推荐）**
+| 命令 | 作用 |
+|---|---|
+| `uv run bmtnews --mode fetch` | 只采集进暂存缓存，不调用 AI |
+| `uv run bmtnews --mode publish` | 构建并发布一期固定窗口日报 |
+| `uv run bmtnews --mode weekly` | 从归档生成周报 |
+| `uv run bmtnews --mode x-post` | 发布分时队列中的下一条 X 内容 |
+| `uv run bmtnews-mcp` | 以 MCP 方式提供管线与归档查询 |
 
-```bash
-uv run horizon-wizard
-```
+完整配置见 [project-docs/configuration.md](project-docs/configuration.md)。
 
-向导会询问你的兴趣（如"LLM 推理"、"嵌入式"、"web 安全"），自动推荐并生成 `data/config.json`，还可选让 AI 补充推荐小众源。若你想分享信息源，请前往 [horizon1123.top](https://horizon1123.top/)。
+## 自动化
 
-**方式 B：手动配置**
-
-```bash
-cp .env.example .env          # 添加 API 密钥
-cp data/config.example.json data/config.json  # 自定义信息源
-```
-
-最小手动配置示例：
-
-```jsonc
-{
-  "ai": {
-    "provider": "openai",
-    "model": "gpt-4",
-    "api_key_env": "OPENAI_API_KEY"
-  },
-  "sources": {
-    "rss": [
-      { "name": "Simon Willison", "url": "https://simonwillison.net/atom/everything/" }
-    ]
-  },
-  "filtering": {
-    "ai_score_threshold": 6.0
-  }
-}
-```
-
-**均衡日报（可选）**
-
-可以限制日报总条数，并避免单一类别占据过多内容。类别来自
-`sources.rss[].category` 等信息源配置。
-
-```jsonc
-{
-  "filtering": {
-    "ai_score_threshold": 6.0,
-    "max_items": 20,
-    "category_groups": {
-      "ai": {
-        "limit": 5,
-        "categories": ["ai-news", "ai-tools", "machine-learning"]
-      },
-      "finance": {
-        "limit": 5,
-        "categories": ["finance", "business", "equities"]
-      }
-    },
-    "default_group": "other",
-    "default_group_limit": 3
-  }
-}
-```
-
-分组限额在 AI 分数过滤之后、内容补充之前执行。`primary_groups` 可以在
-合格内容足够时优先保留主轨条目；例如本项目用它表达 Crypto 最低 9 条的目标。
-该目标不会绕过 AI 分数阈值或各分组上限，因此候选不足时日报会如实少于 9 条，
-并在运行报告中预警。未配置 `category_groups` 和 `max_items` 时，筛选行为
-保持不变。
-
-`data/config.json` 里的任意字符串值都可以通过 `${VAR_NAME}` 引用环境变量。这适合用于 `ai.base_url`、私有 RSS 链接、Webhook 地址或自定义请求头模板等字段。
-
-完整配置参考请查看[配置指南](project-docs/configuration.md)。
-
-### 3. 运行
-
-#### 本地安装
-
-```bash
-uv run horizon              # 使用默认 24 小时窗口
-uv run horizon --hours 48   # 抓取最近 48 小时的内容
-uv run horizon --mode fetch --hours 12  # 只采集并暂存，不调用 AI
-uv run horizon --mode publish --hours 24 --cutoff-hour 8 --edition-date 2026-07-31
-```
-
-#### 使用 Docker
-
-```bash
-docker compose run --rm horizon              # 使用默认 24 小时窗口
-docker compose run --rm horizon --hours 48   # 抓取最近 48 小时的内容
-```
-
-生成的日报将保存在 `data/summaries/` 目录中。
-
-### 4. 自动化（可选）
-
-Horizon 非常适合自动定时运行。本项目通过
-[`feed-collection.yml`](.github/workflows/feed-collection.yml) 在上海时间
-00:30 和 16:30 只采集并暂存原始内容，不调用 AI；独立的
-[Cloudflare Cron 调度器](project-docs/daily-dispatcher.md) 在 08:30 携带明确
-期号触发 [`daily-summary.yml`](.github/workflows/daily-summary.yml)。日报最终
-补采后只分析固定的 `[前一天 08:00，当天 08:00)` 窗口，并向 GitHub Pages
-发布唯一一期早间日报。日内暂存用于提高覆盖率，最终 24 小时补采仍是兜底。
-
-每个 workflow 都会生成 `data/run-report.json`，但报告会按照运行类型展示
-真正相关的指标。日内采集报告包含采集、URL 去重、新增暂存、缓存累计和各来源
-状态；早间发布报告另外包含固定窗口、截止后延迟、暂存年龄、仅由暂存补回的
-候选、各细分来源的候选/入选贡献、AI 筛选漏斗、类别上限，以及 Crypto 主轨
-最低目标。配额不足、启动过晚或暂存过旧都会明确显示为 warning，系统不会为了
-凑数而降低 AI 分数阈值。
-
-该 JSON 是临时运行文件，不会提交到仓库；GitHub Actions 会将每次报告渲染到
-对应 workflow run 的 Job Summary，历史报告仍可逐次查看。原有顶层来源状态
-继续保留，并展开 Feed、频道或仓库级计数。部分来源失败显示为警告，全部来源
-失败仍会使任务失败。
-
-Cloudflare 会在 08:40、08:55 和 09:10 复查，并分别识别 `gh-pages` 已生成和
-Pages 已渲染两个阶段。独立的
-[`schedule-watchdog.yml`](.github/workflows/schedule-watchdog.yml) 工作流还会
-在 08:47 检查日报发布心跳。每天 08:00 截止后，如果 `main` 仍没有当期成功
-发布记录且当前没有发布任务运行，它会携带同一期号自动触发一次补跑，同时将
-自身标记为失败，以便 GitHub 发送工作流失败通知；已有当期发布正在运行时不会
-重复触发。
-
-如果延迟的原定任务在补跑已经发布同一固定窗口后才启动，发布模式会在采集和
-调用 AI 前直接退出，避免重复成本。维护者确实需要重建当期日报时，可以在
-**Run workflow** 中启用 `force_publish`。
-
-这套节省额度的配置每天固定运行 3 次 GitHub 定时任务（2 次暂存、1 次独立
-心跳），日报由 Cloudflare 按需 dispatch。同一 PR 的旧检查会自动取消，受保护
-的 `main` 合并提交不会再次重复运行 CI/CodeQL，每个托管 job 也设置了超时
-上限。GitHub 标准托管 runner 对
-[公开仓库免费](https://docs.github.com/billing/concepts/product-billing/github-actions)，
-但该配置也为以后改成私有仓库预留了更多免费额度。
-
-## 支持的信息源
-
-| 信息源 | 抓取内容 | 评论收集 |
-|--------|---------|---------|
-| **Hacker News** | 按分数排序的热门文章 | 支持（前 N 条评论） |
-| **RSS / Atom** | 任意 RSS 或 Atom 订阅源 | — |
-| **Reddit** | Subreddit 帖子 + 用户动态 | 支持（前 N 条评论） |
-| **Telegram** | 公开频道消息 | — |
-| **Twitter / X** | 特定用户的推文 | 支持（前 N 条回复） |
-| **GitHub** | 用户动态 & 仓库 Release | — |
-| **OpenBB** | 按观察列表 / provider 抓取金融公司新闻 | — |
-
-## 日报可以去哪里
-
-Horizon 支持通过多种方式发布和分发生成的日报：
-
-| 方式 | 作用 |
-|------|------|
-| **GitHub Pages 日报站点** | 将生成的 Markdown 复制到 `docs/`，通过 GitHub Pages 发布为每日更新的静态日报站点 |
-| **邮件订阅** | 通过 SMTP/IMAP 向订阅者发送日报，并自动处理订阅/退订请求 |
-| **Webhook 通知** | 在成功或失败时将结果推送到飞书、钉钉、Slack、Discord 或任意 Webhook 端点 |
-| **MCP Server** | 将抓取、打分、过滤、富化、摘要和完整 pipeline 暴露为工具，供 AI 助手调用 |
-
-具体配置见[配置指南](project-docs/configuration.md)。MCP 工具说明和客户端接入见 [`src/mcp/README.md`](src/mcp/README.md) 与 [`src/mcp/integration.md`](src/mcp/integration.md)。
+| Workflow | 时间 | 用途 |
+|---|---|---|
+| `feed-collection` | 每约 4 小时 | 采集信息源到暂存缓存 |
+| `daily-summary` | 08:30（东八区） | 构建并发布日报 |
+| `weekly-review` | 周一 09:30 | 周报与评分校准复盘 |
+| `x-distribution` | 每天 4 次 | 按高峰时段分时投放 X |
+| `editorial-rebuild` | 编辑触发 | 编辑层改动后自动重刊 |
 
 ## 文档
 
-| 文档 | 内容 |
-|------|------|
-| [配置指南](project-docs/configuration.md) | AI 模型、信息源、过滤、邮件、Webhook、GitHub Pages 和 MCP 配置 |
-| [来源目录](project-docs/source-console.md) | 公开只读来源清单与维护者专用 Actions 流程 |
-| [评分机制](project-docs/scoring.md) | Horizon 如何评估和排序新闻 |
-| [抓取器](project-docs/scrapers.md) | 信息源抓取器说明和扩展细节 |
-| [内容提取器](project-docs/extractors.md) | RSS 信息源的全文提取 |
-| [MCP 工具](src/mcp/README.md) | MCP 客户端可调用的工具说明 |
+- [配置说明](project-docs/configuration.md)
+- [归档、事件线、实体与 JSON API](project-docs/archive-and-threads.md)
+- [编辑层与网页后台](project-docs/editorial.md)
+- [X 分发](project-docs/x-distribution.md)
+- [信息源](project-docs/scrapers.md) · [评分](project-docs/scoring.md) · [正文抽取](project-docs/extractors.md)
 
-## 项目状态
+## 参与
 
-Horizon 已经支持完整的日报流程：多源抓取、AI 打分、去重、背景补充、评论摘要、双语生成、GitHub Pages 发布、邮件分发、Webhook 推送、Docker 部署、MCP 集成和配置向导。
+欢迎推荐信息源和提交 PR，见 [CONTRIBUTING.md](CONTRIBUTING.md)。
+安全问题请见 [SECURITY.md](SECURITY.md)。
 
-计划中的改进：
+## 许可
 
-- 更多信息源类型，例如 Discord
-- 按信息源自定义打分 Prompt
-- 在 GitHub 上发布 Release
-- 发布到 PyPI，支持通过 `pip install` 安装
-
-## 贡献
-
-欢迎贡献！请随时提交 Issue 或 Pull Request。
-
-### 分享信息源
-
-想把有价值的信息源分享给 Horizon 社区？请直接前往 **[horizon1123.top](https://horizon1123.top)** 提交。
-
-欢迎提交：你所在领域里优质的小众 RSS 发现、活跃 subreddit 的趋势、值得关注的 GitHub 动态，或 Telegram 频道精选内容。
-
-## 鸣谢
-
-- 特别感谢 [LINUX.DO](https://linux.do/) 提供的宣传平台。
-- 特别感谢 [HelloGitHub](https://hellogithub.com/) 提供的指导意见。
-- 特别感谢 [AIGC Link](https://xhslink.com/m/80ngts127cA) 提供的小红书和微信公众号宣传。
-
-## 许可证
-
-[MIT](LICENSE)
+MIT，见 [LICENSE](LICENSE)。本项目起步自一个 MIT 协议的开源代码库，
+按协议要求在许可文件中保留了原始版权声明。

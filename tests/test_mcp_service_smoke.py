@@ -8,12 +8,12 @@ import json
 
 from src.models import ContentItem, FilteringConfig, SourceType
 from src.ai.summarizer import DailySummarizer
-from src.mcp.server import hz_get_metrics
-from src.mcp.service import HorizonPipelineService
+from src.mcp.server import bmt_get_metrics
+from src.mcp.service import BMTNewsPipelineService
 from src.orchestrator import (
     BalancedDigestResult,
     FetchReport,
-    HorizonOrchestrator,
+    BMTNewsOrchestrator,
     SourceFetchOutcome,
 )
 from src.services.webhook import WebhookDeliveryResult, WebhookDeliveryStatus
@@ -39,10 +39,10 @@ def test_validate_config_smoke(tmp_path: Path) -> None:
         encoding="utf-8",
     )
 
-    service = HorizonPipelineService(runs_root=tmp_path / "mcp-runs")
+    service = BMTNewsPipelineService(runs_root=tmp_path / "mcp-runs")
     result = asyncio.run(
         service.validate_config(
-            horizon_path=str(repo_root),
+            project_path=str(repo_root),
             config_path=str(config_path),
             check_env=False,
         )
@@ -61,9 +61,9 @@ def test_get_effective_config_can_filter_sources(tmp_path: Path) -> None:
         encoding="utf-8",
     )
 
-    service = HorizonPipelineService(runs_root=tmp_path / "mcp-runs")
+    service = BMTNewsPipelineService(runs_root=tmp_path / "mcp-runs")
     result = service.get_effective_config(
-        horizon_path=str(repo_root),
+        project_path=str(repo_root),
         config_path=str(config_path),
         sources=["rss"],
     )
@@ -90,8 +90,8 @@ def test_get_effective_config_redacts_expanded_query_and_header_secrets(
     monkeypatch.setenv("URL_USER", "private-user")
     monkeypatch.setenv("URL_PASSWORD", "private-password")
 
-    result = HorizonPipelineService(runs_root=tmp_path / "runs").get_effective_config(
-        horizon_path=str(repo_root), config_path=str(config_path)
+    result = BMTNewsPipelineService(runs_root=tmp_path / "runs").get_effective_config(
+        project_path=str(repo_root), config_path=str(config_path)
     )
     rendered = json.dumps(result)
 
@@ -113,14 +113,14 @@ def test_get_effective_config_redacts_expanded_query_and_header_secrets(
 
 
 def test_metrics_tool_smoke() -> None:
-    result = hz_get_metrics()
+    result = bmt_get_metrics()
 
     assert result["ok"] is True
-    assert result["tool"] == "hz_get_metrics"
+    assert result["tool"] == "bmt_get_metrics"
 
 
 def test_fetch_items_uses_public_orchestrator_api(tmp_path: Path, monkeypatch) -> None:
-    service = HorizonPipelineService(runs_root=tmp_path / "mcp-runs")
+    service = BMTNewsPipelineService(runs_root=tmp_path / "mcp-runs")
     config_path = tmp_path / "config.json"
 
     monkeypatch.setattr(
@@ -128,7 +128,7 @@ def test_fetch_items_uses_public_orchestrator_api(tmp_path: Path, monkeypatch) -
         "_build_context",
         lambda **kwargs: (
             SimpleNamespace(
-                horizon_path=tmp_path,
+                project_path=tmp_path,
                 config_path=config_path,
                 runtime=SimpleNamespace(),
                 config=SimpleNamespace(),
@@ -161,7 +161,7 @@ def test_fetch_items_uses_public_orchestrator_api(tmp_path: Path, monkeypatch) -
 def test_fetch_items_includes_fetch_report_in_response_and_metadata(
     tmp_path: Path, monkeypatch
 ) -> None:
-    service = HorizonPipelineService(runs_root=tmp_path / "mcp-runs")
+    service = BMTNewsPipelineService(runs_root=tmp_path / "mcp-runs")
     config_path = tmp_path / "config.json"
 
     monkeypatch.setattr(
@@ -169,7 +169,7 @@ def test_fetch_items_includes_fetch_report_in_response_and_metadata(
         "_build_context",
         lambda **kwargs: (
             SimpleNamespace(
-                horizon_path=tmp_path,
+                project_path=tmp_path,
                 config_path=config_path,
                 runtime=SimpleNamespace(),
                 config=SimpleNamespace(),
@@ -209,7 +209,7 @@ def test_fetch_items_includes_fetch_report_in_response_and_metadata(
 
 
 def test_filter_items_uses_public_filtering_pipeline_api(tmp_path: Path, monkeypatch) -> None:
-    service = HorizonPipelineService(runs_root=tmp_path / "mcp-runs")
+    service = BMTNewsPipelineService(runs_root=tmp_path / "mcp-runs")
     service.run_store.create_run("run-topic-dedup")
 
     monkeypatch.setattr(
@@ -251,7 +251,7 @@ def test_filter_items_uses_public_filtering_pipeline_api(tmp_path: Path, monkeyp
 
 
 def test_filter_items_applies_balanced_digest(tmp_path: Path, monkeypatch) -> None:
-    service = HorizonPipelineService(runs_root=tmp_path / "mcp-runs")
+    service = BMTNewsPipelineService(runs_root=tmp_path / "mcp-runs")
     service.run_store.create_run("run-balanced")
     filtering = SimpleNamespace(
         ai_score_threshold=7.0,
@@ -305,7 +305,7 @@ def test_filter_items_applies_balanced_digest(tmp_path: Path, monkeypatch) -> No
 
 
 def test_filter_items_matches_native_filtering_pipeline(tmp_path: Path, monkeypatch) -> None:
-    service = HorizonPipelineService(runs_root=tmp_path / "mcp-runs")
+    service = BMTNewsPipelineService(runs_root=tmp_path / "mcp-runs")
     service.run_store.create_run("run-parity")
     filtering = FilteringConfig(ai_score_threshold=7.0, max_items=1)
     config = SimpleNamespace(filtering=filtering)
@@ -316,8 +316,8 @@ def test_filter_items_matches_native_filtering_pipeline(tmp_path: Path, monkeypa
         make_item("second", score=9.0),
     ]
 
-    def make_filtering_orchestrator() -> HorizonOrchestrator:
-        orchestrator = HorizonOrchestrator.__new__(HorizonOrchestrator)
+    def make_filtering_orchestrator() -> BMTNewsOrchestrator:
+        orchestrator = BMTNewsOrchestrator.__new__(BMTNewsOrchestrator)
         orchestrator.config = config
 
         async def merge_topic_duplicates(input_items, *, log=True):  # type: ignore[no-untyped-def]
@@ -369,7 +369,7 @@ def test_filter_items_matches_native_filtering_pipeline(tmp_path: Path, monkeypa
 def test_generate_summary_persists_informative_empty_summary(
     tmp_path: Path, monkeypatch
 ) -> None:
-    service = HorizonPipelineService(runs_root=tmp_path / "mcp-runs")
+    service = BMTNewsPipelineService(runs_root=tmp_path / "mcp-runs")
     service.run_store.create_run("run-empty")
     service.run_store.save_items("run-empty", "raw", [])
     service.run_store.save_items("run-empty", "filtered", [])
@@ -404,7 +404,7 @@ def test_generate_summary_persists_informative_empty_summary(
 def test_run_pipeline_skips_enrichment_when_filter_is_empty(
     tmp_path: Path, monkeypatch
 ) -> None:
-    service = HorizonPipelineService(runs_root=tmp_path / "mcp-runs")
+    service = BMTNewsPipelineService(runs_root=tmp_path / "mcp-runs")
     calls: list[tuple[str, str]] = []
 
     async def fetch_items(**kwargs):  # type: ignore[no-untyped-def]
@@ -449,7 +449,7 @@ def test_run_pipeline_skips_enrichment_when_filter_is_empty(
 def test_send_webhook_reports_delivery_failure_truthfully(
     tmp_path: Path, monkeypatch
 ) -> None:
-    service = HorizonPipelineService(runs_root=tmp_path / "mcp-runs")
+    service = BMTNewsPipelineService(runs_root=tmp_path / "mcp-runs")
     webhook_config = SimpleNamespace(enabled=True)
     monkeypatch.setattr(
         service,

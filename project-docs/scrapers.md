@@ -5,7 +5,7 @@ title: Source Scrapers
 
 # Source Scrapers
 
-Horizon fetches content from multiple source types. All scrapers inherit from `BaseScraper`, share an async HTTP client, and implement a `fetch(since)` method that returns a list of `ContentItem` objects. Sources are fetched concurrently via `asyncio.gather`.
+BMTNews fetches content from multiple source types. All scrapers inherit from `BaseScraper`, share an async HTTP client, and implement a `fetch(since)` method that returns a list of `ContentItem` objects. Sources are fetched concurrently via `asyncio.gather`.
 
 ## Hacker News
 
@@ -156,7 +156,7 @@ Subreddits and users are fetched concurrently. Comments are sorted by score, lim
 
 Uses the [OpenBB Platform](https://www.openbb.co/platform) Python SDK via `obb.news.company()` to fetch company news for one or more ticker watchlists.
 
-The scraper imports `openbb` lazily. If the optional dependency is not installed, Horizon logs a warning and skips the source instead of failing the whole run.
+The scraper imports `openbb` lazily. If the optional dependency is not installed, BMTNews logs a warning and skips the source instead of failing the whole run.
 
 **Config** (`sources.openbb`):
 
@@ -189,7 +189,7 @@ Behavior:
 - Skips malformed rows, rows without URL/title/date, and items older than the current time window
 - Keeps fetching other watchlists if one provider call fails
 
-**Credentials**: provider-specific secrets are resolved by the OpenBB SDK from its own environment variables or settings file. Horizon does not pass those values directly.
+**Credentials**: provider-specific secrets are resolved by the OpenBB SDK from its own environment variables or settings file. BMTNews does not pass those values directly.
 
 **Extracted data**: title, URL, author, published time, article body/excerpt, watchlist name, provider, category, and symbol list.
 
