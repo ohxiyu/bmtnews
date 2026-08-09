@@ -2023,10 +2023,11 @@ class HorizonOrchestrator:
             primary = max(group_copies, key=lambda x: len(x.content or ""))
 
             # Merge metadata and source info from other items
-            all_sources = []
+            all_sources: List[str] = []
             for item in group_copies:
-                if item.source_type.value not in all_sources:
-                    all_sources.append(item.source_type.value)
+                label = self._provenance_label(item)
+                if label not in all_sources:
+                    all_sources.append(label)
                 # Merge metadata (engagement, discussion, etc.)
                 for mk, mv in item.metadata.items():
                     if mk not in primary.metadata or not primary.metadata[mk]:
@@ -2041,6 +2042,32 @@ class HorizonOrchestrator:
             merged.append(primary)
 
         return merged
+
+    def _provenance_label(self, item: ContentItem) -> str:
+        """Name the outlet behind an item, falling back to its source type."""
+        label = self._sub_source_label(item)
+        if not label or label == "unknown":
+            return item.source_type.value
+        return label
+
+    def _record_confirming_source(
+        self,
+        primary: ContentItem,
+        duplicate: ContentItem,
+    ) -> None:
+        """Add the duplicate's outlet to the primary's confirming sources."""
+        sources = primary.metadata.get("merged_sources")
+        if not isinstance(sources, list):
+            sources = []
+        merged = list(sources) or [self._provenance_label(primary)]
+        for label in (
+            duplicate.metadata.get("merged_sources")
+            if isinstance(duplicate.metadata.get("merged_sources"), list)
+            else [self._provenance_label(duplicate)]
+        ):
+            if label and label not in merged:
+                merged.append(label)
+        primary.metadata["merged_sources"] = merged
 
     async def merge_topic_duplicates(
         self,
@@ -2109,6 +2136,11 @@ class HorizonOrchestrator:
                 if dup_idx == primary_idx:
                     continue
                 dup = items[dup_idx]
+                # Record that another outlet independently carried the story.
+                # Most duplicates are the same event under different URLs, so
+                # this — not URL-level dedup — is what makes the provenance
+                # badge meaningful.
+                self._record_confirming_source(primary, dup)
                 # Merge comments/content from the duplicate into the primary
                 if dup.content:
                     if not primary.content or dup.content not in primary.content:
