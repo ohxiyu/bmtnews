@@ -1285,8 +1285,8 @@ class HorizonOrchestrator:
             known_weeks,
             render_weekly_page,
             save_calibration_review,
-            save_weekly_index,
             save_weekly_page,
+            save_weeks_index_data,
         )
 
         timezone_name = self.config.filtering.daily_timezone
@@ -1352,11 +1352,7 @@ class HorizonOrchestrator:
 
             if published_any:
                 weeks = sorted({*known_weeks(), end.isoformat()}, reverse=True)
-                for language in languages:
-                    normalized = (
-                        "en" if str(language).lower().startswith("en") else "zh"
-                    )
-                    save_weekly_index(weeks, language=normalized)
+                save_weeks_index_data(weeks)
                 run_report.set_metric("weekly_pages", len(languages))
 
             calibration = await generate_calibration_review(

@@ -52,8 +52,13 @@ data/x_cookies_*.json
 docs/_posts/*.md
 docs/_data/bmtnews_state.json
 # Generated at publish time and deployed to gh-pages, never committed to main.
+# The /threads/, /entity/ and /weekly/ index pages themselves are committed
+# source; only the per-item pages and their backing data are generated.
 docs/_data/archive/
 docs/_data/calibration/
+docs/_data/threads.json
+docs/_data/entities.json
+docs/_data/weeks.json
 docs/api/
 docs/feeds/
 docs/threads/
