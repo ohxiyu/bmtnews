@@ -7,7 +7,7 @@
 | | `digest` | `drip`（当前配置） |
 |---|---|---|
 | 时机 | 日报发布完成后（约 08:35 东八区） | 一天四个时段分开发 |
-| 内容 | 一条推，含前 3 条标题 + 站点链接 | 每条推一个故事：标题 + 一句要点 + 链接 |
+| 内容 | 一条推，含前 3 条标题 + 站点链接 | 每条推一个故事，AI 按账号口吻成文 |
 | 条数 | 每天 1 条（每语言） | 每天 4 条（`drip_items`） |
 | 执行者 | 日报 workflow 尾部 | 独立的 `x-distribution` workflow |
 
@@ -40,6 +40,22 @@
 状态存在独立的 `x-queue` 分支（`data/x-queue.json`），记录
 「哪一期的哪些序号、哪种语言已发」，换日自动重置。
 
+## 文案生成
+
+`compose: "ai"`（默认）时，每条推由 AI 按账号口吻单独成文：
+
+- 三段结构：一句强判断开头 → 按时序讲完整（数字落地）→ SO WHAT 二阶推演
+- 180-300 汉字，**不带链接、不带话题标签、不提媒体来源**（事件当事人姓名照常写）
+- 不提问、不求转发、不喊单、不预测价格
+- 生成失败或产出不合格（太短、超长、清理后为空）时**自动回落**到模板拼装
+  （标题 + 一句摘要），并在 run report 记一条 `x_compose_fallback`
+
+`compose: "template"` 则完全不调用 AI，直接用模板拼装。
+
+字数按 X 官方规则计（`twitter-text` v3）：**中文每字计 2**，拉丁字符计 1，
+URL 一律按 23 计。`max_post_chars` 是加权上限，默认 1000（约 500 汉字），
+标准账号请改成 280。
+
 ## 配置
 
 ```json
@@ -47,7 +63,9 @@
   "enabled": false,
   "mode": "drip",
   "drip_items": 4,
-  "link_target": "site",
+  "link_target": "none",
+  "compose": "ai",
+  "max_post_chars": 1000,
   "languages": ["zh"],
   "site_url": "https://bmt.news/",
   "max_items": 3
@@ -55,7 +73,10 @@
 ```
 
 - `drip_items`：一天发几条（1-8）。日报当天条数不足时按实际条数发
-- `link_target`：`site` 链回日报页（引流），`source` 直接链原文（给媒体署名）
+- `link_target`：`none`（默认，不带链接——X 算法对外链有压制）、
+  `site` 链回日报页、`source` 直接链原文
+- `compose`：`ai`（默认）或 `template`
+- `max_post_chars`：加权字数上限，Premium 账号可放大，标准账号设 280
 - `languages`：加 `"en"` 就是中英各四条，共 8 条/天——**不建议**，容易被判定刷屏
 - `max_items`：只在 `digest` 模式下生效
 
