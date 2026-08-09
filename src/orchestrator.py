@@ -1244,7 +1244,14 @@ class HorizonOrchestrator:
                 window_start=window.start,
                 window_end=window.end,
                 sponsored=editorial_plan.sponsored,
+                x_posted_languages=daily_state.x_posted_languages,
             )
+            newly_posted = published.get("x_posted") or []
+            if newly_posted:
+                daily_state.x_posted_languages = sorted(
+                    {*daily_state.x_posted_languages, *newly_posted}
+                )
+                save_daily_feed_state(daily_state)
             self._publish_archive_artifacts(
                 important_items,
                 date=window.date,
@@ -1391,6 +1398,7 @@ class HorizonOrchestrator:
         window_start: datetime | None = None,
         window_end: datetime | None = None,
         sponsored: List[EditorialEntry] | None = None,
+        x_posted_languages: List[str] | None = None,
     ) -> Dict[str, object]:
         """Render configured languages and publish static-site artifacts.
 
@@ -1561,12 +1569,19 @@ class HorizonOrchestrator:
             total_candidates=total_candidates,
             run_report=run_report,
         )
+        newly_posted: List[str] = []
         await self._deliver_x_editions(
             items,
             date=date,
             run_report=run_report,
+            already_posted=x_posted_languages,
+            on_posted=newly_posted.append,
         )
-        return {"market": market_snapshot, "overviews": overviews}
+        return {
+            "market": market_snapshot,
+            "overviews": overviews,
+            "x_posted": newly_posted,
+        }
 
     async def _deliver_x_editions(
         self,
@@ -1574,13 +1589,28 @@ class HorizonOrchestrator:
         *,
         date: str,
         run_report: RunReport,
+        already_posted: List[str] | None = None,
+        on_posted=None,
     ) -> None:
-        """Post the top stories to X when the feature is explicitly enabled."""
+        """Post the top stories to X when the feature is explicitly enabled.
+
+        An edition posts at most once per language for its lifetime:
+        republishing it (an editorial edit, a manual rebuild, a retry) must
+        not repeat the post.
+        """
         publisher = getattr(self, "x_publisher", None)
         if not publisher:
             return
         config = self.config.x_delivery
+        posted = set(already_posted or [])
         for language in (config.languages if config else []):
+            if language in posted:
+                run_report.add_alert(
+                    "info",
+                    "x_delivery_already_posted",
+                    f"本期 {language.upper()} 版已发过 X，重刊不再重复发布。",
+                )
+                continue
             result = await publisher.send_daily_edition(
                 items,
                 date=date,
@@ -1591,6 +1621,8 @@ class HorizonOrchestrator:
                     "x_posts_sent",
                     run_report.metrics.get("x_posts_sent", 0) + result.posted,
                 )
+                if on_posted is not None:
+                    on_posted(language)
             elif result.status == XDeliveryStatus.SKIPPED and result.detail:
                 run_report.add_alert(
                     "info",

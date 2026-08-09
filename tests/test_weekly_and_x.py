@@ -263,3 +263,48 @@ def test_x_publisher_posts_with_credentials(monkeypatch) -> None:
 
 def test_x_publisher_reports_api_failure(monkeypatch) -> None:
     asyncio.run(_test_x_publisher_reports_api_failure(monkeypatch))
+
+
+async def _test_x_delivery_skips_languages_already_posted() -> None:
+    """Republishing an edition must not post to X twice."""
+    from types import SimpleNamespace
+    from rich.console import Console
+    from src.orchestrator import HorizonOrchestrator
+    from src.run_report import RunReport
+
+    class RecordingPublisher:
+        def __init__(self) -> None:
+            self.calls: list[str] = []
+
+        async def send_daily_edition(self, items, *, date, language):
+            self.calls.append(language)
+            from src.services.x_delivery import XDeliveryResult
+
+            return XDeliveryResult(status=XDeliveryStatus.SUCCESS, posted=1)
+
+    orchestrator = HorizonOrchestrator.__new__(HorizonOrchestrator)
+    orchestrator.console = Console(record=True)
+    orchestrator.config = SimpleNamespace(
+        x_delivery=XDeliveryConfig(enabled=True, languages=["zh", "en"])
+    )
+    publisher = RecordingPublisher()
+    orchestrator.x_publisher = publisher
+
+    report = RunReport.start(date="2026-08-09", timezone_name="Asia/Shanghai")
+    posted: list[str] = []
+    await orchestrator._deliver_x_editions(
+        [make_item("标题")],
+        date="2026-08-09",
+        run_report=report,
+        already_posted=["zh"],
+        on_posted=posted.append,
+    )
+    assert publisher.calls == ["en"]
+    assert posted == ["en"]
+    assert any(
+        alert.code == "x_delivery_already_posted" for alert in report.alerts
+    )
+
+
+def test_x_delivery_skips_languages_already_posted() -> None:
+    asyncio.run(_test_x_delivery_skips_languages_already_posted())
