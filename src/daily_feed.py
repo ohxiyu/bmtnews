@@ -67,6 +67,9 @@ class DailyFeedState(BaseModel):
     analyzed_keys: list[str] = Field(default_factory=list)
     items: list[ContentItem] = Field(default_factory=list)
     dedup_history: list[ContentItem] = Field(default_factory=list)
+    # Languages already posted to X for this edition. Republishing an
+    # edition (editorial edits, manual rebuilds) must not post again.
+    x_posted_languages: list[str] = Field(default_factory=list)
 
 
 def local_date_for(moment: datetime, timezone_name: str) -> str:

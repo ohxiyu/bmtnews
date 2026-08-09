@@ -18,7 +18,7 @@ from ._file_utils import _atomic_write_text
 DEFAULT_RUN_REPORT_PATH = Path("data/run-report.json")
 AlertSeverity = Literal["info", "warning", "failure"]
 RunKind = Literal[
-    "legacy_full", "staging_fetch", "daily_publish", "weekly_review"
+    "legacy_full", "staging_fetch", "daily_publish", "weekly_review", "x_slot"
 ]
 
 _SECRET_ASSIGNMENT = re.compile(

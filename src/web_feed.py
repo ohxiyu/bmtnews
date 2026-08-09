@@ -213,10 +213,16 @@ def _provenance_html(item: ContentItem, language: str) -> str:
     """Show how many independent sources carried the same story."""
     labels = _LABELS[language]
     merged = item.metadata.get("merged_sources")
-    count = len(merged) if isinstance(merged, list) else 1
+    names = [str(name) for name in merged if name] if isinstance(merged, list) else []
+    count = len(names)
     if count > 1:
         text = labels["sources_confirmed"].format(count=count)
-        return f'<span class="provenance is-confirmed">{_escape(text)}</span>'
+        # The outlet names make the claim checkable rather than a bare number.
+        title = _escape(" · ".join(names[:6]))
+        return (
+            f'<span class="provenance is-confirmed" title="{title}">'
+            f"{_escape(text)}</span>"
+        )
     return (
         f'<span class="provenance">{_escape(labels["single_source"])}</span>'
     )

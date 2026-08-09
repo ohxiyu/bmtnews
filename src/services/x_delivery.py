@@ -15,6 +15,7 @@ import base64
 import hashlib
 import hmac
 import os
+import re
 import secrets
 import time
 from dataclasses import dataclass
@@ -160,6 +161,88 @@ def build_post(
     return f"{header}\n{body}\n{link}".strip()
 
 
+def _safe_http_url(value: object) -> str | None:
+    """Return the value only when it is a usable HTTP(S) link."""
+    raw = str(value or "").strip()
+    try:
+        parsed = urlsplit(raw)
+    except ValueError:
+        return None
+    if parsed.scheme not in {"http", "https"} or not parsed.netloc:
+        return None
+    return raw
+
+
+# Full-width terminators are unambiguous; the ASCII period is not, so it
+# needs the guards in _is_sentence_end below.
+_HARD_SENTENCE_END = "。！？\n"
+_ABBREVIATION_TAIL = re.compile(r"(?:^|[\s.])[A-Za-z]$")
+
+
+def _is_sentence_end(text: str, index: int) -> bool:
+    """Decide whether the character at ``index`` really ends a sentence."""
+    char = text[index]
+    if char in _HARD_SENTENCE_END:
+        return True
+    if char not in ".!?":
+        return False
+    following = text[index + 1] if index + 1 < len(text) else " "
+    if not following.isspace():
+        # "H.R." or "3.5" — an inner dot, not a terminator.
+        return False
+    # A single letter before the dot means an initialism such as "H.R.".
+    return not _ABBREVIATION_TAIL.search(text[max(0, index - 3) : index])
+
+
+def _first_sentence(text: str, limit: int = 110) -> str:
+    """Take the opening sentence of a summary, bounded for a post."""
+    cleaned = " ".join(str(text or "").split())
+    if not cleaned:
+        return ""
+    for index in range(len(cleaned)):
+        if index >= 12 and _is_sentence_end(cleaned, index):
+            return cleaned[: index + 1].strip()
+    return cleaned[:limit].rstrip() + ("…" if len(cleaned) > limit else "")
+
+
+def build_story_post(
+    item: ContentItem,
+    *,
+    language: str,
+    site_url: str,
+    link_target: str = "site",
+    edition_date: str | None = None,
+) -> str:
+    """Compose a single-story post: headline, one takeaway, one link."""
+    is_zh = language == "zh"
+    title = str(
+        item.metadata.get(f"title_{language}")
+        or item.metadata.get("title_zh")
+        or item.title
+    ).strip()
+    takeaway = _first_sentence(
+        item.metadata.get(f"market_impact_{language}")
+        or item.metadata.get(f"detailed_summary_{language}")
+        or item.ai_summary
+        or ""
+    )
+    if link_target == "source":
+        link = _safe_http_url(item.url) or site_url
+    else:
+        link = site_url.rstrip("/") + ("/" if is_zh else "/en/")
+
+    # Budget: the link is a fixed-width t.co token plus two blank lines.
+    budget = TWEET_LIMIT - TCO_LENGTH - 4
+    headline = _truncate_to_fit(title, TWEET_LIMIT - budget)
+    remaining = budget - _weighted_length(headline) - 1
+    body = headline
+    if takeaway and remaining > 24:
+        if _weighted_length(takeaway) > remaining:
+            takeaway = takeaway[: max(1, remaining - 1)].rstrip() + "…"
+        body = f"{headline}\n\n{takeaway}"
+    return f"{body}\n\n{link}"
+
+
 class XEditionPublisher:
     """Post one compact edition summary to X."""
 
@@ -181,6 +264,76 @@ class XEditionPublisher:
             os.getenv(self.config.access_token_env, "").strip(),
             os.getenv(self.config.access_secret_env, "").strip(),
         )
+
+    async def send_text(self, text: str) -> XDeliveryResult:
+        """Post one already-composed message, applying the same gating."""
+        if not self.config.enabled:
+            return XDeliveryResult(
+                status=XDeliveryStatus.SKIPPED,
+                detail="X delivery is disabled in the configuration.",
+            )
+        consumer_key, consumer_secret, access_token, access_secret = (
+            self._credentials()
+        )
+        if not all((consumer_key, consumer_secret, access_token, access_secret)):
+            return XDeliveryResult(
+                status=XDeliveryStatus.SKIPPED,
+                detail="X credentials are not fully configured; nothing posted.",
+            )
+        if not text.strip():
+            return XDeliveryResult(
+                status=XDeliveryStatus.SKIPPED,
+                detail="Nothing to post.",
+            )
+        return await self._post(
+            text,
+            consumer_key=consumer_key,
+            consumer_secret=consumer_secret,
+            access_token=access_token,
+            access_secret=access_secret,
+        )
+
+    async def _post(
+        self,
+        text: str,
+        *,
+        consumer_key: str,
+        consumer_secret: str,
+        access_token: str,
+        access_secret: str,
+    ) -> XDeliveryResult:
+        authorization = _oauth_header(
+            "POST",
+            X_TWEETS_ENDPOINT,
+            consumer_key=consumer_key,
+            consumer_secret=consumer_secret,
+            access_token=access_token,
+            access_secret=access_secret,
+        )
+        try:
+            async with httpx.AsyncClient(
+                timeout=20.0, transport=self.transport
+            ) as client:
+                response = await client.post(
+                    X_TWEETS_ENDPOINT,
+                    headers={
+                        "Authorization": authorization,
+                        "Content-Type": "application/json",
+                    },
+                    json={"text": text},
+                )
+        except httpx.HTTPError as exc:
+            return XDeliveryResult(
+                status=XDeliveryStatus.FAILURE,
+                detail=f"X request failed: {type(exc).__name__}",
+            )
+        if response.status_code >= 400:
+            # Response bodies can echo request content; report only the code.
+            return XDeliveryResult(
+                status=XDeliveryStatus.FAILURE,
+                detail=f"X API returned HTTP {response.status_code}.",
+            )
+        return XDeliveryResult(status=XDeliveryStatus.SUCCESS, posted=1)
 
     async def send_daily_edition(
         self,
@@ -217,37 +370,13 @@ class XEditionPublisher:
             site_url=self.config.site_url,
             max_items=self.config.max_items,
         )
-        authorization = _oauth_header(
-            "POST",
-            X_TWEETS_ENDPOINT,
+        result = await self._post(
+            text,
             consumer_key=consumer_key,
             consumer_secret=consumer_secret,
             access_token=access_token,
             access_secret=access_secret,
         )
-        try:
-            async with httpx.AsyncClient(
-                timeout=20.0, transport=self.transport
-            ) as client:
-                response = await client.post(
-                    X_TWEETS_ENDPOINT,
-                    headers={
-                        "Authorization": authorization,
-                        "Content-Type": "application/json",
-                    },
-                    json={"text": text},
-                )
-        except httpx.HTTPError as exc:
-            return XDeliveryResult(
-                status=XDeliveryStatus.FAILURE,
-                detail=f"X request failed: {type(exc).__name__}",
-            )
-
-        if response.status_code >= 400:
-            # Response bodies can echo request content; report only the code.
-            return XDeliveryResult(
-                status=XDeliveryStatus.FAILURE,
-                detail=f"X API returned HTTP {response.status_code}.",
-            )
-        self.console.print(f"🐦 Posted the {language.upper()} edition to X")
-        return XDeliveryResult(status=XDeliveryStatus.SUCCESS, posted=1)
+        if result.status == XDeliveryStatus.SUCCESS:
+            self.console.print(f"🐦 Posted the {language.upper()} edition to X")
+        return result

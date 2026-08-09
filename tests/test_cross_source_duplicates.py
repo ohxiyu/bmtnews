@@ -138,3 +138,68 @@ def test_returns_deep_copies_without_mutation_and_is_idempotent() -> None:
     assert first[0].metadata["nested"] is not singleton.metadata["nested"]
     assert first[1] is not primary
     assert first[1].metadata["nested"] is not duplicate.metadata["nested"]
+
+
+def test_topic_dedup_records_confirming_outlets() -> None:
+    """Same event from different outlets should count as multi-source."""
+    import asyncio
+    from types import SimpleNamespace
+    from rich.console import Console
+    from src.orchestrator import HorizonOrchestrator
+
+    orchestrator = HorizonOrchestrator.__new__(HorizonOrchestrator)
+    orchestrator.console = Console(record=True)
+
+    def item(name: str, feed: str, score: float) -> ContentItem:
+        return ContentItem(
+            id=name,
+            source_type=SourceType.RSS,
+            title=name,
+            url=f"https://example.com/{name}",
+            published_at=datetime.now(timezone.utc),
+            ai_score=score,
+            metadata={"feed_name": feed},
+        )
+
+    primary = item("a", "CoinDesk", 9.0)
+    dup1 = item("b", "Cointelegraph", 8.0)
+    dup2 = item("c", "Decrypt", 7.0)
+
+    async def fake_merge(items, *, log=True):
+        for duplicate in items[1:]:
+            orchestrator._record_confirming_source(items[0], duplicate)
+        return [items[0]]
+
+    asyncio.run(fake_merge([primary, dup1, dup2]))
+    assert primary.metadata["merged_sources"] == [
+        "CoinDesk",
+        "Cointelegraph",
+        "Decrypt",
+    ]
+
+
+def test_provenance_badge_lists_outlets() -> None:
+    from src.web_feed import render_web_feed
+
+    confirmed = ContentItem(
+        id="x",
+        source_type=SourceType.RSS,
+        title="Story",
+        url="https://example.com/x",
+        published_at=datetime.now(timezone.utc),
+        ai_score=9.0,
+        metadata={
+            "feed_name": "CoinDesk",
+            "category": "crypto-markets",
+            "merged_sources": ["CoinDesk", "Decrypt", "Protos"],
+        },
+    )
+    markup = render_web_feed(
+        [confirmed],
+        date="2026-08-09",
+        total_fetched=10,
+        language="zh",
+        display_timezone="Asia/Shanghai",
+    )
+    assert "3 源确认" in markup
+    assert 'title="CoinDesk · Decrypt · Protos"' in markup

@@ -225,6 +225,9 @@ time,
 .site-nav a {
   color: var(--text-soft);
   font-size: var(--fs-s);
+  /* Chinese labels otherwise wrap to one character per line when the
+     row runs out of space. */
+  white-space: nowrap;
 }
 
 .site-nav a:hover {
@@ -1255,13 +1258,42 @@ time,
 }
 
 @media (max-width: 760px) {
+  /* Two rows: brand and controls on top, navigation scrolling beneath.
+     One row cannot hold five links plus both toggles on a phone. */
+  :root {
+    --header-h: 84px;
+  }
+
   .site-header-inner {
-    padding: 0 14px;
-    gap: 12px;
+    flex-wrap: wrap;
+    align-items: center;
+    min-height: 0;
+    padding: 7px 14px 0;
+    gap: 0 12px;
+  }
+
+  .site-brand {
+    order: 1;
+  }
+
+  .site-actions {
+    order: 2;
+    margin-left: auto;
   }
 
   .site-nav {
-    gap: 10px;
+    order: 3;
+    flex: 1 0 100%;
+    margin: 4px -14px 0;
+    padding: 2px 14px 7px;
+    gap: 16px;
+    overflow-x: auto;
+    scrollbar-width: none;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .site-nav::-webkit-scrollbar {
+    display: none;
   }
 
   .main-content {

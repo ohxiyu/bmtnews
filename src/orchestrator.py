@@ -1244,7 +1244,14 @@ class HorizonOrchestrator:
                 window_start=window.start,
                 window_end=window.end,
                 sponsored=editorial_plan.sponsored,
+                x_posted_languages=daily_state.x_posted_languages,
             )
+            newly_posted = published.get("x_posted") or []
+            if newly_posted:
+                daily_state.x_posted_languages = sorted(
+                    {*daily_state.x_posted_languages, *newly_posted}
+                )
+                save_daily_feed_state(daily_state)
             self._publish_archive_artifacts(
                 important_items,
                 date=window.date,
@@ -1265,6 +1272,136 @@ class HorizonOrchestrator:
                     date=window.date,
                     error_message=str(exc),
                 )
+            raise
+        finally:
+            run_report.finish()
+            save_run_report(run_report)
+
+    async def run_x_slot(
+        self,
+        *,
+        edition_date: date_type | None = None,
+        now: datetime | None = None,
+        state_path: Path | None = None,
+    ) -> None:
+        """Post the next pending story of the current edition to X.
+
+        Called once per scheduled slot. Posting is ordered rather than
+        clock-matched, so a delayed or skipped slot shifts a story later
+        instead of dropping or duplicating it.
+        """
+        from .services.x_delivery import build_story_post
+        from .x_queue import (
+            DEFAULT_STATE_PATH,
+            load_queue_state,
+            next_pending_rank,
+            save_queue_state,
+            state_for_edition,
+        )
+
+        config = self.config.x_delivery
+        timezone_name = self.config.filtering.daily_timezone
+        run_started_at = now or datetime.now(timezone.utc)
+        if run_started_at.tzinfo is None:
+            run_started_at = run_started_at.replace(tzinfo=timezone.utc)
+        date_str = (
+            edition_date.isoformat()
+            if edition_date is not None
+            else local_date_for(run_started_at, timezone_name)
+        )
+        run_report = RunReport.start(
+            date=date_str,
+            timezone_name=timezone_name,
+            started_at=run_started_at,
+            kind="x_slot",
+        )
+        self.last_run_report = run_report
+        path = state_path or DEFAULT_STATE_PATH
+
+        try:
+            publisher = getattr(self, "x_publisher", None)
+            if not publisher or not config or not config.enabled:
+                run_report.add_alert(
+                    "info",
+                    "x_slot_disabled",
+                    "X 分发未启用，本次不发布。",
+                )
+                self.console.print("[yellow]X delivery is disabled.[/yellow]")
+                return
+            if config.mode != "drip":
+                run_report.add_alert(
+                    "info",
+                    "x_slot_not_drip",
+                    "X 分发处于 digest 模式，分时发布任务不执行。",
+                )
+                return
+
+            daily_state = load_daily_feed_state(date_str, timezone_name)
+            items = daily_state.items
+            if not items:
+                run_report.add_alert(
+                    "info",
+                    "x_slot_no_edition",
+                    f"{date_str} 尚无已发布日报，跳过本时段。",
+                )
+                self.console.print(
+                    f"[yellow]No published edition for {date_str}; nothing to post.[/yellow]"
+                )
+                return
+
+            state = state_for_edition(load_queue_state(path), date_str)
+            for language in config.languages:
+                rank = next_pending_rank(
+                    state,
+                    language=language,
+                    total_items=len(items),
+                    limit=config.drip_items,
+                )
+                if rank is None:
+                    run_report.add_alert(
+                        "info",
+                        f"x_slot_complete_{language}",
+                        f"{date_str} 的 {language.upper()} 分时发布已全部完成。",
+                    )
+                    continue
+
+                item = items[rank - 1]
+                text = build_story_post(
+                    item,
+                    language=language,
+                    site_url=config.site_url,
+                    link_target=config.link_target,
+                    edition_date=date_str,
+                )
+                result = await publisher.send_text(text)
+                if result.status == XDeliveryStatus.SUCCESS:
+                    state.mark_posted(language, rank)
+                    save_queue_state(state, path)
+                    run_report.set_metric(
+                        "x_posts_sent",
+                        run_report.metrics.get("x_posts_sent", 0) + 1,
+                    )
+                    run_report.set_metric("x_slot_rank", rank)
+                    self.console.print(
+                        f"🐦 Posted #{rank} of {date_str} ({language}) to X"
+                    )
+                elif result.status == XDeliveryStatus.SKIPPED:
+                    run_report.add_alert(
+                        "info",
+                        "x_slot_skipped",
+                        f"X 分时发布跳过：{result.detail}",
+                    )
+                else:
+                    run_report.add_alert(
+                        "warning",
+                        "x_slot_failed",
+                        result.detail,
+                    )
+                    if config.required:
+                        raise RuntimeError(result.detail)
+        except Exception as exc:
+            run_report.fail(exc)
+            self.console.print(f"[bold red]❌ X slot failed: {exc}[/bold red]")
             raise
         finally:
             run_report.finish()
@@ -1391,6 +1528,7 @@ class HorizonOrchestrator:
         window_start: datetime | None = None,
         window_end: datetime | None = None,
         sponsored: List[EditorialEntry] | None = None,
+        x_posted_languages: List[str] | None = None,
     ) -> Dict[str, object]:
         """Render configured languages and publish static-site artifacts.
 
@@ -1561,12 +1699,19 @@ class HorizonOrchestrator:
             total_candidates=total_candidates,
             run_report=run_report,
         )
+        newly_posted: List[str] = []
         await self._deliver_x_editions(
             items,
             date=date,
             run_report=run_report,
+            already_posted=x_posted_languages,
+            on_posted=newly_posted.append,
         )
-        return {"market": market_snapshot, "overviews": overviews}
+        return {
+            "market": market_snapshot,
+            "overviews": overviews,
+            "x_posted": newly_posted,
+        }
 
     async def _deliver_x_editions(
         self,
@@ -1574,13 +1719,31 @@ class HorizonOrchestrator:
         *,
         date: str,
         run_report: RunReport,
+        already_posted: List[str] | None = None,
+        on_posted=None,
     ) -> None:
-        """Post the top stories to X when the feature is explicitly enabled."""
+        """Post the top stories to X when the feature is explicitly enabled.
+
+        An edition posts at most once per language for its lifetime:
+        republishing it (an editorial edit, a manual rebuild, a retry) must
+        not repeat the post.
+        """
         publisher = getattr(self, "x_publisher", None)
         if not publisher:
             return
         config = self.config.x_delivery
+        if config and config.mode == "drip":
+            # The x-distribution workflow owns posting in drip mode.
+            return
+        posted = set(already_posted or [])
         for language in (config.languages if config else []):
+            if language in posted:
+                run_report.add_alert(
+                    "info",
+                    "x_delivery_already_posted",
+                    f"本期 {language.upper()} 版已发过 X，重刊不再重复发布。",
+                )
+                continue
             result = await publisher.send_daily_edition(
                 items,
                 date=date,
@@ -1591,6 +1754,8 @@ class HorizonOrchestrator:
                     "x_posts_sent",
                     run_report.metrics.get("x_posts_sent", 0) + result.posted,
                 )
+                if on_posted is not None:
+                    on_posted(language)
             elif result.status == XDeliveryStatus.SKIPPED and result.detail:
                 run_report.add_alert(
                     "info",
@@ -2023,10 +2188,11 @@ class HorizonOrchestrator:
             primary = max(group_copies, key=lambda x: len(x.content or ""))
 
             # Merge metadata and source info from other items
-            all_sources = []
+            all_sources: List[str] = []
             for item in group_copies:
-                if item.source_type.value not in all_sources:
-                    all_sources.append(item.source_type.value)
+                label = self._provenance_label(item)
+                if label not in all_sources:
+                    all_sources.append(label)
                 # Merge metadata (engagement, discussion, etc.)
                 for mk, mv in item.metadata.items():
                     if mk not in primary.metadata or not primary.metadata[mk]:
@@ -2041,6 +2207,32 @@ class HorizonOrchestrator:
             merged.append(primary)
 
         return merged
+
+    def _provenance_label(self, item: ContentItem) -> str:
+        """Name the outlet behind an item, falling back to its source type."""
+        label = self._sub_source_label(item)
+        if not label or label == "unknown":
+            return item.source_type.value
+        return label
+
+    def _record_confirming_source(
+        self,
+        primary: ContentItem,
+        duplicate: ContentItem,
+    ) -> None:
+        """Add the duplicate's outlet to the primary's confirming sources."""
+        sources = primary.metadata.get("merged_sources")
+        if not isinstance(sources, list):
+            sources = []
+        merged = list(sources) or [self._provenance_label(primary)]
+        for label in (
+            duplicate.metadata.get("merged_sources")
+            if isinstance(duplicate.metadata.get("merged_sources"), list)
+            else [self._provenance_label(duplicate)]
+        ):
+            if label and label not in merged:
+                merged.append(label)
+        primary.metadata["merged_sources"] = merged
 
     async def merge_topic_duplicates(
         self,
@@ -2109,6 +2301,11 @@ class HorizonOrchestrator:
                 if dup_idx == primary_idx:
                     continue
                 dup = items[dup_idx]
+                # Record that another outlet independently carried the story.
+                # Most duplicates are the same event under different URLs, so
+                # this — not URL-level dedup — is what makes the provenance
+                # badge meaningful.
+                self._record_confirming_source(primary, dup)
                 # Merge comments/content from the duplicate into the primary
                 if dup.content:
                     if not primary.content or dup.content not in primary.content:
