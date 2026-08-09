@@ -450,7 +450,7 @@
   },
   "webhook": {
     "enabled": false,
-    "url_env": "HORIZON_WEBHOOK_URL",
+    "url_env": "BMTNEWS_WEBHOOK_URL",
     "delivery": "summary_and_items",
     "overview_position": "last",
     "platform": "feishu",

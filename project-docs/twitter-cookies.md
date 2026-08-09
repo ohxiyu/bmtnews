@@ -1,6 +1,6 @@
 # Twitter / X Cookie 配置指南（Playwright 模式）
 
-Horizon 支持两种 Twitter 抓取方式：
+BMTNews 支持两种 Twitter 抓取方式：
 
 | 方式 | 成本 | 稳定性 | 适用场景 |
 |------|------|--------|----------|
@@ -93,7 +93,7 @@ data/x_cookies_2.json   # 账号B
 data/x_cookies_3.json   # 账号C
 ```
 
-Horizon 会自动**轮询使用**这些 cookie，当一个账号触发限流时切换到下一个，大幅提升稳定性。
+BMTNews 会自动**轮询使用**这些 cookie，当一个账号触发限流时切换到下一个，大幅提升稳定性。
 
 ---
 

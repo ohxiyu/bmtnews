@@ -20,7 +20,7 @@ logger = logging.getLogger(__name__)
 
 RSS_REQUEST_HEADERS = {
     "User-Agent": (
-        "Mozilla/5.0 (compatible; Horizon/1.0; "
+        "Mozilla/5.0 (compatible; BMTNews/1.0; "
         "+https://github.com/ohxiyu/bmtnews)"
     )
 }

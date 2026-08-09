@@ -1,7 +1,7 @@
 services:
-  horizon:
+  bmtnews:
     build: .
-    container_name: horizon
+    container_name: bmtnews
     volumes:
       - ./data:/app/data
       - ./.env:/app/.env:ro
@@ -9,5 +9,5 @@ services:
       - TZ=UTC
     restart: "no"
     # Run daily at 8:00 AM UTC (adjust as needed)
-    # For one-time run, use: docker compose run --rm horizon
+    # For one-time run, use: docker compose run --rm bmtnews
     command: ["--hours", "24"]

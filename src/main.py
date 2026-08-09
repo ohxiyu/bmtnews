@@ -1,4 +1,4 @@
-"""CLI entry point for Horizon."""
+"""CLI entry point for BMTNews."""
 
 import argparse
 import asyncio
@@ -9,7 +9,7 @@ from pathlib import Path
 from dotenv import load_dotenv
 from rich.console import Console
 
-from .orchestrator import HorizonOrchestrator
+from .orchestrator import BMTNewsOrchestrator
 from .storage.manager import ConfigError, StorageManager
 
 
@@ -29,14 +29,13 @@ def print_banner():
     """Print the application banner."""
     banner = r"""
 [bold blue]
-  _    _            _
- | |  | |          (_)
- | |__| | ___  _ __ _ ___  ___  _ __
- |  __  |/ _ \| '__| |_  / / _ \| '_ \
- | |  | | (_) | |  | |/ / | (_) | | | |
- |_|  |_|\___/|_|  |_/___| \___/|_| |_|
+  ____  __  __ _____ _   _
+ | __ )|  \/  |_   _| \ | | _____      _____
+ |  _ \| |\/| | | | |  \| |/ _ \ \ /\ / / __|
+ | |_) | |  | | | | | |\  |  __/\ V  V /\__ \
+ |____/|_|  |_| |_| |_| \_|\___| \_/\_/ |___/
 [/bold blue]
-[cyan]  AI-Driven Information Aggregation System[/cyan]
+[cyan]  Daily crypto market, AI, and policy intelligence[/cyan]
     """
     console.print(banner)
 
@@ -45,7 +44,7 @@ def main():
     """Main CLI entry point."""
     print_banner()
 
-    parser = argparse.ArgumentParser(description="Horizon - AI-Driven Information Aggregation System")
+    parser = argparse.ArgumentParser(description="BMTNews - AI-Driven Information Aggregation System")
     parser.add_argument("--hours", type=int, help="Force fetch from last N hours")
     parser.add_argument(
         "--mode",
@@ -123,7 +122,7 @@ def main():
                     f"  [cyan]cp {example_path} {data_dir_path / 'config.json'}[/cyan]\n"
                 )
             console.print(
-                "Or run [bold cyan]uv run horizon-wizard[/bold cyan] to launch the interactive setup wizard.\n"
+                "Or run [bold cyan]uv run bmtnews-wizard[/bold cyan] to launch the interactive setup wizard.\n"
             )
             sys.exit(1)
         except ConfigError as e:
@@ -134,7 +133,7 @@ def main():
             sys.exit(1)
 
         # Create and run orchestrator
-        orchestrator = HorizonOrchestrator(config, storage)
+        orchestrator = BMTNewsOrchestrator(config, storage)
         if args.mode == "fetch":
             asyncio.run(
                 orchestrator.fetch_to_staging(

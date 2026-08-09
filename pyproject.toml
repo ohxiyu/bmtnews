@@ -1,7 +1,7 @@
 [project]
-name = "horizon"
+name = "bmtnews"
 version = "0.2.0"
-description = "AI-driven information aggregation system for tracking academic and social trends"
+description = "AI-curated daily crypto market, AI, and policy intelligence briefing"
 readme = "README.md"
 license = "MIT"
 requires-python = ">=3.11"
@@ -40,10 +40,10 @@ trafilatura = [
 ]
 
 [project.scripts]
-horizon = "src.main:main"
-horizon-mcp = "src.mcp.server:main"
-horizon-wizard = "src.setup.wizard:main"
-horizon-webhook = "src.services.webhook_cli:main"
+bmtnews = "src.main:main"
+bmtnews-mcp = "src.mcp.server:main"
+bmtnews-wizard = "src.setup.wizard:main"
+bmtnews-webhook = "src.services.webhook_cli:main"
 
 [build-system]
 requires = ["hatchling"]

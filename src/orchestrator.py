@@ -221,7 +221,7 @@ class FetchReport:
         }
 
 
-class HorizonOrchestrator:
+class BMTNewsOrchestrator:
     """Orchestrates the complete workflow for content aggregation and analysis."""
 
     def __init__(self, config: Config, storage: StorageManager):
@@ -262,7 +262,7 @@ class HorizonOrchestrator:
         Args:
             force_hours: Optional override for time window in hours
         """
-        self.console.print("[bold cyan]🌅 Horizon - Starting aggregation...[/bold cyan]\n")
+        self.console.print("[bold cyan]🌅 BMTNews - Starting aggregation...[/bold cyan]\n")
 
         daily_timezone = getattr(self.config.filtering, "daily_timezone", "UTC")
         run_started_at = datetime.now(timezone.utc)
@@ -473,7 +473,7 @@ class HorizonOrchestrator:
                 run_report=run_report,
             )
 
-            self.console.print("[bold green]✅ Horizon completed successfully![/bold green]")
+            self.console.print("[bold green]✅ BMTNews completed successfully![/bold green]")
             usage = get_usage_snapshot()
             if usage.total_tokens > 0:
                 self.console.print(

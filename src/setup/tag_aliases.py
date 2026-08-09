@@ -1,6 +1,6 @@
 """Tag alias lookup for multilingual matching in setup wizard.
 
-Mirrors horizon-site/app/lib/tagAliases.ts — canonical tag -> aliases
+Canonical tag -> aliases mapping used for preset keyword matching.
 (including Chinese, abbreviations, and common variations).
 """
 

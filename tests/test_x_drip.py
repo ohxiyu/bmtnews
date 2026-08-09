@@ -123,9 +123,9 @@ class RecordingPublisher:
 
 
 def make_orchestrator(publisher, items, *, mode="drip"):
-    from src.orchestrator import HorizonOrchestrator
+    from src.orchestrator import BMTNewsOrchestrator
 
-    orchestrator = HorizonOrchestrator.__new__(HorizonOrchestrator)
+    orchestrator = BMTNewsOrchestrator.__new__(BMTNewsOrchestrator)
     orchestrator.console = Console(record=True)
     orchestrator.config = SimpleNamespace(
         x_delivery=XDeliveryConfig(

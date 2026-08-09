@@ -7,7 +7,7 @@ from rich.console import Console
 
 from src.market_snapshot import MarketSnapshot
 from src.models import ContentItem, FilteringConfig, SourceType
-from src.orchestrator import HorizonOrchestrator
+from src.orchestrator import BMTNewsOrchestrator
 from src.web_feed import render_web_feed
 
 
@@ -28,8 +28,8 @@ def make_item(
     )
 
 
-def make_orchestrator() -> HorizonOrchestrator:
-    orchestrator = HorizonOrchestrator.__new__(HorizonOrchestrator)
+def make_orchestrator() -> BMTNewsOrchestrator:
+    orchestrator = BMTNewsOrchestrator.__new__(BMTNewsOrchestrator)
     orchestrator.config = SimpleNamespace(filtering=FilteringConfig())
     orchestrator.console = Console(record=True)
     return orchestrator

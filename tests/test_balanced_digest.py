@@ -15,7 +15,7 @@ from src.models import (
     SourceType,
     SourcesConfig,
 )
-from src.orchestrator import HorizonOrchestrator
+from src.orchestrator import BMTNewsOrchestrator
 
 
 def make_item(
@@ -39,8 +39,8 @@ def make_item(
     )
 
 
-def make_orchestrator(filtering: FilteringConfig) -> HorizonOrchestrator:
-    orchestrator = HorizonOrchestrator.__new__(HorizonOrchestrator)
+def make_orchestrator(filtering: FilteringConfig) -> BMTNewsOrchestrator:
+    orchestrator = BMTNewsOrchestrator.__new__(BMTNewsOrchestrator)
     orchestrator.config = SimpleNamespace(filtering=filtering)
     orchestrator.console = Console(record=True)
     return orchestrator
@@ -394,7 +394,7 @@ def test_run_applies_balanced_digest_before_enrichment(tmp_path, monkeypatch) ->
         ),
     )
     storage = SimpleNamespace()
-    orchestrator = HorizonOrchestrator(config, storage)
+    orchestrator = BMTNewsOrchestrator(config, storage)
     items = [
         make_item("ai", 9.0, "ai"),
         make_item("finance", 8.0, "finance"),
@@ -440,7 +440,7 @@ def test_run_balances_after_twitter_reanalysis(tmp_path, monkeypatch) -> None:
         sources=SourcesConfig(),
         filtering=FilteringConfig(ai_score_threshold=7.0, max_items=1),
     )
-    orchestrator = HorizonOrchestrator(config, SimpleNamespace())
+    orchestrator = BMTNewsOrchestrator(config, SimpleNamespace())
     items = [make_item("first", 9.0, "ai"), make_item("second", 8.0, "ai")]
     enriched_ids: list[str] = []
 

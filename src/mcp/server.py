@@ -1,4 +1,4 @@
-"""MCP server entrypoint for Horizon."""
+"""MCP server entrypoint for BMTNews."""
 
 from __future__ import annotations
 
@@ -9,12 +9,12 @@ from typing import Any, Awaitable, Callable
 from mcp.server.fastmcp import FastMCP
 
 from . import archive_tools
-from .errors import HorizonMcpError
-from .service import HorizonPipelineService
+from .errors import BMTNewsMcpError
+from .service import BMTNewsPipelineService
 
 
-mcp = FastMCP(name="horizon-mcp")
-service = HorizonPipelineService()
+mcp = FastMCP(name="bmtnews-mcp")
+service = BMTNewsPipelineService()
 
 SERVER_STARTED_AT = datetime.now(timezone.utc).isoformat()
 METRICS: dict[str, Any] = {
@@ -44,12 +44,12 @@ def _ok(tool: str, data: dict[str, Any], duration_ms: float | None = None) -> di
 
 
 def _err(tool: str, error: Exception, duration_ms: float | None = None) -> dict[str, Any]:
-    if isinstance(error, HorizonMcpError):
+    if isinstance(error, BMTNewsMcpError):
         code = error.code
         message = error.message
         details = error.details
     else:
-        code = "HZ_INTERNAL_ERROR"
+        code = "BMT_INTERNAL_ERROR"
         message = str(error)
         details = None
 
@@ -130,18 +130,18 @@ def _metrics_snapshot() -> dict[str, Any]:
 
 
 @mcp.tool()
-async def hz_validate_config(
-    horizon_path: str | None = None,
+async def bmt_validate_config(
+    project_path: str | None = None,
     config_path: str | None = None,
     sources: list[str] | None = None,
     check_env: bool = True,
 ) -> dict[str, Any]:
-    """Validate Horizon config and required environment variables."""
+    """Validate BMTNews config and required environment variables."""
 
     return await _run_tool(
-        "hz_validate_config",
+        "bmt_validate_config",
         lambda: service.validate_config(
-            horizon_path=horizon_path,
+            project_path=project_path,
             config_path=config_path,
             sources=sources,
             check_env=check_env,
@@ -150,21 +150,21 @@ async def hz_validate_config(
 
 
 @mcp.tool()
-async def hz_fetch_items(
+async def bmt_fetch_items(
     hours: int = 24,
     run_id: str | None = None,
-    horizon_path: str | None = None,
+    project_path: str | None = None,
     config_path: str | None = None,
     sources: list[str] | None = None,
 ) -> dict[str, Any]:
     """Fetch and deduplicate content into the raw stage."""
 
     return await _run_tool(
-        "hz_fetch_items",
+        "bmt_fetch_items",
         lambda: service.fetch_items(
             hours=hours,
             run_id=run_id,
-            horizon_path=horizon_path,
+            project_path=project_path,
             config_path=config_path,
             sources=sources,
         ),
@@ -172,138 +172,138 @@ async def hz_fetch_items(
 
 
 @mcp.tool()
-async def hz_score_items(
+async def bmt_score_items(
     run_id: str,
     source_stage: str = "raw",
-    horizon_path: str | None = None,
+    project_path: str | None = None,
     config_path: str | None = None,
 ) -> dict[str, Any]:
     """Score a stage into the scored stage."""
 
     return await _run_tool(
-        "hz_score_items",
+        "bmt_score_items",
         lambda: service.score_items(
             run_id=run_id,
             source_stage=source_stage,
-            horizon_path=horizon_path,
+            project_path=project_path,
             config_path=config_path,
         ),
     )
 
 
 @mcp.tool()
-async def hz_filter_items(
+async def bmt_filter_items(
     run_id: str,
     threshold: float | None = None,
     source_stage: str = "scored",
     topic_dedup: bool = True,
-    horizon_path: str | None = None,
+    project_path: str | None = None,
     config_path: str | None = None,
 ) -> dict[str, Any]:
     """Filter scored items into the filtered stage."""
 
     return await _run_tool(
-        "hz_filter_items",
+        "bmt_filter_items",
         lambda: service.filter_items(
             run_id=run_id,
             threshold=threshold,
             source_stage=source_stage,
             topic_dedup=topic_dedup,
-            horizon_path=horizon_path,
+            project_path=project_path,
             config_path=config_path,
         ),
     )
 
 
 @mcp.tool()
-async def hz_enrich_items(
+async def bmt_enrich_items(
     run_id: str,
     source_stage: str = "filtered",
-    horizon_path: str | None = None,
+    project_path: str | None = None,
     config_path: str | None = None,
 ) -> dict[str, Any]:
     """Enrich filtered items into the enriched stage."""
 
     return await _run_tool(
-        "hz_enrich_items",
+        "bmt_enrich_items",
         lambda: service.enrich_items(
             run_id=run_id,
             source_stage=source_stage,
-            horizon_path=horizon_path,
+            project_path=project_path,
             config_path=config_path,
         ),
     )
 
 
 @mcp.tool()
-async def hz_generate_summary(
+async def bmt_generate_summary(
     run_id: str,
     language: str = "zh",
     source_stage: str | None = None,
-    horizon_path: str | None = None,
+    project_path: str | None = None,
     config_path: str | None = None,
-    save_to_horizon_data: bool = False,
+    save_to_project_data: bool = False,
 ) -> dict[str, Any]:
     """Generate a markdown summary from a stage."""
 
     return await _run_tool(
-        "hz_generate_summary",
+        "bmt_generate_summary",
         lambda: service.generate_summary(
             run_id=run_id,
             language=language,
             source_stage=source_stage,
-            horizon_path=horizon_path,
+            project_path=project_path,
             config_path=config_path,
-            save_to_horizon_data=save_to_horizon_data,
+            save_to_project_data=save_to_project_data,
         ),
     )
 
 
 @mcp.tool()
-async def hz_run_pipeline(
+async def bmt_run_pipeline(
     hours: int = 24,
     languages: list[str] | None = None,
     threshold: float | None = None,
-    horizon_path: str | None = None,
+    project_path: str | None = None,
     config_path: str | None = None,
     sources: list[str] | None = None,
     enrich: bool = True,
     topic_dedup: bool = True,
-    save_to_horizon_data: bool = False,
+    save_to_project_data: bool = False,
 ) -> dict[str, Any]:
     """Run fetch -> score -> filter -> enrich -> summarize in one call."""
 
     return await _run_tool(
-        "hz_run_pipeline",
+        "bmt_run_pipeline",
         lambda: service.run_pipeline(
             hours=hours,
             languages=languages,
             threshold=threshold,
-            horizon_path=horizon_path,
+            project_path=project_path,
             config_path=config_path,
             sources=sources,
             enrich=enrich,
             topic_dedup=topic_dedup,
-            save_to_horizon_data=save_to_horizon_data,
+            save_to_project_data=save_to_project_data,
         ),
     )
 
 
 @mcp.tool()
-def hz_list_runs(limit: int = 20) -> dict[str, Any]:
+def bmt_list_runs(limit: int = 20) -> dict[str, Any]:
     """List recent runs and stage states."""
 
     started = perf_counter()
     try:
         data = service.list_runs(limit=limit)
         elapsed_ms = (perf_counter() - started) * 1000
-        _record_metrics("hz_list_runs", ok=True, duration_ms=elapsed_ms)
-        return _ok("hz_list_runs", data, duration_ms=elapsed_ms)
+        _record_metrics("bmt_list_runs", ok=True, duration_ms=elapsed_ms)
+        return _ok("bmt_list_runs", data, duration_ms=elapsed_ms)
     except Exception as exc:
         elapsed_ms = (perf_counter() - started) * 1000
-        payload = _err("hz_list_runs", exc, duration_ms=elapsed_ms)
+        payload = _err("bmt_list_runs", exc, duration_ms=elapsed_ms)
         _record_metrics(
-            "hz_list_runs",
+            "bmt_list_runs",
             ok=False,
             duration_ms=elapsed_ms,
             error_code=payload["error"]["code"],
@@ -312,20 +312,20 @@ def hz_list_runs(limit: int = 20) -> dict[str, Any]:
 
 
 @mcp.tool()
-def hz_get_run_meta(run_id: str) -> dict[str, Any]:
+def bmt_get_run_meta(run_id: str) -> dict[str, Any]:
     """Read run metadata."""
 
     started = perf_counter()
     try:
         data = service.get_run_meta(run_id)
         elapsed_ms = (perf_counter() - started) * 1000
-        _record_metrics("hz_get_run_meta", ok=True, duration_ms=elapsed_ms)
-        return _ok("hz_get_run_meta", data, duration_ms=elapsed_ms)
+        _record_metrics("bmt_get_run_meta", ok=True, duration_ms=elapsed_ms)
+        return _ok("bmt_get_run_meta", data, duration_ms=elapsed_ms)
     except Exception as exc:
         elapsed_ms = (perf_counter() - started) * 1000
-        payload = _err("hz_get_run_meta", exc, duration_ms=elapsed_ms)
+        payload = _err("bmt_get_run_meta", exc, duration_ms=elapsed_ms)
         _record_metrics(
-            "hz_get_run_meta",
+            "bmt_get_run_meta",
             ok=False,
             duration_ms=elapsed_ms,
             error_code=payload["error"]["code"],
@@ -334,20 +334,20 @@ def hz_get_run_meta(run_id: str) -> dict[str, Any]:
 
 
 @mcp.tool()
-def hz_get_run_stage(run_id: str, stage: str, max_items: int = 200) -> dict[str, Any]:
+def bmt_get_run_stage(run_id: str, stage: str, max_items: int = 200) -> dict[str, Any]:
     """Read items from a run stage."""
 
     started = perf_counter()
     try:
         data = service.get_run_stage(run_id=run_id, stage=stage, max_items=max_items)
         elapsed_ms = (perf_counter() - started) * 1000
-        _record_metrics("hz_get_run_stage", ok=True, duration_ms=elapsed_ms)
-        return _ok("hz_get_run_stage", data, duration_ms=elapsed_ms)
+        _record_metrics("bmt_get_run_stage", ok=True, duration_ms=elapsed_ms)
+        return _ok("bmt_get_run_stage", data, duration_ms=elapsed_ms)
     except Exception as exc:
         elapsed_ms = (perf_counter() - started) * 1000
-        payload = _err("hz_get_run_stage", exc, duration_ms=elapsed_ms)
+        payload = _err("bmt_get_run_stage", exc, duration_ms=elapsed_ms)
         _record_metrics(
-            "hz_get_run_stage",
+            "bmt_get_run_stage",
             ok=False,
             duration_ms=elapsed_ms,
             error_code=payload["error"]["code"],
@@ -356,20 +356,20 @@ def hz_get_run_stage(run_id: str, stage: str, max_items: int = 200) -> dict[str,
 
 
 @mcp.tool()
-def hz_get_run_summary(run_id: str, language: str = "zh") -> dict[str, Any]:
+def bmt_get_run_summary(run_id: str, language: str = "zh") -> dict[str, Any]:
     """Read a generated run summary."""
 
     started = perf_counter()
     try:
         data = service.get_run_summary(run_id=run_id, language=language)
         elapsed_ms = (perf_counter() - started) * 1000
-        _record_metrics("hz_get_run_summary", ok=True, duration_ms=elapsed_ms)
-        return _ok("hz_get_run_summary", data, duration_ms=elapsed_ms)
+        _record_metrics("bmt_get_run_summary", ok=True, duration_ms=elapsed_ms)
+        return _ok("bmt_get_run_summary", data, duration_ms=elapsed_ms)
     except Exception as exc:
         elapsed_ms = (perf_counter() - started) * 1000
-        payload = _err("hz_get_run_summary", exc, duration_ms=elapsed_ms)
+        payload = _err("bmt_get_run_summary", exc, duration_ms=elapsed_ms)
         _record_metrics(
-            "hz_get_run_summary",
+            "bmt_get_run_summary",
             ok=False,
             duration_ms=elapsed_ms,
             error_code=payload["error"]["code"],
@@ -398,7 +398,7 @@ def _archive_tool(tool: str, runner: Callable[[], dict[str, Any]]) -> dict[str, 
 
 
 @mcp.tool()
-def hz_search_archive(
+def bmt_search_archive(
     query: str = "",
     since: str | None = None,
     until: str | None = None,
@@ -409,7 +409,7 @@ def hz_search_archive(
     """Search published editions by text, date range, category, or score."""
 
     return _archive_tool(
-        "hz_search_archive",
+        "bmt_search_archive",
         lambda: archive_tools.search_archive(
             query,
             since=since,
@@ -422,60 +422,60 @@ def hz_search_archive(
 
 
 @mcp.tool()
-def hz_get_thread(thread_id: str) -> dict[str, Any]:
+def bmt_get_thread(thread_id: str) -> dict[str, Any]:
     """Read the full cross-day timeline of one story thread."""
 
     return _archive_tool(
-        "hz_get_thread",
+        "bmt_get_thread",
         lambda: archive_tools.get_thread(thread_id),
     )
 
 
 @mcp.tool()
-def hz_list_threads(days: int = 30, limit: int = 20) -> dict[str, Any]:
+def bmt_list_threads(days: int = 30, limit: int = 20) -> dict[str, Any]:
     """List recent multi-day story threads."""
 
     return _archive_tool(
-        "hz_list_threads",
+        "bmt_list_threads",
         lambda: archive_tools.list_threads(days=days, limit=limit),
     )
 
 
 @mcp.tool()
-def hz_get_entity(name: str, limit: int = 30) -> dict[str, Any]:
+def bmt_get_entity(name: str, limit: int = 30) -> dict[str, Any]:
     """Read archived coverage for one entity (company, protocol, regulator)."""
 
     return _archive_tool(
-        "hz_get_entity",
+        "bmt_get_entity",
         lambda: archive_tools.get_entity(name, limit=limit),
     )
 
 
 @mcp.tool()
-def hz_list_entities(days: int = 60, limit: int = 40) -> dict[str, Any]:
+def bmt_list_entities(days: int = 60, limit: int = 40) -> dict[str, Any]:
     """List recurring entities in the recent archive."""
 
     return _archive_tool(
-        "hz_list_entities",
+        "bmt_list_entities",
         lambda: archive_tools.list_entities(days=days, limit=limit),
     )
 
 
 @mcp.tool()
-def hz_get_metrics() -> dict[str, Any]:
+def bmt_get_metrics() -> dict[str, Any]:
     """Read in-memory server metrics."""
 
     started = perf_counter()
     try:
         data = _metrics_snapshot()
         elapsed_ms = (perf_counter() - started) * 1000
-        _record_metrics("hz_get_metrics", ok=True, duration_ms=elapsed_ms)
-        return _ok("hz_get_metrics", data, duration_ms=elapsed_ms)
+        _record_metrics("bmt_get_metrics", ok=True, duration_ms=elapsed_ms)
+        return _ok("bmt_get_metrics", data, duration_ms=elapsed_ms)
     except Exception as exc:
         elapsed_ms = (perf_counter() - started) * 1000
-        payload = _err("hz_get_metrics", exc, duration_ms=elapsed_ms)
+        payload = _err("bmt_get_metrics", exc, duration_ms=elapsed_ms)
         _record_metrics(
-            "hz_get_metrics",
+            "bmt_get_metrics",
             ok=False,
             duration_ms=elapsed_ms,
             error_code=payload["error"]["code"],
@@ -484,26 +484,26 @@ def hz_get_metrics() -> dict[str, Any]:
 
 
 @mcp.tool()
-async def hz_send_webhook(
+async def bmt_send_webhook(
     date: str,
     language: str = "zh",
     important_items: int = 0,
     all_items: int = 0,
     result: str = "success",
     summary: str = "",
-    horizon_path: str | None = None,
+    project_path: str | None = None,
     config_path: str | None = None,
 ) -> dict[str, Any]:
     """Send a webhook notification with the given variables.
 
     Uses the webhook URL (from environment variable), request_body template,
-    and headers from the Horizon config. Template variables #{date}, #{language},
+    and headers from the BMTNews config. Template variables #{date}, #{language},
     #{important_items}, #{all_items}, #{result}, #{timestamp},
     #{summary} are replaced in the URL and request_body before sending.
     """
 
     return await _run_tool(
-        "hz_send_webhook",
+        "bmt_send_webhook",
         lambda: service.send_webhook(
             date=date,
             language=language,
@@ -511,72 +511,72 @@ async def hz_send_webhook(
             all_items=all_items,
             result=result,
             summary=summary,
-            horizon_path=horizon_path,
+            project_path=project_path,
             config_path=config_path,
         ),
     )
 
 
-@mcp.resource("horizon://server/info")
+@mcp.resource("bmtnews://server/info")
 def r_server_info() -> dict[str, Any]:
     """Server metadata resource."""
 
     return {
-        "name": "horizon-mcp",
+        "name": "bmtnews-mcp",
         "started_at": SERVER_STARTED_AT,
         "runs_root": str(service.runs_root.resolve()),
     }
 
 
-@mcp.resource("horizon://metrics")
+@mcp.resource("bmtnews://metrics")
 def r_metrics() -> dict[str, Any]:
     """In-memory metrics snapshot."""
 
-    return _resource_result("horizon://metrics", _metrics_snapshot)
+    return _resource_result("bmtnews://metrics", _metrics_snapshot)
 
 
-@mcp.resource("horizon://runs")
+@mcp.resource("bmtnews://runs")
 def r_runs() -> dict[str, Any]:
     """Recent run list."""
 
-    return _resource_result("horizon://runs", lambda: service.list_runs(limit=30))
+    return _resource_result("bmtnews://runs", lambda: service.list_runs(limit=30))
 
 
-@mcp.resource("horizon://runs/{run_id}/meta")
+@mcp.resource("bmtnews://runs/{run_id}/meta")
 def r_run_meta(run_id: str) -> dict[str, Any]:
     """Run metadata resource."""
 
     return _resource_result(
-        f"horizon://runs/{run_id}/meta",
+        f"bmtnews://runs/{run_id}/meta",
         lambda: service.get_run_meta(run_id),
     )
 
 
-@mcp.resource("horizon://runs/{run_id}/items/{stage}")
+@mcp.resource("bmtnews://runs/{run_id}/items/{stage}")
 def r_run_items(run_id: str, stage: str) -> dict[str, Any]:
     """Run stage items resource."""
 
     return _resource_result(
-        f"horizon://runs/{run_id}/items/{stage}",
+        f"bmtnews://runs/{run_id}/items/{stage}",
         lambda: service.get_run_stage(run_id=run_id, stage=stage, max_items=200),
     )
 
 
-@mcp.resource("horizon://runs/{run_id}/summary/{language}")
+@mcp.resource("bmtnews://runs/{run_id}/summary/{language}")
 def r_run_summary(run_id: str, language: str) -> dict[str, Any]:
     """Run summary resource."""
 
     return _resource_result(
-        f"horizon://runs/{run_id}/summary/{language}",
+        f"bmtnews://runs/{run_id}/summary/{language}",
         lambda: service.get_run_summary(run_id=run_id, language=language),
     )
 
 
-@mcp.resource("horizon://config/effective")
+@mcp.resource("bmtnews://config/effective")
 def r_effective_config() -> dict[str, Any]:
-    """Effective default config resolved from local Horizon path."""
+    """Effective default config resolved from local BMTNews path."""
 
-    return _resource_result("horizon://config/effective", service.get_effective_config)
+    return _resource_result("bmtnews://config/effective", service.get_effective_config)
 
 
 def main() -> None:

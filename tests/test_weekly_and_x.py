@@ -269,7 +269,7 @@ async def _test_x_delivery_skips_languages_already_posted() -> None:
     """Republishing an edition must not post to X twice."""
     from types import SimpleNamespace
     from rich.console import Console
-    from src.orchestrator import HorizonOrchestrator
+    from src.orchestrator import BMTNewsOrchestrator
     from src.run_report import RunReport
 
     class RecordingPublisher:
@@ -282,7 +282,7 @@ async def _test_x_delivery_skips_languages_already_posted() -> None:
 
             return XDeliveryResult(status=XDeliveryStatus.SUCCESS, posted=1)
 
-    orchestrator = HorizonOrchestrator.__new__(HorizonOrchestrator)
+    orchestrator = BMTNewsOrchestrator.__new__(BMTNewsOrchestrator)
     orchestrator.console = Console(record=True)
     orchestrator.config = SimpleNamespace(
         x_delivery=XDeliveryConfig(enabled=True, languages=["zh", "en"])

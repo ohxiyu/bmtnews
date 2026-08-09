@@ -1,8 +1,9 @@
 """Preset source library loader and keyword matching.
 
-Supports loading from the horizon-site API (preferred) or local file (fallback).
-API data is served in horizon-site's own format (Category/SourceType enums)
-and transformed internally to the preset format that match_domains() expects.
+Presets ship with the repository in ``data/presets.json``. A remote preset
+service can be used instead by setting ``BMTNEWS_PRESET_API_URL``; without
+it no external service is contacted, so the setup wizard works offline and
+depends on nothing outside this repository.
 """
 
 import json
@@ -15,20 +16,21 @@ import httpx
 from .tag_aliases import get_tag_aliases
 
 
-API_BASE_URL = os.environ.get(
-    "HORIZON_API_URL", "https://horizon1123.top"
-)
-PRESETS_ENDPOINT = f"{API_BASE_URL}/api/presets"
+# Opt-in only: unset means "use the presets bundled with the repository".
+API_BASE_URL = os.environ.get("BMTNEWS_PRESET_API_URL", "").strip()
+PRESETS_ENDPOINT = f"{API_BASE_URL.rstrip('/')}/api/presets" if API_BASE_URL else ""
 REQUEST_TIMEOUT = 10  # seconds
 
 
 def fetch_presets() -> Optional[Dict]:
-    """Fetch presets from the horizon-site API.
+    """Fetch presets from a configured remote preset service.
 
     Returns:
-        Dict in the internal preset format (with "domains" key),
-        or None if the fetch fails.
+        Dict in the internal preset format (with "domains" key), or None
+        when no service is configured or the fetch fails.
     """
+    if not PRESETS_ENDPOINT:
+        return None
     try:
         response = httpx.get(
             PRESETS_ENDPOINT,
@@ -48,9 +50,9 @@ def fetch_presets() -> Optional[Dict]:
 
 
 def _transform_api_response(api_data: Dict) -> Dict:
-    """Transform horizon-site API response to the internal preset format.
+    """Transform a remote preset API response into the internal format.
 
-    The API returns data in horizon-site's format (Category enum IDs like
+    The API returns data in the remote service's format (Category enum IDs like
     "AI_ML", SourceType enums like "REDDIT"). This function converts it
     to the preset format with kebab-case IDs and lowercase type strings
     that match_domains() and collect_sources_from_domains() expect.
@@ -67,15 +69,15 @@ def _transform_api_response(api_data: Dict) -> Dict:
         for src in category.get("sources", []):
             config = dict(src.get("config", {}))
 
-            # Horizon-site stores "name" at the source level, but
-            # horizon's build_config() expects it inside config for RSS sources.
+            # BMTNews-site stores "name" at the source level, but
+            # bmtnews's build_config() expects it inside config for RSS sources.
             src_type = src.get("type", "rss")
             source_name = src.get("name", "")
             if src_type == "rss" and source_name and "name" not in config:
                 config["name"] = source_name
 
-            # Remove the internal "subtype" field that horizon-site uses
-            # for GitHub sources — horizon uses the type field instead.
+            # Remove the internal "subtype" field that the remote preset service uses
+            # for GitHub sources — bmtnews uses the type field instead.
             if src_type in ("github_user", "github_repo"):
                 config.pop("subtype", None)
 
@@ -107,7 +109,7 @@ def load_presets(
     Args:
         presets_path: Path to the local presets JSON file for fallback.
         prefer_api: Whether to try the API first. Set False for offline mode
-            or when HORIZON_OFFLINE environment variable is set.
+            or when BMTNEWS_OFFLINE environment variable is set.
 
     Returns:
         Dict with "domains" key containing preset data.
@@ -115,7 +117,7 @@ def load_presets(
     Raises:
         FileNotFoundError: If both API and local file are unavailable.
     """
-    offline = os.environ.get("HORIZON_OFFLINE", "").lower() in ("1", "true", "yes")
+    offline = os.environ.get("BMTNEWS_OFFLINE", "").lower() in ("1", "true", "yes")
 
     if prefer_api and not offline:
         api_presets = fetch_presets()

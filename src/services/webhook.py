@@ -1,4 +1,4 @@
-"""Webhook notification service for Horizon."""
+"""Webhook notification service for BMTNews."""
 
 import json
 import logging
