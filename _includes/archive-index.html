@@ -1,0 +1,87 @@
+{% comment %}
+Always-present index for threads / entities / weekly reviews.
+
+The lists render from site.data files that the pipeline rewrites on every
+publish, so these pages exist from the first deploy — before any archive
+content is generated they simply show an empty state instead of 404ing.
+
+Parameters: kind ("threads" | "entities" | "weekly"), language ("zh" | "en").
+{% endcomment %}
+
+{% assign is_en = false %}
+{% if include.language == "en" %}{% assign is_en = true %}{% endif %}
+{% assign prefix = "" %}
+{% if is_en %}{% assign prefix = "/en" %}{% endif %}
+
+{% if include.kind == "threads" %}
+  {% assign rows = site.data.threads.threads %}
+  {% if is_en %}
+    <p class="archive-lede">Continuing events tracked across days, most recent first.</p>
+  {% else %}
+    <p class="archive-lede">跨天追踪的持续事件，最新进展在最上面。</p>
+  {% endif %}
+  {% if rows and rows.size > 0 %}
+    <ul class="archive-list">
+      {% for row in rows %}
+        <li class="archive-row">
+          <time datetime="{{ row.latest_date }}">{{ row.latest_date }}</time>
+          <div class="archive-row-body">
+            <h3><a href="{{ prefix }}/threads/{{ row.thread_id }}/">{% if is_en %}{{ row.title_en | default: row.title_zh }}{% else %}{{ row.title_zh | default: row.title_en }}{% endif %}</a></h3>
+            <p class="archive-row-meta">
+              {% if is_en %}{{ row.days }} days · {{ row.entries }} entries{% else %}{{ row.days }} 天 · {{ row.entries }} 条{% endif %}
+            </p>
+          </div>
+        </li>
+      {% endfor %}
+    </ul>
+  {% else %}
+    <p class="empty-state">
+      {% if is_en %}No multi-day threads yet. A thread appears once one event is covered on two separate days.{% else %}暂无跨天事件线。同一事件在两天内都被报道后，这里会自动出现。{% endif %}
+    </p>
+  {% endif %}
+
+{% elsif include.kind == "entities" %}
+  {% assign rows = site.data.entities.entities %}
+  {% if is_en %}
+    <p class="archive-lede">Coverage grouped by company, protocol, and regulator.</p>
+  {% else %}
+    <p class="archive-lede">按公司、协议、监管机构聚合的历史报道。</p>
+  {% endif %}
+  {% if rows and rows.size > 0 %}
+    <ul class="entity-cloud">
+      {% for row in rows %}
+        <li><a href="{{ prefix }}/entity/{{ row.slug }}/">{{ row.label }}</a><span>{{ row.mentions }}</span></li>
+      {% endfor %}
+    </ul>
+  {% else %}
+    <p class="empty-state">
+      {% if is_en %}No recurring entities yet. An entity appears after it is mentioned in three published stories.{% else %}暂无实体索引。同一实体被三条已发布新闻提及后，这里会自动出现。{% endif %}
+    </p>
+  {% endif %}
+
+{% else %}
+  {% assign rows = site.data.weeks.weeks %}
+  {% if is_en %}
+    <p class="archive-lede">The past seven days, organized by throughline, continuing threads, and stories worth remembering.</p>
+  {% else %}
+    <p class="archive-lede">过去 7 天的重点回顾，按主线、持续事件和值得记住三部分整理。</p>
+  {% endif %}
+  {% if rows and rows.size > 0 %}
+    <ul class="archive-list">
+      {% for row in rows %}
+        <li class="archive-row">
+          <time datetime="{{ row }}">{{ row }}</time>
+          <div class="archive-row-body">
+            <h3><a href="{{ prefix }}/weekly/{{ row }}/">{% if is_en %}Weekly Review · {{ row }}{% else %}本周回顾 · {{ row }}{% endif %}</a></h3>
+          </div>
+        </li>
+      {% endfor %}
+    </ul>
+  {% else %}
+    <p class="empty-state">
+      {% if is_en %}No weekly review published yet. The first one is generated on the Monday after enough daily editions are archived.{% else %}还没有周报。积累足够的日报归档后，周一会自动生成第一期。{% endif %}
+    </p>
+  {% endif %}
+{% endif %}
+
+<p class="archive-back"><a href="{{ prefix }}/">{% if is_en %}Back to the feed{% else %}返回首页{% endif %}</a></p>
