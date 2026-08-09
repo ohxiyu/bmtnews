@@ -13,10 +13,12 @@ from src.api_output import (
 from src.archive import ArchiveRecord
 from src.market_snapshot import MarketSnapshot
 from src.site_pages import (
+    build_entity_index_data,
+    build_thread_index_data,
     publish_archive_pages,
     render_entity_page,
-    render_thread_index,
     render_thread_page,
+    write_index_data,
 )
 from src.threads import EntitySummary
 
@@ -152,8 +154,33 @@ def test_entity_page_escapes_labels_and_keeps_titles_plain() -> None:
     # The body escapes rather than strips.
     assert "Bybit &lt;b&gt;" in body
 
-    index = render_thread_index([("tabc", [make_record(thread_id="tabc")])], "en")
-    assert "/en/threads/tabc/" in index
+
+
+def test_index_data_feeds_the_committed_pages(tmp_path) -> None:
+    threads = [
+        (
+            "tabc",
+            [
+                make_record("2026-08-08", thread_id="tabc"),
+                make_record("2026-08-09", thread_id="tabc"),
+            ],
+        )
+    ]
+    entities = [
+        EntitySummary(slug="bybit", label="Bybit", count=3, records=[make_record()])
+    ]
+    thread_data = build_thread_index_data(threads)
+    assert thread_data["threads"][0]["days"] == 2
+    assert thread_data["threads"][0]["latest_date"] == "2026-08-09"
+    assert build_entity_index_data(entities)["entities"][0]["mentions"] == 3
+
+    written = write_index_data(threads, entities, data_root=tmp_path)
+    assert sorted(path.name for path in written) == [
+        "entities.json",
+        "threads.json",
+    ]
+    payload = json.loads((tmp_path / "threads.json").read_text(encoding="utf-8"))
+    assert payload["threads"][0]["thread_id"] == "tabc"
 
 
 def test_publish_archive_pages_writes_both_languages(tmp_path: Path) -> None:
@@ -165,9 +192,10 @@ def test_publish_archive_pages_writes_both_languages(tmp_path: Path) -> None:
         ["zh", "en"],
         threads_root=tmp_path / "threads",
         entity_root=tmp_path / "entity",
+        data_root=tmp_path / "_data",
     )
     assert counts == {"threads": 2, "entities": 2}
     assert (tmp_path / "threads" / "tabc.html").exists()
     assert (tmp_path / "threads" / "en-tabc.html").exists()
-    assert (tmp_path / "entity" / "index.html").exists()
     assert (tmp_path / "entity" / "en-bybit.html").exists()
+    assert (tmp_path / "_data" / "threads.json").exists()

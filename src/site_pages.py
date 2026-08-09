@@ -8,6 +8,7 @@ pages written by the pipeline, so no runtime service is involved.
 
 from __future__ import annotations
 
+import json
 import logging
 from pathlib import Path
 from typing import Iterable, List, Sequence
@@ -23,6 +24,7 @@ logger = logging.getLogger(__name__)
 THREADS_ROOT = Path("docs/threads")
 ENTITY_ROOT = Path("docs/entity")
 WEEKLY_ROOT = Path("docs/weekly")
+DATA_ROOT = Path("docs/_data")
 
 _LABELS = {
     "zh": {
@@ -182,70 +184,55 @@ def render_entity_page(entity: EntitySummary, language: str) -> str:
     )
 
 
-def render_thread_index(
+def build_thread_index_data(
     threads: Sequence[tuple[str, List[ArchiveRecord]]],
-    language: str,
-) -> str:
-    labels = _LABELS[language]
-    prefix = "" if language == "zh" else "/en"
-    if not threads:
-        body = f'<p class="empty-state">{labels["empty"]}</p>'
-    else:
-        entries = []
-        for thread_id, records in threads:
-            latest = max(records, key=lambda record: (record.date, record.rank))
-            days = len({record.date for record in records})
-            entries.append(
-                '<li class="archive-row">'
-                f'<time datetime="{escape_text(latest.date)}">'
-                f"{escape_text(latest.date)}</time>"
-                '<div class="archive-row-body"><h3>'
-                f'<a href="{prefix}/threads/{thread_id}/">'
-                f"{escape_text(latest.title_for(language))}</a></h3>"
-                f'<p class="archive-row-meta">{days} {labels["days"]} · '
-                f"{len(records)} {labels['entries']}</p></div></li>"
-            )
-        body = f'<ul class="archive-list">{"".join(entries)}</ul>'
-    return (
-        _front_matter(
-            title=labels["threads_title"],
-            permalink=f"{prefix}/threads/",
-            language=language,
-            description=labels["threads_intro"],
+) -> dict:
+    """Data consumed by the always-present /threads/ index page."""
+    rows = []
+    for thread_id, records in threads:
+        latest = max(records, key=lambda record: (record.date, record.rank))
+        rows.append(
+            {
+                "thread_id": thread_id,
+                "latest_date": latest.date,
+                "days": len({record.date for record in records}),
+                "entries": len(records),
+                "title_zh": latest.title_zh,
+                "title_en": latest.title_en,
+            }
         )
-        + f'<p class="archive-lede">{labels["threads_intro"]}</p>'
-        + body
-        + "\n"
-    )
+    return {"threads": rows}
 
 
-def render_entity_index(
-    entities: Sequence[EntitySummary],
-    language: str,
-) -> str:
-    labels = _LABELS[language]
-    prefix = "" if language == "zh" else "/en"
-    if not entities:
-        body = f'<p class="empty-state">{labels["empty"]}</p>'
-    else:
-        entries = "".join(
-            f'<li><a href="{prefix}/entity/{entity.slug}/">'
-            f"{escape_text(entity.label)}</a>"
-            f"<span>{entity.count}</span></li>"
+def build_entity_index_data(entities: Sequence[EntitySummary]) -> dict:
+    """Data consumed by the always-present /entity/ index page."""
+    return {
+        "entities": [
+            {"slug": entity.slug, "label": entity.label, "mentions": entity.count}
             for entity in entities
+        ]
+    }
+
+
+def write_index_data(
+    threads: Sequence[tuple[str, List[ArchiveRecord]]],
+    entities: Sequence[EntitySummary],
+    *,
+    data_root: Path = DATA_ROOT,
+) -> List[Path]:
+    """Write the Jekyll data files backing the index pages."""
+    data_root.mkdir(parents=True, exist_ok=True)
+    written: List[Path] = []
+    for name, payload in (
+        ("threads.json", build_thread_index_data(threads)),
+        ("entities.json", build_entity_index_data(entities)),
+    ):
+        path = data_root / name
+        _atomic_write_text(
+            path, json.dumps(payload, ensure_ascii=False, indent=2) + "\n"
         )
-        body = f'<ul class="entity-cloud">{entries}</ul>'
-    return (
-        _front_matter(
-            title=labels["entities_title"],
-            permalink=f"{prefix}/entity/",
-            language=language,
-            description=labels["entities_intro"],
-        )
-        + f'<p class="archive-lede">{labels["entities_intro"]}</p>'
-        + body
-        + "\n"
-    )
+        written.append(path)
+    return written
 
 
 def _write(path: Path, content: str) -> None:
@@ -260,20 +247,19 @@ def publish_archive_pages(
     *,
     threads_root: Path = THREADS_ROOT,
     entity_root: Path = ENTITY_ROOT,
+    data_root: Path = DATA_ROOT,
 ) -> dict[str, int]:
-    """Write every thread and entity page; returns counts for the run report."""
+    """Write every thread and entity page plus the index data files.
+
+    The index pages themselves are committed Jekyll pages that read these
+    data files, so /threads/ and /entity/ resolve from the first deploy
+    even before any archive content exists.
+    """
     written = {"threads": 0, "entities": 0}
+    write_index_data(threads, entities, data_root=data_root)
     for language in languages:
         normalized = "en" if str(language).lower().startswith("en") else "zh"
         suffix = "" if normalized == "zh" else "en-"
-        _write(
-            threads_root / f"{suffix}index.html",
-            render_thread_index(threads, normalized),
-        )
-        _write(
-            entity_root / f"{suffix}index.html",
-            render_entity_index(entities, normalized),
-        )
         for thread_id, records in threads:
             _write(
                 threads_root / f"{suffix}{thread_id}.html",

@@ -12,6 +12,7 @@ Neither can block the daily edition: they run in their own workflow.
 
 from __future__ import annotations
 
+import json
 import logging
 from dataclasses import dataclass, field
 from datetime import date as date_type, timedelta
@@ -25,7 +26,8 @@ from .threads import collect_threads
 logger = logging.getLogger(__name__)
 
 WEEKLY_ROOT = Path("docs/weekly")
-CALIBRATION_ROOT = Path("docs/_data/calibration")
+DATA_ROOT = Path("docs/_data")
+CALIBRATION_ROOT = DATA_ROOT / "calibration"
 
 _LANGUAGE_NAMES = {
     "zh": "Simplified Chinese (简体中文)",
@@ -215,29 +217,9 @@ def render_weekly_page(
     return f"{header}*{stats_line}*\n\n{body.strip()}{footer}"
 
 
-def render_weekly_index(
-    weeks: Sequence[str],
-    *,
-    language: str,
-) -> str:
-    labels = _LABELS[language]
-    prefix = "" if language == "zh" else "/en"
-    header = (
-        "---\n"
-        "layout: default\n"
-        f'title: "{labels["index_title"]}"\n'
-        f"permalink: {prefix}/weekly/\n"
-        f"interface_language: {language}\n"
-        f'description: "{labels["intro"]}"\n'
-        "page_type: archive\n"
-        "---\n\n"
-    )
-    if not weeks:
-        return header + f"{labels['empty']}\n"
-    entries = "\n".join(
-        f"- [{week}]({prefix}/weekly/{week}/)" for week in sorted(weeks, reverse=True)
-    )
-    return header + entries + "\n"
+def build_weeks_index_data(weeks: Sequence[str]) -> dict:
+    """Data consumed by the always-present /weekly/ index page."""
+    return {"weeks": sorted({week for week in weeks}, reverse=True)}
 
 
 def save_weekly_page(
@@ -254,16 +236,19 @@ def save_weekly_page(
     return path
 
 
-def save_weekly_index(
+def save_weeks_index_data(
     weeks: Sequence[str],
     *,
-    language: str,
-    root: Path = WEEKLY_ROOT,
+    data_root: Path = DATA_ROOT,
 ) -> Path:
-    root.mkdir(parents=True, exist_ok=True)
-    suffix = "" if language == "zh" else "en-"
-    path = root / f"{suffix}index.md"
-    _atomic_write_text(path, render_weekly_index(weeks, language=language))
+    """Write the data file backing the committed /weekly/ index page."""
+    data_root.mkdir(parents=True, exist_ok=True)
+    path = data_root / "weeks.json"
+    _atomic_write_text(
+        path,
+        json.dumps(build_weeks_index_data(weeks), ensure_ascii=False, indent=2)
+        + "\n",
+    )
     return path
 
 

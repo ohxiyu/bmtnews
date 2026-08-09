@@ -15,11 +15,12 @@ from src.services.x_delivery import (
     build_post,
 )
 from src.weekly import (
+    build_weeks_index_data,
     build_weekly_context,
     generate_weekly_digest,
-    render_weekly_index,
     render_weekly_page,
     save_weekly_page,
+    save_weeks_index_data,
 )
 
 
@@ -90,8 +91,9 @@ def test_render_and_save_weekly_page(tmp_path: Path) -> None:
     path = save_weekly_page(page, end=date(2026, 8, 9), language="zh", root=tmp_path)
     assert path.name == "2026-08-09.md"
 
-    index = render_weekly_index(["2026-08-02", "2026-08-09"], language="en")
-    assert index.index("/weekly/2026-08-09/") < index.index("/weekly/2026-08-02/")
+    data = build_weeks_index_data(["2026-08-02", "2026-08-09", "2026-08-02"])
+    assert data["weeks"] == ["2026-08-09", "2026-08-02"]
+    assert save_weeks_index_data(["2026-08-09"], data_root=tmp_path).name == "weeks.json"
 
 
 def make_item(title: str) -> ContentItem:
