@@ -68,6 +68,27 @@
             data-i18n-en="Feed"
           >{% if interface_language == "en" %}Feed{% else %}信息流{% endif %}</a>
           <a
+            href="{% if interface_language == 'en' %}{{ '/en/threads/' | relative_url }}{% else %}{{ '/threads/' | relative_url }}{% endif %}"
+            data-i18n-zh="事件线"
+            data-i18n-en="Threads"
+            data-i18n-href-zh="{{ '/threads/' | relative_url }}"
+            data-i18n-href-en="{{ '/en/threads/' | relative_url }}"
+          >{% if interface_language == "en" %}Threads{% else %}事件线{% endif %}</a>
+          <a
+            href="{% if interface_language == 'en' %}{{ '/en/entity/' | relative_url }}{% else %}{{ '/entity/' | relative_url }}{% endif %}"
+            data-i18n-zh="实体"
+            data-i18n-en="Entities"
+            data-i18n-href-zh="{{ '/entity/' | relative_url }}"
+            data-i18n-href-en="{{ '/en/entity/' | relative_url }}"
+          >{% if interface_language == "en" %}Entities{% else %}实体{% endif %}</a>
+          <a
+            href="{% if interface_language == 'en' %}{{ '/en/weekly/' | relative_url }}{% else %}{{ '/weekly/' | relative_url }}{% endif %}"
+            data-i18n-zh="周报"
+            data-i18n-en="Weekly"
+            data-i18n-href-zh="{{ '/weekly/' | relative_url }}"
+            data-i18n-href-en="{{ '/en/weekly/' | relative_url }}"
+          >{% if interface_language == "en" %}Weekly{% else %}周报{% endif %}</a>
+          <a
             href="{% if interface_language == 'en' %}{{ '/feed-en.xml' | relative_url }}{% else %}{{ '/feed-zh.xml' | relative_url }}{% endif %}"
             data-i18n-zh="RSS"
             data-i18n-en="RSS"
@@ -125,6 +146,15 @@
           <div class="page-intro-meta">
             <span>LIVE · MAIN</span>
             <span>查看 · 筛选 · 申请变更</span>
+          </div>
+        </div>
+      </section>
+    {% elsif page.page_type == "archive" %}
+      <section class="page-intro page-intro-docs">
+        <div class="page-intro-inner">
+          <div>
+            <p class="eyebrow">{% if interface_language == "en" %}BMTNEWS ARCHIVE{% else %}BMTNEWS 存档{% endif %}</p>
+            <h1>{{ page.title }}</h1>
           </div>
         </div>
       </section>
