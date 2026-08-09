@@ -510,6 +510,15 @@ class XDeliveryConfig(BaseModel):
     site_url: str = "https://bmt.news/"
     max_items: int = Field(default=3, ge=1, le=5)
     required: bool = False
+    # "digest" posts one round-up when the edition publishes.
+    # "drip" posts the top stories one at a time across the day, driven by
+    # the x-distribution workflow; the publish step then posts nothing.
+    mode: Literal["digest", "drip"] = "digest"
+    drip_items: int = Field(default=4, ge=1, le=8)
+    # Where a drip post sends the reader: the site edition or the original
+    # article. "site" keeps readers in the briefing, "source" credits the
+    # outlet directly.
+    link_target: Literal["site", "source"] = "site"
 
     @field_validator("site_url")
     @classmethod

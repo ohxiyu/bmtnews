@@ -496,6 +496,9 @@
     ],
     "site_url": "https://bmt.news/",
     "max_items": 3,
+    "mode": "drip",
+    "drip_items": 4,
+    "link_target": "site",
     "required": false
   },
   "telegram_delivery": {

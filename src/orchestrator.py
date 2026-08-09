@@ -1277,6 +1277,136 @@ class HorizonOrchestrator:
             run_report.finish()
             save_run_report(run_report)
 
+    async def run_x_slot(
+        self,
+        *,
+        edition_date: date_type | None = None,
+        now: datetime | None = None,
+        state_path: Path | None = None,
+    ) -> None:
+        """Post the next pending story of the current edition to X.
+
+        Called once per scheduled slot. Posting is ordered rather than
+        clock-matched, so a delayed or skipped slot shifts a story later
+        instead of dropping or duplicating it.
+        """
+        from .services.x_delivery import build_story_post
+        from .x_queue import (
+            DEFAULT_STATE_PATH,
+            load_queue_state,
+            next_pending_rank,
+            save_queue_state,
+            state_for_edition,
+        )
+
+        config = self.config.x_delivery
+        timezone_name = self.config.filtering.daily_timezone
+        run_started_at = now or datetime.now(timezone.utc)
+        if run_started_at.tzinfo is None:
+            run_started_at = run_started_at.replace(tzinfo=timezone.utc)
+        date_str = (
+            edition_date.isoformat()
+            if edition_date is not None
+            else local_date_for(run_started_at, timezone_name)
+        )
+        run_report = RunReport.start(
+            date=date_str,
+            timezone_name=timezone_name,
+            started_at=run_started_at,
+            kind="x_slot",
+        )
+        self.last_run_report = run_report
+        path = state_path or DEFAULT_STATE_PATH
+
+        try:
+            publisher = getattr(self, "x_publisher", None)
+            if not publisher or not config or not config.enabled:
+                run_report.add_alert(
+                    "info",
+                    "x_slot_disabled",
+                    "X 分发未启用，本次不发布。",
+                )
+                self.console.print("[yellow]X delivery is disabled.[/yellow]")
+                return
+            if config.mode != "drip":
+                run_report.add_alert(
+                    "info",
+                    "x_slot_not_drip",
+                    "X 分发处于 digest 模式，分时发布任务不执行。",
+                )
+                return
+
+            daily_state = load_daily_feed_state(date_str, timezone_name)
+            items = daily_state.items
+            if not items:
+                run_report.add_alert(
+                    "info",
+                    "x_slot_no_edition",
+                    f"{date_str} 尚无已发布日报，跳过本时段。",
+                )
+                self.console.print(
+                    f"[yellow]No published edition for {date_str}; nothing to post.[/yellow]"
+                )
+                return
+
+            state = state_for_edition(load_queue_state(path), date_str)
+            for language in config.languages:
+                rank = next_pending_rank(
+                    state,
+                    language=language,
+                    total_items=len(items),
+                    limit=config.drip_items,
+                )
+                if rank is None:
+                    run_report.add_alert(
+                        "info",
+                        f"x_slot_complete_{language}",
+                        f"{date_str} 的 {language.upper()} 分时发布已全部完成。",
+                    )
+                    continue
+
+                item = items[rank - 1]
+                text = build_story_post(
+                    item,
+                    language=language,
+                    site_url=config.site_url,
+                    link_target=config.link_target,
+                    edition_date=date_str,
+                )
+                result = await publisher.send_text(text)
+                if result.status == XDeliveryStatus.SUCCESS:
+                    state.mark_posted(language, rank)
+                    save_queue_state(state, path)
+                    run_report.set_metric(
+                        "x_posts_sent",
+                        run_report.metrics.get("x_posts_sent", 0) + 1,
+                    )
+                    run_report.set_metric("x_slot_rank", rank)
+                    self.console.print(
+                        f"🐦 Posted #{rank} of {date_str} ({language}) to X"
+                    )
+                elif result.status == XDeliveryStatus.SKIPPED:
+                    run_report.add_alert(
+                        "info",
+                        "x_slot_skipped",
+                        f"X 分时发布跳过：{result.detail}",
+                    )
+                else:
+                    run_report.add_alert(
+                        "warning",
+                        "x_slot_failed",
+                        result.detail,
+                    )
+                    if config.required:
+                        raise RuntimeError(result.detail)
+        except Exception as exc:
+            run_report.fail(exc)
+            self.console.print(f"[bold red]❌ X slot failed: {exc}[/bold red]")
+            raise
+        finally:
+            run_report.finish()
+            save_run_report(run_report)
+
     async def run_weekly_review(
         self,
         *,
@@ -1602,6 +1732,9 @@ class HorizonOrchestrator:
         if not publisher:
             return
         config = self.config.x_delivery
+        if config and config.mode == "drip":
+            # The x-distribution workflow owns posting in drip mode.
+            return
         posted = set(already_posted or [])
         for language in (config.languages if config else []):
             if language in posted:
