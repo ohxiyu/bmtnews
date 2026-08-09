@@ -770,6 +770,114 @@ time,
   color: var(--accent);
 }
 
+/* continuing-coverage link into the thread page */
+.thread-pill {
+  font-size: var(--fs-xs);
+  font-weight: 650;
+  letter-spacing: 0.06em;
+  color: var(--text-muted);
+  border-bottom: 1px dotted var(--border-strong);
+}
+
+.thread-pill:hover {
+  color: var(--accent);
+  text-decoration: none;
+  border-bottom-color: var(--accent);
+}
+
+/* how many independent sources carried the story */
+.provenance {
+  color: var(--text-muted);
+}
+
+.provenance.is-confirmed {
+  color: var(--up);
+  font-weight: 600;
+}
+
+/* archive pages: threads, entities, weekly */
+.archive-lede {
+  margin: 0 0 18px;
+  color: var(--text-muted);
+  font-size: var(--fs-s);
+}
+
+.archive-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.archive-row {
+  display: grid;
+  grid-template-columns: 92px minmax(0, 1fr) auto;
+  gap: 0 14px;
+  align-items: baseline;
+  padding: 14px 0;
+  border-top: 1px solid var(--border);
+}
+
+.archive-row > time {
+  color: var(--text-muted);
+  font-size: var(--fs-xs);
+}
+
+.archive-row-body h3 {
+  margin: 0;
+  font-size: var(--fs-m);
+  font-weight: 650;
+  line-height: 1.5;
+}
+
+.archive-row-body h3 a {
+  color: var(--text);
+}
+
+.archive-row-body h3 a:hover {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.archive-row-summary {
+  margin: 4px 0 0;
+  color: var(--text-soft);
+  font-size: var(--fs-s);
+  line-height: 1.65;
+}
+
+.archive-row-meta {
+  margin: 4px 0 0;
+  color: var(--text-muted);
+  font-size: var(--fs-xs);
+}
+
+.archive-back {
+  margin-top: 26px;
+  font-size: var(--fs-s);
+}
+
+.entity-cloud {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 18px;
+}
+
+.entity-cloud li {
+  display: flex;
+  align-items: baseline;
+  gap: 5px;
+  font-size: var(--fs-m);
+}
+
+.entity-cloud span {
+  color: var(--text-muted);
+  font-size: var(--fs-xs);
+  font-variant-numeric: tabular-nums;
+}
+
 /* clearly-labeled ad slot; outside the ranking, ignored by filters */
 .sponsored-slot {
   display: flex;
@@ -1174,6 +1282,14 @@ time,
     flex-direction: column;
     align-items: flex-start;
     gap: 4px;
+  }
+
+  .archive-row {
+    grid-template-columns: minmax(0, 1fr) auto;
+  }
+
+  .archive-row > time {
+    grid-column: 1 / -1;
   }
 
   .digest-item {

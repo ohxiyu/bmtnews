@@ -51,6 +51,14 @@ data/x_cookies_*.json
 
 docs/_posts/*.md
 docs/_data/bmtnews_state.json
+# Generated at publish time and deployed to gh-pages, never committed to main.
+docs/_data/archive/
+docs/_data/calibration/
+docs/api/
+docs/feeds/
+docs/threads/
+docs/entity/
+docs/weekly/
 
 # Logs
 logs/*.log

@@ -19,6 +19,7 @@ from .services.telegram_delivery import (
     TelegramEditionPublisher,
 )
 from .services.webhook import WebhookNotifier
+from .services.x_delivery import XDeliveryStatus, XEditionPublisher
 from .scrapers.github import GitHubScraper
 from .scrapers.hackernews import HackerNewsScraper
 from .scrapers.rss import RSSScraper
@@ -55,14 +56,33 @@ from .edition import (
     merge_staged_items,
     save_staging_state,
 )
+from .api_output import (
+    build_edition_payload,
+    write_category_feeds,
+    write_edition_api,
+    write_editions_index,
+)
+from .archive import (
+    ArchiveRecord,
+    build_records,
+    load_recent_archive,
+    save_edition_records,
+)
 from .editorial import (
     EditorialEntry,
     editorial_content_item,
     load_editorial_plan,
 )
-from .market_snapshot import fetch_market_snapshot
+from .market_snapshot import MarketSnapshot, fetch_market_snapshot
+from .site_pages import publish_archive_pages
+from .threads import (
+    assign_threads,
+    collect_entities,
+    collect_threads,
+    fingerprint,
+)
 from .run_report import RunReport, save_run_report
-from .web_feed import render_web_feed
+from .web_feed import _top_level_category, render_web_feed
 
 
 _TRACKING_QUERY_PARAMETERS = {
@@ -226,6 +246,11 @@ class HorizonOrchestrator:
                 console=self.console,
             )
             if config.telegram_delivery and config.telegram_delivery.enabled
+            else None
+        )
+        self.x_publisher = (
+            XEditionPublisher(config.x_delivery, console=self.console)
+            if config.x_delivery and config.x_delivery.enabled
             else None
         )
         self.last_fetch_report: Optional[FetchReport] = None
@@ -1173,6 +1198,17 @@ class HorizonOrchestrator:
                     min(1, len(editorial_plan.sponsored)),
                 )
 
+            # Link continuing coverage to its thread before anything renders.
+            self._apply_threads(important_items, edition_date=window.date)
+            run_report.set_metric(
+                "thread_continuations",
+                sum(
+                    1
+                    for item in important_items
+                    if (item.metadata.get("thread_day") or 1) > 1
+                ),
+            )
+
             existing_display_identities = {
                 item_identity(item) for item in daily_state.items
             }
@@ -1199,7 +1235,7 @@ class HorizonOrchestrator:
                 sum((item.ai_score or 0) >= 9 for item in important_items),
             )
 
-            await self._publish_outputs(
+            published = await self._publish_outputs(
                 important_items,
                 date=window.date,
                 total_candidates=total_candidates_considered,
@@ -1208,6 +1244,15 @@ class HorizonOrchestrator:
                 window_start=window.start,
                 window_end=window.end,
                 sponsored=editorial_plan.sponsored,
+            )
+            self._publish_archive_artifacts(
+                important_items,
+                date=window.date,
+                run_report=run_report,
+                window_start=window.start,
+                window_end=window.end,
+                market=published.get("market"),
+                overviews=published.get("overviews"),
             )
             self.console.print(
                 "[bold green]✅ Daily edition completed successfully![/bold green]"
@@ -1225,6 +1270,120 @@ class HorizonOrchestrator:
             run_report.finish()
             save_run_report(run_report)
 
+    async def run_weekly_review(
+        self,
+        *,
+        end_date: date_type | None = None,
+        now: datetime | None = None,
+        days: int = 7,
+    ) -> None:
+        """Publish the weekly digest and the scoring calibration review."""
+        from .weekly import (
+            build_weekly_context,
+            generate_calibration_review,
+            generate_weekly_digest,
+            known_weeks,
+            render_weekly_page,
+            save_calibration_review,
+            save_weekly_index,
+            save_weekly_page,
+        )
+
+        timezone_name = self.config.filtering.daily_timezone
+        run_started_at = now or datetime.now(timezone.utc)
+        if run_started_at.tzinfo is None:
+            run_started_at = run_started_at.replace(tzinfo=timezone.utc)
+        end = end_date or date_type.fromisoformat(
+            local_date_for(run_started_at, timezone_name)
+        )
+        run_report = RunReport.start(
+            date=end.isoformat(),
+            timezone_name=timezone_name,
+            started_at=run_started_at,
+            kind="weekly_review",
+        )
+        self.last_run_report = run_report
+        self.console.print(
+            "[bold cyan]🗓️ BMTNews - Building the weekly review...[/bold cyan]\n"
+        )
+
+        try:
+            history = load_recent_archive(days * 2, today=end)
+            context = build_weekly_context(history, end=end, days=days)
+            run_report.set_metric("weekly_records", len(context.records))
+            run_report.set_metric("weekly_threads", len(context.threads))
+            if context.is_empty:
+                run_report.add_alert(
+                    "info",
+                    "weekly_archive_empty",
+                    "归档中没有本周内容，跳过周报生成。",
+                )
+                self.console.print(
+                    "[yellow]No archived stories for this week; nothing to do.[/yellow]"
+                )
+                return
+
+            ai_client = create_ai_client(self.config.ai)
+            languages = list(self.config.ai.languages) or ["zh"]
+            published_any = False
+            for language in languages:
+                normalized = (
+                    "en" if str(language).lower().startswith("en") else "zh"
+                )
+                body = await generate_weekly_digest(
+                    ai_client,
+                    context,
+                    language=normalized,
+                )
+                if not body:
+                    run_report.add_alert(
+                        "warning",
+                        f"weekly_digest_failed_{normalized}",
+                        f"{normalized.upper()} 周报生成失败。",
+                    )
+                    continue
+                path = save_weekly_page(
+                    render_weekly_page(body, context, language=normalized),
+                    end=end,
+                    language=normalized,
+                )
+                published_any = True
+                self.console.print(f"📝 Saved {normalized.upper()} weekly review to {path}")
+
+            if published_any:
+                weeks = sorted({*known_weeks(), end.isoformat()}, reverse=True)
+                for language in languages:
+                    normalized = (
+                        "en" if str(language).lower().startswith("en") else "zh"
+                    )
+                    save_weekly_index(weeks, language=normalized)
+                run_report.set_metric("weekly_pages", len(languages))
+
+            calibration = await generate_calibration_review(
+                ai_client,
+                context,
+                high_threshold=max(
+                    8.0, self.config.filtering.ai_score_threshold + 1.0
+                ),
+            )
+            if calibration:
+                path = save_calibration_review(calibration, end=end)
+                run_report.set_metric("calibration_reviews", 1)
+                self.console.print(f"🎯 Saved scoring calibration review to {path}")
+            else:
+                run_report.add_alert(
+                    "info",
+                    "calibration_review_missing",
+                    "本周评分校准复盘未生成。",
+                )
+        except Exception as exc:
+            run_report.fail(exc)
+            self.console.print(f"[bold red]❌ Weekly review failed: {exc}[/bold red]")
+            raise
+        finally:
+            run_report.finish()
+            save_run_report(run_report)
+
     async def _publish_outputs(
         self,
         items: List[ContentItem],
@@ -1236,8 +1395,14 @@ class HorizonOrchestrator:
         window_start: datetime | None = None,
         window_end: datetime | None = None,
         sponsored: List[EditorialEntry] | None = None,
-    ) -> None:
-        """Render configured languages and publish static-site artifacts."""
+    ) -> Dict[str, object]:
+        """Render configured languages and publish static-site artifacts.
+
+        Returns the shared context (market snapshot, per-language ledes) so
+        the caller can reuse it for the archive and JSON API without
+        recomputing or re-prompting.
+        """
+        overviews: Dict[str, str] = {}
         # Keep every reader-visible statistic on the same basis: the total
         # number of unique candidates considered for this edition.
         fetched_count = total_candidates
@@ -1334,6 +1499,8 @@ class HorizonOrchestrator:
                             f"edition_overview_missing_{lang}",
                             f"{lang.upper()} 版导语生成失败，页面省略导语。",
                         )
+                    else:
+                        overviews[lang] = overview
                 web_content = render_web_feed(
                     items,
                     date=date,
@@ -1398,6 +1565,52 @@ class HorizonOrchestrator:
             total_candidates=total_candidates,
             run_report=run_report,
         )
+        await self._deliver_x_editions(
+            items,
+            date=date,
+            run_report=run_report,
+        )
+        return {"market": market_snapshot, "overviews": overviews}
+
+    async def _deliver_x_editions(
+        self,
+        items: List[ContentItem],
+        *,
+        date: str,
+        run_report: RunReport,
+    ) -> None:
+        """Post the top stories to X when the feature is explicitly enabled."""
+        publisher = getattr(self, "x_publisher", None)
+        if not publisher:
+            return
+        config = self.config.x_delivery
+        for language in (config.languages if config else []):
+            result = await publisher.send_daily_edition(
+                items,
+                date=date,
+                language=language,
+            )
+            if result.status == XDeliveryStatus.SUCCESS:
+                run_report.set_metric(
+                    "x_posts_sent",
+                    run_report.metrics.get("x_posts_sent", 0) + result.posted,
+                )
+            elif result.status == XDeliveryStatus.SKIPPED and result.detail:
+                run_report.add_alert(
+                    "info",
+                    "x_delivery_skipped",
+                    f"X 未发布：{result.detail}",
+                )
+                if config and config.required:
+                    raise RuntimeError(result.detail)
+            elif result.status == XDeliveryStatus.FAILURE:
+                run_report.add_alert(
+                    "warning",
+                    "x_delivery_failed",
+                    result.detail,
+                )
+                if config and config.required:
+                    raise RuntimeError(result.detail)
 
     async def _deliver_telegram_editions(
         self,
@@ -1608,6 +1821,118 @@ class HorizonOrchestrator:
         if meta.get("domain"):
             return meta["domain"]
         return item.author or "unknown"
+
+    def _apply_threads(
+        self,
+        items: List[ContentItem],
+        *,
+        edition_date: str,
+        history_days: int = 30,
+    ) -> None:
+        """Tag items with their story thread, using the published archive.
+
+        Fail-soft: any error leaves items unthreaded, which only costs the
+        thread badge on the page.
+        """
+        if not items:
+            return
+        try:
+            today = date_type.fromisoformat(edition_date)
+            history = load_recent_archive(history_days, today=today)
+            stories = [
+                (
+                    str(item.url),
+                    fingerprint(
+                        title_zh=str(item.metadata.get("title_zh") or item.title),
+                        title_en=str(item.metadata.get("title_en") or item.title),
+                        tags=item.ai_tags or [],
+                    ),
+                )
+                for item in items
+            ]
+            assignments = assign_threads(
+                stories,
+                history,
+                edition_date=edition_date,
+            )
+            for item in items:
+                assignment = assignments.get(str(item.url))
+                if assignment is None:
+                    continue
+                item.metadata["thread_id"] = assignment.thread_id
+                item.metadata["thread_day"] = assignment.day
+        except Exception as exc:
+            self.console.print(
+                f"[yellow]⚠️  Thread linking skipped: {exc}[/yellow]"
+            )
+
+    def _publish_archive_artifacts(
+        self,
+        items: List[ContentItem],
+        *,
+        date: str,
+        run_report: RunReport,
+        window_start: datetime | None = None,
+        window_end: datetime | None = None,
+        market: MarketSnapshot | None = None,
+        overviews: Dict[str, str] | None = None,
+    ) -> None:
+        """Append to the archive and regenerate every derived artifact.
+
+        Covers the JSON API, per-category feeds, and the thread and entity
+        pages. Fail-soft: the edition itself is already published by the
+        time this runs, so problems here become warnings, not failures.
+        """
+        try:
+            records = build_records(
+                items,
+                date=date,
+                top_category_of=_top_level_category,
+            )
+            save_edition_records(records, date=date)
+
+            today = date_type.fromisoformat(date)
+            history = load_recent_archive(120, today=today)
+            languages = list(self.config.ai.languages) or ["zh"]
+
+            payload = build_edition_payload(
+                records,
+                date=date,
+                stats={
+                    "candidates": run_report.metrics.get("edition_candidates", 0),
+                    "analyzed": run_report.metrics.get("analyzed_today", 0),
+                    "displayed": run_report.metrics.get("displayed_today", 0),
+                    "high_priority": run_report.metrics.get("high_priority", 0),
+                },
+                window_start=window_start,
+                window_end=window_end,
+                market=market,
+                overviews=overviews,
+            )
+            write_edition_api(payload, date=date)
+            write_editions_index(history)
+            write_category_feeds(history, languages)
+
+            threads = collect_threads(history, minimum_days=2, limit=40)
+            entities = collect_entities(history, minimum_mentions=3, limit=40)
+            written = publish_archive_pages(threads, entities, languages)
+            run_report.set_metric("archive_records", len(records))
+            run_report.set_metric("archive_threads", len(threads))
+            run_report.set_metric("archive_entities", len(entities))
+            self.console.print(
+                f"🗂️  Archived {len(records)} records; "
+                f"{written['threads']} thread and {written['entities']} entity "
+                "pages refreshed\n"
+            )
+        except Exception as exc:
+            run_report.add_alert(
+                "warning",
+                "archive_artifacts_failed",
+                f"归档与衍生页面生成失败：{exc}",
+            )
+            self.console.print(
+                f"[yellow]⚠️  Archive artifacts skipped: {exc}[/yellow]"
+            )
 
     def _rescue_low_signal_items(
         self,

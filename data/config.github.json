@@ -485,6 +485,19 @@
     },
     "headers": ""
   },
+  "x_delivery": {
+    "enabled": false,
+    "consumer_key_env": "X_CONSUMER_KEY",
+    "consumer_secret_env": "X_CONSUMER_SECRET",
+    "access_token_env": "X_ACCESS_TOKEN",
+    "access_secret_env": "X_ACCESS_SECRET",
+    "languages": [
+      "zh"
+    ],
+    "site_url": "https://bmt.news/",
+    "max_items": 3,
+    "required": false
+  },
   "telegram_delivery": {
     "enabled": true,
     "bot_token_env": "TELEGRAM_BOT_TOKEN",
