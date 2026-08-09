@@ -401,12 +401,17 @@ time,
   margin: 0;
   font-size: var(--fs-m);
   font-weight: 650;
+  /* Never let the row squeeze the title: without this the paragraph takes
+     the free space and a short Chinese heading wraps one character per line. */
+  flex: 0 0 auto;
 }
 
 .today-edition-status p {
   margin: 2px 0 0;
   color: var(--text-soft);
   font-size: var(--fs-s);
+  flex: 1 1 auto;
+  min-width: 0;
 }
 
 .today-edition-status[hidden] {
@@ -1314,6 +1319,14 @@ time,
     flex-direction: column;
     align-items: flex-start;
     gap: 4px;
+  }
+
+  /* Date, heading, and explanation stack on a phone instead of competing
+     for one row. */
+  .today-edition-status {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2px;
   }
 
   .archive-row {

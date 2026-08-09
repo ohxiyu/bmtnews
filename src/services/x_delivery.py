@@ -20,7 +20,8 @@ import secrets
 import time
 from dataclasses import dataclass
 from enum import Enum
-from typing import Iterable, List
+import logging
+from typing import Iterable, List, Optional
 from urllib.parse import quote, urlsplit
 
 import httpx
@@ -28,10 +29,28 @@ from rich.console import Console
 
 from ..models import ContentItem, XDeliveryConfig
 
+logger = logging.getLogger(__name__)
+
 X_TWEETS_ENDPOINT = "https://api.x.com/2/tweets"
+# Standard accounts are capped at 280 weighted characters; Premium accounts
+# post much longer, so the effective cap comes from the config.
 TWEET_LIMIT = 280
 # X counts every URL as a fixed-width t.co link regardless of real length.
 TCO_LENGTH = 23
+
+# twitter-text v3 weighting: code points in these ranges count as one
+# character, everything else — including CJK — counts as two. Counting CJK
+# as one would understate a Chinese post by nearly half and let an
+# over-length post reach the API.
+_SINGLE_WEIGHT_RANGES = (
+    (0x0000, 0x10FF),
+    (0x2000, 0x200D),
+    (0x2010, 0x201F),
+    (0x2032, 0x2037),
+)
+_URL_PATTERN = re.compile(r"https?://\S+")
+# U+2026 falls outside the single-weight ranges, so it costs two units.
+_ELLIPSIS = "…"
 
 
 class XDeliveryStatus(str, Enum):
@@ -108,25 +127,55 @@ def _oauth_header(
     return f"OAuth {joined}"
 
 
-def _weighted_length(text: str) -> int:
-    """Approximate X's character counting: URLs collapse to a fixed width."""
+def _character_weight(text: str) -> int:
+    """Weighted length of text containing no URLs."""
     total = 0
-    for token in text.split(" "):
-        if token.startswith("http://") or token.startswith("https://"):
-            total += TCO_LENGTH
+    for char in text:
+        code = ord(char)
+        if any(start <= code <= end for start, end in _SINGLE_WEIGHT_RANGES):
+            total += 1
         else:
-            total += len(token)
-    return total + max(0, len(text.split(" ")) - 1)
+            total += 2
+    return total
 
 
-def _truncate_to_fit(headline: str, fixed_cost: int) -> str:
-    """Shorten a headline so the whole post fits the character limit."""
-    budget = TWEET_LIMIT - fixed_cost
-    if budget <= 1:
+def _weighted_length(text: str) -> int:
+    """Count a post the way X does, collapsing every URL to a t.co token."""
+    total = 0
+    position = 0
+    for match in _URL_PATTERN.finditer(text):
+        total += _character_weight(text[position : match.start()])
+        total += TCO_LENGTH
+        position = match.end()
+    return total + _character_weight(text[position:])
+
+
+def truncate_weighted(text: str, limit: int) -> str:
+    """Cut text to ``limit`` weighted characters, ellipsis included.
+
+    Slicing by character count would overshoot for CJK, where one character
+    costs two weighted units.
+    """
+    ellipsis_cost = _character_weight(_ELLIPSIS)
+    if limit <= ellipsis_cost:
         return ""
-    if _weighted_length(headline) <= budget:
-        return headline
-    return headline[: max(1, budget - 1)].rstrip() + "…"
+    if _weighted_length(text) <= limit:
+        return text
+    budget = limit - ellipsis_cost
+    kept: List[str] = []
+    used = 0
+    for char in text:
+        cost = _character_weight(char)
+        if used + cost > budget:
+            break
+        kept.append(char)
+        used += cost
+    return "".join(kept).rstrip() + _ELLIPSIS if kept else ""
+
+
+def _truncate_to_fit(headline: str, fixed_cost: int, limit: int = TWEET_LIMIT) -> str:
+    """Shorten a headline so the whole post fits the character limit."""
+    return truncate_weighted(headline, limit - fixed_cost)
 
 
 def build_post(
@@ -210,10 +259,15 @@ def build_story_post(
     *,
     language: str,
     site_url: str,
-    link_target: str = "site",
+    link_target: str = "none",
+    limit: int = TWEET_LIMIT,
     edition_date: str | None = None,
 ) -> str:
-    """Compose a single-story post: headline, one takeaway, one link."""
+    """Assemble a single-story post from the fields already on the item.
+
+    This is the deterministic fallback used when AI composition is off or
+    fails; ``compose_story_post`` produces the normal, better-written post.
+    """
     is_zh = language == "zh"
     title = str(
         item.metadata.get(f"title_{language}")
@@ -226,21 +280,94 @@ def build_story_post(
         or item.ai_summary
         or ""
     )
+    link = ""
     if link_target == "source":
-        link = _safe_http_url(item.url) or site_url
-    else:
+        link = _safe_http_url(item.url) or ""
+    elif link_target == "site":
         link = site_url.rstrip("/") + ("/" if is_zh else "/en/")
 
-    # Budget: the link is a fixed-width t.co token plus two blank lines.
-    budget = TWEET_LIMIT - TCO_LENGTH - 4
-    headline = _truncate_to_fit(title, TWEET_LIMIT - budget)
-    remaining = budget - _weighted_length(headline) - 1
+    # Reserve the t.co token and the blank lines around it.
+    budget = limit - (TCO_LENGTH + 2 if link else 0)
+    headline = truncate_weighted(title, budget)
+    remaining = budget - _weighted_length(headline) - 2
     body = headline
     if takeaway and remaining > 24:
-        if _weighted_length(takeaway) > remaining:
-            takeaway = takeaway[: max(1, remaining - 1)].rstrip() + "…"
-        body = f"{headline}\n\n{takeaway}"
-    return f"{body}\n\n{link}"
+        takeaway = truncate_weighted(takeaway, remaining)
+        if takeaway:
+            body = f"{headline}\n\n{takeaway}"
+    return f"{body}\n\n{link}".rstrip() if link else body
+
+
+# Model output must never carry links, tags, or wrapping quotes into a post.
+_HASHTAG_PATTERN = re.compile(r"(?:^|\s)#\S+")
+_MARKDOWN_NOISE = re.compile(r"[*_`>]+")
+
+
+def sanitize_composed_post(text: str, *, limit: int) -> Optional[str]:
+    """Clean and validate an AI-composed post; None means unusable.
+
+    Rejecting is safe: the caller falls back to the assembled post.
+    """
+    cleaned = str(text or "").strip().strip('"').strip("“”").strip()
+    if not cleaned:
+        return None
+    cleaned = _URL_PATTERN.sub("", cleaned)
+    cleaned = _HASHTAG_PATTERN.sub("", cleaned)
+    cleaned = _MARKDOWN_NOISE.sub("", cleaned)
+    # Collapse runs of blank lines but keep paragraph separation. Lines are
+    # fully stripped because removing a leading tag or link leaves gaps.
+    lines = [re.sub(r"[ \t]{2,}", " ", line).strip() for line in cleaned.splitlines()]
+    paragraphs: List[str] = []
+    for line in lines:
+        if line:
+            paragraphs.append(line)
+        elif paragraphs and paragraphs[-1] != "":
+            paragraphs.append("")
+    cleaned = "\n".join(paragraphs).strip()
+    if not cleaned:
+        return None
+    if _weighted_length(cleaned) > limit:
+        return None
+    # A post this short is a failed generation, not a terse one.
+    if _character_weight(cleaned) < 60:
+        return None
+    return cleaned
+
+
+async def compose_story_post(
+    ai_client,
+    item: ContentItem,
+    *,
+    language: str,
+    limit: int = 1000,
+) -> Optional[str]:
+    """Write one post for a story in the account's voice.
+
+    Returns None on any failure or unusable output so the caller can fall
+    back to the assembled post rather than skipping the slot.
+    """
+    from ..ai.prompts import X_POST_SYSTEM, X_POST_USER
+
+    metadata = item.metadata or {}
+
+    def field(name: str) -> str:
+        return str(metadata.get(f"{name}_{language}") or "").strip()
+
+    try:
+        response = await ai_client.complete(
+            system=X_POST_SYSTEM,
+            user=X_POST_USER.format(
+                title=metadata.get(f"title_{language}") or item.title,
+                summary=field("detailed_summary") or (item.ai_summary or ""),
+                background=field("background") or "（无）",
+                market_impact=field("market_impact") or "（无）",
+                discussion=field("community_discussion") or "（无）",
+            ),
+        )
+    except Exception as exc:  # noqa: BLE001 - degrade to the fallback
+        logger.warning("X post composition failed for %s: %s", item.id, exc)
+        return None
+    return sanitize_composed_post(response, limit=limit)
 
 
 class XEditionPublisher:

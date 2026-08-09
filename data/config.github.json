@@ -498,7 +498,9 @@
     "max_items": 3,
     "mode": "drip",
     "drip_items": 4,
-    "link_target": "site",
+    "link_target": "none",
+    "compose": "ai",
+    "max_post_chars": 1000,
     "required": false
   },
   "telegram_delivery": {

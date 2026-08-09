@@ -515,10 +515,17 @@ class XDeliveryConfig(BaseModel):
     # the x-distribution workflow; the publish step then posts nothing.
     mode: Literal["digest", "drip"] = "digest"
     drip_items: int = Field(default=4, ge=1, le=8)
-    # Where a drip post sends the reader: the site edition or the original
-    # article. "site" keeps readers in the briefing, "source" credits the
-    # outlet directly.
-    link_target: Literal["site", "source"] = "site"
+    # Where a drip post sends the reader. "none" posts no link at all, which
+    # is what X's ranking favours; "site" keeps readers in the briefing and
+    # "source" credits the outlet directly.
+    link_target: Literal["none", "site", "source"] = "none"
+    # "ai" writes each post in the account's voice; "template" assembles it
+    # from the stored title and summary without an extra model call. AI
+    # composition always falls back to the template on failure.
+    compose: Literal["ai", "template"] = "ai"
+    # Weighted characters, counted the way X does (CJK counts double).
+    # 280 is the standard-account cap; Premium accounts post far longer.
+    max_post_chars: int = Field(default=1000, ge=280, le=25000)
 
     @field_validator("site_url")
     @classmethod

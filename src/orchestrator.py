@@ -1290,7 +1290,7 @@ class BMTNewsOrchestrator:
         clock-matched, so a delayed or skipped slot shifts a story later
         instead of dropping or duplicating it.
         """
-        from .services.x_delivery import build_story_post
+        from .services.x_delivery import build_story_post, compose_story_post
         from .x_queue import (
             DEFAULT_STATE_PATH,
             load_queue_state,
@@ -1366,13 +1366,34 @@ class BMTNewsOrchestrator:
                     continue
 
                 item = items[rank - 1]
-                text = build_story_post(
-                    item,
-                    language=language,
-                    site_url=config.site_url,
-                    link_target=config.link_target,
-                    edition_date=date_str,
-                )
+                text = None
+                if config.compose == "ai":
+                    try:
+                        text = await compose_story_post(
+                            create_ai_client(self.config.ai),
+                            item,
+                            language=language,
+                            limit=config.max_post_chars,
+                        )
+                    except Exception as exc:
+                        self.console.print(
+                            f"[yellow]⚠️  X composer unavailable: {exc}[/yellow]"
+                        )
+                    if text is None:
+                        run_report.add_alert(
+                            "info",
+                            "x_compose_fallback",
+                            "X 文案生成失败或不合格，已回落到模板拼装。",
+                        )
+                if text is None:
+                    text = build_story_post(
+                        item,
+                        language=language,
+                        site_url=config.site_url,
+                        link_target=config.link_target,
+                        limit=config.max_post_chars,
+                        edition_date=date_str,
+                    )
                 result = await publisher.send_text(text)
                 if result.status == XDeliveryStatus.SUCCESS:
                     state.mark_posted(language, rank)

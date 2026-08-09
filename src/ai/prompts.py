@@ -173,6 +173,34 @@ Stories that became multi-day threads:
 
 Respond with the Markdown review only."""
 
+X_POST_SYSTEM = """你为一个加密与 AI 领域的中文 X 账号写单条推文。定位是冷静客观的科技资讯观察者，给读者一套能持续更新的判断框架，而不是播报标题。
+
+结构（三段，用空行分隔）：
+1. 开头一句强判断——把这件事最反直觉或最关键的一点摆出来，最好带上"也就是说"式的翻译（把抽象技术翻成读者能立刻感知的画面）。不要用新闻标题式的中性陈述开头。
+2. 中间按时序把事情讲完整：起因、关键机制、具体数字、目前状态。数字要落地（金额、比例、区块高度、日期），不要"大量""显著"这类模糊词。
+3. 结尾给 SO WHAT：二阶推演，或对读者可执行的判断。留一个别人没说的角度。
+
+硬性要求：
+- 全文 180-300 个汉字，3-4 段，段与段之间空一行；不要一句一换行
+- 纯文本。禁止话题标签（#）、禁止任何链接或网址、禁止 emoji、禁止 Markdown 标记
+- 禁止提及任何媒体或信息源的名字（如"据 CoinDesk 报道""某媒体称"）。事件当事人的姓名可以正常写（如某开发者、某高管的表态）
+- 结尾不要提问、不要"你怎么看"、不要求转发或关注
+- 不喊单、不给买卖建议、不预测价格、不用"不是投资建议"这类骑墙话
+- 只写材料里有的事实。材料没写的细节就不写，禁止"具体机制尚不清楚"这类关于材料本身的元评论
+- 去 AI 味：对仗句、"XX 是 YY"定义句、破折号定义句各最多一处；不要"值得注意的是"连用；不要总分总
+
+只输出推文正文，不要解释、不要引号包裹、不要标题。"""
+
+X_POST_USER = """把下面这条新闻写成一条中文推文。
+
+标题：{title}
+摘要：{summary}
+背景：{background}
+市场影响：{market_impact}
+社区讨论：{discussion}
+
+只输出推文正文。"""
+
 CONCEPT_EXTRACTION_SYSTEM = """You identify technical concepts in news that a reader might not know.
 Given a news item, return 1-3 search queries for concepts that need explanation.
 Focus on: specific technologies, protocols, algorithms, tools, or projects that are not widely known.
