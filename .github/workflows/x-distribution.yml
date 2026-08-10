@@ -10,11 +10,17 @@ name: BMTNews X Distribution
 # shifts a story later instead of dropping or duplicating it.
 
 on:
+  # Minutes are deliberately off the hour and off the half hour: GitHub
+  # delays scheduled runs under load and the top of the hour is the worst
+  # slot — a 0 1 * * * trigger was dropped outright rather than delayed.
+  # The last entry is a catch-up: because slots post the lowest rank not
+  # yet sent, it finishes the day's quota if an earlier slot is dropped.
   schedule:
-    - cron: '0 1 * * *'    # 09:00 Asia/Shanghai — start of day
-    - cron: '30 4 * * *'   # 12:30 Asia/Shanghai — lunch break
-    - cron: '30 10 * * *'  # 18:30 Asia/Shanghai — evening commute
-    - cron: '30 13 * * *'  # 21:30 Asia/Shanghai — evening peak
+    - cron: '7 1 * * *'    # 09:07 Asia/Shanghai — start of day
+    - cron: '37 4 * * *'   # 12:37 Asia/Shanghai — lunch break
+    - cron: '37 10 * * *'  # 18:37 Asia/Shanghai — evening commute
+    - cron: '37 13 * * *'  # 21:37 Asia/Shanghai — evening peak
+    - cron: '17 15 * * *'  # 23:17 Asia/Shanghai — catch-up for dropped slots
   workflow_dispatch:
     inputs:
       edition_date:
