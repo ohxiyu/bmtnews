@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>BMTNews · AI 科技</title>
+  <link href="https://bmt.news/feeds/technology-zh.xml" rel="self"/>
+  <link href="https://bmt.news/"/>
+  <id>https://bmt.news/feeds/technology-zh.xml</id>
+  <updated>2026-08-10T00:00:00Z</updated>
+  <entry>
+    <title>Cloudflare为AI代理提供钱包，推进代理身份体系</title>
+    <link href="https://www.forbes.com/sites/boazsobrado/2026/08/09/you-can-fake-everything-cloudflare-just-gave-ai-agents-wallets/"/>
+    <id>https://bmt.news/editions/2026-08-10/#gdelt:article:20260809T074500Z::https://www.forbes.com/sites/boazsobrado/2026/08/09/you-can-fake-everything-cloudflare-just-gave-ai-agents-wallets/</id>
+    <updated>2026-08-10T00:00:00Z</updated>
+    <summary>Cloudflare于2026年8月4日宣布为AI代理（AI agent）推出可编程钱包。该产品包含两种钱包类型：用于人类持有资金的账户钱包（Account Wallet），以及为代理自主支付设有限额虚拟钱包（Virtual Wallet）。 作为主流基础设施供应商，此举验证了新兴的‘代理经济’——软件代理需要身份与支付通道才能自主运行。它降低了AI开发者构建无需人工干预即可为API、数据和服务付费的代理的门槛。 该公告日期为2026年8月4日，区分了账户钱包（人类持有资金）和虚拟钱包（代理使用的受限资金）。该功能面向需要自主支付API、数据或内容的代理开发者。</summary>
+  </entry>
+</feed>

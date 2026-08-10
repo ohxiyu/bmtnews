@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>BMTNews · 政策</title>
+  <link href="https://bmt.news/feeds/policy-zh.xml" rel="self"/>
+  <link href="https://bmt.news/"/>
+  <id>https://bmt.news/feeds/policy-zh.xml</id>
+  <updated>2026-08-10T00:00:00Z</updated>
+  <entry>
+    <title>World Liberty 收受涉洗钱调查商人1亿美元</title>
+    <link href="https://www.theblock.co/news/regulation/2026-08-09-world-liberty-received-100-million-from-businessman-investigated-for-money-laundering-nyt-411221?utm_source=rss&amp;utm_medium=rss"/>
+    <id>https://bmt.news/editions/2026-08-10/#rss:www.theblock.co_rss.xml:b3cd65168604fcd8</id>
+    <updated>2026-08-10T00:00:00Z</updated>
+    <summary>据《纽约时报》经由 The Block 报道，World Liberty Financial 收到商人 Guren &quot;Bobby&quot; Zhou 的1亿美元投资，而截至7月底英国官员仍在对其进行活跃的洗钱调查。目前尚未对 Zhou 提出指控。 这则新闻加剧了外界对 World Liberty Financial 与受法律审查人士之间关联的担忧，可能影响其监管地位和公众形象。同时凸显了关于加密项目接受政治敏感来源资金的更广泛争议。 投资者 Guren &quot;Bobby&quot; Zhou 尚未被起诉，但英国官员向《纽约时报》表示，截至7月底相关调查仍在进行中。World Liberty 是2024年推出的 DeFi 协议，与特朗普家族有关，后者从代币销售净收益中抽取75%。</summary>
+  </entry>
+</feed>

@@ -1,159 +1,477 @@
 {
   "version": 1,
-  "date": "2026-08-09",
+  "date": "2026-08-10",
   "timezone": "Asia/Shanghai",
-  "updated_at": "2026-08-09T00:31:05.246602Z",
+  "updated_at": "2026-08-10T00:30:57.192979Z",
   "analyzed_keys": [
-    "04cdbf305b38e049163ef50c53b709a246f18c0435568cf5007f96b599a95e5f",
-    "081e3c67902a6306e49ae0a0720bd591dae5e20d9170c23aa10235aee6bcc22b",
-    "095c9ddb270bfa306a9faf10147bb6d57507401b9732fed2eb2436d0ce205e8c",
-    "0c376b46ad84663ce877ec820d45e9740f7bc2454e40be67f3b0bb2b046b24a2",
-    "0c94c170512d43577b81d619899aa86109d75d126cedcd55ce02ead4602157fd",
-    "0e9a74a2d7be7d812a21299d5dc42b4f1a25a33694fee56cdc1c9486dd0ad8a0",
-    "0f3600bf19f77b04dfdada8cb1bac38d4107a83b44fb998c351d92326cd87067",
+    "00a7f63f9fe7db2727c5a01ff1c2415796a7a6ec49256ee693b29bfa0537e559",
+    "011d3a9bbde8bf2ca7fdfa4abf0c35f2fb2e14ee4ed919bb6595374d7c7c1011",
+    "024a0e063758d56c93cffd513bd0d520f429d4836b2d5f21e3acddbe33653e8f",
+    "0260bb0604719b03b08eee80a2d7ac4702040330397d46f034323514af6ee1ec",
+    "03ee9a55d2a773ef2ebb492d431f48be712eecdf63ddc4b07c68494567d49749",
+    "057c4a56cdb7d64250be723d2fd887d8d2bcb32cd1e1395e29c777c9020cd880",
+    "0707a4276c11805a24629069bc4340d9f86ccc2271f425720767519c5b738b2c",
+    "07e8f01e14a3ad16ca0593ce607a807833cc0b1c95975281ddaf83065af79d55",
+    "0841ecff6d471cc367fad8a90a3f5346ec436403e0fa44e45a33c90f358bd850",
+    "089275ed83b7c7051a714370a457de01cc6e5d446117670ceee444e771b0fa57",
+    "0a3973f5f8f4d876ad9eb676e46918b828a65e6a64fcd3778e804b8a6b6ea25a",
+    "0aa8ab5e73608e7dfe66a8c9c7dcec9ff36182f0a92fcabd2984a64a7cdb42ec",
+    "0bc02e9fd77ab34f8793b3d350210612a8165916c9f75a81982fe317f611b4e6",
+    "0c3b6a0f70a0a40c82f0d9f6f330b006d492b252de5a689079e76fb034b0f2bc",
+    "0c91bdc6cd4a40478c9db827df1ff54354ea2013daf7443e8d6d4e72d4433e82",
+    "0da03647817a05acbe04c882ff395ffe4964b6bf39eae49266c484f6e42e7f7b",
+    "0db30c962765a2305de5ed26bbbe825d4e7496278197959a8a0fb3b0ca604017",
+    "0e54d2c0b37896c561928e8e8303d968f56c42ffe63557835f04eabb2bf4796b",
+    "0fd3ab4596afdf56847592acc3bbfada3c5aa2995d1350797d01331cd8e065a1",
     "12332040b3c922baeeffdde0715238a0034f655343f4ed2e53aac48ab86dd5b0",
-    "130fb24889c8703e916d44cb2acf2bad9564454ef57114f777b3781431a23570",
-    "1471d76ee6c4f44b51c3cb41884824d0c97c45e98101530ed74ffc13b3c8bd19",
-    "170bb79f1d26d066ca66697518fde0f41bdd1b21b707385982d18d01f5a0548c",
-    "1753563783397cb667338b2d998193b6e6348146b2cfa98a0fc6748c71894d8f",
-    "17b60581403891420b3925d263362cd1810416c64d79b71836553bb937e8becd",
-    "17cd9519625da43b9e4f87769cf88f1e0ba13110011b68e199eb708a91614b38",
-    "1813ab70a244c2d05f7efa86726d1554b4b971f1acf0969650ff85822c37c711",
-    "184518498fe80db2136c339f03b0faabcfded6538663d7f406e3aa2428f9ff02",
-    "1916f579cb22b22d84e4b7b611ede6913b86449346e54658815cbba7916eaf35",
-    "1a6fe014f6d5039de8a5da5f2268b38848f4647b8bef31279ded77a72af49e12",
-    "1afcbd4a47e894c4af16c8708aeeb05af4332fd25a80bd231347cfbb8369e413",
-    "1e09627f47de956a49e0a05f5992056f6f05ae396f1d029d758cc0f03ba0c9e8",
-    "228fd17c3aadc90fda7095e4778b4193555e0074fb3949041ffc50fd981f79a3",
-    "25ee6360f02eb5a3b1862e66c5ba10f0a64e91fc9773454845e44816d8ed40bb",
-    "2807e7ab5a4d35301b3f62c0702a17c32173a5a87ccab4b767b505c977b0fd36",
-    "28edbf95be06ab1b732eb638af5301c7d155a0cb961032448a2f78314a822aa9",
-    "2ce08bda27fbffa3520ac14ecebc62249cc17789fce46033a24ac25d72103819",
-    "2cf684d32d45c30fa7151fe96e73aedd90c0317f04bf195af48a315dc301a9f4",
-    "2d1bf36a55e86f513c2bc9871d43eece01b9537208fc75494de83de70b0b59c4",
-    "30124d152131d3818f45a4cacb4fed9cd74ecbf847cda1797643b589eff4dbea",
-    "30954482f0dd58a8628215ef2c699b3536efbc4695d07f954e7d2674f5aa7d1f",
-    "30e55c8808ac41774311dd657668f4b2eda35084f392c4b455140cfcdfda981b",
-    "31e14c6ceb1f39f90a27573ff688dfec9cfeea6259cf977b0556f035c001eb1c",
-    "3702f5588a0911f621722761ab3ee8bbed70324639c03a93959b8118f4e710e5",
-    "392011df9565785ece61ec012a534bebd10ef3eb98bddc9ed5578d6fa5ba83c8",
-    "3c0c63042c077e1656f3d3e6f853d49770f788d176472b88d5e3f3770e2eead0",
-    "40cd66111f9a180835e61a75fc69f0c81cb4a72dd0bdaab286dc0eda01c31489",
-    "4162eac485a7e6040a738f1aba461eee1b02beb984189442deb70ca0b13c8492",
-    "43a03eb0895874d8d623e2fc6366980c8117ceaf730c4f0644bdba88e9c2c898",
-    "4525a09f8465c5eb4d507aa541b72f81b57ab38d68ef40e305d7736bfd77f74d",
-    "4551041c0ea82e51d792a43bbc5f083f5f284f6240212348864124d83ef2533d",
-    "4690b3cd0d03c425bd055c791fc279a29608d3c1243f12280ef6d244d216ca4e",
-    "48ef8b4371db527eddcb692fbb88b89112ea7b184a1eed3dc46147cb3591b28b",
-    "4b3d69b7e49a7df84661c53d37dd93a707d7775bb4b6a8935046b79d53524af1",
-    "4bf68b2568354ec4814abba051ecd65fa209db4ac7690396d6560f01617e0ec4",
-    "4e48f35296f4437900c2f7974f2519a5705fe047ada14f37bdd301a5faa72de6",
-    "4eb7c5888d8a9992eea8d30ab1d3ae9fbc67ef0cd5af0b313f9d6c0f1aa68ba3",
-    "4ece9ecb2adc7cc97eb2bde39a79f029f5674ad6e6280f13bcfe753f0dd57f31",
-    "5059c5aff902de730ea449e2584e9f90aa71a7633d8865083bb7d085b0371595",
-    "514292a42ab4e8f95b73682b3e9247f137a1b400dbbd309d25bc02b443ef5f4d",
-    "51592ae5b309929f28315958c2c5a64b254452c1e2b3564fed51df7e7880c721",
-    "518af417723e58101b0bab56136b77f69e1c9d5e55d7e02ba179fefcaeaa34d8",
-    "542e98ea10c43e4405caaf5404ed95a31f90b2bdc0da1b817d146310bc382c13",
-    "56ff7a73d9ab511ee6bcbf0c2dda14711d720c50ebe899f59f8cf7ba0fc9f564",
-    "57929be664c00e0460ade7b5e75805d898a140a0245f037909ef472bfe93aea8",
-    "57b0b26de3fca2455ac2e5d3b7eae392f67a10d4ddc44689952dd7596194a3ce",
-    "58d8f6f9955801198548fc4f64d830e4dcf07e0ed846980a23e0c7e8d0791569",
-    "5b05ca41b5f19278ccded66ca42b9c78bf5de24c3d6de98b8cf74def6f5f3df1",
-    "5dfab700a7d270fa4bf31b909f30def53ca649b5f238d4c4177b962ffdda3f54",
-    "5e5cc146505a50ca8646bf94597e45f8bc5adbda8d1c6646deef2cacbd0b3259",
-    "5f114509d9d57aff6cde9df3f47b405b2766c2f5250b817d4504cb046533e022",
-    "5f7abefa47716196005025e4afb6aa12f661fd6baa8d6e35229cab0808008a81",
-    "609783f1d6951348dac0ea2a2a0af1be5cfab6c91ac6c00aefb2cc0fa8bbc8e2",
-    "613cc335b1812b5786e050d02e493684df19c3cdbcc44cc1a57360b72c9e24d7",
-    "67f6110e8325a6362d5f72538b5ecf618f947cb641abd015d251997157bc83a2",
-    "6bd36fa85646343a3e3b8f5261001cfca2c061e3234aa59edab2cd47e2829af4",
-    "6dec94bf72d64fe733fa7a8e62d09878909dbb7d1b1833b5acfbea431a5f2197",
-    "6e4bc6203a5ddc17ac3c16911f832cab67bff7654a01d8ca1464d5caa0aec26f",
-    "6edb82f7880e6de6790f3f2146500e2701a0b478b9291742b3ad0b25f520b15e",
-    "703668b25a9fe7bbb81bda97210caa435688bcf2e43365bc92f3b418de96f6fd",
-    "70d7d83f90bbe0282ad58116ca25e70568ce700ff8168f38bd69cf7363cbf9f5",
-    "72a6ca1e4bbafec15dd060a667a604b04c9fd0e7b733c7fe600a74879c634a78",
-    "7386aeec82d1b0b6d82c8d38eb47e53cec8149cb2ffb7989b2a552ef96b92bb2",
-    "753a0edcd1b3253f238739f6802a58f619e6101af6596ab9e4c19fba91e7fc3c",
-    "75b7d1d2281212c70e40fec6e917cc4177903961d122b83ebf87548e67c9091b",
-    "79673f51726a195421e2da9633e8e4a5d5a22984254a76103d3ce54d43fee6c0",
-    "7c1fac106ea2e06ff996316083825e43a8d65306a25dd178b4f5cfb2176e5815",
-    "7e2e84bcc7e36415a295ce8a8e0146ca3cdd3d9006f566fa890a339303d02fd5",
-    "824b9f845737531d1e5988533b81796d35f5fbce5f16109a276ae8bbdcba16bb",
-    "8430a54096261bc6d8043160f0236150ae942f8076484db6699c89d211bf47c6",
-    "866d3472deaadb0c088c57679dd5a56a5bad2ba55776ffe1907492ce5aacb050",
-    "866f5f5322c1d971f5895dcb47ae31a432df0e68ad2f26cd0ca3ccf3968435f1",
-    "875208a33c355be8be40fbdd024864eb1ba5fc813b3df7c619ee2d5ae318264c",
-    "87b421f718eb962bc58a2b907348d5355dbe551eed12918f447c95f438980d4a",
-    "89d6a172d1dbcf051f05732932209772c5b7ce006bf02c0ca1e93bc93a975743",
-    "8c920614b7192a9e49a19469f33fcf37fc39ec6545e7da302061e32101fc06d2",
-    "8d4c681784333e28e8110294586cedcf4719ea2ed9a4167370e06c261a46235e",
-    "90c0cfff75016b1e2d2fb727c0ea7466caed3cd92269e8c6621559eb8fc63d8a",
-    "917376e4f979b9aee39a4bb5c6e5ccfe029e8c6d14d05e4e07c8d4edd246324f",
-    "928ca04d6a79c254c1ab9dc12779c5451252dbf37accf1437b91c3ba76b43490",
-    "929ddb8ec4b9f5848c70f5311437c558e6898d180f793ee19adc83ffc6070927",
-    "936c63550b8c0642dc6cd608379306ea87a8f3828ef019657bbae926c07c9fd5",
+    "12adcc265781652f21c5f171acf702b830ee9350e01a96448ea6c7f5f01b3e7d",
+    "13289265a8649a8bdcd167eed3ab8295e7b68d3aa23f573ecd4d59ff576a8f03",
+    "143fcdb7ffe08bd3106c2b4482f929ea45a52926ea6995d55abb9ce173c93636",
+    "150504a6cf8f1a9298af5a5bead0a52222f1aff41caa831f091d48935ec0f0dd",
+    "1600fb37ed3f3326ee32ff19d4df795cef376394b5a78560631772cc0374688b",
+    "17acbace02228400b17dfabcc8e6449ad26bc4b222341d7f96231d04e1333a7d",
+    "1887c76fbadbaeb8ad58c76ca0642b149a6f7c86fa05e754c1a50f49e457f851",
+    "1952266c619432200c8f9adc50f7d7424c8c919fcf29570b44ad94aa49441a44",
+    "1a7eee8ab72d229d8fa3e686c06b0f1ab6f4f5bf338823b886eb91dcad4abe43",
+    "1cf98c3bf50ed54608f7bfff1d0423827a419f42364959e5bb546224f824bf00",
+    "1f7ebd09b50fdb65ecdc42935c3aee47a3dd0a9df3739eca42df7a6f63cbf137",
+    "287da9a6e8862d0a92676e375aa12b3021180598b40b57442e82f18d7770f9a0",
+    "28ab3b7706002e9236efcf7ee284cb1b4e5bbe48d59a35d8cc3744df717fb203",
+    "2e07eb2e875db54b759630daf1f17d883ad6fa1e6ae93cfa89421c17ca900f4f",
+    "2fa8d5205c42305445be0e266d0570961056d7fdd9e48f564b24a0131c15a971",
+    "3037b8dd7b87a3f79b456de94700748238bef5c192a99271d2997d58fe57f6e2",
+    "30cce86250e5d9fdf9a1f1d5a31e2fb23692039d1d73ae6ceb5527245b7ef3d0",
+    "33e8658a6cf8c041b2ff6d05734e0ee960ea749cd9fd97bea3dbd27c2c5b1224",
+    "37195d62e9a40302cd3f67be22a9691ca016fb328eb89d691eed67cc8018faba",
+    "3802c3ea7a2167d8c0ace4f97c6a7a11070a180925cb7e51ea0dd2ffa556d7d9",
+    "39c2e43972b0e22105e4b1d648aad5d075680988b06358113033dab9ff9740d8",
+    "3ad8c2ac543c640c58f5a10ac9ab522f1fe057faffc9b41b369d3f25f548d014",
+    "3c6e37efd5200f70128eea54eb59b7a40e1fb0a3dd3c1b2f1c0a7625b0d23028",
+    "3e36e8594a0c3f77592a1c842092f935b6f6e4d0ea494f7133d22adb1d37f072",
+    "3f15bb82258fed0515c54f1e84764aba4e512a7d204df60cfd7833d8c8bd7e9e",
+    "40b493cf0e59e0dfa9d61fd85fa70de3d0e7c10fd53f1306b5dcea02b2ae7781",
+    "420d534166d6966168f7c58f1c4368715bcf198417be6baa6c3829d62d327124",
+    "433c567a8659cfcc9da8f14d5fae7efccda261a35c86fa0c00f186e7396b69c3",
+    "435944eaed1abfc56bb388365f25274b2e55799c275dfbc435a8ecf2b1c6e901",
+    "48d4ab311930a992cff83c009990edbc0d846d6992264599231fb167e113f785",
+    "49a9bdf4331038c7bf71d165dc33c6db50170d9fcc12744554e98be54db19d62",
+    "49fc5222299064aa525f2cc06fa4f9c133adf9aaf3de8005e991a7ee1a8ed73a",
+    "4b0ed8c6ba2164f617a23ba3cf4d4c80880f4f0a1fb2d4fa0230025488924592",
+    "4bde53967435052a09d072541f24b196429d894762bdfd342afcdd4b59b523c5",
+    "4e1fc29cc2182a454d6db07c855c4ef6e355d1e5e10182cb223fad4d5c2b5d60",
+    "4e212ed3b9232fd6750102de44aeeb100fe2391153b515684eaa580f26d5ee36",
+    "4efb4b27192472baf340b11f99e722766c3b6c000f9afcd54623c3c8eefbc95c",
+    "4f99fa0ae0f00499a07b66e7e463a98c3272021918235908c933fdddc3372185",
+    "4fede663772e82c538ef4ec7b581b8ede7b9051b3d2c6ecb48107487d98c5e73",
+    "512dc940243d579de471a5af7f17aed0dd1f3bcbe7a5f216045701e3760a20bd",
+    "517603c3f0ef044da30ded5a63b9d9efc6ecdf9e284558458cf6e13283c38c8c",
+    "54ace730b2230d2ee2eb16d4ab376414824ac8ee112e793015dfefc544dfab7b",
+    "55a6452e0c974d20b447da40eb30f8e0f0cd9a1ac219e2677956add46b0cd8df",
+    "57c22e61a66290f75a644d25f2f0f673ae08ebc58dce13e9914e808e96f11a66",
+    "57df69f0cd18aa3a1f53f65a0ea10bd50524fe512c9cb8dfbd684c801fef0111",
+    "589cba4e27272973921e2a12a947269d72aa38b25729795242a91a64f77da628",
+    "5cab360e8de056ffdebb2b2877f8139ef809584099196c4abc64b72269681a14",
+    "60208b19078f4fef2576799921060fabdb1ac82ee4b6dc2afe1e21161bd2d970",
+    "6260e26055a55e71f856f1c0f7e7c8d5e296d2b436cfef54c1e1298d008213ab",
+    "636e1b953b44c3b46ba2d385a08b0e4b1c67bcc2c5664cd13834bceda922a9c7",
+    "66dc212dd60f2229329a17fb0a85ef90164a1f6563315127d34781fa232a6140",
+    "69367450b7896d90774f4bdb6c41460fb078621dff9302f5906547668e11c586",
+    "6bc77525a1a4d809fec216892a8040a94fe1196202c906bddb6cb35511e8e3b8",
+    "709e68f7d9bb02180db74cf696796fb0266a73293fa3590cc2a5c8881c1b05f8",
+    "730ffadd1140c2a81c2513b96c08ebef4266a116b66ff57147a61bb36e898397",
+    "7b31793accdcd9c670841b596d22278f432281a033926966f7cd159fcd7695ca",
+    "7d6d97a3081d55f9965748ab1a4305c8c588c57250b19e345f420d61d03dd966",
+    "7dad3275baaa88d37082d5a55f3d7cf5e5240ca4ad5708a2e24f1c6dd502731e",
+    "81c06202fece394ded88b0804be5cbf61475e961ad4de6411bdd9256d2083fbd",
+    "8211b5f968ab1145d7ab78dc175ffb7e21a6b36552054a98d4d23f939b4e4e29",
+    "88f55f80ab87b3a0edd275dde0d5a56ea4befc8d15cff64762a6b717a690cdbf",
+    "899c1d46d3a21761fb027dd726098e57ac8123f44d515ee184d3758c29b78e41",
+    "8a4a3cc951e9efe9a7174d5463e4faaa1898eb0a79309b7e0dec67e3a8acd693",
+    "8e872530f7eb043fabfe582391a20a8376f2ef7e2570f6ca942925dec2abb342",
+    "90e0cf26c7e7e6a10bb2f3e431188dd67a5f21a3bc37ca1d66eacfac3441d203",
+    "90eed48b1119f17634ad6e19100b4cb66848c33712386b317246510eb5331bf9",
+    "92e91200ef7a144e3f0da7ff18e82359644b0548825f591e602d02b9fab561dc",
+    "93724d05bc92a6435cf34b85325fbb46a3291e7f8bad9355d236dd680fa4c977",
     "93e14f3eb4d5cb1b3f0e01f1efb9791132f74eed7f3992a36e7c090de8dd8e1a",
-    "97d64295aea5c70be8f0a534ea582c833d5afa90819613666372afc7f6271389",
-    "a41cfccb9763ba8605f8939c2625e944c529ae2992295df082c3c8176214dfe6",
-    "a4542960fa0a65b16cd8f3bc74ed8e1586d2b8382a80c73238cbec0e0c943934",
-    "a67b9ecc1c470548b4cb5e29cf8cb4e2a41414c11735982b51f2c4c299edc8b4",
-    "a9cbe6151a49ca42365958e746fa4ea656f046c8c575b9ae337e68523fcc0169",
-    "ae50bd33c63fdade4299f81eed9db6df281206ca498830c18b02e0767d47fe79",
-    "b457178146b5fe650450cfef76a8c20518b75c3d61982e6fff268a9b4cba8a26",
-    "b47da0e20a541d17f04f85f4c3ad28e29452c60ca6c32ca7540687dfb98b44d6",
-    "b7cee34386b407d2e08feb7d86771799f234f4ae1137f7bba2c98f13143070ea",
-    "b937fc4a8394664aeb1916c0a5408047fcc3a631289e2ddd694249eec053480a",
-    "b9b1c939e7b260abeef57b62c655ff3cf0a0201ed5ce14788ba7da00ca39e990",
-    "bad4d4531ae6b5a37f381546e3092f3b802447e795e36addb4d0f3df6e52e08c",
-    "bd6a701b447bed47ab86c0a1246fc26d35640e4a43447f3f68ccd9fbca69f335",
-    "bfdc494bb1ced2517b4f885db9fae8a0c8454adb2d49eccb5e710217fe6ff154",
-    "c1a4fe87a2b0f3531530563d6f9b8303e7f01ab45cab64f3464f4f360b375e1f",
-    "c37fd810943a83029f1455cc2fe794939b6ef5785e3436bb32a4f59dbd713811",
-    "c5364b05e9675b6a5ce72fd525d6f7623db4e40d699358e60553cbdb78112263",
-    "c68651beadc7b92705e8681fc8f08106eefd0bbe2a70cc0d38b90760831d7bfe",
-    "c6e80c08f6c174531802c24291d53725c1baae59a2f73f6deb0dc679bead106f",
-    "c7ad0e4bf66b04733f8aaa6691e10c41b8d3f6385bb37daa8acf0c82452a3f6e",
-    "c9a1382b649438ba3afadcec3474909e474d1aed71d0cde7107cb4a07429c059",
-    "cb155308225a9e3b0c0c04b1c67f1d3c9a9e0a30a8719cb17e8d0a4a622f10b7",
-    "cbbd0f907efa6c18a3d3b7cae6fce26b9e04989f628d4f3503a241997f4e0977",
-    "cc7cf05f614b4c48fadf8482ebd47211b2a8e903f427231cb41f2b6a1087d83c",
-    "ccbb2c9edf6fd678082980853d08174956098bd385f2bbf731b7220b9eee65a9",
+    "944427d20ddf24fa66c05646665c4ade9a93503e3d39d2a35921643793e8350f",
+    "961ba0aaa4aca75f0b078e111fcc3a24f8ad3b76ad0f0e2627e0237acc8de441",
+    "965ac75a355742f03dca1092f59dd29b674553ac47424b6f208b782862cf8d2d",
+    "98fa506ddd20e22616f99e4cb12ee10291b6a6c62fd814d423561d0ef7440dae",
+    "993d759e0a6e7fa75495d83a283f91158142345d48162b508e7c72430df5e88a",
+    "9a077e06fdf4a9b8ca9eaf3f7f9f2d45e86b0784d245eb1be7fc91bc6b77ff26",
+    "9a9897b7690a5354b1723dc0d935dc45ab4ee4f9b3eafa49c7e4ae20e01aac41",
+    "9c3de0749c426cb22ae83acc8d1fb24a07073da24774ae9ee00e00ebe213ed09",
+    "9c421555ac62db8325f744c898efc6669e57e664bf9182e5e12eafad3984b0c2",
+    "9e33abb250746753aa537eb98324c62198d9a7b47cef7f2f9d7e35d308753de7",
+    "9fa58ba70384493a06c322cfd6f91bf0700e6ab4ad0f4a326cab654aa25fec54",
+    "a0135e361abe5b82af597394460a38a591ad251813014e982c3f81f9035d8364",
+    "a1bec306357c7a56d20985834d42cfff0227d334488887b848ae3b02d0e12aa8",
+    "a1dd7ee96e88704880b3a5d57b03d3bbea07d0df7960d65739d14ac7b11d6538",
+    "a40c4665b1861602a840e2f0cd5c67cc76e8f88fd637f598b531e0fe4d85e949",
+    "a4c1b23a068f2addc4a989a0de15a1fd2f6653394a8a6c45fc20c2272de4c2f2",
+    "a9d5dc9ec78335a5c80f287711e13111f9a6518470103852a72c0516aae2098c",
+    "aabaec53b0e0b91ab4ebaab04cab435d4d0d370f9c32a580ded21c1b1f73fcb1",
+    "ac3b1f82bea6f7854bc5417eeb2726c4585168162fc332f7bae7a47875c78544",
+    "aeb20fc61f2964432e6e38ce9a8706ffa17806063e2b7122b2b9636b6dfb010e",
+    "b360b12665dcde11026a3dbbd369011e523db0f3b378c6afddcbfc4563ba6994",
+    "b363a0110ea448552b2494705776f256e0e6b8e53f619454857cb1e663c1cb92",
+    "b48c554afcf9feedd930928ff8724d3f258458d83096303f73368acbf6b7651b",
+    "bb9960ff1cc8a70b51c6c9056ba76f59a9af04df7fa5f5aded6509ea7d21fbbb",
+    "bc07b96cd1d3dd46227422d26729d7aa2a0d5ea9da6017edcda732f7a89e9d42",
+    "bca0b3635859a4b42cdaa585c60ee96a8b75d5eca450b377926a53ce3478e668",
+    "bdf8710f00900dd92b2336bad7e93f49aed66bab4b4e95ea652ae7aa5609795f",
+    "c0e470cd4c92220da285370037e53d6b267eed13d4a0cf63425d832169588c66",
+    "c1203cb982531744b649a1ea5e782c8bf0e90d8cc683e733961ff3f99c35dba3",
+    "c1764a6568d54c6616d126468c109b2f46ce432b1196800b57bf56d30a419aad",
+    "c4cc8a90a6f6d1074b661dea69966ac0113332e46faa6577eb47cd794f286c36",
+    "c5728ad6981ca4d78016cec1d71cef3378985cd9f4ccc9181f206122fb17a3c1",
+    "c832a11a7eef1cbcfd56c9b3047f60365568807602017d4129a10425e0d8fd95",
+    "c88850f8436ef7191583efbe0b5c78aa85137d4ea07ffbb03f0bbe61eb573a36",
+    "c95a93c32f9ebd8adb658079aaf186e3756d603dc64e960c1f225083296dea85",
+    "ca273fb4790924aebcf5e41f3af69f1240f53857453b8fecea6807a0373fac0e",
+    "ccab87a5526eae1664add4e46b1f4d58745b7e577a8bbdde9940c158cee58489",
     "cd1721faff7be837cfa9806e66054c4eb1e19eb73bbb1b88316dab0df08928a0",
-    "d0b040f08aa4ed9a6c1b661a15a9e655ec81217a2491a078af9327e4b67f5eb4",
-    "d128004f9aff3ba65f1a554387ddbc1e5b39ff2b6b16d9e139f7e7c2d24b416f",
-    "d168cb627a14dda8645548208ede634381b4338e8161061440a5c851251bd672",
-    "d79a4ada9eef1050975add83d03d2afe334756a9d9bc811ecf9b387c9556d8d2",
-    "d94ee9120d44fa3bc6487fbc1c0565f3ec452194d3d704c355cc47caa259f7db",
-    "d965ca4d63426c11ac36991735ea1f33a58a77bc36018364aa8b9580ed7ef4b4",
-    "da15964994b440fd4bcfc204a46ebe754509ae6624f6639a1943e59c093c205e",
-    "dbce25110268acba3e45af5d150e987718cef05750101d4d6b34f57758452b36",
-    "df5dbf2b6e6220da4f7359d34a4ba6f5ca8ae57d461f5e1d5f5a33b389058bc0",
-    "e1e1713353602ecc33bc50de1bf075df78f76a05a8724db5ebc28c474a0970ad",
-    "e4c4956c8e4b302a102dd1e0c411cfe65e54b775abebb09a072e3cb6d2e7ced8",
-    "e5516ee1805be7061278ceef53868c35e8507012a0c5d4481cb5d44e72e53457",
-    "e55251392cd1098f511b2423768305a6cbf9674051910ac6334aabefc092681c",
-    "e67e178e33d620a38046e269a027e8d43d03318cc72bcf6cdf42082fdc70b3ee",
-    "e8c1e3a09b3235dfcd6a20611e561d79315ff06c14581f33c713619454e3f70c",
-    "e8d4e79f7020cd93365bcca8e673a17c0fea155582f3b3cd8f40f885e279fc35",
-    "e9124b5dc39a57333c6c88a6b37f3184a3493dbd2e999a4174a5f1faef9ad88d",
-    "ea45d6dd4d948dc09db62b4c7bf564ba5e0f949b112cdc7210680c0c66cc5a56",
-    "f089965e08592fd2d47913975048b31b8c601c04de11055a746480a303da2fd1",
-    "f0d504e9d7c932300e0a146909db87d8f584af448ee6173394827c58e8122eb6",
-    "f2947b85073ec8123edf5c96d172e0d3e48b183318620da58e8ea95cf2ee3f4b",
-    "f29a1d65a7e5a5bf7c81aa14ae0aee67e278393ee5a3f0d32d98749d17bb5206",
-    "f34b8c47d5931721451a2924535ad1a89a0a9446bc8afb4b29dc69ff2d0fc16c",
-    "f3a61a1dca5917d1cea685649fee6128879e4bb475fd2c093c123b63aa991045",
-    "f48174cd9d03f8ae6b219c111d63197fe076dbb7d69fe51e2313fdb2a5ccab67",
-    "f5067dea2ed72a8652c3e5811181464718f69bc3662bb6d94a9666b7e909adb7",
-    "f5f72c79fbab2f31052463494f4e92806ed926fb0f12c844366d4ada228e05b1",
-    "f920dacd00c8d75d6a3e3197299b9049a7fcffd257b7d3d6cb28ab4bccee6ff1",
-    "f9f0c903570e780f69ed2d98dc21e6841a4b0c7223b070ea1c396c2de4120231",
-    "fb9da33bec836cd08ff6b2ce18dd1c635efa67b63e6bc301adad4f06640d3435",
-    "ffd65dc27698103241867fe6b93b478efd5881e4adfeadcf35f7679cc126e09f"
+    "d0d0d834251ebaca1902e100376f0e3cc60c7318c8133ce6fac13af29c18e8d9",
+    "d5548e7af5587162346ac990e5fb10b693eec4377b6b1812bbdcee00d9fa802a",
+    "d72a61e96cab60083c7816d50ffd3478aa8808a1751c776a01922b8bfb7f99f9",
+    "d8403603e38d35acc610d4b84f0c96ab21e0520784984ca9c03a84c41aaf5702",
+    "d8dded822dd59c043255f526371ab89c11ad94e266b5d72bb9c92d5a4a6c5c74",
+    "dca54aef22eb850f6a1f54a484f69275f8b437ba6df4de1534198c54a39e4355",
+    "df301b0cae9b47fcb384c92f320b48ecf673f01516507df157a22d1e19ddd12e",
+    "e17db171e6028a1744350e3cb23f2e7be332701abf111d406483380994378121",
+    "e6d92f2c8e5404b399192439c3709381276f2f8be2f8b3bc82c818e2297089b2",
+    "e756e0071308a8e3d881c7fd17deb8a856a5a3b5b9037d429c011b5750314bd9",
+    "ea1d01dae3544f01e99e944951e6b099f1a539147569235e569c525cdd9ab989",
+    "ebe55c8af38be7bd3ea47b76e29696a9986cf97d4d618adf610c97eefcc55845",
+    "f0a667430bee407e084999f32e4d3aa1a99a90c476819d398085a1f4b26f55c8",
+    "f26d03c23fa96276fea012a305dcea79315c105eda8db6e9ad1a070edfdc888d",
+    "f353059343241318c930ec739fe4a7e34b3a4f37661f7b9d078616708694a8e1",
+    "f5e011a042aeaf36b5c3752327c6a8e324e4ab1451072219324422336d89e45f",
+    "fba9279ced0f7b0dbc230a89b792f96fd107e46de81e0e2c1658585a06ebc732",
+    "fc4a09c87a04dbaeaff929ff8221811f5875d7cd5110666e9893d4bfaa17c650",
+    "fcee16dbbdd77fad45ed6ec2360ac135ec4316eb3b06acfef72ed54a01861d28",
+    "feb1a2b75f7df6b80aee2d3802bd6aa5ae4d97090597952fc2b206c6b7aef572",
+    "ffde3f12c44d3abe1bc7420456d1b71ca4de12658d72651e33c1f88861626885"
   ],
   "items": [
+    {
+      "id": "rss:www.coindesk.com_arc_outboundfeeds_rss_:730096e9714fb0cd",
+      "source_type": "rss",
+      "title": "Hyperliquid’s RWA perps boom is eating into the revenue that backs HYPE",
+      "url": "https://www.coindesk.com/business/2026/08/09/hyperliquid-s-rwa-perps-boom-is-eating-into-the-revenue-that-backs-hype",
+      "content": null,
+      "author": "Shaurya Malwa",
+      "published_at": "2026-08-09T15:00:00Z",
+      "fetched_at": "2026-08-10T00:31:00.399437Z",
+      "metadata": {
+        "feed_name": "CoinDesk",
+        "category": "crypto-markets",
+        "title_en": "Hyperliquid RWA perps boom erodes revenue backing HYPE",
+        "detailed_summary_en": "Hyperliquid's open interest hit a record above $11 billion and 30-day volume reached nearly $178 billion, yet gross protocol revenue fell for a fourth straight quarter to about $202 million in Q2 2026. The gap stems from HIP-3 fee sharing, which now routes roughly half of perp volume through builder-deployed markets that keep up to half the trading fees. This reveals a structural shift in Hyperliquid's economics: record usage is increasingly unprofitable for the protocol because fee-sharing funnels revenue to external builders. Since the Assistance Fund's HYPE buyback is a fixed share of earnings, shrinking revenue means less HYPE is retired, directly weakening the earnings story that underpins token valuation. RWA perps on assets like gold, crude oil, Nvidia, Tesla, the Nasdaq-100 and pre-IPO SpaceX reached a record $3.6 billion in open interest and overtook bitcoin as Hyperliquid's largest perp market. However, Trade.xyz accounts for over 90% of HIP-3 open interest, and a single trade on a thin Korean pre-market venue dropped its SK Hynix contract 19% on Monday, triggering reimbursements.",
+        "background_en": "RWA perps are perpetual futures that give leveraged long or short exposure to real-world assets such as commodities, equities, forex and indices, settled in stablecoins without expiry or physical delivery. HIP-3, launched in October 2025, lets anyone staking 500,000 HYPE deploy their own perpetual market on Hyperliquid's order book and keep up to half the trading fees. Open interest measures the total value of open leveraged positions, while volume tracks total trading activity.",
+        "market_impact_en": "The revenue pass-through directly shrinks the Assistance Fund, which buys and retires HYPE on the open market — HYPE buybacks fell from about $290 million in Q3 2025 to roughly $149 million in Q2 2026. Lower buyback-driven token demand, combined with concentrated dependency on one builder's risk infrastructure and a roughly 70x fully diluted earnings multiple, heightens sensitivity to any further revenue compression from fee-sharing.",
+        "title_zh": "Hyperliquid的RWA永续合约热潮侵蚀支撑HYPE的收入",
+        "detailed_summary_zh": "Hyperliquid的未平仓合约突破110亿美元创下新高，30天交易量接近1780亿美元，但协议总收入连续第四个季度下滑，2026年第二季度约为2.02亿美元。这一差异源于HIP-3费用分成机制，目前约有一半的永续合约交易量来自部署者创建的市场，这些市场可保留最多一半的交易手续费。 这揭示了Hyperliquid经济模式的重大结构性转变：创纪录的使用量并未给协议带来更多利润，因为费用分成将收入输送给了外部部署者。由于协助基金对HYPE的回购是收益的固定比例，收入下滑意味着被销毁的HYPE减少，直接削弱了支撑代币估值的盈利逻辑。 黄金、原油、英伟达、特斯拉、纳斯达克100指数及pre-IPO的SpaceX等RWA永续合约未平仓量达到创纪录的36亿美元，超过比特币成为Hyperliquid最大的永续合约市场。然而，Trade.xyz占据了HIP-3未平仓量的90%以上；本周一，某韩国盘前市场流动性薄弱的单笔交易导致其SK海力士合约下跌19%，引发清算并由公司承诺赔偿。",
+        "background_zh": "RWA永续合约是一种以永续期货形式对黄金、原油、股票、外汇和指数等现实世界资产进行杠杆多空交易的产品，以稳定币结算，无到期日、无实物交割。2025年10月上线的HIP-3允许任何质押50万枚HYPE（约2800万美元）的人士在Hyperliquid订单簿上部署自己的永续合约市场，并可保留最多一半的交易手续费。未平仓量衡量未平杠杆头寸的总价值，交易量则追踪总交易活跃度。",
+        "market_impact_zh": "收入被分成直接削弱了协助基金回购并销毁HYPE的能力——HYPE回购额从2025年第三季度的约2.9亿美元降至2026年第二季度的约1.49亿美元。回购带来的代币需求下降，加上对单一部署方风险基础设施的高度依赖以及约70倍的完全稀释市盈率，使HYPE对费用分成导致的任何进一步收入压缩都更加敏感。",
+        "sources": [
+          {
+            "url": "https://grvt.io/blog/how-to-trade-rwa-perps-a-complete-guide/",
+            "title": "How to Trade RWA Perps: A Complete Guide for 2026"
+          },
+          {
+            "url": "https://www.ostium.com/blog/perps-on-rwas-best-dex-for-rwa-perpetuals-2026-guide",
+            "title": "Perps on RWAs: Best DEX for RWA Perpetuals — 2026 Guide"
+          },
+          {
+            "url": "https://hyperliquid.gitbook.io/hyperliquid-docs/trading/fees",
+            "title": "Fees - Hyperliquid Docs - GitBook"
+          }
+        ],
+        "thread_id": "t8bddfe17b4",
+        "thread_day": 1
+      },
+      "ai_score": 7.5,
+      "ai_reason": null,
+      "ai_summary": "Hyperliquid's record open interest and surging volume are offset by four consecutive quarters of declining gross revenue, driven by a fee-sharing program that gives half of platform volume fees to outside builders.",
+      "ai_tags": []
+    },
+    {
+      "id": "rss:www.coindesk.com_arc_outboundfeeds_rss_:9d5702fa75ff30b4",
+      "source_type": "rss",
+      "title": "Crypto is going through a massive dot-com style shakeout as over 100 projects fold in 2026",
+      "url": "https://www.coindesk.com/business/2026/08/09/crypto-is-going-through-a-massive-dot-com-style-shakeout-as-over-100-projects-fold-in-2026",
+      "content": null,
+      "author": "Margaux Nijkerk",
+      "published_at": "2026-08-09T13:00:00Z",
+      "fetched_at": "2026-08-09T17:05:28.837997Z",
+      "metadata": {
+        "feed_name": "CoinDesk",
+        "category": "crypto-markets",
+        "title_en": "Crypto Dot-Com Shakeout: Over 100 Projects Fold in 2026",
+        "detailed_summary_en": "Over 100 crypto projects have shut down, filed for bankruptcy, or gone permanently dark in 2026, with four major firms opening closures within a single week in late July, including BitMEX, BitMart, Movement Labs, and Storj Labs. The shakeout is hitting crowded sectors like layer-2 networks and protocol tooling as altcoin prices drop 70% to 90% and token treasuries drain. This marks a maturity shift in crypto, from speculative token distribution to sustainable, cash-flow-positive business models. Projects that charge real fees in stablecoins or cash, like Aave, Hyperliquid, and Ether.fi, are surviving, which signals broader consolidation across DeFi, exchanges, and infrastructure. According to RootData, the pace of shutdowns is accelerating; the exits span exchanges, wallets, DeFi lending protocols, NFT marketplaces, and layer-1 blockchains, including Moonbeam, a Polkadot parachain that shut down on July 31. Over $1.1 billion was lost to exploits in the first half of 2026, and with venture rescue capital drying up, single hacks can force immediate bankruptcies while unmaintained 'zombie contracts' remain on-chain.",
+        "background_en": "Layer-2 networks are blockchains built on top of a base chain like Ethereum to process transactions faster and at lower cost; they bundle transactions off-chain and post them back to the main chain. During 2023, advances in this technology made it easy for companies to launch their own layer-2 chains, leading to a crowded market of general-purpose rollups with little differentiation. Token treasuries—reserves of a project's own token—lose value as altcoin prices fall, making it hard for startups to fund operations and eventually forcing closures.",
+        "market_impact_en": "The shakeout concentrates activity and liquidity into fewer protocols and exchanges that generate real cash flow, while zombie contracts and failed projects can create lingering risk for users holding stranded assets. Sectors with heavy token-treasury dependence, such as general-purpose layer-2s and smaller exchanges, face funding and solvency pressure, which can reduce liquidity and raise counterparty risk across the altcoin market.",
+        "title_zh": "加密货币经历互联网泡沫式洗牌：2026年超100个项目倒闭",
+        "detailed_summary_zh": "2026年已有超过100个加密货币项目停运、申请破产或彻底消失，仅7月下旬一周内就有BitMEX、BitMart、Movement Labs和Storj Labs四家知名公司宣布关闭或申请破产。随着山寨币价格下跌70%至90%、代币金库枯竭，Layer-2网络和协议工具等拥挤赛道正遭受洗牌。 这标志着加密货币从投机性代币分发向可持续、正现金流商业模式的成熟转变。像Aave、Hyperliquid和Ether.fi这样以稳定币或现金收取实际费用的项目成为幸存者，也预示着DeFi、交易所和基础设施领域的更广泛整合。 RootData数据显示，关闭速度正在加快；退出范围涵盖交易所、钱包、DeFi借贷协议、NFT市场和Layer-1区块链，其中包括7月31日彻底关停的Polkadot平行链Moonbeam。2026年上半年因漏洞利用损失超过11亿美元，随着风投救援资金枯竭，一次单一攻击就可能迫使项目立即破产，而无人维护的“僵尸合约”仍留在链上。",
+        "background_zh": "Layer-2网络是构建在以太坊等基础链之上的区块链，通过在链下批量处理交易并发布回主链，从而实现更快、更便宜的交易。2023年这类技术取得进展后，各类公司很容易推出自己的Layer-2链，导致通用型rollup赛道拥挤且缺乏差异化。项目金库（即项目持有的自身代币储备）会随着山寨币价格下跌而缩水，使初创项目难以维持运营，最终被迫关闭。",
+        "market_impact_zh": "这场洗牌使流动性和活动向少数能创造真实现金流的协议和交易所集中，而僵尸合约和失败项目会让持有被滞留资产的用户面临长期风险。高度依赖代币金库的领域，如通用型Layer-2和小型交易所，将承受融资和偿付压力，这可能降低市场流动性并抬高山寨币市场的交易对手风险。",
+        "sources": [
+          {
+            "url": "https://www.investopedia.com/what-are-layer-1-and-layer-2-blockchain-scaling-solutions-7104877",
+            "title": "investopedia.com/what-are-layer-1-and-layer-2-blockchain-scaling..."
+          },
+          {
+            "url": "https://l2beat.com/",
+            "title": "L2BEAT - The state of the layer two ecosystem"
+          },
+          {
+            "url": "https://zerocap.com/insights/research-lab/fundamental-problem-token-treasuries/",
+            "title": "The Fundamental Problem with Token Treasuries - Zerocap"
+          }
+        ],
+        "thread_id": "t0576758458",
+        "thread_day": 1
+      },
+      "ai_score": 7.5,
+      "ai_reason": null,
+      "ai_summary": "Over 100 crypto projects have shut down in 2026 in a dot-com-style shakeout as token treasuries drained and exploits hit $1.1B, leaving only cash-flow-positive protocols like Aave and Hyperliquid standing.",
+      "ai_tags": []
+    },
+    {
+      "id": "rss:cryptoslate.com_feed_:d19594d7ead1af65",
+      "source_type": "rss",
+      "title": "Why crypto ‘audited’ badges are giving investors a dangerous false sense of security",
+      "url": "https://cryptoslate.com/why-crypto-audited-badges-are-giving-investors-a-dangerous-false-sense-of-security/",
+      "content": null,
+      "author": "Andjela Radmilac",
+      "published_at": "2026-08-09T09:59:56Z",
+      "fetched_at": "2026-08-09T17:05:31.421768Z",
+      "metadata": {
+        "feed_name": "CryptoSlate",
+        "category": "crypto-protocols",
+        "title_en": "Audited badges misleading crypto investors, Bybit hack shows",
+        "detailed_summary_en": "A new analysis argues that crypto 'audited' badges give investors a false sense of security, using Bybit's $1.46 billion exploit to show that audit findings miss non-code attack vectors. It cites research indicating that only a fraction of exploit losses originate in the code that conventional audits inspect. Because blockchain projects use audit badges as marketing signals, investors often equate 'audited' with 'safe,' which can distort risk perception and capital allocation across DeFi. The analysis may accelerate industry pressure for clearer audit scope labeling and stronger operational security practices. The article details that Bybit's Feb. 21, 2025 exploit involved a manipulated signing interface during a routine ETH transfer, after Safe revealed a compromised developer machine; external researchers found no vulnerability in Safe's contracts or front-end source. It also cites an Oak Security preprint that compared 23,818 audit findings with 218 rekt.news incidents representing $7.764 billion in losses, showing many incidents fall outside audited code.",
+        "background_en": "Smart-contract audits are finite engagements: auditors review a specific snapshot of code (e.g., a commit hash) over a limited period, and the report does not automatically cover later edits, deployment configuration, or the human and operational layers such as private key management and signing interfaces. The Bybit attack targeted the transaction intent layer that multisig signers rely on, where hardware wallets displayed opaque data and a compromised interface showed a correct address while the underlying logic was altered. This gap between code correctness and operational security is why security researchers argue that audit badges cannot be treated as a general warranty.",
+        "market_impact_en": "This story can affect crypto markets through investor confidence: if prominent audit badges lose credibility, capital may flow more cautiously into DeFi protocols, and projects may face higher perceived risk until they adopt broader security validation. The immediate impact is likely on sentiment and risk pricing around audited tokens and exchanges, rather than on any specific asset price.",
+        "title_zh": "审计徽章给投资者带来危险的安全错觉，Bybit事件为证",
+        "detailed_summary_zh": "一篇新分析文章指出，加密货币的“已审计”徽章会让投资者产生虚假的安全感，并以Bybit 14.6亿美元被盗事件为例，说明审计发现往往遗漏非代码类攻击途径。文章援引研究称，只有很少一部分漏洞损失源于传统审计所检查的代码。 由于区块链项目常把审计徽章当作营销信号，投资者容易把“已审计”等同于“安全”，这会扭曲整个DeFi领域的风险认知和资金配置。该分析可能推动行业要求更清晰的审计范围标注，并加强运营安全实践。 文章详细说明，2025年2月21日Bybit在一次常规ETH转账中遭遇签名界面被篡改，Safe披露称攻击源自一台被入侵的开发者电脑，外部研究人员并未发现Safe合约或前端源码存在漏洞。文章还援引Oak Security预印本，对比了23,818条审计发现与rekt.news记录的218起事件（损失约77.64亿美元），显示许多事件不在审计范围内。",
+        "background_zh": "智能合约审计是一种范围有限的委托：审计机构在有限时间内仅审查特定代码快照（例如某个commit哈希），报告不会自动涵盖后续修改、生产环境配置或私钥管理、签名界面等人员与操作层。Bybit攻击针对的是多签签名者所依赖的交易意图层：被入侵的界面显示了正确地址，但底层逻辑已被篡改，而硬件钱包显示的是不透明数据。这种代码正确性与操作安全之间的差距，正是安全研究人员认为审计徽章不能当作整体担保的原因。",
+        "market_impact_zh": "这一事件可能通过投资者信心渠道影响加密市场：如果知名审计徽章的可信度下降，资金在进入DeFi协议时可能更加谨慎，项目在采用更全面的安全验证前可能面临更高的风险溢价。其直接影响更多体现在对已审计代币和交易所的情绪与风险定价上，而非某一资产的具体价格。",
+        "sources": [
+          {
+            "url": "https://olympix.security/blog/smart-contract-audit-limitations-why-audited-doesnt-mean-secure",
+            "title": "Smart Contract Audit Limitations: Why Audited Doesn't Mean Secure | Olympix.ai"
+          },
+          {
+            "url": "https://thehackernews.com/2025/02/bybit-confirms-record-breaking-146.html",
+            "title": "Bybit Confirms Record-Breaking $1.5 Billion Crypto Heist in..."
+          },
+          {
+            "url": "https://www.auditone.io/blog-posts/the-bybit-exploit-a-stark-reminder-of-cryptos-security-challenges",
+            "title": "The Bybit Exploit: A Stark Reminder of Crypto’s Security... | AuditOne"
+          }
+        ],
+        "thread_id": "tf39e213c53",
+        "thread_day": 1
+      },
+      "ai_score": 7.5,
+      "ai_reason": null,
+      "ai_summary": "This article argues that crypto audit badges give investors a false sense of security by overlooking non-code attack vectors, using the $1.46B Bybit exploit as a case study.",
+      "ai_tags": []
+    },
+    {
+      "id": "google_news:article:59ff40abd494e63c",
+      "source_type": "google_news",
+      "title": "Circle Renews Coinbase USDC Deal as It Bets Big on Stablecoin Growth - HOKANEWS.COM",
+      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxORlBMQWxFLTVYNk0wNEw0Y0F1RU9PbEtKczRQSzBTWmgxam5XdlEta29xajhfMEtqZGwxUW9YWGY3V2RLYnJTb0tHUUN5YjhvU2NYZ1FMOUZsVmpCVk44Qmd0emw4a3I1QmREdEkweHZrcjIxMlpzUHBrTlBwekxSSkp3?oc=5",
+      "content": null,
+      "author": "HOKANEWS.COM",
+      "published_at": "2026-08-09T07:59:00Z",
+      "fetched_at": "2026-08-09T17:05:26.884768Z",
+      "metadata": {
+        "category": "crypto-markets",
+        "title_en": "Circle Renews Coinbase USDC Deal as It Bets Big on Stablecoin Growth",
+        "detailed_summary_en": "Circle has renewed its USDC partnership with Coinbase, extending a key distribution arrangement for the second-largest stablecoin. The renewal comes as Circle intensifies its focus on stablecoin adoption and growth. The renewal secures a critical distribution channel for USDC, which underpins trading and payments across the crypto ecosystem. It also signals continued institutional commitment to stablecoins at a time when regulatory attention on the sector is increasing. USDC is a fully reserved stablecoin pegged to the U.S. dollar and issued by Circle, available on networks such as Ethereum, Base, and Polygon. The financial terms of the renewed deal were not disclosed, but the extended arrangement continues a partnership that has existed for several years.",
+        "background_en": "Stablecoins are a type of cryptocurrency designed to hold a steady value, usually by pegging to a traditional currency such as the U.S. dollar. USDC is a fully reserved stablecoin issued by Circle and is available on multiple blockchain networks, including Ethereum and Base. Coinbase is one of the largest cryptocurrency exchanges and has a long-standing partnership with Circle to support USDC trading and adoption. The renewal of their agreement is part of Circle's broader push to expand the use of stablecoins in payments and finance.",
+        "market_impact_en": "The renewal reinforces the distribution and liquidity infrastructure for USDC, which serves as a primary trading pair and on-ramp across crypto exchanges. Stablecoin supply is often watched as a proxy for market liquidity, so the confirmation of the partnership may support confidence in the stablecoin ecosystem.",
+        "title_zh": "Circle 续签 Coinbase USDC 协议，押注稳定币增长",
+        "detailed_summary_zh": "Circle 已与 Coinbase 续签了 USDC 合作伙伴关系，延长了这一主要稳定币的关键分销安排。此次续签正值 Circle 更加专注于稳定币的采用与增长之际。 此次续签保障了 USDC 的关键分销渠道，而 USDC 支撑着整个加密生态中的交易与支付。同时，在监管日益关注稳定币行业的背景下，这也表明机构对该领域的持续投入。 USDC 是一种完全储备、与美元挂钩的稳定币，由 Circle 发行，可在以太坊、Base 和 Polygon 等多个网络上使用。此次续签的财务条款尚未披露，但延长后的安排延续了已持续多年的合作伙伴关系。",
+        "background_zh": "稳定币是一种旨在保持价值稳定的加密货币，通常通过与美元等传统货币挂钩来实现。USDC 是由 Circle 发行的全额储备稳定币，可在包括以太坊和 Base 在内的多个区块链网络上使用。Coinbase 是最大的加密货币交易所之一，与 Circle 有着长期合作关系，支持 USDC 的交易与采用。此次续签协议是 Circle 在支付与金融领域进一步推广稳定币使用的一部分。",
+        "market_impact_zh": "此次续签加强了 USDC 的分发与流动性基础设施，而 USDC 是各加密货币交易所中的主要交易对和入场通道。稳定币供应量常被视为市场流动性的一个参考指标，因此该合作伙伴关系的确认可能有助于增强对稳定币生态的信心。",
+        "sources": [
+          {
+            "url": "https://ethereum.org/stablecoins/",
+            "title": "Stablecoins explained: What are they for? | ethereum.org"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/USDC_(cryptocurrency)",
+            "title": "USDC (cryptocurrency) - Wikipedia"
+          },
+          {
+            "url": "https://www.circle.com/usdc",
+            "title": "USDC | Powering global finance. Issued by Circle."
+          }
+        ],
+        "thread_id": "tcf50c8976e",
+        "thread_day": 1
+      },
+      "ai_score": 7.5,
+      "ai_reason": null,
+      "ai_summary": "Circle and Coinbase have renewed their USDC partnership, signaling continued growth in stablecoin adoption.",
+      "ai_tags": []
+    },
+    {
+      "id": "google_news:article:b4b8ffb2cdebfae7",
+      "source_type": "google_news",
+      "title": "Kraken Delisting Deadline Nears: Holders of 21 Tokens Risk Near-Zero Payouts - BeInCrypto",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBMUlhmQThOcnQ0ZkM2Ylpoc0VjVWFobjhSdktOSDJ6dEU3ZlFqTjlLSDZiWHNxNGJkTVVHblBJMGMzX3dOamNieUJYby1vdGk0Y0h6MnB4Ui1ZSFQ0Qi1RWEhXZjU1NVhfWEFF?oc=5",
+      "content": null,
+      "author": "BeInCrypto",
+      "published_at": "2026-08-09T21:29:08Z",
+      "fetched_at": "2026-08-10T00:30:58.130851Z",
+      "metadata": {
+        "category": "exchange-announcements",
+        "title_en": "Kraken Nears Delisting Deadline for 21 Tokens, Holders Face Near-Zero Payouts",
+        "detailed_summary_en": "Kraken is approaching its deadline to delist 21 tokens, and holders who fail to act before the cutoff risk receiving payouts worth near zero. The exchange is removing all trading pairs for the affected assets. Delistings on major exchanges like Kraken often trigger sharp price drops because the token loses its primary liquidity venue. This event highlights the risk of holding low-liquidity or non-compliant assets that exchanges may periodically remove. When a token is delisted, all trading pairs are removed, and exchanges typically set a final date after which balances may be converted or liquidated. Affected holders should withdraw tokens to an external wallet before the deadline, as post-deadline payouts can be minimal.",
+        "background_en": "Delisting is the removal of a cryptocurrency from an exchange, meaning the token can no longer be traded on that platform. Exchanges delist assets for reasons such as poor liquidity, low trading volume, lack of development activity, or regulatory concerns. When delisting is announced, the price often collapses because demand disappears with the loss of accessible trading pairs, and holders are encouraged to withdraw funds or close positions before the deadline.",
+        "market_impact_en": "The delisting could compress liquidity and trigger price drops for the 21 affected tokens on Kraken, with possible spillover to other venues as traders exit positions. Broader crypto markets are unlikely to see systemic impact, but affected token holders face direct financial loss as the deadline approaches.",
+        "title_zh": "Kraken 下架期限临近，21种代币持有者面临归零风险",
+        "detailed_summary_zh": "Kraken 即将对21种代币执行下架，截止日期临近，未及时处理的持有者可能只能获得接近于零的赔付。该交易所将移除受影响资产的全部交易对。 在 Kraken 等主流交易所下架通常会导致价格急剧下跌，因为代币失去了主要流动性场所。该事件凸显了持有流动性差或不合规资产的风险，交易所可能会定期清理此类代币。 代币被下架时，所有交易对都会被移除，交易所通常会设定最终日期，之后余额可能被转换或清算。受影响的持有者应在截止日期前将代币提取至外部钱包，因为截止日期后的赔付可能微乎其微。",
+        "background_zh": "下架是指将加密货币从交易所移除，该代币无法再在该平台进行交易。交易所通常会因流动性不足、交易量低迷、缺乏开发活动或监管风险等原因下架资产。下架公告发布后，价格往往会崩跌，因为失去可交易的交易对导致需求消失，持有者被建议在截止日期前提取资金或平仓。",
+        "market_impact_zh": "此次下架可能会压缩 Kraken 上21种受影响代币的流动性并引发价格下跌，交易者平仓外溢也可能影响其他平台。更广泛的加密市场不太可能受到系统性冲击，但受影响的代币持有者在截止日期临近时面临直接财务损失。",
+        "sources": [
+          {
+            "url": "https://paybis.com/blog/glossary/delisting/",
+            "title": "What is Delisting in Crypto? - Paybis"
+          },
+          {
+            "url": "https://financefeeds.com/list-of-delisted-crypto-coins-what-happened/",
+            "title": "List Of Delisted Crypto Coins: What Happened And Could Yours Be Next?"
+          },
+          {
+            "url": "https://www.bitdegree.org/crypto/learn/crypto-terms/what-is-delisting",
+            "title": "What is Delisting? Definition & Meaning | Crypto Wiki"
+          }
+        ],
+        "thread_id": "te62f179b99",
+        "thread_day": 1
+      },
+      "ai_score": 7.0,
+      "ai_reason": null,
+      "ai_summary": "Kraken's pending delisting of 21 tokens could leave holders with near-zero payouts as the deadline approaches.",
+      "ai_tags": []
+    },
+    {
+      "id": "google_news:article:8b7ed1f342baebcc",
+      "source_type": "google_news",
+      "title": "Bybit Adds Stocks, ETFs, and More to Trading Platform - Coinfomania",
+      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNc29XTUtqb1E5MXcySlJ4cE96UkNlZnVyNHU2djFmZmhZSUpDTzIwaklTb3RIWHQxWmNBLWVxRklibTVka0dBQlNwY2k4Z2ZNclR2LVVPWXN3eXk1eVlIcHEtWC1oVUF4N2ZoTE9jOFk5YjNUMFFwTjBpSXYtMWVjRlpB?oc=5",
+      "content": null,
+      "author": "Coinfomania",
+      "published_at": "2026-08-09T17:02:43Z",
+      "fetched_at": "2026-08-09T21:02:58.218910Z",
+      "metadata": {
+        "category": "exchange-announcements",
+        "title_en": "Bybit Expands Platform to Offer Stocks, ETFs, and Other Assets",
+        "detailed_summary_en": "Bybit has announced an expansion of its trading platform to include stocks, ETFs, and other assets beyond cryptocurrencies. The news was reported by Coinfomania, but specific details on the available instruments or launch timeline have not been disclosed. This move reflects the growing trend of crypto exchanges expanding into traditional financial assets, potentially broadening their user base and increasing trading volumes. It also positions Bybit to compete more directly with multi-asset platforms like Robinhood and eToro. The original article does not specify which stocks, ETFs, or other assets will be offered, nor does it provide a timeline or list of supported jurisdictions. Regulatory scrutiny may become a challenge, given that Bybit has faced warnings from financial regulators in multiple jurisdictions.",
+        "background_en": "Bybit Fintech Limited, known as Bybit, is a Dubai-based centralized cryptocurrency exchange and one of the largest in the world by trading volume; as of 2026, it ranks second among centralized exchanges by spot trading volume. In February 2025, the exchange suffered a $1.5 billion hack, the largest cryptocurrency theft on record. By adding traditional assets, Bybit is diversifying its business and adapting to a maturing crypto market.",
+        "market_impact_en": "The announcement is exchange-specific and does not directly affect crypto asset prices, but it could intensify competition among exchanges and multi-asset platforms over time. There is no clear transmission mechanism to the wider cryptocurrency market from this product expansion.",
+        "title_zh": "Bybit扩展平台业务，新增股票、ETF等资产交易",
+        "detailed_summary_zh": "Bybit宣布扩展其交易平台，在加密货币之外新增股票、ETF及其他资产的交易。Coinfomania报道了这一消息，但尚未披露具体可交易标的或上线时间等细节。 此举反映了加密货币交易所向传统金融资产扩展的趋势，有望扩大用户群体并增加交易量。同时，这也使Bybit在与Robinhood、eToro等多资产平台的竞争中更具直接性。 原始报道未明确将提供哪些股票、ETF或其他资产，也未提供时间表或支持的地区。鉴于Bybit曾受到多个司法辖区金融监管机构的警告，监管审查可能成为其面临的挑战。",
+        "background_zh": "Bybit Fintech Limited（简称Bybit）是一家总部位于迪拜的中心化加密货币交易所，按交易量计算是全球最大的交易所之一；截至2026年，其现货交易量在中心化交易所中排名第二。2025年2月，该交易所遭遇15亿美元黑客攻击，成为有记录以来最大规模的加密货币盗窃案。通过增加传统资产，Bybit正在实现业务多元化，并适应日益成熟的加密市场。",
+        "market_impact_zh": "该公告是交易所层面的消息，不直接影响加密资产价格，但长期来看可能加剧交易所与多资产平台之间的竞争。此次产品扩展对更广泛的加密市场没有明显的传导机制。",
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Bybit",
+            "title": "Bybit"
+          }
+        ],
+        "thread_id": "tef148cd715",
+        "thread_day": 1
+      },
+      "ai_score": 7.0,
+      "ai_reason": null,
+      "ai_summary": "Bybit expands its trading platform to include stocks, ETFs, and other assets.",
+      "ai_tags": []
+    },
+    {
+      "id": "rss:www.theblock.co_rss.xml:b3cd65168604fcd8",
+      "source_type": "rss",
+      "title": "World Liberty received $100 million from businessman investigated for money laundering: NYT",
+      "url": "https://www.theblock.co/news/regulation/2026-08-09-world-liberty-received-100-million-from-businessman-investigated-for-money-laundering-nyt-411221?utm_source=rss&utm_medium=rss",
+      "content": null,
+      "author": "Zack Abrams",
+      "published_at": "2026-08-09T18:51:32Z",
+      "fetched_at": "2026-08-10T00:31:02.225604Z",
+      "metadata": {
+        "feed_name": "The Block",
+        "category": "crypto-regulation",
+        "title_en": "World Liberty Took $100M From Businessman in Money Laundering Probe",
+        "detailed_summary_en": "According to NYT via The Block, World Liberty Financial received $100 million from businessman Guren \"Bobby\" Zhou, who is under an active money laundering investigation by British officials as of late July. No charges have been filed against Zhou. This news adds to mounting concerns about World Liberty Financial's ties to individuals under legal scrutiny, potentially affecting its regulatory standing and public perception. It also underscores the broader debate over crypto projects accepting funds from politically sensitive sources. The investor, Guren \"Bobby\" Zhou, has not been charged, but British officials told the Times that the investigation remained active as of late July. World Liberty is a DeFi protocol launched in 2024 with ties to the Trump family, which receives 75% of net proceeds from token sales.",
+        "background_en": "World Liberty Financial is a decentralized finance protocol founded in 2024 by figures including Trump family members. It has faced extensive reporting on conflicts of interest, including deals with foreign entities and businesspeople under investigation, such as Justin Sun's $30 million investment after which an SEC probe into him was dropped.",
+        "market_impact_en": "The news could weigh on sentiment around World Liberty and tokens it holds, as regulatory and legal scrutiny on a major investor may heighten governance and compliance concerns. However, the primary exposure is reputational and regulatory rather than a direct market mechanism, as the report names no specific token or venue.",
+        "title_zh": "World Liberty 收受涉洗钱调查商人1亿美元",
+        "detailed_summary_zh": "据《纽约时报》经由 The Block 报道，World Liberty Financial 收到商人 Guren \"Bobby\" Zhou 的1亿美元投资，而截至7月底英国官员仍在对其进行活跃的洗钱调查。目前尚未对 Zhou 提出指控。 这则新闻加剧了外界对 World Liberty Financial 与受法律审查人士之间关联的担忧，可能影响其监管地位和公众形象。同时凸显了关于加密项目接受政治敏感来源资金的更广泛争议。 投资者 Guren \"Bobby\" Zhou 尚未被起诉，但英国官员向《纽约时报》表示，截至7月底相关调查仍在进行中。World Liberty 是2024年推出的 DeFi 协议，与特朗普家族有关，后者从代币销售净收益中抽取75%。",
+        "background_zh": "World Liberty Financial 是一个去中心化金融协议，于2024年由包括特朗普家族成员在内的多方创立。该协议因利益冲突问题受到广泛报道，包括与外国实体及受调查商人的交易，例如孙宇晨投资3000万美元后美国证交会对他的调查被撤销。",
+        "market_impact_zh": "该消息可能对 World Liberty 及其持有代币的市场情绪造成压力，因为对主要投资者的监管和法律审查可能提高治理与合规担忧。不过，主要影响在于声誉和监管层面，而非直接的市场传导机制，因为报道未点名具体代币或交易平台。",
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/World_Liberty_Financial",
+            "title": "World Liberty Financial"
+          }
+        ],
+        "thread_id": "t36cd357196",
+        "thread_day": 1
+      },
+      "ai_score": 7.0,
+      "ai_reason": null,
+      "ai_summary": "World Liberty received $100 million from a businessman under active investigation for money laundering, according to NYT via The Block.",
+      "ai_tags": []
+    },
+    {
+      "id": "gdelt:article:20260809T074500Z::https://www.forbes.com/sites/boazsobrado/2026/08/09/you-can-fake-everything-cloudflare-just-gave-ai-agents-wallets/",
+      "source_type": "gdelt",
+      "title": "Cloudflare AI Agent Wallets : Why Agent Identity Comes Next",
+      "url": "https://www.forbes.com/sites/boazsobrado/2026/08/09/you-can-fake-everything-cloudflare-just-gave-ai-agents-wallets/",
+      "content": null,
+      "author": "forbes.com",
+      "published_at": "2026-08-09T07:45:00Z",
+      "fetched_at": "2026-08-09T09:12:09.119481Z",
+      "metadata": {
+        "category": "ai-devtools",
+        "title_en": "Cloudflare Gives AI Agents Wallets, Pushing Agent Identity Forward",
+        "detailed_summary_en": "Cloudflare announced programmable wallets for AI agents on August 4, 2026. The offering includes two wallet types: Account Wallets for human-held funds and Virtual Wallets with spending caps for autonomous agent payments. This move by a major infrastructure provider validates the emerging 'agent economy,' where software agents need identity and payment rails to operate autonomously. It lowers barriers for AI developers to build agents that can pay for APIs, data, and services without human intervention. The announcement, dated August 4, 2026, distinguishes between Account Wallets (funds held by humans) and Virtual Wallets (agent-spent funds with caps). The feature is aimed at developers building agents that need to autonomously pay for APIs, data, or content.",
+        "background_en": "AI agents are software programs that perform tasks autonomously; giving each agent a distinct identity lets systems authenticate it, grant scoped permissions, and audit its actions. Wallets extend that identity to payments, allowing agents to transact on their own. Cloudflare, a major cloud and edge infrastructure provider, is adding these capabilities to its AI Cloud platform. The broader ecosystem is already exploring crypto-based rails as a natural fit for machine-to-machine payments.",
+        "market_impact_en": "The announcement strengthens the case for crypto-based payment rails in the agentic economy by bringing a mainstream infrastructure provider into agent payments. If Cloudflare integrates crypto rails (e.g., stablecoins or programmable wallet protocols), it could broaden demand for machine-payment settlement infrastructure — though the company has not specified which underlying rails its wallets use. This is an analysis of the transmission channel, not a price forecast.",
+        "title_zh": "Cloudflare为AI代理提供钱包，推进代理身份体系",
+        "detailed_summary_zh": "Cloudflare于2026年8月4日宣布为AI代理（AI agent）推出可编程钱包。该产品包含两种钱包类型：用于人类持有资金的账户钱包（Account Wallet），以及为代理自主支付设有限额虚拟钱包（Virtual Wallet）。 作为主流基础设施供应商，此举验证了新兴的‘代理经济’——软件代理需要身份与支付通道才能自主运行。它降低了AI开发者构建无需人工干预即可为API、数据和服务付费的代理的门槛。 该公告日期为2026年8月4日，区分了账户钱包（人类持有资金）和虚拟钱包（代理使用的受限资金）。该功能面向需要自主支付API、数据或内容的代理开发者。",
+        "background_zh": "AI代理（AI agent）是自主执行任务的软件程序；为每个代理赋予独立身份，可让系统对其认证、授予限定权限并对行为进行审计。钱包则将这种身份延伸到支付领域，使代理能够自主完成交易。Cloudflare作为主要的云与边缘基础设施提供商，正在其AI Cloud平台中增加这些能力。更广泛的生态已在探索基于加密货币的支付轨道，作为机器对机器支付的自然选择。",
+        "market_impact_zh": "这一公告将主流基础设施供应商引入代理支付领域，强化了‘加密货币支付轨道适用于代理经济’的逻辑。如果Cloudflare整合加密支付轨道（如稳定币或可编程钱包协议），可能扩大对机器支付结算基础设施的需求——不过该公司尚未说明其钱包使用哪种底层轨道。这是对传导渠道的分析，而非价格预测。",
+        "sources": [
+          {
+            "url": "https://explainx.ai/blog/cloudflare-wallets-ai-agent-payments-august-2026",
+            "title": "Cloudflare Wallets: AI Agent Payments Guide (Aug 2026) | explainx.ai"
+          },
+          {
+            "url": "https://ssojet.com/blog/ai-agent-identity",
+            "title": "AI Agent Identity: How to Authenticate and Govern AI Agents"
+          },
+          {
+            "url": "https://www.cloudflare.com/solutions/ai/",
+            "title": "Cloudflare AI Cloud"
+          }
+        ],
+        "thread_id": "t9340e097d7",
+        "thread_day": 1
+      },
+      "ai_score": 7.0,
+      "ai_reason": null,
+      "ai_summary": "Cloudflare is giving AI agents wallets, advancing agent identity and payment capabilities.",
+      "ai_tags": []
+    }
+  ],
+  "dedup_history": [
     {
       "id": "hackernews:story:49220609",
       "source_type": "hackernews",
@@ -192,6 +510,40 @@
       "ai_score": 9.0,
       "ai_reason": null,
       "ai_summary": "Simon Willison publishes a detailed timeline of an incident in which an OpenAI AI agent accidentally attacked Hugging Face, sparking major concerns about AI safety and autonomous behavior.",
+      "ai_tags": []
+    },
+    {
+      "id": "rss:www.coindesk.com_arc_outboundfeeds_rss_:1205c29df33d1588",
+      "source_type": "rss",
+      "title": "Bybit sues North Korea and Lazarus Group over $1.5 billion hack, secures asset freeze",
+      "url": "https://www.coindesk.com/policy/2026/08/07/bybit-sues-north-korea-and-lazarus-group-over-usd1-5-billion-hack-secures-asset-freeze",
+      "content": null,
+      "author": "Ian Allison",
+      "published_at": "2026-08-07T16:32:41Z",
+      "fetched_at": "2026-08-08T15:34:04.271827Z",
+      "metadata": {
+        "feed_name": "CoinDesk",
+        "category": "crypto-regulation",
+        "title_en": "Bybit sues North Korea and Lazarus Group over $1.5B hack, secures asset freeze",
+        "detailed_summary_en": "Bybit has filed a lawsuit against North Korea and the Lazarus Group over the $1.5 billion Bybit hack, and has secured a preliminary injunction freezing stolen assets. This action marks an unprecedented legal move by a crypto exchange against a state-sponsored hacking group. This landmark lawsuit could set a legal precedent for holding state-sponsored hackers accountable and recovering stolen crypto assets. It also signals a new avenue for exchanges to seek justice beyond blockchain tracing, with potential implications for national security and international law. The preliminary injunction freezes assets allegedly stolen by the Lazarus Group, though specific case details and jurisdiction have not been disclosed. The Lazarus Group is a North Korean state-sponsored hacking syndicate linked to over $3 billion in crypto theft, including the $620 million Ronin bridge exploit.",
+        "background_en": "The Lazarus Group is a North Korean state-sponsored cybercrime group that has been active for more than a decade, responsible for notable attacks such as the 2014 Sony Pictures hack and the 2017 WannaCry ransomware. It has increasingly targeted cryptocurrency exchanges and bridges, stealing billions in digital assets. The Bybit hack, the largest crypto exchange heist in history, was widely attributed to this group. This lawsuit is among the first attempts to use civil legal action to recover funds from a state-linked hacker group.",
+        "title_zh": "Bybit起诉朝鲜和Lazarus集团，就15亿美元黑客案获得资产冻结",
+        "detailed_summary_zh": "Bybit已就15亿美元的黑客攻击事件对朝鲜和Lazarus集团提起诉讼，并获得了冻结被盗资产的初步禁令。此举是加密货币交易所针对国家支持的黑客组织采取的前所未有的法律行动。 这起具有里程碑意义的诉讼可能为追究国家支持的黑客责任和追回被盗加密资产开创法律先例。它也表明交易所可以在链上追踪之外寻求法律途径，对国家安全和国际法都具有潜在影响。 初步禁令冻结了据称由Lazarus集团盗取的资产，但案件具体细节和管辖法院尚未公开。Lazarus集团是朝鲜国家支持的黑客组织，涉嫌盗取超过30亿美元的加密货币，其中包括6.2亿美元的Ronin桥接攻击。",
+        "background_zh": "Lazarus集团是一个朝鲜国家支持的网络犯罪组织，活跃了十多年，曾制造2014年索尼影业攻击和2017年WannaCry勒索软件等重大事件。该集团越来越多地以加密货币交易所和桥接为目标，盗取了数十亿美元的数字资产。Bybit黑客攻击是历史上最大的加密货币交易所盗窃案，普遍被认为由该组织所为。这起诉讼是首批尝试通过民事诉讼从国家关联黑客组织追回资金的案件之一。",
+        "sources": [
+          {
+            "url": "https://www.nccgroup.com/the-lazarus-group-north-korean-scourge-for-plus10-years/",
+            "title": "The Lazarus group: North Korean scourge for +10 years | NCC Group"
+          },
+          {
+            "url": "https://news.bitcoin.com/debridge-finance-suspects-north-korean-hacking-syndicate-lazarus-group-attacked-the-protocols-team/",
+            "title": "Debridge Finance Suspects North Korean Hacking Syndicate..."
+          }
+        ]
+      },
+      "ai_score": 9.0,
+      "ai_reason": null,
+      "ai_summary": "Bybit is suing North Korea and the Lazarus Group over the $1.5 billion hack and has secured a preliminary injunction freezing stolen assets.",
       "ai_tags": []
     },
     {
@@ -313,337 +665,6 @@
       "ai_tags": []
     },
     {
-      "id": "rss:www.coindesk.com_arc_outboundfeeds_rss_:cf38e7811d94e411",
-      "source_type": "rss",
-      "title": "Why trillion-dollar asset manager T. Rowe Price put memecoins in its crypto ETF",
-      "url": "https://www.coindesk.com/markets/2026/08/06/why-trillion-dollar-asset-manager-t-rowe-price-put-memecoins-in-its-crypto-etf",
-      "content": null,
-      "author": "AI Boost",
-      "published_at": "2026-08-08T13:00:00Z",
-      "fetched_at": "2026-08-08T17:03:24.815938Z",
-      "metadata": {
-        "feed_name": "CoinDesk",
-        "category": "crypto-markets",
-        "title_en": "T. Rowe Price Defends Memecoins in Its Actively Managed Crypto ETF",
-        "detailed_summary_en": "T. Rowe Price, the $1.9 trillion asset manager, launched the industry's first actively managed multi-token spot crypto ETF, ticker TKNZ, in July and included established memecoins such as dogecoin. Digital assets chief Blue Macellari said the decision reflects disciplined active management rather than speculation. A $1.9 trillion traditional asset manager embracing memecoins signals broader institutional acceptance and marks a shift in crypto ETF products toward active, multi-token strategies. It also reframes memecoin trading as a practical stress test for blockchain scalability and reliability. The ETF currently lists only one memecoin, dogecoin, and carries a 0.75% management fee under a temporary waiver through May 2027. T. Rowe Price's team evaluates tokens using three layers of analysis: blockchain technology and token economics, ecosystem growth and adoption, and market momentum.",
-        "background_en": "Memecoins are cryptocurrencies inspired by internet memes, characters, or trends, often supported by enthusiastic online communities rather than traditional fundamentals. The term is sometimes used dismissively, but some memecoins have gained large market capitalizations, and T. Rowe Price notes that established memecoins have existed for years and rank among the largest crypto assets. In blockchain technology, stress testing means evaluating whether a network remains operational and secure under extreme workloads; Macellari argues that memecoin trading offers a real-world stress test by forcing chains to deliver fast settlement, low fees, and reliability under congestion.",
-        "title_zh": "T. Rowe Price 为加密ETF纳入迷因币辩护：称是纪律性策略",
-        "detailed_summary_zh": "$1.9万亿美元资产管理公司T. Rowe Price于7月推出了业内首只主动管理型多代币现货加密ETF（代码TKNZ），并将狗狗币等成熟迷因币纳入其中。数字资产主管Blue Macellari表示，这一决定反映的是纪律性主动管理，而非投机。 $1.9万亿美元的传统资产管理公司接纳迷因币，标志着机构对其接受度上升，也体现加密ETF正转向主动管理、多代币策略。这还把迷因币交易重新定义为对区块链可扩展性和可靠性的现实压力测试。 该ETF目前仅列入一种迷因币——狗狗币，管理费为0.75%，并在2027年5月前享有临时费用减免。T. Rowe Price的团队通过三层分析评估代币：区块链技术与代币经济、生态系统增长与采用，以及市场动能。",
-        "background_zh": "迷因币是受互联网迷因、角色或潮流启发的加密货币，通常由热情的在线社区推动，而非依靠传统基本面。这个词有时带有贬义，但一些迷因币已获得很高的市值；T. Rowe Price指出，成熟的迷因币已存在多年，并且按市值属于最大的加密资产之一。在区块链技术中，压力测试是指评估网络在极端负载下能否保持运行和安全；Macellari认为，迷因币交易迫使链上实现快速结算、低费用和拥堵时的可靠性，因而提供了现实中的压力测试。",
-        "sources": [
-          {
-            "url": "https://en.wikipedia.org/wiki/Meme_coin",
-            "title": "Meme coin - Wikipedia"
-          },
-          {
-            "url": "https://www.coinbase.com/learn/crypto-basics/what-is-a-memecoin",
-            "title": "What is a memecoin? | Coinbase"
-          },
-          {
-            "url": "https://smartstate.tech/blog/blockchain-stress-testing-pushing-the-boundaries-of-decentralized-networks.html",
-            "title": "SmartState | Blockchain stress testing: pushing the boundaries of..."
-          }
-        ]
-      },
-      "ai_score": 8.0,
-      "ai_reason": null,
-      "ai_summary": "T. Rowe Price defends including memecoins in its actively managed crypto ETF as a disciplined strategy, viewing memecoin trading as a blockchain stress test.",
-      "ai_tags": []
-    },
-    {
-      "id": "rss:decrypt.co_feed:7853db1987b8d85c",
-      "source_type": "rss",
-      "title": "Bitcoin Red Team Says AI Is Finding Critical Exploits Across Core Projects",
-      "url": "https://decrypt.co/375169/bitcoin-red-team-ai-finding-critical-vulnerabilities",
-      "content": null,
-      "author": "Jason Nelson",
-      "published_at": "2026-08-08T17:31:03Z",
-      "fetched_at": "2026-08-09T00:31:39.232987Z",
-      "metadata": {
-        "feed_name": "Decrypt",
-        "category": "crypto-protocols",
-        "title_en": "Bitcoin Red Team Uses AI to Uncover Critical Exploits Across Core Projects",
-        "detailed_summary_en": "A volunteer Bitcoin red team reported scanning about 150 Bitcoin repositories with frontier AI models and making more than a dozen vulnerability disclosures. The team says it averages roughly one critical exploit per hour per person and has reported critical vulnerabilities to several projects in the last 12 hours. This marks a growing role for AI in automated security auditing of blockchain ecosystems, potentially outpacing manual review and forcing Bitcoin projects to adopt AI-assisted defenses. The vulnerabilities span wallets, cryptographic libraries, and infrastructure, directly affecting the security of the broader Bitcoin ecosystem. The team spent roughly $20,000 on AI services and burns about $10,000 per day, using models such as Kimi K3, OpenAI's GPT Sol, Anthropic's Claude Fable and Opus, and Z.ai's GLM 5.2. Affected projects and vulnerability specifics have not been disclosed.",
-        "background_en": "In cybersecurity, a red team tests software from an attacker's perspective to find vulnerabilities before they can be exploited. AI red teaming automates this process using frontier AI models, which are the most advanced general-purpose AI systems, capable of reasoning and multimodal generation. Similar AI-driven security discoveries have occurred elsewhere in crypto, including a Zcash flaw found with Anthropic's Claude Opus 4.8 and suspected AI-assisted attacks on Coldcard and Boltz.",
-        "title_zh": "比特币红队利用AI在核心项目中发现关键漏洞",
-        "detailed_summary_zh": "一个比特币志愿者红队报告称，使用前沿AI模型扫描了约150个比特币代码库，并披露了十多个漏洞。该团队称平均每人每小时发现约一个关键漏洞，并在过去12小时内向多个项目报告了关键漏洞。 这标志着AI在区块链生态系统自动化安全审计中的作用日益增强，可能超越人工审查的速度，并迫使比特币项目采用AI辅助防御。这些漏洞涉及钱包、加密库和基础设施，直接影响更广泛的比特币生态系统的安全性。 该团队在AI服务上已花费约2万美元，目前每天消耗约1万美元，使用了Kimi K3、OpenAI的GPT Sol、Anthropic的Claude Fable和Opus，以及Z.ai的GLM 5.2等模型。受影响的项目和漏洞细节尚未披露。",
-        "background_zh": "在网络安全中，红队从攻击者的角度测试软件，以便在漏洞被利用前发现它们。AI红队利用前沿AI模型实现这一过程的自动化，这些模型是最先进的通用AI系统，具备推理和多模态生成能力。类似的AI驱动安全发现也发生在加密领域的其他地方，包括使用Anthropic的Claude Opus 4.8发现的Zcash漏洞，以及Coldcard和Boltz疑似遭到的AI辅助攻击。",
-        "sources": [
-          {
-            "url": "https://en.wikipedia.org/wiki/Frontier_models",
-            "title": "Frontier models"
-          },
-          {
-            "url": "https://www.nvidia.com/en-us/glossary/frontier-models/",
-            "title": "What Are Frontier AI Models and How They Work | NVIDIA Glossary"
-          },
-          {
-            "url": "https://grokipedia.com/page/ai-red-teaming",
-            "title": "AI red teaming"
-          }
-        ]
-      },
-      "ai_score": 7.5,
-      "ai_reason": null,
-      "ai_summary": "A volunteer Bitcoin red team reports using frontier AI models to scan 150 repositories and uncover over a dozen vulnerabilities across wallets, cryptographic libraries, and infrastructure.",
-      "ai_tags": []
-    },
-    {
-      "id": "rss:decrypt.co_feed:7ea4aea33e588ecb",
-      "source_type": "rss",
-      "title": "Robinhood Crypto Chief Explains Why There Are 'Two Wolves' Inside Robinhood Chain",
-      "url": "https://decrypt.co/375158/robinhood-crypto-two-wolves-robinhood-chain-rwa-meme-coins",
-      "content": null,
-      "author": "Jason Nelson",
-      "published_at": "2026-08-08T14:01:05Z",
-      "fetched_at": "2026-08-09T00:31:39.718870Z",
-      "metadata": {
-        "feed_name": "Decrypt",
-        "category": "crypto-protocols",
-        "title_en": "Robinhood Chain Reaches $800M TVL, 200M Transactions in First Month",
-        "detailed_summary_en": "Robinhood Chain, an Ethereum layer-2 network launched roughly a month ago, has attracted nearly $800 million in total value locked (TVL) and processed more than 200 million transactions. Robinhood's head of crypto, Johann Kerbrat, explained the company's 'two wolves' approach: serving both serious financial products like tokenized stocks and derivatives, and meme-coin traders. This rapid adoption suggests that a mainstream brokerage-backed L2 can quickly bridge traditional finance and crypto markets. By deliberately pairing institutional-style products with meme coins, Robinhood is attempting to expand the on-chain user base beyond existing crypto natives, which could accelerate the migration of real-world assets to blockchains. Robinhood Chain is an Arbitrum-based Ethereum L2 that uses Ethereum blobs for data availability and ETH as its native gas token. It supports around 200 tokenized stocks, stablecoin lending, and perpetual futures, and is designed to allow trading outside traditional market hours.",
-        "background_en": "Ethereum layer-2 networks are scalability solutions built on top of Ethereum (the layer-1), inheriting its security while offering faster and cheaper transactions. TVL (total value locked) is a DeFi metric that measures the total value of assets deposited in a protocol or blockchain's smart contracts. Robinhood Chain is described as a permissionless, Ethereum-compatible L2 built for financial services and real-world assets. The 'two wolves' phrase, popularized by Robinhood CEO Vlad Tenev, refers to the idea that a platform can simultaneously serve serious financial users and meme-driven retail traders.",
-        "title_zh": "Robinhood Chain首月TVL近8亿美元，交易量突破2亿笔",
-        "detailed_summary_zh": "Robinhood Chain是约一个月前推出的以太坊二层网络，已吸引近8亿美元的总锁仓量（TVL），并处理了超过2亿笔交易。Robinhood加密业务负责人Johann Kerbrat解释了公司的'双狼'策略：同时服务严肃金融产品（如代币化股票和衍生品）与模因币交易者。 如此快速的采用表明，主流券商支持的二层网络能够迅速连接传统金融与加密市场。Robinhood刻意将机构风格产品与模因币结合，试图将链上用户群体扩展至现有加密原生用户之外，这可能会加速现实世界资产向区块链迁移。 Robinhood Chain是基于Arbitrum的以太坊二层网络，使用以太坊blob作为数据可用性方案，并以ETH作为原生Gas代币。它支持约200种代币化股票、稳定币借贷和永续合约，并允许在传统市场交易时间之外进行交易。",
-        "background_zh": "以太坊二层网络是构建在以太坊（一层网络）之上的扩容解决方案，继承其安全性，同时提供更快、更便宜的交易。TVL（总锁仓量）是DeFi指标，用于衡量存入协议或区块链智能合约中的资产总价值。Robinhood Chain被描述为一个无需许可、兼容以太坊的二层网络，专为金融服务和现实世界资产而构建。'双狼'这一说法由Robinhood CEO Vlad Tenev推广，指一个平台可以同时服务严肃金融用户和模因驱动的散户交易者。",
-        "sources": [
-          {
-            "url": "https://docs.robinhood.com/chain/",
-            "title": "About Robinhood Chain – Robinhood Chain Documentation"
-          },
-          {
-            "url": "https://docs.robinhood.com/chain/connecting/",
-            "title": "Connecting to Robinhood Chain – Robinhood Chain Documentation"
-          },
-          {
-            "url": "https://ethereum.org/layer-2/",
-            "title": "Intro to Ethereum Layer 2: benefits and uses | ethereum.org"
-          }
-        ]
-      },
-      "ai_score": 7.5,
-      "ai_reason": null,
-      "ai_summary": "Robinhood Chain has attracted nearly $800 million in TVL and processed over 200 million transactions in its first month, with its crypto chief explaining the exchange's 'two wolves' strategy of balancing serious finance with meme culture.",
-      "ai_tags": []
-    },
-    {
-      "id": "rss:cryptoslate.com_feed_:508d21671ad548e9",
-      "source_type": "rss",
-      "title": "Trump Media’s $6.4 billion crypto venture canceled amid escalating Trump ethics concerns",
-      "url": "https://cryptoslate.com/trump-medias-6-4-billion-crypto-venture-canceled-amid-escalating-trump-ethics-concerns/",
-      "content": null,
-      "author": "Oluwapelumi Adejumo",
-      "published_at": "2026-08-08T12:05:04Z",
-      "fetched_at": "2026-08-09T00:31:18.107533Z",
-      "metadata": {
-        "feed_name": "CryptoSlate",
-        "category": "crypto-markets",
-        "title_en": "Trump Media and Crypto.com Cancel $6.4B Crypto Treasury Venture",
-        "detailed_summary_en": "On Aug. 7, Trump Media & Technology Group, Crypto.com, and Yorkville Acquisition Corp. mutually agreed to terminate their proposed $6.42 billion digital-asset treasury venture and ETF partnership, ending plans to create a publicly traded company around CRO accumulation. The cancellation removes one of the largest crypto projects connected to President Trump, reflecting how his family's crypto earnings are complicating federal regulatory negotiations. It also eliminates a major planned source of demand for CRO, affecting Crypto.com's token ecosystem. The planned funding package included $1 billion in CRO, $200 million in cash, $220 million from mandatory warrant exercises, and a $5 billion equity line of credit from a Yorkville affiliate. Following the news, CRO fell 6% to $0.05009, its lowest price since 2023.",
-        "background_en": "Cronos (CRO) is the native token of the Cronos blockchain, an EVM-compatible Layer-1 network built on the Cosmos SDK and integrated with the Inter-Blockchain Communication protocol; it is used for transaction fees, staking, governance, and DeFi activities. A crypto treasury strategy involves a company holding digital assets as part of its balance sheet, either for investment, as a hedge, or as working capital. The proposed Trump Media Group CRO Strategy would have been an unusually large treasury vehicle controlling a significant share of CRO's market capitalization.",
-        "title_zh": "特朗普媒体与Crypto.com取消64亿美元加密资金库项目",
-        "detailed_summary_zh": "8月7日，特朗普媒体与科技集团、Crypto.com和约克维尔收购公司共同同意终止其拟议的64.2亿美元数字资产国库项目及ETF合作，结束了围绕CRO积累创建上市公司的计划。 此次取消消除了与特朗普总统相关的最大的加密项目之一，反映出其家族的加密收入正在使联邦监管谈判复杂化。这也消除了计划中对CRO的重大需求来源，影响了Crypto.com的代币生态系统。 计划中的融资方案包括10亿美元的CRO、2亿美元现金、2.2亿美元强制认股权证行权以及约克维尔关联公司提供的50亿美元股权信贷额度。消息公布后，CRO下跌6%至0.05009美元，为2023年以来最低水平。",
-        "background_zh": "Cronos（CRO）是Cronos区块链的原生代币，该区块链是基于Cosmos SDK构建的兼容以太坊虚拟机（EVM）的Layer-1网络，并集成了跨链通信（IBC）协议；它用于交易费用、质押、治理和DeFi活动。加密国库策略是指公司持有数字资产作为资产负债表的一部分，用于投资、对冲或作为营运资金。拟议中的Trump Media Group CRO Strategy将成为一个异常庞大的国库工具，控制CRO市值中很大一部分。",
-        "sources": [
-          {
-            "url": "https://coinmarketcap.com/currencies/cronos/",
-            "title": "Cronos price today, CRO to USD live price, marketcap and chart | CoinMarketCap"
-          },
-          {
-            "url": "https://crypto.com/us/crypto/learn/what-is-cro-everything-you-need-to-know",
-            "title": "What Is Cronos (CRO) Crypto? All You Need to Know - Crypto.com US"
-          },
-          {
-            "url": "https://stripe.com/resources/more/crypto-treasury-management-explained",
-            "title": "Crypto Treasury Management: Rules, Risks, and Powerful Tools | Stripe"
-          }
-        ]
-      },
-      "ai_score": 7.5,
-      "ai_reason": null,
-      "ai_summary": "Trump Media and Crypto.com have canceled their planned $6.4 billion crypto treasury venture and ETF partnership amid escalating ethics concerns in Washington.",
-      "ai_tags": []
-    },
-    {
-      "id": "rss:www.coindesk.com_arc_outboundfeeds_rss_:57bd9c6e97d1a14e",
-      "source_type": "rss",
-      "title": "Brazil's central bank orders exchanges to delay large crypto transfers abroad",
-      "url": "https://www.coindesk.com/business/2026/08/08/brazil-s-central-bank-orders-exchanges-to-delay-large-crypto-transfers-abroad",
-      "content": null,
-      "author": "Francisco Rodrigues",
-      "published_at": "2026-08-08T15:25:38Z",
-      "fetched_at": "2026-08-09T00:31:09.291841Z",
-      "metadata": {
-        "feed_name": "CoinDesk",
-        "category": "crypto-regulation",
-        "title_en": "Brazil Central Bank Orders 24-Hour Hold on Large Crypto Transfers Abroad",
-        "detailed_summary_en": "Brazil's central bank has issued Resolution BCB No. 584/2026, published August 7, requiring crypto exchanges to delay customer transfers to foreign platforms and self-custody wallets for up to 24 hours. The rule takes effect January 1, 2027 and applies to transfers exceeding $10,000 (including same-day aggregated amounts) and any smaller transactions flagged as risky. This is a significant operational change for crypto exchanges operating in Brazil, adding friction to legitimate user fund flows and increasing compliance costs. It signals a broader trend of regulators using transaction holds to combat crypto-enabled financial fraud, directly affecting Brazilian users and exchange competitiveness. Exchanges may release a transfer before 24 hours if their risk review finds no wrongdoing, but they must document the decision and notify customers when a transaction is placed on hold. The rule also assigns exchanges greater responsibility for assessing risk based on customer, transaction, counterparty, and destination jurisdiction.",
-        "background_en": "A self-custody wallet, also called a non-custodial wallet, is a cryptocurrency wallet where the user holds complete control over their own private keys, rather than relying on an exchange or third party to safeguard funds. Such wallets let users transfer cryptocurrencies abroad without an intermediary, which can be used to move funds obtained through financial fraud before victims or institutions recover them. Brazil's central bank is implementing this measure to curb that use, but industry groups argue it may impose costs on legitimate users and weaken domestic exchanges.",
-        "title_zh": "巴西央行下令对大型加密资产跨境转账实施24小时冻结",
-        "detailed_summary_zh": "巴西中央银行发布了第584/2026号决议（于8月7日公布），要求加密货币交易所将客户向海外平台和自托管钱包的转账延迟最多24小时。该规定自2027年1月1日起生效，适用于超过1万美元（含同日累计金额）的转账，以及被标记为有风险的较小交易。 这对在巴西运营的加密货币交易所来说是一次重大的运营变革，给合法用户的资金流转增加了摩擦，并提高了合规成本。它表明监管机构正利用交易延迟机制打击利用加密资产实施的金融欺诈，直接影响巴西用户和交易所的竞争力。 如果交易所的风险审查未发现违规行为，可以在24小时内提前释放转账，但必须记录决定，并在交易被冻结时通知客户。该规定还要求交易所承担更大的责任，基于客户、交易、交易对手和目的地司法管辖区来评估风险。",
-        "background_zh": "自托管钱包（也称为非托管钱包）是一种加密货币钱包，用户完全掌控自己的私钥，而不是依赖交易所或第三方来保管资金。这类钱包允许用户在无需中介的情况下将加密货币转往境外，这也可能被用来在受害者或机构追回资金之前转移通过金融欺诈获得的资产。巴西中央银行实施这一措施以遏制此类行为，但行业组织认为这可能给合法用户带来成本，并削弱国内交易所的竞争力。",
-        "sources": [
-          {
-            "url": "https://www.chainup.com/blog/what-is-a-self-custody-wallet-in-cryptocurrency/",
-            "title": "What Is a Self-Custody Wallet In Cryptocurrency?"
-          },
-          {
-            "url": "https://onekey.so/blog/ecosystem/onekey-edu-48-what-is/",
-            "title": "What Is a Self-Custody Wallet? - OneKey Blog"
-          }
-        ]
-      },
-      "ai_score": 7.5,
-      "ai_reason": null,
-      "ai_summary": "Brazil's central bank will require exchanges to delay certain crypto transfers abroad and to self-custody wallets for up to 24 hours starting January 1, 2027, as part of new anti-fraud rules.",
-      "ai_tags": []
-    },
-    {
-      "id": "hackernews:story:49221711",
-      "source_type": "hackernews",
-      "title": "Triton: DirectX 11 Driver for QEMU",
-      "url": "https://blog.getutm.app/2026/introducing-triton-directx-11-driver-for-qemu/",
-      "content": null,
-      "author": "electricant",
-      "published_at": "2026-08-08T13:33:06Z",
-      "fetched_at": "2026-08-09T00:31:06.686145Z",
-      "metadata": {
-        "discussion_url": "https://news.ycombinator.com/item?id=49221711",
-        "category": "tech-community",
-        "title_en": "Triton: Open-Source DirectX 11 Driver Brings GPU Acceleration to QEMU Windows VMs",
-        "detailed_summary_en": "Developer Osy has released Triton, a new open-source DirectX 11 driver for QEMU that enables hardware-accelerated 3D graphics in Windows virtual machines. The driver leverages Mesa and virglrenderer components and is currently in early testing, with broader availability expected soon. This gives Windows VM users a decent open-source 3D solution for the first time, filling a long-standing gap in QEMU's GPU virtualization stack. It could reduce reliance on proprietary GPU passthrough or closed-source drivers for many virtualization workloads. The driver aims to support Direct3D 11 specifically; DirectX 12 remains unsupported, a limitation shared by Parallels and VMware. It is built on Mesa and virglrenderer, with the project announced by open-source developer 'Osy' and covered by Phoronix.",
-        "background_en": "QEMU is an open-source machine emulator and virtualizer that can run Windows guests, but its default graphics path has historically offered poor 3D performance. GPU virtualization approaches like Intel GVT-g, NVIDIA vGPU, and SR-IOV exist but often require specific hardware or proprietary components. Virglrenderer is a library that lets guest graphics commands be translated for host GPUs, while Mesa provides open-source graphics driver implementations.",
-        "community_discussion_en": "Commenters welcomed the project, noting it is 'pretty cool' to finally have a decent open 3D solution for Windows VMs. Others pointed out this is at least the third GPU-related project named Triton, and asked why only DX11 is supported when Parallels and VMware also only offer DX11.",
-        "title_zh": "Triton：为QEMU Windows虚拟机带来DX11硬件加速的开源驱动",
-        "detailed_summary_zh": "开发者Osy发布了Triton，这是一款面向QEMU的全新开源DirectX 11驱动，可在Windows虚拟机中实现硬件加速3D图形。该驱动基于Mesa和virglrenderer组件，目前处于早期测试阶段，预计不久后将更广泛推出。 这首次为Windows虚拟机用户提供了一个不错的开源3D解决方案，填补了QEMU GPU虚拟化栈长期存在的空白。它可以减少许多虚拟化工作负载对专有GPU直通或闭源驱动的依赖。 该驱动专门支持Direct3D 11；目前不支持DirectX 12，这也是Parallels和VMware的共同局限。它基于Mesa和virglrenderer构建，由开源开发者“Osy”宣布，Phoronix对此进行了报道。",
-        "background_zh": "QEMU是一款开源机器模拟器和虚拟化软件，可以运行Windows客户机，但其默认图形路径在3D性能上历来表现不佳。Intel GVT-g、NVIDIA vGPU和SR-IOV等GPU虚拟化方案虽然存在，但通常需要特定硬件或专有组件。Virglrenderer是一个库，可将客户机的图形命令转换给宿主机GPU执行，而Mesa提供了开源图形驱动的实现。",
-        "community_discussion_zh": "评论者对项目表示欢迎，称终于为Windows虚拟机提供了一个不错的开源3D解决方案，这“相当酷”。还有人指出，这至少是第三个名为Triton的GPU相关项目，并问道为什么只支持DX11，而Parallels和VMware同样只提供DX11。",
-        "sources": [
-          {
-            "url": "https://www.phoronix.com/news/Triton-DirectX-11-QEMU-Driver",
-            "title": "AI Helped Create A DirectX 11 Driver For QEMU VMs - Phoronix"
-          },
-          {
-            "url": "https://wiki.archlinux.org/title/QEMU/Guest_graphics_acceleration",
-            "title": "QEMU/Guest graphics acceleration - ArchWiki"
-          }
-        ]
-      },
-      "ai_score": 7.5,
-      "ai_reason": null,
-      "ai_summary": "Triton is a new open-source DirectX 11 driver for QEMU that brings hardware-accelerated 3D graphics to Windows VMs.",
-      "ai_tags": []
-    },
-    {
-      "id": "google_news:article:50e0f23d027d2005",
-      "source_type": "google_news",
-      "title": "Binance bStocks Surpass $500M AUM With 24/7 Equity Trading - blockchain.news",
-      "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1qSW9QZU43dDF2RU5pWEg0M21mRm5jMjFaemtfTFc2SWpVend6TzV4Z1dHbUM4XzJpQzN6WWI2RUdWRm1jaUpqNmRZQW4xN3NHRjJyZUpzb2c4cHFjT2NPUTZxdw?oc=5",
-      "content": null,
-      "author": "blockchain.news",
-      "published_at": "2026-08-08T02:14:56Z",
-      "fetched_at": "2026-08-08T09:11:01.430873Z",
-      "metadata": {
-        "category": "exchange-announcements",
-        "title_en": "Binance's bStocks Pass $500M AUM in 24/7 Tokenized Equities",
-        "detailed_summary_en": "Binance's tokenized equity product bStocks has surpassed $500 million in assets under management, offering around-the-clock trading in tokenized U.S. equities. The exchange has been quietly expanding the lineup throughout July, adding names such as Coinbase, Alphabet, Robinhood, IBM, and Nokia. This milestone signals growing demand for blockchain-based access to traditional equities and could encourage more exchanges and asset managers to pursue tokenized securities. If sustained, it may accelerate a shift toward 24/7 markets and fractional ownership of listed companies. bStocks are issued by BTech Holdings Limited, a Binance group affiliate, and are fully backed 1:1 by the underlying equities held in custody. The product was admitted to trading on Binance Exchange in June 2026 and has steadily broadened its list of available U.S. stocks.",
-        "background_en": "Tokenized equities are digital assets that represent ownership in a company, with that ownership recorded on a blockchain network. Users can buy tokens representing fractional shares of listed companies like Tesla or Apple, often settled through a licensed intermediary and backed by actual underlying equities held in custody. This model enables features such as 24/7 trading and broader accessibility compared with traditional stock exchanges.",
-        "title_zh": "币安 bStocks 管理资产突破5亿美元，提供24/7股票交易",
-        "detailed_summary_zh": "币安（Binance）的代币化股票产品 bStocks 管理资产总额已突破 5 亿美元，并提供美国股票的 24/7 全天候交易。币安在整个 7 月低调扩充了产品线，新增了 Coinbase、Alphabet、Robinhood、IBM 和诺基亚等股票。 这一里程碑表明，市场对通过区块链获取传统股票的需求正在增长，并可能促使更多交易所和资产管理机构布局代币化证券。如果这一趋势持续，有望推动 24/7 交易市场和上市公司零散股权的加速发展。 bStocks 由币安集团关联公司 BTech Holdings Limited 发行，以 1:1 方式由托管机构持有的标的股票全额背书。该产品于 2026 年 6 月在币安交易所上线交易，并逐步扩充可交易的美国股票名单。",
-        "background_zh": "代币化股票是记录在区块链网络上的数字资产，代表对一家公司的所有权。用户可以通过这类代币购买特斯拉或苹果等上市公司的零散股份，交易通常通过持牌中介机构结算，并由托管机构持有的实际基础股票提供支持。与传统证券交易所相比，这种模式可以实现 24/7 交易并提高可及性。",
-        "sources": [
-          {
-            "url": "https://www.prnewswire.com/news-releases/binance-exchange-launches-bstocks-tokenized-securities-11-backing-and-247-trading-302798876.html",
-            "title": "Binance Exchange Launches bStocks Tokenized Securities: 1:1 Backing and 24/7 Trading"
-          },
-          {
-            "url": "https://finance.yahoo.com/markets/crypto/articles/binance-adds-10-more-tokenized-072709446.html",
-            "title": "Binance Adds 10 More Tokenized Stocks to Its bStocks Lineup"
-          },
-          {
-            "url": "https://cryptorank.io/news/feed/c6e48-binance-bstocks-crosses-500m-aum-amid-quiet-tokenized-equities-push",
-            "title": "Binance bStocks Crosses $500M AUM Amid Quiet Tokenized Equities Push | Blockchain Binance | CryptoRank.io"
-          }
-        ]
-      },
-      "ai_score": 7.0,
-      "ai_reason": null,
-      "ai_summary": "Binance's bStocks tokenized equity product has surpassed $500M in AUM, offering 24/7 trading.",
-      "ai_tags": []
-    }
-  ],
-  "dedup_history": [
-    {
-      "id": "rss:www.coindesk.com_arc_outboundfeeds_rss_:1205c29df33d1588",
-      "source_type": "rss",
-      "title": "Bybit sues North Korea and Lazarus Group over $1.5 billion hack, secures asset freeze",
-      "url": "https://www.coindesk.com/policy/2026/08/07/bybit-sues-north-korea-and-lazarus-group-over-usd1-5-billion-hack-secures-asset-freeze",
-      "content": null,
-      "author": "Ian Allison",
-      "published_at": "2026-08-07T16:32:41Z",
-      "fetched_at": "2026-08-08T15:34:04.271827Z",
-      "metadata": {
-        "feed_name": "CoinDesk",
-        "category": "crypto-regulation",
-        "title_en": "Bybit sues North Korea and Lazarus Group over $1.5B hack, secures asset freeze",
-        "detailed_summary_en": "Bybit has filed a lawsuit against North Korea and the Lazarus Group over the $1.5 billion Bybit hack, and has secured a preliminary injunction freezing stolen assets. This action marks an unprecedented legal move by a crypto exchange against a state-sponsored hacking group. This landmark lawsuit could set a legal precedent for holding state-sponsored hackers accountable and recovering stolen crypto assets. It also signals a new avenue for exchanges to seek justice beyond blockchain tracing, with potential implications for national security and international law. The preliminary injunction freezes assets allegedly stolen by the Lazarus Group, though specific case details and jurisdiction have not been disclosed. The Lazarus Group is a North Korean state-sponsored hacking syndicate linked to over $3 billion in crypto theft, including the $620 million Ronin bridge exploit.",
-        "background_en": "The Lazarus Group is a North Korean state-sponsored cybercrime group that has been active for more than a decade, responsible for notable attacks such as the 2014 Sony Pictures hack and the 2017 WannaCry ransomware. It has increasingly targeted cryptocurrency exchanges and bridges, stealing billions in digital assets. The Bybit hack, the largest crypto exchange heist in history, was widely attributed to this group. This lawsuit is among the first attempts to use civil legal action to recover funds from a state-linked hacker group.",
-        "title_zh": "Bybit起诉朝鲜和Lazarus集团，就15亿美元黑客案获得资产冻结",
-        "detailed_summary_zh": "Bybit已就15亿美元的黑客攻击事件对朝鲜和Lazarus集团提起诉讼，并获得了冻结被盗资产的初步禁令。此举是加密货币交易所针对国家支持的黑客组织采取的前所未有的法律行动。 这起具有里程碑意义的诉讼可能为追究国家支持的黑客责任和追回被盗加密资产开创法律先例。它也表明交易所可以在链上追踪之外寻求法律途径，对国家安全和国际法都具有潜在影响。 初步禁令冻结了据称由Lazarus集团盗取的资产，但案件具体细节和管辖法院尚未公开。Lazarus集团是朝鲜国家支持的黑客组织，涉嫌盗取超过30亿美元的加密货币，其中包括6.2亿美元的Ronin桥接攻击。",
-        "background_zh": "Lazarus集团是一个朝鲜国家支持的网络犯罪组织，活跃了十多年，曾制造2014年索尼影业攻击和2017年WannaCry勒索软件等重大事件。该集团越来越多地以加密货币交易所和桥接为目标，盗取了数十亿美元的数字资产。Bybit黑客攻击是历史上最大的加密货币交易所盗窃案，普遍被认为由该组织所为。这起诉讼是首批尝试通过民事诉讼从国家关联黑客组织追回资金的案件之一。",
-        "sources": [
-          {
-            "url": "https://www.nccgroup.com/the-lazarus-group-north-korean-scourge-for-plus10-years/",
-            "title": "The Lazarus group: North Korean scourge for +10 years | NCC Group"
-          },
-          {
-            "url": "https://news.bitcoin.com/debridge-finance-suspects-north-korean-hacking-syndicate-lazarus-group-attacked-the-protocols-team/",
-            "title": "Debridge Finance Suspects North Korean Hacking Syndicate..."
-          }
-        ]
-      },
-      "ai_score": 9.0,
-      "ai_reason": null,
-      "ai_summary": "Bybit is suing North Korea and the Lazarus Group over the $1.5 billion hack and has secured a preliminary injunction freezing stolen assets.",
-      "ai_tags": []
-    },
-    {
-      "id": "rss:protos.com_feed_:16d92ae421b56921",
-      "source_type": "rss",
-      "title": "Coldcard co-founder is deleting X posts as losses top $130M",
-      "url": "https://protos.com/coldcard-co-founder-is-deleting-x-posts-as-losses-top-130m/",
-      "content": null,
-      "author": "Aaron Wise",
-      "published_at": "2026-08-07T11:52:46Z",
-      "fetched_at": "2026-08-08T15:34:18.999067Z",
-      "metadata": {
-        "feed_name": "Protos",
-        "category": "crypto-protocols",
-        "title_en": "Coldcard co-founder deletes posts as $130M bitcoin thefts mount",
-        "detailed_summary_en": "Rodolfo Novak (NVK), co-founder of Coldcard maker Coinkite, is deleting his X posts and possibly website content as a five-year vulnerability in Coldcard hardware wallets has let hackers steal over $130 million in bitcoin. The deletions were noticed by Bitcoin developer Peter Todd and others, while a volunteer archive is trying to preserve evidence. This is a major security incident affecting hardware wallet users, exposing a fundamental flaw in private key generation that persisted for years. The deletions raise transparency concerns about the company's response, potentially eroding trust in the Bitcoin ecosystem and hardware wallet security. The vulnerability stems from insufficient entropy in private key generation for over five years, allowing attackers to brute-force insecure private keys. NVK has not wiped his entire timeline but has selectively pruned posts, while his pinned apology remains, and Coldcard has denied inappropriately deleting website disclosures.",
-        "background_en": "Coldcard is a Bitcoin-only hardware wallet made by Coinkite since 2017, designed to protect private keys offline. A hardware wallet's security depends on generating private keys with sufficient randomness (entropy); if entropy is flawed, keys become predictable and can be cracked by brute-force computation. Recent reports link the flaw to a $70.2 million sweep across 1,196 addresses, although this news reports total losses exceeding $130 million.",
-        "community_discussion_en": "Community reactions include skepticism and accusations, such as Peter Todd screenshotting the deletion and Alex Waltz saying 'NVK is deleting tweets as we speak.' Some skeptics claim 'Every accusation is a confession,' while Zach Herbert of competitor Foundation points out the strange asymmetry in which posts remain. The overall sentiment is distrust, with calls to preserve evidence via archives.",
-        "title_zh": "Coldcard联创删帖之际比特币被盗超1.3亿美元",
-        "detailed_summary_zh": "Coldcard制造商Coinkite联合创始人Rodolfo Novak（NVK）正在删除其X平台帖子，并可能删除网站内容；此前Coldcard硬件钱包五年来存在的漏洞已让黑客盗走超过1.3亿美元比特币。比特币开发者Peter Todd等人注意到了这些删除行为，志愿者也在努力保留证据。 这是一起影响硬件钱包用户的重大安全事件，暴露了私钥生成环节存在多年的根本性缺陷。删除行为引发了对公司应对方式的透明性质疑，可能损害比特币生态系统和硬件钱包安全的信任。 该漏洞源于五年多来私钥生成时的熵不足，攻击者可暴力破解不安全的私钥。NVK并未完全清空个人时间线，而是选择性删除帖子，其置顶道歉仍保留；Coinkite公司则否认不当删除网站披露内容。",
-        "background_zh": "Coldcard是Coinkite自2017年以来生产的比特币专用硬件钱包，旨在离线保护私钥。硬件钱包的安全性取决于生成私钥时是否有足够的随机性（熵）；如果熵存在缺陷，私钥就会变得可预测，并可能被暴力计算破解。近期报道将这一漏洞与1196个地址中被盗的7020万美元相关联，而本新闻称总损失已超过1.3亿美元。",
-        "community_discussion_zh": "社区反应以质疑和指责为主，例如Peter Todd截图记录删除行为，Alex Waltz称“NVK正在删推”。一些怀疑者认为“每一次指控都是招供”，竞争对手Foundation的Zach Herbert则指出未被删除的帖子存在奇怪的不对称性。整体氛围是不信任，并呼吁通过存档保留证据。",
-        "sources": [
-          {
-            "url": "https://coldcard.com/",
-            "title": "COLDCARD - Bitcoin-Only Hardware Wallet"
-          },
-          {
-            "url": "https://thehackernews.com/2026/08/coldcard-hardware-wallet-flaw-linked-to.html",
-            "title": "Coldcard Hardware Wallet Flaw Linked to $70 Million Bitcoin ..."
-          }
-        ]
-      },
-      "ai_score": 9.0,
-      "ai_reason": null,
-      "ai_summary": "Coldcard co-founder NVK is deleting social media posts as a five-year vulnerability in Coldcard hardware wallets leads to over $130M in bitcoin thefts from customers.",
-      "ai_tags": []
-    },
-    {
       "id": "rss:decrypt.co_feed:5ae1417549ff66fd",
       "source_type": "rss",
       "title": "Treasury Sanctions Crypto Exchanges It Says Laundered Millions for Iran",
@@ -754,79 +775,225 @@
       "ai_tags": []
     },
     {
-      "id": "rss:cointelegraph.com_rss:59417382c973b386",
+      "id": "rss:www.coindesk.com_arc_outboundfeeds_rss_:cf38e7811d94e411",
       "source_type": "rss",
-      "title": "Bitcoiners turn to dice throws as self-custody setups are re-evaluated",
-      "url": "https://cointelegraph.com/features/bitcoiners-turn-to-dice-throws-as-self-custody-setups-are-re-evaluated?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-      "content": null,
-      "author": "Cointelegraph by Charles Bennett",
-      "published_at": "2026-08-07T13:00:01Z",
-      "fetched_at": "2026-08-08T15:34:28.602062Z",
-      "metadata": {
-        "feed_name": "Cointelegraph",
-        "category": "crypto-protocols",
-        "title_en": "Bitcoiners Turn to Dice Throws After Coldcard Entropy Bug",
-        "detailed_summary_en": "A critical firmware vulnerability in Coldcard hardware wallets, introduced in version 4.0.1, caused seed generation to use the weak Yasmarang PRNG instead of the STM32 hardware TRNG, leading to Bitcoin thefts beginning July 30. In response, Bitcoiners are increasingly relying on physical dice throws to generate seed entropy and re-evaluating their self-custody setups. This incident undermines trust in hardware wallets and shows that even widely used devices can harbor opaque, catastrophic bugs. It has pushed the community toward 'don't trust, verify' practices such as dice entropy and cross-checking derived addresses. Coinkite estimates that Mk2 and Mk3 devices produced only about 40 bits of entropy, while Mk4, Mk5, and Q devices reached about 70 bits — well below the 128 bits required for a secure 12-word seed phrase. The vulnerability was introduced when a firmware rewrite moved from a GPL model to a read-only model and began using MicroPython's Yasmarang PRNG.",
-        "background_en": "Hardware wallets generate private keys from a seed phrase, and their security depends on true randomness. A TRNG uses physical processes such as electronic noise to produce unguessable numbers, while a PRNG is deterministic and can be predicted if its seed is known. Physical methods like dice throws provide auditable entropy that does not rely on the wallet's internal random number generator.",
-        "title_zh": "Coldcard漏洞后比特币用户转向掷骰子生成熵",
-        "detailed_summary_zh": "Coldcard硬件钱包固件4.0.1版本中引入的严重漏洞导致助记词生成使用Yasmarang PRNG而非STM32硬件真随机数生成器，从7月30日起引发了比特币被盗。作为回应，比特币用户越来越多地使用物理掷骰子来生成种子熵，并重新评估自托管方案。 此事件削弱了用户对硬件钱包的信任，表明即使是被广泛使用的设备也可能存在隐蔽且灾难性的漏洞。它推动了社区采用“不要信任，要验证”的做法，如骰子熵和交叉检查派生地址。 Coinkite估计Mk2/Mk3设备仅生成约40比特熵，Mk4/Mk5/Q设备约70比特，远低于安全12词助记词所需的128比特。漏洞是在固件从GPL自由软件模式改为只读模式时引入的，设备开始使用MicroPython的Yasmarang PRNG而非STM32硬件TRNG。",
-        "background_zh": "硬件钱包从助记词生成私钥，其安全性完全依赖于真正的随机性。真随机数生成器（TRNG）利用物理过程（如电子噪声）产生不可猜测的随机数，而伪随机数生成器（PRNG）是确定性的，若种子已知则可被预测。掷硬币或掷骰子等物理方法可提供可审计的熵，不依赖钱包内部的随机数生成器。",
-        "sources": [
-          {
-            "url": "https://en.wikipedia.org/wiki/Pseudorandom_number_generator",
-            "title": "Pseudorandom number generator - Wikipedia"
-          },
-          {
-            "url": "https://learn.heyapollo.com/p/the-art-and-science-of-bitcoin-wallet-seed-generation-randomness-is-everything",
-            "title": "The Art and Science of Bitcoin Wallet Seed Generation"
-          },
-          {
-            "url": "https://cybersecuritynews.com/coldcard-hardware-wallet-rng-flaw-bitcoin-theft/",
-            "title": "Coldcard Hardware Wallet RNG Flaw Linked to $88.6 Million ..."
-          }
-        ]
-      },
-      "ai_score": 8.5,
-      "ai_reason": null,
-      "ai_summary": "Bitcoiners are turning to dice throws for entropy generation after a critical Coldcard firmware vulnerability used a weak pseudorandom generator, leading to stolen funds.",
-      "ai_tags": []
-    },
-    {
-      "id": "rss:www.coindesk.com_arc_outboundfeeds_rss_:4e9dd922a35b1c7e",
-      "source_type": "rss",
-      "title": "Power struggle erupts at Ondo Finance after founder’s death",
-      "url": "https://www.coindesk.com/policy/2026/08/06/power-struggle-erupts-at-ondo-finance-after-founder-s-death",
+      "title": "Why trillion-dollar asset manager T. Rowe Price put memecoins in its crypto ETF",
+      "url": "https://www.coindesk.com/markets/2026/08/06/why-trillion-dollar-asset-manager-t-rowe-price-put-memecoins-in-its-crypto-etf",
       "content": null,
       "author": "AI Boost",
-      "published_at": "2026-08-06T21:59:33Z",
-      "fetched_at": "2026-08-07T00:30:49.551163Z",
+      "published_at": "2026-08-08T13:00:00Z",
+      "fetched_at": "2026-08-08T17:03:24.815938Z",
       "metadata": {
         "feed_name": "CoinDesk",
-        "category": "crypto-protocols",
-        "title_en": "Governance Power Struggle Hits DeFi Protocol Ondo Finance",
-        "detailed_summary_en": "A leadership and governance power struggle has erupted at Ondo Finance following the sudden death of its founder, creating uncertainty about the protocol's future strategic direction and leadership structure. The conflict involves competing factions within the governance community seeking to control the platform. This matters because Ondo Finance is a prominent player in the tokenized real-world asset sector, and instability at the leadership level could undermine user trust and slow institutional adoption. The outcome may set a precedent for how DeFi protocols handle founder succession and governance crises. Ondo Finance manages tokenized Treasury products such as OUSG and USDY, which are subject to governance decision-making by token holders. The power struggle likely involves questions over control of the protocol's treasury, developer hiring, and whether to alter the existing governance framework.",
-        "background_en": "DeFi protocols typically rely on governance tokens that give holders voting power over key protocol decisions, such as upgrading smart contracts or allocating funds. When a centralized founding figure dies or departs, the protocol may face a power vacuum if proper succession mechanisms are not in place. Ondo Finance focuses on tokenizing real-world assets like U.S. Treasuries, aiming to bring institutional-grade finance onchain.",
-        "title_zh": "Ondo Finance创始人去世后爆发治理权争夺战",
-        "detailed_summary_zh": "在创始人突然去世后，Ondo Finance内部爆发了一场领导层和治理权争夺战，给该协议未来的战略方向和领导结构带来了不确定性。冲突涉及治理社区内争夺平台控制权的不同派系。 这很重要，因为Ondo Finance是代币化现实世界资产领域的知名参与者，领导层的不稳定可能削弱用户信任并减缓机构采用。其结局可能为DeFi协议如何应对创始人继任和治理危机开创先例。 Ondo Finance管理着OUSG和USDY等代币化国债产品，这些产品由代币持有者通过治理决策进行管理。这场权力争夺很可能涉及对协议资金库的控制、开发者聘用以及是否修改现有治理框架等问题。",
-        "background_zh": "DeFi协议通常依赖治理代币，让持有者对升级智能合约、分配资金等关键协议决策拥有投票权。当一位集权式的创始人物去世或离任时，如果缺乏适当的继任机制，协议可能面临权力真空。Ondo Finance专注于将美国国债等现实世界资产代币化，旨在将机构级金融带上链。",
+        "category": "crypto-markets",
+        "title_en": "T. Rowe Price Defends Memecoins in Its Actively Managed Crypto ETF",
+        "detailed_summary_en": "T. Rowe Price, the $1.9 trillion asset manager, launched the industry's first actively managed multi-token spot crypto ETF, ticker TKNZ, in July and included established memecoins such as dogecoin. Digital assets chief Blue Macellari said the decision reflects disciplined active management rather than speculation. A $1.9 trillion traditional asset manager embracing memecoins signals broader institutional acceptance and marks a shift in crypto ETF products toward active, multi-token strategies. It also reframes memecoin trading as a practical stress test for blockchain scalability and reliability. The ETF currently lists only one memecoin, dogecoin, and carries a 0.75% management fee under a temporary waiver through May 2027. T. Rowe Price's team evaluates tokens using three layers of analysis: blockchain technology and token economics, ecosystem growth and adoption, and market momentum.",
+        "background_en": "Memecoins are cryptocurrencies inspired by internet memes, characters, or trends, often supported by enthusiastic online communities rather than traditional fundamentals. The term is sometimes used dismissively, but some memecoins have gained large market capitalizations, and T. Rowe Price notes that established memecoins have existed for years and rank among the largest crypto assets. In blockchain technology, stress testing means evaluating whether a network remains operational and secure under extreme workloads; Macellari argues that memecoin trading offers a real-world stress test by forcing chains to deliver fast settlement, low fees, and reliability under congestion.",
+        "title_zh": "T. Rowe Price 为加密ETF纳入迷因币辩护：称是纪律性策略",
+        "detailed_summary_zh": "$1.9万亿美元资产管理公司T. Rowe Price于7月推出了业内首只主动管理型多代币现货加密ETF（代码TKNZ），并将狗狗币等成熟迷因币纳入其中。数字资产主管Blue Macellari表示，这一决定反映的是纪律性主动管理，而非投机。 $1.9万亿美元的传统资产管理公司接纳迷因币，标志着机构对其接受度上升，也体现加密ETF正转向主动管理、多代币策略。这还把迷因币交易重新定义为对区块链可扩展性和可靠性的现实压力测试。 该ETF目前仅列入一种迷因币——狗狗币，管理费为0.75%，并在2027年5月前享有临时费用减免。T. Rowe Price的团队通过三层分析评估代币：区块链技术与代币经济、生态系统增长与采用，以及市场动能。",
+        "background_zh": "迷因币是受互联网迷因、角色或潮流启发的加密货币，通常由热情的在线社区推动，而非依靠传统基本面。这个词有时带有贬义，但一些迷因币已获得很高的市值；T. Rowe Price指出，成熟的迷因币已存在多年，并且按市值属于最大的加密资产之一。在区块链技术中，压力测试是指评估网络在极端负载下能否保持运行和安全；Macellari认为，迷因币交易迫使链上实现快速结算、低费用和拥堵时的可靠性，因而提供了现实中的压力测试。",
         "sources": [
           {
-            "url": "https://grokipedia.com/page/Ondo_Finance",
-            "title": "Ondo Finance"
+            "url": "https://en.wikipedia.org/wiki/Meme_coin",
+            "title": "Meme coin - Wikipedia"
           },
           {
-            "url": "https://www.gemini.com/cryptopedia/defi-solutions-decentralized-governance-meaning",
-            "title": "DeFi Solutions: Decentralized Governance Protocols | Gemini"
+            "url": "https://www.coinbase.com/learn/crypto-basics/what-is-a-memecoin",
+            "title": "What is a memecoin? | Coinbase"
           },
           {
-            "url": "https://ondo.finance/",
-            "title": "Ondo Finance — Institutional-grade finance, delivered onchain"
+            "url": "https://smartstate.tech/blog/blockchain-stress-testing-pushing-the-boundaries-of-decentralized-networks.html",
+            "title": "SmartState | Blockchain stress testing: pushing the boundaries of..."
           }
         ]
       },
       "ai_score": 8.0,
       "ai_reason": null,
-      "ai_summary": "A leadership and governance power struggle has erupted at Ondo Finance following the death of its founder, raising questions about the protocol's future direction and stability.",
+      "ai_summary": "T. Rowe Price defends including memecoins in its actively managed crypto ETF as a disciplined strategy, viewing memecoin trading as a blockchain stress test.",
+      "ai_tags": []
+    },
+    {
+      "id": "rss:decrypt.co_feed:7853db1987b8d85c",
+      "source_type": "rss",
+      "title": "Bitcoin Red Team Says AI Is Finding Critical Exploits Across Core Projects",
+      "url": "https://decrypt.co/375169/bitcoin-red-team-ai-finding-critical-vulnerabilities",
+      "content": null,
+      "author": "Jason Nelson",
+      "published_at": "2026-08-08T17:31:03Z",
+      "fetched_at": "2026-08-09T00:31:39.232987Z",
+      "metadata": {
+        "feed_name": "Decrypt",
+        "category": "crypto-protocols",
+        "title_en": "Bitcoin Red Team Uses AI to Uncover Critical Exploits Across Core Projects",
+        "detailed_summary_en": "A volunteer Bitcoin red team reported scanning about 150 Bitcoin repositories with frontier AI models and making more than a dozen vulnerability disclosures. The team says it averages roughly one critical exploit per hour per person and has reported critical vulnerabilities to several projects in the last 12 hours. This marks a growing role for AI in automated security auditing of blockchain ecosystems, potentially outpacing manual review and forcing Bitcoin projects to adopt AI-assisted defenses. The vulnerabilities span wallets, cryptographic libraries, and infrastructure, directly affecting the security of the broader Bitcoin ecosystem. The team spent roughly $20,000 on AI services and burns about $10,000 per day, using models such as Kimi K3, OpenAI's GPT Sol, Anthropic's Claude Fable and Opus, and Z.ai's GLM 5.2. Affected projects and vulnerability specifics have not been disclosed.",
+        "background_en": "In cybersecurity, a red team tests software from an attacker's perspective to find vulnerabilities before they can be exploited. AI red teaming automates this process using frontier AI models, which are the most advanced general-purpose AI systems, capable of reasoning and multimodal generation. Similar AI-driven security discoveries have occurred elsewhere in crypto, including a Zcash flaw found with Anthropic's Claude Opus 4.8 and suspected AI-assisted attacks on Coldcard and Boltz.",
+        "title_zh": "比特币红队利用AI在核心项目中发现关键漏洞",
+        "detailed_summary_zh": "一个比特币志愿者红队报告称，使用前沿AI模型扫描了约150个比特币代码库，并披露了十多个漏洞。该团队称平均每人每小时发现约一个关键漏洞，并在过去12小时内向多个项目报告了关键漏洞。 这标志着AI在区块链生态系统自动化安全审计中的作用日益增强，可能超越人工审查的速度，并迫使比特币项目采用AI辅助防御。这些漏洞涉及钱包、加密库和基础设施，直接影响更广泛的比特币生态系统的安全性。 该团队在AI服务上已花费约2万美元，目前每天消耗约1万美元，使用了Kimi K3、OpenAI的GPT Sol、Anthropic的Claude Fable和Opus，以及Z.ai的GLM 5.2等模型。受影响的项目和漏洞细节尚未披露。",
+        "background_zh": "在网络安全中，红队从攻击者的角度测试软件，以便在漏洞被利用前发现它们。AI红队利用前沿AI模型实现这一过程的自动化，这些模型是最先进的通用AI系统，具备推理和多模态生成能力。类似的AI驱动安全发现也发生在加密领域的其他地方，包括使用Anthropic的Claude Opus 4.8发现的Zcash漏洞，以及Coldcard和Boltz疑似遭到的AI辅助攻击。",
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Frontier_models",
+            "title": "Frontier models"
+          },
+          {
+            "url": "https://www.nvidia.com/en-us/glossary/frontier-models/",
+            "title": "What Are Frontier AI Models and How They Work | NVIDIA Glossary"
+          },
+          {
+            "url": "https://grokipedia.com/page/ai-red-teaming",
+            "title": "AI red teaming"
+          }
+        ]
+      },
+      "ai_score": 7.5,
+      "ai_reason": null,
+      "ai_summary": "A volunteer Bitcoin red team reports using frontier AI models to scan 150 repositories and uncover over a dozen vulnerabilities across wallets, cryptographic libraries, and infrastructure.",
+      "ai_tags": []
+    },
+    {
+      "id": "rss:www.coindesk.com_arc_outboundfeeds_rss_:57bd9c6e97d1a14e",
+      "source_type": "rss",
+      "title": "Brazil's central bank orders exchanges to delay large crypto transfers abroad",
+      "url": "https://www.coindesk.com/business/2026/08/08/brazil-s-central-bank-orders-exchanges-to-delay-large-crypto-transfers-abroad",
+      "content": null,
+      "author": "Francisco Rodrigues",
+      "published_at": "2026-08-08T15:25:38Z",
+      "fetched_at": "2026-08-09T00:31:09.291841Z",
+      "metadata": {
+        "feed_name": "CoinDesk",
+        "category": "crypto-regulation",
+        "title_en": "Brazil Central Bank Orders 24-Hour Hold on Large Crypto Transfers Abroad",
+        "detailed_summary_en": "Brazil's central bank has issued Resolution BCB No. 584/2026, published August 7, requiring crypto exchanges to delay customer transfers to foreign platforms and self-custody wallets for up to 24 hours. The rule takes effect January 1, 2027 and applies to transfers exceeding $10,000 (including same-day aggregated amounts) and any smaller transactions flagged as risky. This is a significant operational change for crypto exchanges operating in Brazil, adding friction to legitimate user fund flows and increasing compliance costs. It signals a broader trend of regulators using transaction holds to combat crypto-enabled financial fraud, directly affecting Brazilian users and exchange competitiveness. Exchanges may release a transfer before 24 hours if their risk review finds no wrongdoing, but they must document the decision and notify customers when a transaction is placed on hold. The rule also assigns exchanges greater responsibility for assessing risk based on customer, transaction, counterparty, and destination jurisdiction.",
+        "background_en": "A self-custody wallet, also called a non-custodial wallet, is a cryptocurrency wallet where the user holds complete control over their own private keys, rather than relying on an exchange or third party to safeguard funds. Such wallets let users transfer cryptocurrencies abroad without an intermediary, which can be used to move funds obtained through financial fraud before victims or institutions recover them. Brazil's central bank is implementing this measure to curb that use, but industry groups argue it may impose costs on legitimate users and weaken domestic exchanges.",
+        "title_zh": "巴西央行下令对大型加密资产跨境转账实施24小时冻结",
+        "detailed_summary_zh": "巴西中央银行发布了第584/2026号决议（于8月7日公布），要求加密货币交易所将客户向海外平台和自托管钱包的转账延迟最多24小时。该规定自2027年1月1日起生效，适用于超过1万美元（含同日累计金额）的转账，以及被标记为有风险的较小交易。 这对在巴西运营的加密货币交易所来说是一次重大的运营变革，给合法用户的资金流转增加了摩擦，并提高了合规成本。它表明监管机构正利用交易延迟机制打击利用加密资产实施的金融欺诈，直接影响巴西用户和交易所的竞争力。 如果交易所的风险审查未发现违规行为，可以在24小时内提前释放转账，但必须记录决定，并在交易被冻结时通知客户。该规定还要求交易所承担更大的责任，基于客户、交易、交易对手和目的地司法管辖区来评估风险。",
+        "background_zh": "自托管钱包（也称为非托管钱包）是一种加密货币钱包，用户完全掌控自己的私钥，而不是依赖交易所或第三方来保管资金。这类钱包允许用户在无需中介的情况下将加密货币转往境外，这也可能被用来在受害者或机构追回资金之前转移通过金融欺诈获得的资产。巴西中央银行实施这一措施以遏制此类行为，但行业组织认为这可能给合法用户带来成本，并削弱国内交易所的竞争力。",
+        "sources": [
+          {
+            "url": "https://www.chainup.com/blog/what-is-a-self-custody-wallet-in-cryptocurrency/",
+            "title": "What Is a Self-Custody Wallet In Cryptocurrency?"
+          },
+          {
+            "url": "https://onekey.so/blog/ecosystem/onekey-edu-48-what-is/",
+            "title": "What Is a Self-Custody Wallet? - OneKey Blog"
+          }
+        ]
+      },
+      "ai_score": 7.5,
+      "ai_reason": null,
+      "ai_summary": "Brazil's central bank will require exchanges to delay certain crypto transfers abroad and to self-custody wallets for up to 24 hours starting January 1, 2027, as part of new anti-fraud rules.",
+      "ai_tags": []
+    },
+    {
+      "id": "rss:decrypt.co_feed:7ea4aea33e588ecb",
+      "source_type": "rss",
+      "title": "Robinhood Crypto Chief Explains Why There Are 'Two Wolves' Inside Robinhood Chain",
+      "url": "https://decrypt.co/375158/robinhood-crypto-two-wolves-robinhood-chain-rwa-meme-coins",
+      "content": null,
+      "author": "Jason Nelson",
+      "published_at": "2026-08-08T14:01:05Z",
+      "fetched_at": "2026-08-09T00:31:39.718870Z",
+      "metadata": {
+        "feed_name": "Decrypt",
+        "category": "crypto-protocols",
+        "title_en": "Robinhood Chain Reaches $800M TVL, 200M Transactions in First Month",
+        "detailed_summary_en": "Robinhood Chain, an Ethereum layer-2 network launched roughly a month ago, has attracted nearly $800 million in total value locked (TVL) and processed more than 200 million transactions. Robinhood's head of crypto, Johann Kerbrat, explained the company's 'two wolves' approach: serving both serious financial products like tokenized stocks and derivatives, and meme-coin traders. This rapid adoption suggests that a mainstream brokerage-backed L2 can quickly bridge traditional finance and crypto markets. By deliberately pairing institutional-style products with meme coins, Robinhood is attempting to expand the on-chain user base beyond existing crypto natives, which could accelerate the migration of real-world assets to blockchains. Robinhood Chain is an Arbitrum-based Ethereum L2 that uses Ethereum blobs for data availability and ETH as its native gas token. It supports around 200 tokenized stocks, stablecoin lending, and perpetual futures, and is designed to allow trading outside traditional market hours.",
+        "background_en": "Ethereum layer-2 networks are scalability solutions built on top of Ethereum (the layer-1), inheriting its security while offering faster and cheaper transactions. TVL (total value locked) is a DeFi metric that measures the total value of assets deposited in a protocol or blockchain's smart contracts. Robinhood Chain is described as a permissionless, Ethereum-compatible L2 built for financial services and real-world assets. The 'two wolves' phrase, popularized by Robinhood CEO Vlad Tenev, refers to the idea that a platform can simultaneously serve serious financial users and meme-driven retail traders.",
+        "title_zh": "Robinhood Chain首月TVL近8亿美元，交易量突破2亿笔",
+        "detailed_summary_zh": "Robinhood Chain是约一个月前推出的以太坊二层网络，已吸引近8亿美元的总锁仓量（TVL），并处理了超过2亿笔交易。Robinhood加密业务负责人Johann Kerbrat解释了公司的'双狼'策略：同时服务严肃金融产品（如代币化股票和衍生品）与模因币交易者。 如此快速的采用表明，主流券商支持的二层网络能够迅速连接传统金融与加密市场。Robinhood刻意将机构风格产品与模因币结合，试图将链上用户群体扩展至现有加密原生用户之外，这可能会加速现实世界资产向区块链迁移。 Robinhood Chain是基于Arbitrum的以太坊二层网络，使用以太坊blob作为数据可用性方案，并以ETH作为原生Gas代币。它支持约200种代币化股票、稳定币借贷和永续合约，并允许在传统市场交易时间之外进行交易。",
+        "background_zh": "以太坊二层网络是构建在以太坊（一层网络）之上的扩容解决方案，继承其安全性，同时提供更快、更便宜的交易。TVL（总锁仓量）是DeFi指标，用于衡量存入协议或区块链智能合约中的资产总价值。Robinhood Chain被描述为一个无需许可、兼容以太坊的二层网络，专为金融服务和现实世界资产而构建。'双狼'这一说法由Robinhood CEO Vlad Tenev推广，指一个平台可以同时服务严肃金融用户和模因驱动的散户交易者。",
+        "sources": [
+          {
+            "url": "https://docs.robinhood.com/chain/",
+            "title": "About Robinhood Chain – Robinhood Chain Documentation"
+          },
+          {
+            "url": "https://docs.robinhood.com/chain/connecting/",
+            "title": "Connecting to Robinhood Chain – Robinhood Chain Documentation"
+          },
+          {
+            "url": "https://ethereum.org/layer-2/",
+            "title": "Intro to Ethereum Layer 2: benefits and uses | ethereum.org"
+          }
+        ]
+      },
+      "ai_score": 7.5,
+      "ai_reason": null,
+      "ai_summary": "Robinhood Chain has attracted nearly $800 million in TVL and processed over 200 million transactions in its first month, with its crypto chief explaining the exchange's 'two wolves' strategy of balancing serious finance with meme culture.",
+      "ai_tags": []
+    },
+    {
+      "id": "hackernews:story:49221711",
+      "source_type": "hackernews",
+      "title": "Triton: DirectX 11 Driver for QEMU",
+      "url": "https://blog.getutm.app/2026/introducing-triton-directx-11-driver-for-qemu/",
+      "content": null,
+      "author": "electricant",
+      "published_at": "2026-08-08T13:33:06Z",
+      "fetched_at": "2026-08-09T00:31:06.686145Z",
+      "metadata": {
+        "discussion_url": "https://news.ycombinator.com/item?id=49221711",
+        "category": "tech-community",
+        "title_en": "Triton: Open-Source DirectX 11 Driver Brings GPU Acceleration to QEMU Windows VMs",
+        "detailed_summary_en": "Developer Osy has released Triton, a new open-source DirectX 11 driver for QEMU that enables hardware-accelerated 3D graphics in Windows virtual machines. The driver leverages Mesa and virglrenderer components and is currently in early testing, with broader availability expected soon. This gives Windows VM users a decent open-source 3D solution for the first time, filling a long-standing gap in QEMU's GPU virtualization stack. It could reduce reliance on proprietary GPU passthrough or closed-source drivers for many virtualization workloads. The driver aims to support Direct3D 11 specifically; DirectX 12 remains unsupported, a limitation shared by Parallels and VMware. It is built on Mesa and virglrenderer, with the project announced by open-source developer 'Osy' and covered by Phoronix.",
+        "background_en": "QEMU is an open-source machine emulator and virtualizer that can run Windows guests, but its default graphics path has historically offered poor 3D performance. GPU virtualization approaches like Intel GVT-g, NVIDIA vGPU, and SR-IOV exist but often require specific hardware or proprietary components. Virglrenderer is a library that lets guest graphics commands be translated for host GPUs, while Mesa provides open-source graphics driver implementations.",
+        "community_discussion_en": "Commenters welcomed the project, noting it is 'pretty cool' to finally have a decent open 3D solution for Windows VMs. Others pointed out this is at least the third GPU-related project named Triton, and asked why only DX11 is supported when Parallels and VMware also only offer DX11.",
+        "title_zh": "Triton：为QEMU Windows虚拟机带来DX11硬件加速的开源驱动",
+        "detailed_summary_zh": "开发者Osy发布了Triton，这是一款面向QEMU的全新开源DirectX 11驱动，可在Windows虚拟机中实现硬件加速3D图形。该驱动基于Mesa和virglrenderer组件，目前处于早期测试阶段，预计不久后将更广泛推出。 这首次为Windows虚拟机用户提供了一个不错的开源3D解决方案，填补了QEMU GPU虚拟化栈长期存在的空白。它可以减少许多虚拟化工作负载对专有GPU直通或闭源驱动的依赖。 该驱动专门支持Direct3D 11；目前不支持DirectX 12，这也是Parallels和VMware的共同局限。它基于Mesa和virglrenderer构建，由开源开发者“Osy”宣布，Phoronix对此进行了报道。",
+        "background_zh": "QEMU是一款开源机器模拟器和虚拟化软件，可以运行Windows客户机，但其默认图形路径在3D性能上历来表现不佳。Intel GVT-g、NVIDIA vGPU和SR-IOV等GPU虚拟化方案虽然存在，但通常需要特定硬件或专有组件。Virglrenderer是一个库，可将客户机的图形命令转换给宿主机GPU执行，而Mesa提供了开源图形驱动的实现。",
+        "community_discussion_zh": "评论者对项目表示欢迎，称终于为Windows虚拟机提供了一个不错的开源3D解决方案，这“相当酷”。还有人指出，这至少是第三个名为Triton的GPU相关项目，并问道为什么只支持DX11，而Parallels和VMware同样只提供DX11。",
+        "sources": [
+          {
+            "url": "https://www.phoronix.com/news/Triton-DirectX-11-QEMU-Driver",
+            "title": "AI Helped Create A DirectX 11 Driver For QEMU VMs - Phoronix"
+          },
+          {
+            "url": "https://wiki.archlinux.org/title/QEMU/Guest_graphics_acceleration",
+            "title": "QEMU/Guest graphics acceleration - ArchWiki"
+          }
+        ]
+      },
+      "ai_score": 7.5,
+      "ai_reason": null,
+      "ai_summary": "Triton is a new open-source DirectX 11 driver for QEMU that brings hardware-accelerated 3D graphics to Windows VMs.",
+      "ai_tags": []
+    },
+    {
+      "id": "rss:cryptoslate.com_feed_:508d21671ad548e9",
+      "source_type": "rss",
+      "title": "Trump Media’s $6.4 billion crypto venture canceled amid escalating Trump ethics concerns",
+      "url": "https://cryptoslate.com/trump-medias-6-4-billion-crypto-venture-canceled-amid-escalating-trump-ethics-concerns/",
+      "content": null,
+      "author": "Oluwapelumi Adejumo",
+      "published_at": "2026-08-08T12:05:04Z",
+      "fetched_at": "2026-08-09T00:31:18.107533Z",
+      "metadata": {
+        "feed_name": "CryptoSlate",
+        "category": "crypto-markets",
+        "title_en": "Trump Media and Crypto.com Cancel $6.4B Crypto Treasury Venture",
+        "detailed_summary_en": "On Aug. 7, Trump Media & Technology Group, Crypto.com, and Yorkville Acquisition Corp. mutually agreed to terminate their proposed $6.42 billion digital-asset treasury venture and ETF partnership, ending plans to create a publicly traded company around CRO accumulation. The cancellation removes one of the largest crypto projects connected to President Trump, reflecting how his family's crypto earnings are complicating federal regulatory negotiations. It also eliminates a major planned source of demand for CRO, affecting Crypto.com's token ecosystem. The planned funding package included $1 billion in CRO, $200 million in cash, $220 million from mandatory warrant exercises, and a $5 billion equity line of credit from a Yorkville affiliate. Following the news, CRO fell 6% to $0.05009, its lowest price since 2023.",
+        "background_en": "Cronos (CRO) is the native token of the Cronos blockchain, an EVM-compatible Layer-1 network built on the Cosmos SDK and integrated with the Inter-Blockchain Communication protocol; it is used for transaction fees, staking, governance, and DeFi activities. A crypto treasury strategy involves a company holding digital assets as part of its balance sheet, either for investment, as a hedge, or as working capital. The proposed Trump Media Group CRO Strategy would have been an unusually large treasury vehicle controlling a significant share of CRO's market capitalization.",
+        "title_zh": "特朗普媒体与Crypto.com取消64亿美元加密资金库项目",
+        "detailed_summary_zh": "8月7日，特朗普媒体与科技集团、Crypto.com和约克维尔收购公司共同同意终止其拟议的64.2亿美元数字资产国库项目及ETF合作，结束了围绕CRO积累创建上市公司的计划。 此次取消消除了与特朗普总统相关的最大的加密项目之一，反映出其家族的加密收入正在使联邦监管谈判复杂化。这也消除了计划中对CRO的重大需求来源，影响了Crypto.com的代币生态系统。 计划中的融资方案包括10亿美元的CRO、2亿美元现金、2.2亿美元强制认股权证行权以及约克维尔关联公司提供的50亿美元股权信贷额度。消息公布后，CRO下跌6%至0.05009美元，为2023年以来最低水平。",
+        "background_zh": "Cronos（CRO）是Cronos区块链的原生代币，该区块链是基于Cosmos SDK构建的兼容以太坊虚拟机（EVM）的Layer-1网络，并集成了跨链通信（IBC）协议；它用于交易费用、质押、治理和DeFi活动。加密国库策略是指公司持有数字资产作为资产负债表的一部分，用于投资、对冲或作为营运资金。拟议中的Trump Media Group CRO Strategy将成为一个异常庞大的国库工具，控制CRO市值中很大一部分。",
+        "sources": [
+          {
+            "url": "https://coinmarketcap.com/currencies/cronos/",
+            "title": "Cronos price today, CRO to USD live price, marketcap and chart | CoinMarketCap"
+          },
+          {
+            "url": "https://crypto.com/us/crypto/learn/what-is-cro-everything-you-need-to-know",
+            "title": "What Is Cronos (CRO) Crypto? All You Need to Know - Crypto.com US"
+          },
+          {
+            "url": "https://stripe.com/resources/more/crypto-treasury-management-explained",
+            "title": "Crypto Treasury Management: Rules, Risks, and Powerful Tools | Stripe"
+          }
+        ]
+      },
+      "ai_score": 7.5,
+      "ai_reason": null,
+      "ai_summary": "Trump Media and Crypto.com have canceled their planned $6.4 billion crypto treasury venture and ETF partnership amid escalating ethics concerns in Washington.",
       "ai_tags": []
     },
     {
@@ -1103,80 +1270,42 @@
       "ai_tags": []
     },
     {
-      "id": "rss:www.coindesk.com_arc_outboundfeeds_rss_:0c6409024b1826ec",
-      "source_type": "rss",
-      "title": "Coldcard fallout shows up onchain as 210,000 bitcoin leaves old wallets",
-      "url": "https://www.coindesk.com/markets/2026/08/07/coldcard-fallout-shows-up-onchain-as-210-000-bitcoin-leaves-old-wallets",
+      "id": "google_news:article:50e0f23d027d2005",
+      "source_type": "google_news",
+      "title": "Binance bStocks Surpass $500M AUM With 24/7 Equity Trading - blockchain.news",
+      "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1qSW9QZU43dDF2RU5pWEg0M21mRm5jMjFaemtfTFc2SWpVend6TzV4Z1dHbUM4XzJpQzN6WWI2RUdWRm1jaUpqNmRZQW4xN3NHRjJyZUpzb2c4cHFjT2NPUTZxdw?oc=5",
       "content": null,
-      "author": "James Van Straten",
-      "published_at": "2026-08-07T09:24:00Z",
-      "fetched_at": "2026-08-08T15:34:06.855959Z",
+      "author": "blockchain.news",
+      "published_at": "2026-08-08T02:14:56Z",
+      "fetched_at": "2026-08-08T09:11:01.430873Z",
       "metadata": {
-        "feed_name": "CoinDesk",
-        "category": "crypto-markets",
-        "title_en": "Coldcard Fallout: 210,000 Bitcoin Leaves Long-Term Holder Wallets",
-        "detailed_summary_en": "According to Glassnode data, roughly 210,000 BTC moved out of long-term holder wallets in the past week, the largest decline since December 2024. The movement is linked to the Coldcard security incident and appears to reflect a custody shift rather than selling. This suggests the Coldcard breach is prompting a broad migration in how bitcoin is stored, from self-custody to new wallets or regulated custodians/ETFs. Unlike historical LTH distribution at market peaks, this is happening near lows, indicating a shift in custody rather than loss of conviction. Long-term holder supply fell from just under 15 million BTC to approximately 14.7 million BTC, with bitcoin trading around $64,000, roughly 50% below its all-time high. The flaw stemmed from weak randomness in Coldcard firmware, allowing attackers to reconstruct wallet recovery phrases; estimated losses reached up to $114 million.",
-        "background_en": "Coldcard is a Bitcoin-only hardware wallet that protects private keys offline. Glassnode is an on-chain analytics platform that classifies long-term holders as entities whose coins have remained dormant for about 155 days. Historically, heavy LTH spending coincided with market peaks, but this time the movement occurs near price lows.",
-        "title_zh": "Coldcard事件余波：21万比特币流出长期持有者钱包",
-        "detailed_summary_zh": "根据Glassnode数据，过去一周约有21万枚比特币从长期持有者钱包流出，创下2024年12月以来的最大降幅。这一动向与Coldcard安全事件相关，似乎反映的是托管方式转变而非卖出。 这表明Coldcard安全事件正促使比特币存储方式发生大规模迁移，从自我托管转向新钱包或受监管托管机构/ETF。与历史上长期持有者在市场高位分布不同，此次发生在接近低位时，说明是托管方式转变而非信心丧失。 长期持有者供应量从接近1500万枚比特币降至约1470万枚，比特币交易价格约64,000美元，较历史高点下跌约50%。漏洞源于Coldcard固件中的弱随机性，攻击者可重建部分用户的钱包恢复助记词，估计损失高达1.14亿美元。",
-        "background_zh": "Coldcard是一款仅支持比特币的硬件钱包，离线保护私钥。Glassnode是一个链上分析平台，将长期持有者定义为代币休眠约155天的实体。历史上，长期持有者的大笔支出往往出现在市场顶部，而此次资金流动发生在价格低位附近。",
+        "category": "exchange-announcements",
+        "title_en": "Binance's bStocks Pass $500M AUM in 24/7 Tokenized Equities",
+        "detailed_summary_en": "Binance's tokenized equity product bStocks has surpassed $500 million in assets under management, offering around-the-clock trading in tokenized U.S. equities. The exchange has been quietly expanding the lineup throughout July, adding names such as Coinbase, Alphabet, Robinhood, IBM, and Nokia. This milestone signals growing demand for blockchain-based access to traditional equities and could encourage more exchanges and asset managers to pursue tokenized securities. If sustained, it may accelerate a shift toward 24/7 markets and fractional ownership of listed companies. bStocks are issued by BTech Holdings Limited, a Binance group affiliate, and are fully backed 1:1 by the underlying equities held in custody. The product was admitted to trading on Binance Exchange in June 2026 and has steadily broadened its list of available U.S. stocks.",
+        "background_en": "Tokenized equities are digital assets that represent ownership in a company, with that ownership recorded on a blockchain network. Users can buy tokens representing fractional shares of listed companies like Tesla or Apple, often settled through a licensed intermediary and backed by actual underlying equities held in custody. This model enables features such as 24/7 trading and broader accessibility compared with traditional stock exchanges.",
+        "title_zh": "币安 bStocks 管理资产突破5亿美元，提供24/7股票交易",
+        "detailed_summary_zh": "币安（Binance）的代币化股票产品 bStocks 管理资产总额已突破 5 亿美元，并提供美国股票的 24/7 全天候交易。币安在整个 7 月低调扩充了产品线，新增了 Coinbase、Alphabet、Robinhood、IBM 和诺基亚等股票。 这一里程碑表明，市场对通过区块链获取传统股票的需求正在增长，并可能促使更多交易所和资产管理机构布局代币化证券。如果这一趋势持续，有望推动 24/7 交易市场和上市公司零散股权的加速发展。 bStocks 由币安集团关联公司 BTech Holdings Limited 发行，以 1:1 方式由托管机构持有的标的股票全额背书。该产品于 2026 年 6 月在币安交易所上线交易，并逐步扩充可交易的美国股票名单。",
+        "background_zh": "代币化股票是记录在区块链网络上的数字资产，代表对一家公司的所有权。用户可以通过这类代币购买特斯拉或苹果等上市公司的零散股份，交易通常通过持牌中介机构结算，并由托管机构持有的实际基础股票提供支持。与传统证券交易所相比，这种模式可以实现 24/7 交易并提高可及性。",
         "sources": [
           {
-            "url": "https://coldcard.com/",
-            "title": "COLDCARD - Bitcoin-Only Hardware Wallet"
+            "url": "https://www.prnewswire.com/news-releases/binance-exchange-launches-bstocks-tokenized-securities-11-backing-and-247-trading-302798876.html",
+            "title": "Binance Exchange Launches bStocks Tokenized Securities: 1:1 Backing and 24/7 Trading"
           },
           {
-            "url": "https://thehackernews.com/2026/08/coldcard-hardware-wallet-flaw-linked-to.html",
-            "title": "Coldcard Hardware Wallet Flaw Linked to $70 Million Bitcoin ..."
+            "url": "https://finance.yahoo.com/markets/crypto/articles/binance-adds-10-more-tokenized-072709446.html",
+            "title": "Binance Adds 10 More Tokenized Stocks to Its bStocks Lineup"
           },
           {
-            "url": "https://glassnode.com/",
-            "title": "Glassnode - Digital Asset Market Intelligence"
-          }
-        ]
-      },
-      "ai_score": 7.5,
-      "ai_reason": null,
-      "ai_summary": "Roughly 210,000 bitcoin moved from long-term holder wallets following the Coldcard security incident, suggesting a custody shift rather than conventional selling.",
-      "ai_tags": []
-    },
-    {
-      "id": "rss:www.whitehouse.gov_presidential-actions_feed_:52dead3bf578d59f",
-      "source_type": "rss",
-      "title": "Adjusting Imports of Polysilicon and its Derivatives into the United States",
-      "url": "https://www.whitehouse.gov/presidential-actions/2026/08/adjusting-imports-of-polysilicon-and-its-derivatives-into-the-united-states/",
-      "content": null,
-      "author": "The White House",
-      "published_at": "2026-08-06T21:03:35Z",
-      "fetched_at": "2026-08-07T00:30:48.536957Z",
-      "metadata": {
-        "feed_name": "White House Presidential Actions",
-        "category": "macro-regulation",
-        "title_en": "White House Moves to Curb Polysilicon Imports to Protect US Producers",
-        "detailed_summary_en": "The White House issued a presidential proclamation in August 2026 adjusting imports of polysilicon and its derivatives into the United States. The action aims to protect domestic polysilicon producers, which the administration says have been weakened by foreign competition for decades. Polysilicon is the base material for both semiconductor chips and solar panels, making this trade action significant for U.S. supply chain security in technology and clean energy. The move could raise costs for downstream manufacturers while boosting domestic producers, with potential macroeconomic effects. The proclamation specifically covers polysilicon and its derivatives, which include products used in solar photovoltaic manufacturing. The administration frames the action as addressing economic and national security risks from long-standing foreign competition that eroded U.S. producers.",
-        "background_en": "Polysilicon is a high-purity, polycrystalline form of silicon used as raw material by the solar photovoltaic and electronics industries. It is essential for fabricating integrated circuits and making solar cells, and its production requires significant energy and advanced chemical purification processes such as the Siemens method.",
-        "title_zh": "白宫调整多晶硅及其衍生物进口以保护美国生产商",
-        "detailed_summary_zh": "2026年8月，白宫发布总统公告，调整进入美国的多晶硅及其衍生物的进口。此举旨在保护国内多晶硅生产商，政府称这些生产商数十年来一直因外国竞争而受到削弱。 多晶硅是半导体芯片和太阳能电池板的基础材料，因此这项贸易举措对美国技术和清洁能源领域的供应链安全具有重要意义。此举可能提高下游制造商的成本，同时提振国内生产商，并可能产生宏观经济影响。 该公告特别涵盖多晶硅及其衍生物，包括用于太阳能光伏制造的产品。政府将此行动定性为应对长期外国竞争侵蚀美国生产商所带来的经济与国家安全风险。",
-        "background_zh": "多晶硅是硅的一种高纯度多晶形态，是太阳能光伏和电子工业的原材料。它对于制造集成电路和太阳能电池至关重要，其生产需要大量能源以及西门子法等先进的化学提纯工艺。",
-        "sources": [
-          {
-            "url": "https://en.wikipedia.org/wiki/Polycrystalline_silicon",
-            "title": "Polycrystalline silicon - Wikipedia"
-          },
-          {
-            "url": "https://waferpro.com/what-is-polysilicon-and-what-is-it-used-for/",
-            "title": "What Is Polysilicon and What Is It Used For? | WaferPro"
-          },
-          {
-            "url": "https://ratedpower.com/glossary/polysilicon/",
-            "title": "What is polysilicon and how is it made? — RatedPower"
+            "url": "https://cryptorank.io/news/feed/c6e48-binance-bstocks-crosses-500m-aum-amid-quiet-tokenized-equities-push",
+            "title": "Binance bStocks Crosses $500M AUM Amid Quiet Tokenized Equities Push | Blockchain Binance | CryptoRank.io"
           }
         ]
       },
       "ai_score": 7.0,
       "ai_reason": null,
-      "ai_summary": "The White House issued a presidential proclamation adjusting U.S. imports of polysilicon and derivatives to protect domestic producers.",
+      "ai_summary": "Binance's bStocks tokenized equity product has surpassed $500M in AUM, offering 24/7 trading.",
       "ai_tags": []
     }
-  ]
+  ],
+  "x_posted_languages": []
 }

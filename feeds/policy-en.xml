@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>BMTNews · Policy</title>
+  <link href="https://bmt.news/feeds/policy-en.xml" rel="self"/>
+  <link href="https://bmt.news/"/>
+  <id>https://bmt.news/feeds/policy-en.xml</id>
+  <updated>2026-08-10T00:00:00Z</updated>
+  <entry>
+    <title>World Liberty Took $100M From Businessman in Money Laundering Probe</title>
+    <link href="https://www.theblock.co/news/regulation/2026-08-09-world-liberty-received-100-million-from-businessman-investigated-for-money-laundering-nyt-411221?utm_source=rss&amp;utm_medium=rss"/>
+    <id>https://bmt.news/editions/2026-08-10/#rss:www.theblock.co_rss.xml:b3cd65168604fcd8</id>
+    <updated>2026-08-10T00:00:00Z</updated>
+    <summary>According to NYT via The Block, World Liberty Financial received $100 million from businessman Guren &quot;Bobby&quot; Zhou, who is under an active money laundering investigation by British officials as of late July. No charges have been filed against Zhou. This news adds to mounting concerns about World Liberty Financial&#x27;s ties to individuals under legal scrutiny, potentially affecting its regulatory standing and public perception. It also underscores the broader debate over crypto projects accepting funds from politically sensitive sources. The investor, Guren &quot;Bobby&quot; Zhou, has not been charged, but British officials told the Times that the investigation remained active as of late July. World Liberty is a DeFi protocol launched in 2024 with ties to the Trump family, which receives 75% of net proceeds from token sales.</summary>
+  </entry>
+</feed>

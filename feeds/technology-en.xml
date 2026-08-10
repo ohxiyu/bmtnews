@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>BMTNews · AI &amp; Tech</title>
+  <link href="https://bmt.news/feeds/technology-en.xml" rel="self"/>
+  <link href="https://bmt.news/"/>
+  <id>https://bmt.news/feeds/technology-en.xml</id>
+  <updated>2026-08-10T00:00:00Z</updated>
+  <entry>
+    <title>Cloudflare Gives AI Agents Wallets, Pushing Agent Identity Forward</title>
+    <link href="https://www.forbes.com/sites/boazsobrado/2026/08/09/you-can-fake-everything-cloudflare-just-gave-ai-agents-wallets/"/>
+    <id>https://bmt.news/editions/2026-08-10/#gdelt:article:20260809T074500Z::https://www.forbes.com/sites/boazsobrado/2026/08/09/you-can-fake-everything-cloudflare-just-gave-ai-agents-wallets/</id>
+    <updated>2026-08-10T00:00:00Z</updated>
+    <summary>Cloudflare announced programmable wallets for AI agents on August 4, 2026. The offering includes two wallet types: Account Wallets for human-held funds and Virtual Wallets with spending caps for autonomous agent payments. This move by a major infrastructure provider validates the emerging &#x27;agent economy,&#x27; where software agents need identity and payment rails to operate autonomously. It lowers barriers for AI developers to build agents that can pay for APIs, data, and services without human intervention. The announcement, dated August 4, 2026, distinguishes between Account Wallets (funds held by humans) and Virtual Wallets (agent-spent funds with caps). The feature is aimed at developers building agents that need to autonomously pay for APIs, data, or content.</summary>
+  </entry>
+</feed>
