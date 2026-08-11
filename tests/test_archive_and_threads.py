@@ -223,7 +223,13 @@ def test_collect_threads_requires_multiple_days() -> None:
 
 def test_collect_entities_sanitizes_model_generated_labels() -> None:
     records = [
-        make_record(f"2026-08-0{i}", tags=['Bybit <script>alert("x")</script>'])
+        make_record(
+            f"2026-08-0{i}",
+            # The headline has to name the tag for it to count as an entity,
+            # so the injected markup is carried through the title as well.
+            title_en="Bybit Scriptalertx Script incident is under review",
+            tags=['Bybit <script>alert("x")</script>'],
+        )
         for i in range(1, 4)
     ]
     entities = collect_entities(records, minimum_mentions=3)
@@ -233,9 +239,123 @@ def test_collect_entities_sanitizes_model_generated_labels() -> None:
 
 def test_collect_entities_skips_generic_tags() -> None:
     records = [
-        make_record(f"2026-08-0{i}", tags=["Binance", "crypto", "security"])
+        make_record(
+            f"2026-08-0{i}",
+            title_en="Binance faces new scrutiny",
+            tags=["Binance", "crypto", "security"],
+        )
         for i in range(1, 5)
     ]
     entities = collect_entities(records, minimum_mentions=3)
     assert [entity.slug for entity in entities] == ["binance"]
     assert entities[0].count == 4
+
+
+def test_collect_entities_skips_tags_no_headline_names() -> None:
+    """A descriptive tag is not an entity, however often the model emits it."""
+    records = [
+        make_record(
+            f"2026-08-0{i}",
+            title_en="Coldcard firmware flaw exposes seed phrases",
+            tags=["Coldcard", "exploits", "market-shakeout"],
+        )
+        for i in range(1, 5)
+    ]
+    entities = collect_entities(records, minimum_mentions=2)
+    assert [entity.slug for entity in entities] == ["coldcard"]
+
+
+def test_collect_entities_accepts_chinese_named_tags() -> None:
+    records = [
+        make_record(f"2026-08-0{i}", title_en="美联储维持利率不变", tags=["美联储"])
+        for i in range(1, 4)
+    ]
+    entities = collect_entities(records, minimum_mentions=2)
+    assert [entity.slug for entity in entities] == ["美联储"]
+
+
+def test_anchors_link_continuing_coverage_that_shares_little_wording() -> None:
+    """The case token overlap alone cannot see: same event, new wording."""
+    day_one = fingerprint(
+        title_zh="Coldcard 固件漏洞可能泄露助记词",
+        title_en="Coldcard Firmware Flaw Exposes Seed Phrases",
+        summary_zh="研究人员披露 Coldcard 硬件钱包固件漏洞，攻击者可能提取助记词。",
+        summary_en=(
+            "Researchers disclosed a firmware flaw in the Coldcard hardware "
+            "wallet that could let an attacker extract the seed phrase."
+        ),
+        tags=["coldcard", "security", "hardware-wallet"],
+    )
+    day_two = fingerprint(
+        title_zh="Coldcard 紧急发布固件补丁",
+        title_en="Coldcard Ships Emergency Firmware Patch After Disclosure",
+        summary_zh="Coldcard 针对助记词泄露漏洞发布紧急固件补丁，建议硬件钱包用户升级。",
+        summary_en=(
+            "Coldcard shipped an emergency firmware patch for the seed phrase "
+            "disclosure flaw and urged hardware wallet users to upgrade."
+        ),
+        tags=["coldcard", "patch", "hardware-wallet"],
+    )
+    assert same_thread(day_one, day_two)
+
+
+def test_shared_name_alone_does_not_make_a_thread() -> None:
+    """Two unrelated stories about one company belong on its entity page."""
+    revenue = fingerprint(
+        title_zh="Coinbase 季度营收创纪录",
+        title_en="Coinbase Reports Record Quarterly Revenue",
+        summary_zh="Coinbase 公布季度财报，交易与订阅收入双双增长。",
+        summary_en="Coinbase posted record quarterly revenue as income grew.",
+        tags=["coinbase", "revenue"],
+    )
+    listings = fingerprint(
+        title_zh="Coinbase 支持两条新公链",
+        title_en="Coinbase Adds Support for Two New Networks",
+        summary_zh="Coinbase 宣布为两条新公链提供充提支持。",
+        summary_en="Coinbase announced deposit support for two new networks.",
+        tags=["coinbase", "listings"],
+    )
+    assert not same_thread(revenue, listings)
+
+
+def test_name_mentioned_only_in_passing_does_not_link() -> None:
+    """An actor named in a body paragraph is not what the story is about."""
+    subject = fingerprint(
+        title_zh="Hyperliquid 的永续合约收入下滑",
+        title_en="Hyperliquid Perpetuals Revenue Slips",
+        summary_zh="Hyperliquid 的永续合约费用收入较上月下降，协议收入承压。",
+        summary_en="Hyperliquid perpetual futures fee revenue fell month over month.",
+        tags=["hyperliquid", "perp-futures"],
+    )
+    passing = fingerprint(
+        title_zh="2026 年超 100 个加密项目倒闭",
+        title_en="More Than 100 Crypto Projects Shut Down in 2026",
+        summary_zh="2026 年超过 100 个协议倒闭，费用收入减半，Hyperliquid 等头部协议也受波及。",
+        summary_en=(
+            "More than 100 protocols shut down in 2026 as fee revenue halved, "
+            "with leaders like Hyperliquid affected."
+        ),
+        tags=["market-shakeout", "venture-capital"],
+    )
+    assert not same_thread(subject, passing)
+
+
+def test_assign_threads_ignores_coverage_older_than_the_gap() -> None:
+    history = [
+        make_record(
+            "2026-06-01",
+            title_en="Bybit loses funds in Lazarus Group hack",
+            tags=["bybit", "lazarus-group"],
+            thread_id="tstale",
+        )
+    ]
+    story = (
+        "https://example.com/new",
+        fingerprint(
+            title_en="Bybit sues North Korea and Lazarus Group",
+            tags=["bybit", "lazarus-group"],
+        ),
+    )
+    assignments = assign_threads([story], history, edition_date="2026-08-09")
+    assert assignments["https://example.com/new"].thread_id != "tstale"
+    assert assignments["https://example.com/new"].day == 1

@@ -27,6 +27,7 @@ from urllib.parse import quote, urlsplit
 import httpx
 from rich.console import Console
 
+from ..ai.utils import unwrap_prose_response
 from ..models import ContentItem, XDeliveryConfig
 
 logger = logging.getLogger(__name__)
@@ -308,7 +309,12 @@ def sanitize_composed_post(text: str, *, limit: int) -> Optional[str]:
 
     Rejecting is safe: the caller falls back to the assembled post.
     """
-    cleaned = str(text or "").strip().strip('"').strip("“”").strip()
+    # Most prompts in this pipeline ask for JSON, so a prose prompt is
+    # occasionally answered with a JSON wrapper; unwrap before cleaning.
+    cleaned = unwrap_prose_response(
+        text, keys=("post", "tweet", "content", "text", "body")
+    )
+    cleaned = cleaned.strip().strip('"').strip("“”").strip()
     if not cleaned:
         return None
     cleaned = _URL_PATTERN.sub("", cleaned)

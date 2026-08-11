@@ -139,12 +139,17 @@ def test_thread_page_has_front_matter_and_timeline() -> None:
     assert page.startswith("---\n")
     assert "permalink: /threads/tabc/" in page
     assert "第二天" in page and "第一天" in page
-    assert "2 天" in page
+    # The stat header answers "how long has this been running" up front.
+    assert "<strong>2</strong><span>天</span>" in page
+    assert "<strong>2026-08-09</strong><span>最近报道</span>" in page
 
 
 def test_entity_page_escapes_labels_and_keeps_titles_plain() -> None:
     entity = EntitySummary(
-        slug="bybit", label="Bybit <b>", count=3, records=[make_record()]
+        slug="bybit",
+        label="Bybit <b>",
+        count=3,
+        records=[make_record(title_en="Bybit <script> halts")],
     )
     page = render_entity_page(entity, "en")
     front_matter, body = page.split("---\n\n", 1)
@@ -152,7 +157,8 @@ def test_entity_page_escapes_labels_and_keeps_titles_plain() -> None:
     # Front matter feeds the raw <title>; markup characters are removed.
     assert "<" not in front_matter.split("title:")[1].split("\n")[0]
     # The body escapes rather than strips.
-    assert "Bybit &lt;b&gt;" in body
+    assert "Bybit &lt;script&gt; halts" in body
+    assert "<strong>3</strong><span>entries</span>" in body
 
 
 
@@ -172,8 +178,63 @@ def test_index_data_feeds_the_committed_pages(tmp_path) -> None:
     thread_data = build_thread_index_data(threads)
     assert thread_data["threads"][0]["days"] == 2
     assert thread_data["threads"][0]["latest_date"] == "2026-08-09"
+    assert thread_data["threads"][0]["first_date"] == "2026-08-08"
     assert build_entity_index_data(entities)["entities"][0]["mentions"] == 3
 
+
+def test_entity_index_carries_what_a_reader_needs_to_choose() -> None:
+    """A name and a count is a tag cloud; these fields make it scannable."""
+    entities = [
+        EntitySummary(
+            slug="bybit",
+            label="Bybit",
+            count=2,
+            records=[
+                make_record("2026-08-08", title_zh="第一天", top_category="crypto"),
+                make_record("2026-08-11", title_zh="最新一条", top_category="crypto"),
+            ],
+        )
+    ]
+    row = build_entity_index_data(entities)["entities"][0]
+    assert row["latest_date"] == "2026-08-11"
+    assert row["first_date"] == "2026-08-08"
+    assert row["days"] == 2
+    assert row["title_zh"] == "最新一条"
+    assert row["category"] == "crypto"
+
+
+def test_entity_index_puts_still_active_names_first() -> None:
+    stale = EntitySummary(
+        slug="stale",
+        label="Stale",
+        count=5,
+        records=[make_record("2026-07-01") for _ in range(5)],
+    )
+    active = EntitySummary(
+        slug="active",
+        label="Active",
+        count=2,
+        records=[make_record("2026-08-10"), make_record("2026-08-11")],
+    )
+    rows = build_entity_index_data([stale, active])["entities"]
+    assert [row["slug"] for row in rows] == ["active", "stale"]
+    assert rows[0]["recent"] == 2
+    assert rows[1]["recent"] == 0
+
+
+def test_write_index_data_writes_both_data_files(tmp_path) -> None:
+    threads = [
+        (
+            "tabc",
+            [
+                make_record("2026-08-08", thread_id="tabc"),
+                make_record("2026-08-09", thread_id="tabc"),
+            ],
+        )
+    ]
+    entities = [
+        EntitySummary(slug="bybit", label="Bybit", count=3, records=[make_record()])
+    ]
     written = write_index_data(threads, entities, data_root=tmp_path)
     assert sorted(path.name for path in written) == [
         "entities.json",

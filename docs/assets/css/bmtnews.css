@@ -473,7 +473,24 @@ time,
   font-weight: 650;
 }
 
-/* recent-dates quick navigation (rendered by feed-home include) */
+/* Archived editions render the feed masthead above <main>, so they need the
+   same measure and gutters the feed gets from .main-content. */
+.edition-archive-chrome {
+  max-width: var(--content);
+  margin: 0 auto;
+  padding: 18px 20px 0;
+}
+
+.daily-title-row h1 a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.daily-title-row h1 a:hover {
+  color: var(--accent);
+}
+
+/* recent-dates quick navigation (rendered by the edition-header include) */
 .day-nav {
   display: flex;
   flex-wrap: wrap;
@@ -496,6 +513,11 @@ time,
 
 .day-nav a:hover {
   color: var(--accent);
+}
+
+.day-nav-today {
+  color: var(--text);
+  font-weight: 650;
 }
 
 .day-nav a[aria-current="true"] {
@@ -864,26 +886,120 @@ time,
   font-size: var(--fs-s);
 }
 
-.entity-cloud {
+.archive-row-meta .category-pill {
+  margin-right: 8px;
+}
+
+/* Headline numbers for one thread or entity: how much coverage, over how
+   long, how recently — the questions a reader has before reading the list. */
+.archive-stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0 32px;
+  margin: 0 0 22px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--border);
+}
+
+.archive-stat {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 56px;
+}
+
+.archive-stat strong {
+  font-size: var(--fs-l);
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  line-height: 1.2;
+}
+
+.archive-stat span {
+  color: var(--text-muted);
+  font-size: var(--fs-xs);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+/* A bare name and a count reads as a tag cloud — every entry looks equally
+   worth a click. Cards carry the latest headline and the activity numbers so
+   the index can be scanned instead of guessed at. */
+.entity-grid {
   list-style: none;
   margin: 0;
   padding: 0;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px 18px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1px;
+  background: var(--border);
+  border: 1px solid var(--border);
 }
 
-.entity-cloud li {
+.entity-card {
+  background: var(--bg);
+  padding: 14px 16px 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.entity-card-link {
   display: flex;
   align-items: baseline;
-  gap: 5px;
-  font-size: var(--fs-m);
+  justify-content: space-between;
+  gap: 10px;
+  color: var(--text);
+  text-decoration: none;
 }
 
-.entity-cloud span {
+.entity-card-link:hover .entity-card-name {
+  color: var(--accent);
+}
+
+.entity-card-name {
+  font-size: var(--fs-m);
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.entity-card-pulse {
+  flex: 0 0 auto;
+  color: var(--accent);
+  font-size: var(--fs-xs);
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+.entity-card-latest {
+  margin: 0;
+  color: var(--text-soft);
+  font-size: var(--fs-s);
+  line-height: 1.55;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.entity-card-meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 4px 10px;
+  margin: auto 0 0;
+  padding-top: 6px;
   color: var(--text-muted);
   font-size: var(--fs-xs);
   font-variant-numeric: tabular-nums;
+}
+
+/* A name still in the news outranks one that merely has a long history. */
+.entity-card.is-active .entity-card-name {
+  text-decoration: underline;
+  text-decoration-color: var(--accent);
+  text-underline-offset: 0.3em;
+  text-decoration-thickness: 2px;
 }
 
 /* clearly-labeled ad slot; outside the ranking, ignored by filters */
@@ -1204,8 +1320,9 @@ time,
 }
 
 /* per-date pages reuse the feed styles; pre-v2 markdown editions below */
+/* The masthead above <main> already supplies the top gutter here. */
 .digest-page .main-content {
-  padding-top: 18px;
+  padding-top: 10px;
 }
 
 .digest-page .main-content > blockquote:first-of-type {

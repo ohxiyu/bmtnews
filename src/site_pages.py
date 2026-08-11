@@ -10,16 +10,27 @@ from __future__ import annotations
 
 import json
 import logging
+from collections import Counter
+from datetime import date as date_type, timedelta
 from pathlib import Path
-from typing import Iterable, List, Sequence
+from typing import Iterable, List, Optional, Sequence
 
 from ._file_utils import _atomic_write_text
 from .archive import ArchiveRecord
 from .threads import EntitySummary
+
+
 # Shared HTML helpers; same escaping rules as the daily feed rendering.
 from .web_feed import _escape as escape_text, _safe_url as safe_url
 
 logger = logging.getLogger(__name__)
+
+
+def _as_date(value: str) -> Optional[date_type]:
+    try:
+        return date_type.fromisoformat(value)
+    except (TypeError, ValueError):
+        return None
 
 THREADS_ROOT = Path("docs/threads")
 ENTITY_ROOT = Path("docs/entity")
@@ -40,6 +51,10 @@ _LABELS = {
         "mentions": "报道",
         "empty": "暂无内容。",
         "back": "返回首页",
+        "back_entities": "全部实体",
+        "back_threads": "全部事件线",
+        "last_seen": "最近报道",
+        "peak_score": "最高评分",
         "weekly_title": "本周回顾",
     },
     "en": {
@@ -55,6 +70,10 @@ _LABELS = {
         "mentions": "Coverage",
         "empty": "Nothing here yet.",
         "back": "Back to the feed",
+        "back_entities": "All entities",
+        "back_threads": "All threads",
+        "last_seen": "Last seen",
+        "peak_score": "Peak score",
         "weekly_title": "Weekly Review",
     },
 }
@@ -139,12 +158,18 @@ def render_thread_page(
     days = len({record.date for record in records})
     title = latest.title_for(language) or thread_id
     prefix = "" if language == "zh" else "/en"
+    stats = (
+        _stat(str(days), labels["days"])
+        + _stat(str(len(ordered)), labels["entries"])
+        + _stat(latest.date, labels["last_seen"])
+    )
     body = (
-        f'<p class="archive-lede">{labels["thread_prefix"]} · '
-        f"{days} {labels['days']} · {len(ordered)} {labels['entries']}</p>"
+        f'<div class="archive-stats">{stats}</div>'
         f"<h2>{escape_text(labels['timeline'])}</h2>"
         f"{_records_list(ordered, language)}"
-        f'<p class="archive-back"><a href="{prefix}/">{labels["back"]}</a></p>'
+        f'<p class="archive-back"><a href="{prefix}/threads/">'
+        f'{labels["back_threads"]}</a> · '
+        f'<a href="{prefix}/">{labels["back"]}</a></p>'
     )
     return (
         _front_matter(
@@ -158,16 +183,35 @@ def render_thread_page(
     )
 
 
+def _stat(value: str, label: str) -> str:
+    return (
+        f'<div class="archive-stat"><strong>{escape_text(value)}</strong>'
+        f"<span>{escape_text(label)}</span></div>"
+    )
+
+
 def render_entity_page(entity: EntitySummary, language: str) -> str:
     labels = _LABELS[language]
     prefix = "" if language == "zh" else "/en"
+    dates = sorted({record.date for record in entity.records})
+    top_score = max(
+        (record.score for record in entity.records if record.score is not None),
+        default=None,
+    )
+    stats = _stat(str(entity.count), labels["entries"]) + _stat(
+        str(len(dates)), labels["days"]
+    )
+    if dates:
+        stats += _stat(dates[-1], labels["last_seen"])
+    if top_score is not None:
+        stats += _stat(f"{top_score:.1f}", labels["peak_score"])
     body = (
-        f"<h2>{escape_text(entity.label)}</h2>"
-        f'<p class="archive-lede">{labels["entity_prefix"]} · '
-        f"{entity.count} {labels['entries']}</p>"
+        f'<div class="archive-stats">{stats}</div>'
         f"<h2>{escape_text(labels['mentions'])}</h2>"
         f"{_records_list(entity.records[:60], language)}"
-        f'<p class="archive-back"><a href="{prefix}/">{labels["back"]}</a></p>'
+        f'<p class="archive-back"><a href="{prefix}/entity/">'
+        f'{labels["back_entities"]}</a> · '
+        f'<a href="{prefix}/">{labels["back"]}</a></p>'
     )
     description = (
         entity.records[0].summary_for(language) if entity.records else ""
@@ -184,6 +228,15 @@ def render_entity_page(entity: EntitySummary, language: str) -> str:
     )
 
 
+def _dominant_category(records: Sequence[ArchiveRecord]) -> str:
+    counts = Counter(
+        record.top_category or record.category
+        for record in records
+        if (record.top_category or record.category)
+    )
+    return counts.most_common(1)[0][0] if counts else ""
+
+
 def build_thread_index_data(
     threads: Sequence[tuple[str, List[ArchiveRecord]]],
 ) -> dict:
@@ -191,27 +244,74 @@ def build_thread_index_data(
     rows = []
     for thread_id, records in threads:
         latest = max(records, key=lambda record: (record.date, record.rank))
+        dates = {record.date for record in records}
         rows.append(
             {
                 "thread_id": thread_id,
                 "latest_date": latest.date,
-                "days": len({record.date for record in records}),
+                "first_date": min(dates),
+                "days": len(dates),
                 "entries": len(records),
+                "category": _dominant_category(records),
                 "title_zh": latest.title_zh,
                 "title_en": latest.title_en,
+                "summary_zh": latest.summary_zh,
+                "summary_en": latest.summary_en,
             }
         )
     return {"threads": rows}
 
 
-def build_entity_index_data(entities: Sequence[EntitySummary]) -> dict:
-    """Data consumed by the always-present /entity/ index page."""
-    return {
-        "entities": [
-            {"slug": entity.slug, "label": entity.label, "mentions": entity.count}
-            for entity in entities
-        ]
-    }
+def build_entity_index_data(
+    entities: Sequence[EntitySummary],
+    *,
+    recent_days: int = 7,
+) -> dict:
+    """Data consumed by the always-present /entity/ index page.
+
+    A bare name and a count reads as a tag cloud: it says which words recur
+    but nothing about what happened, so every entry looks equally worth a
+    click. The extra fields here — what was published most recently, how
+    long the coverage has run, whether it is still active — are what let the
+    index be scanned rather than merely browsed.
+    """
+    newest = max(
+        (record.date for entity in entities for record in entity.records),
+        default="",
+    )
+    cutoff = ""
+    newest_value = _as_date(newest)
+    if newest_value is not None:
+        cutoff = (newest_value - timedelta(days=recent_days - 1)).isoformat()
+
+    rows = []
+    for entity in entities:
+        records = sorted(entity.records, key=lambda record: record.date)
+        latest = records[-1]
+        rows.append(
+            {
+                "slug": entity.slug,
+                "label": entity.label,
+                "mentions": entity.count,
+                "days": len({record.date for record in records}),
+                "first_date": records[0].date,
+                "latest_date": latest.date,
+                "recent": sum(1 for record in records if record.date >= cutoff)
+                if cutoff
+                else 0,
+                "category": _dominant_category(records),
+                "top_score": max(
+                    (record.score for record in records if record.score is not None),
+                    default=None,
+                ),
+                "title_zh": latest.title_zh,
+                "title_en": latest.title_en,
+            }
+        )
+    # Still-developing subjects first; a name last seen two weeks ago is a
+    # lookup, not something to put at the top of the page.
+    rows.sort(key=lambda row: (-row["recent"], -row["mentions"], row["slug"]))
+    return {"entities": rows}
 
 
 def write_index_data(
