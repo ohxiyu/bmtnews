@@ -3,26 +3,7 @@
 {% assign today_key = site.time | date: "%Y-%m-%d" %}
 
 <section class="continuous-feed" data-language="{{ include.language }}">
-  <header class="daily-feed-header">
-    <div class="daily-feed-heading">
-      <div class="daily-title-row">
-        <h1>{% if include.language == "zh" %}每日情报{% else %}Daily Briefing{% endif %}</h1>
-      </div>
-      {% if include.language == "zh" %}
-        <p>每日一期加密市场情报，兼顾 AI 科技与政策变化。</p>
-      {% else %}
-        <p>One crypto intelligence edition a day, with selected AI, technology, and policy coverage.</p>
-      {% endif %}
-    </div>
-    {% if feed_posts.size > 0 %}
-      <nav class="day-nav" aria-label="{% if include.language == "zh" %}近期日报{% else %}Recent editions{% endif %}">
-        <span class="day-nav-label">{% if include.language == "zh" %}近期{% else %}Recent{% endif %}</span>
-        {% for post in feed_posts limit:7 %}
-          <a href="{{ post.url | relative_url }}"{% if forloop.first %} aria-current="true"{% endif %}>{{ post.date | date: "%m.%d" }}</a>
-        {% endfor %}
-      </nav>
-    {% endif %}
-  </header>
+  {% include edition-header.html language=include.language %}
 
   {% if latest_post %}
     <section
