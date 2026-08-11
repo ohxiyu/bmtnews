@@ -4,7 +4,21 @@
   <link href="https://bmt.news/feeds/policy-zh.xml" rel="self"/>
   <link href="https://bmt.news/"/>
   <id>https://bmt.news/feeds/policy-zh.xml</id>
-  <updated>2026-08-10T00:00:00Z</updated>
+  <updated>2026-08-11T00:00:00Z</updated>
+  <entry>
+    <title>Bybit在15亿美元Lazarus黑客诉讼中获美国资产冻结</title>
+    <link href="https://news.google.com/rss/articles/CBMid0FVX3lxTFBkQmdCRUthR040V0wzdkVidnBGOFQ0OFlDLWRuMW5zSTJkSlhlRl9IRVJPVXRXalNoT2UzMm9jcDlMTGdTV1RVVm1mZDlCbUJGUnUwenZQU0pMdE8yU0dTeGJ4TkVhSHAyajNGYnhjcGxRSWdGY1F3?oc=5"/>
+    <id>https://bmt.news/editions/2026-08-11/#google_news:article:bbd7dc1598763cf0</id>
+    <updated>2026-08-11T00:00:00Z</updated>
+    <summary>Bybit在美国哥伦比亚特区联邦地区法院对朝鲜、其侦察总局及Lazarus Group提起民事诉讼，指控其涉及2025年2月的15亿美元被盗事件，并获得了初步禁令，冻结已识别的被盗资产。法院认为Bybit很可能在实体审理中获胜。 这是最大加密货币交易所黑客事件中的重大法律升级，可能为交易所如何利用民事法院和资产冻结追查国家支持的黑客树立先例。这也表明加密行业、监管机构和执法部门在追踪和追回被盗资金方面的合作日益加强。 Bybit报告称，在超过28家交易所和托管机构中，已追回约4840万美元，并冻结约3050万美元，合计约占被盗金额的5%。攻击者通过篡改签名界面盗走了约50万枚ETH，大部分被盗以太坊通过Thorchain转换为比特币，并经过Wasabi、Tornado Cash和Railgun等混币器。</summary>
+  </entry>
+  <entry>
+    <title>美国制裁揭开伊朗-俄罗斯63亿美元加密管道，涉Shelbit与Aban Tether</title>
+    <link href="https://cryptoslate.com/us-sanctions-exposed-a-6-3-billion-crypto-pipeline-linking-iran-and-russia/"/>
+    <id>https://bmt.news/editions/2026-08-11/#rss:cryptoslate.com_feed_:daa9ff0784671c27</id>
+    <updated>2026-08-11T00:00:00Z</updated>
+    <summary>8月7日，美国财政部制裁了与伊朗关联的加密平台Shelbit和Aban Tether，TRM Labs追踪到23个月内通过Shelbit关联钱包流动的63亿美元资金，其中3.18亿美元与俄罗斯受制裁的A7网络有关。制裁还针对Shelbit创始人Siavash Kayvanpour及其多家公司。 这一行动揭示了一条大规模加密结算管道，被受制裁的伊朗和俄罗斯实体利用，凸显了Tron网络上USDT等稳定币如何成为逃避国际金融管制的渠道。这可能会加强全球对加密交易所和稳定币发行方的监管审查与合规要求。 Shelbit更像是一个结算网络而非真正的交易所：其高流量钱包的流入和流出差额在0.1%以内，且每一到四个月更换一次地址。约88%的被追踪资金通过Tron上的USDT-TRC20转移，仅约37万美元涉及混币服务。</summary>
+  </entry>
   <entry>
     <title>World Liberty 收受涉洗钱调查商人1亿美元</title>
     <link href="https://www.theblock.co/news/regulation/2026-08-09-world-liberty-received-100-million-from-businessman-investigated-for-money-laundering-nyt-411221?utm_source=rss&amp;utm_medium=rss"/>

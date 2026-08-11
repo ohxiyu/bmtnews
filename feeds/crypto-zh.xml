@@ -4,7 +4,70 @@
   <link href="https://bmt.news/feeds/crypto-zh.xml" rel="self"/>
   <link href="https://bmt.news/"/>
   <id>https://bmt.news/feeds/crypto-zh.xml</id>
-  <updated>2026-08-10T00:00:00Z</updated>
+  <updated>2026-08-11T00:00:00Z</updated>
+  <entry>
+    <title>BitMart创始人否认跑路，用户提款仍停滞</title>
+    <link href="https://protos.com/bitmart-founder-denies-exit-scam-as-withdrawals-stall/"/>
+    <id>https://bmt.news/editions/2026-08-11/#rss:protos.com_feed_:af1f8ba2fc1ee2c1</id>
+    <updated>2026-08-11T00:00:00Z</updated>
+    <summary>BitMart创始人Sheldon Xia公开发声否认跑路传闻，称‘我们没有消失，也不会消失’，但未提供任何数据、时间表或储备证明。自7月26日‘有序清退’以来，用户反映提现请求已滞留数周，其中包括一笔1010万美元的请求。 大型交易所持续数周的提款失败引发对其偿付能力和欺诈风险的严重担忧，直接威胁用户资金安全。这进一步加剧了用户对中心化交易所的不信任，并可能促使整个加密行业更加关注交易对手风险。 Arkham Intelligence的链上数据显示，BitMart的追踪持仓从7月6日约1.02亿美元降至5930万美元，最大持仓为Ten Best Coins和WeFi等不知名代币，而非BTC、ETH或稳定币。该交易所的代币BMX一周内暴跌81%，创始人的声明未提供任何储备证明。</summary>
+  </entry>
+  <entry>
+    <title>BTCPay Server遭严重漏洞利用，支持者悬赏最多3比特币征集恢复方案</title>
+    <link href="https://www.theblock.co/news/ecosystems/2026-08-10-btcpay-server-supporters-offer-3-btc-recovery-bounty-critical-exploit-411353?utm_source=rss&amp;utm_medium=rss"/>
+    <id>https://bmt.news/editions/2026-08-11/#rss:www.theblock.co_rss.xml:fabe356d3c5a84d5</id>
+    <updated>2026-08-11T00:00:00Z</updated>
+    <summary>BTCPay Server确认了一个可能借助AI实施的严重漏洞利用，并感谢Craig Raw和Bitcoin Red Team基金报告了该问题。支持者已承诺提供最高3 BTC的恢复赏金。 BTCPay Server是一款被广泛使用的自托管比特币支付处理器，严重漏洞可能影响依赖它直接接收比特币的商家和用户。这一事件也凸显了AI在攻击和防御开源加密货币基础设施中日益重要的作用。 支持者已承诺提供最高3 BTC的恢复赏金，BTCPay Server同时表示该漏洞利用可能借助了AI。该项目对Craig Raw和Bitcoin Red Team基金报告此漏洞表示感谢。</summary>
+  </entry>
+  <entry>
+    <title>以太坊新路线图聚焦隐私与量子抗性，Buterin 表示</title>
+    <link href="https://www.theblock.co/news/ecosystems/2026-08-10-vitalik-buterin-privacy-quantum-resistance-front-and-center-ethereum-latest-roadmap-411298?utm_source=rss&amp;utm_medium=rss"/>
+    <id>https://bmt.news/editions/2026-08-11/#rss:www.theblock.co_rss.xml:bf4020a9b8317915</id>
+    <updated>2026-08-11T00:00:00Z</updated>
+    <summary>以太坊联合创始人 Vitalik Buterin 周一发布了更新版路线图“Strawmap”，将隐私、量子抗性和 AI 辅助形式化验证提升为最高优先事项。这些新重点（包括后量子扩展和原生 rollup）并未出现在他 2023 年的路线图中。 这一信号标志着以太坊为“Q-Day”及量子计算机潜在威胁做准备时出现重大战略转变，并可能重塑网络在隐私和可扩展性方面的处理方式。作为核心人物，Buterin 的路线图有助于协调整个生态系统的长期研发优先事项，可能影响开发者、验证者和用户。 “Strawmap”将 VDF 和大部分 EVM 改进工作降级，并放弃 Verkle 树和状态过期方案，转而采用其他构造。Buterin 表示，以太坊越来越依赖 STARKs 和 AI 辅助形式化验证来确保协议正确性，并重申了其“精益以太坊”愿景：量子安全、隐私优先、抗审查且高性能。</summary>
+  </entry>
+  <entry>
+    <title>Coldcard助记词泄露攻击，比一般加密黑客事件更致命</title>
+    <link href="https://fortune.com/2026/08/10/bitcoin-coldcard-hack-hardware-wallet-security-seed-phrases/"/>
+    <id>https://bmt.news/editions/2026-08-11/#gdelt:article:20260810T141500Z::https://fortune.com/2026/08/10/bitcoin-coldcard-hack-hardware-wallet-security-seed-phrases/</id>
+    <updated>2026-08-11T00:00:00Z</updated>
+    <summary>2026年7月30日，Coldcard硬件钱包的一个固件漏洞被攻击者利用，在约41分钟内从1000多个地址中扫走约1,082.65枚BTC，当时价值约7000万美元，后续估计升至8900万美元。与一般黑客攻击不同，这次事件直接危及了用户的助记词，因而更具破坏性。 硬件钱包被广泛认为是自我保管比特币最安全的方式，因此助记词泄露动摇了冷存储的核心承诺，并可能影响整个硬件钱包生态的信任。受影响用户必须把资金转移到新生成的助记词上，行业也需重新审视供应链与固件保障。 据Bitcoin Magazine报道，该漏洞还影响临时密钥、Clone Coldcard或Key Teleport功能中的会话密钥，以及由受损助记词派生的BIP 85种子。Galaxy Research追踪了7月30日对1,196个比特币地址的扫荡，并将其与固件漏洞关联；Bitcoin Magazine称，与漏洞相关的约1,000枚BTC已在链上转移，且攻击仍在持续。</summary>
+  </entry>
+  <entry>
+    <title>万事达卡完成对稳定币基础设施公司BVNK的18亿美元收购</title>
+    <link href="https://www.coindesk.com/business/2026/08/10/inside-stablecoin-firm-bvnk-s-journey-to-a-usd1-8b-acquisition-by-mastercard"/>
+    <id>https://bmt.news/editions/2026-08-11/#rss:www.coindesk.com_arc_outboundfeeds_rss_:b6dbfccd2d2c56f6</id>
+    <updated>2026-08-11T00:00:00Z</updated>
+    <summary>Mastercard已完成对稳定币基础设施公司BVNK的18亿美元收购，此前Coinbase和Visa也参与了竞购。据报道，BVNK选择了Mastercard，而非Coinbase更高的25亿美元报价，原因是文化契合与战略协同更好。 这笔交易表明，大型支付网络已将稳定币基础设施视为战略必需，而非小众加密服务。Mastercard、Visa、Stripe和Coinbase围绕约3000亿美元稳定币市场竞争的态势因此进一步加剧。 早期投资方Concentric于2019年以400万美元估值投资BVNK，按此次交易计算账面回报约450倍。此前Stripe在2024年底以11亿美元收购Bridge，促使Mastercard和Visa加快布局稳定币基础设施交易。</summary>
+  </entry>
+  <entry>
+    <title>SharpLink亏损10亿美元，其17亿美元质押ETH资产需90天变现</title>
+    <link href="https://cryptoslate.com/sharplink-posts-1b-loss-as-its-1-7b-ethereum-treasury-could-take-90-days-to-fully-convert-to-cash/"/>
+    <id>https://bmt.news/editions/2026-08-11/#rss:cryptoslate.com_feed_:2dd7e5b6825421e1</id>
+    <updated>2026-08-11T00:00:00Z</updated>
+    <summary>SharpLink公布截至6月30日的六个月净亏损10.8亿美元，主要来自ETH价格下跌的未实现损失以及LsETH和weETH的减值。其约17亿美元的以太坊资产大部分已质押，全部转换为现金可能需要长达90天。 这凸显了质押以太坊资产储备的流动性风险：即使是大型ETH持有者，在市场转向时也无法立即动用资金。这影响ETH的市场情绪，也影响那些通过质押加密储备获取收益的上市公司。 损失包括8.277亿美元来自ETH未实现价值下跌，以及2.678亿美元来自流动性质押和再质押代币LsETH、weETH的减值。截至8月3日，SharpLink持有888,938个无负担ETH等价单位；8月10日ETH交易价格约为1,916.57美元，由此估算总价值约为17亿美元。</summary>
+  </entry>
+  <entry>
+    <title>Crypto.com取消CRO储备公司交易、削减奖励，CRO价格下滑</title>
+    <link href="https://protos.com/is-a-crisis-brewing-at-crypto-com/"/>
+    <id>https://bmt.news/editions/2026-08-11/#rss:protos.com_feed_:294c68b60e5ba879</id>
+    <updated>2026-08-11T00:00:00Z</updated>
+    <summary>Crypto.com上周末终止了与DJT/MCGA（Yorkville America）的拟议数十亿美元数字资产储备公司（DAT）业务合并，同时下调了持卡人返现和质押奖励。CRO跌破0.05美元，创2023年10月以来新低，公司还取消了与Yorkville相关的ETF服务协议。 这一终止和奖励削减表明，这家大型加密货币交易所在运营和战略上承受压力，直接影响CRO代币持有者和卡用户。与特朗普品牌实体关系出现裂痕，给Crypto.com及其生态系统带来了声誉和情绪风险。 从10月1日起，Ruby等级卡返现从2%降至1.5%，月度消费上限从1250美元降至750美元；Icy White则失去无限次4%返现，改为3.5%且上限为3000美元。9月10日起，Pro和Private质押锁仓奖励分别从4%降至3%、从9%降至6%，而用户已锁定的CRO仍处于锁定状态。</summary>
+  </entry>
+  <entry>
+    <title>Coinsbuy 遭安全漏洞，赔付资金并悬赏10万美元</title>
+    <link href="https://cointelegraph.com/news/coinsbuy-confirms-security-breach-after-wallets-reportedly-drained-of-79m?utm_source=rss_feed&amp;utm_medium=rss&amp;utm_campaign=rss_partner_inbound"/>
+    <id>https://bmt.news/editions/2026-08-11/#rss:cointelegraph.com_rss:33980603d5a1d4af</id>
+    <updated>2026-08-11T00:00:00Z</updated>
+    <summary>加密货币支付平台 Coinsbuy 于8月9日遭遇安全漏洞，以太坊和TRON网络上的钱包被盗超过790万美元。该公司已用自有储备全额赔付受影响的客户资金，并悬赏10万美元征集能够识别攻击者的信息。 这一事件凸显了加密货币支付平台和托管服务持续面临的安全风险。Coinsbuy 决定赔付用户资金，避免了直接损失，但攻击也展示了窃取资金如何通过门罗币（Monero）等隐私币进行洗钱，使追回和调查变得更加复杂。 区块链调查人员将攻击与三个地址关联，其中两个位于以太坊，一个位于TRON。BlockWatchdog 报告称，约634万美元的被盗资金流经 FixedFloat 交易所，而 ChangeNOW 帮助冻结了其中六位数的部分；Coinsbuy 在事件发生后不久向受影响的钱包充值了约393万美元。</summary>
+  </entry>
+  <entry>
+    <title>七月加密行业因黑客攻击损失1.1亿美元，Immunefi数据显示</title>
+    <link href="https://www.theblock.co/news/defi/2026-08-10-crypto-hacks-july-immunefi-411246?utm_source=rss&amp;utm_medium=rss"/>
+    <id>https://bmt.news/editions/2026-08-11/#rss:www.theblock.co_rss.xml:824784cca6072f88</id>
+    <updated>2026-08-11T00:00:00Z</updated>
+    <summary>据Immunefi数据，加密生态系统在七月份因黑客攻击损失约1.1亿美元，同时其审计竞赛在发现漏洞方面表现优于传统的顶级（tier-1）审计。 这笔月度总损失表明DeFi和更广泛的加密市场仍面临持续的安全风险。同时，这也意味着审计竞赛等竞争性审计模式在发现漏洞方面可能比传统顶级审计更为有效。 Immunefi是领先的Web3漏洞赏金平台，其审计竞赛是由安全研究员进行的有时间限制的代码审查。该报告将这些竞赛与传统知名公司进行的顶级（tier-1）审计进行了比较。</summary>
+  </entry>
   <entry>
     <title>Hyperliquid的RWA永续合约热潮侵蚀支撑HYPE的收入</title>
     <link href="https://www.coindesk.com/business/2026/08/09/hyperliquid-s-rwa-perps-boom-is-eating-into-the-revenue-that-backs-hype"/>

@@ -4,7 +4,28 @@
   <link href="https://bmt.news/feeds/technology-en.xml" rel="self"/>
   <link href="https://bmt.news/"/>
   <id>https://bmt.news/feeds/technology-en.xml</id>
-  <updated>2026-08-10T00:00:00Z</updated>
+  <updated>2026-08-11T00:00:00Z</updated>
+  <entry>
+    <title>Anthropic Proves Over Two-Thirds of Riemann Zeta Zeros Lie on Critical Line</title>
+    <link href="https://news.google.com/rss/articles/CBMif0FVX3lxTE9HUXZ4WmJ3T1l3cEc3S3dXcWx5U280U2xOM1ZFYV9MU0h6bEE5bWZteG9sUGFiUXNtc0QzekJ0YVBVbjMweGJYeHBpRkU5UHNnbmlWU0RNUnkxdm54SnhtdUh2QVhuX0ExaFhQd2o2Um1sTWc3ZnRsMnJWSUZObjA?oc=5"/>
+    <id>https://bmt.news/editions/2026-08-11/#rss:news.google.com_rss_search?q=site:anthropic.com+when:7d&amp;hl=en-US&amp;gl=US&amp;ceid=US:en:f0a9331f777e37c7</id>
+    <updated>2026-08-11T00:00:00Z</updated>
+    <summary>Anthropic has published a mathematical result proving that more than two-thirds of the nontrivial zeros of the Riemann zeta function lie on the critical line. This marks a significant quantitative advance in the study of one of mathematics&#x27; most famous open problems. This is significant because the Riemann hypothesis, which conjectures that all nontrivial zeros lie on the critical line, is one of the most important unsolved problems in pure mathematics. A proof that more than two-thirds of the zeros satisfy the condition is a meaningful step, and the involvement of a leading AI lab highlights the growing role of AI in mathematical research. The result focuses on the proportion of nontrivial zeros on the critical line — the line where the real part equals 1/2. This is a quantitative strengthening of previous estimates, though it does not prove the full Riemann hypothesis.</summary>
+  </entry>
+  <entry>
+    <title>OpenAI Pauses Astra Development Over Critical Cyber Capability Concerns</title>
+    <link href="https://decrypt.co/375210/openai-pause-astra-ai-model-critical-cyber-capabilities"/>
+    <id>https://bmt.news/editions/2026-08-11/#rss:decrypt.co_feed:dc96fae79b699442</id>
+    <updated>2026-08-11T00:00:00Z</updated>
+    <summary>OpenAI announced that internal evaluations of its unreleased Astra model showed significant advances in agentic coding and cybersecurity, and the company &#x27;cannot rule out&#x27; that the model has reached the &#x27;Critical&#x27; tier of its Preparedness Framework. The company has paused internal work on Astra that lacks new safeguards and has tightened isolation, monitoring, and access controls. This is one of the first times a major AI lab has halted work on a next-generation model over critical cyber-risk concerns under its own safety framework. It signals that frontier models may be approaching autonomous cyberweapon capabilities, with implications for model governance, deployment timing, and industry-wide safety standards. Under OpenAI&#x27;s Preparedness Framework, the &#x27;Critical&#x27; tier is triggered when a model can autonomously find and build working zero-day exploits on hardened systems, or plan and execute a full attack from a high-level goal. Earlier models, including GPT-5.6-Sol, topped out at the lower &#x27;High&#x27; tier. OpenAI stressed that Astra played no part in the recent Hugging Face breach.</summary>
+  </entry>
+  <entry>
+    <title>Meta Launches Muse Glimmer, an Open 30B Model for Local Agent Workflows</title>
+    <link href="https://research.meta.ai/blog/introducing-muse-glimmer-open-agentic-model"/>
+    <id>https://bmt.news/editions/2026-08-11/#hackernews:story:49241679</id>
+    <updated>2026-08-11T00:00:00Z</updated>
+    <summary>Meta Superintelligence Labs released Muse Glimmer, a 30-billion-parameter open-weights model under the Apache 2.0 license, optimized for always-on local agent workflows. It runs on consumer hardware with a single GPU and supports more than 100 languages. This is the first open model from Meta&#x27;s Superintelligence Labs and signals a shift toward smaller, efficient local models that reduce reliance on cloud inference. It could accelerate the adoption of local AI agents across developer and enterprise workflows, adding a major lab-backed option to the competitive 30B dense-model segment. Muse Glimmer is a dense model with 30 billion parameters, not a mixture-of-experts, and community GGUF builds are already available for llama.cpp and Ollama. Meta also plans to release the weights for Muse Spark 1.2, and early reports claim inference speeds of 20K tokens per second on a single GPU.</summary>
+  </entry>
   <entry>
     <title>Cloudflare Gives AI Agents Wallets, Pushing Agent Identity Forward</title>
     <link href="https://www.forbes.com/sites/boazsobrado/2026/08/09/you-can-fake-everything-cloudflare-just-gave-ai-agents-wallets/"/>

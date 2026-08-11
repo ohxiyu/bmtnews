@@ -4,7 +4,70 @@
   <link href="https://bmt.news/feeds/crypto-en.xml" rel="self"/>
   <link href="https://bmt.news/"/>
   <id>https://bmt.news/feeds/crypto-en.xml</id>
-  <updated>2026-08-10T00:00:00Z</updated>
+  <updated>2026-08-11T00:00:00Z</updated>
+  <entry>
+    <title>BitMart founder denies exit scam as withdrawal freeze persists</title>
+    <link href="https://protos.com/bitmart-founder-denies-exit-scam-as-withdrawals-stall/"/>
+    <id>https://bmt.news/editions/2026-08-11/#rss:protos.com_feed_:af1f8ba2fc1ee2c1</id>
+    <updated>2026-08-11T00:00:00Z</updated>
+    <summary>BitMart founder Sheldon Xia publicly denied exit-scam rumors, saying the exchange &#x27;has not disappeared, nor will we,&#x27; but offered no figures, timeline, or proof of reserves. Users report withdrawal requests stuck for weeks since the July 26 &#x27;orderly wind-down,&#x27; including a $10.1 million request. Weeks-long withdrawal failures at a major exchange raise serious solvency and fraud concerns, directly threatening user access to funds. This adds to broader distrust of centralized exchanges and could intensify scrutiny of counterparty risk across the crypto industry. On-chain data from Arkham Intelligence shows BitMart&#x27;s tracked holdings fell from about $102 million on July 6 to $59.3 million, with the largest positions held in obscure tokens such as Ten Best Coins and WeFi rather than BTC, ETH, or stablecoins. The exchange&#x27;s token BMX crashed 81% in a week, and the founder&#x27;s statement provided no proof of reserves.</summary>
+  </entry>
+  <entry>
+    <title>BTCPay Server Supporters Offer Up to 3 BTC Bounty After Critical Exploit</title>
+    <link href="https://www.theblock.co/news/ecosystems/2026-08-10-btcpay-server-supporters-offer-3-btc-recovery-bounty-critical-exploit-411353?utm_source=rss&amp;utm_medium=rss"/>
+    <id>https://bmt.news/editions/2026-08-11/#rss:www.theblock.co_rss.xml:fabe356d3c5a84d5</id>
+    <updated>2026-08-11T00:00:00Z</updated>
+    <summary>BTCPay Server acknowledged a critical exploit that may have been AI-assisted, and credited Craig Raw and the Bitcoin Red Team fund for reporting the issue. Supporters have pledged up to 3 BTC as a recovery bounty. BTCPay Server is a widely used self-hosted Bitcoin payment processor, so a critical exploit could affect merchants and users who rely on it to accept Bitcoin directly. This incident also highlights the growing role of AI both in attacking and in defending open-source cryptocurrency infrastructure. Supporters have pledged up to 3 BTC as a recovery bounty, while BTCPay Server said the exploit may have been AI-assisted. The project credited Craig Raw and the Bitcoin Red Team fund for reporting the vulnerability.</summary>
+  </entry>
+  <entry>
+    <title>Ethereum&#x27;s latest roadmap prioritizes privacy and quantum resistance, says Buterin</title>
+    <link href="https://www.theblock.co/news/ecosystems/2026-08-10-vitalik-buterin-privacy-quantum-resistance-front-and-center-ethereum-latest-roadmap-411298?utm_source=rss&amp;utm_medium=rss"/>
+    <id>https://bmt.news/editions/2026-08-11/#rss:www.theblock.co_rss.xml:bf4020a9b8317915</id>
+    <updated>2026-08-11T00:00:00Z</updated>
+    <summary>Ethereum co-founder Vitalik Buterin published an updated roadmap called the &quot;Strawmap&quot; on Monday, elevating privacy, quantum resistance, and AI-assisted formal verification to top priorities. These new focus areas—including post-quantum scaling and native rollups—were not present in his 2023 roadmap. This signals a major strategic shift for Ethereum as it prepares for &quot;Q-Day&quot; and the potential threat of quantum computers, and it could reshape how the network handles privacy and scaling. Because Buterin is a core figure, this roadmap helps align the ecosystem&#x27;s long-term research and development priorities, potentially affecting developers, validators, and users. The &quot;Strawmap&quot; deprioritizes VDFs and most EVM improvement work, and drops Verkle trees and state expiry in favor of new constructions. Buterin noted that Ethereum is increasingly relying on STARKs and AI-assisted formal verification to ensure protocol correctness, and he reiterated his &quot;Lean Ethereum&quot; vision of a quantum-safe, privacy-first, censorship-resistant, and performant protocol.</summary>
+  </entry>
+  <entry>
+    <title>Coldcard Seed-Phrase Hack Proves More Damaging Than Typical Crypto Breach</title>
+    <link href="https://fortune.com/2026/08/10/bitcoin-coldcard-hack-hardware-wallet-security-seed-phrases/"/>
+    <id>https://bmt.news/editions/2026-08-11/#gdelt:article:20260810T141500Z::https://fortune.com/2026/08/10/bitcoin-coldcard-hack-hardware-wallet-security-seed-phrases/</id>
+    <updated>2026-08-11T00:00:00Z</updated>
+    <summary>On July 30, 2026, a firmware vulnerability in Coldcard hardware wallets allowed attackers to drain roughly 1,082.65 BTC (about $70 million, with later estimates rising to $89 million) from over 1,000 addresses in a 41-minute sweep. Unlike typical hacks, this incident compromised seed phrases directly, making it far more damaging to users&#x27; ability to protect their funds. Hardware wallets are widely considered the most secure way to self-custody bitcoin, so a seed-phrase leak undermines the core promise of cold storage and threatens trust in the entire hardware-wallet ecosystem. Affected users must move funds to a newly generated seed phrase, and the industry may need to rethink supply-chain and firmware assurance. According to Bitcoin Magazine, the flaw also affects ephemeral keys, session keys in Clone Coldcard or Key Teleport features, and BIP 85 seeds derived from a compromised seed. Galaxy Research traced the July 30 sweep of 1,196 Bitcoin addresses and tied it to the firmware flaw; Bitcoin Magazine reports that roughly 1,000 BTC connected to the vulnerability has moved on-chain, and attacks are still ongoing.</summary>
+  </entry>
+  <entry>
+    <title>Mastercard closes $1.8B acquisition of stablecoin infra firm BVNK</title>
+    <link href="https://www.coindesk.com/business/2026/08/10/inside-stablecoin-firm-bvnk-s-journey-to-a-usd1-8b-acquisition-by-mastercard"/>
+    <id>https://bmt.news/editions/2026-08-11/#rss:www.coindesk.com_arc_outboundfeeds_rss_:b6dbfccd2d2c56f6</id>
+    <updated>2026-08-11T00:00:00Z</updated>
+    <summary>Mastercard has closed its $1.8 billion acquisition of BVNK, a stablecoin infrastructure firm, after a competitive process that also involved Coinbase and Visa. BVNK reportedly chose Mastercard over a higher Coinbase offer of up to $2.5 billion because of cultural fit and strategic alignment. The deal shows major payments networks treating stablecoin infrastructure as strategically essential, not just a niche crypto service. It intensifies the race among Mastercard, Visa, Stripe, and Coinbase to control the rails of the roughly $300 billion stablecoin market. Early investor Concentric backed BVNK in 2019 at a $4 million valuation, making this a roughly 450x return on paper. The deal follows Stripe&#x27;s $1.1 billion purchase of Bridge in late 2024, which pushed Mastercard and Visa to pursue stablecoin infrastructure deals.</summary>
+  </entry>
+  <entry>
+    <title>SharpLink posts $1B loss; $1.7B staked ETH treasury faces 90-day cash conversion</title>
+    <link href="https://cryptoslate.com/sharplink-posts-1b-loss-as-its-1-7b-ethereum-treasury-could-take-90-days-to-fully-convert-to-cash/"/>
+    <id>https://bmt.news/editions/2026-08-11/#rss:cryptoslate.com_feed_:2dd7e5b6825421e1</id>
+    <updated>2026-08-11T00:00:00Z</updated>
+    <summary>SharpLink reported a $1.08 billion net loss for the six months ending June 30, driven mostly by unrealized ETH price declines and impairments on LsETH and weETH. Its roughly $1.7 billion Ethereum treasury, largely staked, may take up to 90 days to fully convert to cash. This highlights the liquidity risk of staked Ethereum treasuries: even large ETH holders cannot instantly access funds when markets turn. It matters for sentiment around ETH and for public companies using staking to generate yield on crypto reserves. The loss included $827.7 million from unrealized ETH declines and $267.8 million from impairments of liquid staking and restaking tokens LsETH and weETH. As of Aug. 3, SharpLink held 888,938 unencumbered ETH-equivalent units, with ETH trading around $1,916.57 on Aug. 10, giving an illustrative gross value of roughly $1.7 billion.</summary>
+  </entry>
+  <entry>
+    <title>Crypto.com cancels CRO treasury deal, cuts rewards as CRO slides</title>
+    <link href="https://protos.com/is-a-crisis-brewing-at-crypto-com/"/>
+    <id>https://bmt.news/editions/2026-08-11/#rss:protos.com_feed_:294c68b60e5ba879</id>
+    <updated>2026-08-11T00:00:00Z</updated>
+    <summary>Crypto.com terminated its proposed multi-billion dollar digital asset treasury (DAT) business combination with DJT/MCGA (Yorkville America) over the weekend and simultaneously cut cardholder cashback and staking rewards. CRO fell below $0.05, its lowest since October 2023, and a related ETF servicing deal with Yorkville was also scrapped. The termination and reward cuts signal operational and strategic stress at one of the largest crypto exchanges, directly affecting CRO token holders and card customers. The fraying relationship with a Trump-branded entity adds reputational and sentiment risks for Crypto.com and its ecosystem. Starting October 1, Ruby tier cashback drops from 2% to 1.5% and the monthly spending cap falls from $1,250 to $750, while Icy White loses unlimited 4% cashback for a 3.5% rate capped at $3,000. Staking rewards for Pro and Private lock-ups drop from 4% to 3% and 9% to 6% respectively on September 10, even though users&#x27; CRO remains locked.</summary>
+  </entry>
+  <entry>
+    <title>Coinsbuy Covers $7.9M Breach Loss, Offers $100K Reward</title>
+    <link href="https://cointelegraph.com/news/coinsbuy-confirms-security-breach-after-wallets-reportedly-drained-of-79m?utm_source=rss_feed&amp;utm_medium=rss&amp;utm_campaign=rss_partner_inbound"/>
+    <id>https://bmt.news/editions/2026-08-11/#rss:cointelegraph.com_rss:33980603d5a1d4af</id>
+    <updated>2026-08-11T00:00:00Z</updated>
+    <summary>Crypto payments platform Coinsbuy suffered a security breach on Aug. 9 that drained more than $7.9 million across Ethereum and TRON. The company covered all affected client funds from its own reserves and is offering a $100,000 reward for information leading to the attacker. The incident underscores ongoing security risks for crypto payment platforms and custodial services. Coinsbuy&#x27;s decision to reimburse users mitigated direct losses, but the attack highlights how stolen funds are laundered through privacy coins like Monero, complicating recovery and investigation. Blockchain investigators linked the attack to three addresses: two on Ethereum and one on TRON. BlockWatchdog reported about $6.34 million of the stolen funds flowed through FixedFloat exchange, while ChangeNOW helped freeze a six-figure portion; Coinsbuy replenished affected wallets with roughly $3.93 million shortly after the incident.</summary>
+  </entry>
+  <entry>
+    <title>Crypto lost $110M to hacks in July, Immunefi data shows</title>
+    <link href="https://www.theblock.co/news/defi/2026-08-10-crypto-hacks-july-immunefi-411246?utm_source=rss&amp;utm_medium=rss"/>
+    <id>https://bmt.news/editions/2026-08-11/#rss:www.theblock.co_rss.xml:824784cca6072f88</id>
+    <updated>2026-08-11T00:00:00Z</updated>
+    <summary>According to Immunefi, the crypto ecosystem lost roughly $110 million to hacks in July, while its audit competitions reportedly outperformed traditional tier-1 audits in finding vulnerabilities. The aggregate loss highlights persistent security risks in DeFi and the broader crypto market. It also suggests that competitive auditing models such as audit competitions may be becoming more effective at identifying vulnerabilities than conventional top-tier audits. Immunefi is a leading Web3 bug bounty platform, and its audit competitions are time-bound code reviews conducted by security researchers. The report compares these competitions with tier-1 audits, which are typically conducted by well-known firms.</summary>
+  </entry>
   <entry>
     <title>Hyperliquid RWA perps boom erodes revenue backing HYPE</title>
     <link href="https://www.coindesk.com/business/2026/08/09/hyperliquid-s-rwa-perps-boom-is-eating-into-the-revenue-that-backs-hype"/>

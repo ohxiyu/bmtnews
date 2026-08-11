@@ -4,7 +4,21 @@
   <link href="https://bmt.news/feeds/policy-en.xml" rel="self"/>
   <link href="https://bmt.news/"/>
   <id>https://bmt.news/feeds/policy-en.xml</id>
-  <updated>2026-08-10T00:00:00Z</updated>
+  <updated>2026-08-11T00:00:00Z</updated>
+  <entry>
+    <title>Bybit Secures US Asset Freeze in $1.5B Lazarus Hack Lawsuit</title>
+    <link href="https://news.google.com/rss/articles/CBMid0FVX3lxTFBkQmdCRUthR040V0wzdkVidnBGOFQ0OFlDLWRuMW5zSTJkSlhlRl9IRVJPVXRXalNoT2UzMm9jcDlMTGdTV1RVVm1mZDlCbUJGUnUwenZQU0pMdE8yU0dTeGJ4TkVhSHAyajNGYnhjcGxRSWdGY1F3?oc=5"/>
+    <id>https://bmt.news/editions/2026-08-11/#google_news:article:bbd7dc1598763cf0</id>
+    <updated>2026-08-11T00:00:00Z</updated>
+    <summary>Bybit filed a civil lawsuit in the U.S. District Court for the District of Columbia against North Korea, its Reconnaissance General Bureau, and the Lazarus Group over the $1.5 billion theft in February 2025, and secured a preliminary injunction freezing identified stolen assets. The court found Bybit likely to succeed on the merits. This is a major legal escalation in the largest crypto exchange hack, potentially setting a precedent for how exchanges can use civil courts and asset freezes to pursue state-sponsored hackers. It also demonstrates growing cooperation between the crypto industry, regulators, and law enforcement in tracing and recapturing stolen funds. Bybit reported that approximately $48.4 million has been recovered and about $30.5 million frozen across more than 28 exchanges and custodians, totaling roughly 5% of the stolen amount. The attackers drained about 500,000 ETH by manipulating a signing interface, and most of the stolen Ethereum was converted to Bitcoin via Thorchain and mixed through Wasabi, Tornado Cash, and Railgun.</summary>
+  </entry>
+  <entry>
+    <title>US Sanctions Expose $6.3B Iran-Russia Crypto Pipeline via Shelbit, Aban Tether</title>
+    <link href="https://cryptoslate.com/us-sanctions-exposed-a-6-3-billion-crypto-pipeline-linking-iran-and-russia/"/>
+    <id>https://bmt.news/editions/2026-08-11/#rss:cryptoslate.com_feed_:daa9ff0784671c27</id>
+    <updated>2026-08-11T00:00:00Z</updated>
+    <summary>On August 7, the US Treasury sanctioned Iranian-linked crypto platforms Shelbit and Aban Tether, and TRM Labs traced over $6.3 billion through Shelbit-linked wallets over 23 months, including $318 million tied to Russia&#x27;s sanctioned A7 network. The sanctions also targeted Shelbit founder Siavash Kayvanpour and several of his companies. This action reveals a large-scale crypto settlement pipeline used by sanctioned Iranian and Russian entities, highlighting how stablecoins like USDT on Tron have become a channel for evading international financial controls. It is likely to intensify regulatory scrutiny and compliance requirements on crypto exchanges and stablecoin issuers worldwide. Shelbit operated as a settlement network rather than a true exchange: its high-volume wallets&#x27; inflows and outflows matched within 0.1%, and it rotated addresses every one to four months. About 88% of the traced volume moved over Tron via USDT-TRC20, while only roughly $370,000 involved mixing services.</summary>
+  </entry>
   <entry>
     <title>World Liberty Took $100M From Businessman in Money Laundering Probe</title>
     <link href="https://www.theblock.co/news/regulation/2026-08-09-world-liberty-received-100-million-from-businessman-investigated-for-money-laundering-nyt-411221?utm_source=rss&amp;utm_medium=rss"/>

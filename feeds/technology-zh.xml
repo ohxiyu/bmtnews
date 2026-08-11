@@ -4,7 +4,28 @@
   <link href="https://bmt.news/feeds/technology-zh.xml" rel="self"/>
   <link href="https://bmt.news/"/>
   <id>https://bmt.news/feeds/technology-zh.xml</id>
-  <updated>2026-08-10T00:00:00Z</updated>
+  <updated>2026-08-11T00:00:00Z</updated>
+  <entry>
+    <title>Anthropic证明：黎曼ζ函数超过三分之二的零点位于临界线</title>
+    <link href="https://news.google.com/rss/articles/CBMif0FVX3lxTE9HUXZ4WmJ3T1l3cEc3S3dXcWx5U280U2xOM1ZFYV9MU0h6bEE5bWZteG9sUGFiUXNtc0QzekJ0YVBVbjMweGJYeHBpRkU5UHNnbmlWU0RNUnkxdm54SnhtdUh2QVhuX0ExaFhQd2o2Um1sTWc3ZnRsMnJWSUZObjA?oc=5"/>
+    <id>https://bmt.news/editions/2026-08-11/#rss:news.google.com_rss_search?q=site:anthropic.com+when:7d&amp;hl=en-US&amp;gl=US&amp;ceid=US:en:f0a9331f777e37c7</id>
+    <updated>2026-08-11T00:00:00Z</updated>
+    <summary>Anthropic发布了一项数学成果，证明了黎曼ζ函数的非平凡零点中有超过三分之二位于临界线上。这标志着数学中最著名的未解问题之一的定量研究取得了重大进展。 这一成果意义重大，因为黎曼猜想是纯数学中最重要的未解问题之一，它猜测所有非平凡零点都位于临界线上。证明超过三分之二的零点满足该条件是一个重要的进展，而领先的人工智能实验室参与其中，也凸显了AI在数学研究中日益重要的作用。 该结果聚焦于临界线（实部等于1/2的直线）上非平凡零点的比例。这是对先前估计的定量加强，但并不证明完整的黎曼猜想。</summary>
+  </entry>
+  <entry>
+    <title>OpenAI 因关键网络能力风险暂停 Astra 模型开发</title>
+    <link href="https://decrypt.co/375210/openai-pause-astra-ai-model-critical-cyber-capabilities"/>
+    <id>https://bmt.news/editions/2026-08-11/#rss:decrypt.co_feed:dc96fae79b699442</id>
+    <updated>2026-08-11T00:00:00Z</updated>
+    <summary>OpenAI 宣布，对其未发布模型 Astra 的内部评估显示其在智能体编码（agentic coding）和网络安全方面取得重大进展，且公司&#x27;无法排除&#x27;该模型已达到其 Preparedness Framework 中&#x27;Critical&#x27;（关键）级别的可能性。该公司已暂停缺乏新保障措施的 Astra 内部工作，并加强隔离、监控和访问控制。 这是主要 AI 实验室首次依据自身安全框架，因关键网络风险而暂停下一代模型的开发。它表明前沿模型可能正接近自主网络武器的能力，对模型治理、部署时机以及行业安全标准都具有深远影响。 根据 OpenAI 的 Preparedness Framework，当模型能够在加固系统上自主发现并构建可用的零日漏洞利用程序，或仅凭高层目标就能规划并执行完整攻击时，即触发&#x27;Critical&#x27;（关键）级别。包括 GPT-5.6-Sol 在内的早期模型最高仅达到较低的&#x27;High&#x27;（高）级别。OpenAI 强调 Astra 与最近的 Hugging Face 安全事件无关。</summary>
+  </entry>
+  <entry>
+    <title>Meta 发布 Muse Glimmer：面向本地智能体工作流的开放 30B 模型</title>
+    <link href="https://research.meta.ai/blog/introducing-muse-glimmer-open-agentic-model"/>
+    <id>https://bmt.news/editions/2026-08-11/#hackernews:story:49241679</id>
+    <updated>2026-08-11T00:00:00Z</updated>
+    <summary>Meta 超级智能实验室发布了 Muse Glimmer，这是一个采用 Apache 2.0 许可的 300 亿参数开放权重模型，专为常驻本地的智能体工作流优化。它可在配备单张 GPU 的消费级硬件上运行，并支持超过 100 种语言。 这是 Meta 超级智能实验室发布的首个开放模型，标志着行业正在向更小巧、更高效的本地模型转变，以减少对云端推理的依赖。它可能加速本地 AI 智能体在开发者与企业工作流中的普及，为竞争激烈的 30B 稠密模型细分市场增加一个重要选择。 Muse Glimmer 是拥有 300 亿参数的稠密模型（而非混合专家模型），社区已提供适用于 llama.cpp 和 Ollama 的 GGUF 构建。Meta 还计划发布 Muse Spark 1.2 的权重，早期报告称其在单张 GPU 上可达到每秒 2 万 token 的推理速度。</summary>
+  </entry>
   <entry>
     <title>Cloudflare为AI代理提供钱包，推进代理身份体系</title>
     <link href="https://www.forbes.com/sites/boazsobrado/2026/08/09/you-can-fake-everything-cloudflare-just-gave-ai-agents-wallets/"/>
