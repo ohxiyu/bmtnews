@@ -89,3 +89,42 @@ def test_render_web_feed_omits_extras_when_absent() -> None:
     )
     assert "feed-overview" not in markup
     assert "market-snapshot" not in markup
+
+
+class _ScriptedClient:
+    """Returns a fixed completion, standing in for the AI client."""
+
+    def __init__(self, response: str) -> None:
+        self.response = response
+
+    async def complete(self, **_kwargs) -> str:
+        return self.response
+
+
+def test_edition_overview_unwraps_a_json_wrapped_lede() -> None:
+    """Most prompts here ask for JSON, so a prose prompt sometimes gets it."""
+    import asyncio
+
+    from src.ai.summarizer import generate_edition_overview
+
+    client = _ScriptedClient('{"lede": "BitMart 创始人否认跑路，提现仍停滞。"}')
+    overview = asyncio.run(
+        generate_edition_overview(
+            client, [make_item("a", 8.0)], date="2026-08-11", language="zh"
+        )
+    )
+    assert overview == "BitMart 创始人否认跑路，提现仍停滞。"
+
+
+def test_edition_overview_keeps_plain_prose_untouched() -> None:
+    import asyncio
+
+    from src.ai.summarizer import generate_edition_overview
+
+    client = _ScriptedClient("BitMart 创始人否认跑路，提现仍停滞。")
+    overview = asyncio.run(
+        generate_edition_overview(
+            client, [make_item("a", 8.0)], date="2026-08-11", language="zh"
+        )
+    )
+    assert overview == "BitMart 创始人否认跑路，提现仍停滞。"

@@ -20,6 +20,7 @@ from pathlib import Path
 from typing import List, Optional, Sequence
 
 from ._file_utils import _atomic_write_text
+from .ai.utils import unwrap_prose_response
 from .archive import ArchiveRecord
 from .threads import collect_threads
 
@@ -153,7 +154,9 @@ async def generate_weekly_digest(
     except Exception as exc:
         logger.warning("Weekly digest generation failed: %s", exc)
         return None
-    text = str(response or "").strip()
+    text = unwrap_prose_response(
+        response, keys=("digest", "review", "body", "markdown", "text")
+    ).strip()
     return text or None
 
 
@@ -187,7 +190,9 @@ async def generate_calibration_review(
     except Exception as exc:
         logger.warning("Calibration review generation failed: %s", exc)
         return None
-    text = str(response or "").strip()
+    text = unwrap_prose_response(
+        response, keys=("review", "calibration", "body", "markdown", "text")
+    ).strip()
     return text or None
 
 

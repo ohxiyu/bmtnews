@@ -56,7 +56,12 @@ async def generate_edition_overview(
         logger.warning("Edition overview generation failed: %s", exc)
         return None
 
-    text = " ".join(str(response or "").split()).strip().strip('"')
+    from .utils import unwrap_prose_response
+
+    unwrapped = unwrap_prose_response(
+        response, keys=("lede", "overview", "paragraph", "text", "summary")
+    )
+    text = " ".join(unwrapped.split()).strip().strip('"')
     if not text or len(text) > _OVERVIEW_MAX_CHARS:
         return None
     return text

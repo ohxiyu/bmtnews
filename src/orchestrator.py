@@ -2027,6 +2027,16 @@ class BMTNewsOrchestrator:
                     fingerprint(
                         title_zh=str(item.metadata.get("title_zh") or item.title),
                         title_en=str(item.metadata.get("title_en") or item.title),
+                        summary_zh=str(
+                            item.metadata.get("whats_new_zh")
+                            or item.ai_summary
+                            or ""
+                        ),
+                        summary_en=str(
+                            item.metadata.get("whats_new_en")
+                            or item.ai_summary
+                            or ""
+                        ),
                         tags=item.ai_tags or [],
                     ),
                 )

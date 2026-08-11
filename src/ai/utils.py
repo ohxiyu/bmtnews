@@ -2,7 +2,7 @@
 
 import json
 import re
-from typing import Optional
+from typing import Iterable, Optional
 
 
 def parse_json_response(response: str) -> Optional[dict]:
@@ -58,3 +58,50 @@ def parse_json_response(response: str) -> Optional[dict]:
             pass
 
     return None
+
+
+_FENCE = re.compile(r"^\s*```[a-zA-Z0-9_-]*\s*\n(.*?)\n?\s*```\s*$", re.DOTALL)
+
+
+def _strip_code_fence(text: str) -> str:
+    match = _FENCE.match(text)
+    return match.group(1).strip() if match else text
+
+
+def unwrap_prose_response(
+    response: object,
+    *,
+    keys: Iterable[str] = (),
+) -> str:
+    """Return the prose a model was asked for, unwrapping JSON if it wrapped it.
+
+    Most prompts in this pipeline ask for JSON, and models trained on that
+    mix will occasionally answer a prose prompt with ``{"lede": "..."}``
+    anyway. Rendering that verbatim puts raw JSON on the page, so every
+    prose call is funnelled through here.
+
+    ``keys`` names the fields worth unwrapping; a single-field object is
+    unwrapped whatever the field is called, because a lone string value is
+    unambiguously the answer.
+    """
+    text = _strip_code_fence(str(response or "").strip())
+    if not text.startswith("{"):
+        return text
+
+    payload = parse_json_response(text)
+    if not isinstance(payload, dict) or not payload:
+        return text
+
+    for key in keys:
+        value = payload.get(key)
+        if isinstance(value, str) and value.strip():
+            return value.strip()
+
+    strings = [
+        value.strip()
+        for value in payload.values()
+        if isinstance(value, str) and value.strip()
+    ]
+    if len(strings) == 1:
+        return strings[0]
+    return text
