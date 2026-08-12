@@ -4,7 +4,21 @@
   <link href="https://bmt.news/feeds/policy-zh.xml" rel="self"/>
   <link href="https://bmt.news/"/>
   <id>https://bmt.news/feeds/policy-zh.xml</id>
-  <updated>2026-08-11T00:00:00Z</updated>
+  <updated>2026-08-12T00:00:00Z</updated>
+  <entry>
+    <title>CFTC起诉Goliath Ventures涉嫌3.97亿美元DeFi庞氏骗局</title>
+    <link href="https://thedefiant.io/news/regulation/cftc-sues-goliath-ventures-over-alleged-397m-defi-liquidity-pool-ponzi"/>
+    <id>https://bmt.news/editions/2026-08-12/#rss:thedefiant.io_api_feed:bc32f26c3d3ab029</id>
+    <updated>2026-08-12T00:00:00Z</updated>
+    <summary>CFTC对Goliath Ventures提起诉讼，指控其运营涉及3.97亿美元的DeFi流动性池庞氏骗局。诉状称其中8700万美元用于庞氏支付，1.74亿美元用于招聘佣金，4800万美元被首席执行官Christopher Delgado个人挥霍。 这是CFTC针对DeFi相关欺诈的最大规模执法行动之一，表明监管机构认为DeFi平台同样受反欺诈执法约束。该案也凸显了零售投资者在未经审计的流动性池项目中面临的风险，并可能加速监管机构对DeFi市场结构的审视。 诉状显示，约1600名客户正通过破产财产寻求追偿。该计划据称将资金挪用至招聘佣金和庞氏支付，而非通过流动性提供产生合法回报。</summary>
+  </entry>
+  <entry>
+    <title>SEC为加密项目准备证券登记豁免的逃生通道</title>
+    <link href="https://decrypt.co/375375/sec-prepares-escape-hatch-securities-registration-crypto-projects"/>
+    <id>https://bmt.news/editions/2026-08-12/#rss:decrypt.co_feed:a8f5711dce010fb4</id>
+    <updated>2026-08-12T00:00:00Z</updated>
+    <summary>美国证券交易委员会（SEC）已定于8月14日召开公开会议，考虑提出“Regulation Crypto”框架，该框架将允许数字资产项目在不进行完整证券登记的情况下筹款，并在项目去中心化后提供退出SEC监管的路径。 这将是SEC针对加密行业推出的首个持久性规则，为项目创始人提供筹款和去中心化的监管跑道，而无需触发登记要求。在《Clarity Act》等立法停滞的情况下，它可能重塑美国加密项目的筹款结构，并降低执法威胁。 该提案由SEC主席Paul Atkins推动，预计将包括一项可持续最长四年的初创企业豁免，以及与去中心化挂钩的安全港，但筹款门槛未予披露。这将是首个正式规则制定而非工作人员声明，未来主席更难推翻；该提案也是在参议院在8月休会前未能推进《Clarity Act》的背景下提出的。</summary>
+  </entry>
   <entry>
     <title>Bybit在15亿美元Lazarus黑客诉讼中获美国资产冻结</title>
     <link href="https://news.google.com/rss/articles/CBMid0FVX3lxTFBkQmdCRUthR040V0wzdkVidnBGOFQ0OFlDLWRuMW5zSTJkSlhlRl9IRVJPVXRXalNoT2UzMm9jcDlMTGdTV1RVVm1mZDlCbUJGUnUwenZQU0pMdE8yU0dTeGJ4TkVhSHAyajNGYnhjcGxRSWdGY1F3?oc=5"/>

@@ -4,7 +4,70 @@
   <link href="https://bmt.news/feeds/crypto-zh.xml" rel="self"/>
   <link href="https://bmt.news/"/>
   <id>https://bmt.news/feeds/crypto-zh.xml</id>
-  <updated>2026-08-11T00:00:00Z</updated>
+  <updated>2026-08-12T00:00:00Z</updated>
+  <entry>
+    <title>Ravencoin 因严重漏洞面临回滚，价格暴跌20%</title>
+    <link href="https://decrypt.co/375330/ravencoin-crashes-critical-exploit-threatens-rollback"/>
+    <id>https://bmt.news/editions/2026-08-12/#rss:decrypt.co_feed:9c718eee7becf7a9</id>
+    <updated>2026-08-12T00:00:00Z</updated>
+    <summary>Ravencoin 网络被演示并利用了一个严重的共识漏洞，自2026年8月7日区块高度 4,487,776 起，无效区块被易受攻击的节点接受。控制大多数算力的矿池正在挖掘一条排除被利用分支的链，这可能导致大约三天的深度重组，RVN 价格已暴跌20%。 该事件打破了工作量证明区块链交易最终确定性的假设，使上周五以来的存款、提款和支付面临被撤销的风险。它直接影响 Ravencoin 持有者、交易所和用户，并引发了对算力集中化安全影响的更广泛质疑。 第一个已知无效区块出现在 2026-08-07 15:44:01 UTC 的高度 4,487,776，最后有效区块被定为 4,487,775。控制大多数网络算力的 2Miners 和 RavenMiner 拒绝了开发者关于选择更近期恢复点的请求，交易所 Upbit 和 Bitvavo 已暂停 RVN 的充值和提现。</summary>
+  </entry>
+  <entry>
+    <title>Anthropic与Riot达成90亿美元AI算力电力交易</title>
+    <link href="https://cointelegraph.com/news/anthropic-9b-deal-bitcoin-miner-riot?utm_source=rss_feed&amp;utm_medium=rss&amp;utm_campaign=rss_partner_inbound"/>
+    <id>https://bmt.news/editions/2026-08-12/#rss:cointelegraph.com_rss:25d41a3513770546</id>
+    <updated>2026-08-12T00:00:00Z</updated>
+    <summary>Riot Platforms宣布与Anthropic达成一项为期20年的协议，从其德克萨斯州Rockdale园区供应191兆瓦的容量，交易价值约90亿美元。这是涉及比特币矿工的最大AI计算交易之一。 这笔交易标志着AI基础设施与加密货币挖矿的重大交汇，矿工转向AI计算托管以解决制约AI数据中心的电力短缺问题。这可能加速比特币矿工向AI行业电力和计算服务提供商的转型趋势。 据报道，该协议是继7月6日Anthropic与比特币矿工TeraWulf达成190亿美元、为期20年的数据中心租赁协议之后的又一交易。Riot股价周一下跌5.4%，但隔夜交易中上涨超过21%，年初至今涨幅超过53%。</summary>
+  </entry>
+  <entry>
+    <title>比特币矿商Riot将出售比特币，为91亿美元AI数据中心租赁融资</title>
+    <link href="https://cryptoslate.com/riot-is-dumping-its-bitcoin-to-fund-a-9-1b-ai-deal-that-wont-pay-rent-until-2027/"/>
+    <id>https://bmt.news/editions/2026-08-12/#rss:cryptoslate.com_feed_:845f1742312f0050</id>
+    <updated>2026-08-12T00:00:00Z</updated>
+    <summary>Riot Platforms与一家未具名的前沿AI实验室签署了191兆瓦的数据中心租赁协议，预计20年基础租期可带来约91亿美元的总合同收入。该公司计划继续出售其比特币库存作为主要股权资金来源，建设成本预计为21亿至23亿美元，租金要到2027年12月和2028年6月才开始产生。 这标志着又一家大型比特币矿商转向AI基础设施，加速了矿企从纯粹比特币生产向多元化发展的趋势。同时，它将持续的比特币库存出售作为融资机制，可能影响市场供应动态，并影响其他矿商管理其持仓的方式。 Riot预计资本支出为21亿至23亿美元，其中80%至90%预计来自尚未完成融资的长期项目债务，剩余2.1亿至4.6亿美元需要股权融资。摩根士丹利提供的5.73亿美元过渡贷款利率为SOFR加275个基点，将于2026年10月15日到期，投资级信用支持尚未敲定且条款未披露。</summary>
+  </entry>
+  <entry>
+    <title>Ravencoin因严重漏洞攻击或回滚四天交易记录</title>
+    <link href="https://www.coindesk.com/tech/2026/08/11/ravencoin-could-roll-back-four-days-of-transactions-after-critical-block-flaw"/>
+    <id>https://bmt.news/editions/2026-08-12/#rss:www.coindesk.com_arc_outboundfeeds_rss_:11f39f88b950c9b1</id>
+    <updated>2026-08-12T00:00:00Z</updated>
+    <summary>Ravencoin正试图回滚约四天的交易记录，起因是攻击者利用了一个允许无效区块加入网络的严重软件漏洞，首个恶意区块于8月7日出现在区块高度4,487,776。2Miners和RavenMiner两个矿池正从高度4,487,775的区块开始重建链，Bitvavo和Upbit等交易所已暂停RVN充提。 这是一起重大的工作量证明治理与安全事件：由于少数矿池掌控了Ravencoin的大部分算力，它们可以决定哪条历史版本存续，用户原本以为已完成的付款可能被抹除。这也凸显了低算力、源自比特币代码的网络容易遭受回滚式攻击，交易所必须采取措施防范损失。 拟议的回滚将撤销从区块4,487,776起的所有交易，包括该时段内的付款和矿工奖励。Ravencoin已发布修复程序，但补丁无法撤销已写入的区块；RavenMiner表示其节点已运行紧急修复并开采所谓的“干净链”，在链稳定前暂停支付，并承诺自行弥补任何缺口。</summary>
+  </entry>
+  <entry>
+    <title>英伟达5000亿美元AI基础设施计划拉大与加密算力差距</title>
+    <link href="https://www.coindesk.com/tech/2026/08/11/nvidia-wants-to-turn-its-ai-chips-into-an-investable-asset-class"/>
+    <id>https://bmt.news/editions/2026-08-12/#rss:www.coindesk.com_arc_outboundfeeds_rss_:cfb30f5ff3f0be9e</id>
+    <updated>2026-08-12T00:00:00Z</updated>
+    <summary>英伟达已与Apollo Global Management、黑石、贝莱德、Brookfield、高盛和KKR六家华尔街机构签署谅解备忘录，建立可能为AI算力基础设施引入超过5000亿美元资金的融资平台。该公司旨在将AI算力确立为可融资的长期基础设施资产，而非短期的技术支出。 此举可能大幅扩张中心化AI算力规模，使去中心化加密算力网络在规模和竞争力上进一步落后。这也标志着AI基础设施融资方式的结构性转变，可能对基于区块链的算力市场和与AI相关的加密资产产生连锁影响。 涉及的六家华尔街机构为Apollo Global Management、黑石、贝莱德、Brookfield Asset Management、高盛和KKR。英伟达CEO黄仁勋称这是芯片首次成为可投资资产类别，并强调AI工厂是能产生收益、寿命长且可替代的资产。</summary>
+  </entry>
+  <entry>
+    <title>Riot Platforms因91亿美元Anthropic交易盘前飙升20%</title>
+    <link href="https://www.coindesk.com/business/2026/08/11/riot-platforms-surges-20-in-pre-market-trading-on-usd9-1-billion-anthropic-deal"/>
+    <id>https://bmt.news/editions/2026-08-12/#rss:www.coindesk.com_arc_outboundfeeds_rss_:39cdbae7c6dc8269</id>
+    <updated>2026-08-12T00:00:00Z</updated>
+    <summary>Riot Platforms宣布与人工智能实验室Anthropic达成一项为期20年、价值91亿美元的协议，将其比特币挖矿基础设施改造用于AI计算，消息公布后该公司股价在2026年8月11日盘前交易中上涨20%。 这笔交易标志着比特币挖矿行业的一次标志性转型，验证了将挖矿基础设施改造用于AI工作负载的可行性。它可能会加速其他矿商的类似转向，并加深加密与AI领域之间的融合。 这项为期20年的协议价值91亿美元，涉及将Riot的挖矿机架改造用于AI计算。消息公布后，Riot股价在盘前交易中上涨约20%。</summary>
+  </entry>
+  <entry>
+    <title>Riot Platforms据报达成91亿美元AI交易 股价盘后涨25%</title>
+    <link href="https://www.theblock.co/news/business/2026-08-10-riot-platforms-ai-deal-anthropic-411358"/>
+    <id>https://bmt.news/editions/2026-08-12/#rss:www.theblock.co_rss.xml:888d4a2dc9c2c0fb</id>
+    <updated>2026-08-12T00:00:00Z</updated>
+    <summary>据报道，Riot Platforms与Anthropic达成91亿美元AI交易，其股价盘后飙升25%。该合同包含两个五年续约选项，潜在合同价值可提升至161亿美元。 这笔交易标志着比特币挖矿与AI之间的重大战略交叉，可能改变矿商变现其能源基础设施的方式。它凸显了AI企业对电力和数据中心容量的需求日益增长，并可能影响整个加密矿业的定位策略。 据报道，这笔91亿美元的基础合同可通过两个五年续约选项扩大至161亿美元。该交易尚未得到官方确认；Riot Platforms是一家垂直整合的美国比特币矿商，直接受比特币价格影响。</summary>
+  </entry>
+  <entry>
+    <title>BTCPay Server 钱包漏洞后悬赏追回被盗比特币</title>
+    <link href="https://decrypt.co/375376/btcpay-bitcoin-bounty-critical-wallet-exploit"/>
+    <id>https://bmt.news/editions/2026-08-12/#rss:decrypt.co_feed:3766979a0e41128d</id>
+    <updated>2026-08-12T00:00:00Z</updated>
+    <summary>BTCPay Server 宣布提供相当于追回资金 10%（上限 3 BTC）的赏金，以追回在一场利用 LND 管理员 macaroon 凭证的漏洞中被盗的比特币，并敦促所有用户立即升级到 2.4.2 版本。 此次事件暴露了自托管 Lightning Network 基础设施中的真实安全风险，直接影响到运行易受攻击的 BTCPay/LND 服务器的操作者。同时，它也凸显了开源支付处理器必须优先进行快速修复并奖励漏洞研究，以保护用户资金。 攻击者获取了 LND 管理员 macaroon（一种可对 Lightning 节点进行广泛控制的凭证），并利用其访问关联钱包。BTCPay 尚未披露被盗比特币数量或受影响的用户人数；赏金将在可靠的线索之间分配，BTCPay Server 基金会还将分别向安全研究员 Craig Raw 和 Bitcoin Red Team 捐赠 0.21 BTC。</summary>
+  </entry>
+  <entry>
+    <title>纳斯达克收购LeveL Markets 推进全天候市场</title>
+    <link href="https://cointelegraph.com/news/nasdaq-to-acquire-level-markets-in-push-toward-always-on-markets?utm_source=rss_feed&amp;utm_medium=rss&amp;utm_campaign=rss_partner_inbound"/>
+    <id>https://bmt.news/editions/2026-08-12/#rss:cointelegraph.com_rss:03cebd07742a9b9b</id>
+    <updated>2026-08-12T00:00:00Z</updated>
+    <summary>纳斯达克已签署最终协议收购美国第三大另类交易系统（ATS）LeveL Markets，并成立了由Roland Chai领导的新部门“数字流动性网络”（DLN）。该交易于2026年8月11日宣布，尚待监管批准，财务条款未披露。 此次收购标志着机构在代币化证券和7x24小时交易方面的重大推进，直接将传统市场基础设施与基于区块链的数字资产连接起来。它表明传统交易所与加密市场之间正日益融合，可能加速机构投资者对代币化资产的采用。 LeveL Markets每日处理数亿股交易，服务超过2,500家买方和卖方客户，交易覆盖7,000多个代码，2025年平均日交易量增长56%。收购完成后，LeveL仍将是FINRA监管的ATS并保留自己的管理团队，在纳斯达克数字流动性网络下运营。纳斯达克此前向SEC提交的提案允许代币化股票和ETF与传统股票一同交易，由存托信托公司（DTC）通过三年试点项目进行代币化和区块链结算。</summary>
+  </entry>
   <entry>
     <title>BitMart创始人否认跑路，用户提款仍停滞</title>
     <link href="https://protos.com/bitmart-founder-denies-exit-scam-as-withdrawals-stall/"/>

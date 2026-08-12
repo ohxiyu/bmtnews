@@ -4,7 +4,28 @@
   <link href="https://bmt.news/feeds/technology-en.xml" rel="self"/>
   <link href="https://bmt.news/"/>
   <id>https://bmt.news/feeds/technology-en.xml</id>
-  <updated>2026-08-11T00:00:00Z</updated>
+  <updated>2026-08-12T00:00:00Z</updated>
+  <entry>
+    <title>Nvidia Unveils Nemotron 3.5 Lightning Models and NeMo Switchyard Router</title>
+    <link href="https://blogs.nvidia.com/blog/nemotron-lightning-switchyard-rtx-dgx/"/>
+    <id>https://bmt.news/editions/2026-08-12/#hackernews:story:49263340</id>
+    <updated>2026-08-12T00:00:00Z</updated>
+    <summary>Nvidia introduced Nemotron 3.5 Lightning, a 30B-parameter open Mixture-of-Experts model with only 3B active parameters optimized for low-latency agentic workloads, alongside NeMo Switchyard, an open-source Rust-based library for intelligent model routing. The release includes quantized NVFP4 and BF16 checkpoints plus several speculative decoding methods. This marks Nvidia&#x27;s push beyond single-model deployment toward routing across heterogeneous AI systems, giving developers fine-grained control over cost, latency, and accuracy in agentic workflows. It strengthens Nvidia&#x27;s ecosystem across edge, PC, workstation, data center, and cloud, and reinforces the broader industry trend toward smaller, more efficient open models. The Lightning 3.5 model uses a hybrid architecture that interleaves Mamba-2 layers, MoE layers, and select Attention layers; Switchyard is written in Rust and supports multiple routing strategies for agent steps. The model is available on Nvidia&#x27;s build platform as Nemotron-3.5-Lightning-30B-A3B-NVFP4, and the company reports significant latency and throughput gains from speculative decoding and quantization.</summary>
+  </entry>
+  <entry>
+    <title>Modular Releases Mojo 1.0 for High-Performance AI Development</title>
+    <link href="https://www.modular.com/blog/modular-26-5-mojo-1-0-is-here"/>
+    <id>https://bmt.news/editions/2026-08-12/#hackernews:story:49261128</id>
+    <updated>2026-08-12T00:00:00Z</updated>
+    <summary>Modular has released Mojo 1.0, a Python-compatible programming language designed for high-performance AI workloads. The company reaffirmed its commitment to open-source the Mojo compiler and toolchain in 2026. Mojo 1.0 marks a major milestone for a language that aims to combine Python&#x27;s ease of use with C-level performance for AI and ML infrastructure. This release gives developers a stable foundation to build tools and applications, potentially strengthening the Python ecosystem with a new high-performance option. Mojo is built on the MLIR compiler framework rather than directly on LLVM, enabling it to target CPUs, GPUs, TPUs, and other accelerators. It is not currently a full superset of Python; the roadmap states that Mojo may or may not evolve into one, and the compiler remains proprietary until the planned open-sourcing in 2026.</summary>
+  </entry>
+  <entry>
+    <title>Researcher Steals Hidden LLM Reasoning Traces via Weaker Sibling Models</title>
+    <link href="https://stolen-thoughts.com/"/>
+    <id>https://bmt.news/editions/2026-08-12/#hackernews:story:49257876</id>
+    <updated>2026-08-12T00:00:00Z</updated>
+    <summary>A security researcher has demonstrated a method to extract hidden chain-of-thought reasoning traces from proprietary LLM APIs by replaying outputs into weaker sibling models and jailbreaking them. The technique bypasses API-level protections that keep internal reasoning steps hidden. This is significant because proprietary LLM providers depend on keeping internal reasoning hidden to protect competitive advantages and safety guardrails. The attack reveals that current API protections are insufficient, raising serious questions for model privacy, intellectual property, and AI safety. The reported method involves taking a reasoning trace produced by a frontier model, replaying it into a weaker sibling model, and jailbreaking that model to expose the chain-of-thought. Commenters also noted simpler alternatives, such as disabling reasoning mode while supplying a &#x27;deep_think&#x27; tool that triggers internal reasoning, or injecting short developer prompts to coax models into outputting encrypted compaction data in plaintext.</summary>
+  </entry>
   <entry>
     <title>Anthropic Proves Over Two-Thirds of Riemann Zeta Zeros Lie on Critical Line</title>
     <link href="https://news.google.com/rss/articles/CBMif0FVX3lxTE9HUXZ4WmJ3T1l3cEc3S3dXcWx5U280U2xOM1ZFYV9MU0h6bEE5bWZteG9sUGFiUXNtc0QzekJ0YVBVbjMweGJYeHBpRkU5UHNnbmlWU0RNUnkxdm54SnhtdUh2QVhuX0ExaFhQd2o2Um1sTWc3ZnRsMnJWSUZObjA?oc=5"/>

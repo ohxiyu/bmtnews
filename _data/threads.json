@@ -1,3 +1,16 @@
 {
-  "threads": []
+  "threads": [
+    {
+      "thread_id": "t527a7c91a2",
+      "latest_date": "2026-08-12",
+      "first_date": "2026-08-11",
+      "days": 2,
+      "entries": 2,
+      "category": "crypto",
+      "title_zh": "BTCPay Server 钱包漏洞后悬赏追回被盗比特币",
+      "title_en": "BTCPay Server Offers Bitcoin Bounty After Lightning Wallet Exploit",
+      "summary_zh": "BTCPay Server 宣布提供相当于追回资金 10%（上限 3 BTC）的赏金，以追回在一场利用 LND 管理员 macaroon 凭证的漏洞中被盗的比特币，并敦促所有用户立即升级到 2.4.2 版本。 此次事件暴露了自托管 Lightning Network 基础设施中的真实安全风险，直接影响到运行易受攻击的 BTCPay/LND 服务器的操作者。同时，它也凸显了开源支付处理器必须优先进行快速修复并奖励漏洞研究，以保护用户资金。 攻击者获取了 LND 管理员 macaroon（一种可对 Lightning 节点进行广泛控制的凭证），并利用其访问关联钱包。BTCPay 尚未披露被盗比特币数量或受影响的用户人数；赏金将在可靠的线索之间分配，BTCPay Server 基金会还将分别向安全研究员 Craig Raw 和 Bitcoin Red Team 捐赠 0.21 BTC。",
+      "summary_en": "BTCPay Server announced a 10% bounty (capped at 3 BTC) for recovery of Bitcoin stolen in an exploit that abused LND admin macaroons, and is urging all users to update to version 2.4.2 immediately. The incident exposes real security risks in self-hosted Lightning Network infrastructure and directly affects operators who run vulnerable BTCPay/LND servers. It also underscores how open-source payment processors must prioritize rapid patching and rewarded vulnerability research to protect user funds. Attackers obtained LND admin macaroons, credentials that grant broad control over a Lightning node, and used them to access connected wallets. BTCPay has not disclosed how much Bitcoin was stolen or how many users were affected, and the bounty will be split among verified tips; the BTCPay Server Foundation is also donating 0.21 BTC each to researcher Craig Raw and the Bitcoin Red Team."
+    }
+  ]
 }

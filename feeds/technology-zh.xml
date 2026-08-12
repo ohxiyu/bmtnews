@@ -4,7 +4,28 @@
   <link href="https://bmt.news/feeds/technology-zh.xml" rel="self"/>
   <link href="https://bmt.news/"/>
   <id>https://bmt.news/feeds/technology-zh.xml</id>
-  <updated>2026-08-11T00:00:00Z</updated>
+  <updated>2026-08-12T00:00:00Z</updated>
+  <entry>
+    <title>英伟达发布Nemotron 3.5 Lightning模型与NeMo Switchyard路由库</title>
+    <link href="https://blogs.nvidia.com/blog/nemotron-lightning-switchyard-rtx-dgx/"/>
+    <id>https://bmt.news/editions/2026-08-12/#hackernews:story:49263340</id>
+    <updated>2026-08-12T00:00:00Z</updated>
+    <summary>英伟达推出了Nemotron 3.5 Lightning——一个300亿参数、仅30亿活跃参数的开源混合专家（MoE）模型，专为低延迟智能体工作负载优化；同时发布了NeMo Switchyard，一个基于Rust的开源智能模型路由库。此次发布还包括NVFP4与BF16量化检查点及多种推测解码方法。 这标志着英伟达从单一模型部署向跨异构AI系统的模型路由方向推进，让开发者能够在智能体工作流中精细控制成本、延迟和准确性。此举强化了英伟达在边缘、PC、工作站、数据中心和云端的生态系统，并印证了行业向更小、更高效开源模型发展的趋势。 Lightning 3.5采用混合架构，交错使用Mamba-2层、MoE层和部分注意力层；Switchyard以Rust编写，支持多种面向智能体步骤的路由策略。该模型以Nemotron-3.5-Lightning-30B-A3B-NVFP4的形式在英伟达的build平台上提供，英伟达表示推测解码与量化带来了显著的延迟和吞吐提升。</summary>
+  </entry>
+  <entry>
+    <title>Modular 发布 Mojo 1.0，助力高性能 AI 开发</title>
+    <link href="https://www.modular.com/blog/modular-26-5-mojo-1-0-is-here"/>
+    <id>https://bmt.news/editions/2026-08-12/#hackernews:story:49261128</id>
+    <updated>2026-08-12T00:00:00Z</updated>
+    <summary>Modular 已发布 Mojo 1.0，这是一种为高性能 AI 工作负载设计的 Python 兼容编程语言。该公司重申将于 2026 年开源 Mojo 编译器及工具链的承诺。 Mojo 1.0 标志着该语言的一个重要里程碑，其目标是结合 Python 的易用性与 C 语言级别的性能，用于 AI 和 ML 基础设施。此版本为开发者构建工具和应用程序提供了稳定基础，有望为 Python 生态新增一款高性能选择。 Mojo 基于 MLIR 编译器框架构建，而非直接基于 LLVM，因此可以面向 CPU、GPU、TPU 及其他加速器。目前它并非 Python 的完全超集；路线图指出 Mojo 可能会也可能不会演变为 Python 的完整超集，且编译器在 2026 年计划开源前仍为专有。</summary>
+  </entry>
+  <entry>
+    <title>研究者利用较弱姊妹模型窃取LLM隐藏推理痕迹</title>
+    <link href="https://stolen-thoughts.com/"/>
+    <id>https://bmt.news/editions/2026-08-12/#hackernews:story:49257876</id>
+    <updated>2026-08-12T00:00:00Z</updated>
+    <summary>一名安全研究人员演示了一种方法，通过将输出重放到较弱的姊妹模型并对其进行越狱，从而从专有LLM API中提取隐藏的思维链推理痕迹。该技术绕过了API层面隐藏内部推理步骤的保护措施。 此事意义重大，因为专有LLM提供商依赖于隐藏内部推理来保护竞争优势和安全护栏。该攻击暴露了当前API保护措施的不足，给模型隐私、知识产权和人工智能安全提出了严峻问题。 报道的方法包括获取前沿模型产生的推理痕迹，将其重放到较弱的姊妹模型中，并越狱该模型以暴露思维链。评论者还提到更简单的替代方案，例如禁用推理模式但提供一个“deep_think”工具以触发内部推理，或者注入简短的开发者提示词，诱使模型以明文输出加密的压缩数据。</summary>
+  </entry>
   <entry>
     <title>Anthropic证明：黎曼ζ函数超过三分之二的零点位于临界线</title>
     <link href="https://news.google.com/rss/articles/CBMif0FVX3lxTE9HUXZ4WmJ3T1l3cEc3S3dXcWx5U280U2xOM1ZFYV9MU0h6bEE5bWZteG9sUGFiUXNtc0QzekJ0YVBVbjMweGJYeHBpRkU5UHNnbmlWU0RNUnkxdm54SnhtdUh2QVhuX0ExaFhQd2o2Um1sTWc3ZnRsMnJWSUZObjA?oc=5"/>

@@ -4,7 +4,70 @@
   <link href="https://bmt.news/feeds/crypto-en.xml" rel="self"/>
   <link href="https://bmt.news/"/>
   <id>https://bmt.news/feeds/crypto-en.xml</id>
-  <updated>2026-08-11T00:00:00Z</updated>
+  <updated>2026-08-12T00:00:00Z</updated>
+  <entry>
+    <title>Ravencoin Crashes 20% as Critical Exploit Threatens Multi-Day Rollback</title>
+    <link href="https://decrypt.co/375330/ravencoin-crashes-critical-exploit-threatens-rollback"/>
+    <id>https://bmt.news/editions/2026-08-12/#rss:decrypt.co_feed:9c718eee7becf7a9</id>
+    <updated>2026-08-12T00:00:00Z</updated>
+    <summary>A critical consensus vulnerability was demonstrated and exploited on the Ravencoin network, allowing invalid blocks to be accepted starting at block height 4,487,776 on August 7, 2026. Mining pools controlling a majority of hash power are mining a chain that excludes the exploited branch, which could trigger a deep reorganization of roughly three days, and RVN has crashed 20%. This incident breaks the assumption of transaction finality on a proof-of-work blockchain, putting deposits, withdrawals, and payments made since Friday at risk of reversal. It directly affects Ravencoin holders, exchanges, and users, and raises broader questions about the security implications of hash rate concentration. The first known invalid block appeared at height 4,487,776 on 2026-08-07 15:44:01 UTC, with block 4,487,775 proposed as the last valid block. 2Miners and RavenMiner, which control a majority of network hash rate, declined the developer&#x27;s request to mine a more recent recovery point, and exchanges Upbit and Bitvavo have already suspended RVN deposits and withdrawals.</summary>
+  </entry>
+  <entry>
+    <title>Anthropic, Riot strike $9B AI compute deal for Texas power</title>
+    <link href="https://cointelegraph.com/news/anthropic-9b-deal-bitcoin-miner-riot?utm_source=rss_feed&amp;utm_medium=rss&amp;utm_campaign=rss_partner_inbound"/>
+    <id>https://bmt.news/editions/2026-08-12/#rss:cointelegraph.com_rss:25d41a3513770546</id>
+    <updated>2026-08-12T00:00:00Z</updated>
+    <summary>Riot Platforms announced a 20-year agreement to supply 191 megawatts of capacity from its Rockdale, Texas campus to Anthropic, with the deal valued at approximately $9 billion. This marks one of the largest AI compute agreements involving a Bitcoin miner. This deal signifies a major convergence of AI infrastructure and cryptocurrency mining, as miners pivot to AI compute hosting to address the power crunch constraining AI data centers. It could accelerate the trend of Bitcoin miners transforming into power and compute providers for the AI industry. The reported agreement follows Anthropic&#x27;s $19 billion, 20-year data center lease with Bitcoin miner TeraWulf on July 6. Riot&#x27;s shares fell 5.4% on Monday but rose over 21% in overnight trading, and are up more than 53% year-to-date.</summary>
+  </entry>
+  <entry>
+    <title>Riot Platforms to Sell Bitcoin to Fund $9.1B AI Data Center Lease</title>
+    <link href="https://cryptoslate.com/riot-is-dumping-its-bitcoin-to-fund-a-9-1b-ai-deal-that-wont-pay-rent-until-2027/"/>
+    <id>https://bmt.news/editions/2026-08-12/#rss:cryptoslate.com_feed_:845f1742312f0050</id>
+    <updated>2026-08-12T00:00:00Z</updated>
+    <summary>Riot Platforms signed a 191 MW data center lease with an unnamed frontier AI lab, expecting $9.1 billion in gross contract revenue over a 20-year base term. The miner plans to continue selling Bitcoin from its treasury as a primary equity source, with construction costs estimated at $2.1-2.3 billion and rent not starting until December 2027 and June 2028. This marks another major Bitcoin miner pivoting toward AI infrastructure, accelerating the trend of mining companies diversifying away from pure Bitcoin production. It also introduces ongoing Bitcoin treasury sales as a financing mechanism, which could affect market supply dynamics and influence how other miners manage their holdings. Riot projects $2.1-$2.3 billion in capital spending, with 80-90% expected from long-term project debt that is not yet closed, leaving $210-$460 million in equity funding. A $573 million Morgan Stanley interim facility at SOFR plus 2.75% matures October 15, 2026, and an investment-grade backstop is still being finalized without disclosed terms.</summary>
+  </entry>
+  <entry>
+    <title>Ravencoin may roll back four days of transactions after critical flaw exploit</title>
+    <link href="https://www.coindesk.com/tech/2026/08/11/ravencoin-could-roll-back-four-days-of-transactions-after-critical-block-flaw"/>
+    <id>https://bmt.news/editions/2026-08-12/#rss:www.coindesk.com_arc_outboundfeeds_rss_:11f39f88b950c9b1</id>
+    <updated>2026-08-12T00:00:00Z</updated>
+    <summary>Ravencoin is attempting a chain rollback of roughly four days of transactions after attackers exploited a critical software flaw that allowed invalid blocks, with the first bad block appearing at height 4,487,776 on Aug. 7. Two mining pools, 2Miners and RavenMiner, are rebuilding the chain from block 4,487,775, while exchanges like Bitvavo and Upbit have halted RVN deposits and withdrawals. This is a significant proof-of-work governance and security incident: because a small number of pools dominate Ravencoin&#x27;s hashpower, they can decide which version of history survives, potentially erasing payments users believed were final. It highlights how low-hashrate Bitcoin-derived networks are vulnerable to rollback-style attacks and how exchanges must react to protect against losses. The proposed rollback would reverse all transactions from block 4,487,776 onward, including payments and mining rewards from that window. Ravencoin released a fix but patching cannot undo already-written blocks; RavenMiner says it is running an emergency fix and will cover any payout shortfall itself, while it paused payouts until the chain settles.</summary>
+  </entry>
+  <entry>
+    <title>Nvidia&#x27;s $500B AI infrastructure push widens gap with crypto compute</title>
+    <link href="https://www.coindesk.com/tech/2026/08/11/nvidia-wants-to-turn-its-ai-chips-into-an-investable-asset-class"/>
+    <id>https://bmt.news/editions/2026-08-12/#rss:www.coindesk.com_arc_outboundfeeds_rss_:cfb30f5ff3f0be9e</id>
+    <updated>2026-08-12T00:00:00Z</updated>
+    <summary>Nvidia has signed memorandums of understanding with Apollo Global Management, Blackstone, BlackRock, Brookfield, Goldman Sachs and KKR to create financing platforms that could channel more than $500 billion into AI compute infrastructure. The company aims to establish AI compute as a bankable, long-lived infrastructure asset rather than a short-term technology expense. This move could dramatically expand centralized AI compute capacity, leaving decentralized crypto compute networks further behind in scale and competitiveness. It also signals a structural shift in how AI infrastructure is financed, with potential knock-on effects for blockchain-based compute marketplaces and AI-related crypto assets. The six Wall Street firms involved are Apollo Global Management, Blackstone, BlackRock, Brookfield Asset Management, Goldman Sachs and KKR. NVIDIA CEO Jensen Huang described the initiative as the first time technology chips have become an investable asset class, emphasizing that AI factories are revenue-generating, long-lived and fungible assets.</summary>
+  </entry>
+  <entry>
+    <title>Riot Platforms Surges 20% on $9.1B Anthropic AI Deal</title>
+    <link href="https://www.coindesk.com/business/2026/08/11/riot-platforms-surges-20-in-pre-market-trading-on-usd9-1-billion-anthropic-deal"/>
+    <id>https://bmt.news/editions/2026-08-12/#rss:www.coindesk.com_arc_outboundfeeds_rss_:39cdbae7c6dc8269</id>
+    <updated>2026-08-12T00:00:00Z</updated>
+    <summary>Riot Platforms announced a $9.1 billion, 20-year agreement with AI lab Anthropic to repurpose its bitcoin mining infrastructure for AI computing, sending its stock up 20% in pre-market trading on August 11, 2026. The deal marks a landmark shift in the bitcoin mining industry, validating the repurposing of mining infrastructure for AI workloads. It could accelerate similar pivots by other miners and deepen the convergence between the crypto and AI sectors. The 20-year agreement is valued at $9.1 billion and involves converting Riot&#x27;s mining racks for AI calculations. Riot&#x27;s stock jumped about 20% in pre-market trading following the announcement.</summary>
+  </entry>
+  <entry>
+    <title>Riot Platforms Jumps 25% on Reported $9.1B AI Deal with Anthropic</title>
+    <link href="https://www.theblock.co/news/business/2026-08-10-riot-platforms-ai-deal-anthropic-411358"/>
+    <id>https://bmt.news/editions/2026-08-12/#rss:www.theblock.co_rss.xml:888d4a2dc9c2c0fb</id>
+    <updated>2026-08-12T00:00:00Z</updated>
+    <summary>Riot Platforms&#x27; stock surged 25% in after-hours trading on reports of a $9.1 billion AI deal with Anthropic. The contract includes two five-year extension options that could raise its potential value to $16.1 billion. The deal marks a major strategic crossover between Bitcoin mining and AI, potentially transforming how miners monetize their energy infrastructure. It highlights the growing demand for power and data-center capacity from AI firms and could influence how the broader crypto mining industry positions itself. The reported $9.1 billion base contract can be expanded to $16.1 billion through two five-year extension options. The deal has reportedly not been officially confirmed, and Riot Platforms is a vertically integrated U.S. Bitcoin miner with direct exposure to bitcoin prices.</summary>
+  </entry>
+  <entry>
+    <title>BTCPay Server Offers Bitcoin Bounty After Lightning Wallet Exploit</title>
+    <link href="https://decrypt.co/375376/btcpay-bitcoin-bounty-critical-wallet-exploit"/>
+    <id>https://bmt.news/editions/2026-08-12/#rss:decrypt.co_feed:3766979a0e41128d</id>
+    <updated>2026-08-12T00:00:00Z</updated>
+    <summary>BTCPay Server announced a 10% bounty (capped at 3 BTC) for recovery of Bitcoin stolen in an exploit that abused LND admin macaroons, and is urging all users to update to version 2.4.2 immediately. The incident exposes real security risks in self-hosted Lightning Network infrastructure and directly affects operators who run vulnerable BTCPay/LND servers. It also underscores how open-source payment processors must prioritize rapid patching and rewarded vulnerability research to protect user funds. Attackers obtained LND admin macaroons, credentials that grant broad control over a Lightning node, and used them to access connected wallets. BTCPay has not disclosed how much Bitcoin was stolen or how many users were affected, and the bounty will be split among verified tips; the BTCPay Server Foundation is also donating 0.21 BTC each to researcher Craig Raw and the Bitcoin Red Team.</summary>
+  </entry>
+  <entry>
+    <title>Nasdaq to Acquire LeveL Markets in Push Toward Always-On Markets</title>
+    <link href="https://cointelegraph.com/news/nasdaq-to-acquire-level-markets-in-push-toward-always-on-markets?utm_source=rss_feed&amp;utm_medium=rss&amp;utm_campaign=rss_partner_inbound"/>
+    <id>https://bmt.news/editions/2026-08-12/#rss:cointelegraph.com_rss:03cebd07742a9b9b</id>
+    <updated>2026-08-12T00:00:00Z</updated>
+    <summary>Nasdaq has signed a definitive agreement to acquire LeveL Markets, the third-largest alternative trading system (ATS) in the US, and launched a new Digital Liquidity Networks (DLN) unit led by Roland Chai. The deal, announced on August 11, 2026, is subject to regulatory approval and financial terms were not disclosed. This acquisition marks a major institutional push into tokenized securities and 24/7 trading, directly bridging traditional market infrastructure with blockchain-based digital assets. It signals a growing convergence between conventional exchanges and crypto markets, potentially accelerating the adoption of tokenized assets among institutional investors. LeveL Markets processes hundreds of millions of shares daily, serves over 2,500 buy- and sell-side clients, and executes trades across more than 7,000 symbols, with average daily trading volume up 56% in 2025. Following the acquisition, LeveL will remain a FINRA-regulated ATS with its own management team, operating under Nasdaq&#x27;s Digital Liquidity Networks. Nasdaq&#x27;s earlier SEC filing proposed that tokenized stocks and ETFs trade alongside traditional shares via Depository Trust Company and blockchain settlement in a three-year pilot.</summary>
+  </entry>
   <entry>
     <title>BitMart founder denies exit scam as withdrawal freeze persists</title>
     <link href="https://protos.com/bitmart-founder-denies-exit-scam-as-withdrawals-stall/"/>
