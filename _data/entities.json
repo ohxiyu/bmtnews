@@ -1,3 +1,17 @@
 {
-  "entities": []
+  "entities": [
+    {
+      "slug": "sec",
+      "label": "SEC",
+      "mentions": 3,
+      "days": 2,
+      "first_date": "2026-08-12",
+      "latest_date": "2026-08-13",
+      "recent": 3,
+      "category": "policy",
+      "top_score": 8.0,
+      "title_zh": "SEC无异议函允许富兰克林坦伯顿基金使用链上BENJI系统",
+      "title_en": "SEC No-Action Letter Lets Franklin Templeton Funds Use Onchain BENJI"
+    }
+  ]
 }

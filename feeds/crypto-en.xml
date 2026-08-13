@@ -4,7 +4,70 @@
   <link href="https://bmt.news/feeds/crypto-en.xml" rel="self"/>
   <link href="https://bmt.news/"/>
   <id>https://bmt.news/feeds/crypto-en.xml</id>
-  <updated>2026-08-12T00:00:00Z</updated>
+  <updated>2026-08-13T00:00:00Z</updated>
+  <entry>
+    <title>Routing Bug Puts Solana Within 4.5 Points of Losing Finality</title>
+    <link href="https://decrypt.co/375404/a-routing-bug-took-solana-86-of-the-way-to-losing-finality"/>
+    <id>https://bmt.news/editions/2026-08-13/#rss:decrypt.co_feed:797ee83d88dcea91</id>
+    <updated>2026-08-13T00:00:00Z</updated>
+    <summary>A misconfigured BGP route at hosting provider Teraswitch took 28.83% of staked SOL offline on Wednesday morning, leaving Solana just 4.51 percentage points short of the 33.34% threshold at which the chain stops finalizing transactions. Roughly 90 validators were affected, and networking recovered after about 33 minutes. This incident is a severe stress test for Solana&#x27;s network stability: a single provider misconfiguration nearly halted the entire chain, exposing how concentrated staked SOL is within one autonomous system. It underscores risks for validators, staking protocols, and the broader ecosystem, and could intensify calls for better decentralization and failover practices. The affected autonomous system, AS20326, holds roughly 27% of staked SOL — above the 25% cap in the Solana Foundation&#x27;s delegation program — and 94% of it went offline at once. Marinade Finance found that 80.2 million SOL across 59 validators recovered after routing reconverged, while Helius was down for the full 33 minutes; the 333 SOL in lost rewards will be covered by validator bonds.</summary>
+  </entry>
+  <entry>
+    <title>Bybit sues North Korea over $1.5B crypto theft</title>
+    <link href="https://news.google.com/rss/articles/CBMiiwFBVV95cUxNVDh0ZDZiMlY5NUt3dnFCMExVb0tzVVhKRGpoaFhNOWRPUW9tNWU2dG1ueUVBMlZkS25NdTg0b1RWZHhSdkw1N3pyU2ltN1VwNGFtZ0JsSGFobThXd1JCT1Q3TGRwcFdPOXkzSklDYmlGUU5fdEEyc0hpb3ctTHJ3Ny1nVk9tRnlwaW1R?oc=5"/>
+    <id>https://bmt.news/editions/2026-08-13/#google_news:article:443dcfe9472d77d4</id>
+    <updated>2026-08-13T00:00:00Z</updated>
+    <summary>Bybit has filed a lawsuit against North Korea in connection with the $1.5 billion theft of cryptocurrency from the exchange. This legal action escalates the dispute to a formal court case against a state actor. The lawsuit could set a legal precedent for how cryptocurrency exchanges pursue recovery from state-sponsored hackers. It also highlights the growing intersection of national security, international law, and the digital asset industry. The theft occurred on Bybit&#x27;s platform and is among the largest cryptocurrency heists ever recorded. The specific legal grounds and jurisdiction for the lawsuit have not yet been publicly disclosed.</summary>
+  </entry>
+  <entry>
+    <title>Solana Nears Finality Halt as 28.83% of Staked SOL Goes Delinquent</title>
+    <link href="https://thedefiant.io/news/blockchains/marinade-says-28-83-of-solana-stake-went-delinquent-nearing-finality-halt"/>
+    <id>https://bmt.news/editions/2026-08-13/#rss:thedefiant.io_api_feed:5ccef86868e5a3d7</id>
+    <updated>2026-08-13T00:00:00Z</updated>
+    <summary>On August 12, 2026, a routing failure at infrastructure provider Teraswitch caused 28.83% of staked SOL to go delinquent, bringing Solana 86% of the way to the threshold at which block finality halts. Marinade reported that 94% of the 118.89 million SOL on its autonomous system went offline. The event highlights systemic concentration risk in Solana&#x27;s validator infrastructure, because a single provider&#x27;s routing problem nearly threatened network-wide finality. It also directly affected Marinade, Solana&#x27;s largest liquid staking protocol, and could shake confidence in staking reliability across the ecosystem. Teraswitch confirmed the outage was caused by a routing software failure triggered during a routine configuration change, affecting 12 sites. Solana&#x27;s finality stops only when more than 33.34% of staked SOL is delinquent, and roughly 90 validators were affected, losing staking rewards.</summary>
+  </entry>
+  <entry>
+    <title>Coldcard Hack Spurs $15B Bitcoin Migration to Self-Custody</title>
+    <link href="https://decrypt.co/375450/coldcard-hack-15-billion-bitcoin-moved-safety"/>
+    <id>https://bmt.news/editions/2026-08-13/#rss:decrypt.co_feed:805a0197fe074755</id>
+    <updated>2026-08-13T00:00:00Z</updated>
+    <summary>A Coldcard firmware exploit that began July 30 drained roughly 2,100 BTC (~$130 million), and onchain data shows 233,000 BTC (~$15 billion) moved out of long-term holder wallets in the following days. Casa CEO Nick Neuman attributes part of that migration to Ledger and Trezor users upgrading to multisig self-custody. The incident underscores that hardware wallet vulnerabilities can be contained by distributed self-custody, and may accelerate multisig adoption among long-term Bitcoin holders. It also shows self-custody adapting under stress, reinforcing Bitcoin&#x27;s resilience as an asset. Checkonchain data shows 233,000 BTC left long-term holder wallets—a 1.38% drop from recent highs—while 22,000 BTC moved to exchanges. Galaxy Research separately counted roughly 1,596 BTC stolen across more than 5,200 addresses in three attack waves, and the firmware bug had reduced key entropy from 128 bits to about 40 bits.</summary>
+  </entry>
+  <entry>
+    <title>Solana Nearly Freezes After Routing Glitch Offlines 29% of Staked SOL</title>
+    <link href="https://www.coindesk.com/tech/2026/08/12/smart-contract-blockchain-solana-nearly-froze-wednesday-marinade-finance-says"/>
+    <id>https://bmt.news/editions/2026-08-13/#rss:www.coindesk.com_arc_outboundfeeds_rss_:dd13e31c4442aa84</id>
+    <updated>2026-08-13T00:00:00Z</updated>
+    <summary>On Wednesday, a routing glitch traced to Teraswitch&#x27;s Miami data center knocked nearly 29% of Solana&#x27;s staked tokens offline, according to staking platform Marinade Finance. The outage lasted about 33 minutes and brought the network to within about 20 million tokens of the one-third staked threshold that halts finality. The incident exposes a serious centralization risk in Solana&#x27;s staking infrastructure: a single network operator, AS2032, controlled more than a quarter of all staked SOL. Had the offline stake exceeded one-third, the entire chain would have frozen for every SOL holder, raising broader questions about Solana&#x27;s reliability as a leading smart contract platform. Roughly 90 validators were affected and lost about 333 SOL in rewards, a relatively small sum covered by validator bonds. The bad route from Teraswitch spread to European and Asian data centers, cutting off validators in London, Amsterdam, Frankfurt, Singapore and Tokyo; North America stayed online, and traffic was restored by 4:16 a.m. UTC.</summary>
+  </entry>
+  <entry>
+    <title>Goldman Sachs to Buy Neos for $2.25B, Adding Bitcoin and Ether ETFs</title>
+    <link href="https://www.theblock.co/news/business/2026-08-12-goldman-sachs-bitcoin-ether-income-etfs-neos-deal-411618"/>
+    <id>https://bmt.news/editions/2026-08-13/#rss:www.theblock.co_rss.xml:4771c18c3591eb54</id>
+    <updated>2026-08-13T00:00:00Z</updated>
+    <summary>Goldman Sachs announced it will acquire Neos Investments for up to $2.25 billion. The deal gives Goldman access to Neos&#x27;s Bitcoin High Income ETF, Boosted Bitcoin High Income ETF, and Ethereum High Income ETF. A top-tier global investment bank is making a dedicated acquisition to own cryptocurrency income-generating ETFs, signaling deeper institutional adoption of digital assets. The move could accelerate mainstream distribution of regulated bitcoin and ether products. The acquisition is valued at up to $2.25 billion. Neos&#x27;s Bitcoin High Income ETF (BTCI) launched on October 16, 2024, the Boosted Bitcoin High Income ETF (XBCI) launched on January 22, 2026, and the Ethereum High Income ETF (NEHI) uses options and investments in spot Ether ETPs to generate monthly income.</summary>
+  </entry>
+  <entry>
+    <title>Goldman Sachs to acquire ETF manager NEOS in $2.25B deal</title>
+    <link href="https://cointelegraph.com/news/goldman-sachs-to-acquire-etf-manager-neos-225b-deal?utm_source=rss_feed&amp;utm_medium=rss&amp;utm_campaign=rss_partner_inbound"/>
+    <id>https://bmt.news/editions/2026-08-13/#rss:cointelegraph.com_rss:2fca145c9c87b6bd</id>
+    <updated>2026-08-13T00:00:00Z</updated>
+    <summary>Goldman Sachs has agreed to acquire ETF manager NEOS Investments for up to $2.25 billion, adding its $30 billion options-based income ETF business, including Bitcoin- and Ether-linked funds, to Goldman Sachs Asset Management. The acquisition is expected to close in the first quarter of 2027, subject to regulatory approval. This acquisition signals continued institutional adoption of crypto-linked investment products through traditional asset managers. It gives Goldman&#x27;s clients access to Bitcoin and Ether income-generating ETFs, potentially broadening the institutional investor base for digital assets. NEOS manages 19 options-based income ETFs, including the Bitcoin High Income ETF (BTCI), Boosted Bitcoin High Income ETF (XBCI), and Ethereum High Income ETF (NEHI), which use covered call strategies to generate monthly income. Combined with Goldman&#x27;s separate purchase of Innovator Capital Management, the deal would bring its global ETF platform to about $130 billion in assets.</summary>
+  </entry>
+  <entry>
+    <title>Goldman&#x27;s $2.25B NEOS Deal Buys Ready-Made Bitcoin Income ETF Business</title>
+    <link href="https://decrypt.co/375491/goldman-sachs-neos-deal-ready-made-bitcoin-income-etf"/>
+    <id>https://bmt.news/editions/2026-08-13/#rss:decrypt.co_feed:00219c9efd3e513a</id>
+    <updated>2026-08-13T00:00:00Z</updated>
+    <summary>Goldman Sachs agreed to acquire NEOS Investments for up to $2.25 billion in a cash-and-equity deal expected to close in Q1 2027. The acquisition brings about $30 billion in options-based income ETFs under Goldman Sachs Asset Management, including the roughly $1 billion BTCI Bitcoin covered-call fund. The deal gives Goldman Sachs a ready-made crypto income ETF business, bypassing the slower path of its own April filing for a Bitcoin Premium ETF. It marks a major institutional adoption signal as derivative-income ETFs—roughly $180 billion in assets—become a fast-growing corner of the market with crypto as an increasingly prominent slice. NEOS&#x27;s flagship product, BTCI, generates monthly income by selling covered calls on Bitcoin exposure, capping upside in exchange for yield; a similar Ethereum product is also included. Goldman&#x27;s own April filing for a Bitcoin Premium ETF used a comparable options-writing structure, and the NEOS deal absorbs an established manager rather than waiting for a new fund to gain traction.</summary>
+  </entry>
+  <entry>
+    <title>Goldman Sachs to acquire NEOS Investments in $2.25B bitcoin ETF deal</title>
+    <link href="https://www.coindesk.com/business/2026/08/12/goldman-sachs-leaps-into-bitcoin-income-etfs-with-usd2-25-billion-neos-buyout"/>
+    <id>https://bmt.news/editions/2026-08-13/#rss:www.coindesk.com_arc_outboundfeeds_rss_:1b2ed5147bcc7c04</id>
+    <updated>2026-08-13T00:00:00Z</updated>
+    <summary>Goldman Sachs has agreed to acquire NEOS Investments, the manager of the $1.1 billion BTCI bitcoin synthetic ETF, in a cash-and-equity deal valuing NEOS at up to $2.25 billion. The transaction is expected to close in early 2027 pending regulatory approval. This acquisition marks a significant institutional adoption signal, as a top-tier bank acquires a bitcoin income ETF issuer for $2.25 billion. It intensifies competition with BlackRock in the fast-growing derivative income ETF market and underscores bitcoin&#x27;s growing acceptance within traditional finance. BTCI does not directly hold bitcoin; it uses a covered-call strategy on bitcoin ETPs to generate a yield of about 27%, but has fallen roughly 43% over the past year and charges a 0.99% expense ratio. The deal gives Goldman a $30 billion options-based ETF platform across 19 funds, lifting its total ETF assets above $130 billion.</summary>
+  </entry>
   <entry>
     <title>Ravencoin Crashes 20% as Critical Exploit Threatens Multi-Day Rollback</title>
     <link href="https://decrypt.co/375330/ravencoin-crashes-critical-exploit-threatens-rollback"/>

@@ -4,7 +4,21 @@
   <link href="https://bmt.news/feeds/policy-en.xml" rel="self"/>
   <link href="https://bmt.news/"/>
   <id>https://bmt.news/feeds/policy-en.xml</id>
-  <updated>2026-08-12T00:00:00Z</updated>
+  <updated>2026-08-13T00:00:00Z</updated>
+  <entry>
+    <title>SEC No-Action Letter Lets Franklin Templeton Funds Use Onchain BENJI</title>
+    <link href="https://www.theblock.co/news/defi/2026-08-12-sec-clears-franklin-templeton-funds-use-onchain-benji-system-cash-management-411654"/>
+    <id>https://bmt.news/editions/2026-08-13/#rss:www.theblock.co_rss.xml:1af6b4f294bcc290</id>
+    <updated>2026-08-13T00:00:00Z</updated>
+    <summary>The U.S. SEC issued a no-action letter allowing Franklin Templeton&#x27;s traditional registered funds to invest in its onchain BENJI/FOBXX tokenized money market fund. This is a regulatory first that directly permits conventional fund vehicles to hold a tokenized fund. This marks a significant regulatory milestone for tokenized financial products, signaling growing SEC clarity and acceptance of onchain fund infrastructure. It could accelerate institutional adoption of tokenized money market funds and encourage other traditional asset managers to integrate blockchain-based systems. FOBXX (Franklin OnChain U.S. Government Money Fund) invests primarily in U.S. government securities and relies on the BENJI blockchain system for record-keeping and ownership tracking. The no-action letter specifically permits Franklin&#x27;s traditional registered funds to purchase shares of the tokenized fund, subject to the conditions outlined in the letter.</summary>
+  </entry>
+  <entry>
+    <title>SEC Advances Tokenized-Securities Exemption for 24/7 Trading</title>
+    <link href="https://thedefiant.io/converge/regulation/sec-advances-tokenized-securities-exemption-that-could-enable-24-7-trading"/>
+    <id>https://bmt.news/editions/2026-08-13/#rss:thedefiant.io_api_feed:637c04ec5d877f23</id>
+    <updated>2026-08-13T00:00:00Z</updated>
+    <summary>The U.S. Securities and Exchange Commission (SEC) is advancing an exemption framework for tokenized securities that would allow compliant onchain trading, potentially enabling 24/7 markets while long-term rules are developed. A senior SEC official, Atkins, said the framework would support such trading, and Friday&#x27;s scheduled Commission consideration covers a separate offering proposal. This move could meaningfully reduce regulatory uncertainty for tokenized securities and pave the way for round-the-clock trading of traditional assets on blockchain networks. It marks a notable step by U.S. regulators to accommodate onchain finance within existing securities law, potentially affecting issuers, exchanges, and investors in both traditional and crypto markets. The exemption framework is still a preliminary step and has not been finalized; long-term rules are still being developed. The SEC&#x27;s scheduled Friday Commission consideration addresses a separate offering proposal, not this exemption framework.</summary>
+  </entry>
   <entry>
     <title>CFTC Sues Goliath Ventures Over Alleged $397M DeFi Ponzi</title>
     <link href="https://thedefiant.io/news/regulation/cftc-sues-goliath-ventures-over-alleged-397m-defi-liquidity-pool-ponzi"/>

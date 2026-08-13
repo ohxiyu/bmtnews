@@ -1,7 +1,12 @@
 {
   "version": 1,
-  "generated_at": "2026-08-12T00:42:17.228706Z",
+  "generated_at": "2026-08-13T00:42:50.435909Z",
   "editions": [
+    {
+      "date": "2026-08-13",
+      "items": 14,
+      "json": "https://bmt.news/editions/2026-08-13/edition.json"
+    },
     {
       "date": "2026-08-12",
       "items": 14,

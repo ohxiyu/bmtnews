@@ -4,7 +4,28 @@
   <link href="https://bmt.news/feeds/technology-en.xml" rel="self"/>
   <link href="https://bmt.news/"/>
   <id>https://bmt.news/feeds/technology-en.xml</id>
-  <updated>2026-08-12T00:00:00Z</updated>
+  <updated>2026-08-13T00:00:00Z</updated>
+  <entry>
+    <title>DeepSeek V4 Pro 0813 Launches on OpenRouter at Record-Low Cost</title>
+    <link href="https://openrouter.ai/deepseek/deepseek-v4-pro-0813"/>
+    <id>https://bmt.news/editions/2026-08-13/#hackernews:story:49274600</id>
+    <updated>2026-08-13T00:00:00Z</updated>
+    <summary>DeepSeek&#x27;s V4 Pro 0813, a large mixture-of-experts model, is now available through OpenRouter at $0.435 per million input tokens and $0.87 per million output tokens. Community benchmarks show it competing with models like Opus 4.8 at roughly 20 times lower cost. This release signals that frontier-competitive capability is rapidly becoming cheap, potentially reshaping how developers choose model providers. It also underscores the growing role of aggregators like OpenRouter in distributing leading open-weight AI models. The model has a 1,048,576-token context window and a maximum output of 384,000 tokens, with support for both thinking and non-thinking modes. Community tests were mixed: one developer reported issues on a complex deployment task where GPT-5.6-terra-high succeeded, while another noted the model is competitive with Opus 4.8 but weaker than Sol or Fable.</summary>
+  </entry>
+  <entry>
+    <title>xAI Launches Grok 4.6, Fueling AI Benchmark Credibility Debate</title>
+    <link href="https://x.ai/news/grok-4-6"/>
+    <id>https://bmt.news/editions/2026-08-13/#hackernews:story:49274027</id>
+    <updated>2026-08-13T00:00:00Z</updated>
+    <summary>xAI has announced Grok 4.6, a new frontier AI model. The release has sparked community debate, with users reporting that it beats GPT-5.6-Sol on most benchmarks and undercuts Kimi K3 on API pricing, while also revealing a default system prompt injected into all API requests. This release intensifies competition among frontier AI labs and raises important questions about how AI capabilities are measured and disclosed. Developers and users could be affected by changes in API pricing and by system prompt policies that restrict model behavior. Community members found that the xAI API adds a default system prompt to every request, including a line that forbids mentioning the guidelines themselves, which can override user-supplied system prompts and cause refusals. Some commenters also voiced skepticism about the rapid appearance of &#x27;Fable-level&#x27; models within two months across major labs, suggesting possible benchmark gaming or knowledge transfer between researchers.</summary>
+  </entry>
+  <entry>
+    <title>Qwen Releases Qwen3.8-2.4T: 2.4T-Parameter MoE Model</title>
+    <link href="https://huggingface.co/Qwen/Qwen3.8-2.4T-A95B"/>
+    <id>https://bmt.news/editions/2026-08-13/#hackernews:story:49273478</id>
+    <updated>2026-08-13T00:00:00Z</updated>
+    <summary>Qwen released Qwen3.8-2.4T-A95B, a mixture-of-experts model with 2.4 trillion total parameters and 95 billion active parameters. The model card claims near-frontier performance comparable to Claude Opus and the Fable model family, with BF16 and FP8 weights published on Hugging Face. As a major open-weight release from a leading AI lab, Qwen3.8-2.4T pushes open models closer to proprietary frontier systems while keeping inference cost low through MoE&#x27;s sparse activation. This could accelerate deployment of high-end open models in both research and production environments. The model is only available in BF16 and FP8 precision at launch, and community members estimate a full BF16 checkpoint needs about 4.9TB of storage, while a 1-bit quantized version from Unsloth is 397GB. The open-weight release lacks vision input and the 1M-token context length that appear in the official Qwen3.8-Max.</summary>
+  </entry>
   <entry>
     <title>Nvidia Unveils Nemotron 3.5 Lightning Models and NeMo Switchyard Router</title>
     <link href="https://blogs.nvidia.com/blog/nemotron-lightning-switchyard-rtx-dgx/"/>

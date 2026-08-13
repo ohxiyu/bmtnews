@@ -4,7 +4,28 @@
   <link href="https://bmt.news/feeds/technology-zh.xml" rel="self"/>
   <link href="https://bmt.news/"/>
   <id>https://bmt.news/feeds/technology-zh.xml</id>
-  <updated>2026-08-12T00:00:00Z</updated>
+  <updated>2026-08-13T00:00:00Z</updated>
+  <entry>
+    <title>DeepSeek V4 Pro 0813 登陆 OpenRouter，以极低成本对标顶尖模型</title>
+    <link href="https://openrouter.ai/deepseek/deepseek-v4-pro-0813"/>
+    <id>https://bmt.news/editions/2026-08-13/#hackernews:story:49274600</id>
+    <updated>2026-08-13T00:00:00Z</updated>
+    <summary>DeepSeek 的 V4 Pro 0813（大型混合专家模型）已通过 OpenRouter 上线，输入每百万 token 收费 0.435 美元，输出每百万 token 收费 0.87 美元。社区基准测试显示，它能以约为 Opus 4.8 二十分之一的成本参与竞争。 此次发布表明，接近前沿水平的能力正迅速变得廉价，可能重塑开发者选择模型提供商的方式。它也凸显了 OpenRouter 这类聚合器在分发领先开源权重 AI 模型方面日益重要的作用。 该模型拥有 1,048,576 token 的上下文窗口和最高 384,000 token 的输出，并支持思考与非思考两种模式。社区测试结果不一：一位开发者报告其在复杂部署任务上出现问题，而 GPT-5.6-terra-high 能完成；另一位则表示该模型可与 Opus 4.8 竞争，但弱于 Sol 或 Fable。</summary>
+  </entry>
+  <entry>
+    <title>xAI发布Grok 4.6，引发AI基准可信度争论</title>
+    <link href="https://x.ai/news/grok-4-6"/>
+    <id>https://bmt.news/editions/2026-08-13/#hackernews:story:49274027</id>
+    <updated>2026-08-13T00:00:00Z</updated>
+    <summary>xAI发布了Grok 4.6，这是新的前沿AI模型。此次发布引发社区争论，用户称其在多数基准测试中超过GPT-5.6-Sol，API定价也低于Kimi K3，同时发现所有API请求都被注入了默认系统提示词。 此次发布加剧了前沿AI实验室之间的竞争，并引发了对AI能力衡量和披露方式的重要质疑。API定价变化和系统提示词策略可能影响开发者和用户。 社区成员发现xAI API会在每次请求中加入默认系统提示词，其中包含禁止提及这些规则本身的内容，这可能覆盖用户设置的系统提示词并导致拒绝回答。部分评论者也对各大实验室在两个月内快速出现&#x27;Fable级&#x27;模型表示怀疑，认为可能存在基准测试作弊或研究人员之间的知识流动。</summary>
+  </entry>
+  <entry>
+    <title>Qwen发布Qwen3.8-2.4T：2.4万亿参数的MoE模型</title>
+    <link href="https://huggingface.co/Qwen/Qwen3.8-2.4T-A95B"/>
+    <id>https://bmt.news/editions/2026-08-13/#hackernews:story:49273478</id>
+    <updated>2026-08-13T00:00:00Z</updated>
+    <summary>Qwen发布了Qwen3.8-2.4T-A95B，这是一个混合专家（MoE）模型，总参数2.4万亿，激活参数950亿。模型卡称其性能接近前沿水平，可与Claude Opus及Fable系列模型相媲美，并已在Hugging Face上发布BF16和FP8权重。 作为领先AI实验室发布的重要开源权重模型，Qwen3.8-2.4T通过MoE的稀疏激活大幅降低推理成本，使开源模型进一步接近闭源前沿系统。这可能加速高端开源模型在科研和生产环境中的部署。 该模型在发布时仅提供BF16和FP8精度，社区估算完整的BF16检查点约需4.9TB存储，而Unsloth的1比特量化版为397GB。开源权重版本不具备官方Qwen3.8-Max中的视觉输入和100万token上下文长度等功能。</summary>
+  </entry>
   <entry>
     <title>英伟达发布Nemotron 3.5 Lightning模型与NeMo Switchyard路由库</title>
     <link href="https://blogs.nvidia.com/blog/nemotron-lightning-switchyard-rtx-dgx/"/>
