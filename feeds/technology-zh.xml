@@ -4,7 +4,28 @@
   <link href="https://bmt.news/feeds/technology-zh.xml" rel="self"/>
   <link href="https://bmt.news/"/>
   <id>https://bmt.news/feeds/technology-zh.xml</id>
-  <updated>2026-08-13T00:00:00Z</updated>
+  <updated>2026-08-14T00:00:00Z</updated>
+  <entry>
+    <title>Anthropic 分析新兴多智能体系统的模式与问题</title>
+    <link href="https://news.google.com/rss/articles/CBMiY0FVX3lxTFBoVFQ4NnRrVGF2dXBQMmhjNzhmQUVZQVF6ckVvWlpkMVdHMnpFOVpodWhoUEw4bWdacG1JRE9kUUZpUWN2WnJiZ3NHaFY0LWJHMF9zOGFGR0tlZmhta180N2Nkaw?oc=5"/>
+    <id>https://bmt.news/editions/2026-08-14/#rss:news.google.com_rss_search?q=site:anthropic.com+when:7d&amp;hl=en-US&amp;gl=US&amp;ceid=US:en:135df8d6478b4731</id>
+    <updated>2026-08-14T00:00:00Z</updated>
+    <summary>Anthropic 发布了一篇题为《新兴多智能体系统中的模式与问题》的分析文章，分享了其对多智能体 AI 系统结构及其常见失败点的观察。这篇文章体现了 Anthropic 在代理式 AI 前沿领域的视角，正值该领域从单代理部署向多代理部署演进。 作为领先的 AI 实验室之一，Anthropic 的分析有助于开发者和企业理解编排多个 AI 代理时的实际权衡。多智能体系统正迅速从研究走向生产，因此权威机构对常见陷阱的指导可能会影响整个行业的工程实践。 根据标题，该分析强调多智能体 AI 系统中反复出现的架构模式和常见协调问题，而非推广特定工具或产品。这表明报告以分类学为导向，旨在帮助团队思考何时以及如何组合多个代理。</summary>
+  </entry>
+  <entry>
+    <title>Anthropic悄悄为新版Claude输出嵌入水印，开发者竞相破解</title>
+    <link href="https://decrypt.co/375594/anthropic-quietly-watermarking-ai-claude-output-builders-break"/>
+    <id>https://bmt.news/editions/2026-08-14/#rss:decrypt.co_feed:bccfc9ccddde8262</id>
+    <updated>2026-08-14T00:00:00Z</updated>
+    <summary>Anthropic已开始在其最新Claude模型生成的文本中嵌入肉眼不可见、并通过对模型训练实现的模型级水印；该措施适用于2026年8月2日及之后在欧盟发布的新模型，并将覆盖全球范围内的Claude聊天界面、API、Claude Code，以及AWS、Google Cloud、Microsoft Foundry等云合作伙伴。这一部署是Anthropic签署欧盟《人工智能法案》透明度《实践准则》之后的合规举措。 这是主流AI实验室首次大规模部署模型级水印，将波及全球所有Claude用户、开发者及企业客户。此举可能为整个行业在欧盟《人工智能法案》框架下如何落实内容来源标识与透明度义务树立先例，也考验开发者对隐藏且暂不可验证的标记技术的反应。 Anthropic尚未公布检测方法、判定阈值或具体技术细节；研究人员推测其原理与Google SynthID Text类似，即依赖统计性的词元选择偏差嵌入信号。水印在复制粘贴后仍然保留，部分编辑也不会使其消失，文件还会附带C2PA签名元数据；但大幅编辑可去除水印，且没有水印并不能证明内容出自人类之手。</summary>
+  </entry>
+  <entry>
+    <title>理解成为AI辅助编程的新瓶颈</title>
+    <link href="https://www.geoffreylitt.com/2026/07/02/understanding-is-the-new-bottleneck"/>
+    <id>https://bmt.news/editions/2026-08-14/#hackernews:story:49290299</id>
+    <updated>2026-08-14T00:00:00Z</updated>
+    <summary>Geoffrey Litt 的文章指出，随着AI越来越多地生成代码，软件开发的关键约束正从编写代码转向人类对现有代码库的深度理解。这篇文章在Hacker News上引发了强烈关注，获得了176个点赞和92条评论。 这种重新定义很重要，因为它挑战了“AI编程工具主要节省开发者时间”的假设；相反，它凸显出理解和审查AI生成的代码成为核心瓶颈。它影响工程团队如何组织工作流程、投资文档，以及如何评估AI时代的开发者生产力。 文章指出，AI生成代码的速度快于人类理解代码的速度，因此理解成为限制因素。虽然未提供全文，但作者可能提出了改进代码理解的策略；讨论中涉及了规范驱动开发（Spec Driven Development）以及AI生成误解的风险等主题。</summary>
+  </entry>
   <entry>
     <title>DeepSeek V4 Pro 0813 登陆 OpenRouter，以极低成本对标顶尖模型</title>
     <link href="https://openrouter.ai/deepseek/deepseek-v4-pro-0813"/>

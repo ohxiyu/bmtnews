@@ -4,7 +4,70 @@
   <link href="https://bmt.news/feeds/crypto-en.xml" rel="self"/>
   <link href="https://bmt.news/"/>
   <id>https://bmt.news/feeds/crypto-en.xml</id>
-  <updated>2026-08-13T00:00:00Z</updated>
+  <updated>2026-08-14T00:00:00Z</updated>
+  <entry>
+    <title>Tether gets clean KPMG audit opinion for 2025 statements</title>
+    <link href="https://cointelegraph.com/news/tether-completes-first-full-financial-audit-receives-clean-kpmg-opinion?utm_source=rss_feed&amp;utm_medium=rss&amp;utm_campaign=rss_partner_inbound"/>
+    <id>https://bmt.news/editions/2026-08-14/#rss:cointelegraph.com_rss:a30c52abaa730643</id>
+    <updated>2026-08-14T00:00:00Z</updated>
+    <summary>Tether, the largest stablecoin issuer, completed its first full independent audit of its 2025 financial statements, with KPMG issuing a clean (unqualified) opinion. The audit showed reserves exceeded liabilities by $6.814 billion. This is a significant transparency milestone for the largest stablecoin issuer, potentially boosting confidence in USDT and the broader stablecoin market, which underpins much of crypto trading liquidity. It moves Tether beyond quarterly attestations to the full audit standard expected of traditional financial institutions. KPMG physically inspected and counted Tether&#x27;s gold holdings bar-by-bar, rather than relying only on custodian records. The audit covered the balance sheet, income statement, and cash flows for the year ended Dec. 31, 2025, and found reserves exceeded liabilities by $6.814 billion.</summary>
+  </entry>
+  <entry>
+    <title>Security Roundup Covers Harmony Bridge Hack and BTCPay Server Flaws</title>
+    <link href="https://www.govinfosecurity.com/cryptohack-roundup-harmony-btcpay-exploits-a-32543"/>
+    <id>https://bmt.news/editions/2026-08-14/#gdelt:article:20260813T201500Z::https://www.govinfosecurity.com/cryptohack-roundup-harmony-btcpay-exploits-a-32543</id>
+    <updated>2026-08-14T00:00:00Z</updated>
+    <summary>A security roundup covers two major incidents: the Harmony Horizon bridge exploit that lost roughly $100 million in June 2022, and a critical BTCPay Server vulnerability that let attackers drain funds from Lightning nodes running LND. The roundup underscores persistent risks in cross-chain bridges and Bitcoin payment infrastructure, where a single exploit can directly compromise user funds. It affects DeFi users, bridge operators, and merchants relying on Lightning payments, and may heighten security scrutiny across crypto infrastructure. For Harmony, the attacker appears to have taken control of the multisig contract behind the bridge, affecting roughly 64,000 wallets. For BTCPay Server, the vulnerability exposed LND Lightning node credentials, and operators were urged to update to version 2.4.2 or take servers offline.</summary>
+  </entry>
+  <entry>
+    <title>Tether receives KPMG clean audit opinion for 2025 financials</title>
+    <link href="https://www.theblock.co/news/business/2026-08-13-tether-kpmg-first-full-audit-usdt-clean-opinion-411760"/>
+    <id>https://bmt.news/editions/2026-08-14/#rss:www.theblock.co_rss.xml:1de85e8bbd81999e</id>
+    <updated>2026-08-14T00:00:00Z</updated>
+    <summary>KPMG U.S. issued an unqualified (clean) audit opinion on Tether International&#x27;s full 2025 financial statements, announced by Tether on Thursday. This marks the first time the USDT issuer has completed a full audit. Tether is the largest stablecoin issuer, and a clean audit from a Big Four firm materially improves financial transparency and credibility. This could ease institutional adoption and invite closer regulatory scrutiny of stablecoin reserves. An unqualified opinion means the auditor found the financial statements fairly presented and compliant with GAAP, with no material misstatements. The audit specifically covers Tether International&#x27;s full 2025 financials.</summary>
+  </entry>
+  <entry>
+    <title>Harmony Bridge Hack and BTCPay Vulnerability Exposed in Security Roundup</title>
+    <link href="https://www.bankinfosecurity.com/cryptohack-roundup-harmony-btcpay-exploits-a-32543"/>
+    <id>https://bmt.news/editions/2026-08-14/#gdelt:article:20260813T184500Z::https://www.bankinfosecurity.com/cryptohack-roundup-harmony-btcpay-exploits-a-32543</id>
+    <updated>2026-08-14T00:00:00Z</updated>
+    <summary>A new security roundup highlights two incidents: the June 2022 Harmony Horizon Bridge hack that lost about $100 million, and an actively exploited critical vulnerability in BTCPay Server that can drain Lightning Network node funds. These incidents underscore persistent weaknesses in cross-chain bridge design and payment server security, putting user funds at risk and increasing regulatory and community scrutiny on crypto infrastructure. The Harmony bridge was protected by a 2-of-5 multisig scheme, and attackers stole two private keys to approve malicious transactions; the FBI attributed the attack to North Korea&#x27;s Lazarus Group. BTCPay Server, an open-source Bitcoin payment processor, issued an emergency patch for the actively exploited vulnerability.</summary>
+  </entry>
+  <entry>
+    <title>Coinbase&#x27;s Base Abandons Optimistic Rollups, Bets $12B on ZK Proofs</title>
+    <link href="https://news.google.com/rss/articles/CBMidEFVX3lxTFBibndSVHhJY1ZoRUpvNGd6c09wQmVRdDVySmszQWE0Q1Zad0RfbXlpVzJ1Q2VfTlo1SzZwTWplZXNKaGJ6OHhTWkt0T0FhRVpCckV0M2pVZWdBbXBQdjBxWFltelFvaHltOFFnbUYzYnZHTy0w?oc=5"/>
+    <id>https://bmt.news/editions/2026-08-14/#google_news:article:613f8c6136c1b94e</id>
+    <updated>2026-08-14T00:00:00Z</updated>
+    <summary>According to a report from Yellow.com, Coinbase&#x27;s Layer-2 network Base is planning to move away from optimistic rollups and adopt zero-knowledge (ZK) proofs, a strategic shift tied to roughly $12 billion in network value. The transition has not yet been officially confirmed by Coinbase or Base. Base is one of the largest Ethereum Layer-2 networks, so switching its core architecture would have broad implications for the L2 ecosystem, developers building on Base, and the competitive positioning of the OP Stack. If confirmed, it could also accelerate the broader industry shift toward ZK-based scaling. The reported $12 billion figure reflects the scale of assets or value associated with the Base ecosystem. Because the news comes from a secondary outlet rather than an official announcement, the specific roadmap, timeline, and technical implementation details remain unclear.</summary>
+  </entry>
+  <entry>
+    <title>Tether Completes First Big Four Audit; KPMG Issues Unqualified Opinion on USDT Reserves</title>
+    <link href="https://www.coindesk.com/business/2026/08/13/tether-says-it-completed-long-promised-big-four-audit-of-finances-behind-usd180-billion-usdt-stablecoin"/>
+    <id>https://bmt.news/editions/2026-08-14/#rss:www.coindesk.com_arc_outboundfeeds_rss_:82742dd2bb0540df</id>
+    <updated>2026-08-14T00:00:00Z</updated>
+    <summary>Tether announced that KPMG U.S. issued an unqualified opinion on its 2025 financial statements, marking the stablecoin issuer&#x27;s first full audit by a Big Four accounting firm. The statements showed reserves exceeding liabilities by $6.814 billion. The audit addresses a long-standing transparency criticism over the reserves backing USDT, a $180 billion stablecoin that is critical to crypto trading liquidity. An unqualified opinion from a Big Four firm could strengthen market trust in Tether and ease systemic risk concerns across digital-asset markets. KPMG went beyond Tether&#x27;s prior quarterly attestations by testing transactions, systems, valuations, counterparties and ownership records, and physically counting the company&#x27;s gold bars. Tether has not yet confirmed whether it will publicly release the full KPMG report.</summary>
+  </entry>
+  <entry>
+    <title>Protos tracks HTX reserves moving to Poloniex amid sanctions</title>
+    <link href="https://protos.com/we-found-htxs-reserves-at-poloniex/"/>
+    <id>https://bmt.news/editions/2026-08-14/#rss:protos.com_feed_:63b1b2e899254692</id>
+    <updated>2026-08-14T00:00:00Z</updated>
+    <summary>Protos reports that HTX&#x27;s June proof-of-reserves acknowledged moving large portions of user funds to an undisclosed &#x27;ThirdParty&#x27; custodian, and on-chain tracking shows hundreds of millions of dollars in assets, including WBTC and sUSDS, moved from HTX wallets to Poloniex addresses. This matters because HTX is under EU and UK sanctions, and its opaque reserve management plus rapid wallet churning raise serious solvency and user-fund safety questions. The findings also implicate Poloniex, another Justin Sun-owned exchange, in handling assets from a sanctioned entity. Protos tracked specific transfers: WBTC moved from HTX address 0x18709e... to Poloniex 7, then Poloniex 10, then Poloniex 9; about $200 million in sUSDS followed a similar path. HTX&#x27;s May proof-of-reserves also mislabeled STEAK-USDC when the address actually held sUSDS.</summary>
+  </entry>
+  <entry>
+    <title>Tether Secures Landmark KPMG Audit of 2025 Financials</title>
+    <link href="https://tether.io/news/tether-completes-the-largest-inaugural-financial-audit-in-history/"/>
+    <id>https://bmt.news/editions/2026-08-14/#rss:tether.io_feed:682963b6bc93b7cc</id>
+    <updated>2026-08-14T00:00:00Z</updated>
+    <summary>Tether announced that KPMG U.S. issued an unqualified audit opinion on its 2025 financial statements, marking the first full independent audit of the company. The announcement was made on 13 August 2026. An unqualified opinion from a Big Four firm is the strongest form of independent auditor assurance and could materially strengthen market confidence in Tether&#x27;s reserves and transparency. This milestone also invites closer regulatory scrutiny and may accelerate stablecoin adoption by institutional and traditional finance players. The audit was of Tether International, S.A. de C.V.&#x27;s financial statements, and the opinion covers the 2025 fiscal year. Tether described the audit as the largest inaugural financial audit in history, underscoring the scale of its operations as the largest company in the digital asset industry.</summary>
+  </entry>
+  <entry>
+    <title>Coinbase and 14 other x402 facilitators failed security tests built for the coming AI-agent economy</title>
+    <link href="https://cryptoslate.com/coinbase-and-14-other-x402-facilitators-failed-security-tests-built-for-the-coming-ai-agent-economy/"/>
+    <id>https://bmt.news/editions/2026-08-14/#rss:cryptoslate.com_feed_:3ec1055235cd0395</id>
+    <updated>2026-08-14T00:00:00Z</updated>
+    <summary>Researchers testing 15 major x402 payment facilitators at the USENIX Security Symposium found that every platform, including Coinbase, Thirdweb, PayAI and Mogami, violated at least one security rule. They mapped 49 rule violations to 31 distinct vulnerabilities across systems handling 99% of observed x402 transactions and 98% of payment volume during the study. x402 is being promoted as infrastructure for machine-driven commerce, allowing AI agents to autonomously pay for services, yet these flaws could leave merchants unpaid for goods they have already delivered and expose facilitator-held assets and network fees. The findings highlight systemic risks in the emerging AI-agent payment economy and could affect trust in stablecoin-based automated payments. Researchers identified four broad attack classes (free shopping, asset theft, service disruption, and gas abuse) and directly validated six attack paths, including two free-shopping attacks, three gas-abuse attacks, and one path that could expose facilitator-held assets via malicious ERC-6492 metadata. They also analyzed 119 million x402 transactions on Base and Solana, finding facilitators spent about $202,000 on network fees, including roughly $5,800 on reverted or failed Base transactions.</summary>
+  </entry>
   <entry>
     <title>Routing Bug Puts Solana Within 4.5 Points of Losing Finality</title>
     <link href="https://decrypt.co/375404/a-routing-bug-took-solana-86-of-the-way-to-losing-finality"/>
@@ -221,19 +284,5 @@
     <id>https://bmt.news/editions/2026-08-10/#google_news:article:59ff40abd494e63c</id>
     <updated>2026-08-10T00:00:00Z</updated>
     <summary>Circle has renewed its USDC partnership with Coinbase, extending a key distribution arrangement for the second-largest stablecoin. The renewal comes as Circle intensifies its focus on stablecoin adoption and growth. The renewal secures a critical distribution channel for USDC, which underpins trading and payments across the crypto ecosystem. It also signals continued institutional commitment to stablecoins at a time when regulatory attention on the sector is increasing. USDC is a fully reserved stablecoin pegged to the U.S. dollar and issued by Circle, available on networks such as Ethereum, Base, and Polygon. The financial terms of the renewed deal were not disclosed, but the extended arrangement continues a partnership that has existed for several years.</summary>
-  </entry>
-  <entry>
-    <title>Kraken Nears Delisting Deadline for 21 Tokens, Holders Face Near-Zero Payouts</title>
-    <link href="https://news.google.com/rss/articles/CBMia0FVX3lxTFBMUlhmQThOcnQ0ZkM2Ylpoc0VjVWFobjhSdktOSDJ6dEU3ZlFqTjlLSDZiWHNxNGJkTVVHblBJMGMzX3dOamNieUJYby1vdGk0Y0h6MnB4Ui1ZSFQ0Qi1RWEhXZjU1NVhfWEFF?oc=5"/>
-    <id>https://bmt.news/editions/2026-08-10/#google_news:article:b4b8ffb2cdebfae7</id>
-    <updated>2026-08-10T00:00:00Z</updated>
-    <summary>Kraken is approaching its deadline to delist 21 tokens, and holders who fail to act before the cutoff risk receiving payouts worth near zero. The exchange is removing all trading pairs for the affected assets. Delistings on major exchanges like Kraken often trigger sharp price drops because the token loses its primary liquidity venue. This event highlights the risk of holding low-liquidity or non-compliant assets that exchanges may periodically remove. When a token is delisted, all trading pairs are removed, and exchanges typically set a final date after which balances may be converted or liquidated. Affected holders should withdraw tokens to an external wallet before the deadline, as post-deadline payouts can be minimal.</summary>
-  </entry>
-  <entry>
-    <title>Bybit Expands Platform to Offer Stocks, ETFs, and Other Assets</title>
-    <link href="https://news.google.com/rss/articles/CBMiggFBVV95cUxNc29XTUtqb1E5MXcySlJ4cE96UkNlZnVyNHU2djFmZmhZSUpDTzIwaklTb3RIWHQxWmNBLWVxRklibTVka0dBQlNwY2k4Z2ZNclR2LVVPWXN3eXk1eVlIcHEtWC1oVUF4N2ZoTE9jOFk5YjNUMFFwTjBpSXYtMWVjRlpB?oc=5"/>
-    <id>https://bmt.news/editions/2026-08-10/#google_news:article:8b7ed1f342baebcc</id>
-    <updated>2026-08-10T00:00:00Z</updated>
-    <summary>Bybit has announced an expansion of its trading platform to include stocks, ETFs, and other assets beyond cryptocurrencies. The news was reported by Coinfomania, but specific details on the available instruments or launch timeline have not been disclosed. This move reflects the growing trend of crypto exchanges expanding into traditional financial assets, potentially broadening their user base and increasing trading volumes. It also positions Bybit to compete more directly with multi-asset platforms like Robinhood and eToro. The original article does not specify which stocks, ETFs, or other assets will be offered, nor does it provide a timeline or list of supported jurisdictions. Regulatory scrutiny may become a challenge, given that Bybit has faced warnings from financial regulators in multiple jurisdictions.</summary>
   </entry>
 </feed>

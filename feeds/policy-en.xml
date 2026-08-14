@@ -4,7 +4,21 @@
   <link href="https://bmt.news/feeds/policy-en.xml" rel="self"/>
   <link href="https://bmt.news/"/>
   <id>https://bmt.news/feeds/policy-en.xml</id>
-  <updated>2026-08-13T00:00:00Z</updated>
+  <updated>2026-08-14T00:00:00Z</updated>
+  <entry>
+    <title>SEC Targets Regulatory Framework for Tokenized Stocks</title>
+    <link href="https://decrypt.co/375547/morning-minute-the-sec-plans-rules-for-tokenized-stocks"/>
+    <id>https://bmt.news/editions/2026-08-14/#rss:decrypt.co_feed:dc17f4ffca6eb416</id>
+    <updated>2026-08-14T00:00:00Z</updated>
+    <summary>The SEC plans to propose &#x27;Regulation Crypto&#x27; and an innovation exemption for tokenized stocks, potentially allowing tokens tracking stocks like Apple and Tesla to trade on blockchains around the clock. Details could be unveiled at a Friday open meeting. This would provide legal clarity for the tokenized securities market, which has grown rapidly on platforms like Robinhood Chain, Solana, and Base while operating in a regulatory gray zone. A formal exemption could open U.S. retail access and further legitimize the real-world asset (RWA) trend. The intended exemption applies to tokens that track a stock&#x27;s economic exposure but carry no voting or dividend rights, justifying lighter regulatory treatment. The CLARITY Act remains stalled in Congress until at least September, prompting the SEC to act unilaterally under Chair Paul Atkins&#x27; &#x27;Project Crypto&#x27; agenda.</summary>
+  </entry>
+  <entry>
+    <title>SEC lets Franklin Templeton funds invest in its onchain money fund</title>
+    <link href="https://cointelegraph.com/news/sec-franklin-templeton-funds-invest-onchain-money-fund?utm_source=rss_feed&amp;utm_medium=rss&amp;utm_campaign=rss_partner_inbound"/>
+    <id>https://bmt.news/editions/2026-08-14/#rss:cointelegraph.com_rss:34f9368873c4d049</id>
+    <updated>2026-08-14T00:00:00Z</updated>
+    <summary>The SEC issued a no-action letter stating it will not pursue enforcement action if Franklin Templeton funds invest cash in the Franklin OnChain U.S. Government Money Fund (BENJI). The relief also allows affiliated transfer agent FTIS to act as custodian and hold private keys without adhering to existing physical-custody rules. This is a major regulatory milestone: the SEC explicitly permits a large asset manager to invest in its own tokenized money market fund and grants custody relief for digital assets. It advances institutional adoption of onchain funds and sets a precedent for adapting traditional fund rules to blockchain-based recordkeeping. The SEC&#x27;s letter outlines 12 conditions, including systems to prevent unauthorized instructions and administrative controls for FTIS to correct, freeze, migrate, or restore records. Franklin Templeton manages $2.5 billion in onchain assets and is the fifth-largest tokenized asset manager, according to RWA.xyz.</summary>
+  </entry>
   <entry>
     <title>SEC No-Action Letter Lets Franklin Templeton Funds Use Onchain BENJI</title>
     <link href="https://www.theblock.co/news/defi/2026-08-12-sec-clears-franklin-templeton-funds-use-onchain-benji-system-cash-management-411654"/>

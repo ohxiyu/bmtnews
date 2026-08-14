@@ -3,15 +3,41 @@
     {
       "slug": "sec",
       "label": "SEC",
+      "mentions": 5,
+      "days": 3,
+      "first_date": "2026-08-12",
+      "latest_date": "2026-08-14",
+      "recent": 5,
+      "category": "policy",
+      "top_score": 8.0,
+      "title_zh": "美国SEC拟为代币化股票制定监管框架",
+      "title_en": "SEC Targets Regulatory Framework for Tokenized Stocks"
+    },
+    {
+      "slug": "anthropic",
+      "label": "Anthropic",
       "mentions": 3,
       "days": 2,
       "first_date": "2026-08-12",
-      "latest_date": "2026-08-13",
+      "latest_date": "2026-08-14",
       "recent": 3,
-      "category": "policy",
-      "top_score": 8.0,
-      "title_zh": "SEC无异议函允许富兰克林坦伯顿基金使用链上BENJI系统",
-      "title_en": "SEC No-Action Letter Lets Franklin Templeton Funds Use Onchain BENJI"
+      "category": "crypto",
+      "top_score": 8.5,
+      "title_zh": "Anthropic 分析新兴多智能体系统的模式与问题",
+      "title_en": "Anthropic Analyzes Patterns and Problems in Emerging Multiagent Systems"
+    },
+    {
+      "slug": "kpmg",
+      "label": "KPMG",
+      "mentions": 3,
+      "days": 1,
+      "first_date": "2026-08-14",
+      "latest_date": "2026-08-14",
+      "recent": 3,
+      "category": "crypto",
+      "top_score": 8.5,
+      "title_zh": "泰达币2025年报表获毕马威无保留审计意见",
+      "title_en": "Tether gets clean KPMG audit opinion for 2025 statements"
     }
   ]
 }

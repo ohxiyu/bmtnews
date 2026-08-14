@@ -4,7 +4,21 @@
   <link href="https://bmt.news/feeds/policy-zh.xml" rel="self"/>
   <link href="https://bmt.news/"/>
   <id>https://bmt.news/feeds/policy-zh.xml</id>
-  <updated>2026-08-13T00:00:00Z</updated>
+  <updated>2026-08-14T00:00:00Z</updated>
+  <entry>
+    <title>美国SEC拟为代币化股票制定监管框架</title>
+    <link href="https://decrypt.co/375547/morning-minute-the-sec-plans-rules-for-tokenized-stocks"/>
+    <id>https://bmt.news/editions/2026-08-14/#rss:decrypt.co_feed:dc17f4ffca6eb416</id>
+    <updated>2026-08-14T00:00:00Z</updated>
+    <summary>美国SEC计划提出“Regulation Crypto”监管框架，并为代币化股票设立创新豁免，可能允许追踪苹果、特斯拉等股票的代币在区块链上全天候交易。相关细节可能于周五的公开会议上公布。 这将为代币化证券市场提供法律确定性，该市场在Robinhood Chain、Solana和Base等平台上快速增长，却一直处于监管灰色地带。正式的豁免可能打开美国散户参与渠道，并进一步使真实世界资产（RWA）趋势合法化。 拟议的豁免适用于追踪股票经济敞口但不带投票权或股息权的代币，因此监管负担较轻。由于《数字资产市场清晰法案》（CLARITY Act）在国会至少推迟至9月，SEC主席保罗·阿特金斯（Paul Atkins）在“Project Crypto”议程下自行推进。</summary>
+  </entry>
+  <entry>
+    <title>SEC批准富兰克林坦伯顿基金投资其链上货币基金</title>
+    <link href="https://cointelegraph.com/news/sec-franklin-templeton-funds-invest-onchain-money-fund?utm_source=rss_feed&amp;utm_medium=rss&amp;utm_campaign=rss_partner_inbound"/>
+    <id>https://bmt.news/editions/2026-08-14/#rss:cointelegraph.com_rss:34f9368873c4d049</id>
+    <updated>2026-08-14T00:00:00Z</updated>
+    <summary>美国证券交易委员会（SEC）发布无异议函，表示若富兰克林坦伯顿旗下基金将现金投入其链上美国政府货币基金（BENJI），将不会采取执法行动。该豁免还允许关联过户代理FTIS作为托管人持有私钥，而无需遵守现行实物托管规则。 这是一个重大监管里程碑：SEC明确允许大型资产管理公司投资自家代币化货币市场基金，并为其数字资产托管提供豁免。此举推动链上基金的机构化采用，也为现有基金规则如何适应基于区块链的记账方式树立了先例。 SEC的信函列出了12项条件，包括要求富兰克林坦伯顿维护防止未经授权指令的系统，以及要求FTIS具备纠正、冻结、迁移或恢复记录的行政控制能力。据RWA.xyz数据，富兰克林坦伯顿管理着25亿美元链上资产，是第五大代币化资产管理公司。</summary>
+  </entry>
   <entry>
     <title>SEC无异议函允许富兰克林坦伯顿基金使用链上BENJI系统</title>
     <link href="https://www.theblock.co/news/defi/2026-08-12-sec-clears-franklin-templeton-funds-use-onchain-benji-system-cash-management-411654"/>

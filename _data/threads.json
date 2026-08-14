@@ -1,6 +1,42 @@
 {
   "threads": [
     {
+      "thread_id": "t527a7c91a2",
+      "latest_date": "2026-08-14",
+      "first_date": "2026-08-11",
+      "days": 3,
+      "entries": 4,
+      "category": "crypto",
+      "title_zh": "安全回顾：Harmony 桥遭攻击，BTCPay Server 存在漏洞",
+      "title_en": "Harmony Bridge Hack and BTCPay Vulnerability Exposed in Security Roundup",
+      "summary_zh": "新的安全回顾重点披露了两起事件：2022 年 6 月 Harmony Horizon 跨链桥遭攻击，损失约 1 亿美元；以及 BTCPay Server 中存在一个正被积极利用的严重漏洞，可能导致闪电网络节点资金被窃取。 这些事件凸显了跨链桥设计和支付服务器安全方面的持续弱点，使用户资金面临风险，也加大了监管部门和社区对加密基础设施的审视。 Harmony 桥采用 2/5 多签方案，攻击者窃取两把私钥即可批准恶意交易；FBI 将该攻击归因于朝鲜的 Lazarus 集团。开源比特币支付处理器 BTCPay Server 已针对被积极利用的漏洞发布紧急补丁。",
+      "summary_en": "A new security roundup highlights two incidents: the June 2022 Harmony Horizon Bridge hack that lost about $100 million, and an actively exploited critical vulnerability in BTCPay Server that can drain Lightning Network node funds. These incidents underscore persistent weaknesses in cross-chain bridge design and payment server security, putting user funds at risk and increasing regulatory and community scrutiny on crypto infrastructure. The Harmony bridge was protected by a 2-of-5 multisig scheme, and attackers stole two private keys to approve malicious transactions; the FBI attributed the attack to North Korea's Lazarus Group. BTCPay Server, an open-source Bitcoin payment processor, issued an emergency patch for the actively exploited vulnerability."
+    },
+    {
+      "thread_id": "tadfbe249a5",
+      "latest_date": "2026-08-14",
+      "first_date": "2026-08-12",
+      "days": 2,
+      "entries": 2,
+      "category": "policy",
+      "title_zh": "美国SEC拟为代币化股票制定监管框架",
+      "title_en": "SEC Targets Regulatory Framework for Tokenized Stocks",
+      "summary_zh": "美国SEC计划提出“Regulation Crypto”监管框架，并为代币化股票设立创新豁免，可能允许追踪苹果、特斯拉等股票的代币在区块链上全天候交易。相关细节可能于周五的公开会议上公布。 这将为代币化证券市场提供法律确定性，该市场在Robinhood Chain、Solana和Base等平台上快速增长，却一直处于监管灰色地带。正式的豁免可能打开美国散户参与渠道，并进一步使真实世界资产（RWA）趋势合法化。 拟议的豁免适用于追踪股票经济敞口但不带投票权或股息权的代币，因此监管负担较轻。由于《数字资产市场清晰法案》（CLARITY Act）在国会至少推迟至9月，SEC主席保罗·阿特金斯（Paul Atkins）在“Project Crypto”议程下自行推进。",
+      "summary_en": "The SEC plans to propose 'Regulation Crypto' and an innovation exemption for tokenized stocks, potentially allowing tokens tracking stocks like Apple and Tesla to trade on blockchains around the clock. Details could be unveiled at a Friday open meeting. This would provide legal clarity for the tokenized securities market, which has grown rapidly on platforms like Robinhood Chain, Solana, and Base while operating in a regulatory gray zone. A formal exemption could open U.S. retail access and further legitimize the real-world asset (RWA) trend. The intended exemption applies to tokens that track a stock's economic exposure but carry no voting or dividend rights, justifying lighter regulatory treatment. The CLARITY Act remains stalled in Congress until at least September, prompting the SEC to act unilaterally under Chair Paul Atkins' 'Project Crypto' agenda."
+    },
+    {
+      "thread_id": "t1a3e07b671",
+      "latest_date": "2026-08-14",
+      "first_date": "2026-08-13",
+      "days": 2,
+      "entries": 2,
+      "category": "policy",
+      "title_zh": "SEC批准富兰克林坦伯顿基金投资其链上货币基金",
+      "title_en": "SEC lets Franklin Templeton funds invest in its onchain money fund",
+      "summary_zh": "美国证券交易委员会（SEC）发布无异议函，表示若富兰克林坦伯顿旗下基金将现金投入其链上美国政府货币基金（BENJI），将不会采取执法行动。该豁免还允许关联过户代理FTIS作为托管人持有私钥，而无需遵守现行实物托管规则。 这是一个重大监管里程碑：SEC明确允许大型资产管理公司投资自家代币化货币市场基金，并为其数字资产托管提供豁免。此举推动链上基金的机构化采用，也为现有基金规则如何适应基于区块链的记账方式树立了先例。 SEC的信函列出了12项条件，包括要求富兰克林坦伯顿维护防止未经授权指令的系统，以及要求FTIS具备纠正、冻结、迁移或恢复记录的行政控制能力。据RWA.xyz数据，富兰克林坦伯顿管理着25亿美元链上资产，是第五大代币化资产管理公司。",
+      "summary_en": "The SEC issued a no-action letter stating it will not pursue enforcement action if Franklin Templeton funds invest cash in the Franklin OnChain U.S. Government Money Fund (BENJI). The relief also allows affiliated transfer agent FTIS to act as custodian and hold private keys without adhering to existing physical-custody rules. This is a major regulatory milestone: the SEC explicitly permits a large asset manager to invest in its own tokenized money market fund and grants custody relief for digital assets. It advances institutional adoption of onchain funds and sets a precedent for adapting traditional fund rules to blockchain-based recordkeeping. The SEC's letter outlines 12 conditions, including systems to prevent unauthorized instructions and administrative controls for FTIS to correct, freeze, migrate, or restore records. Franklin Templeton manages $2.5 billion in onchain assets and is the fifth-largest tokenized asset manager, according to RWA.xyz."
+    },
+    {
       "thread_id": "t08627efe33",
       "latest_date": "2026-08-13",
       "first_date": "2026-08-12",
@@ -11,18 +47,6 @@
       "title_en": "SEC Advances Tokenized-Securities Exemption for 24/7 Trading",
       "summary_zh": "美国证券交易委员会（SEC）正在推进一项针对代币化证券的豁免框架，旨在允许合规的链上交易，并可能实现7x24小时市场，同时长期规则仍在制定中。SEC高级官员阿特金斯（Atkins）表示，该框架将支持此类交易，而周五的委员会会议讨论的是另一项独立的发行提案。 此举可能显著降低代币化证券的监管不确定性，并为传统资产在区块链网络上实现全天候交易铺平道路。这标志着美国监管机构在现行证券法框架内接纳链上金融的重要一步，可能影响传统及加密市场中的发行人、交易所和投资者。 该豁免框架仍处于初步阶段，尚未最终确定；长期规则仍在制定中。SEC定于周五的委员会会议讨论的是另一项独立的发行提案，而非这一豁免框架。",
       "summary_en": "The U.S. Securities and Exchange Commission (SEC) is advancing an exemption framework for tokenized securities that would allow compliant onchain trading, potentially enabling 24/7 markets while long-term rules are developed. A senior SEC official, Atkins, said the framework would support such trading, and Friday's scheduled Commission consideration covers a separate offering proposal. This move could meaningfully reduce regulatory uncertainty for tokenized securities and pave the way for round-the-clock trading of traditional assets on blockchain networks. It marks a notable step by U.S. regulators to accommodate onchain finance within existing securities law, potentially affecting issuers, exchanges, and investors in both traditional and crypto markets. The exemption framework is still a preliminary step and has not been finalized; long-term rules are still being developed. The SEC's scheduled Friday Commission consideration addresses a separate offering proposal, not this exemption framework."
-    },
-    {
-      "thread_id": "t527a7c91a2",
-      "latest_date": "2026-08-12",
-      "first_date": "2026-08-11",
-      "days": 2,
-      "entries": 2,
-      "category": "crypto",
-      "title_zh": "BTCPay Server 钱包漏洞后悬赏追回被盗比特币",
-      "title_en": "BTCPay Server Offers Bitcoin Bounty After Lightning Wallet Exploit",
-      "summary_zh": "BTCPay Server 宣布提供相当于追回资金 10%（上限 3 BTC）的赏金，以追回在一场利用 LND 管理员 macaroon 凭证的漏洞中被盗的比特币，并敦促所有用户立即升级到 2.4.2 版本。 此次事件暴露了自托管 Lightning Network 基础设施中的真实安全风险，直接影响到运行易受攻击的 BTCPay/LND 服务器的操作者。同时，它也凸显了开源支付处理器必须优先进行快速修复并奖励漏洞研究，以保护用户资金。 攻击者获取了 LND 管理员 macaroon（一种可对 Lightning 节点进行广泛控制的凭证），并利用其访问关联钱包。BTCPay 尚未披露被盗比特币数量或受影响的用户人数；赏金将在可靠的线索之间分配，BTCPay Server 基金会还将分别向安全研究员 Craig Raw 和 Bitcoin Red Team 捐赠 0.21 BTC。",
-      "summary_en": "BTCPay Server announced a 10% bounty (capped at 3 BTC) for recovery of Bitcoin stolen in an exploit that abused LND admin macaroons, and is urging all users to update to version 2.4.2 immediately. The incident exposes real security risks in self-hosted Lightning Network infrastructure and directly affects operators who run vulnerable BTCPay/LND servers. It also underscores how open-source payment processors must prioritize rapid patching and rewarded vulnerability research to protect user funds. Attackers obtained LND admin macaroons, credentials that grant broad control over a Lightning node, and used them to access connected wallets. BTCPay has not disclosed how much Bitcoin was stolen or how many users were affected, and the bounty will be split among verified tips; the BTCPay Server Foundation is also donating 0.21 BTC each to researcher Craig Raw and the Bitcoin Red Team."
     }
   ]
 }

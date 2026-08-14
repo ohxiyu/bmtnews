@@ -4,7 +4,70 @@
   <link href="https://bmt.news/feeds/crypto-zh.xml" rel="self"/>
   <link href="https://bmt.news/"/>
   <id>https://bmt.news/feeds/crypto-zh.xml</id>
-  <updated>2026-08-13T00:00:00Z</updated>
+  <updated>2026-08-14T00:00:00Z</updated>
+  <entry>
+    <title>泰达币2025年报表获毕马威无保留审计意见</title>
+    <link href="https://cointelegraph.com/news/tether-completes-first-full-financial-audit-receives-clean-kpmg-opinion?utm_source=rss_feed&amp;utm_medium=rss&amp;utm_campaign=rss_partner_inbound"/>
+    <id>https://bmt.news/editions/2026-08-14/#rss:cointelegraph.com_rss:a30c52abaa730643</id>
+    <updated>2026-08-14T00:00:00Z</updated>
+    <summary>最大的稳定币发行方泰达币首次完成了对其2025年财务报表的全面独立审计，毕马威出具了无保留（干净）审计意见。审计显示其储备金超过负债68.14亿美元。 这是最大的稳定币发行方在透明度方面的一个重要里程碑，可能增强市场对USDT及整个稳定币市场的信心，而稳定币市场支撑着加密货币交易的大部分流动性。此举使泰达币超越了季度鉴证，达到了传统金融机构所期望的全面审计标准。 毕马威实际检查并逐一清点了泰达币持有的黄金，而非仅依赖托管机构的记录。审计涵盖了截至2025年12月31日年度的资产负债表、损益表和现金流量表，发现储备金超过负债68.14亿美元。</summary>
+  </entry>
+  <entry>
+    <title>安全综述：Harmony 桥攻击与 BTCPay 服务器漏洞</title>
+    <link href="https://www.govinfosecurity.com/cryptohack-roundup-harmony-btcpay-exploits-a-32543"/>
+    <id>https://bmt.news/editions/2026-08-14/#gdelt:article:20260813T201500Z::https://www.govinfosecurity.com/cryptohack-roundup-harmony-btcpay-exploits-a-32543</id>
+    <updated>2026-08-14T00:00:00Z</updated>
+    <summary>这份安全综述涵盖了两起重大事件：2022 年 6 月 Harmony Horizon 桥遭攻击导致约 1 亿美元损失，以及 BTCPay Server 的一个严重漏洞使攻击者能够从运行 LND 的 Lightning 节点中盗取资金。 这份综述凸显了跨链桥和比特币支付基础设施中持续存在的风险，一次攻击就可能直接危及用户资金。DeFi 用户、桥运营方以及依赖 Lightning 支付的商家都会受到影响，并可能促使整个加密基础设施加强安全审查。 在 Harmony 事件中，攻击者似乎控制了该桥背后的多重签名合约，约有 64,000 个钱包受到影响。在 BTCPay Server 事件中，该漏洞暴露了 LND Lightning 节点的凭据，官方敦促运营方升级到 2.4.2 版本或将服务器下线。</summary>
+  </entry>
+  <entry>
+    <title>Tether 首次获得 KPMG 对 2025 年财务报告的清洁审计意见</title>
+    <link href="https://www.theblock.co/news/business/2026-08-13-tether-kpmg-first-full-audit-usdt-clean-opinion-411760"/>
+    <id>https://bmt.news/editions/2026-08-14/#rss:www.theblock.co_rss.xml:1de85e8bbd81999e</id>
+    <updated>2026-08-14T00:00:00Z</updated>
+    <summary>KPMG 美国已对 Tether International 的 2025 年完整财务报表出具了无保留（清洁）审计意见，Tether 于周四宣布了这一消息。这是 USDT 发行方首次完成全面审计。 Tether 是最大的稳定币发行方，获得四大会计师事务所的无保留审计意见显著提升了其财务透明度和可信度。这可能推动机构采用，并吸引监管机构对稳定币储备的更严格审视。 “无保留意见”意味着审计师认为财务报表公允列报且符合 GAAP，不存在重大错报。此次审计具体覆盖 Tether International 的 2025 年完整财务数据。</summary>
+  </entry>
+  <entry>
+    <title>安全回顾：Harmony 桥遭攻击，BTCPay Server 存在漏洞</title>
+    <link href="https://www.bankinfosecurity.com/cryptohack-roundup-harmony-btcpay-exploits-a-32543"/>
+    <id>https://bmt.news/editions/2026-08-14/#gdelt:article:20260813T184500Z::https://www.bankinfosecurity.com/cryptohack-roundup-harmony-btcpay-exploits-a-32543</id>
+    <updated>2026-08-14T00:00:00Z</updated>
+    <summary>新的安全回顾重点披露了两起事件：2022 年 6 月 Harmony Horizon 跨链桥遭攻击，损失约 1 亿美元；以及 BTCPay Server 中存在一个正被积极利用的严重漏洞，可能导致闪电网络节点资金被窃取。 这些事件凸显了跨链桥设计和支付服务器安全方面的持续弱点，使用户资金面临风险，也加大了监管部门和社区对加密基础设施的审视。 Harmony 桥采用 2/5 多签方案，攻击者窃取两把私钥即可批准恶意交易；FBI 将该攻击归因于朝鲜的 Lazarus 集团。开源比特币支付处理器 BTCPay Server 已针对被积极利用的漏洞发布紧急补丁。</summary>
+  </entry>
+  <entry>
+    <title>Coinbase的Base弃用Optimistic Rollups，押注ZK证明</title>
+    <link href="https://news.google.com/rss/articles/CBMidEFVX3lxTFBibndSVHhJY1ZoRUpvNGd6c09wQmVRdDVySmszQWE0Q1Zad0RfbXlpVzJ1Q2VfTlo1SzZwTWplZXNKaGJ6OHhTWkt0T0FhRVpCckV0M2pVZWdBbXBQdjBxWFltelFvaHltOFFnbUYzYnZHTy0w?oc=5"/>
+    <id>https://bmt.news/editions/2026-08-14/#google_news:article:613f8c6136c1b94e</id>
+    <updated>2026-08-14T00:00:00Z</updated>
+    <summary>据Yellow.com报道，Coinbase旗下Layer-2网络Base计划放弃乐观Rollup，转而采用零知识（ZK）证明，这一战略转变涉及约120亿美元的网络价值。目前Coinbase或Base尚未正式确认这一转型。 Base是最大的以太坊Layer-2网络之一，其核心架构的切换将对L2生态、在Base上构建的开发者以及OP Stack的竞争定位产生广泛影响。如果属实，这还可能加速整个行业向基于ZK的扩展方案转变。 报道中提到的120亿美元反映了Base生态系统的资产或价值规模。由于这条消息来自二级媒体报道而非官方公告，具体的路线图、时间表和技术实现方式仍不明确。</summary>
+  </entry>
+  <entry>
+    <title>Tether完成首次四大审计，KPMG对USDT储备出具无保留意见</title>
+    <link href="https://www.coindesk.com/business/2026/08/13/tether-says-it-completed-long-promised-big-four-audit-of-finances-behind-usd180-billion-usdt-stablecoin"/>
+    <id>https://bmt.news/editions/2026-08-14/#rss:www.coindesk.com_arc_outboundfeeds_rss_:82742dd2bb0540df</id>
+    <updated>2026-08-14T00:00:00Z</updated>
+    <summary>Tether宣布，KPMG U.S.已对其2025年财务报表出具无保留意见，这是该稳定币发行方首次完成四大会计师事务所的全面审计。财务报表显示，其储备超过负债68.14亿美元。 此次审计回应了长期以来对USDT储备透明度的批评；USDT是规模达1800亿美元、对加密货币交易流动性至关重要的稳定币。四大会计师事务所出具无保留意见，可能增强市场对Tether的信任，并缓解数字资产领域的系统性风险担忧。 KPMG的审计超出了Tether此前季度鉴证的范围，测试了交易、系统、估值、交易对手方和所有权记录，并实地清点了公司的金条。Tether尚未确认是否会公开发布KPMG的完整报告。</summary>
+  </entry>
+  <entry>
+    <title>Protos追踪HTX储备转移至Poloniex，引发偿付能力担忧</title>
+    <link href="https://protos.com/we-found-htxs-reserves-at-poloniex/"/>
+    <id>https://bmt.news/editions/2026-08-14/#rss:protos.com_feed_:63b1b2e899254692</id>
+    <updated>2026-08-14T00:00:00Z</updated>
+    <summary>Protos报道称，HTX六月份的储备证明首次承认将大部分用户资金转移至未披露的‘第三方’托管人，链上追踪显示包括WBTC和sUSDS在内的数亿美元资产从HTX钱包转移至Poloniex地址。 这很重要，因为HTX正受到欧盟和英国的制裁，其不透明的储备管理以及快速的钱包频繁更换引发了对偿付能力和用户资金安全的严重质疑。调查结果还牵涉到同为孙宇晨旗下交易所的Poloniex，涉及处理来自受制裁实体的资产。 Protos追踪了具体转账：WBTC从HTX地址0x18709e...转移至Poloniex 7，再到Poloniex 10，最后到Poloniex 9；约2亿美元的sUSDS也走了类似路径。HTX五月份的储备证明还错误标注了STEAK-USDC，该地址实际持有的是sUSDS。</summary>
+  </entry>
+  <entry>
+    <title>泰达获KPMG对2025年财报的里程碑式审计</title>
+    <link href="https://tether.io/news/tether-completes-the-largest-inaugural-financial-audit-in-history/"/>
+    <id>https://bmt.news/editions/2026-08-14/#rss:tether.io_feed:682963b6bc93b7cc</id>
+    <updated>2026-08-14T00:00:00Z</updated>
+    <summary>泰达宣布，KPMG美国对其2025年财务报表出具了无保留意见审计报告，这是该公司首次完成全面独立审计。该公告发布于2026年8月13日。 四大会计师事务所出具的无保留意见是独立审计师给予的最高程度保证，可能显著增强市场对泰达储备与透明度的信心。这一里程碑也会引起更严格的监管关注，并可能加速机构与传统金融领域对稳定币的采用。 本次审计针对Tether International, S.A. de C.V.的财务报表，意见覆盖2025财年。泰达称此次审计为历史上规模最大的首次财务审计，突显其作为数字资产行业最大公司的运营规模。</summary>
+  </entry>
+  <entry>
+    <title>Coinbase等15家x402支付服务商未通过面向AI代理经济的安全测试</title>
+    <link href="https://cryptoslate.com/coinbase-and-14-other-x402-facilitators-failed-security-tests-built-for-the-coming-ai-agent-economy/"/>
+    <id>https://bmt.news/editions/2026-08-14/#rss:cryptoslate.com_feed_:3ec1055235cd0395</id>
+    <updated>2026-08-14T00:00:00Z</updated>
+    <summary>研究人员在美国USENIX安全研讨会上测试了15家主要的x402支付服务商，包括Coinbase、Thirdweb、PayAI和Mogami，发现每个平台都至少违反了一条安全规则。他们将被研究的系统中99%的已观测x402交易和98%支付量对应的49条规则违规行为，映射为31个不同的安全漏洞。 x402正被推广为机器驱动商业的基础设施，允许AI代理自主完成服务付费，但这些漏洞可能导致商家在交付商品后收不到付款，并暴露服务商持有的资产和网络费用。这些发现凸显了新兴AI代理支付经济中的系统性风险，可能影响人们对基于稳定币的自动化支付的信任。 研究人员识别出四大类攻击（免费购物、资产窃取、服务中断和Gas滥用），并直接验证了六条攻击路径，包括两条免费购物攻击、三条Gas滥用攻击，以及一条通过恶意ERC-6492元数据暴露服务商持有资产的路径。他们还分析了Base和Solana上1.19亿笔x402交易，发现服务商共花费约20.2万美元的网络费用，其中约5800美元用于最终回滚或失败的Base交易。</summary>
+  </entry>
   <entry>
     <title>路由故障使Solana险些丧失最终确定性</title>
     <link href="https://decrypt.co/375404/a-routing-bug-took-solana-86-of-the-way-to-losing-finality"/>
@@ -221,19 +284,5 @@
     <id>https://bmt.news/editions/2026-08-10/#google_news:article:59ff40abd494e63c</id>
     <updated>2026-08-10T00:00:00Z</updated>
     <summary>Circle 已与 Coinbase 续签了 USDC 合作伙伴关系，延长了这一主要稳定币的关键分销安排。此次续签正值 Circle 更加专注于稳定币的采用与增长之际。 此次续签保障了 USDC 的关键分销渠道，而 USDC 支撑着整个加密生态中的交易与支付。同时，在监管日益关注稳定币行业的背景下，这也表明机构对该领域的持续投入。 USDC 是一种完全储备、与美元挂钩的稳定币，由 Circle 发行，可在以太坊、Base 和 Polygon 等多个网络上使用。此次续签的财务条款尚未披露，但延长后的安排延续了已持续多年的合作伙伴关系。</summary>
-  </entry>
-  <entry>
-    <title>Kraken 下架期限临近，21种代币持有者面临归零风险</title>
-    <link href="https://news.google.com/rss/articles/CBMia0FVX3lxTFBMUlhmQThOcnQ0ZkM2Ylpoc0VjVWFobjhSdktOSDJ6dEU3ZlFqTjlLSDZiWHNxNGJkTVVHblBJMGMzX3dOamNieUJYby1vdGk0Y0h6MnB4Ui1ZSFQ0Qi1RWEhXZjU1NVhfWEFF?oc=5"/>
-    <id>https://bmt.news/editions/2026-08-10/#google_news:article:b4b8ffb2cdebfae7</id>
-    <updated>2026-08-10T00:00:00Z</updated>
-    <summary>Kraken 即将对21种代币执行下架，截止日期临近，未及时处理的持有者可能只能获得接近于零的赔付。该交易所将移除受影响资产的全部交易对。 在 Kraken 等主流交易所下架通常会导致价格急剧下跌，因为代币失去了主要流动性场所。该事件凸显了持有流动性差或不合规资产的风险，交易所可能会定期清理此类代币。 代币被下架时，所有交易对都会被移除，交易所通常会设定最终日期，之后余额可能被转换或清算。受影响的持有者应在截止日期前将代币提取至外部钱包，因为截止日期后的赔付可能微乎其微。</summary>
-  </entry>
-  <entry>
-    <title>Bybit扩展平台业务，新增股票、ETF等资产交易</title>
-    <link href="https://news.google.com/rss/articles/CBMiggFBVV95cUxNc29XTUtqb1E5MXcySlJ4cE96UkNlZnVyNHU2djFmZmhZSUpDTzIwaklTb3RIWHQxWmNBLWVxRklibTVka0dBQlNwY2k4Z2ZNclR2LVVPWXN3eXk1eVlIcHEtWC1oVUF4N2ZoTE9jOFk5YjNUMFFwTjBpSXYtMWVjRlpB?oc=5"/>
-    <id>https://bmt.news/editions/2026-08-10/#google_news:article:8b7ed1f342baebcc</id>
-    <updated>2026-08-10T00:00:00Z</updated>
-    <summary>Bybit宣布扩展其交易平台，在加密货币之外新增股票、ETF及其他资产的交易。Coinfomania报道了这一消息，但尚未披露具体可交易标的或上线时间等细节。 此举反映了加密货币交易所向传统金融资产扩展的趋势，有望扩大用户群体并增加交易量。同时，这也使Bybit在与Robinhood、eToro等多资产平台的竞争中更具直接性。 原始报道未明确将提供哪些股票、ETF或其他资产，也未提供时间表或支持的地区。鉴于Bybit曾受到多个司法辖区金融监管机构的警告，监管审查可能成为其面临的挑战。</summary>
   </entry>
 </feed>
