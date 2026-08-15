@@ -38,6 +38,12 @@ X_TWEETS_ENDPOINT = "https://api.x.com/2/tweets"
 TWEET_LIMIT = 280
 # X counts every URL as a fixed-width t.co link regardless of real length.
 TCO_LENGTH = 23
+# How much of the source article the composer is shown. Long enough to carry
+# a timeline and the concrete numbers, short enough to stay cheap per post.
+ARTICLE_EXCERPT_CHARS = 6000
+# Below this the model plainly did not tell the story: the narrative brief
+# asks for 360-600 Chinese characters, and CJK counts two units each.
+MINIMUM_COMPOSED_WEIGHT = 500
 
 # twitter-text v3 weighting: code points in these ranges count as one
 # character, everything else — including CJK — counts as two. Counting CJK
@@ -335,7 +341,7 @@ def sanitize_composed_post(text: str, *, limit: int) -> Optional[str]:
     if _weighted_length(cleaned) > limit:
         return None
     # A post this short is a failed generation, not a terse one.
-    if _character_weight(cleaned) < 60:
+    if _character_weight(cleaned) < MINIMUM_COMPOSED_WEIGHT:
         return None
     return cleaned
 
@@ -359,6 +365,10 @@ async def compose_story_post(
     def field(name: str) -> str:
         return str(metadata.get(f"{name}_{language}") or "").strip()
 
+    # A narrative post needs more raw material than the summaries carry: the
+    # timeline and the concrete numbers usually only exist in the article body.
+    article = " ".join(str(item.content or "").split())[:ARTICLE_EXCERPT_CHARS]
+
     try:
         response = await ai_client.complete(
             system=X_POST_SYSTEM,
@@ -368,6 +378,7 @@ async def compose_story_post(
                 background=field("background") or "（无）",
                 market_impact=field("market_impact") or "（无）",
                 discussion=field("community_discussion") or "（无）",
+                article=article or "（无）",
             ),
         )
     except Exception as exc:  # noqa: BLE001 - degrade to the fallback
