@@ -4,7 +4,28 @@
   <link href="https://bmt.news/feeds/technology-en.xml" rel="self"/>
   <link href="https://bmt.news/"/>
   <id>https://bmt.news/feeds/technology-en.xml</id>
-  <updated>2026-08-14T00:00:00Z</updated>
+  <updated>2026-08-15T00:00:00Z</updated>
+  <entry>
+    <title>GLM-5.3: frontier coding with emergent cyber capabilities</title>
+    <link href="https://z.ai/blog/glm-5.3"/>
+    <id>https://bmt.news/editions/2026-08-15/#hackernews:story:49294997</id>
+    <updated>2026-08-15T00:00:00Z</updated>
+    <summary>Z.ai has released GLM-5.3, a frontier coding model that builds on the same base as GLM-5.2 with its improvements coming entirely from post-training. The model shows emergent cyber capabilities, including autonomous security research, exploit adaptation, and broad vulnerability scanning, with findings disclosed on cvd.z.ai. This release signals that frontier AI labs are moving beyond coding assistants to autonomous offensive-security agents, which could fundamentally change how vulnerabilities are discovered and disclosed. It also highlights the growing competitiveness of Chinese AI labs, with Z.ai leveraging post-training to keep pace with global frontier models. GLM-5.3 uses the same base model as GLM-5.2; all gains come from substantially extended post-training. According to community reports, it successfully handled red-team scenarios including WordPress plugin zero-days, RCE, and kernel 6.8 exploit adaptation, while Z.ai&#x27;s CVD page lists numerous critical- and high-severity CVEs under embargo.</summary>
+  </entry>
+  <entry>
+    <title>Going Dark: Law Enforcement Turns to Hacking, Not Wiretaps</title>
+    <link href="https://blog.cryptographyengineering.com/2026/08/14/everything-is-about-to-go-dark/"/>
+    <id>https://bmt.news/editions/2026-08-15/#hackernews:story:49304447</id>
+    <updated>2026-08-15T00:00:00Z</updated>
+    <summary>In &#x27;Everything Is About to Go Dark,&#x27; cryptographer Matthew Green argues that law enforcement is entering an era where it will rely primarily on hacking devices and exploiting vulnerabilities rather than traditional wiretapping. He examines the limits of vulnerability exploitation and warns about the risks of government backdoors. The essay reframes the long-running &#x27;going dark&#x27; debate by arguing that hacking will not be a sustainable cure-all for law enforcement. It affects how policymakers, tech companies, and the public think about encryption, vulnerability disclosure, and surveillance powers. Green points to a likely ceiling on the number of useful software bugs, a claim questioned by some who see AI-generated code creating more flaws. He also warns that backdoors pushed as law-enforcement tools would primarily weaken US systems while letting foreign adversaries exploit them.</summary>
+  </entry>
+  <entry>
+    <title>Qwen3.8-27B: 27B Open-Weight Model Outperforms Larger Models on Coding</title>
+    <link href="https://huggingface.co/Qwen/Qwen3.8-27B-FP8"/>
+    <id>https://bmt.news/editions/2026-08-15/#hackernews:story:49299605</id>
+    <updated>2026-08-15T00:00:00Z</updated>
+    <summary>Alibaba&#x27;s Qwen team released Qwen3.8-27B, a 27-billion-parameter open-weight model that reportedly beats larger models such as Claude Opus on coding benchmarks while remaining small enough to run on a laptop. The Hugging Face release is the FP8-quantized version, and community GGUF quantizations are already available. This release narrows the gap between frontier models and locally runnable models, enabling developers to use advanced reasoning and coding capabilities on consumer hardware without expensive API fees. It also signals intensifying competition in the open-weight segment, which could pressure closed-model pricing. The Hugging Face release is the FP8-quantized version (Qwen3.8-27B-FP8), and community quantizations such as Unsloth&#x27;s GGUF files are available for local inference via llama.cpp. In community tests, it scored 42.2 on DeepSWE, beating Claude Opus 4.7 Max&#x27;s 40 when used with Claude Code.</summary>
+  </entry>
   <entry>
     <title>Anthropic Analyzes Patterns and Problems in Emerging Multiagent Systems</title>
     <link href="https://news.google.com/rss/articles/CBMiY0FVX3lxTFBoVFQ4NnRrVGF2dXBQMmhjNzhmQUVZQVF6ckVvWlpkMVdHMnpFOVpodWhoUEw4bWdacG1JRE9kUUZpUWN2WnJiZ3NHaFY0LWJHMF9zOGFGR0tlZmhta180N2Nkaw?oc=5"/>

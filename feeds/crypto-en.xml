@@ -4,7 +4,70 @@
   <link href="https://bmt.news/feeds/crypto-en.xml" rel="self"/>
   <link href="https://bmt.news/"/>
   <id>https://bmt.news/feeds/crypto-en.xml</id>
-  <updated>2026-08-14T00:00:00Z</updated>
+  <updated>2026-08-15T00:00:00Z</updated>
+  <entry>
+    <title>Vitalik Buterin Proposes New Ethereum Roadmap with Quantum Defense and AI Verification</title>
+    <link href="https://memeburn.com/vitalik-buterin-just-rewrote-ethereums-roadmap/"/>
+    <id>https://bmt.news/editions/2026-08-15/#gdelt:article:20260814T183000Z::https://memeburn.com/vitalik-buterin-just-rewrote-ethereums-roadmap/</id>
+    <updated>2026-08-15T00:00:00Z</updated>
+    <summary>Vitalik Buterin has proposed a revamped Ethereum roadmap that adds post-quantum defense, AI-based verification, and a potential shift away from the Ethereum Virtual Machine (EVM). This is a proposal, not an implemented upgrade. Ethereum is the largest smart contract platform, so a change in its technical direction could affect developers, dApps, Layer 2 networks, and the broader crypto ecosystem. If adopted, the roadmap would represent a major architectural shift in how Ethereum secures and executes code. The proposal reportedly includes preparing Ethereum&#x27;s cryptography for quantum computing threats and using AI to help verify code correctness. Moving away from the EVM would be a significant break from the current execution environment used by thousands of dApps and rollups.</summary>
+  </entry>
+  <entry>
+    <title>Coldcard Bitcoin Thefts Slow, But Losses Could Hit $150M: Galaxy</title>
+    <link href="https://decrypt.co/375656/coldcard-bitcoin-thefts-slow-losses-top-150-million"/>
+    <id>https://bmt.news/editions/2026-08-15/#rss:decrypt.co_feed:3dee129d9e85105c</id>
+    <updated>2026-08-15T00:00:00Z</updated>
+    <summary>Galaxy Research reports the Coldcard seed-recreation exploit has stolen more than 1,778 BTC (~$112 million) and may have a fourth wave that lifts losses above $150 million. The attack waves have slowed, with no confirmed attacker activity after August 6. This is one of the largest hardware-wallet exploits on record, directly affecting Coldcard single-signature users and undermining trust in physical cold-storage devices. It also highlights how a single firmware regression in randomness can expose millions in Bitcoin years later. Galaxy identifies three major attack waves and 41 smaller footprints, with more than 5,200 addresses drained; Wave 1 alone took 1,082.65 BTC. A candidate fourth wave of 638.5 BTC has not yet been confirmed, and roughly 1,531 BTC remains unmoved in attacker-controlled addresses, with 246 BTC traced to Coinjoin transactions.</summary>
+  </entry>
+  <entry>
+    <title>Neutrl Halts NUSD Minting and Redemptions Over Reserve Issue</title>
+    <link href="https://cointelegraph.com/news/neutrl-pauses-nusd-redemptions-over-undisclosed-reserve-issue?utm_source=rss_feed&amp;utm_medium=rss&amp;utm_campaign=rss_partner_inbound"/>
+    <id>https://bmt.news/editions/2026-08-15/#rss:cointelegraph.com_rss:6bf9c0336aa1ac26</id>
+    <updated>2026-08-15T00:00:00Z</updated>
+    <summary>Neutrl has suspended minting and redemptions for its NUSD synthetic dollar after undisclosed circumstances affected protocol reserves, leaving over $53.6 million in circulation unable to be redeemed. The structured-yield protocol Strata also paused minting, redemptions and related functions for its Neutrl market. The halt freezes user funds in a major synthetic-dollar protocol and raises questions about the true backing of NUSD, which relies on market-neutral strategies rather than bank deposits. The uncertainty could affect confidence in similar DeFi stablecoin products and linked protocols such as Strata. Neutrl did not identify the affected asset or counterparty, nor say whether reserves suffered a realized loss or provide a resumption timeline. According to RWA.xyz, NUSD&#x27;s market cap was about $53.6 million, down 18.4% over 30 days, with the token trading near $0.9984.</summary>
+  </entry>
+  <entry>
+    <title>Binance blocks HTX, 10 other exchanges under EU Russia sanctions</title>
+    <link href="https://news.google.com/rss/articles/CBMixgFBVV95cUxPV2p2RTR4VmY5b2JNSnNkNG9VRUlnSWRrTTQtQUhrSnFBT1AydHRyTzQtcEVkNlA3N1ptbGJEOVBSODZLS0JhZXU2akpzWUhremMtcENEdldUQVFLUEtfbklKenoyVHF0MU4teGV0TTZlQWFtZVVfYXVrQWFuU1VkRlNLZll0eUlMNmp5Q2ZscmJPaDdSdnBsUV9PMjA5c2pFdVVTeWJ3eUY3aWljeE82ejFva2pwT2ZyUEdHNkxzWDhZUEhIc0E?oc=5"/>
+    <id>https://bmt.news/editions/2026-08-15/#google_news:article:94a526de95f1417c</id>
+    <updated>2026-08-15T00:00:00Z</updated>
+    <summary>Binance will block transactions with HTX and 10 other crypto exchanges as part of its compliance with European Union sanctions related to Russia. The move affects 11 exchanges in total, though only HTX has been named publicly. This development restricts how users of those 11 exchanges can move funds into or out of Binance, directly impacting market access and cross-exchange liquidity. It also underscores how regulatory sanctions are reshaping the operations of major centralized exchanges. The specific list of the other 10 exchanges has not been disclosed, and no effective date was provided in the announcement. HTX is a Seychelles-based exchange formerly known as Huobi, one of the largest crypto exchanges by trading volume.</summary>
+  </entry>
+  <entry>
+    <title>Binance to block transactions with HTX, 10 other exchanges under EU Russia sanctions</title>
+    <link href="https://news.google.com/rss/articles/CBMiywFBVV95cUxQcXJSRWNTcTVaZl9IMGdDTWEzQ3pGWjNYLUNNWWpETjZ4R1dqR0VlMURRRlZBNXpXT3JqU3YyT2k1ejc0TXQ1QXlGd1lNMHJWbF9JaDItcmRjMDlvekVWNHhoRzFrVnVmUThxcEZZbkhRYmlfUEh0MXhxSXNvcVQwRFRhNlRNUHRyUlNZckh5VEpqeHVSdlJfN3h5OTBJVTVwc2NwZUtWdG00eEg0d2t3QUh0ZE9ucG11b3Z4UmUyZlVWOWtoUkJ2dEJDNA?oc=5"/>
+    <id>https://bmt.news/editions/2026-08-15/#google_news:article:58287830a139493c</id>
+    <updated>2026-08-15T00:00:00Z</updated>
+    <summary>Binance will block transactions with HTX and ten other cryptocurrency exchanges to comply with EU sanctions against Russia. The restriction applies to transfers between Binance and these platforms. This move shows how major crypto exchanges are tightening compliance to avoid sanctions exposure, and it directly affects users who rely on cross-exchange transfers. It also signals heightened regulatory pressure on platforms linked to Russian-related traffic. HTX, formerly known as Huobi, is a Seychelles-based exchange founded in China, now with offices in Hong Kong, South Korea, Japan and the United States. The EU sanctions rules target entities connected to Russia, and this exchange-level restriction is Binance&#x27;s compliance response to prevent sanctions evasion.</summary>
+  </entry>
+  <entry>
+    <title>Tether Secures First Big Four Audit as U.S. Rules Tighten</title>
+    <link href="https://cryptoslate.com/tether-finally-got-the-audit-critics-demanded-just-as-washington-changed-the-test/"/>
+    <id>https://bmt.news/editions/2026-08-15/#rss:cryptoslate.com_feed_:6b388654083dc73f</id>
+    <updated>2026-08-15T00:00:00Z</updated>
+    <summary>Tether received its first Big Four audit, with KPMG issuing an unqualified opinion on Tether International&#x27;s 2025 financial statements. The audited numbers show reserves exceeding liabilities by $6.814 billion as of Dec. 31, 2025. This milestone matters because Tether is the largest stablecoin issuer and its first Big Four audit directly affects market confidence in USDT. However, the audit lands just as the GENIUS Act and FDIC proposals impose stricter reserve, liquidity, and disclosure rules, so a single clean audit may not settle lingering regulatory questions. KPMG says it physically counted every gold bar backing Tether&#x27;s reserves, and the unqualified opinion means the financial statements are presented fairly in all material respects. The FDIC&#x27;s proposed reserve-asset menu does not include gold, and defines a major redemption event as requests exceeding 10% of outstanding issuance within 24 hours.</summary>
+  </entry>
+  <entry>
+    <title>Ethereum drops Poseidon for SHA/BLAKE as proof systems shift tradeoffs</title>
+    <link href="https://cryptoslate.com/ethereum-abandons-its-8-year-cryptography-bet-after-proof-systems-flip-the-tradeoff/"/>
+    <id>https://bmt.news/editions/2026-08-15/#rss:cryptoslate.com_feed_:86cf9a86f22ae772</id>
+    <updated>2026-08-15T00:00:00Z</updated>
+    <summary>On August 13, Ethereum Foundation researcher Justin Drake said future L1 designs will favor SHA or BLAKE hashes instead of Poseidon, after eight years of work on proof-friendly cryptography. New binary-field proof systems such as Binius and Flock have made conventional hashes practical, though Drake said Poseidon is not broken and no migration order or fork has been issued. This marks a significant protocol-level strategy shift for Ethereum, affecting future proof-driven L1 architecture and zero-knowledge proof tradeoffs. It could influence rollups, zkVMs, and Ethereum&#x27;s post-quantum roadmap, while giving cryptanalysts&#x27; long-tested standard hashes a stronger role. The Flock paper reports that one M4 Max core can prove about 82,000 BLAKE3 compression evaluations, 42,000 SHA-256 compressions, and 30,000 Keccak permutations per second. The benchmark counts internal hash operations, which differs from Ethereum transaction capacity or production throughput; SHA-256 is a NIST standard, BLAKE2 has had a public spec since 2015, while BLAKE3 is newer.</summary>
+  </entry>
+  <entry>
+    <title>Strategy fights MSCI proposal that could trigger $2.8B MSTR sell-off</title>
+    <link href="https://cryptoslate.com/strategy-tells-msci-bitcoin-doesnt-need-you-as-2-8-billion-index-risk-hangs-over-mstr/"/>
+    <id>https://bmt.news/editions/2026-08-15/#rss:cryptoslate.com_feed_:1cbb86d5055f529f</id>
+    <updated>2026-08-15T00:00:00Z</updated>
+    <summary>MSCI launched a consultation that could classify Strategy as a non-operating company and remove it from major equity indexes. Strategy responded publicly, arguing that index providers should reflect markets rather than influence corporate asset allocation; feedback closes September 30 and the final decision is expected by October 16. If MSCI removes Strategy from the ACWI IMI, passive funds tracking the index could sell an estimated $2.8 billion of MSTR shares, pressuring the stock and the broader Bitcoin-backed corporate treasury narrative. The outcome also sets a precedent for other digital-asset and commodity-holding companies like Metaplanet and Yellow Cake. Under the proposed methodology, companies first pass a core screen if operating assets exceed 50% of total assets; otherwise, five financial tests apply, and failing at least four would make a firm ineligible. Existing constituents face a higher threshold (10% operating assets) and must fail across two consecutive annual reviews before removal, so the consultation does not guarantee an immediate deletion.</summary>
+  </entry>
+  <entry>
+    <title>Israel&#x27;s largest bank partners with Galaxy for bitcoin, ether, solana trading</title>
+    <link href="https://www.theblock.co/news/business/2026-08-14-israels-largest-bank-taps-galaxy-to-offer-bitcoin-ether-and-solana-trading-411868"/>
+    <id>https://bmt.news/editions/2026-08-15/#rss:www.theblock.co_rss.xml:1e459f019fd592dd</id>
+    <updated>2026-08-15T00:00:00Z</updated>
+    <summary>Israel&#x27;s largest bank has partnered with Galaxy Digital to offer its clients trading in bitcoin, ether, and solana. The move marks a significant step for institutional cryptocurrency access in Israel. A traditional top-tier bank enabling direct crypto trading signals growing mainstream acceptance of digital assets. It could set a precedent for other banks in Israel and the region, expanding the investor base for these cryptocurrencies. The offering covers bitcoin, ether, and solana, with Galaxy providing the trading infrastructure and execution. According to Chainalysis, Israel received an estimated $22 billion in onchain crypto value during the 12 months ending June 2025, indicating substantial existing demand.</summary>
+  </entry>
   <entry>
     <title>Tether gets clean KPMG audit opinion for 2025 statements</title>
     <link href="https://cointelegraph.com/news/tether-completes-first-full-financial-audit-receives-clean-kpmg-opinion?utm_source=rss_feed&amp;utm_medium=rss&amp;utm_campaign=rss_partner_inbound"/>
@@ -221,68 +284,5 @@
     <id>https://bmt.news/editions/2026-08-11/#gdelt:article:20260810T141500Z::https://fortune.com/2026/08/10/bitcoin-coldcard-hack-hardware-wallet-security-seed-phrases/</id>
     <updated>2026-08-11T00:00:00Z</updated>
     <summary>On July 30, 2026, a firmware vulnerability in Coldcard hardware wallets allowed attackers to drain roughly 1,082.65 BTC (about $70 million, with later estimates rising to $89 million) from over 1,000 addresses in a 41-minute sweep. Unlike typical hacks, this incident compromised seed phrases directly, making it far more damaging to users&#x27; ability to protect their funds. Hardware wallets are widely considered the most secure way to self-custody bitcoin, so a seed-phrase leak undermines the core promise of cold storage and threatens trust in the entire hardware-wallet ecosystem. Affected users must move funds to a newly generated seed phrase, and the industry may need to rethink supply-chain and firmware assurance. According to Bitcoin Magazine, the flaw also affects ephemeral keys, session keys in Clone Coldcard or Key Teleport features, and BIP 85 seeds derived from a compromised seed. Galaxy Research traced the July 30 sweep of 1,196 Bitcoin addresses and tied it to the firmware flaw; Bitcoin Magazine reports that roughly 1,000 BTC connected to the vulnerability has moved on-chain, and attacks are still ongoing.</summary>
-  </entry>
-  <entry>
-    <title>Mastercard closes $1.8B acquisition of stablecoin infra firm BVNK</title>
-    <link href="https://www.coindesk.com/business/2026/08/10/inside-stablecoin-firm-bvnk-s-journey-to-a-usd1-8b-acquisition-by-mastercard"/>
-    <id>https://bmt.news/editions/2026-08-11/#rss:www.coindesk.com_arc_outboundfeeds_rss_:b6dbfccd2d2c56f6</id>
-    <updated>2026-08-11T00:00:00Z</updated>
-    <summary>Mastercard has closed its $1.8 billion acquisition of BVNK, a stablecoin infrastructure firm, after a competitive process that also involved Coinbase and Visa. BVNK reportedly chose Mastercard over a higher Coinbase offer of up to $2.5 billion because of cultural fit and strategic alignment. The deal shows major payments networks treating stablecoin infrastructure as strategically essential, not just a niche crypto service. It intensifies the race among Mastercard, Visa, Stripe, and Coinbase to control the rails of the roughly $300 billion stablecoin market. Early investor Concentric backed BVNK in 2019 at a $4 million valuation, making this a roughly 450x return on paper. The deal follows Stripe&#x27;s $1.1 billion purchase of Bridge in late 2024, which pushed Mastercard and Visa to pursue stablecoin infrastructure deals.</summary>
-  </entry>
-  <entry>
-    <title>SharpLink posts $1B loss; $1.7B staked ETH treasury faces 90-day cash conversion</title>
-    <link href="https://cryptoslate.com/sharplink-posts-1b-loss-as-its-1-7b-ethereum-treasury-could-take-90-days-to-fully-convert-to-cash/"/>
-    <id>https://bmt.news/editions/2026-08-11/#rss:cryptoslate.com_feed_:2dd7e5b6825421e1</id>
-    <updated>2026-08-11T00:00:00Z</updated>
-    <summary>SharpLink reported a $1.08 billion net loss for the six months ending June 30, driven mostly by unrealized ETH price declines and impairments on LsETH and weETH. Its roughly $1.7 billion Ethereum treasury, largely staked, may take up to 90 days to fully convert to cash. This highlights the liquidity risk of staked Ethereum treasuries: even large ETH holders cannot instantly access funds when markets turn. It matters for sentiment around ETH and for public companies using staking to generate yield on crypto reserves. The loss included $827.7 million from unrealized ETH declines and $267.8 million from impairments of liquid staking and restaking tokens LsETH and weETH. As of Aug. 3, SharpLink held 888,938 unencumbered ETH-equivalent units, with ETH trading around $1,916.57 on Aug. 10, giving an illustrative gross value of roughly $1.7 billion.</summary>
-  </entry>
-  <entry>
-    <title>Crypto.com cancels CRO treasury deal, cuts rewards as CRO slides</title>
-    <link href="https://protos.com/is-a-crisis-brewing-at-crypto-com/"/>
-    <id>https://bmt.news/editions/2026-08-11/#rss:protos.com_feed_:294c68b60e5ba879</id>
-    <updated>2026-08-11T00:00:00Z</updated>
-    <summary>Crypto.com terminated its proposed multi-billion dollar digital asset treasury (DAT) business combination with DJT/MCGA (Yorkville America) over the weekend and simultaneously cut cardholder cashback and staking rewards. CRO fell below $0.05, its lowest since October 2023, and a related ETF servicing deal with Yorkville was also scrapped. The termination and reward cuts signal operational and strategic stress at one of the largest crypto exchanges, directly affecting CRO token holders and card customers. The fraying relationship with a Trump-branded entity adds reputational and sentiment risks for Crypto.com and its ecosystem. Starting October 1, Ruby tier cashback drops from 2% to 1.5% and the monthly spending cap falls from $1,250 to $750, while Icy White loses unlimited 4% cashback for a 3.5% rate capped at $3,000. Staking rewards for Pro and Private lock-ups drop from 4% to 3% and 9% to 6% respectively on September 10, even though users&#x27; CRO remains locked.</summary>
-  </entry>
-  <entry>
-    <title>Coinsbuy Covers $7.9M Breach Loss, Offers $100K Reward</title>
-    <link href="https://cointelegraph.com/news/coinsbuy-confirms-security-breach-after-wallets-reportedly-drained-of-79m?utm_source=rss_feed&amp;utm_medium=rss&amp;utm_campaign=rss_partner_inbound"/>
-    <id>https://bmt.news/editions/2026-08-11/#rss:cointelegraph.com_rss:33980603d5a1d4af</id>
-    <updated>2026-08-11T00:00:00Z</updated>
-    <summary>Crypto payments platform Coinsbuy suffered a security breach on Aug. 9 that drained more than $7.9 million across Ethereum and TRON. The company covered all affected client funds from its own reserves and is offering a $100,000 reward for information leading to the attacker. The incident underscores ongoing security risks for crypto payment platforms and custodial services. Coinsbuy&#x27;s decision to reimburse users mitigated direct losses, but the attack highlights how stolen funds are laundered through privacy coins like Monero, complicating recovery and investigation. Blockchain investigators linked the attack to three addresses: two on Ethereum and one on TRON. BlockWatchdog reported about $6.34 million of the stolen funds flowed through FixedFloat exchange, while ChangeNOW helped freeze a six-figure portion; Coinsbuy replenished affected wallets with roughly $3.93 million shortly after the incident.</summary>
-  </entry>
-  <entry>
-    <title>Crypto lost $110M to hacks in July, Immunefi data shows</title>
-    <link href="https://www.theblock.co/news/defi/2026-08-10-crypto-hacks-july-immunefi-411246?utm_source=rss&amp;utm_medium=rss"/>
-    <id>https://bmt.news/editions/2026-08-11/#rss:www.theblock.co_rss.xml:824784cca6072f88</id>
-    <updated>2026-08-11T00:00:00Z</updated>
-    <summary>According to Immunefi, the crypto ecosystem lost roughly $110 million to hacks in July, while its audit competitions reportedly outperformed traditional tier-1 audits in finding vulnerabilities. The aggregate loss highlights persistent security risks in DeFi and the broader crypto market. It also suggests that competitive auditing models such as audit competitions may be becoming more effective at identifying vulnerabilities than conventional top-tier audits. Immunefi is a leading Web3 bug bounty platform, and its audit competitions are time-bound code reviews conducted by security researchers. The report compares these competitions with tier-1 audits, which are typically conducted by well-known firms.</summary>
-  </entry>
-  <entry>
-    <title>Hyperliquid RWA perps boom erodes revenue backing HYPE</title>
-    <link href="https://www.coindesk.com/business/2026/08/09/hyperliquid-s-rwa-perps-boom-is-eating-into-the-revenue-that-backs-hype"/>
-    <id>https://bmt.news/editions/2026-08-10/#rss:www.coindesk.com_arc_outboundfeeds_rss_:730096e9714fb0cd</id>
-    <updated>2026-08-10T00:00:00Z</updated>
-    <summary>Hyperliquid&#x27;s open interest hit a record above $11 billion and 30-day volume reached nearly $178 billion, yet gross protocol revenue fell for a fourth straight quarter to about $202 million in Q2 2026. The gap stems from HIP-3 fee sharing, which now routes roughly half of perp volume through builder-deployed markets that keep up to half the trading fees. This reveals a structural shift in Hyperliquid&#x27;s economics: record usage is increasingly unprofitable for the protocol because fee-sharing funnels revenue to external builders. Since the Assistance Fund&#x27;s HYPE buyback is a fixed share of earnings, shrinking revenue means less HYPE is retired, directly weakening the earnings story that underpins token valuation. RWA perps on assets like gold, crude oil, Nvidia, Tesla, the Nasdaq-100 and pre-IPO SpaceX reached a record $3.6 billion in open interest and overtook bitcoin as Hyperliquid&#x27;s largest perp market. However, Trade.xyz accounts for over 90% of HIP-3 open interest, and a single trade on a thin Korean pre-market venue dropped its SK Hynix contract 19% on Monday, triggering reimbursements.</summary>
-  </entry>
-  <entry>
-    <title>Crypto Dot-Com Shakeout: Over 100 Projects Fold in 2026</title>
-    <link href="https://www.coindesk.com/business/2026/08/09/crypto-is-going-through-a-massive-dot-com-style-shakeout-as-over-100-projects-fold-in-2026"/>
-    <id>https://bmt.news/editions/2026-08-10/#rss:www.coindesk.com_arc_outboundfeeds_rss_:9d5702fa75ff30b4</id>
-    <updated>2026-08-10T00:00:00Z</updated>
-    <summary>Over 100 crypto projects have shut down, filed for bankruptcy, or gone permanently dark in 2026, with four major firms opening closures within a single week in late July, including BitMEX, BitMart, Movement Labs, and Storj Labs. The shakeout is hitting crowded sectors like layer-2 networks and protocol tooling as altcoin prices drop 70% to 90% and token treasuries drain. This marks a maturity shift in crypto, from speculative token distribution to sustainable, cash-flow-positive business models. Projects that charge real fees in stablecoins or cash, like Aave, Hyperliquid, and Ether.fi, are surviving, which signals broader consolidation across DeFi, exchanges, and infrastructure. According to RootData, the pace of shutdowns is accelerating; the exits span exchanges, wallets, DeFi lending protocols, NFT marketplaces, and layer-1 blockchains, including Moonbeam, a Polkadot parachain that shut down on July 31. Over $1.1 billion was lost to exploits in the first half of 2026, and with venture rescue capital drying up, single hacks can force immediate bankruptcies while unmaintained &#x27;zombie contracts&#x27; remain on-chain.</summary>
-  </entry>
-  <entry>
-    <title>Audited badges misleading crypto investors, Bybit hack shows</title>
-    <link href="https://cryptoslate.com/why-crypto-audited-badges-are-giving-investors-a-dangerous-false-sense-of-security/"/>
-    <id>https://bmt.news/editions/2026-08-10/#rss:cryptoslate.com_feed_:d19594d7ead1af65</id>
-    <updated>2026-08-10T00:00:00Z</updated>
-    <summary>A new analysis argues that crypto &#x27;audited&#x27; badges give investors a false sense of security, using Bybit&#x27;s $1.46 billion exploit to show that audit findings miss non-code attack vectors. It cites research indicating that only a fraction of exploit losses originate in the code that conventional audits inspect. Because blockchain projects use audit badges as marketing signals, investors often equate &#x27;audited&#x27; with &#x27;safe,&#x27; which can distort risk perception and capital allocation across DeFi. The analysis may accelerate industry pressure for clearer audit scope labeling and stronger operational security practices. The article details that Bybit&#x27;s Feb. 21, 2025 exploit involved a manipulated signing interface during a routine ETH transfer, after Safe revealed a compromised developer machine; external researchers found no vulnerability in Safe&#x27;s contracts or front-end source. It also cites an Oak Security preprint that compared 23,818 audit findings with 218 rekt.news incidents representing $7.764 billion in losses, showing many incidents fall outside audited code.</summary>
-  </entry>
-  <entry>
-    <title>Circle Renews Coinbase USDC Deal as It Bets Big on Stablecoin Growth</title>
-    <link href="https://news.google.com/rss/articles/CBMiggFBVV95cUxORlBMQWxFLTVYNk0wNEw0Y0F1RU9PbEtKczRQSzBTWmgxam5XdlEta29xajhfMEtqZGwxUW9YWGY3V2RLYnJTb0tHUUN5YjhvU2NYZ1FMOUZsVmpCVk44Qmd0emw4a3I1QmREdEkweHZrcjIxMlpzUHBrTlBwekxSSkp3?oc=5"/>
-    <id>https://bmt.news/editions/2026-08-10/#google_news:article:59ff40abd494e63c</id>
-    <updated>2026-08-10T00:00:00Z</updated>
-    <summary>Circle has renewed its USDC partnership with Coinbase, extending a key distribution arrangement for the second-largest stablecoin. The renewal comes as Circle intensifies its focus on stablecoin adoption and growth. The renewal secures a critical distribution channel for USDC, which underpins trading and payments across the crypto ecosystem. It also signals continued institutional commitment to stablecoins at a time when regulatory attention on the sector is increasing. USDC is a fully reserved stablecoin pegged to the U.S. dollar and issued by Circle, available on networks such as Ethereum, Base, and Polygon. The financial terms of the renewed deal were not disclosed, but the extended arrangement continues a partnership that has existed for several years.</summary>
   </entry>
 </feed>

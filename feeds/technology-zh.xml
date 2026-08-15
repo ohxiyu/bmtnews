@@ -4,7 +4,28 @@
   <link href="https://bmt.news/feeds/technology-zh.xml" rel="self"/>
   <link href="https://bmt.news/"/>
   <id>https://bmt.news/feeds/technology-zh.xml</id>
-  <updated>2026-08-14T00:00:00Z</updated>
+  <updated>2026-08-15T00:00:00Z</updated>
+  <entry>
+    <title>GLM-5.3：前沿编码模型展现新兴网络能力</title>
+    <link href="https://z.ai/blog/glm-5.3"/>
+    <id>https://bmt.news/editions/2026-08-15/#hackernews:story:49294997</id>
+    <updated>2026-08-15T00:00:00Z</updated>
+    <summary>智谱（Z.ai）发布了GLM-5.3，这是一款基于GLM-5.2相同底座的前沿编码模型，所有改进均来自后训练。该模型展现出涌现性网络能力，包括自主安全研究、漏洞利用自适应和大规模漏洞扫描，并在cvd.z.ai上披露了相关发现。 这次发布表明，前沿AI实验室正在从编码助手转向自主进攻性安全代理，这可能从根本上改变漏洞的发现与披露方式。它也凸显了中国AI实验室日益增强的竞争力，智谱通过后训练技术追赶全球前沿模型。 GLM-5.3与GLM-5.2共享同一基础模型，全部性能提升来自大幅扩展的后训练。根据社区报告，它成功完成了红队场景，包括WordPress插件零日漏洞、RCE（远程代码执行）和内核6.8漏洞利用适配，同时Z.ai的CVD页面列出了多个处于保密期的严重及高危CVE。</summary>
+  </entry>
+  <entry>
+    <title>走向黑暗：执法部门转向黑客攻击而非窃听</title>
+    <link href="https://blog.cryptographyengineering.com/2026/08/14/everything-is-about-to-go-dark/"/>
+    <id>https://bmt.news/editions/2026-08-15/#hackernews:story:49304447</id>
+    <updated>2026-08-15T00:00:00Z</updated>
+    <summary>密码学家Matthew Green在《一切即将走向黑暗》一文中指出，执法部门正进入一个主要依靠入侵设备和利用漏洞而非传统窃听的年代。他分析了漏洞利用的局限性，并警告政府后门的风险。 这篇文章重新定义了长期以来的“going dark”（走向黑暗）争论，认为黑客攻击不会是执法部门可持续的万能药。它将影响政策制定者、科技公司和公众对加密、漏洞披露及监控权力的看法。 Green指出可用软件漏洞的数量可能很快就会达到上限，但也有人质疑这一说法，认为AI生成的代码正在制造更多缺陷。他还警告说，以执法为名推动的后门将主要削弱美国自身系统的安全性，让外国对手有机会发动攻击。</summary>
+  </entry>
+  <entry>
+    <title>Qwen3.8-27B：27B开源权重模型在编程基准上超越更大模型</title>
+    <link href="https://huggingface.co/Qwen/Qwen3.8-27B-FP8"/>
+    <id>https://bmt.news/editions/2026-08-15/#hackernews:story:49299605</id>
+    <updated>2026-08-15T00:00:00Z</updated>
+    <summary>阿里巴巴 Qwen 团队发布了 Qwen3.8-27B，一个 270 亿参数的开源权重模型，据称在编程基准上超越更大的模型（如 Claude Opus），同时小到可以在笔记本电脑上运行。Hugging Face 上发布的是 FP8 量化版本，社区 GGUF 量化版本也已可用。 此次发布缩小了前沿模型与本地可运行模型之间的差距，使开发者无需支付昂贵的 API 费用即可在消费级硬件上使用先进的推理和编程能力。这也标志着开源权重赛道竞争加剧，可能对闭源模型的定价造成压力。 Hugging Face 上发布的是 FP8 量化版本（Qwen3.8-27B-FP8），社区量化版本（如 Unsloth 的 GGUF 文件）已可用于通过 llama.cpp 进行本地推理。社区测试中，它在 DeepSWE 上得分为 42.2，超过了使用 Claude Code 的 Claude Opus 4.7 Max 的 40 分。</summary>
+  </entry>
   <entry>
     <title>Anthropic 分析新兴多智能体系统的模式与问题</title>
     <link href="https://news.google.com/rss/articles/CBMiY0FVX3lxTFBoVFQ4NnRrVGF2dXBQMmhjNzhmQUVZQVF6ckVvWlpkMVdHMnpFOVpodWhoUEw4bWdacG1JRE9kUUZpUWN2WnJiZ3NHaFY0LWJHMF9zOGFGR0tlZmhta180N2Nkaw?oc=5"/>

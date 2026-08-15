@@ -1,6 +1,78 @@
 {
   "threads": [
     {
+      "thread_id": "t36cd357196",
+      "latest_date": "2026-08-15",
+      "first_date": "2026-08-10",
+      "days": 2,
+      "entries": 2,
+      "category": "policy",
+      "title_zh": "OCC有条件批准特朗普关联的World Liberty国家信托银行章程",
+      "title_en": "OCC grants Trump-linked World Liberty conditional national trust bank charter",
+      "summary_zh": "美国货币监理署（OCC）初步有条件批准World Liberty Trust Co.作为国家信托银行运营，为其从BitGo手中接管USD1稳定币发行扫清了障碍。最终批准仍需满足额外的开业前要求。 这是一项具有里程碑意义的监管进展，首次将稳定币发行置于联邦银行直接监管之下，为其他代币发行方树立了先例。由于特朗普总统在World Liberty中持有股份，此举也加剧了政治审查，并可能重塑稳定币市场的竞争格局。 OCC的信函称，World Liberty Trust计划向全国机构客户发行法币支持的稳定币USD1，并作为受托人主要向USD1客户提供数字资产托管服务。该公司不打算成为联邦保险存款机构、不申请美联储主账户，也不根据《银行控股公司法》被视为“银行”。",
+      "summary_en": "The U.S. Office of the Comptroller of the Currency (OCC) granted preliminary conditional approval for World Liberty Trust Co. to operate as a national trust bank, clearing the way for it to take over issuance of the USD1 stablecoin from BitGo. Final approval remains contingent on meeting additional preopening requirements. This is a landmark regulatory development that places stablecoin issuance under direct federal banking oversight for the first time, setting a precedent for other token issuers. It also intensifies political scrutiny because of President Trump's ownership stake in World Liberty, and could reshape the competitive landscape of the stablecoin market. The OCC letter states that World Liberty Trust plans to issue USD1, a fiat-backed stablecoin, to institutional clients nationwide and provide digital asset custody as a fiduciary, primarily to USD1 customers. The company does not intend to become a federally insured depository institution, obtain a Federal Reserve master account, or be treated as a \"bank\" under the Bank Holding Company Act."
+    },
+    {
+      "thread_id": "t176bd175f5",
+      "latest_date": "2026-08-15",
+      "first_date": "2026-08-11",
+      "days": 2,
+      "entries": 2,
+      "category": "crypto",
+      "title_zh": "Vitalik Buterin提出以太坊新路线图：量子防御与AI验证",
+      "title_en": "Vitalik Buterin Proposes New Ethereum Roadmap with Quantum Defense and AI Verification",
+      "summary_zh": "Vitalik Buterin提出了一份修订后的以太坊路线图，增加了后量子防御、基于AI的验证，以及可能放弃以太坊虚拟机（EVM）的方向调整。这是一项提议，而非已实施的升级。 以太坊是最大的智能合约平台，其技术方向的改变可能影响开发者、去中心化应用、Layer 2网络以及更广泛的加密生态。如果被采纳，该路线图将代表以太坊在代码安全与执行方式上的重大架构转变。 该提议据悉包括为量子计算威胁做准备，以及利用AI辅助验证代码正确性。放弃EVM将是对当前被数千个去中心化应用和rollup使用的执行环境的重大突破。",
+      "summary_en": "Vitalik Buterin has proposed a revamped Ethereum roadmap that adds post-quantum defense, AI-based verification, and a potential shift away from the Ethereum Virtual Machine (EVM). This is a proposal, not an implemented upgrade. Ethereum is the largest smart contract platform, so a change in its technical direction could affect developers, dApps, Layer 2 networks, and the broader crypto ecosystem. If adopted, the roadmap would represent a major architectural shift in how Ethereum secures and executes code. The proposal reportedly includes preparing Ethereum's cryptography for quantum computing threats and using AI to help verify code correctness. Moving away from the EVM would be a significant break from the current execution environment used by thousands of dApps and rollups."
+    },
+    {
+      "thread_id": "ta91361cd5f",
+      "latest_date": "2026-08-15",
+      "first_date": "2026-08-13",
+      "days": 2,
+      "entries": 2,
+      "category": "crypto",
+      "title_zh": "Coldcard 比特币盗窃放缓，但损失或超 1.5 亿美元：Galaxy",
+      "title_en": "Coldcard Bitcoin Thefts Slow, But Losses Could Hit $150M: Galaxy",
+      "summary_zh": "Galaxy Research 报告称，Coldcard 种子重建漏洞已盗取超过 1,778 枚 BTC（约 1.12 亿美元），并可能存在第四波攻击，使总损失超过 1.5 亿美元。自 8 月 6 日以来未确认新的攻击者活动，攻击浪潮已趋缓。 这是有史以来规模最大的硬件钱包攻击事件之一，直接影响 Coldcard 单签用户，并削弱了对物理冷存储设备的信任。它也凸显了固件中一个随机数生成的回归缺陷如何在数年后暴露出数百万美元的比特币风险。 Galaxy 确认了三次主要攻击浪潮和 41 个较小的攻击足迹，超过 5,200 个地址被盗；仅第一波就盗取了 1,082.65 BTC。另有约 638.5 BTC 的疑似第四波攻击尚未确认，约 1,531 BTC 仍留在攻击者控制的地址中未动，246 BTC 被追踪流向 Coinjoin 交易。",
+      "summary_en": "Galaxy Research reports the Coldcard seed-recreation exploit has stolen more than 1,778 BTC (~$112 million) and may have a fourth wave that lifts losses above $150 million. The attack waves have slowed, with no confirmed attacker activity after August 6. This is one of the largest hardware-wallet exploits on record, directly affecting Coldcard single-signature users and undermining trust in physical cold-storage devices. It also highlights how a single firmware regression in randomness can expose millions in Bitcoin years later. Galaxy identifies three major attack waves and 41 smaller footprints, with more than 5,200 addresses drained; Wave 1 alone took 1,082.65 BTC. A candidate fourth wave of 638.5 BTC has not yet been confirmed, and roughly 1,531 BTC remains unmoved in attacker-controlled addresses, with 246 BTC traced to Coinjoin transactions."
+    },
+    {
+      "thread_id": "t4a44d906d9",
+      "latest_date": "2026-08-15",
+      "first_date": "2026-08-13",
+      "days": 2,
+      "entries": 5,
+      "category": "crypto",
+      "title_zh": "以色列最大银行携手Galaxy提供比特币、以太坊和Solana交易",
+      "title_en": "Israel's largest bank partners with Galaxy for bitcoin, ether, solana trading",
+      "summary_zh": "以色列最大银行与Galaxy Digital合作，为其客户提供比特币、以太坊和Solana的交易服务。此举标志着以色列机构加密货币准入的重要一步。 一家顶级传统银行开放加密货币直接交易，标志着数字资产正日益获得主流认可。这可能为以色列及周边地区的其他银行开创先例，扩大这些加密资产的投资者基础。 该服务涵盖比特币、以太坊和Solana，由Galaxy提供交易基础设施和执行。Chainalysis数据显示，截至2025年6月的12个月内，以色列收到的链上加密资产价值估计达220亿美元，表明当地已有可观需求。",
+      "summary_en": "Israel's largest bank has partnered with Galaxy Digital to offer its clients trading in bitcoin, ether, and solana. The move marks a significant step for institutional cryptocurrency access in Israel. A traditional top-tier bank enabling direct crypto trading signals growing mainstream acceptance of digital assets. It could set a precedent for other banks in Israel and the region, expanding the investor base for these cryptocurrencies. The offering covers bitcoin, ether, and solana, with Galaxy providing the trading infrastructure and execution. According to Chainalysis, Israel received an estimated $22 billion in onchain crypto value during the 12 months ending June 2025, indicating substantial existing demand."
+    },
+    {
+      "thread_id": "t2bc2cf30ff",
+      "latest_date": "2026-08-15",
+      "first_date": "2026-08-13",
+      "days": 2,
+      "entries": 2,
+      "category": "technology",
+      "title_zh": "Qwen3.8-27B：27B开源权重模型在编程基准上超越更大模型",
+      "title_en": "Qwen3.8-27B: 27B Open-Weight Model Outperforms Larger Models on Coding",
+      "summary_zh": "阿里巴巴 Qwen 团队发布了 Qwen3.8-27B，一个 270 亿参数的开源权重模型，据称在编程基准上超越更大的模型（如 Claude Opus），同时小到可以在笔记本电脑上运行。Hugging Face 上发布的是 FP8 量化版本，社区 GGUF 量化版本也已可用。 此次发布缩小了前沿模型与本地可运行模型之间的差距，使开发者无需支付昂贵的 API 费用即可在消费级硬件上使用先进的推理和编程能力。这也标志着开源权重赛道竞争加剧，可能对闭源模型的定价造成压力。 Hugging Face 上发布的是 FP8 量化版本（Qwen3.8-27B-FP8），社区量化版本（如 Unsloth 的 GGUF 文件）已可用于通过 llama.cpp 进行本地推理。社区测试中，它在 DeepSWE 上得分为 42.2，超过了使用 Claude Code 的 Claude Opus 4.7 Max 的 40 分。",
+      "summary_en": "Alibaba's Qwen team released Qwen3.8-27B, a 27-billion-parameter open-weight model that reportedly beats larger models such as Claude Opus on coding benchmarks while remaining small enough to run on a laptop. The Hugging Face release is the FP8-quantized version, and community GGUF quantizations are already available. This release narrows the gap between frontier models and locally runnable models, enabling developers to use advanced reasoning and coding capabilities on consumer hardware without expensive API fees. It also signals intensifying competition in the open-weight segment, which could pressure closed-model pricing. The Hugging Face release is the FP8-quantized version (Qwen3.8-27B-FP8), and community quantizations such as Unsloth's GGUF files are available for local inference via llama.cpp. In community tests, it scored 42.2 on DeepSWE, beating Claude Opus 4.7 Max's 40 when used with Claude Code."
+    },
+    {
+      "thread_id": "t8bc4246654",
+      "latest_date": "2026-08-15",
+      "first_date": "2026-08-14",
+      "days": 2,
+      "entries": 5,
+      "category": "crypto",
+      "title_zh": "Tether 首次获得四大审计，美国监管门槛同步提高",
+      "title_en": "Tether Secures First Big Four Audit as U.S. Rules Tighten",
+      "summary_zh": "Tether 首次获得四大会计师事务所审计，KPMG 对 Tether International 2025 年财务报表出具了无保留意见。经审计的数字显示，截至 2025 年 12 月 31 日，储备金超过负债 68.14 亿美元。 这一里程碑意义重大，因为 Tether 是最大的稳定币发行方，其首次四大审计直接影响市场对 USDT 的信心。然而，审计落地之际，GENIUS 法案和 FDIC 提案正提出更严格的储备、流动性和披露要求，因此一次干净的审计未必能消除持续存在的监管疑问。 KPMG 称其实际清点了支持 Tether 储备的每一根金条，无保留意见意味着财务报表在所有重大方面均公允列报。FDIC 的拟议储备资产清单不包括黄金，并将重大赎回事件定义为 24 小时内超过未偿发行量 10% 的赎回请求。",
+      "summary_en": "Tether received its first Big Four audit, with KPMG issuing an unqualified opinion on Tether International's 2025 financial statements. The audited numbers show reserves exceeding liabilities by $6.814 billion as of Dec. 31, 2025. This milestone matters because Tether is the largest stablecoin issuer and its first Big Four audit directly affects market confidence in USDT. However, the audit lands just as the GENIUS Act and FDIC proposals impose stricter reserve, liquidity, and disclosure rules, so a single clean audit may not settle lingering regulatory questions. KPMG says it physically counted every gold bar backing Tether's reserves, and the unqualified opinion means the financial statements are presented fairly in all material respects. The FDIC's proposed reserve-asset menu does not include gold, and defines a major redemption event as requests exceeding 10% of outstanding issuance within 24 hours."
+    },
+    {
       "thread_id": "t527a7c91a2",
       "latest_date": "2026-08-14",
       "first_date": "2026-08-11",

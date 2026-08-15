@@ -4,7 +4,21 @@
   <link href="https://bmt.news/feeds/policy-zh.xml" rel="self"/>
   <link href="https://bmt.news/"/>
   <id>https://bmt.news/feeds/policy-zh.xml</id>
-  <updated>2026-08-14T00:00:00Z</updated>
+  <updated>2026-08-15T00:00:00Z</updated>
+  <entry>
+    <title>OCC有条件批准特朗普关联的World Liberty国家信托银行章程</title>
+    <link href="https://www.coindesk.com/policy/2026/08/14/trump-backed-world-liberty-wins-conditional-bank-charter-from-federal-regulator"/>
+    <id>https://bmt.news/editions/2026-08-15/#rss:www.coindesk.com_arc_outboundfeeds_rss_:73041c9b0753b836</id>
+    <updated>2026-08-15T00:00:00Z</updated>
+    <summary>美国货币监理署（OCC）初步有条件批准World Liberty Trust Co.作为国家信托银行运营，为其从BitGo手中接管USD1稳定币发行扫清了障碍。最终批准仍需满足额外的开业前要求。 这是一项具有里程碑意义的监管进展，首次将稳定币发行置于联邦银行直接监管之下，为其他代币发行方树立了先例。由于特朗普总统在World Liberty中持有股份，此举也加剧了政治审查，并可能重塑稳定币市场的竞争格局。 OCC的信函称，World Liberty Trust计划向全国机构客户发行法币支持的稳定币USD1，并作为受托人主要向USD1客户提供数字资产托管服务。该公司不打算成为联邦保险存款机构、不申请美联储主账户，也不根据《银行控股公司法》被视为“银行”。</summary>
+  </entry>
+  <entry>
+    <title>特朗普预计将出席与加密CEO的白宫会议</title>
+    <link href="https://www.coindesk.com/policy/2026/08/14/trump-expected-to-attend-white-house-meeting-with-crypto-ceos-sources-say"/>
+    <id>https://bmt.news/editions/2026-08-15/#rss:www.coindesk.com_arc_outboundfeeds_rss_:40f261c91317be9d</id>
+    <updated>2026-08-15T00:00:00Z</updated>
+    <summary>消息人士称，美国总统唐纳德·特朗普预计将于周三出席一场与加密货币、预测市场和AI公司CEO的白宫会议。此次聚会包括Coinbase、Ripple、Gemini、Robinhood、Polymarket和Kalshi的领导者，并定于CFTC创新顾问委员会周四首次会议之前举行。 总统出席标志着政府对加密政策的高层参与，可能影响数字资产、预测市场和AI的监管方向。这可能通过让行业领袖直接接触高层政策制定者并强化对美国更清晰加密框架的预期来影响市场情绪。 会议预计将在艾森豪威尔行政办公大楼举行，CFTC主席Mike Selig以及可能还包括财政部长Scott Bessent和商务部长Howard Lutnick将出席。委员会成员还包括CME Group、Nasdaq、洲际交易所和DTCC的传统金融领袖，CFTC议程包括题为‘加密货币的监管演变：从不确定性到清晰’的环节。</summary>
+  </entry>
   <entry>
     <title>美国SEC拟为代币化股票制定监管框架</title>
     <link href="https://decrypt.co/375547/morning-minute-the-sec-plans-rules-for-tokenized-stocks"/>

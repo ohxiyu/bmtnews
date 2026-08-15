@@ -4,7 +4,70 @@
   <link href="https://bmt.news/feeds/crypto-zh.xml" rel="self"/>
   <link href="https://bmt.news/"/>
   <id>https://bmt.news/feeds/crypto-zh.xml</id>
-  <updated>2026-08-14T00:00:00Z</updated>
+  <updated>2026-08-15T00:00:00Z</updated>
+  <entry>
+    <title>Vitalik Buterin提出以太坊新路线图：量子防御与AI验证</title>
+    <link href="https://memeburn.com/vitalik-buterin-just-rewrote-ethereums-roadmap/"/>
+    <id>https://bmt.news/editions/2026-08-15/#gdelt:article:20260814T183000Z::https://memeburn.com/vitalik-buterin-just-rewrote-ethereums-roadmap/</id>
+    <updated>2026-08-15T00:00:00Z</updated>
+    <summary>Vitalik Buterin提出了一份修订后的以太坊路线图，增加了后量子防御、基于AI的验证，以及可能放弃以太坊虚拟机（EVM）的方向调整。这是一项提议，而非已实施的升级。 以太坊是最大的智能合约平台，其技术方向的改变可能影响开发者、去中心化应用、Layer 2网络以及更广泛的加密生态。如果被采纳，该路线图将代表以太坊在代码安全与执行方式上的重大架构转变。 该提议据悉包括为量子计算威胁做准备，以及利用AI辅助验证代码正确性。放弃EVM将是对当前被数千个去中心化应用和rollup使用的执行环境的重大突破。</summary>
+  </entry>
+  <entry>
+    <title>Coldcard 比特币盗窃放缓，但损失或超 1.5 亿美元：Galaxy</title>
+    <link href="https://decrypt.co/375656/coldcard-bitcoin-thefts-slow-losses-top-150-million"/>
+    <id>https://bmt.news/editions/2026-08-15/#rss:decrypt.co_feed:3dee129d9e85105c</id>
+    <updated>2026-08-15T00:00:00Z</updated>
+    <summary>Galaxy Research 报告称，Coldcard 种子重建漏洞已盗取超过 1,778 枚 BTC（约 1.12 亿美元），并可能存在第四波攻击，使总损失超过 1.5 亿美元。自 8 月 6 日以来未确认新的攻击者活动，攻击浪潮已趋缓。 这是有史以来规模最大的硬件钱包攻击事件之一，直接影响 Coldcard 单签用户，并削弱了对物理冷存储设备的信任。它也凸显了固件中一个随机数生成的回归缺陷如何在数年后暴露出数百万美元的比特币风险。 Galaxy 确认了三次主要攻击浪潮和 41 个较小的攻击足迹，超过 5,200 个地址被盗；仅第一波就盗取了 1,082.65 BTC。另有约 638.5 BTC 的疑似第四波攻击尚未确认，约 1,531 BTC 仍留在攻击者控制的地址中未动，246 BTC 被追踪流向 Coinjoin 交易。</summary>
+  </entry>
+  <entry>
+    <title>Neutrl 因储备金问题暂停 NUSD 铸造与赎回</title>
+    <link href="https://cointelegraph.com/news/neutrl-pauses-nusd-redemptions-over-undisclosed-reserve-issue?utm_source=rss_feed&amp;utm_medium=rss&amp;utm_campaign=rss_partner_inbound"/>
+    <id>https://bmt.news/editions/2026-08-15/#rss:cointelegraph.com_rss:6bf9c0336aa1ac26</id>
+    <updated>2026-08-15T00:00:00Z</updated>
+    <summary>Neutrl 在未披露的储备金问题影响协议储备后，已暂停其 NUSD 合成美元的铸造与赎回，导致流通中的逾 5,360 万美元无法赎回。结构化收益协议 Strata 也暂停了其 Neutrl 市场的铸造、赎回及相关功能。 此次暂停冻结了用户在一个主要合成美元协议中的资金，并对 NUSD 的真实储备支撑提出质疑——NUSD 依赖市场中性策略而非银行存款。这种不确定性可能影响投资者对类似 DeFi 稳定币产品及 Strata 等关联协议的信心。 Neutrl 未指明受影响的资产或交易对手，也未说明储备金是否遭受已实现损失，或提供恢复运营的时间表。据 RWA.xyz 数据，NUSD 市值约为 5,360 万美元，30 天内下降 18.4%，代币交易价格接近 0.9984 美元。</summary>
+  </entry>
+  <entry>
+    <title>币安因欧盟对俄制裁屏蔽HTX等11家交易所交易</title>
+    <link href="https://news.google.com/rss/articles/CBMixgFBVV95cUxPV2p2RTR4VmY5b2JNSnNkNG9VRUlnSWRrTTQtQUhrSnFBT1AydHRyTzQtcEVkNlA3N1ptbGJEOVBSODZLS0JhZXU2akpzWUhremMtcENEdldUQVFLUEtfbklKenoyVHF0MU4teGV0TTZlQWFtZVVfYXVrQWFuU1VkRlNLZll0eUlMNmp5Q2ZscmJPaDdSdnBsUV9PMjA5c2pFdVVTeWJ3eUY3aWljeE82ejFva2pwT2ZyUEdHNkxzWDhZUEhIc0E?oc=5"/>
+    <id>https://bmt.news/editions/2026-08-15/#google_news:article:94a526de95f1417c</id>
+    <updated>2026-08-15T00:00:00Z</updated>
+    <summary>币安将屏蔽与HTX及其他10家加密货币交易所的交易，以履行欧盟针对俄罗斯的相关制裁义务。该措施共影响11家交易所，但公开点名的只有HTX。 这一举措限制了相关11家交易所的用户在币安转入或转出资金的能力，直接影响市场准入和跨交易所流动性。它也凸显了监管制裁正在重塑主要中心化交易所的运营方式。 其他10家交易所的具体名单尚未公布，公告中也没有提供生效日期。HTX是一家总部位于塞舌尔的交易所，原名火币（Huobi），按交易量计是全球最大的加密货币交易所之一。</summary>
+  </entry>
+  <entry>
+    <title>币安将根据欧盟对俄制裁，封锁与HTX等11家交易所之间的交易</title>
+    <link href="https://news.google.com/rss/articles/CBMiywFBVV95cUxQcXJSRWNTcTVaZl9IMGdDTWEzQ3pGWjNYLUNNWWpETjZ4R1dqR0VlMURRRlZBNXpXT3JqU3YyT2k1ejc0TXQ1QXlGd1lNMHJWbF9JaDItcmRjMDlvekVWNHhoRzFrVnVmUThxcEZZbkhRYmlfUEh0MXhxSXNvcVQwRFRhNlRNUHRyUlNZckh5VEpqeHVSdlJfN3h5OTBJVTVwc2NwZUtWdG00eEg0d2t3QUh0ZE9ucG11b3Z4UmUyZlVWOWtoUkJ2dEJDNA?oc=5"/>
+    <id>https://bmt.news/editions/2026-08-15/#google_news:article:58287830a139493c</id>
+    <updated>2026-08-15T00:00:00Z</updated>
+    <summary>币安将封锁与HTX及其他十家加密货币交易所的交易，以遵守欧盟对俄罗斯的制裁。此限制适用于币安与这些平台之间的转账。 此举表明主要加密货币交易所正在加强合规以避免制裁风险，并且直接影响依赖跨交易所转账的用户。这也表明与俄罗斯相关业务有关的平台面临更大的监管压力。 HTX（原火币网）是一家总部位于塞舌尔的交易所，成立于中国，现已在香港、韩国、日本和美国设有办公室。欧盟制裁规则针对与俄罗斯有关的实体，币安的交易所层面限制是一种防止规避制裁的合规回应。</summary>
+  </entry>
+  <entry>
+    <title>Tether 首次获得四大审计，美国监管门槛同步提高</title>
+    <link href="https://cryptoslate.com/tether-finally-got-the-audit-critics-demanded-just-as-washington-changed-the-test/"/>
+    <id>https://bmt.news/editions/2026-08-15/#rss:cryptoslate.com_feed_:6b388654083dc73f</id>
+    <updated>2026-08-15T00:00:00Z</updated>
+    <summary>Tether 首次获得四大会计师事务所审计，KPMG 对 Tether International 2025 年财务报表出具了无保留意见。经审计的数字显示，截至 2025 年 12 月 31 日，储备金超过负债 68.14 亿美元。 这一里程碑意义重大，因为 Tether 是最大的稳定币发行方，其首次四大审计直接影响市场对 USDT 的信心。然而，审计落地之际，GENIUS 法案和 FDIC 提案正提出更严格的储备、流动性和披露要求，因此一次干净的审计未必能消除持续存在的监管疑问。 KPMG 称其实际清点了支持 Tether 储备的每一根金条，无保留意见意味着财务报表在所有重大方面均公允列报。FDIC 的拟议储备资产清单不包括黄金，并将重大赎回事件定义为 24 小时内超过未偿发行量 10% 的赎回请求。</summary>
+  </entry>
+  <entry>
+    <title>以太坊放弃Poseidon，转向SHA/BLAKE，证明系统改变权衡</title>
+    <link href="https://cryptoslate.com/ethereum-abandons-its-8-year-cryptography-bet-after-proof-systems-flip-the-tradeoff/"/>
+    <id>https://bmt.news/editions/2026-08-15/#rss:cryptoslate.com_feed_:86cf9a86f22ae772</id>
+    <updated>2026-08-15T00:00:00Z</updated>
+    <summary>8月13日，以太坊基金会研究员Justin Drake表示，未来L1设计将优先采用SHA或BLAKE哈希，而非Poseidon，此前该基金会在友好证明的密码学上已投入八年。Binius和Flock等新型二进制域证明系统使传统哈希变得实用，但Drake表示Poseidon并未被攻破，也没有发布迁移命令或分叉。 这标志着以太坊协议层面的重大战略转向，影响未来以证明驱动的L1架构和零知识证明的权衡选择。它可能影响Rollup、zkVM以及以太坊的后量子路线图，同时让经过长期密码分析的标准化哈希发挥更重要作用。 Flock论文报告，单颗M4 Max核心每秒可证明约82,000次BLAKE3压缩计算、42,000次SHA-256压缩和30,000次Keccak置换。该基准统计的是内部哈希运算，与以太坊交易容量或生产吞吐量不同；SHA-256是NIST标准，BLAKE2自2015年起就有公开规范，而BLAKE3较新。</summary>
+  </entry>
+  <entry>
+    <title>Strategy反击MSCI提案，称比特币不需要MSCI</title>
+    <link href="https://cryptoslate.com/strategy-tells-msci-bitcoin-doesnt-need-you-as-2-8-billion-index-risk-hangs-over-mstr/"/>
+    <id>https://bmt.news/editions/2026-08-15/#rss:cryptoslate.com_feed_:1cbb86d5055f529f</id>
+    <updated>2026-08-15T00:00:00Z</updated>
+    <summary>MSCI发起了一项咨询，可能将Strategy归类为“非运营公司”并将其从主要股票指数中剔除。Strategy公开回应，辩称指数提供商应反映市场而非影响企业资产配置；反馈将于9月30日结束，最终决定预计10月16日公布。 如果MSCI将Strategy从ACWI IMI指数中剔除，追踪该指数的被动基金可能卖出约28亿美元的MSTR股票，给该股及比特币资产储备企业叙事带来压力。该结果也为Metaplanet、Yellow Cake等其他持有数字资产或大宗商品的公司开创先例。 根据提案，公司的运营资产占总资产比例超过50%即可通过核心筛选；否则需接受五项财务测试，若至少四项不达标则可能被剔除。现有成分股的门槛更宽（运营资产低于10%），且需连续两次年度审查未通过才会被移除，因此本次咨询并不意味着立即剔除。</summary>
+  </entry>
+  <entry>
+    <title>以色列最大银行携手Galaxy提供比特币、以太坊和Solana交易</title>
+    <link href="https://www.theblock.co/news/business/2026-08-14-israels-largest-bank-taps-galaxy-to-offer-bitcoin-ether-and-solana-trading-411868"/>
+    <id>https://bmt.news/editions/2026-08-15/#rss:www.theblock.co_rss.xml:1e459f019fd592dd</id>
+    <updated>2026-08-15T00:00:00Z</updated>
+    <summary>以色列最大银行与Galaxy Digital合作，为其客户提供比特币、以太坊和Solana的交易服务。此举标志着以色列机构加密货币准入的重要一步。 一家顶级传统银行开放加密货币直接交易，标志着数字资产正日益获得主流认可。这可能为以色列及周边地区的其他银行开创先例，扩大这些加密资产的投资者基础。 该服务涵盖比特币、以太坊和Solana，由Galaxy提供交易基础设施和执行。Chainalysis数据显示，截至2025年6月的12个月内，以色列收到的链上加密资产价值估计达220亿美元，表明当地已有可观需求。</summary>
+  </entry>
   <entry>
     <title>泰达币2025年报表获毕马威无保留审计意见</title>
     <link href="https://cointelegraph.com/news/tether-completes-first-full-financial-audit-receives-clean-kpmg-opinion?utm_source=rss_feed&amp;utm_medium=rss&amp;utm_campaign=rss_partner_inbound"/>
@@ -221,68 +284,5 @@
     <id>https://bmt.news/editions/2026-08-11/#gdelt:article:20260810T141500Z::https://fortune.com/2026/08/10/bitcoin-coldcard-hack-hardware-wallet-security-seed-phrases/</id>
     <updated>2026-08-11T00:00:00Z</updated>
     <summary>2026年7月30日，Coldcard硬件钱包的一个固件漏洞被攻击者利用，在约41分钟内从1000多个地址中扫走约1,082.65枚BTC，当时价值约7000万美元，后续估计升至8900万美元。与一般黑客攻击不同，这次事件直接危及了用户的助记词，因而更具破坏性。 硬件钱包被广泛认为是自我保管比特币最安全的方式，因此助记词泄露动摇了冷存储的核心承诺，并可能影响整个硬件钱包生态的信任。受影响用户必须把资金转移到新生成的助记词上，行业也需重新审视供应链与固件保障。 据Bitcoin Magazine报道，该漏洞还影响临时密钥、Clone Coldcard或Key Teleport功能中的会话密钥，以及由受损助记词派生的BIP 85种子。Galaxy Research追踪了7月30日对1,196个比特币地址的扫荡，并将其与固件漏洞关联；Bitcoin Magazine称，与漏洞相关的约1,000枚BTC已在链上转移，且攻击仍在持续。</summary>
-  </entry>
-  <entry>
-    <title>万事达卡完成对稳定币基础设施公司BVNK的18亿美元收购</title>
-    <link href="https://www.coindesk.com/business/2026/08/10/inside-stablecoin-firm-bvnk-s-journey-to-a-usd1-8b-acquisition-by-mastercard"/>
-    <id>https://bmt.news/editions/2026-08-11/#rss:www.coindesk.com_arc_outboundfeeds_rss_:b6dbfccd2d2c56f6</id>
-    <updated>2026-08-11T00:00:00Z</updated>
-    <summary>Mastercard已完成对稳定币基础设施公司BVNK的18亿美元收购，此前Coinbase和Visa也参与了竞购。据报道，BVNK选择了Mastercard，而非Coinbase更高的25亿美元报价，原因是文化契合与战略协同更好。 这笔交易表明，大型支付网络已将稳定币基础设施视为战略必需，而非小众加密服务。Mastercard、Visa、Stripe和Coinbase围绕约3000亿美元稳定币市场竞争的态势因此进一步加剧。 早期投资方Concentric于2019年以400万美元估值投资BVNK，按此次交易计算账面回报约450倍。此前Stripe在2024年底以11亿美元收购Bridge，促使Mastercard和Visa加快布局稳定币基础设施交易。</summary>
-  </entry>
-  <entry>
-    <title>SharpLink亏损10亿美元，其17亿美元质押ETH资产需90天变现</title>
-    <link href="https://cryptoslate.com/sharplink-posts-1b-loss-as-its-1-7b-ethereum-treasury-could-take-90-days-to-fully-convert-to-cash/"/>
-    <id>https://bmt.news/editions/2026-08-11/#rss:cryptoslate.com_feed_:2dd7e5b6825421e1</id>
-    <updated>2026-08-11T00:00:00Z</updated>
-    <summary>SharpLink公布截至6月30日的六个月净亏损10.8亿美元，主要来自ETH价格下跌的未实现损失以及LsETH和weETH的减值。其约17亿美元的以太坊资产大部分已质押，全部转换为现金可能需要长达90天。 这凸显了质押以太坊资产储备的流动性风险：即使是大型ETH持有者，在市场转向时也无法立即动用资金。这影响ETH的市场情绪，也影响那些通过质押加密储备获取收益的上市公司。 损失包括8.277亿美元来自ETH未实现价值下跌，以及2.678亿美元来自流动性质押和再质押代币LsETH、weETH的减值。截至8月3日，SharpLink持有888,938个无负担ETH等价单位；8月10日ETH交易价格约为1,916.57美元，由此估算总价值约为17亿美元。</summary>
-  </entry>
-  <entry>
-    <title>Crypto.com取消CRO储备公司交易、削减奖励，CRO价格下滑</title>
-    <link href="https://protos.com/is-a-crisis-brewing-at-crypto-com/"/>
-    <id>https://bmt.news/editions/2026-08-11/#rss:protos.com_feed_:294c68b60e5ba879</id>
-    <updated>2026-08-11T00:00:00Z</updated>
-    <summary>Crypto.com上周末终止了与DJT/MCGA（Yorkville America）的拟议数十亿美元数字资产储备公司（DAT）业务合并，同时下调了持卡人返现和质押奖励。CRO跌破0.05美元，创2023年10月以来新低，公司还取消了与Yorkville相关的ETF服务协议。 这一终止和奖励削减表明，这家大型加密货币交易所在运营和战略上承受压力，直接影响CRO代币持有者和卡用户。与特朗普品牌实体关系出现裂痕，给Crypto.com及其生态系统带来了声誉和情绪风险。 从10月1日起，Ruby等级卡返现从2%降至1.5%，月度消费上限从1250美元降至750美元；Icy White则失去无限次4%返现，改为3.5%且上限为3000美元。9月10日起，Pro和Private质押锁仓奖励分别从4%降至3%、从9%降至6%，而用户已锁定的CRO仍处于锁定状态。</summary>
-  </entry>
-  <entry>
-    <title>Coinsbuy 遭安全漏洞，赔付资金并悬赏10万美元</title>
-    <link href="https://cointelegraph.com/news/coinsbuy-confirms-security-breach-after-wallets-reportedly-drained-of-79m?utm_source=rss_feed&amp;utm_medium=rss&amp;utm_campaign=rss_partner_inbound"/>
-    <id>https://bmt.news/editions/2026-08-11/#rss:cointelegraph.com_rss:33980603d5a1d4af</id>
-    <updated>2026-08-11T00:00:00Z</updated>
-    <summary>加密货币支付平台 Coinsbuy 于8月9日遭遇安全漏洞，以太坊和TRON网络上的钱包被盗超过790万美元。该公司已用自有储备全额赔付受影响的客户资金，并悬赏10万美元征集能够识别攻击者的信息。 这一事件凸显了加密货币支付平台和托管服务持续面临的安全风险。Coinsbuy 决定赔付用户资金，避免了直接损失，但攻击也展示了窃取资金如何通过门罗币（Monero）等隐私币进行洗钱，使追回和调查变得更加复杂。 区块链调查人员将攻击与三个地址关联，其中两个位于以太坊，一个位于TRON。BlockWatchdog 报告称，约634万美元的被盗资金流经 FixedFloat 交易所，而 ChangeNOW 帮助冻结了其中六位数的部分；Coinsbuy 在事件发生后不久向受影响的钱包充值了约393万美元。</summary>
-  </entry>
-  <entry>
-    <title>七月加密行业因黑客攻击损失1.1亿美元，Immunefi数据显示</title>
-    <link href="https://www.theblock.co/news/defi/2026-08-10-crypto-hacks-july-immunefi-411246?utm_source=rss&amp;utm_medium=rss"/>
-    <id>https://bmt.news/editions/2026-08-11/#rss:www.theblock.co_rss.xml:824784cca6072f88</id>
-    <updated>2026-08-11T00:00:00Z</updated>
-    <summary>据Immunefi数据，加密生态系统在七月份因黑客攻击损失约1.1亿美元，同时其审计竞赛在发现漏洞方面表现优于传统的顶级（tier-1）审计。 这笔月度总损失表明DeFi和更广泛的加密市场仍面临持续的安全风险。同时，这也意味着审计竞赛等竞争性审计模式在发现漏洞方面可能比传统顶级审计更为有效。 Immunefi是领先的Web3漏洞赏金平台，其审计竞赛是由安全研究员进行的有时间限制的代码审查。该报告将这些竞赛与传统知名公司进行的顶级（tier-1）审计进行了比较。</summary>
-  </entry>
-  <entry>
-    <title>Hyperliquid的RWA永续合约热潮侵蚀支撑HYPE的收入</title>
-    <link href="https://www.coindesk.com/business/2026/08/09/hyperliquid-s-rwa-perps-boom-is-eating-into-the-revenue-that-backs-hype"/>
-    <id>https://bmt.news/editions/2026-08-10/#rss:www.coindesk.com_arc_outboundfeeds_rss_:730096e9714fb0cd</id>
-    <updated>2026-08-10T00:00:00Z</updated>
-    <summary>Hyperliquid的未平仓合约突破110亿美元创下新高，30天交易量接近1780亿美元，但协议总收入连续第四个季度下滑，2026年第二季度约为2.02亿美元。这一差异源于HIP-3费用分成机制，目前约有一半的永续合约交易量来自部署者创建的市场，这些市场可保留最多一半的交易手续费。 这揭示了Hyperliquid经济模式的重大结构性转变：创纪录的使用量并未给协议带来更多利润，因为费用分成将收入输送给了外部部署者。由于协助基金对HYPE的回购是收益的固定比例，收入下滑意味着被销毁的HYPE减少，直接削弱了支撑代币估值的盈利逻辑。 黄金、原油、英伟达、特斯拉、纳斯达克100指数及pre-IPO的SpaceX等RWA永续合约未平仓量达到创纪录的36亿美元，超过比特币成为Hyperliquid最大的永续合约市场。然而，Trade.xyz占据了HIP-3未平仓量的90%以上；本周一，某韩国盘前市场流动性薄弱的单笔交易导致其SK海力士合约下跌19%，引发清算并由公司承诺赔偿。</summary>
-  </entry>
-  <entry>
-    <title>加密货币经历互联网泡沫式洗牌：2026年超100个项目倒闭</title>
-    <link href="https://www.coindesk.com/business/2026/08/09/crypto-is-going-through-a-massive-dot-com-style-shakeout-as-over-100-projects-fold-in-2026"/>
-    <id>https://bmt.news/editions/2026-08-10/#rss:www.coindesk.com_arc_outboundfeeds_rss_:9d5702fa75ff30b4</id>
-    <updated>2026-08-10T00:00:00Z</updated>
-    <summary>2026年已有超过100个加密货币项目停运、申请破产或彻底消失，仅7月下旬一周内就有BitMEX、BitMart、Movement Labs和Storj Labs四家知名公司宣布关闭或申请破产。随着山寨币价格下跌70%至90%、代币金库枯竭，Layer-2网络和协议工具等拥挤赛道正遭受洗牌。 这标志着加密货币从投机性代币分发向可持续、正现金流商业模式的成熟转变。像Aave、Hyperliquid和Ether.fi这样以稳定币或现金收取实际费用的项目成为幸存者，也预示着DeFi、交易所和基础设施领域的更广泛整合。 RootData数据显示，关闭速度正在加快；退出范围涵盖交易所、钱包、DeFi借贷协议、NFT市场和Layer-1区块链，其中包括7月31日彻底关停的Polkadot平行链Moonbeam。2026年上半年因漏洞利用损失超过11亿美元，随着风投救援资金枯竭，一次单一攻击就可能迫使项目立即破产，而无人维护的“僵尸合约”仍留在链上。</summary>
-  </entry>
-  <entry>
-    <title>审计徽章给投资者带来危险的安全错觉，Bybit事件为证</title>
-    <link href="https://cryptoslate.com/why-crypto-audited-badges-are-giving-investors-a-dangerous-false-sense-of-security/"/>
-    <id>https://bmt.news/editions/2026-08-10/#rss:cryptoslate.com_feed_:d19594d7ead1af65</id>
-    <updated>2026-08-10T00:00:00Z</updated>
-    <summary>一篇新分析文章指出，加密货币的“已审计”徽章会让投资者产生虚假的安全感，并以Bybit 14.6亿美元被盗事件为例，说明审计发现往往遗漏非代码类攻击途径。文章援引研究称，只有很少一部分漏洞损失源于传统审计所检查的代码。 由于区块链项目常把审计徽章当作营销信号，投资者容易把“已审计”等同于“安全”，这会扭曲整个DeFi领域的风险认知和资金配置。该分析可能推动行业要求更清晰的审计范围标注，并加强运营安全实践。 文章详细说明，2025年2月21日Bybit在一次常规ETH转账中遭遇签名界面被篡改，Safe披露称攻击源自一台被入侵的开发者电脑，外部研究人员并未发现Safe合约或前端源码存在漏洞。文章还援引Oak Security预印本，对比了23,818条审计发现与rekt.news记录的218起事件（损失约77.64亿美元），显示许多事件不在审计范围内。</summary>
-  </entry>
-  <entry>
-    <title>Circle 续签 Coinbase USDC 协议，押注稳定币增长</title>
-    <link href="https://news.google.com/rss/articles/CBMiggFBVV95cUxORlBMQWxFLTVYNk0wNEw0Y0F1RU9PbEtKczRQSzBTWmgxam5XdlEta29xajhfMEtqZGwxUW9YWGY3V2RLYnJTb0tHUUN5YjhvU2NYZ1FMOUZsVmpCVk44Qmd0emw4a3I1QmREdEkweHZrcjIxMlpzUHBrTlBwekxSSkp3?oc=5"/>
-    <id>https://bmt.news/editions/2026-08-10/#google_news:article:59ff40abd494e63c</id>
-    <updated>2026-08-10T00:00:00Z</updated>
-    <summary>Circle 已与 Coinbase 续签了 USDC 合作伙伴关系，延长了这一主要稳定币的关键分销安排。此次续签正值 Circle 更加专注于稳定币的采用与增长之际。 此次续签保障了 USDC 的关键分销渠道，而 USDC 支撑着整个加密生态中的交易与支付。同时，在监管日益关注稳定币行业的背景下，这也表明机构对该领域的持续投入。 USDC 是一种完全储备、与美元挂钩的稳定币，由 Circle 发行，可在以太坊、Base 和 Polygon 等多个网络上使用。此次续签的财务条款尚未披露，但延长后的安排延续了已持续多年的合作伙伴关系。</summary>
   </entry>
 </feed>
