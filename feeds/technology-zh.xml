@@ -4,7 +4,28 @@
   <link href="https://bmt.news/feeds/technology-zh.xml" rel="self"/>
   <link href="https://bmt.news/"/>
   <id>https://bmt.news/feeds/technology-zh.xml</id>
-  <updated>2026-08-15T00:00:00Z</updated>
+  <updated>2026-08-16T00:00:00Z</updated>
+  <entry>
+    <title>苹果联手阿里巴巴在中国推出AI模型</title>
+    <link href="https://decrypt.co/375724/apple-alibaba-build-ai-model-china"/>
+    <id>https://bmt.news/editions/2026-08-16/#rss:decrypt.co_feed:0807ae53ae450181</id>
+    <updated>2026-08-16T00:00:00Z</updated>
+    <summary>苹果与阿里巴巴合作，为中国市场开发专属大语言模型；国家互联网信息办公室上个月已对苹果的生成式AI服务完成备案。预计Apple Intelligence将随iOS更新在未来数月内推送至中国iPhone，苹果可能成为首家在中国运营自有AI模型的外国公司。 这一里程碑可能标志着外国公司首次在中国运营自有AI模型，而ChatGPT和Claude等服务在中国仍被屏蔽。这也凸显了苹果转向阿里巴巴、百度和谷歌等合作伙伴的战略调整，以缩小与华为等本土竞争对手在AI方面的差距。 苹果计划将其模型与阿里巴巴的Qwen引擎及百度的技术结合使用，各系统具体分工尚不明确。此次备案扫清了一项关键监管障碍，但Siri AI仍需满足监管要求，目前在中国仍无法使用。</summary>
+  </entry>
+  <entry>
+    <title>开发者用 Codex 自动化内核优化，实现 232 倍加速</title>
+    <link href="https://sankalp.bearblog.dev/autoresearch/"/>
+    <id>https://bmt.news/editions/2026-08-16/#hackernews:story:49309549</id>
+    <updated>2026-08-16T00:00:00Z</updated>
+    <summary>在一篇技术博客文章中，一位开发者记录了如何使用 OpenAI 的 Codex 代理自动完成内核的研究、性能剖析、验证和优化，最终实现了 232 倍的加速。整个工作流程以“基准测试 -&gt; 性能剖析 -&gt; 验证 -&gt; 研究 -&gt; 改进”的循环自动运行。 这表明 AI 编程代理正从代码生成走向复杂的性能工程。它可能让缺乏底层专业知识的开发者也能进行内核和高性能计算优化，同时也引发了对基准过拟合的担忧。 优化循环包含验证环节以防止正确性被破坏。社区评论指出，这类 AI 驱动的优化往往对竞赛特定基准过拟合，10 个最佳方案中有 8 个在分布外输入上失败，而专家编写的方案仍然保持稳健。</summary>
+  </entry>
+  <entry>
+    <title>萦绕 Unicode 的幽灵字符：来历不明的中日韩汉字</title>
+    <link href="https://www.dampfkraft.com/ghost-characters.html"/>
+    <id>https://bmt.news/editions/2026-08-16/#hackernews:story:49310926</id>
+    <updated>2026-08-16T00:00:00Z</updated>
+    <summary>保罗·麦卡恩（Paul McCann）在《A spectre is haunting Unicode》一文中剖析了幽灵字符，即 Unicode 中来源和含义均无法考证的 CJK 码位。他展示了 JIS 标准与 Unicode 的 CJK 统一过程各自产生了一批这样的幻影字形，并阐述了它们所引发的哲学与实践问题。 幽灵字符已经被纳入 Unicode 等国际标准，修改或删除它们会引发兼容性问题，但保留它们又会损害标准的严谨性。这关系到所有使用 Unicode 或依赖中日韩文字的人，因为它展示了一旦进入标准，编码错误将变得多么难以逆转。 文章指出，JIS 标准中的幽灵字符全部进入了 Unicode，而 Unicode 的 CJK 统一过程又产生了自己的一套。文章还谈到这些字符一旦被标准化便几乎不可能移除。</summary>
+  </entry>
   <entry>
     <title>GLM-5.3：前沿编码模型展现新兴网络能力</title>
     <link href="https://z.ai/blog/glm-5.3"/>

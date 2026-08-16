@@ -4,7 +4,28 @@
   <link href="https://bmt.news/feeds/technology-en.xml" rel="self"/>
   <link href="https://bmt.news/"/>
   <id>https://bmt.news/feeds/technology-en.xml</id>
-  <updated>2026-08-15T00:00:00Z</updated>
+  <updated>2026-08-16T00:00:00Z</updated>
+  <entry>
+    <title>Apple Teams With Alibaba to Debut AI Model in China</title>
+    <link href="https://decrypt.co/375724/apple-alibaba-build-ai-model-china"/>
+    <id>https://bmt.news/editions/2026-08-16/#rss:decrypt.co_feed:0807ae53ae450181</id>
+    <updated>2026-08-16T00:00:00Z</updated>
+    <summary>Apple has partnered with Alibaba to develop a proprietary large language model for China, and the Cyberspace Administration of China registered the generative AI service last month. Apple Intelligence is expected to reach Chinese iPhones through an iOS update in the coming months, potentially making Apple the first foreign company to operate its own AI model in the country. This milestone could mark the first time a foreign company operates a proprietary AI model in China, where services like ChatGPT and Claude remain blocked. It also highlights Apple&#x27;s strategic pivot to partnerships — with Alibaba, Baidu, and Google — to close the AI gap with domestic rivals such as Huawei. Apple plans to pair its model with Alibaba&#x27;s Qwen engine and technology from Baidu, with the specific roles of each system still unclear. The registration clears a key regulatory hurdle, though Siri AI remains unavailable in China while it works through regulatory requirements.</summary>
+  </entry>
+  <entry>
+    <title>Developer Uses Codex to Automate Kernel Optimization, Achieving 232x Speedup</title>
+    <link href="https://sankalp.bearblog.dev/autoresearch/"/>
+    <id>https://bmt.news/editions/2026-08-16/#hackernews:story:49309549</id>
+    <updated>2026-08-16T00:00:00Z</updated>
+    <summary>In a technical blog post, a developer documents how they used OpenAI&#x27;s Codex agent to automatically research, profile, verify, and optimize a kernel, achieving a 232x speedup. The entire workflow ran in a benchmark-to-profile-to-verify-to-research-to-improve loop. This shows AI coding agents are moving beyond code generation into complex performance engineering. It could make kernel and high-performance computing optimization accessible to developers who lack deep low-level expertise, while also raising questions about benchmark overfitting. The optimization loop includes verification to prevent correctness breakage. Community comments note that such AI-driven optimizations often overfit to competition-specific benchmarks, with 8 of 10 top solutions failing on out-of-distribution inputs, whereas expert-written solutions remained robust.</summary>
+  </entry>
+  <entry>
+    <title>Unicode&#x27;s Ghost Characters: CJK Codepoints With No Known Origin</title>
+    <link href="https://www.dampfkraft.com/ghost-characters.html"/>
+    <id>https://bmt.news/editions/2026-08-16/#hackernews:story:49310926</id>
+    <updated>2026-08-16T00:00:00Z</updated>
+    <summary>In the essay &quot;A spectre is haunting Unicode,&quot; Paul McCann examines ghost characters—CJK codepoints in Unicode that have no verifiable origin or meaning. He shows that the JIS standards and the Unicode CJK unification process each produced their own set of these phantom glyphs, and he outlines the philosophical and practical issues they raise. Ghost characters are already embedded in international standards such as Unicode, so removing or changing them would create compatibility problems, yet keeping them compromises the standard&#x27;s integrity. This matters to anyone who builds on Unicode or relies on CJK text, because it shows how irreversible encoding errors can become. The article notes that ghost characters from the JIS standards all made their way into Unicode, and that Unicode&#x27;s CJK unification introduced its own separate set. It also addresses why these characters are nearly impossible to remove once standardized.</summary>
+  </entry>
   <entry>
     <title>GLM-5.3: frontier coding with emergent cyber capabilities</title>
     <link href="https://z.ai/blog/glm-5.3"/>

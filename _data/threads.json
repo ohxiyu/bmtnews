@@ -1,6 +1,18 @@
 {
   "threads": [
     {
+      "thread_id": "t4a44d906d9",
+      "latest_date": "2026-08-16",
+      "first_date": "2026-08-13",
+      "days": 3,
+      "entries": 6,
+      "category": "crypto",
+      "title_zh": "瑞银IBIT看涨期权敞口二季度激增24倍",
+      "title_en": "UBS's IBIT Call Option Exposure Surges 24-Fold in Q2",
+      "summary_zh": "瑞银报告称，其持有贝莱德iShares比特币信托（IBIT）的看涨期权敞口在二季度环比增长超过24倍，截至6月30日达到195万股标的股份。直接持有的IBIT股份增加12%至407,890股，而看跌期权敞口则减少约53%至143,300股标的股份。 这一动向表明，机构对比特币ETF及相关衍生品的采纳正在增加，一家全球大型银行正在扩大其在数字资产领域的影响力。这一趋势可能鼓励其他大型金融机构跟进，进一步将加密货币融入主流金融体系。 该监管申报文件未披露行权价或到期日，因此仅凭文件无法判断瑞银的净方向性敞口。这次增加可能源于客户主动交易、做市商对冲、做市活动、客户全权委托组合或自营敞口；此外，其直接持有的IBIT股份仍低于2025年底报告的548,614股。",
+      "summary_en": "UBS reported a more than 24-fold quarterly increase in call option exposure to BlackRock's iShares Bitcoin Trust (IBIT), reaching 1.95 million underlying shares as of June 30. Direct IBIT holdings rose 12% to 407,890 shares, while put option exposure dropped roughly 53% to 143,300 underlying shares. This signals growing institutional adoption of Bitcoin ETFs and related derivatives, with a major global bank expanding its footprint in digital assets. The trend could encourage other large financial institutions to follow suit, further integrating crypto into mainstream finance. The regulatory filing does not disclose strike prices or expiration dates, making it impossible to determine UBS's net directional exposure from the filing alone. The increase could stem from client initiatives, dealer hedging, market-making, discretionary client portfolios, or proprietary exposure, and the bank's direct IBIT holdings remain below the 548,614 shares reported at the end of 2025."
+    },
+    {
       "thread_id": "t36cd357196",
       "latest_date": "2026-08-15",
       "first_date": "2026-08-10",
@@ -35,18 +47,6 @@
       "title_en": "Coldcard Bitcoin Thefts Slow, But Losses Could Hit $150M: Galaxy",
       "summary_zh": "Galaxy Research 报告称，Coldcard 种子重建漏洞已盗取超过 1,778 枚 BTC（约 1.12 亿美元），并可能存在第四波攻击，使总损失超过 1.5 亿美元。自 8 月 6 日以来未确认新的攻击者活动，攻击浪潮已趋缓。 这是有史以来规模最大的硬件钱包攻击事件之一，直接影响 Coldcard 单签用户，并削弱了对物理冷存储设备的信任。它也凸显了固件中一个随机数生成的回归缺陷如何在数年后暴露出数百万美元的比特币风险。 Galaxy 确认了三次主要攻击浪潮和 41 个较小的攻击足迹，超过 5,200 个地址被盗；仅第一波就盗取了 1,082.65 BTC。另有约 638.5 BTC 的疑似第四波攻击尚未确认，约 1,531 BTC 仍留在攻击者控制的地址中未动，246 BTC 被追踪流向 Coinjoin 交易。",
       "summary_en": "Galaxy Research reports the Coldcard seed-recreation exploit has stolen more than 1,778 BTC (~$112 million) and may have a fourth wave that lifts losses above $150 million. The attack waves have slowed, with no confirmed attacker activity after August 6. This is one of the largest hardware-wallet exploits on record, directly affecting Coldcard single-signature users and undermining trust in physical cold-storage devices. It also highlights how a single firmware regression in randomness can expose millions in Bitcoin years later. Galaxy identifies three major attack waves and 41 smaller footprints, with more than 5,200 addresses drained; Wave 1 alone took 1,082.65 BTC. A candidate fourth wave of 638.5 BTC has not yet been confirmed, and roughly 1,531 BTC remains unmoved in attacker-controlled addresses, with 246 BTC traced to Coinjoin transactions."
-    },
-    {
-      "thread_id": "t4a44d906d9",
-      "latest_date": "2026-08-15",
-      "first_date": "2026-08-13",
-      "days": 2,
-      "entries": 5,
-      "category": "crypto",
-      "title_zh": "以色列最大银行携手Galaxy提供比特币、以太坊和Solana交易",
-      "title_en": "Israel's largest bank partners with Galaxy for bitcoin, ether, solana trading",
-      "summary_zh": "以色列最大银行与Galaxy Digital合作，为其客户提供比特币、以太坊和Solana的交易服务。此举标志着以色列机构加密货币准入的重要一步。 一家顶级传统银行开放加密货币直接交易，标志着数字资产正日益获得主流认可。这可能为以色列及周边地区的其他银行开创先例，扩大这些加密资产的投资者基础。 该服务涵盖比特币、以太坊和Solana，由Galaxy提供交易基础设施和执行。Chainalysis数据显示，截至2025年6月的12个月内，以色列收到的链上加密资产价值估计达220亿美元，表明当地已有可观需求。",
-      "summary_en": "Israel's largest bank has partnered with Galaxy Digital to offer its clients trading in bitcoin, ether, and solana. The move marks a significant step for institutional cryptocurrency access in Israel. A traditional top-tier bank enabling direct crypto trading signals growing mainstream acceptance of digital assets. It could set a precedent for other banks in Israel and the region, expanding the investor base for these cryptocurrencies. The offering covers bitcoin, ether, and solana, with Galaxy providing the trading infrastructure and execution. According to Chainalysis, Israel received an estimated $22 billion in onchain crypto value during the 12 months ending June 2025, indicating substantial existing demand."
     },
     {
       "thread_id": "t2bc2cf30ff",
