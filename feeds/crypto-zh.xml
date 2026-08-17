@@ -4,7 +4,63 @@
   <link href="https://bmt.news/feeds/crypto-zh.xml" rel="self"/>
   <link href="https://bmt.news/"/>
   <id>https://bmt.news/feeds/crypto-zh.xml</id>
-  <updated>2026-08-16T00:00:00Z</updated>
+  <updated>2026-08-17T00:00:00Z</updated>
+  <entry>
+    <title>SafePal披露数据泄露事件，影响近4万用户的订单信息</title>
+    <link href="https://www.933thedrive.com/2026/08/16/crypto-wallet-provider-safepal-discloses-data-breach-affecting-nearly-40000-users-order-information/"/>
+    <id>https://bmt.news/editions/2026-08-17/#gdelt:article:20260816T193000Z::https://www.933thedrive.com/2026/08/16/crypto-wallet-provider-safepal-discloses-data-breach-affecting-nearly-40000-users-order-information/</id>
+    <updated>2026-08-17T00:00:00Z</updated>
+    <summary>SafePal披露了其用于跟踪客户订单的插件存在授权缺陷，导致39,798名用户的订单个人信息泄露。公司表示，种子短语、私钥和资金均未受影响。 此次泄露凸显了即使在硬件钱包生态系统中，第三方订单处理系统也存在风险，并可能使受影响用户面临网络钓鱼和冒充攻击。同时，它强调了区分客户数据与加密密钥安全的重要性。 泄露的数据包括姓名、实际地址和联系方式。SafePal已修补漏洞，聘请独立安全公司审计修复结果，并将订单数据保留期限限制为90天，同时清理了30多个欺诈网站和钓鱼链接。</summary>
+  </entry>
+  <entry>
+    <title>传统金融巨头拥抱加密，&#x27;做多比特币、做空银行家&#x27;时代终结</title>
+    <link href="https://www.coindesk.com/business/2026/08/13/the-long-bitcoin-short-the-bankers-era-is-officially-over-as-tradfi-giants-embrace-digital-assets"/>
+    <id>https://bmt.news/editions/2026-08-17/#rss:www.coindesk.com_arc_outboundfeeds_rss_:768565f9023ee18e</id>
+    <updated>2026-08-17T00:00:00Z</updated>
+    <summary>Bitwise CEO Hunter Horsley表示，今年夏天有两家各管理超过1万亿美元资产的金融机构批准了加密产品。银行已从抵制数字资产转向通过托管、交易和代币化来推动其分发，模糊了传统金融与去中心化金融之间的界限。 这标志着加密与传统金融关系的结构性转变，大型机构即使在熊市中也扩大客户对数字资产的准入。这种融合可能加速机构采纳、改善市场基础设施，并使加密成为主流金融的一部分。 这两家机构的名称未被披露，Bitwise也未说明具体产品或客户接入时间。早期入场的银行包括Swissquote（2017）、星展银行（2020）、BBVA（2021）、纽约梅隆银行（2022），近期则有渣打银行、嘉信理财、SoFi和摩根士丹利等。</summary>
+  </entry>
+  <entry>
+    <title>DV Labs错过退出期限 超130万AZTEC质押代币被困链上</title>
+    <link href="https://cryptoslate.com/over-1-3-million-staked-tokens-remain-stranded-onchain-after-a-major-validator-missed-its-deadline-to-exit-aztec/"/>
+    <id>https://bmt.news/editions/2026-08-17/#rss:cryptoslate.com_feed_:00c56ad7fab74a7e</id>
+    <updated>2026-08-17T00:00:00Z</updated>
+    <summary>截至UTC时间8月16日凌晨1:53，DV Labs列出的7个attester仍处于VALIDATING状态，持有138.6万AZTEC的有效质押，尽管DV Labs在7月16日宣布退出Aztec并要求委托人最迟在8月5日退出。退出流程尚未完成，错过8月5日请求的经济后果也悬而未决。 这一事件表明，在权益证明网络中，验证者的操作失误可能使质押资产被困，导致委托人无法及时撤出。它直接影响了Aztec上DV Labs的委托人，并引发了对新网络退出截止日期、惩罚机制和提款文档清晰度的质疑。 质押仪表板提供商的提交流仍显示DV Labs名下有16笔委托和320万AZTEC，但直接读取canonical Rollup合约发现，DV Labs列出的7个attester仍处于VALIDATING状态，没有EXITING或ZOMBIE状态，另有62个缺席。7个验证者中有4个余额低于20万AZTEC的激活门槛，合计减少14,000 AZTEC；Aztec的惩罚规则列出了2,000 AZTEC的不活跃惩罚和5,000 AZTEC的重复提议/重复证明惩罚，但没有证据表明这些与DV Labs有关。</summary>
+  </entry>
+  <entry>
+    <title>荷兰网络机构警告：macOS屏幕共享漏洞被用于安装门罗币矿工</title>
+    <link href="https://www.theblock.co/news/defi/2026-08-16-hackers-exploited-macos-screen-sharing-flaw-to-install-monero-miners-dutch-cyber-agency-says-411932"/>
+    <id>https://bmt.news/editions/2026-08-17/#rss:www.theblock.co_rss.xml:7c6f6bcb87f588e1</id>
+    <updated>2026-08-17T00:00:00Z</updated>
+    <summary>荷兰网络机构表示，攻击者正在积极利用一个严重级别为CVSS 9.8的macOS“屏幕共享”漏洞，在受害者设备上安装门罗币（Monero）挖矿程序。苹果已于2026年7月27日和8月6日发布安全补丁修复该漏洞。 这一事件重要之处在于，该漏洞可在认证前被利用，无需任何登录凭证，且已被用于真实攻击。个人和组织都应尽快打补丁；同时此事再次说明门罗币是挖矿木马中最常使用的加密货币。 该漏洞编号为CVE-2026-65400，属于认证前漏洞，攻击者无需有效的macOS账号、已获授权的屏幕共享用户或传统VNC密码即可利用。美国政府将其CVSS评分定为9.8/10，苹果在同期还修复了另一个相关的屏幕共享漏洞CVE-2026-43760。</summary>
+  </entry>
+  <entry>
+    <title>以太坊开发者缩减Hegotá升级的66项提案</title>
+    <link href="https://cointelegraph.com/news/ethereum-devs-66-proposals-hegota-upgrade?utm_source=rss_feed&amp;utm_medium=rss&amp;utm_campaign=rss_partner_inbound"/>
+    <id>https://bmt.news/editions/2026-08-17/#rss:cointelegraph.com_rss:619914a88bb8ccac</id>
+    <updated>2026-08-17T00:00:00Z</updated>
+    <summary>以太坊核心开发者正在筛选66项提案，以确定下一次重大升级Hegotá的范围。目前FOCIL（EIP-7805）是唯一确认纳入的EIP，而Frame Transactions（EIP-8141）、Keyed Nonces（EIP-8250）和Recent Roots（EIP-8272）等隐私相关EIP也在考虑之中，以提供原生隐私能力。 Hegotá将塑造以太坊到2027年的发展轨迹，并可能将隐私原语和更强的抗审查能力直接嵌入基础协议。这对以太坊应用开发者、验证者和依赖L1中立性与可靠交易纳入的用户都很重要。 下一次以太坊核心开发者电话会议定于周一14:00 UTC举行，将帮助决定66项提案中哪些能入选。未能纳入Hegotá的提案可能会在后续升级中重新考虑；此前的Glamsterdam升级预计于2026年下半年上线主网。</summary>
+  </entry>
+  <entry>
+    <title>灰度将质押奖励转为股息，以太坊和Solana拟削减质押收益</title>
+    <link href="https://cryptoslate.com/wall-street-finally-turned-staking-into-a-dividend-now-ethereum-and-solana-want-to-shrink-it/"/>
+    <id>https://bmt.news/editions/2026-08-17/#rss:cryptoslate.com_feed_:a26623b45d15d31e</id>
+    <updated>2026-08-17T00:00:00Z</updated>
+    <summary>灰度宣布将从8月7日左右开始将其以太坊和Solana ETF的质押奖励转换为现金股息。与此同时，Solana的SIMD-0550和以太坊的EIP-8363提案拟削减协议级质押发行量，从而直接减少这些产品的收入来源。 这是质押奖励首次被包装为股息提供给华尔街ETF投资者，使机构产品直接与协议收益挂钩。这些提案的治理结果将决定市场更看重代币稀缺性还是收入，并对验证者、ETF资金流和DeFi收益产生连锁影响。 Solana的SIMD-0550拟将年度去通胀率从15%翻倍至30%，使模拟质押收益率在三年内从5.84%降至2.25%，并在六年内减少1890万SOL的发行。以太坊的EIP-8363拟随着质押参与率上升而燃烧越来越多的验证者奖励，当约一半ETH被质押时达到100%燃烧。</summary>
+  </entry>
+  <entry>
+    <title>Bedrock 协议被盗 200 万美元加密货币</title>
+    <link href="https://news.google.com/rss/articles/CBMiiwFBVV95cUxPbUs5VnNQSmU4NUdxRU9Cc2oyb0o1dlIzZGs1U3IxUUx2NUFEYmJBVWdnWXpFOU9IM3VyMDAyeGJMRTVEMzZjazJjQ3UwUEhxQmpfZ3ZpVnhrMFVSOHpYTzNhZXQyOUNUR3l5VEJCeGdEQnQtanVyVHdIQmkwUno4U1FzZ2NEM08xU1Nv?oc=5"/>
+    <id>https://bmt.news/editions/2026-08-17/#google_news:article:7bd0131a30bcfaec</id>
+    <updated>2026-08-17T00:00:00Z</updated>
+    <summary>据 Yellow.com 报道，Bedrock 协议遭遇了一起 200 万美元的加密货币盗窃事件。该事件直接影响了用户资金，但具体利用细节尚未披露。 这起安全事件凸显了 DeFi 和流动性再质押领域中持续存在的风险，用户资金可能面临被利用的威胁。它可能会削弱用户对 Bedrock 及类似再质押协议的信心。 Bedrock 是一个多资产流动性再质押协议，为比特币、以太坊和 IoTeX 提供流动性再质押代币，作为父协议，其追踪产品包括 uniBTC、uniETH 和 uniIOTX。据报道，此次 200 万美元的损失与重大加密货币攻击事件相比相对较小。</summary>
+  </entry>
+  <entry>
+    <title>Bybit推出针对Unitree和Moonshot AI的Pre-IPO永续合约</title>
+    <link href="https://news.google.com/rss/articles/CBMiVEFVX3lxTE9FR0N5eFE1aXZ1azBLcUtWdlo5eHJrM1duM29yb3A0OC1aQ2FFODdLRkxDRmNNRmVFcXl1aWJIM3RmYmN5cWdKNUNXX0YxdzN3REZ6TQ?oc=5"/>
+    <id>https://bmt.news/editions/2026-08-17/#google_news:article:85bc2466f775a128</id>
+    <updated>2026-08-17T00:00:00Z</updated>
+    <summary>Bybit已为中国的机器人公司Unitree和AI公司Moonshot AI推出Pre-IPO永续合约，使加密货币交易者能够获得这些私人科技公司的敞口。这些合约是现金结算的衍生品，并非直接持股。 这标志着Bybit的Pre-IPO衍生品阵容扩展至知名的中国科技公司，反映出加密平台对私人市场敞口的需求日益增长。它可能吸引传统股票投资者，并拓宽加密交易者可获得的资产类型。 Pre-IPO永续合约以现金结算，不授予所有权、投票权或实际股份。据一份报告称，Bybit现已上线超过200个Pre-IPO永续合约，而SpaceX相关的永续合约在各大交易所已创造了数十亿美元的交易量。</summary>
+  </entry>
   <entry>
     <title>由Bybit前联席CEO创立的美国加密交易所ABFinance暂停运营</title>
     <link href="https://news.google.com/rss/articles/CBMidkFVX3lxTE1IUzlRT0xiamZWbENCY2VsSUZ0SGcwNWc0aUt0Q2xUUTYxSHlwNW9kcnRheHM1ekk4c2o5QjE0eFB5d1poV3BDQ1A1YmlKQkNwbFBjZEJUNVd2ZEs4TWNyQl8wel85ajZSeTFMUHJEeU83UkV4M2c?oc=5"/>
@@ -228,61 +284,5 @@
     <id>https://bmt.news/editions/2026-08-13/#rss:www.theblock.co_rss.xml:4771c18c3591eb54</id>
     <updated>2026-08-13T00:00:00Z</updated>
     <summary>高盛宣布将以至多22.5亿美元收购Neos Investments。该交易将使高盛获得Neos旗下比特币高收益ETF、增强型比特币高收益ETF和以太坊高收益ETF。 一家顶级全球投行专门通过收购来获得加密货币收益型ETF，标志着数字资产领域更深层次的机构采纳。此举可能加速比特币和以太坊受监管产品的主流分销。 该收购交易价值至多22.5亿美元。Neos的比特币高收益ETF（BTCI）于2024年10月16日推出，增强型比特币高收益ETF（XBCI）于2026年1月22日推出，以太坊高收益ETF（NEHI）则通过期权和投资于现货以太坊ETP来产生月度收益。</summary>
-  </entry>
-  <entry>
-    <title>高盛以22.5亿美元收购ETF管理公司NEOS</title>
-    <link href="https://cointelegraph.com/news/goldman-sachs-to-acquire-etf-manager-neos-225b-deal?utm_source=rss_feed&amp;utm_medium=rss&amp;utm_campaign=rss_partner_inbound"/>
-    <id>https://bmt.news/editions/2026-08-13/#rss:cointelegraph.com_rss:2fca145c9c87b6bd</id>
-    <updated>2026-08-13T00:00:00Z</updated>
-    <summary>高盛已同意以最高22.5亿美元收购ETF管理公司NEOS Investments，将其管理的300亿美元基于期权的收益ETF业务（包括与比特币和以太币挂钩的基金）纳入高盛资产管理。该交易预计将于2027年第一季度完成，但需获得监管批准。 这笔交易标志着传统资产管理公司对加密货币挂钩投资产品的进一步接纳。高盛通过收购将向客户提供比特币和以太币收益ETF，可能扩大数字资产的机构投资者基础。 NEOS管理着19只基于期权的收益ETF，包括比特币高收益ETF（BTCI）、增强型比特币高收益ETF（XBCI）和以太币高收益ETF（NEHI），这些基金采用备兑看涨期权策略来生成月度收益。加上高盛此前收购Innovator Capital Management，该交易将使高盛的全球ETF平台资产规模达到约1300亿美元。</summary>
-  </entry>
-  <entry>
-    <title>高盛25亿美元收购NEOS，直接获得比特币收益ETF业务</title>
-    <link href="https://decrypt.co/375491/goldman-sachs-neos-deal-ready-made-bitcoin-income-etf"/>
-    <id>https://bmt.news/editions/2026-08-13/#rss:decrypt.co_feed:00219c9efd3e513a</id>
-    <updated>2026-08-13T00:00:00Z</updated>
-    <summary>高盛同意以最高22.5亿美元的价格收购NEOS Investments，交易预计于2027年第一季度完成。此次收购将为高盛资产管理带来约300亿美元的期权收益ETF，其中包括规模约10亿美元的BTCI比特币备兑看涨基金。 这笔交易让高盛直接获得现成的加密收益ETF业务，绕过了其4月提交比特币溢价ETF申请的缓慢路径。这标志着大型机构入场的重大信号，因为衍生品收益ETF（资产约1800亿美元）正成为市场增长最快的领域之一，而加密资产在其中占比日益提升。 NEOS的旗舰产品BTCI通过卖出比特币持仓的备兑看涨期权来产生月度收益，以限制上涨空间换取现金流；此次收购还包括一款类似的以太坊产品。高盛4月提交的比特币溢价ETF申请使用了类似的期权写入结构，而收购NEOS是吸收成熟管理人，而非等待新基金获得市场认可。</summary>
-  </entry>
-  <entry>
-    <title>高盛以22.5亿美元收购NEOS Investments，进军比特币收益ETF</title>
-    <link href="https://www.coindesk.com/business/2026/08/12/goldman-sachs-leaps-into-bitcoin-income-etfs-with-usd2-25-billion-neos-buyout"/>
-    <id>https://bmt.news/editions/2026-08-13/#rss:www.coindesk.com_arc_outboundfeeds_rss_:1b2ed5147bcc7c04</id>
-    <updated>2026-08-13T00:00:00Z</updated>
-    <summary>高盛已同意收购NEOS Investments，该公司是管理规模11亿美元的比特币合成ETF——BTCI的管理人。这笔现金加股权的交易对NEOS的估值最高达22.5亿美元，预计在2027年初获得监管批准后完成。 此次收购是一个重要的机构采纳信号——顶级投行以22.5亿美元收购比特币收益ETF发行方。这加剧了与贝莱德在快速增长的衍生品收益ETF市场上的竞争，也凸显了比特币在传统金融领域日益被接受。 BTCI不直接持有比特币，而是通过在比特币ETP上采用备兑看涨期权（covered-call）策略来产生约27%的收益率，但过去一年已下跌约43%，费率为0.99%。这笔交易为高盛带来一个管理规模300亿美元、涵盖19只基金的期权策略ETF平台，使其ETF总资产超过1300亿美元。</summary>
-  </entry>
-  <entry>
-    <title>Ravencoin 因严重漏洞面临回滚，价格暴跌20%</title>
-    <link href="https://decrypt.co/375330/ravencoin-crashes-critical-exploit-threatens-rollback"/>
-    <id>https://bmt.news/editions/2026-08-12/#rss:decrypt.co_feed:9c718eee7becf7a9</id>
-    <updated>2026-08-12T00:00:00Z</updated>
-    <summary>Ravencoin 网络被演示并利用了一个严重的共识漏洞，自2026年8月7日区块高度 4,487,776 起，无效区块被易受攻击的节点接受。控制大多数算力的矿池正在挖掘一条排除被利用分支的链，这可能导致大约三天的深度重组，RVN 价格已暴跌20%。 该事件打破了工作量证明区块链交易最终确定性的假设，使上周五以来的存款、提款和支付面临被撤销的风险。它直接影响 Ravencoin 持有者、交易所和用户，并引发了对算力集中化安全影响的更广泛质疑。 第一个已知无效区块出现在 2026-08-07 15:44:01 UTC 的高度 4,487,776，最后有效区块被定为 4,487,775。控制大多数网络算力的 2Miners 和 RavenMiner 拒绝了开发者关于选择更近期恢复点的请求，交易所 Upbit 和 Bitvavo 已暂停 RVN 的充值和提现。</summary>
-  </entry>
-  <entry>
-    <title>Anthropic与Riot达成90亿美元AI算力电力交易</title>
-    <link href="https://cointelegraph.com/news/anthropic-9b-deal-bitcoin-miner-riot?utm_source=rss_feed&amp;utm_medium=rss&amp;utm_campaign=rss_partner_inbound"/>
-    <id>https://bmt.news/editions/2026-08-12/#rss:cointelegraph.com_rss:25d41a3513770546</id>
-    <updated>2026-08-12T00:00:00Z</updated>
-    <summary>Riot Platforms宣布与Anthropic达成一项为期20年的协议，从其德克萨斯州Rockdale园区供应191兆瓦的容量，交易价值约90亿美元。这是涉及比特币矿工的最大AI计算交易之一。 这笔交易标志着AI基础设施与加密货币挖矿的重大交汇，矿工转向AI计算托管以解决制约AI数据中心的电力短缺问题。这可能加速比特币矿工向AI行业电力和计算服务提供商的转型趋势。 据报道，该协议是继7月6日Anthropic与比特币矿工TeraWulf达成190亿美元、为期20年的数据中心租赁协议之后的又一交易。Riot股价周一下跌5.4%，但隔夜交易中上涨超过21%，年初至今涨幅超过53%。</summary>
-  </entry>
-  <entry>
-    <title>比特币矿商Riot将出售比特币，为91亿美元AI数据中心租赁融资</title>
-    <link href="https://cryptoslate.com/riot-is-dumping-its-bitcoin-to-fund-a-9-1b-ai-deal-that-wont-pay-rent-until-2027/"/>
-    <id>https://bmt.news/editions/2026-08-12/#rss:cryptoslate.com_feed_:845f1742312f0050</id>
-    <updated>2026-08-12T00:00:00Z</updated>
-    <summary>Riot Platforms与一家未具名的前沿AI实验室签署了191兆瓦的数据中心租赁协议，预计20年基础租期可带来约91亿美元的总合同收入。该公司计划继续出售其比特币库存作为主要股权资金来源，建设成本预计为21亿至23亿美元，租金要到2027年12月和2028年6月才开始产生。 这标志着又一家大型比特币矿商转向AI基础设施，加速了矿企从纯粹比特币生产向多元化发展的趋势。同时，它将持续的比特币库存出售作为融资机制，可能影响市场供应动态，并影响其他矿商管理其持仓的方式。 Riot预计资本支出为21亿至23亿美元，其中80%至90%预计来自尚未完成融资的长期项目债务，剩余2.1亿至4.6亿美元需要股权融资。摩根士丹利提供的5.73亿美元过渡贷款利率为SOFR加275个基点，将于2026年10月15日到期，投资级信用支持尚未敲定且条款未披露。</summary>
-  </entry>
-  <entry>
-    <title>Ravencoin因严重漏洞攻击或回滚四天交易记录</title>
-    <link href="https://www.coindesk.com/tech/2026/08/11/ravencoin-could-roll-back-four-days-of-transactions-after-critical-block-flaw"/>
-    <id>https://bmt.news/editions/2026-08-12/#rss:www.coindesk.com_arc_outboundfeeds_rss_:11f39f88b950c9b1</id>
-    <updated>2026-08-12T00:00:00Z</updated>
-    <summary>Ravencoin正试图回滚约四天的交易记录，起因是攻击者利用了一个允许无效区块加入网络的严重软件漏洞，首个恶意区块于8月7日出现在区块高度4,487,776。2Miners和RavenMiner两个矿池正从高度4,487,775的区块开始重建链，Bitvavo和Upbit等交易所已暂停RVN充提。 这是一起重大的工作量证明治理与安全事件：由于少数矿池掌控了Ravencoin的大部分算力，它们可以决定哪条历史版本存续，用户原本以为已完成的付款可能被抹除。这也凸显了低算力、源自比特币代码的网络容易遭受回滚式攻击，交易所必须采取措施防范损失。 拟议的回滚将撤销从区块4,487,776起的所有交易，包括该时段内的付款和矿工奖励。Ravencoin已发布修复程序，但补丁无法撤销已写入的区块；RavenMiner表示其节点已运行紧急修复并开采所谓的“干净链”，在链稳定前暂停支付，并承诺自行弥补任何缺口。</summary>
-  </entry>
-  <entry>
-    <title>英伟达5000亿美元AI基础设施计划拉大与加密算力差距</title>
-    <link href="https://www.coindesk.com/tech/2026/08/11/nvidia-wants-to-turn-its-ai-chips-into-an-investable-asset-class"/>
-    <id>https://bmt.news/editions/2026-08-12/#rss:www.coindesk.com_arc_outboundfeeds_rss_:cfb30f5ff3f0be9e</id>
-    <updated>2026-08-12T00:00:00Z</updated>
-    <summary>英伟达已与Apollo Global Management、黑石、贝莱德、Brookfield、高盛和KKR六家华尔街机构签署谅解备忘录，建立可能为AI算力基础设施引入超过5000亿美元资金的融资平台。该公司旨在将AI算力确立为可融资的长期基础设施资产，而非短期的技术支出。 此举可能大幅扩张中心化AI算力规模，使去中心化加密算力网络在规模和竞争力上进一步落后。这也标志着AI基础设施融资方式的结构性转变，可能对基于区块链的算力市场和与AI相关的加密资产产生连锁影响。 涉及的六家华尔街机构为Apollo Global Management、黑石、贝莱德、Brookfield Asset Management、高盛和KKR。英伟达CEO黄仁勋称这是芯片首次成为可投资资产类别，并强调AI工厂是能产生收益、寿命长且可替代的资产。</summary>
   </entry>
 </feed>

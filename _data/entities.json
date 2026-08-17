@@ -16,15 +16,15 @@
     {
       "slug": "anthropic",
       "label": "Anthropic",
-      "mentions": 3,
-      "days": 2,
+      "mentions": 4,
+      "days": 3,
       "first_date": "2026-08-12",
-      "latest_date": "2026-08-14",
-      "recent": 3,
+      "latest_date": "2026-08-17",
+      "recent": 4,
       "category": "crypto",
       "top_score": 8.5,
-      "title_zh": "Anthropic 分析新兴多智能体系统的模式与问题",
-      "title_en": "Anthropic Analyzes Patterns and Problems in Emerging Multiagent Systems"
+      "title_zh": "Anthropic 公开 Claude 官方系统提示词，提升模型透明度",
+      "title_en": "Anthropic Publishes Official Claude System Prompts for Transparency"
     },
     {
       "slug": "kpmg",

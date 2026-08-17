@@ -4,7 +4,63 @@
   <link href="https://bmt.news/feeds/crypto-en.xml" rel="self"/>
   <link href="https://bmt.news/"/>
   <id>https://bmt.news/feeds/crypto-en.xml</id>
-  <updated>2026-08-16T00:00:00Z</updated>
+  <updated>2026-08-17T00:00:00Z</updated>
+  <entry>
+    <title>SafePal Discloses Data Breach Affecting Nearly 40,000 Users&#x27; Order Information</title>
+    <link href="https://www.933thedrive.com/2026/08/16/crypto-wallet-provider-safepal-discloses-data-breach-affecting-nearly-40000-users-order-information/"/>
+    <id>https://bmt.news/editions/2026-08-17/#gdelt:article:20260816T193000Z::https://www.933thedrive.com/2026/08/16/crypto-wallet-provider-safepal-discloses-data-breach-affecting-nearly-40000-users-order-information/</id>
+    <updated>2026-08-17T00:00:00Z</updated>
+    <summary>SafePal disclosed an authorization flaw in a plug-in used to track customer orders, exposing personal order information of 39,798 users. The company says no seed phrases, private keys, or funds were compromised. This breach underscores the risks of third-party order-processing systems even in hardware-wallet ecosystems and could expose affected users to phishing and impersonation attacks. It also reinforces the importance of distinguishing between customer data and cryptographic key security. Exposed data included names, physical addresses, and contact details. SafePal patched the vulnerability, retained an independent security firm to audit the fix, will limit order-data retention to 90 days, and removed over 30 fraudulent websites and phishing links.</summary>
+  </entry>
+  <entry>
+    <title>TradFi Giants Embrace Crypto, Ending &#x27;Long Bitcoin, Short the Bankers&#x27; Era</title>
+    <link href="https://www.coindesk.com/business/2026/08/13/the-long-bitcoin-short-the-bankers-era-is-officially-over-as-tradfi-giants-embrace-digital-assets"/>
+    <id>https://bmt.news/editions/2026-08-17/#rss:www.coindesk.com_arc_outboundfeeds_rss_:768565f9023ee18e</id>
+    <updated>2026-08-17T00:00:00Z</updated>
+    <summary>Two financial institutions managing over $1 trillion each approved crypto products this summer, according to Bitwise CEO Hunter Horsley. Banks have shifted from resisting digital assets to enabling their distribution through custody, trading, and tokenization, blurring the line between traditional and decentralized finance. This marks a structural shift in crypto&#x27;s relationship with traditional finance, as large institutions expand client access to digital assets even during bear markets. The convergence could accelerate institutional adoption, improve market infrastructure, and normalize crypto as part of mainstream finance. The two institutions were not named, and Bitwise did not specify the products or client access timeline. Notable early bank entrants include Swissquote (2017), DBS (2020), BBVA (2021), BNY Mellon (2022), and more recently Standard Chartered, Charles Schwab, SoFi, and Morgan Stanley.</summary>
+  </entry>
+  <entry>
+    <title>1.3M AZTEC stranded as DV Labs misses validator exit deadline</title>
+    <link href="https://cryptoslate.com/over-1-3-million-staked-tokens-remain-stranded-onchain-after-a-major-validator-missed-its-deadline-to-exit-aztec/"/>
+    <id>https://bmt.news/editions/2026-08-17/#rss:cryptoslate.com_feed_:00c56ad7fab74a7e</id>
+    <updated>2026-08-17T00:00:00Z</updated>
+    <summary>As of 1:53 a.m. UTC on Aug. 16, seven DV Labs-listed attesters remained in the VALIDATING state with 1.386 million AZTEC in effective stake, despite DV Labs having announced its Aztec wind-down on July 16 and asked delegators to exit by Aug. 5. The exit process remains incomplete, and the economic consequences of missing the Aug. 5 request are unresolved. This incident shows how validator operational failures can strand staked assets on proof-of-stake networks, leaving delegators unable to withdraw or exit in a timely manner. It directly affects DV Labs delegators on Aztec and raises questions about the clarity of exit deadlines, penalties, and withdrawal documentation on relatively new networks. The staking dashboard provider feed still showed 16 delegations and 3.2 million AZTEC attributed to DV Labs, but direct reads of the canonical Rollup contract found seven DV Labs-listed attesters as VALIDATING, none as EXITING or ZOMBIE, and 62 absent. Four of the seven validators held balances below the 200,000-AZTEC activation threshold, with a combined reduction of 14,000 AZTEC; Aztec&#x27;s slashing rules list a 2,000-AZTEC inactivity penalty and 5,000-AZTEC penalties for duplicate proposals or attestations, but no evidence ties those to DV Labs.</summary>
+  </entry>
+  <entry>
+    <title>Dutch Cyber Agency Warns of macOS Screen Sharing Hack Installing Monero Miners</title>
+    <link href="https://www.theblock.co/news/defi/2026-08-16-hackers-exploited-macos-screen-sharing-flaw-to-install-monero-miners-dutch-cyber-agency-says-411932"/>
+    <id>https://bmt.news/editions/2026-08-17/#rss:www.theblock.co_rss.xml:7c6f6bcb87f588e1</id>
+    <updated>2026-08-17T00:00:00Z</updated>
+    <summary>According to the Dutch cyber agency, attackers have been actively exploiting a critical macOS Screen Sharing vulnerability, rated CVSS 9.8, to install Monero cryptocurrency miners on victims&#x27; machines. Apple has released security patches on July 27 and August 6, 2026 to address the flaw. This is significant because the vulnerability can be exploited before authentication, meaning no login credentials are needed, and it is already being used in live attacks. Immediate patching is critical for both individuals and organizations, and the incident underscores why Monero remains the most common cryptocurrency in mining malware. The vulnerability, CVE-2026-65400, occurs before authentication, so it does not require a valid macOS account, an approved Screen Sharing user, or a legacy VNC password. The U.S. government rated the flaw 9.8/10 on the CVSS scale, and Apple also patched a related Screen Sharing bug, CVE-2026-43760, in the same period.</summary>
+  </entry>
+  <entry>
+    <title>Ethereum devs narrow 66 proposals for Hegotá upgrade</title>
+    <link href="https://cointelegraph.com/news/ethereum-devs-66-proposals-hegota-upgrade?utm_source=rss_feed&amp;utm_medium=rss&amp;utm_campaign=rss_partner_inbound"/>
+    <id>https://bmt.news/editions/2026-08-17/#rss:cointelegraph.com_rss:619914a88bb8ccac</id>
+    <updated>2026-08-17T00:00:00Z</updated>
+    <summary>Ethereum core developers are scoping the next major upgrade, Hegotá, by narrowing 66 proposals. FOCIL (EIP-7805) is currently the only EIP confirmed, while privacy-focused EIPs such as Frame Transactions (EIP-8141), Keyed Nonces (EIP-8250), and Recent Roots (EIP-8272) are under consideration to enable native privacy. Hegotá will shape Ethereum&#x27;s development trajectory into 2027 and could embed privacy primitives and stronger censorship resistance directly into the base protocol. That matters for Ethereum application builders, validators, and users who rely on the L1 for neutrality and credible transaction inclusion. The next Ethereum core developer call is scheduled for Monday at 14:00 UTC and will help determine which of the 66 proposals make the cut. Proposals that miss Hegotá could be reconsidered in a later upgrade, and the earlier Glamsterdam upgrade is expected on mainnet in the second half of 2026.</summary>
+  </entry>
+  <entry>
+    <title>Grayscale Pays Staking Rewards as Dividends as ETH, SOL Weigh Yield Cuts</title>
+    <link href="https://cryptoslate.com/wall-street-finally-turned-staking-into-a-dividend-now-ethereum-and-solana-want-to-shrink-it/"/>
+    <id>https://bmt.news/editions/2026-08-17/#rss:cryptoslate.com_feed_:a26623b45d15d31e</id>
+    <updated>2026-08-17T00:00:00Z</updated>
+    <summary>Grayscale announced it will convert staking rewards from its Ethereum and Solana ETFs into cash dividends starting around Aug. 7. At the same time, Solana&#x27;s SIMD-0550 and Ethereum&#x27;s EIP-8363 propose cutting protocol-level staking issuance, directly reducing the income source for these products. This is the first time staking rewards have been packaged as dividends for Wall Street ETF investors, tying institutional products directly to protocol yield. The governance decisions on these proposals will shape whether markets value token scarcity over income, with knock-on effects for validators, ETF flows, and DeFi yields. Solana&#x27;s SIMD-0550 would double the annual disinflation rate from 15% to 30%, lowering modeled staking yield from 5.84% to 2.25% over three years and reducing SOL&#x27;s six-year issuance by 18.9 million tokens. Ethereum&#x27;s EIP-8363 would burn an increasing share of validator rewards as staking participation rises, hitting 100% when roughly half of ETH is staked.</summary>
+  </entry>
+  <entry>
+    <title>Bedrock Protocol Loses $2M in Crypto Heist</title>
+    <link href="https://news.google.com/rss/articles/CBMiiwFBVV95cUxPbUs5VnNQSmU4NUdxRU9Cc2oyb0o1dlIzZGs1U3IxUUx2NUFEYmJBVWdnWXpFOU9IM3VyMDAyeGJMRTVEMzZjazJjQ3UwUEhxQmpfZ3ZpVnhrMFVSOHpYTzNhZXQyOUNUR3l5VEJCeGdEQnQtanVyVHdIQmkwUno4U1FzZ2NEM08xU1Nv?oc=5"/>
+    <id>https://bmt.news/editions/2026-08-17/#google_news:article:7bd0131a30bcfaec</id>
+    <updated>2026-08-17T00:00:00Z</updated>
+    <summary>According to a report from Yellow.com, Bedrock Protocol was hit by a $2 million crypto heist. The incident directly affected user funds, though specific exploit details have not been disclosed. This security incident underscores the ongoing risks in DeFi and the liquid restaking sector, where user funds can be exposed to exploits. It may erode user confidence in Bedrock and similar restaking protocols. Bedrock is a multi-asset liquid restaking protocol offering liquid restaking tokens for Bitcoin, Ethereum, and IoTeX, tracked as a parent protocol with products such as uniBTC, uniETH, and uniIOTX. The reported $2 million loss is relatively modest compared to major crypto exploits.</summary>
+  </entry>
+  <entry>
+    <title>Bybit Launches Pre-IPO Perpetual Futures for Unitree and Moonshot AI</title>
+    <link href="https://news.google.com/rss/articles/CBMiVEFVX3lxTE9FR0N5eFE1aXZ1azBLcUtWdlo5eHJrM1duM29yb3A0OC1aQ2FFODdLRkxDRmNNRmVFcXl1aWJIM3RmYmN5cWdKNUNXX0YxdzN3REZ6TQ?oc=5"/>
+    <id>https://bmt.news/editions/2026-08-17/#google_news:article:85bc2466f775a128</id>
+    <updated>2026-08-17T00:00:00Z</updated>
+    <summary>Bybit has introduced pre-IPO perpetual futures for Chinese robotics firm Unitree and AI company Moonshot AI, allowing crypto traders to gain exposure to these private tech names. The contracts are cash-settled derivatives, not direct share ownership. This expands Bybit&#x27;s pre-IPO derivatives roster into high-profile Chinese tech companies, reflecting growing demand for private-market exposure in crypto venues. It could attract traditional equity investors and broaden the asset types available to crypto traders. Pre-IPO perpetual futures are cash-settled and do not grant ownership, voting rights, or actual shares. According to one report, Bybit now lists over 200 pre-IPO perpetual contracts, and SpaceX-related perps have generated billions in trading volume across exchanges.</summary>
+  </entry>
   <entry>
     <title>ABFinance, Ex-Bybit Co-CEO&#x27;s U.S. Exchange, Suspends Operations</title>
     <link href="https://news.google.com/rss/articles/CBMidkFVX3lxTE1IUzlRT0xiamZWbENCY2VsSUZ0SGcwNWc0aUt0Q2xUUTYxSHlwNW9kcnRheHM1ekk4c2o5QjE0eFB5d1poV3BDQ1A1YmlKQkNwbFBjZEJUNVd2ZEs4TWNyQl8wel85ajZSeTFMUHJEeU83UkV4M2c?oc=5"/>
@@ -228,61 +284,5 @@
     <id>https://bmt.news/editions/2026-08-13/#rss:www.theblock.co_rss.xml:4771c18c3591eb54</id>
     <updated>2026-08-13T00:00:00Z</updated>
     <summary>Goldman Sachs announced it will acquire Neos Investments for up to $2.25 billion. The deal gives Goldman access to Neos&#x27;s Bitcoin High Income ETF, Boosted Bitcoin High Income ETF, and Ethereum High Income ETF. A top-tier global investment bank is making a dedicated acquisition to own cryptocurrency income-generating ETFs, signaling deeper institutional adoption of digital assets. The move could accelerate mainstream distribution of regulated bitcoin and ether products. The acquisition is valued at up to $2.25 billion. Neos&#x27;s Bitcoin High Income ETF (BTCI) launched on October 16, 2024, the Boosted Bitcoin High Income ETF (XBCI) launched on January 22, 2026, and the Ethereum High Income ETF (NEHI) uses options and investments in spot Ether ETPs to generate monthly income.</summary>
-  </entry>
-  <entry>
-    <title>Goldman Sachs to acquire ETF manager NEOS in $2.25B deal</title>
-    <link href="https://cointelegraph.com/news/goldman-sachs-to-acquire-etf-manager-neos-225b-deal?utm_source=rss_feed&amp;utm_medium=rss&amp;utm_campaign=rss_partner_inbound"/>
-    <id>https://bmt.news/editions/2026-08-13/#rss:cointelegraph.com_rss:2fca145c9c87b6bd</id>
-    <updated>2026-08-13T00:00:00Z</updated>
-    <summary>Goldman Sachs has agreed to acquire ETF manager NEOS Investments for up to $2.25 billion, adding its $30 billion options-based income ETF business, including Bitcoin- and Ether-linked funds, to Goldman Sachs Asset Management. The acquisition is expected to close in the first quarter of 2027, subject to regulatory approval. This acquisition signals continued institutional adoption of crypto-linked investment products through traditional asset managers. It gives Goldman&#x27;s clients access to Bitcoin and Ether income-generating ETFs, potentially broadening the institutional investor base for digital assets. NEOS manages 19 options-based income ETFs, including the Bitcoin High Income ETF (BTCI), Boosted Bitcoin High Income ETF (XBCI), and Ethereum High Income ETF (NEHI), which use covered call strategies to generate monthly income. Combined with Goldman&#x27;s separate purchase of Innovator Capital Management, the deal would bring its global ETF platform to about $130 billion in assets.</summary>
-  </entry>
-  <entry>
-    <title>Goldman&#x27;s $2.25B NEOS Deal Buys Ready-Made Bitcoin Income ETF Business</title>
-    <link href="https://decrypt.co/375491/goldman-sachs-neos-deal-ready-made-bitcoin-income-etf"/>
-    <id>https://bmt.news/editions/2026-08-13/#rss:decrypt.co_feed:00219c9efd3e513a</id>
-    <updated>2026-08-13T00:00:00Z</updated>
-    <summary>Goldman Sachs agreed to acquire NEOS Investments for up to $2.25 billion in a cash-and-equity deal expected to close in Q1 2027. The acquisition brings about $30 billion in options-based income ETFs under Goldman Sachs Asset Management, including the roughly $1 billion BTCI Bitcoin covered-call fund. The deal gives Goldman Sachs a ready-made crypto income ETF business, bypassing the slower path of its own April filing for a Bitcoin Premium ETF. It marks a major institutional adoption signal as derivative-income ETFs—roughly $180 billion in assets—become a fast-growing corner of the market with crypto as an increasingly prominent slice. NEOS&#x27;s flagship product, BTCI, generates monthly income by selling covered calls on Bitcoin exposure, capping upside in exchange for yield; a similar Ethereum product is also included. Goldman&#x27;s own April filing for a Bitcoin Premium ETF used a comparable options-writing structure, and the NEOS deal absorbs an established manager rather than waiting for a new fund to gain traction.</summary>
-  </entry>
-  <entry>
-    <title>Goldman Sachs to acquire NEOS Investments in $2.25B bitcoin ETF deal</title>
-    <link href="https://www.coindesk.com/business/2026/08/12/goldman-sachs-leaps-into-bitcoin-income-etfs-with-usd2-25-billion-neos-buyout"/>
-    <id>https://bmt.news/editions/2026-08-13/#rss:www.coindesk.com_arc_outboundfeeds_rss_:1b2ed5147bcc7c04</id>
-    <updated>2026-08-13T00:00:00Z</updated>
-    <summary>Goldman Sachs has agreed to acquire NEOS Investments, the manager of the $1.1 billion BTCI bitcoin synthetic ETF, in a cash-and-equity deal valuing NEOS at up to $2.25 billion. The transaction is expected to close in early 2027 pending regulatory approval. This acquisition marks a significant institutional adoption signal, as a top-tier bank acquires a bitcoin income ETF issuer for $2.25 billion. It intensifies competition with BlackRock in the fast-growing derivative income ETF market and underscores bitcoin&#x27;s growing acceptance within traditional finance. BTCI does not directly hold bitcoin; it uses a covered-call strategy on bitcoin ETPs to generate a yield of about 27%, but has fallen roughly 43% over the past year and charges a 0.99% expense ratio. The deal gives Goldman a $30 billion options-based ETF platform across 19 funds, lifting its total ETF assets above $130 billion.</summary>
-  </entry>
-  <entry>
-    <title>Ravencoin Crashes 20% as Critical Exploit Threatens Multi-Day Rollback</title>
-    <link href="https://decrypt.co/375330/ravencoin-crashes-critical-exploit-threatens-rollback"/>
-    <id>https://bmt.news/editions/2026-08-12/#rss:decrypt.co_feed:9c718eee7becf7a9</id>
-    <updated>2026-08-12T00:00:00Z</updated>
-    <summary>A critical consensus vulnerability was demonstrated and exploited on the Ravencoin network, allowing invalid blocks to be accepted starting at block height 4,487,776 on August 7, 2026. Mining pools controlling a majority of hash power are mining a chain that excludes the exploited branch, which could trigger a deep reorganization of roughly three days, and RVN has crashed 20%. This incident breaks the assumption of transaction finality on a proof-of-work blockchain, putting deposits, withdrawals, and payments made since Friday at risk of reversal. It directly affects Ravencoin holders, exchanges, and users, and raises broader questions about the security implications of hash rate concentration. The first known invalid block appeared at height 4,487,776 on 2026-08-07 15:44:01 UTC, with block 4,487,775 proposed as the last valid block. 2Miners and RavenMiner, which control a majority of network hash rate, declined the developer&#x27;s request to mine a more recent recovery point, and exchanges Upbit and Bitvavo have already suspended RVN deposits and withdrawals.</summary>
-  </entry>
-  <entry>
-    <title>Anthropic, Riot strike $9B AI compute deal for Texas power</title>
-    <link href="https://cointelegraph.com/news/anthropic-9b-deal-bitcoin-miner-riot?utm_source=rss_feed&amp;utm_medium=rss&amp;utm_campaign=rss_partner_inbound"/>
-    <id>https://bmt.news/editions/2026-08-12/#rss:cointelegraph.com_rss:25d41a3513770546</id>
-    <updated>2026-08-12T00:00:00Z</updated>
-    <summary>Riot Platforms announced a 20-year agreement to supply 191 megawatts of capacity from its Rockdale, Texas campus to Anthropic, with the deal valued at approximately $9 billion. This marks one of the largest AI compute agreements involving a Bitcoin miner. This deal signifies a major convergence of AI infrastructure and cryptocurrency mining, as miners pivot to AI compute hosting to address the power crunch constraining AI data centers. It could accelerate the trend of Bitcoin miners transforming into power and compute providers for the AI industry. The reported agreement follows Anthropic&#x27;s $19 billion, 20-year data center lease with Bitcoin miner TeraWulf on July 6. Riot&#x27;s shares fell 5.4% on Monday but rose over 21% in overnight trading, and are up more than 53% year-to-date.</summary>
-  </entry>
-  <entry>
-    <title>Riot Platforms to Sell Bitcoin to Fund $9.1B AI Data Center Lease</title>
-    <link href="https://cryptoslate.com/riot-is-dumping-its-bitcoin-to-fund-a-9-1b-ai-deal-that-wont-pay-rent-until-2027/"/>
-    <id>https://bmt.news/editions/2026-08-12/#rss:cryptoslate.com_feed_:845f1742312f0050</id>
-    <updated>2026-08-12T00:00:00Z</updated>
-    <summary>Riot Platforms signed a 191 MW data center lease with an unnamed frontier AI lab, expecting $9.1 billion in gross contract revenue over a 20-year base term. The miner plans to continue selling Bitcoin from its treasury as a primary equity source, with construction costs estimated at $2.1-2.3 billion and rent not starting until December 2027 and June 2028. This marks another major Bitcoin miner pivoting toward AI infrastructure, accelerating the trend of mining companies diversifying away from pure Bitcoin production. It also introduces ongoing Bitcoin treasury sales as a financing mechanism, which could affect market supply dynamics and influence how other miners manage their holdings. Riot projects $2.1-$2.3 billion in capital spending, with 80-90% expected from long-term project debt that is not yet closed, leaving $210-$460 million in equity funding. A $573 million Morgan Stanley interim facility at SOFR plus 2.75% matures October 15, 2026, and an investment-grade backstop is still being finalized without disclosed terms.</summary>
-  </entry>
-  <entry>
-    <title>Ravencoin may roll back four days of transactions after critical flaw exploit</title>
-    <link href="https://www.coindesk.com/tech/2026/08/11/ravencoin-could-roll-back-four-days-of-transactions-after-critical-block-flaw"/>
-    <id>https://bmt.news/editions/2026-08-12/#rss:www.coindesk.com_arc_outboundfeeds_rss_:11f39f88b950c9b1</id>
-    <updated>2026-08-12T00:00:00Z</updated>
-    <summary>Ravencoin is attempting a chain rollback of roughly four days of transactions after attackers exploited a critical software flaw that allowed invalid blocks, with the first bad block appearing at height 4,487,776 on Aug. 7. Two mining pools, 2Miners and RavenMiner, are rebuilding the chain from block 4,487,775, while exchanges like Bitvavo and Upbit have halted RVN deposits and withdrawals. This is a significant proof-of-work governance and security incident: because a small number of pools dominate Ravencoin&#x27;s hashpower, they can decide which version of history survives, potentially erasing payments users believed were final. It highlights how low-hashrate Bitcoin-derived networks are vulnerable to rollback-style attacks and how exchanges must react to protect against losses. The proposed rollback would reverse all transactions from block 4,487,776 onward, including payments and mining rewards from that window. Ravencoin released a fix but patching cannot undo already-written blocks; RavenMiner says it is running an emergency fix and will cover any payout shortfall itself, while it paused payouts until the chain settles.</summary>
-  </entry>
-  <entry>
-    <title>Nvidia&#x27;s $500B AI infrastructure push widens gap with crypto compute</title>
-    <link href="https://www.coindesk.com/tech/2026/08/11/nvidia-wants-to-turn-its-ai-chips-into-an-investable-asset-class"/>
-    <id>https://bmt.news/editions/2026-08-12/#rss:www.coindesk.com_arc_outboundfeeds_rss_:cfb30f5ff3f0be9e</id>
-    <updated>2026-08-12T00:00:00Z</updated>
-    <summary>Nvidia has signed memorandums of understanding with Apollo Global Management, Blackstone, BlackRock, Brookfield, Goldman Sachs and KKR to create financing platforms that could channel more than $500 billion into AI compute infrastructure. The company aims to establish AI compute as a bankable, long-lived infrastructure asset rather than a short-term technology expense. This move could dramatically expand centralized AI compute capacity, leaving decentralized crypto compute networks further behind in scale and competitiveness. It also signals a structural shift in how AI infrastructure is financed, with potential knock-on effects for blockchain-based compute marketplaces and AI-related crypto assets. The six Wall Street firms involved are Apollo Global Management, Blackstone, BlackRock, Brookfield Asset Management, Goldman Sachs and KKR. NVIDIA CEO Jensen Huang described the initiative as the first time technology chips have become an investable asset class, emphasizing that AI factories are revenue-generating, long-lived and fungible assets.</summary>
   </entry>
 </feed>
