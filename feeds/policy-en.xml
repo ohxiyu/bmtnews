@@ -4,7 +4,21 @@
   <link href="https://bmt.news/feeds/policy-en.xml" rel="self"/>
   <link href="https://bmt.news/"/>
   <id>https://bmt.news/feeds/policy-en.xml</id>
-  <updated>2026-08-17T00:00:00Z</updated>
+  <updated>2026-08-18T00:00:00Z</updated>
+  <entry>
+    <title>Treasury Proposes Stablecoin Issuer Licensing Rules Under GENIUS Act</title>
+    <link href="https://decrypt.co/375817/treasury-rules-sell-stablecoins-us"/>
+    <id>https://bmt.news/editions/2026-08-18/#rss:decrypt.co_feed:4fc0b3e035bd4e42</id>
+    <updated>2026-08-18T00:00:00Z</updated>
+    <summary>The US Treasury proposed rules implementing Section 3 of the GENIUS Act, defining when stablecoins are issued, offered, or sold in the US. Beginning January 18, 2027, issuers must generally obtain a federal or state license, and from July 18, 2028, platforms will be restricted from selling unapproved stablecoins to US customers. As the first major Treasury rule under the GENIUS Act, the proposal establishes a federal/state licensing regime that will materially reshape US stablecoin market access and industry structure. Issuers, exchanges, and users will all be affected by the approval-based listing restrictions and compliance deadlines. Foreign-issued stablecoins may still be sold, but only if the foreign issuer complies with US legal orders and agreements between the US and its home jurisdiction. Violations would include soliciting US buyers, advertising availability, or helping buyers bypass IP checks; public comments are due by October 19, 2026.</summary>
+  </entry>
+  <entry>
+    <title>Binance gave Russian authorities user data that led to a Ukraine donor&#x27;s trial</title>
+    <link href="https://news.google.com/rss/articles/CBMijAJBVV95cUxQcExoQTZTY1poLTQ1blJVbmt3OWg1Y002b2pwVy1URnBrd2hlbVd1YnByNlpKYlNfelhqVDg0WmY5VkREemhKNmdUenVPWFdfN2VVdGNTYmphbS1qd044YzdZbGdFN3dSMDM1UG85WnI4ejJKV29Ec0h0M0d2OGdrbmp5aTQ4SjRyS3ZhTk5ZS2FydHNlR0lraXB3a1dFSFJUQzJIWGhwMzFWekJvbUVRLTV1T1IzcHNtNFhYUzBXZ2hOcVVxUUs1TExfV2d3UThiakR5V2FidEhnbkR5bjNJSF9JRVZoNGs1VnNYU21xb3R3OHV5N0tkYnRQVGhOamlmcGVkN1hMRTRmTUxr0gGSAkFVX3lxTE45WnFFazdJREFMUEUtNnpDV1FoNWR4cnIwMGdKX2lCN2E2NzRkaDZDUUlUcjg4YU1HNlRndjluY0NHT2ZybmhTaGRocHpMZ2JLNldxbVZ0aXBFMVdpNjFGaDd1OTdRMTY5WEhiM19QQXJ5S215RXhqZU5HLVFkN0hwRUV1MEFZVE5GZWpyZ0xZMnFoNmVSV3JiTGhKUTA5UzdqM2FTU2xCaHEtbmd0dmhKWlVRQmViZ3hFQlBoQTFYbTFGYzgyUG9WSl9RblhhQ0NNZU9SMk4zUXhoM2NyeXNRQ0lSUmhQeWxxY2lTUV92R1hkeklGOUtUSU5RZXdVcXNFeEZKTS1lOS1EdHM1UXY4dUE?oc=5"/>
+    <id>https://bmt.news/editions/2026-08-18/#google_news:article:45aa1462643c76a1</id>
+    <updated>2026-08-18T00:00:00Z</updated>
+    <summary>According to an exclusive report, Binance provided Russian security services with client data that was used to charge a Russian user for donating to Ukraine&#x27;s military. The user is now on trial in Russia. This case raises serious concerns about user privacy and the compliance practices of major crypto exchanges, particularly regarding cooperation with authoritarian governments. It could undermine trust in Binance and prompt stricter regulatory scrutiny in Western jurisdictions. Binance has said it cooperates with lawful requests, despite having exited the Russian market in 2023 to improve its compliance strategy. The documents reportedly show the data exchange was used to charge the user over Ukraine-related donations.</summary>
+  </entry>
   <entry>
     <title>LIBRA Victims May Be Excluded From Crypto Scandal Case</title>
     <link href="https://buenosairesherald.com/politics/libra-crypto-victims-on-the-verge-of-being-left-out-of-the-case"/>

@@ -4,7 +4,70 @@
   <link href="https://bmt.news/feeds/crypto-zh.xml" rel="self"/>
   <link href="https://bmt.news/"/>
   <id>https://bmt.news/feeds/crypto-zh.xml</id>
-  <updated>2026-08-17T00:00:00Z</updated>
+  <updated>2026-08-18T00:00:00Z</updated>
+  <entry>
+    <title>Coldcard固件漏洞多年未察觉，导致约1亿美元比特币被盗</title>
+    <link href="https://www.coindesk.com/tech/2026/08/17/how-a-bug-in-coldcard-s-code-went-unnoticed-for-years-leading-to-usd100-million-in-hacked-funds"/>
+    <id>https://bmt.news/editions/2026-08-18/#rss:www.coindesk.com_arc_outboundfeeds_rss_:18077e4da36ddfb4</id>
+    <updated>2026-08-18T00:00:00Z</updated>
+    <summary>Coldcard固件中一个长期潜伏的漏洞（自2021年3月发布的4.0.1版本起存在）导致2026年7月30日约1亿美元比特币被盗。Galaxy Research将此次大规模转走与种子生成随机性不足联系起来，独立分析机构此后估计损失高达1.16亿美元。 Coldcard是最受信赖的比特币专用硬件钱包之一，但其密钥生成路径存在长达数年的漏洞，正好印证了行业“不要信任，要验证”的格言——正如Foundation首席执行官Zach Herbert所说，声誉并不是安全模型。该事件可能促使用户对硬件钱包提出更强验证要求，并重新评估自托管风险。 该漏洞仅影响部分设备，导致生成的助记词随机熵远低于预期；被攻击者扫走的币的持有时间从2021年到2026年不等。7月30日，约1196个地址在41分钟内被转空，共损失1082.65枚比特币；Coinkite首席执行官最初否认存在普遍的钱包漏洞，且报道称攻击仍在持续。</summary>
+  </entry>
+  <entry>
+    <title>Harmony 遭攻击后计划回滚链，伪造 3 万亿 ONE 代币</title>
+    <link href="https://www.theblock.co/news/ecosystems/2026-08-17-harmony-plans-pre-attack-rollback-after-exploiter-forged-3-trillion-one-tokens-411976"/>
+    <id>https://bmt.news/editions/2026-08-18/#rss:www.theblock.co_rss.xml:a58ebc917b70ea17</id>
+    <updated>2026-08-18T00:00:00Z</updated>
+    <summary>Harmony 宣布验证者将把区块链回滚至 8 月 11 日 UTC 23:25 的区块，丢弃约 109,126 笔普通交易和 315 笔质押交易，此前攻击者伪造了 3 万亿 ONE 代币。Harmony 认为“攻击前回滚”是比代币销毁或黑名单更“公平且最安全”的方案。 这是一个重大的协议治理与安全决策，因为回滚已确认交易挑战了区块链的不可篡改性，并影响用户、交易所和跨链桥伙伴。其结果可能为 Layer-1 网络应对大规模攻击开创先例。 Harmony 表示选择性恢复交易不安全，因为替换链上的余额、合约状态、交易 nonce 等条件都会不同。调查人员已将几乎所有伪造 ONE 代币追踪至钱包或服务边界，并正在与交易所、跨链桥和执法机构协作。</summary>
+  </entry>
+  <entry>
+    <title>BitMart创始人对审计呼声不屑一顾，用户称资金被冻结</title>
+    <link href="https://www.coindesk.com/business/2026/08/17/bitmart-founder-dismisses-calls-for-audit-as-users-report-blocked-funds-unpaid-employees"/>
+    <id>https://bmt.news/editions/2026-08-18/#rss:www.coindesk.com_arc_outboundfeeds_rss_:e94d7b58aade34ee</id>
+    <updated>2026-08-18T00:00:00Z</updated>
+    <summary>BitMart创始人Sheldon Lee将一则声称用户无法提款、员工未发工资的X帖子斥为“捏造的谣言”，称交易所的中文账号被黑客攻击。用户和链上调查员ZachXBT要求独立审计，而交易所正在8月26日最后交易日之前逐步停止运营。 此事之所以重要，因为未经证实的交易所破产传闻可能引发恐慌、监管审查，并加深对整个中心化交易所的不信任。BitMart拒绝公开账目，凸显了加密托管机构中普遍存在的透明度缺失问题。 BitMart上个月宣布停止运营，8月26日为最后交易日，但用户报告提款仍被冻结。困境投资公司Echo Base表示已提出包括债务人占有融资在内的注资重组方案，但BitMart未予回应。</summary>
+  </entry>
+  <entry>
+    <title>六周内第四家加密交易所关闭，ABFinance 停业</title>
+    <link href="https://protos.com/fourth-crypto-exchange-shuts-down-in-just-six-weeks/"/>
+    <id>https://bmt.news/editions/2026-08-18/#rss:protos.com_feed_:935ea881ab5462fb</id>
+    <updated>2026-08-18T00:00:00Z</updated>
+    <summary>总部位于美国的加密货币交易所 ABFinance 由 ByBit 前 CEO Helen Liu 创立，上周五宣布不再启动并有序清盘。这标志着六周内继 BitMart、BitMEX 和 AscendEX 之后第四家交易所关闭。 交易所接连关闭引发了对用户资金安全和加密交易平台稳定性的严重担忧。受影响交易所的用户面临提现延迟和不确定性，这可能削弱对中心化交易所的信任，并推动对自托管解决方案的需求。 ABFinance 仅运营约六个月，Liu 在 2026 年 4 月 30 日卸任 ByBit 联合 CEO 之前于 3 月创立了该交易所。BitMart 继续以极慢的速度处理提现，导致用户猜测其可能资不抵债；而 AscendEX 停业时，ZachXBT 指出其储备中缺失大量 ETH、USDT 和 SOL。</summary>
+  </entry>
+  <entry>
+    <title>以色列最大加密货币经纪商Bits of Gold遭数据泄露，20万客户受影响</title>
+    <link href="https://www.coindesk.com/tech/2026/08/17/israel-s-largest-crypto-broker-bits-of-gold-hit-by-data-breach-affecting-200-000-customers"/>
+    <id>https://bmt.news/editions/2026-08-18/#rss:www.coindesk.com_arc_outboundfeeds_rss_:376b140298fc40d8</id>
+    <updated>2026-08-18T00:00:00Z</updated>
+    <summary>以色列最大加密货币经纪商Bits of Gold披露了一起影响约20万客户的数据泄露事件。泄露源于第三方数据分析提供商被入侵，涉及姓名、国民身份证号码、银行账户信息和公开钱包地址，但资金和私钥未受影响。 此事件凸显了加密货币公司通过外部供应商遭受供应链攻击的脆弱性，敏感金融和身份数据的暴露可能使受影响用户面临更高的欺诈和钓鱼风险。这也加入了近期一系列加密货币行业数据泄露事件，可能削弱客户对托管经纪商的信任。 Bits of Gold表示，没有资金、密码、私钥、CVV码或身份证扫描件被泄露，并在发现后立即断开了受影响系统。公司认为此次攻击是更广泛的全球性事件的一部分，并已与网络安全事件响应公司合作展开调查。</summary>
+  </entry>
+  <entry>
+    <title>Vulcan（原Greenidge）警告债券到期未融资，面临破产风险</title>
+    <link href="https://cryptoslate.com/crypto-miner-warns-of-potential-bankruptcy-as-unclosed-financing-leaves-33-million-in-maturing-debt-exposed/"/>
+    <id>https://bmt.news/editions/2026-08-18/#rss:cryptoslate.com_feed_:c009d60164c41c59</id>
+    <updated>2026-08-18T00:00:00Z</updated>
+    <summary>上市比特币矿企Vulcan（原Greenidge Generation）警告称，由于拟议的3940万美元PIPE融资尚未完成，10月31日到期的3310万美元优先票据面临偿付风险。截至8月16日，该公司尚未收到任何交易资金。 这是一个上市加密矿企的重大信用事件，表明即使在持有数字资产的情况下，债务到期和资本市场融资渠道不畅也可能威胁矿企生存。它凸显了依赖外部融资的矿企在高成本、高波动经营环境中的脆弱性。 该PIPE交易将以每股1.71美元出售17,146,190股，募资约2930万美元，并向Machine Investment Group发行1000万美元可转换票据。交易的最晚完成日（10月10日）距票据到期仅21天，Vulcan也未发出正式赎回通知。</summary>
+  </entry>
+  <entry>
+    <title>比特币矿企HIVE签下3.5亿美元AI云合同</title>
+    <link href="https://www.theblock.co/news/business/2026-08-17-bitcoin-miner-hive-inks-five-year-350-million-ai-cloud-contract-411940"/>
+    <id>https://bmt.news/editions/2026-08-18/#rss:www.theblock.co_rss.xml:f15af030de98a855</id>
+    <updated>2026-08-18T00:00:00Z</updated>
+    <summary>HIVE旗下BUZZ HPC子公司签下一份为期五年、总额3.5亿美元的GPU云合同，每年增加7000万美元的年度经常性收入。这是HIVE两个月内达成的第二笔大规模NVIDIA集群交易。 这份合同凸显了比特币矿商向AI和高性能计算转型的趋势，以分散挖矿收入来源。它为HIVE带来了以美元计价的稳定收入流，并验证了矿商现有电力和数据中心基础设施的战略价值。 该合同为期五年，预计贡献每年7000万美元的年度经常性收入（ARR）。它被描述为一项“大规模NVIDIA集群交易”，也是HIVE在两个月内签署的第二份此类协议。</summary>
+  </entry>
+  <entry>
+    <title>Coinbase发布AiFi瞄准AI代理支付，此前x402交易额达1亿美元</title>
+    <link href="https://news.google.com/rss/articles/CBMitwFBVV95cUxOQVBBc0s5a1FxcGF4Nk5DZmtWRGlGWmQ1UUgxRU1NdXcxSEM4ZGZLc3Y5OG91Z3BMZ0F5bTFGQ0V3dzhJTC14b2I4RWVlbUFzOE1QcTRod2NxUkxlbWJaeVVKRXptSnBBUnNHdTV6SUVPWEJpRzRtTVNINlhabmpLcDdUbDVvQ1JxZ0ZrV1Z4QlNEOFJDcnFBdXI1RE1TRnBDSm5LMFBJbFF5d1FPekFkSmxSenR3TzDSAbwBQVVfeXFMTXFOR1FOd0NYZXJESzJSNWhsLWRMQy0yb3JxTVhicVZUTXhhM0dWT1VhQjZPdHVJdjM4V3g1R2dCeHl2al9ja2dWclZYSWo0M193YmpoLXVQM1VyUi1OVDhFZ2NCbUl1TlpvcmtlbUNvSjd4bjBsNC1ZUUlkN0xfRFhuMTl5Vm00bW9sWnRFZUxWemJaaWFXNm12Tjl5S2hPNDJDVmdCMVJETk9GVnBPN3ZOWVhKeWU2aktrWVM?oc=5"/>
+    <id>https://bmt.news/editions/2026-08-18/#google_news:article:7ed4ded0ad36a669</id>
+    <updated>2026-08-18T00:00:00Z</updated>
+    <summary>Coinbase推出了AiFi，这是一个面向AI代理的全栈金融基础设施，涵盖交易、支付和开发者工具，基于x402协议和Base网络构建。该公告发布之际，x402已处理超过1亿美元的交易。 主流交易所的这一举措验证了AI与加密支付这一新兴领域，并可能为自主机器支付建立标准。AiFi使Coinbase能够在AI代理开始持有资金并进行链上交易时占据基础设施价值。 AiFi涵盖交易、支付和开发者基础设施，基于x402和Base构建，并以USDC作为关键结算资产。x402协议由Linux基金会支持，可通过HTTP请求直接实现即时稳定币支付。</summary>
+  </entry>
+  <entry>
+    <title>Kraken母公司Payward加入Anthropic Glasswing项目，用Claude Mythos 5查漏洞</title>
+    <link href="https://decrypt.co/375836/kraken-payward-anthropic-project-glasswing-claude-mythos"/>
+    <id>https://bmt.news/editions/2026-08-18/#rss:decrypt.co_feed:2fff2cbeb7f797eb</id>
+    <updated>2026-08-18T00:00:00Z</updated>
+    <summary>加密货币交易所Kraken的母公司Payward已加入Anthropic的Project Glasswing项目，并将使用Claude Mythos 5模型扫描其系统以查找安全漏洞。这是首家被报道加入该项目的加密公司。 此举表明加密行业正在越来越多地采用前沿AI进行防御性网络安全工作，此前已有40多家比特币和加密公司签署公开信，敦促AI实验室向可信防御者开放强大模型。这可能有助于加固交易所基础设施以及支撑加密行业的开源软件。 Payward表示，Mythos 5扫描的结果将通过其现有安全计划进行审查和修补，在第三方开源软件中发现的漏洞将报告给维护者。Project Glasswing于4月启动、6月扩大，已帮助合作伙伴发现数千个高危或严重漏洞。</summary>
+  </entry>
   <entry>
     <title>SafePal披露数据泄露事件，影响近4万用户的订单信息</title>
     <link href="https://www.933thedrive.com/2026/08/16/crypto-wallet-provider-safepal-discloses-data-breach-affecting-nearly-40000-users-order-information/"/>
@@ -221,68 +284,5 @@
     <id>https://bmt.news/editions/2026-08-14/#rss:www.coindesk.com_arc_outboundfeeds_rss_:82742dd2bb0540df</id>
     <updated>2026-08-14T00:00:00Z</updated>
     <summary>Tether宣布，KPMG U.S.已对其2025年财务报表出具无保留意见，这是该稳定币发行方首次完成四大会计师事务所的全面审计。财务报表显示，其储备超过负债68.14亿美元。 此次审计回应了长期以来对USDT储备透明度的批评；USDT是规模达1800亿美元、对加密货币交易流动性至关重要的稳定币。四大会计师事务所出具无保留意见，可能增强市场对Tether的信任，并缓解数字资产领域的系统性风险担忧。 KPMG的审计超出了Tether此前季度鉴证的范围，测试了交易、系统、估值、交易对手方和所有权记录，并实地清点了公司的金条。Tether尚未确认是否会公开发布KPMG的完整报告。</summary>
-  </entry>
-  <entry>
-    <title>Protos追踪HTX储备转移至Poloniex，引发偿付能力担忧</title>
-    <link href="https://protos.com/we-found-htxs-reserves-at-poloniex/"/>
-    <id>https://bmt.news/editions/2026-08-14/#rss:protos.com_feed_:63b1b2e899254692</id>
-    <updated>2026-08-14T00:00:00Z</updated>
-    <summary>Protos报道称，HTX六月份的储备证明首次承认将大部分用户资金转移至未披露的‘第三方’托管人，链上追踪显示包括WBTC和sUSDS在内的数亿美元资产从HTX钱包转移至Poloniex地址。 这很重要，因为HTX正受到欧盟和英国的制裁，其不透明的储备管理以及快速的钱包频繁更换引发了对偿付能力和用户资金安全的严重质疑。调查结果还牵涉到同为孙宇晨旗下交易所的Poloniex，涉及处理来自受制裁实体的资产。 Protos追踪了具体转账：WBTC从HTX地址0x18709e...转移至Poloniex 7，再到Poloniex 10，最后到Poloniex 9；约2亿美元的sUSDS也走了类似路径。HTX五月份的储备证明还错误标注了STEAK-USDC，该地址实际持有的是sUSDS。</summary>
-  </entry>
-  <entry>
-    <title>泰达获KPMG对2025年财报的里程碑式审计</title>
-    <link href="https://tether.io/news/tether-completes-the-largest-inaugural-financial-audit-in-history/"/>
-    <id>https://bmt.news/editions/2026-08-14/#rss:tether.io_feed:682963b6bc93b7cc</id>
-    <updated>2026-08-14T00:00:00Z</updated>
-    <summary>泰达宣布，KPMG美国对其2025年财务报表出具了无保留意见审计报告，这是该公司首次完成全面独立审计。该公告发布于2026年8月13日。 四大会计师事务所出具的无保留意见是独立审计师给予的最高程度保证，可能显著增强市场对泰达储备与透明度的信心。这一里程碑也会引起更严格的监管关注，并可能加速机构与传统金融领域对稳定币的采用。 本次审计针对Tether International, S.A. de C.V.的财务报表，意见覆盖2025财年。泰达称此次审计为历史上规模最大的首次财务审计，突显其作为数字资产行业最大公司的运营规模。</summary>
-  </entry>
-  <entry>
-    <title>Coinbase等15家x402支付服务商未通过面向AI代理经济的安全测试</title>
-    <link href="https://cryptoslate.com/coinbase-and-14-other-x402-facilitators-failed-security-tests-built-for-the-coming-ai-agent-economy/"/>
-    <id>https://bmt.news/editions/2026-08-14/#rss:cryptoslate.com_feed_:3ec1055235cd0395</id>
-    <updated>2026-08-14T00:00:00Z</updated>
-    <summary>研究人员在美国USENIX安全研讨会上测试了15家主要的x402支付服务商，包括Coinbase、Thirdweb、PayAI和Mogami，发现每个平台都至少违反了一条安全规则。他们将被研究的系统中99%的已观测x402交易和98%支付量对应的49条规则违规行为，映射为31个不同的安全漏洞。 x402正被推广为机器驱动商业的基础设施，允许AI代理自主完成服务付费，但这些漏洞可能导致商家在交付商品后收不到付款，并暴露服务商持有的资产和网络费用。这些发现凸显了新兴AI代理支付经济中的系统性风险，可能影响人们对基于稳定币的自动化支付的信任。 研究人员识别出四大类攻击（免费购物、资产窃取、服务中断和Gas滥用），并直接验证了六条攻击路径，包括两条免费购物攻击、三条Gas滥用攻击，以及一条通过恶意ERC-6492元数据暴露服务商持有资产的路径。他们还分析了Base和Solana上1.19亿笔x402交易，发现服务商共花费约20.2万美元的网络费用，其中约5800美元用于最终回滚或失败的Base交易。</summary>
-  </entry>
-  <entry>
-    <title>路由故障使Solana险些丧失最终确定性</title>
-    <link href="https://decrypt.co/375404/a-routing-bug-took-solana-86-of-the-way-to-losing-finality"/>
-    <id>https://bmt.news/editions/2026-08-13/#rss:decrypt.co_feed:797ee83d88dcea91</id>
-    <updated>2026-08-13T00:00:00Z</updated>
-    <summary>周三上午，托管服务商Teraswitch一条配置错误的BGP路由导致28.83%的质押SOL离线，使Solana距离停止交易最终确认的33.34%阈值仅差4.51个百分点。约90个验证者受到影响，网络在约33分钟后恢复。 这一事件是对Solana网络稳定性的严峻压力测试：单一服务商的配置错误险些让整条链停止工作，暴露出质押SOL在个别自治系统中的高度集中。它凸显了验证者、质押协议和整个生态面临的风险，并可能促使人们更加强烈地呼吁改善去中心化和故障切换实践。 受影响的自治系统AS20326持有约27%的质押SOL，超过Solana基金会委托计划25%的上限，其中94%在同一时间离线。Marinade Finance发现，59个验证者持有的8020万SOL在路由重新收敛后恢复，而Helius则整整离线33分钟；损失的333 SOL奖励将由验证者保证金弥补。</summary>
-  </entry>
-  <entry>
-    <title>Bybit就15亿美元加密货币失窃起诉朝鲜</title>
-    <link href="https://news.google.com/rss/articles/CBMiiwFBVV95cUxNVDh0ZDZiMlY5NUt3dnFCMExVb0tzVVhKRGpoaFhNOWRPUW9tNWU2dG1ueUVBMlZkS25NdTg0b1RWZHhSdkw1N3pyU2ltN1VwNGFtZ0JsSGFobThXd1JCT1Q3TGRwcFdPOXkzSklDYmlGUU5fdEEyc0hpb3ctTHJ3Ny1nVk9tRnlwaW1R?oc=5"/>
-    <id>https://bmt.news/editions/2026-08-13/#google_news:article:443dcfe9472d77d4</id>
-    <updated>2026-08-13T00:00:00Z</updated>
-    <summary>Bybit已就交易所15亿美元加密货币被盗事件对朝鲜提起诉讼。这一法律行动将纠纷升级为针对国家行为体的正式诉讼。 该诉讼可能为加密货币交易所如何向国家支持的黑客追讨资金开创法律先例。它也凸显了国家安全、国际法与数字资产行业之间日益紧密的交集。 此次盗窃发生在Bybit平台上，是有史以来最大规模的加密货币盗窃事件之一。该诉讼的具体法律依据和管辖权尚未公开披露。</summary>
-  </entry>
-  <entry>
-    <title>Solana 接近最终性中断，28.83% 质押 SOL 脱机</title>
-    <link href="https://thedefiant.io/news/blockchains/marinade-says-28-83-of-solana-stake-went-delinquent-nearing-finality-halt"/>
-    <id>https://bmt.news/editions/2026-08-13/#rss:thedefiant.io_api_feed:5ccef86868e5a3d7</id>
-    <updated>2026-08-13T00:00:00Z</updated>
-    <summary>2026年8月12日，基础设施提供商 Teraswitch 的路由故障导致 28.83% 的已质押 SOL 脱机，使 Solana 走到了最终性中断门槛的 86% 处。Marinade 报告称，其自治系统上的 1.1889 亿枚 SOL 中有 94% 离线。 该事件凸显了 Solana 验证者基础设施中的系统性集中风险：单一提供商的路由问题险些威胁到全网最终性。它还直接影响了 Solana 最大的流动性质押协议 Marinade，并可能动摇整个生态对质押可靠性的信心。 Teraswitch 确认，故障由例常配置变更触发的路由软件错误引起，共影响 12 个站点。Solana 仅在超过 33.34% 的已质押 SOL 脱机时才会停止最终性；本次约有 90 个验证者受影响并损失了质押奖励。</summary>
-  </entry>
-  <entry>
-    <title>Coldcard遭黑客攻击后，150亿美元比特币转向安全自托管</title>
-    <link href="https://decrypt.co/375450/coldcard-hack-15-billion-bitcoin-moved-safety"/>
-    <id>https://bmt.news/editions/2026-08-13/#rss:decrypt.co_feed:805a0197fe074755</id>
-    <updated>2026-08-13T00:00:00Z</updated>
-    <summary>7月30日开始的Coldcard固件漏洞攻击盗走了约2,100枚BTC（约合1.3亿美元），链上数据显示随后几天有23.3万枚BTC（约合150亿美元）离开长期持有者钱包。Casa首席执行官Nick Neuman表示，其中一部分来自Ledger和Trezor用户升级为多签自托管。 该事件表明，硬件钱包漏洞可以通过分布式自托管来化解，并可能加速长期比特币持有者采用多签方案。它还显示出自我托管在压力下的适应能力，强化了比特币作为资产的韧性。 Checkonchain数据显示，23.3万枚BTC离开了长期持有者钱包，较近期高点下降了1.38%；另有2.2万枚BTC流向交易所。Galaxy Research单独统计到三轮攻击波次中，超过5,200个地址被盗约1,596枚BTC，而固件漏洞将密钥熵从128位降到了约40位。</summary>
-  </entry>
-  <entry>
-    <title>路由故障导致约29%质押SOL离线，Solana险些冻结</title>
-    <link href="https://www.coindesk.com/tech/2026/08/12/smart-contract-blockchain-solana-nearly-froze-wednesday-marinade-finance-says"/>
-    <id>https://bmt.news/editions/2026-08-13/#rss:www.coindesk.com_arc_outboundfeeds_rss_:dd13e31c4442aa84</id>
-    <updated>2026-08-13T00:00:00Z</updated>
-    <summary>据质押平台Marinade Finance称，周三上午，源自Teraswitch迈阿密数据中心的路由故障导致Solana近29%的质押代币离线。中断持续约33分钟，使网络距离停止最终确认所需的“三分之一质押代币离线”门槛仅差约2000万枚代币。 这一事件暴露了Solana质押基础设施中的严重中心化风险：单一网络运营商AS2032控制了超过四分之一的质押SOL。一旦离线质押比例超过三分之一，整个链将停止出块，所有SOL持有者都会受影响，这进一步引发了对Solana作为领先智能合约平台可靠性的质疑。 大约90个验证者受到影响，共损失约333枚SOL的奖励，数额相对较小，由“验证者债券”覆盖。故障路由从Teraswitch扩散到欧洲和亚洲的数据中心，导致伦敦、阿姆斯特丹、法兰克福、新加坡和东京的验证者断线；北美保持在线，流量在UTC时间4:16前恢复。</summary>
-  </entry>
-  <entry>
-    <title>高盛拟斥资至多22.5亿美元收购Neos，纳入比特币和以太坊收益ETF</title>
-    <link href="https://www.theblock.co/news/business/2026-08-12-goldman-sachs-bitcoin-ether-income-etfs-neos-deal-411618"/>
-    <id>https://bmt.news/editions/2026-08-13/#rss:www.theblock.co_rss.xml:4771c18c3591eb54</id>
-    <updated>2026-08-13T00:00:00Z</updated>
-    <summary>高盛宣布将以至多22.5亿美元收购Neos Investments。该交易将使高盛获得Neos旗下比特币高收益ETF、增强型比特币高收益ETF和以太坊高收益ETF。 一家顶级全球投行专门通过收购来获得加密货币收益型ETF，标志着数字资产领域更深层次的机构采纳。此举可能加速比特币和以太坊受监管产品的主流分销。 该收购交易价值至多22.5亿美元。Neos的比特币高收益ETF（BTCI）于2024年10月16日推出，增强型比特币高收益ETF（XBCI）于2026年1月22日推出，以太坊高收益ETF（NEHI）则通过期权和投资于现货以太坊ETP来产生月度收益。</summary>
   </entry>
 </feed>

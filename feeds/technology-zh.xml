@@ -4,7 +4,28 @@
   <link href="https://bmt.news/feeds/technology-zh.xml" rel="self"/>
   <link href="https://bmt.news/"/>
   <id>https://bmt.news/feeds/technology-zh.xml</id>
-  <updated>2026-08-17T00:00:00Z</updated>
+  <updated>2026-08-18T00:00:00Z</updated>
+  <entry>
+    <title>Qwen3.8 27B 在人工智能分析基准中得 52 分，超越更大模型</title>
+    <link href="https://artificialanalysis.ai/models/qwen3-8-27b"/>
+    <id>https://bmt.news/editions/2026-08-18/#hackernews:story:49334544</id>
+    <updated>2026-08-18T00:00:00Z</updated>
+    <summary>阿里巴巴 Qwen 团队推出的 27B 参数开放权重模型 Qwen3.8-27B，在 Artificial Analysis 基准上取得 52 分，超过参数规模高达 150B+ 的模型，并与 DeepSeek V4 Flash 0731 持平。它还能媲美或超越六个月前发布的顶尖模型 Claude Opus 4.6。 这是开源 AI 的一个重要里程碑，表明一个小型稠密模型能够匹敌甚至超越更大的前沿模型。这可能使高端 AI 能力更加普及，让开发者能在消费级硬件上运行接近前沿的性能。 该模型是一款原生多模态视觉-语言模型，采用 Apache 2.0 开放权重，擅长编码、智能体工作流和办公自动化。社区基准测试显示其得分 52，与 DeepSeek V4 Flash 0731 相同，并在 Artificial Analysis 上超过 Opus 4.6；部分用户指出 Opus 仍拥有更丰富的世界知识。</summary>
+  </entry>
+  <entry>
+    <title>DuckDB v2.0 预览版展示新功能与性能提升</title>
+    <link href="https://duckdb.org/2026/08/17/duckdb-20-highlights"/>
+    <id>https://bmt.news/editions/2026-08-18/#hackernews:story:49330781</id>
+    <updated>2026-08-18T00:00:00Z</updated>
+    <summary>DuckDB 团队发布了 v2.0 预览版，引入了 Quack 客户端-服务器支持以及一系列新功能和性能改进。这一预览版标志着这款广泛使用的嵌入式分析数据库的一个重要里程碑。 DuckDB 是最广泛使用的开源分析数据库之一，每月下载量超过 600 万次，因此 v2.0 对数据工程和分析工作流具有广泛影响。该预览版让开发者能提前了解那些可能降低资源需求并扩展 DuckDB 运行场景的新能力。 这是一个预览版而非稳定版本，因此功能和性能数据在最终版本发布前可能还会变化。社区讨论提到其开发节奏极快，在不到六个月内约有 10,000 次提交，并关注增量物化视图等仍在推进中的领域。</summary>
+  </entry>
+  <entry>
+    <title>Roboflow基准测试质疑GPT 5.6 Sol视觉优势</title>
+    <link href="https://blog.roboflow.com/openai-gpt-5-6/"/>
+    <id>https://bmt.news/editions/2026-08-18/#hackernews:story:49329575</id>
+    <updated>2026-08-18T00:00:00Z</updated>
+    <summary>Roboflow的博客文章声称OpenAI的GPT 5.6 Sol是其最佳视觉模型，但其自己的基准测试显示，谷歌的Gemini 3.5 Flash在大多数视觉任务上表现更好，而成本仅为后者的三分之一。 这挑战了OpenAI对其旗舰模型的营销定位，并为开发者在高容量视觉任务中偏向更便宜的替代方案提供了具体数据。它凸显了成本效益在企业AI模型选择中日益重要的地位。 在Roboflow的基准测试中，Gemini 3.5 Flash在所有任务上均击败了GPT 5.6 Sol，只有OCR任务除外，该任务由名为Fable的模型获胜。GPT 5.6 Sol是OpenAI GPT-5.6系列中能力最强的变体，该系列还包括Luna和Terra。</summary>
+  </entry>
   <entry>
     <title>Stripe 以超70亿美元收购 AI 网关 OpenRouter</title>
     <link href="https://www.bloomberg.com/news/articles/2026-08-16/stripe-nears-deal-to-buy-ai-firm-openrouter-for-over-7-billion"/>

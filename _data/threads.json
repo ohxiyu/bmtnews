@@ -1,6 +1,54 @@
 {
   "threads": [
     {
+      "thread_id": "ta91361cd5f",
+      "latest_date": "2026-08-18",
+      "first_date": "2026-08-13",
+      "days": 3,
+      "entries": 3,
+      "category": "crypto",
+      "title_zh": "Coldcard固件漏洞多年未察觉，导致约1亿美元比特币被盗",
+      "title_en": "Coldcard Firmware Bug Goes Unnoticed for Years, Enabling ~$100M Bitcoin Theft",
+      "summary_zh": "Coldcard固件中一个长期潜伏的漏洞（自2021年3月发布的4.0.1版本起存在）导致2026年7月30日约1亿美元比特币被盗。Galaxy Research将此次大规模转走与种子生成随机性不足联系起来，独立分析机构此后估计损失高达1.16亿美元。 Coldcard是最受信赖的比特币专用硬件钱包之一，但其密钥生成路径存在长达数年的漏洞，正好印证了行业“不要信任，要验证”的格言——正如Foundation首席执行官Zach Herbert所说，声誉并不是安全模型。该事件可能促使用户对硬件钱包提出更强验证要求，并重新评估自托管风险。 该漏洞仅影响部分设备，导致生成的助记词随机熵远低于预期；被攻击者扫走的币的持有时间从2021年到2026年不等。7月30日，约1196个地址在41分钟内被转空，共损失1082.65枚比特币；Coinkite首席执行官最初否认存在普遍的钱包漏洞，且报道称攻击仍在持续。",
+      "summary_en": "A long-dormant bug in Coldcard's firmware, present since version 4.0.1 released in March 2021, led to the theft of roughly $100 million in Bitcoin on July 30, 2026. Galaxy Research tied the sweep to weak randomness in seed generation, and independent analysts later put losses as high as $116 million. Coldcard is one of the most trusted Bitcoin-only hardware wallets, yet a years-long flaw in its key-generation path validates the industry's 'don't trust, verify' maxim—as Foundation CEO Zach Herbert put it, reputation is not a security model. The incident may push users to demand stronger verification of hardware wallets and to reassess self-custody risks. The bug affected only some devices, causing generated seed phrases to have far weaker entropy than intended, and the coins swept by the attacker spanned 2021 to 2026. On July 30, about 1,196 addresses were drained in 41 minutes, taking 1,082.65 BTC; Coinkite's CEO initially denied a wallet-wide vulnerability, and attacks were reported to still be ongoing."
+    },
+    {
+      "thread_id": "t2bc2cf30ff",
+      "latest_date": "2026-08-18",
+      "first_date": "2026-08-13",
+      "days": 3,
+      "entries": 3,
+      "category": "technology",
+      "title_zh": "Qwen3.8 27B 在人工智能分析基准中得 52 分，超越更大模型",
+      "title_en": "Qwen3.8 27B Scores 52 on Artificial Analysis, Topping Larger Models",
+      "summary_zh": "阿里巴巴 Qwen 团队推出的 27B 参数开放权重模型 Qwen3.8-27B，在 Artificial Analysis 基准上取得 52 分，超过参数规模高达 150B+ 的模型，并与 DeepSeek V4 Flash 0731 持平。它还能媲美或超越六个月前发布的顶尖模型 Claude Opus 4.6。 这是开源 AI 的一个重要里程碑，表明一个小型稠密模型能够匹敌甚至超越更大的前沿模型。这可能使高端 AI 能力更加普及，让开发者能在消费级硬件上运行接近前沿的性能。 该模型是一款原生多模态视觉-语言模型，采用 Apache 2.0 开放权重，擅长编码、智能体工作流和办公自动化。社区基准测试显示其得分 52，与 DeepSeek V4 Flash 0731 相同，并在 Artificial Analysis 上超过 Opus 4.6；部分用户指出 Opus 仍拥有更丰富的世界知识。",
+      "summary_en": "Qwen3.8-27B, a 27B-parameter open-weight model from Alibaba's Qwen team, scored 52 on the Artificial Analysis benchmark, outperforming models up to 150B+ parameters and matching DeepSeek V4 Flash 0731. It also rivals or beats Claude Opus 4.6, a frontier model released just six months earlier. This is a major open-source AI milestone, showing a small dense model can match or exceed much larger frontier models. It could democratize access to high-end AI capability, enabling developers to run frontier-level performance on consumer hardware. The model is a native multimodal vision-language model with Apache 2.0 open weights, excelling at coding, agentic workflows, and office automation. Community benchmarks show it scores 52, the same as DeepSeek V4 Flash 0731, and beats Opus 4.6 on Artificial Analysis; some users note Opus still has better world knowledge."
+    },
+    {
+      "thread_id": "t07e72552e6",
+      "latest_date": "2026-08-18",
+      "first_date": "2026-08-14",
+      "days": 2,
+      "entries": 2,
+      "category": "crypto",
+      "title_zh": "Coinbase发布AiFi瞄准AI代理支付，此前x402交易额达1亿美元",
+      "title_en": "Coinbase Unveils AiFi for AI Agent Payments After $100M in x402 Transactions",
+      "summary_zh": "Coinbase推出了AiFi，这是一个面向AI代理的全栈金融基础设施，涵盖交易、支付和开发者工具，基于x402协议和Base网络构建。该公告发布之际，x402已处理超过1亿美元的交易。 主流交易所的这一举措验证了AI与加密支付这一新兴领域，并可能为自主机器支付建立标准。AiFi使Coinbase能够在AI代理开始持有资金并进行链上交易时占据基础设施价值。 AiFi涵盖交易、支付和开发者基础设施，基于x402和Base构建，并以USDC作为关键结算资产。x402协议由Linux基金会支持，可通过HTTP请求直接实现即时稳定币支付。",
+      "summary_en": "Coinbase launched AiFi, a full financial stack for AI agents covering trading, payments, and developer infrastructure, built on the x402 protocol and the Base network. The announcement follows over $100 million in transactions processed through x402. This move by a major exchange validates the emerging AI-crypto payments niche and could establish standards for autonomous machine payments. AiFi positions Coinbase to capture infrastructure value as AI agents begin to hold funds and transact on-chain. AiFi spans trading, payments, and developer infrastructure, and is built on x402 and Base, with USDC as a key settlement asset. The x402 protocol is backed by the Linux Foundation and enables instant stablecoin payments directly over HTTP requests."
+    },
+    {
+      "thread_id": "ta9918d288a",
+      "latest_date": "2026-08-18",
+      "first_date": "2026-08-17",
+      "days": 2,
+      "entries": 2,
+      "category": "crypto",
+      "title_zh": "以色列最大加密货币经纪商Bits of Gold遭数据泄露，20万客户受影响",
+      "title_en": "Israel's Largest Crypto Broker Bits of Gold Breached, 200K Customers Exposed",
+      "summary_zh": "以色列最大加密货币经纪商Bits of Gold披露了一起影响约20万客户的数据泄露事件。泄露源于第三方数据分析提供商被入侵，涉及姓名、国民身份证号码、银行账户信息和公开钱包地址，但资金和私钥未受影响。 此事件凸显了加密货币公司通过外部供应商遭受供应链攻击的脆弱性，敏感金融和身份数据的暴露可能使受影响用户面临更高的欺诈和钓鱼风险。这也加入了近期一系列加密货币行业数据泄露事件，可能削弱客户对托管经纪商的信任。 Bits of Gold表示，没有资金、密码、私钥、CVV码或身份证扫描件被泄露，并在发现后立即断开了受影响系统。公司认为此次攻击是更广泛的全球性事件的一部分，并已与网络安全事件响应公司合作展开调查。",
+      "summary_en": "Bits of Gold, Israel's largest crypto broker, disclosed a data breach affecting about 200,000 customers. The breach occurred via a third-party data analytics provider, exposing names, national ID numbers, bank details, and public wallet addresses, but not funds or private keys. This incident underscores the vulnerability of crypto firms to supply-chain attacks via external vendors, and the exposure of sensitive financial and identity data could put affected users at heightened risk of fraud and phishing. It also adds to a string of recent crypto industry data breaches, potentially eroding customer trust in custodial brokers. Bits of Gold stated that no funds, passwords, private keys, CVV codes, or scanned IDs were exposed, and that it disconnected the affected system upon detection. The company believes the attack was part of a broader global incident, and it has launched an investigation with a cyber incident response firm."
+    },
+    {
       "thread_id": "t5ccef86868",
       "latest_date": "2026-08-17",
       "first_date": "2026-08-13",
@@ -71,30 +119,6 @@
       "title_en": "Vitalik Buterin Proposes New Ethereum Roadmap with Quantum Defense and AI Verification",
       "summary_zh": "Vitalik Buterin提出了一份修订后的以太坊路线图，增加了后量子防御、基于AI的验证，以及可能放弃以太坊虚拟机（EVM）的方向调整。这是一项提议，而非已实施的升级。 以太坊是最大的智能合约平台，其技术方向的改变可能影响开发者、去中心化应用、Layer 2网络以及更广泛的加密生态。如果被采纳，该路线图将代表以太坊在代码安全与执行方式上的重大架构转变。 该提议据悉包括为量子计算威胁做准备，以及利用AI辅助验证代码正确性。放弃EVM将是对当前被数千个去中心化应用和rollup使用的执行环境的重大突破。",
       "summary_en": "Vitalik Buterin has proposed a revamped Ethereum roadmap that adds post-quantum defense, AI-based verification, and a potential shift away from the Ethereum Virtual Machine (EVM). This is a proposal, not an implemented upgrade. Ethereum is the largest smart contract platform, so a change in its technical direction could affect developers, dApps, Layer 2 networks, and the broader crypto ecosystem. If adopted, the roadmap would represent a major architectural shift in how Ethereum secures and executes code. The proposal reportedly includes preparing Ethereum's cryptography for quantum computing threats and using AI to help verify code correctness. Moving away from the EVM would be a significant break from the current execution environment used by thousands of dApps and rollups."
-    },
-    {
-      "thread_id": "ta91361cd5f",
-      "latest_date": "2026-08-15",
-      "first_date": "2026-08-13",
-      "days": 2,
-      "entries": 2,
-      "category": "crypto",
-      "title_zh": "Coldcard 比特币盗窃放缓，但损失或超 1.5 亿美元：Galaxy",
-      "title_en": "Coldcard Bitcoin Thefts Slow, But Losses Could Hit $150M: Galaxy",
-      "summary_zh": "Galaxy Research 报告称，Coldcard 种子重建漏洞已盗取超过 1,778 枚 BTC（约 1.12 亿美元），并可能存在第四波攻击，使总损失超过 1.5 亿美元。自 8 月 6 日以来未确认新的攻击者活动，攻击浪潮已趋缓。 这是有史以来规模最大的硬件钱包攻击事件之一，直接影响 Coldcard 单签用户，并削弱了对物理冷存储设备的信任。它也凸显了固件中一个随机数生成的回归缺陷如何在数年后暴露出数百万美元的比特币风险。 Galaxy 确认了三次主要攻击浪潮和 41 个较小的攻击足迹，超过 5,200 个地址被盗；仅第一波就盗取了 1,082.65 BTC。另有约 638.5 BTC 的疑似第四波攻击尚未确认，约 1,531 BTC 仍留在攻击者控制的地址中未动，246 BTC 被追踪流向 Coinjoin 交易。",
-      "summary_en": "Galaxy Research reports the Coldcard seed-recreation exploit has stolen more than 1,778 BTC (~$112 million) and may have a fourth wave that lifts losses above $150 million. The attack waves have slowed, with no confirmed attacker activity after August 6. This is one of the largest hardware-wallet exploits on record, directly affecting Coldcard single-signature users and undermining trust in physical cold-storage devices. It also highlights how a single firmware regression in randomness can expose millions in Bitcoin years later. Galaxy identifies three major attack waves and 41 smaller footprints, with more than 5,200 addresses drained; Wave 1 alone took 1,082.65 BTC. A candidate fourth wave of 638.5 BTC has not yet been confirmed, and roughly 1,531 BTC remains unmoved in attacker-controlled addresses, with 246 BTC traced to Coinjoin transactions."
-    },
-    {
-      "thread_id": "t2bc2cf30ff",
-      "latest_date": "2026-08-15",
-      "first_date": "2026-08-13",
-      "days": 2,
-      "entries": 2,
-      "category": "technology",
-      "title_zh": "Qwen3.8-27B：27B开源权重模型在编程基准上超越更大模型",
-      "title_en": "Qwen3.8-27B: 27B Open-Weight Model Outperforms Larger Models on Coding",
-      "summary_zh": "阿里巴巴 Qwen 团队发布了 Qwen3.8-27B，一个 270 亿参数的开源权重模型，据称在编程基准上超越更大的模型（如 Claude Opus），同时小到可以在笔记本电脑上运行。Hugging Face 上发布的是 FP8 量化版本，社区 GGUF 量化版本也已可用。 此次发布缩小了前沿模型与本地可运行模型之间的差距，使开发者无需支付昂贵的 API 费用即可在消费级硬件上使用先进的推理和编程能力。这也标志着开源权重赛道竞争加剧，可能对闭源模型的定价造成压力。 Hugging Face 上发布的是 FP8 量化版本（Qwen3.8-27B-FP8），社区量化版本（如 Unsloth 的 GGUF 文件）已可用于通过 llama.cpp 进行本地推理。社区测试中，它在 DeepSWE 上得分为 42.2，超过了使用 Claude Code 的 Claude Opus 4.7 Max 的 40 分。",
-      "summary_en": "Alibaba's Qwen team released Qwen3.8-27B, a 27-billion-parameter open-weight model that reportedly beats larger models such as Claude Opus on coding benchmarks while remaining small enough to run on a laptop. The Hugging Face release is the FP8-quantized version, and community GGUF quantizations are already available. This release narrows the gap between frontier models and locally runnable models, enabling developers to use advanced reasoning and coding capabilities on consumer hardware without expensive API fees. It also signals intensifying competition in the open-weight segment, which could pressure closed-model pricing. The Hugging Face release is the FP8-quantized version (Qwen3.8-27B-FP8), and community quantizations such as Unsloth's GGUF files are available for local inference via llama.cpp. In community tests, it scored 42.2 on DeepSWE, beating Claude Opus 4.7 Max's 40 when used with Claude Code."
     },
     {
       "thread_id": "t8bc4246654",

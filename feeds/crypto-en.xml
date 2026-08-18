@@ -4,7 +4,70 @@
   <link href="https://bmt.news/feeds/crypto-en.xml" rel="self"/>
   <link href="https://bmt.news/"/>
   <id>https://bmt.news/feeds/crypto-en.xml</id>
-  <updated>2026-08-17T00:00:00Z</updated>
+  <updated>2026-08-18T00:00:00Z</updated>
+  <entry>
+    <title>Coldcard Firmware Bug Goes Unnoticed for Years, Enabling ~$100M Bitcoin Theft</title>
+    <link href="https://www.coindesk.com/tech/2026/08/17/how-a-bug-in-coldcard-s-code-went-unnoticed-for-years-leading-to-usd100-million-in-hacked-funds"/>
+    <id>https://bmt.news/editions/2026-08-18/#rss:www.coindesk.com_arc_outboundfeeds_rss_:18077e4da36ddfb4</id>
+    <updated>2026-08-18T00:00:00Z</updated>
+    <summary>A long-dormant bug in Coldcard&#x27;s firmware, present since version 4.0.1 released in March 2021, led to the theft of roughly $100 million in Bitcoin on July 30, 2026. Galaxy Research tied the sweep to weak randomness in seed generation, and independent analysts later put losses as high as $116 million. Coldcard is one of the most trusted Bitcoin-only hardware wallets, yet a years-long flaw in its key-generation path validates the industry&#x27;s &#x27;don&#x27;t trust, verify&#x27; maxim—as Foundation CEO Zach Herbert put it, reputation is not a security model. The incident may push users to demand stronger verification of hardware wallets and to reassess self-custody risks. The bug affected only some devices, causing generated seed phrases to have far weaker entropy than intended, and the coins swept by the attacker spanned 2021 to 2026. On July 30, about 1,196 addresses were drained in 41 minutes, taking 1,082.65 BTC; Coinkite&#x27;s CEO initially denied a wallet-wide vulnerability, and attacks were reported to still be ongoing.</summary>
+  </entry>
+  <entry>
+    <title>Harmony to roll back chain after forger mints 3 trillion ONE tokens</title>
+    <link href="https://www.theblock.co/news/ecosystems/2026-08-17-harmony-plans-pre-attack-rollback-after-exploiter-forged-3-trillion-one-tokens-411976"/>
+    <id>https://bmt.news/editions/2026-08-18/#rss:www.theblock.co_rss.xml:a58ebc917b70ea17</id>
+    <updated>2026-08-18T00:00:00Z</updated>
+    <summary>Harmony announced that validators will revert the blockchain to 11:25 pm UTC on Aug. 11, discarding over 109,126 regular transactions and 315 staking transactions, after an attacker forged 3 trillion ONE tokens. It deemed the pre-attack rollback &quot;fairest and most secure&quot; over token burns or blacklisting. This is a major protocol governance and security decision because rolling back confirmed transactions challenges blockchain immutability and affects users, exchanges, and bridge partners. The outcome could set a precedent for how layer-1 networks respond to large-scale exploits. Harmony said selectively restoring transactions would be unsafe because balances, contract states, transaction nonces and other conditions would differ on the replacement chain. Investigators traced nearly all forged ONE to wallets or service boundaries and are coordinating with exchanges, bridges, and law enforcement.</summary>
+  </entry>
+  <entry>
+    <title>BitMart Founder Dismisses Audit Demands as Users Report Blocked Funds</title>
+    <link href="https://www.coindesk.com/business/2026/08/17/bitmart-founder-dismisses-calls-for-audit-as-users-report-blocked-funds-unpaid-employees"/>
+    <id>https://bmt.news/editions/2026-08-18/#rss:www.coindesk.com_arc_outboundfeeds_rss_:e94d7b58aade34ee</id>
+    <updated>2026-08-18T00:00:00Z</updated>
+    <summary>BitMart founder Sheldon Lee dismissed as &#x27;fabricated rumors&#x27; an X post claiming users cannot withdraw funds and employees have not been paid, saying the exchange&#x27;s Chinese-language account was hacked. Users and onchain investigator ZachXBT are demanding independent audits as the exchange winds down ahead of its final trading day on Aug. 26. This matters because unverified exchange insolvency rumors can trigger panic, regulatory scrutiny, and broader distrust in centralized exchanges. BitMart&#x27;s refusal to open its books underscores the lack of transparency that persists among crypto custodians. BitMart announced its wind-down last month with Aug. 26 as the final trading day, yet users report withdrawals remain blocked. Distressed investment firm Echo Base says it proposed a funded restructuring package including debtor-in-possession financing, but BitMart has not responded.</summary>
+  </entry>
+  <entry>
+    <title>ABFinance Closure Marks Fourth Crypto Exchange Shutdown in Six Weeks</title>
+    <link href="https://protos.com/fourth-crypto-exchange-shuts-down-in-just-six-weeks/"/>
+    <id>https://bmt.news/editions/2026-08-18/#rss:protos.com_feed_:935ea881ab5462fb</id>
+    <updated>2026-08-18T00:00:00Z</updated>
+    <summary>US-based crypto exchange ABFinance, founded by ByBit&#x27;s former CEO Helen Liu, announced last Friday that it will not launch and is winding down in an orderly manner. The closure marks the fourth exchange shutdown in six weeks, after BitMart, BitMEX, and AscendEX. The rapid succession of exchange closures raises serious concerns about the safety of user funds and the stability of crypto trading platforms. Users of affected exchanges face withdrawal delays and uncertainty, which can erode trust in centralized exchanges and drive demand for self-custody solutions. ABFinance lasted only about six months, as Liu founded the exchange in March before stepping down from her ByBit co-CEO role on April 30, 2026. BitMart has continued processing withdrawals at a slow pace, leading users to speculate about insolvency, while AscendEX&#x27;s shutdown was flagged by ZachXBT for missing large amounts of ETH, USDT, and SOL in reserves.</summary>
+  </entry>
+  <entry>
+    <title>Israel&#x27;s Largest Crypto Broker Bits of Gold Breached, 200K Customers Exposed</title>
+    <link href="https://www.coindesk.com/tech/2026/08/17/israel-s-largest-crypto-broker-bits-of-gold-hit-by-data-breach-affecting-200-000-customers"/>
+    <id>https://bmt.news/editions/2026-08-18/#rss:www.coindesk.com_arc_outboundfeeds_rss_:376b140298fc40d8</id>
+    <updated>2026-08-18T00:00:00Z</updated>
+    <summary>Bits of Gold, Israel&#x27;s largest crypto broker, disclosed a data breach affecting about 200,000 customers. The breach occurred via a third-party data analytics provider, exposing names, national ID numbers, bank details, and public wallet addresses, but not funds or private keys. This incident underscores the vulnerability of crypto firms to supply-chain attacks via external vendors, and the exposure of sensitive financial and identity data could put affected users at heightened risk of fraud and phishing. It also adds to a string of recent crypto industry data breaches, potentially eroding customer trust in custodial brokers. Bits of Gold stated that no funds, passwords, private keys, CVV codes, or scanned IDs were exposed, and that it disconnected the affected system upon detection. The company believes the attack was part of a broader global incident, and it has launched an investigation with a cyber incident response firm.</summary>
+  </entry>
+  <entry>
+    <title>Vulcan (ex-Greenidge) flags bankruptcy risk as $33M debt maturity nears without PIPE close</title>
+    <link href="https://cryptoslate.com/crypto-miner-warns-of-potential-bankruptcy-as-unclosed-financing-leaves-33-million-in-maturing-debt-exposed/"/>
+    <id>https://bmt.news/editions/2026-08-18/#rss:cryptoslate.com_feed_:c009d60164c41c59</id>
+    <updated>2026-08-18T00:00:00Z</updated>
+    <summary>Publicly traded bitcoin miner Vulcan (formerly Greenidge Generation) warned it may face bankruptcy because a proposed $39.4 million PIPE financing has not closed, leaving $33.1 million in senior notes due October 31 exposed. As of August 16, the company had received no proceeds from the deal. This is a material credit event for a publicly traded crypto miner, showing how debt maturities and capital-markets access can threaten mining firms even when they hold digital assets. It highlights the fragility of miners that rely on external financing in a high-cost, volatile operating environment. The PIPE would raise roughly $29.3 million from selling 17,146,190 shares at $1.71 each plus a $10 million convertible note from Machine Investment Group. The Oct. 10 outside date for closing is only 21 days before the notes mature, and Vulcan has not delivered a formal redemption notice.</summary>
+  </entry>
+  <entry>
+    <title>Bitcoin Miner HIVE Lands $350M AI Cloud Deal</title>
+    <link href="https://www.theblock.co/news/business/2026-08-17-bitcoin-miner-hive-inks-five-year-350-million-ai-cloud-contract-411940"/>
+    <id>https://bmt.news/editions/2026-08-18/#rss:www.theblock.co_rss.xml:f15af030de98a855</id>
+    <updated>2026-08-18T00:00:00Z</updated>
+    <summary>HIVE&#x27;s BUZZ HPC subsidiary signed a five-year, $350 million GPU cloud contract that adds $70 million in annualized recurring revenue. The deal marks HIVE&#x27;s second large NVIDIA cluster agreement in two months. The contract underscores a growing trend of Bitcoin miners pivoting to AI and high-performance computing to diversify beyond mining revenue. It gives HIVE a stable, dollar-denominated revenue stream and validates the strategic value of miners&#x27; existing power and data-center infrastructure. The contract runs for five years and contributes $70 million in annualized recurring revenue (ARR). It is described as a &#x27;large NVIDIA cluster deal,&#x27; and is the second such agreement HIVE has signed within two months.</summary>
+  </entry>
+  <entry>
+    <title>Coinbase Unveils AiFi for AI Agent Payments After $100M in x402 Transactions</title>
+    <link href="https://news.google.com/rss/articles/CBMitwFBVV95cUxOQVBBc0s5a1FxcGF4Nk5DZmtWRGlGWmQ1UUgxRU1NdXcxSEM4ZGZLc3Y5OG91Z3BMZ0F5bTFGQ0V3dzhJTC14b2I4RWVlbUFzOE1QcTRod2NxUkxlbWJaeVVKRXptSnBBUnNHdTV6SUVPWEJpRzRtTVNINlhabmpLcDdUbDVvQ1JxZ0ZrV1Z4QlNEOFJDcnFBdXI1RE1TRnBDSm5LMFBJbFF5d1FPekFkSmxSenR3TzDSAbwBQVVfeXFMTXFOR1FOd0NYZXJESzJSNWhsLWRMQy0yb3JxTVhicVZUTXhhM0dWT1VhQjZPdHVJdjM4V3g1R2dCeHl2al9ja2dWclZYSWo0M193YmpoLXVQM1VyUi1OVDhFZ2NCbUl1TlpvcmtlbUNvSjd4bjBsNC1ZUUlkN0xfRFhuMTl5Vm00bW9sWnRFZUxWemJaaWFXNm12Tjl5S2hPNDJDVmdCMVJETk9GVnBPN3ZOWVhKeWU2aktrWVM?oc=5"/>
+    <id>https://bmt.news/editions/2026-08-18/#google_news:article:7ed4ded0ad36a669</id>
+    <updated>2026-08-18T00:00:00Z</updated>
+    <summary>Coinbase launched AiFi, a full financial stack for AI agents covering trading, payments, and developer infrastructure, built on the x402 protocol and the Base network. The announcement follows over $100 million in transactions processed through x402. This move by a major exchange validates the emerging AI-crypto payments niche and could establish standards for autonomous machine payments. AiFi positions Coinbase to capture infrastructure value as AI agents begin to hold funds and transact on-chain. AiFi spans trading, payments, and developer infrastructure, and is built on x402 and Base, with USDC as a key settlement asset. The x402 protocol is backed by the Linux Foundation and enables instant stablecoin payments directly over HTTP requests.</summary>
+  </entry>
+  <entry>
+    <title>Kraken Parent Payward Joins Anthropic&#x27;s Project Glasswing for Claude Mythos Security</title>
+    <link href="https://decrypt.co/375836/kraken-payward-anthropic-project-glasswing-claude-mythos"/>
+    <id>https://bmt.news/editions/2026-08-18/#rss:decrypt.co_feed:2fff2cbeb7f797eb</id>
+    <updated>2026-08-18T00:00:00Z</updated>
+    <summary>Payward, the parent company of crypto exchange Kraken, has joined Anthropic&#x27;s Project Glasswing and will use the Claude Mythos 5 model to scan its systems for security vulnerabilities. It is the first reported crypto company to gain access to the program. The move signals growing adoption of frontier AI for defensive cybersecurity in the crypto sector, following an open letter from more than 40 Bitcoin and crypto companies urging AI labs to grant trusted defenders access to powerful models. It could help harden both exchange infrastructure and the open-source software underpinning the crypto industry. Payward said findings from Mythos 5 scans will be reviewed and patched through its existing security program, and vulnerabilities found in third-party open-source software will be reported to maintainers. Project Glasswing, launched in April and expanded in June, has already helped partners uncover thousands of high- or critical-severity vulnerabilities.</summary>
+  </entry>
   <entry>
     <title>SafePal Discloses Data Breach Affecting Nearly 40,000 Users&#x27; Order Information</title>
     <link href="https://www.933thedrive.com/2026/08/16/crypto-wallet-provider-safepal-discloses-data-breach-affecting-nearly-40000-users-order-information/"/>
@@ -221,68 +284,5 @@
     <id>https://bmt.news/editions/2026-08-14/#rss:www.coindesk.com_arc_outboundfeeds_rss_:82742dd2bb0540df</id>
     <updated>2026-08-14T00:00:00Z</updated>
     <summary>Tether announced that KPMG U.S. issued an unqualified opinion on its 2025 financial statements, marking the stablecoin issuer&#x27;s first full audit by a Big Four accounting firm. The statements showed reserves exceeding liabilities by $6.814 billion. The audit addresses a long-standing transparency criticism over the reserves backing USDT, a $180 billion stablecoin that is critical to crypto trading liquidity. An unqualified opinion from a Big Four firm could strengthen market trust in Tether and ease systemic risk concerns across digital-asset markets. KPMG went beyond Tether&#x27;s prior quarterly attestations by testing transactions, systems, valuations, counterparties and ownership records, and physically counting the company&#x27;s gold bars. Tether has not yet confirmed whether it will publicly release the full KPMG report.</summary>
-  </entry>
-  <entry>
-    <title>Protos tracks HTX reserves moving to Poloniex amid sanctions</title>
-    <link href="https://protos.com/we-found-htxs-reserves-at-poloniex/"/>
-    <id>https://bmt.news/editions/2026-08-14/#rss:protos.com_feed_:63b1b2e899254692</id>
-    <updated>2026-08-14T00:00:00Z</updated>
-    <summary>Protos reports that HTX&#x27;s June proof-of-reserves acknowledged moving large portions of user funds to an undisclosed &#x27;ThirdParty&#x27; custodian, and on-chain tracking shows hundreds of millions of dollars in assets, including WBTC and sUSDS, moved from HTX wallets to Poloniex addresses. This matters because HTX is under EU and UK sanctions, and its opaque reserve management plus rapid wallet churning raise serious solvency and user-fund safety questions. The findings also implicate Poloniex, another Justin Sun-owned exchange, in handling assets from a sanctioned entity. Protos tracked specific transfers: WBTC moved from HTX address 0x18709e... to Poloniex 7, then Poloniex 10, then Poloniex 9; about $200 million in sUSDS followed a similar path. HTX&#x27;s May proof-of-reserves also mislabeled STEAK-USDC when the address actually held sUSDS.</summary>
-  </entry>
-  <entry>
-    <title>Tether Secures Landmark KPMG Audit of 2025 Financials</title>
-    <link href="https://tether.io/news/tether-completes-the-largest-inaugural-financial-audit-in-history/"/>
-    <id>https://bmt.news/editions/2026-08-14/#rss:tether.io_feed:682963b6bc93b7cc</id>
-    <updated>2026-08-14T00:00:00Z</updated>
-    <summary>Tether announced that KPMG U.S. issued an unqualified audit opinion on its 2025 financial statements, marking the first full independent audit of the company. The announcement was made on 13 August 2026. An unqualified opinion from a Big Four firm is the strongest form of independent auditor assurance and could materially strengthen market confidence in Tether&#x27;s reserves and transparency. This milestone also invites closer regulatory scrutiny and may accelerate stablecoin adoption by institutional and traditional finance players. The audit was of Tether International, S.A. de C.V.&#x27;s financial statements, and the opinion covers the 2025 fiscal year. Tether described the audit as the largest inaugural financial audit in history, underscoring the scale of its operations as the largest company in the digital asset industry.</summary>
-  </entry>
-  <entry>
-    <title>Coinbase and 14 other x402 facilitators failed security tests built for the coming AI-agent economy</title>
-    <link href="https://cryptoslate.com/coinbase-and-14-other-x402-facilitators-failed-security-tests-built-for-the-coming-ai-agent-economy/"/>
-    <id>https://bmt.news/editions/2026-08-14/#rss:cryptoslate.com_feed_:3ec1055235cd0395</id>
-    <updated>2026-08-14T00:00:00Z</updated>
-    <summary>Researchers testing 15 major x402 payment facilitators at the USENIX Security Symposium found that every platform, including Coinbase, Thirdweb, PayAI and Mogami, violated at least one security rule. They mapped 49 rule violations to 31 distinct vulnerabilities across systems handling 99% of observed x402 transactions and 98% of payment volume during the study. x402 is being promoted as infrastructure for machine-driven commerce, allowing AI agents to autonomously pay for services, yet these flaws could leave merchants unpaid for goods they have already delivered and expose facilitator-held assets and network fees. The findings highlight systemic risks in the emerging AI-agent payment economy and could affect trust in stablecoin-based automated payments. Researchers identified four broad attack classes (free shopping, asset theft, service disruption, and gas abuse) and directly validated six attack paths, including two free-shopping attacks, three gas-abuse attacks, and one path that could expose facilitator-held assets via malicious ERC-6492 metadata. They also analyzed 119 million x402 transactions on Base and Solana, finding facilitators spent about $202,000 on network fees, including roughly $5,800 on reverted or failed Base transactions.</summary>
-  </entry>
-  <entry>
-    <title>Routing Bug Puts Solana Within 4.5 Points of Losing Finality</title>
-    <link href="https://decrypt.co/375404/a-routing-bug-took-solana-86-of-the-way-to-losing-finality"/>
-    <id>https://bmt.news/editions/2026-08-13/#rss:decrypt.co_feed:797ee83d88dcea91</id>
-    <updated>2026-08-13T00:00:00Z</updated>
-    <summary>A misconfigured BGP route at hosting provider Teraswitch took 28.83% of staked SOL offline on Wednesday morning, leaving Solana just 4.51 percentage points short of the 33.34% threshold at which the chain stops finalizing transactions. Roughly 90 validators were affected, and networking recovered after about 33 minutes. This incident is a severe stress test for Solana&#x27;s network stability: a single provider misconfiguration nearly halted the entire chain, exposing how concentrated staked SOL is within one autonomous system. It underscores risks for validators, staking protocols, and the broader ecosystem, and could intensify calls for better decentralization and failover practices. The affected autonomous system, AS20326, holds roughly 27% of staked SOL — above the 25% cap in the Solana Foundation&#x27;s delegation program — and 94% of it went offline at once. Marinade Finance found that 80.2 million SOL across 59 validators recovered after routing reconverged, while Helius was down for the full 33 minutes; the 333 SOL in lost rewards will be covered by validator bonds.</summary>
-  </entry>
-  <entry>
-    <title>Bybit sues North Korea over $1.5B crypto theft</title>
-    <link href="https://news.google.com/rss/articles/CBMiiwFBVV95cUxNVDh0ZDZiMlY5NUt3dnFCMExVb0tzVVhKRGpoaFhNOWRPUW9tNWU2dG1ueUVBMlZkS25NdTg0b1RWZHhSdkw1N3pyU2ltN1VwNGFtZ0JsSGFobThXd1JCT1Q3TGRwcFdPOXkzSklDYmlGUU5fdEEyc0hpb3ctTHJ3Ny1nVk9tRnlwaW1R?oc=5"/>
-    <id>https://bmt.news/editions/2026-08-13/#google_news:article:443dcfe9472d77d4</id>
-    <updated>2026-08-13T00:00:00Z</updated>
-    <summary>Bybit has filed a lawsuit against North Korea in connection with the $1.5 billion theft of cryptocurrency from the exchange. This legal action escalates the dispute to a formal court case against a state actor. The lawsuit could set a legal precedent for how cryptocurrency exchanges pursue recovery from state-sponsored hackers. It also highlights the growing intersection of national security, international law, and the digital asset industry. The theft occurred on Bybit&#x27;s platform and is among the largest cryptocurrency heists ever recorded. The specific legal grounds and jurisdiction for the lawsuit have not yet been publicly disclosed.</summary>
-  </entry>
-  <entry>
-    <title>Solana Nears Finality Halt as 28.83% of Staked SOL Goes Delinquent</title>
-    <link href="https://thedefiant.io/news/blockchains/marinade-says-28-83-of-solana-stake-went-delinquent-nearing-finality-halt"/>
-    <id>https://bmt.news/editions/2026-08-13/#rss:thedefiant.io_api_feed:5ccef86868e5a3d7</id>
-    <updated>2026-08-13T00:00:00Z</updated>
-    <summary>On August 12, 2026, a routing failure at infrastructure provider Teraswitch caused 28.83% of staked SOL to go delinquent, bringing Solana 86% of the way to the threshold at which block finality halts. Marinade reported that 94% of the 118.89 million SOL on its autonomous system went offline. The event highlights systemic concentration risk in Solana&#x27;s validator infrastructure, because a single provider&#x27;s routing problem nearly threatened network-wide finality. It also directly affected Marinade, Solana&#x27;s largest liquid staking protocol, and could shake confidence in staking reliability across the ecosystem. Teraswitch confirmed the outage was caused by a routing software failure triggered during a routine configuration change, affecting 12 sites. Solana&#x27;s finality stops only when more than 33.34% of staked SOL is delinquent, and roughly 90 validators were affected, losing staking rewards.</summary>
-  </entry>
-  <entry>
-    <title>Coldcard Hack Spurs $15B Bitcoin Migration to Self-Custody</title>
-    <link href="https://decrypt.co/375450/coldcard-hack-15-billion-bitcoin-moved-safety"/>
-    <id>https://bmt.news/editions/2026-08-13/#rss:decrypt.co_feed:805a0197fe074755</id>
-    <updated>2026-08-13T00:00:00Z</updated>
-    <summary>A Coldcard firmware exploit that began July 30 drained roughly 2,100 BTC (~$130 million), and onchain data shows 233,000 BTC (~$15 billion) moved out of long-term holder wallets in the following days. Casa CEO Nick Neuman attributes part of that migration to Ledger and Trezor users upgrading to multisig self-custody. The incident underscores that hardware wallet vulnerabilities can be contained by distributed self-custody, and may accelerate multisig adoption among long-term Bitcoin holders. It also shows self-custody adapting under stress, reinforcing Bitcoin&#x27;s resilience as an asset. Checkonchain data shows 233,000 BTC left long-term holder wallets—a 1.38% drop from recent highs—while 22,000 BTC moved to exchanges. Galaxy Research separately counted roughly 1,596 BTC stolen across more than 5,200 addresses in three attack waves, and the firmware bug had reduced key entropy from 128 bits to about 40 bits.</summary>
-  </entry>
-  <entry>
-    <title>Solana Nearly Freezes After Routing Glitch Offlines 29% of Staked SOL</title>
-    <link href="https://www.coindesk.com/tech/2026/08/12/smart-contract-blockchain-solana-nearly-froze-wednesday-marinade-finance-says"/>
-    <id>https://bmt.news/editions/2026-08-13/#rss:www.coindesk.com_arc_outboundfeeds_rss_:dd13e31c4442aa84</id>
-    <updated>2026-08-13T00:00:00Z</updated>
-    <summary>On Wednesday, a routing glitch traced to Teraswitch&#x27;s Miami data center knocked nearly 29% of Solana&#x27;s staked tokens offline, according to staking platform Marinade Finance. The outage lasted about 33 minutes and brought the network to within about 20 million tokens of the one-third staked threshold that halts finality. The incident exposes a serious centralization risk in Solana&#x27;s staking infrastructure: a single network operator, AS2032, controlled more than a quarter of all staked SOL. Had the offline stake exceeded one-third, the entire chain would have frozen for every SOL holder, raising broader questions about Solana&#x27;s reliability as a leading smart contract platform. Roughly 90 validators were affected and lost about 333 SOL in rewards, a relatively small sum covered by validator bonds. The bad route from Teraswitch spread to European and Asian data centers, cutting off validators in London, Amsterdam, Frankfurt, Singapore and Tokyo; North America stayed online, and traffic was restored by 4:16 a.m. UTC.</summary>
-  </entry>
-  <entry>
-    <title>Goldman Sachs to Buy Neos for $2.25B, Adding Bitcoin and Ether ETFs</title>
-    <link href="https://www.theblock.co/news/business/2026-08-12-goldman-sachs-bitcoin-ether-income-etfs-neos-deal-411618"/>
-    <id>https://bmt.news/editions/2026-08-13/#rss:www.theblock.co_rss.xml:4771c18c3591eb54</id>
-    <updated>2026-08-13T00:00:00Z</updated>
-    <summary>Goldman Sachs announced it will acquire Neos Investments for up to $2.25 billion. The deal gives Goldman access to Neos&#x27;s Bitcoin High Income ETF, Boosted Bitcoin High Income ETF, and Ethereum High Income ETF. A top-tier global investment bank is making a dedicated acquisition to own cryptocurrency income-generating ETFs, signaling deeper institutional adoption of digital assets. The move could accelerate mainstream distribution of regulated bitcoin and ether products. The acquisition is valued at up to $2.25 billion. Neos&#x27;s Bitcoin High Income ETF (BTCI) launched on October 16, 2024, the Boosted Bitcoin High Income ETF (XBCI) launched on January 22, 2026, and the Ethereum High Income ETF (NEHI) uses options and investments in spot Ether ETPs to generate monthly income.</summary>
   </entry>
 </feed>

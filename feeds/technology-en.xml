@@ -4,7 +4,28 @@
   <link href="https://bmt.news/feeds/technology-en.xml" rel="self"/>
   <link href="https://bmt.news/"/>
   <id>https://bmt.news/feeds/technology-en.xml</id>
-  <updated>2026-08-17T00:00:00Z</updated>
+  <updated>2026-08-18T00:00:00Z</updated>
+  <entry>
+    <title>Qwen3.8 27B Scores 52 on Artificial Analysis, Topping Larger Models</title>
+    <link href="https://artificialanalysis.ai/models/qwen3-8-27b"/>
+    <id>https://bmt.news/editions/2026-08-18/#hackernews:story:49334544</id>
+    <updated>2026-08-18T00:00:00Z</updated>
+    <summary>Qwen3.8-27B, a 27B-parameter open-weight model from Alibaba&#x27;s Qwen team, scored 52 on the Artificial Analysis benchmark, outperforming models up to 150B+ parameters and matching DeepSeek V4 Flash 0731. It also rivals or beats Claude Opus 4.6, a frontier model released just six months earlier. This is a major open-source AI milestone, showing a small dense model can match or exceed much larger frontier models. It could democratize access to high-end AI capability, enabling developers to run frontier-level performance on consumer hardware. The model is a native multimodal vision-language model with Apache 2.0 open weights, excelling at coding, agentic workflows, and office automation. Community benchmarks show it scores 52, the same as DeepSeek V4 Flash 0731, and beats Opus 4.6 on Artificial Analysis; some users note Opus still has better world knowledge.</summary>
+  </entry>
+  <entry>
+    <title>DuckDB v2.0 Preview Showcases New Features and Performance Gains</title>
+    <link href="https://duckdb.org/2026/08/17/duckdb-20-highlights"/>
+    <id>https://bmt.news/editions/2026-08-18/#hackernews:story:49330781</id>
+    <updated>2026-08-18T00:00:00Z</updated>
+    <summary>The DuckDB team published a preview of v2.0, introducing Quack client-server support and a range of new features and performance improvements. This preview marks a major milestone for the widely adopted embedded analytical database. DuckDB is one of the most widely adopted open-source analytical databases, with over 6 million downloads per month, so v2.0 has broad implications for data engineering and analytics workflows. The preview gives builders an early look at capabilities that could reduce resource requirements and expand where DuckDB can run. This is a preview rather than a stable release, so features and performance numbers may change before the final version. Community discussion notes an extremely rapid development cadence of roughly 10,000 commits in under six months, and highlights in-progress areas such as incremental materialized views.</summary>
+  </entry>
+  <entry>
+    <title>Roboflow Benchmarks Undermine GPT 5.6 Sol Vision Claims</title>
+    <link href="https://blog.roboflow.com/openai-gpt-5-6/"/>
+    <id>https://bmt.news/editions/2026-08-18/#hackernews:story:49329575</id>
+    <updated>2026-08-18T00:00:00Z</updated>
+    <summary>Roboflow&#x27;s blog post claims OpenAI&#x27;s GPT 5.6 Sol is its best vision model, but its own benchmarks show Google&#x27;s Gemini 3.5 Flash outperforming it on most vision tasks at one-third the cost. This challenges OpenAI&#x27;s marketing position for its flagship model and gives developers concrete data to favor cheaper alternatives for high-volume vision workloads. It underscores the growing importance of cost-efficiency in enterprise AI model selection. In Roboflow&#x27;s benchmark, Gemini 3.5 Flash beat GPT 5.6 Sol on all tasks except OCR, where a model called Fable won. GPT 5.6 Sol is the most capable variant in OpenAI&#x27;s GPT-5.6 family, which also includes Luna and Terra.</summary>
+  </entry>
   <entry>
     <title>Stripe Clinches Over $7B Deal to Buy AI Gateway OpenRouter</title>
     <link href="https://www.bloomberg.com/news/articles/2026-08-16/stripe-nears-deal-to-buy-ai-firm-openrouter-for-over-7-billion"/>

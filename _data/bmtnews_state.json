@@ -1,175 +1,824 @@
 {
   "version": 1,
-  "date": "2026-08-17",
+  "date": "2026-08-18",
   "timezone": "Asia/Shanghai",
-  "updated_at": "2026-08-17T00:30:28.577233Z",
+  "updated_at": "2026-08-18T00:30:31.028724Z",
   "analyzed_keys": [
-    "00496b530dc07c9df07cb5b1c67b189cc654bb3098466d94036a682fbb759e8e",
-    "011ecdf19421d7345fb5078c5b1421c59732d96dd3e5540c49f1c79aa1494f29",
-    "0229550a6b8fc79e38a12b942801cf4b3c41f6fa44dff560ab459c16b52766e2",
-    "0496b833d664e0bc18a6f9e7f39d7cce0f1ecd32d04713e59834ee988ff14f6a",
-    "05e2f64e44a0620301a2d6a6f646e72abaa6f94f51e86b34d633c36acd9d2766",
-    "073c6b9e32c5022d8c73c3dd75f825520f3dda0c1e6bf7e756058f0af5d272e2",
-    "0910216179b604c0d01c223a490f215119a6af265230df883dd6066d6e646873",
-    "0982bf117bd4b5dedd3e6af59bf2c3b242feeab348e996a0db9d26e5d52e5406",
-    "0a65107025cd73f463e5985afadfe628c1661a0923f7343321f709c4009ab20a",
-    "0bef343953a0cf2e48e244c4229a19e63f8671bf2182e8106edb56159ff4227b",
-    "0cce8ab72f3fdad97bf8f767a29852345d2549f5e9ec2de4a1ee5626dde786c2",
-    "0e78c5b2a2280ff1cc939801f0c582b3b3ced753619d048660ae726eb5502de4",
-    "0f769d958703e3a4b0888281accb13a37ad720bf8081ba665f67d49482a13fe9",
-    "129e7bdd1765879f93acff9e3e12cc8e538dac1369e1d6b08f962fa1f1f24672",
-    "138a200335dcb90a8cd91938930c884dafce6eb6bb838e7e2581a298e7f94a35",
-    "13cd8f83a890ca3cc0ba4ce856a48904a0c7f6a3d30225d54cc4a6bc08cd0b65",
-    "15e003217e3cebd0b7e1b1af4cd83f7d36b644724fbde40e21f7cda5b975c03a",
-    "16c1bcba07f82b0a60836143e07755f762f9d8ad0a49dd29c0c928be5336178a",
-    "17f4656817e40bcca433172de5b15a234eddeea8f90d9708f50aedebdccc7490",
-    "18e53985b17a4e6cc0588dc32e4652cfcbe4579e6e9aa0259c411b865b82183d",
-    "1a65e55e9301d432fc2a4ae10da57f740ac7d17be634bd0993fea5d5621e33f4",
-    "1b9ea708bc25856c9c50690ef564dd49a514aa92b83d795248ef37f1bdf70504",
-    "1bd09c72dadafdbba019e53f9752bbfa379c0ca33cbb59e539d8916d67c9573a",
-    "1cd7593c56ef79488ff6cb1990597737788b231e2dac95fb6510da2a37102bc0",
-    "1f296482a55192dc8632345539a72d052202b1ed00d7e9040daf78756f7dfa37",
-    "2398fbe6c04829a71e8ca855abdb3a63ae2a4b7ba30c5d6cacbc13a1790d0071",
-    "25deea6802a03c86dd54e3f234b055d5a81915361ef7d1f4bf4ca71a93a0982f",
-    "27dcf56bed07be0f9a57bf5c1aa0f2a4a5583c16ade43fe17a73911f251573c8",
-    "299ecfa2f1426cdfe4e0c46fcb4732ef6d7f6474452224bacf59cf054deefb38",
-    "29d3d98b037fab885421800a40e07043487b4cdcc91248458667d785f5ef57d6",
-    "2c9d6d568df0e92ad57887e6f03c30070cc0e713fdada016ebde8f719b83590c",
-    "2de5a2bf90e28fd39cf06d229bc91d190acceb967191281c8985848fc2a06abb",
-    "3052885cf875b76438894ae4ce9bd6fc4dbf5422c152d62a8a7049a575d52fee",
-    "3303210a5426afd06d170c84acddb5db7cbac7acd0c0030b34ab162439891b8a",
-    "334c267cd45ecd9188073a67e98ef8904558e13f76ae37d306202a6a20bed29a",
-    "357c47bed621a4577b9356044f75bb89595fd7a24984a0443d4b5fb19d5dbaba",
-    "36f07a2d319329e520ee619c3b0153014c7b79d4d39408e75bb7aa4e22f6740c",
-    "37321d9334f56a629a9042dab160998342bd4ed971e39c0a3bd7181f53a4c1bf",
-    "38a9da0b1b638a1520d7fa0e59219664366547f770c97c2010ecb5225a4b1282",
-    "39411a9f473d79f54618d8ed166fd7b01b4acf9c87c3c73b77a43003ec6b5a97",
-    "39b600947927917e4cb6de7a91c5647ab8fd37bccf771f251fea6ecdf4fa74f2",
-    "3a32125a14fc8f8bfa04fbb33e7dd1763e99bd502df7879483cefab8e130cbdb",
-    "3a9a16e18740a9095086e73776c2c84ca9dd149e5412e6eba8150daf6967c4b0",
-    "3d9ca51a5b76c6d4fa5a79e9d6d8e1303872e359b265fc2cc0ce50fc772151af",
-    "3d9e2dd2e730045a764a3d182662b2d44d0ec979f5ca271d029cd731b8aa850d",
-    "3e4e9d1905fcb818809be650dde20d3f5d203e0c6cf1181d89008456a4554d7c",
-    "3fc529763cd178755c7a8a4a16d522f89e51cd01e9679df27d3019a31a52a5e6",
-    "40fe9498a2dd0c3cf55523b267a4bace035715e6663443eebef76915d82a4059",
-    "458b38c87252f50ddf51bc334bff8c9964eef0adb45e9506c922286ff77c26d8",
-    "45910c64e9cf01f01551354f785f8760a330360fe127602e854da458309b11c3",
-    "463aa30a0338254028236a0e19d4d566683c3b5b4c5453369f5c61ab11e5163f",
-    "484f97fa5781dd3dbcaffa787ec0702223ee10e5425d82dd758725e2d5074c6e",
-    "4862db7e4b725488f2ebce5bae3ba8b0b805e6ccd8ccb977b9651874d1740f6b",
-    "4920baf573f290788a6c6bddc5eb34a55b7c61b78edda87ef4122586aeb483ef",
-    "499d276bdf6465999681096b2472ee3a34904b5488758859b10cece28c9e9303",
-    "49ba17ebff3e35bc74a29dc480b82ba0c31c85a18b4107578d2e9b3b0995b55c",
-    "4b22eb08f885bed3a047a5bb3142cce7be0ddc9795e50c6e53a3fab079772092",
-    "4d08b8303f8f9224810e09c6ebbc27bd6ce87d1c7af6712a963016a6e35c0aa0",
-    "504d38c904c3c3e48d4a7ffe30e6568ba806a4c47aa177d430a7916bee1159c7",
-    "50d076d32e279065a78c604edd63085e919b0ad9821f6ed5d2f6b81576e58cb5",
-    "53926232bec8b7e83203e7b7fba1024916796b61c77a85c9a0a246969e6a7db6",
-    "5499b0d953acb59a79da6af52cf4baf02dbfbabf2fb415edb665b8f23c57a128",
-    "5561dbe64c9d614687c500be5bdf9df1f6fcd144398eb2e2f02549cbdbea014d",
-    "55f044dce9378b799b32b646e59bc5ae7c27d92e0b31e1d1ba124a13895e85a4",
-    "5aaa4217cb4a6f103ec2fd46a6ff0dc09936c65f926fbca0e01734d4d4bbf7e1",
-    "5ccc0cbc1f0aa69dfb0fade04588e855023b64d608c619421067477dadfe9397",
-    "5f47d9fc09f6876db0d574a6d3cc6664d8233071cae5058474eb616fcb962fed",
-    "621847cd1abe23f3d1edcad1a7f5bb4a2162489d164a2aedc2eb113be209a8db",
-    "6524c32d32cde443fd8b196228a66bebcc056a3540b6016ccbf5c21b875ad7c0",
-    "6567903f2c349b74758f3888ce5043652294b943818360be4fb7b6dc4f2e2f20",
-    "6b16c808eca537ae84080f1e702630f43a76cb8331424ba2f8693f3bcd077aab",
-    "6f004c57464a7e33642d589de33310bc6ac32cbb48324f96295bc709fa063c3c",
-    "6f792a0b0b40b314b16b95000ab582d2e924efde6dfe2f1cbd7548717bf95f96",
-    "710840145b2eacf8a1580c077ea24e98639abe09e0276db4e7f82add32feab33",
-    "71f912608e341877d6654053af89b2add279d5c2438502054019ebf70d3a9e06",
-    "74449c72bd3e1fb004871f284f32cf905554881406beb07cc15c01b1640bd621",
-    "7845a1a6410bba92f8c9e4ab34eead7499aa203bcb5d0ad513a5d3891110eef0",
-    "79a136b8b0f4d00306bf1072c5b9db46ea2a3a112d93e6db1d080bdd6f02f895",
-    "7ac18535eec2e95ea6c67d21ebcb5b9e3a906a73327047f1549d627dcc56a762",
-    "7c6c7396ebcc38d395defb81914b9dd9deed5cfae64035b9662c09d67125c6f9",
+    "002a617536a2c60ba00a1707513e4f78621f3f77eb1461c43385837237aabfdf",
+    "01215aa527a241c371f7bb93603cb99287ab10d5ba20d8fc52cebaff248459dc",
+    "017c5bbc5b18f4f354abc1791004d19ffb831cab72f2eb243de89fff5672fba7",
+    "01f7a3b764bd480671e57046321d842153a876ecfe4a0e411d671b8559cd9c36",
+    "01fa59e6c9701fbabc62fe13caac0ad6a077cb7724c01182b528fb539273bfb5",
+    "039e7c1e16fecc988612f1c8b65eb8c308bc27e2e638e2669384813162f00116",
+    "0720310b2d05da2b93931470e0a252b855a2940c08161dc5f1a4ee3738f595aa",
+    "074ec37b1bdd8a0441fd214077baba66c8744d5507166254fa6ac55638ef731c",
+    "09e0bb1e82e5e54b5339488ed78e4e334bdf1a523afc340507e87802deb27bd3",
+    "0b4a32ae6ab26b3e7aaa97d0e043021dee65624948ceb63f1348211f2cf1a231",
+    "0c24fef63eeb95bdc8456180e3b2d163539cadd15d4aa6057da7eac7dbdd372c",
+    "0ffdae238900f22f568f4fe9cc5894b066a26dd72bed14aca2177616f967e850",
+    "1048f5dfa7ee5f140edb3b278586d9783cfc1bfa18e8aea9b6e034a3cf111f66",
+    "107e701d9e117aa790e141636e277f20a21beccac2d9c2e2511991795d26b13f",
+    "10eff573756c809af0b77dd4f419ca7a2a8ce394c7600da80e23de4b47cdcd90",
+    "12fe4c951dcc8912690f81e3d2f0b4a5c55dd5ce2cfac5758015747ad50b6278",
+    "14936da7e55fd27c292852d6bda3bc9c173ef0ff2dad2f8735a7d71e00bafce2",
+    "14a499f6b15772768086692c7de252452152946694fcf6c6b984b62a156a776e",
+    "1531116df5bb972d59548ea5b90d1384d1eecca620f474dc022af097ea48101d",
+    "155d53e2b3627da5b03b3c8b5d0152f56f9c5da7f2dc9de05de0ddf88f5f9c24",
+    "1604739e17ef5153f837801622b2c6605cfe50fe978257882630d0f2ab414166",
+    "16f5491223bfc2d44da40ec236b49bc51a77f2bdf1344c1ba86c573b7188ab55",
+    "17cd91e580bf4de2d9c731d623172e16ad7686daf093e71147cd2ff880ff5080",
+    "18fc6fd9c7ecd31ba5958069b61f8d10e6963a7329b7088dba80d674948924d2",
+    "19696ab32e1ed8fc5c7cd5c3e6cc244dc0c5dbfa3d1dca03b22ea743bdb3d30b",
+    "19714d0647b51fbb34c7501f1198c11ba2df028682bbfffa863f69614a4f68a1",
+    "19bd0460bcbde0f13a06340e5ba9264517092c1e7f897794da81ec9dc9f2b51b",
+    "1d1c9a09cd85c0fe59f0e802d61aadec53d9f62b26ccae8ebfd78c235b5d4c15",
+    "1e19e8f376a91e15d91dc42097fe61330c588cfc6efa65ea845737eb46128179",
+    "1e559f3ed6e5da8faa488de973caaaf4eb24f5d162f1d25d94841b6631ec6531",
+    "1f3a4af0aa671e706c82098ce04ecb76cf18b9cffe287064097b03389411e5f0",
+    "1f408efcc77fb0242d4dc2391b78cce42b5542b9518a391f225c73074ff033df",
+    "20e9d714bc92f3e5916a881c4808442d5a1a63fe42177e0b7aadae534ae1b154",
+    "216ca2b19188286283e91031b8eec780cd6ae6db8c862ae0836dc459d69004f2",
+    "24fd7f834b680fa3dc2bc340f3ff67c87bd0ff9e014f70bef5e9f7920620cf4a",
+    "2593ecd9845ec138c8da42a83dc62e7b9f763ab2b5cb95c141159508e1885b23",
+    "2723dae7ee16569bb6560b135140b1b763297dc8de82fc684ee670698f2692cf",
+    "286151774ebffaa7ef2822d6ad4abf37dc14f896ecbbecdc5404e761511c50e8",
+    "2adf50dea601736739109849054daed7ae4e39687bf25405394f33d9a2cfa6d6",
+    "2b6e25059bfba0bf943c80f26d9ee02d19789594bcb5cd78e6599b7da5d2055d",
+    "2bd9d8a71572e13b2ed1c5a4eb63e5e34f28ed2138aa3bdf797b895b2cede1a8",
+    "2cb3ce95d0e9e09d817aef68e73643750babef0ed76d28f3d56f146ceca24874",
+    "2cdbe02211930d5c3d7b569089aad430f5225143105b3757a0d26dc0914aef12",
+    "2ce2e62fad5fa3e5ef06b3ea93970c37eaffd7a1e9c9d19e79e6811aa53a2439",
+    "2db5a340d85341bd0a7faeda20ef0d3718aad334c09d05400fbe3a05255e9d8c",
+    "31caeb252a6c5c2fc2f7907ce73ad7b11feb36d1d3583bbc0c262960fbcc6a4b",
+    "33d5722aeacf8e21a0e30817938f69ae9348347d4bccd63bf5bfc83f7492537b",
+    "34278b9e9bd9af9ccae1a664b88b17834148ed7831ecbc0b59f102974cb73f66",
+    "36710c1c81f2e8ecc0ecbd37011a9b1774d98c0e71f1fa321dce69b1501c5440",
+    "389f35aeb5b481cd9d3b55eef79c92dc1457d6112ee039d7d5e94622ed17ba52",
+    "38ae5317f92f560cd3c9505bfd77f4c6de9171d2ff8ea825b8b7a0100c51e3bc",
+    "3b82ce6d36ef0c8d2d03065973f13bb9a060c77d868620ba2497eb7caa3d48aa",
+    "3d23d488393fc6760d382493e081c13903d034fad6f5108938e14b74107ca941",
+    "3fea354b127923c96ff6c301e6e9a77991b1fc41a84e7ac6069a0c8f90da45b9",
+    "42c0c6b617bb0cd13d88a3cac32534b10c7b5f2cfe64d15330b71f150474a07d",
+    "43e99d44c7829129bd4a8188eb1bc413f01dd66e1a0b954d6ac3f82c75d96dc0",
+    "4457e520664bce67eeea930b18e5860a1f55322fb3ed02c776aca10a6d987d29",
+    "4478974f0174a2629702f15cd00f27d6bb26b0f2ad2e3b37b2e77e6766ba5dc1",
+    "447984ddb01f23154023502adb7d562b85fc4195d85d5d499b2781b8a454a05d",
+    "45c5ffc68b69cb4f779284b281fbfb9186b81d7ffd3073876d8acfa5a27fc42d",
+    "4748db0cf539e1b64bf52e44dd0b5c328beea772381d5fadbfab0c315448a30d",
+    "482efdb624cd7914c082304207472c605245b77a2e4d28f88a715267461ba58e",
+    "4917f0142ec5c1f8b752010dbc5b6ba4b9591f1c8284cde9954b11e6d4623f4b",
+    "4a184a712ffbcca400b6bd54c437eb486c037bb44ba32597812e738cd8ba01a7",
+    "4b92472d13fe69afbdce2517d7d695cecd52b8c76794258aac66278ffdadcaf3",
+    "4bd161e2cbbb8548ac1d40aec3bb7ecceb9598c0805c17d48cf44017ae14d79b",
+    "4bd702c3498cb78a2417e0e5a5a3ec620c5fef8c8b64246e0689a3bfb0ed45ba",
+    "4c0d9990c7f9bbbbc051cfebed816c9d3e38abf7f832b3d587276e7562d7ee3c",
+    "50069e87b2744628108d4ecb74114a7ed9b573ebfbe51f230e77d59d02ed2e1c",
+    "504b7cba2e535bd071d78cc56d0b6492b2c028836daabe3b1f5c626ac4ef2cb7",
+    "506f15d5fe2efd8045b6d8ca899f678794592bc55e117764ae501d9322eb6d53",
+    "50840e9c8213514e861bc22d6c51e749849c684fffbb367106153018a31c0fa4",
+    "51042cb52f874a252defa88214d6ae5d352dd1c74acdbce3d139bb723619d90e",
+    "51f32671e8726474bb52833d2a4f12fbd25b9f3831f3abd6d5c3264ac53a90e5",
+    "538c0c4ff9d573a103b9d7d7d95c4bdeacc6d760d07b92ce60f4ad206fd8f039",
+    "53c35a837d80d5c3dac665b7a5f775e761403f018ff2f80c767a12996f62f1c7",
+    "55b3e4f9c4b371e35f8e6b3da3397f53b1ac611bf0c7951cd6fd3c9f57a4c106",
+    "581e37f0334069b8ccb1d0c299568c1aa0a18dba10888e81b473f7f860e9129d",
+    "586de65bc2f90f9bc60c24edb2db6ff75fcb1e960785d19b4c5fdbd6d8373814",
+    "5883bbafa978db9c26869dbbc86980be56a1f489b89ab32616ad77896901b0b9",
+    "591b62de535f156f1498287265b472d1ba7be1ff0668a0d2037835db4630f0bf",
+    "598c044831770d1dd4e7d183ba4268465d128a5b7b993a8339f4dd4eb9441afe",
+    "5b90730c50f85e97874a7d59de9b1a4ce17d16ecb4eeedad2be3285a5da6501c",
+    "5be2fbef0a29eaeead4920b318ac1063516c29e1eed6720d4cf37a0be0bea2e0",
+    "5fec667a7c344b4a28c226b76cfcd23fb090b2e0f1a0c3adbc68b93ed20011f6",
+    "6021d26a947ce132ba946b2c9b731ea07270e0bc0de17dfc22de60005f2db69a",
+    "6028e48905dbdb16ba0d6822c1decff9f796cf27ea0b8bd0cc3a992d833119e6",
+    "63d7a8a4598180ad7d796e76673d85004b54ca182e8740e760afacda6fec8a6c",
+    "63e75a344c9a7bffd0229ba9c82ee81c4e3691c2a85142b70291189beef1b87c",
+    "64bee7435e5d22ab5aa6de997bf446385e6e92abe275b36bad3aca7b6faaf04d",
+    "6558c2aafc7d59525f34afc64190d1c0a86f9f759933d3e0dcdc5e273718be9b",
+    "66941e0675f1bd45822a70fb3ba3fdabc5329513b6b8808f81755e371764ef9b",
+    "68cd38904d3b1c35eba45b064b8f41053a703cf58f3b9323fb46c761a070b49a",
+    "6d2c847823f7299970a944752a9295cb31eacaa5ab7801aecc88b838386023f4",
+    "6dff60828b007e790f978981c776fa222c269b9ed3677d3933b2ba302b61638d",
+    "6e8576e720d6b1ae6ff3929446ce50de375da09355a9e0042ac320f130829159",
+    "6f6ab854802188c00ed747ff6737c3d7dfc6a3b98845b07630f4b59514e4758b",
+    "6f9803e8815d60d4b388833e279ebdc64d88a025ad90fd3ddef5926e078e743c",
+    "70571c8f6c8993f6ef03ed19c04f054dfaac77042143a0e14c624666524a423d",
+    "71a17a8d30017a6cad4c2eb5de2a80e3a4698cb6483b075c6ebb8bf78a4ffd6c",
+    "739c160b29581681635276c006ef48b77300b9d662b2598f8de4f47f06a549d0",
+    "758eadb92250d905ada2d153ca9e33af35756005f816c03429180238d204e2c3",
+    "75bfeb03fb1ed2bed29703e13689fa3a0dbb794644a567c3fdc5e5f3838560cd",
+    "79d5e10cd8236fea7a709ac04ec1814c572148da8a8b923ea047695c427e40ff",
+    "79f5a5cb64f91f63bc4bc945922a46fdeb5dadc9aa48204dda62175e60820c55",
+    "7ad3eef415473bb9b0df17cc57a7486522ebd81411a95aac599b90cab016b92e",
+    "7b5818233db13f2c70914ee0b2f7115d054dbb8ca234d10b95c48d74de603e15",
+    "7bd7385bcfce643acca516117a3481cbfb3b6d96bd1177ce8a50376d2dd7f038",
+    "7c8a6fae2469c11628fbebc5184fd7b0ed90442b1ad7ad24c26ecaa928b2edd3",
+    "7c8d925bb66ad7495d52d24b4e70eebcf94353040a11fff44bbde907c005b8d0",
+    "7cf043ada423bd7a84f4bdd762b91fa9ec72ba82f010dd53668f74ec46705d38",
+    "7d0bb3b569fdfc8586af5afe81480b0bebf0ac40c6d6e367c6c61efbcc3517ec",
+    "7de9dafd411465baf020ed45a0e356550d03f583f236c5f0f3b0b757fc6a6b29",
     "7e6ff6f07c0e14d0bbe7d99aeadf403c56c82c8344661bed1ca806da4cc39962",
-    "7ec5f3322e8be4527f913469bb0d9a9915833a88af213a6b538cc54b988d88b3",
-    "825d1e6c569f4204fcbcfba14ee0a82ad8df1eb0f0c568f604d001cf1a4be115",
-    "82ec7164de2006a14b3f4af9b8ed62a39b23490e6fedd13fb6e2a64a9ddb54b0",
-    "83d27bee229f6a19cf42cb4ec8d116dba63b016e4aebeea62336ae72d1a3fb0f",
-    "8681e7351ba8d68657c11e712fb3e63afdff645bcfef7161e732c4422c2409bb",
-    "86a55e85e70917ecf85376793fc626cc14d484a1a2d85bdf6f3e60f965f9b5d5",
-    "886dec73a5cbb3aa1c0f837ce4c93d4712b56cbd7f14bf27ee9d01f90822936f",
-    "88ca0ac45cf2b77800ee9b81d536f847326e1a9a6df39fe3483c1ef00319ad8c",
-    "896e461af7798d303ccc4db726e1ecdca0da792d810946939bfb9481d5677c46",
-    "8a06fbf8a4707768dd4448ef3d4031f2898a416bb3618b4fc60c4abdaa44c22b",
-    "8d00bc49ac811c60ec5d871078a0b52ba77422ce72dd6a92765043e92d4c9be1",
-    "9019e14e21a1bd2dc12ad4c513433acd74ae26df8d0012ffd995223a10571068",
-    "913ba82ab3b1bced8359e8d13b5db30641583b88a266879a277b75f77c23af16",
-    "91b4e2b41f75d875712645f7abd5b1f9d6c9dbcecce61322f7b60589405144ef",
+    "7eef5d07485080ce600ac8ee6bf73dd1155d355bb3b194dc0c267bd3d6e85212",
+    "7f4130af67873591faa66091bb50f17171af718e53b3e71a7eeaa6bb127a8a69",
+    "7f8cac04896afc58d51ba5fb448147b2f9e762322629c0f2f7fbd3d551480815",
+    "80e86a3a33a82de95718a70af81ccc44f795a14063abd63122a866fa03ac5489",
+    "817b4846dce80c695c65e4c401e9068ae0dc3d3302d1efb25093670d62a017e5",
+    "82896ced4df65586ddea33ec2ffb859f861df73c89235a1025f937090d9a6450",
+    "84fb2a6abb3351ed75b3432710674e1db077a09d71eaffc6538871aca748e3ed",
+    "85130a7c624f50ed9fa69fe77fca3f2177c69e947c514f773904cf8c47315fa5",
+    "87a84f7b632bdc7ba31509cc3b40bbb9cb805b4a3ed92fc4220b810308fcbbae",
+    "880436ec5004c3c221d6892f02cfadda296243b5e59fa99fe0d8672ccd504474",
+    "8960d9d2d8d9d9d65964dbfd1188e2a4192dcd6105c01c244b5997535b4e6320",
+    "8a48366a4f7bac116e920635bd87fbe741004f0100657d5991e87c39f265f91e",
+    "8c24a12bf1d37d6435062fa13214de37a51515d20fd5166fbdb2ea798c37f145",
+    "8eed1313e560da32520889835c9df6885eff951082513f0c594f7aaab6d67f9e",
+    "907deae55fc54f3f859aa715bbfa7b30ef864ee7d2cb3e45d172261bd45b6fab",
+    "91b96a80d24f6ec9441128f973676865e44a029c7b816728a8bd4f41ed43f2d6",
+    "9399a80e59d86674fc6ba3afd991cdb640e8be9c1e47fe61efcd2f2887dbb0b4",
     "93e14f3eb4d5cb1b3f0e01f1efb9791132f74eed7f3992a36e7c090de8dd8e1a",
-    "94d10282768d20c6a91ff74385ad5f0a8f9c326557713dd4e581bfcffd5f9971",
-    "9913fd7f430232cb52ae5707d972e9232ef0f6c5ae04c653bc15ed7f5835f462",
-    "99cff685a8ec1c4e7c9a9e1e087513b1a5d593e1ce9c25f9e6c7cc6115c1ff13",
-    "99d0ba5b430d94dc6d2e7bef3384ca137ff2f6a9c53eb7afc72a76673c02a92b",
-    "9a84a4e7e925480d69edfbc130c464d576638afe1a2969f9f1875a0776d71c50",
-    "9c17922ff09bb689c0b5696a41f9212331df6c2aa2f73a27fcbde8a761a64de5",
-    "9f426b92aea2d9156fc66a90d4f9558fb8fbe329bcd26c8e5aba59109df2c556",
-    "9f6a9415677b3646f7112db27c360c175631caa27fbbb5c53b3709634714ec3a",
-    "a21094d540ec724ad0d37d91c3e664cc1ba0adaf18debc7e14d9ba35e5807182",
-    "a2e39ded93fc94a02cbe83aff4395fe37dddcddc88f15ebad2fc03bd51252228",
-    "a54dfe817000898c7825647405e4438f875d9d6b7b55d3ae35a21b27acaf3821",
-    "a85fdadd0a607cac90d93549124947e2832db3e0b1b91594f7fa068fa77104f4",
-    "a971617b5dda46d2a291ba676f99fc6e4a181f17579389bd06a8366d371d62b3",
-    "aa7c8fa13df9a5278e9db042569263acdf12a52d215a5f8a5d3a9ff2fd92a874",
-    "ab869382f564e5983fa0822ada58071299c50aa89ec20dec3d25c82778e78beb",
-    "ac7c20faa45d9c2d4d2f0497696056cb604a0735afb1ea3d365c104a617f0a06",
-    "ae2e0e27cd748ec51f4058746f1401581a4f6dc6a9f2e53b30499692f65a59fd",
-    "ae3eb351f582fa8bc4fc8e4b39312b2096512832b2b47f29c8870bb44f8b5dc4",
-    "ae5474ec262ee6f54d906ac936fdf6dd83eccf62c5a5ee65049b4dd30c570e01",
-    "ae65f29ebf242fa460a9ac22e1c1a9da2e5c557979177806a6e0c42f8518936a",
-    "aefd74c8e2fb9e72d44684a0ef677ba5aa20e3b81cf2af1bd06ecdcb4075bb29",
-    "b4b8a36a0f247754b73a1a14ad56b61e2b4504f34a0c420488cd98277b8c2a5f",
-    "b6c2990316c3ef2db6e88bc61a1e302129e1e40d338c1a0060ca3d7af2ae8be0",
-    "b77c19cfce4f396e024eefe63d44a9ff5e5f180a3b24210afab1fce16996ef89",
-    "b7918d12a766ff759ad7a0d2e7be3409fc095c285ceb612f4c329188d42280fd",
-    "b798a39d1295e353d168bba4f6406e8425a4bb7ea612854d663794f8cbafcaa7",
-    "b92f688f62b42988f29ae9c832f98a7d866017c0402ae2f1ae8b574fc01c02c5",
-    "b98bf410cc2d6c93a3c326a9c31c471ae80d7c6256e7efa15a59739d7db6f2d0",
-    "bdb6f33f96493f4383c85ee3ddc2ce95dd23b832e4a441ab3bdd59b348443269",
-    "c24cf179322591e21048e1b968ca8f14bd949079d1aa1ba71cdd196d2ac40aa8",
-    "c517812250e52862ecad4d698eafdd1c46700d2241565a6c9012c028ed541aa2",
-    "c5adf856ef64d70b44bfb5173a5b3f553ac7b116f6469d6583620acaa7bc0f37",
-    "c5eb66b9217a19c9a884987e04545cc35914d32bf9c61ddc2b6efff3f1abb370",
-    "c80326237d05805f5a13b404fb4bc572be1edf20c5fe8147ff75f2264a5fe9ef",
-    "c8a2d224b1cebff1ea90c977dc414baee90e04c8e19b797546a8a496a19fb466",
-    "c9394021ef2f523ac6d13bd159d3e61a21704a64b8fd85ae51f882a64d7b5241",
-    "c96467ee744a9fa32f2544d28e008faf4062cdce21f6c3e943861e5afe08acbf",
-    "ca1f7b03823b59da574a9227ba15669e714580fea578cf07d77393363670f795",
-    "ca512769ed5958a6f77adc73cf70897d292b2ed8c53143222655a4443932ccbf",
-    "cb710123b8f2c30a2f72c7eaa823a4d69e6c495c93620494c22aa351ad08b5cf",
-    "cd4f874784fc58812eb58de8c62c5aa5167ab792d42607bc00654fcccb0d6f51",
-    "d208043b84b7cc493f5c592ce3cc0b9d52d76472908f406e5d50b4c1ff3fa40f",
-    "d21637d5dd98e7634bb17082e54ae4594c762f6691a1f93aefffa6b230140ab1",
-    "d37a45100a5707bf674a1188db974fcc97542fdb216b71b8a247f1130a106f7b",
-    "d5626f7a6c82e19263b2dbda3a0c498d8a5ee33382145c79d717c270554a7750",
-    "d838e8470b16c3615004ce64a979d138b5786f6a157561cfa7b9af8db2412480",
-    "d86bbc75567eb3304423ce04a393276dc44cd5fd1d071326ee3610e39536bc26",
-    "d8c3e6dfe73f8739395d4004d985da4420b6c4d68dd34b569ef3ec4ec57bce0b",
-    "d8f2a50334b167a6efd40af797ce088ce6f6258aa94a7a234b6021498b04dcbd",
-    "dbd4129fdfeb67e5ee260130c7a1138f1c5cc75b84c3a824dbbccacbcc59edda",
-    "dbee80dfa38eeabc396e4df2288ac2e37401584b09f05f8fc35672a3f4ffdd36",
-    "ddf2cb3dd08c39cfc7c8b62eb3a3d562d4ce4ae79fa07f1abb5980a389916df9",
-    "de10bbb5a95f3f0ba7cde148a1257054420c6e78ab30ba6288ea9e2e1fab11f2",
-    "e4a272b9765987a1084dd34cfaaf48346cf7bbf6e964b7f609a83e7cf2dec4c0",
-    "ea611c89a91af677712eba58c3cd424a85d4fa3f3fca991d15aaeeacdf0c448b",
-    "ecef374c329f059f26776cf06a65d30126542ebecd8e82892f27a071530a9587",
-    "ef99a798793d9c5cfb96b799f66e83a2c6b227f15b7d3503b5f76a7960248e74",
-    "f2a5c8d3abe30dab5ca608226478dbe43d9b9a10ee1369bf7cf7641705e6b285",
-    "f3aee12b05617cd7b5864d967d1fb5f887f86e775b9d76f2a6b9468c25746a62",
-    "f41aad6729fd3b9b3748fcb173c70701c1fbb107ecb678d5351bf95e7a8bed55",
-    "f41c6ca4552b96c3cc179c5ad94c08bd584ba7e36130e2b9d0cc9aa365ded912",
-    "f7aeacdac13738c577078e1538ad70c1d237395ae54dca7cdd7d16e8a117cf91",
-    "f844c6eae5360faa2e384fe3e750ea9acf0f6b5ec685f6aa20b1f55024b364f6",
-    "f96268a07d845303793c77eb4b7a0604056b202e0cbb6ccea907772f34d3c5d3",
-    "fa9eb83a1cd22d9ba18ad0a68e2fa58fc97945f9592c447f06a0eb482aef5a43",
-    "faabaf4d3ccb2f5914a1e3423dccdbca851fe8446bcbf49a2ca616ce60370310",
-    "fbb963b59546243354ee5508a12c65b6f843c0d56b9cce59197a628902737b40",
-    "fd20bf0c99e757eea2a037e2626e27c84a2bd2a72e2ddde0d34c8d09d3fb08ad"
+    "952de35827fd98402d881680f82aa1f36f43489489ee41e55944089362895d2e",
+    "97378d3ef58e535f1911f6a5f64de161d6cd9cc7478924dd31c0c396368c945f",
+    "97e7c5bc69d01c7361fa06edd487b1cc76964005148dcd064723f796d6cb0832",
+    "9997150703bd082f2a5b697843bae0047c28a76a37a31fe5440b13ca42006c61",
+    "9c315bdf2abd8c80b587279e181e22569be2eec11a5b1b4f2a42a0e03b2f95ca",
+    "9ce173267a0efbc2b51ff8071c95b2c18fdb8d72f32d51dcf18c4a1d72d5195c",
+    "9ebe62f0c12992f4b506842e428c2adf401055668644256be05bf382aee83f04",
+    "a2383d7c1812991f164ca3ae686a52fae96fd1033cbda99bb536caffee2ee0b2",
+    "a24c8fa00d6756b80ddde160f0daaa6e7b50a5e034872e9cfba714b8949bc1ce",
+    "a3a10a0092df8c3a6e19739b18233901b16a0e125494161467582ba40b5f9921",
+    "a3aaf880ee678d7def06f4422526c606838fa326c146f71445ee7bf8cbffa07a",
+    "a445e3170a24b8aca7fb87ee749f5e7481bf6f604ac74c96d995a92c4cd5fa2f",
+    "a495f070d00c273489ab2f1b5ca783f9b50de5dd900391daac797d843d6b8a5f",
+    "a5cdde5a729a497f00a2f92ed1a116620833a3831a63bb6b438c3420ba9012c1",
+    "a884ce6a611ec586f952596429ab4130464db523a38b059e497222ff53e0eacd",
+    "a914108e198fb82313e3a546407458c0c972aad57d553ad4b54149777b3a696c",
+    "a981b405149fcff17beeb77a65b519903f3aa8c3a0a0ada75e9877dc96a0c1a9",
+    "a9ca2551ae042c92d8eb7fa635e63e4dc61506b25226785573772a04a8478aa7",
+    "acaf1691c140deedcf25b45f82d13117e0ee997f6429b0757acae66362b488bf",
+    "aec3914fc62ebf35f2877cfc1bce2e86ac5c29df5049ee5cbedf8c9026fc09a2",
+    "af5d2f45e62bbfa480de6ec017606ae3168cc853299f83e6c363c9d0e1171c5f",
+    "b124745a59e7e1febf7d9ebff86ea13d1f988f0e6a73ee9c81e3fee46a563aa4",
+    "b3bca5daa695d2a9405c88628c1ec43fb3357a3aec3debcf8a7dc72e28ce7692",
+    "b55392710bb67a312ae5b553e0bd517752964118a2e69e48ae0337b0b287fa18",
+    "b5a5c18efcc6ea787d8cf1011ffab6bcb7eb66e2b82ba6744214a58eb79489bc",
+    "b5f45b9a3049d1531c84dd28740f0c10388f3de968c87a4b5bf374b201f4201b",
+    "b6522582eed33b19c552e5a608813298d63029165ff88bb45225b3b62645b5fc",
+    "b8c9f38bebf5ea84d573487c1f1268d5b537be802e251916422f89ad53084c86",
+    "b98564605149023a17a481b284187383514a5b4df9f4fb7eb9af4ae38d5bc8be",
+    "bb40aa474dfc10d1f76d7314df1a1ff4f8cc02049453a0fdd0f334a56dbddc36",
+    "bb7595207a2d13bdd1dd81115cfc0bac3624ad706c37a85aebf25615ab2eb69e",
+    "bccccae9ed0b64a5bf5c68341d8244d78298f02c4e9e914a3ed2b469e0e221d0",
+    "bdde942865101cbdd9f65061c585fee55480f71d488d4c824cf2c3ad54f783fd",
+    "be0722c8f2e9f25d3a9628277183debb2adc3bc52e1fa422da952656f01ed1e0",
+    "bfb2000b6da01dafbeadd38963ca70c8cd06606098a560184bb2f7af2f03bc4e",
+    "c111cacecc0c019ef2c492a75aeeddd0e5542de8a8322ba7877d20e6cabe87e4",
+    "c25196c79b2d644f3412a8f4640ddbbe082bd17a50f6ff7993601256c7add474",
+    "c31d642df3d1a0b2f1bb84439019113a4f578096e58c87a101d72bc99b32fb42",
+    "c55e6fae86cc93236fe0b0a37c42eff6a1b41d3cec20b5792622eb90cca6a8cf",
+    "c593be26681853c2480e86e2655f4982df70d079f4899532f29037b9995207a4",
+    "c5cfa64befc362b12a1be1910f1bfbac1a57d7c741c143acc55b9c4b6efc5912",
+    "c655d40421ca554954e183bd0974c06adbfe5f27cb774b3536ecbc2948c48b7c",
+    "c6707e59f0ade4d9449114c67879ebedfea0c4c9e8106218a0c5c84c645fcc0f",
+    "c6a2219b0995b0f3bca7d576960201d52cc5a188e570707631b8d2754ea52559",
+    "c8839a460bde2f61e8e1a800cc5c86c7ba88356911f2a3d99f9c658a7f748b3f",
+    "c9213963d8e6abe9372c87cf30573ca69a06b73d899d8f9795b0e771e3b9f26a",
+    "c9e5699307fd4f0e0647be045c54a18e5aea4fec1c9b53956334dad3060988c0",
+    "cb5fa7059000fab4520a070ce669cf674a20f17fec448cf8e71785ffb115cebb",
+    "cf7387338e4431a039d304377927c843572f28d5133e305f607899e98db0702d",
+    "d0fe0a9d0d923a6ec636566f04de966c2c7df2165a6559553707b7aa5a9b5dfb",
+    "d15e322163cbafcf500b9c90633f0ee88cf707238ca82219e26844374fc9fa6b",
+    "d296fd9c3329cd8f852cb6cbd6ad3e9974d2f7d79a040ca87c546dcb3a040c29",
+    "d40fb10a0bbf41bd21b7f51861e06e6c68961131b449d186f46042977761d74b",
+    "d56f97d8d9d8cbd27f4908e130f5091c5a26d0e5aa27cb25df9c76fc7388a328",
+    "d5a9c66afe3987caa94e0e0373f48e8d36201ab968aa5942c52c7d894cc8452b",
+    "d5e7eff56f0000ae4480b2d9d8875ba633d23e4a4062da54dcf769495d1d54f3",
+    "d701a1d0ab1b838c5f09e8cc55076865e27ddcf734078529764e805235a96997",
+    "d7eebdf148843eafe8cbd11caa29c11aefe2cc2f372f835498c7003c9479e1d1",
+    "d89af38f10cde6c37f229a53d78231fd208385e43a14e4e6d6007462513d2a19",
+    "da15964994b440fd4bcfc204a46ebe754509ae6624f6639a1943e59c093c205e",
+    "da4769e49a78dd5421ce183ef7c60d8fc9610893196004fe59b36fbf05790483",
+    "dbd4555e0ca0619973506140d61233d6f2912d571a2139c8d94247fd19a07555",
+    "dcc59a91d7140f29466551412a7af05e1e61cfb5e0b7d12a3ff302ccc5cc6880",
+    "de46e6b8b4a948f62df9790fb6e9ddb88b23e5fd1c11c659c287fccc8de0e044",
+    "dfe474e5fe9ff22a4d9431bc7e111d47d0f1c39b69f67b35a50468027c2dd7ac",
+    "e0d85937042f4003eb3e5ccff0a56b2a5decaedc1e328e619a5e10c62f1d3e59",
+    "e1bf7a89dbd61f5c658658afa9e1fc21611f7873b4f366f4dbe29d1d32d1c655",
+    "e1f0b9877bebf7fe010b92dd31038eae504827c6a431bbdc2103e3e116178150",
+    "e214bd765162cf41603ebb70dafc3b9e26882131960445b0ef514bf36da862ac",
+    "e26cc12fa50ff9c4354ac75f879730bbbdeecd885f1925e110366c630d965d2e",
+    "e2b46133f6f9fc89228bc95f5900993805a535cffc4b2f42483a4792357b67ac",
+    "e2fd28215825d29b367fd5065a22ea641baf950496521e4df6b523873555788a",
+    "e3af1ce5ccbc2be39d31da16b43f0e483ef0b12df7fb336100dd091b4a3a5733",
+    "e49081ac8ee86e00578f7d7fe230a5a9c95b614033328c96aa242fb6f68cc842",
+    "e4be90e7fd36ace4ef89a59cb4d6b6b5389650717e7c2671fd06a0cca05c2678",
+    "e5086bb8f3ca945535d4186d58beaf47f5f544f38c646eef0e6110f4f4be8531",
+    "e9661580ae8e0d6bce79a7bd7a43de93b1c26402aa52b1573cdbd900bf9255f2",
+    "eaead6bfae53802b873b98678b1d511668a0334458dc5b3448b019bcd6ce15e3",
+    "ebc0811e017152053867765982279f5daeffc4c650969d00a8ddbf711284cc48",
+    "f0e519ff66e2546ecaf50f9296f8d1d6d204de3debf9240e51f08b72dfe6dab7",
+    "f18f850393953f2b628347367cc770bf451b34b75e6ad78a35b1417456ccd30b",
+    "f24102073c7c8e09f3d72f64d0dac836140044d3dd863f955d0f4cf360a6e346",
+    "f4015f0e5fae82b79aba84cde7e632abaf4074c665ae898f4ecc71b324176f80",
+    "f53264103e835503cce6bcc17cf9e7243a23ae550f4430a7a099a6dc74f5b0e9",
+    "f76384007343a0e02266733115b531813a9581b594403f22626339a74bb87950",
+    "f9045cec8f6dd9ed111b5aa7ccd51dd133b2ef793b629a74e4b34f4575898a17",
+    "f93610b467bf1c0c049dccd3263d74649ecb39b306d17890a576a8a8bbe5da66",
+    "f9c710ce618277726ea81a9c35a0d096d606bfd77f3fc7d1d92115e8f31312b0",
+    "fceaffafe4b0e233e7d8c42c0fc339709d2ac24491204cbdff180712d9c9e692",
+    "fcedded26045ffe4cb9eda267edfb2d5c00a564f2f722b117a0f195638f6a76c",
+    "fd2146879de8866b7c68888ddbd58d4a85004ccd6511ee115dae85b7c2766cae",
+    "fd8bcfc620ab6efff7c32b90980b86053ebc4659c6d4de302403f008e439bdb8",
+    "fe1f24e48b5175305b7d0e591f4cef79187b36fd296c995a2a1fc34991e47339",
+    "fee65ad62fa54f215c489735d40fd28a88f86ed150405f64eb327a70060ad575",
+    "ffe0b5ac6f468982cf46a1174b770703023bd6bb96a8a2894428dd199cb43a27"
   ],
   "items": [
+    {
+      "id": "rss:www.coindesk.com_arc_outboundfeeds_rss_:18077e4da36ddfb4",
+      "source_type": "rss",
+      "title": "How a bug in Coldcard’s code went unnoticed for years, leading to $100 million in hacked funds",
+      "url": "https://www.coindesk.com/tech/2026/08/17/how-a-bug-in-coldcard-s-code-went-unnoticed-for-years-leading-to-usd100-million-in-hacked-funds",
+      "content": null,
+      "author": "Francisco Rodrigues",
+      "published_at": "2026-08-17T13:57:11Z",
+      "fetched_at": "2026-08-17T16:56:34.745054Z",
+      "metadata": {
+        "feed_name": "CoinDesk",
+        "category": "crypto-protocols",
+        "merged_sources": [
+          "CoinDesk"
+        ],
+        "title_en": "Coldcard Firmware Bug Goes Unnoticed for Years, Enabling ~$100M Bitcoin Theft",
+        "detailed_summary_en": "A long-dormant bug in Coldcard's firmware, present since version 4.0.1 released in March 2021, led to the theft of roughly $100 million in Bitcoin on July 30, 2026. Galaxy Research tied the sweep to weak randomness in seed generation, and independent analysts later put losses as high as $116 million. Coldcard is one of the most trusted Bitcoin-only hardware wallets, yet a years-long flaw in its key-generation path validates the industry's 'don't trust, verify' maxim—as Foundation CEO Zach Herbert put it, reputation is not a security model. The incident may push users to demand stronger verification of hardware wallets and to reassess self-custody risks. The bug affected only some devices, causing generated seed phrases to have far weaker entropy than intended, and the coins swept by the attacker spanned 2021 to 2026. On July 30, about 1,196 addresses were drained in 41 minutes, taking 1,082.65 BTC; Coinkite's CEO initially denied a wallet-wide vulnerability, and attacks were reported to still be ongoing.",
+        "background_en": "A hardware wallet is a small physical device that stores cryptocurrency private keys offline. Coldcard is a Bitcoin-only hardware wallet made by Canadian firm Coinkite, designed to keep keys off internet-connected computers. The exploit traces to firmware 4.0.1's random-number handling, meaning devices using that code could generate weak, predictable seed phrases for years, contradicting the community's 'don't trust, verify' ideal.",
+        "community_discussion_en": "Reddit commenters were skeptical of Coinkite's denial, with one user outlining a supply-chain scenario in which a factory worker could pocket a wallet, record its seed, and later drain users who did not add a passphrase. The discussion reflected broader concern that the bug may be wider than initially disclosed and that users should add extra entropy or passphrases.",
+        "market_impact_en": "The theft is concentrated in Bitcoin and self-custody hardware wallets, so the transmission channel is user trust and perceived custody risk rather than exchange liquidity. If confidence in Coldcard erodes, some holders may shift to competing wallets, multisig setups, or custodial services, but the net effect on Bitcoin's price is not predetermined.",
+        "title_zh": "Coldcard固件漏洞多年未察觉，导致约1亿美元比特币被盗",
+        "detailed_summary_zh": "Coldcard固件中一个长期潜伏的漏洞（自2021年3月发布的4.0.1版本起存在）导致2026年7月30日约1亿美元比特币被盗。Galaxy Research将此次大规模转走与种子生成随机性不足联系起来，独立分析机构此后估计损失高达1.16亿美元。 Coldcard是最受信赖的比特币专用硬件钱包之一，但其密钥生成路径存在长达数年的漏洞，正好印证了行业“不要信任，要验证”的格言——正如Foundation首席执行官Zach Herbert所说，声誉并不是安全模型。该事件可能促使用户对硬件钱包提出更强验证要求，并重新评估自托管风险。 该漏洞仅影响部分设备，导致生成的助记词随机熵远低于预期；被攻击者扫走的币的持有时间从2021年到2026年不等。7月30日，约1196个地址在41分钟内被转空，共损失1082.65枚比特币；Coinkite首席执行官最初否认存在普遍的钱包漏洞，且报道称攻击仍在持续。",
+        "background_zh": "硬件钱包是一种离线保存加密货币私钥的小型物理设备。Coldcard是加拿大公司Coinkite推出的比特币专用硬件钱包，旨在让私钥远离联网电脑。此次攻击可追溯至固件4.0.1的随机数处理问题，意味着使用该版本代码的设备可能在多年内生成可预测的弱助记词，与社区“不要信任，要验证”的理念相悖。",
+        "community_discussion_zh": "Reddit用户对Coinkite的否认表示怀疑，有人描述了一种供应链场景：工厂工人可偷偷拿走一台钱包、记录其种子，再在用户未设置额外口令的情况下盗走资金。讨论反映出更广泛的担忧，即漏洞可能比最初披露的更严重，用户应添加额外熵或口令。",
+        "market_impact_zh": "此次盗窃主要集中于比特币和自托管硬件钱包，因此传导渠道是用户信任与托管风险感知，而非交易所流动性。如果对Coldcard的信心减弱，部分持有者可能会转向竞争品牌、多签方案或托管服务，但对比特币价格的净影响并非预先注定。",
+        "sources": [
+          {
+            "url": "https://thehackernews.com/2026/08/coldcard-hardware-wallet-flaw-linked-to.html",
+            "title": "Coldcard Hardware Wallet Flaw Linked to $70 Million Bitcoin Theft in 41 Minutes"
+          },
+          {
+            "url": "https://www.trmlabs.com/resources/blog/the-largest-hardware-wallet-exploit-of-2026-inside-the-usd-116-million-coldcard-hack",
+            "title": "The Largest Hardware Wallet Exploit of 2026: Inside the USD 116 Million Coldcard Hack | TRM Labs"
+          },
+          {
+            "url": "https://www.coindesk.com/tech/2026/07/31/major-bitcoin-wallet-flaw-drains-594-btc-in-25-minute-sweep",
+            "title": "Major bitcoin wallet flaw drains 594 BTC in 25-minute sweep"
+          }
+        ],
+        "thread_id": "ta91361cd5f",
+        "thread_day": 3
+      },
+      "ai_score": 9.0,
+      "ai_reason": null,
+      "ai_summary": "A bug in Coldcard's code that went unnoticed for years led to approximately $100 million in stolen funds, underscoring the importance of verifying security claims.",
+      "ai_tags": []
+    },
+    {
+      "id": "rss:decrypt.co_feed:4fc0b3e035bd4e42",
+      "source_type": "rss",
+      "title": "Treasury Proposes Rules Defining Who Can Legally Sell Stablecoins in US",
+      "url": "https://decrypt.co/375817/treasury-rules-sell-stablecoins-us",
+      "content": null,
+      "author": "Jason Nelson",
+      "published_at": "2026-08-17T20:31:04Z",
+      "fetched_at": "2026-08-18T00:30:58.764388Z",
+      "metadata": {
+        "feed_name": "Decrypt",
+        "category": "crypto-regulation",
+        "merged_sources": [
+          "Decrypt",
+          "CoinDesk",
+          "The Block",
+          "Cointelegraph"
+        ],
+        "title_en": "Treasury Proposes Stablecoin Issuer Licensing Rules Under GENIUS Act",
+        "detailed_summary_en": "The US Treasury proposed rules implementing Section 3 of the GENIUS Act, defining when stablecoins are issued, offered, or sold in the US. Beginning January 18, 2027, issuers must generally obtain a federal or state license, and from July 18, 2028, platforms will be restricted from selling unapproved stablecoins to US customers. As the first major Treasury rule under the GENIUS Act, the proposal establishes a federal/state licensing regime that will materially reshape US stablecoin market access and industry structure. Issuers, exchanges, and users will all be affected by the approval-based listing restrictions and compliance deadlines. Foreign-issued stablecoins may still be sold, but only if the foreign issuer complies with US legal orders and agreements between the US and its home jurisdiction. Violations would include soliciting US buyers, advertising availability, or helping buyers bypass IP checks; public comments are due by October 19, 2026.",
+        "background_en": "The GENIUS Act, signed into law in July 2025, is the first US federal law to create a comprehensive framework for payment stablecoins — digital tokens pegged to a monetary value and intended for payments. Under the Act, primary federal regulators are defining licensing and oversight requirements, with the law taking effect on the earlier of 18 months after enactment or 120 days after final regulations are issued. The Treasury proposal is one of several implementing rules; the OCC, FDIC, and Treasury have also proposed separate rules on issuance, reserves, and anti-money laundering.",
+        "market_impact_en": "The rules create a compliance channel that could alter which stablecoins US platforms can list, potentially concentrating liquidity and issuance among approved issuers and raising costs for smaller or foreign issuers. Exchanges, issuers, and market infrastructure may need to adjust product offerings before the 2027–2028 deadlines, but the final market impact depends on the completed rulemaking and industry responses.",
+        "title_zh": "美财政部提议GENIUS法案稳定币发行人许可规则",
+        "detailed_summary_zh": "美国财政部提出了实施《GENIUS法案》第3条的规则，对稳定币在美国的发行、要约或销售进行了界定。自2027年1月18日起，发行人通常须获得联邦或州许可；从2028年7月18日起，平台将被限制向美国客户出售未经批准的稳定币。 作为《GENIUS法案》下财政部首项重大规则，该提案确立了联邦/州双重许可制度，将实质性重塑美国稳定币的市场准入和行业结构。发行人、交易所和用户都将受到基于批准的上市限制及合规期限的影响。 外国发行的稳定币仍可销售，前提是外国发行人遵守美国法律命令以及美国与其注册地国家之间的协议。违规行为包括直接招揽美国买家、宣传其可用性，或帮助买家绕过IP检查等；公众意见提交截止日期为2026年10月19日。",
+        "background_zh": "《GENIUS法案》于2025年7月签署成为法律，是美国第一部为支付型稳定币（锚定货币价值、用于支付的数字代币）建立全面监管框架的联邦法律。根据该法案，主要联邦监管机构正在界定许可和监管要求，法律在颁布后18个月或最终法规发布后120天中较早者生效。财政部的提案是多项实施细则之一；OCC、FDIC和财政部还分别就发行、储备和反洗钱提出了规则。",
+        "market_impact_zh": "该规则建立了一条合规传导路径，可能改变美国平台可上架的稳定币种类，或将流动性和发行集中于获批发行人，并提高小型或外国发行人的合规成本。交易所、发行人和市场基础设施可能需要在2027–2028年最后期限前调整产品布局，但最终市场影响取决于最终规则和行业应对。",
+        "sources": [
+          {
+            "url": "https://www.paulhastings.com/insights/crypto-policy-tracker/the-genius-act-a-comprehensive-guide-to-us-stablecoin-regulation",
+            "title": "The GENIUS Act: A Comprehensive Guide to US Stablecoin..."
+          },
+          {
+            "url": "https://www.lw.com/en/insights/the-genius-act-of-2025-stablecoin-legislation-adopted-in-the-us",
+            "title": "The GENIUS Act of 2025 Stablecoin Legislation Adopted in the US"
+          },
+          {
+            "url": "https://www.gibsondunn.com/the-genius-act-a-new-era-of-stablecoin-regulation/",
+            "title": "The GENIUS Act: A New Era of Stablecoin Regulation - Gibson Dunn"
+          }
+        ],
+        "thread_id": "taf9a7fe86d",
+        "thread_day": 1
+      },
+      "ai_score": 9.0,
+      "ai_reason": null,
+      "ai_summary": "The US Treasury proposed rules under the GENIUS Act defining licensing requirements for stablecoin issuers and restricting platforms to selling only approved stablecoins, with staggered compliance deadlines through 2028.",
+      "ai_tags": []
+    },
+    {
+      "id": "rss:www.theblock.co_rss.xml:a58ebc917b70ea17",
+      "source_type": "rss",
+      "title": "Harmony plans pre-attack rollback after exploiter forged 3 trillion ONE tokens",
+      "url": "https://www.theblock.co/news/ecosystems/2026-08-17-harmony-plans-pre-attack-rollback-after-exploiter-forged-3-trillion-one-tokens-411976",
+      "content": null,
+      "author": "Kyle Baird",
+      "published_at": "2026-08-17T15:06:21Z",
+      "fetched_at": "2026-08-18T00:30:46.734157Z",
+      "metadata": {
+        "feed_name": "The Block",
+        "category": "crypto-protocols",
+        "merged_sources": [
+          "The Block",
+          "Cointelegraph"
+        ],
+        "title_en": "Harmony to roll back chain after forger mints 3 trillion ONE tokens",
+        "detailed_summary_en": "Harmony announced that validators will revert the blockchain to 11:25 pm UTC on Aug. 11, discarding over 109,126 regular transactions and 315 staking transactions, after an attacker forged 3 trillion ONE tokens. It deemed the pre-attack rollback \"fairest and most secure\" over token burns or blacklisting. This is a major protocol governance and security decision because rolling back confirmed transactions challenges blockchain immutability and affects users, exchanges, and bridge partners. The outcome could set a precedent for how layer-1 networks respond to large-scale exploits. Harmony said selectively restoring transactions would be unsafe because balances, contract states, transaction nonces and other conditions would differ on the replacement chain. Investigators traced nearly all forged ONE to wallets or service boundaries and are coordinating with exchanges, bridges, and law enforcement.",
+        "background_en": "A blockchain rollback, also known as a chain reorg, reverses a series of confirmed transactions and returns the chain to a previous state, typically used after major exploits or network failures. Token burns permanently remove tokens from circulation by sending them to an unspendable address, while blacklisting forbids specific wallets from transacting. Harmony's decision to reorg rather than burn or blacklist stems from concerns about inconsistent chain state if only some transactions were restored.",
+        "market_impact_en": "The exploit and forced rollback could affect market confidence in Harmony and the ONE token, with potential exchange listing reviews and increased volatility around the restored chain state. However, the overall crypto market impact is likely limited given ONE's relatively small market capitalization.",
+        "title_zh": "Harmony 遭攻击后计划回滚链，伪造 3 万亿 ONE 代币",
+        "detailed_summary_zh": "Harmony 宣布验证者将把区块链回滚至 8 月 11 日 UTC 23:25 的区块，丢弃约 109,126 笔普通交易和 315 笔质押交易，此前攻击者伪造了 3 万亿 ONE 代币。Harmony 认为“攻击前回滚”是比代币销毁或黑名单更“公平且最安全”的方案。 这是一个重大的协议治理与安全决策，因为回滚已确认交易挑战了区块链的不可篡改性，并影响用户、交易所和跨链桥伙伴。其结果可能为 Layer-1 网络应对大规模攻击开创先例。 Harmony 表示选择性恢复交易不安全，因为替换链上的余额、合约状态、交易 nonce 等条件都会不同。调查人员已将几乎所有伪造 ONE 代币追踪至钱包或服务边界，并正在与交易所、跨链桥和执法机构协作。",
+        "background_zh": "区块链回滚（又称链重组）会撤销一系列已确认交易，使链恢复到之前的状态，通常在重大攻击或网络故障后使用。代币销毁是将代币发送到不可花费地址使其永久退出流通，而黑名单则是禁止特定钱包进行交易。Harmony 选择重组而非销毁或黑名单，源于担心如果只恢复部分交易会导致链状态不一致。",
+        "market_impact_zh": "本次攻击和被迫回滚可能影响市场对 Harmony 及 ONE 代币的信心，交易所可能重新评估上线状态，恢复后的链状态附近可能出现更高波动。不过，鉴于 ONE 市值相对较小，整体加密市场影响可能有限。",
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Blockchain_rollback_attack",
+            "title": "Blockchain rollback attack"
+          },
+          {
+            "url": "https://thebitcoinmanual.com/articles/chain-rollback/",
+            "title": "What Is A Chain Rollback? - The Bitcoin Manual"
+          },
+          {
+            "url": "https://research.csiro.au/blockchainpatterns/general-patterns/migration-patterns/token-burning/",
+            "title": "Token Burning – Blockchain Patterns"
+          }
+        ],
+        "thread_id": "tcd781d9d6f",
+        "thread_day": 1
+      },
+      "ai_score": 8.5,
+      "ai_reason": null,
+      "ai_summary": "Harmony plans a pre-attack rollback after an exploiter forged 3 trillion ONE tokens, deeming it the 'fairest and most secure' option over alternatives like token burns or blacklisting.",
+      "ai_tags": []
+    },
+    {
+      "id": "hackernews:story:49334544",
+      "source_type": "hackernews",
+      "title": "Qwen3.8 27B scores 52 on Artificial Analysis",
+      "url": "https://artificialanalysis.ai/models/qwen3-8-27b",
+      "content": null,
+      "author": "anana_",
+      "published_at": "2026-08-17T17:25:17Z",
+      "fetched_at": "2026-08-17T20:54:52.800318Z",
+      "metadata": {
+        "discussion_url": "https://news.ycombinator.com/item?id=49334544",
+        "category": "ai-labs",
+        "title_en": "Qwen3.8 27B Scores 52 on Artificial Analysis, Topping Larger Models",
+        "detailed_summary_en": "Qwen3.8-27B, a 27B-parameter open-weight model from Alibaba's Qwen team, scored 52 on the Artificial Analysis benchmark, outperforming models up to 150B+ parameters and matching DeepSeek V4 Flash 0731. It also rivals or beats Claude Opus 4.6, a frontier model released just six months earlier. This is a major open-source AI milestone, showing a small dense model can match or exceed much larger frontier models. It could democratize access to high-end AI capability, enabling developers to run frontier-level performance on consumer hardware. The model is a native multimodal vision-language model with Apache 2.0 open weights, excelling at coding, agentic workflows, and office automation. Community benchmarks show it scores 52, the same as DeepSeek V4 Flash 0731, and beats Opus 4.6 on Artificial Analysis; some users note Opus still has better world knowledge.",
+        "background_en": "Artificial Analysis is an independent benchmarking platform that evaluates AI models on quality, speed, and price. Qwen3.8-27B is the latest in Alibaba's Qwen line of open-weight models. Opus 4.6 is Anthropic's frontier model released on February 5, 2026. The result suggests parameter count is no longer the sole determinant of model capability.",
+        "community_discussion_en": "Community members expressed amazement and some disbelief. One commenter noted Qwen3.8 27B beats all medium models (40B–150B) and ties a top large model, while another called it 'funny and a bit terrifying' that it runs on a gaming PC and still outscores Opus 4.6. Others reported strong real-world agentic behavior and careful coding performance, with one user saying the scores 'feel real' and not 'benchmaxxed'.",
+        "title_zh": "Qwen3.8 27B 在人工智能分析基准中得 52 分，超越更大模型",
+        "detailed_summary_zh": "阿里巴巴 Qwen 团队推出的 27B 参数开放权重模型 Qwen3.8-27B，在 Artificial Analysis 基准上取得 52 分，超过参数规模高达 150B+ 的模型，并与 DeepSeek V4 Flash 0731 持平。它还能媲美或超越六个月前发布的顶尖模型 Claude Opus 4.6。 这是开源 AI 的一个重要里程碑，表明一个小型稠密模型能够匹敌甚至超越更大的前沿模型。这可能使高端 AI 能力更加普及，让开发者能在消费级硬件上运行接近前沿的性能。 该模型是一款原生多模态视觉-语言模型，采用 Apache 2.0 开放权重，擅长编码、智能体工作流和办公自动化。社区基准测试显示其得分 52，与 DeepSeek V4 Flash 0731 相同，并在 Artificial Analysis 上超过 Opus 4.6；部分用户指出 Opus 仍拥有更丰富的世界知识。",
+        "background_zh": "Artificial Analysis 是一个独立的基准测试平台，用于评估 AI 模型的质量、速度和价格。Qwen3.8-27B 是阿里巴巴 Qwen 系列开放权重模型的最新成员。Opus 4.6 是 Anthropic 于 2026 年 2 月 5 日发布的旗舰模型。这一结果表明，参数数量不再是决定模型能力的唯一因素。",
+        "community_discussion_zh": "社区成员既感到惊叹又有些难以置信。一位评论者指出 Qwen3.8 27B 超越了所有中型模型（40B–150B）并与顶尖大型模型持平；另一位评论者称它能在游戏 PC 上运行却仍超过 Opus 4.6，这“既有趣又有点可怕”。还有人报告了它在真实场景中表现出色的智能体行为和严谨的编程能力，一位用户表示这些分数“感觉真实”，并非“刷基准”。",
+        "sources": [
+          {
+            "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
+            "title": "Qwen/Qwen3.8-27B · Hugging Face"
+          },
+          {
+            "url": "https://github.com/AlibabaCloud-Official/Qwen3.8-27B",
+            "title": "Qwen3.8-27B - GitHub"
+          },
+          {
+            "url": "https://www.anthropic.com/news/claude-opus-4-6",
+            "title": "Introducing Claude Opus 4.6 - Anthropic"
+          }
+        ],
+        "thread_id": "t2bc2cf30ff",
+        "thread_day": 3
+      },
+      "ai_score": 8.5,
+      "ai_reason": null,
+      "ai_summary": "Qwen3.8 27B scores 52 on Artificial Analysis, outperforming models up to 150B+ parameters and rivaling recent frontier SOTA like Opus 4.6.",
+      "ai_tags": []
+    },
+    {
+      "id": "google_news:article:45aa1462643c76a1",
+      "source_type": "google_news",
+      "title": "Cryptocurrency exchange Binance gave Russian security services data on one of its users. Now he’s on trial for donating to Ukraine’s military. - Meduza — Новости",
+      "url": "https://news.google.com/rss/articles/CBMijAJBVV95cUxQcExoQTZTY1poLTQ1blJVbmt3OWg1Y002b2pwVy1URnBrd2hlbVd1YnByNlpKYlNfelhqVDg0WmY5VkREemhKNmdUenVPWFdfN2VVdGNTYmphbS1qd044YzdZbGdFN3dSMDM1UG85WnI4ejJKV29Ec0h0M0d2OGdrbmp5aTQ4SjRyS3ZhTk5ZS2FydHNlR0lraXB3a1dFSFJUQzJIWGhwMzFWekJvbUVRLTV1T1IzcHNtNFhYUzBXZ2hOcVVxUUs1TExfV2d3UThiakR5V2FidEhnbkR5bjNJSF9JRVZoNGs1VnNYU21xb3R3OHV5N0tkYnRQVGhOamlmcGVkN1hMRTRmTUxr0gGSAkFVX3lxTE45WnFFazdJREFMUEUtNnpDV1FoNWR4cnIwMGdKX2lCN2E2NzRkaDZDUUlUcjg4YU1HNlRndjluY0NHT2ZybmhTaGRocHpMZ2JLNldxbVZ0aXBFMVdpNjFGaDd1OTdRMTY5WEhiM19QQXJ5S215RXhqZU5HLVFkN0hwRUV1MEFZVE5GZWpyZ0xZMnFoNmVSV3JiTGhKUTA5UzdqM2FTU2xCaHEtbmd0dmhKWlVRQmViZ3hFQlBoQTFYbTFGYzgyUG9WSl9RblhhQ0NNZU9SMk4zUXhoM2NyeXNRQ0lSUmhQeWxxY2lTUV92R1hkeklGOUtUSU5RZXdVcXNFeEZKTS1lOS1EdHM1UXY4dUE?oc=5",
+      "content": null,
+      "author": "Meduza — Новости",
+      "published_at": "2026-08-17T12:25:00Z",
+      "fetched_at": "2026-08-17T16:56:31.552437Z",
+      "metadata": {
+        "category": "crypto-regulation",
+        "merged_sources": [
+          "Meduza — Новости",
+          "CoinDesk",
+          "Internazionale",
+          "The Straits Times",
+          "Reuters",
+          "UNITED24 Media",
+          "The Business Standard",
+          "KWSN",
+          "theins.press",
+          "The New Voice of Ukraine",
+          "Cointelegraph",
+          "dev.ua",
+          "LIGA.net",
+          "Demócrata",
+          "Protos",
+          "BeInCrypto",
+          "NewsCord"
+        ],
+        "title_en": "Binance gave Russian authorities user data that led to a Ukraine donor's trial",
+        "detailed_summary_en": "According to an exclusive report, Binance provided Russian security services with client data that was used to charge a Russian user for donating to Ukraine's military. The user is now on trial in Russia. This case raises serious concerns about user privacy and the compliance practices of major crypto exchanges, particularly regarding cooperation with authoritarian governments. It could undermine trust in Binance and prompt stricter regulatory scrutiny in Western jurisdictions. Binance has said it cooperates with lawful requests, despite having exited the Russian market in 2023 to improve its compliance strategy. The documents reportedly show the data exchange was used to charge the user over Ukraine-related donations.",
+        "background_en": "Binance is the world's largest cryptocurrency exchange by trading volume. It ceased operations in Russia in 2023, citing compliance concerns, but this report suggests it still responded to requests from Russian authorities. The case highlights the tension between exchange obligations to comply with local laws and the promise of user anonymity and data protection in the crypto ecosystem. It also comes amid broader geopolitical conflicts where cryptocurrency donations play a role in funding military efforts.",
+        "market_impact_en": "This news could affect market sentiment around Binance-related tokens and the broader crypto market due to heightened concerns about surveillance and regulatory risk. It may also influence how other exchanges handle data requests, potentially prompting more stringent privacy protections or compliance measures, but no direct asset price implications are certain.",
+        "title_zh": "币安向俄罗斯当局提供用户数据，导致一位乌克兰捐赠者受审",
+        "detailed_summary_zh": "据独家报道，币安向俄罗斯安全部门提供了客户数据，这些数据被用来指控一名俄罗斯用户向乌克兰军队捐款。该用户目前正在俄罗斯受审。 此案引发了对大型加密货币交易所用户隐私和合规实践的严重担忧，尤其是在与威权政府合作方面。这可能会削弱用户对币安的信任，并促使西方司法管辖区加强监管审查。 币安表示，尽管其于2023年退出俄罗斯市场以改善合规策略，但仍会配合合法的请求。据报道，文件显示这些数据被用于指控该用户与乌克兰相关的捐款行为。",
+        "background_zh": "币安是全球交易量最大的加密货币交易所。它于2023年以合规为由退出俄罗斯市场，但本报道表明它仍对俄罗斯当局的请求作出回应。此案凸显了交易所遵守当地法律的义务与加密货币生态系统中用户匿名和数据保护承诺之间的紧张关系。该事件也发生在更广泛的地缘政治冲突背景下，加密货币捐赠在其中为军事行动提供了资金支持。",
+        "market_impact_zh": "这一消息可能会因对监控和监管风险的担忧加剧，影响币安相关代币及整个加密市场的情绪。它还可能会影响其他交易所处理数据请求的方式，可能促使更严格的隐私保护或合规措施，但并没有确定性的直接资产价格影响。",
+        "thread_id": "tdf37e6ff3e",
+        "thread_day": 1
+      },
+      "ai_score": 8.5,
+      "ai_reason": null,
+      "ai_summary": "Binance reportedly provided Russian security services with data on a user, who is now on trial for donating to Ukraine's military.",
+      "ai_tags": []
+    },
+    {
+      "id": "rss:www.coindesk.com_arc_outboundfeeds_rss_:e94d7b58aade34ee",
+      "source_type": "rss",
+      "title": "BitMart founder dismisses calls for audit as users report blocked funds, unpaid employees",
+      "url": "https://www.coindesk.com/business/2026/08/17/bitmart-founder-dismisses-calls-for-audit-as-users-report-blocked-funds-unpaid-employees",
+      "content": null,
+      "author": "Olivier Acuna",
+      "published_at": "2026-08-17T16:40:08Z",
+      "fetched_at": "2026-08-18T00:30:34.731784Z",
+      "metadata": {
+        "feed_name": "CoinDesk",
+        "category": "exchange-operations",
+        "merged_sources": [
+          "CoinDesk",
+          "Cointelegraph"
+        ],
+        "title_en": "BitMart Founder Dismisses Audit Demands as Users Report Blocked Funds",
+        "detailed_summary_en": "BitMart founder Sheldon Lee dismissed as 'fabricated rumors' an X post claiming users cannot withdraw funds and employees have not been paid, saying the exchange's Chinese-language account was hacked. Users and onchain investigator ZachXBT are demanding independent audits as the exchange winds down ahead of its final trading day on Aug. 26. This matters because unverified exchange insolvency rumors can trigger panic, regulatory scrutiny, and broader distrust in centralized exchanges. BitMart's refusal to open its books underscores the lack of transparency that persists among crypto custodians. BitMart announced its wind-down last month with Aug. 26 as the final trading day, yet users report withdrawals remain blocked. Distressed investment firm Echo Base says it proposed a funded restructuring package including debtor-in-possession financing, but BitMart has not responded.",
+        "background_en": "Onchain investigation involves analyzing blockchain data to track asset movements and verify an exchange's solvency. Proof of Reserves (PoR) is an independent attestation that a custodian holds enough assets to cover user deposits, which differs from a full financial audit and is often called for during exchange crises.",
+        "community_discussion_en": "Users on X expressed frustration, with one demanding 'Where is my $10 million?' and others challenging the hack excuse. ZachXBT argued that if BitMart actually has liquidity, it should simply return funds instead of posting vague statements.",
+        "market_impact_en": "The episode could affect sentiment toward centralized exchange custody risk, potentially pressuring tokens listed on BitMart and widening risk premiums across exchanges with opaque reserves. However, since insolvency is not confirmed, the impact remains sentiment-driven rather than a confirmed systemic event.",
+        "title_zh": "BitMart创始人对审计呼声不屑一顾，用户称资金被冻结",
+        "detailed_summary_zh": "BitMart创始人Sheldon Lee将一则声称用户无法提款、员工未发工资的X帖子斥为“捏造的谣言”，称交易所的中文账号被黑客攻击。用户和链上调查员ZachXBT要求独立审计，而交易所正在8月26日最后交易日之前逐步停止运营。 此事之所以重要，因为未经证实的交易所破产传闻可能引发恐慌、监管审查，并加深对整个中心化交易所的不信任。BitMart拒绝公开账目，凸显了加密托管机构中普遍存在的透明度缺失问题。 BitMart上个月宣布停止运营，8月26日为最后交易日，但用户报告提款仍被冻结。困境投资公司Echo Base表示已提出包括债务人占有融资在内的注资重组方案，但BitMart未予回应。",
+        "background_zh": "链上调查是通过分析区块链数据来追踪资产流动、核实交易所偿付能力的方法。储备金证明（PoR）是独立第三方出具的证明，表明托管机构持有足以覆盖用户存款的资产，这与全面财务审计不同，在交易所危机期间常被要求提供。",
+        "community_discussion_zh": "X上的用户表达了不满，有人质问“我的1000万美元在哪里？”还有人质疑黑客说法。ZachXBT表示，如果BitMart真有流动性，就该直接把资金归还给用户，而不是发布含糊的声明。",
+        "market_impact_zh": "这一事件可能影响市场对中心化交易所托管风险的看法，或对BitMart上线代币造成压力，并扩大储备不透明的交易所的风险溢价。但由于破产尚未得到证实，影响仍以情绪驱动为主，而非已确认的系统性事件。",
+        "sources": [
+          {
+            "url": "https://info.arkm.com/research/on-chain-analysis-guide",
+            "title": "On-Chain Analysis: What is it, how to do it, and the best ..."
+          },
+          {
+            "url": "https://www.icon.partners/post/what-is-proof-of-reserves-por",
+            "title": "What Is Proof of Reserves (PoR)? Crypto Audit Explained"
+          }
+        ],
+        "thread_id": "tcb335e57e5",
+        "thread_day": 1
+      },
+      "ai_score": 8.0,
+      "ai_reason": null,
+      "ai_summary": "BitMart founder dismisses claims of blocked funds and unpaid employees as fabricated rumors, while users and investigators demand audits as the exchange winds down operations.",
+      "ai_tags": []
+    },
+    {
+      "id": "rss:protos.com_feed_:935ea881ab5462fb",
+      "source_type": "rss",
+      "title": "Fourth crypto exchange shuts down in just six weeks",
+      "url": "https://protos.com/fourth-crypto-exchange-shuts-down-in-just-six-weeks/",
+      "content": null,
+      "author": "Jacob Lyon",
+      "published_at": "2026-08-17T16:26:19Z",
+      "fetched_at": "2026-08-18T00:30:54.721113Z",
+      "metadata": {
+        "feed_name": "Protos",
+        "category": "exchange-operations",
+        "title_en": "ABFinance Closure Marks Fourth Crypto Exchange Shutdown in Six Weeks",
+        "detailed_summary_en": "US-based crypto exchange ABFinance, founded by ByBit's former CEO Helen Liu, announced last Friday that it will not launch and is winding down in an orderly manner. The closure marks the fourth exchange shutdown in six weeks, after BitMart, BitMEX, and AscendEX. The rapid succession of exchange closures raises serious concerns about the safety of user funds and the stability of crypto trading platforms. Users of affected exchanges face withdrawal delays and uncertainty, which can erode trust in centralized exchanges and drive demand for self-custody solutions. ABFinance lasted only about six months, as Liu founded the exchange in March before stepping down from her ByBit co-CEO role on April 30, 2026. BitMart has continued processing withdrawals at a slow pace, leading users to speculate about insolvency, while AscendEX's shutdown was flagged by ZachXBT for missing large amounts of ETH, USDT, and SOL in reserves.",
+        "background_en": "A hot wallet is a cryptocurrency wallet that stores private keys in an internet-connected interface, making it convenient for frequent transactions but more vulnerable to hacks. When an exchange shuts down, users' funds held in hot wallets can be at risk if the exchange lacks sufficient reserves or faces solvency issues. The recent closures highlight the importance of verifying exchange solvency and the risks of keeping funds on centralized platforms.",
+        "market_impact_en": "The spate of exchange shutdowns could reduce liquidity in affected markets and increase counterparty risk perceptions across the crypto sector. Tokens listed on the closing exchanges may face selling pressure or delisting, while broader sentiment toward centralized exchanges could weaken, potentially accelerating a shift toward decentralized trading venues.",
+        "title_zh": "六周内第四家加密交易所关闭，ABFinance 停业",
+        "detailed_summary_zh": "总部位于美国的加密货币交易所 ABFinance 由 ByBit 前 CEO Helen Liu 创立，上周五宣布不再启动并有序清盘。这标志着六周内继 BitMart、BitMEX 和 AscendEX 之后第四家交易所关闭。 交易所接连关闭引发了对用户资金安全和加密交易平台稳定性的严重担忧。受影响交易所的用户面临提现延迟和不确定性，这可能削弱对中心化交易所的信任，并推动对自托管解决方案的需求。 ABFinance 仅运营约六个月，Liu 在 2026 年 4 月 30 日卸任 ByBit 联合 CEO 之前于 3 月创立了该交易所。BitMart 继续以极慢的速度处理提现，导致用户猜测其可能资不抵债；而 AscendEX 停业时，ZachXBT 指出其储备中缺失大量 ETH、USDT 和 SOL。",
+        "background_zh": "热钱包是一种将私钥存储在与互联网连接的界面中的加密货币钱包，方便频繁交易，但更容易受到黑客攻击。当交易所关闭时，如果交易所储备不足或面临偿付问题，用户存放在热钱包中的资金可能面临风险。近期的关闭事件凸显了核实交易所偿付能力的重要性，以及将资金存放在中心化平台上的风险。",
+        "market_impact_zh": "交易所接连关闭可能会减少受影响市场的流动性，并提高整个加密行业的对手方风险认知。在关闭交易所上市的代币可能面临抛售压力或退市风险，而对中心化交易所的整体信心可能减弱，从而可能加速向去中心化交易平台的转移。",
+        "sources": [
+          {
+            "url": "https://www.investopedia.com/terms/h/hot-wallet.asp",
+            "title": "Hot Wallet Guide: Types, Security Measures, and Practical Examples"
+          },
+          {
+            "url": "https://www.ledger.com/academy/glossary/hot-wallet",
+            "title": "Hot Wallet Meaning | Ledger"
+          }
+        ],
+        "thread_id": "t8c6393fc12",
+        "thread_day": 1
+      },
+      "ai_score": 8.0,
+      "ai_reason": null,
+      "ai_summary": "Fourth crypto exchange in six weeks, ABFinance, shuts down before launch, joining BitMart, BitMEX, and AscendEX in closures that worry users about their funds.",
+      "ai_tags": []
+    },
+    {
+      "id": "rss:www.coindesk.com_arc_outboundfeeds_rss_:376b140298fc40d8",
+      "source_type": "rss",
+      "title": "Israel’s largest crypto broker Bits of Gold hit by data breach affecting 200,000 customers",
+      "url": "https://www.coindesk.com/tech/2026/08/17/israel-s-largest-crypto-broker-bits-of-gold-hit-by-data-breach-affecting-200-000-customers",
+      "content": null,
+      "author": "Olivier Acuna",
+      "published_at": "2026-08-17T11:59:23Z",
+      "fetched_at": "2026-08-17T13:21:55.145955Z",
+      "metadata": {
+        "feed_name": "CoinDesk",
+        "category": "exchange-operations",
+        "merged_sources": [
+          "CoinDesk",
+          "CryptoSlate"
+        ],
+        "title_en": "Israel's Largest Crypto Broker Bits of Gold Breached, 200K Customers Exposed",
+        "detailed_summary_en": "Bits of Gold, Israel's largest crypto broker, disclosed a data breach affecting about 200,000 customers. The breach occurred via a third-party data analytics provider, exposing names, national ID numbers, bank details, and public wallet addresses, but not funds or private keys. This incident underscores the vulnerability of crypto firms to supply-chain attacks via external vendors, and the exposure of sensitive financial and identity data could put affected users at heightened risk of fraud and phishing. It also adds to a string of recent crypto industry data breaches, potentially eroding customer trust in custodial brokers. Bits of Gold stated that no funds, passwords, private keys, CVV codes, or scanned IDs were exposed, and that it disconnected the affected system upon detection. The company believes the attack was part of a broader global incident, and it has launched an investigation with a cyber incident response firm.",
+        "background_en": "Bits of Gold, founded in 2013, was the first crypto company in Israel to receive a permanent Financial Services Provider license and serves more than 250,000 customers. The breach follows recent crypto-related data exposures at SafePal and Trezor, which were also linked to compromises at third-party vendors. The incident highlights the reliance of crypto firms on external service providers for analytics, logistics, and other functions, which can become attack vectors.",
+        "market_impact_en": "The breach could heighten regulatory and operational scrutiny on Israeli crypto brokers and may temporarily affect Bits of Gold's ability to process certain services, as reports indicate a halt to its Bitcoin partnership. Broader market impact is likely limited, but the event reinforces the sector's exposure to third-party cyber risk, which can influence risk premiums for custodial platforms.",
+        "title_zh": "以色列最大加密货币经纪商Bits of Gold遭数据泄露，20万客户受影响",
+        "detailed_summary_zh": "以色列最大加密货币经纪商Bits of Gold披露了一起影响约20万客户的数据泄露事件。泄露源于第三方数据分析提供商被入侵，涉及姓名、国民身份证号码、银行账户信息和公开钱包地址，但资金和私钥未受影响。 此事件凸显了加密货币公司通过外部供应商遭受供应链攻击的脆弱性，敏感金融和身份数据的暴露可能使受影响用户面临更高的欺诈和钓鱼风险。这也加入了近期一系列加密货币行业数据泄露事件，可能削弱客户对托管经纪商的信任。 Bits of Gold表示，没有资金、密码、私钥、CVV码或身份证扫描件被泄露，并在发现后立即断开了受影响系统。公司认为此次攻击是更广泛的全球性事件的一部分，并已与网络安全事件响应公司合作展开调查。",
+        "background_zh": "Bits of Gold成立于2013年，是以色列首家获得永久金融服务提供商牌照的加密货币公司，服务超过25万客户。此次泄露之前，SafePal和Trezor也发生了与第三方供应商被入侵相关的加密货币数据泄露事件。该事件凸显了加密货币公司对外部分析、物流等服务提供商的依赖，这些供应商可能成为攻击途径。",
+        "market_impact_zh": "此次泄露可能加深以色列加密货币经纪商面临的监管和运营审查，并有报道称Bits of Gold已暂停其比特币合作，可能暂时影响部分服务的处理。对整体市场的影响可能有限，但该事件强化了该行业面临的第三方网络风险，这可能影响托管平台的风险溢价。",
+        "thread_id": "ta9918d288a",
+        "thread_day": 2
+      },
+      "ai_score": 8.0,
+      "ai_reason": null,
+      "ai_summary": "Israel's largest crypto broker Bits of Gold suffered a data breach exposing personal data of about 200,000 customers via a third-party analytics provider, though funds and digital assets were not affected.",
+      "ai_tags": []
+    },
+    {
+      "id": "hackernews:story:49330781",
+      "source_type": "hackernews",
+      "title": "A Preview of DuckDB v2.0",
+      "url": "https://duckdb.org/2026/08/17/duckdb-20-highlights",
+      "content": null,
+      "author": "ibotty",
+      "published_at": "2026-08-17T13:46:27Z",
+      "fetched_at": "2026-08-18T00:30:32.402789Z",
+      "metadata": {
+        "discussion_url": "https://news.ycombinator.com/item?id=49330781",
+        "category": "tech-community",
+        "title_en": "DuckDB v2.0 Preview Showcases New Features and Performance Gains",
+        "detailed_summary_en": "The DuckDB team published a preview of v2.0, introducing Quack client-server support and a range of new features and performance improvements. This preview marks a major milestone for the widely adopted embedded analytical database. DuckDB is one of the most widely adopted open-source analytical databases, with over 6 million downloads per month, so v2.0 has broad implications for data engineering and analytics workflows. The preview gives builders an early look at capabilities that could reduce resource requirements and expand where DuckDB can run. This is a preview rather than a stable release, so features and performance numbers may change before the final version. Community discussion notes an extremely rapid development cadence of roughly 10,000 commits in under six months, and highlights in-progress areas such as incremental materialized views.",
+        "background_en": "DuckDB is an open-source, column-oriented relational database management system specialized for online analytical processing (OLAP) workloads. Unlike transactional embedded databases such as SQLite, DuckDB is designed for fast analytical queries and can spill to disk to handle data larger than available memory. It runs everywhere as an in-process SQL database, making it popular for local data analysis and embedding into applications.",
+        "community_discussion_en": "Community sentiment is largely positive, with users expressing excitement about Quack and sharing real-world use cases in analytics pipelines and stream processing. Some commenters raised concerns about the rapid commit pace and whether AI is contributing heavily to development, while others wished for incremental materialized views to better compete with ClickHouse.",
+        "title_zh": "DuckDB v2.0 预览版展示新功能与性能提升",
+        "detailed_summary_zh": "DuckDB 团队发布了 v2.0 预览版，引入了 Quack 客户端-服务器支持以及一系列新功能和性能改进。这一预览版标志着这款广泛使用的嵌入式分析数据库的一个重要里程碑。 DuckDB 是最广泛使用的开源分析数据库之一，每月下载量超过 600 万次，因此 v2.0 对数据工程和分析工作流具有广泛影响。该预览版让开发者能提前了解那些可能降低资源需求并扩展 DuckDB 运行场景的新能力。 这是一个预览版而非稳定版本，因此功能和性能数据在最终版本发布前可能还会变化。社区讨论提到其开发节奏极快，在不到六个月内约有 10,000 次提交，并关注增量物化视图等仍在推进中的领域。",
+        "background_zh": "DuckDB 是一个开源的列式关系数据库管理系统，专为在线分析处理（OLAP）工作负载而设计。与 SQLite 等事务型嵌入式数据库不同，DuckDB 专为快速分析查询而优化，并且可以溢写到磁盘以处理超出可用内存的数据。它作为进程内 SQL 数据库可随处运行，因此在本地数据分析和应用程序嵌入方面非常受欢迎。",
+        "community_discussion_zh": "社区情绪总体非常积极，用户对 Quack 表示兴奋，并分享了在分析管道和流处理中的真实使用案例。一些评论者对该项目极快的提交速度以及 AI 是否在开发中占很大比重表示担忧，另一些人则希望加入增量物化视图，以便更好地与 ClickHouse 竞争。",
+        "sources": [
+          {
+            "url": "https://duckdb.org/",
+            "title": "DuckDB – An in-process SQL OLAP database management system"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/DuckDB",
+            "title": "DuckDB"
+          },
+          {
+            "url": "https://motherduck.com/",
+            "title": "MotherDuck | The Cloud Data Warehouse Built on DuckDB"
+          }
+        ],
+        "thread_id": "t4f5a33c12f",
+        "thread_day": 1
+      },
+      "ai_score": 8.0,
+      "ai_reason": null,
+      "ai_summary": "DuckDB v2.0 preview showcases new features and performance improvements for the popular embedded analytical database.",
+      "ai_tags": []
+    },
+    {
+      "id": "hackernews:story:49329575",
+      "source_type": "hackernews",
+      "title": "GPT 5.6 Sol is the best \"vision\" model OpenAI ever released",
+      "url": "https://blog.roboflow.com/openai-gpt-5-6/",
+      "content": null,
+      "author": "plurby",
+      "published_at": "2026-08-17T12:09:42Z",
+      "fetched_at": "2026-08-17T16:56:31.502245Z",
+      "metadata": {
+        "discussion_url": "https://news.ycombinator.com/item?id=49329575",
+        "category": "ai-labs",
+        "title_en": "Roboflow Benchmarks Undermine GPT 5.6 Sol Vision Claims",
+        "detailed_summary_en": "Roboflow's blog post claims OpenAI's GPT 5.6 Sol is its best vision model, but its own benchmarks show Google's Gemini 3.5 Flash outperforming it on most vision tasks at one-third the cost. This challenges OpenAI's marketing position for its flagship model and gives developers concrete data to favor cheaper alternatives for high-volume vision workloads. It underscores the growing importance of cost-efficiency in enterprise AI model selection. In Roboflow's benchmark, Gemini 3.5 Flash beat GPT 5.6 Sol on all tasks except OCR, where a model called Fable won. GPT 5.6 Sol is the most capable variant in OpenAI's GPT-5.6 family, which also includes Luna and Terra.",
+        "background_en": "GPT-5.6 is a family of large language models from OpenAI reportedly released on July 9, 2026, with three variants named Luna, Terra, and Sol. Roboflow is a computer vision platform that regularly evaluates models for developers. The comparison matters because real-world applications must balance accuracy, latency, and API cost when choosing a vision model.",
+        "community_discussion_en": "Commenters noted that the blog's own summary understated the results: Gemini 3.5 Flash outperformed GPT 5.6 Sol on all but one benchmark at one-third the cost. Others shared anecdotal praise for Sol's UI analysis capabilities, while one questioned a benchmark image's EXIF rotation and another argued Sol's latency makes it impractical for real-time robotics vision.",
+        "title_zh": "Roboflow基准测试质疑GPT 5.6 Sol视觉优势",
+        "detailed_summary_zh": "Roboflow的博客文章声称OpenAI的GPT 5.6 Sol是其最佳视觉模型，但其自己的基准测试显示，谷歌的Gemini 3.5 Flash在大多数视觉任务上表现更好，而成本仅为后者的三分之一。 这挑战了OpenAI对其旗舰模型的营销定位，并为开发者在高容量视觉任务中偏向更便宜的替代方案提供了具体数据。它凸显了成本效益在企业AI模型选择中日益重要的地位。 在Roboflow的基准测试中，Gemini 3.5 Flash在所有任务上均击败了GPT 5.6 Sol，只有OCR任务除外，该任务由名为Fable的模型获胜。GPT 5.6 Sol是OpenAI GPT-5.6系列中能力最强的变体，该系列还包括Luna和Terra。",
+        "background_zh": "GPT-5.6是OpenAI于2026年7月9日发布的大型语言模型系列，包含Luna、Terra和Sol三个变体。Roboflow是一个计算机视觉平台，定期为开发者评估模型。这种比较之所以重要，是因为实际应用在选择视觉模型时必须在准确性、延迟和API成本之间进行权衡。",
+        "community_discussion_zh": "评论者指出，博客自己的总结低估了结果：Gemini 3.5 Flash在除一项之外的所有基准测试中均优于GPT 5.6 Sol，且成本仅为三分之一。其他人则分享了Sol在UI分析方面的经验性好评，还有人质疑基准测试图像的EXIF旋转问题，另有人指出Sol的延迟使其不适用于实时机器人视觉。",
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/GPT-5.6_Sol",
+            "title": "GPT-5.6 Sol"
+          },
+          {
+            "url": "https://openai.com/index/previewing-gpt-5-6-sol/",
+            "title": "Previewing GPT‑5.6 Sol: a next-generation model - OpenAI"
+          },
+          {
+            "url": "https://ai.google.dev/gemini-api/docs/models/gemini-3.5-flash",
+            "title": "Gemini 3.5 Flash | Gemini API | Google AI for Developers"
+          }
+        ],
+        "thread_id": "t93e6c840a6",
+        "thread_day": 1
+      },
+      "ai_score": 8.0,
+      "ai_reason": null,
+      "ai_summary": "A Roboflow blog post claims OpenAI's GPT 5.6 Sol is its best vision model, but community benchmarks show Gemini 3.5 Flash outperforming it on most tasks at one-third the cost.",
+      "ai_tags": []
+    },
+    {
+      "id": "rss:cryptoslate.com_feed_:c009d60164c41c59",
+      "source_type": "rss",
+      "title": "Crypto miner warns of potential bankruptcy as unclosed financing leaves $33 million in maturing debt exposed",
+      "url": "https://cryptoslate.com/crypto-miner-warns-of-potential-bankruptcy-as-unclosed-financing-leaves-33-million-in-maturing-debt-exposed/",
+      "content": null,
+      "author": "Liam 'Akiba' Wright",
+      "published_at": "2026-08-17T21:35:05Z",
+      "fetched_at": "2026-08-18T00:30:49.035092Z",
+      "metadata": {
+        "feed_name": "CryptoSlate",
+        "category": "crypto-markets",
+        "title_en": "Vulcan (ex-Greenidge) flags bankruptcy risk as $33M debt maturity nears without PIPE close",
+        "detailed_summary_en": "Publicly traded bitcoin miner Vulcan (formerly Greenidge Generation) warned it may face bankruptcy because a proposed $39.4 million PIPE financing has not closed, leaving $33.1 million in senior notes due October 31 exposed. As of August 16, the company had received no proceeds from the deal. This is a material credit event for a publicly traded crypto miner, showing how debt maturities and capital-markets access can threaten mining firms even when they hold digital assets. It highlights the fragility of miners that rely on external financing in a high-cost, volatile operating environment. The PIPE would raise roughly $29.3 million from selling 17,146,190 shares at $1.71 each plus a $10 million convertible note from Machine Investment Group. The Oct. 10 outside date for closing is only 21 days before the notes mature, and Vulcan has not delivered a formal redemption notice.",
+        "background_en": "Vulcan is a bitcoin miner formerly known as Greenidge Generation. A PIPE (private investment in public equity) is a private placement of shares or convertible securities in a company that already trades publicly, often used when traditional capital markets are not accessible. Senior notes are debt securities that have priority over junior debt in repayment, meaning they must be paid before subordinate creditors in a bankruptcy.",
+        "market_impact_en": "The main transmission channel is company-specific credit risk: the failure of a publicly traded miner to refinance maturing debt could pressure its equity and any outstanding bonds, and may signal higher financing costs for other miners reliant on similar PIPE deals. Broader digital-asset market impact is likely limited because the issue is idiosyncratic to Vulcan, though it can feed negative sentiment around mining stocks.",
+        "title_zh": "Vulcan（原Greenidge）警告债券到期未融资，面临破产风险",
+        "detailed_summary_zh": "上市比特币矿企Vulcan（原Greenidge Generation）警告称，由于拟议的3940万美元PIPE融资尚未完成，10月31日到期的3310万美元优先票据面临偿付风险。截至8月16日，该公司尚未收到任何交易资金。 这是一个上市加密矿企的重大信用事件，表明即使在持有数字资产的情况下，债务到期和资本市场融资渠道不畅也可能威胁矿企生存。它凸显了依赖外部融资的矿企在高成本、高波动经营环境中的脆弱性。 该PIPE交易将以每股1.71美元出售17,146,190股，募资约2930万美元，并向Machine Investment Group发行1000万美元可转换票据。交易的最晚完成日（10月10日）距票据到期仅21天，Vulcan也未发出正式赎回通知。",
+        "background_zh": "Vulcan是一家比特币矿企，原名Greenidge Generation。PIPE（上市公司的私募股权投资）是指向私人投资者私下出售上市公司股票或可转换证券，通常在公司难以通过传统资本市场融资时使用。优先票据是一种债务证券，在清偿顺序上优先于次级债务，即破产时必须先于其他低层级债权人偿付。",
+        "market_impact_zh": "主要传导渠道是公司层面的信用风险：一家上市矿企无法完成到期债务再融资，可能对其股价和存续债券形成压力，并可能意味着其他依赖类似PIPE交易的矿企面临更高的融资成本。由于该问题是Vulcan特有事件，对整体数字资产市场的影响可能有限，但可能拖累矿企股票的市场情绪。",
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/PIPE_Financing",
+            "title": "PIPE Financing"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/Senior_notes",
+            "title": "Senior notes"
+          }
+        ],
+        "thread_id": "td6c66b3b39",
+        "thread_day": 1
+      },
+      "ai_score": 7.5,
+      "ai_reason": null,
+      "ai_summary": "Crypto miner Vulcan (formerly Greenidge Generation) warns of potential bankruptcy as $33.1 million in senior notes mature Oct. 31, with a proposed $39.4 million PIPE financing still unclosed.",
+      "ai_tags": []
+    },
+    {
+      "id": "rss:www.theblock.co_rss.xml:f15af030de98a855",
+      "source_type": "rss",
+      "title": "Bitcoin miner HIVE inks five-year $350 million AI cloud contract, adds $70 million in annualized revenue",
+      "url": "https://www.theblock.co/news/business/2026-08-17-bitcoin-miner-hive-inks-five-year-350-million-ai-cloud-contract-411940",
+      "content": null,
+      "author": "Naga Avan-Nomayo",
+      "published_at": "2026-08-17T10:30:30Z",
+      "fetched_at": "2026-08-18T00:30:46.858809Z",
+      "metadata": {
+        "feed_name": "The Block",
+        "category": "crypto-markets",
+        "title_en": "Bitcoin Miner HIVE Lands $350M AI Cloud Deal",
+        "detailed_summary_en": "HIVE's BUZZ HPC subsidiary signed a five-year, $350 million GPU cloud contract that adds $70 million in annualized recurring revenue. The deal marks HIVE's second large NVIDIA cluster agreement in two months. The contract underscores a growing trend of Bitcoin miners pivoting to AI and high-performance computing to diversify beyond mining revenue. It gives HIVE a stable, dollar-denominated revenue stream and validates the strategic value of miners' existing power and data-center infrastructure. The contract runs for five years and contributes $70 million in annualized recurring revenue (ARR). It is described as a 'large NVIDIA cluster deal,' and is the second such agreement HIVE has signed within two months.",
+        "background_en": "GPU cloud computing and high-performance computing (HPC) involve leasing graphics processing units and clusters to handle workloads such as AI training and inference. Many Bitcoin miners are retrofitting their data centers to host NVIDIA GPU clusters, seeking more predictable revenue than the volatile block rewards from mining.",
+        "market_impact_en": "The deal is a company-level event, so its direct transmission to crypto spot or derivatives markets is limited. However, it may affect the trading of HIVE's stock and influence investor sentiment toward other publicly listed miners pursuing similar AI strategies, as the market reassesses miners' potential as hybrid HPC providers.",
+        "title_zh": "比特币矿企HIVE签下3.5亿美元AI云合同",
+        "detailed_summary_zh": "HIVE旗下BUZZ HPC子公司签下一份为期五年、总额3.5亿美元的GPU云合同，每年增加7000万美元的年度经常性收入。这是HIVE两个月内达成的第二笔大规模NVIDIA集群交易。 这份合同凸显了比特币矿商向AI和高性能计算转型的趋势，以分散挖矿收入来源。它为HIVE带来了以美元计价的稳定收入流，并验证了矿商现有电力和数据中心基础设施的战略价值。 该合同为期五年，预计贡献每年7000万美元的年度经常性收入（ARR）。它被描述为一项“大规模NVIDIA集群交易”，也是HIVE在两个月内签署的第二份此类协议。",
+        "background_zh": "GPU云计算和高性能计算（HPC）涉及出租图形处理单元和集群以处理AI训练和推理等工作负载。许多比特币矿商正在改造其数据中心以托管NVIDIA GPU集群，从而寻求比挖矿获得的不稳定区块奖励更具可预测性的收入。",
+        "market_impact_zh": "该交易属于公司层面的消息，因此其对加密货币现货或衍生品市场的直接影响有限。不过，它可能会影响HIVE股票的交易，并影响投资者对其他同样押注AI战略的上市矿商的看法，因为市场正在重新评估矿商作为混合HPC服务商的潜力。",
+        "sources": [
+          {
+            "url": "https://www.nvidia.com/en-us/data-center/gpu-cloud-computing/",
+            "title": "Cloud Computing Solutions: Scalable AI & HPC for Enterprises ..."
+          },
+          {
+            "url": "https://www.ibm.com/think/topics/hpc",
+            "title": "What Is High-Performance Computing (HPC)? | IBM"
+          }
+        ],
+        "thread_id": "t1c80b548ad",
+        "thread_day": 1
+      },
+      "ai_score": 7.5,
+      "ai_reason": null,
+      "ai_summary": "Bitcoin miner HIVE signs a five-year, $350 million AI cloud contract, adding $70 million in annualized revenue.",
+      "ai_tags": []
+    },
+    {
+      "id": "google_news:article:7ed4ded0ad36a669",
+      "source_type": "google_news",
+      "title": "Coinbase Unveils AiFi After $100M in x402 Transactions, Targeting AI Agent Payments - CryptoNinjas",
+      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOQVBBc0s5a1FxcGF4Nk5DZmtWRGlGWmQ1UUgxRU1NdXcxSEM4ZGZLc3Y5OG91Z3BMZ0F5bTFGQ0V3dzhJTC14b2I4RWVlbUFzOE1QcTRod2NxUkxlbWJaeVVKRXptSnBBUnNHdTV6SUVPWEJpRzRtTVNINlhabmpLcDdUbDVvQ1JxZ0ZrV1Z4QlNEOFJDcnFBdXI1RE1TRnBDSm5LMFBJbFF5d1FPekFkSmxSenR3TzDSAbwBQVVfeXFMTXFOR1FOd0NYZXJESzJSNWhsLWRMQy0yb3JxTVhicVZUTXhhM0dWT1VhQjZPdHVJdjM4V3g1R2dCeHl2al9ja2dWclZYSWo0M193YmpoLXVQM1VyUi1OVDhFZ2NCbUl1TlpvcmtlbUNvSjd4bjBsNC1ZUUlkN0xfRFhuMTl5Vm00bW9sWnRFZUxWemJaaWFXNm12Tjl5S2hPNDJDVmdCMVJETk9GVnBPN3ZOWVhKeWU2aktrWVM?oc=5",
+      "content": null,
+      "author": "CryptoNinjas",
+      "published_at": "2026-08-17T04:40:22Z",
+      "fetched_at": "2026-08-17T09:09:42.847312Z",
+      "metadata": {
+        "category": "exchange-announcements",
+        "title_en": "Coinbase Unveils AiFi for AI Agent Payments After $100M in x402 Transactions",
+        "detailed_summary_en": "Coinbase launched AiFi, a full financial stack for AI agents covering trading, payments, and developer infrastructure, built on the x402 protocol and the Base network. The announcement follows over $100 million in transactions processed through x402. This move by a major exchange validates the emerging AI-crypto payments niche and could establish standards for autonomous machine payments. AiFi positions Coinbase to capture infrastructure value as AI agents begin to hold funds and transact on-chain. AiFi spans trading, payments, and developer infrastructure, and is built on x402 and Base, with USDC as a key settlement asset. The x402 protocol is backed by the Linux Foundation and enables instant stablecoin payments directly over HTTP requests.",
+        "background_en": "x402 is an open, internet-native payment standard introduced by Coinbase that allows APIs, apps, and AI agents to send and receive payments through ordinary HTTP requests. AI agents are software programs that can autonomously perform tasks; enabling them to pay for services requires a lightweight, machine-readable payment rail. Stablecoins like USDC and layer-2 networks such as Base provide the low-cost, fast settlement layer for such transactions. AiFi is Coinbase's broader vision to provide the financial infrastructure for this new 'agentic finance' ecosystem.",
+        "market_impact_en": "The launch could expand real-world use cases for stablecoins and Ethereum layer-2 networks, particularly Base, by enabling AI agents to transact autonomously. This may increase on-chain activity and demand for USDC and related infrastructure, while also drawing attention to AI-focused crypto projects building similar payment rails.",
+        "title_zh": "Coinbase发布AiFi瞄准AI代理支付，此前x402交易额达1亿美元",
+        "detailed_summary_zh": "Coinbase推出了AiFi，这是一个面向AI代理的全栈金融基础设施，涵盖交易、支付和开发者工具，基于x402协议和Base网络构建。该公告发布之际，x402已处理超过1亿美元的交易。 主流交易所的这一举措验证了AI与加密支付这一新兴领域，并可能为自主机器支付建立标准。AiFi使Coinbase能够在AI代理开始持有资金并进行链上交易时占据基础设施价值。 AiFi涵盖交易、支付和开发者基础设施，基于x402和Base构建，并以USDC作为关键结算资产。x402协议由Linux基金会支持，可通过HTTP请求直接实现即时稳定币支付。",
+        "background_zh": "x402是Coinbase推出的开放式互联网原生支付标准，允许API、应用程序和AI代理通过普通的HTTP请求发送和接收支付。AI代理是能够自主执行任务的软件程序；要让它们为服务付费，需要一个轻量级、机器可读的支付通道。USDC等稳定币以及Base等二层网络为此类交易提供了低成本、快速的结算层。AiFi是Coinbase为这一新型“代理金融”（Agentic Finance）生态系统提供金融基础设施的宏大愿景。",
+        "market_impact_zh": "该发布可能通过让AI代理自主交易，扩大稳定币和以太坊二层网络（尤其是Base）的实际应用场景。这可能会增加链上活动以及市场对USDC和相关基础设施的需求，同时也会吸引市场关注那些正在构建类似支付轨道的AI加密项目。",
+        "sources": [
+          {
+            "url": "https://www.coinbase.com/en-sg/developer-platform/discover/launches/x402",
+            "title": "Introducing x402: a new standard for internet-native... | Coinbase"
+          },
+          {
+            "url": "https://mpost.io/beyond-the-exchange-coinbase-builds-infrastructure-for-a-world-where-ai-agents-spend-trade-and-transact/",
+            "title": "Beyond The Exchange: Coinbase Builds Infrastructure For A World Where AI Agents Spend, Trade, And Transact | Metaverse Post"
+          },
+          {
+            "url": "https://www.bitget.com/academy/what-is-x402-by-coinbase-the-future-of-web3-http-payments-review-latest-news",
+            "title": "What Is x402 by Coinbase? Web3 Payments Over HTTP"
+          }
+        ],
+        "thread_id": "t07e72552e6",
+        "thread_day": 2
+      },
+      "ai_score": 7.5,
+      "ai_reason": null,
+      "ai_summary": "Coinbase unveils AiFi, a platform for AI agent payments, following $100M in x402 transactions.",
+      "ai_tags": []
+    },
+    {
+      "id": "rss:decrypt.co_feed:2fff2cbeb7f797eb",
+      "source_type": "rss",
+      "title": "Kraken Parent Payward Joins Glasswing, Gets Access to Claude Mythos to Hunt Security Flaws",
+      "url": "https://decrypt.co/375836/kraken-payward-anthropic-project-glasswing-claude-mythos",
+      "content": null,
+      "author": "Jason Nelson",
+      "published_at": "2026-08-17T22:35:46Z",
+      "fetched_at": "2026-08-18T00:30:58.254765Z",
+      "metadata": {
+        "feed_name": "Decrypt",
+        "category": "exchange-operations",
+        "title_en": "Kraken Parent Payward Joins Anthropic's Project Glasswing for Claude Mythos Security",
+        "detailed_summary_en": "Payward, the parent company of crypto exchange Kraken, has joined Anthropic's Project Glasswing and will use the Claude Mythos 5 model to scan its systems for security vulnerabilities. It is the first reported crypto company to gain access to the program. The move signals growing adoption of frontier AI for defensive cybersecurity in the crypto sector, following an open letter from more than 40 Bitcoin and crypto companies urging AI labs to grant trusted defenders access to powerful models. It could help harden both exchange infrastructure and the open-source software underpinning the crypto industry. Payward said findings from Mythos 5 scans will be reviewed and patched through its existing security program, and vulnerabilities found in third-party open-source software will be reported to maintainers. Project Glasswing, launched in April and expanded in June, has already helped partners uncover thousands of high- or critical-severity vulnerabilities.",
+        "background_en": "Project Glasswing is Anthropic's cybersecurity initiative that gives vetted organizations access to its most capable cyber models for defensive work. Claude Mythos 5 is the latest version of Anthropic's cybersecurity-focused AI model. The collaboration was announced amid growing evidence that AI models can both find and exploit software vulnerabilities, and after crypto companies publicly pressed major AI labs to open trusted-access programs to defenders.",
+        "title_zh": "Kraken母公司Payward加入Anthropic Glasswing项目，用Claude Mythos 5查漏洞",
+        "detailed_summary_zh": "加密货币交易所Kraken的母公司Payward已加入Anthropic的Project Glasswing项目，并将使用Claude Mythos 5模型扫描其系统以查找安全漏洞。这是首家被报道加入该项目的加密公司。 此举表明加密行业正在越来越多地采用前沿AI进行防御性网络安全工作，此前已有40多家比特币和加密公司签署公开信，敦促AI实验室向可信防御者开放强大模型。这可能有助于加固交易所基础设施以及支撑加密行业的开源软件。 Payward表示，Mythos 5扫描的结果将通过其现有安全计划进行审查和修补，在第三方开源软件中发现的漏洞将报告给维护者。Project Glasswing于4月启动、6月扩大，已帮助合作伙伴发现数千个高危或严重漏洞。",
+        "background_zh": "Project Glasswing是Anthropic的网络安全计划，为经过审查的组织提供其最强大的网络模型用于防御性工作。Claude Mythos 5是Anthropic专注于网络安全的最新AI模型。这一合作是在越来越多证据表明AI模型既能发现也能利用软件漏洞的背景下宣布的，此前加密公司公开呼吁主要AI实验室向防御者开放可信访问计划。",
+        "sources": [
+          {
+            "url": "https://www.anthropic.com/glasswing",
+            "title": "Project Glasswing: Securing critical software for the AI era"
+          },
+          {
+            "url": "https://www.anthropic.com/project/glasswing",
+            "title": "Project Glasswing \\ Anthropic"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/Claude_Mythos",
+            "title": "Claude Mythos - Wikipedia"
+          }
+        ],
+        "thread_id": "t7df5e092ac",
+        "thread_day": 1
+      },
+      "ai_score": 7.0,
+      "ai_reason": null,
+      "ai_summary": "Kraken parent Payward joins Anthropic's Project Glasswing to use Claude Mythos 5 for scanning its systems and hunting security vulnerabilities.",
+      "ai_tags": []
+    }
+  ],
+  "dedup_history": [
     {
       "id": "hackernews:story:49323381",
       "source_type": "hackernews",
@@ -349,48 +998,6 @@
       "ai_tags": []
     },
     {
-      "id": "rss:www.coindesk.com_arc_outboundfeeds_rss_:768565f9023ee18e",
-      "source_type": "rss",
-      "title": "The 'long bitcoin, short the bankers' era is officially over as TradFi giants embrace digital assets",
-      "url": "https://www.coindesk.com/business/2026/08/13/the-long-bitcoin-short-the-bankers-era-is-officially-over-as-tradfi-giants-embrace-digital-assets",
-      "content": null,
-      "author": "Francisco Rodrigues",
-      "published_at": "2026-08-16T12:00:00Z",
-      "fetched_at": "2026-08-16T13:09:53.859525Z",
-      "metadata": {
-        "feed_name": "CoinDesk",
-        "category": "crypto-markets",
-        "title_en": "TradFi Giants Embrace Crypto, Ending 'Long Bitcoin, Short the Bankers' Era",
-        "detailed_summary_en": "Two financial institutions managing over $1 trillion each approved crypto products this summer, according to Bitwise CEO Hunter Horsley. Banks have shifted from resisting digital assets to enabling their distribution through custody, trading, and tokenization, blurring the line between traditional and decentralized finance. This marks a structural shift in crypto's relationship with traditional finance, as large institutions expand client access to digital assets even during bear markets. The convergence could accelerate institutional adoption, improve market infrastructure, and normalize crypto as part of mainstream finance. The two institutions were not named, and Bitwise did not specify the products or client access timeline. Notable early bank entrants include Swissquote (2017), DBS (2020), BBVA (2021), BNY Mellon (2022), and more recently Standard Chartered, Charles Schwab, SoFi, and Morgan Stanley.",
-        "background_en": "The slogan 'long bitcoin, short the bankers' reflected crypto's early adversarial stance toward traditional banking, rooted in the belief that banks are corrupt and the financial system favors the wealthy. TradFi (traditional finance) refers to finance through established institutions and centralized intermediaries, while DeFi (decentralized finance) comprises blockchain-based protocols outside central control. The news signals a shift from opposition to integration, as banks now build infrastructure for crypto rather than resisting it.",
-        "market_impact_en": "Institutional adoption by trillion-dollar asset managers broadens distribution channels for crypto products, potentially enhancing demand, liquidity, and custody infrastructure across major venues. While this structural shift may reduce the historical adversarial relationship between banks and crypto, the market's narrative-driven character remains unchanged, so any impact on asset prices is uncertain.",
-        "title_zh": "传统金融巨头拥抱加密，'做多比特币、做空银行家'时代终结",
-        "detailed_summary_zh": "Bitwise CEO Hunter Horsley表示，今年夏天有两家各管理超过1万亿美元资产的金融机构批准了加密产品。银行已从抵制数字资产转向通过托管、交易和代币化来推动其分发，模糊了传统金融与去中心化金融之间的界限。 这标志着加密与传统金融关系的结构性转变，大型机构即使在熊市中也扩大客户对数字资产的准入。这种融合可能加速机构采纳、改善市场基础设施，并使加密成为主流金融的一部分。 这两家机构的名称未被披露，Bitwise也未说明具体产品或客户接入时间。早期入场的银行包括Swissquote（2017）、星展银行（2020）、BBVA（2021）、纽约梅隆银行（2022），近期则有渣打银行、嘉信理财、SoFi和摩根士丹利等。",
-        "background_zh": "'做多比特币、做空银行家'这一口号反映了加密行业早期对传统银行业的对立立场，其根源在于认为银行腐败、金融体系偏向富人。TradFi（传统金融）指通过成熟机构和中心化中介进行的金融活动，而DeFi（去中心化金融）则是在中央控制之外的区块链协议。该新闻标志着从对立走向融合的转变，银行如今正在建设加密基础设施而非抵制它。",
-        "market_impact_zh": "万亿美元级资产管理机构的采纳拓宽了加密产品的分销渠道，可能提升主要场所的需求、流动性和托管基础设施。虽然这一结构性转变可能削弱银行与加密之间的历史对立关系，但市场叙事驱动的特性未变，因此对资产价格的任何影响均不确定。",
-        "sources": [
-          {
-            "url": "https://blog.btcbox.jp/en/archives/13425",
-            "title": "“Short the Bankers, Long Bitcoin” : Interview with... | BTCBOX Blog"
-          },
-          {
-            "url": "https://primexbt.com/for-traders/what-is-tradfi-traditional-finance-explained/",
-            "title": "What Is TradFi? Traditional Finance Explained | PrimeXBT"
-          },
-          {
-            "url": "https://www.investopedia.com/decentralized-finance-defi-5113835",
-            "title": "investopedia.com/decentralized-finance-defi-5113835"
-          }
-        ],
-        "thread_id": "tdffe81810c",
-        "thread_day": 1
-      },
-      "ai_score": 7.5,
-      "ai_reason": null,
-      "ai_summary": "Financial institutions managing over $1 trillion are embracing crypto products, signaling the end of the 'long bitcoin, short the bankers' era and a blurring of traditional and decentralized finance.",
-      "ai_tags": []
-    },
-    {
       "id": "gdelt:article:20260816T164500Z::https://buenosairesherald.com/politics/libra-crypto-victims-on-the-verge-of-being-left-out-of-the-case",
       "source_type": "gdelt",
       "title": "$LIBRA crypto victims on the verge of being left out of the case",
@@ -463,6 +1070,84 @@
       "ai_score": 7.5,
       "ai_reason": null,
       "ai_summary": "Scammers are exploiting the EU's MiCA migration deadline by impersonating regulators and licensed exchanges, triggering a new wave of fraud across Europe.",
+      "ai_tags": []
+    },
+    {
+      "id": "rss:www.coindesk.com_arc_outboundfeeds_rss_:768565f9023ee18e",
+      "source_type": "rss",
+      "title": "The 'long bitcoin, short the bankers' era is officially over as TradFi giants embrace digital assets",
+      "url": "https://www.coindesk.com/business/2026/08/13/the-long-bitcoin-short-the-bankers-era-is-officially-over-as-tradfi-giants-embrace-digital-assets",
+      "content": null,
+      "author": "Francisco Rodrigues",
+      "published_at": "2026-08-16T12:00:00Z",
+      "fetched_at": "2026-08-16T13:09:53.859525Z",
+      "metadata": {
+        "feed_name": "CoinDesk",
+        "category": "crypto-markets",
+        "title_en": "TradFi Giants Embrace Crypto, Ending 'Long Bitcoin, Short the Bankers' Era",
+        "detailed_summary_en": "Two financial institutions managing over $1 trillion each approved crypto products this summer, according to Bitwise CEO Hunter Horsley. Banks have shifted from resisting digital assets to enabling their distribution through custody, trading, and tokenization, blurring the line between traditional and decentralized finance. This marks a structural shift in crypto's relationship with traditional finance, as large institutions expand client access to digital assets even during bear markets. The convergence could accelerate institutional adoption, improve market infrastructure, and normalize crypto as part of mainstream finance. The two institutions were not named, and Bitwise did not specify the products or client access timeline. Notable early bank entrants include Swissquote (2017), DBS (2020), BBVA (2021), BNY Mellon (2022), and more recently Standard Chartered, Charles Schwab, SoFi, and Morgan Stanley.",
+        "background_en": "The slogan 'long bitcoin, short the bankers' reflected crypto's early adversarial stance toward traditional banking, rooted in the belief that banks are corrupt and the financial system favors the wealthy. TradFi (traditional finance) refers to finance through established institutions and centralized intermediaries, while DeFi (decentralized finance) comprises blockchain-based protocols outside central control. The news signals a shift from opposition to integration, as banks now build infrastructure for crypto rather than resisting it.",
+        "market_impact_en": "Institutional adoption by trillion-dollar asset managers broadens distribution channels for crypto products, potentially enhancing demand, liquidity, and custody infrastructure across major venues. While this structural shift may reduce the historical adversarial relationship between banks and crypto, the market's narrative-driven character remains unchanged, so any impact on asset prices is uncertain.",
+        "title_zh": "传统金融巨头拥抱加密，'做多比特币、做空银行家'时代终结",
+        "detailed_summary_zh": "Bitwise CEO Hunter Horsley表示，今年夏天有两家各管理超过1万亿美元资产的金融机构批准了加密产品。银行已从抵制数字资产转向通过托管、交易和代币化来推动其分发，模糊了传统金融与去中心化金融之间的界限。 这标志着加密与传统金融关系的结构性转变，大型机构即使在熊市中也扩大客户对数字资产的准入。这种融合可能加速机构采纳、改善市场基础设施，并使加密成为主流金融的一部分。 这两家机构的名称未被披露，Bitwise也未说明具体产品或客户接入时间。早期入场的银行包括Swissquote（2017）、星展银行（2020）、BBVA（2021）、纽约梅隆银行（2022），近期则有渣打银行、嘉信理财、SoFi和摩根士丹利等。",
+        "background_zh": "'做多比特币、做空银行家'这一口号反映了加密行业早期对传统银行业的对立立场，其根源在于认为银行腐败、金融体系偏向富人。TradFi（传统金融）指通过成熟机构和中心化中介进行的金融活动，而DeFi（去中心化金融）则是在中央控制之外的区块链协议。该新闻标志着从对立走向融合的转变，银行如今正在建设加密基础设施而非抵制它。",
+        "market_impact_zh": "万亿美元级资产管理机构的采纳拓宽了加密产品的分销渠道，可能提升主要场所的需求、流动性和托管基础设施。虽然这一结构性转变可能削弱银行与加密之间的历史对立关系，但市场叙事驱动的特性未变，因此对资产价格的任何影响均不确定。",
+        "sources": [
+          {
+            "url": "https://blog.btcbox.jp/en/archives/13425",
+            "title": "“Short the Bankers, Long Bitcoin” : Interview with... | BTCBOX Blog"
+          },
+          {
+            "url": "https://primexbt.com/for-traders/what-is-tradfi-traditional-finance-explained/",
+            "title": "What Is TradFi? Traditional Finance Explained | PrimeXBT"
+          },
+          {
+            "url": "https://www.investopedia.com/decentralized-finance-defi-5113835",
+            "title": "investopedia.com/decentralized-finance-defi-5113835"
+          }
+        ],
+        "thread_id": "tdffe81810c",
+        "thread_day": 1
+      },
+      "ai_score": 7.5,
+      "ai_reason": null,
+      "ai_summary": "Financial institutions managing over $1 trillion are embracing crypto products, signaling the end of the 'long bitcoin, short the bankers' era and a blurring of traditional and decentralized finance.",
+      "ai_tags": []
+    },
+    {
+      "id": "rss:decrypt.co_feed:0807ae53ae450181",
+      "source_type": "rss",
+      "title": "Apple Turns to Alibaba to Help Build AI Model for China",
+      "url": "https://decrypt.co/375724/apple-alibaba-build-ai-model-china",
+      "content": null,
+      "author": "Jason Nelson",
+      "published_at": "2026-08-15T17:01:03Z",
+      "fetched_at": "2026-08-16T00:30:39.846058Z",
+      "metadata": {
+        "feed_name": "Decrypt",
+        "category": "ai-labs",
+        "title_en": "Apple Teams With Alibaba to Debut AI Model in China",
+        "detailed_summary_en": "Apple has partnered with Alibaba to develop a proprietary large language model for China, and the Cyberspace Administration of China registered the generative AI service last month. Apple Intelligence is expected to reach Chinese iPhones through an iOS update in the coming months, potentially making Apple the first foreign company to operate its own AI model in the country. This milestone could mark the first time a foreign company operates a proprietary AI model in China, where services like ChatGPT and Claude remain blocked. It also highlights Apple's strategic pivot to partnerships — with Alibaba, Baidu, and Google — to close the AI gap with domestic rivals such as Huawei. Apple plans to pair its model with Alibaba's Qwen engine and technology from Baidu, with the specific roles of each system still unclear. The registration clears a key regulatory hurdle, though Siri AI remains unavailable in China while it works through regulatory requirements.",
+        "background_en": "Apple Intelligence, announced in June 2024, is Apple's suite of AI features combining on-device and server processing, integrated into iOS 18, iPadOS 18, and macOS Sequoia, with ChatGPT integration and support for Apple silicon devices. In China, generative AI services must be registered with the Cyberspace Administration of China; foreign models such as OpenAI's ChatGPT and Anthropic's Claude have not gained approval. Alibaba's Qwen is a family of large language models developed by the Chinese tech giant, which has also positioned Qwen as a key part of its cloud and AI strategy.",
+        "title_zh": "苹果联手阿里巴巴在中国推出AI模型",
+        "detailed_summary_zh": "苹果与阿里巴巴合作，为中国市场开发专属大语言模型；国家互联网信息办公室上个月已对苹果的生成式AI服务完成备案。预计Apple Intelligence将随iOS更新在未来数月内推送至中国iPhone，苹果可能成为首家在中国运营自有AI模型的外国公司。 这一里程碑可能标志着外国公司首次在中国运营自有AI模型，而ChatGPT和Claude等服务在中国仍被屏蔽。这也凸显了苹果转向阿里巴巴、百度和谷歌等合作伙伴的战略调整，以缩小与华为等本土竞争对手在AI方面的差距。 苹果计划将其模型与阿里巴巴的Qwen引擎及百度的技术结合使用，各系统具体分工尚不明确。此次备案扫清了一项关键监管障碍，但Siri AI仍需满足监管要求，目前在中国仍无法使用。",
+        "background_zh": "Apple Intelligence是苹果于2024年6月发布的AI功能套件，结合端侧与服务器端处理，集成于iOS 18、iPadOS 18和macOS Sequoia，支持ChatGPT集成，并适用于Apple silicon设备。在中国，生成式AI服务须向国家互联网信息办公室备案；OpenAI的ChatGPT和Anthropic的Claude等外国模型尚未获批。阿里巴巴的Qwen是该中国科技巨头开发的大语言模型系列，也是其云与AI战略的关键组成部分。",
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Apple_Intelligence",
+            "title": "Apple Intelligence"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/Qwen",
+            "title": "Qwen - Wikipedia"
+          }
+        ],
+        "thread_id": "t5923b36444",
+        "thread_day": 1
+      },
+      "ai_score": 7.5,
+      "ai_reason": null,
+      "ai_summary": "Apple partnered with Alibaba to build and register a proprietary AI model for China, potentially becoming the first foreign company allowed to operate its own AI service in the country.",
       "ai_tags": []
     },
     {
@@ -710,843 +1395,6 @@
       "ai_score": 7.0,
       "ai_reason": null,
       "ai_summary": "Bybit introduces pre-IPO perpetual futures for robotics firm Unitree and AI company Moonshot AI, enabling crypto traders to gain exposure to private tech names.",
-      "ai_tags": []
-    }
-  ],
-  "dedup_history": [
-    {
-      "id": "rss:www.coindesk.com_arc_outboundfeeds_rss_:73041c9b0753b836",
-      "source_type": "rss",
-      "title": "Trump-backed World Liberty wins conditional bank charter from federal regulator",
-      "url": "https://www.coindesk.com/policy/2026/08/14/trump-backed-world-liberty-wins-conditional-bank-charter-from-federal-regulator",
-      "content": null,
-      "author": "Nikhilesh De",
-      "published_at": "2026-08-14T21:05:23Z",
-      "fetched_at": "2026-08-15T00:30:31.977297Z",
-      "metadata": {
-        "feed_name": "CoinDesk",
-        "category": "crypto-regulation",
-        "title_en": "OCC grants Trump-linked World Liberty conditional national trust bank charter",
-        "detailed_summary_en": "The U.S. Office of the Comptroller of the Currency (OCC) granted preliminary conditional approval for World Liberty Trust Co. to operate as a national trust bank, clearing the way for it to take over issuance of the USD1 stablecoin from BitGo. Final approval remains contingent on meeting additional preopening requirements. This is a landmark regulatory development that places stablecoin issuance under direct federal banking oversight for the first time, setting a precedent for other token issuers. It also intensifies political scrutiny because of President Trump's ownership stake in World Liberty, and could reshape the competitive landscape of the stablecoin market. The OCC letter states that World Liberty Trust plans to issue USD1, a fiat-backed stablecoin, to institutional clients nationwide and provide digital asset custody as a fiduciary, primarily to USD1 customers. The company does not intend to become a federally insured depository institution, obtain a Federal Reserve master account, or be treated as a \"bank\" under the Bank Holding Company Act.",
-        "background_en": "A national trust bank is a federally chartered entity that conducts fiduciary and custody activities without being a full commercial bank. The USD1 stablecoin, currently issued and custodied by BitGo, is designed to be pegged 1:1 to the U.S. dollar. World Liberty Financial, which partially owns the trust company, has faced scrutiny from Democratic lawmakers due to President Trump's financial ties and an investment from an Abu Dhabi firm.",
-        "market_impact_en": "The conditional charter transfers USD1 issuance and custody from BitGo to a federally chartered trust company, altering the stablecoin's regulatory footing and custody arrangement. This could affect market confidence in USD1 and shift competitive dynamics among stablecoin issuers, with potential knock-on effects on liquidity and institutional adoption through the trust bank channel.",
-        "title_zh": "OCC有条件批准特朗普关联的World Liberty国家信托银行章程",
-        "detailed_summary_zh": "美国货币监理署（OCC）初步有条件批准World Liberty Trust Co.作为国家信托银行运营，为其从BitGo手中接管USD1稳定币发行扫清了障碍。最终批准仍需满足额外的开业前要求。 这是一项具有里程碑意义的监管进展，首次将稳定币发行置于联邦银行直接监管之下，为其他代币发行方树立了先例。由于特朗普总统在World Liberty中持有股份，此举也加剧了政治审查，并可能重塑稳定币市场的竞争格局。 OCC的信函称，World Liberty Trust计划向全国机构客户发行法币支持的稳定币USD1，并作为受托人主要向USD1客户提供数字资产托管服务。该公司不打算成为联邦保险存款机构、不申请美联储主账户，也不根据《银行控股公司法》被视为“银行”。",
-        "background_zh": "国家信托银行是联邦特许的实体，可从事受托和托管业务，但并非全功能商业银行。USD1稳定币目前由BitGo发行和托管，设计为与美元1:1挂钩。由于特朗普总统的财务关联以及一家阿布扎比公司的投资，World Liberty Financial遭到了民主党议员的审查。",
-        "market_impact_zh": "该有条件章程将USD1的发行和托管从BitGo转移到一家联邦特许信托公司，改变了该稳定币的监管基础和托管安排。这可能影响市场对USD1的信心，并改变稳定币发行方之间的竞争态势，通过信托银行渠道对流动性和机构采用产生潜在连锁效应。",
-        "sources": [
-          {
-            "url": "https://www.okx.com/learn/minting-usd1-wlfi-defi-revolution",
-            "title": "Minting USD1 and WLFI: Exploring the Trump-Backed DeFi... | OKX"
-          },
-          {
-            "url": "https://crypto.news/bonk-fun-integrates-usd1-stablecoin-through-raydium/",
-            "title": "BONK.fun integrates USD1 stablecoin through Raydium"
-          },
-          {
-            "url": "https://www.dwt.com/blogs/financial-services-law-advisor/2024/11/why-fintechs-should-consider-national-trust-banks",
-            "title": "National Trust Banks – Revisited for Crypto and Payments | Davis Wright Tremaine"
-          }
-        ],
-        "thread_id": "t36cd357196",
-        "thread_day": 2
-      },
-      "ai_score": 8.5,
-      "ai_reason": null,
-      "ai_summary": "The U.S. Office of the Comptroller of the Currency granted preliminary conditional approval for World Liberty Trust Co. to operate as a national trust bank, clearing the way for it to issue the USD1 stablecoin.",
-      "ai_tags": []
-    },
-    {
-      "id": "gdelt:article:20260814T183000Z::https://memeburn.com/vitalik-buterin-just-rewrote-ethereums-roadmap/",
-      "source_type": "gdelt",
-      "title": "Vitalik Buterin Just Rewrote Ethereum Roadmap : Quantum Defense , AI Verification , and the End of the EVM",
-      "url": "https://memeburn.com/vitalik-buterin-just-rewrote-ethereums-roadmap/",
-      "content": null,
-      "author": "memeburn.com",
-      "published_at": "2026-08-14T18:30:00Z",
-      "fetched_at": "2026-08-14T20:56:50.807385Z",
-      "metadata": {
-        "category": "crypto-protocols",
-        "title_en": "Vitalik Buterin Proposes New Ethereum Roadmap with Quantum Defense and AI Verification",
-        "detailed_summary_en": "Vitalik Buterin has proposed a revamped Ethereum roadmap that adds post-quantum defense, AI-based verification, and a potential shift away from the Ethereum Virtual Machine (EVM). This is a proposal, not an implemented upgrade. Ethereum is the largest smart contract platform, so a change in its technical direction could affect developers, dApps, Layer 2 networks, and the broader crypto ecosystem. If adopted, the roadmap would represent a major architectural shift in how Ethereum secures and executes code. The proposal reportedly includes preparing Ethereum's cryptography for quantum computing threats and using AI to help verify code correctness. Moving away from the EVM would be a significant break from the current execution environment used by thousands of dApps and rollups.",
-        "background_en": "The Ethereum Virtual Machine (EVM) is the decentralized computation engine that executes smart contracts on Ethereum; it is also used by other blockchains like Polygon, Arbitrum, and Avalanche. Post-quantum cryptography refers to algorithms designed to be secure against quantum computer attacks, which could threaten the elliptic-curve cryptography that Ethereum currently relies on. AI verification in blockchain refers to using artificial intelligence methods to detect bugs or verify the correctness of smart contract code. These concepts are central to understanding Buterin's proposed roadmap.",
-        "market_impact_en": "The roadmap proposal could affect crypto markets primarily through sentiment and long-term positioning for Ethereum and the wider ecosystem. Announcements about protocol direction can influence developer and investor confidence in ETH, though no immediate price movement is certain. Related sectors, such as AI-focused tokens or quantum-resistant projects, could also attract attention as a spillover effect.",
-        "title_zh": "Vitalik Buterin提出以太坊新路线图：量子防御与AI验证",
-        "detailed_summary_zh": "Vitalik Buterin提出了一份修订后的以太坊路线图，增加了后量子防御、基于AI的验证，以及可能放弃以太坊虚拟机（EVM）的方向调整。这是一项提议，而非已实施的升级。 以太坊是最大的智能合约平台，其技术方向的改变可能影响开发者、去中心化应用、Layer 2网络以及更广泛的加密生态。如果被采纳，该路线图将代表以太坊在代码安全与执行方式上的重大架构转变。 该提议据悉包括为量子计算威胁做准备，以及利用AI辅助验证代码正确性。放弃EVM将是对当前被数千个去中心化应用和rollup使用的执行环境的重大突破。",
-        "background_zh": "以太坊虚拟机（EVM）是在以太坊上执行智能合约的去中心化计算引擎；Polygon、Arbitrum和Avalanche等其他区块链也使用它。后量子密码学是指旨在抵御量子计算机攻击的算法，量子计算机可能威胁以太坊当前依赖的椭圆曲线密码学。区块链中的AI验证是指利用人工智能方法检测漏洞或验证智能合约代码的正确性。这些概念是理解Buterin提议路线图的核心。",
-        "market_impact_zh": "该路线图提议可能主要通过情绪和长期定位影响以太坊及更广泛生态的加密市场。有关协议方向的公告可能影响开发者和投资者对ETH的信心，但不会必然导致立即的价格波动。AI主题代币或抗量子项目等相关板块也可能因溢出效应受到关注。",
-        "sources": [
-          {
-            "url": "https://ethereum.org/developers/docs/evm/",
-            "title": "Ethereum Virtual Machine (EVM) | ethereum.org"
-          },
-          {
-            "url": "https://en.wikipedia.org/wiki/Post-quantum_cryptography",
-            "title": "Post-quantum cryptography"
-          },
-          {
-            "url": "https://docs.opuslayer.ai/why-opus-ai/why-ai-verification-matters-in-blockchain",
-            "title": "Why AI Verification Matters in Blockchain | OPUS Layer AI"
-          }
-        ],
-        "thread_id": "t176bd175f5",
-        "thread_day": 2
-      },
-      "ai_score": 8.5,
-      "ai_reason": null,
-      "ai_summary": "Vitalik Buterin proposes a revamped Ethereum roadmap featuring quantum defense, AI verification, and a potential shift away from the EVM.",
-      "ai_tags": []
-    },
-    {
-      "id": "rss:decrypt.co_feed:3dee129d9e85105c",
-      "source_type": "rss",
-      "title": "Coldcard Bitcoin Thefts Slow, But Losses Could Top $150 Million: Galaxy",
-      "url": "https://decrypt.co/375656/coldcard-bitcoin-thefts-slow-losses-top-150-million",
-      "content": null,
-      "author": "Jose Antonio Lanz",
-      "published_at": "2026-08-14T17:46:06Z",
-      "fetched_at": "2026-08-15T00:30:48.380212Z",
-      "metadata": {
-        "feed_name": "Decrypt",
-        "category": "crypto-protocols",
-        "title_en": "Coldcard Bitcoin Thefts Slow, But Losses Could Hit $150M: Galaxy",
-        "detailed_summary_en": "Galaxy Research reports the Coldcard seed-recreation exploit has stolen more than 1,778 BTC (~$112 million) and may have a fourth wave that lifts losses above $150 million. The attack waves have slowed, with no confirmed attacker activity after August 6. This is one of the largest hardware-wallet exploits on record, directly affecting Coldcard single-signature users and undermining trust in physical cold-storage devices. It also highlights how a single firmware regression in randomness can expose millions in Bitcoin years later. Galaxy identifies three major attack waves and 41 smaller footprints, with more than 5,200 addresses drained; Wave 1 alone took 1,082.65 BTC. A candidate fourth wave of 638.5 BTC has not yet been confirmed, and roughly 1,531 BTC remains unmoved in attacker-controlled addresses, with 246 BTC traced to Coinjoin transactions.",
-        "background_en": "The exploit stems from a March 2021 Coldcard firmware update (version 4.0.1) that quietly switched seed generation from the hardware random-number chip to a software fallback, reducing effective key strength from 128 bits to as low as 40 bits. Attackers could recreate seeds using a device's serial number and clock state, sweeping funds without phishing, malware, or physical access. Galaxy has spoken with more than 190 victims to attribute the losses, and continues to advise single-signature Coldcard holders to move funds.",
-        "community_discussion_en": "No community comments were provided in the source material.",
-        "market_impact_en": "The news adds direct downward pressure on Bitcoin market sentiment by exposing that a large BTC supply (~1,531 BTC) still sits under attacker control and could be moved, while the incident has already pushed an estimated $15 billion in Bitcoin to safer custody. The main transmission channels are supply overhang risk from stolen funds, reduced trust in hardware-wallet self-custody, and a shift in demand toward alternative custody solutions. This is analysis of what happened, not investment advice.",
-        "title_zh": "Coldcard 比特币盗窃放缓，但损失或超 1.5 亿美元：Galaxy",
-        "detailed_summary_zh": "Galaxy Research 报告称，Coldcard 种子重建漏洞已盗取超过 1,778 枚 BTC（约 1.12 亿美元），并可能存在第四波攻击，使总损失超过 1.5 亿美元。自 8 月 6 日以来未确认新的攻击者活动，攻击浪潮已趋缓。 这是有史以来规模最大的硬件钱包攻击事件之一，直接影响 Coldcard 单签用户，并削弱了对物理冷存储设备的信任。它也凸显了固件中一个随机数生成的回归缺陷如何在数年后暴露出数百万美元的比特币风险。 Galaxy 确认了三次主要攻击浪潮和 41 个较小的攻击足迹，超过 5,200 个地址被盗；仅第一波就盗取了 1,082.65 BTC。另有约 638.5 BTC 的疑似第四波攻击尚未确认，约 1,531 BTC 仍留在攻击者控制的地址中未动，246 BTC 被追踪流向 Coinjoin 交易。",
-        "background_zh": "该漏洞源于 2021 年 3 月的一次 Coldcard 固件更新（4.0.1 版），该更新悄悄将种子生成从硬件随机数芯片切换到软件备用方案，使有效密钥强度从 128 位降至最低 40 位。攻击者可以利用设备序列号和时钟状态重建种子，无需钓鱼、恶意软件或物理接触即可扫走资金。Galaxy 已直接与 190 多名受害者沟通以确认损失，并继续建议单签 Coldcard 用户转移资金。",
-        "community_discussion_zh": "源材料中未提供社区评论。",
-        "market_impact_zh": "该消息显示仍有约 1,531 BTC 掌握在攻击者手中且可能被移动，形成供应过剩风险，同时事件已推动估计约 150 亿美元的比特币转向更安全的托管方式，这些都对市场情绪产生直接影响。主要传导渠道包括被盗资金的潜在抛压、对硬件钱包自托管信任度的下降，以及对其他托管方案需求的转移。这是对事件的客观分析，不构成投资建议。",
-        "sources": [
-          {
-            "url": "https://thehackernews.com/2026/08/coldcard-hardware-wallet-flaw-linked-to.html",
-            "title": "Coldcard Hardware Wallet Flaw Linked to $70 Million Bitcoin Theft in 41 Minutes"
-          },
-          {
-            "url": "https://www.trmlabs.com/resources/blog/the-largest-hardware-wallet-exploit-of-2026-inside-the-usd-116-million-coldcard-hack",
-            "title": "The Largest Hardware Wallet Exploit of 2026: Inside the USD 116 Million Coldcard Hack | TRM Labs"
-          },
-          {
-            "url": "https://www.coindesk.com/tech/2026/08/01/how-bitcoin-cold-wallets-lost-usd70-million-in-an-attack-that-never-touched-the-devices",
-            "title": "How bitcoin cold wallets lost $70 million in an attack that never touched the devices"
-          }
-        ],
-        "thread_id": "ta91361cd5f",
-        "thread_day": 2
-      },
-      "ai_score": 8.5,
-      "ai_reason": null,
-      "ai_summary": "Galaxy Research reports the Coldcard seed-recreation exploit has stolen over 1,778 BTC (~$112M), with a suspected fourth wave possibly pushing total losses above $150M.",
-      "ai_tags": []
-    },
-    {
-      "id": "hackernews:story:49304447",
-      "source_type": "hackernews",
-      "title": "Going Dark, and the era of law enforcement hacking",
-      "url": "https://blog.cryptographyengineering.com/2026/08/14/everything-is-about-to-go-dark/",
-      "content": null,
-      "author": "vslira",
-      "published_at": "2026-08-14T20:52:44Z",
-      "fetched_at": "2026-08-15T00:30:30.149320Z",
-      "metadata": {
-        "discussion_url": "https://news.ycombinator.com/item?id=49304447",
-        "category": "tech-community",
-        "title_en": "Going Dark: Law Enforcement Turns to Hacking, Not Wiretaps",
-        "detailed_summary_en": "In 'Everything Is About to Go Dark,' cryptographer Matthew Green argues that law enforcement is entering an era where it will rely primarily on hacking devices and exploiting vulnerabilities rather than traditional wiretapping. He examines the limits of vulnerability exploitation and warns about the risks of government backdoors. The essay reframes the long-running 'going dark' debate by arguing that hacking will not be a sustainable cure-all for law enforcement. It affects how policymakers, tech companies, and the public think about encryption, vulnerability disclosure, and surveillance powers. Green points to a likely ceiling on the number of useful software bugs, a claim questioned by some who see AI-generated code creating more flaws. He also warns that backdoors pushed as law-enforcement tools would primarily weaken US systems while letting foreign adversaries exploit them.",
-        "background_en": "'Going dark' describes the growing gap between law enforcement's ability to intercept communications and the spread of strong encryption on phones and messaging apps. Historically, wiretapping required physical lines and carried real costs; now encrypted devices and services can block lawful access. As a result, agencies have turned to 'lawful hacking' — gaining access by exploiting software vulnerabilities rather than demanding backdoors. This background explains why Green focuses on the supply of bugs and the policy tension around government hacking.",
-        "community_discussion_en": "Commenters offered mixed views: one noted that early wiretapping was so expensive that prosecutors were billed for phone lines, while another disputed Green's bug-ceiling thesis, arguing AI is making software both buggier and harder to secure. Others contrasted sophisticated government hacking with businesses failing at basic security hygiene, and a fourth reader worried that US-proposed backdoors would deliberately weaken domestic infrastructure.",
-        "title_zh": "走向黑暗：执法部门转向黑客攻击而非窃听",
-        "detailed_summary_zh": "密码学家Matthew Green在《一切即将走向黑暗》一文中指出，执法部门正进入一个主要依靠入侵设备和利用漏洞而非传统窃听的年代。他分析了漏洞利用的局限性，并警告政府后门的风险。 这篇文章重新定义了长期以来的“going dark”（走向黑暗）争论，认为黑客攻击不会是执法部门可持续的万能药。它将影响政策制定者、科技公司和公众对加密、漏洞披露及监控权力的看法。 Green指出可用软件漏洞的数量可能很快就会达到上限，但也有人质疑这一说法，认为AI生成的代码正在制造更多缺陷。他还警告说，以执法为名推动的后门将主要削弱美国自身系统的安全性，让外国对手有机会发动攻击。",
-        "background_zh": "“going dark”（走向黑暗）描述的是执法部门截取通信的能力与手机和消息应用中强加密普及之间日益扩大的差距。过去，窃听需要铺设实体线路且成本高昂；如今加密设备和加密服务可以阻止合法访问。因此，执法机构转向“合法黑客攻击”——通过利用软件漏洞而非要求后门来获取数据。这解释了为何Green专注于漏洞供给以及政府黑客行为带来的政策张力。",
-        "community_discussion_zh": "评论者看法不一：有人指出早期窃听成本极高，检察官甚至要为电话线路付费；有人则反驳Green关于漏洞上限的观点，认为AI正让软件变得更脆弱、更难防护。还有人对比了精密的政府黑客手段与企业连基本安全卫生都做不好的现状；另有一位读者担心美国推动的后门会蓄意削弱本国基础设施。",
-        "sources": [
-          {
-            "url": "https://archives.fbi.gov/archives/news/speeches/going-dark-are-technology-privacy-and-public-safety-on-a-collision-course",
-            "title": "FBI — Going Dark: Are Technology, Privacy, and Public Safety on..."
-          },
-          {
-            "url": "https://www.brookings.edu/articles/lawful-hacking-and-the-case-for-a-strategic-approach-to-going-dark/",
-            "title": "Lawful hacking and the case for a strategic approach to... | Brookings"
-          },
-          {
-            "url": "https://arstechnica.com/tech-policy/2019/08/post-snowden-tech-became-more-secure-but-is-govt-really-at-risk-of-going-dark/",
-            "title": "Barr says the US needs encryption backdoors to prevent “going...”"
-          }
-        ],
-        "thread_id": "taedd30b73b",
-        "thread_day": 1
-      },
-      "ai_score": 8.0,
-      "ai_reason": null,
-      "ai_summary": "Matthew Green analyzes the coming 'going dark' era where law enforcement increasingly relies on hacking devices rather than wiretapping, and the limits of vulnerability exploitation.",
-      "ai_tags": []
-    },
-    {
-      "id": "rss:decrypt.co_feed:0807ae53ae450181",
-      "source_type": "rss",
-      "title": "Apple Turns to Alibaba to Help Build AI Model for China",
-      "url": "https://decrypt.co/375724/apple-alibaba-build-ai-model-china",
-      "content": null,
-      "author": "Jason Nelson",
-      "published_at": "2026-08-15T17:01:03Z",
-      "fetched_at": "2026-08-16T00:30:39.846058Z",
-      "metadata": {
-        "feed_name": "Decrypt",
-        "category": "ai-labs",
-        "title_en": "Apple Teams With Alibaba to Debut AI Model in China",
-        "detailed_summary_en": "Apple has partnered with Alibaba to develop a proprietary large language model for China, and the Cyberspace Administration of China registered the generative AI service last month. Apple Intelligence is expected to reach Chinese iPhones through an iOS update in the coming months, potentially making Apple the first foreign company to operate its own AI model in the country. This milestone could mark the first time a foreign company operates a proprietary AI model in China, where services like ChatGPT and Claude remain blocked. It also highlights Apple's strategic pivot to partnerships — with Alibaba, Baidu, and Google — to close the AI gap with domestic rivals such as Huawei. Apple plans to pair its model with Alibaba's Qwen engine and technology from Baidu, with the specific roles of each system still unclear. The registration clears a key regulatory hurdle, though Siri AI remains unavailable in China while it works through regulatory requirements.",
-        "background_en": "Apple Intelligence, announced in June 2024, is Apple's suite of AI features combining on-device and server processing, integrated into iOS 18, iPadOS 18, and macOS Sequoia, with ChatGPT integration and support for Apple silicon devices. In China, generative AI services must be registered with the Cyberspace Administration of China; foreign models such as OpenAI's ChatGPT and Anthropic's Claude have not gained approval. Alibaba's Qwen is a family of large language models developed by the Chinese tech giant, which has also positioned Qwen as a key part of its cloud and AI strategy.",
-        "title_zh": "苹果联手阿里巴巴在中国推出AI模型",
-        "detailed_summary_zh": "苹果与阿里巴巴合作，为中国市场开发专属大语言模型；国家互联网信息办公室上个月已对苹果的生成式AI服务完成备案。预计Apple Intelligence将随iOS更新在未来数月内推送至中国iPhone，苹果可能成为首家在中国运营自有AI模型的外国公司。 这一里程碑可能标志着外国公司首次在中国运营自有AI模型，而ChatGPT和Claude等服务在中国仍被屏蔽。这也凸显了苹果转向阿里巴巴、百度和谷歌等合作伙伴的战略调整，以缩小与华为等本土竞争对手在AI方面的差距。 苹果计划将其模型与阿里巴巴的Qwen引擎及百度的技术结合使用，各系统具体分工尚不明确。此次备案扫清了一项关键监管障碍，但Siri AI仍需满足监管要求，目前在中国仍无法使用。",
-        "background_zh": "Apple Intelligence是苹果于2024年6月发布的AI功能套件，结合端侧与服务器端处理，集成于iOS 18、iPadOS 18和macOS Sequoia，支持ChatGPT集成，并适用于Apple silicon设备。在中国，生成式AI服务须向国家互联网信息办公室备案；OpenAI的ChatGPT和Anthropic的Claude等外国模型尚未获批。阿里巴巴的Qwen是该中国科技巨头开发的大语言模型系列，也是其云与AI战略的关键组成部分。",
-        "sources": [
-          {
-            "url": "https://en.wikipedia.org/wiki/Apple_Intelligence",
-            "title": "Apple Intelligence"
-          },
-          {
-            "url": "https://en.wikipedia.org/wiki/Qwen",
-            "title": "Qwen - Wikipedia"
-          }
-        ],
-        "thread_id": "t5923b36444",
-        "thread_day": 1
-      },
-      "ai_score": 7.5,
-      "ai_reason": null,
-      "ai_summary": "Apple partnered with Alibaba to build and register a proprietary AI model for China, potentially becoming the first foreign company allowed to operate its own AI service in the country.",
-      "ai_tags": []
-    },
-    {
-      "id": "hackernews:story:49309549",
-      "source_type": "hackernews",
-      "title": "Auto-research with codex: How I achieved a 232x Faster Kernel",
-      "url": "https://sankalp.bearblog.dev/autoresearch/",
-      "content": null,
-      "author": "tosh",
-      "published_at": "2026-08-15T11:00:02Z",
-      "fetched_at": "2026-08-15T16:51:33.455572Z",
-      "metadata": {
-        "discussion_url": "https://news.ycombinator.com/item?id=49309549",
-        "category": "ai-devtools",
-        "title_en": "Developer Uses Codex to Automate Kernel Optimization, Achieving 232x Speedup",
-        "detailed_summary_en": "In a technical blog post, a developer documents how they used OpenAI's Codex agent to automatically research, profile, verify, and optimize a kernel, achieving a 232x speedup. The entire workflow ran in a benchmark-to-profile-to-verify-to-research-to-improve loop. This shows AI coding agents are moving beyond code generation into complex performance engineering. It could make kernel and high-performance computing optimization accessible to developers who lack deep low-level expertise, while also raising questions about benchmark overfitting. The optimization loop includes verification to prevent correctness breakage. Community comments note that such AI-driven optimizations often overfit to competition-specific benchmarks, with 8 of 10 top solutions failing on out-of-distribution inputs, whereas expert-written solutions remained robust.",
-        "background_en": "OpenAI Codex is an AI coding agent released in April 2025, available through ChatGPT, a CLI, a desktop app, and IDE integrations. Kernel optimization refers to tuning low-level system code for better performance through techniques like profiling, loop unrolling, and removing unnecessary features. Overfitting to benchmarks occurs when an optimization is tuned too specifically to a test set, losing generality on real-world inputs.",
-        "community_discussion_en": "Commenters generally agree that LLMs are strong at optimization, with one noting they are 'better than most humans.' However, a commenter warns that 8 of 10 top competition solutions optimized this way broke on out-of-distribution inputs, and only GPU experts produced robust solutions. Another reader praised the post for feeling genuinely human-written rather than AI-generated.",
-        "title_zh": "开发者用 Codex 自动化内核优化，实现 232 倍加速",
-        "detailed_summary_zh": "在一篇技术博客文章中，一位开发者记录了如何使用 OpenAI 的 Codex 代理自动完成内核的研究、性能剖析、验证和优化，最终实现了 232 倍的加速。整个工作流程以“基准测试 -> 性能剖析 -> 验证 -> 研究 -> 改进”的循环自动运行。 这表明 AI 编程代理正从代码生成走向复杂的性能工程。它可能让缺乏底层专业知识的开发者也能进行内核和高性能计算优化，同时也引发了对基准过拟合的担忧。 优化循环包含验证环节以防止正确性被破坏。社区评论指出，这类 AI 驱动的优化往往对竞赛特定基准过拟合，10 个最佳方案中有 8 个在分布外输入上失败，而专家编写的方案仍然保持稳健。",
-        "background_zh": "OpenAI Codex 是 OpenAI 于 2025 年 4 月发布的 AI 编程代理，可通过 ChatGPT、CLI、桌面应用和 IDE 集成使用。内核优化是指通过性能剖析、循环展开和去除不必要功能等技术来调整底层系统代码以获得更好性能。对基准过拟合是指优化过于针对测试集，导致在现实世界输入上失去泛化能力。",
-        "community_discussion_zh": "评论者普遍认为 LLM 在优化方面很强，有人指出它们“比大多数人类更擅长优化”。然而，有评论警告说，用这种方式优化的 10 个竞赛最佳方案中有 8 个在分布外输入上失败，只有 GPU 专家编写的方案才足够稳健。还有读者称赞这篇文章读起来真正像人写的，而非 AI 生成的。",
-        "sources": [
-          {
-            "url": "https://en.wikipedia.org/wiki/OpenAI_Codex_(AI_agent)",
-            "title": "OpenAI Codex (AI agent) - Wikipedia"
-          },
-          {
-            "url": "https://www.geeksforgeeks.org/linux-unix/linux-kernel-optimization/",
-            "title": "Linux Kernel Optimization - GeeksforGeeks"
-          },
-          {
-            "url": "https://www.ibm.com/think/topics/overfitting",
-            "title": "What is Overfitting? | IBM"
-          }
-        ],
-        "thread_id": "t4ebe610f1b",
-        "thread_day": 1
-      },
-      "ai_score": 7.5,
-      "ai_reason": null,
-      "ai_summary": "A developer documents how they used Codex to automatically research and optimize a kernel, achieving a 232x speedup, with community discussion noting both the impressive results and the risk of overfitting to specific benchmarks.",
-      "ai_tags": []
-    },
-    {
-      "id": "google_news:article:28e2ef9acb9bd4ea",
-      "source_type": "google_news",
-      "title": "RedotPay Shelves $1 Billion IPO After Binance Sues Over 470,000 Users - Startup Fortune",
-      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOQXRaS2J1MGJSMG9BMjlENXcxQ3V6dEY5ZWF2US16NEpUaU9xNlVRRWZMUnU5WFF4Z2RiLTVmOUUwZFR5dlNBU3pQdEFaMEJiY1FleU5PMS04anIwUi13OU43YlpDSW1YNE42elVaelVwTFZVS2oya01ROGhoMnRwWGk5VUJIR2dBREpVMUFLNW9RS1NhSUxzaEI3Yw?oc=5",
-      "content": null,
-      "author": "Startup Fortune",
-      "published_at": "2026-08-15T08:39:28Z",
-      "fetched_at": "2026-08-15T20:49:11.936365Z",
-      "metadata": {
-        "category": "crypto-regulation",
-        "title_en": "RedotPay Shelves $1B IPO After Binance Sues Over 470,000 Users",
-        "detailed_summary_en": "RedotPay has shelved its planned $1 billion initial public offering after Binance filed a lawsuit against the company involving 470,000 users. The legal dispute has derailed the Hong Kong-based crypto payment firm's public listing plans. This legal clash between two major crypto entities highlights the increasing legal and regulatory risks facing crypto payment companies. It could undermine user trust and make it harder for crypto fintech firms to pursue public listings. The lawsuit reportedly involves 470,000 users, though specific allegations have not been publicly detailed. RedotPay was founded in April 2023 and specializes in stablecoin-based payment conversions between digital assets and fiat currencies.",
-        "background_en": "RedotPay is a Hong Kong-based fintech company founded in April 2023 by Michael Gao and Jonathan Chan, offering stablecoin-based cryptocurrency payment solutions. Binance is the world's largest cryptocurrency exchange, and legal disputes can delay or derail corporate fundraising plans. An IPO is a process by which a private company offers shares to the public to raise capital.",
-        "market_impact_en": "The news could dampen sentiment toward crypto payment platforms and increase regulatory scrutiny on stablecoin services, but it does not directly affect specific crypto asset prices. The lawsuit highlights legal counterparty risks that may influence how investors evaluate crypto fintech firms.",
-        "title_zh": "RedotPay 遭币安诉讼后搁置 10 亿美元 IPO",
-        "detailed_summary_zh": "RedotPay 在币安对其提起诉讼（涉及 470,000 名用户）后，搁置了其计划的 10 亿美元首次公开募股（IPO）。这场法律纠纷打乱了这家总部位于香港的加密支付公司的上市计划。 这两家大型加密实体之间的法律冲突凸显了加密支付公司面临的法律和监管风险日益增加。这可能会削弱用户信任，并增加加密金融科技公司寻求公开上市的难度。 据报道，该诉讼涉及 470,000 名用户，但具体指控尚未公开披露。RedotPay 成立于 2023 年 4 月，专注于基于稳定币的数字资产与法定货币之间的支付转换。",
-        "background_zh": "RedotPay 是一家总部位于香港的金融科技公司，由 Michael Gao 和 Jonathan Chan 于 2023 年 4 月创立，提供基于稳定币的加密货币支付解决方案。币安是全球最大的加密货币交易所，法律纠纷可能延迟或打乱企业的融资计划。IPO 是私营企业向公众发售股份以筹集资金的过程。",
-        "market_impact_zh": "这一消息可能会压制加密支付平台的市场情绪，并加强对稳定币服务的监管审查，但不会直接影响特定加密资产的价格。该诉讼凸显了法律对手方风险，可能影响投资者对加密金融科技公司的评估。",
-        "sources": [
-          {
-            "url": "https://grokipedia.com/page/RedotPay",
-            "title": "RedotPay"
-          }
-        ],
-        "thread_id": "t27e41bd398",
-        "thread_day": 1
-      },
-      "ai_score": 7.5,
-      "ai_reason": null,
-      "ai_summary": "RedotPay shelves its $1 billion IPO after Binance sues the company over 470,000 users.",
-      "ai_tags": []
-    },
-    {
-      "id": "google_news:article:34c230d725745c22",
-      "source_type": "google_news",
-      "title": "ABFinance, U.S. Crypto Exchange Founded by Former Bybit Co-CEO, Suspends Operations - CryptoRank",
-      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1IUzlRT0xiamZWbENCY2VsSUZ0SGcwNWc0aUt0Q2xUUTYxSHlwNW9kcnRheHM1ekk4c2o5QjE0eFB5d1poV3BDQ1A1YmlKQkNwbFBjZEJUNVd2ZEs4TWNyQl8wel85ajZSeTFMUHJEeU83UkV4M2c?oc=5",
-      "content": null,
-      "author": "CryptoRank",
-      "published_at": "2026-08-15T02:23:36Z",
-      "fetched_at": "2026-08-15T08:55:55.449596Z",
-      "metadata": {
-        "category": "exchange-operations",
-        "merged_sources": [
-          "CryptoRank",
-          "Bitcoin World"
-        ],
-        "title_en": "ABFinance, Ex-Bybit Co-CEO's U.S. Exchange, Suspends Operations",
-        "detailed_summary_en": "ABFinance, a U.S. crypto exchange founded by former Bybit co-CEO Helen Liu, has suspended operations on August 14, 2025, citing U.S. regulatory pressures. The platform, which aimed to combine deposits, trading, earning, and payments, has not yet detailed the scope or timeline of the suspension. The suspension underscores the tough regulatory environment for crypto exchanges in the U.S., where compliance costs and legal risks are high. It affects ABFinance users who may face restricted access to their funds and signals continued consolidation or shutdowns among smaller U.S. exchanges. ABFinance was founded by Helen Liu, who left Bybit after five years as co-CEO, to build a U.S.-licensed platform bridging fiat and crypto. The shutdown highlights the need for significant capital and legal resources to operate a compliant exchange in the U.S.",
-        "background_en": "Bybit is a Dubai-based centralized exchange and one of the world's largest crypto exchanges by trading volume. Helen Liu co-led Bybit before departing to launch ABFinance in the U.S., which offered services like deposits, trading, earning, and payments. U.S. regulators, including the SEC and state authorities, have increasingly scrutinized crypto exchanges, making it difficult for smaller players to operate.",
-        "market_impact_en": "The suspension of ABFinance highlights U.S. regulatory risk for crypto exchanges, which could dampen sentiment and increase compliance costs across the industry. Users holding assets on the platform face custody and liquidity uncertainties, though the overall market impact is likely limited given ABFinance's relatively small scale.",
-        "title_zh": "由Bybit前联席CEO创立的美国加密交易所ABFinance暂停运营",
-        "detailed_summary_zh": "由Bybit前联席CEO Helen Liu创立的美国加密交易所ABFinance已于2025年8月14日暂停运营，原因是美国监管压力。该平台原本计划整合存款、交易、理财和支付功能，但暂停的范围和时间表尚未公布。 此次暂停凸显了美国加密交易所面临的严峻监管环境，合规成本和法律风险高企。这影响ABFinance用户，他们可能面临资金取用受限，也标志着美国小型交易所持续整合或关闭。 ABFinance由Helen Liu创立，她在担任Bybit联席CEO五年后离职，创办了这一旨在连接法币与加密货币的美国持牌平台。此次关闭凸显了在美国运营合规交易所需要大量资金和法律资源。",
-        "background_zh": "Bybit是一家总部位于迪拜的中心化加密货币交易所，按交易量计算是全球最大的加密货币交易所之一。Helen Liu曾与Ben Zhou共同领导Bybit，之后离职在美国创办ABFinance，提供存款、交易、理财和支付等服务。美国监管机构（包括SEC和各州当局）对加密货币交易所的审查日益严格，使得规模较小的平台难以运营。",
-        "market_impact_zh": "ABFinance的暂停运营凸显了美国加密货币交易所面临的监管风险，可能抑制行业情绪并推高整个行业的合规成本。在平台上持有资产的用户面临托管和流动性方面的不确定性，但考虑到ABFinance的规模相对较小，整体市场影响可能有限。",
-        "sources": [
-          {
-            "url": "https://bitcoinworld.co.in/abfinance-suspends-operations/",
-            "title": "ABFinance, U.S. Crypto Exchange Founded By Former Bybit..."
-          },
-          {
-            "url": "https://www.cryptopolitan.com/ex-bybit-abfinance-scraps-launch/",
-            "title": "Ex-Bybit co-CEO's ABFinance scraps launch amid... - Cryptopolitan"
-          }
-        ],
-        "thread_id": "t807941eec6",
-        "thread_day": 1
-      },
-      "ai_score": 7.5,
-      "ai_reason": null,
-      "ai_summary": "ABFinance, a U.S. crypto exchange founded by former Bybit Co-CEO, has suspended operations.",
-      "ai_tags": []
-    },
-    {
-      "id": "rss:www.coindesk.com_arc_outboundfeeds_rss_:40f261c91317be9d",
-      "source_type": "rss",
-      "title": "Trump expected to attend White House meeting with crypto CEOs, sources say",
-      "url": "https://www.coindesk.com/policy/2026/08/14/trump-expected-to-attend-white-house-meeting-with-crypto-ceos-sources-say",
-      "content": null,
-      "author": "Jesse Hamilton",
-      "published_at": "2026-08-14T23:41:49Z",
-      "fetched_at": "2026-08-15T00:30:31.679502Z",
-      "metadata": {
-        "feed_name": "CoinDesk",
-        "category": "crypto-regulation",
-        "title_en": "Trump expected to attend White House meeting with crypto CEOs",
-        "detailed_summary_en": "President Donald Trump is expected to attend a White House meeting on Wednesday with CEOs from crypto, prediction market, and AI companies, sources say. The gathering includes leaders from Coinbase, Ripple, Gemini, Robinhood, Polymarket, and Kalshi, and precedes the CFTC Innovation Advisory Committee's first meeting on Thursday. Presidential attendance signals high-level government engagement with crypto policy, potentially shaping the regulatory direction for digital assets, prediction markets, and AI. It could influence market sentiment by giving industry leaders direct access to top policymakers and reinforcing expectations of a clearer U.S. crypto framework. The meeting is expected at the Eisenhower Executive Office Building, with CFTC Chairman Mike Selig and possibly Treasury Secretary Scott Bessent and Commerce Secretary Howard Lutnick in attendance. The committee also includes traditional finance leaders from CME Group, Nasdaq, Intercontinental Exchange, and DTCC, and the CFTC agenda includes a session titled 'Crypto's Regulatory Evolution: From Uncertainty to Clarity'.",
-        "background_en": "The Commodity Futures Trading Commission (CFTC) established an Innovation Advisory Committee composed of CEOs from crypto, prediction market, and AI companies alongside traditional financial institutions. The committee advises the CFTC on innovation related to derivatives, commodities, AI, and blockchain-based markets. Prediction markets are exchange-traded markets where participants trade on the outcome of future events. This White House meeting occurs amid Senate debate over the Digital Asset Market Clarity Act, which involves questions about ethics restrictions on Trump's personal crypto industry involvement.",
-        "market_impact_en": "This meeting is a political signal rather than a concrete policy change, but it could affect crypto market sentiment through the channel of perceived regulatory clarity. Assets such as Bitcoin and Ethereum, as well as tokens tied to participating companies and prediction market platforms, may attract increased attention as expectations for a durable U.S. market structure evolve.",
-        "title_zh": "特朗普预计将出席与加密CEO的白宫会议",
-        "detailed_summary_zh": "消息人士称，美国总统唐纳德·特朗普预计将于周三出席一场与加密货币、预测市场和AI公司CEO的白宫会议。此次聚会包括Coinbase、Ripple、Gemini、Robinhood、Polymarket和Kalshi的领导者，并定于CFTC创新顾问委员会周四首次会议之前举行。 总统出席标志着政府对加密政策的高层参与，可能影响数字资产、预测市场和AI的监管方向。这可能通过让行业领袖直接接触高层政策制定者并强化对美国更清晰加密框架的预期来影响市场情绪。 会议预计将在艾森豪威尔行政办公大楼举行，CFTC主席Mike Selig以及可能还包括财政部长Scott Bessent和商务部长Howard Lutnick将出席。委员会成员还包括CME Group、Nasdaq、洲际交易所和DTCC的传统金融领袖，CFTC议程包括题为‘加密货币的监管演变：从不确定性到清晰’的环节。",
-        "background_zh": "美国商品期货交易委员会（CFTC）成立了一个创新顾问委员会，成员包括加密货币、预测市场和AI公司的CEO以及传统金融机构。该委员会就与衍生品、大宗商品、AI和基于区块链的市场相关的创新向CFTC提供建议。预测市场是一种交易所交易市场，参与者就未来事件的结果进行交易。此次白宫会议正值参议院就《数字资产市场清晰法案》进行辩论之际，该法案涉及对特朗普个人参与加密行业的道德限制问题。",
-        "market_impact_zh": "此次会议是一个政治信号而非具体的政策变化，但可能通过感知到的监管清晰度渠道影响加密市场情绪。随着对美国持久市场结构的预期演变，比特币和以太坊等资产，以及与参与公司和预测市场平台相关的代币，可能吸引更多关注。",
-        "sources": [
-          {
-            "url": "https://www.cftc.gov/",
-            "title": "Commodity Futures Trading Commission | CFTC"
-          },
-          {
-            "url": "https://www.oddsshark.com/industry-news/cftc-innovation-advisory-committee",
-            "title": "Sportsbooks & Prediction Markets Join CFTC Innovation... | Odds Shark"
-          },
-          {
-            "url": "https://miningnews.live/en/article/cftc-innovation-committee-crypto-ceos",
-            "title": "CFTC Innovation Committee with Crypto CEOs to... - Mining News"
-          }
-        ],
-        "thread_id": "t86494e782a",
-        "thread_day": 1
-      },
-      "ai_score": 7.5,
-      "ai_reason": null,
-      "ai_summary": "President Trump is expected to attend a White House meeting with crypto, prediction market, and AI CEOs ahead of the CFTC innovation committee's inaugural event.",
-      "ai_tags": []
-    },
-    {
-      "id": "rss:cryptoslate.com_feed_:86cf9a86f22ae772",
-      "source_type": "rss",
-      "title": "Ethereum abandons its 8-year cryptography bet after proof systems flip the tradeoff",
-      "url": "https://cryptoslate.com/ethereum-abandons-its-8-year-cryptography-bet-after-proof-systems-flip-the-tradeoff/",
-      "content": null,
-      "author": "Gino Matos",
-      "published_at": "2026-08-14T23:40:53Z",
-      "fetched_at": "2026-08-15T00:30:39.849642Z",
-      "metadata": {
-        "feed_name": "CryptoSlate",
-        "category": "crypto-protocols",
-        "title_en": "Ethereum drops Poseidon for SHA/BLAKE as proof systems shift tradeoffs",
-        "detailed_summary_en": "On August 13, Ethereum Foundation researcher Justin Drake said future L1 designs will favor SHA or BLAKE hashes instead of Poseidon, after eight years of work on proof-friendly cryptography. New binary-field proof systems such as Binius and Flock have made conventional hashes practical, though Drake said Poseidon is not broken and no migration order or fork has been issued. This marks a significant protocol-level strategy shift for Ethereum, affecting future proof-driven L1 architecture and zero-knowledge proof tradeoffs. It could influence rollups, zkVMs, and Ethereum's post-quantum roadmap, while giving cryptanalysts' long-tested standard hashes a stronger role. The Flock paper reports that one M4 Max core can prove about 82,000 BLAKE3 compression evaluations, 42,000 SHA-256 compressions, and 30,000 Keccak permutations per second. The benchmark counts internal hash operations, which differs from Ethereum transaction capacity or production throughput; SHA-256 is a NIST standard, BLAKE2 has had a public spec since 2015, while BLAKE3 is newer.",
-        "background_en": "Poseidon is a ZK-friendly cryptographic hash designed to be efficient when expressed as a circuit over a large prime field, reducing proving costs in SNARKs. Conventional hashes like SHA-256 rely on bitwise operations that historically carried a high proving penalty in prime-field proof systems. Binary-field proof systems such as Binius work naturally with 0s and 1s, closely matching Keccak's bitwise operations and making standard hashes practical. Ethereum's roadmap also includes replacing BLS signatures with hash-based leanXMSS signatures and using leanVM to aggregate data, so cheap proofs of conventional hashes remove an obstacle from that architecture.",
-        "title_zh": "以太坊放弃Poseidon，转向SHA/BLAKE，证明系统改变权衡",
-        "detailed_summary_zh": "8月13日，以太坊基金会研究员Justin Drake表示，未来L1设计将优先采用SHA或BLAKE哈希，而非Poseidon，此前该基金会在友好证明的密码学上已投入八年。Binius和Flock等新型二进制域证明系统使传统哈希变得实用，但Drake表示Poseidon并未被攻破，也没有发布迁移命令或分叉。 这标志着以太坊协议层面的重大战略转向，影响未来以证明驱动的L1架构和零知识证明的权衡选择。它可能影响Rollup、zkVM以及以太坊的后量子路线图，同时让经过长期密码分析的标准化哈希发挥更重要作用。 Flock论文报告，单颗M4 Max核心每秒可证明约82,000次BLAKE3压缩计算、42,000次SHA-256压缩和30,000次Keccak置换。该基准统计的是内部哈希运算，与以太坊交易容量或生产吞吐量不同；SHA-256是NIST标准，BLAKE2自2015年起就有公开规范，而BLAKE3较新。",
-        "background_zh": "Poseidon是一种ZK友好型密码学哈希，设计目标是在大素数域上以电路形式高效表达，从而降低SNARK中的证明成本。SHA-256等传统哈希依赖位运算，在素数域证明系统中历来有很高的证明代价。Binius等二进制域证明系统天然处理0和1，与Keccak的位运算高度匹配，使标准哈希变得实用。以太坊的路线图还包括用基于哈希的leanXMSS签名替代BLS签名，并使用leanVM聚合数据，因此常规哈希的低成本证明将扫清该架构中的障碍。",
-        "sources": [
-          {
-            "url": "https://www.poseidon-hash.info/",
-            "title": "Poseidon Hash"
-          },
-          {
-            "url": "https://www.coinlive.com/news/ethereum-founder-vitalik-buterin-explains-binius",
-            "title": "Ethereum founder Vitalik Buterin explains Binius"
-          },
-          {
-            "url": "https://www.podfolio.co/podcast/zero-knowledge/pushing-the-limits-of-proof-systems-with-benedikt-bnz",
-            "title": "Pushing the Limits of Proof Systems with Benedikt Bünz Summary..."
-          }
-        ],
-        "thread_id": "te31a3c62ef",
-        "thread_day": 1
-      },
-      "ai_score": 7.5,
-      "ai_reason": null,
-      "ai_summary": "Ethereum Foundation is shifting future L1 designs away from Poseidon toward SHA or BLAKE after binary-field proof systems made the older hashes practical, without declaring Poseidon broken.",
-      "ai_tags": []
-    },
-    {
-      "id": "rss:cryptoslate.com_feed_:1cbb86d5055f529f",
-      "source_type": "rss",
-      "title": "Strategy tells MSCI ‘Bitcoin doesn’t need you’ as $2.8 billion index risk hangs over MSTR",
-      "url": "https://cryptoslate.com/strategy-tells-msci-bitcoin-doesnt-need-you-as-2-8-billion-index-risk-hangs-over-mstr/",
-      "content": null,
-      "author": "Oluwapelumi Adejumo",
-      "published_at": "2026-08-14T17:30:28Z",
-      "fetched_at": "2026-08-15T00:30:40.525588Z",
-      "metadata": {
-        "feed_name": "CryptoSlate",
-        "category": "crypto-markets",
-        "title_en": "Strategy fights MSCI proposal that could trigger $2.8B MSTR sell-off",
-        "detailed_summary_en": "MSCI launched a consultation that could classify Strategy as a non-operating company and remove it from major equity indexes. Strategy responded publicly, arguing that index providers should reflect markets rather than influence corporate asset allocation; feedback closes September 30 and the final decision is expected by October 16. If MSCI removes Strategy from the ACWI IMI, passive funds tracking the index could sell an estimated $2.8 billion of MSTR shares, pressuring the stock and the broader Bitcoin-backed corporate treasury narrative. The outcome also sets a precedent for other digital-asset and commodity-holding companies like Metaplanet and Yellow Cake. Under the proposed methodology, companies first pass a core screen if operating assets exceed 50% of total assets; otherwise, five financial tests apply, and failing at least four would make a firm ineligible. Existing constituents face a higher threshold (10% operating assets) and must fail across two consecutive annual reviews before removal, so the consultation does not guarantee an immediate deletion.",
-        "background_en": "MSCI is a major global index provider whose equity indexes are tracked by large passive funds. Strategy (formerly MicroStrategy) is the largest corporate Bitcoin holder, and its stock has become a leveraged play on Bitcoin's price. Earlier in 2025, MSCI dropped a crypto-specific deletion rule; the new 'non-operating company' framework emerged from a broader review and flags firms that rely on external capital to accumulate assets rather than generating operating cash flow.",
-        "market_impact_en": "The main transmission channel is passive index-tracking flows: exclusion from the MSCI ACWI IMI would force index funds to sell MSTR, potentially around $2.8 billion, and this could weigh on sentiment for Bitcoin-linked equities. Any impact on Strategy's share price could, in turn, affect the value of its Bitcoin treasury and investor perception of BTC as a corporate reserve asset, although no directional move should be assumed.",
-        "title_zh": "Strategy反击MSCI提案，称比特币不需要MSCI",
-        "detailed_summary_zh": "MSCI发起了一项咨询，可能将Strategy归类为“非运营公司”并将其从主要股票指数中剔除。Strategy公开回应，辩称指数提供商应反映市场而非影响企业资产配置；反馈将于9月30日结束，最终决定预计10月16日公布。 如果MSCI将Strategy从ACWI IMI指数中剔除，追踪该指数的被动基金可能卖出约28亿美元的MSTR股票，给该股及比特币资产储备企业叙事带来压力。该结果也为Metaplanet、Yellow Cake等其他持有数字资产或大宗商品的公司开创先例。 根据提案，公司的运营资产占总资产比例超过50%即可通过核心筛选；否则需接受五项财务测试，若至少四项不达标则可能被剔除。现有成分股的门槛更宽（运营资产低于10%），且需连续两次年度审查未通过才会被移除，因此本次咨询并不意味着立即剔除。",
-        "background_zh": "MSCI是全球重要指数提供商，其股票指数被大量被动型基金追踪。Strategy（原MicroStrategy）是最大的企业比特币持有者，其股价已成为比特币价格的杠杆化体现。2025年初，MSCI放弃了仅针对加密资产的剔除规则；随后经更广泛审查，于8月推出了新的“非运营公司”框架，旨在识别依赖外部资本积累资产而非依靠经营产生现金流的公司。",
-        "market_impact_zh": "主要传导渠道是被动指数跟踪资金流：若被剔除出MSCI ACWI IMI指数，指数基金将被迫卖出MSTR，规模可能约为28亿美元，并可能抑制比特币相关股票的市场情绪。Strategy股价的变化可能进一步影响其比特币储备的价值以及投资者将BTC作为企业储备资产的看法，但不应假设其会朝哪个方向波动。",
-        "sources": [
-          {
-            "url": "https://www.thestreet.com/crypto/markets/microstrategy-sends-harsh-response-to-fresh-msci-delisting-threat",
-            "title": "MicroStrategy sends harsh response to fresh MSCI delisting threat"
-          },
-          {
-            "url": "https://cryptopanic.com/news/33210675/Two-Bitcoin-Treasury-Firms-and-a-Uranium-Company-Face-MSCI-Index-Removal",
-            "title": "Two Bitcoin Treasury Firms and a Uranium Company Face MSCI..."
-          },
-          {
-            "url": "https://grokipedia.com/page/MSCI_ACWI_IMI_Index",
-            "title": "MSCI ACWI IMI Index"
-          }
-        ],
-        "thread_id": "td3da362bf8",
-        "thread_day": 1
-      },
-      "ai_score": 7.5,
-      "ai_reason": null,
-      "ai_summary": "Strategy pushes back against MSCI's proposed 'non-operating company' framework that could remove it from major indexes and trigger an estimated $2.8 billion in passive MSTR selling.",
-      "ai_tags": []
-    },
-    {
-      "id": "rss:www.theblock.co_rss.xml:1e459f019fd592dd",
-      "source_type": "rss",
-      "title": "Israel’s largest bank taps Galaxy to offer bitcoin, ether and solana trading",
-      "url": "https://www.theblock.co/news/business/2026-08-14-israels-largest-bank-taps-galaxy-to-offer-bitcoin-ether-and-solana-trading-411868",
-      "content": null,
-      "author": "RT Watson",
-      "published_at": "2026-08-14T17:09:37Z",
-      "fetched_at": "2026-08-15T00:30:37.895719Z",
-      "metadata": {
-        "feed_name": "The Block",
-        "category": "crypto-markets",
-        "title_en": "Israel's largest bank partners with Galaxy for bitcoin, ether, solana trading",
-        "detailed_summary_en": "Israel's largest bank has partnered with Galaxy Digital to offer its clients trading in bitcoin, ether, and solana. The move marks a significant step for institutional cryptocurrency access in Israel. A traditional top-tier bank enabling direct crypto trading signals growing mainstream acceptance of digital assets. It could set a precedent for other banks in Israel and the region, expanding the investor base for these cryptocurrencies. The offering covers bitcoin, ether, and solana, with Galaxy providing the trading infrastructure and execution. According to Chainalysis, Israel received an estimated $22 billion in onchain crypto value during the 12 months ending June 2025, indicating substantial existing demand.",
-        "background_en": "Galaxy Digital is a digital assets and financial services firm founded by Michael Novogratz, offering trading, custody, and advisory services for crypto assets. Chainalysis is a blockchain analytics firm that tracks onchain flows and adoption. The partnership is part of a broader trend of traditional banks entering crypto services as regulatory clarity improves.",
-        "market_impact_en": "By giving clients of Israel's largest bank a regulated, institutional-grade path to bitcoin, ether, and solana, the partnership could increase demand for these assets and raise their liquidity in the Israeli market. It also reinforces crypto's legitimacy as an investable asset class, potentially encouraging further bank-led adoption globally.",
-        "title_zh": "以色列最大银行携手Galaxy提供比特币、以太坊和Solana交易",
-        "detailed_summary_zh": "以色列最大银行与Galaxy Digital合作，为其客户提供比特币、以太坊和Solana的交易服务。此举标志着以色列机构加密货币准入的重要一步。 一家顶级传统银行开放加密货币直接交易，标志着数字资产正日益获得主流认可。这可能为以色列及周边地区的其他银行开创先例，扩大这些加密资产的投资者基础。 该服务涵盖比特币、以太坊和Solana，由Galaxy提供交易基础设施和执行。Chainalysis数据显示，截至2025年6月的12个月内，以色列收到的链上加密资产价值估计达220亿美元，表明当地已有可观需求。",
-        "background_zh": "Galaxy Digital是由Michael Novogratz创立的数字资产与金融服务公司，提供加密资产的交易、托管和咨询服务。Chainalysis是一家跟踪链上资金流动和采用情况的区块链分析公司。此次合作是监管日趋清晰背景下传统银行涉足加密服务的更广泛趋势的一部分。",
-        "market_impact_zh": "通过为以色列最大银行的客户提供受监管的机构级比特币、以太坊和Solana投资渠道，这一合作可能提升这些资产在以色列市场的需求和流动性。同时，它强化了加密资产作为可投资类别的合法性，可能推动全球更多银行主导的采用。",
-        "sources": [
-          {
-            "url": "https://grokipedia.com/page/Galaxy_company",
-            "title": "Galaxy (company)"
-          },
-          {
-            "url": "https://en.wikipedia.org/wiki/Chainalysis",
-            "title": "Chainalysis"
-          }
-        ],
-        "thread_id": "t4a44d906d9",
-        "thread_day": 2
-      },
-      "ai_score": 7.5,
-      "ai_reason": null,
-      "ai_summary": "Israel's largest bank partners with Galaxy to offer Bitcoin, Ether, and Solana trading, underscoring growing institutional crypto adoption in Israel.",
-      "ai_tags": []
-    },
-    {
-      "id": "rss:www.coindesk.com_arc_outboundfeeds_rss_:7e999a5b4db17aa5",
-      "source_type": "rss",
-      "title": "Swiss mega-bank UBS ramps up its Bitcoin exposure with a massive 24-fold surge in ETF call options",
-      "url": "https://www.coindesk.com/business/2026/08/15/swiss-mega-bank-ubs-ramps-up-its-bitcoin-exposure-with-a-massive-24-fold-surge-in-etf-call-options",
-      "content": null,
-      "author": "Francisco Rodrigues",
-      "published_at": "2026-08-15T15:56:05Z",
-      "fetched_at": "2026-08-16T00:30:31.026042Z",
-      "metadata": {
-        "feed_name": "CoinDesk",
-        "category": "crypto-markets",
-        "title_en": "UBS's IBIT Call Option Exposure Surges 24-Fold in Q2",
-        "detailed_summary_en": "UBS reported a more than 24-fold quarterly increase in call option exposure to BlackRock's iShares Bitcoin Trust (IBIT), reaching 1.95 million underlying shares as of June 30. Direct IBIT holdings rose 12% to 407,890 shares, while put option exposure dropped roughly 53% to 143,300 underlying shares. This signals growing institutional adoption of Bitcoin ETFs and related derivatives, with a major global bank expanding its footprint in digital assets. The trend could encourage other large financial institutions to follow suit, further integrating crypto into mainstream finance. The regulatory filing does not disclose strike prices or expiration dates, making it impossible to determine UBS's net directional exposure from the filing alone. The increase could stem from client initiatives, dealer hedging, market-making, discretionary client portfolios, or proprietary exposure, and the bank's direct IBIT holdings remain below the 548,614 shares reported at the end of 2025.",
-        "background_en": "Call and put options are financial derivatives: a call option gives the holder the right to buy an underlying asset at a specified price within a set period, while a put option gives the right to sell. Options on exchange-traded funds (ETFs) such as BlackRock's IBIT allow investors to gain leveraged or hedged exposure to the fund's performance without directly buying or selling the ETF shares. UBS, which manages over $7 trillion in assets, has also been preparing to offer select private banking clients in Switzerland access to bitcoin and ether trading.",
-        "market_impact_en": "The disclosure could reinforce positive sentiment around institutional demand for Bitcoin, as a top-tier global bank is expanding exposure to a spot Bitcoin ETF through derivatives. However, because the filing is opaque about whether the positions are client-driven, proprietary, or hedging-related, the transmission to Bitcoin markets is indirect and should be interpreted cautiously.",
-        "title_zh": "瑞银IBIT看涨期权敞口二季度激增24倍",
-        "detailed_summary_zh": "瑞银报告称，其持有贝莱德iShares比特币信托（IBIT）的看涨期权敞口在二季度环比增长超过24倍，截至6月30日达到195万股标的股份。直接持有的IBIT股份增加12%至407,890股，而看跌期权敞口则减少约53%至143,300股标的股份。 这一动向表明，机构对比特币ETF及相关衍生品的采纳正在增加，一家全球大型银行正在扩大其在数字资产领域的影响力。这一趋势可能鼓励其他大型金融机构跟进，进一步将加密货币融入主流金融体系。 该监管申报文件未披露行权价或到期日，因此仅凭文件无法判断瑞银的净方向性敞口。这次增加可能源于客户主动交易、做市商对冲、做市活动、客户全权委托组合或自营敞口；此外，其直接持有的IBIT股份仍低于2025年底报告的548,614股。",
-        "background_zh": "看涨期权和看跌期权是金融衍生品：看涨期权赋予持有者在约定时间内按指定价格买入标的资产的权利，看跌期权则赋予卖出权利。交易所交易基金（ETF）期权（如贝莱德IBIT的期权）允许投资者在不直接买卖ETF份额的情况下，获得对该基金表现的杠杆化或对冲敞口。管理资产超过7万亿美元的瑞银，还一直在准备向瑞士部分私人银行客户提供比特币和以太坊交易服务。",
-        "market_impact_zh": "这一披露可能强化市场对机构比特币需求的乐观情绪，因为一家顶级全球银行正在通过衍生品扩大对现货比特币ETF的敞口。然而，由于文件未明确这些仓位是由客户驱动、自营还是对冲相关，其对比特币市场的传导作用较为间接，应谨慎解读。",
-        "sources": [
-          {
-            "url": "https://en.wikipedia.org/wiki/Put_option",
-            "title": "Put option - Wikipedia"
-          },
-          {
-            "url": "https://investor.vanguard.com/investor-resources-education/understanding-investment-types/what-are-call-put-options",
-            "title": "What are call and put options? | Vanguard"
-          },
-          {
-            "url": "https://www.optionseducation.org/news/introduction-to-options-on-etfs",
-            "title": "Introduction to Options on ETFs"
-          }
-        ],
-        "thread_id": "t4a44d906d9",
-        "thread_day": 3
-      },
-      "ai_score": 7.0,
-      "ai_reason": null,
-      "ai_summary": "Swiss bank UBS reported a 24-fold quarterly surge in BlackRock's Bitcoin ETF (IBIT) call option exposure, with direct holdings also up 12% and put exposure down 53%.",
-      "ai_tags": []
-    },
-    {
-      "id": "google_news:article:d3df5d38269fb79b",
-      "source_type": "google_news",
-      "title": "Stacks: Satoshi Hardfork Boosts 392M STX Stake - blockchain.news",
-      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOR1JZaHo2NUswMlpIN1NLZlJaODJHUnNxWWFsQTVlU3JlNXJvSkNHQ195ell2QWxEaURJN1ZlMks3eTZWNk9GNF9kUEdJemc5Z1gyeno2ZnNPN185eUxGOHlvLWdnWUdzZnVIdk1PTnJ1aENQSWN5WjRxZWdLSy01Rk8tRnZDUQ?oc=5",
-      "content": null,
-      "author": "blockchain.news",
-      "published_at": "2026-08-15T15:05:36Z",
-      "fetched_at": "2026-08-15T16:51:33.624137Z",
-      "metadata": {
-        "category": "crypto-protocols",
-        "title_en": "Stacks' Satoshi Hardfork Raises Staked STX to 392M",
-        "detailed_summary_en": "The Satoshi hardfork on the Stacks network has increased the total amount of staked STX to 392 million, marking a major milestone for the Bitcoin Layer-2 network. The upgrade is now live and has boosted participant commitment. This upgrade strengthens Stacks' security and signals growing adoption of Bitcoin-based smart contracts and staking mechanisms. As a leading Bitcoin L2, Stacks' success could influence the broader Bitcoin DeFi ecosystem. The hardfork, which corresponds to Stacks' Nakamoto upgrade, brings increased transaction throughput and 100% Bitcoin finality. Staking on Stacks, known as 'Stacking,' uses the Proof of Transfer (PoX) consensus and rewards participants in BTC.",
-        "background_en": "Stacks is a Bitcoin Layer-2 blockchain designed to bring smart contracts and decentralized applications to Bitcoin. It uses Proof of Transfer (PoX), where STX holders lock their tokens to secure the network and earn BTC rewards. The network also recently launched sBTC, a 1:1 Bitcoin-backed asset, to enable Bitcoin to move between L1 and L2.",
-        "market_impact_en": "The rise in staked STX removes a portion of STX from circulating supply, tightening liquidity on exchanges and potentially affecting STX market dynamics through supply and sentiment channels. The impact on the broader crypto market is limited, as the event is specific to the Stacks ecosystem.",
-        "title_zh": "Stacks Satoshi硬分叉推动质押STX达3.92亿",
-        "detailed_summary_zh": "Stacks网络上的Satoshi硬分叉已将STX质押总量提升至3.92亿，标志着这一比特币二层网络的一个重要里程碑。该升级现已生效，并提高了参与者的承诺度。 此次升级增强了Stacks的安全性，并表明基于比特币的智能合约和质押机制正获得更多采用。作为领先的比特币二层网络，Stacks的成功可能影响更广泛的比特币DeFi生态。 该硬分叉对应Stacks的Nakamoto升级，带来了更高的交易吞吐量和100%的比特币最终性。Stacks上的质押称为“Stacking”，采用转移证明（PoX）共识机制，并以BTC奖励参与者。",
-        "background_zh": "Stacks是一个比特币二层区块链，旨在为比特币带来智能合约和去中心化应用。它采用转移证明（PoX）机制，STX持有者锁定代币以保护网络并获得BTC奖励。该网络近期还推出了sBTC，一种1:1由比特币支持的资产，以实现比特币在L1和L2之间的转移。",
-        "market_impact_zh": "质押STX的增加减少了STX的流通供应量，收紧了交易所的流动性，并可能通过供应和情绪渠道影响STX的市场动态。由于该事件仅涉及Stacks生态，对更广泛的加密市场影响有限。",
-        "sources": [
-          {
-            "url": "https://www.bankless.com/the-bankless-guide-to-stacks",
-            "title": "The Bankless Guide to Stacks on Bankless"
-          },
-          {
-            "url": "https://www.binance.com/en/square/post/13960469001169",
-            "title": "#NakamotoUpgrade: A Stacks hardfork. | kaymyg on Binance Square"
-          },
-          {
-            "url": "https://www.koinx.com/staking-guides/how-to-stake-stacks",
-            "title": "How To Stake Stacks - KoinX"
-          }
-        ],
-        "thread_id": "t83d1aa456d",
-        "thread_day": 1
-      },
-      "ai_score": 7.0,
-      "ai_reason": null,
-      "ai_summary": "Stacks' Satoshi hardfork has increased staked STX to 392M, marking a major milestone for the network.",
-      "ai_tags": []
-    },
-    {
-      "id": "hackernews:story:49310926",
-      "source_type": "hackernews",
-      "title": "A spectre is haunting Unicode",
-      "url": "https://www.dampfkraft.com/ghost-characters.html",
-      "content": null,
-      "author": "sensanaty",
-      "published_at": "2026-08-15T14:34:04Z",
-      "fetched_at": "2026-08-16T00:30:29.136362Z",
-      "metadata": {
-        "discussion_url": "https://news.ycombinator.com/item?id=49310926",
-        "category": "tech-community",
-        "title_en": "Unicode's Ghost Characters: CJK Codepoints With No Known Origin",
-        "detailed_summary_en": "In the essay \"A spectre is haunting Unicode,\" Paul McCann examines ghost characters—CJK codepoints in Unicode that have no verifiable origin or meaning. He shows that the JIS standards and the Unicode CJK unification process each produced their own set of these phantom glyphs, and he outlines the philosophical and practical issues they raise. Ghost characters are already embedded in international standards such as Unicode, so removing or changing them would create compatibility problems, yet keeping them compromises the standard's integrity. This matters to anyone who builds on Unicode or relies on CJK text, because it shows how irreversible encoding errors can become. The article notes that ghost characters from the JIS standards all made their way into Unicode, and that Unicode's CJK unification introduced its own separate set. It also addresses why these characters are nearly impossible to remove once standardized.",
-        "background_en": "Unicode is the computing industry standard for consistent text encoding, and CJK characters are the logographs shared across Chinese, Japanese, and Korean writing systems. During the 1980s and 1990s, separate national character sets were unified through the Han unification process, which was not always careful and sometimes merged or borrowed glyphs incorrectly. A ghost character is a codepoint that has a glyph but no demonstrable source or meaning, often born from transcription errors or mis-scans.",
-        "community_discussion_en": "The Hacker News discussion praises author Paul McCann's background in Japanese NLP and his tools like the mecab wrapper fugashi. Commenters also point to artistic parallels such as Xu Bing's \"A Book from the Sky,\" suggest using 彊 for \"a completely unknown concept that cannot be named,\" and note that the Kangxi dictionary itself is a major source of ghost characters, while others trace 彁 to a newspaper scanning error.",
-        "title_zh": "萦绕 Unicode 的幽灵字符：来历不明的中日韩汉字",
-        "detailed_summary_zh": "保罗·麦卡恩（Paul McCann）在《A spectre is haunting Unicode》一文中剖析了幽灵字符，即 Unicode 中来源和含义均无法考证的 CJK 码位。他展示了 JIS 标准与 Unicode 的 CJK 统一过程各自产生了一批这样的幻影字形，并阐述了它们所引发的哲学与实践问题。 幽灵字符已经被纳入 Unicode 等国际标准，修改或删除它们会引发兼容性问题，但保留它们又会损害标准的严谨性。这关系到所有使用 Unicode 或依赖中日韩文字的人，因为它展示了一旦进入标准，编码错误将变得多么难以逆转。 文章指出，JIS 标准中的幽灵字符全部进入了 Unicode，而 Unicode 的 CJK 统一过程又产生了自己的一套。文章还谈到这些字符一旦被标准化便几乎不可能移除。",
-        "background_zh": "Unicode 是计算机行业统一文本编码的标准，CJK 字符是中文、日文、韩文书写系统所共用的汉字。在 20 世纪 80 至 90 年代，各国不同的字符集通过“汉字统一”被合并到一起，但这一过程并不总是严谨，有时会错误地合并或借用字形。所谓幽灵字符，就是已经有字形却无法证明其来源或含义的码位，通常源于转写错误或扫描失误。",
-        "community_discussion_zh": "Hacker News 的讨论称赞作者 Paul McCann 在日语 NLP 领域的背景及其工具（如 mecab 包装器 fugashi）。评论区还提到徐冰的《天书》这类全由虚构汉字组成的艺术作品，提议用“彊”表示“无法命名的完全未知概念”，并指出《康熙字典》本身就是众多幽灵字符的来源，另有人将“彁”追溯到报纸扫描错误。",
-        "sources": [
-          {
-            "url": "https://en.wikipedia.org/wiki/Ghost_characters",
-            "title": "Ghost characters - Wikipedia"
-          },
-          {
-            "url": "https://en.wikipedia.org/wiki/CJK_characters",
-            "title": "CJK characters - Wikipedia"
-          },
-          {
-            "url": "https://www.dampfkraft.com/ghost-characters.html",
-            "title": "A Spectre is Haunting Unicode - Dampfkraft"
-          }
-        ],
-        "thread_id": "t26a76f1a6e",
-        "thread_day": 1
-      },
-      "ai_score": 7.0,
-      "ai_reason": null,
-      "ai_summary": "Explores the phenomenon of 'ghost characters' in Unicode—CJK characters with no known origin or meaning—and the philosophical and practical issues they raise.",
-      "ai_tags": []
-    },
-    {
-      "id": "rss:www.coindesk.com_arc_outboundfeeds_rss_:74b8cb5e9d53943f",
-      "source_type": "rss",
-      "title": "The $11.2 billion in 2026 funding that killed crypto’s permissionless era",
-      "url": "https://www.coindesk.com/business/2026/08/15/the-usd11-2-billion-in-2026-funding-that-killed-crypto-s-permissionless-era",
-      "content": null,
-      "author": "Olivier Acuna",
-      "published_at": "2026-08-15T14:00:00Z",
-      "fetched_at": "2026-08-16T00:30:31.870832Z",
-      "metadata": {
-        "feed_name": "CoinDesk",
-        "category": "crypto-markets",
-        "title_en": "2026's $11.2B Funding Signals End of Crypto's Permissionless Era",
-        "detailed_summary_en": "An analysis of all crypto deals in H1 2026 found that $11.2 billion in funding went overwhelmingly to regulated firms, with investors including BlackRock and Goldman Sachs. The research suggests institutional capital is now steering the industry away from permissionless networks. This shift signals the institutionalization of crypto markets, where compliance and regulation become prerequisites for capital. It could reshape the competitive landscape, favoring regulated intermediaries over open, permissionless protocols. The data was compiled by Dubai-based crypto lawyer Irina Heaver and her team, who parsed every crypto deal in the first half of 2026. Persian Gulf sovereign wealth funds also participated alongside major US financial institutions.",
-        "background_en": "Permissionless blockchains are open networks that allow anyone to join, read, and write to the ledger without authorization. In contrast, regulated firms typically operate under legal frameworks with KYC/AML requirements, which can be incompatible with fully permissionless designs. The flow of institutional capital into regulated entities may therefore accelerate the development of permissioned or hybrid blockchain infrastructure.",
-        "market_impact_en": "The concentration of large-scale funding in regulated firms may channel liquidity and institutional custody flows toward compliance-focused platforms, potentially increasing their market share in trading and settlement. It also signals that regulatory clarity, rather than decentralization, is becoming the primary driver of crypto capital allocation, which could pressure valuations of permissionless tokens and projects reliant on retail access.",
-        "title_zh": "2026年112亿美元融资标志着加密货币无需许可时代的终结",
-        "detailed_summary_zh": "一项对2026年上半年所有加密货币交易的分析发现，112亿美元资金绝大多数流向了受监管公司，投资者包括贝莱德和高盛。该研究显示，机构资本正引导行业远离无需许可的网络。 这种转变标志着加密货币市场的机构化，合规与监管成为获得资本的前提。它可能重塑竞争格局，使受监管的中介机构比开放、无需许可的协议更具优势。 这些数据由驻迪拜的加密货币律师Irina Heaver及其团队编制，他们分析了2026年上半年每一笔加密货币交易。除美国大型金融机构外，波斯湾主权财富基金也参与其中。",
-        "background_zh": "无需许可的区块链是开放网络，任何人都可以在未经授权的情况下加入、读取和写入账本。相比之下，受监管公司通常在法律框架下运营，需满足KYC/AML要求，这可能与完全无需许可的设计不兼容。因此，机构资本流入受监管实体可能会加速许可型或混合型区块链基础设施的发展。",
-        "market_impact_zh": "大规模资金集中于受监管公司，可能会将流动性和机构托管流向引导至合规导向的平台，从而增加其在交易和结算中的市场份额。这也表明，监管清晰度而非去中心化正成为加密货币资本配置的主要驱动力，这可能对依赖零售访问的无需许可代币和项目的估值构成压力。",
-        "sources": [
-          {
-            "url": "https://www.linkedin.com/pulse/w3now-study-blockchain-networks-hanseatic-blockchain-institute-d20vf",
-            "title": "W3NOW Study: Blockchain Networks"
-          },
-          {
-            "url": "https://medium.com/data-and-beyond/disrupting-marketing-with-blockchain-technology-7f953e83d822",
-            "title": "Disrupting Marketing With Blockchain Technology | Medium"
-          }
-        ],
-        "thread_id": "t146d6ff51b",
-        "thread_day": 1
-      },
-      "ai_score": 7.0,
-      "ai_reason": null,
-      "ai_summary": "Analysis of $11.2 billion in H1 2026 crypto funding shows institutional investors like BlackRock and Goldman directing capital to regulated firms, signaling a shift away from permissionless crypto.",
-      "ai_tags": []
-    },
-    {
-      "id": "rss:www.coindesk.com_arc_outboundfeeds_rss_:fe06e238aa0e8357",
-      "source_type": "rss",
-      "title": "Clarity survives (barely), Strategy sells and the untold story of Mastercard's $1.8 billion deal: Crypto's week in 5 stories",
-      "url": "https://www.coindesk.com/business/2026/08/15/clarity-survives-barely-strategy-sells-and-the-untold-story-of-mastercard-s-usd1-8-billion-deal-crypto-s-week-in-5-stories",
-      "content": null,
-      "author": "AI Boost",
-      "published_at": "2026-08-15T13:00:00Z",
-      "fetched_at": "2026-08-15T13:08:21.668111Z",
-      "metadata": {
-        "feed_name": "CoinDesk",
-        "category": "crypto-markets",
-        "title_en": "Crypto Week: Clarity Act Survives, Strategy Sells, Mastercard's $1.8B Deal",
-        "detailed_summary_en": "This week's roundup covers the Clarity Act surviving after missing the Senate's August window, Strategy selling 1,690 bitcoin for $653 million, and Mastercard's $1.8 billion acquisition of BVNK, alongside a hardware-wallet security scare that moved billions in bitcoin. The news highlights crypto's transition into a more regulated, institutionalized era, with U.S. lawmakers still negotiating market-structure legislation while Wall Street deepens exposure. These developments signal both growing mainstream adoption and the continuing volatility and security risks of digital assets. The Clarity Act will get another vote in September after failing to reach a procedural vote before recess, while the SEC delayed an 'innovation exemption' for tokenized securities. Strategy has now sold roughly 7,000 bitcoin in five sales this year, and Metaplanet moved about $320 million in bitcoin, though its CEO denied any sale; Mastercard's deal is the largest crypto-infrastructure purchase by a traditional payment network, surpassing Stripe's $1.1 billion Bridge acquisition.",
-        "background_en": "The Digital Asset Market Clarity Act is U.S. legislation that would assign oversight of digital commodity spot markets to the CFTC and define which crypto assets fall outside SEC securities jurisdiction. Strategy (formerly MicroStrategy) pioneered the corporate bitcoin treasury strategy, using stock sales to buy bitcoin, and is the largest corporate holder. Mastercard operates one of the world's largest card networks, and stablecoins on blockchain pose a potential threat to traditional payment fees.",
-        "market_impact_en": "Regulatory progress on the Clarity Act could broaden institutional participation by reducing legal uncertainty, while large corporate sales like Strategy's add supply pressure, countered by ongoing whale accumulation. Mastercard's deal signals validation of crypto infrastructure and stablecoin payments, potentially boosting sentiment for related tokens and payment-focused projects.",
-        "title_zh": "加密周报：Clarity法案幸存，Strategy减持，Mastercard 18亿收购",
-        "detailed_summary_zh": "本周综述要点包括：Clarity法案在错过参议院8月窗口后幸存；Strategy出售1,690枚比特币，筹资6.53亿美元；Mastercard以18亿美元收购BVNK；以及一次硬件钱包安全恐慌导致数十亿美元比特币转移。 这些新闻凸显了加密行业正迈入一个更加规范化、机构化的时代：美国立法者仍在博弈市场结构立法，而华尔街在加深对数字资产的参与。这些动态既表明主流采用度在提升，也提醒人们数字资产仍伴随波动与安全风险。 Clarity法案在休会前未能进入程序性投票，但将在9月再次表决；同时SEC推迟了针对代币化证券的“创新豁免”。Strategy今年已累计五次出售约7,000枚比特币；Metaplanet转移了约3.2亿美元比特币，但其CEO否认在出售；Mastercard的交易是传统支付网络对加密基础设施最大的收购案，超过了Stripe以11亿美元收购Bridge的交易。",
-        "background_zh": "《数字资产市场明晰法案》(Digital Asset Market Clarity Act)是美国一项立法，旨在将数字商品现货市场的监管权划归CFTC，并界定哪些加密资产不属于SEC的证券管辖范围。Strategy（原MicroStrategy）开创了企业比特币金库策略，通过发行股票筹集资金购买比特币，目前是全球最大的企业比特币持有者。Mastercard是全球最大的卡组织之一，而区块链上的稳定币对传统支付手续费构成潜在威胁。",
-        "market_impact_zh": "Clarity法案的进展若带来监管确定性，可能吸引更多机构参与；而Strategy等企业出售比特币会带来供给压力，但巨鲸的持续买入形成对冲。Mastercard的收购验证了加密基础设施与稳定币支付的商业价值，可能提振相关代币及支付类项目的市场情绪。",
-        "sources": [
-          {
-            "url": "https://grokipedia.com/page/Digital_Asset_Market_Clarity_Act",
-            "title": "Digital Asset Market Clarity Act"
-          },
-          {
-            "url": "https://casasciusnews.substack.com/p/the-18-billion-confession-what-mastercards",
-            "title": "The $1.8 Billion Confession: What Mastercard’s Acquisition of BVNK..."
-          },
-          {
-            "url": "https://www.okx.com/en-gb/learn/cryptocurrency-microstrategy-bitcoin-future",
-            "title": "Cryptocurrency and MicroStrategy: How Bitcoin Shapes Its... | OKX"
-          }
-        ],
-        "thread_id": "t34de0d6e41",
-        "thread_day": 1
-      },
-      "ai_score": 7.0,
-      "ai_reason": null,
-      "ai_summary": "A weekly roundup covering crypto regulatory progress, institutional adoption, corporate bitcoin selling, and a major security-related bitcoin movement.",
-      "ai_tags": []
-    },
-    {
-      "id": "rss:cointelegraph.com_rss:6a4813bedeb803e9",
-      "source_type": "rss",
-      "title": "Kalshi ordered to stop broad range of prediction markets in Washington",
-      "url": "https://cointelegraph.com/news/kalshi-stop-prediction-market-contracts-washington?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-      "content": null,
-      "author": "Cointelegraph by Zoltan Vardai",
-      "published_at": "2026-08-15T10:44:52Z",
-      "fetched_at": "2026-08-16T00:30:42.043648Z",
-      "metadata": {
-        "feed_name": "Cointelegraph",
-        "category": "crypto-regulation",
-        "title_en": "Kalshi Ordered to Halt Most Prediction Markets in Washington",
-        "detailed_summary_en": "A Washington state judge ordered Kalshi to stop offering a broad range of event contracts in the state, rejecting the company's argument that federal commodities law preempts Washington gambling law. The preliminary injunction requires IP-address and residency-based geofencing by Aug. 19 and a GeoComply multi-source geofencing system by Sept. 2. This is a significant regulatory setback for Kalshi and the broader prediction-market industry, as it shows state gambling laws can be enforced against CFTC-regulated exchanges. It could encourage other states to impose similar restrictions, limiting where US users can access event contracts. King County Superior Court Judge John McHale barred contracts tied to sports, elections, politics, entertainment, culture, tech, science, and 'mentions,' while exempting commodities, climate, economics, and finance. The Washington Court of Appeals denied Kalshi's request to stay the injunction, and the ruling cites the Commodity Exchange Act as not preempting state gambling law.",
-        "background_en": "Kalshi is a CFTC-regulated exchange for prediction markets, where users trade event contracts on outcomes like elections and economic data. States enforce their own gambling laws, and the key legal question was whether federal commodities law preempts those laws. GeoComply is a geolocation and compliance technology used by regulated platforms to block users in restricted jurisdictions.",
-        "market_impact_en": "The injunction removes Washington-based users from a major US prediction-market venue, potentially reducing order flow and liquidity for affected event contracts. It also raises regulatory risk for other prediction platforms, including crypto-linked ones like Polymarket, as states may follow Washington's lead in enforcing gambling laws.",
-        "title_zh": "华盛顿州法院命令Kalshi停止大部分预测市场合约",
-        "detailed_summary_zh": "华盛顿州一名法官命令Kalshi停止在该州提供大范围的事件合约，驳回了该公司关于联邦商品法优先于华盛顿博彩法的论点。初步禁令要求在8月19日前实施基于IP地址和居住地的地理围栏，并在9月2日前部署GeoComply多源地理围栏系统。 这对Kalshi乃至整个预测市场行业来说是一次重大的监管挫折，表明州博彩法可以对受CFTC监管的交易所执行。这可能鼓励其他州实施类似限制，从而限制美国用户访问事件合约的地区。 金县高等法院法官John McHale禁止了与体育、选举、政治、娱乐、文化、科技、科学以及“提及”相关的合约，但豁免了商品、气候、经济和金融类合约。华盛顿上诉法院驳回了Kalshi暂缓执行禁令的请求，裁决认定《商品交易法》不优先于州博彩法。",
-        "background_zh": "Kalshi是一个受CFTC监管的预测市场交易所，用户可以在其中交易关于选举和经济数据等结果的事件合约。各州执行自己的博彩法，核心法律问题是联邦商品法是否优先于这些州法。GeoComply是一种地理定位与合规技术，被受监管平台用于阻止受限地区的用户访问。",
-        "market_impact_zh": "该禁令将华盛顿州用户从美国主要预测市场平台中移除，可能减少受影响事件合约的订单流和流动性。它也提高了其他预测平台（包括与加密相关的Polymarket等）的监管风险，因为其他州可能会效仿华盛顿执行博彩法。",
-        "sources": [
-          {
-            "url": "https://www.geocomply.com/",
-            "title": "GeoComply | Compliance, KYC, growth and anti-fraud under one roof"
-          },
-          {
-            "url": "https://sccgmanagement.com/sccg-articles/2026/08/15/kalshi-activates-geofencing-in-michigan-and-nevada-but-only-after-optional-app-update/",
-            "title": "Kalshi Activates Geofencing in Michigan and Nevada but Only After..."
-          },
-          {
-            "url": "https://www.finder.com/investments/event-contracts-prediction-markets",
-            "title": "Best Prediction Market Apps in the US for 2026"
-          }
-        ],
-        "thread_id": "ta04e51c4dc",
-        "thread_day": 1
-      },
-      "ai_score": 7.0,
-      "ai_reason": null,
-      "ai_summary": "A Washington judge ordered Kalshi to stop offering a broad range of prediction-market contracts in the state and to implement geofencing by set deadlines.",
-      "ai_tags": []
-    },
-    {
-      "id": "google_news:article:f7291f77c085c319",
-      "source_type": "google_news",
-      "title": "Bybit TradFi Perpetuals Extend 24/7 Exposure to Over 200 Global Equities and Pre-IPO Assets - Bitcoin World",
-      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQYWVVOV92QU5XU3Z1ZHRUaVhfZnI3ZGVfNS1ZNVA3LV9qQjJWREE2MHhWUWs1NnRUTmdYT2JKWEpJMHRuNGJ3RjhDR1FOS2ZvREtlOGxvUjdFYnVuUkZDWkxqUGpVRHN6VXRtX3N6d2s5eTM1dXdaUWtwb04xVUZXcTczcmcxVnh2U1BZamFkcHE5Ukd5STZWemlWSnRwLUlHY01OWUJNdWtJNE5iSWEzTE02WVhOaHBzRllZ?oc=5",
-      "content": null,
-      "author": "Bitcoin World",
-      "published_at": "2026-08-15T09:42:01Z",
-      "fetched_at": "2026-08-16T00:30:29.155375Z",
-      "metadata": {
-        "category": "exchange-announcements",
-        "title_en": "Bybit Expands TradFi Perpetuals to 200+ Global Equities and Pre-IPO Assets",
-        "detailed_summary_en": "Bybit has expanded its TradFi Perpetuals product to cover more than 200 global equities and pre-IPO assets with 24/7 trading. The expansion builds on the product's April 2026 launch and includes new weekly listings. This move gives crypto exchange users direct access to traditional finance markets without requiring multiple brokerage relationships across different time zones. It also highlights the growing convergence between crypto derivatives and conventional asset classes, potentially attracting a broader set of traders. TradFi Perpetuals are USDT-denominated and USDT-settled derivatives that track the prices of traditional financial assets, using a funding rate mechanism instead of a fixed expiry. The lineup includes commodities like gold, silver, and crude oil, along with US stocks, global ETFs, and pre-IPO assets, where traders gain price exposure without share delivery or shareholder rights.",
-        "background_en": "Perpetual contracts are derivatives with no expiration date, relying on periodic funding payments to keep the contract price aligned with the underlying asset. Bybit launched its TradFi Perpetuals in April 2026, starting with dozens of US stocks and global ETFs, and has since expanded to over 200 listings. Pre-IPO perpetual contracts are a newer category that allows traders to bet on private company valuations before an initial public offering, typically with lower leverage due to illiquidity.",
-        "market_impact_en": "The expansion may channel additional trading flow through Bybit's USDT-denominated order books, potentially boosting on-exchange stablecoin usage and fee revenue, while having no direct effect on underlying equity markets. The announcement is primarily a product expansion and carries no foreseeable systemic price impact on crypto assets.",
-        "title_zh": "Bybit将TradFi永续合约扩展至200多个全球股票与Pre-IPO资产",
-        "detailed_summary_zh": "Bybit已将其TradFi永续合约产品扩展到200多个全球股票和Pre-IPO资产，提供24/7交易。此次扩展基于该产品2026年4月的推出，并包含每周新增上市。 这一举措使加密货币交易所用户无需在不同时区和司法管辖区建立多个经纪关系，即可直接接触传统金融市场。它也凸显了加密衍生品与传统资产类别之间日益融合的趋势，可能吸引更广泛的交易者。 TradFi永续合约是以USDT计价和结算的衍生品，追踪传统金融资产价格，通过资金费率机制代替固定到期日。产品线包括黄金、白银、原油等大宗商品，以及美股、全球ETF和Pre-IPO资产——投资者可获得价格敞口，但不涉及股票交割或股东权利。",
-        "background_zh": "永续合约是一种没有到期日的衍生品，依靠定期资金费率使合约价格与标的资产保持一致。Bybit于2026年4月推出TradFi永续合约，最初涵盖数十只美股和全球ETF，此后扩展到200多个上市品种。Pre-IPO永续合约是一种较新的类别，允许交易者在公司首次公开募股(IPO)前押注其估值，通常因流动性不足而杠杆上限较低。",
-        "market_impact_zh": "此次扩展可能会将更多交易流量引入Bybit的USDT计价订单簿，可能提高交易所内稳定币的使用和手续费收入，但对标的股票市场没有直接影响。该公告本质上是产品扩展，不会对加密资产价格产生可预见的系统性影响。",
-        "sources": [
-          {
-            "url": "https://coinpaper.com/34284/bybit-tradfi-perpetuals-extend-247-exposure-to-over-200-global-equities-and-pre-ipo-assets",
-            "title": "Bybit TradFi Perpetuals Extend 24/7 Exposure to Over 200 Global..."
-          },
-          {
-            "url": "https://chainwire.org/2026/05/08/bybit-introduces-24-7-tradfi-perpetual-contracts-trading-for-dozens-of-us-stocks-and-global-etfs/",
-            "title": "Bybit Introduces 24/7 TradFi Perpetual Contracts Trading... - Chainwire"
-          },
-          {
-            "url": "https://www.gibsondunn.com/perpetual-contracts-product-structure-and-recent-us-regulatory-developments/",
-            "title": "Perpetual Contracts: Product Structure and Recent... - Gibson Dunn"
-          }
-        ],
-        "thread_id": "t4d36ed2eab",
-        "thread_day": 1
-      },
-      "ai_score": 7.0,
-      "ai_reason": null,
-      "ai_summary": "Bybit extends its TradFi perpetuals to offer 24/7 exposure to over 200 global equities and pre-IPO assets.",
-      "ai_tags": []
-    },
-    {
-      "id": "google_news:article:dc1cd9cc591bd4b6",
-      "source_type": "google_news",
-      "title": "🤑Cboe has been moving to list leveraged crypto products. Not just 1x spot exposure, but 3x long 🔥 - Binance",
-      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9MX25Hck85VC1qMXdzR2lXWV9jSFAtYUFWX0Q1VkdNclpsXzI0dTJPWjNha282dnBNTldnUzlmLXVzU2pLdFF3REdrRmdVdHBRUmFwU1ZLNFdUMjIwNzQ5bkJOaGtoc29W?oc=5",
-      "content": null,
-      "author": "Binance",
-      "published_at": "2026-08-15T08:52:13Z",
-      "fetched_at": "2026-08-15T20:49:11.937207Z",
-      "metadata": {
-        "category": "crypto-markets",
-        "title_en": "Cboe to List Leveraged Crypto Products, Including 3x Long",
-        "detailed_summary_en": "Binance highlighted that Cboe has been moving to list leveraged crypto products, not just 1x spot exposure but 3x long exposure. The announcement indicates Cboe is expanding its crypto derivatives offerings beyond traditional spot exposure. This marks a notable expansion of regulated crypto derivatives, giving traders more tools for leveraged exposure within a traditional exchange framework. It could accelerate institutional adoption by offering crypto products that are familiar to mainstream investors. Leveraged ETFs typically use swaps and daily rebalancing to deliver a multiple (such as 3x) of the underlying index's daily performance, and are intended for short-term trading.",
-        "background_en": "An exchange-traded fund (ETF) is an investment fund traded on stock exchanges that holds assets such as stocks, bonds, or cryptocurrency. Leveraged ETFs aim to provide a multiple of the daily return of an underlying index, but their daily rebalancing means long-term returns can differ significantly from the multiple. Understanding this structure is key to grasping what a 3x long crypto product entails.",
-        "market_impact_en": "The listing of leveraged crypto products on a regulated venue like Cboe could increase demand for the underlying crypto assets and enhance derivatives market liquidity, as these products typically require holding or trading the underlying. It may also boost sentiment by signaling that traditional financial infrastructure is embracing crypto exposure.",
-        "title_zh": "Cboe 将上线杠杆加密产品，包含 3 倍做多",
-        "detailed_summary_zh": "币安发文强调，Cboe 正在推进上线杠杆加密产品，不只是 1 倍现货敞口，而是 3 倍做多敞口。这一消息表明 Cboe 正在扩展其加密衍生品产品线，超越传统现货敞口。 这标志着受监管的加密衍生品领域的重要扩张，为交易者在传统交易所框架内提供了更多杠杆敞口工具。它可能通过提供主流投资者熟悉的加密产品来加速机构采用。 杠杆 ETF 通常利用互换和每日再平衡来实现标的指数每日表现的倍数（如 3 倍），并且专为短期交易设计。",
-        "background_zh": "交易所交易基金（ETF）是一种在证券交易所交易的投资基金，持有股票、债券或加密货币等资产。杠杆 ETF 旨在提供标的指数每日回报的倍数，但由于每日再平衡，长期回报可能与倍数产生显著差异。理解这一结构对于理解 3 倍做多加密产品的含义很关键。",
-        "market_impact_zh": "在 Cboe 等受监管平台上线杠杆加密产品，可能会增加对底层加密资产的需求并提升衍生品市场流动性，因为这些产品通常需要持有或交易底层资产。这也可能传递出传统金融基础设施正拥抱加密敞口的信号，从而提振市场情绪。",
-        "sources": [
-          {
-            "url": "https://en.wikipedia.org/wiki/Leveraged_ETF",
-            "title": "Leveraged ETF"
-          },
-          {
-            "url": "https://www.fidelity.com/learning-center/investment-products/etf/types-of-etfs-leveraged-etfs",
-            "title": "Leveraged ETFs - Fidelity"
-          }
-        ],
-        "thread_id": "ta22a14dcbf",
-        "thread_day": 1
-      },
-      "ai_score": 7.0,
-      "ai_reason": null,
-      "ai_summary": "Binance highlights Cboe's move to list leveraged crypto products, including 3x long exposure.",
-      "ai_tags": []
-    },
-    {
-      "id": "google_news:article:8576a927f6ee23d3",
-      "source_type": "google_news",
-      "title": "Bybit Overtakes Coinbase as Second-Largest Crypto Exchange, Benefits from Binance Troubles - Yellow.com",
-      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQRFZHZ3VFS0dKdU1DTjMzZVpvVk5tUlNDMlpaWmpNbmJ6OWJfX2ExQW1HQWdOX0NnRW9VRVQzZTNnQ3RvbDFJMUE4MDdtTkFDb2NheVlWVVZSTVhEZlVzZ0hhc2tFYjgwTkVuRnIxWkxYMDR4bzFrVVdXY3NKYXBUU0hGMDlYdzF2MFhNTF8wRFk4X3FWbFVEQ21vNjRxR0EzbDItY0Y1V3kyMDQxWWxOcVhSYlBXM3VLVWY4WFdyVjhGNTNUcmkwcw?oc=5",
-      "content": null,
-      "author": "Yellow.com",
-      "published_at": "2026-08-15T05:50:59Z",
-      "fetched_at": "2026-08-15T16:51:33.623600Z",
-      "metadata": {
-        "category": "crypto-markets",
-        "title_en": "Bybit Overtakes Coinbase as Second-Largest Crypto Exchange",
-        "detailed_summary_en": "Bybit has overtaken Coinbase to become the second-largest cryptocurrency exchange by trading volume, according to Yellow.com. The shift is attributed to ongoing regulatory troubles at Binance, which have driven users to alternative platforms. This reshuffling of top exchange rankings signals a meaningful change in market structure, as traders increasingly diversify away from exchanges under regulatory pressure. It also highlights the competitive impact of Binance's legal battles on the broader crypto trading ecosystem. The report does not provide specific trading volume figures or the exact date of the ranking change. Coinbase dropping to third place suggests that both derivatives-focused and spot-focused exchanges are competing fiercely for market share.",
-        "background_en": "Bybit is a cryptocurrency exchange known for its derivatives trading, while Coinbase is a major spot exchange based in the United States. Binance, the largest crypto exchange, has faced regulatory scrutiny and settlements in several jurisdictions. These troubles appear to have eroded some user trust, leading to a redistribution of trading volume among major platforms.",
-        "market_impact_en": "The ranking shift could alter liquidity distribution across exchanges, affecting price discovery and arbitrage opportunities for assets listed on these platforms. It may also influence market sentiment toward exchange-specific tokens and derivatives products, though no direct impact on asset fundamentals is implied.",
-        "title_zh": "Bybit超越Coinbase，成为第二大加密货币交易所",
-        "detailed_summary_zh": "据Yellow.com报道，Bybit已超越Coinbase，成为按交易量计算的第二大加密货币交易所。这一变化被归因于Binance持续面临的监管问题，促使部分用户转向其他平台。 顶级交易所排名的重新洗牌标志着市场结构性变化，交易者越来越多地从面临监管压力的交易所分散风险。这也凸显了Binance的法律纠纷对整个加密货币交易生态的竞争性影响。 该报道未提供具体交易量数据或排名变化的确切日期。Coinbase降至第三位表明，专注于衍生品和现货交易的交易所正在激烈争夺市场份额。",
-        "background_zh": "Bybit是一家以衍生品交易闻名的加密货币交易所，而Coinbase是美国主要的现货交易所。全球最大的加密货币交易所Binance在多个司法管辖区面临监管审查和和解。这些麻烦似乎削弱了部分用户的信任，导致主要平台之间的交易量重新分配。",
-        "market_impact_zh": "排名变化可能改变各交易所之间的流动性分布，影响在这些平台上上市资产的价格发现和套利机会。这也可能影响市场对交易所相关代币和衍生品产品的情绪，但并不意味着对资产基本面产生直接影响。",
-        "thread_id": "t992a8be1fd",
-        "thread_day": 1
-      },
-      "ai_score": 7.0,
-      "ai_reason": null,
-      "ai_summary": "Bybit surpasses Coinbase to become the second-largest crypto exchange, aided by ongoing troubles at Binance.",
       "ai_tags": []
     }
   ],
