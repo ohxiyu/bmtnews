@@ -4,7 +4,77 @@
   <link href="https://bmt.news/feeds/crypto-zh.xml" rel="self"/>
   <link href="https://bmt.news/"/>
   <id>https://bmt.news/feeds/crypto-zh.xml</id>
-  <updated>2026-08-18T00:00:00Z</updated>
+  <updated>2026-08-19T00:00:00Z</updated>
+  <entry>
+    <title>Bybit称阻止7亿美元损失，此前遭15亿黑客攻击</title>
+    <link href="https://news.google.com/rss/articles/CBMijgFBVV95cUxNUDNJeGVhcEdRcjBWbTdMQl94XzhGamtXc1J4MzF5TFJad2NZNXN5OFpFY0VOVlZ6alJ3R2dUVUZlRk1hVzJPZnB4X3dsbVBZOEFNRWlmT0hzdFB4THBlM21yTGdHeVByUS1QbTZBa3haeEQ1U09QMDdWbkUyZVRPSWI4QS15RFlxMVVyMzBR?oc=5"/>
+    <id>https://bmt.news/editions/2026-08-19/#google_news:article:03911771cf068378</id>
+    <updated>2026-08-19T00:00:00Z</updated>
+    <summary>Bybit表示，在遭受创纪录的15亿美元黑客攻击后，该平台又阻止了7亿美元的潜在进一步损失。这一公告既凸显了入侵的规模，也反映了平台采取的缓解措施。 这是有史以来规模最大的加密货币交易所黑客攻击之一，直接影响用户资金和运营信任。该事件引发了对托管安全的担忧，并可能促使监管机构加强对交易所保护措施的关注。 被盗的15亿美元构成重大损失，而7亿美元的数字代表据称原本面临风险但最终得以保全的额外资金。Bybit用于阻止这些潜在损失的具体机制尚未公布。</summary>
+  </entry>
+  <entry>
+    <title>Coldcard 钱包损失据报道超过 1.15 亿美元</title>
+    <link href="https://news.google.com/rss/articles/CBMigAFBVV95cUxOSTFLUkdxaEVoY0MtYWxUendqV1dISG4zVlNoSUMzVmQ0ZWxUM2FJUDVrX1F4ODFoUGJCY25jRjMwbFdoME1Rb0RTeTdiSEJ0UXo3ekE3QWk3Zks2ZkNESW03MkVteWRSWjRjYVRfX1ozYmRoWUxLbVVxX01jRURJNA?oc=5"/>
+    <id>https://bmt.news/editions/2026-08-19/#google_news:article:1637295a9217fb9f</id>
+    <updated>2026-08-19T00:00:00Z</updated>
+    <summary>据报道，与 Coldcard 硬件钱包相关的损失现已超过 1.15 亿美元。此前已发现一个固件缺陷，该缺陷削弱了多个型号的钱包种子生成安全性。 这对硬件钱包用户来说是一起重大安全事件，因为 Coldcard 被广泛认为是高安全性的比特币专用钱包。损失规模可能会削弱用户对硬件钱包自我托管解决方案的信任，并促使对种子生成流程进行更广泛的审查。 据报道，Coldcard 固件缺陷影响了五个型号的种子生成，Galaxy 将一笔涉及 1,196 个地址、金额达 7020 万美元的资金转移与该漏洞关联。报告的总损失超过 1.15 亿美元，可能还包括其他利用事件或事故。</summary>
+  </entry>
+  <entry>
+    <title>以太坊Glamsterdam升级打破21,000 Gas转账规则</title>
+    <link href="https://www.coindesk.com/tech/2026/08/18/ethereum-s-next-upgrade-breaks-the-21-000-gas-rule-wallets-rely-on"/>
+    <id>https://bmt.news/editions/2026-08-19/#rss:www.coindesk.com_arc_outboundfeeds_rss_:60fbc7ee63d2d18e</id>
+    <updated>2026-08-19T00:00:00Z</updated>
+    <summary>以太坊的Glamsterdam升级引入了新的“状态Gas”费用，向从未使用过的地址转账需额外支付183,600 Gas，而向已存在账户转账仍为21,000 Gas。以太坊开发者敦促钱包提供商和区块链服务更新那些假设每笔ETH转账固定消耗21,000 Gas的软件。 这终结了钱包、交易所和费用计算器长期依赖的固定21,000 Gas假设。如果这些工具不更新，可能会拒绝有效付款或报价不足的手续费，从而可能扰乱整个生态系统的ETH转账。 额外费用源于网络在地址首次被使用时需要创建并永久存储一个新账户。该升级通过EIP-8037实现，将首先在Platåberget测试网激活，然后是Sepolia和Hoodi，最后到达以太坊主网。</summary>
+  </entry>
+  <entry>
+    <title>Aave半数债务集中在9%头寸，押注以太坊相关性交易</title>
+    <link href="https://cryptoslate.com/half-of-aaves-debt-sits-in-just-9-of-positions-built-around-one-ethereum-correlation-trade/"/>
+    <id>https://bmt.news/editions/2026-08-19/#rss:cryptoslate.com_feed_:e65bef513545cee4</id>
+    <updated>2026-08-19T00:00:00Z</updated>
+    <summary>Galaxy Research于8月7日对Aave V3 Core的快照显示，不到9%的贷款（E-mode借款人）持有约一半未偿债务，集中在高度杠杆化的以太坊质押基差交易中，平均健康因子接近1.06。 这种集中度给Aave带来系统性清算风险：一小部分借款人以接近90%的贷款价值比和微薄的健康因子运行，因此流动性质押代币相对ETH折价8-9%就可能引发连锁清算。这凸显了DeFi借贷平台可能暴露于单一拥挤交易的风险。 E-mode群体的抵押品约66.2%是以太坊质押和再质押包装代币（weETH约占42%，rsETH、wstETH），而WETH约占其债务的73%，形成紧密的质押基差押注。Galaxy五月分析估计，weETH脱锚10%可能使205个账户的健康因子低于1，且脱锚从3%升至5%时压力急剧升级。</summary>
+  </entry>
+  <entry>
+    <title>Solana Alpenglow 漏洞赏金计划向研究人员每次提交收取 0.5 SOL</title>
+    <link href="https://cryptoslate.com/solanas-alpenglow-bug-hunt-charges-researchers-0-5-sol-to-report-flaws/"/>
+    <id>https://bmt.news/editions/2026-08-19/#rss:cryptoslate.com_feed_:391a84eb66648cb6</id>
+    <updated>2026-08-19T00:00:00Z</updated>
+    <summary>Anza 为即将到来的 Alpenglow 共识升级启动了为期两周的漏洞赏金计划，要求研究人员通过其门户为每份提交支付不可退还的 0.5 SOL 费用，之后才会评估资格或严重性。该竞赛于 UTC 时间 8 月 19 日 16:00 截止，奖励池为 50,000 SOL，按严重性分配。 Alpenglow 是 Solana 自主网上线以来最重要的协议变更之一，它将向后不兼容地取代现有的 Proof-of-History 和 TowerBFT 共识。收费提交政策将申报风险转嫁给研究人员，可能影响升级上线前能被发现多少严重漏洞，从而影响 Solana 的安全状况。 50,000 SOL 奖励池按等级解锁：DoS 漏洞对应 10,000 SOL，活性故障 20,000 SOL，共识或安全违规 30,000 SOL，资金损失 50,000 SOL；单项奖励上限为 25,000 SOL。提交必须通过 Anza 门户（会生成一份机密 GitHub Security Advisory），指明存在漏洞的提交版本，在本地分叉或模拟环境中复现，并在修复进入 Agave master 之前提交。</summary>
+  </entry>
+  <entry>
+    <title>Aave TVL较KelpDAO攻击前仍低43%</title>
+    <link href="https://protos.com/aave-tvl-still-down-43-since-kelpdao-hack/"/>
+    <id>https://bmt.news/editions/2026-08-19/#rss:protos.com_feed_:76c155d3dba8bcfd</id>
+    <updated>2026-08-19T00:00:00Z</updated>
+    <summary>据Protos报道，Aave的总锁仓量（TVL）仍比KelpDAO遭攻击当天低43%，约为149亿美元，且较52周高点低67%。尽管5月底抵押品已恢复，该协议仍未重新获得存款人信任。 Aave是最大的DeFi借贷协议之一，因此TVL的持续下降意味着借款人可用的流动性减少，整个行业存款人普遍持谨慎态度。该事件还凸显了跨链桥的安全故障如何通过互联的借贷市场传导。 攻击者将KelpDAO被盗的rsETH作为抵押品存入Aave并借出ETH，导致Aave和Compound合计产生约2.46亿美元坏账。Aave的合约、预言机和清算机制按设计正常工作，DeFi United联盟在5月底前帮助补充了抵押品；但TVL持续流出至6月，从近119亿美元的低点仅部分恢复。</summary>
+  </entry>
+  <entry>
+    <title>Kraken在欧洲推出美股交易服务</title>
+    <link href="https://www.coindesk.com/markets/2026/08/18/kraken-adds-u-s-stocks-in-europe-as-tradfi-crypto-divide-blurs"/>
+    <id>https://bmt.news/editions/2026-08-19/#rss:www.coindesk.com_arc_outboundfeeds_rss_:ec42893a4323e8d2</id>
+    <updated>2026-08-19T00:00:00Z</updated>
+    <summary>Kraken已开始向欧洲客户提供美国股票交易服务，将其平台业务从加密货币扩展到传统股票市场。据CoinDesk报道，此举进一步模糊了传统金融（TradFi）与加密生态之间的界限。 这标志着加密货币交易所与传统券商融合的又一进展，可能让欧洲投资者在同一个平台上同时交易数字资产和美国股票。这也可能促使其他交易所扩大产品线以保持竞争力。 该服务通过Kraken的欧洲业务推出，符合条件的客户可以在加密货币之外交易美国上市股票。关于完整支持股票列表、交易费用和结算机制等具体细节尚未公布。</summary>
+  </entry>
+  <entry>
+    <title>Neuberger Berman 携手 Securitize 在四条链上推出首只代币化高收益基金</title>
+    <link href="https://cointelegraph.com/news/neuberger-launches-tokenized-fixed-income-fund-with-securitize?utm_source=rss_feed&amp;utm_medium=rss&amp;utm_campaign=rss_partner_inbound"/>
+    <id>https://bmt.news/editions/2026-08-19/#rss:cointelegraph.com_rss:b5d521f36e69321d</id>
+    <updated>2026-08-19T00:00:00Z</updated>
+    <summary>资产管理公司 Neuberger Berman 通过 Securitize 推出了其首只代币化固定收益基金“Neuberger Securitize High Income Tokenized Fund (HINC)”，覆盖以太坊、Solana、Avalanche 和 Sui。该基金主要投资于高收益债券，并额外配置担保贷款凭证（CLO）和杠杆贷款，面向合格投资者开放。 一家管理约 6130 亿美元资产的传统机构首次涉足多链代币化固定收益产品，标志着现实世界资产（RWA）代币化正加速获得机构采纳，也可能推动更多大型发行方考虑基于区块链的基金发行。此举同时巩固了 Securitize 作为领先代币化平台的地位。 Neuberger 的固定收益平台管理资产超过 2300 亿美元，而 Securitize 在 26 个代币化 RWA 中拥有约 49.6 亿美元的分布式资产价值，其中包括贝莱德 27 亿美元的 BUIDL 基金。HINC 基金采用主动管理，主要投资于高收益债券，并配置 CLO 和杠杆贷款，仅面向合格投资者。</summary>
+  </entry>
+  <entry>
+    <title>花旗将于今年为机构客户推出比特币托管服务</title>
+    <link href="https://decrypt.co/375880/citi-bitcoin-custody-wall-street-crypto"/>
+    <id>https://bmt.news/editions/2026-08-19/#rss:decrypt.co_feed:4cfbeead4eb55ec9</id>
+    <updated>2026-08-19T00:00:00Z</updated>
+    <summary>花旗宣布，将于今年晚些时候通过其Custody+平台推出数字资产托管服务，首先支持比特币。该服务将让机构客户通过同一框架访问传统证券和加密货币托管。 作为全球系统重要性银行，花旗进入比特币托管领域标志着华尔街更深入地参与加密货币，可能改善市场基础设施并提升机构信心。这可能加速数字资产的机构采用并扩大投资者基础。 Custody+是花旗投资者服务部门推出的一套托管和结算工具，旨在实现近实时处理；目前花旗超过80%的资产服务事件量已实现实时处理。花旗代币服务已支持在部分市场全天候转移代币化存款，此次公告是对去年10月公布计划的扩展。</summary>
+  </entry>
+  <entry>
+    <title>Tether首次获得KPMG审计：进展显著，但疑问仍在</title>
+    <link href="https://protos.com/what-the-tether-audit-means-for-the-crypto-industry/"/>
+    <id>https://bmt.news/editions/2026-08-19/#rss:protos.com_feed_:beaeabc369d90902</id>
+    <updated>2026-08-19T00:00:00Z</updated>
+    <summary>Tether宣布其已获得毕马威（KPMG）美国分所的审计，这是近十年来的首次。此次审计覆盖Tether International，而非Tether Holdings或母公司Digfinex，被视为稳定币透明度的进步。 作为最大的稳定币发行商，Tether的财务实践影响整个加密市场。此次审计可能增强对USDT的信任，但储备构成的未解问题意味着完全信心仍难以实现。 此次审计由“四大”会计师事务所之一的毕马威美国分所执行。值得注意的是，自纽约总检察长审查以来，Tether的现金及现金等价物减少了10%以上，约25%的储备为非现金或现金等价物资产。</summary>
+  </entry>
   <entry>
     <title>Coldcard固件漏洞多年未察觉，导致约1亿美元比特币被盗</title>
     <link href="https://www.coindesk.com/tech/2026/08/17/how-a-bug-in-coldcard-s-code-went-unnoticed-for-years-leading-to-usd100-million-in-hacked-funds"/>
@@ -214,75 +284,5 @@
     <id>https://bmt.news/editions/2026-08-15/#google_news:article:58287830a139493c</id>
     <updated>2026-08-15T00:00:00Z</updated>
     <summary>币安将封锁与HTX及其他十家加密货币交易所的交易，以遵守欧盟对俄罗斯的制裁。此限制适用于币安与这些平台之间的转账。 此举表明主要加密货币交易所正在加强合规以避免制裁风险，并且直接影响依赖跨交易所转账的用户。这也表明与俄罗斯相关业务有关的平台面临更大的监管压力。 HTX（原火币网）是一家总部位于塞舌尔的交易所，成立于中国，现已在香港、韩国、日本和美国设有办公室。欧盟制裁规则针对与俄罗斯有关的实体，币安的交易所层面限制是一种防止规避制裁的合规回应。</summary>
-  </entry>
-  <entry>
-    <title>Tether 首次获得四大审计，美国监管门槛同步提高</title>
-    <link href="https://cryptoslate.com/tether-finally-got-the-audit-critics-demanded-just-as-washington-changed-the-test/"/>
-    <id>https://bmt.news/editions/2026-08-15/#rss:cryptoslate.com_feed_:6b388654083dc73f</id>
-    <updated>2026-08-15T00:00:00Z</updated>
-    <summary>Tether 首次获得四大会计师事务所审计，KPMG 对 Tether International 2025 年财务报表出具了无保留意见。经审计的数字显示，截至 2025 年 12 月 31 日，储备金超过负债 68.14 亿美元。 这一里程碑意义重大，因为 Tether 是最大的稳定币发行方，其首次四大审计直接影响市场对 USDT 的信心。然而，审计落地之际，GENIUS 法案和 FDIC 提案正提出更严格的储备、流动性和披露要求，因此一次干净的审计未必能消除持续存在的监管疑问。 KPMG 称其实际清点了支持 Tether 储备的每一根金条，无保留意见意味着财务报表在所有重大方面均公允列报。FDIC 的拟议储备资产清单不包括黄金，并将重大赎回事件定义为 24 小时内超过未偿发行量 10% 的赎回请求。</summary>
-  </entry>
-  <entry>
-    <title>以太坊放弃Poseidon，转向SHA/BLAKE，证明系统改变权衡</title>
-    <link href="https://cryptoslate.com/ethereum-abandons-its-8-year-cryptography-bet-after-proof-systems-flip-the-tradeoff/"/>
-    <id>https://bmt.news/editions/2026-08-15/#rss:cryptoslate.com_feed_:86cf9a86f22ae772</id>
-    <updated>2026-08-15T00:00:00Z</updated>
-    <summary>8月13日，以太坊基金会研究员Justin Drake表示，未来L1设计将优先采用SHA或BLAKE哈希，而非Poseidon，此前该基金会在友好证明的密码学上已投入八年。Binius和Flock等新型二进制域证明系统使传统哈希变得实用，但Drake表示Poseidon并未被攻破，也没有发布迁移命令或分叉。 这标志着以太坊协议层面的重大战略转向，影响未来以证明驱动的L1架构和零知识证明的权衡选择。它可能影响Rollup、zkVM以及以太坊的后量子路线图，同时让经过长期密码分析的标准化哈希发挥更重要作用。 Flock论文报告，单颗M4 Max核心每秒可证明约82,000次BLAKE3压缩计算、42,000次SHA-256压缩和30,000次Keccak置换。该基准统计的是内部哈希运算，与以太坊交易容量或生产吞吐量不同；SHA-256是NIST标准，BLAKE2自2015年起就有公开规范，而BLAKE3较新。</summary>
-  </entry>
-  <entry>
-    <title>Strategy反击MSCI提案，称比特币不需要MSCI</title>
-    <link href="https://cryptoslate.com/strategy-tells-msci-bitcoin-doesnt-need-you-as-2-8-billion-index-risk-hangs-over-mstr/"/>
-    <id>https://bmt.news/editions/2026-08-15/#rss:cryptoslate.com_feed_:1cbb86d5055f529f</id>
-    <updated>2026-08-15T00:00:00Z</updated>
-    <summary>MSCI发起了一项咨询，可能将Strategy归类为“非运营公司”并将其从主要股票指数中剔除。Strategy公开回应，辩称指数提供商应反映市场而非影响企业资产配置；反馈将于9月30日结束，最终决定预计10月16日公布。 如果MSCI将Strategy从ACWI IMI指数中剔除，追踪该指数的被动基金可能卖出约28亿美元的MSTR股票，给该股及比特币资产储备企业叙事带来压力。该结果也为Metaplanet、Yellow Cake等其他持有数字资产或大宗商品的公司开创先例。 根据提案，公司的运营资产占总资产比例超过50%即可通过核心筛选；否则需接受五项财务测试，若至少四项不达标则可能被剔除。现有成分股的门槛更宽（运营资产低于10%），且需连续两次年度审查未通过才会被移除，因此本次咨询并不意味着立即剔除。</summary>
-  </entry>
-  <entry>
-    <title>以色列最大银行携手Galaxy提供比特币、以太坊和Solana交易</title>
-    <link href="https://www.theblock.co/news/business/2026-08-14-israels-largest-bank-taps-galaxy-to-offer-bitcoin-ether-and-solana-trading-411868"/>
-    <id>https://bmt.news/editions/2026-08-15/#rss:www.theblock.co_rss.xml:1e459f019fd592dd</id>
-    <updated>2026-08-15T00:00:00Z</updated>
-    <summary>以色列最大银行与Galaxy Digital合作，为其客户提供比特币、以太坊和Solana的交易服务。此举标志着以色列机构加密货币准入的重要一步。 一家顶级传统银行开放加密货币直接交易，标志着数字资产正日益获得主流认可。这可能为以色列及周边地区的其他银行开创先例，扩大这些加密资产的投资者基础。 该服务涵盖比特币、以太坊和Solana，由Galaxy提供交易基础设施和执行。Chainalysis数据显示，截至2025年6月的12个月内，以色列收到的链上加密资产价值估计达220亿美元，表明当地已有可观需求。</summary>
-  </entry>
-  <entry>
-    <title>泰达币2025年报表获毕马威无保留审计意见</title>
-    <link href="https://cointelegraph.com/news/tether-completes-first-full-financial-audit-receives-clean-kpmg-opinion?utm_source=rss_feed&amp;utm_medium=rss&amp;utm_campaign=rss_partner_inbound"/>
-    <id>https://bmt.news/editions/2026-08-14/#rss:cointelegraph.com_rss:a30c52abaa730643</id>
-    <updated>2026-08-14T00:00:00Z</updated>
-    <summary>最大的稳定币发行方泰达币首次完成了对其2025年财务报表的全面独立审计，毕马威出具了无保留（干净）审计意见。审计显示其储备金超过负债68.14亿美元。 这是最大的稳定币发行方在透明度方面的一个重要里程碑，可能增强市场对USDT及整个稳定币市场的信心，而稳定币市场支撑着加密货币交易的大部分流动性。此举使泰达币超越了季度鉴证，达到了传统金融机构所期望的全面审计标准。 毕马威实际检查并逐一清点了泰达币持有的黄金，而非仅依赖托管机构的记录。审计涵盖了截至2025年12月31日年度的资产负债表、损益表和现金流量表，发现储备金超过负债68.14亿美元。</summary>
-  </entry>
-  <entry>
-    <title>安全综述：Harmony 桥攻击与 BTCPay 服务器漏洞</title>
-    <link href="https://www.govinfosecurity.com/cryptohack-roundup-harmony-btcpay-exploits-a-32543"/>
-    <id>https://bmt.news/editions/2026-08-14/#gdelt:article:20260813T201500Z::https://www.govinfosecurity.com/cryptohack-roundup-harmony-btcpay-exploits-a-32543</id>
-    <updated>2026-08-14T00:00:00Z</updated>
-    <summary>这份安全综述涵盖了两起重大事件：2022 年 6 月 Harmony Horizon 桥遭攻击导致约 1 亿美元损失，以及 BTCPay Server 的一个严重漏洞使攻击者能够从运行 LND 的 Lightning 节点中盗取资金。 这份综述凸显了跨链桥和比特币支付基础设施中持续存在的风险，一次攻击就可能直接危及用户资金。DeFi 用户、桥运营方以及依赖 Lightning 支付的商家都会受到影响，并可能促使整个加密基础设施加强安全审查。 在 Harmony 事件中，攻击者似乎控制了该桥背后的多重签名合约，约有 64,000 个钱包受到影响。在 BTCPay Server 事件中，该漏洞暴露了 LND Lightning 节点的凭据，官方敦促运营方升级到 2.4.2 版本或将服务器下线。</summary>
-  </entry>
-  <entry>
-    <title>Tether 首次获得 KPMG 对 2025 年财务报告的清洁审计意见</title>
-    <link href="https://www.theblock.co/news/business/2026-08-13-tether-kpmg-first-full-audit-usdt-clean-opinion-411760"/>
-    <id>https://bmt.news/editions/2026-08-14/#rss:www.theblock.co_rss.xml:1de85e8bbd81999e</id>
-    <updated>2026-08-14T00:00:00Z</updated>
-    <summary>KPMG 美国已对 Tether International 的 2025 年完整财务报表出具了无保留（清洁）审计意见，Tether 于周四宣布了这一消息。这是 USDT 发行方首次完成全面审计。 Tether 是最大的稳定币发行方，获得四大会计师事务所的无保留审计意见显著提升了其财务透明度和可信度。这可能推动机构采用，并吸引监管机构对稳定币储备的更严格审视。 “无保留意见”意味着审计师认为财务报表公允列报且符合 GAAP，不存在重大错报。此次审计具体覆盖 Tether International 的 2025 年完整财务数据。</summary>
-  </entry>
-  <entry>
-    <title>安全回顾：Harmony 桥遭攻击，BTCPay Server 存在漏洞</title>
-    <link href="https://www.bankinfosecurity.com/cryptohack-roundup-harmony-btcpay-exploits-a-32543"/>
-    <id>https://bmt.news/editions/2026-08-14/#gdelt:article:20260813T184500Z::https://www.bankinfosecurity.com/cryptohack-roundup-harmony-btcpay-exploits-a-32543</id>
-    <updated>2026-08-14T00:00:00Z</updated>
-    <summary>新的安全回顾重点披露了两起事件：2022 年 6 月 Harmony Horizon 跨链桥遭攻击，损失约 1 亿美元；以及 BTCPay Server 中存在一个正被积极利用的严重漏洞，可能导致闪电网络节点资金被窃取。 这些事件凸显了跨链桥设计和支付服务器安全方面的持续弱点，使用户资金面临风险，也加大了监管部门和社区对加密基础设施的审视。 Harmony 桥采用 2/5 多签方案，攻击者窃取两把私钥即可批准恶意交易；FBI 将该攻击归因于朝鲜的 Lazarus 集团。开源比特币支付处理器 BTCPay Server 已针对被积极利用的漏洞发布紧急补丁。</summary>
-  </entry>
-  <entry>
-    <title>Coinbase的Base弃用Optimistic Rollups，押注ZK证明</title>
-    <link href="https://news.google.com/rss/articles/CBMidEFVX3lxTFBibndSVHhJY1ZoRUpvNGd6c09wQmVRdDVySmszQWE0Q1Zad0RfbXlpVzJ1Q2VfTlo1SzZwTWplZXNKaGJ6OHhTWkt0T0FhRVpCckV0M2pVZWdBbXBQdjBxWFltelFvaHltOFFnbUYzYnZHTy0w?oc=5"/>
-    <id>https://bmt.news/editions/2026-08-14/#google_news:article:613f8c6136c1b94e</id>
-    <updated>2026-08-14T00:00:00Z</updated>
-    <summary>据Yellow.com报道，Coinbase旗下Layer-2网络Base计划放弃乐观Rollup，转而采用零知识（ZK）证明，这一战略转变涉及约120亿美元的网络价值。目前Coinbase或Base尚未正式确认这一转型。 Base是最大的以太坊Layer-2网络之一，其核心架构的切换将对L2生态、在Base上构建的开发者以及OP Stack的竞争定位产生广泛影响。如果属实，这还可能加速整个行业向基于ZK的扩展方案转变。 报道中提到的120亿美元反映了Base生态系统的资产或价值规模。由于这条消息来自二级媒体报道而非官方公告，具体的路线图、时间表和技术实现方式仍不明确。</summary>
-  </entry>
-  <entry>
-    <title>Tether完成首次四大审计，KPMG对USDT储备出具无保留意见</title>
-    <link href="https://www.coindesk.com/business/2026/08/13/tether-says-it-completed-long-promised-big-four-audit-of-finances-behind-usd180-billion-usdt-stablecoin"/>
-    <id>https://bmt.news/editions/2026-08-14/#rss:www.coindesk.com_arc_outboundfeeds_rss_:82742dd2bb0540df</id>
-    <updated>2026-08-14T00:00:00Z</updated>
-    <summary>Tether宣布，KPMG U.S.已对其2025年财务报表出具无保留意见，这是该稳定币发行方首次完成四大会计师事务所的全面审计。财务报表显示，其储备超过负债68.14亿美元。 此次审计回应了长期以来对USDT储备透明度的批评；USDT是规模达1800亿美元、对加密货币交易流动性至关重要的稳定币。四大会计师事务所出具无保留意见，可能增强市场对Tether的信任，并缓解数字资产领域的系统性风险担忧。 KPMG的审计超出了Tether此前季度鉴证的范围，测试了交易、系统、估值、交易对手方和所有权记录，并实地清点了公司的金条。Tether尚未确认是否会公开发布KPMG的完整报告。</summary>
   </entry>
 </feed>

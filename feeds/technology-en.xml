@@ -4,7 +4,21 @@
   <link href="https://bmt.news/feeds/technology-en.xml" rel="self"/>
   <link href="https://bmt.news/"/>
   <id>https://bmt.news/feeds/technology-en.xml</id>
-  <updated>2026-08-18T00:00:00Z</updated>
+  <updated>2026-08-19T00:00:00Z</updated>
+  <entry>
+    <title>Anthropic Unveils Autonomous De Novo Protein Binder Design with Claude</title>
+    <link href="https://news.google.com/rss/articles/CBMif0FVX3lxTFBaMW9CZHNKUG5GQXRVaXN5NFVwbXBVbXluUDAzcjJjZnNSVlJraXY4UVdhUlYxS2V2Slp4cExzcFl4WmFLTjdmVXFleWhtc1pqT1BkOG9kTXZRUm9oVk5zTFBMV2U2d3kzSHlSWldSd3JhZWQ4elZVb3ViV2F6aE0?oc=5"/>
+    <id>https://bmt.news/editions/2026-08-19/#rss:news.google.com_rss_search?q=site:anthropic.com+when:7d&amp;hl=en-US&amp;gl=US&amp;ceid=US:en:6ed7174bdda6953d</id>
+    <updated>2026-08-19T00:00:00Z</updated>
+    <summary>Anthropic published a research announcement titled &#x27;Autonomous de novo protein binder design with Claude,&#x27; demonstrating that Claude can autonomously design de novo protein binders. This marks a step toward AI-driven biomedical discovery. This is significant because de novo protein binders have broad applications in drug discovery, diagnostics, and synthetic biology, and automating their design with an LLM could accelerate protein engineering and lower its cost. It also positions frontier AI models as general-purpose scientific tools beyond code and text. The research focuses on Claude&#x27;s ability to perform de novo binder design autonomously, meaning it generates and iteratively refines binders without human-in-the-loop guidance. While no experimental validation details are included in the snippet, the combination of generative modeling and structure prediction is central to modern protein binder design.</summary>
+  </entry>
+  <entry>
+    <title>Asana Finishes 5 Years of Engineering Work in 2 Weeks with OpenAI Codex</title>
+    <link href="https://openai.com/index/asana"/>
+    <id>https://bmt.news/editions/2026-08-19/#rss:openai.com_blog_rss.xml:6023038a8912cd08</id>
+    <updated>2026-08-19T00:00:00Z</updated>
+    <summary>Asana reports that it used OpenAI Codex to replace an outdated testing system, completing an estimated five years of engineering work in just two weeks. The migration reportedly cost about $12,000. This case study highlights how AI coding agents are compressing large-scale software modernization projects from years to weeks, changing cost and staffing assumptions for engineering organizations. It could push more companies to adopt AI-driven development tools for technical debt and infrastructure upgrades. Asana&#x27;s project involved migrating legacy testing infrastructure, a task the company estimated would take five engineer-years. Codex executed the work in two weeks for roughly $12,000, showcasing both speed and cost efficiency relative to traditional staffing.</summary>
+  </entry>
   <entry>
     <title>Qwen3.8 27B Scores 52 on Artificial Analysis, Topping Larger Models</title>
     <link href="https://artificialanalysis.ai/models/qwen3-8-27b"/>

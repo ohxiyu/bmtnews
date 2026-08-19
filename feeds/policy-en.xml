@@ -4,7 +4,21 @@
   <link href="https://bmt.news/feeds/policy-en.xml" rel="self"/>
   <link href="https://bmt.news/"/>
   <id>https://bmt.news/feeds/policy-en.xml</id>
-  <updated>2026-08-18T00:00:00Z</updated>
+  <updated>2026-08-19T00:00:00Z</updated>
+  <entry>
+    <title>SEC Proposes &#x27;Regulation Crypto Assets&#x27; Framework</title>
+    <link href="https://www.sec.gov/newsroom/press-releases/2026-76-sec-proposes-new-regulation-crypto-assets"/>
+    <id>https://bmt.news/editions/2026-08-19/#rss:www.sec.gov_news_pressreleases.rss:1c437d1b11ebdf67</id>
+    <updated>2026-08-19T00:00:00Z</updated>
+    <summary>The SEC today proposed &#x27;Regulation Crypto Assets,&#x27; a new rules package designed to create a clear and fit-for-purpose framework for certain investment contracts involving crypto assets. This is the first comprehensive SEC rulemaking tailored specifically to crypto asset offerings and secondary trading. If adopted, the framework could significantly reshape how crypto assets are classified, offered, and traded in the U.S., affecting exchanges, issuers, and investors. It marks a paradigm shift from enforcement-driven oversight toward a comprehensive regulatory regime for crypto. The proposal specifically targets &#x27;investment contracts&#x27; involving crypto assets, a legal concept tied to the Howey test used to determine whether an asset is a security. As a proposed rule, it has not yet been adopted and will go through a public comment period, with details subject to potential revisions.</summary>
+  </entry>
+  <entry>
+    <title>SEC Proposes Token Offering Rules With $75 Million Exemption</title>
+    <link href="https://thedefiant.io/news/regulation/sec-proposes-token-offering-rules-75-million-exemption"/>
+    <id>https://bmt.news/editions/2026-08-19/#rss:thedefiant.io_api_feed:ff0578eb0c8d54d0</id>
+    <updated>2026-08-19T00:00:00Z</updated>
+    <summary>The SEC proposed new rules for token offerings, pairing two registration exemptions with a conditional safe harbor and a $75 million exemption. All three sitting commissioners voted in favor during a vote held outside a public meeting. This is a landmark regulatory development that could materially reshape how crypto projects raise capital in the U.S. and how tokens are classified. If finalized, it would provide clearer legal pathways and reduce the risk that tokens are treated as securities. The proposal pairs two registration exemptions with a conditional safe harbor that would remove the &quot;investment contract&quot; label from a token, and it preempts state securities laws. Unanimous support from all three sitting commissioners signals strong momentum, but the rule remains a proposal rather than a final SEC action.</summary>
+  </entry>
   <entry>
     <title>Treasury Proposes Stablecoin Issuer Licensing Rules Under GENIUS Act</title>
     <link href="https://decrypt.co/375817/treasury-rules-sell-stablecoins-us"/>

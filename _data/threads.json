@@ -1,16 +1,64 @@
 {
   "threads": [
     {
-      "thread_id": "ta91361cd5f",
-      "latest_date": "2026-08-18",
-      "first_date": "2026-08-13",
-      "days": 3,
-      "entries": 3,
+      "thread_id": "tf39e213c53",
+      "latest_date": "2026-08-19",
+      "first_date": "2026-08-10",
+      "days": 2,
+      "entries": 2,
       "category": "crypto",
-      "title_zh": "Coldcard固件漏洞多年未察觉，导致约1亿美元比特币被盗",
-      "title_en": "Coldcard Firmware Bug Goes Unnoticed for Years, Enabling ~$100M Bitcoin Theft",
-      "summary_zh": "Coldcard固件中一个长期潜伏的漏洞（自2021年3月发布的4.0.1版本起存在）导致2026年7月30日约1亿美元比特币被盗。Galaxy Research将此次大规模转走与种子生成随机性不足联系起来，独立分析机构此后估计损失高达1.16亿美元。 Coldcard是最受信赖的比特币专用硬件钱包之一，但其密钥生成路径存在长达数年的漏洞，正好印证了行业“不要信任，要验证”的格言——正如Foundation首席执行官Zach Herbert所说，声誉并不是安全模型。该事件可能促使用户对硬件钱包提出更强验证要求，并重新评估自托管风险。 该漏洞仅影响部分设备，导致生成的助记词随机熵远低于预期；被攻击者扫走的币的持有时间从2021年到2026年不等。7月30日，约1196个地址在41分钟内被转空，共损失1082.65枚比特币；Coinkite首席执行官最初否认存在普遍的钱包漏洞，且报道称攻击仍在持续。",
-      "summary_en": "A long-dormant bug in Coldcard's firmware, present since version 4.0.1 released in March 2021, led to the theft of roughly $100 million in Bitcoin on July 30, 2026. Galaxy Research tied the sweep to weak randomness in seed generation, and independent analysts later put losses as high as $116 million. Coldcard is one of the most trusted Bitcoin-only hardware wallets, yet a years-long flaw in its key-generation path validates the industry's 'don't trust, verify' maxim—as Foundation CEO Zach Herbert put it, reputation is not a security model. The incident may push users to demand stronger verification of hardware wallets and to reassess self-custody risks. The bug affected only some devices, causing generated seed phrases to have far weaker entropy than intended, and the coins swept by the attacker spanned 2021 to 2026. On July 30, about 1,196 addresses were drained in 41 minutes, taking 1,082.65 BTC; Coinkite's CEO initially denied a wallet-wide vulnerability, and attacks were reported to still be ongoing."
+      "title_zh": "Bybit称阻止7亿美元损失，此前遭15亿黑客攻击",
+      "title_en": "Bybit Blocks $700M in Further Losses After Record $1.5B Hack",
+      "summary_zh": "Bybit表示，在遭受创纪录的15亿美元黑客攻击后，该平台又阻止了7亿美元的潜在进一步损失。这一公告既凸显了入侵的规模，也反映了平台采取的缓解措施。 这是有史以来规模最大的加密货币交易所黑客攻击之一，直接影响用户资金和运营信任。该事件引发了对托管安全的担忧，并可能促使监管机构加强对交易所保护措施的关注。 被盗的15亿美元构成重大损失，而7亿美元的数字代表据称原本面临风险但最终得以保全的额外资金。Bybit用于阻止这些潜在损失的具体机制尚未公布。",
+      "summary_en": "Bybit said it blocked $700 million in potential further losses after a record-breaking $1.5 billion hack on the exchange. The announcement highlights both the scale of the breach and the platform's mitigation efforts. This is one of the largest crypto exchange hacks ever and directly affects user funds and operational trust. The incident raises concerns about custodial security and may intensify regulatory focus on exchange protections. The $1.5 billion stolen amounts to a major loss, while the $700 million figure represents additional funds that were reportedly at risk but ultimately saved. The exact mechanism Bybit used to block those potential losses has not been disclosed."
+    },
+    {
+      "thread_id": "tadfbe249a5",
+      "latest_date": "2026-08-19",
+      "first_date": "2026-08-12",
+      "days": 3,
+      "entries": 4,
+      "category": "policy",
+      "title_zh": "美SEC提出代币发行规则，含7500万美元豁免",
+      "title_en": "SEC Proposes Token Offering Rules With $75 Million Exemption",
+      "summary_zh": "美国证券交易委员会（SEC）提出了新的代币发行规则，包括一项针对7500万美元的注册豁免，以及一个附条件的“安全港”条款，可免除代币的“投资合同”属性。三位现任委员在一次非公开会议外的投票中一致支持该提案。 这是一项具有里程碑意义的监管进展，可能实质性改变加密项目在美国的融资方式以及代币的定性。若最终通过，将为代币发行提供更清晰的法律路径，并降低代币被视为证券的风险。 该提案将两项注册豁免与一个附条件的“安全港”条款相结合，该条款可移除代币的“投资合同”标签，并优先于州证券法。三位现任委员的一致支持表明势头强劲，但该规则仍是提案而非SEC的最终决定。",
+      "summary_en": "The SEC proposed new rules for token offerings, pairing two registration exemptions with a conditional safe harbor and a $75 million exemption. All three sitting commissioners voted in favor during a vote held outside a public meeting. This is a landmark regulatory development that could materially reshape how crypto projects raise capital in the U.S. and how tokens are classified. If finalized, it would provide clearer legal pathways and reduce the risk that tokens are treated as securities. The proposal pairs two registration exemptions with a conditional safe harbor that would remove the \"investment contract\" label from a token, and it preempts state securities laws. Unanimous support from all three sitting commissioners signals strong momentum, but the rule remains a proposal rather than a final SEC action."
+    },
+    {
+      "thread_id": "ta91361cd5f",
+      "latest_date": "2026-08-19",
+      "first_date": "2026-08-13",
+      "days": 4,
+      "entries": 4,
+      "category": "crypto",
+      "title_zh": "Coldcard 钱包损失据报道超过 1.15 亿美元",
+      "title_en": "Coldcard Wallet Losses Reportedly Exceed $115 Million",
+      "summary_zh": "据报道，与 Coldcard 硬件钱包相关的损失现已超过 1.15 亿美元。此前已发现一个固件缺陷，该缺陷削弱了多个型号的钱包种子生成安全性。 这对硬件钱包用户来说是一起重大安全事件，因为 Coldcard 被广泛认为是高安全性的比特币专用钱包。损失规模可能会削弱用户对硬件钱包自我托管解决方案的信任，并促使对种子生成流程进行更广泛的审查。 据报道，Coldcard 固件缺陷影响了五个型号的种子生成，Galaxy 将一笔涉及 1,196 个地址、金额达 7020 万美元的资金转移与该漏洞关联。报告的总损失超过 1.15 亿美元，可能还包括其他利用事件或事故。",
+      "summary_en": "Reports indicate that losses tied to Coldcard hardware wallets have now exceeded $115 million. This follows a previously identified firmware flaw that weakens wallet seed generation across multiple models. This is a significant security incident for hardware wallet users, as Coldcard is widely regarded as a high-security Bitcoin-only wallet. The scale of losses could undermine trust in hardware wallet self-custody solutions and prompt a broader review of seed generation processes. The Hacker News reports a Coldcard firmware flaw that weakens seed generation across five models, with Galaxy linking a 1,196-address sweep of $70.2 million to the bug. The total reported losses exceed $115 million, suggesting additional exploits or incidents may be included."
+    },
+    {
+      "thread_id": "t8bc4246654",
+      "latest_date": "2026-08-19",
+      "first_date": "2026-08-14",
+      "days": 3,
+      "entries": 6,
+      "category": "crypto",
+      "title_zh": "Tether首次获得KPMG审计：进展显著，但疑问仍在",
+      "title_en": "Tether's First KPMG Audit: Progress, Yet Not Full Clarity",
+      "summary_zh": "Tether宣布其已获得毕马威（KPMG）美国分所的审计，这是近十年来的首次。此次审计覆盖Tether International，而非Tether Holdings或母公司Digfinex，被视为稳定币透明度的进步。 作为最大的稳定币发行商，Tether的财务实践影响整个加密市场。此次审计可能增强对USDT的信任，但储备构成的未解问题意味着完全信心仍难以实现。 此次审计由“四大”会计师事务所之一的毕马威美国分所执行。值得注意的是，自纽约总检察长审查以来，Tether的现金及现金等价物减少了10%以上，约25%的储备为非现金或现金等价物资产。",
+      "summary_en": "Tether announced it received an audit from KPMG's US arm, marking its first audit in nearly a decade. The audit covers Tether International, not Tether Holdings or parent Digfinex, and is seen as a step forward for stablecoin transparency. As the largest stablecoin issuer, Tether's financial practices affect the entire crypto market. This audit could increase trust in USDT, but unresolved questions about reserve composition mean full confidence remains elusive. The audit was performed by KPMG's US arm, one of the 'Big Four' accounting firms. Notably, Tether's cash and cash equivalents have decreased by over 10% since the New York Attorney General's scrutiny, and about 25% of reserves are not in cash or cash equivalents."
+    },
+    {
+      "thread_id": "tdffe81810c",
+      "latest_date": "2026-08-19",
+      "first_date": "2026-08-17",
+      "days": 2,
+      "entries": 2,
+      "category": "crypto",
+      "title_zh": "花旗将于今年为机构客户推出比特币托管服务",
+      "title_en": "Citi to Launch Bitcoin Custody for Institutional Clients This Year",
+      "summary_zh": "花旗宣布，将于今年晚些时候通过其Custody+平台推出数字资产托管服务，首先支持比特币。该服务将让机构客户通过同一框架访问传统证券和加密货币托管。 作为全球系统重要性银行，花旗进入比特币托管领域标志着华尔街更深入地参与加密货币，可能改善市场基础设施并提升机构信心。这可能加速数字资产的机构采用并扩大投资者基础。 Custody+是花旗投资者服务部门推出的一套托管和结算工具，旨在实现近实时处理；目前花旗超过80%的资产服务事件量已实现实时处理。花旗代币服务已支持在部分市场全天候转移代币化存款，此次公告是对去年10月公布计划的扩展。",
+      "summary_en": "Citi announced that it will launch digital asset custody later this year, starting with Bitcoin, through its Custody+ platform. The service will let institutional clients access traditional securities and crypto custody through the same framework. As a global systemically important bank, Citi's entry into Bitcoin custody signals deeper Wall Street involvement in crypto, which could improve market infrastructure and institutional confidence. This may accelerate institutional adoption of digital assets and broaden the investor base. Custody+ is a suite of custody and settlement tools from Citi Investor Services, designed for near-real-time processing; over 80% of Citi's asset-servicing event volume is now processed in real time. Citi Token Services already enables 24/7 transfers of tokenized deposits in select markets, and this expands on plans announced in October."
     },
     {
       "thread_id": "t2bc2cf30ff",
@@ -121,18 +169,6 @@
       "summary_en": "Vitalik Buterin has proposed a revamped Ethereum roadmap that adds post-quantum defense, AI-based verification, and a potential shift away from the Ethereum Virtual Machine (EVM). This is a proposal, not an implemented upgrade. Ethereum is the largest smart contract platform, so a change in its technical direction could affect developers, dApps, Layer 2 networks, and the broader crypto ecosystem. If adopted, the roadmap would represent a major architectural shift in how Ethereum secures and executes code. The proposal reportedly includes preparing Ethereum's cryptography for quantum computing threats and using AI to help verify code correctness. Moving away from the EVM would be a significant break from the current execution environment used by thousands of dApps and rollups."
     },
     {
-      "thread_id": "t8bc4246654",
-      "latest_date": "2026-08-15",
-      "first_date": "2026-08-14",
-      "days": 2,
-      "entries": 5,
-      "category": "crypto",
-      "title_zh": "Tether 首次获得四大审计，美国监管门槛同步提高",
-      "title_en": "Tether Secures First Big Four Audit as U.S. Rules Tighten",
-      "summary_zh": "Tether 首次获得四大会计师事务所审计，KPMG 对 Tether International 2025 年财务报表出具了无保留意见。经审计的数字显示，截至 2025 年 12 月 31 日，储备金超过负债 68.14 亿美元。 这一里程碑意义重大，因为 Tether 是最大的稳定币发行方，其首次四大审计直接影响市场对 USDT 的信心。然而，审计落地之际，GENIUS 法案和 FDIC 提案正提出更严格的储备、流动性和披露要求，因此一次干净的审计未必能消除持续存在的监管疑问。 KPMG 称其实际清点了支持 Tether 储备的每一根金条，无保留意见意味着财务报表在所有重大方面均公允列报。FDIC 的拟议储备资产清单不包括黄金，并将重大赎回事件定义为 24 小时内超过未偿发行量 10% 的赎回请求。",
-      "summary_en": "Tether received its first Big Four audit, with KPMG issuing an unqualified opinion on Tether International's 2025 financial statements. The audited numbers show reserves exceeding liabilities by $6.814 billion as of Dec. 31, 2025. This milestone matters because Tether is the largest stablecoin issuer and its first Big Four audit directly affects market confidence in USDT. However, the audit lands just as the GENIUS Act and FDIC proposals impose stricter reserve, liquidity, and disclosure rules, so a single clean audit may not settle lingering regulatory questions. KPMG says it physically counted every gold bar backing Tether's reserves, and the unqualified opinion means the financial statements are presented fairly in all material respects. The FDIC's proposed reserve-asset menu does not include gold, and defines a major redemption event as requests exceeding 10% of outstanding issuance within 24 hours."
-    },
-    {
       "thread_id": "t527a7c91a2",
       "latest_date": "2026-08-14",
       "first_date": "2026-08-11",
@@ -143,18 +179,6 @@
       "title_en": "Harmony Bridge Hack and BTCPay Vulnerability Exposed in Security Roundup",
       "summary_zh": "新的安全回顾重点披露了两起事件：2022 年 6 月 Harmony Horizon 跨链桥遭攻击，损失约 1 亿美元；以及 BTCPay Server 中存在一个正被积极利用的严重漏洞，可能导致闪电网络节点资金被窃取。 这些事件凸显了跨链桥设计和支付服务器安全方面的持续弱点，使用户资金面临风险，也加大了监管部门和社区对加密基础设施的审视。 Harmony 桥采用 2/5 多签方案，攻击者窃取两把私钥即可批准恶意交易；FBI 将该攻击归因于朝鲜的 Lazarus 集团。开源比特币支付处理器 BTCPay Server 已针对被积极利用的漏洞发布紧急补丁。",
       "summary_en": "A new security roundup highlights two incidents: the June 2022 Harmony Horizon Bridge hack that lost about $100 million, and an actively exploited critical vulnerability in BTCPay Server that can drain Lightning Network node funds. These incidents underscore persistent weaknesses in cross-chain bridge design and payment server security, putting user funds at risk and increasing regulatory and community scrutiny on crypto infrastructure. The Harmony bridge was protected by a 2-of-5 multisig scheme, and attackers stole two private keys to approve malicious transactions; the FBI attributed the attack to North Korea's Lazarus Group. BTCPay Server, an open-source Bitcoin payment processor, issued an emergency patch for the actively exploited vulnerability."
-    },
-    {
-      "thread_id": "tadfbe249a5",
-      "latest_date": "2026-08-14",
-      "first_date": "2026-08-12",
-      "days": 2,
-      "entries": 2,
-      "category": "policy",
-      "title_zh": "美国SEC拟为代币化股票制定监管框架",
-      "title_en": "SEC Targets Regulatory Framework for Tokenized Stocks",
-      "summary_zh": "美国SEC计划提出“Regulation Crypto”监管框架，并为代币化股票设立创新豁免，可能允许追踪苹果、特斯拉等股票的代币在区块链上全天候交易。相关细节可能于周五的公开会议上公布。 这将为代币化证券市场提供法律确定性，该市场在Robinhood Chain、Solana和Base等平台上快速增长，却一直处于监管灰色地带。正式的豁免可能打开美国散户参与渠道，并进一步使真实世界资产（RWA）趋势合法化。 拟议的豁免适用于追踪股票经济敞口但不带投票权或股息权的代币，因此监管负担较轻。由于《数字资产市场清晰法案》（CLARITY Act）在国会至少推迟至9月，SEC主席保罗·阿特金斯（Paul Atkins）在“Project Crypto”议程下自行推进。",
-      "summary_en": "The SEC plans to propose 'Regulation Crypto' and an innovation exemption for tokenized stocks, potentially allowing tokens tracking stocks like Apple and Tesla to trade on blockchains around the clock. Details could be unveiled at a Friday open meeting. This would provide legal clarity for the tokenized securities market, which has grown rapidly on platforms like Robinhood Chain, Solana, and Base while operating in a regulatory gray zone. A formal exemption could open U.S. retail access and further legitimize the real-world asset (RWA) trend. The intended exemption applies to tokens that track a stock's economic exposure but carry no voting or dividend rights, justifying lighter regulatory treatment. The CLARITY Act remains stalled in Congress until at least September, prompting the SEC to act unilaterally under Chair Paul Atkins' 'Project Crypto' agenda."
     },
     {
       "thread_id": "t1a3e07b671",

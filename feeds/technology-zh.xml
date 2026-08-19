@@ -4,7 +4,21 @@
   <link href="https://bmt.news/feeds/technology-zh.xml" rel="self"/>
   <link href="https://bmt.news/"/>
   <id>https://bmt.news/feeds/technology-zh.xml</id>
-  <updated>2026-08-18T00:00:00Z</updated>
+  <updated>2026-08-19T00:00:00Z</updated>
+  <entry>
+    <title>Anthropic发布研究：Claude实现自主从头蛋白质结合体设计</title>
+    <link href="https://news.google.com/rss/articles/CBMif0FVX3lxTFBaMW9CZHNKUG5GQXRVaXN5NFVwbXBVbXluUDAzcjJjZnNSVlJraXY4UVdhUlYxS2V2Slp4cExzcFl4WmFLTjdmVXFleWhtc1pqT1BkOG9kTXZRUm9oVk5zTFBMV2U2d3kzSHlSWldSd3JhZWQ4elZVb3ViV2F6aE0?oc=5"/>
+    <id>https://bmt.news/editions/2026-08-19/#rss:news.google.com_rss_search?q=site:anthropic.com+when:7d&amp;hl=en-US&amp;gl=US&amp;ceid=US:en:6ed7174bdda6953d</id>
+    <updated>2026-08-19T00:00:00Z</updated>
+    <summary>Anthropic发布了一份题为“Autonomous de novo protein binder design with Claude”的研究公告，展示Claude能够自主从头设计蛋白质结合体。这标志着AI驱动的生物医学发现向前迈出一步。 这之所以重要，是因为从头设计蛋白质结合体在药物发现、诊断和合成生物学中具有广泛应用，而利用大语言模型（LLM）自动化设计可加速蛋白质工程并降低成本。这也表明前沿AI模型正成为超越代码和文本的通用科学工具。 该研究聚焦于Claude自主进行从头结合体设计的能力，即无需人工介入即可生成并迭代优化结合体。虽然摘要未包含实验验证细节，但生成建模与结构预测的结合是现代蛋白质结合体设计的核心。</summary>
+  </entry>
+  <entry>
+    <title>Asana 借助 OpenAI Codex 两周完成五年工程工作量</title>
+    <link href="https://openai.com/index/asana"/>
+    <id>https://bmt.news/editions/2026-08-19/#rss:openai.com_blog_rss.xml:6023038a8912cd08</id>
+    <updated>2026-08-19T00:00:00Z</updated>
+    <summary>Asana 表示，他们使用 OpenAI Codex 替换了一套过时的测试系统，在短短两周内完成了预计需要五年的工程工作量。据称此次迁移花费约 12,000 美元。 这一案例表明，AI 编程代理正在将大规模软件现代化项目的时间从数年压缩到数周，改变了工程组织的成本和人力配置假设。这可能促使更多公司采用 AI 驱动的开发工具来处理技术债务和基础设施升级。 Asana 的项目涉及迁移遗留的测试基础设施，公司估计这项任务需要五个工程师年。Codex 在两周内完成了工作，成本约为 12,000 美元，展示了相对于传统人力的速度和成本效益。</summary>
+  </entry>
   <entry>
     <title>Qwen3.8 27B 在人工智能分析基准中得 52 分，超越更大模型</title>
     <link href="https://artificialanalysis.ai/models/qwen3-8-27b"/>

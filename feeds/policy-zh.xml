@@ -4,7 +4,21 @@
   <link href="https://bmt.news/feeds/policy-zh.xml" rel="self"/>
   <link href="https://bmt.news/"/>
   <id>https://bmt.news/feeds/policy-zh.xml</id>
-  <updated>2026-08-18T00:00:00Z</updated>
+  <updated>2026-08-19T00:00:00Z</updated>
+  <entry>
+    <title>SEC提出《加密资产条例》新规框架</title>
+    <link href="https://www.sec.gov/newsroom/press-releases/2026-76-sec-proposes-new-regulation-crypto-assets"/>
+    <id>https://bmt.news/editions/2026-08-19/#rss:www.sec.gov_news_pressreleases.rss:1c437d1b11ebdf67</id>
+    <updated>2026-08-19T00:00:00Z</updated>
+    <summary>美国证券交易委员会（SEC）今日提出名为“Regulation Crypto Assets”的新规则包，旨在为涉及加密资产的投资合同建立清晰且合适的专门框架。这是SEC首个针对加密资产发行和二级交易量身定制的全面规则制定。 若获采纳，该框架可能深刻改变美国市场上加密资产的分类、发行与交易方式，影响交易所、发行方和投资者。这标志着SEC的加密监管从以执法为主转向全面的规则体系建设。 该提案专门针对涉及加密资产的“投资合同”，这一法律概念与用于判断某项资产是否属于证券的豪威测试（Howey test）相关。由于目前仅是提案阶段，规则尚未最终通过，还需经过公众意见征询期并可能修订。</summary>
+  </entry>
+  <entry>
+    <title>美SEC提出代币发行规则，含7500万美元豁免</title>
+    <link href="https://thedefiant.io/news/regulation/sec-proposes-token-offering-rules-75-million-exemption"/>
+    <id>https://bmt.news/editions/2026-08-19/#rss:thedefiant.io_api_feed:ff0578eb0c8d54d0</id>
+    <updated>2026-08-19T00:00:00Z</updated>
+    <summary>美国证券交易委员会（SEC）提出了新的代币发行规则，包括一项针对7500万美元的注册豁免，以及一个附条件的“安全港”条款，可免除代币的“投资合同”属性。三位现任委员在一次非公开会议外的投票中一致支持该提案。 这是一项具有里程碑意义的监管进展，可能实质性改变加密项目在美国的融资方式以及代币的定性。若最终通过，将为代币发行提供更清晰的法律路径，并降低代币被视为证券的风险。 该提案将两项注册豁免与一个附条件的“安全港”条款相结合，该条款可移除代币的“投资合同”标签，并优先于州证券法。三位现任委员的一致支持表明势头强劲，但该规则仍是提案而非SEC的最终决定。</summary>
+  </entry>
   <entry>
     <title>美财政部提议GENIUS法案稳定币发行人许可规则</title>
     <link href="https://decrypt.co/375817/treasury-rules-sell-stablecoins-us"/>

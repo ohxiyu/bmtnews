@@ -3,15 +3,28 @@
     {
       "slug": "sec",
       "label": "SEC",
-      "mentions": 5,
-      "days": 3,
+      "mentions": 7,
+      "days": 4,
       "first_date": "2026-08-12",
-      "latest_date": "2026-08-14",
-      "recent": 5,
+      "latest_date": "2026-08-19",
+      "recent": 6,
       "category": "policy",
-      "top_score": 8.0,
-      "title_zh": "美国SEC拟为代币化股票制定监管框架",
-      "title_en": "SEC Targets Regulatory Framework for Tokenized Stocks"
+      "top_score": 9.0,
+      "title_zh": "SEC提出《加密资产条例》新规框架",
+      "title_en": "SEC Proposes 'Regulation Crypto Assets' Framework"
+    },
+    {
+      "slug": "kpmg",
+      "label": "KPMG",
+      "mentions": 4,
+      "days": 2,
+      "first_date": "2026-08-14",
+      "latest_date": "2026-08-19",
+      "recent": 4,
+      "category": "crypto",
+      "top_score": 8.5,
+      "title_zh": "Tether首次获得KPMG审计：进展显著，但疑问仍在",
+      "title_en": "Tether's First KPMG Audit: Progress, Yet Not Full Clarity"
     },
     {
       "slug": "anthropic",
@@ -20,24 +33,11 @@
       "days": 3,
       "first_date": "2026-08-12",
       "latest_date": "2026-08-17",
-      "recent": 4,
+      "recent": 2,
       "category": "crypto",
       "top_score": 8.5,
       "title_zh": "Anthropic 公开 Claude 官方系统提示词，提升模型透明度",
       "title_en": "Anthropic Publishes Official Claude System Prompts for Transparency"
-    },
-    {
-      "slug": "kpmg",
-      "label": "KPMG",
-      "mentions": 3,
-      "days": 1,
-      "first_date": "2026-08-14",
-      "latest_date": "2026-08-14",
-      "recent": 3,
-      "category": "crypto",
-      "top_score": 8.5,
-      "title_zh": "泰达币2025年报表获毕马威无保留审计意见",
-      "title_en": "Tether gets clean KPMG audit opinion for 2025 statements"
     }
   ]
 }

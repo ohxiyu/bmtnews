@@ -4,7 +4,77 @@
   <link href="https://bmt.news/feeds/crypto-en.xml" rel="self"/>
   <link href="https://bmt.news/"/>
   <id>https://bmt.news/feeds/crypto-en.xml</id>
-  <updated>2026-08-18T00:00:00Z</updated>
+  <updated>2026-08-19T00:00:00Z</updated>
+  <entry>
+    <title>Bybit Blocks $700M in Further Losses After Record $1.5B Hack</title>
+    <link href="https://news.google.com/rss/articles/CBMijgFBVV95cUxNUDNJeGVhcEdRcjBWbTdMQl94XzhGamtXc1J4MzF5TFJad2NZNXN5OFpFY0VOVlZ6alJ3R2dUVUZlRk1hVzJPZnB4X3dsbVBZOEFNRWlmT0hzdFB4THBlM21yTGdHeVByUS1QbTZBa3haeEQ1U09QMDdWbkUyZVRPSWI4QS15RFlxMVVyMzBR?oc=5"/>
+    <id>https://bmt.news/editions/2026-08-19/#google_news:article:03911771cf068378</id>
+    <updated>2026-08-19T00:00:00Z</updated>
+    <summary>Bybit said it blocked $700 million in potential further losses after a record-breaking $1.5 billion hack on the exchange. The announcement highlights both the scale of the breach and the platform&#x27;s mitigation efforts. This is one of the largest crypto exchange hacks ever and directly affects user funds and operational trust. The incident raises concerns about custodial security and may intensify regulatory focus on exchange protections. The $1.5 billion stolen amounts to a major loss, while the $700 million figure represents additional funds that were reportedly at risk but ultimately saved. The exact mechanism Bybit used to block those potential losses has not been disclosed.</summary>
+  </entry>
+  <entry>
+    <title>Coldcard Wallet Losses Reportedly Exceed $115 Million</title>
+    <link href="https://news.google.com/rss/articles/CBMigAFBVV95cUxOSTFLUkdxaEVoY0MtYWxUendqV1dISG4zVlNoSUMzVmQ0ZWxUM2FJUDVrX1F4ODFoUGJCY25jRjMwbFdoME1Rb0RTeTdiSEJ0UXo3ekE3QWk3Zks2ZkNESW03MkVteWRSWjRjYVRfX1ozYmRoWUxLbVVxX01jRURJNA?oc=5"/>
+    <id>https://bmt.news/editions/2026-08-19/#google_news:article:1637295a9217fb9f</id>
+    <updated>2026-08-19T00:00:00Z</updated>
+    <summary>Reports indicate that losses tied to Coldcard hardware wallets have now exceeded $115 million. This follows a previously identified firmware flaw that weakens wallet seed generation across multiple models. This is a significant security incident for hardware wallet users, as Coldcard is widely regarded as a high-security Bitcoin-only wallet. The scale of losses could undermine trust in hardware wallet self-custody solutions and prompt a broader review of seed generation processes. The Hacker News reports a Coldcard firmware flaw that weakens seed generation across five models, with Galaxy linking a 1,196-address sweep of $70.2 million to the bug. The total reported losses exceed $115 million, suggesting additional exploits or incidents may be included.</summary>
+  </entry>
+  <entry>
+    <title>Ethereum&#x27;s Glamsterdam Upgrade Breaks 21,000-Gas Rule for ETH Transfers</title>
+    <link href="https://www.coindesk.com/tech/2026/08/18/ethereum-s-next-upgrade-breaks-the-21-000-gas-rule-wallets-rely-on"/>
+    <id>https://bmt.news/editions/2026-08-19/#rss:www.coindesk.com_arc_outboundfeeds_rss_:60fbc7ee63d2d18e</id>
+    <updated>2026-08-19T00:00:00Z</updated>
+    <summary>Ethereum&#x27;s Glamsterdam upgrade introduces a new &#x27;state gas&#x27; charge, making transfers to never-before-used addresses cost 183,600 gas extra, while transfers to existing accounts remain at 21,000. Ethereum developers are urging wallet providers and blockchain services to update software that assumes a flat 21,000 gas per ETH transfer. This ends the long-standing flat 21,000-gas assumption that wallets, exchanges, and fee calculators rely on. If these tools are not updated, they may reject valid payments or quote insufficient fees, potentially disrupting ETH transfers across the ecosystem. The additional cost stems from the network having to create and permanently store a new account when an address is first used. The upgrade, implemented via EIP-8037, will first activate on the Platåberget testnet, then Sepolia and Hoodi, before reaching Ethereum mainnet.</summary>
+  </entry>
+  <entry>
+    <title>Half of Aave&#x27;s Debt Sits in 9% of Positions Tied to One ETH Trade</title>
+    <link href="https://cryptoslate.com/half-of-aaves-debt-sits-in-just-9-of-positions-built-around-one-ethereum-correlation-trade/"/>
+    <id>https://bmt.news/editions/2026-08-19/#rss:cryptoslate.com_feed_:e65bef513545cee4</id>
+    <updated>2026-08-19T00:00:00Z</updated>
+    <summary>Galaxy Research&#x27;s Aug. 7 snapshot of Aave V3 Core found that fewer than 9% of loans (E-mode borrowers) account for roughly half of all outstanding debt, concentrated in highly leveraged Ethereum staking-basis trades with an average health factor near 1.06. This concentration poses systemic liquidation risk for Aave: a small cohort runs near 90% loan-to-value with thin health factors, so an 8-9% discount on liquid staking tokens relative to ETH could trigger cascading liquidations. It highlights how DeFi lending platforms can become exposed to a single crowded trade. The E-mode cohort&#x27;s collateral is about 66.2% in Ethereum staking and restaking wrappers (weETH ~42%, rsETH, wstETH), while WETH makes up roughly 73% of their debt, creating a tight staking-basis bet. Galaxy&#x27;s May analysis estimated that a 10% weETH depeg could push 205 accounts below a health factor of 1, with stress escalating sharply as the depeg moves from 3% to 5%.</summary>
+  </entry>
+  <entry>
+    <title>Solana&#x27;s Alpenglow bug hunt charges researchers 0.5 SOL per report</title>
+    <link href="https://cryptoslate.com/solanas-alpenglow-bug-hunt-charges-researchers-0-5-sol-to-report-flaws/"/>
+    <id>https://bmt.news/editions/2026-08-19/#rss:cryptoslate.com_feed_:391a84eb66648cb6</id>
+    <updated>2026-08-19T00:00:00Z</updated>
+    <summary>Anza has launched a two-week bug bounty for the upcoming Alpenglow consensus upgrade, requiring researchers to burn a non-refundable 0.5 SOL fee through its portal for each submission before eligibility or severity is assessed. The competition closes at 16:00 UTC on Aug. 19, with a 50,000 SOL reward pool allocated by severity. Alpenglow is a backwards-incompatible replacement for Solana&#x27;s Proof-of-History and TowerBFT consensus, making this one of Solana&#x27;s most consequential protocol changes since mainnet launch. The fee-based submission policy shifts filing risk onto researchers and could affect how many serious vulnerabilities are found before the upgrade goes live, influencing Solana&#x27;s security posture. The 50,000 SOL pool unlocks in tiers: 10,000 SOL for DoS, 20,000 for liveness failures, 30,000 for consensus or safety violations, and 50,000 for loss of funds; individual awards cap at 25,000 SOL. Findings must be submitted through Anza&#x27;s portal (which creates a confidential GitHub Security Advisory), identify the vulnerable commit, reproduce on a local fork or simulation, and arrive before a fix lands on Agave master.</summary>
+  </entry>
+  <entry>
+    <title>Aave TVL Remains 43% Below Pre-Hack Levels After KelpDAO Exploit</title>
+    <link href="https://protos.com/aave-tvl-still-down-43-since-kelpdao-hack/"/>
+    <id>https://bmt.news/editions/2026-08-19/#rss:protos.com_feed_:76c155d3dba8bcfd</id>
+    <updated>2026-08-19T00:00:00Z</updated>
+    <summary>According to Protos, Aave&#x27;s total value locked (TVL) remains 43% below its level on the day of the KelpDAO hack, sitting at about $14.9 billion, and is 67% below its 52-week high. The protocol has not regained depositor confidence despite restoring collateral by late May. Aave is one of the largest DeFi lending protocols, so the sustained TVL drop signals reduced liquidity for borrowers and lingering depositor caution across the sector. The incident also highlights how security failures in cross-chain bridges can propagate through interconnected lending markets. The hackers deposited stolen rsETH from KelpDAO as collateral on Aave to borrow ETH, leaving an estimated $246 million in combined bad debt at Aave and Compound. Aave&#x27;s contracts, oracles and liquidation mechanics worked as designed, and the DeFi United coalition helped replenish collateral by late May; however, TVL kept draining into June and only partially recovered from a low near $11.9 billion.</summary>
+  </entry>
+  <entry>
+    <title>Kraken Launches U.S. Stock Trading for European Clients</title>
+    <link href="https://www.coindesk.com/markets/2026/08/18/kraken-adds-u-s-stocks-in-europe-as-tradfi-crypto-divide-blurs"/>
+    <id>https://bmt.news/editions/2026-08-19/#rss:www.coindesk.com_arc_outboundfeeds_rss_:ec42893a4323e8d2</id>
+    <updated>2026-08-19T00:00:00Z</updated>
+    <summary>Kraken has begun offering U.S. stocks to customers in Europe, expanding its platform beyond crypto into traditional equities. The move, reported by CoinDesk, further blurs the line between traditional finance (TradFi) and the crypto ecosystem. This marks another step in the convergence of crypto exchanges and traditional brokerages, potentially giving European investors a single platform for both digital assets and U.S. equities. It could pressure rival exchanges to broaden their product offerings to remain competitive. The service is being rolled out through Kraken&#x27;s European operations, letting eligible customers trade U.S.-listed equities alongside cryptocurrencies. Specific details such as the full list of supported tickers, trading fees, and settlement mechanisms have yet to be announced.</summary>
+  </entry>
+  <entry>
+    <title>Neuberger Berman launches first tokenized high-yield fund via Securitize across four blockchains</title>
+    <link href="https://cointelegraph.com/news/neuberger-launches-tokenized-fixed-income-fund-with-securitize?utm_source=rss_feed&amp;utm_medium=rss&amp;utm_campaign=rss_partner_inbound"/>
+    <id>https://bmt.news/editions/2026-08-19/#rss:cointelegraph.com_rss:b5d521f36e69321d</id>
+    <updated>2026-08-19T00:00:00Z</updated>
+    <summary>Asset manager Neuberger Berman launched its first tokenized fixed-income fund, the Neuberger Securitize High Income Tokenized Fund (HINC), issued through Securitize and subadvised by Neuberger. The fund is available on Ethereum, Solana, Avalanche, and Sui, investing primarily in high-yield bonds with additional exposure to collateralized loan obligations and leveraged loans, and is open to qualified investors. A $613 billion traditional asset manager entering tokenized fixed income across multiple blockchains signals accelerating institutional adoption of real-world assets (RWA) and could encourage more large issuers to consider blockchain-based fund distribution. It also strengthens Securitize&#x27;s position as a leading tokenization platform alongside BlackRock&#x27;s BUIDL fund. Neuberger&#x27;s fixed-income platform manages over $230 billion in assets, while Securitize has about $4.96 billion in distributed asset value across 26 tokenized RWAs, including BlackRock&#x27;s $2.7 billion BUIDL fund. The HINC fund is actively managed, focuses on high-yield bonds, and includes exposure to collateralized loan obligations and leveraged loans; it is restricted to qualified investors.</summary>
+  </entry>
+  <entry>
+    <title>Citi to Launch Bitcoin Custody for Institutional Clients This Year</title>
+    <link href="https://decrypt.co/375880/citi-bitcoin-custody-wall-street-crypto"/>
+    <id>https://bmt.news/editions/2026-08-19/#rss:decrypt.co_feed:4cfbeead4eb55ec9</id>
+    <updated>2026-08-19T00:00:00Z</updated>
+    <summary>Citi announced that it will launch digital asset custody later this year, starting with Bitcoin, through its Custody+ platform. The service will let institutional clients access traditional securities and crypto custody through the same framework. As a global systemically important bank, Citi&#x27;s entry into Bitcoin custody signals deeper Wall Street involvement in crypto, which could improve market infrastructure and institutional confidence. This may accelerate institutional adoption of digital assets and broaden the investor base. Custody+ is a suite of custody and settlement tools from Citi Investor Services, designed for near-real-time processing; over 80% of Citi&#x27;s asset-servicing event volume is now processed in real time. Citi Token Services already enables 24/7 transfers of tokenized deposits in select markets, and this expands on plans announced in October.</summary>
+  </entry>
+  <entry>
+    <title>Tether&#x27;s First KPMG Audit: Progress, Yet Not Full Clarity</title>
+    <link href="https://protos.com/what-the-tether-audit-means-for-the-crypto-industry/"/>
+    <id>https://bmt.news/editions/2026-08-19/#rss:protos.com_feed_:beaeabc369d90902</id>
+    <updated>2026-08-19T00:00:00Z</updated>
+    <summary>Tether announced it received an audit from KPMG&#x27;s US arm, marking its first audit in nearly a decade. The audit covers Tether International, not Tether Holdings or parent Digfinex, and is seen as a step forward for stablecoin transparency. As the largest stablecoin issuer, Tether&#x27;s financial practices affect the entire crypto market. This audit could increase trust in USDT, but unresolved questions about reserve composition mean full confidence remains elusive. The audit was performed by KPMG&#x27;s US arm, one of the &#x27;Big Four&#x27; accounting firms. Notably, Tether&#x27;s cash and cash equivalents have decreased by over 10% since the New York Attorney General&#x27;s scrutiny, and about 25% of reserves are not in cash or cash equivalents.</summary>
+  </entry>
   <entry>
     <title>Coldcard Firmware Bug Goes Unnoticed for Years, Enabling ~$100M Bitcoin Theft</title>
     <link href="https://www.coindesk.com/tech/2026/08/17/how-a-bug-in-coldcard-s-code-went-unnoticed-for-years-leading-to-usd100-million-in-hacked-funds"/>
@@ -214,75 +284,5 @@
     <id>https://bmt.news/editions/2026-08-15/#google_news:article:58287830a139493c</id>
     <updated>2026-08-15T00:00:00Z</updated>
     <summary>Binance will block transactions with HTX and ten other cryptocurrency exchanges to comply with EU sanctions against Russia. The restriction applies to transfers between Binance and these platforms. This move shows how major crypto exchanges are tightening compliance to avoid sanctions exposure, and it directly affects users who rely on cross-exchange transfers. It also signals heightened regulatory pressure on platforms linked to Russian-related traffic. HTX, formerly known as Huobi, is a Seychelles-based exchange founded in China, now with offices in Hong Kong, South Korea, Japan and the United States. The EU sanctions rules target entities connected to Russia, and this exchange-level restriction is Binance&#x27;s compliance response to prevent sanctions evasion.</summary>
-  </entry>
-  <entry>
-    <title>Tether Secures First Big Four Audit as U.S. Rules Tighten</title>
-    <link href="https://cryptoslate.com/tether-finally-got-the-audit-critics-demanded-just-as-washington-changed-the-test/"/>
-    <id>https://bmt.news/editions/2026-08-15/#rss:cryptoslate.com_feed_:6b388654083dc73f</id>
-    <updated>2026-08-15T00:00:00Z</updated>
-    <summary>Tether received its first Big Four audit, with KPMG issuing an unqualified opinion on Tether International&#x27;s 2025 financial statements. The audited numbers show reserves exceeding liabilities by $6.814 billion as of Dec. 31, 2025. This milestone matters because Tether is the largest stablecoin issuer and its first Big Four audit directly affects market confidence in USDT. However, the audit lands just as the GENIUS Act and FDIC proposals impose stricter reserve, liquidity, and disclosure rules, so a single clean audit may not settle lingering regulatory questions. KPMG says it physically counted every gold bar backing Tether&#x27;s reserves, and the unqualified opinion means the financial statements are presented fairly in all material respects. The FDIC&#x27;s proposed reserve-asset menu does not include gold, and defines a major redemption event as requests exceeding 10% of outstanding issuance within 24 hours.</summary>
-  </entry>
-  <entry>
-    <title>Ethereum drops Poseidon for SHA/BLAKE as proof systems shift tradeoffs</title>
-    <link href="https://cryptoslate.com/ethereum-abandons-its-8-year-cryptography-bet-after-proof-systems-flip-the-tradeoff/"/>
-    <id>https://bmt.news/editions/2026-08-15/#rss:cryptoslate.com_feed_:86cf9a86f22ae772</id>
-    <updated>2026-08-15T00:00:00Z</updated>
-    <summary>On August 13, Ethereum Foundation researcher Justin Drake said future L1 designs will favor SHA or BLAKE hashes instead of Poseidon, after eight years of work on proof-friendly cryptography. New binary-field proof systems such as Binius and Flock have made conventional hashes practical, though Drake said Poseidon is not broken and no migration order or fork has been issued. This marks a significant protocol-level strategy shift for Ethereum, affecting future proof-driven L1 architecture and zero-knowledge proof tradeoffs. It could influence rollups, zkVMs, and Ethereum&#x27;s post-quantum roadmap, while giving cryptanalysts&#x27; long-tested standard hashes a stronger role. The Flock paper reports that one M4 Max core can prove about 82,000 BLAKE3 compression evaluations, 42,000 SHA-256 compressions, and 30,000 Keccak permutations per second. The benchmark counts internal hash operations, which differs from Ethereum transaction capacity or production throughput; SHA-256 is a NIST standard, BLAKE2 has had a public spec since 2015, while BLAKE3 is newer.</summary>
-  </entry>
-  <entry>
-    <title>Strategy fights MSCI proposal that could trigger $2.8B MSTR sell-off</title>
-    <link href="https://cryptoslate.com/strategy-tells-msci-bitcoin-doesnt-need-you-as-2-8-billion-index-risk-hangs-over-mstr/"/>
-    <id>https://bmt.news/editions/2026-08-15/#rss:cryptoslate.com_feed_:1cbb86d5055f529f</id>
-    <updated>2026-08-15T00:00:00Z</updated>
-    <summary>MSCI launched a consultation that could classify Strategy as a non-operating company and remove it from major equity indexes. Strategy responded publicly, arguing that index providers should reflect markets rather than influence corporate asset allocation; feedback closes September 30 and the final decision is expected by October 16. If MSCI removes Strategy from the ACWI IMI, passive funds tracking the index could sell an estimated $2.8 billion of MSTR shares, pressuring the stock and the broader Bitcoin-backed corporate treasury narrative. The outcome also sets a precedent for other digital-asset and commodity-holding companies like Metaplanet and Yellow Cake. Under the proposed methodology, companies first pass a core screen if operating assets exceed 50% of total assets; otherwise, five financial tests apply, and failing at least four would make a firm ineligible. Existing constituents face a higher threshold (10% operating assets) and must fail across two consecutive annual reviews before removal, so the consultation does not guarantee an immediate deletion.</summary>
-  </entry>
-  <entry>
-    <title>Israel&#x27;s largest bank partners with Galaxy for bitcoin, ether, solana trading</title>
-    <link href="https://www.theblock.co/news/business/2026-08-14-israels-largest-bank-taps-galaxy-to-offer-bitcoin-ether-and-solana-trading-411868"/>
-    <id>https://bmt.news/editions/2026-08-15/#rss:www.theblock.co_rss.xml:1e459f019fd592dd</id>
-    <updated>2026-08-15T00:00:00Z</updated>
-    <summary>Israel&#x27;s largest bank has partnered with Galaxy Digital to offer its clients trading in bitcoin, ether, and solana. The move marks a significant step for institutional cryptocurrency access in Israel. A traditional top-tier bank enabling direct crypto trading signals growing mainstream acceptance of digital assets. It could set a precedent for other banks in Israel and the region, expanding the investor base for these cryptocurrencies. The offering covers bitcoin, ether, and solana, with Galaxy providing the trading infrastructure and execution. According to Chainalysis, Israel received an estimated $22 billion in onchain crypto value during the 12 months ending June 2025, indicating substantial existing demand.</summary>
-  </entry>
-  <entry>
-    <title>Tether gets clean KPMG audit opinion for 2025 statements</title>
-    <link href="https://cointelegraph.com/news/tether-completes-first-full-financial-audit-receives-clean-kpmg-opinion?utm_source=rss_feed&amp;utm_medium=rss&amp;utm_campaign=rss_partner_inbound"/>
-    <id>https://bmt.news/editions/2026-08-14/#rss:cointelegraph.com_rss:a30c52abaa730643</id>
-    <updated>2026-08-14T00:00:00Z</updated>
-    <summary>Tether, the largest stablecoin issuer, completed its first full independent audit of its 2025 financial statements, with KPMG issuing a clean (unqualified) opinion. The audit showed reserves exceeded liabilities by $6.814 billion. This is a significant transparency milestone for the largest stablecoin issuer, potentially boosting confidence in USDT and the broader stablecoin market, which underpins much of crypto trading liquidity. It moves Tether beyond quarterly attestations to the full audit standard expected of traditional financial institutions. KPMG physically inspected and counted Tether&#x27;s gold holdings bar-by-bar, rather than relying only on custodian records. The audit covered the balance sheet, income statement, and cash flows for the year ended Dec. 31, 2025, and found reserves exceeded liabilities by $6.814 billion.</summary>
-  </entry>
-  <entry>
-    <title>Security Roundup Covers Harmony Bridge Hack and BTCPay Server Flaws</title>
-    <link href="https://www.govinfosecurity.com/cryptohack-roundup-harmony-btcpay-exploits-a-32543"/>
-    <id>https://bmt.news/editions/2026-08-14/#gdelt:article:20260813T201500Z::https://www.govinfosecurity.com/cryptohack-roundup-harmony-btcpay-exploits-a-32543</id>
-    <updated>2026-08-14T00:00:00Z</updated>
-    <summary>A security roundup covers two major incidents: the Harmony Horizon bridge exploit that lost roughly $100 million in June 2022, and a critical BTCPay Server vulnerability that let attackers drain funds from Lightning nodes running LND. The roundup underscores persistent risks in cross-chain bridges and Bitcoin payment infrastructure, where a single exploit can directly compromise user funds. It affects DeFi users, bridge operators, and merchants relying on Lightning payments, and may heighten security scrutiny across crypto infrastructure. For Harmony, the attacker appears to have taken control of the multisig contract behind the bridge, affecting roughly 64,000 wallets. For BTCPay Server, the vulnerability exposed LND Lightning node credentials, and operators were urged to update to version 2.4.2 or take servers offline.</summary>
-  </entry>
-  <entry>
-    <title>Tether receives KPMG clean audit opinion for 2025 financials</title>
-    <link href="https://www.theblock.co/news/business/2026-08-13-tether-kpmg-first-full-audit-usdt-clean-opinion-411760"/>
-    <id>https://bmt.news/editions/2026-08-14/#rss:www.theblock.co_rss.xml:1de85e8bbd81999e</id>
-    <updated>2026-08-14T00:00:00Z</updated>
-    <summary>KPMG U.S. issued an unqualified (clean) audit opinion on Tether International&#x27;s full 2025 financial statements, announced by Tether on Thursday. This marks the first time the USDT issuer has completed a full audit. Tether is the largest stablecoin issuer, and a clean audit from a Big Four firm materially improves financial transparency and credibility. This could ease institutional adoption and invite closer regulatory scrutiny of stablecoin reserves. An unqualified opinion means the auditor found the financial statements fairly presented and compliant with GAAP, with no material misstatements. The audit specifically covers Tether International&#x27;s full 2025 financials.</summary>
-  </entry>
-  <entry>
-    <title>Harmony Bridge Hack and BTCPay Vulnerability Exposed in Security Roundup</title>
-    <link href="https://www.bankinfosecurity.com/cryptohack-roundup-harmony-btcpay-exploits-a-32543"/>
-    <id>https://bmt.news/editions/2026-08-14/#gdelt:article:20260813T184500Z::https://www.bankinfosecurity.com/cryptohack-roundup-harmony-btcpay-exploits-a-32543</id>
-    <updated>2026-08-14T00:00:00Z</updated>
-    <summary>A new security roundup highlights two incidents: the June 2022 Harmony Horizon Bridge hack that lost about $100 million, and an actively exploited critical vulnerability in BTCPay Server that can drain Lightning Network node funds. These incidents underscore persistent weaknesses in cross-chain bridge design and payment server security, putting user funds at risk and increasing regulatory and community scrutiny on crypto infrastructure. The Harmony bridge was protected by a 2-of-5 multisig scheme, and attackers stole two private keys to approve malicious transactions; the FBI attributed the attack to North Korea&#x27;s Lazarus Group. BTCPay Server, an open-source Bitcoin payment processor, issued an emergency patch for the actively exploited vulnerability.</summary>
-  </entry>
-  <entry>
-    <title>Coinbase&#x27;s Base Abandons Optimistic Rollups, Bets $12B on ZK Proofs</title>
-    <link href="https://news.google.com/rss/articles/CBMidEFVX3lxTFBibndSVHhJY1ZoRUpvNGd6c09wQmVRdDVySmszQWE0Q1Zad0RfbXlpVzJ1Q2VfTlo1SzZwTWplZXNKaGJ6OHhTWkt0T0FhRVpCckV0M2pVZWdBbXBQdjBxWFltelFvaHltOFFnbUYzYnZHTy0w?oc=5"/>
-    <id>https://bmt.news/editions/2026-08-14/#google_news:article:613f8c6136c1b94e</id>
-    <updated>2026-08-14T00:00:00Z</updated>
-    <summary>According to a report from Yellow.com, Coinbase&#x27;s Layer-2 network Base is planning to move away from optimistic rollups and adopt zero-knowledge (ZK) proofs, a strategic shift tied to roughly $12 billion in network value. The transition has not yet been officially confirmed by Coinbase or Base. Base is one of the largest Ethereum Layer-2 networks, so switching its core architecture would have broad implications for the L2 ecosystem, developers building on Base, and the competitive positioning of the OP Stack. If confirmed, it could also accelerate the broader industry shift toward ZK-based scaling. The reported $12 billion figure reflects the scale of assets or value associated with the Base ecosystem. Because the news comes from a secondary outlet rather than an official announcement, the specific roadmap, timeline, and technical implementation details remain unclear.</summary>
-  </entry>
-  <entry>
-    <title>Tether Completes First Big Four Audit; KPMG Issues Unqualified Opinion on USDT Reserves</title>
-    <link href="https://www.coindesk.com/business/2026/08/13/tether-says-it-completed-long-promised-big-four-audit-of-finances-behind-usd180-billion-usdt-stablecoin"/>
-    <id>https://bmt.news/editions/2026-08-14/#rss:www.coindesk.com_arc_outboundfeeds_rss_:82742dd2bb0540df</id>
-    <updated>2026-08-14T00:00:00Z</updated>
-    <summary>Tether announced that KPMG U.S. issued an unqualified opinion on its 2025 financial statements, marking the stablecoin issuer&#x27;s first full audit by a Big Four accounting firm. The statements showed reserves exceeding liabilities by $6.814 billion. The audit addresses a long-standing transparency criticism over the reserves backing USDT, a $180 billion stablecoin that is critical to crypto trading liquidity. An unqualified opinion from a Big Four firm could strengthen market trust in Tether and ease systemic risk concerns across digital-asset markets. KPMG went beyond Tether&#x27;s prior quarterly attestations by testing transactions, systems, valuations, counterparties and ownership records, and physically counting the company&#x27;s gold bars. Tether has not yet confirmed whether it will publicly release the full KPMG report.</summary>
   </entry>
 </feed>
