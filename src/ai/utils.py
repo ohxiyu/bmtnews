@@ -1,8 +1,11 @@
 """Shared AI utility functions."""
 
 import json
+import logging
 import re
 from typing import Iterable, Optional
+
+logger = logging.getLogger(__name__)
 
 
 def parse_json_response(response: str) -> Optional[dict]:
@@ -104,4 +107,37 @@ def unwrap_prose_response(
     ]
     if len(strings) == 1:
         return strings[0]
+    return text
+
+
+async def complete_prose(
+    ai_client,
+    *,
+    system: str,
+    user: str,
+    keys: Iterable[str] = (),
+    attempts: int = 2,
+) -> str:
+    """Ask a model for prose, retrying once when it returns nothing.
+
+    Providers occasionally answer with empty content for no stated reason —
+    a Chinese weekly digest came back blank while the English one, from the
+    same client and the same records, was fine. Without a retry a single
+    blank completion costs a whole week's page, and the next scheduled run
+    is seven days away.
+
+    Raises whatever the provider raised; only emptiness is retried.
+    """
+    text = ""
+    for attempt in range(max(1, attempts)):
+        response = await ai_client.complete(
+            system=system, user=user, response_format="text"
+        )
+        text = unwrap_prose_response(response, keys=keys).strip()
+        if text:
+            return text
+        if attempt + 1 < attempts:
+            logger.warning(
+                "Empty prose completion, retrying (%d/%d)", attempt + 1, attempts
+            )
     return text

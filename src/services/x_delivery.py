@@ -369,8 +369,12 @@ async def compose_story_post(
     # timeline and the concrete numbers usually only exist in the article body.
     article = " ".join(str(item.content or "").split())[:ARTICLE_EXCERPT_CHARS]
 
+    from ..ai.utils import complete_prose
+
     try:
-        response = await ai_client.complete(
+        response = await complete_prose(
+            ai_client,
+            keys=("post", "tweet", "text", "body"),
             system=X_POST_SYSTEM,
             user=X_POST_USER.format(
                 title=metadata.get(f"title_{language}") or item.title,
@@ -380,7 +384,6 @@ async def compose_story_post(
                 discussion=field("community_discussion") or "（无）",
                 article=article or "（无）",
             ),
-            response_format="text",
         )
     except Exception as exc:  # noqa: BLE001 - degrade to the fallback
         logger.warning("X post composition failed for %s: %s", item.id, exc)

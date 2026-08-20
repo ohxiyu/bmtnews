@@ -43,25 +43,23 @@ async def generate_edition_overview(
         lines.append(f"{index}. [{score}/10] {title} — {summary}")
 
     language_name = "Simplified Chinese (简体中文)" if language == "zh" else "English"
+    from .utils import complete_prose
+
     try:
-        response = await ai_client.complete(
+        unwrapped = await complete_prose(
+            ai_client,
+            keys=("lede", "overview", "paragraph", "text", "summary"),
             system=EDITION_OVERVIEW_SYSTEM,
             user=EDITION_OVERVIEW_USER.format(
                 date=date,
                 language_name=language_name,
                 items="\n".join(lines),
             ),
-            response_format="text",
         )
     except Exception as exc:
         logger.warning("Edition overview generation failed: %s", exc)
         return None
 
-    from .utils import unwrap_prose_response
-
-    unwrapped = unwrap_prose_response(
-        response, keys=("lede", "overview", "paragraph", "text", "summary")
-    )
     text = " ".join(unwrapped.split()).strip().strip('"')
     if not text or len(text) > _OVERVIEW_MAX_CHARS:
         return None

@@ -366,9 +366,15 @@ def test_prose_prompts_never_request_json_mode() -> None:
     for name in prose_prompts:
         # The prompt exists and is prose, not a JSON schema request.
         assert hasattr(prompt_module, f"{name}_SYSTEM")
-        assert 'response_format="text"' in sources[name], (
-            f"{name} composes prose but does not ask for text mode"
+        # Text mode is guaranteed in one place now, so the call sites are
+        # required to go through it rather than each passing the flag.
+        assert "complete_prose(" in sources[name], (
+            f"{name} composes prose but does not go through complete_prose"
         )
+
+    from src.ai.utils import complete_prose
+
+    assert 'response_format="text"' in inspect.getsource(complete_prose)
 
     # And the JSON callers still get JSON mode by default.
     analyzer_source = inspect.getsource(
@@ -376,3 +382,64 @@ def test_prose_prompts_never_request_json_mode() -> None:
     )
     assert "response_format" not in analyzer_source
     assert re.search(r"json", prompt_module.CONTENT_ANALYSIS_USER, re.I)
+
+
+class _EmptyThenGood:
+    """First call returns an empty completion, the second returns content."""
+
+    def __init__(self, good: str) -> None:
+        self.good = good
+        self.calls = 0
+
+    async def complete(self, *, system, user, response_format="json"):
+        self.calls += 1
+        return "" if self.calls == 1 else self.good
+
+
+def test_empty_completion_is_retried_once() -> None:
+    """Observed in production: the Chinese digest came back blank while the
+    English one, from the same client and records, was fine. Without a retry
+    that costs a whole week's page, and the next run is seven days out."""
+    context = build_weekly_context([make_record("2026-08-09")], end=date(2026, 8, 9))
+    client = _EmptyThenGood("## 本周主线\n\n内容")
+    body = asyncio.run(generate_weekly_digest(client, context, language="zh"))
+    assert body == "## 本周主线\n\n内容"
+    assert client.calls == 2
+
+
+class _AlwaysEmpty:
+    def __init__(self) -> None:
+        self.calls = 0
+
+    async def complete(self, *, system, user, response_format="json"):
+        self.calls += 1
+        return "   "
+
+
+def test_persistent_emptiness_gives_up_rather_than_looping() -> None:
+    context = build_weekly_context([make_record("2026-08-09")], end=date(2026, 8, 9))
+    client = _AlwaysEmpty()
+    assert asyncio.run(generate_weekly_digest(client, context, language="zh")) is None
+    assert client.calls == 2
+
+
+def test_digest_headings_are_supplied_in_one_language_only() -> None:
+    """The prompt used to list both languages separated by a slash, and the
+    Chinese digest published '## 本周主线 / The Week's Throughline'."""
+    context = build_weekly_context([make_record("2026-08-09")], end=date(2026, 8, 9))
+
+    zh = StubClient()
+    asyncio.run(generate_weekly_digest(zh, context, language="zh"))
+    zh_prompt = zh.calls[0]["user"]
+    assert "## 本周主线" in zh_prompt
+    assert "The Week's Throughline" not in zh_prompt
+
+    en = StubClient()
+    asyncio.run(generate_weekly_digest(en, context, language="en"))
+    en_prompt = en.calls[0]["user"]
+    assert "## The Week's Throughline" in en_prompt
+    assert "本周主线" not in en_prompt
+
+    from src.ai.prompts import WEEKLY_DIGEST_SYSTEM
+
+    assert "本周主线 / The Week's Throughline" not in WEEKLY_DIGEST_SYSTEM
