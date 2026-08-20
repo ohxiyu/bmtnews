@@ -4,7 +4,28 @@
   <link href="https://bmt.news/feeds/technology-en.xml" rel="self"/>
   <link href="https://bmt.news/"/>
   <id>https://bmt.news/feeds/technology-en.xml</id>
-  <updated>2026-08-19T00:00:00Z</updated>
+  <updated>2026-08-20T00:00:00Z</updated>
+  <entry>
+    <title>AI Router OpenRouter Joins Stripe in Reported $7B+ Deal</title>
+    <link href="https://openrouter.ai/blog/announcements/openrouter-is-joining-stripe/"/>
+    <id>https://bmt.news/editions/2026-08-20/#hackernews:story:49364559</id>
+    <updated>2026-08-20T00:00:00Z</updated>
+    <summary>OpenRouter officially announced it is joining Stripe, confirming earlier reports that the payments giant would acquire the AI model routing platform for $7B+. The announcement follows a widely discussed acquisition story that had already generated significant community attention. This acquisition brings one of the most widely used AI model routing platforms under the umbrella of a major payments infrastructure company, with significant implications for AI developers and the broader AI tooling ecosystem. It also signals continued consolidation in the AI infrastructure layer as demand for unified model access grows. OpenRouter provides developers with a unified API and marketplace spanning hundreds of AI models from multiple providers, with automatic routing and fallback features. The reported valuation of over $7 billion was not officially confirmed in the announcement itself, which linked back to earlier acquisition reports.</summary>
+  </entry>
+  <entry>
+    <title>Moderna and Merck Report Positive Phase 3 mRNA Neoantigen Melanoma Therapy</title>
+    <link href="https://twitter.com/NoubarAfeyan/status/2090050162441752787"/>
+    <id>https://bmt.news/editions/2026-08-20/#hackernews:story:49361395</id>
+    <updated>2026-08-20T00:00:00Z</updated>
+    <summary>Moderna and Merck announced positive Phase 3 results for an mRNA neoantigen therapy in melanoma, marking the first late-stage success for a personalized mRNA cancer vaccine. The announcement was made via a statement, but full trial data have not yet been presented. This is the first positive Phase 3 readout for an mRNA neoantigen cancer vaccine, potentially shifting cancer treatment paradigms toward personalized therapies. If confirmed, it could validate the mRNA platform beyond infectious disease and pave the way for broader oncology applications. The trial is a collaboration between Moderna and Merck. Community commenters noted that no actual Phase 3 data have been released yet, and questions remain about whether the targeted approach will benefit other cancer types.</summary>
+  </entry>
+  <entry>
+    <title>OpenAI Trails Anthropic as Losses Deepen, Altman Halts Frontier AI Training</title>
+    <link href="https://www.coindesk.com/markets/2026/08/19/openai-trails-anthropic-as-losses-deepen-and-altman-pauses-frontier-ai-training"/>
+    <id>https://bmt.news/editions/2026-08-20/#rss:www.coindesk.com_arc_outboundfeeds_rss_:1ddd6e412a323d1d</id>
+    <updated>2026-08-20T00:00:00Z</updated>
+    <summary>OpenAI has fallen behind rival Anthropic as its losses deepen, and CEO Sam Altman has paused frontier AI training — a strategic pivot in the AI race. This signals a potential shift in the AI industry&#x27;s priorities from breakneck capability scaling toward safety and sustainability. It could reshape competitive dynamics between leading AI labs and influence how frontier models are developed and deployed. Frontier AI refers to the most advanced general-purpose AI systems at the leading edge of capability. A pause on frontier training typically involves verification regimes such as compute-accounting, datacenter inspection, hardware attestation, and on-chip telemetry.</summary>
+  </entry>
   <entry>
     <title>Anthropic Unveils Autonomous De Novo Protein Binder Design with Claude</title>
     <link href="https://news.google.com/rss/articles/CBMif0FVX3lxTFBaMW9CZHNKUG5GQXRVaXN5NFVwbXBVbXluUDAzcjJjZnNSVlJraXY4UVdhUlYxS2V2Slp4cExzcFl4WmFLTjdmVXFleWhtc1pqT1BkOG9kTXZRUm9oVk5zTFBMV2U2d3kzSHlSWldSd3JhZWQ4elZVb3ViV2F6aE0?oc=5"/>

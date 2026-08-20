@@ -4,7 +4,70 @@
   <link href="https://bmt.news/feeds/crypto-en.xml" rel="self"/>
   <link href="https://bmt.news/"/>
   <id>https://bmt.news/feeds/crypto-en.xml</id>
-  <updated>2026-08-19T00:00:00Z</updated>
+  <updated>2026-08-20T00:00:00Z</updated>
+  <entry>
+    <title>Bybit Averts Over $700M in Extra Losses After $1.46B Hack</title>
+    <link href="https://news.google.com/rss/articles/CBMi7gFBVV95cUxNMWNmOE40LTNVeVRIa250VTE2YXljcWI2YjVoNW5CYTI3d0lfc3ZSVWlPY19sVHNhYUJocG5YaDNfeDZ6VUFiMWZXSURjajRaZ0tscVFUSmphbXF0RVFTS2hXdWc1TTRkYkNZQVJCenhFQXUwbUs1UTZTX3ZkQWJoc2E0QURnNHNfdU5CNzEtUENqMDE2NEdoS19KQnB1R1hwNUxlMF9MOXhQaVpCOFlGNEdTVExlaHBVRjR1OG5PeW8tZWtHaDlxYjM0MHFGOWMybkFZNEZEWFdhY1d4dmcxOEp3SEp6WXpYVkZpdk1B0gHzAUFVX3lxTE5nTkdicElzbHRjdEVVT2N3NS1OSjltbnFkSEV2TXJsTjRzZ1Q0MVRMTFFSVDNUQXlUU0hKZmM3c3hEalk0bTNxTUJBVFVuOEhaR2FUcUZlM0ttVUE4cHM3X2h5emtvSmNjdkQtU1FyaVphc1lFaENFWjJwYzNpaWFkMHdsYmxEWlpMeEFRR1I4Mk42cmhPSlBHVkpyY1pOd0ZQdmpuUk5JSzh1LUpab1Q4MTBldE9wa0ZzOUVQby15UGJ3bm0xcy1xWHlkVWVmVExQRDF2ZDhkbkJmdGp3bW9pb1otbGxncVgtc0hoRTNKeEU5bw?oc=5"/>
+    <id>https://bmt.news/editions/2026-08-20/#google_news:article:0c11ff5fcf03bcbe</id>
+    <updated>2026-08-20T00:00:00Z</updated>
+    <summary>Bybit announced that it successfully prevented more than $700 million in additional losses after suffering a $1.46 billion hack. The exchange says its security measures limited the overall impact of one of the largest cryptocurrency thefts to date. This incident highlights systemic risks in cryptocurrency exchange security and could affect user trust across the industry. Preventing further losses is significant, but the $1.46 billion theft remains a major blow to Bybit and its users, potentially influencing how exchanges approach cold wallet security and emergency response. The $1.46 billion hack is among the largest ever recorded in the cryptocurrency sector. Bybit&#x27;s statement indicates that after the initial breach, its controls prevented an additional $700 million from being withdrawn, suggesting other wallets or systems were secured in time.</summary>
+  </entry>
+  <entry>
+    <title>Bybit Intercepts $700M in Potential Losses After $1.46B Hack</title>
+    <link href="https://news.google.com/rss/articles/CBMijgFBVV95cUxPR0lMMmRMeHQzYjl2V2RDYm1ZbE5mTGJaUk1Wd3c1a3FNS2VpY2xiaHRRRDFwalVIMmE0ajczY0EtMW1GOHVzOXNRLWxoVVFoaXdSb01IejhaVW5NdDdNSWxIZmFYNTFQNlBJT0JRa0lCVlpPZEpGUjZkWWhZemYydHoyNVJzVDdpbExhejNR?oc=5"/>
+    <id>https://bmt.news/editions/2026-08-20/#google_news:article:dd38a3c60804118c</id>
+    <updated>2026-08-20T00:00:00Z</updated>
+    <summary>Bybit prevented over $700 million in additional potential losses following its $1.46 billion hack, according to Crypto News. This marks a major mitigation in the largest exchange security breach in crypto history. The interception signals that exchanges can actively recover or protect a significant portion of assets after a breach, which may help restore user trust. It also affects market sentiment at a time when confidence in exchange security is fragile. The report did not specify the exact methods used to intercept the funds, but the action reduced the total potential loss from the $1.46 billion theft.</summary>
+  </entry>
+  <entry>
+    <title>Coinbase Adds 50x Hyperliquid Perpetual Futures to Base App</title>
+    <link href="https://decrypt.co/375921/coinbase-50x-crypto-perps-base-app-hyperliquid"/>
+    <id>https://bmt.news/editions/2026-08-20/#rss:decrypt.co_feed:d587b86dfeb3a875</id>
+    <updated>2026-08-20T00:00:00Z</updated>
+    <summary>Coinbase announced that eligible Base App users can now trade over 290 perpetual futures markets through Hyperliquid, with leverage of up to 50x on assets including Bitcoin, Ethereum, tokenized stocks, and commodities. The product is not available in the U.S., UK, Canada, or other jurisdictions that restrict leveraged crypto derivatives. Perpetual futures account for roughly 75% of crypto trading volume, and this integration brings leveraged trading into a major consumer-facing app while preserving self-custody. It also signals Coinbase&#x27;s strategic shift away from social features and toward trading, payments, and AI agents on Base. Hyperliquid handles execution of the trades, while users stay inside Base App and keep self-custody of their wallet. Positions can be liquidated if losses exceed certain thresholds, and the maximum 50x leverage varies by asset.</summary>
+  </entry>
+  <entry>
+    <title>HSBC and Standard Chartered execute first live transaction on Swift&#x27;s 24/7 ledger</title>
+    <link href="https://www.coindesk.com/business/2026/08/19/hsbc-standard-chartered-execute-first-live-banking-transaction-on-swift-s-24-7-ledger"/>
+    <id>https://bmt.news/editions/2026-08-20/#rss:www.coindesk.com_arc_outboundfeeds_rss_:5a95c28631eff301</id>
+    <updated>2026-08-20T00:00:00Z</updated>
+    <summary>HSBC and Standard Chartered have executed the first live banking transaction on Swift&#x27;s blockchain-based 24/7 ledger. The transaction marks the move from pilot to real-world use of the distributed ledger for round-the-clock cross-border settlement. This milestone validates institutional blockchain adoption at major global banks and could accelerate the industry&#x27;s shift toward always-on, tokenized settlement infrastructure. It shows that regulated banks can execute live transactions on a shared DLT ledger integrated with existing final settlement systems. Swift&#x27;s ledger was activated in July 2026 after nine months of development, with 17 banks across six continents preparing to pilot tokenized cross-border payments. The ledger adds 24/7 availability for regulated digital money while keeping final settlement anchored to existing systems; Swift reports 75% of payments now reach beneficiary banks within 10 minutes.</summary>
+  </entry>
+  <entry>
+    <title>Maya Protocol Exploit Drains $1.7M from Shared Liquidity</title>
+    <link href="https://thedefiant.io/news/hacks/maya-protocol-exploit-drains-1-7-million-from-shared-liquidity"/>
+    <id>https://bmt.news/editions/2026-08-20/#rss:thedefiant.io_api_feed:38e879e7bd7538a6</id>
+    <updated>2026-08-20T00:00:00Z</updated>
+    <summary>Maya Protocol suffered an exploit that drained approximately $1.7 million from its shared liquidity pools. Founder Aaluxx said he would &#x27;work to fix and recover in full,&#x27; while routing service LeoDex reported that Maya had activated a global halt. This is a confirmed exploit that directly hit user funds in a cross-chain DeFi protocol, adding to a broader pattern of security incidents across liquidity protocols. It affects Maya users, the CACAO token ecosystem, and trust in multichain non-custodial swaps. Maya Protocol is a Cosmos SDK-based decentralized liquidity protocol that enables native, non-custodial swaps across blockchains. The exploit triggered a &#x27;global halt&#x27; — an emergency circuit breaker that pauses trading and protocol operations — and LeoDex, a cross-chain swap aggregator that routes through MAYAChain, relayed the halt to users.</summary>
+  </entry>
+  <entry>
+    <title>Gnosis Chain to Abandon Its Validator Set and Settle to Ethereum</title>
+    <link href="https://thedefiant.io/news/blockchains/gnosis-chain-to-abandon-its-validator-set-and-settle-to-ethereum"/>
+    <id>https://bmt.news/editions/2026-08-20/#rss:thedefiant.io_api_feed:e86a03cc55941646</id>
+    <updated>2026-08-20T00:00:00Z</updated>
+    <summary>GnosisDAO approved a proposal to transition Gnosis Chain from a standalone Layer 1 to an Ethereum-settled rollup, unlocking approximately 350,000 GNO and ending treasury-funded staking rewards. This marks a major architectural shift for one of Ethereum&#x27;s earliest sidechains, affecting its validators, treasury, and staking economics. It also reflects a broader trend of chains moving to Ethereum for security and settlement. The proposal unlocks roughly 350,000 GNO tokens that were previously reserved for staking rewards, and it terminates the treasury-funded staking reward program. The transition will significantly reduce the role of Gnosis Chain&#x27;s own validator set.</summary>
+  </entry>
+  <entry>
+    <title>Maya Protocol Exploit Drains Bitcoin, Pool Value Drops $11M</title>
+    <link href="https://www.coindesk.com/markets/2026/08/19/maya-protocol-exploit-drains-bitcoin-and-other-assets-as-pool-value-drops-usd11-million"/>
+    <id>https://bmt.news/editions/2026-08-20/#rss:www.coindesk.com_arc_outboundfeeds_rss_:f4b78b5e6d7d7dc6</id>
+    <updated>2026-08-20T00:00:00Z</updated>
+    <summary>Maya Protocol was exploited on August 19, 2026, draining bitcoin and other assets and causing its pool value to drop by $11 million. The cross-chain liquidity network halted operations as the team investigated the attack. This exploit directly affects user funds and represents a significant security failure in a cross-chain DeFi protocol, reinforcing concerns about the safety of trustless liquidity systems. It may prompt users and auditors to re-examine similar protocols built on Cosmos SDK. Post-mortem reports say the attacker exploited six bugs to inflate a liquidity pool by 49.45 million CACAO before gaining 99.93% control of it. Several outlets estimate the initial theft at about $1.7 million, while CoinDesk cites an $11 million drop in total pool value.</summary>
+  </entry>
+  <entry>
+    <title>Metaplanet Expands to US With $132M Bitcoin Treasury Deal</title>
+    <link href="https://finance.yahoo.com/markets/crypto/articles/japans-metaplanet-plants-flag-us-151945453.html"/>
+    <id>https://bmt.news/editions/2026-08-20/#gdelt:article:20260819T233000Z::https://finance.yahoo.com/markets/crypto/articles/japans-metaplanet-plants-flag-us-151945453.html</id>
+    <updated>2026-08-20T00:00:00Z</updated>
+    <summary>Japanese investment firm Metaplanet announced a $132 million Bitcoin treasury acquisition as part of its expansion into the US market. The deal marks one of the largest corporate Bitcoin treasury moves by a Japanese company. This reflects growing institutional adoption of Bitcoin as a treasury reserve asset beyond US borders. A high-profile Asian firm entering the US market with a large BTC purchase could encourage other international corporations to follow suit. The $132M deployment is explicitly tied to Metaplanet&#x27;s US expansion strategy. Bitcoin treasury strategies typically involve allocating a portion of corporate cash reserves into BTC to hedge against fiat inflation and diversify capital.</summary>
+  </entry>
+  <entry>
+    <title>Six-Bug Exploit Halts Maya Protocol After $1.4 Million in Bitcoin Stolen</title>
+    <link href="https://decrypt.co/375976/maya-protocol-halts-network-bitcoin-exploit"/>
+    <id>https://bmt.news/editions/2026-08-20/#rss:decrypt.co_feed:b28d0f5cbb2776b0</id>
+    <updated>2026-08-20T00:00:00Z</updated>
+    <summary>Maya Protocol halted MAYAChain after an attacker exploited six bugs to drain roughly $1.7 million in Bitcoin and other assets. The network was paused to contain the damage, and CACAO plunged nearly 89% as pool value fell by about $10.9 million. This is a significant security incident for cross-chain DeFi, demonstrating that even audited protocols can contain hidden vulnerabilities. The CACAO token collapse and liquidity pool losses directly affect users and liquidity providers, while broader market sentiment toward cross-chain bridges may be damaged. The post-mortem said the attacker used a single 23-message MsgDeposit transaction to trigger a false theft detection, inflating a low-liquidity pool&#x27;s CACAO balance by 49.45 million before withdrawing 48.87 million CACAO. Maya said the bugs had gone undetected for three to four years despite audits by Halborn and Fable 5, and the suspected attacker address received 20.83 BTC.</summary>
+  </entry>
   <entry>
     <title>Bybit Blocks $700M in Further Losses After Record $1.5B Hack</title>
     <link href="https://news.google.com/rss/articles/CBMijgFBVV95cUxNUDNJeGVhcEdRcjBWbTdMQl94XzhGamtXc1J4MzF5TFJad2NZNXN5OFpFY0VOVlZ6alJ3R2dUVUZlRk1hVzJPZnB4X3dsbVBZOEFNRWlmT0hzdFB4THBlM21yTGdHeVByUS1QbTZBa3haeEQ1U09QMDdWbkUyZVRPSWI4QS15RFlxMVVyMzBR?oc=5"/>
@@ -221,68 +284,5 @@
     <id>https://bmt.news/editions/2026-08-16/#rss:www.coindesk.com_arc_outboundfeeds_rss_:74b8cb5e9d53943f</id>
     <updated>2026-08-16T00:00:00Z</updated>
     <summary>An analysis of all crypto deals in H1 2026 found that $11.2 billion in funding went overwhelmingly to regulated firms, with investors including BlackRock and Goldman Sachs. The research suggests institutional capital is now steering the industry away from permissionless networks. This shift signals the institutionalization of crypto markets, where compliance and regulation become prerequisites for capital. It could reshape the competitive landscape, favoring regulated intermediaries over open, permissionless protocols. The data was compiled by Dubai-based crypto lawyer Irina Heaver and her team, who parsed every crypto deal in the first half of 2026. Persian Gulf sovereign wealth funds also participated alongside major US financial institutions.</summary>
-  </entry>
-  <entry>
-    <title>Crypto Week: Clarity Act Survives, Strategy Sells, Mastercard&#x27;s $1.8B Deal</title>
-    <link href="https://www.coindesk.com/business/2026/08/15/clarity-survives-barely-strategy-sells-and-the-untold-story-of-mastercard-s-usd1-8-billion-deal-crypto-s-week-in-5-stories"/>
-    <id>https://bmt.news/editions/2026-08-16/#rss:www.coindesk.com_arc_outboundfeeds_rss_:fe06e238aa0e8357</id>
-    <updated>2026-08-16T00:00:00Z</updated>
-    <summary>This week&#x27;s roundup covers the Clarity Act surviving after missing the Senate&#x27;s August window, Strategy selling 1,690 bitcoin for $653 million, and Mastercard&#x27;s $1.8 billion acquisition of BVNK, alongside a hardware-wallet security scare that moved billions in bitcoin. The news highlights crypto&#x27;s transition into a more regulated, institutionalized era, with U.S. lawmakers still negotiating market-structure legislation while Wall Street deepens exposure. These developments signal both growing mainstream adoption and the continuing volatility and security risks of digital assets. The Clarity Act will get another vote in September after failing to reach a procedural vote before recess, while the SEC delayed an &#x27;innovation exemption&#x27; for tokenized securities. Strategy has now sold roughly 7,000 bitcoin in five sales this year, and Metaplanet moved about $320 million in bitcoin, though its CEO denied any sale; Mastercard&#x27;s deal is the largest crypto-infrastructure purchase by a traditional payment network, surpassing Stripe&#x27;s $1.1 billion Bridge acquisition.</summary>
-  </entry>
-  <entry>
-    <title>Bybit Expands TradFi Perpetuals to 200+ Global Equities and Pre-IPO Assets</title>
-    <link href="https://news.google.com/rss/articles/CBMiuwFBVV95cUxQYWVVOV92QU5XU3Z1ZHRUaVhfZnI3ZGVfNS1ZNVA3LV9qQjJWREE2MHhWUWs1NnRUTmdYT2JKWEpJMHRuNGJ3RjhDR1FOS2ZvREtlOGxvUjdFYnVuUkZDWkxqUGpVRHN6VXRtX3N6d2s5eTM1dXdaUWtwb04xVUZXcTczcmcxVnh2U1BZamFkcHE5Ukd5STZWemlWSnRwLUlHY01OWUJNdWtJNE5iSWEzTE02WVhOaHBzRllZ?oc=5"/>
-    <id>https://bmt.news/editions/2026-08-16/#google_news:article:f7291f77c085c319</id>
-    <updated>2026-08-16T00:00:00Z</updated>
-    <summary>Bybit has expanded its TradFi Perpetuals product to cover more than 200 global equities and pre-IPO assets with 24/7 trading. The expansion builds on the product&#x27;s April 2026 launch and includes new weekly listings. This move gives crypto exchange users direct access to traditional finance markets without requiring multiple brokerage relationships across different time zones. It also highlights the growing convergence between crypto derivatives and conventional asset classes, potentially attracting a broader set of traders. TradFi Perpetuals are USDT-denominated and USDT-settled derivatives that track the prices of traditional financial assets, using a funding rate mechanism instead of a fixed expiry. The lineup includes commodities like gold, silver, and crude oil, along with US stocks, global ETFs, and pre-IPO assets, where traders gain price exposure without share delivery or shareholder rights.</summary>
-  </entry>
-  <entry>
-    <title>Cboe to List Leveraged Crypto Products, Including 3x Long</title>
-    <link href="https://news.google.com/rss/articles/CBMiaEFVX3lxTE9MX25Hck85VC1qMXdzR2lXWV9jSFAtYUFWX0Q1VkdNclpsXzI0dTJPWjNha282dnBNTldnUzlmLXVzU2pLdFF3REdrRmdVdHBRUmFwU1ZLNFdUMjIwNzQ5bkJOaGtoc29W?oc=5"/>
-    <id>https://bmt.news/editions/2026-08-16/#google_news:article:dc1cd9cc591bd4b6</id>
-    <updated>2026-08-16T00:00:00Z</updated>
-    <summary>Binance highlighted that Cboe has been moving to list leveraged crypto products, not just 1x spot exposure but 3x long exposure. The announcement indicates Cboe is expanding its crypto derivatives offerings beyond traditional spot exposure. This marks a notable expansion of regulated crypto derivatives, giving traders more tools for leveraged exposure within a traditional exchange framework. It could accelerate institutional adoption by offering crypto products that are familiar to mainstream investors. Leveraged ETFs typically use swaps and daily rebalancing to deliver a multiple (such as 3x) of the underlying index&#x27;s daily performance, and are intended for short-term trading.</summary>
-  </entry>
-  <entry>
-    <title>Bybit Overtakes Coinbase as Second-Largest Crypto Exchange</title>
-    <link href="https://news.google.com/rss/articles/CBMiyAFBVV95cUxQRFZHZ3VFS0dKdU1DTjMzZVpvVk5tUlNDMlpaWmpNbmJ6OWJfX2ExQW1HQWdOX0NnRW9VRVQzZTNnQ3RvbDFJMUE4MDdtTkFDb2NheVlWVVZSTVhEZlVzZ0hhc2tFYjgwTkVuRnIxWkxYMDR4bzFrVVdXY3NKYXBUU0hGMDlYdzF2MFhNTF8wRFk4X3FWbFVEQ21vNjRxR0EzbDItY0Y1V3kyMDQxWWxOcVhSYlBXM3VLVWY4WFdyVjhGNTNUcmkwcw?oc=5"/>
-    <id>https://bmt.news/editions/2026-08-16/#google_news:article:8576a927f6ee23d3</id>
-    <updated>2026-08-16T00:00:00Z</updated>
-    <summary>Bybit has overtaken Coinbase to become the second-largest cryptocurrency exchange by trading volume, according to Yellow.com. The shift is attributed to ongoing regulatory troubles at Binance, which have driven users to alternative platforms. This reshuffling of top exchange rankings signals a meaningful change in market structure, as traders increasingly diversify away from exchanges under regulatory pressure. It also highlights the competitive impact of Binance&#x27;s legal battles on the broader crypto trading ecosystem. The report does not provide specific trading volume figures or the exact date of the ranking change. Coinbase dropping to third place suggests that both derivatives-focused and spot-focused exchanges are competing fiercely for market share.</summary>
-  </entry>
-  <entry>
-    <title>Vitalik Buterin Proposes New Ethereum Roadmap with Quantum Defense and AI Verification</title>
-    <link href="https://memeburn.com/vitalik-buterin-just-rewrote-ethereums-roadmap/"/>
-    <id>https://bmt.news/editions/2026-08-15/#gdelt:article:20260814T183000Z::https://memeburn.com/vitalik-buterin-just-rewrote-ethereums-roadmap/</id>
-    <updated>2026-08-15T00:00:00Z</updated>
-    <summary>Vitalik Buterin has proposed a revamped Ethereum roadmap that adds post-quantum defense, AI-based verification, and a potential shift away from the Ethereum Virtual Machine (EVM). This is a proposal, not an implemented upgrade. Ethereum is the largest smart contract platform, so a change in its technical direction could affect developers, dApps, Layer 2 networks, and the broader crypto ecosystem. If adopted, the roadmap would represent a major architectural shift in how Ethereum secures and executes code. The proposal reportedly includes preparing Ethereum&#x27;s cryptography for quantum computing threats and using AI to help verify code correctness. Moving away from the EVM would be a significant break from the current execution environment used by thousands of dApps and rollups.</summary>
-  </entry>
-  <entry>
-    <title>Coldcard Bitcoin Thefts Slow, But Losses Could Hit $150M: Galaxy</title>
-    <link href="https://decrypt.co/375656/coldcard-bitcoin-thefts-slow-losses-top-150-million"/>
-    <id>https://bmt.news/editions/2026-08-15/#rss:decrypt.co_feed:3dee129d9e85105c</id>
-    <updated>2026-08-15T00:00:00Z</updated>
-    <summary>Galaxy Research reports the Coldcard seed-recreation exploit has stolen more than 1,778 BTC (~$112 million) and may have a fourth wave that lifts losses above $150 million. The attack waves have slowed, with no confirmed attacker activity after August 6. This is one of the largest hardware-wallet exploits on record, directly affecting Coldcard single-signature users and undermining trust in physical cold-storage devices. It also highlights how a single firmware regression in randomness can expose millions in Bitcoin years later. Galaxy identifies three major attack waves and 41 smaller footprints, with more than 5,200 addresses drained; Wave 1 alone took 1,082.65 BTC. A candidate fourth wave of 638.5 BTC has not yet been confirmed, and roughly 1,531 BTC remains unmoved in attacker-controlled addresses, with 246 BTC traced to Coinjoin transactions.</summary>
-  </entry>
-  <entry>
-    <title>Neutrl Halts NUSD Minting and Redemptions Over Reserve Issue</title>
-    <link href="https://cointelegraph.com/news/neutrl-pauses-nusd-redemptions-over-undisclosed-reserve-issue?utm_source=rss_feed&amp;utm_medium=rss&amp;utm_campaign=rss_partner_inbound"/>
-    <id>https://bmt.news/editions/2026-08-15/#rss:cointelegraph.com_rss:6bf9c0336aa1ac26</id>
-    <updated>2026-08-15T00:00:00Z</updated>
-    <summary>Neutrl has suspended minting and redemptions for its NUSD synthetic dollar after undisclosed circumstances affected protocol reserves, leaving over $53.6 million in circulation unable to be redeemed. The structured-yield protocol Strata also paused minting, redemptions and related functions for its Neutrl market. The halt freezes user funds in a major synthetic-dollar protocol and raises questions about the true backing of NUSD, which relies on market-neutral strategies rather than bank deposits. The uncertainty could affect confidence in similar DeFi stablecoin products and linked protocols such as Strata. Neutrl did not identify the affected asset or counterparty, nor say whether reserves suffered a realized loss or provide a resumption timeline. According to RWA.xyz, NUSD&#x27;s market cap was about $53.6 million, down 18.4% over 30 days, with the token trading near $0.9984.</summary>
-  </entry>
-  <entry>
-    <title>Binance blocks HTX, 10 other exchanges under EU Russia sanctions</title>
-    <link href="https://news.google.com/rss/articles/CBMixgFBVV95cUxPV2p2RTR4VmY5b2JNSnNkNG9VRUlnSWRrTTQtQUhrSnFBT1AydHRyTzQtcEVkNlA3N1ptbGJEOVBSODZLS0JhZXU2akpzWUhremMtcENEdldUQVFLUEtfbklKenoyVHF0MU4teGV0TTZlQWFtZVVfYXVrQWFuU1VkRlNLZll0eUlMNmp5Q2ZscmJPaDdSdnBsUV9PMjA5c2pFdVVTeWJ3eUY3aWljeE82ejFva2pwT2ZyUEdHNkxzWDhZUEhIc0E?oc=5"/>
-    <id>https://bmt.news/editions/2026-08-15/#google_news:article:94a526de95f1417c</id>
-    <updated>2026-08-15T00:00:00Z</updated>
-    <summary>Binance will block transactions with HTX and 10 other crypto exchanges as part of its compliance with European Union sanctions related to Russia. The move affects 11 exchanges in total, though only HTX has been named publicly. This development restricts how users of those 11 exchanges can move funds into or out of Binance, directly impacting market access and cross-exchange liquidity. It also underscores how regulatory sanctions are reshaping the operations of major centralized exchanges. The specific list of the other 10 exchanges has not been disclosed, and no effective date was provided in the announcement. HTX is a Seychelles-based exchange formerly known as Huobi, one of the largest crypto exchanges by trading volume.</summary>
-  </entry>
-  <entry>
-    <title>Binance to block transactions with HTX, 10 other exchanges under EU Russia sanctions</title>
-    <link href="https://news.google.com/rss/articles/CBMiywFBVV95cUxQcXJSRWNTcTVaZl9IMGdDTWEzQ3pGWjNYLUNNWWpETjZ4R1dqR0VlMURRRlZBNXpXT3JqU3YyT2k1ejc0TXQ1QXlGd1lNMHJWbF9JaDItcmRjMDlvekVWNHhoRzFrVnVmUThxcEZZbkhRYmlfUEh0MXhxSXNvcVQwRFRhNlRNUHRyUlNZckh5VEpqeHVSdlJfN3h5OTBJVTVwc2NwZUtWdG00eEg0d2t3QUh0ZE9ucG11b3Z4UmUyZlVWOWtoUkJ2dEJDNA?oc=5"/>
-    <id>https://bmt.news/editions/2026-08-15/#google_news:article:58287830a139493c</id>
-    <updated>2026-08-15T00:00:00Z</updated>
-    <summary>Binance will block transactions with HTX and ten other cryptocurrency exchanges to comply with EU sanctions against Russia. The restriction applies to transfers between Binance and these platforms. This move shows how major crypto exchanges are tightening compliance to avoid sanctions exposure, and it directly affects users who rely on cross-exchange transfers. It also signals heightened regulatory pressure on platforms linked to Russian-related traffic. HTX, formerly known as Huobi, is a Seychelles-based exchange founded in China, now with offices in Hong Kong, South Korea, Japan and the United States. The EU sanctions rules target entities connected to Russia, and this exchange-level restriction is Binance&#x27;s compliance response to prevent sanctions evasion.</summary>
   </entry>
 </feed>

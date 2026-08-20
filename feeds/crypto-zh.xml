@@ -4,7 +4,70 @@
   <link href="https://bmt.news/feeds/crypto-zh.xml" rel="self"/>
   <link href="https://bmt.news/"/>
   <id>https://bmt.news/feeds/crypto-zh.xml</id>
-  <updated>2026-08-19T00:00:00Z</updated>
+  <updated>2026-08-20T00:00:00Z</updated>
+  <entry>
+    <title>Bybit称在14.6亿美元被盗后避免逾7亿美元额外损失</title>
+    <link href="https://news.google.com/rss/articles/CBMi7gFBVV95cUxNMWNmOE40LTNVeVRIa250VTE2YXljcWI2YjVoNW5CYTI3d0lfc3ZSVWlPY19sVHNhYUJocG5YaDNfeDZ6VUFiMWZXSURjajRaZ0tscVFUSmphbXF0RVFTS2hXdWc1TTRkYkNZQVJCenhFQXUwbUs1UTZTX3ZkQWJoc2E0QURnNHNfdU5CNzEtUENqMDE2NEdoS19KQnB1R1hwNUxlMF9MOXhQaVpCOFlGNEdTVExlaHBVRjR1OG5PeW8tZWtHaDlxYjM0MHFGOWMybkFZNEZEWFdhY1d4dmcxOEp3SEp6WXpYVkZpdk1B0gHzAUFVX3lxTE5nTkdicElzbHRjdEVVT2N3NS1OSjltbnFkSEV2TXJsTjRzZ1Q0MVRMTFFSVDNUQXlUU0hKZmM3c3hEalk0bTNxTUJBVFVuOEhaR2FUcUZlM0ttVUE4cHM3X2h5emtvSmNjdkQtU1FyaVphc1lFaENFWjJwYzNpaWFkMHdsYmxEWlpMeEFRR1I4Mk42cmhPSlBHVkpyY1pOd0ZQdmpuUk5JSzh1LUpab1Q4MTBldE9wa0ZzOUVQby15UGJ3bm0xcy1xWHlkVWVmVExQRDF2ZDhkbkJmdGp3bW9pb1otbGxncVgtc0hoRTNKeEU5bw?oc=5"/>
+    <id>https://bmt.news/editions/2026-08-20/#google_news:article:0c11ff5fcf03bcbe</id>
+    <updated>2026-08-20T00:00:00Z</updated>
+    <summary>Bybit宣布，在遭受14.6亿美元黑客攻击后，成功避免了超过7亿美元的额外损失。该交易所表示，其安全措施限制了这一迄今最大加密货币盗窃事件之一的整体影响。 该事件凸显了加密货币交易所安全的系统性风险，并可能影响整个行业的用户信任。避免进一步损失意义重大，但14.6亿美元的被盗金额仍然对Bybit及其用户构成重大打击，可能影响各交易所对待冷钱包安全和应急响应的方式。 这起14.6亿美元的黑客攻击是加密货币领域有史以来最大的攻击之一。Bybit的声明表明，在最初漏洞发生后，其控制措施防止了额外7亿美元被提取，暗示其他钱包或系统及时得到了保护。</summary>
+  </entry>
+  <entry>
+    <title>Bybit在14.6亿美元黑客攻击后拦截超7亿美元潜在损失</title>
+    <link href="https://news.google.com/rss/articles/CBMijgFBVV95cUxPR0lMMmRMeHQzYjl2V2RDYm1ZbE5mTGJaUk1Wd3c1a3FNS2VpY2xiaHRRRDFwalVIMmE0ajczY0EtMW1GOHVzOXNRLWxoVVFoaXdSb01IejhaVW5NdDdNSWxIZmFYNTFQNlBJT0JRa0lCVlpPZEpGUjZkWWhZemYydHoyNVJzVDdpbExhejNR?oc=5"/>
+    <id>https://bmt.news/editions/2026-08-20/#google_news:article:dd38a3c60804118c</id>
+    <updated>2026-08-20T00:00:00Z</updated>
+    <summary>据Crypto News报道，Bybit在遭遇14.6亿美元黑客攻击后，成功拦截了超过7亿美元的潜在额外损失。这是加密货币史上最大交易所安全漏洞中的一次重大止损。 此次拦截表明，交易所在遭受攻击后仍能主动追回或保护大部分资产，这可能有助于恢复用户信任。在人们对交易所安全的信心脆弱之际，这也影响着市场情绪。 报道未说明拦截资金的具体方式，但此举降低了14.6亿美元被盗事件带来的潜在总损失。</summary>
+  </entry>
+  <entry>
+    <title>Coinbase 将 Hyperliquid 50倍杠杆永续合约引入 Base App</title>
+    <link href="https://decrypt.co/375921/coinbase-50x-crypto-perps-base-app-hyperliquid"/>
+    <id>https://bmt.news/editions/2026-08-20/#rss:decrypt.co_feed:d587b86dfeb3a875</id>
+    <updated>2026-08-20T00:00:00Z</updated>
+    <summary>Coinbase 宣布，符合条件的 Base App 用户现可通过 Hyperliquid 交易超过 290 个永续合约市场，对比特币、以太坊、代币化股票和大宗商品等资产最高可使用 50 倍杠杆。该产品在美国、英国、加拿大以及其他限制杠杆加密衍生品的司法管辖区不可用。 永续合约约占加密货币交易量的 75%，此次整合将杠杆交易引入一款面向消费者的主流应用，同时保留了自我托管。这也标志着 Coinbase 的战略重心从社交功能转向 Base 上的交易、支付和 AI 代理。 交易执行由 Hyperliquid 负责，用户无需离开 Base App，并继续自我保管钱包。若亏损超过一定阈值，仓位可能被清算，最高 50 倍杠杆也因资产而异。</summary>
+  </entry>
+  <entry>
+    <title>汇丰与渣打在Swift 24/7账本上完成首笔实时银行交易</title>
+    <link href="https://www.coindesk.com/business/2026/08/19/hsbc-standard-chartered-execute-first-live-banking-transaction-on-swift-s-24-7-ledger"/>
+    <id>https://bmt.news/editions/2026-08-20/#rss:www.coindesk.com_arc_outboundfeeds_rss_:5a95c28631eff301</id>
+    <updated>2026-08-20T00:00:00Z</updated>
+    <summary>汇丰银行与渣打银行已在Swift基于区块链的24/7账本上执行了首笔实时银行交易。这笔交易标志着该分布式账本从试点走向实际应用，用于全天候跨境结算。 这一里程碑验证了主要全球银行对机构级区块链的采用，可能加速行业向全天候、代币化结算基础设施的转型。这表明受监管银行能够在与现有最终结算系统集成的共享DLT账本上执行实时交易。 Swift的账本在九个月开发后于2026年7月启用，来自六大洲的17家银行准备试点代币化跨境支付。该账本为受监管的数字货币提供全天候可用性，同时将最终结算锚定在现有系统上；Swift报告称，目前75%的付款在10分钟内到达收款行。</summary>
+  </entry>
+  <entry>
+    <title>Maya Protocol 遭攻击，共享流动性被盗 170 万美元</title>
+    <link href="https://thedefiant.io/news/hacks/maya-protocol-exploit-drains-1-7-million-from-shared-liquidity"/>
+    <id>https://bmt.news/editions/2026-08-20/#rss:thedefiant.io_api_feed:38e879e7bd7538a6</id>
+    <updated>2026-08-20T00:00:00Z</updated>
+    <summary>Maya Protocol 遭遇攻击，约 170 万美元的共享流动性资金被抽走。创始人 Aaluxx 表示将“努力修复并全额追回”，路由服务商 LeoDex 则报告称 Maya 已启动全局暂停。 这是一起已确认的攻击事件，直接冲击了跨链 DeFi 协议中的用户资金，进一步加剧了流动性协议领域安全事件的整体趋势。它影响 Maya 用户、CACAO 代币生态，以及人们对多链非托管兑换的信任。 Maya Protocol 是一个基于 Cosmos SDK 的去中心化流动性协议，支持跨链原生、非托管的资产兑换。攻击触发了“全局暂停”——一种暂停交易和协议运行的紧急熔断机制——而通过 MAYAChain 路由的跨链兑换聚合器 LeoDex 向用户转达了这一暂停消息。</summary>
+  </entry>
+  <entry>
+    <title>Gnosis Chain 将放弃验证者集，转为以太坊结算 Rollup</title>
+    <link href="https://thedefiant.io/news/blockchains/gnosis-chain-to-abandon-its-validator-set-and-settle-to-ethereum"/>
+    <id>https://bmt.news/editions/2026-08-20/#rss:thedefiant.io_api_feed:e86a03cc55941646</id>
+    <updated>2026-08-20T00:00:00Z</updated>
+    <summary>GnosisDAO 批准了一项提案，将 Gnosis Chain 从独立的 Layer 1 转变为由以太坊结算的 rollup，解锁了约 350,000 枚 GNO，并终止了由金库资助的质押奖励。 这标志着以太坊早期侧链之一发生重大架构转变，影响其验证者、金库和质押经济。这也反映了链向以太坊寻求安全性与结算的更广泛趋势。 该提案解锁了此前预留用于质押奖励的约 350,000 枚 GNO，并终止了由金库资助的质押奖励计划。这一转变将显著削弱 Gnosis Chain 自身验证者集的作用。</summary>
+  </entry>
+  <entry>
+    <title>Maya Protocol 遭攻击，比特币等资产外流，池价值跌 1100 万美元</title>
+    <link href="https://www.coindesk.com/markets/2026/08/19/maya-protocol-exploit-drains-bitcoin-and-other-assets-as-pool-value-drops-usd11-million"/>
+    <id>https://bmt.news/editions/2026-08-20/#rss:www.coindesk.com_arc_outboundfeeds_rss_:f4b78b5e6d7d7dc6</id>
+    <updated>2026-08-20T00:00:00Z</updated>
+    <summary>2026 年 8 月 19 日，Maya Protocol 遭到攻击，比特币等资产被抽走，池价值因而减少 1100 万美元。该跨链流动性网络在团队调查期间暂停了运营。 此次攻击直接影响了用户资金，暴露了跨链 DeFi 协议的重大安全缺陷，进一步加剧了人们对非托管流动性系统安全性的担忧。这可能会促使用户和审计机构重新审查基于 Cosmos SDK 的类似协议。 事后分析报告显示，攻击者利用了六个漏洞，先将流动性池增发了 4945 万枚 CACAO，随后获得了该池 99.93% 的控制权。多家媒体估计初始被盗金额约为 170 万美元，而 CoinDesk 则报道总池价值下跌了 1100 万美元。</summary>
+  </entry>
+  <entry>
+    <title>日本Metaplanet以1.32亿美元比特币储备交易进军美国</title>
+    <link href="https://finance.yahoo.com/markets/crypto/articles/japans-metaplanet-plants-flag-us-151945453.html"/>
+    <id>https://bmt.news/editions/2026-08-20/#gdelt:article:20260819T233000Z::https://finance.yahoo.com/markets/crypto/articles/japans-metaplanet-plants-flag-us-151945453.html</id>
+    <updated>2026-08-20T00:00:00Z</updated>
+    <summary>日本投资公司Metaplanet宣布了一笔1.32亿美元的比特币储备收购交易，作为其进军美国市场计划的一部分。这笔交易是日本公司最大规模的企业比特币储备操作之一。 这反映出比特币作为储备资产在海外机构中日益被接受。一家知名的亚洲公司通过大规模比特币购买进入美国市场，可能鼓励其他国际企业效仿。 这1.32亿美元的资金部署明确与Metaplanet的美国扩张战略相关。比特币储备策略通常涉及将公司现金储备的一部分配置到比特币，以对冲法币通胀并实现资本多元化。</summary>
+  </entry>
+  <entry>
+    <title>六个漏洞利用导致Maya Protocol暂停，超140万美元比特币被盗</title>
+    <link href="https://decrypt.co/375976/maya-protocol-halts-network-bitcoin-exploit"/>
+    <id>https://bmt.news/editions/2026-08-20/#rss:decrypt.co_feed:b28d0f5cbb2776b0</id>
+    <updated>2026-08-20T00:00:00Z</updated>
+    <summary>Maya Protocol在攻击者利用六个漏洞盗走约170万美元的比特币和其他资产后，暂停了MAYAChain网络。网络已停止以控制损失，CACAO价格暴跌近89%，池内价值缩水约1090万美元。 这是跨链DeFi领域的一次重大安全事件，表明即使经过审计的协议也可能存在隐藏漏洞。CACAO代币的暴跌和流动性池的损失直接影响用户和流动性提供者，同时可能损害整个市场对跨链桥的信心。 事后分析称，攻击者通过一笔包含23条消息的MsgDeposit交易触发虚假的“盗窃”检测，将低流动性池的CACAO余额虚增4945万枚，随后提取了4887万枚CACAO。Maya表示，尽管Halborn和Fable 5进行了审计，这些漏洞仍潜藏了三到四年未被发现，而疑似攻击者地址收到了20.83枚BTC。</summary>
+  </entry>
   <entry>
     <title>Bybit称阻止7亿美元损失，此前遭15亿黑客攻击</title>
     <link href="https://news.google.com/rss/articles/CBMijgFBVV95cUxNUDNJeGVhcEdRcjBWbTdMQl94XzhGamtXc1J4MzF5TFJad2NZNXN5OFpFY0VOVlZ6alJ3R2dUVUZlRk1hVzJPZnB4X3dsbVBZOEFNRWlmT0hzdFB4THBlM21yTGdHeVByUS1QbTZBa3haeEQ1U09QMDdWbkUyZVRPSWI4QS15RFlxMVVyMzBR?oc=5"/>
@@ -221,68 +284,5 @@
     <id>https://bmt.news/editions/2026-08-16/#rss:www.coindesk.com_arc_outboundfeeds_rss_:74b8cb5e9d53943f</id>
     <updated>2026-08-16T00:00:00Z</updated>
     <summary>一项对2026年上半年所有加密货币交易的分析发现，112亿美元资金绝大多数流向了受监管公司，投资者包括贝莱德和高盛。该研究显示，机构资本正引导行业远离无需许可的网络。 这种转变标志着加密货币市场的机构化，合规与监管成为获得资本的前提。它可能重塑竞争格局，使受监管的中介机构比开放、无需许可的协议更具优势。 这些数据由驻迪拜的加密货币律师Irina Heaver及其团队编制，他们分析了2026年上半年每一笔加密货币交易。除美国大型金融机构外，波斯湾主权财富基金也参与其中。</summary>
-  </entry>
-  <entry>
-    <title>加密周报：Clarity法案幸存，Strategy减持，Mastercard 18亿收购</title>
-    <link href="https://www.coindesk.com/business/2026/08/15/clarity-survives-barely-strategy-sells-and-the-untold-story-of-mastercard-s-usd1-8-billion-deal-crypto-s-week-in-5-stories"/>
-    <id>https://bmt.news/editions/2026-08-16/#rss:www.coindesk.com_arc_outboundfeeds_rss_:fe06e238aa0e8357</id>
-    <updated>2026-08-16T00:00:00Z</updated>
-    <summary>本周综述要点包括：Clarity法案在错过参议院8月窗口后幸存；Strategy出售1,690枚比特币，筹资6.53亿美元；Mastercard以18亿美元收购BVNK；以及一次硬件钱包安全恐慌导致数十亿美元比特币转移。 这些新闻凸显了加密行业正迈入一个更加规范化、机构化的时代：美国立法者仍在博弈市场结构立法，而华尔街在加深对数字资产的参与。这些动态既表明主流采用度在提升，也提醒人们数字资产仍伴随波动与安全风险。 Clarity法案在休会前未能进入程序性投票，但将在9月再次表决；同时SEC推迟了针对代币化证券的“创新豁免”。Strategy今年已累计五次出售约7,000枚比特币；Metaplanet转移了约3.2亿美元比特币，但其CEO否认在出售；Mastercard的交易是传统支付网络对加密基础设施最大的收购案，超过了Stripe以11亿美元收购Bridge的交易。</summary>
-  </entry>
-  <entry>
-    <title>Bybit将TradFi永续合约扩展至200多个全球股票与Pre-IPO资产</title>
-    <link href="https://news.google.com/rss/articles/CBMiuwFBVV95cUxQYWVVOV92QU5XU3Z1ZHRUaVhfZnI3ZGVfNS1ZNVA3LV9qQjJWREE2MHhWUWs1NnRUTmdYT2JKWEpJMHRuNGJ3RjhDR1FOS2ZvREtlOGxvUjdFYnVuUkZDWkxqUGpVRHN6VXRtX3N6d2s5eTM1dXdaUWtwb04xVUZXcTczcmcxVnh2U1BZamFkcHE5Ukd5STZWemlWSnRwLUlHY01OWUJNdWtJNE5iSWEzTE02WVhOaHBzRllZ?oc=5"/>
-    <id>https://bmt.news/editions/2026-08-16/#google_news:article:f7291f77c085c319</id>
-    <updated>2026-08-16T00:00:00Z</updated>
-    <summary>Bybit已将其TradFi永续合约产品扩展到200多个全球股票和Pre-IPO资产，提供24/7交易。此次扩展基于该产品2026年4月的推出，并包含每周新增上市。 这一举措使加密货币交易所用户无需在不同时区和司法管辖区建立多个经纪关系，即可直接接触传统金融市场。它也凸显了加密衍生品与传统资产类别之间日益融合的趋势，可能吸引更广泛的交易者。 TradFi永续合约是以USDT计价和结算的衍生品，追踪传统金融资产价格，通过资金费率机制代替固定到期日。产品线包括黄金、白银、原油等大宗商品，以及美股、全球ETF和Pre-IPO资产——投资者可获得价格敞口，但不涉及股票交割或股东权利。</summary>
-  </entry>
-  <entry>
-    <title>Cboe 将上线杠杆加密产品，包含 3 倍做多</title>
-    <link href="https://news.google.com/rss/articles/CBMiaEFVX3lxTE9MX25Hck85VC1qMXdzR2lXWV9jSFAtYUFWX0Q1VkdNclpsXzI0dTJPWjNha282dnBNTldnUzlmLXVzU2pLdFF3REdrRmdVdHBRUmFwU1ZLNFdUMjIwNzQ5bkJOaGtoc29W?oc=5"/>
-    <id>https://bmt.news/editions/2026-08-16/#google_news:article:dc1cd9cc591bd4b6</id>
-    <updated>2026-08-16T00:00:00Z</updated>
-    <summary>币安发文强调，Cboe 正在推进上线杠杆加密产品，不只是 1 倍现货敞口，而是 3 倍做多敞口。这一消息表明 Cboe 正在扩展其加密衍生品产品线，超越传统现货敞口。 这标志着受监管的加密衍生品领域的重要扩张，为交易者在传统交易所框架内提供了更多杠杆敞口工具。它可能通过提供主流投资者熟悉的加密产品来加速机构采用。 杠杆 ETF 通常利用互换和每日再平衡来实现标的指数每日表现的倍数（如 3 倍），并且专为短期交易设计。</summary>
-  </entry>
-  <entry>
-    <title>Bybit超越Coinbase，成为第二大加密货币交易所</title>
-    <link href="https://news.google.com/rss/articles/CBMiyAFBVV95cUxQRFZHZ3VFS0dKdU1DTjMzZVpvVk5tUlNDMlpaWmpNbmJ6OWJfX2ExQW1HQWdOX0NnRW9VRVQzZTNnQ3RvbDFJMUE4MDdtTkFDb2NheVlWVVZSTVhEZlVzZ0hhc2tFYjgwTkVuRnIxWkxYMDR4bzFrVVdXY3NKYXBUU0hGMDlYdzF2MFhNTF8wRFk4X3FWbFVEQ21vNjRxR0EzbDItY0Y1V3kyMDQxWWxOcVhSYlBXM3VLVWY4WFdyVjhGNTNUcmkwcw?oc=5"/>
-    <id>https://bmt.news/editions/2026-08-16/#google_news:article:8576a927f6ee23d3</id>
-    <updated>2026-08-16T00:00:00Z</updated>
-    <summary>据Yellow.com报道，Bybit已超越Coinbase，成为按交易量计算的第二大加密货币交易所。这一变化被归因于Binance持续面临的监管问题，促使部分用户转向其他平台。 顶级交易所排名的重新洗牌标志着市场结构性变化，交易者越来越多地从面临监管压力的交易所分散风险。这也凸显了Binance的法律纠纷对整个加密货币交易生态的竞争性影响。 该报道未提供具体交易量数据或排名变化的确切日期。Coinbase降至第三位表明，专注于衍生品和现货交易的交易所正在激烈争夺市场份额。</summary>
-  </entry>
-  <entry>
-    <title>Vitalik Buterin提出以太坊新路线图：量子防御与AI验证</title>
-    <link href="https://memeburn.com/vitalik-buterin-just-rewrote-ethereums-roadmap/"/>
-    <id>https://bmt.news/editions/2026-08-15/#gdelt:article:20260814T183000Z::https://memeburn.com/vitalik-buterin-just-rewrote-ethereums-roadmap/</id>
-    <updated>2026-08-15T00:00:00Z</updated>
-    <summary>Vitalik Buterin提出了一份修订后的以太坊路线图，增加了后量子防御、基于AI的验证，以及可能放弃以太坊虚拟机（EVM）的方向调整。这是一项提议，而非已实施的升级。 以太坊是最大的智能合约平台，其技术方向的改变可能影响开发者、去中心化应用、Layer 2网络以及更广泛的加密生态。如果被采纳，该路线图将代表以太坊在代码安全与执行方式上的重大架构转变。 该提议据悉包括为量子计算威胁做准备，以及利用AI辅助验证代码正确性。放弃EVM将是对当前被数千个去中心化应用和rollup使用的执行环境的重大突破。</summary>
-  </entry>
-  <entry>
-    <title>Coldcard 比特币盗窃放缓，但损失或超 1.5 亿美元：Galaxy</title>
-    <link href="https://decrypt.co/375656/coldcard-bitcoin-thefts-slow-losses-top-150-million"/>
-    <id>https://bmt.news/editions/2026-08-15/#rss:decrypt.co_feed:3dee129d9e85105c</id>
-    <updated>2026-08-15T00:00:00Z</updated>
-    <summary>Galaxy Research 报告称，Coldcard 种子重建漏洞已盗取超过 1,778 枚 BTC（约 1.12 亿美元），并可能存在第四波攻击，使总损失超过 1.5 亿美元。自 8 月 6 日以来未确认新的攻击者活动，攻击浪潮已趋缓。 这是有史以来规模最大的硬件钱包攻击事件之一，直接影响 Coldcard 单签用户，并削弱了对物理冷存储设备的信任。它也凸显了固件中一个随机数生成的回归缺陷如何在数年后暴露出数百万美元的比特币风险。 Galaxy 确认了三次主要攻击浪潮和 41 个较小的攻击足迹，超过 5,200 个地址被盗；仅第一波就盗取了 1,082.65 BTC。另有约 638.5 BTC 的疑似第四波攻击尚未确认，约 1,531 BTC 仍留在攻击者控制的地址中未动，246 BTC 被追踪流向 Coinjoin 交易。</summary>
-  </entry>
-  <entry>
-    <title>Neutrl 因储备金问题暂停 NUSD 铸造与赎回</title>
-    <link href="https://cointelegraph.com/news/neutrl-pauses-nusd-redemptions-over-undisclosed-reserve-issue?utm_source=rss_feed&amp;utm_medium=rss&amp;utm_campaign=rss_partner_inbound"/>
-    <id>https://bmt.news/editions/2026-08-15/#rss:cointelegraph.com_rss:6bf9c0336aa1ac26</id>
-    <updated>2026-08-15T00:00:00Z</updated>
-    <summary>Neutrl 在未披露的储备金问题影响协议储备后，已暂停其 NUSD 合成美元的铸造与赎回，导致流通中的逾 5,360 万美元无法赎回。结构化收益协议 Strata 也暂停了其 Neutrl 市场的铸造、赎回及相关功能。 此次暂停冻结了用户在一个主要合成美元协议中的资金，并对 NUSD 的真实储备支撑提出质疑——NUSD 依赖市场中性策略而非银行存款。这种不确定性可能影响投资者对类似 DeFi 稳定币产品及 Strata 等关联协议的信心。 Neutrl 未指明受影响的资产或交易对手，也未说明储备金是否遭受已实现损失，或提供恢复运营的时间表。据 RWA.xyz 数据，NUSD 市值约为 5,360 万美元，30 天内下降 18.4%，代币交易价格接近 0.9984 美元。</summary>
-  </entry>
-  <entry>
-    <title>币安因欧盟对俄制裁屏蔽HTX等11家交易所交易</title>
-    <link href="https://news.google.com/rss/articles/CBMixgFBVV95cUxPV2p2RTR4VmY5b2JNSnNkNG9VRUlnSWRrTTQtQUhrSnFBT1AydHRyTzQtcEVkNlA3N1ptbGJEOVBSODZLS0JhZXU2akpzWUhremMtcENEdldUQVFLUEtfbklKenoyVHF0MU4teGV0TTZlQWFtZVVfYXVrQWFuU1VkRlNLZll0eUlMNmp5Q2ZscmJPaDdSdnBsUV9PMjA5c2pFdVVTeWJ3eUY3aWljeE82ejFva2pwT2ZyUEdHNkxzWDhZUEhIc0E?oc=5"/>
-    <id>https://bmt.news/editions/2026-08-15/#google_news:article:94a526de95f1417c</id>
-    <updated>2026-08-15T00:00:00Z</updated>
-    <summary>币安将屏蔽与HTX及其他10家加密货币交易所的交易，以履行欧盟针对俄罗斯的相关制裁义务。该措施共影响11家交易所，但公开点名的只有HTX。 这一举措限制了相关11家交易所的用户在币安转入或转出资金的能力，直接影响市场准入和跨交易所流动性。它也凸显了监管制裁正在重塑主要中心化交易所的运营方式。 其他10家交易所的具体名单尚未公布，公告中也没有提供生效日期。HTX是一家总部位于塞舌尔的交易所，原名火币（Huobi），按交易量计是全球最大的加密货币交易所之一。</summary>
-  </entry>
-  <entry>
-    <title>币安将根据欧盟对俄制裁，封锁与HTX等11家交易所之间的交易</title>
-    <link href="https://news.google.com/rss/articles/CBMiywFBVV95cUxQcXJSRWNTcTVaZl9IMGdDTWEzQ3pGWjNYLUNNWWpETjZ4R1dqR0VlMURRRlZBNXpXT3JqU3YyT2k1ejc0TXQ1QXlGd1lNMHJWbF9JaDItcmRjMDlvekVWNHhoRzFrVnVmUThxcEZZbkhRYmlfUEh0MXhxSXNvcVQwRFRhNlRNUHRyUlNZckh5VEpqeHVSdlJfN3h5OTBJVTVwc2NwZUtWdG00eEg0d2t3QUh0ZE9ucG11b3Z4UmUyZlVWOWtoUkJ2dEJDNA?oc=5"/>
-    <id>https://bmt.news/editions/2026-08-15/#google_news:article:58287830a139493c</id>
-    <updated>2026-08-15T00:00:00Z</updated>
-    <summary>币安将封锁与HTX及其他十家加密货币交易所的交易，以遵守欧盟对俄罗斯的制裁。此限制适用于币安与这些平台之间的转账。 此举表明主要加密货币交易所正在加强合规以避免制裁风险，并且直接影响依赖跨交易所转账的用户。这也表明与俄罗斯相关业务有关的平台面临更大的监管压力。 HTX（原火币网）是一家总部位于塞舌尔的交易所，成立于中国，现已在香港、韩国、日本和美国设有办公室。欧盟制裁规则针对与俄罗斯有关的实体，币安的交易所层面限制是一种防止规避制裁的合规回应。</summary>
   </entry>
 </feed>

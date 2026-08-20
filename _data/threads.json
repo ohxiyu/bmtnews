@@ -1,16 +1,88 @@
 {
   "threads": [
     {
-      "thread_id": "tf39e213c53",
-      "latest_date": "2026-08-19",
+      "thread_id": "t8bddfe17b4",
+      "latest_date": "2026-08-20",
       "first_date": "2026-08-10",
       "days": 2,
       "entries": 2,
       "category": "crypto",
-      "title_zh": "Bybit称阻止7亿美元损失，此前遭15亿黑客攻击",
-      "title_en": "Bybit Blocks $700M in Further Losses After Record $1.5B Hack",
-      "summary_zh": "Bybit表示，在遭受创纪录的15亿美元黑客攻击后，该平台又阻止了7亿美元的潜在进一步损失。这一公告既凸显了入侵的规模，也反映了平台采取的缓解措施。 这是有史以来规模最大的加密货币交易所黑客攻击之一，直接影响用户资金和运营信任。该事件引发了对托管安全的担忧，并可能促使监管机构加强对交易所保护措施的关注。 被盗的15亿美元构成重大损失，而7亿美元的数字代表据称原本面临风险但最终得以保全的额外资金。Bybit用于阻止这些潜在损失的具体机制尚未公布。",
-      "summary_en": "Bybit said it blocked $700 million in potential further losses after a record-breaking $1.5 billion hack on the exchange. The announcement highlights both the scale of the breach and the platform's mitigation efforts. This is one of the largest crypto exchange hacks ever and directly affects user funds and operational trust. The incident raises concerns about custodial security and may intensify regulatory focus on exchange protections. The $1.5 billion stolen amounts to a major loss, while the $700 million figure represents additional funds that were reportedly at risk but ultimately saved. The exact mechanism Bybit used to block those potential losses has not been disclosed."
+      "title_zh": "特朗普称CFTC正以合规方式推动Hyperliquid进入美国，HYPE代币暴涨",
+      "title_en": "HYPE Token Surges as Trump Says CFTC Working to Bring Hyperliquid to US",
+      "summary_zh": "特朗普总统宣布，CFTC主席Mike Selig正努力以“完全合规合法的方式”将Hyperliquid引入美国，消息传出后HYPE代币价格大涨。 这是罕见的一次总统直接背书特定加密平台，预示着Hyperliquid可能获得监管批准并进入美国市场。若推进成功，可能为美国商品法下去中心化交易所的监管开创先例，并提振更广泛的DeFi领域。 声明点名CFTC主席Mike Selig牵头，表明此次由CFTC而非SEC承担主要角色。代币上涨反映了市场乐观情绪，但该计划仍是一则声明，并非最终规则或正式批准。",
+      "summary_en": "President Trump announced that CFTC Chair Mike Selig is working to bring Hyperliquid into the U.S. in a 'fully compliant and legal fashion,' and the HYPE token surged on the news. This marks a rare direct presidential endorsement of a specific crypto platform, signaling potential regulatory approval and US market access for Hyperliquid. If completed, it could set a precedent for how decentralized exchanges are treated under US commodities law and boost the broader DeFi sector. The statement names CFTC Chair Mike Selig as the lead, indicating the CFTC rather than the SEC is taking the primary role. The token's surge reflects market optimism, but the plan remains a statement, not a final rule or formal approval."
+    },
+    {
+      "thread_id": "tf39e213c53",
+      "latest_date": "2026-08-20",
+      "first_date": "2026-08-10",
+      "days": 3,
+      "entries": 3,
+      "category": "crypto",
+      "title_zh": "Bybit在14.6亿美元黑客攻击后拦截超7亿美元潜在损失",
+      "title_en": "Bybit Intercepts $700M in Potential Losses After $1.46B Hack",
+      "summary_zh": "据Crypto News报道，Bybit在遭遇14.6亿美元黑客攻击后，成功拦截了超过7亿美元的潜在额外损失。这是加密货币史上最大交易所安全漏洞中的一次重大止损。 此次拦截表明，交易所在遭受攻击后仍能主动追回或保护大部分资产，这可能有助于恢复用户信任。在人们对交易所安全的信心脆弱之际，这也影响着市场情绪。 报道未说明拦截资金的具体方式，但此举降低了14.6亿美元被盗事件带来的潜在总损失。",
+      "summary_en": "Bybit prevented over $700 million in additional potential losses following its $1.46 billion hack, according to Crypto News. This marks a major mitigation in the largest exchange security breach in crypto history. The interception signals that exchanges can actively recover or protect a significant portion of assets after a breach, which may help restore user trust. It also affects market sentiment at a time when confidence in exchange security is fragile. The report did not specify the exact methods used to intercept the funds, but the action reduced the total potential loss from the $1.46 billion theft."
+    },
+    {
+      "thread_id": "t5ccef86868",
+      "latest_date": "2026-08-20",
+      "first_date": "2026-08-13",
+      "days": 3,
+      "entries": 4,
+      "category": "crypto",
+      "title_zh": "Gnosis Chain 将放弃验证者集，转为以太坊结算 Rollup",
+      "title_en": "Gnosis Chain to Abandon Its Validator Set and Settle to Ethereum",
+      "summary_zh": "GnosisDAO 批准了一项提案，将 Gnosis Chain 从独立的 Layer 1 转变为由以太坊结算的 rollup，解锁了约 350,000 枚 GNO，并终止了由金库资助的质押奖励。 这标志着以太坊早期侧链之一发生重大架构转变，影响其验证者、金库和质押经济。这也反映了链向以太坊寻求安全性与结算的更广泛趋势。 该提案解锁了此前预留用于质押奖励的约 350,000 枚 GNO，并终止了由金库资助的质押奖励计划。这一转变将显著削弱 Gnosis Chain 自身验证者集的作用。",
+      "summary_en": "GnosisDAO approved a proposal to transition Gnosis Chain from a standalone Layer 1 to an Ethereum-settled rollup, unlocking approximately 350,000 GNO and ending treasury-funded staking rewards. This marks a major architectural shift for one of Ethereum's earliest sidechains, affecting its validators, treasury, and staking economics. It also reflects a broader trend of chains moving to Ethereum for security and settlement. The proposal unlocks roughly 350,000 GNO tokens that were previously reserved for staking rewards, and it terminates the treasury-funded staking reward program. The transition will significantly reduce the role of Gnosis Chain's own validator set."
+    },
+    {
+      "thread_id": "t86494e782a",
+      "latest_date": "2026-08-20",
+      "first_date": "2026-08-15",
+      "days": 2,
+      "entries": 2,
+      "category": "policy",
+      "title_zh": "特朗普联合加密领袖敦促参议院通过CLARITY法案",
+      "title_en": "Trump Urges Senate to Pass CLARITY Act With Crypto Leaders",
+      "summary_zh": "美国总统特朗普在白宫新闻发布会上与Coinbase首席执行官Brian Armstrong以及Gemini联合创始人Cameron和Tyler Winklevoss一同敦促参议院通过《数字资产市场清晰度法案》（CLARITY Act）。众议院已于2025年7月通过该法案，但参议院已将其搁置数月。 这一高层背书表明，白宫将加密市场结构问题视为优先事项。若法案通过，将为美国加密市场提供明确的监管分工和更持久的政策确定性。 该法案在参议院面临有关代币化股票、稳定币奖励以及特朗普家族潜在利益冲突的担忧。Armstrong估计，在9月15日处理终结辩论动议后，法案可能获得超过60票支持。",
+      "summary_en": "President Trump held a White House press conference with Coinbase CEO Brian Armstrong and Gemini co-founders Cameron and Tyler Winklevoss, urging the Senate to pass the Digital Asset Market Clarity (CLARITY) Act. The House passed the bill in July 2025, but it has stalled in the Senate for months. This high-level endorsement signals that crypto market structure is a priority for the White House. Passing the bill would give U.S. crypto markets clear jurisdictional rules and more durable policy certainty. The bill faces Senate concerns over tokenized equities, stablecoin rewards, and potential conflicts of interest involving the Trump family. Armstrong estimated the bill could receive more than 60 votes after a cloture motion scheduled for Sept. 15."
+    },
+    {
+      "thread_id": "t34de0d6e41",
+      "latest_date": "2026-08-20",
+      "first_date": "2026-08-16",
+      "days": 2,
+      "entries": 2,
+      "category": "crypto",
+      "title_zh": "日本Metaplanet以1.32亿美元比特币储备交易进军美国",
+      "title_en": "Metaplanet Expands to US With $132M Bitcoin Treasury Deal",
+      "summary_zh": "日本投资公司Metaplanet宣布了一笔1.32亿美元的比特币储备收购交易，作为其进军美国市场计划的一部分。这笔交易是日本公司最大规模的企业比特币储备操作之一。 这反映出比特币作为储备资产在海外机构中日益被接受。一家知名的亚洲公司通过大规模比特币购买进入美国市场，可能鼓励其他国际企业效仿。 这1.32亿美元的资金部署明确与Metaplanet的美国扩张战略相关。比特币储备策略通常涉及将公司现金储备的一部分配置到比特币，以对冲法币通胀并实现资本多元化。",
+      "summary_en": "Japanese investment firm Metaplanet announced a $132 million Bitcoin treasury acquisition as part of its expansion into the US market. The deal marks one of the largest corporate Bitcoin treasury moves by a Japanese company. This reflects growing institutional adoption of Bitcoin as a treasury reserve asset beyond US borders. A high-profile Asian firm entering the US market with a large BTC purchase could encourage other international corporations to follow suit. The $132M deployment is explicitly tied to Metaplanet's US expansion strategy. Bitcoin treasury strategies typically involve allocating a portion of corporate cash reserves into BTC to hedge against fiat inflation and diversify capital."
+    },
+    {
+      "thread_id": "t38aef9b52f",
+      "latest_date": "2026-08-20",
+      "first_date": "2026-08-17",
+      "days": 2,
+      "entries": 2,
+      "category": "technology",
+      "title_zh": "AI模型路由平台OpenRouter加入Stripe，据报交易超70亿美元",
+      "title_en": "AI Router OpenRouter Joins Stripe in Reported $7B+ Deal",
+      "summary_zh": "OpenRouter正式宣布加入Stripe，证实了此前关于这家支付巨头将以超过70亿美元收购该AI模型路由平台的报道。这一公告发布前，有关收购的传闻已在社区引发广泛讨论。 这笔收购将最广泛使用的AI模型路由平台之一纳入一家大型支付基础设施公司的版图，对AI开发者和整个AI工具生态影响重大。它也表明，随着对统一模型访问需求的增长，AI基础设施层正在持续整合。 OpenRouter为开发者提供统一API和市场，覆盖来自多家提供商的数百个AI模型，并支持自动路由和故障回退功能。报道中提到的超过70亿美元估值并未在公告中得到官方确认，公告只是引用了此前的收购报道。",
+      "summary_en": "OpenRouter officially announced it is joining Stripe, confirming earlier reports that the payments giant would acquire the AI model routing platform for $7B+. The announcement follows a widely discussed acquisition story that had already generated significant community attention. This acquisition brings one of the most widely used AI model routing platforms under the umbrella of a major payments infrastructure company, with significant implications for AI developers and the broader AI tooling ecosystem. It also signals continued consolidation in the AI infrastructure layer as demand for unified model access grows. OpenRouter provides developers with a unified API and marketplace spanning hundreds of AI models from multiple providers, with automatic routing and fallback features. The reported valuation of over $7 billion was not officially confirmed in the announcement itself, which linked back to earlier acquisition reports."
+    },
+    {
+      "thread_id": "t78a9958948",
+      "latest_date": "2026-08-20",
+      "first_date": "2026-08-17",
+      "days": 2,
+      "entries": 4,
+      "category": "crypto",
+      "title_zh": "六个漏洞利用导致Maya Protocol暂停，超140万美元比特币被盗",
+      "title_en": "Six-Bug Exploit Halts Maya Protocol After $1.4 Million in Bitcoin Stolen",
+      "summary_zh": "Maya Protocol在攻击者利用六个漏洞盗走约170万美元的比特币和其他资产后，暂停了MAYAChain网络。网络已停止以控制损失，CACAO价格暴跌近89%，池内价值缩水约1090万美元。 这是跨链DeFi领域的一次重大安全事件，表明即使经过审计的协议也可能存在隐藏漏洞。CACAO代币的暴跌和流动性池的损失直接影响用户和流动性提供者，同时可能损害整个市场对跨链桥的信心。 事后分析称，攻击者通过一笔包含23条消息的MsgDeposit交易触发虚假的“盗窃”检测，将低流动性池的CACAO余额虚增4945万枚，随后提取了4887万枚CACAO。Maya表示，尽管Halborn和Fable 5进行了审计，这些漏洞仍潜藏了三到四年未被发现，而疑似攻击者地址收到了20.83枚BTC。",
+      "summary_en": "Maya Protocol halted MAYAChain after an attacker exploited six bugs to drain roughly $1.7 million in Bitcoin and other assets. The network was paused to contain the damage, and CACAO plunged nearly 89% as pool value fell by about $10.9 million. This is a significant security incident for cross-chain DeFi, demonstrating that even audited protocols can contain hidden vulnerabilities. The CACAO token collapse and liquidity pool losses directly affect users and liquidity providers, while broader market sentiment toward cross-chain bridges may be damaged. The post-mortem said the attacker used a single 23-message MsgDeposit transaction to trigger a false theft detection, inflating a low-liquidity pool's CACAO balance by 49.45 million before withdrawing 48.87 million CACAO. Maya said the bugs had gone undetected for three to four years despite audits by Halborn and Fable 5, and the suspected attacker address received 20.83 BTC."
     },
     {
       "thread_id": "tadfbe249a5",
@@ -95,18 +167,6 @@
       "title_en": "Israel's Largest Crypto Broker Bits of Gold Breached, 200K Customers Exposed",
       "summary_zh": "以色列最大加密货币经纪商Bits of Gold披露了一起影响约20万客户的数据泄露事件。泄露源于第三方数据分析提供商被入侵，涉及姓名、国民身份证号码、银行账户信息和公开钱包地址，但资金和私钥未受影响。 此事件凸显了加密货币公司通过外部供应商遭受供应链攻击的脆弱性，敏感金融和身份数据的暴露可能使受影响用户面临更高的欺诈和钓鱼风险。这也加入了近期一系列加密货币行业数据泄露事件，可能削弱客户对托管经纪商的信任。 Bits of Gold表示，没有资金、密码、私钥、CVV码或身份证扫描件被泄露，并在发现后立即断开了受影响系统。公司认为此次攻击是更广泛的全球性事件的一部分，并已与网络安全事件响应公司合作展开调查。",
       "summary_en": "Bits of Gold, Israel's largest crypto broker, disclosed a data breach affecting about 200,000 customers. The breach occurred via a third-party data analytics provider, exposing names, national ID numbers, bank details, and public wallet addresses, but not funds or private keys. This incident underscores the vulnerability of crypto firms to supply-chain attacks via external vendors, and the exposure of sensitive financial and identity data could put affected users at heightened risk of fraud and phishing. It also adds to a string of recent crypto industry data breaches, potentially eroding customer trust in custodial brokers. Bits of Gold stated that no funds, passwords, private keys, CVV codes, or scanned IDs were exposed, and that it disconnected the affected system upon detection. The company believes the attack was part of a broader global incident, and it has launched an investigation with a cyber incident response firm."
-    },
-    {
-      "thread_id": "t5ccef86868",
-      "latest_date": "2026-08-17",
-      "first_date": "2026-08-13",
-      "days": 2,
-      "entries": 3,
-      "category": "crypto",
-      "title_zh": "灰度将质押奖励转为股息，以太坊和Solana拟削减质押收益",
-      "title_en": "Grayscale Pays Staking Rewards as Dividends as ETH, SOL Weigh Yield Cuts",
-      "summary_zh": "灰度宣布将从8月7日左右开始将其以太坊和Solana ETF的质押奖励转换为现金股息。与此同时，Solana的SIMD-0550和以太坊的EIP-8363提案拟削减协议级质押发行量，从而直接减少这些产品的收入来源。 这是质押奖励首次被包装为股息提供给华尔街ETF投资者，使机构产品直接与协议收益挂钩。这些提案的治理结果将决定市场更看重代币稀缺性还是收入，并对验证者、ETF资金流和DeFi收益产生连锁影响。 Solana的SIMD-0550拟将年度去通胀率从15%翻倍至30%，使模拟质押收益率在三年内从5.84%降至2.25%，并在六年内减少1890万SOL的发行。以太坊的EIP-8363拟随着质押参与率上升而燃烧越来越多的验证者奖励，当约一半ETH被质押时达到100%燃烧。",
-      "summary_en": "Grayscale announced it will convert staking rewards from its Ethereum and Solana ETFs into cash dividends starting around Aug. 7. At the same time, Solana's SIMD-0550 and Ethereum's EIP-8363 propose cutting protocol-level staking issuance, directly reducing the income source for these products. This is the first time staking rewards have been packaged as dividends for Wall Street ETF investors, tying institutional products directly to protocol yield. The governance decisions on these proposals will shape whether markets value token scarcity over income, with knock-on effects for validators, ETF flows, and DeFi yields. Solana's SIMD-0550 would double the annual disinflation rate from 15% to 30%, lowering modeled staking yield from 5.84% to 2.25% over three years and reducing SOL's six-year issuance by 18.9 million tokens. Ethereum's EIP-8363 would burn an increasing share of validator rewards as staking participation rises, hitting 100% when roughly half of ETH is staked."
     },
     {
       "thread_id": "t563a1db53d",

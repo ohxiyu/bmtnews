@@ -4,7 +4,21 @@
   <link href="https://bmt.news/feeds/policy-zh.xml" rel="self"/>
   <link href="https://bmt.news/"/>
   <id>https://bmt.news/feeds/policy-zh.xml</id>
-  <updated>2026-08-19T00:00:00Z</updated>
+  <updated>2026-08-20T00:00:00Z</updated>
+  <entry>
+    <title>特朗普称CFTC正以合规方式推动Hyperliquid进入美国，HYPE代币暴涨</title>
+    <link href="https://www.theblock.co/news/regulation/2026-08-19-hype-token-surges-trump-says-cftc-bring-hyperliquid-us-fully-compliant-fashion-412262"/>
+    <id>https://bmt.news/editions/2026-08-20/#rss:www.theblock.co_rss.xml:39e5036acf3f8dda</id>
+    <updated>2026-08-20T00:00:00Z</updated>
+    <summary>特朗普总统宣布，CFTC主席Mike Selig正努力以“完全合规合法的方式”将Hyperliquid引入美国，消息传出后HYPE代币价格大涨。 这是罕见的一次总统直接背书特定加密平台，预示着Hyperliquid可能获得监管批准并进入美国市场。若推进成功，可能为美国商品法下去中心化交易所的监管开创先例，并提振更广泛的DeFi领域。 声明点名CFTC主席Mike Selig牵头，表明此次由CFTC而非SEC承担主要角色。代币上涨反映了市场乐观情绪，但该计划仍是一则声明，并非最终规则或正式批准。</summary>
+  </entry>
+  <entry>
+    <title>特朗普联合加密领袖敦促参议院通过CLARITY法案</title>
+    <link href="https://cointelegraph.com/news/donald-trump-clarity-act-passage-crypto-leaders?utm_source=rss_feed&amp;utm_medium=rss&amp;utm_campaign=rss_partner_inbound"/>
+    <id>https://bmt.news/editions/2026-08-20/#rss:cointelegraph.com_rss:fbd79f0e42162a7f</id>
+    <updated>2026-08-20T00:00:00Z</updated>
+    <summary>美国总统特朗普在白宫新闻发布会上与Coinbase首席执行官Brian Armstrong以及Gemini联合创始人Cameron和Tyler Winklevoss一同敦促参议院通过《数字资产市场清晰度法案》（CLARITY Act）。众议院已于2025年7月通过该法案，但参议院已将其搁置数月。 这一高层背书表明，白宫将加密市场结构问题视为优先事项。若法案通过，将为美国加密市场提供明确的监管分工和更持久的政策确定性。 该法案在参议院面临有关代币化股票、稳定币奖励以及特朗普家族潜在利益冲突的担忧。Armstrong估计，在9月15日处理终结辩论动议后，法案可能获得超过60票支持。</summary>
+  </entry>
   <entry>
     <title>SEC提出《加密资产条例》新规框架</title>
     <link href="https://www.sec.gov/newsroom/press-releases/2026-76-sec-proposes-new-regulation-crypto-assets"/>
