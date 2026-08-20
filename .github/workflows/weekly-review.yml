@@ -11,6 +11,11 @@ on:
   # 09:13 Asia/Shanghai. The minute is off the hour and off the half hour
   # because those slots are the most likely to be delayed or dropped, and a
   # weekly job that gets dropped loses the whole week.
+  # TEMPORARY: one-off manual run. workflow_dispatch is unavailable to
+  # the automation token, so this branch stands in for the button.
+  # Delete this branch after the run; main never carries this trigger.
+  push:
+    branches: ['ops/manual-run-2026-08-20']
   schedule:
     - cron: '13 1 * * 1'
   workflow_dispatch:
