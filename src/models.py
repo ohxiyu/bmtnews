@@ -525,7 +525,9 @@ class XDeliveryConfig(BaseModel):
     compose: Literal["ai", "template"] = "ai"
     # Weighted characters, counted the way X does (CJK counts double).
     # 280 is the standard-account cap; Premium accounts post far longer.
-    max_post_chars: int = Field(default=1000, ge=280, le=25000)
+    # The narrative brief targets 360-600 Chinese characters, so the default
+    # leaves headroom above the 1200 units a 600-character post costs.
+    max_post_chars: int = Field(default=1600, ge=280, le=25000)
 
     @field_validator("site_url")
     @classmethod

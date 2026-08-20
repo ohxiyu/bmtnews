@@ -256,11 +256,22 @@ def test_weighted_length_collapses_urls_to_a_tco_token() -> None:
 
 # --- AI-composed posts ----------------------------------------------------
 
+# A post at the length the narrative brief asks for: the whole event told
+# as a story, with the timeline and the numbers in it.
 GOOD = (
     "比特币这次分叉，争的不是钱，是能不能往链上写图片。\n\n"
-    "BIP-110 想把铭文这类非金融数据挤出交易，矿工信号只有 2.6%，"
-    "远不到 55% 的门槛，支持者自己拉了条少数链。\n\n"
-    "麻烦不在分叉本身，在没有重放保护：两条链前期认同同一笔已签名交易。"
+    "BIP-110 是一项想把铭文这类非金融数据挤出交易的提案，去年底进入激活流程，"
+    "给了一年的时间窗口。到区块 961,632 自动执行条款触发时，矿工信号率只有 2.6%，"
+    "离 55% 的激活门槛差着一个数量级。按原本的设计，这时候提案应该直接作废；"
+    "但支持者选择不认这个结果，在同一高度拉出了一条少数链，主网则继续按原规则推进。\n\n"
+    "真正的麻烦不在分叉本身，在于没有重放保护。两条链在分裂初期共享同一套签名规则，"
+    "意味着一笔在主网上广播的已签名交易，可以被原封不动搬到另一条链上重放一次。"
+    "对普通持有者来说，结果就是在一条链上转账，另一条链上的等额资产可能同时被人花掉。"
+    "比特币开发者 Kevin Loaec 已经公开警告，大额地址会是最先被盯上的目标，"
+    "建议非专业用户在两条链彻底分离之前不要动币。\n\n"
+    "值得记住的是这次共识失败的形状：机制本身跑完了全流程并给出了明确否决，"
+    "分裂发生在有人拒绝接受机制的输出。链上治理能约束的是计票，"
+    "约束不了不认账的一方，而代价最后由不参与治理的普通用户承担。"
 )
 
 
@@ -291,7 +302,7 @@ def test_sanitize_rejects_unusable_output() -> None:
     # Too short to be a real post.
     assert sanitize_composed_post("分叉了。", limit=1000) is None
     # Over the configured limit.
-    assert sanitize_composed_post("超长" * 400, limit=280) is None
+    assert sanitize_composed_post("超长" * 500, limit=1600) is None
 
 
 class ComposingClient:
@@ -384,3 +395,57 @@ def test_slot_falls_back_to_template_when_composer_fails(
 
 
 
+
+
+async def _test_compose_shows_the_article_body() -> None:
+    """A narrative post needs the timeline, which only the body carries."""
+    from src.services.x_delivery import compose_story_post
+
+    item = make_item("标题")
+    item.content = "区块 961,632 触发自动执行条款，矿工信号率 2.6%。" * 40
+    item.metadata["detailed_summary_zh"] = "摘要内容"
+    client = ComposingClient(GOOD)
+    await compose_story_post(client, item, language="zh", limit=1600)
+    sent = client.calls[0]["user"]
+    assert "区块 961,632" in sent
+    assert "360-600" in client.calls[0]["system"]
+
+
+def test_compose_shows_the_article_body() -> None:
+    asyncio.run(_test_compose_shows_the_article_body())
+
+
+async def _test_compose_survives_a_missing_article_body() -> None:
+    from src.services.x_delivery import compose_story_post
+
+    item = make_item("标题")
+    item.content = None
+    client = ComposingClient(GOOD)
+    assert await compose_story_post(client, item, language="zh", limit=1600) == GOOD
+
+
+def test_compose_survives_a_missing_article_body() -> None:
+    asyncio.run(_test_compose_survives_a_missing_article_body())
+
+
+def test_compose_caps_the_article_excerpt() -> None:
+    """Whole articles would make every post expensive for no extra signal."""
+    from src.services.x_delivery import ARTICLE_EXCERPT_CHARS, compose_story_post
+
+    item = make_item("标题")
+    item.content = "囧" * (ARTICLE_EXCERPT_CHARS * 3)
+    client = ComposingClient(GOOD)
+    asyncio.run(compose_story_post(client, item, language="zh", limit=1600))
+    assert client.calls[0]["user"].count("囧") == ARTICLE_EXCERPT_CHARS
+
+
+def test_sanitize_rejects_a_post_that_stops_short_of_the_story() -> None:
+    """The old three-line format is now a failed generation, not a terse one."""
+    from src.services.x_delivery import sanitize_composed_post
+
+    short = (
+        "比特币这次分叉，争的不是钱，是能不能往链上写图片。\n\n"
+        "BIP-110 想把铭文挤出交易，矿工信号只有 2.6%，远不到 55% 的门槛。"
+    )
+    assert sanitize_composed_post(short, limit=1600) is None
+    assert sanitize_composed_post(GOOD, limit=1600) == GOOD
