@@ -51,6 +51,7 @@ async def generate_edition_overview(
                 language_name=language_name,
                 items="\n".join(lines),
             ),
+            response_format="text",
         )
     except Exception as exc:
         logger.warning("Edition overview generation failed: %s", exc)

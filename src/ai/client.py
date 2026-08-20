@@ -3,7 +3,7 @@
 import os
 import re
 from abc import ABC, abstractmethod
-from typing import Any, Dict, List, Optional
+from typing import Any, Dict, List, Literal, Optional
 from openai import AsyncAzureOpenAI, AsyncOpenAI
 from anthropic import AsyncAnthropic
 from google import genai
@@ -86,6 +86,13 @@ def _normalize_ollama_base_url(base_url: str) -> str:
     return f"{normalized}/v1"
 
 
+#: Whether a call wants a JSON object back or free prose. This has to be
+#: per-call: providers that offer a JSON mode reject a request that asks for
+#: it without the word "json" in the prompt, and — worse — happily wrap prose
+#: in JSON when the prompt does happen to contain it.
+ResponseFormat = Literal["json", "text"]
+
+
 class AIClient(ABC):
     """Abstract base class for AI clients."""
 
@@ -96,6 +103,7 @@ class AIClient(ABC):
         user: str,
         temperature: Optional[float] = None,
         max_tokens: Optional[int] = None,
+        response_format: ResponseFormat = "json",
     ) -> str:
         """Generate completion from AI model.
 
@@ -104,6 +112,10 @@ class AIClient(ABC):
             user: User prompt
             temperature: Optional sampling temperature override
             max_tokens: Optional maximum tokens override
+            response_format: "json" to request a JSON object, "text" for
+                prose. Prose prompts must pass "text": a provider JSON mode
+                either rejects them outright or forces the prose into a JSON
+                wrapper that then reaches the page.
 
         Returns:
             str: Generated completion text
@@ -139,6 +151,7 @@ class AnthropicClient(AIClient):
         user: str,
         temperature: Optional[float] = None,
         max_tokens: Optional[int] = None,
+        response_format: ResponseFormat = "json",
     ) -> str:
         """Generate completion using Claude.
 
@@ -242,6 +255,7 @@ class OpenAIClient(AIClient):
         user: str,
         temperature: Optional[float] = None,
         max_tokens: Optional[int] = None,
+        response_format: ResponseFormat = "json",
     ) -> str:
         """Generate completion using OpenAI-compatible API.
 
@@ -268,6 +282,7 @@ class OpenAIClient(AIClient):
                 temperature=temperature,
                 max_tokens=max_tokens,
                 include_temperature=self._supports_temperature,
+                response_format=response_format,
                 use_max_completion_tokens=self._use_max_completion_tokens,
             )
         except Exception as exc:
@@ -279,6 +294,7 @@ class OpenAIClient(AIClient):
                     temperature=temperature,
                     max_tokens=max_tokens,
                     include_temperature=False,
+                    response_format=response_format,
                     use_max_completion_tokens=self._use_max_completion_tokens,
                 )
             elif not self._use_max_completion_tokens and self._is_max_tokens_unsupported(str(exc)):
@@ -289,6 +305,7 @@ class OpenAIClient(AIClient):
                     temperature=temperature,
                     max_tokens=max_tokens,
                     include_temperature=self._supports_temperature,
+                    response_format=response_format,
                     use_max_completion_tokens=True,
                 )
             else:
@@ -311,6 +328,7 @@ class OpenAIClient(AIClient):
         max_tokens: int,
         include_temperature: bool,
         use_max_completion_tokens: bool,
+        response_format: ResponseFormat = "json",
     ):
         request_kwargs = {
             "model": self.model,
@@ -323,7 +341,7 @@ class OpenAIClient(AIClient):
         request_kwargs[token_param] = max_tokens
         if include_temperature:
             request_kwargs["temperature"] = temperature
-        if self.provider not in self._NO_RESPONSE_FORMAT:
+        if response_format == "json" and self.provider not in self._NO_RESPONSE_FORMAT:
             request_kwargs["response_format"] = {"type": "json_object"}
         return await self.client.chat.completions.create(**request_kwargs)
 
@@ -391,6 +409,7 @@ class AzureOpenAIClient(AIClient):
         user: str,
         temperature: Optional[float] = None,
         max_tokens: Optional[int] = None,
+        response_format: ResponseFormat = "json",
     ) -> str:
         """Generate completion using Azure OpenAI.
 
@@ -412,6 +431,7 @@ class AzureOpenAIClient(AIClient):
                 user=user,
                 temperature=temperature,
                 max_tokens=max_tokens,
+                response_format=response_format,
                 use_max_completion_tokens=self._use_max_completion_tokens,
             )
         except Exception as exc:
@@ -425,6 +445,7 @@ class AzureOpenAIClient(AIClient):
                 user=user,
                 temperature=temperature,
                 max_tokens=max_tokens,
+                response_format=response_format,
                 use_max_completion_tokens=fallback,
             )
 
@@ -445,6 +466,7 @@ class AzureOpenAIClient(AIClient):
         temperature: float,
         max_tokens: int,
         use_max_completion_tokens: bool,
+        response_format: ResponseFormat = "json",
     ):
         tokens_kwarg = (
             {"max_completion_tokens": max_tokens}
@@ -458,7 +480,11 @@ class AzureOpenAIClient(AIClient):
                 {"role": "user", "content": user},
             ],
             temperature=temperature,
-            response_format={"type": "json_object"},
+            **(
+                {"response_format": {"type": "json_object"}}
+                if response_format == "json"
+                else {}
+            ),
             **tokens_kwarg,
         )
 
@@ -496,6 +522,7 @@ class GeminiClient(AIClient):
         user: str,
         temperature: Optional[float] = None,
         max_tokens: Optional[int] = None,
+        response_format: ResponseFormat = "json",
     ) -> str:
         """Generate completion using Gemini.
 
@@ -518,7 +545,11 @@ class GeminiClient(AIClient):
                 system_instruction=system,
                 temperature=temperature,
                 max_output_tokens=max_tokens,
-                response_mime_type="application/json"
+                response_mime_type=(
+                    "application/json"
+                    if response_format == "json"
+                    else "text/plain"
+                ),
             )
         )
         usage = getattr(response, "usage_metadata", None)
@@ -596,12 +627,19 @@ class ChainedAIClient(AIClient):
         user: str,
         temperature: Optional[float] = None,
         max_tokens: Optional[int] = None,
+        response_format: ResponseFormat = "json",
     ) -> str:
         last_error: Optional[Exception] = None
         for i in range(len(self.configs)):
             try:
                 client = self._get_client(i)
-                result = await client.complete(system, user, temperature, max_tokens)
+                result = await client.complete(
+                    system,
+                    user,
+                    temperature,
+                    max_tokens,
+                    response_format=response_format,
+                )
                 if not result or not result.strip():
                     raise ValueError("Empty response from provider")
                 return result

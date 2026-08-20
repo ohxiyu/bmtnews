@@ -5,9 +5,14 @@ name: BMTNews Weekly Review
 # it cannot disturb the daily edition.
 
 on:
+  # Written in UTC, like every other schedule here: a `timezone` key on a
+  # cron entry is not part of the documented workflow syntax, so relying on
+  # it makes the fire time depend on undocumented behaviour. 01:13 UTC is
+  # 09:13 Asia/Shanghai. The minute is off the hour and off the half hour
+  # because those slots are the most likely to be delayed or dropped, and a
+  # weekly job that gets dropped loses the whole week.
   schedule:
-    - cron: '30 9 * * 1'
-      timezone: 'Asia/Shanghai'
+    - cron: '13 1 * * 1'
   workflow_dispatch:
     inputs:
       end_date:

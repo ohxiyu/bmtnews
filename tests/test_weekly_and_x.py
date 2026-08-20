@@ -4,6 +4,8 @@ import asyncio
 from datetime import date, datetime, timezone
 from pathlib import Path
 
+import pytest
+
 from src.archive import ArchiveRecord
 from src.models import ContentItem, SourceType, XDeliveryConfig
 from src.services.x_delivery import (
@@ -44,8 +46,12 @@ class StubClient:
         self.response = response
         self.calls: list[dict] = []
 
-    async def complete(self, *, system: str, user: str) -> str:
-        self.calls.append({"system": system, "user": user})
+    async def complete(
+        self, *, system: str, user: str, response_format: str = "json"
+    ) -> str:
+        self.calls.append(
+            {"system": system, "user": user, "response_format": response_format}
+        )
         if isinstance(self.response, Exception):
             raise self.response
         return self.response
@@ -74,11 +80,22 @@ async def _test_generate_weekly_digest_returns_body() -> None:
     assert "Simplified Chinese" in client.calls[0]["user"]
 
 
-async def _test_generate_weekly_digest_is_fail_soft() -> None:
+async def _test_weekly_digest_asks_for_prose_not_json() -> None:
+    """A JSON-mode request is rejected outright by providers that offer one."""
+    context = build_weekly_context([make_record("2026-08-09")], end=date(2026, 8, 9))
+    client = StubClient()
+    await generate_weekly_digest(client, context, language="zh")
+    assert client.calls[0]["response_format"] == "text"
+
+
+async def _test_generate_weekly_digest_surfaces_provider_errors() -> None:
+    """Swallowing these is what hid a 400 for two weeks; the caller reports."""
     context = build_weekly_context([make_record("2026-08-09")], end=date(2026, 8, 9))
     client = StubClient(response=RuntimeError("boom"))
-    assert await generate_weekly_digest(client, context, language="zh") is None
+    with pytest.raises(RuntimeError, match="boom"):
+        await generate_weekly_digest(client, context, language="zh")
 
+    # Nothing to write about is still a quiet None, not an error.
     empty = build_weekly_context([], end=date(2026, 8, 9))
     assert await generate_weekly_digest(StubClient(), empty, language="zh") is None
 
@@ -245,8 +262,12 @@ def test_generate_weekly_digest_returns_body() -> None:
     asyncio.run(_test_generate_weekly_digest_returns_body())
 
 
-def test_generate_weekly_digest_is_fail_soft() -> None:
-    asyncio.run(_test_generate_weekly_digest_is_fail_soft())
+def test_generate_weekly_digest_surfaces_provider_errors() -> None:
+    asyncio.run(_test_generate_weekly_digest_surfaces_provider_errors())
+
+
+def test_weekly_digest_asks_for_prose_not_json() -> None:
+    asyncio.run(_test_weekly_digest_asks_for_prose_not_json())
 
 
 def test_x_publisher_skips_without_credentials(monkeypatch) -> None:
@@ -308,3 +329,50 @@ async def _test_x_delivery_skips_languages_already_posted() -> None:
 
 def test_x_delivery_skips_languages_already_posted() -> None:
     asyncio.run(_test_x_delivery_skips_languages_already_posted())
+
+
+def test_prose_prompts_never_request_json_mode() -> None:
+    """The defect that broke the weekly review, the lede, and X composition.
+
+    A provider JSON mode fails two ways on a prose prompt: it is rejected
+    outright when the prompt never says "json" (weekly review, calibration,
+    X posts), and when the prompt happens to contain the word it succeeds and
+    wraps the prose in JSON that then reaches the page (the edition lede).
+    Neither is visible from the prompt text, so it is asserted here.
+    """
+    import inspect
+    import re
+
+    from src.ai import prompts as prompt_module
+
+    prose_prompts = (
+        "WEEKLY_DIGEST",
+        "SCORE_CALIBRATION",
+        "X_POST",
+        "EDITION_OVERVIEW",
+    )
+    sources = {
+        "WEEKLY_DIGEST": inspect.getsource(generate_weekly_digest),
+        "SCORE_CALIBRATION": inspect.getsource(
+            __import__("src.weekly", fromlist=["x"]).generate_calibration_review
+        ),
+        "X_POST": inspect.getsource(
+            __import__("src.services.x_delivery", fromlist=["x"]).compose_story_post
+        ),
+        "EDITION_OVERVIEW": inspect.getsource(
+            __import__("src.ai.summarizer", fromlist=["x"]).generate_edition_overview
+        ),
+    }
+    for name in prose_prompts:
+        # The prompt exists and is prose, not a JSON schema request.
+        assert hasattr(prompt_module, f"{name}_SYSTEM")
+        assert 'response_format="text"' in sources[name], (
+            f"{name} composes prose but does not ask for text mode"
+        )
+
+    # And the JSON callers still get JSON mode by default.
+    analyzer_source = inspect.getsource(
+        __import__("src.ai.analyzer", fromlist=["x"]).ContentAnalyzer._analyze_item
+    )
+    assert "response_format" not in analyzer_source
+    assert re.search(r"json", prompt_module.CONTENT_ANALYSIS_USER, re.I)

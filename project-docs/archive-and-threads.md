@@ -90,7 +90,7 @@
 
 ## 周报与评分校准
 
-`uv run bmtnews --mode weekly`（每周一 09:30 自动触发，也可手动 dispatch）：
+`uv run bmtnews --mode weekly`（每周一 09:13 东八区自动触发，也可手动 dispatch）：
 
 - **周报**：从归档取过去 7 天，AI 按「本周主线 / 持续追踪 / 值得记住」
   三段成文，发布到 `/weekly/<date>/`
@@ -99,6 +99,21 @@
   `docs/_data/calibration/<date>.md`（不对外链接，供你调 prompt 参考）
 
 校准复盘是**建议性**的：它不会自动改评分规则，改不改由你决定。
+
+### 散文类调用必须显式要求 text
+
+周报、评分校准、日报导语、X 文案这四处产出的是散文，不是 JSON。
+它们调用 `ai_client.complete(...)` 时**必须传 `response_format="text"`**：
+
+供应商的 JSON 模式在散文 prompt 上有两种失败方式，而且都不明显——
+
+- prompt 里没有 "json" 这个词 → 直接 **400 拒绝**
+  （`Prompt must contain the word 'json' in some form to use 'response_format'`）
+- prompt 里碰巧有这个词（比如导语 prompt 写了「不要返回 JSON」）→ 请求通过，
+  但模型被**强制**包成 JSON，`{"lede": "..."}` 就这样上了页面
+
+这两种症状看起来毫无关系，根因是同一个。`tests/test_weekly_and_x.py` 里有一条
+断言直接盯住这四个调用点，新增散文类调用时会被它拦住。
 
 ## 多源确认
 

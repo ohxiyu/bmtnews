@@ -310,8 +310,12 @@ class ComposingClient:
         self.response = response
         self.calls: list[dict] = []
 
-    async def complete(self, *, system: str, user: str) -> str:
-        self.calls.append({"system": system, "user": user})
+    async def complete(
+        self, *, system: str, user: str, response_format: str = "json"
+    ) -> str:
+        self.calls.append(
+            {"system": system, "user": user, "response_format": response_format}
+        )
         if isinstance(self.response, Exception):
             raise self.response
         return self.response

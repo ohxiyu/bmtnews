@@ -380,6 +380,7 @@ async def compose_story_post(
                 discussion=field("community_discussion") or "（无）",
                 article=article or "（无）",
             ),
+            response_format="text",
         )
     except Exception as exc:  # noqa: BLE001 - degrade to the fallback
         logger.warning("X post composition failed for %s: %s", item.id, exc)

@@ -132,7 +132,11 @@ async def generate_weekly_digest(
     language: str,
     max_items: int = 60,
 ) -> Optional[str]:
-    """Generate the weekly Markdown body; returns None on any failure."""
+    """Generate the weekly Markdown body.
+
+    Returns None only when there is nothing to write about or the model
+    returned nothing usable. Provider errors are raised, not swallowed.
+    """
     if context.is_empty:
         return None
     from .ai.prompts import WEEKLY_DIGEST_SYSTEM, WEEKLY_DIGEST_USER
@@ -141,19 +145,19 @@ async def generate_weekly_digest(
         context.records,
         key=lambda record: (-(record.score or 0), record.date),
     )[:max_items]
-    try:
-        response = await ai_client.complete(
-            system=WEEKLY_DIGEST_SYSTEM,
-            user=WEEKLY_DIGEST_USER.format(
-                date=context.end.isoformat(),
-                language_name=_LANGUAGE_NAMES.get(language, "English"),
-                items=_format_items(ranked, language),
-                threads=_format_threads(context.threads, language),
-            ),
-        )
-    except Exception as exc:
-        logger.warning("Weekly digest generation failed: %s", exc)
-        return None
+    # Errors propagate to the caller, which owns the run report and can say
+    # *why* nothing was produced. Swallowing them here is what let a 400 from
+    # the provider look like a successful run for two weeks.
+    response = await ai_client.complete(
+        system=WEEKLY_DIGEST_SYSTEM,
+        user=WEEKLY_DIGEST_USER.format(
+            date=context.end.isoformat(),
+            language_name=_LANGUAGE_NAMES.get(language, "English"),
+            items=_format_items(ranked, language),
+            threads=_format_threads(context.threads, language),
+        ),
+        response_format="text",
+    )
     text = unwrap_prose_response(
         response, keys=("digest", "review", "body", "markdown", "text")
     ).strip()
@@ -167,7 +171,10 @@ async def generate_calibration_review(
     high_threshold: float = 8.0,
     language: str = "zh",
 ) -> Optional[str]:
-    """Generate the maintainer-facing scoring audit; None on failure."""
+    """Generate the maintainer-facing scoring audit.
+
+    Returns None when there is nothing to audit. Provider errors are raised.
+    """
     if context.is_empty:
         return None
     from .ai.prompts import SCORE_CALIBRATION_SYSTEM, SCORE_CALIBRATION_USER
@@ -176,20 +183,17 @@ async def generate_calibration_review(
     low = [r for r in context.records if (r.score or 0) < high_threshold]
     if not high and not low:
         return None
-    try:
-        response = await ai_client.complete(
-            system=SCORE_CALIBRATION_SYSTEM,
-            user=SCORE_CALIBRATION_USER.format(
-                date=context.end.isoformat(),
-                high_threshold=f"{high_threshold:g}",
-                high_items=_format_items(high[:40], language),
-                low_items=_format_items(low[:40], language),
-                threads=_format_threads(context.threads, language),
-            ),
-        )
-    except Exception as exc:
-        logger.warning("Calibration review generation failed: %s", exc)
-        return None
+    response = await ai_client.complete(
+        system=SCORE_CALIBRATION_SYSTEM,
+        user=SCORE_CALIBRATION_USER.format(
+            date=context.end.isoformat(),
+            high_threshold=f"{high_threshold:g}",
+            high_items=_format_items(high[:40], language),
+            low_items=_format_items(low[:40], language),
+            threads=_format_threads(context.threads, language),
+        ),
+        response_format="text",
+    )
     text = unwrap_prose_response(
         response, keys=("review", "calibration", "body", "markdown", "text")
     ).strip()
