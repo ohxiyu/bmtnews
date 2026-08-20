@@ -1484,20 +1484,32 @@ class BMTNewsOrchestrator:
             ai_client = create_ai_client(self.config.ai)
             languages = list(self.config.ai.languages) or ["zh"]
             published_any = False
+            first_failure: Exception | None = None
             for language in languages:
                 normalized = (
                     "en" if str(language).lower().startswith("en") else "zh"
                 )
-                body = await generate_weekly_digest(
-                    ai_client,
-                    context,
-                    language=normalized,
-                )
+                try:
+                    body = await generate_weekly_digest(
+                        ai_client,
+                        context,
+                        language=normalized,
+                    )
+                except Exception as exc:  # noqa: BLE001 - reported, not hidden
+                    first_failure = first_failure or exc
+                    body = None
+                    detail = f"{normalized.upper()} 周报生成失败：{exc}"
+                else:
+                    detail = f"{normalized.upper()} 周报生成失败：模型未返回内容。"
                 if not body:
+                    # Carrying the provider's own message is the whole point:
+                    # a generic "生成失败" is what made a 400 indistinguishable
+                    # from a quiet model for two weeks. Alert text is passed
+                    # through sanitize_diagnostic before it is written out.
                     run_report.add_alert(
                         "warning",
                         f"weekly_digest_failed_{normalized}",
-                        f"{normalized.upper()} 周报生成失败。",
+                        detail,
                     )
                     continue
                 path = save_weekly_page(
@@ -1513,13 +1525,19 @@ class BMTNewsOrchestrator:
                 save_weeks_index_data(weeks)
                 run_report.set_metric("weekly_pages", len(languages))
 
-            calibration = await generate_calibration_review(
-                ai_client,
-                context,
-                high_threshold=max(
-                    8.0, self.config.filtering.ai_score_threshold + 1.0
-                ),
-            )
+            try:
+                calibration = await generate_calibration_review(
+                    ai_client,
+                    context,
+                    high_threshold=max(
+                        8.0, self.config.filtering.ai_score_threshold + 1.0
+                    ),
+                )
+                calibration_detail = "本周评分校准复盘未生成。"
+            except Exception as exc:  # noqa: BLE001 - reported, not hidden
+                first_failure = first_failure or exc
+                calibration = None
+                calibration_detail = f"本周评分校准复盘失败：{exc}"
             if calibration:
                 path = save_calibration_review(calibration, end=end)
                 run_report.set_metric("calibration_reviews", 1)
@@ -1528,7 +1546,16 @@ class BMTNewsOrchestrator:
                 run_report.add_alert(
                     "info",
                     "calibration_review_missing",
-                    "本周评分校准复盘未生成。",
+                    calibration_detail,
+                )
+
+            # A run that had a full week of archive and published nothing is a
+            # broken run, not a quiet one. Failing here turns the workflow red
+            # so it cannot go unnoticed for another fortnight.
+            if not published_any:
+                raise RuntimeError(
+                    "周报生成失败，本周没有产出任何页面"
+                    + (f"：{first_failure}" if first_failure else "。")
                 )
         except Exception as exc:
             run_report.fail(exc)

@@ -16,9 +16,14 @@ class _DummyClient:
         self.result = result
         self.exc = exc
         self.calls = []
+        self.response_formats = []
 
-    async def complete(self, system, user, temperature=None, max_tokens=None):
+    async def complete(
+        self, system, user, temperature=None, max_tokens=None,
+        response_format="json",
+    ):
         self.calls.append((system, user, temperature, max_tokens))
+        self.response_formats.append(response_format)
         if self.exc:
             raise self.exc
         return self.result
@@ -269,3 +274,69 @@ def test_create_chained_client_rejects_unknown_provider():
     )
     with pytest.raises(ValueError, match="Unsupported AI provider in chain"):
         _create_chained_client(config)
+
+
+class _RecordingCompletions:
+    """Captures the kwargs the client sends to an OpenAI-compatible API."""
+
+    def __init__(self) -> None:
+        self.kwargs = None
+
+    async def create(self, **kwargs):
+        self.kwargs = kwargs
+        message = type("M", (), {"content": "text"})()
+        choice = type("C", (), {"message": message})()
+        return type("R", (), {"choices": [choice], "usage": None})()
+
+
+def _openai_client_with(recorder):
+    from src.ai.client import OpenAIClient
+
+    config = AIConfig(
+        provider=AIProvider.DEEPSEEK,
+        model="deepseek-chat",
+        api_key_env="TEST_KEY_ENV",
+        base_url="https://example.invalid",
+    )
+    client = OpenAIClient.__new__(OpenAIClient)
+    client.config = config
+    client.provider = "deepseek"
+    client.model = config.model
+    client.temperature = 0.3
+    client.max_tokens = 512
+    client._supports_temperature = True
+    client._use_max_completion_tokens = False
+    client.client = type(
+        "Stub", (), {"chat": type("Chat", (), {"completions": recorder})()}
+    )()
+    return client
+
+
+def test_text_mode_omits_response_format() -> None:
+    """DeepSeek rejects a JSON-mode request whose prompt never says "json".
+
+    That 400 is what stopped the weekly review, the calibration review, and
+    AI-composed X posts from ever being produced.
+    """
+    recorder = _RecordingCompletions()
+    client = _openai_client_with(recorder)
+    asyncio.run(client.complete("system", "写一段中文散文", response_format="text"))
+    assert "response_format" not in recorder.kwargs
+
+
+def test_json_mode_still_requests_a_json_object() -> None:
+    recorder = _RecordingCompletions()
+    client = _openai_client_with(recorder)
+    asyncio.run(client.complete("system", "Return JSON", response_format="json"))
+    assert recorder.kwargs["response_format"] == {"type": "json_object"}
+
+
+def test_chained_client_passes_the_format_through() -> None:
+    """Otherwise a fallback provider silently re-imposes JSON mode."""
+    primary = _DummyClient(result="prose")
+    chained = ChainedAIClient.__new__(ChainedAIClient)
+    chained.configs = [None]
+    chained._clients = {0: primary}
+    chained._get_client = lambda index: primary
+    asyncio.run(chained.complete("s", "u", response_format="text"))
+    assert primary.response_formats == ["text"]
