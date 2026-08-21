@@ -3,8 +3,9 @@
 ## Reporting a Vulnerability
 
 If you discover a security vulnerability in BMTNews, please do **not** open a public issue.
-Instead, please report it privately by email:
-**thysrael@gmail.com**
+Instead, use GitHub's private
+[Report a vulnerability](https://github.com/ohxiyu/bmtnews/security/advisories/new)
+form so the details are visible only to the repository maintainers.
 
 Please include:
 - A clear description of the issue

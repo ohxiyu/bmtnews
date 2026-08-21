@@ -122,6 +122,7 @@ Source suggestions and pull requests are welcome — see
 
 ## License
 
-MIT — see [LICENSE](LICENSE). This project began from an MIT-licensed
-open-source codebase; that copyright notice is retained in the license file
-as the license requires.
+BMTNews source code is available under the MIT License — see
+[LICENSE](LICENSE). Generated editions and third-party news materials are not
+covered by the software license; see [Content and Data Rights](CONTENT-LICENSE.md)
+and [Third-Party Notices](THIRD_PARTY_NOTICES.md).
