@@ -4,7 +4,70 @@
   <link href="https://bmt.news/feeds/crypto-en.xml" rel="self"/>
   <link href="https://bmt.news/"/>
   <id>https://bmt.news/feeds/crypto-en.xml</id>
-  <updated>2026-08-20T00:00:00Z</updated>
+  <updated>2026-08-21T00:00:00Z</updated>
+  <entry>
+    <title>Optimism-funded team&#x27;s tie-breaking vote diverts $49M in OP from users</title>
+    <link href="https://www.coindesk.com/web3/2026/08/20/optimism-funded-team-s-deciding-vote-shifts-usd49-million-in-op-tokens-away-from-users"/>
+    <id>https://bmt.news/editions/2026-08-21/#rss:www.coindesk.com_arc_outboundfeeds_rss_:4baefad43a6f6f43</id>
+    <updated>2026-08-21T00:00:00Z</updated>
+    <summary>In an Optimism Collective governance vote, Test in Prod—a core development team that says it is fully funded by the Collective—cast the decisive 8.486 million OP votes that secured approval. That decision rerouted approximately $49 million worth of OP tokens away from users. The episode highlights how a protocol&#x27;s own funded team can become the deciding voice in governance, creating conflict-of-interest concerns. It matters to OP holders and the broader DAO ecosystem because it tests the credibility of decentralized decision-making when token allocations are at stake. Test in Prod supplied exactly 8.486 million OP votes to approve the measure, making it the swing vote. The proposal shifts roughly $49 million in OP tokens away from a user-related allocation, and the team&#x27;s self-described full funding by the Optimism Collective raises questions about vote alignment.</summary>
+  </entry>
+  <entry>
+    <title>Solana&#x27;s 50,000 SOL contest missed pre-disclosed PoH clock attack</title>
+    <link href="https://cryptoslate.com/solanas-50000-sol-security-contest-did-not-cover-a-clock-attack-disclosed-months-earlier/"/>
+    <id>https://bmt.news/editions/2026-08-21/#rss:cryptoslate.com_feed_:eab24c6b21b838a1</id>
+    <updated>2026-08-21T00:00:00Z</updated>
+    <summary>At USENIX Security on Aug. 12, researchers presented a Proof-of-History clock attack that had been disclosed privately to Solana developers in December 2025. Anza&#x27;s 50,000 SOL Alpenglow competition closed seven days later, and its rules appear to place the attack outside the contest&#x27;s scope. The finding exposes a coverage gap in a major security contest and raises a transition-risk question: the attack exploits legacy TowerBFT behavior, which Alpenglow is intended to replace but has not yet displaced on mainnet. A consensus-level vulnerability threatens network integrity, so this affects validators, developers, and the broader Solana ecosystem during the upgrade window. The attack lets a scheduled leader stretch its effective block window by withholding a protocol-valid block and releasing it anchored to an earlier logical time point (&quot;re-anchoring&quot;), combined with TowerBFT fork choice (Fork-Assisted Time Inflation). The threat model assumes less than 33% stake, partial synchrony, and a known leader schedule; the paper does not identify a specific affected Agave release.</summary>
+  </entry>
+  <entry>
+    <title>Binance Agent OS lets AI agents trade crypto with user-set controls</title>
+    <link href="https://cointelegraph.com/news/binance-opens-crypto-trading-to-ai-agents-with-user-set-controls?utm_source=rss_feed&amp;utm_medium=rss&amp;utm_campaign=rss_partner_inbound"/>
+    <id>https://bmt.news/editions/2026-08-21/#rss:cointelegraph.com_rss:304e818ab46a959c</id>
+    <updated>2026-08-21T00:00:00Z</updated>
+    <summary>Binance launched Agent OS, a developer platform that connects AI agents to its trading, market data, wallet, and payment infrastructure. The platform supports AI tools such as ChatGPT, Claude Code, Codex, and Cursor, letting agents execute trades within user-configured permissions and limits. This marks a major exchange integrating autonomous AI agents directly into live crypto trading, bringing AI-driven market participation to Binance&#x27;s 300 million-plus users. Industry leaders have predicted AI agents will account for a significant share of onchain activity, and this launch could accelerate that shift across the broader exchange landscape. Users can assign agents to dedicated subaccounts to separate funds, configure permissions, and revoke access at any time. Binance can monitor trades placed through Agent OS but cannot see an agent&#x27;s external information sources, interpretation, or decision-making; the platform is not available to users in the EEA.</summary>
+  </entry>
+  <entry>
+    <title>Rapid7 Uncovers Phishing Campaign Targeting 885,000 Phone Numbers</title>
+    <link href="https://cointelegraph.com/news/cybersecurity-unveils-crypto-phishing-885000-phone-numbers?utm_source=rss_feed&amp;utm_medium=rss&amp;utm_campaign=rss_partner_inbound"/>
+    <id>https://bmt.news/editions/2026-08-21/#rss:cointelegraph.com_rss:cd8e7a4b8cbfcf08</id>
+    <updated>2026-08-21T00:00:00Z</updated>
+    <summary>Rapid7 revealed a phishing campaign, dubbed Operation Asterix, that amassed around 885,000 phone numbers and aimed to drain cryptocurrency investors&#x27; funds by directing them to fake wallet provider websites. The campaign had already queued 5,576 accounts matched to Binance users for attack. Phishing and social engineering account for the majority of crypto-related losses, and this campaign shows how attackers combine bulk phone data, AI tools, and fake support channels to target both exchange accounts and self-custody hardware wallet users. It highlights the growing risk to ordinary crypto investors even when they use hardware wallets. The largest dataset in the campaign contained 316,002 German mobile phone numbers, with additional lists covering Hong Kong, Bulgaria, the UK, the US, Canadian fintech companies, and Ledger-related contacts. Rapid7 reported a 13.6% &#x27;hit rate&#x27; after matching 43,066 accounts to exchange users, and also found a separate checker designed to bulk-validate numbers against Kraken accounts.</summary>
+  </entry>
+  <entry>
+    <title>Coinbase International Exchange to Merge with Deribit</title>
+    <link href="https://news.google.com/rss/articles/CBMidEFVX3lxTE1lVU9LZ3hvOTNIWFFyNzF1S3V2VjJQem0ya3RHS0ZodklMei16ZnNEVkgwNGJoRkxzcFZ1bGRNYVpjeWdkSFROMlkyM0NpV1pXMWdPa3NCZVF6WnZ1bEFZbGt0UHhHR1VtbE44M193b0RPRnBB?oc=5"/>
+    <id>https://bmt.news/editions/2026-08-21/#google_news:article:3301c8db42ee3957</id>
+    <updated>2026-08-21T00:00:00Z</updated>
+    <summary>Coinbase International Exchange is joining forces with Deribit to create a unified crypto derivatives trading experience, according to CryptoTicker and a Coinbase help page. The two platforms are coming together to combine their derivatives offerings. This consolidation of two major derivatives platforms could reshape crypto market structure by concentrating liquidity and affecting how institutional traders access BTC and ETH options and futures. The move may also change the competitive landscape for crypto derivatives exchanges. Coinbase International Exchange was established in 2023 and currently offers 160 trading pairs, while Deribit is the world&#x27;s largest Bitcoin and Ethereum options exchange with up to 50x leverage on futures and perpetuals. The unified platform aims to deliver a world-class trading experience for institutional clients.</summary>
+  </entry>
+  <entry>
+    <title>Base Moves to Independent Tech Stack, Reducing Optimism Reliance</title>
+    <link href="https://news.google.com/rss/articles/CBMiugFBVV95cUxPTl9zTTNnbHp5QW8tbmhEYUhsNWQ5WW5pSGVpRDZYRml1c2ZCSmRNYlNBc1F1RnZxa1JHcXU1VUZHdjFWQVNWN2FGU3FwTnlyWTJKSmg5U2dBbzdHSnNkNXY3TjlZXzgybDhaNnF3SW0yNWhnVVN1QXJ4cFNoc0g3aUFsZjBhNWFEbEtXdFZoZ1VDS0EtcDlnNDloaFAxTlBCbU9JN2lKbXp5UUYzdEw0Qng5X19RUkVCSWc?oc=5"/>
+    <id>https://bmt.news/editions/2026-08-21/#google_news:article:b3f94eff36ee0d80</id>
+    <updated>2026-08-21T00:00:00Z</updated>
+    <summary>Coinbase&#x27;s layer-2 network Base is moving to an independent tech stack, reducing its reliance on Optimism&#x27;s OP Stack infrastructure. The transition marks a notable shift in the L2 ecosystem&#x27;s infrastructure dependencies. Base is one of the largest OP Stack-based chains, so its decoupling could reshape the L2 landscape and affect how other rollups view infrastructure dependencies. It may also intensify competition among modular blockchain frameworks. The specific new stack has not been fully detailed in the available report. Base currently operates as an optimistic rollup on the OP Stack, settling on Ethereum and using ETH as its gas token.</summary>
+  </entry>
+  <entry>
+    <title>Kraken parent Payward explores becoming full bank outside US</title>
+    <link href="https://www.theblock.co/news/business/2026-08-20-kraken-parent-payward-explores-becoming-a-full-bank-outside-us-412390"/>
+    <id>https://bmt.news/editions/2026-08-21/#rss:www.theblock.co_rss.xml:8766ad81a5d6b65e</id>
+    <updated>2026-08-21T00:00:00Z</updated>
+    <summary>Payward, the parent company of Kraken, is exploring becoming a “full bank” outside the US, with plans to expand into banking, lending, and asset management. Mortgages are mentioned as a future possibility. This move signals institutional maturation among crypto exchanges, as a major player seeks to offer regulated banking services globally. It could pave the way for closer integration between traditional banking and the crypto ecosystem. Payward&#x27;s existing portfolio already spans trading, custody, payments, lending, onchain finance, and benchmarks, according to its website. The current announcement adds banking and asset management to that scope, with mortgages cited as a future possibility.</summary>
+  </entry>
+  <entry>
+    <title>LayerZero loses a dozen partnerships as ZRO falls 31% year-to-date</title>
+    <link href="https://protos.com/layerzero-has-lost-a-dozen-partnerships-this-year/"/>
+    <id>https://bmt.news/editions/2026-08-21/#rss:protos.com_feed_:220bafe282b0bb5d</id>
+    <updated>2026-08-21T00:00:00Z</updated>
+    <summary>LayerZero has lost a dozen partners this year, including Kraken, BitGo, and Nethermind, as its ZRO token dropped roughly 31% year-to-date and 88% from its December 2024 all-time high. The latest departure was Ethereum node provider Nethermind, which ceased its verifier role and migrated to Chainlink. The flight of over $15 billion in assets and high-profile exits signals a crisis of trust in LayerZero&#x27;s security model, potentially reshaping competition in the cross-chain interoperability sector. This could push protocols and enterprises toward rival solutions such as Chainlink&#x27;s CCIP and slow LayerZero&#x27;s adoption. The exodus followed LayerZero&#x27;s April admission that Lazarus Group poisoned its internal RPCs and that its DVN acted as a 1/1 verifier for high-value transactions, a design flaw exposed by the $292 million Kelp DAO bridge incident. LayerZero is winding down support for low-activity chains and warned users on affected chains that failure to act before deprecation could result in losing access to funds.</summary>
+  </entry>
+  <entry>
+    <title>ACX Exchange Announces Deadlines and Terms for Crypto-to-Equity Swap</title>
+    <link href="https://news.google.com/rss/articles/CBMiXkFVX3lxTE93b1VYZG5VeGM2bVVOV0N1NzhwdlNWWlNtTS1lbUdUTXB6NGpMcno4c2htdk02R1k5ZjBIamR0N2g0REVYMDcxOWhMQm1ia2FQNkZWZ3RLa1EtVGlyTXc?oc=5"/>
+    <id>https://bmt.news/editions/2026-08-21/#google_news:article:897cea45c170280b</id>
+    <updated>2026-08-21T00:00:00Z</updated>
+    <summary>ACX exchange has announced the deadlines and terms for swapping crypto holdings into equity, giving users formal parameters for the conversion. The announcement, covered by CryptoTicker, outlines the specific timeframe and conditions for the swap. This marks a notable restructuring move for an exchange and follows a growing trend of token-to-equity conversions in the crypto industry. It could set a precedent for how distressed crypto platforms treat user balances, affecting ACX users and potentially influencing similar exchange stakeholders. The announcement specifies concrete deadlines and terms for the equity swap, though full details beyond the headline have not been independently verified. ACX is an Australian crypto exchange founded in 2016, owned by Hong Kong-based Peak HK Limited, which also operates a cryptocurrency arbitrage fund.</summary>
+  </entry>
   <entry>
     <title>Bybit Averts Over $700M in Extra Losses After $1.46B Hack</title>
     <link href="https://news.google.com/rss/articles/CBMi7gFBVV95cUxNMWNmOE40LTNVeVRIa250VTE2YXljcWI2YjVoNW5CYTI3d0lfc3ZSVWlPY19sVHNhYUJocG5YaDNfeDZ6VUFiMWZXSURjajRaZ0tscVFUSmphbXF0RVFTS2hXdWc1TTRkYkNZQVJCenhFQXUwbUs1UTZTX3ZkQWJoc2E0QURnNHNfdU5CNzEtUENqMDE2NEdoS19KQnB1R1hwNUxlMF9MOXhQaVpCOFlGNEdTVExlaHBVRjR1OG5PeW8tZWtHaDlxYjM0MHFGOWMybkFZNEZEWFdhY1d4dmcxOEp3SEp6WXpYVkZpdk1B0gHzAUFVX3lxTE5nTkdicElzbHRjdEVVT2N3NS1OSjltbnFkSEV2TXJsTjRzZ1Q0MVRMTFFSVDNUQXlUU0hKZmM3c3hEalk0bTNxTUJBVFVuOEhaR2FUcUZlM0ttVUE4cHM3X2h5emtvSmNjdkQtU1FyaVphc1lFaENFWjJwYzNpaWFkMHdsYmxEWlpMeEFRR1I4Mk42cmhPSlBHVkpyY1pOd0ZQdmpuUk5JSzh1LUpab1Q4MTBldE9wa0ZzOUVQby15UGJ3bm0xcy1xWHlkVWVmVExQRDF2ZDhkbkJmdGp3bW9pb1otbGxncVgtc0hoRTNKeEU5bw?oc=5"/>
@@ -221,68 +284,5 @@
     <id>https://bmt.news/editions/2026-08-17/#rss:cryptoslate.com_feed_:00c56ad7fab74a7e</id>
     <updated>2026-08-17T00:00:00Z</updated>
     <summary>As of 1:53 a.m. UTC on Aug. 16, seven DV Labs-listed attesters remained in the VALIDATING state with 1.386 million AZTEC in effective stake, despite DV Labs having announced its Aztec wind-down on July 16 and asked delegators to exit by Aug. 5. The exit process remains incomplete, and the economic consequences of missing the Aug. 5 request are unresolved. This incident shows how validator operational failures can strand staked assets on proof-of-stake networks, leaving delegators unable to withdraw or exit in a timely manner. It directly affects DV Labs delegators on Aztec and raises questions about the clarity of exit deadlines, penalties, and withdrawal documentation on relatively new networks. The staking dashboard provider feed still showed 16 delegations and 3.2 million AZTEC attributed to DV Labs, but direct reads of the canonical Rollup contract found seven DV Labs-listed attesters as VALIDATING, none as EXITING or ZOMBIE, and 62 absent. Four of the seven validators held balances below the 200,000-AZTEC activation threshold, with a combined reduction of 14,000 AZTEC; Aztec&#x27;s slashing rules list a 2,000-AZTEC inactivity penalty and 5,000-AZTEC penalties for duplicate proposals or attestations, but no evidence ties those to DV Labs.</summary>
-  </entry>
-  <entry>
-    <title>Dutch Cyber Agency Warns of macOS Screen Sharing Hack Installing Monero Miners</title>
-    <link href="https://www.theblock.co/news/defi/2026-08-16-hackers-exploited-macos-screen-sharing-flaw-to-install-monero-miners-dutch-cyber-agency-says-411932"/>
-    <id>https://bmt.news/editions/2026-08-17/#rss:www.theblock.co_rss.xml:7c6f6bcb87f588e1</id>
-    <updated>2026-08-17T00:00:00Z</updated>
-    <summary>According to the Dutch cyber agency, attackers have been actively exploiting a critical macOS Screen Sharing vulnerability, rated CVSS 9.8, to install Monero cryptocurrency miners on victims&#x27; machines. Apple has released security patches on July 27 and August 6, 2026 to address the flaw. This is significant because the vulnerability can be exploited before authentication, meaning no login credentials are needed, and it is already being used in live attacks. Immediate patching is critical for both individuals and organizations, and the incident underscores why Monero remains the most common cryptocurrency in mining malware. The vulnerability, CVE-2026-65400, occurs before authentication, so it does not require a valid macOS account, an approved Screen Sharing user, or a legacy VNC password. The U.S. government rated the flaw 9.8/10 on the CVSS scale, and Apple also patched a related Screen Sharing bug, CVE-2026-43760, in the same period.</summary>
-  </entry>
-  <entry>
-    <title>Ethereum devs narrow 66 proposals for Hegotá upgrade</title>
-    <link href="https://cointelegraph.com/news/ethereum-devs-66-proposals-hegota-upgrade?utm_source=rss_feed&amp;utm_medium=rss&amp;utm_campaign=rss_partner_inbound"/>
-    <id>https://bmt.news/editions/2026-08-17/#rss:cointelegraph.com_rss:619914a88bb8ccac</id>
-    <updated>2026-08-17T00:00:00Z</updated>
-    <summary>Ethereum core developers are scoping the next major upgrade, Hegotá, by narrowing 66 proposals. FOCIL (EIP-7805) is currently the only EIP confirmed, while privacy-focused EIPs such as Frame Transactions (EIP-8141), Keyed Nonces (EIP-8250), and Recent Roots (EIP-8272) are under consideration to enable native privacy. Hegotá will shape Ethereum&#x27;s development trajectory into 2027 and could embed privacy primitives and stronger censorship resistance directly into the base protocol. That matters for Ethereum application builders, validators, and users who rely on the L1 for neutrality and credible transaction inclusion. The next Ethereum core developer call is scheduled for Monday at 14:00 UTC and will help determine which of the 66 proposals make the cut. Proposals that miss Hegotá could be reconsidered in a later upgrade, and the earlier Glamsterdam upgrade is expected on mainnet in the second half of 2026.</summary>
-  </entry>
-  <entry>
-    <title>Grayscale Pays Staking Rewards as Dividends as ETH, SOL Weigh Yield Cuts</title>
-    <link href="https://cryptoslate.com/wall-street-finally-turned-staking-into-a-dividend-now-ethereum-and-solana-want-to-shrink-it/"/>
-    <id>https://bmt.news/editions/2026-08-17/#rss:cryptoslate.com_feed_:a26623b45d15d31e</id>
-    <updated>2026-08-17T00:00:00Z</updated>
-    <summary>Grayscale announced it will convert staking rewards from its Ethereum and Solana ETFs into cash dividends starting around Aug. 7. At the same time, Solana&#x27;s SIMD-0550 and Ethereum&#x27;s EIP-8363 propose cutting protocol-level staking issuance, directly reducing the income source for these products. This is the first time staking rewards have been packaged as dividends for Wall Street ETF investors, tying institutional products directly to protocol yield. The governance decisions on these proposals will shape whether markets value token scarcity over income, with knock-on effects for validators, ETF flows, and DeFi yields. Solana&#x27;s SIMD-0550 would double the annual disinflation rate from 15% to 30%, lowering modeled staking yield from 5.84% to 2.25% over three years and reducing SOL&#x27;s six-year issuance by 18.9 million tokens. Ethereum&#x27;s EIP-8363 would burn an increasing share of validator rewards as staking participation rises, hitting 100% when roughly half of ETH is staked.</summary>
-  </entry>
-  <entry>
-    <title>Bedrock Protocol Loses $2M in Crypto Heist</title>
-    <link href="https://news.google.com/rss/articles/CBMiiwFBVV95cUxPbUs5VnNQSmU4NUdxRU9Cc2oyb0o1dlIzZGs1U3IxUUx2NUFEYmJBVWdnWXpFOU9IM3VyMDAyeGJMRTVEMzZjazJjQ3UwUEhxQmpfZ3ZpVnhrMFVSOHpYTzNhZXQyOUNUR3l5VEJCeGdEQnQtanVyVHdIQmkwUno4U1FzZ2NEM08xU1Nv?oc=5"/>
-    <id>https://bmt.news/editions/2026-08-17/#google_news:article:7bd0131a30bcfaec</id>
-    <updated>2026-08-17T00:00:00Z</updated>
-    <summary>According to a report from Yellow.com, Bedrock Protocol was hit by a $2 million crypto heist. The incident directly affected user funds, though specific exploit details have not been disclosed. This security incident underscores the ongoing risks in DeFi and the liquid restaking sector, where user funds can be exposed to exploits. It may erode user confidence in Bedrock and similar restaking protocols. Bedrock is a multi-asset liquid restaking protocol offering liquid restaking tokens for Bitcoin, Ethereum, and IoTeX, tracked as a parent protocol with products such as uniBTC, uniETH, and uniIOTX. The reported $2 million loss is relatively modest compared to major crypto exploits.</summary>
-  </entry>
-  <entry>
-    <title>Bybit Launches Pre-IPO Perpetual Futures for Unitree and Moonshot AI</title>
-    <link href="https://news.google.com/rss/articles/CBMiVEFVX3lxTE9FR0N5eFE1aXZ1azBLcUtWdlo5eHJrM1duM29yb3A0OC1aQ2FFODdLRkxDRmNNRmVFcXl1aWJIM3RmYmN5cWdKNUNXX0YxdzN3REZ6TQ?oc=5"/>
-    <id>https://bmt.news/editions/2026-08-17/#google_news:article:85bc2466f775a128</id>
-    <updated>2026-08-17T00:00:00Z</updated>
-    <summary>Bybit has introduced pre-IPO perpetual futures for Chinese robotics firm Unitree and AI company Moonshot AI, allowing crypto traders to gain exposure to these private tech names. The contracts are cash-settled derivatives, not direct share ownership. This expands Bybit&#x27;s pre-IPO derivatives roster into high-profile Chinese tech companies, reflecting growing demand for private-market exposure in crypto venues. It could attract traditional equity investors and broaden the asset types available to crypto traders. Pre-IPO perpetual futures are cash-settled and do not grant ownership, voting rights, or actual shares. According to one report, Bybit now lists over 200 pre-IPO perpetual contracts, and SpaceX-related perps have generated billions in trading volume across exchanges.</summary>
-  </entry>
-  <entry>
-    <title>ABFinance, Ex-Bybit Co-CEO&#x27;s U.S. Exchange, Suspends Operations</title>
-    <link href="https://news.google.com/rss/articles/CBMidkFVX3lxTE1IUzlRT0xiamZWbENCY2VsSUZ0SGcwNWc0aUt0Q2xUUTYxSHlwNW9kcnRheHM1ekk4c2o5QjE0eFB5d1poV3BDQ1A1YmlKQkNwbFBjZEJUNVd2ZEs4TWNyQl8wel85ajZSeTFMUHJEeU83UkV4M2c?oc=5"/>
-    <id>https://bmt.news/editions/2026-08-16/#google_news:article:34c230d725745c22</id>
-    <updated>2026-08-16T00:00:00Z</updated>
-    <summary>ABFinance, a U.S. crypto exchange founded by former Bybit co-CEO Helen Liu, has suspended operations on August 14, 2025, citing U.S. regulatory pressures. The platform, which aimed to combine deposits, trading, earning, and payments, has not yet detailed the scope or timeline of the suspension. The suspension underscores the tough regulatory environment for crypto exchanges in the U.S., where compliance costs and legal risks are high. It affects ABFinance users who may face restricted access to their funds and signals continued consolidation or shutdowns among smaller U.S. exchanges. ABFinance was founded by Helen Liu, who left Bybit after five years as co-CEO, to build a U.S.-licensed platform bridging fiat and crypto. The shutdown highlights the need for significant capital and legal resources to operate a compliant exchange in the U.S.</summary>
-  </entry>
-  <entry>
-    <title>UBS&#x27;s IBIT Call Option Exposure Surges 24-Fold in Q2</title>
-    <link href="https://www.coindesk.com/business/2026/08/15/swiss-mega-bank-ubs-ramps-up-its-bitcoin-exposure-with-a-massive-24-fold-surge-in-etf-call-options"/>
-    <id>https://bmt.news/editions/2026-08-16/#rss:www.coindesk.com_arc_outboundfeeds_rss_:7e999a5b4db17aa5</id>
-    <updated>2026-08-16T00:00:00Z</updated>
-    <summary>UBS reported a more than 24-fold quarterly increase in call option exposure to BlackRock&#x27;s iShares Bitcoin Trust (IBIT), reaching 1.95 million underlying shares as of June 30. Direct IBIT holdings rose 12% to 407,890 shares, while put option exposure dropped roughly 53% to 143,300 underlying shares. This signals growing institutional adoption of Bitcoin ETFs and related derivatives, with a major global bank expanding its footprint in digital assets. The trend could encourage other large financial institutions to follow suit, further integrating crypto into mainstream finance. The regulatory filing does not disclose strike prices or expiration dates, making it impossible to determine UBS&#x27;s net directional exposure from the filing alone. The increase could stem from client initiatives, dealer hedging, market-making, discretionary client portfolios, or proprietary exposure, and the bank&#x27;s direct IBIT holdings remain below the 548,614 shares reported at the end of 2025.</summary>
-  </entry>
-  <entry>
-    <title>Stacks&#x27; Satoshi Hardfork Raises Staked STX to 392M</title>
-    <link href="https://news.google.com/rss/articles/CBMihgFBVV95cUxOR1JZaHo2NUswMlpIN1NLZlJaODJHUnNxWWFsQTVlU3JlNXJvSkNHQ195ell2QWxEaURJN1ZlMks3eTZWNk9GNF9kUEdJemc5Z1gyeno2ZnNPN185eUxGOHlvLWdnWUdzZnVIdk1PTnJ1aENQSWN5WjRxZWdLSy01Rk8tRnZDUQ?oc=5"/>
-    <id>https://bmt.news/editions/2026-08-16/#google_news:article:d3df5d38269fb79b</id>
-    <updated>2026-08-16T00:00:00Z</updated>
-    <summary>The Satoshi hardfork on the Stacks network has increased the total amount of staked STX to 392 million, marking a major milestone for the Bitcoin Layer-2 network. The upgrade is now live and has boosted participant commitment. This upgrade strengthens Stacks&#x27; security and signals growing adoption of Bitcoin-based smart contracts and staking mechanisms. As a leading Bitcoin L2, Stacks&#x27; success could influence the broader Bitcoin DeFi ecosystem. The hardfork, which corresponds to Stacks&#x27; Nakamoto upgrade, brings increased transaction throughput and 100% Bitcoin finality. Staking on Stacks, known as &#x27;Stacking,&#x27; uses the Proof of Transfer (PoX) consensus and rewards participants in BTC.</summary>
-  </entry>
-  <entry>
-    <title>2026&#x27;s $11.2B Funding Signals End of Crypto&#x27;s Permissionless Era</title>
-    <link href="https://www.coindesk.com/business/2026/08/15/the-usd11-2-billion-in-2026-funding-that-killed-crypto-s-permissionless-era"/>
-    <id>https://bmt.news/editions/2026-08-16/#rss:www.coindesk.com_arc_outboundfeeds_rss_:74b8cb5e9d53943f</id>
-    <updated>2026-08-16T00:00:00Z</updated>
-    <summary>An analysis of all crypto deals in H1 2026 found that $11.2 billion in funding went overwhelmingly to regulated firms, with investors including BlackRock and Goldman Sachs. The research suggests institutional capital is now steering the industry away from permissionless networks. This shift signals the institutionalization of crypto markets, where compliance and regulation become prerequisites for capital. It could reshape the competitive landscape, favoring regulated intermediaries over open, permissionless protocols. The data was compiled by Dubai-based crypto lawyer Irina Heaver and her team, who parsed every crypto deal in the first half of 2026. Persian Gulf sovereign wealth funds also participated alongside major US financial institutions.</summary>
   </entry>
 </feed>

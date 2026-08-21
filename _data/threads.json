@@ -2,15 +2,39 @@
   "threads": [
     {
       "thread_id": "t8bddfe17b4",
-      "latest_date": "2026-08-20",
+      "latest_date": "2026-08-21",
       "first_date": "2026-08-10",
+      "days": 3,
+      "entries": 3,
+      "category": "policy",
+      "title_zh": "CFTC主席欲推动起草加密市场规则，以防Clarity Act难产",
+      "title_en": "CFTC Chair Moves to Draft Crypto Market Rules as Clarity Act Stalls",
+      "summary_zh": "CFTC主席Michael S. Selig在创新顾问委员会首次会议上表示，他已指示员工基于该机构现有职权探索加密市场结构规则，并称若国会未能通过Clarity Act，CFTC将正式提出这些规则。 如果国会不采取行动，CFTC可能单方面将加密交易所、杠杆交易和链上金融协议纳入监管，从而重塑美国加密市场结构。即使没有新立法，这也将影响交易所、开发者和投资者。 该潜在框架可能涵盖当前CFTC注册机构以及目前未注册的加密交易所，允许它们按照量身定制的规则提供杠杆或保证金加密交易。Selig还指示员工与链上金融协议开发者接触，探讨在美国以合法合规方式提供其协议的途径。",
+      "summary_en": "CFTC Chair Michael S. Selig told the inaugural Innovation Advisory Committee meeting that he has directed staff to explore crypto market structure rules using the agency's existing authority. He said the CFTC will formally propose those rules if Congress fails to pass the Clarity Act. If Congress does not act, the CFTC could unilaterally bring crypto exchanges, leveraged trading, and on-chain finance protocols under its oversight, reshaping U.S. crypto market structure. This would affect exchanges, developers, and investors even without new legislation. The potential framework could cover current CFTC registrants and currently unregistered crypto exchanges, allowing leveraged or margined crypto trading under tailored rules. Selig also directed staff to engage with developers of on-chain finance protocols to establish legal and compliant ways to offer their protocols in the U.S."
+    },
+    {
+      "thread_id": "taf9a7fe86d",
+      "latest_date": "2026-08-21",
+      "first_date": "2026-08-18",
+      "days": 2,
+      "entries": 2,
+      "category": "policy",
+      "title_zh": "OCC赶在11月前敲定GENIUS Act稳定币规则",
+      "title_en": "OCC Races to Finalize GENIUS Act Stablecoin Rules by November",
+      "summary_zh": "OCC负责人Jonathan Gould在怀俄明区块链研讨会上宣布，该机构将在11月前敲定GENIUS Act稳定币规则，早于1月18日的法定截止日期。该机构预计将在2027年开始处理发行人申请。 这一时间表为稳定币发行商和平台提供了更清晰的监管路径，降低了法律于2027年1月生效前的不确定性。规则生效后，只有获准的发行商才能向美国人提供支付稳定币。 这份376页的提案于2月发布，征求意见截止5月，涵盖储备资产、按面值赎回、流动性、风险管理、审计、托管及清算等内容。反洗钱和制裁要求将通过与财政部协调的单独规则制定来处理。OCC未明确11月内的具体日期。",
+      "summary_en": "OCC head Jonathan Gould announced at the Wyoming Blockchain Symposium that the agency will finalize its GENIUS Act stablecoin rules by November, ahead of the January 18 statutory deadline. The agency expects to begin processing issuer applications in 2027. This timeline gives stablecoin issuers and platforms a clearer regulatory path, reducing uncertainty ahead of the law's January 2027 effective date. Only permitted issuers will be able to offer payment stablecoins to Americans once the rules take effect. The 376-page proposal, released in February and open for comment through May, covers reserves, redemption at par, liquidity, risk management, audits, custody, and wind-downs. Anti-money-laundering and sanctions requirements are being handled in separate rulemaking coordinated with the Treasury. The OCC did not specify an exact date within November."
+    },
+    {
+      "thread_id": "t65e7e93d6b",
+      "latest_date": "2026-08-21",
+      "first_date": "2026-08-19",
       "days": 2,
       "entries": 2,
       "category": "crypto",
-      "title_zh": "特朗普称CFTC正以合规方式推动Hyperliquid进入美国，HYPE代币暴涨",
-      "title_en": "HYPE Token Surges as Trump Says CFTC Working to Bring Hyperliquid to US",
-      "summary_zh": "特朗普总统宣布，CFTC主席Mike Selig正努力以“完全合规合法的方式”将Hyperliquid引入美国，消息传出后HYPE代币价格大涨。 这是罕见的一次总统直接背书特定加密平台，预示着Hyperliquid可能获得监管批准并进入美国市场。若推进成功，可能为美国商品法下去中心化交易所的监管开创先例，并提振更广泛的DeFi领域。 声明点名CFTC主席Mike Selig牵头，表明此次由CFTC而非SEC承担主要角色。代币上涨反映了市场乐观情绪，但该计划仍是一则声明，并非最终规则或正式批准。",
-      "summary_en": "President Trump announced that CFTC Chair Mike Selig is working to bring Hyperliquid into the U.S. in a 'fully compliant and legal fashion,' and the HYPE token surged on the news. This marks a rare direct presidential endorsement of a specific crypto platform, signaling potential regulatory approval and US market access for Hyperliquid. If completed, it could set a precedent for how decentralized exchanges are treated under US commodities law and boost the broader DeFi sector. The statement names CFTC Chair Mike Selig as the lead, indicating the CFTC rather than the SEC is taking the primary role. The token's surge reflects market optimism, but the plan remains a statement, not a final rule or formal approval."
+      "title_zh": "Solana 5万SOL安全竞赛未覆盖早前披露的时钟攻击",
+      "title_en": "Solana's 50,000 SOL contest missed pre-disclosed PoH clock attack",
+      "summary_zh": "研究人员在8月12日的USENIX Security上展示了一种Proof-of-History（PoH）时钟攻击，该攻击早在2025年12月就已私下披露给Solana开发者。Anza的50,000 SOL Alpenglow竞赛在披露后七天结束，其规则似乎将该攻击列为范围之外。 该发现暴露了一场重大安全竞赛的覆盖缺口，并提出了过渡风险问题：该攻击利用的是Alpenglow打算替换但尚未在主网移除的旧版TowerBFT机制。共识层漏洞可能威胁网络完整性，因此在升级窗口期内，这会影响验证者、开发者及整个Solana生态系统。 该攻击允许预定领导者通过扣留一个协议有效的区块，再将该区块锚定到更早的逻辑时间点（“重新锚定”），并结合TowerBFT分叉选择（分叉辅助时间膨胀）来拉长其有效出块窗口。威胁模型假设质押占比低于33%、部分同步和已知的领导者日程表，但论文未指明具体受影响的Agave版本。",
+      "summary_en": "At USENIX Security on Aug. 12, researchers presented a Proof-of-History clock attack that had been disclosed privately to Solana developers in December 2025. Anza's 50,000 SOL Alpenglow competition closed seven days later, and its rules appear to place the attack outside the contest's scope. The finding exposes a coverage gap in a major security contest and raises a transition-risk question: the attack exploits legacy TowerBFT behavior, which Alpenglow is intended to replace but has not yet displaced on mainnet. A consensus-level vulnerability threatens network integrity, so this affects validators, developers, and the broader Solana ecosystem during the upgrade window. The attack lets a scheduled leader stretch its effective block window by withholding a protocol-valid block and releasing it anchored to an earlier logical time point (\"re-anchoring\"), combined with TowerBFT fork choice (Fork-Assisted Time Inflation). The threat model assumes less than 33% stake, partial synchrony, and a known leader schedule; the paper does not identify a specific affected Agave release."
     },
     {
       "thread_id": "tf39e213c53",

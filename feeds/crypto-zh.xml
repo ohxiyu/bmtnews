@@ -4,7 +4,70 @@
   <link href="https://bmt.news/feeds/crypto-zh.xml" rel="self"/>
   <link href="https://bmt.news/"/>
   <id>https://bmt.news/feeds/crypto-zh.xml</id>
-  <updated>2026-08-20T00:00:00Z</updated>
+  <updated>2026-08-21T00:00:00Z</updated>
+  <entry>
+    <title>Optimism资助团队的关键投票将4900万美元OP代币从用户手中转走</title>
+    <link href="https://www.coindesk.com/web3/2026/08/20/optimism-funded-team-s-deciding-vote-shifts-usd49-million-in-op-tokens-away-from-users"/>
+    <id>https://bmt.news/editions/2026-08-21/#rss:www.coindesk.com_arc_outboundfeeds_rss_:4baefad43a6f6f43</id>
+    <updated>2026-08-21T00:00:00Z</updated>
+    <summary>在Optimism Collective的一次治理投票中，自称完全由Collective资助的核心开发团队Test in Prod投出了决定性的848.6万OP票，使提案获得通过。该决定将价值约4900万美元的OP代币从用户方向转移。 这一事件突显了由协议资助的团队如何成为治理中的决定性声音，从而引发利益冲突担忧。这对OP持有者和更广泛的DAO生态很重要，因为在涉及代币分配时，它检验了去中心化决策的可信度。 Test in Prod提供了848.6万OP票，使该提案获得批准，成为关键摇摆票。该提案将约4900万美元的OP代币从面向用户的分配中转出，而该团队自称由Optimism Collective全额资助，这引发了对其投票立场一致性的质疑。</summary>
+  </entry>
+  <entry>
+    <title>Solana 5万SOL安全竞赛未覆盖早前披露的时钟攻击</title>
+    <link href="https://cryptoslate.com/solanas-50000-sol-security-contest-did-not-cover-a-clock-attack-disclosed-months-earlier/"/>
+    <id>https://bmt.news/editions/2026-08-21/#rss:cryptoslate.com_feed_:eab24c6b21b838a1</id>
+    <updated>2026-08-21T00:00:00Z</updated>
+    <summary>研究人员在8月12日的USENIX Security上展示了一种Proof-of-History（PoH）时钟攻击，该攻击早在2025年12月就已私下披露给Solana开发者。Anza的50,000 SOL Alpenglow竞赛在披露后七天结束，其规则似乎将该攻击列为范围之外。 该发现暴露了一场重大安全竞赛的覆盖缺口，并提出了过渡风险问题：该攻击利用的是Alpenglow打算替换但尚未在主网移除的旧版TowerBFT机制。共识层漏洞可能威胁网络完整性，因此在升级窗口期内，这会影响验证者、开发者及整个Solana生态系统。 该攻击允许预定领导者通过扣留一个协议有效的区块，再将该区块锚定到更早的逻辑时间点（“重新锚定”），并结合TowerBFT分叉选择（分叉辅助时间膨胀）来拉长其有效出块窗口。威胁模型假设质押占比低于33%、部分同步和已知的领导者日程表，但论文未指明具体受影响的Agave版本。</summary>
+  </entry>
+  <entry>
+    <title>币安Agent OS上线：AI代理可在用户设定权限内进行加密交易</title>
+    <link href="https://cointelegraph.com/news/binance-opens-crypto-trading-to-ai-agents-with-user-set-controls?utm_source=rss_feed&amp;utm_medium=rss&amp;utm_campaign=rss_partner_inbound"/>
+    <id>https://bmt.news/editions/2026-08-21/#rss:cointelegraph.com_rss:304e818ab46a959c</id>
+    <updated>2026-08-21T00:00:00Z</updated>
+    <summary>币安推出了Agent OS，这是一个开发者平台，可将AI代理连接到其交易、市场数据、钱包和支付基础设施。该平台支持ChatGPT、Claude Code、Codex和Cursor等AI工具，允许代理在用户配置的权限和限额内执行交易。 此举标志着主流交易所将自主AI代理直接整合到实时加密交易中，使AI驱动交易进入币安3亿多用户的视野。行业领袖预测AI代理将在链上活动中占据重要份额，该发布可能加速这一趋势在整个交易所领域的扩散。 用户可将代理分配到独立子账户以隔离资金，随时配置权限和撤销访问权。币安可以监控通过Agent OS下达的交易，但无法看到代理的外部信息来源、解读或决策过程；该平台不对欧洲经济区（EEA）用户开放。</summary>
+  </entry>
+  <entry>
+    <title>Rapid7 披露针对 88.5 万个手机号的加密货币钓鱼行动</title>
+    <link href="https://cointelegraph.com/news/cybersecurity-unveils-crypto-phishing-885000-phone-numbers?utm_source=rss_feed&amp;utm_medium=rss&amp;utm_campaign=rss_partner_inbound"/>
+    <id>https://bmt.news/editions/2026-08-21/#rss:cointelegraph.com_rss:cd8e7a4b8cbfcf08</id>
+    <updated>2026-08-21T00:00:00Z</updated>
+    <summary>Rapid7 披露了一个名为 Operation Asterix 的钓鱼行动，收集了大约 88.5 万个手机号码，并通过引导受害者访问伪造的钱包服务商网站来盗取加密货币投资者的资产。该行动已锁定并排队攻击 5,576 个与 Binance 用户匹配的账户。 网络钓鱼和社会工程攻击占加密货币损失的大部分，而此次行动展示了攻击者如何结合批量手机号码数据、AI 工具和伪造的支持渠道，同时针对交易所账户和自托管硬件钱包用户。这凸显了即使是使用硬件钱包的普通加密投资者也面临日益增长的风险。 该行动中最大的数据集包含 316,002 个德国手机号码，此外还有覆盖香港、保加利亚、英国、美国、加拿大金融科技公司以及 Ledger 相关联系人的名单。Rapid7 在将 43,066 个账户与交易所用户匹配后，报告了约 13.6% 的“命中率”，并发现了一个专门用于批量验证 Kraken 账户号码的检查工具。</summary>
+  </entry>
+  <entry>
+    <title>Coinbase International Exchange 与 Deribit 合并</title>
+    <link href="https://news.google.com/rss/articles/CBMidEFVX3lxTE1lVU9LZ3hvOTNIWFFyNzF1S3V2VjJQem0ya3RHS0ZodklMei16ZnNEVkgwNGJoRkxzcFZ1bGRNYVpjeWdkSFROMlkyM0NpV1pXMWdPa3NCZVF6WnZ1bEFZbGt0UHhHR1VtbE44M193b0RPRnBB?oc=5"/>
+    <id>https://bmt.news/editions/2026-08-21/#google_news:article:3301c8db42ee3957</id>
+    <updated>2026-08-21T00:00:00Z</updated>
+    <summary>据报道，Coinbase International Exchange 正与 Deribit 联手，打造统一的加密货币衍生品交易体验。Coinbase 帮助页面也确认两大平台将合并力量。 两大主要衍生品平台的整合可能重塑加密市场结构，集中流动性，并影响机构交易者进入 BTC 和 ETH 期权及期货市场的方式。此举也可能改变加密衍生品交易所的竞争格局。 Coinbase International Exchange 成立于 2023 年，目前提供 160 个交易对；而 Deribit 是全球最大的比特币和以太坊期权交易所，期货和永续合约最高杠杆可达 50 倍。统一平台旨在为机构客户提供一流的交易体验。</summary>
+  </entry>
+  <entry>
+    <title>Base 转向独立技术栈，减少对 Optimism 的依赖</title>
+    <link href="https://news.google.com/rss/articles/CBMiugFBVV95cUxPTl9zTTNnbHp5QW8tbmhEYUhsNWQ5WW5pSGVpRDZYRml1c2ZCSmRNYlNBc1F1RnZxa1JHcXU1VUZHdjFWQVNWN2FGU3FwTnlyWTJKSmg5U2dBbzdHSnNkNXY3TjlZXzgybDhaNnF3SW0yNWhnVVN1QXJ4cFNoc0g3aUFsZjBhNWFEbEtXdFZoZ1VDS0EtcDlnNDloaFAxTlBCbU9JN2lKbXp5UUYzdEw0Qng5X19RUkVCSWc?oc=5"/>
+    <id>https://bmt.news/editions/2026-08-21/#google_news:article:b3f94eff36ee0d80</id>
+    <updated>2026-08-21T00:00:00Z</updated>
+    <summary>Coinbase 旗下的二层网络 Base 正在转向独立技术栈，减少对 Optimism 的 OP Stack 基础设施的依赖。这一转变标志着 L2 生态系统中基础设施依赖关系的显著变化。 Base 是基于 OP Stack 的最大链之一，因此其脱钩可能重塑 L2 格局，并影响其他 rollup 对基础设施依赖的看法。这也可能加剧模块化区块链框架之间的竞争。 现有报道尚未完全披露具体的新技术栈细节。Base 目前作为基于 OP Stack 的 optimistic rollup 运行，在以太坊上结算，并使用 ETH 作为 gas token。</summary>
+  </entry>
+  <entry>
+    <title>Kraken母公司Payward探索在美国以外成为全能银行</title>
+    <link href="https://www.theblock.co/news/business/2026-08-20-kraken-parent-payward-explores-becoming-a-full-bank-outside-us-412390"/>
+    <id>https://bmt.news/editions/2026-08-21/#rss:www.theblock.co_rss.xml:8766ad81a5d6b65e</id>
+    <updated>2026-08-21T00:00:00Z</updated>
+    <summary>Kraken的母公司Payward正在探索在美国以外成为“全能银行”，计划拓展银行业务、贷款和资产管理。未来还可能涉及抵押贷款业务。 此举标志着加密货币交易所的机构化成熟，一家主要参与者寻求在全球提供受监管的银行服务。它可能为传统银行与加密生态系统的更紧密整合铺平道路。 据其官网介绍，Payward现有产品组合已涵盖交易、托管、支付、贷款、链上金融和指数基准。本次公告在原有范围内新增了银行业务和资产管理，并提到未来可能涉足抵押贷款。</summary>
+  </entry>
+  <entry>
+    <title>LayerZero 年内失去十余家合作伙伴，ZRO 年内下跌 31%</title>
+    <link href="https://protos.com/layerzero-has-lost-a-dozen-partnerships-this-year/"/>
+    <id>https://bmt.news/editions/2026-08-21/#rss:protos.com_feed_:220bafe282b0bb5d</id>
+    <updated>2026-08-21T00:00:00Z</updated>
+    <summary>LayerZero 今年已失去十余家合作伙伴，包括 Kraken、BitGo 和 Nethermind，其 ZRO 代币年内下跌约 31%，较 2024 年 12 月的历史高点下跌 88%。最新离开的是以太坊节点服务商 Nethermind，它终止了验证者角色并迁移至 Chainlink。 超过 150 亿美元资产的撤离和高调退出标志着市场对 LayerZero 安全模型的信任危机，可能重塑跨链互操作领域的竞争格局。这可能促使协议和企业转向 Chainlink 的 CCIP 等竞争对手方案，并减缓 LayerZero 的采用。 这次撤离发生在 LayerZero 4 月份承认 Lazarus Group 污染其内部 RPC 节点之后，并承认其 DVN 在高价值交易中充当了 1/1 验证者，这一设计缺陷因 Kelp DAO 桥接 2.92 亿美元损失事件而暴露。LayerZero 正在缩减对低活跃度链的支持，并警告受影响链上的用户，若在弃用前不采取行动，可能会失去对资金的使用权限。</summary>
+  </entry>
+  <entry>
+    <title>ACX交易所公布加密货币转股权截止日期与条款</title>
+    <link href="https://news.google.com/rss/articles/CBMiXkFVX3lxTE93b1VYZG5VeGM2bVVOV0N1NzhwdlNWWlNtTS1lbUdUTXB6NGpMcno4c2htdk02R1k5ZjBIamR0N2g0REVYMDcxOWhMQm1ia2FQNkZWZ3RLa1EtVGlyTXc?oc=5"/>
+    <id>https://bmt.news/editions/2026-08-21/#google_news:article:897cea45c170280b</id>
+    <updated>2026-08-21T00:00:00Z</updated>
+    <summary>ACX交易所公布了将加密货币持仓转换为股权的截止日期和条款，为用户提供了该转换的正式参数。这一消息由CryptoTicker报道，明确了换股的具体时间框架和条件。 这标志着交易所在重组方面的重要举措，并延续了加密行业中日益增多的代币转股权趋势。它可能为陷入困境的加密平台如何处理用户余额树立先例，影响ACX用户，并可能影响类似交易所的利益相关者。 该公告明确了股权交换的具体截止日期和条款，但除标题外的完整细节尚未得到独立验证。ACX是一家成立于2016年的澳大利亚加密货币交易所，由香港公司Peak HK Limited所有，该公司还运营着一只加密货币套利基金。</summary>
+  </entry>
   <entry>
     <title>Bybit称在14.6亿美元被盗后避免逾7亿美元额外损失</title>
     <link href="https://news.google.com/rss/articles/CBMi7gFBVV95cUxNMWNmOE40LTNVeVRIa250VTE2YXljcWI2YjVoNW5CYTI3d0lfc3ZSVWlPY19sVHNhYUJocG5YaDNfeDZ6VUFiMWZXSURjajRaZ0tscVFUSmphbXF0RVFTS2hXdWc1TTRkYkNZQVJCenhFQXUwbUs1UTZTX3ZkQWJoc2E0QURnNHNfdU5CNzEtUENqMDE2NEdoS19KQnB1R1hwNUxlMF9MOXhQaVpCOFlGNEdTVExlaHBVRjR1OG5PeW8tZWtHaDlxYjM0MHFGOWMybkFZNEZEWFdhY1d4dmcxOEp3SEp6WXpYVkZpdk1B0gHzAUFVX3lxTE5nTkdicElzbHRjdEVVT2N3NS1OSjltbnFkSEV2TXJsTjRzZ1Q0MVRMTFFSVDNUQXlUU0hKZmM3c3hEalk0bTNxTUJBVFVuOEhaR2FUcUZlM0ttVUE4cHM3X2h5emtvSmNjdkQtU1FyaVphc1lFaENFWjJwYzNpaWFkMHdsYmxEWlpMeEFRR1I4Mk42cmhPSlBHVkpyY1pOd0ZQdmpuUk5JSzh1LUpab1Q4MTBldE9wa0ZzOUVQby15UGJ3bm0xcy1xWHlkVWVmVExQRDF2ZDhkbkJmdGp3bW9pb1otbGxncVgtc0hoRTNKeEU5bw?oc=5"/>
@@ -221,68 +284,5 @@
     <id>https://bmt.news/editions/2026-08-17/#rss:cryptoslate.com_feed_:00c56ad7fab74a7e</id>
     <updated>2026-08-17T00:00:00Z</updated>
     <summary>截至UTC时间8月16日凌晨1:53，DV Labs列出的7个attester仍处于VALIDATING状态，持有138.6万AZTEC的有效质押，尽管DV Labs在7月16日宣布退出Aztec并要求委托人最迟在8月5日退出。退出流程尚未完成，错过8月5日请求的经济后果也悬而未决。 这一事件表明，在权益证明网络中，验证者的操作失误可能使质押资产被困，导致委托人无法及时撤出。它直接影响了Aztec上DV Labs的委托人，并引发了对新网络退出截止日期、惩罚机制和提款文档清晰度的质疑。 质押仪表板提供商的提交流仍显示DV Labs名下有16笔委托和320万AZTEC，但直接读取canonical Rollup合约发现，DV Labs列出的7个attester仍处于VALIDATING状态，没有EXITING或ZOMBIE状态，另有62个缺席。7个验证者中有4个余额低于20万AZTEC的激活门槛，合计减少14,000 AZTEC；Aztec的惩罚规则列出了2,000 AZTEC的不活跃惩罚和5,000 AZTEC的重复提议/重复证明惩罚，但没有证据表明这些与DV Labs有关。</summary>
-  </entry>
-  <entry>
-    <title>荷兰网络机构警告：macOS屏幕共享漏洞被用于安装门罗币矿工</title>
-    <link href="https://www.theblock.co/news/defi/2026-08-16-hackers-exploited-macos-screen-sharing-flaw-to-install-monero-miners-dutch-cyber-agency-says-411932"/>
-    <id>https://bmt.news/editions/2026-08-17/#rss:www.theblock.co_rss.xml:7c6f6bcb87f588e1</id>
-    <updated>2026-08-17T00:00:00Z</updated>
-    <summary>荷兰网络机构表示，攻击者正在积极利用一个严重级别为CVSS 9.8的macOS“屏幕共享”漏洞，在受害者设备上安装门罗币（Monero）挖矿程序。苹果已于2026年7月27日和8月6日发布安全补丁修复该漏洞。 这一事件重要之处在于，该漏洞可在认证前被利用，无需任何登录凭证，且已被用于真实攻击。个人和组织都应尽快打补丁；同时此事再次说明门罗币是挖矿木马中最常使用的加密货币。 该漏洞编号为CVE-2026-65400，属于认证前漏洞，攻击者无需有效的macOS账号、已获授权的屏幕共享用户或传统VNC密码即可利用。美国政府将其CVSS评分定为9.8/10，苹果在同期还修复了另一个相关的屏幕共享漏洞CVE-2026-43760。</summary>
-  </entry>
-  <entry>
-    <title>以太坊开发者缩减Hegotá升级的66项提案</title>
-    <link href="https://cointelegraph.com/news/ethereum-devs-66-proposals-hegota-upgrade?utm_source=rss_feed&amp;utm_medium=rss&amp;utm_campaign=rss_partner_inbound"/>
-    <id>https://bmt.news/editions/2026-08-17/#rss:cointelegraph.com_rss:619914a88bb8ccac</id>
-    <updated>2026-08-17T00:00:00Z</updated>
-    <summary>以太坊核心开发者正在筛选66项提案，以确定下一次重大升级Hegotá的范围。目前FOCIL（EIP-7805）是唯一确认纳入的EIP，而Frame Transactions（EIP-8141）、Keyed Nonces（EIP-8250）和Recent Roots（EIP-8272）等隐私相关EIP也在考虑之中，以提供原生隐私能力。 Hegotá将塑造以太坊到2027年的发展轨迹，并可能将隐私原语和更强的抗审查能力直接嵌入基础协议。这对以太坊应用开发者、验证者和依赖L1中立性与可靠交易纳入的用户都很重要。 下一次以太坊核心开发者电话会议定于周一14:00 UTC举行，将帮助决定66项提案中哪些能入选。未能纳入Hegotá的提案可能会在后续升级中重新考虑；此前的Glamsterdam升级预计于2026年下半年上线主网。</summary>
-  </entry>
-  <entry>
-    <title>灰度将质押奖励转为股息，以太坊和Solana拟削减质押收益</title>
-    <link href="https://cryptoslate.com/wall-street-finally-turned-staking-into-a-dividend-now-ethereum-and-solana-want-to-shrink-it/"/>
-    <id>https://bmt.news/editions/2026-08-17/#rss:cryptoslate.com_feed_:a26623b45d15d31e</id>
-    <updated>2026-08-17T00:00:00Z</updated>
-    <summary>灰度宣布将从8月7日左右开始将其以太坊和Solana ETF的质押奖励转换为现金股息。与此同时，Solana的SIMD-0550和以太坊的EIP-8363提案拟削减协议级质押发行量，从而直接减少这些产品的收入来源。 这是质押奖励首次被包装为股息提供给华尔街ETF投资者，使机构产品直接与协议收益挂钩。这些提案的治理结果将决定市场更看重代币稀缺性还是收入，并对验证者、ETF资金流和DeFi收益产生连锁影响。 Solana的SIMD-0550拟将年度去通胀率从15%翻倍至30%，使模拟质押收益率在三年内从5.84%降至2.25%，并在六年内减少1890万SOL的发行。以太坊的EIP-8363拟随着质押参与率上升而燃烧越来越多的验证者奖励，当约一半ETH被质押时达到100%燃烧。</summary>
-  </entry>
-  <entry>
-    <title>Bedrock 协议被盗 200 万美元加密货币</title>
-    <link href="https://news.google.com/rss/articles/CBMiiwFBVV95cUxPbUs5VnNQSmU4NUdxRU9Cc2oyb0o1dlIzZGs1U3IxUUx2NUFEYmJBVWdnWXpFOU9IM3VyMDAyeGJMRTVEMzZjazJjQ3UwUEhxQmpfZ3ZpVnhrMFVSOHpYTzNhZXQyOUNUR3l5VEJCeGdEQnQtanVyVHdIQmkwUno4U1FzZ2NEM08xU1Nv?oc=5"/>
-    <id>https://bmt.news/editions/2026-08-17/#google_news:article:7bd0131a30bcfaec</id>
-    <updated>2026-08-17T00:00:00Z</updated>
-    <summary>据 Yellow.com 报道，Bedrock 协议遭遇了一起 200 万美元的加密货币盗窃事件。该事件直接影响了用户资金，但具体利用细节尚未披露。 这起安全事件凸显了 DeFi 和流动性再质押领域中持续存在的风险，用户资金可能面临被利用的威胁。它可能会削弱用户对 Bedrock 及类似再质押协议的信心。 Bedrock 是一个多资产流动性再质押协议，为比特币、以太坊和 IoTeX 提供流动性再质押代币，作为父协议，其追踪产品包括 uniBTC、uniETH 和 uniIOTX。据报道，此次 200 万美元的损失与重大加密货币攻击事件相比相对较小。</summary>
-  </entry>
-  <entry>
-    <title>Bybit推出针对Unitree和Moonshot AI的Pre-IPO永续合约</title>
-    <link href="https://news.google.com/rss/articles/CBMiVEFVX3lxTE9FR0N5eFE1aXZ1azBLcUtWdlo5eHJrM1duM29yb3A0OC1aQ2FFODdLRkxDRmNNRmVFcXl1aWJIM3RmYmN5cWdKNUNXX0YxdzN3REZ6TQ?oc=5"/>
-    <id>https://bmt.news/editions/2026-08-17/#google_news:article:85bc2466f775a128</id>
-    <updated>2026-08-17T00:00:00Z</updated>
-    <summary>Bybit已为中国的机器人公司Unitree和AI公司Moonshot AI推出Pre-IPO永续合约，使加密货币交易者能够获得这些私人科技公司的敞口。这些合约是现金结算的衍生品，并非直接持股。 这标志着Bybit的Pre-IPO衍生品阵容扩展至知名的中国科技公司，反映出加密平台对私人市场敞口的需求日益增长。它可能吸引传统股票投资者，并拓宽加密交易者可获得的资产类型。 Pre-IPO永续合约以现金结算，不授予所有权、投票权或实际股份。据一份报告称，Bybit现已上线超过200个Pre-IPO永续合约，而SpaceX相关的永续合约在各大交易所已创造了数十亿美元的交易量。</summary>
-  </entry>
-  <entry>
-    <title>由Bybit前联席CEO创立的美国加密交易所ABFinance暂停运营</title>
-    <link href="https://news.google.com/rss/articles/CBMidkFVX3lxTE1IUzlRT0xiamZWbENCY2VsSUZ0SGcwNWc0aUt0Q2xUUTYxSHlwNW9kcnRheHM1ekk4c2o5QjE0eFB5d1poV3BDQ1A1YmlKQkNwbFBjZEJUNVd2ZEs4TWNyQl8wel85ajZSeTFMUHJEeU83UkV4M2c?oc=5"/>
-    <id>https://bmt.news/editions/2026-08-16/#google_news:article:34c230d725745c22</id>
-    <updated>2026-08-16T00:00:00Z</updated>
-    <summary>由Bybit前联席CEO Helen Liu创立的美国加密交易所ABFinance已于2025年8月14日暂停运营，原因是美国监管压力。该平台原本计划整合存款、交易、理财和支付功能，但暂停的范围和时间表尚未公布。 此次暂停凸显了美国加密交易所面临的严峻监管环境，合规成本和法律风险高企。这影响ABFinance用户，他们可能面临资金取用受限，也标志着美国小型交易所持续整合或关闭。 ABFinance由Helen Liu创立，她在担任Bybit联席CEO五年后离职，创办了这一旨在连接法币与加密货币的美国持牌平台。此次关闭凸显了在美国运营合规交易所需要大量资金和法律资源。</summary>
-  </entry>
-  <entry>
-    <title>瑞银IBIT看涨期权敞口二季度激增24倍</title>
-    <link href="https://www.coindesk.com/business/2026/08/15/swiss-mega-bank-ubs-ramps-up-its-bitcoin-exposure-with-a-massive-24-fold-surge-in-etf-call-options"/>
-    <id>https://bmt.news/editions/2026-08-16/#rss:www.coindesk.com_arc_outboundfeeds_rss_:7e999a5b4db17aa5</id>
-    <updated>2026-08-16T00:00:00Z</updated>
-    <summary>瑞银报告称，其持有贝莱德iShares比特币信托（IBIT）的看涨期权敞口在二季度环比增长超过24倍，截至6月30日达到195万股标的股份。直接持有的IBIT股份增加12%至407,890股，而看跌期权敞口则减少约53%至143,300股标的股份。 这一动向表明，机构对比特币ETF及相关衍生品的采纳正在增加，一家全球大型银行正在扩大其在数字资产领域的影响力。这一趋势可能鼓励其他大型金融机构跟进，进一步将加密货币融入主流金融体系。 该监管申报文件未披露行权价或到期日，因此仅凭文件无法判断瑞银的净方向性敞口。这次增加可能源于客户主动交易、做市商对冲、做市活动、客户全权委托组合或自营敞口；此外，其直接持有的IBIT股份仍低于2025年底报告的548,614股。</summary>
-  </entry>
-  <entry>
-    <title>Stacks Satoshi硬分叉推动质押STX达3.92亿</title>
-    <link href="https://news.google.com/rss/articles/CBMihgFBVV95cUxOR1JZaHo2NUswMlpIN1NLZlJaODJHUnNxWWFsQTVlU3JlNXJvSkNHQ195ell2QWxEaURJN1ZlMks3eTZWNk9GNF9kUEdJemc5Z1gyeno2ZnNPN185eUxGOHlvLWdnWUdzZnVIdk1PTnJ1aENQSWN5WjRxZWdLSy01Rk8tRnZDUQ?oc=5"/>
-    <id>https://bmt.news/editions/2026-08-16/#google_news:article:d3df5d38269fb79b</id>
-    <updated>2026-08-16T00:00:00Z</updated>
-    <summary>Stacks网络上的Satoshi硬分叉已将STX质押总量提升至3.92亿，标志着这一比特币二层网络的一个重要里程碑。该升级现已生效，并提高了参与者的承诺度。 此次升级增强了Stacks的安全性，并表明基于比特币的智能合约和质押机制正获得更多采用。作为领先的比特币二层网络，Stacks的成功可能影响更广泛的比特币DeFi生态。 该硬分叉对应Stacks的Nakamoto升级，带来了更高的交易吞吐量和100%的比特币最终性。Stacks上的质押称为“Stacking”，采用转移证明（PoX）共识机制，并以BTC奖励参与者。</summary>
-  </entry>
-  <entry>
-    <title>2026年112亿美元融资标志着加密货币无需许可时代的终结</title>
-    <link href="https://www.coindesk.com/business/2026/08/15/the-usd11-2-billion-in-2026-funding-that-killed-crypto-s-permissionless-era"/>
-    <id>https://bmt.news/editions/2026-08-16/#rss:www.coindesk.com_arc_outboundfeeds_rss_:74b8cb5e9d53943f</id>
-    <updated>2026-08-16T00:00:00Z</updated>
-    <summary>一项对2026年上半年所有加密货币交易的分析发现，112亿美元资金绝大多数流向了受监管公司，投资者包括贝莱德和高盛。该研究显示，机构资本正引导行业远离无需许可的网络。 这种转变标志着加密货币市场的机构化，合规与监管成为获得资本的前提。它可能重塑竞争格局，使受监管的中介机构比开放、无需许可的协议更具优势。 这些数据由驻迪拜的加密货币律师Irina Heaver及其团队编制，他们分析了2026年上半年每一笔加密货币交易。除美国大型金融机构外，波斯湾主权财富基金也参与其中。</summary>
   </entry>
 </feed>

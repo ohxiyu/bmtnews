@@ -4,7 +4,28 @@
   <link href="https://bmt.news/feeds/technology-zh.xml" rel="self"/>
   <link href="https://bmt.news/"/>
   <id>https://bmt.news/feeds/technology-zh.xml</id>
-  <updated>2026-08-20T00:00:00Z</updated>
+  <updated>2026-08-21T00:00:00Z</updated>
+  <entry>
+    <title>被入侵的 Rust 库 Arrayref 运行构建时恶意负载</title>
+    <link href="https://safedep.io/arrayref-proc-macro1-rust-build-time-malware/"/>
+    <id>https://bmt.news/editions/2026-08-21/#hackernews:story:49374269</id>
+    <updated>2026-08-21T00:00:00Z</updated>
+    <summary>热门 Rust 库 Arrayref 的一个被入侵的版本引入了拼写相似的（typosquatting）proc-macro1 依赖，其构建脚本会在编译时下载并执行远程二进制文件。该攻击已报告给 RustSec，并发布了安全公告。 Arrayref 使用广泛，此次供应链攻击可能危及许多开发者的构建环境。这也突显了 Cargo 对 build.rs 脚本缺乏沙箱隔离这一长期存在的安全短板。 恶意构建时负载由拼写相似的 proc-macro1 库触发，该库在 Cargo 构建过程、代码编译之前运行。Cargo 默认对 build.rs 脚本不进行沙箱隔离，因此负载可以下载并运行远程二进制文件。</summary>
+  </entry>
+  <entry>
+    <title>GitHub 8月17日宕机：重试缺陷与提交量激增</title>
+    <link href="https://github.blog/news-insights/company-news/the-august-17-outage-and-the-work-ahead/"/>
+    <id>https://bmt.news/editions/2026-08-21/#hackernews:story:49378957</id>
+    <updated>2026-08-21T00:00:00Z</updated>
+    <summary>GitHub 发布了 8 月 17 日宕机的事后分析，将其归因于 VS Code 中潜伏的重试缺陷，该缺陷被 Copilot Token Service 的延迟放大，导致流量放大约 10 倍并推迟恢复。公司还披露，自 4 月以来，每月提交量从 14 亿增长到 29 亿。 这次宕机凸显了现代开发者工具中客户端重试行为的脆弱性，以及 AI 辅助编程推动提交量激增给 GitHub 带来的规模压力。它还引发了人们对越来越依赖基于令牌的认证和云服务的开发者平台在可靠性方面的担忧。 事后分析指出，一个内部端点的回复延迟触发了 VS Code 中的重试缺陷，使流量放大了约 10 倍，并导致 Copilot Token Service 恢复延迟。自 4 月以来，每月提交量从 14 亿增长到 29 亿，在几个月内几乎翻倍。</summary>
+  </entry>
+  <entry>
+    <title>Huzzah：将伪代码与真实代码同步的实验性编辑器</title>
+    <link href="https://www.danielvaughn.dev/posts/huzzah/"/>
+    <id>https://bmt.news/editions/2026-08-21/#hackernews:story:49378768</id>
+    <updated>2026-08-21T00:00:00Z</updated>
+    <summary>Daniel Vaughn 发布了 Huzzah，一个实验性编辑器，开发者可以用伪代码编写程序，保存时自动同步为真实源代码，伪代码会与生成的代码一起保留，作为意图记录。目前它只是一个概念验证，代码托管在 GitHub 上。 Huzzah 在全手动编码和完全交给 AI 代理之间提供了一条中间道路，回应了代理疲劳以及大型代码库中的复杂度上限问题。它将基于意图的编程（intent-based programming）变成一种可行的工作流，可能影响未来 AI 辅助开发工具的设计。 该编辑器允许用户以任何对自己有意义的形式书写伪代码；保存时，它会将文本同步为真实代码，并保留伪代码作为意图的存储记录。Huzzah 目前是概念验证，GitHub README 中有安装说明，X 上有演示视频。</summary>
+  </entry>
   <entry>
     <title>AI模型路由平台OpenRouter加入Stripe，据报交易超70亿美元</title>
     <link href="https://openrouter.ai/blog/announcements/openrouter-is-joining-stripe/"/>

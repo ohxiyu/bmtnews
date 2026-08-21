@@ -4,7 +4,21 @@
   <link href="https://bmt.news/feeds/policy-zh.xml" rel="self"/>
   <link href="https://bmt.news/"/>
   <id>https://bmt.news/feeds/policy-zh.xml</id>
-  <updated>2026-08-20T00:00:00Z</updated>
+  <updated>2026-08-21T00:00:00Z</updated>
+  <entry>
+    <title>OCC赶在11月前敲定GENIUS Act稳定币规则</title>
+    <link href="https://decrypt.co/376048/banking-regulator-occ-genius-act-stablecoin-rules-november"/>
+    <id>https://bmt.news/editions/2026-08-21/#rss:decrypt.co_feed:acab9638bcefdba7</id>
+    <updated>2026-08-21T00:00:00Z</updated>
+    <summary>OCC负责人Jonathan Gould在怀俄明区块链研讨会上宣布，该机构将在11月前敲定GENIUS Act稳定币规则，早于1月18日的法定截止日期。该机构预计将在2027年开始处理发行人申请。 这一时间表为稳定币发行商和平台提供了更清晰的监管路径，降低了法律于2027年1月生效前的不确定性。规则生效后，只有获准的发行商才能向美国人提供支付稳定币。 这份376页的提案于2月发布，征求意见截止5月，涵盖储备资产、按面值赎回、流动性、风险管理、审计、托管及清算等内容。反洗钱和制裁要求将通过与财政部协调的单独规则制定来处理。OCC未明确11月内的具体日期。</summary>
+  </entry>
+  <entry>
+    <title>CFTC主席欲推动起草加密市场规则，以防Clarity Act难产</title>
+    <link href="https://decrypt.co/376151/cftc-chair-crypto-rules-if-congress-fails-clarity-act"/>
+    <id>https://bmt.news/editions/2026-08-21/#rss:decrypt.co_feed:e51584ae08b0aa06</id>
+    <updated>2026-08-21T00:00:00Z</updated>
+    <summary>CFTC主席Michael S. Selig在创新顾问委员会首次会议上表示，他已指示员工基于该机构现有职权探索加密市场结构规则，并称若国会未能通过Clarity Act，CFTC将正式提出这些规则。 如果国会不采取行动，CFTC可能单方面将加密交易所、杠杆交易和链上金融协议纳入监管，从而重塑美国加密市场结构。即使没有新立法，这也将影响交易所、开发者和投资者。 该潜在框架可能涵盖当前CFTC注册机构以及目前未注册的加密交易所，允许它们按照量身定制的规则提供杠杆或保证金加密交易。Selig还指示员工与链上金融协议开发者接触，探讨在美国以合法合规方式提供其协议的途径。</summary>
+  </entry>
   <entry>
     <title>特朗普称CFTC正以合规方式推动Hyperliquid进入美国，HYPE代币暴涨</title>
     <link href="https://www.theblock.co/news/regulation/2026-08-19-hype-token-surges-trump-says-cftc-bring-hyperliquid-us-fully-compliant-fashion-412262"/>

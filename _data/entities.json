@@ -7,24 +7,37 @@
       "days": 4,
       "first_date": "2026-08-12",
       "latest_date": "2026-08-19",
-      "recent": 6,
+      "recent": 2,
       "category": "policy",
       "top_score": 9.0,
       "title_zh": "SEC提出《加密资产条例》新规框架",
       "title_en": "SEC Proposes 'Regulation Crypto Assets' Framework"
     },
     {
-      "slug": "kpmg",
-      "label": "KPMG",
-      "mentions": 4,
-      "days": 2,
-      "first_date": "2026-08-14",
-      "latest_date": "2026-08-19",
-      "recent": 4,
+      "slug": "cftc",
+      "label": "CFTC",
+      "mentions": 3,
+      "days": 3,
+      "first_date": "2026-08-12",
+      "latest_date": "2026-08-21",
+      "recent": 2,
+      "category": "policy",
+      "top_score": 8.5,
+      "title_zh": "CFTC主席欲推动起草加密市场规则，以防Clarity Act难产",
+      "title_en": "CFTC Chair Moves to Draft Crypto Market Rules as Clarity Act Stalls"
+    },
+    {
+      "slug": "solana",
+      "label": "Solana",
+      "mentions": 3,
+      "days": 3,
+      "first_date": "2026-08-13",
+      "latest_date": "2026-08-21",
+      "recent": 2,
       "category": "crypto",
       "top_score": 8.5,
-      "title_zh": "Tether首次获得KPMG审计：进展显著，但疑问仍在",
-      "title_en": "Tether's First KPMG Audit: Progress, Yet Not Full Clarity"
+      "title_zh": "Solana 5万SOL安全竞赛未覆盖早前披露的时钟攻击",
+      "title_en": "Solana's 50,000 SOL contest missed pre-disclosed PoH clock attack"
     },
     {
       "slug": "anthropic",
@@ -33,11 +46,24 @@
       "days": 3,
       "first_date": "2026-08-12",
       "latest_date": "2026-08-17",
-      "recent": 2,
+      "recent": 1,
       "category": "crypto",
       "top_score": 8.5,
       "title_zh": "Anthropic 公开 Claude 官方系统提示词，提升模型透明度",
       "title_en": "Anthropic Publishes Official Claude System Prompts for Transparency"
+    },
+    {
+      "slug": "kpmg",
+      "label": "KPMG",
+      "mentions": 4,
+      "days": 2,
+      "first_date": "2026-08-14",
+      "latest_date": "2026-08-19",
+      "recent": 1,
+      "category": "crypto",
+      "top_score": 8.5,
+      "title_zh": "Tether首次获得KPMG审计：进展显著，但疑问仍在",
+      "title_en": "Tether's First KPMG Audit: Progress, Yet Not Full Clarity"
     }
   ]
 }

@@ -4,7 +4,28 @@
   <link href="https://bmt.news/feeds/technology-en.xml" rel="self"/>
   <link href="https://bmt.news/"/>
   <id>https://bmt.news/feeds/technology-en.xml</id>
-  <updated>2026-08-20T00:00:00Z</updated>
+  <updated>2026-08-21T00:00:00Z</updated>
+  <entry>
+    <title>Compromised Arrayref Rust crate runs build-time payload</title>
+    <link href="https://safedep.io/arrayref-proc-macro1-rust-build-time-malware/"/>
+    <id>https://bmt.news/editions/2026-08-21/#hackernews:story:49374269</id>
+    <updated>2026-08-21T00:00:00Z</updated>
+    <summary>A compromised release of the popular Rust crate Arrayref pulled in a typosquatted proc-macro1 dependency whose build script downloads and executes a remote binary at compile time. The attack was reported to RustSec, which issued a security advisory for the crate. Arrayref is widely used, so this supply-chain attack could compromise many developers&#x27; build environments. It underscores the lack of Cargo sandboxing for build scripts, a long-standing security gap in the Rust ecosystem. The malicious build-time payload is triggered by a typosquatted proc-macro1 crate, which runs as part of the Cargo build process before code compilation. Cargo executes build.rs scripts without sandboxing by default, allowing the payload to download and run a remote binary.</summary>
+  </entry>
+  <entry>
+    <title>GitHub&#x27;s August 17 Outage: Retry Bug and Soaring Commit Volume</title>
+    <link href="https://github.blog/news-insights/company-news/the-august-17-outage-and-the-work-ahead/"/>
+    <id>https://bmt.news/editions/2026-08-21/#hackernews:story:49378957</id>
+    <updated>2026-08-21T00:00:00Z</updated>
+    <summary>GitHub published a post-mortem of the August 17 outage, attributing it to a latent retry bug in VS Code amplified by delays in the Copilot Token Service, which caused roughly 10x traffic amplification and delayed recovery. The company also disclosed that monthly commits grew from 1.4 billion to 2.9 billion since April. The outage highlights the fragility of client-side retry behavior in modern developer tooling and the scale pressure GitHub faces as AI-assisted coding drives a surge in commits. It also underscores reliability concerns for developer platforms that increasingly depend on token-based authentication and cloud services. The post-mortem states that delayed replies to a single internal endpoint triggered the VS Code retry bug, amplifying traffic by approximately 10x and delaying recovery for the Copilot Token Service. Monthly commits have grown from 1.4 billion to 2.9 billion since April, nearly doubling in a few months.</summary>
+  </entry>
+  <entry>
+    <title>Huzzah: A Pseudocode Editor That Syncs with Real Code</title>
+    <link href="https://www.danielvaughn.dev/posts/huzzah/"/>
+    <id>https://bmt.news/editions/2026-08-21/#hackernews:story:49378768</id>
+    <updated>2026-08-21T00:00:00Z</updated>
+    <summary>Daniel Vaughn released Huzzah, an experimental editor where developers write pseudocode that is automatically synchronized into real source code on save, with the pseudocode persisted alongside the generated code as a record of intent. It is currently a proof-of-concept available on GitHub. Huzzah offers a middle ground between fully manual coding and delegating everything to AI agents, addressing agent fatigue and complexity limits in large codebases. It introduces intent-based programming as a practical workflow that could influence future AI-assisted development tools. The editor works by letting users write pseudocode in any form that makes sense to them; on save, it synchronizes the text to real code and persists the pseudocode as a stored record of intent. Huzzah is a proof of concept, with installation instructions in the GitHub readme and a demonstration video on X.</summary>
+  </entry>
   <entry>
     <title>AI Router OpenRouter Joins Stripe in Reported $7B+ Deal</title>
     <link href="https://openrouter.ai/blog/announcements/openrouter-is-joining-stripe/"/>

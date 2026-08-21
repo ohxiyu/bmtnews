@@ -4,7 +4,21 @@
   <link href="https://bmt.news/feeds/policy-en.xml" rel="self"/>
   <link href="https://bmt.news/"/>
   <id>https://bmt.news/feeds/policy-en.xml</id>
-  <updated>2026-08-20T00:00:00Z</updated>
+  <updated>2026-08-21T00:00:00Z</updated>
+  <entry>
+    <title>OCC Races to Finalize GENIUS Act Stablecoin Rules by November</title>
+    <link href="https://decrypt.co/376048/banking-regulator-occ-genius-act-stablecoin-rules-november"/>
+    <id>https://bmt.news/editions/2026-08-21/#rss:decrypt.co_feed:acab9638bcefdba7</id>
+    <updated>2026-08-21T00:00:00Z</updated>
+    <summary>OCC head Jonathan Gould announced at the Wyoming Blockchain Symposium that the agency will finalize its GENIUS Act stablecoin rules by November, ahead of the January 18 statutory deadline. The agency expects to begin processing issuer applications in 2027. This timeline gives stablecoin issuers and platforms a clearer regulatory path, reducing uncertainty ahead of the law&#x27;s January 2027 effective date. Only permitted issuers will be able to offer payment stablecoins to Americans once the rules take effect. The 376-page proposal, released in February and open for comment through May, covers reserves, redemption at par, liquidity, risk management, audits, custody, and wind-downs. Anti-money-laundering and sanctions requirements are being handled in separate rulemaking coordinated with the Treasury. The OCC did not specify an exact date within November.</summary>
+  </entry>
+  <entry>
+    <title>CFTC Chair Moves to Draft Crypto Market Rules as Clarity Act Stalls</title>
+    <link href="https://decrypt.co/376151/cftc-chair-crypto-rules-if-congress-fails-clarity-act"/>
+    <id>https://bmt.news/editions/2026-08-21/#rss:decrypt.co_feed:e51584ae08b0aa06</id>
+    <updated>2026-08-21T00:00:00Z</updated>
+    <summary>CFTC Chair Michael S. Selig told the inaugural Innovation Advisory Committee meeting that he has directed staff to explore crypto market structure rules using the agency&#x27;s existing authority. He said the CFTC will formally propose those rules if Congress fails to pass the Clarity Act. If Congress does not act, the CFTC could unilaterally bring crypto exchanges, leveraged trading, and on-chain finance protocols under its oversight, reshaping U.S. crypto market structure. This would affect exchanges, developers, and investors even without new legislation. The potential framework could cover current CFTC registrants and currently unregistered crypto exchanges, allowing leveraged or margined crypto trading under tailored rules. Selig also directed staff to engage with developers of on-chain finance protocols to establish legal and compliant ways to offer their protocols in the U.S.</summary>
+  </entry>
   <entry>
     <title>HYPE Token Surges as Trump Says CFTC Working to Bring Hyperliquid to US</title>
     <link href="https://www.theblock.co/news/regulation/2026-08-19-hype-token-surges-trump-says-cftc-bring-hyperliquid-us-fully-compliant-fashion-412262"/>
