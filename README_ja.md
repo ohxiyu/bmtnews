@@ -54,6 +54,8 @@ uv run bmtnews --mode publish --hours 24 --cutoff-hour 8
 
 ## ライセンス
 
-MIT（[LICENSE](LICENSE) を参照）。本プロジェクトは MIT ライセンスの
-オープンソースコードベースを起点としており、ライセンスの要求に従い元の
-著作権表示をライセンスファイル内に保持しています。
+BMTNews のソースコードは MIT ライセンスで提供されます。詳細は
+[LICENSE](LICENSE) を参照してください。生成されたニュース版および第三者の
+ニュース素材はソフトウェアライセンスの対象外です。詳細は
+[コンテンツとデータの権利](CONTENT-LICENSE.md)および
+[第三者通知](THIRD_PARTY_NOTICES.md)を参照してください。

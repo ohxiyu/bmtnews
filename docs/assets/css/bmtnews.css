@@ -308,6 +308,15 @@ time,
   margin-right: 8px;
 }
 
+.site-footer a {
+  color: inherit;
+  text-underline-offset: 0.18em;
+}
+
+.site-footer a:hover {
+  color: var(--text-soft);
+}
+
 .eyebrow {
   margin: 0;
   font-size: var(--fs-xs);

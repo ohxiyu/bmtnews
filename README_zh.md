@@ -107,5 +107,6 @@ uv run bmtnews --mode publish --hours 24 --cutoff-hour 8
 
 ## 许可
 
-MIT，见 [LICENSE](LICENSE)。本项目起步自一个 MIT 协议的开源代码库，
-按协议要求在许可文件中保留了原始版权声明。
+BMTNews 源代码采用 MIT 许可，见 [LICENSE](LICENSE)。生成的日报和第三方
+新闻材料不属于软件许可范围，详见[内容与数据权利说明](CONTENT-LICENSE.md)和
+[第三方声明](THIRD_PARTY_NOTICES.md)。
