@@ -15,10 +15,6 @@ on:
   # slot — a 0 1 * * * trigger was dropped outright rather than delayed.
   # The last entry is a catch-up: because slots post the lowest rank not
   # yet sent, it finishes the day's quota if an earlier slot is dropped.
-  # TEMPORARY credential test on a throwaway branch: workflow_dispatch is
-  # unavailable to the automation token. Deleted/disarmed after the run.
-  push:
-    branches: ['ops/x-credential-test']
   schedule:
     - cron: '7 1 * * *'    # 09:07 Asia/Shanghai — start of day
     - cron: '37 4 * * *'   # 12:37 Asia/Shanghai — lunch break
