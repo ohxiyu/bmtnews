@@ -204,7 +204,14 @@
           data-i18n-en="A daily intelligence radar for crypto, AI, and macro markets."
         >{% if interface_language == "en" %}A daily intelligence radar for crypto, AI, and macro markets.{% else %}面向加密、AI 与宏观市场的每日情报雷达。{% endif %}</span>
       </div>
-      <span>© {{ site.time | date: "%Y" }} BMTNews</span>
+      <span>
+        © {{ site.time | date: "%Y" }} BMTNews ·
+        <a
+          href="{{ '/legal/' | relative_url }}"
+          data-i18n-zh="法律与内容权利"
+          data-i18n-en="Legal &amp; content rights"
+        >{% if interface_language == "en" %}Legal &amp; content rights{% else %}法律与内容权利{% endif %}</a>
+      </span>
     </footer>
   </body>
 </html>
