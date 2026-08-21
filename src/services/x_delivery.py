@@ -41,9 +41,10 @@ TCO_LENGTH = 23
 # How much of the source article the composer is shown. Long enough to carry
 # a timeline and the concrete numbers, short enough to stay cheap per post.
 ARTICLE_EXCERPT_CHARS = 6000
-# Below this the model plainly did not tell the story: the narrative brief
-# asks for 360-600 Chinese characters, and CJK counts two units each.
-MINIMUM_COMPOSED_WEIGHT = 500
+# Below this the model plainly did not explain the event. The compact brief
+# targets 180-300 Chinese characters; this floor leaves some tolerance for
+# concise posts while still rejecting headline-only generations.
+MINIMUM_COMPOSED_WEIGHT = 300
 
 # twitter-text v3 weighting: code points in these ranges count as one
 # character, everything else — including CJK — counts as two. Counting CJK
@@ -351,7 +352,7 @@ async def compose_story_post(
     item: ContentItem,
     *,
     language: str,
-    limit: int = 1000,
+    limit: int = 800,
 ) -> Optional[str]:
     """Write one post for a story in the account's voice.
 
