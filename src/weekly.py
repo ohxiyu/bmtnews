@@ -20,7 +20,7 @@ from pathlib import Path
 from typing import List, Optional, Sequence
 
 from ._file_utils import _atomic_write_text
-from .ai.utils import unwrap_prose_response
+from .ai.utils import complete_prose
 from .archive import ArchiveRecord
 from .threads import collect_threads
 
@@ -33,6 +33,13 @@ CALIBRATION_ROOT = DATA_ROOT / "calibration"
 _LANGUAGE_NAMES = {
     "zh": "Simplified Chinese (简体中文)",
     "en": "English",
+}
+# Supplied to the model per language. Listing both languages in the prompt
+# (as "本周主线 / The Week's Throughline") reads as an instruction to print
+# both, and the Chinese digest duly published bilingual headings.
+_DIGEST_HEADINGS = {
+    "zh": ("本周主线", "持续追踪", "值得记住"),
+    "en": ("The Week's Throughline", "Continuing Threads", "Worth Remembering"),
 }
 _LABELS = {
     "zh": {
@@ -145,22 +152,24 @@ async def generate_weekly_digest(
         context.records,
         key=lambda record: (-(record.score or 0), record.date),
     )[:max_items]
+    headings = _DIGEST_HEADINGS.get(language, _DIGEST_HEADINGS["en"])
     # Errors propagate to the caller, which owns the run report and can say
     # *why* nothing was produced. Swallowing them here is what let a 400 from
     # the provider look like a successful run for two weeks.
-    response = await ai_client.complete(
+    text = await complete_prose(
+        ai_client,
+        keys=("digest", "review", "body", "markdown", "text"),
         system=WEEKLY_DIGEST_SYSTEM,
         user=WEEKLY_DIGEST_USER.format(
             date=context.end.isoformat(),
             language_name=_LANGUAGE_NAMES.get(language, "English"),
+            heading_throughline=headings[0],
+            heading_threads=headings[1],
+            heading_remember=headings[2],
             items=_format_items(ranked, language),
             threads=_format_threads(context.threads, language),
         ),
-        response_format="text",
     )
-    text = unwrap_prose_response(
-        response, keys=("digest", "review", "body", "markdown", "text")
-    ).strip()
     return text or None
 
 
@@ -183,7 +192,9 @@ async def generate_calibration_review(
     low = [r for r in context.records if (r.score or 0) < high_threshold]
     if not high and not low:
         return None
-    response = await ai_client.complete(
+    text = await complete_prose(
+        ai_client,
+        keys=("review", "calibration", "body", "markdown", "text"),
         system=SCORE_CALIBRATION_SYSTEM,
         user=SCORE_CALIBRATION_USER.format(
             date=context.end.isoformat(),
@@ -192,11 +203,7 @@ async def generate_calibration_review(
             low_items=_format_items(low[:40], language),
             threads=_format_threads(context.threads, language),
         ),
-        response_format="text",
     )
-    text = unwrap_prose_response(
-        response, keys=("review", "calibration", "body", "markdown", "text")
-    ).strip()
     return text or None
 
 

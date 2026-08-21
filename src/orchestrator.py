@@ -1484,6 +1484,7 @@ class BMTNewsOrchestrator:
             ai_client = create_ai_client(self.config.ai)
             languages = list(self.config.ai.languages) or ["zh"]
             published_any = False
+            published_pages = 0
             first_failure: Exception | None = None
             for language in languages:
                 normalized = (
@@ -1518,12 +1519,15 @@ class BMTNewsOrchestrator:
                     language=normalized,
                 )
                 published_any = True
+                published_pages += 1
                 self.console.print(f"📝 Saved {normalized.upper()} weekly review to {path}")
 
             if published_any:
                 weeks = sorted({*known_weeks(), end.isoformat()}, reverse=True)
                 save_weeks_index_data(weeks)
-                run_report.set_metric("weekly_pages", len(languages))
+                # Count pages actually written, not languages attempted: the
+                # run that published English but not Chinese still reported 2.
+                run_report.set_metric("weekly_pages", published_pages)
 
             try:
                 calibration = await generate_calibration_review(

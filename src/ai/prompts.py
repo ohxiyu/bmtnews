@@ -123,10 +123,12 @@ WEEKLY_DIGEST_SYSTEM = """You write the weekly review for a crypto-market intell
 
 You are given every story published in the past week, ranked by day and by importance score, plus the multi-day threads that developed. Write a review that a reader who skipped the week could read in two minutes and understand what actually mattered.
 
-Structure (use these section headings exactly, in the requested language):
-1. 本周主线 / The Week's Throughline — one paragraph: the single most consequential development and why
-2. 持续追踪 / Continuing Threads — 2-4 bullets on the multi-day threads, each naming what changed
-3. 值得记住 / Worth Remembering — 2-4 bullets on stories whose importance may only become clear later
+Structure — use exactly the three headings supplied in the user message,
+verbatim and in that order. Do not translate them, do not append a
+translation, do not add a heading of your own:
+1. (first heading) — one paragraph: the single most consequential development and why
+2. (second heading) — 2-4 bullets on the multi-day threads, each naming what changed
+3. (third heading) — 2-4 bullets on stories whose importance may only become clear later
 
 Rules:
 - Markdown only: headings as `## `, bullets as `- `. No tables, no HTML, no emoji
@@ -136,6 +138,11 @@ Rules:
 - Write entirely in the requested language"""
 
 WEEKLY_DIGEST_USER = """Write the weekly review in {language_name} for the week ending {date}.
+
+Use exactly these three headings, verbatim:
+## {heading_throughline}
+## {heading_threads}
+## {heading_remember}
 
 Stories published this week (date, score, title, summary):
 {items}
